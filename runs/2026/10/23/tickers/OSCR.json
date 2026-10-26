@@ -1,0 +1,1010 @@
+{
+ "date": "2026-10-23",
+ "detected_regions": {
+  "primary": {
+   "days_in_region": 90,
+   "region_start": "2026-09-14",
+   "trigger_date": "2026-09-28",
+   "trigger_type": "shallow_drawdown"
+  },
+  "secondary": [
+   {
+    "confidence_score": 0.399,
+    "downside_q50": -0.1052,
+    "ev_score": 0.1114,
+    "region_start": "2026-03-31",
+    "seq_len": 200,
+    "trigger_date": "2026-09-22",
+    "trigger_type": "runup",
+    "upside_q25": 0.0836,
+    "upside_q50": 0.1985,
+    "upside_q75": 0.3644
+   }
+  ]
+ },
+ "feature_attribution": {
+  "macro_driver_count": 15,
+  "risk_flags": [
+   "high_volatility"
+  ],
+  "top_drivers": [
+   {
+    "direction": "positive",
+    "feature": "price_vs_sma200",
+    "feature_value": 1.3322,
+    "importance": 0.0009,
+    "importance_pct": 0.3092,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "negative",
+    "feature": "dollar_volume",
+    "feature_value": 159465488.0,
+    "importance": 0.0008,
+    "importance_pct": 0.2954,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "positive",
+    "feature": "price_vs_low_52w",
+    "feature_value": 2.8562,
+    "importance": 0.0006,
+    "importance_pct": 0.2089,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "positive",
+    "feature": "volatility_20d",
+    "feature_value": 0.0291,
+    "importance": 0.0003,
+    "importance_pct": 0.1032,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "negative",
+    "feature": "ma_200_slope",
+    "feature_value": 0.0781,
+    "importance": 0.0002,
+    "importance_pct": 0.0833,
+    "method": "integrated_gradients"
+   }
+  ]
+ },
+ "fundamentals": {
+  "accrual": -0.0761,
+  "adx_14": 25.9416,
+  "altman_z_score": 1.3405,
+  "amihud_illiquidity": 0.0001,
+  "avg_volume": 5367828.422,
+  "beta_252d": 0.6131,
+  "book_value_per_share": 6.7899,
+  "correlation_spy_60d": 0.1772,
+  "current_liabilities": 8689.502,
+  "current_ratio": 1.0787,
+  "daily_earnings_yield": 0.0776,
+  "daily_fcf_yield": 0.1873,
+  "daily_pb": 3.4585,
+  "daily_pe": 12.8863,
+  "daily_ps": 0.4633,
+  "days_since_52w_high": 7.0,
+  "debt_ebitda": 0.6616,
+  "debt_to_equity": 0.2103,
+  "dividend_yield": 0.0,
+  "dollar_volume_20d_avg": 153444996.9772,
+  "earnings_quality": 5.6585,
+  "ebitda_growth_yoy": 7.5875,
+  "enterprise_value": -1026.8691,
+  "eps_basic": 1.2,
+  "eps_cagr_3y": -0.0819,
+  "eps_cagr_5y": null,
+  "eps_diluted": 1.1,
+  "eps_growth_accel": 5.4743,
+  "eps_growth_qoq": -0.4737,
+  "eps_growth_yoy": 3.7143,
+  "eps_growth_yoy_q2": -1.76,
+  "eps_growth_yoy_q3": -10.0,
+  "eps_growth_yoy_q4": -8.2308,
+  "eps_growth_yoy_q5": -10.0,
+  "eps_growth_yoy_q6": 3.0,
+  "eps_growth_yoy_q7": 1.1417,
+  "eps_growth_yoy_q8": 1.0818,
+  "eps_history_8q": [
+   -0.22,
+   -0.62,
+   0.92,
+   -0.89,
+   -0.53,
+   -1.24,
+   2.07,
+   1.1
+  ],
+  "eps_ttm": 2.4049,
+  "ev_to_ebitda": -2.6588,
+  "ev_to_fcf": -0.5045,
+  "ev_to_sales": -0.2104,
+  "fcf_growth_yoy": 3.0904,
+  "fcf_margin": 0.4171,
+  "fcf_per_share": 6.7353,
+  "gross_margin": 0.4493,
+  "gross_margin_change_yoy": 0.8914,
+  "gross_margin_history": [
+   0.2028,
+   0.172,
+   0.1616,
+   0.1438,
+   0.1739,
+   0.4493
+  ],
+  "inc_roic": -0.8176,
+  "interest_coverage": 41.1537,
+  "is_pre_revenue": false,
+  "margin_vs_sector_median": null,
+  "market_cap_ratio": 7097.0199,
+  "net_income": 361.808,
+  "net_margin": 0.036,
+  "operating_income": 383.011,
+  "operating_margin": 0.0407,
+  "operating_margin_change_yoy": 0.159,
+  "pb_ratio": 4.5642,
+  "pe_percentile_1y": 0.1389,
+  "pe_ratio": 12.8863,
+  "peg_trailing": 0.073,
+  "piotroski_f_score": 4.0,
+  "price_vs_high_52w": 0.903,
+  "price_vs_sma200": 1.3322,
+  "ps_percentile_1y": 0.3016,
+  "ps_ratio": 0.4171,
+  "quarter_labels_8q": [
+   "Q3 '24",
+   "Q4 '24",
+   "Q1 '25",
+   "Q2 '25",
+   "Q3 '25",
+   "Q4 '25",
+   "Q1 '26",
+   "Q2 '26"
+  ],
+  "quarterly_eps_growth_yoy": 2.236,
+  "quarterly_eps_growth_yoy_8q": [
+   0.2414,
+   0.0606,
+   0.4839,
+   -5.45,
+   -1.4091,
+   -1.0,
+   1.25,
+   2.236
+  ],
+  "quarterly_revenue_growth_yoy": 0.704,
+  "quarterly_revenue_growth_yoy_8q": [
+   0.683,
+   0.6711,
+   0.422,
+   0.2904,
+   0.2321,
+   0.1725,
+   0.5255,
+   0.704
+  ],
+  "revenue_cagr_3y": 0.4558,
+  "revenue_cagr_5y": null,
+  "revenue_growth_accel": 0.1087,
+  "revenue_growth_qoq": 0.0501,
+  "revenue_growth_yoy": 0.4282,
+  "revenue_growth_yoy_q2": 0.3195,
+  "revenue_growth_yoy_q3": 0.275,
+  "revenue_growth_yoy_q4": 0.3738,
+  "revenue_growth_yoy_q5": 0.4829,
+  "revenue_growth_yoy_q6": 0.5426,
+  "revenue_growth_yoy_q7": 0.5654,
+  "revenue_growth_yoy_q8": 0.5142,
+  "revenue_history_8q": [
+   2423.482,
+   2392.436,
+   3046.263,
+   2863.945,
+   2985.984,
+   2805.235,
+   4647.194,
+   4880.22
+  ],
+  "revenue_per_share": 16.1479,
+  "roa": 0.0537,
+  "roce": 0.2663,
+  "roe": 0.2964,
+  "roic": 0.2171,
+  "rsi_14": 34.9355,
+  "sector_momentum": 0.0543,
+  "share_dilution_1y": 0.0,
+  "stock_vs_sector_20d": 0.031,
+  "stock_vs_spy_20d": 0.0623,
+  "total_assets": 11226.762,
+  "vol_regime": 0.8882,
+  "volatility_20d": 0.0291,
+  "volatility_60d": 0.0327,
+  "w52_high": 35.01,
+  "w52_low": 10.69
+ },
+ "market_characters": [
+  {
+   "id": "g5",
+   "name": "Quality Compressed"
+  },
+  {
+   "id": "g12",
+   "name": "Swing Range"
+  }
+ ],
+ "model_analogs": {
+  "matches": [
+   {
+    "actual_downside": -0.0627,
+    "actual_return": 0.1442,
+    "actual_upside": 0.1442,
+    "days_in_region": 59,
+    "end_date": "2018-12-03",
+    "end_reason": "reversal",
+    "similarity": 0.9699,
+    "start_date": "2018-10-05",
+    "ticker": "ATRS",
+    "trigger_date": "2018-10-29",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": -0.3158,
+    "actual_return": 0.249,
+    "actual_upside": 0.249,
+    "days_in_region": 150,
+    "end_date": "2019-02-25",
+    "end_reason": "reversal",
+    "similarity": 0.9697,
+    "start_date": "2018-09-28",
+    "ticker": "TCMD",
+    "trigger_date": "2018-10-08",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": -0.1028,
+    "actual_return": 0.063,
+    "actual_upside": 0.063,
+    "days_in_region": 104,
+    "end_date": "2019-02-27",
+    "end_reason": "reversal",
+    "similarity": 0.9686,
+    "start_date": "2018-11-15",
+    "ticker": "VNET",
+    "trigger_date": "2018-11-26",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": 0.0,
+    "actual_return": 0.2845,
+    "actual_upside": 0.2845,
+    "days_in_region": 79,
+    "end_date": "2016-10-21",
+    "end_reason": "reversal",
+    "similarity": 0.9685,
+    "start_date": "2016-08-03",
+    "ticker": "RYAM",
+    "trigger_date": "2016-08-05",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": -0.0022,
+    "actual_return": 0.1924,
+    "actual_upside": 0.1924,
+    "days_in_region": 60,
+    "end_date": "2005-11-11",
+    "end_reason": "reversal",
+    "similarity": 0.9677,
+    "start_date": "2005-09-12",
+    "ticker": "EZPW",
+    "trigger_date": "2005-09-22",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": -0.1951,
+    "actual_return": 0.4049,
+    "actual_upside": 0.4049,
+    "days_in_region": 190,
+    "end_date": "2017-04-11",
+    "end_reason": "reversal",
+    "similarity": 0.9677,
+    "start_date": "2016-10-03",
+    "ticker": "BLDP",
+    "trigger_date": "2016-10-28",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": -0.1572,
+    "actual_return": 0.1092,
+    "actual_upside": 0.1092,
+    "days_in_region": 139,
+    "end_date": "2019-01-17",
+    "end_reason": "reversal",
+    "similarity": 0.9671,
+    "start_date": "2018-08-31",
+    "ticker": "SCVL",
+    "trigger_date": "2018-10-03",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": -0.0814,
+    "actual_return": 0.3379,
+    "actual_upside": 0.3379,
+    "days_in_region": 196,
+    "end_date": "2006-02-09",
+    "end_reason": "reversal",
+    "similarity": 0.9666,
+    "start_date": "2005-07-28",
+    "ticker": "PRFT",
+    "trigger_date": "2005-10-10",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": -0.1253,
+    "actual_return": 0.336,
+    "actual_upside": 0.336,
+    "days_in_region": 155,
+    "end_date": "2017-02-08",
+    "end_reason": "reversal",
+    "similarity": 0.9663,
+    "start_date": "2016-09-06",
+    "ticker": "SAND",
+    "trigger_date": "2016-10-05",
+    "trigger_type": "severe_drawdown"
+   },
+   {
+    "actual_downside": -0.2513,
+    "actual_return": 0.0404,
+    "actual_upside": 0.0404,
+    "days_in_region": 115,
+    "end_date": "2019-02-25",
+    "end_reason": "reversal",
+    "similarity": 0.9662,
+    "start_date": "2018-11-02",
+    "ticker": "NPTN",
+    "trigger_date": "2018-11-21",
+    "trigger_type": "shallow_drawdown"
+   }
+  ],
+  "stats": {
+   "avg_max_drawdown": 0.0996,
+   "avg_similarity": 0.965,
+   "avg_trough": 0.0996,
+   "avg_upside": 0.3065,
+   "best_return": 1.4496,
+   "downside_range": [
+    -0.3191,
+    0.0
+   ],
+   "median_return": 0.1827,
+   "n_matches": 50,
+   "outcome_agreement": true,
+   "return_p25": 0.1195,
+   "return_p5": -0.1156,
+   "return_p75": 0.3429,
+   "return_p95": 0.7001,
+   "sim_weighted_win_rate": 0.9,
+   "top5_avg_trough": 0.0967,
+   "top5_avg_upside": 0.1866,
+   "top_similarity": 0.97,
+   "upside_range": [
+    0.0,
+    1.4496
+   ],
+   "win_rate": 0.9,
+   "worst_return": -0.2006,
+   "years_span": 16
+  },
+  "total_matches": 50
+ },
+ "peer_group": {
+  "buckets": [
+   "Life, Health & Supplemental Insurance Premiums",
+   "Managed Care, Pharmacy Benefit & Healthcare Administration"
+  ],
+  "groups": {
+   "Life, Health & Supplemental Insurance Premiums": [
+    {
+     "market_cap_m": 370252.6329,
+     "price_vs_sma200": 1.158,
+     "return_30d": 0.1029,
+     "return_7d": 0.0568,
+     "revenue_driver": "health insurance premiums",
+     "signal_rank": 807,
+     "stock_vs_spy_20d": 0.1255,
+     "ticker": "UNH"
+    },
+    {
+     "market_cap_m": 1357.5716,
+     "price_vs_sma200": 1.2693,
+     "return_30d": 0.1017,
+     "return_7d": 0.0458,
+     "revenue_driver": "homeowners insurance premiums",
+     "signal_rank": 1477,
+     "stock_vs_spy_20d": 0.1743,
+     "ticker": "UVE"
+    },
+    {
+     "market_cap_m": 2445.4224,
+     "price_vs_sma200": 1.1998,
+     "return_30d": 0.0987,
+     "return_7d": 0.0424,
+     "revenue_driver": "property & casualty insurance premiums",
+     "signal_rank": 127,
+     "stock_vs_spy_20d": 0.1818,
+     "ticker": "HCI"
+    },
+    {
+     "market_cap_m": 76841.4652,
+     "price_vs_sma200": 1.092,
+     "return_30d": 0.0933,
+     "return_7d": 0.06,
+     "revenue_driver": "health insurance premiums",
+     "signal_rank": 1663,
+     "stock_vs_spy_20d": 0.1437,
+     "ticker": "CI"
+    },
+    {
+     "market_cap_m": 96480.6171,
+     "price_vs_sma200": 1.1854,
+     "return_30d": 0.0507,
+     "return_7d": 0.0277,
+     "revenue_driver": "medical insurance premiums",
+     "signal_rank": 1104,
+     "stock_vs_spy_20d": 0.126,
+     "ticker": "ELV"
+    },
+    {
+     "market_cap_m": 39618.457,
+     "price_vs_sma200": 1.0098,
+     "return_30d": 0.0029,
+     "return_7d": 0.0364,
+     "revenue_driver": "property & casualty insurance premiums",
+     "signal_rank": 1990,
+     "stock_vs_spy_20d": 0.1162,
+     "ticker": "HIG"
+    },
+    {
+     "market_cap_m": 125826.0998,
+     "price_vs_sma200": 1.0559,
+     "return_30d": -0.0126,
+     "return_7d": 0.0341,
+     "revenue_driver": "life, health & supplemental insurance premiums",
+     "signal_rank": 1143,
+     "stock_vs_spy_20d": 0.064,
+     "ticker": "CVS"
+    },
+    {
+     "market_cap_m": 6389.379,
+     "price_vs_sma200": 1.3322,
+     "return_30d": -0.0543,
+     "return_7d": -0.097,
+     "revenue_driver": "ACA insurance premiums",
+     "signal_rank": 316,
+     "stock_vs_spy_20d": 0.0623,
+     "ticker": "OSCR"
+    },
+    {
+     "market_cap_m": 10417.7016,
+     "price_vs_sma200": 0.9863,
+     "return_30d": -0.0616,
+     "return_7d": -0.0141,
+     "revenue_driver": "term life insurance premiums",
+     "signal_rank": 1043,
+     "stock_vs_spy_20d": 0.0111,
+     "ticker": "PRI"
+    },
+    {
+     "market_cap_m": 13502.7697,
+     "price_vs_sma200": 0.9717,
+     "return_30d": -0.0957,
+     "return_7d": -0.0754,
+     "revenue_driver": "life insurance premiums",
+     "signal_rank": 774,
+     "stock_vs_spy_20d": -0.058,
+     "ticker": "GL"
+    }
+   ],
+   "Managed Care, Pharmacy Benefit & Healthcare Administration": [
+    {
+     "market_cap_m": 370252.6329,
+     "price_vs_sma200": 1.158,
+     "return_30d": 0.1029,
+     "return_7d": 0.0568,
+     "revenue_driver": "health insurance premiums",
+     "signal_rank": 807,
+     "stock_vs_spy_20d": 0.1255,
+     "ticker": "UNH"
+    },
+    {
+     "market_cap_m": 76841.4652,
+     "price_vs_sma200": 1.092,
+     "return_30d": 0.0933,
+     "return_7d": 0.06,
+     "revenue_driver": "health insurance premiums",
+     "signal_rank": 1663,
+     "stock_vs_spy_20d": 0.1437,
+     "ticker": "CI"
+    },
+    {
+     "market_cap_m": 31412.9154,
+     "price_vs_sma200": 1.2803,
+     "return_30d": 0.0565,
+     "return_7d": 0.0001,
+     "revenue_driver": "medicaid managed care premiums",
+     "signal_rank": 720,
+     "stock_vs_spy_20d": 0.1504,
+     "ticker": "CNC"
+    },
+    {
+     "market_cap_m": 96480.6171,
+     "price_vs_sma200": 1.1854,
+     "return_30d": 0.0507,
+     "return_7d": 0.0277,
+     "revenue_driver": "medical insurance premiums",
+     "signal_rank": 1104,
+     "stock_vs_spy_20d": 0.126,
+     "ticker": "ELV"
+    },
+    {
+     "market_cap_m": 125454.2753,
+     "price_vs_sma200": 1.3845,
+     "return_30d": 0.0299,
+     "return_7d": -0.0125,
+     "revenue_driver": "medicare advantage premiums",
+     "signal_rank": 398,
+     "stock_vs_spy_20d": 0.076,
+     "ticker": "HUM"
+    },
+    {
+     "market_cap_m": 11135.296,
+     "price_vs_sma200": 1.1339,
+     "return_30d": 0.0241,
+     "return_7d": -0.0002,
+     "revenue_driver": "Medicaid managed care premiums",
+     "signal_rank": 937,
+     "stock_vs_spy_20d": 0.1111,
+     "ticker": "MOH"
+    },
+    {
+     "market_cap_m": 125826.0998,
+     "price_vs_sma200": 1.0559,
+     "return_30d": -0.0126,
+     "return_7d": 0.0341,
+     "revenue_driver": "life, health & supplemental insurance premiums",
+     "signal_rank": 1143,
+     "stock_vs_spy_20d": 0.064,
+     "ticker": "CVS"
+    },
+    {
+     "market_cap_m": 6389.379,
+     "price_vs_sma200": 1.3322,
+     "return_30d": -0.0543,
+     "return_7d": -0.097,
+     "revenue_driver": "ACA insurance premiums",
+     "signal_rank": 316,
+     "stock_vs_spy_20d": 0.0623,
+     "ticker": "OSCR"
+    },
+    {
+     "market_cap_m": 455.8633,
+     "price_vs_sma200": 0.3546,
+     "return_30d": -0.199,
+     "return_7d": 0.0656,
+     "revenue_driver": "benefits administration BPaaS",
+     "signal_rank": null,
+     "stock_vs_spy_20d": -0.3615,
+     "ticker": "ALIT"
+    },
+    {
+     "market_cap_m": 3723.7121,
+     "price_vs_sma200": 0.4703,
+     "return_30d": -0.3608,
+     "return_7d": -0.0207,
+     "revenue_driver": "Medicare Advantage plans",
+     "signal_rank": 1289,
+     "stock_vs_spy_20d": -0.003,
+     "ticker": "ALHC"
+    }
+   ]
+  }
+ },
+ "predictions": {
+  "badge_count": 1,
+  "confidence_score": 0.3197,
+  "conviction_label": "SPECULATIVE",
+  "data_quality_flags": [],
+  "ev_score": 0.1529,
+  "is_diamond": false,
+  "passes_tradability_filter": true,
+  "quality_label": "AVOID",
+  "quantiles": {
+   "downside_q10": -0.2944,
+   "downside_q25": -0.167,
+   "downside_q50": -0.0922,
+   "downside_q75": -0.0231,
+   "downside_q90": 0.0038,
+   "path_volatility": 0.0396,
+   "risk_reward": 2.5028,
+   "uncertainty": 0.587,
+   "upside_q10": 0.0341,
+   "upside_q25": 0.1009,
+   "upside_q50": 0.2308,
+   "upside_q75": 0.3944,
+   "upside_q90": 0.6211
+  },
+  "rank": 316,
+  "rank_score": 0.057,
+  "tradability_filter_reasons": []
+ },
+ "profile": {
+  "_local": {
+   "dividend_yield": 0.0,
+   "eps_growth_yoy": 3.7143,
+   "pe_ratio": 19.9286,
+   "revenue_growth_yoy": 0.4282,
+   "roe": 0.2964
+  },
+  "beta": 2.469,
+  "betaTTM": null,
+  "ceo": "Mark Thomas Bertolini",
+  "companyName": "Oscar Health, Inc.",
+  "country": "US",
+  "debtToEquityTTM": null,
+  "description": "Oscar Health, Inc. operates as a health insurance provider across the United States. Its offerings include various health plans such as those for individuals and families, small businesses, and Medicare Advantage options. The company also features \"+Oscar,\" a proprietary technology platform designed to facilitate engagement between healthcare providers, payers, and their members or patients. Additionally, Oscar Health provides reinsurance solutions. Originally established as Mulberry Health Inc., the firm officially changed its name to Oscar Health, Inc. in January 2021. It was founded in 2012 and maintains its main office in New York, New York.",
+  "dividendYielTTM": null,
+  "enterpriseValueOverEBITDATTM": null,
+  "exchangeShortName": "NYSE",
+  "fullTimeEmployees": "2305",
+  "industry": "Medical - Healthcare Plans",
+  "ipoDate": "2021-03-03",
+  "latest_earnings_date": "2026-08-07",
+  "marketCapTTM": null,
+  "mktCap": 8034873121,
+  "peRatioTTM": null,
+  "price": 30.99,
+  "priceToSalesRatioTTM": null,
+  "returnOnEquityTTM": 0.3853,
+  "revenue_description": "Oscar Health operates health insurance plans with a tech-enabled model. Revenue is driven mainly by insurance premiums and investment income, while earnings depend on underwriting margins, claims severity, and catastrophe losses.",
+  "revenue_description_themes": [
+   "medical cost trends",
+   "ACA enrollment growth",
+   "Medicare Advantage expansion"
+  ],
+  "revenue_taxonomy": [
+   {
+    "bucket": "Life, Health & Supplemental Insurance Premiums",
+    "matched_tags": [
+     "ACA insurance premiums",
+     "small group insurance premiums"
+    ],
+    "path": "Financials › Capital Markets Insurance & Investments › Life, Health & Supplemental Insurance Premiums",
+    "sector": "Financials",
+    "segment": "Capital Markets Insurance & Investments"
+   },
+   {
+    "bucket": "Managed Care, Pharmacy Benefit & Healthcare Administration",
+    "matched_tags": [
+     "Medicare Advantage premiums"
+    ],
+    "path": "Healthcare & Life Sciences › Care Delivery & Healthtech › Managed Care, Pharmacy Benefit & Healthcare Administration",
+    "sector": "Healthcare & Life Sciences",
+    "segment": "Care Delivery & Healthtech"
+   }
+  ],
+  "revenue_themes": [
+   "ACA insurance premiums",
+   "Medicare Advantage premiums",
+   "small group insurance premiums"
+  ],
+  "sector": "Healthcare",
+  "website": "https://www.hioscar.com"
+ },
+ "report": null,
+ "scorecard": {
+  "headline": {
+   "avg_universe_pct": 70,
+   "label": "above_average",
+   "metric_count": 8
+  },
+  "metrics": {
+   "debt_to_equity": {
+    "direction": "lower",
+    "label": "D/E Ratio",
+    "sector": "Financials",
+    "sector_n": 304,
+    "sector_pct": 62,
+    "universe_n": 2080,
+    "universe_pct": 59,
+    "value": 0.2103
+   },
+   "eps_growth_yoy": {
+    "direction": "higher",
+    "label": "EPS Growth",
+    "sector": "Financials",
+    "sector_n": 148,
+    "sector_pct": 90,
+    "universe_n": 1890,
+    "universe_pct": 95,
+    "value": 3.7143
+   },
+   "gross_margin": {
+    "direction": "higher",
+    "label": "Gross Margin",
+    "sector": "Financials",
+    "sector_n": 308,
+    "sector_pct": 14,
+    "universe_n": 2009,
+    "universe_pct": 48,
+    "value": 0.4493
+   },
+   "operating_margin": {
+    "direction": "higher",
+    "label": "Op. Margin",
+    "sector": "Financials",
+    "sector_n": 308,
+    "sector_pct": 6,
+    "universe_n": 2009,
+    "universe_pct": 30,
+    "value": 0.0407
+   },
+   "pe_ratio": {
+    "direction": "lower",
+    "label": "P/E",
+    "sector": "Financials",
+    "sector_n": 295,
+    "sector_pct": 19,
+    "universe_n": 1471,
+    "universe_pct": 53,
+    "value": 19.9286
+   },
+   "revenue_growth_yoy": {
+    "direction": "higher",
+    "label": "Rev Growth",
+    "sector": "Financials",
+    "sector_n": 147,
+    "sector_pct": 93,
+    "universe_n": 1833,
+    "universe_pct": 91,
+    "value": 0.4282
+   },
+   "roe": {
+    "direction": "higher",
+    "label": "ROE",
+    "sector": "Financials",
+    "sector_n": 309,
+    "sector_pct": 91,
+    "universe_n": 2100,
+    "universe_pct": 86,
+    "value": 0.2964
+   },
+   "roic": {
+    "direction": "higher",
+    "label": "ROIC",
+    "sector": "Financials",
+    "sector_n": 302,
+    "sector_pct": 99,
+    "universe_n": 2051,
+    "universe_pct": 97,
+    "value": 0.1426
+   }
+  }
+ },
+ "signal_rank": 316,
+ "structural_analogs": {
+  "gp_core_pct": 97.5,
+  "gp_core_ratio": 2.7457,
+  "matches": [
+   {
+    "actual_downside": -0.0786,
+    "actual_return": 0.2374,
+    "actual_upside": 0.2374,
+    "days_in_region": 97,
+    "end_date": "2021-11-09",
+    "end_reason": "reversal",
+    "seq_len": 97,
+    "similarity": 0.5581,
+    "start_date": "2021-05-17",
+    "ticker": "TS",
+    "total_distance": 0.2916,
+    "trigger_date": "2021-07-08",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": -0.2312,
+    "actual_return": -0.1175,
+    "actual_upside": 0.0347,
+    "days_in_region": 82,
+    "end_date": "1999-09-15",
+    "end_reason": "reversal",
+    "seq_len": 82,
+    "similarity": 0.5505,
+    "start_date": "1999-07-01",
+    "ticker": "OSI",
+    "total_distance": 0.2985,
+    "trigger_date": "1999-08-02",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": -0.016,
+    "actual_return": 0.1261,
+    "actual_upside": 0.1261,
+    "days_in_region": 95,
+    "end_date": "2021-06-11",
+    "end_reason": "reversal",
+    "seq_len": 95,
+    "similarity": 0.5453,
+    "start_date": "2021-03-12",
+    "ticker": "ESI",
+    "total_distance": 0.3032,
+    "trigger_date": "2021-03-26",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": 0.0,
+    "actual_return": 0.2602,
+    "actual_upside": 0.2602,
+    "days_in_region": 70,
+    "end_date": "2018-01-26",
+    "end_reason": "reversal",
+    "seq_len": 70,
+    "similarity": 0.5363,
+    "start_date": "2017-11-22",
+    "ticker": "WUBA",
+    "total_distance": 0.3115,
+    "trigger_date": "2017-12-06",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": -0.1098,
+    "actual_return": 0.0741,
+    "actual_upside": 0.0741,
+    "days_in_region": 90,
+    "end_date": "2015-10-22",
+    "end_reason": "reversal",
+    "seq_len": 90,
+    "similarity": 0.5358,
+    "start_date": "2015-05-29",
+    "ticker": "FSL",
+    "total_distance": 0.312,
+    "trigger_date": "2015-07-01",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": -0.2355,
+    "actual_return": -0.0631,
+    "actual_upside": 0.0471,
+    "days_in_region": 68,
+    "end_date": "2018-12-03",
+    "end_reason": "reversal",
+    "seq_len": 68,
+    "similarity": 0.5343,
+    "start_date": "2018-09-28",
+    "ticker": "TDOC",
+    "total_distance": 0.3134,
+    "trigger_date": "2018-10-09",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": -0.0508,
+    "actual_return": 0.4576,
+    "actual_upside": 0.4576,
+    "days_in_region": 99,
+    "end_date": "1996-11-25",
+    "end_reason": "reversal",
+    "seq_len": 99,
+    "similarity": 0.5334,
+    "start_date": "1996-06-07",
+    "ticker": "GLM",
+    "total_distance": 0.3142,
+    "trigger_date": "1996-06-21",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": -0.0204,
+    "actual_return": 0.1939,
+    "actual_upside": 0.1939,
+    "days_in_region": 93,
+    "end_date": "1989-10-11",
+    "end_reason": "reversal",
+    "seq_len": 93,
+    "similarity": 0.533,
+    "start_date": "1989-07-27",
+    "ticker": "USHC",
+    "total_distance": 0.3146,
+    "trigger_date": "1989-09-12",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": -0.0081,
+    "actual_return": 0.1614,
+    "actual_upside": 0.1614,
+    "days_in_region": 73,
+    "end_date": "2004-04-26",
+    "end_reason": "reversal",
+    "seq_len": 73,
+    "similarity": 0.5328,
+    "start_date": "2004-03-04",
+    "ticker": "PSSI",
+    "total_distance": 0.3148,
+    "trigger_date": "2004-03-22",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": -0.2757,
+    "actual_return": -0.1611,
+    "actual_upside": 0.0116,
+    "days_in_region": 94,
+    "end_date": "1999-12-03",
+    "end_reason": "reversal",
+    "seq_len": 94,
+    "similarity": 0.5314,
+    "start_date": "1999-07-12",
+    "ticker": "MTW",
+    "total_distance": 0.3161,
+    "trigger_date": "1999-08-26",
+    "trigger_type": "shallow_drawdown"
+   }
+  ],
+  "panel": {
+   "edge": 0.194,
+   "hit_hi": 0.849,
+   "hit_lo": 0.702,
+   "hit_rate": 0.784,
+   "median_final": 0.2374,
+   "median_pain": 0.0508,
+   "n": 51,
+   "n_eff": 51.0,
+   "p25_final": 0.0292,
+   "p_pain_gt5": 0.51,
+   "return_to_pain": 3.351
+  },
+  "stats": {
+   "avg_similarity": 0.49,
+   "avg_trough": 0.1132,
+   "avg_upside": 0.2456,
+   "median_pain": 0.0851,
+   "median_return": 0.1679,
+   "n_matches": 200,
+   "p25_return": 0.011,
+   "p_pain_gt5": 0.65,
+   "return_to_pain": 1.598,
+   "top5_avg_trough": 0.0871,
+   "top5_avg_upside": 0.1465,
+   "top_similarity": 0.558,
+   "win_rate": 0.765
+  },
+  "total_matches": 200
+ },
+ "ticker": "OSCR",
+ "trending": {
+  "acceleration": 0.0012,
+  "avg_vol_20d": 5416126.9112,
+  "base_high_120": 33.81,
+  "breakout_confirmed": 0,
+  "close": 34.01,
+  "momentum_score": 0.8454,
+  "momentum_start": "2026-04-13",
+  "range_20": 0.1794,
+  "range_50": 0.2679,
+  "rank": 615,
+  "rank_down": null,
+  "rank_up": 232,
+  "ret_120": 1.1033,
+  "ret_20": 0.0059,
+  "ret_60": 0.1687,
+  "rundown_score": 0.0877,
+  "score_date": "2026-10-12",
+  "slope_20": 0.0025,
+  "slope_60": 0.0013,
+  "stage": "sustained",
+  "stage_label": "Trending",
+  "ticker": "OSCR",
+  "total_score": 0.5311,
+  "trend_ratio": 1.3634,
+  "vcp_detected": 0,
+  "vcp_score": 0.3216
+ }
+}

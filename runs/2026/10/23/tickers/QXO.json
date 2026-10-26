@@ -1,0 +1,1012 @@
+{
+ "date": "2026-10-23",
+ "detected_regions": {
+  "primary": {
+   "days_in_region": 105,
+   "region_start": "2026-08-21",
+   "trigger_date": "2026-09-18",
+   "trigger_type": "compression"
+  },
+  "secondary": [
+   {
+    "confidence_score": 0.4036,
+    "downside_q50": -0.1045,
+    "ev_score": 0.1192,
+    "region_start": "2026-04-17",
+    "seq_len": 192,
+    "trigger_date": "2026-10-08",
+    "trigger_type": "severe_drawdown",
+    "upside_q25": 0.0919,
+    "upside_q50": 0.2065,
+    "upside_q75": 0.3772
+   }
+  ]
+ },
+ "feature_attribution": {
+  "macro_driver_count": 13,
+  "risk_flags": [
+   "high_volatility"
+  ],
+  "top_drivers": [
+   {
+    "direction": "negative",
+    "feature": "dollar_volume",
+    "feature_value": 192742528.0,
+    "importance": 0.0008,
+    "importance_pct": 0.2862,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "negative",
+    "feature": "price_vs_sma200",
+    "feature_value": 0.5959,
+    "importance": 0.0005,
+    "importance_pct": 0.2028,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "positive",
+    "feature": "price_vs_high_52w",
+    "feature_value": 0.3883,
+    "importance": 0.0004,
+    "importance_pct": 0.1565,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "positive",
+    "feature": "volatility_20d",
+    "feature_value": 0.0421,
+    "importance": 0.0003,
+    "importance_pct": 0.0986,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "positive",
+    "feature": "historical_recovery_rate",
+    "feature_value": 0.3746,
+    "importance": 0.0003,
+    "importance_pct": 0.0975,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "negative",
+    "feature": "price_vs_low_52w",
+    "feature_value": 1.0365,
+    "importance": 0.0002,
+    "importance_pct": 0.0805,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "positive",
+    "feature": "shares_out",
+    "feature_value": 3371960.0,
+    "importance": 0.0002,
+    "importance_pct": 0.0779,
+    "method": "integrated_gradients"
+   }
+  ]
+ },
+ "fundamentals": {
+  "accrual": -0.0315,
+  "adx_14": 19.6909,
+  "altman_z_score": 3.3732,
+  "amihud_illiquidity": 0.0001,
+  "avg_volume": 19308985.7628,
+  "beta_252d": 0.9487,
+  "book_value_per_share": 16.0811,
+  "correlation_spy_60d": 0.5369,
+  "current_liabilities": 2515.0,
+  "current_ratio": 4.1145,
+  "daily_earnings_yield": -0.0144,
+  "daily_fcf_yield": 0.0019,
+  "daily_pb": 2.8721,
+  "daily_pe": -69.2505,
+  "daily_ps": 3.5803,
+  "days_since_52w_high": 174.0,
+  "debt_ebitda": 2.1261,
+  "debt_to_equity": 0.0817,
+  "dividend_yield": 0.0009,
+  "dollar_volume_20d_avg": 265788726.8292,
+  "earnings_quality": 3.9382,
+  "ebitda_growth_yoy": 4.1219,
+  "enterprise_value": 33673.2996,
+  "eps_basic": -0.14,
+  "eps_cagr_3y": -2.0929,
+  "eps_cagr_5y": -1.9084,
+  "eps_diluted": -0.14,
+  "eps_growth_accel": -4.3811,
+  "eps_growth_qoq": 0.6,
+  "eps_growth_yoy": -3.4762,
+  "eps_growth_yoy_q2": 0.9049,
+  "eps_growth_yoy_q3": 0.9352,
+  "eps_growth_yoy_q4": 0.9514,
+  "eps_growth_yoy_q5": 0.9829,
+  "eps_growth_yoy_q6": -4.6761,
+  "eps_growth_yoy_q7": -5.075,
+  "eps_growth_yoy_q8": -3.0446,
+  "eps_history_8q": [
+   -0.01,
+   -0.02,
+   -0.03,
+   -0.15,
+   -0.24,
+   -0.21,
+   -0.35,
+   -0.14
+  ],
+  "eps_ttm": -0.1518,
+  "ev_to_ebitda": 71.0257,
+  "ev_to_fcf": -135.7247,
+  "ev_to_sales": 10.3738,
+  "fcf_growth_yoy": -0.4346,
+  "fcf_margin": -0.0764,
+  "fcf_per_share": -0.3233,
+  "gross_margin": 0.2288,
+  "gross_margin_change_yoy": -0.0054,
+  "gross_margin_history": [
+   0.4077,
+   0.2561,
+   0.2532,
+   0.2491,
+   0.2271,
+   0.2288
+  ],
+  "inc_roic": 0.0317,
+  "interest_coverage": 2.4539,
+  "is_pre_revenue": false,
+  "margin_vs_sector_median": null,
+  "market_cap_ratio": 35439.2996,
+  "net_income": -55.0,
+  "net_margin": -0.0517,
+  "operating_income": -42.0,
+  "operating_margin": -0.0204,
+  "operating_margin_change_yoy": -0.0488,
+  "pb_ratio": 0.6536,
+  "pe_percentile_1y": 0.0198,
+  "pe_ratio": -15.4362,
+  "peg_trailing": 0.0444,
+  "piotroski_f_score": 1.0,
+  "price_vs_high_52w": 0.3883,
+  "price_vs_sma200": 0.5959,
+  "ps_percentile_1y": 0.9841,
+  "ps_ratio": 4.9429,
+  "quarter_labels_8q": [
+   "Q3 '24",
+   "Q4 '24",
+   "Q1 '25",
+   "Q2 '25",
+   "Q3 '25",
+   "Q4 '25",
+   "Q1 '26",
+   "Q2 '26"
+  ],
+  "quarterly_eps_growth_yoy": 0.0667,
+  "quarterly_eps_growth_yoy_8q": [
+   0.975,
+   -1.25,
+   -2.0,
+   0.9849,
+   -10.0,
+   -9.5,
+   -10.0,
+   0.0667
+  ],
+  "quarterly_revenue_growth_yoy": 0.7028,
+  "quarterly_revenue_growth_yoy_8q": [
+   -0.02,
+   0.0023,
+   -0.0643,
+   130.1158,
+   206.3964,
+   147.8158,
+   127.0871,
+   0.7028
+  ],
+  "revenue_cagr_3y": 4.8396,
+  "revenue_cagr_5y": 1.9736,
+  "revenue_growth_accel": -5.9179,
+  "revenue_growth_qoq": 0.8761,
+  "revenue_growth_yoy": 4.0821,
+  "revenue_growth_yoy_q2": 10.0,
+  "revenue_growth_yoy_q3": 10.0,
+  "revenue_growth_yoy_q4": 10.0,
+  "revenue_growth_yoy_q5": 10.0,
+  "revenue_growth_yoy_q6": 0.0021,
+  "revenue_growth_yoy_q7": 0.0432,
+  "revenue_growth_yoy_q8": 0.0886,
+  "revenue_history_8q": [
+   13.155,
+   14.743,
+   13.508,
+   1906.292,
+   2728.3,
+   2193.992,
+   1730.2,
+   3246.0
+  ],
+  "revenue_per_share": 4.2304,
+  "roa": -0.026,
+  "roce": -0.0116,
+  "roe": -0.0455,
+  "roic": -0.0254,
+  "rsi_14": 43.4936,
+  "sector_momentum": 0.0208,
+  "share_dilution_1y": 0.0,
+  "stock_vs_sector_20d": -0.1026,
+  "stock_vs_spy_20d": -0.1392,
+  "total_assets": 22665.0,
+  "vol_regime": 1.09,
+  "volatility_20d": 0.0421,
+  "volatility_60d": 0.0386,
+  "w52_high": 27.61,
+  "w52_low": 10.035
+ },
+ "market_characters": [
+  {
+   "id": "g8",
+   "name": "Boom-Bust"
+  }
+ ],
+ "model_analogs": {
+  "matches": [
+   {
+    "actual_downside": -0.0506,
+    "actual_return": -0.0506,
+    "actual_upside": 0.2236,
+    "days_in_region": 70,
+    "end_date": "2022-12-23",
+    "end_reason": "reversal",
+    "similarity": 0.9636,
+    "start_date": "2022-10-14",
+    "ticker": "GROY",
+    "trigger_date": "2022-10-19",
+    "trigger_type": "shallow_runup"
+   },
+   {
+    "actual_downside": -0.1917,
+    "actual_return": 0.0111,
+    "actual_upside": 0.101,
+    "days_in_region": 132,
+    "end_date": "2020-01-23",
+    "end_reason": "reversal",
+    "similarity": 0.9609,
+    "start_date": "2019-09-13",
+    "ticker": "LDL",
+    "trigger_date": "2019-10-03",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": -0.2618,
+    "actual_return": 0.0172,
+    "actual_upside": 0.0172,
+    "days_in_region": 224,
+    "end_date": "2019-06-28",
+    "end_reason": "reversal",
+    "similarity": 0.9604,
+    "start_date": "2018-11-16",
+    "ticker": "AKS",
+    "trigger_date": "2019-05-14",
+    "trigger_type": "severe_drawdown"
+   },
+   {
+    "actual_downside": -0.2101,
+    "actual_return": -0.1307,
+    "actual_upside": 0.0,
+    "days_in_region": 53,
+    "end_date": "2022-11-21",
+    "end_reason": "new_pattern",
+    "similarity": 0.9604,
+    "start_date": "2022-09-29",
+    "ticker": "EOLS",
+    "trigger_date": "2022-10-06",
+    "trigger_type": "shallow_runup"
+   },
+   {
+    "actual_downside": -0.0871,
+    "actual_return": 0.3629,
+    "actual_upside": 0.3629,
+    "days_in_region": 58,
+    "end_date": "2022-12-01",
+    "end_reason": "reversal",
+    "similarity": 0.9604,
+    "start_date": "2022-10-04",
+    "ticker": "KNSA",
+    "trigger_date": "2022-10-21",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": -0.177,
+    "actual_return": 0.006,
+    "actual_upside": 0.0631,
+    "days_in_region": 88,
+    "end_date": "2022-12-05",
+    "end_reason": "reversal",
+    "similarity": 0.9597,
+    "start_date": "2022-09-08",
+    "ticker": "BPMC",
+    "trigger_date": "2022-10-11",
+    "trigger_type": "severe_drawdown"
+   },
+   {
+    "actual_downside": 0.0,
+    "actual_return": 0.4271,
+    "actual_upside": 0.4271,
+    "days_in_region": 205,
+    "end_date": "2019-12-12",
+    "end_reason": "reversal",
+    "similarity": 0.9596,
+    "start_date": "2019-05-21",
+    "ticker": "OIS",
+    "trigger_date": "2019-10-18",
+    "trigger_type": "severe_drawdown"
+   },
+   {
+    "actual_downside": -0.5121,
+    "actual_return": -0.5121,
+    "actual_upside": 0.0531,
+    "days_in_region": 50,
+    "end_date": "2016-03-01",
+    "end_reason": "reversal",
+    "similarity": 0.9595,
+    "start_date": "2016-01-11",
+    "ticker": "CPRX",
+    "trigger_date": "2016-01-19",
+    "trigger_type": "shallow_runup"
+   },
+   {
+    "actual_downside": 0.0,
+    "actual_return": 0.2554,
+    "actual_upside": 0.2554,
+    "days_in_region": 64,
+    "end_date": "2022-11-15",
+    "end_reason": "reversal",
+    "similarity": 0.9589,
+    "start_date": "2022-09-12",
+    "ticker": "NVCR",
+    "trigger_date": "2022-10-25",
+    "trigger_type": "severe_drawdown"
+   },
+   {
+    "actual_downside": -0.368,
+    "actual_return": -0.368,
+    "actual_upside": 0.0649,
+    "days_in_region": 54,
+    "end_date": "2022-11-29",
+    "end_reason": "reversal",
+    "similarity": 0.9585,
+    "start_date": "2022-10-06",
+    "ticker": "BKD",
+    "trigger_date": "2022-10-11",
+    "trigger_type": "shallow_runup"
+   }
+  ],
+  "stats": {
+   "avg_max_drawdown": 0.1308,
+   "avg_similarity": 0.957,
+   "avg_trough": 0.1308,
+   "avg_upside": 0.2307,
+   "best_return": 0.5909,
+   "downside_range": [
+    -0.5121,
+    0.0
+   ],
+   "median_return": 0.125,
+   "n_matches": 50,
+   "outcome_agreement": true,
+   "return_p25": -0.0442,
+   "return_p5": -0.2641,
+   "return_p75": 0.2866,
+   "return_p95": 0.5093,
+   "sim_weighted_win_rate": 0.7,
+   "top5_avg_trough": 0.1603,
+   "top5_avg_upside": 0.1409,
+   "top_similarity": 0.964,
+   "upside_range": [
+    0.0,
+    0.8571
+   ],
+   "win_rate": 0.7,
+   "worst_return": -0.5121,
+   "years_span": 12
+  },
+  "total_matches": 50
+ },
+ "peer_group": {
+  "buckets": [
+   "Holding Companies, Treasury Assets & Investment Income",
+   "Construction Materials, Distribution & Building Supply"
+  ],
+  "groups": {
+   "Construction Materials, Distribution & Building Supply": [
+    {
+     "market_cap_m": 7854.2048,
+     "price_vs_sma200": 0.8696,
+     "return_30d": 0.0332,
+     "return_7d": 0.0355,
+     "revenue_driver": "waterworks distribution",
+     "signal_rank": 1199,
+     "stock_vs_spy_20d": -0.0004,
+     "ticker": "CNM"
+    },
+    {
+     "market_cap_m": 1876.2279,
+     "price_vs_sma200": 0.8806,
+     "return_30d": 0.0315,
+     "return_7d": 0.0286,
+     "revenue_driver": "hardware distribution",
+     "signal_rank": 620,
+     "stock_vs_spy_20d": 0.0366,
+     "ticker": "HLMN"
+    },
+    {
+     "market_cap_m": 3075.6803,
+     "price_vs_sma200": 1.005,
+     "return_30d": 0.0305,
+     "return_7d": 0.0508,
+     "revenue_driver": "building material distribution",
+     "signal_rank": 747,
+     "stock_vs_spy_20d": 0.0231,
+     "ticker": "BCC"
+    },
+    {
+     "market_cap_m": 51581.1239,
+     "price_vs_sma200": 0.9547,
+     "return_30d": 0.0194,
+     "return_7d": 0.0176,
+     "revenue_driver": "plumbing distribution",
+     "signal_rank": 1127,
+     "stock_vs_spy_20d": 0.0338,
+     "ticker": "FERG"
+    },
+    {
+     "market_cap_m": 506.9779,
+     "price_vs_sma200": 1.1859,
+     "return_30d": -0.0377,
+     "return_7d": 0.0851,
+     "revenue_driver": "building product distribution",
+     "signal_rank": 1184,
+     "stock_vs_spy_20d": 0.0205,
+     "ticker": "BXC"
+    },
+    {
+     "market_cap_m": 7299.4518,
+     "price_vs_sma200": 0.6952,
+     "return_30d": -0.0583,
+     "return_7d": 0.1253,
+     "revenue_driver": "lumber distribution",
+     "signal_rank": 735,
+     "stock_vs_spy_20d": -0.0239,
+     "ticker": "BLDR"
+    },
+    {
+     "market_cap_m": 1219.2207,
+     "price_vs_sma200": 0.9642,
+     "return_30d": -0.07,
+     "return_7d": 0.0027,
+     "revenue_driver": "engineered steel pipe products",
+     "signal_rank": 234,
+     "stock_vs_spy_20d": -0.0383,
+     "ticker": "NWPX"
+    },
+    {
+     "market_cap_m": 12323.0466,
+     "price_vs_sma200": 0.8297,
+     "return_30d": -0.1103,
+     "return_7d": -0.1298,
+     "revenue_driver": "insulation installation",
+     "signal_rank": null,
+     "stock_vs_spy_20d": -0.1228,
+     "ticker": "BLD"
+    },
+    {
+     "market_cap_m": 48927.1396,
+     "price_vs_sma200": 0.5959,
+     "return_30d": -0.1462,
+     "return_7d": 0.0174,
+     "revenue_driver": "building products distribution",
+     "signal_rank": 722,
+     "stock_vs_spy_20d": -0.1392,
+     "ticker": "QXO"
+    },
+    {
+     "market_cap_m": 1620.729,
+     "price_vs_sma200": 0.8924,
+     "return_30d": -0.1588,
+     "return_7d": 0.0586,
+     "revenue_driver": "infrastructure construction products",
+     "signal_rank": 1181,
+     "stock_vs_spy_20d": -0.0274,
+     "ticker": "ROCK"
+    }
+   ],
+   "Holding Companies, Treasury Assets & Investment Income": [
+    {
+     "market_cap_m": 127523.3918,
+     "price_vs_sma200": 1.06,
+     "return_30d": 0.0787,
+     "return_7d": 0.0495,
+     "revenue_driver": "commercial insurance premiums",
+     "signal_rank": 1779,
+     "stock_vs_spy_20d": 0.1109,
+     "ticker": "AIG"
+    },
+    {
+     "market_cap_m": 572.2618,
+     "price_vs_sma200": 0.8421,
+     "return_30d": 0.0622,
+     "return_7d": 0.0678,
+     "revenue_driver": "workers' compensation premiums",
+     "signal_rank": 1555,
+     "stock_vs_spy_20d": 0.1344,
+     "ticker": "AMSF"
+    },
+    {
+     "market_cap_m": 65309.8455,
+     "price_vs_sma200": 1.043,
+     "return_30d": 0.0454,
+     "return_7d": 0.0195,
+     "revenue_driver": "supplemental health premiums",
+     "signal_rank": 1929,
+     "stock_vs_spy_20d": 0.075,
+     "ticker": "AFL"
+    },
+    {
+     "market_cap_m": 28743.3804,
+     "price_vs_sma200": 1.0513,
+     "return_30d": 0.0383,
+     "return_7d": 0.0578,
+     "revenue_driver": "commercial property insurance",
+     "signal_rank": 1856,
+     "stock_vs_spy_20d": 0.1,
+     "ticker": "CINF"
+    },
+    {
+     "market_cap_m": 30338.3326,
+     "price_vs_sma200": 0.936,
+     "return_30d": -0.0052,
+     "return_7d": 0.0279,
+     "revenue_driver": "regulated electric utility",
+     "signal_rank": 1935,
+     "stock_vs_spy_20d": 0.1013,
+     "ticker": "DTE"
+    },
+    {
+     "market_cap_m": 604.5249,
+     "price_vs_sma200": 1.0014,
+     "return_30d": -0.0279,
+     "return_7d": 0.0352,
+     "revenue_driver": "property insurance premiums",
+     "signal_rank": null,
+     "stock_vs_spy_20d": -0.0873,
+     "ticker": "DGICA"
+    },
+    {
+     "market_cap_m": 7027.7533,
+     "price_vs_sma200": 1.0855,
+     "return_30d": -0.0312,
+     "return_7d": 0.0593,
+     "revenue_driver": "private mortgage insurance",
+     "signal_rank": 73,
+     "stock_vs_spy_20d": 0.0349,
+     "ticker": "ACT"
+    },
+    {
+     "market_cap_m": 87691.0562,
+     "price_vs_sma200": 0.943,
+     "return_30d": -0.082,
+     "return_7d": 0.1107,
+     "revenue_driver": "private equity management fees",
+     "signal_rank": 625,
+     "stock_vs_spy_20d": 0.0115,
+     "ticker": "BX"
+    },
+    {
+     "market_cap_m": 76627.4445,
+     "price_vs_sma200": 0.9089,
+     "return_30d": -0.1252,
+     "return_7d": -0.0049,
+     "revenue_driver": "management fees",
+     "signal_rank": 498,
+     "stock_vs_spy_20d": -0.0575,
+     "ticker": "APO"
+    },
+    {
+     "market_cap_m": 48927.1396,
+     "price_vs_sma200": 0.5959,
+     "return_30d": -0.1462,
+     "return_7d": 0.0174,
+     "revenue_driver": "building products distribution",
+     "signal_rank": 722,
+     "stock_vs_spy_20d": -0.1392,
+     "ticker": "QXO"
+    }
+   ]
+  }
+ },
+ "predictions": {
+  "badge_count": 0,
+  "confidence_score": 0.3042,
+  "conviction_label": "SPECULATIVE",
+  "data_quality_flags": [],
+  "ev_score": 0.0711,
+  "is_diamond": false,
+  "passes_tradability_filter": true,
+  "quality_label": "HIGH",
+  "quantiles": {
+   "downside_q10": -0.3481,
+   "downside_q25": -0.2281,
+   "downside_q50": -0.1329,
+   "downside_q75": -0.0472,
+   "downside_q90": -0.0122,
+   "path_volatility": 0.0401,
+   "risk_reward": 1.4024,
+   "uncertainty": 0.5253,
+   "upside_q10": 0.0241,
+   "upside_q25": 0.0779,
+   "upside_q50": 0.1864,
+   "upside_q75": 0.3391,
+   "upside_q90": 0.5494
+  },
+  "rank": 722,
+  "rank_score": 0.0297,
+  "tradability_filter_reasons": []
+ },
+ "profile": {
+  "_local": {
+   "dividend_yield": 0.0009,
+   "eps_growth_yoy": -3.4762,
+   "pe_ratio": -15.4362,
+   "revenue_growth_yoy": 4.0821,
+   "roe": -0.0455
+  },
+  "beta": 2.276,
+  "betaTTM": null,
+  "ceo": "Bradley S. Jacobs",
+  "companyName": "QXO, Inc.",
+  "country": "US",
+  "debtToEquityTTM": null,
+  "description": "QXO, Inc. is a publicly traded distributor of roofing, waterproofing and complementary building products in the United States. It plans to become tech-enabled in the building products distribution industry and generate outsized value for shareholders. The company was founded on October 3, 2002, and is headquartered in Greenwich, CT.",
+  "dividendYielTTM": null,
+  "enterpriseValueOverEBITDATTM": null,
+  "exchangeShortName": "NYSE",
+  "fullTimeEmployees": "7794",
+  "industry": "Industrial - Distribution",
+  "ipoDate": "2012-04-17",
+  "latest_earnings_date": "2026-08-14",
+  "marketCapTTM": null,
+  "mktCap": 10904019900,
+  "peRatioTTM": null,
+  "price": 10.51,
+  "priceToSalesRatioTTM": null,
+  "returnOnEquityTTM": -0.0511,
+  "revenue_description": "QXO is building a platform around technology and building-products distribution. Revenue is driven by subscription ACV from enterprise license agreements and usage-based consumption, with module expansion and new product attach as growth levers.",
+  "revenue_description_themes": [
+   "building products distribution roll-up",
+   "acquisition-driven revenue expansion",
+   "branch network and market share growth"
+  ],
+  "revenue_taxonomy": [
+   {
+    "bucket": "Construction Materials, Distribution & Building Supply",
+    "matched_tags": [
+     "building products distribution",
+     "roofing materials distribution"
+    ],
+    "path": "Real Estate & Infrastructure › Property & Infrastructure Services › Construction Materials, Distribution & Building Supply",
+    "sector": "Real Estate & Infrastructure",
+    "segment": "Property & Infrastructure Services"
+   },
+   {
+    "bucket": "Holding Companies, Treasury Assets & Investment Income",
+    "matched_tags": [
+     "acquisition roll-up strategy"
+    ],
+    "path": "Financials › Capital Markets Insurance & Investments › Holding Companies, Treasury Assets & Investment Income",
+    "sector": "Financials",
+    "segment": "Capital Markets Insurance & Investments"
+   }
+  ],
+  "revenue_themes": [
+   "building products distribution",
+   "roofing materials distribution",
+   "acquisition roll-up strategy"
+  ],
+  "sector": "Industrials",
+  "website": "https://www.qxo.com"
+ },
+ "report": null,
+ "scorecard": {
+  "headline": {
+   "avg_universe_pct": 37,
+   "label": "below_average",
+   "metric_count": 7
+  },
+  "metrics": {
+   "debt_to_equity": {
+    "direction": "lower",
+    "label": "D/E Ratio",
+    "sector": "Info Tech",
+    "sector_n": 311,
+    "sector_pct": 62,
+    "universe_n": 2080,
+    "universe_pct": 71,
+    "value": 0.0817
+   },
+   "eps_growth_yoy": {
+    "direction": "higher",
+    "label": "EPS Growth",
+    "sector": "Info Tech",
+    "sector_n": 310,
+    "sector_pct": 5,
+    "universe_n": 1890,
+    "universe_pct": 4,
+    "value": -3.4762
+   },
+   "gross_margin": {
+    "direction": "higher",
+    "label": "Gross Margin",
+    "sector": "Info Tech",
+    "sector_n": 310,
+    "sector_pct": 13,
+    "universe_n": 2009,
+    "universe_pct": 20,
+    "value": 0.2288
+   },
+   "operating_margin": {
+    "direction": "higher",
+    "label": "Op. Margin",
+    "sector": "Info Tech",
+    "sector_n": 310,
+    "sector_pct": 24,
+    "universe_n": 2009,
+    "universe_pct": 17,
+    "value": -0.0204
+   },
+   "revenue_growth_yoy": {
+    "direction": "higher",
+    "label": "Rev Growth",
+    "sector": "Info Tech",
+    "sector_n": 310,
+    "sector_pct": 98,
+    "universe_n": 1833,
+    "universe_pct": 98,
+    "value": 4.0821
+   },
+   "roe": {
+    "direction": "higher",
+    "label": "ROE",
+    "sector": "Info Tech",
+    "sector_n": 314,
+    "sector_pct": 26,
+    "universe_n": 2100,
+    "universe_pct": 25,
+    "value": -0.0455
+   },
+   "roic": {
+    "direction": "higher",
+    "label": "ROIC",
+    "sector": "Info Tech",
+    "sector_n": 309,
+    "sector_pct": 28,
+    "universe_n": 2051,
+    "universe_pct": 24,
+    "value": -0.0027
+   }
+  }
+ },
+ "signal_rank": 722,
+ "structural_analogs": {
+  "gp_core_pct": 25.5,
+  "gp_core_ratio": 1.0425,
+  "matches": [
+   {
+    "actual_downside": -0.1029,
+    "actual_return": -0.0618,
+    "actual_upside": 0.25,
+    "days_in_region": 67,
+    "end_date": "2005-01-26",
+    "end_reason": "reversal",
+    "seq_len": 67,
+    "similarity": 0.5885,
+    "start_date": "2004-08-11",
+    "ticker": "AMCC",
+    "total_distance": 0.2651,
+    "trigger_date": "2004-08-19",
+    "trigger_type": "runup"
+   },
+   {
+    "actual_downside": -0.1827,
+    "actual_return": -0.0559,
+    "actual_upside": 0.1837,
+    "days_in_region": 68,
+    "end_date": "2022-06-24",
+    "end_reason": "new_pattern",
+    "seq_len": 68,
+    "similarity": 0.5838,
+    "start_date": "2022-05-11",
+    "ticker": "AZEK",
+    "total_distance": 0.2691,
+    "trigger_date": "2022-05-20",
+    "trigger_type": "runup"
+   },
+   {
+    "actual_downside": -0.2044,
+    "actual_return": -0.2044,
+    "actual_upside": 0.3143,
+    "days_in_region": 66,
+    "end_date": "2008-10-07",
+    "end_reason": "reversal",
+    "seq_len": 66,
+    "similarity": 0.5813,
+    "start_date": "2008-07-14",
+    "ticker": "AZTA",
+    "total_distance": 0.2712,
+    "trigger_date": "2008-07-21",
+    "trigger_type": "shallow_runup"
+   },
+   {
+    "actual_downside": -0.0873,
+    "actual_return": -0.0873,
+    "actual_upside": 0.1153,
+    "days_in_region": 69,
+    "end_date": "2004-10-22",
+    "end_reason": "reversal",
+    "seq_len": 69,
+    "similarity": 0.5768,
+    "start_date": "2004-08-09",
+    "ticker": "CAL",
+    "total_distance": 0.2751,
+    "trigger_date": "2004-08-19",
+    "trigger_type": "shallow_runup"
+   },
+   {
+    "actual_downside": -0.0432,
+    "actual_return": 0.1417,
+    "actual_upside": 0.3915,
+    "days_in_region": 68,
+    "end_date": "2008-06-11",
+    "end_reason": "reversal",
+    "seq_len": 68,
+    "similarity": 0.5694,
+    "start_date": "2008-01-24",
+    "ticker": "AEIS",
+    "total_distance": 0.2816,
+    "trigger_date": "2008-02-04",
+    "trigger_type": "runup"
+   },
+   {
+    "actual_downside": 0.0,
+    "actual_return": 0.0605,
+    "actual_upside": 0.2335,
+    "days_in_region": 69,
+    "end_date": "2016-05-04",
+    "end_reason": "reversal",
+    "seq_len": 69,
+    "similarity": 0.5684,
+    "start_date": "2016-02-03",
+    "ticker": "MTOR",
+    "total_distance": 0.2825,
+    "trigger_date": "2016-02-16",
+    "trigger_type": "runup"
+   },
+   {
+    "actual_downside": -0.1422,
+    "actual_return": -0.1125,
+    "actual_upside": 0.1866,
+    "days_in_region": 65,
+    "end_date": "2005-01-24",
+    "end_reason": "reversal",
+    "seq_len": 65,
+    "similarity": 0.5619,
+    "start_date": "2004-09-08",
+    "ticker": "PMCS",
+    "total_distance": 0.2882,
+    "trigger_date": "2004-09-14",
+    "trigger_type": "runup"
+   },
+   {
+    "actual_downside": -0.132,
+    "actual_return": -0.132,
+    "actual_upside": 0.1577,
+    "days_in_region": 83,
+    "end_date": "2012-11-13",
+    "end_reason": "reversal",
+    "seq_len": 83,
+    "similarity": 0.5605,
+    "start_date": "2012-08-02",
+    "ticker": "TEA",
+    "total_distance": 0.2895,
+    "trigger_date": "2012-08-08",
+    "trigger_type": "shallow_runup"
+   },
+   {
+    "actual_downside": -0.1419,
+    "actual_return": 0.0568,
+    "actual_upside": 0.0568,
+    "days_in_region": 162,
+    "end_date": "2006-08-07",
+    "end_reason": "reversal",
+    "seq_len": 162,
+    "similarity": 0.5597,
+    "start_date": "2006-01-11",
+    "ticker": "TOL",
+    "total_distance": 0.2902,
+    "trigger_date": "2006-05-01",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": -0.1535,
+    "actual_return": -0.1535,
+    "actual_upside": 0.1212,
+    "days_in_region": 64,
+    "end_date": "2008-03-17",
+    "end_reason": "reversal",
+    "seq_len": 64,
+    "similarity": 0.5589,
+    "start_date": "2008-01-09",
+    "ticker": "TLAB",
+    "total_distance": 0.2909,
+    "trigger_date": "2008-01-14",
+    "trigger_type": "runup"
+   }
+  ],
+  "panel": {
+   "edge": -0.1819,
+   "hit_hi": 0.381,
+   "hit_lo": 0.22,
+   "hit_rate": 0.294,
+   "median_final": -0.0782,
+   "median_pain": 0.132,
+   "n": 51,
+   "n_eff": 51.0,
+   "p25_final": -0.187,
+   "p_pain_gt5": 0.882,
+   "return_to_pain": -0.515
+  },
+  "stats": {
+   "avg_similarity": 0.522,
+   "avg_trough": 0.1856,
+   "avg_upside": 0.2189,
+   "median_pain": 0.1438,
+   "median_return": -0.0864,
+   "n_matches": 200,
+   "p25_return": -0.2201,
+   "p_pain_gt5": 0.81,
+   "return_to_pain": -0.527,
+   "top5_avg_trough": 0.1241,
+   "top5_avg_upside": 0.251,
+   "top_similarity": 0.589,
+   "win_rate": 0.345
+  },
+  "total_matches": 200
+ },
+ "ticker": "QXO",
+ "trending": {
+  "acceleration": -0.0045,
+  "avg_vol_20d": 15921284.1875,
+  "base_high_120": 25.0,
+  "breakout_confirmed": 0,
+  "close": 12.28,
+  "momentum_score": 0.0888,
+  "momentum_start": "2026-08-17",
+  "range_20": 0.261,
+  "range_50": 0.4116,
+  "rank": 1768,
+  "rank_down": 39,
+  "rank_up": null,
+  "ret_120": -0.3637,
+  "ret_20": -0.1134,
+  "ret_60": -0.3109,
+  "rundown_score": 0.8537,
+  "score_date": "2026-09-23",
+  "slope_20": -0.0092,
+  "slope_60": -0.0048,
+  "stage": "rundown",
+  "stage_label": "rundown",
+  "ticker": "QXO",
+  "total_score": 0.2551,
+  "trend_ratio": 0.7278,
+  "vcp_detected": 0,
+  "vcp_score": 0.366
+ }
+}

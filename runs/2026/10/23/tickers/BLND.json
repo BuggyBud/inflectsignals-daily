@@ -1,0 +1,1002 @@
+{
+ "date": "2026-10-23",
+ "detected_regions": {
+  "primary": {
+   "days_in_region": 117,
+   "region_start": "2026-08-05",
+   "trigger_date": "2026-10-20",
+   "trigger_type": "severe_drawdown"
+  },
+  "secondary": []
+ },
+ "feature_attribution": {
+  "macro_driver_count": 13,
+  "risk_flags": [
+   "high_volatility"
+  ],
+  "top_drivers": [
+   {
+    "direction": "negative",
+    "feature": "price_vs_sma200",
+    "feature_value": 0.7007,
+    "importance": 0.0007,
+    "importance_pct": 0.2174,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "positive",
+    "feature": "ma_200_slope",
+    "feature_value": -0.1104,
+    "importance": 0.0006,
+    "importance_pct": 0.1836,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "positive",
+    "feature": "price_vs_high_52w",
+    "feature_value": 0.3287,
+    "importance": 0.0005,
+    "importance_pct": 0.1644,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "positive",
+    "feature": "historical_recovery_rate",
+    "feature_value": 0.2528,
+    "importance": 0.0004,
+    "importance_pct": 0.1393,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "positive",
+    "feature": "volatility_20d",
+    "feature_value": 0.0507,
+    "importance": 0.0004,
+    "importance_pct": 0.1315,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "negative",
+    "feature": "stock_vs_sector_20d",
+    "feature_value": 0.0381,
+    "importance": 0.0003,
+    "importance_pct": 0.0955,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "positive",
+    "feature": "days_since_52w_high",
+    "feature_value": 470.0,
+    "importance": 0.0002,
+    "importance_pct": 0.0682,
+    "method": "integrated_gradients"
+   }
+  ]
+ },
+ "fundamentals": {
+  "accrual": -0.05,
+  "adx_14": 43.9741,
+  "altman_z_score": 3.4034,
+  "amihud_illiquidity": 0.0255,
+  "avg_volume": 2074071.0674,
+  "beta_252d": 0.4775,
+  "book_value_per_share": -0.31,
+  "correlation_spy_60d": 0.3222,
+  "current_liabilities": 46.704,
+  "current_ratio": 1.6248,
+  "daily_earnings_yield": -0.018,
+  "daily_fcf_yield": -0.0105,
+  "daily_pb": -4.0291,
+  "daily_pe": -55.6472,
+  "daily_ps": 2.3056,
+  "days_since_52w_high": 470.0,
+  "debt_ebitda": 0.0,
+  "debt_to_equity": 0.0,
+  "dividend_yield": 0.0,
+  "dollar_volume_20d_avg": 1551799.4116,
+  "earnings_quality": -2.3836,
+  "ebitda_growth_yoy": 0.3054,
+  "enterprise_value": 254.7934,
+  "eps_basic": -0.03,
+  "eps_cagr_3y": -1.3841,
+  "eps_cagr_5y": null,
+  "eps_diluted": -0.03,
+  "eps_growth_accel": -0.2172,
+  "eps_growth_qoq": 0.4,
+  "eps_growth_yoy": 0.3483,
+  "eps_growth_yoy_q2": 0.5656,
+  "eps_growth_yoy_q3": 0.69,
+  "eps_growth_yoy_q4": 0.7812,
+  "eps_growth_yoy_q5": 0.75,
+  "eps_growth_yoy_q6": 0.6842,
+  "eps_growth_yoy_q7": 0.7143,
+  "eps_growth_yoy_q8": 0.6768,
+  "eps_history_8q": [
+   -0.02,
+   -0.03,
+   -0.04,
+   -0.03,
+   0.02,
+   -0.0282,
+   -0.05,
+   -0.03
+  ],
+  "eps_ttm": -0.021,
+  "ev_to_ebitda": -24.2268,
+  "ev_to_fcf": 19.1043,
+  "ev_to_sales": 7.53,
+  "fcf_growth_yoy": -0.3097,
+  "fcf_margin": 0.3942,
+  "fcf_per_share": 0.0556,
+  "gross_margin": 0.7555,
+  "gross_margin_change_yoy": -0.0242,
+  "gross_margin_history": [
+   0.6937,
+   0.7038,
+   0.7093,
+   0.7546,
+   0.7618,
+   0.7555
+  ],
+  "inc_roic": -0.1266,
+  "interest_coverage": null,
+  "is_pre_revenue": false,
+  "margin_vs_sector_median": null,
+  "market_cap_ratio": 299.6604,
+  "net_income": -6.41,
+  "net_margin": -0.0414,
+  "operating_income": -1.576,
+  "operating_margin": -0.1144,
+  "operating_margin_change_yoy": 0.0629,
+  "pb_ratio": -6.2901,
+  "pe_percentile_1y": 0.1746,
+  "pe_ratio": -22.1088,
+  "peg_trailing": -0.8343,
+  "piotroski_f_score": 3.0,
+  "price_vs_high_52w": 0.3287,
+  "price_vs_sma200": 0.7007,
+  "ps_percentile_1y": 0.9127,
+  "ps_ratio": 3.8426,
+  "quarter_labels_8q": [
+   "Q3 '24",
+   "Q4 '24",
+   "Q1 '25",
+   "Q2 '25",
+   "Q3 '25",
+   "Q4 '25",
+   "Q1 '26",
+   "Q2 '26"
+  ],
+  "quarterly_eps_growth_yoy": 0.0,
+  "quarterly_eps_growth_yoy_8q": [
+   0.8889,
+   0.7692,
+   0.5,
+   0.6667,
+   2.0,
+   0.06,
+   -0.25,
+   0.0
+  ],
+  "quarterly_revenue_growth_yoy": 0.0734,
+  "quarterly_revenue_growth_yoy_8q": [
+   -0.1844,
+   0.1469,
+   0.1229,
+   0.0985,
+   -0.0074,
+   -0.2168,
+   0.1521,
+   0.0734
+  ],
+  "revenue_cagr_3y": -0.1,
+  "revenue_cagr_5y": null,
+  "revenue_growth_accel": -0.0035,
+  "revenue_growth_qoq": 0.0971,
+  "revenue_growth_yoy": -0.0213,
+  "revenue_growth_yoy_q2": -0.0178,
+  "revenue_growth_yoy_q3": -0.0273,
+  "revenue_growth_yoy_q4": 0.0889,
+  "revenue_growth_yoy_q5": 0.0277,
+  "revenue_growth_yoy_q6": -0.0933,
+  "revenue_growth_yoy_q7": -0.19,
+  "revenue_growth_yoy_q8": -0.2555,
+  "revenue_history_8q": [
+   33.104,
+   41.408,
+   26.77,
+   31.523,
+   32.86,
+   32.432,
+   30.843,
+   33.837
+  ],
+  "revenue_per_share": 0.141,
+  "roa": -0.0353,
+  "roce": -0.1439,
+  "roe": 0.0827,
+  "roic": -0.0556,
+  "rsi_14": 68.0747,
+  "sector_momentum": 0.0543,
+  "share_dilution_1y": 0.0,
+  "stock_vs_sector_20d": 0.0381,
+  "stock_vs_spy_20d": 0.0693,
+  "total_assets": 143.566,
+  "vol_regime": 1.0411,
+  "volatility_20d": 0.0507,
+  "volatility_60d": 0.0487,
+  "w52_high": 3.615,
+  "w52_low": 0.8813
+ },
+ "market_characters": [
+  {
+   "id": "g8",
+   "name": "Boom-Bust"
+  }
+ ],
+ "model_analogs": {
+  "matches": [
+   {
+    "actual_downside": -0.0782,
+    "actual_return": -0.0782,
+    "actual_upside": 0.3302,
+    "days_in_region": 56,
+    "end_date": "2019-12-13",
+    "end_reason": "reversal",
+    "similarity": 0.973,
+    "start_date": "2019-10-18",
+    "ticker": "UNFI",
+    "trigger_date": "2019-10-24",
+    "trigger_type": "shallow_runup"
+   },
+   {
+    "actual_downside": -0.2403,
+    "actual_return": 0.3312,
+    "actual_upside": 0.3312,
+    "days_in_region": 89,
+    "end_date": "2019-12-24",
+    "end_reason": "reversal",
+    "similarity": 0.9727,
+    "start_date": "2019-09-26",
+    "ticker": "TTI",
+    "trigger_date": "2019-11-08",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": -0.2546,
+    "actual_return": -0.1661,
+    "actual_upside": 0.1292,
+    "days_in_region": 43,
+    "end_date": "2012-10-12",
+    "end_reason": "new_pattern",
+    "similarity": 0.9721,
+    "start_date": "2012-08-30",
+    "ticker": "RSH",
+    "trigger_date": "2012-09-10",
+    "trigger_type": "shallow_runup"
+   },
+   {
+    "actual_downside": -0.1709,
+    "actual_return": 0.4255,
+    "actual_upside": 0.7382,
+    "days_in_region": 63,
+    "end_date": "2006-05-15",
+    "end_reason": "reversal",
+    "similarity": 0.9713,
+    "start_date": "2006-03-13",
+    "ticker": "MOVI",
+    "trigger_date": "2006-03-16",
+    "trigger_type": "runup"
+   },
+   {
+    "actual_downside": -0.5029,
+    "actual_return": -0.5029,
+    "actual_upside": 0.0,
+    "days_in_region": 95,
+    "end_date": "2008-03-14",
+    "end_reason": "reversal",
+    "similarity": 0.971,
+    "start_date": "2007-12-10",
+    "ticker": "QLTY",
+    "trigger_date": "2007-12-12",
+    "trigger_type": "runup"
+   },
+   {
+    "actual_downside": -0.3551,
+    "actual_return": 0.0163,
+    "actual_upside": 0.2857,
+    "days_in_region": 50,
+    "end_date": "2016-03-10",
+    "end_reason": "reversal",
+    "similarity": 0.971,
+    "start_date": "2016-01-20",
+    "ticker": "FMSA",
+    "trigger_date": "2016-01-27",
+    "trigger_type": "runup"
+   },
+   {
+    "actual_downside": -0.0765,
+    "actual_return": -0.0554,
+    "actual_upside": 0.4776,
+    "days_in_region": 113,
+    "end_date": "2000-02-08",
+    "end_reason": "reversal",
+    "similarity": 0.9709,
+    "start_date": "1999-10-18",
+    "ticker": "KEA",
+    "trigger_date": "1999-10-21",
+    "trigger_type": "runup"
+   },
+   {
+    "actual_downside": 0.0,
+    "actual_return": 0.5984,
+    "actual_upside": 0.9606,
+    "days_in_region": 56,
+    "end_date": "1999-12-17",
+    "end_reason": "reversal",
+    "similarity": 0.9706,
+    "start_date": "1999-10-22",
+    "ticker": "KFRC",
+    "trigger_date": "1999-11-03",
+    "trigger_type": "runup"
+   },
+   {
+    "actual_downside": -0.265,
+    "actual_return": -0.1709,
+    "actual_upside": 0.1795,
+    "days_in_region": 99,
+    "end_date": "1999-06-17",
+    "end_reason": "reversal",
+    "similarity": 0.9703,
+    "start_date": "1999-03-10",
+    "ticker": "CENX",
+    "trigger_date": "1999-03-12",
+    "trigger_type": "runup"
+   },
+   {
+    "actual_downside": -0.181,
+    "actual_return": 0.2413,
+    "actual_upside": 0.5873,
+    "days_in_region": 55,
+    "end_date": "2016-03-14",
+    "end_reason": "reversal",
+    "similarity": 0.9702,
+    "start_date": "2016-01-19",
+    "ticker": "NOG",
+    "trigger_date": "2016-01-28",
+    "trigger_type": "runup"
+   }
+  ],
+  "stats": {
+   "avg_max_drawdown": 0.1783,
+   "avg_similarity": 0.969,
+   "avg_trough": 0.1783,
+   "avg_upside": 0.3683,
+   "best_return": 0.8072,
+   "downside_range": [
+    -0.6429,
+    0.0
+   ],
+   "median_return": -0.0117,
+   "n_matches": 50,
+   "outcome_agreement": false,
+   "return_p25": -0.1697,
+   "return_p5": -0.4459,
+   "return_p75": 0.3262,
+   "return_p95": 0.7022,
+   "sim_weighted_win_rate": 0.5,
+   "top5_avg_trough": 0.2494,
+   "top5_avg_upside": 0.3058,
+   "top_similarity": 0.973,
+   "upside_range": [
+    0.0,
+    1.2072
+   ],
+   "win_rate": 0.5,
+   "worst_return": -0.5622,
+   "years_span": 16
+  },
+  "total_matches": 50
+ },
+ "peer_group": {
+  "buckets": [
+   "Vertical Market Software",
+   "Finance, HR & Administrative Software"
+  ],
+  "groups": {
+   "Finance, HR & Administrative Software": [
+    {
+     "market_cap_m": 1382.904,
+     "price_vs_sma200": 1.734,
+     "return_30d": 0.44,
+     "return_7d": 0.2748,
+     "revenue_driver": "healthcare staffing",
+     "signal_rank": 1098,
+     "stock_vs_spy_20d": 0.4045,
+     "ticker": "AMN"
+    },
+    {
+     "market_cap_m": 958.6391,
+     "price_vs_sma200": 1.1477,
+     "return_30d": 0.2553,
+     "return_7d": 0.208,
+     "revenue_driver": "indirect tax software",
+     "signal_rank": 521,
+     "stock_vs_spy_20d": 0.3689,
+     "ticker": "VERX"
+    },
+    {
+     "market_cap_m": 1970.2094,
+     "price_vs_sma200": 1.0407,
+     "return_30d": 0.2275,
+     "return_7d": 0.1869,
+     "revenue_driver": "financial close automation software",
+     "signal_rank": 466,
+     "stock_vs_spy_20d": 0.2586,
+     "ticker": "BL"
+    },
+    {
+     "market_cap_m": 875.4363,
+     "price_vs_sma200": 1.5103,
+     "return_30d": 0.1816,
+     "return_7d": 0.0943,
+     "revenue_driver": "employee benefits administration software",
+     "signal_rank": 1131,
+     "stock_vs_spy_20d": 0.1992,
+     "ticker": "IBTA"
+    },
+    {
+     "market_cap_m": 109237.6304,
+     "price_vs_sma200": 1.2693,
+     "return_30d": 0.1338,
+     "return_7d": 0.085,
+     "revenue_driver": "payroll processing SaaS",
+     "signal_rank": 1942,
+     "stock_vs_spy_20d": 0.1689,
+     "ticker": "ADP"
+    },
+    {
+     "market_cap_m": 2708.7007,
+     "price_vs_sma200": 1.2053,
+     "return_30d": 0.0858,
+     "return_7d": 0.0502,
+     "revenue_driver": "tax compliance software",
+     "signal_rank": 912,
+     "stock_vs_spy_20d": -0.0275,
+     "ticker": "DGII"
+    },
+    {
+     "market_cap_m": 99516.864,
+     "price_vs_sma200": 0.9338,
+     "return_30d": 0.0679,
+     "return_7d": 0.1061,
+     "revenue_driver": "SMB financial software",
+     "signal_rank": 2081,
+     "stock_vs_spy_20d": 0.2604,
+     "ticker": "INTU"
+    },
+    {
+     "market_cap_m": 499.434,
+     "price_vs_sma200": 0.7007,
+     "return_30d": -0.1702,
+     "return_7d": 0.2776,
+     "revenue_driver": "mortgage origination software",
+     "signal_rank": 1623,
+     "stock_vs_spy_20d": 0.0693,
+     "ticker": "BLND"
+    },
+    {
+     "market_cap_m": 32554.3537,
+     "price_vs_sma200": 0.7114,
+     "return_30d": -0.1726,
+     "return_7d": 0.133,
+     "revenue_driver": "credit scoring software",
+     "signal_rank": 1643,
+     "stock_vs_spy_20d": -0.0401,
+     "ticker": "FICO"
+    },
+    {
+     "market_cap_m": 1870.1212,
+     "price_vs_sma200": 0.9207,
+     "return_30d": -0.2184,
+     "return_7d": 0.1608,
+     "revenue_driver": "digital banking SaaS",
+     "signal_rank": 1579,
+     "stock_vs_spy_20d": 0.1769,
+     "ticker": "ALKT"
+    }
+   ],
+   "Vertical Market Software": [
+    {
+     "market_cap_m": 2017.6381,
+     "price_vs_sma200": 1.34,
+     "return_30d": 0.2212,
+     "return_7d": 0.1367,
+     "revenue_driver": "nonprofit fundraising software",
+     "signal_rank": 1443,
+     "stock_vs_spy_20d": 0.3012,
+     "ticker": "BLKB"
+    },
+    {
+     "market_cap_m": 46954.4885,
+     "price_vs_sma200": 1.2022,
+     "return_30d": 0.1277,
+     "return_7d": 0.1756,
+     "revenue_driver": "vertical market software",
+     "signal_rank": 1986,
+     "stock_vs_spy_20d": 0.2372,
+     "ticker": "ROP"
+    },
+    {
+     "market_cap_m": 13406.8484,
+     "price_vs_sma200": 1.037,
+     "return_30d": 0.1011,
+     "return_7d": 0.0743,
+     "revenue_driver": "construction management software",
+     "signal_rank": 649,
+     "stock_vs_spy_20d": 0.1128,
+     "ticker": "TRMB"
+    },
+    {
+     "market_cap_m": 5065.4886,
+     "price_vs_sma200": 0.9507,
+     "return_30d": 0.0597,
+     "return_7d": 0.0886,
+     "revenue_driver": "life sciences CRM software",
+     "signal_rank": 741,
+     "stock_vs_spy_20d": 0.1158,
+     "ticker": "LIF"
+    },
+    {
+     "market_cap_m": 16303.5152,
+     "price_vs_sma200": 0.9407,
+     "return_30d": 0.042,
+     "return_7d": -0.0142,
+     "revenue_driver": "mortgage servicing software",
+     "signal_rank": 633,
+     "stock_vs_spy_20d": 0.041,
+     "ticker": "APG"
+    },
+    {
+     "market_cap_m": 21850.1776,
+     "price_vs_sma200": 1.1157,
+     "return_30d": 0.0335,
+     "return_7d": 0.0111,
+     "revenue_driver": "financial services software",
+     "signal_rank": 875,
+     "stock_vs_spy_20d": 0.0706,
+     "ticker": "SSNC"
+    },
+    {
+     "market_cap_m": 369.4593,
+     "price_vs_sma200": 1.1316,
+     "return_30d": 0.006,
+     "return_7d": 0.0011,
+     "revenue_driver": "pharmaceutical simulation software",
+     "signal_rank": null,
+     "stock_vs_spy_20d": -0.0145,
+     "ticker": "SLP"
+    },
+    {
+     "market_cap_m": 767.0028,
+     "price_vs_sma200": 1.0484,
+     "return_30d": -0.1043,
+     "return_7d": -0.0588,
+     "revenue_driver": "court case management software",
+     "signal_rank": 731,
+     "stock_vs_spy_20d": -0.0822,
+     "ticker": "DJCO"
+    },
+    {
+     "market_cap_m": 499.434,
+     "price_vs_sma200": 0.7007,
+     "return_30d": -0.1702,
+     "return_7d": 0.2776,
+     "revenue_driver": "mortgage origination software",
+     "signal_rank": 1623,
+     "stock_vs_spy_20d": 0.0693,
+     "ticker": "BLND"
+    },
+    {
+     "market_cap_m": 52.3536,
+     "price_vs_sma200": 0.4927,
+     "return_30d": -0.3623,
+     "return_7d": -0.1616,
+     "revenue_driver": "energy storage software",
+     "signal_rank": null,
+     "stock_vs_spy_20d": 0.0191,
+     "ticker": "STEM"
+    }
+   ]
+  }
+ },
+ "predictions": {
+  "badge_count": 0,
+  "confidence_score": 0.0471,
+  "conviction_label": "SPECULATIVE",
+  "data_quality_flags": [],
+  "ev_score": 0.0958,
+  "is_diamond": false,
+  "passes_tradability_filter": false,
+  "quality_label": "WEAK",
+  "quantiles": {
+   "downside_q10": -0.4338,
+   "downside_q25": -0.2721,
+   "downside_q50": -0.1587,
+   "downside_q75": -0.0546,
+   "downside_q90": -0.0126,
+   "path_volatility": 0.0522,
+   "risk_reward": 1.4521,
+   "uncertainty": 0.7141,
+   "upside_q10": 0.0192,
+   "upside_q25": 0.08,
+   "upside_q50": 0.2304,
+   "upside_q75": 0.429,
+   "upside_q90": 0.7334
+  },
+  "rank": 1623,
+  "rank_score": 0.0042,
+  "tradability_filter_reasons": [
+   "market_cap_below_1b",
+   "dollar_volume_below_5m"
+  ]
+ },
+ "profile": {
+  "_local": {
+   "dividend_yield": 0.0,
+   "eps_growth_yoy": 0.3483,
+   "pe_ratio": -22.1088,
+   "revenue_growth_yoy": -0.0213,
+   "roe": 0.0827
+  },
+  "beta": 1.083,
+  "betaTTM": null,
+  "ceo": "Nima Ghamsari",
+  "companyName": "Blend Labs, Inc.",
+  "country": "US",
+  "debtToEquityTTM": null,
+  "description": "Established in 2012 and headquartered in San Francisco, California, Blend Labs, Inc. provides cloud-hosted software platforms tailored for financial institutions across the United States. The company's operations are divided into two key divisions: Blend Platform and Title365. It offers a wide array of white-label solutions catering to diverse consumer financial needs, such as home mortgages, home equity loans and lines of credit, vehicle financing, personal loans, credit cards, and deposit account management. Additionally, Blend Labs supplies a specialized suite of tools designed to streamline the entire homeownership process for individuals, covering aspects like loan closing, income validation for mortgages, property insurance, and real estate services. The firm also conducts title examination processes for insurance policies, manages escrow, handles closing and settlement services, and performs various trustee duties, alongside delivering expert professional and advisory services. Its clientele encompasses a broad spectrum of financial entities, including banks, credit unions, financial technology firms, and independent mortgage providers.",
+  "dividendYielTTM": null,
+  "enterpriseValueOverEBITDATTM": null,
+  "exchangeShortName": "NYSE",
+  "fullTimeEmployees": "419",
+  "industry": "Software - Application",
+  "ipoDate": "2021-07-16",
+  "latest_earnings_date": "2026-08-06",
+  "marketCapTTM": null,
+  "mktCap": 276720575,
+  "peRatioTTM": null,
+  "price": 1.17,
+  "priceToSalesRatioTTM": null,
+  "returnOnEquityTTM": -0.0122,
+  "revenue_description": "Blend Labs provides software for mortgage, consumer banking, and digital account-opening workflows. Revenue is driven by subscription ACV from enterprise license agreements and usage-based consumption, with module expansion and new product attach as growth levers.",
+  "revenue_description_themes": [
+   "mortgage lending automation",
+   "AI-driven consumer banking workflows",
+   "cross-sell of home equity and deposit modules"
+  ],
+  "revenue_taxonomy": [
+   {
+    "bucket": "Vertical Market Software",
+    "matched_tags": [
+     "mortgage origination software",
+     "cloud banking platform"
+    ],
+    "path": "Technology › Software & Platforms › Vertical Market Software",
+    "sector": "Technology",
+    "segment": "Software & Platforms"
+   },
+   {
+    "bucket": "Finance, HR & Administrative Software",
+    "matched_tags": [
+     "consumer lending SaaS"
+    ],
+    "path": "Technology › Software & Platforms › Finance, HR & Administrative Software",
+    "sector": "Technology",
+    "segment": "Software & Platforms"
+   }
+  ],
+  "revenue_themes": [
+   "mortgage origination software",
+   "cloud banking platform",
+   "consumer lending SaaS"
+  ],
+  "sector": "Technology",
+  "website": "https://blend.com"
+ },
+ "report": null,
+ "scorecard": {
+  "headline": {
+   "avg_universe_pct": 47,
+   "label": "mixed",
+   "metric_count": 7
+  },
+  "metrics": {
+   "debt_to_equity": {
+    "direction": "lower",
+    "label": "D/E Ratio",
+    "sector": "Financials",
+    "sector_n": 304,
+    "sector_pct": 99,
+    "universe_n": 2080,
+    "universe_pct": 94,
+    "value": 0.0
+   },
+   "eps_growth_yoy": {
+    "direction": "higher",
+    "label": "EPS Growth",
+    "sector": "Financials",
+    "sector_n": 148,
+    "sector_pct": 64,
+    "universe_n": 1890,
+    "universe_pct": 64,
+    "value": 0.3483
+   },
+   "gross_margin": {
+    "direction": "higher",
+    "label": "Gross Margin",
+    "sector": "Financials",
+    "sector_n": 308,
+    "sector_pct": 77,
+    "universe_n": 2009,
+    "universe_pct": 85,
+    "value": 0.7555
+   },
+   "operating_margin": {
+    "direction": "higher",
+    "label": "Op. Margin",
+    "sector": "Financials",
+    "sector_n": 308,
+    "sector_pct": 1,
+    "universe_n": 2009,
+    "universe_pct": 12,
+    "value": -0.1144
+   },
+   "revenue_growth_yoy": {
+    "direction": "higher",
+    "label": "Rev Growth",
+    "sector": "Financials",
+    "sector_n": 147,
+    "sector_pct": 14,
+    "universe_n": 1833,
+    "universe_pct": 16,
+    "value": -0.0213
+   },
+   "roe": {
+    "direction": "higher",
+    "label": "ROE",
+    "sector": "Financials",
+    "sector_n": 309,
+    "sector_pct": 21,
+    "universe_n": 2100,
+    "universe_pct": 46,
+    "value": 0.0827
+   },
+   "roic": {
+    "direction": "higher",
+    "label": "ROIC",
+    "sector": "Financials",
+    "sector_n": 302,
+    "sector_pct": 1,
+    "universe_n": 2051,
+    "universe_pct": 11,
+    "value": -0.0662
+   }
+  }
+ },
+ "signal_rank": 1623,
+ "structural_analogs": {
+  "gp_core_pct": 29.8,
+  "gp_core_ratio": 1.0965,
+  "matches": [
+   {
+    "actual_downside": -0.2346,
+    "actual_return": -0.1007,
+    "actual_upside": 0.0333,
+    "days_in_region": 64,
+    "end_date": "2008-03-05",
+    "end_reason": "new_pattern",
+    "seq_len": 64,
+    "similarity": 0.5681,
+    "start_date": "2008-01-22",
+    "ticker": "BBW",
+    "total_distance": 0.2827,
+    "trigger_date": "2008-01-25",
+    "trigger_type": "runup"
+   },
+   {
+    "actual_downside": -0.027,
+    "actual_return": 0.0914,
+    "actual_upside": 0.3371,
+    "days_in_region": 68,
+    "end_date": "2008-08-25",
+    "end_reason": "reversal",
+    "seq_len": 68,
+    "similarity": 0.5622,
+    "start_date": "2008-07-14",
+    "ticker": "SVVS",
+    "total_distance": 0.288,
+    "trigger_date": "2008-07-23",
+    "trigger_type": "runup"
+   },
+   {
+    "actual_downside": -0.1712,
+    "actual_return": -0.1151,
+    "actual_upside": 0.0707,
+    "days_in_region": 68,
+    "end_date": "2014-11-20",
+    "end_reason": "reversal",
+    "seq_len": 68,
+    "similarity": 0.5603,
+    "start_date": "2014-10-07",
+    "ticker": "XONE",
+    "total_distance": 0.2896,
+    "trigger_date": "2014-10-16",
+    "trigger_type": "runup"
+   },
+   {
+    "actual_downside": -0.2025,
+    "actual_return": -0.2025,
+    "actual_upside": 0.2275,
+    "days_in_region": 66,
+    "end_date": "2008-03-10",
+    "end_reason": "reversal",
+    "seq_len": 66,
+    "similarity": 0.5594,
+    "start_date": "2008-01-15",
+    "ticker": "CHS",
+    "total_distance": 0.2905,
+    "trigger_date": "2008-01-23",
+    "trigger_type": "runup"
+   },
+   {
+    "actual_downside": -0.1126,
+    "actual_return": -0.1072,
+    "actual_upside": 0.6092,
+    "days_in_region": 68,
+    "end_date": "2015-11-17",
+    "end_reason": "reversal",
+    "seq_len": 68,
+    "similarity": 0.542,
+    "start_date": "2015-08-20",
+    "ticker": "XONE",
+    "total_distance": 0.3063,
+    "trigger_date": "2015-08-31",
+    "trigger_type": "runup"
+   },
+   {
+    "actual_downside": -0.3826,
+    "actual_return": 0.1199,
+    "actual_upside": 0.1199,
+    "days_in_region": 120,
+    "end_date": "2016-12-07",
+    "end_reason": "reversal",
+    "seq_len": 120,
+    "similarity": 0.5364,
+    "start_date": "2016-06-20",
+    "ticker": "CGI",
+    "total_distance": 0.3114,
+    "trigger_date": "2016-09-13",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": -0.2013,
+    "actual_return": -0.2013,
+    "actual_upside": 0.136,
+    "days_in_region": 67,
+    "end_date": "2015-09-28",
+    "end_reason": "reversal",
+    "seq_len": 67,
+    "similarity": 0.536,
+    "start_date": "2015-08-05",
+    "ticker": "UPL",
+    "total_distance": 0.3118,
+    "trigger_date": "2015-08-13",
+    "trigger_type": "runup"
+   },
+   {
+    "actual_downside": -0.1644,
+    "actual_return": -0.0489,
+    "actual_upside": 0.0061,
+    "days_in_region": 67,
+    "end_date": "2015-09-16",
+    "end_reason": "new_pattern",
+    "seq_len": 67,
+    "similarity": 0.5354,
+    "start_date": "2015-08-04",
+    "ticker": "VAL",
+    "total_distance": 0.3123,
+    "trigger_date": "2015-08-12",
+    "trigger_type": "shallow_runup"
+   },
+   {
+    "actual_downside": -0.1385,
+    "actual_return": 0.0274,
+    "actual_upside": 0.0494,
+    "days_in_region": 128,
+    "end_date": "2019-04-11",
+    "end_reason": "reversal",
+    "seq_len": 128,
+    "similarity": 0.5345,
+    "start_date": "2018-10-16",
+    "ticker": "CWH",
+    "total_distance": 0.3132,
+    "trigger_date": "2019-01-24",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": -0.1085,
+    "actual_return": -0.0107,
+    "actual_upside": 0.0504,
+    "days_in_region": 70,
+    "end_date": "2012-08-20",
+    "end_reason": "new_pattern",
+    "seq_len": 70,
+    "similarity": 0.5343,
+    "start_date": "2012-07-09",
+    "ticker": "APKT",
+    "total_distance": 0.3134,
+    "trigger_date": "2012-07-20",
+    "trigger_type": "shallow_runup"
+   }
+  ],
+  "panel": {
+   "edge": -0.2317,
+   "hit_hi": 0.337,
+   "hit_lo": 0.179,
+   "hit_rate": 0.25,
+   "median_final": -0.1072,
+   "median_pain": 0.1716,
+   "n": 48,
+   "n_eff": 48.0,
+   "p25_final": -0.2328,
+   "p_pain_gt5": 0.833,
+   "return_to_pain": -0.559
+  },
+  "stats": {
+   "avg_similarity": 0.497,
+   "avg_trough": 0.2079,
+   "avg_upside": 0.2367,
+   "median_pain": 0.1822,
+   "median_return": -0.1039,
+   "n_matches": 200,
+   "p25_return": -0.2413,
+   "p_pain_gt5": 0.82,
+   "return_to_pain": -0.514,
+   "top5_avg_trough": 0.1496,
+   "top5_avg_upside": 0.2556,
+   "top_similarity": 0.568,
+   "win_rate": 0.325
+  },
+  "total_matches": 200
+ },
+ "ticker": "BLND",
+ "trending": {
+  "acceleration": -0.0128,
+  "avg_vol_20d": 2006796.2262,
+  "base_high_120": 2.01,
+  "breakout_confirmed": 0,
+  "close": 1.04,
+  "momentum_score": 0.0134,
+  "momentum_start": "2026-08-07",
+  "range_20": 0.4952,
+  "range_50": 1.0385,
+  "rank": 1739,
+  "rank_down": 15,
+  "rank_up": null,
+  "ret_120": -0.2727,
+  "ret_20": -0.3247,
+  "ret_60": -0.3882,
+  "rundown_score": 0.9804,
+  "score_date": "2026-10-05",
+  "slope_20": -0.0258,
+  "slope_60": -0.013,
+  "stage": "rundown",
+  "stage_label": "rundown",
+  "ticker": "BLND",
+  "total_score": 0.2745,
+  "trend_ratio": 0.5605,
+  "vcp_detected": 0,
+  "vcp_score": 0.4486
+ }
+}

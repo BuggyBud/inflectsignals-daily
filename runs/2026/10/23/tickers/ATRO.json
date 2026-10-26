@@ -1,0 +1,1034 @@
+{
+ "date": "2026-10-23",
+ "detected_regions": {
+  "primary": {
+   "days_in_region": 136,
+   "region_start": "2026-07-09",
+   "trigger_date": "2026-08-05",
+   "trigger_type": "compression"
+  },
+  "secondary": [
+   {
+    "confidence_score": 0.2433,
+    "downside_q50": -0.1146,
+    "ev_score": 0.1078,
+    "region_start": "2026-06-12",
+    "seq_len": 153,
+    "trigger_date": "2026-08-20",
+    "trigger_type": "shallow_drawdown",
+    "upside_q25": 0.0902,
+    "upside_q50": 0.2118,
+    "upside_q75": 0.3588
+   },
+   {
+    "confidence_score": 0.3437,
+    "downside_q50": -0.0995,
+    "ev_score": 0.123,
+    "region_start": "2026-03-30",
+    "seq_len": 200,
+    "trigger_date": "2026-08-05",
+    "trigger_type": "runup",
+    "upside_q25": 0.0944,
+    "upside_q50": 0.2134,
+    "upside_q75": 0.3635
+   }
+  ]
+ },
+ "feature_attribution": {
+  "macro_driver_count": 14,
+  "risk_flags": [
+   "high_volatility"
+  ],
+  "top_drivers": [
+   {
+    "direction": "negative",
+    "feature": "dollar_volume",
+    "feature_value": 40367448.0,
+    "importance": 0.0003,
+    "importance_pct": 0.2397,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "positive",
+    "feature": "price_vs_low_52w",
+    "feature_value": 1.2322,
+    "importance": 0.0003,
+    "importance_pct": 0.2063,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "positive",
+    "feature": "price_vs_sma200",
+    "feature_value": 0.7792,
+    "importance": 0.0002,
+    "importance_pct": 0.1714,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "negative",
+    "feature": "ma_200_slope",
+    "feature_value": 0.0129,
+    "importance": 0.0002,
+    "importance_pct": 0.1357,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "positive",
+    "feature": "volatility_20d",
+    "feature_value": 0.0222,
+    "importance": 0.0002,
+    "importance_pct": 0.1341,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "positive",
+    "feature": "price_vs_high_52w",
+    "feature_value": 0.603,
+    "importance": 0.0001,
+    "importance_pct": 0.1127,
+    "method": "integrated_gradients"
+   }
+  ]
+ },
+ "fundamentals": {
+  "accrual": 0.0456,
+  "adx_14": 53.7568,
+  "altman_z_score": 6.2298,
+  "amihud_illiquidity": 0.0004,
+  "avg_volume": 613585.6136,
+  "beta_252d": 0.7444,
+  "book_value_per_share": 4.2596,
+  "correlation_spy_60d": 0.4793,
+  "current_liabilities": 163.38,
+  "current_ratio": 2.9731,
+  "daily_earnings_yield": 0.0174,
+  "daily_fcf_yield": 0.0075,
+  "daily_pb": 22.8936,
+  "daily_pe": 57.3577,
+  "daily_ps": 4.8169,
+  "days_since_52w_high": 92.0,
+  "debt_ebitda": 2.4931,
+  "debt_to_equity": 1.7807,
+  "dividend_yield": 0.0,
+  "dollar_volume_20d_avg": 34792439.9041,
+  "earnings_quality": 0.8591,
+  "ebitda_growth_yoy": 0.7348,
+  "enterprise_value": 4881.9207,
+  "eps_basic": 0.82,
+  "eps_cagr_3y": 0.2002,
+  "eps_cagr_5y": 0.0677,
+  "eps_diluted": 0.75,
+  "eps_growth_accel": 0.0,
+  "eps_growth_qoq": 0.1549,
+  "eps_growth_yoy": 10.0,
+  "eps_growth_yoy_q2": 10.0,
+  "eps_growth_yoy_q3": 2.7447,
+  "eps_growth_yoy_q4": 0.5789,
+  "eps_growth_yoy_q5": 0.6944,
+  "eps_growth_yoy_q6": 0.8571,
+  "eps_growth_yoy_q7": 0.4268,
+  "eps_growth_yoy_q8": 0.8455,
+  "eps_history_8q": [
+   -0.34,
+   -0.08,
+   0.26,
+   0.04,
+   -0.31,
+   0.78,
+   0.67,
+   0.75
+  ],
+  "eps_ttm": 1.0093,
+  "ev_to_ebitda": 34.4827,
+  "ev_to_fcf": 199.9968,
+  "ev_to_sales": 18.7797,
+  "fcf_growth_yoy": 0.6427,
+  "fcf_margin": 0.0939,
+  "fcf_per_share": 0.5246,
+  "gross_margin": 0.3308,
+  "gross_margin_change_yoy": 0.0214,
+  "gross_margin_history": [
+   0.3014,
+   0.3017,
+   0.309,
+   0.3249,
+   0.3257,
+   0.3308
+  ],
+  "inc_roic": 1.1857,
+  "interest_coverage": 12.8916,
+  "is_pre_revenue": false,
+  "margin_vs_sector_median": null,
+  "market_cap_ratio": 4537.9707,
+  "net_income": 35.06,
+  "net_margin": 0.084,
+  "operating_income": 40.467,
+  "operating_margin": 0.1357,
+  "operating_margin_change_yoy": 0.0849,
+  "pb_ratio": 13.5905,
+  "pe_percentile_1y": 0.6627,
+  "pe_ratio": 57.3577,
+  "peg_trailing": 0.0278,
+  "piotroski_f_score": 3.0,
+  "price_vs_high_52w": 0.603,
+  "price_vs_sma200": 0.7792,
+  "ps_percentile_1y": 0.9048,
+  "ps_ratio": 7.3132,
+  "quarter_labels_8q": [
+   "Q3 '24",
+   "Q4 '24",
+   "Q1 '25",
+   "Q2 '25",
+   "Q3 '25",
+   "Q4 '25",
+   "Q1 '26",
+   "Q2 '26"
+  ],
+  "quarterly_eps_growth_yoy": 10.0,
+  "quarterly_eps_growth_yoy_8q": [
+   0.3333,
+   -1.4,
+   3.8889,
+   0.0,
+   0.0882,
+   10.0,
+   1.5769,
+   10.0
+  ],
+  "quarterly_revenue_growth_yoy": 0.2701,
+  "quarterly_revenue_growth_yoy_8q": [
+   0.2503,
+   0.0678,
+   0.1127,
+   0.0331,
+   0.038,
+   0.1512,
+   0.1199,
+   0.2701
+  ],
+  "revenue_cagr_3y": 0.1493,
+  "revenue_cagr_5y": 0.1654,
+  "revenue_growth_accel": 0.0585,
+  "revenue_growth_qoq": 0.1272,
+  "revenue_growth_yoy": 0.1449,
+  "revenue_growth_yoy_q2": 0.0864,
+  "revenue_growth_yoy_q3": 0.0839,
+  "revenue_growth_yoy_q4": 0.0619,
+  "revenue_growth_yoy_q5": 0.1099,
+  "revenue_growth_yoy_q6": 0.1373,
+  "revenue_growth_yoy_q7": 0.1541,
+  "revenue_growth_yoy_q8": 0.1995,
+  "revenue_history_8q": [
+   203.698,
+   208.54,
+   205.936,
+   204.678,
+   211.447,
+   240.067,
+   230.619,
+   259.957
+  ],
+  "revenue_per_share": 5.5863,
+  "roa": 0.1049,
+  "roce": 0.2154,
+  "roe": 0.4396,
+  "roic": 0.1324,
+  "rsi_14": 24.3402,
+  "sector_momentum": 0.0203,
+  "share_dilution_1y": 0.0,
+  "stock_vs_sector_20d": -0.112,
+  "stock_vs_spy_20d": -0.1484,
+  "total_assets": 760.844,
+  "vol_regime": 0.6068,
+  "volatility_20d": 0.0222,
+  "volatility_60d": 0.0366,
+  "w52_high": 99.89,
+  "w52_low": 41.5
+ },
+ "market_characters": [
+  {
+   "id": "g3",
+   "name": "Explosive Gainers"
+  },
+  {
+   "id": "g9",
+   "name": "Narrative Premium"
+  },
+  {
+   "id": "g11",
+   "name": "Overnight Momentum"
+  }
+ ],
+ "model_analogs": {
+  "matches": [
+   {
+    "actual_downside": -0.2392,
+    "actual_return": 0.0709,
+    "actual_upside": 0.0709,
+    "days_in_region": 220,
+    "end_date": "2019-02-28",
+    "end_reason": "reversal",
+    "similarity": 0.9705,
+    "start_date": "2018-07-23",
+    "ticker": "ENVA",
+    "trigger_date": "2018-07-30",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": -0.0346,
+    "actual_return": -0.0165,
+    "actual_upside": 0.6673,
+    "days_in_region": 276,
+    "end_date": "2020-03-16",
+    "end_reason": "reversal",
+    "similarity": 0.97,
+    "start_date": "2019-06-14",
+    "ticker": "STAA",
+    "trigger_date": "2019-07-12",
+    "trigger_type": "compression"
+   },
+   {
+    "actual_downside": -0.0368,
+    "actual_return": 0.1786,
+    "actual_upside": 0.1786,
+    "days_in_region": 254,
+    "end_date": "2019-11-27",
+    "end_reason": "reversal",
+    "similarity": 0.9688,
+    "start_date": "2019-03-18",
+    "ticker": "YEXT",
+    "trigger_date": "2019-09-03",
+    "trigger_type": "severe_drawdown"
+   },
+   {
+    "actual_downside": -0.0081,
+    "actual_return": 0.3195,
+    "actual_upside": 0.3195,
+    "days_in_region": 107,
+    "end_date": "2019-11-01",
+    "end_reason": "reversal",
+    "similarity": 0.9663,
+    "start_date": "2019-07-17",
+    "ticker": "PRNB",
+    "trigger_date": "2019-09-20",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": -0.4586,
+    "actual_return": -0.4586,
+    "actual_upside": 0.0,
+    "days_in_region": 187,
+    "end_date": "2018-12-24",
+    "end_reason": "reversal",
+    "similarity": 0.9661,
+    "start_date": "2018-06-20",
+    "ticker": "RFP",
+    "trigger_date": "2018-11-02",
+    "trigger_type": "runup"
+   },
+   {
+    "actual_downside": 0.0,
+    "actual_return": 0.3628,
+    "actual_upside": 0.3628,
+    "days_in_region": 237,
+    "end_date": "2018-12-03",
+    "end_reason": "reversal",
+    "similarity": 0.9657,
+    "start_date": "2018-04-10",
+    "ticker": "TITN",
+    "trigger_date": "2018-09-26",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": -0.2411,
+    "actual_return": -0.0893,
+    "actual_upside": 0.2545,
+    "days_in_region": 271,
+    "end_date": "1998-04-07",
+    "end_reason": "reversal",
+    "similarity": 0.965,
+    "start_date": "1997-07-10",
+    "ticker": "POWL",
+    "trigger_date": "1997-07-21",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": -0.1556,
+    "actual_return": 0.4311,
+    "actual_upside": 0.4311,
+    "days_in_region": 112,
+    "end_date": "2020-01-03",
+    "end_reason": "reversal",
+    "similarity": 0.9647,
+    "start_date": "2019-09-13",
+    "ticker": "CAAP",
+    "trigger_date": "2019-10-10",
+    "trigger_type": "compression"
+   },
+   {
+    "actual_downside": -0.0877,
+    "actual_return": -0.0877,
+    "actual_upside": 0.0365,
+    "days_in_region": 177,
+    "end_date": "2019-11-21",
+    "end_reason": "reversal",
+    "similarity": 0.9645,
+    "start_date": "2019-05-28",
+    "ticker": "CEVA",
+    "trigger_date": "2019-07-15",
+    "trigger_type": "runup"
+   },
+   {
+    "actual_downside": -0.3233,
+    "actual_return": 0.0129,
+    "actual_upside": 0.0334,
+    "days_in_region": 253,
+    "end_date": "2019-04-04",
+    "end_reason": "reversal",
+    "similarity": 0.9644,
+    "start_date": "2018-07-25",
+    "ticker": "RYI",
+    "trigger_date": "2018-10-19",
+    "trigger_type": "severe_drawdown"
+   }
+  ],
+  "stats": {
+   "avg_max_drawdown": 0.1326,
+   "avg_similarity": 0.962,
+   "avg_trough": 0.1326,
+   "avg_upside": 0.2205,
+   "best_return": 0.8219,
+   "downside_range": [
+    -0.4875,
+    0.0
+   ],
+   "median_return": 0.1469,
+   "n_matches": 50,
+   "outcome_agreement": true,
+   "return_p25": -0.0156,
+   "return_p5": -0.1907,
+   "return_p75": 0.3225,
+   "return_p95": 0.5331,
+   "sim_weighted_win_rate": 0.72,
+   "top5_avg_trough": 0.1555,
+   "top5_avg_upside": 0.2473,
+   "top_similarity": 0.971,
+   "upside_range": [
+    0.0,
+    0.8219
+   ],
+   "win_rate": 0.72,
+   "worst_return": -0.4586,
+   "years_span": 13
+  },
+  "total_matches": 50
+ },
+ "peer_group": {
+  "buckets": [
+   "Aerospace & Defense Components, Electronics & Aftermarket",
+   "Semiconductor Equipment, Materials & Test"
+  ],
+  "groups": {
+   "Aerospace & Defense Components, Electronics & Aftermarket": [
+    {
+     "market_cap_m": 76212.48,
+     "price_vs_sma200": 0.9304,
+     "return_30d": 0.0626,
+     "return_7d": 0.1125,
+     "revenue_driver": "stealth bomber and space systems",
+     "signal_rank": 1978,
+     "stock_vs_spy_20d": 0.0954,
+     "ticker": "NOC"
+    },
+    {
+     "market_cap_m": 29363.6249,
+     "price_vs_sma200": 0.991,
+     "return_30d": 0.0358,
+     "return_7d": 0.0271,
+     "revenue_driver": "industrial instrumentation systems",
+     "signal_rank": 960,
+     "stock_vs_spy_20d": 0.0336,
+     "ticker": "TDY"
+    },
+    {
+     "market_cap_m": 6310.5,
+     "price_vs_sma200": 0.8135,
+     "return_30d": -0.0712,
+     "return_7d": -0.0108,
+     "revenue_driver": "secure processing systems",
+     "signal_rank": 632,
+     "stock_vs_spy_20d": -0.0737,
+     "ticker": "MRCY"
+    },
+    {
+     "market_cap_m": 6791.3399,
+     "price_vs_sma200": 0.9222,
+     "return_30d": -0.0743,
+     "return_7d": 0.0028,
+     "revenue_driver": "defense systems and platforms",
+     "signal_rank": 789,
+     "stock_vs_spy_20d": -0.0381,
+     "ticker": "LOAR"
+    },
+    {
+     "market_cap_m": 9763.1793,
+     "price_vs_sma200": 0.8115,
+     "return_30d": -0.094,
+     "return_7d": 0.1022,
+     "revenue_driver": "aircraft engine mro services",
+     "signal_rank": 1599,
+     "stock_vs_spy_20d": -0.0269,
+     "ticker": "SARO"
+    },
+    {
+     "market_cap_m": 21330.1273,
+     "price_vs_sma200": 0.8318,
+     "return_30d": -0.1,
+     "return_7d": -0.076,
+     "revenue_driver": "aerospace fuel control systems",
+     "signal_rank": 600,
+     "stock_vs_spy_20d": -0.0657,
+     "ticker": "WWD"
+    },
+    {
+     "market_cap_m": 278.3915,
+     "price_vs_sma200": 0.7695,
+     "return_30d": -0.14,
+     "return_7d": -0.0021,
+     "revenue_driver": "used aircraft sales",
+     "signal_rank": null,
+     "stock_vs_spy_20d": -0.1094,
+     "ticker": "ASLE"
+    },
+    {
+     "market_cap_m": 6889.657,
+     "price_vs_sma200": 0.7792,
+     "return_30d": -0.2175,
+     "return_7d": -0.0669,
+     "revenue_driver": "aircraft lighting systems",
+     "signal_rank": 801,
+     "stock_vs_spy_20d": -0.1484,
+     "ticker": "ATRO"
+    },
+    {
+     "market_cap_m": 4553.1906,
+     "price_vs_sma200": 0.8043,
+     "return_30d": -0.2409,
+     "return_7d": -0.0186,
+     "revenue_driver": "aircraft parts distribution",
+     "signal_rank": 847,
+     "stock_vs_spy_20d": -0.1644,
+     "ticker": "AIR"
+    },
+    {
+     "market_cap_m": 7503.9741,
+     "price_vs_sma200": 0.5358,
+     "return_30d": -0.2551,
+     "return_7d": 0.0325,
+     "revenue_driver": "eVTOL aircraft manufacturing",
+     "signal_rank": 1361,
+     "stock_vs_spy_20d": -0.2315,
+     "ticker": "JOBY"
+    }
+   ],
+   "Semiconductor Equipment, Materials & Test": [
+    {
+     "market_cap_m": 12708.97,
+     "price_vs_sma200": 0.8684,
+     "return_30d": -0.0604,
+     "return_7d": -0.1014,
+     "revenue_driver": "ion implantation equipment",
+     "signal_rank": 535,
+     "stock_vs_spy_20d": -0.119,
+     "ticker": "ACLS"
+    },
+    {
+     "market_cap_m": 229.8556,
+     "price_vs_sma200": 0.771,
+     "return_30d": -0.167,
+     "return_7d": -0.1129,
+     "revenue_driver": "semiconductor capital equipment",
+     "signal_rank": 890,
+     "stock_vs_spy_20d": -0.1976,
+     "ticker": "ASYS"
+    },
+    {
+     "market_cap_m": 423890.22,
+     "price_vs_sma200": 0.8536,
+     "return_30d": -0.1736,
+     "return_7d": -0.1554,
+     "revenue_driver": "semiconductor manufacturing equipment",
+     "signal_rank": 862,
+     "stock_vs_spy_20d": -0.2069,
+     "ticker": "AMAT"
+    },
+    {
+     "market_cap_m": 3610.9514,
+     "price_vs_sma200": 0.8142,
+     "return_30d": -0.1959,
+     "return_7d": -0.1544,
+     "revenue_driver": "compound semiconductor substrates",
+     "signal_rank": 1816,
+     "stock_vs_spy_20d": -0.325,
+     "ticker": "AXTI"
+    },
+    {
+     "market_cap_m": 6889.657,
+     "price_vs_sma200": 0.7792,
+     "return_30d": -0.2175,
+     "return_7d": -0.0669,
+     "revenue_driver": "aircraft lighting systems",
+     "signal_rank": 801,
+     "stock_vs_spy_20d": -0.1484,
+     "ticker": "ATRO"
+    },
+    {
+     "market_cap_m": 11294.2482,
+     "price_vs_sma200": 0.6829,
+     "return_30d": -0.2403,
+     "return_7d": -0.1232,
+     "revenue_driver": "outsourced semiconductor packaging",
+     "signal_rank": 1353,
+     "stock_vs_spy_20d": -0.2516,
+     "ticker": "AMKR"
+    },
+    {
+     "market_cap_m": 11186.8631,
+     "price_vs_sma200": 0.702,
+     "return_30d": -0.2458,
+     "return_7d": -0.1693,
+     "revenue_driver": "power conversion systems",
+     "signal_rank": 1316,
+     "stock_vs_spy_20d": -0.2101,
+     "ticker": "AEIS"
+    },
+    {
+     "market_cap_m": 168.3845,
+     "price_vs_sma200": 0.5366,
+     "return_30d": -0.2916,
+     "return_7d": -0.1576,
+     "revenue_driver": "semiconductor IP licensing",
+     "signal_rank": 902,
+     "stock_vs_spy_20d": -0.3088,
+     "ticker": "ATOM"
+    },
+    {
+     "market_cap_m": 5015.849,
+     "price_vs_sma200": 0.7366,
+     "return_30d": -0.2979,
+     "return_7d": -0.1729,
+     "revenue_driver": "semiconductor wafer cleaning",
+     "signal_rank": 768,
+     "stock_vs_spy_20d": -0.3308,
+     "ticker": "ACMR"
+    },
+    {
+     "market_cap_m": 2324.9424,
+     "price_vs_sma200": 0.7521,
+     "return_30d": -0.4159,
+     "return_7d": -0.2263,
+     "revenue_driver": "wafer level burn in",
+     "signal_rank": 1108,
+     "stock_vs_spy_20d": -0.4549,
+     "ticker": "AEHR"
+    }
+   ]
+  }
+ },
+ "predictions": {
+  "badge_count": 0,
+  "confidence_score": 0.2298,
+  "conviction_label": "SPECULATIVE",
+  "data_quality_flags": [],
+  "ev_score": 0.0959,
+  "is_diamond": false,
+  "passes_tradability_filter": true,
+  "quality_label": "HIGH",
+  "quantiles": {
+   "downside_q10": -0.3476,
+   "downside_q25": -0.2156,
+   "downside_q50": -0.1201,
+   "downside_q75": -0.0349,
+   "downside_q90": -0.0016,
+   "path_volatility": 0.0447,
+   "risk_reward": 1.7171,
+   "uncertainty": 0.537,
+   "upside_q10": 0.0281,
+   "upside_q25": 0.0872,
+   "upside_q50": 0.2062,
+   "upside_q75": 0.3488,
+   "upside_q90": 0.5651
+  },
+  "rank": 801,
+  "rank_score": 0.0267,
+  "tradability_filter_reasons": []
+ },
+ "profile": {
+  "_local": {
+   "dividend_yield": 0.0,
+   "eps_growth_yoy": 10.0,
+   "pe_ratio": 46.5026,
+   "revenue_growth_yoy": 0.1449,
+   "roe": 0.4396
+  },
+  "beta": 1.252,
+  "betaTTM": null,
+  "ceo": "Peter J. Gundermann",
+  "companyName": "Astronics Corporation",
+  "country": "US",
+  "debtToEquityTTM": null,
+  "description": "Astronics Corporation, through its subsidiaries, designs and manufactures products for the aerospace, defense, and electronics industries in the United States, rest of North America, Asia, Europe, South America, and internationally. It operates in two segments, Aerospace and Test Systems. The Aerospace segment offers lighting and safety systems, electrical power generation systems, distribution and seat motions systems, aircraft structures, avionics products, systems certification, and other products. This segment serves airframe manufacturers (OEM) that build aircraft for the commercial transport, military, and general aviation markets; suppliers to OEMs; and aircraft operators, such as airlines; suppliers to the aircraft operators; and branches of the U.S. Department of Defense. The Test Systems segment designs, develops, manufactures, and maintains automated test systems that support the aerospace and defense, communications, and mass transit industries, as well as training and simulation devices for commercial and military applications. This segment serves OEMs and prime government contractors for electronics and military products. The company was incorporated in 1968 and is headquartered in East Aurora, New York.",
+  "dividendYielTTM": null,
+  "enterpriseValueOverEBITDATTM": null,
+  "exchangeShortName": "NASDAQ",
+  "fullTimeEmployees": "2700",
+  "industry": "Aerospace & Defense",
+  "ipoDate": "1980-03-17",
+  "latest_earnings_date": "2026-08-12",
+  "marketCapTTM": null,
+  "mktCap": 2090292120,
+  "peRatioTTM": null,
+  "price": 57.89,
+  "priceToSalesRatioTTM": null,
+  "returnOnEquityTTM": 0.5197,
+  "revenue_description": "Astronics supplies aerospace and defense electronics, power systems, and test systems. Revenue is driven by multi-year government defense contracts and deliveries across platforms, systems, and services, with the DoD budget and international arms sales as demand drivers.",
+  "revenue_description_themes": [
+   "commercial aircraft production ramp",
+   "cabin modernization demand",
+   "defense electronics procurement"
+  ],
+  "revenue_taxonomy": [
+   {
+    "bucket": "Aerospace & Defense Components, Electronics & Aftermarket",
+    "matched_tags": [
+     "aircraft lighting systems",
+     "aerospace power systems"
+    ],
+    "path": "Industrials & Transportation › Aerospace Defense & Automation › Aerospace & Defense Components, Electronics & Aftermarket",
+    "sector": "Industrials & Transportation",
+    "segment": "Aerospace Defense & Automation"
+   },
+   {
+    "bucket": "Semiconductor Equipment, Materials & Test",
+    "matched_tags": [
+     "automated test equipment"
+    ],
+    "path": "Technology › Hardware & Semiconductors › Semiconductor Equipment, Materials & Test",
+    "sector": "Technology",
+    "segment": "Hardware & Semiconductors"
+   }
+  ],
+  "revenue_themes": [
+   "aircraft lighting systems",
+   "aerospace power systems",
+   "automated test equipment"
+  ],
+  "sector": "Industrials",
+  "website": "https://www.astronics.com"
+ },
+ "report": null,
+ "scorecard": {
+  "headline": {
+   "avg_universe_pct": 59,
+   "label": "mixed",
+   "metric_count": 8
+  },
+  "metrics": {
+   "debt_to_equity": {
+    "direction": "lower",
+    "label": "D/E Ratio",
+    "sector": "Consumer Disc.",
+    "sector_n": 251,
+    "sector_pct": 17,
+    "universe_n": 2080,
+    "universe_pct": 13,
+    "value": 1.7807
+   },
+   "eps_growth_yoy": {
+    "direction": "higher",
+    "label": "EPS Growth",
+    "sector": "Consumer Disc.",
+    "sector_n": 252,
+    "sector_pct": 98,
+    "universe_n": 1890,
+    "universe_pct": 98,
+    "value": 10.0
+   },
+   "gross_margin": {
+    "direction": "higher",
+    "label": "Gross Margin",
+    "sector": "Consumer Disc.",
+    "sector_n": 254,
+    "sector_pct": 48,
+    "universe_n": 2009,
+    "universe_pct": 33,
+    "value": 0.3308
+   },
+   "operating_margin": {
+    "direction": "higher",
+    "label": "Op. Margin",
+    "sector": "Consumer Disc.",
+    "sector_n": 254,
+    "sector_pct": 73,
+    "universe_n": 2009,
+    "universe_pct": 59,
+    "value": 0.1357
+   },
+   "pe_ratio": {
+    "direction": "lower",
+    "label": "P/E",
+    "sector": "Consumer Disc.",
+    "sector_n": 210,
+    "sector_pct": 12,
+    "universe_n": 1471,
+    "universe_pct": 15,
+    "value": 46.5026
+   },
+   "revenue_growth_yoy": {
+    "direction": "higher",
+    "label": "Rev Growth",
+    "sector": "Consumer Disc.",
+    "sector_n": 252,
+    "sector_pct": 80,
+    "universe_n": 1833,
+    "universe_pct": 68,
+    "value": 0.1449
+   },
+   "roe": {
+    "direction": "higher",
+    "label": "ROE",
+    "sector": "Consumer Disc.",
+    "sector_n": 254,
+    "sector_pct": 89,
+    "universe_n": 2100,
+    "universe_pct": 92,
+    "value": 0.4396
+   },
+   "roic": {
+    "direction": "higher",
+    "label": "ROIC",
+    "sector": "Consumer Disc.",
+    "sector_n": 250,
+    "sector_pct": 89,
+    "universe_n": 2051,
+    "universe_pct": 91,
+    "value": 0.0587
+   }
+  }
+ },
+ "signal_rank": 801,
+ "structural_analogs": {
+  "gp_core_pct": 69.5,
+  "gp_core_ratio": 1.5715,
+  "matches": [
+   {
+    "actual_downside": -0.007,
+    "actual_return": 0.2599,
+    "actual_upside": 0.2599,
+    "days_in_region": 164,
+    "end_date": "2021-11-08",
+    "end_reason": "reversal",
+    "seq_len": 164,
+    "similarity": 0.5616,
+    "start_date": "2021-05-17",
+    "ticker": "TEX",
+    "total_distance": 0.2884,
+    "trigger_date": "2021-10-12",
+    "trigger_type": "severe_drawdown"
+   },
+   {
+    "actual_downside": -0.1292,
+    "actual_return": 0.0089,
+    "actual_upside": 0.0599,
+    "days_in_region": 161,
+    "end_date": "2006-07-12",
+    "end_reason": "reversal",
+    "seq_len": 161,
+    "similarity": 0.561,
+    "start_date": "2006-01-10",
+    "ticker": "HITK",
+    "total_distance": 0.289,
+    "trigger_date": "2006-04-26",
+    "trigger_type": "severe_drawdown"
+   },
+   {
+    "actual_downside": -0.1707,
+    "actual_return": -0.1707,
+    "actual_upside": 0.0254,
+    "days_in_region": 180,
+    "end_date": "2018-11-21",
+    "end_reason": "reversal",
+    "seq_len": 180,
+    "similarity": 0.5565,
+    "start_date": "2018-05-10",
+    "ticker": "AEO",
+    "total_distance": 0.2931,
+    "trigger_date": "2018-10-29",
+    "trigger_type": "shallow_runup"
+   },
+   {
+    "actual_downside": 0.0,
+    "actual_return": 0.4805,
+    "actual_upside": 0.4805,
+    "days_in_region": 145,
+    "end_date": "2014-07-02",
+    "end_reason": "reversal",
+    "seq_len": 145,
+    "similarity": 0.5549,
+    "start_date": "2014-01-07",
+    "ticker": "AMBA",
+    "total_distance": 0.2944,
+    "trigger_date": "2014-03-28",
+    "trigger_type": "severe_drawdown"
+   },
+   {
+    "actual_downside": -0.0492,
+    "actual_return": 0.0729,
+    "actual_upside": 0.0729,
+    "days_in_region": 154,
+    "end_date": "2018-12-12",
+    "end_reason": "reversal",
+    "seq_len": 154,
+    "similarity": 0.5527,
+    "start_date": "2018-06-04",
+    "ticker": "DK",
+    "total_distance": 0.2964,
+    "trigger_date": "2018-09-20",
+    "trigger_type": "severe_drawdown"
+   },
+   {
+    "actual_downside": -0.0825,
+    "actual_return": 0.1515,
+    "actual_upside": 0.1515,
+    "days_in_region": 104,
+    "end_date": "2014-06-30",
+    "end_reason": "reversal",
+    "seq_len": 104,
+    "similarity": 0.5493,
+    "start_date": "2014-03-06",
+    "ticker": "YOKU",
+    "total_distance": 0.2996,
+    "trigger_date": "2014-03-12",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": -0.1499,
+    "actual_return": -0.1499,
+    "actual_upside": 0.3054,
+    "days_in_region": 177,
+    "end_date": "2022-02-23",
+    "end_reason": "reversal",
+    "seq_len": 177,
+    "similarity": 0.5457,
+    "start_date": "2021-05-12",
+    "ticker": "SCVL",
+    "total_distance": 0.3029,
+    "trigger_date": "2021-10-26",
+    "trigger_type": "runup"
+   },
+   {
+    "actual_downside": -0.0435,
+    "actual_return": 0.1743,
+    "actual_upside": 0.1743,
+    "days_in_region": 146,
+    "end_date": "2018-06-05",
+    "end_reason": "reversal",
+    "seq_len": 146,
+    "similarity": 0.5424,
+    "start_date": "2017-11-24",
+    "ticker": "NVMI",
+    "total_distance": 0.3059,
+    "trigger_date": "2018-03-29",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": -0.0026,
+    "actual_return": 0.4185,
+    "actual_upside": 0.4185,
+    "days_in_region": 159,
+    "end_date": "2013-11-27",
+    "end_reason": "reversal",
+    "seq_len": 159,
+    "similarity": 0.5419,
+    "start_date": "2013-05-20",
+    "ticker": "ANDV",
+    "total_distance": 0.3064,
+    "trigger_date": "2013-08-20",
+    "trigger_type": "severe_drawdown"
+   },
+   {
+    "actual_downside": -0.0606,
+    "actual_return": -0.0606,
+    "actual_upside": 0.0909,
+    "days_in_region": 200,
+    "end_date": "1992-05-20",
+    "end_reason": "reversal",
+    "seq_len": 200,
+    "similarity": 0.5416,
+    "start_date": "1991-08-13",
+    "ticker": "MFI",
+    "total_distance": 0.3066,
+    "trigger_date": "1992-01-24",
+    "trigger_type": "runup"
+   }
+  ],
+  "panel": {
+   "edge": 0.0381,
+   "hit_hi": 0.727,
+   "hit_lo": 0.558,
+   "hit_rate": 0.647,
+   "median_final": 0.0729,
+   "median_pain": 0.0875,
+   "n": 51,
+   "n_eff": 51.0,
+   "p25_final": -0.0754,
+   "p_pain_gt5": 0.627,
+   "return_to_pain": 0.679
+  },
+  "stats": {
+   "avg_similarity": 0.499,
+   "avg_trough": 0.1254,
+   "avg_upside": 0.1883,
+   "median_pain": 0.0871,
+   "median_return": 0.061,
+   "n_matches": 200,
+   "p25_return": -0.1064,
+   "p_pain_gt5": 0.645,
+   "return_to_pain": 0.57,
+   "top5_avg_trough": 0.0712,
+   "top5_avg_upside": 0.1797,
+   "top_similarity": 0.562,
+   "win_rate": 0.595
+  },
+  "total_matches": 200
+ },
+ "ticker": "ATRO",
+ "trending": {
+  "acceleration": -0.0052,
+  "avg_vol_20d": 709872.1303,
+  "base_high_120": 96.0,
+  "breakout_confirmed": 0,
+  "close": 84.32,
+  "momentum_score": 0.5565,
+  "momentum_start": "2025-01-15",
+  "range_20": 0.3129,
+  "range_50": 0.4001,
+  "rank": 1224,
+  "rank_down": null,
+  "rank_up": 653,
+  "ret_120": 0.4895,
+  "ret_20": -0.0437,
+  "ret_60": 0.2636,
+  "rundown_score": 0.7631,
+  "score_date": "2026-06-26",
+  "slope_20": -0.002,
+  "slope_60": 0.0032,
+  "stage": "sustained",
+  "stage_label": "Trending",
+  "ticker": "ATRO",
+  "total_score": 0.3535,
+  "trend_ratio": 1.2792,
+  "vcp_detected": 0,
+  "vcp_score": 0.2181
+ }
+}

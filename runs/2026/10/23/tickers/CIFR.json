@@ -1,0 +1,1139 @@
+{
+ "date": "2026-10-23",
+ "detected_regions": {
+  "primary": {
+   "days_in_region": 113,
+   "region_start": "2026-08-11",
+   "trigger_date": "2026-09-08",
+   "trigger_type": "compression"
+  },
+  "secondary": [
+   {
+    "confidence_score": 0.0886,
+    "downside_q50": -0.1062,
+    "ev_score": 0.1893,
+    "region_start": "2026-04-01",
+    "seq_len": 200,
+    "trigger_date": "2026-09-22",
+    "trigger_type": "runup",
+    "upside_q25": 0.1188,
+    "upside_q50": 0.274,
+    "upside_q75": 0.4914
+   }
+  ]
+ },
+ "feature_attribution": {
+  "macro_driver_count": 11,
+  "risk_flags": [
+   "high_volatility"
+  ],
+  "top_drivers": [
+   {
+    "direction": "negative",
+    "feature": "dollar_volume",
+    "feature_value": 241165952.0,
+    "importance": 0.0009,
+    "importance_pct": 0.2425,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "positive",
+    "feature": "return_1d",
+    "feature_value": -0.0457,
+    "importance": 0.0006,
+    "importance_pct": 0.1523,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "positive",
+    "feature": "volatility_20d",
+    "feature_value": 0.0463,
+    "importance": 0.0005,
+    "importance_pct": 0.1285,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "positive",
+    "feature": "price_vs_high_52w",
+    "feature_value": 0.2721,
+    "importance": 0.0004,
+    "importance_pct": 0.1084,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "positive",
+    "feature": "price_vs_low_52w",
+    "feature_value": 1.0,
+    "importance": 0.0004,
+    "importance_pct": 0.1053,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "negative",
+    "feature": "stock_vs_spy_change_5d",
+    "feature_value": -0.0253,
+    "importance": 0.0003,
+    "importance_pct": 0.0849,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "negative",
+    "feature": "daily_ps",
+    "feature_value": 14.951,
+    "importance": 0.0003,
+    "importance_pct": 0.0706,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "positive",
+    "feature": "historical_recovery_rate",
+    "feature_value": 0.2721,
+    "importance": 0.0002,
+    "importance_pct": 0.0542,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "negative",
+    "feature": "ma_200_slope",
+    "feature_value": -0.0207,
+    "importance": 0.0002,
+    "importance_pct": 0.0532,
+    "method": "integrated_gradients"
+   }
+  ]
+ },
+ "fundamentals": {
+  "accrual": -0.1563,
+  "adx_14": 68.7168,
+  "altman_z_score": 0.9667,
+  "amihud_illiquidity": 0.0001,
+  "avg_volume": 38871802.4758,
+  "beta_252d": 1.7085,
+  "book_value_per_share": 1.7629,
+  "correlation_spy_60d": 0.2991,
+  "current_liabilities": 1245.699,
+  "current_ratio": 2.9962,
+  "daily_earnings_yield": -0.2861,
+  "daily_fcf_yield": -0.2999,
+  "daily_pb": 4.3924,
+  "daily_pe": -3.495,
+  "daily_ps": 14.951,
+  "days_since_52w_high": 88.0,
+  "debt_ebitda": -1.8605,
+  "debt_to_equity": 0.023,
+  "dividend_yield": 0.0,
+  "dollar_volume_20d_avg": 527484430.5909,
+  "earnings_quality": null,
+  "ebitda_growth_yoy": 0.8668,
+  "enterprise_value": 2791.7535,
+  "eps_basic": -0.28,
+  "eps_cagr_3y": null,
+  "eps_cagr_5y": null,
+  "eps_diluted": -0.28,
+  "eps_growth_accel": 4.6757,
+  "eps_growth_qoq": 0.8549,
+  "eps_growth_yoy": -5.3243,
+  "eps_growth_yoy_q2": -10.0,
+  "eps_growth_yoy_q3": -0.3571,
+  "eps_growth_yoy_q4": -9.8,
+  "eps_growth_yoy_q5": -8.4,
+  "eps_growth_yoy_q6": -0.3,
+  "eps_growth_yoy_q7": 0.6,
+  "eps_growth_yoy_q8": null,
+  "eps_history_8q": [
+   0.05,
+   -0.11,
+   -0.12,
+   -0.01,
+   -1.93,
+   -0.28,
+   -0.28,
+   -0.65
+  ],
+  "eps_ttm": -2.2718,
+  "ev_to_ebitda": -2641.2048,
+  "ev_to_fcf": null,
+  "ev_to_sales": 80.1353,
+  "fcf_growth_yoy": null,
+  "fcf_margin": null,
+  "fcf_per_share": null,
+  "gross_margin": -2.2186,
+  "gross_margin_change_yoy": -1.7545,
+  "gross_margin_history": [
+   0.5895,
+   0.6003,
+   0.636,
+   -0.4062,
+   -1.129,
+   -2.2186
+  ],
+  "inc_roic": 0.3986,
+  "interest_coverage": -0.9273,
+  "is_pre_revenue": false,
+  "margin_vs_sector_median": null,
+  "market_cap_ratio": 3137.0305,
+  "net_income": -114.316,
+  "net_margin": -9.5092,
+  "operating_income": -48.625,
+  "operating_margin": -1.1436,
+  "operating_margin_change_yoy": -0.7287,
+  "pb_ratio": 4.5039,
+  "pe_percentile_1y": 0.004,
+  "pe_ratio": -6.4904,
+  "peg_trailing": 0.0042,
+  "piotroski_f_score": 1.0,
+  "price_vs_high_52w": 0.2721,
+  "price_vs_sma200": 0.4416,
+  "ps_percentile_1y": 1.0,
+  "ps_ratio": 62.2317,
+  "quarter_labels_8q": [
+   "Q4 '24",
+   "Q1 '25",
+   "Q2 '25",
+   "Q3 '25",
+   "Q4 '25",
+   "Q1 '26",
+   "Q1 '26",
+   "Q2 '26"
+  ],
+  "quarterly_eps_growth_yoy": -10.0,
+  "quarterly_eps_growth_yoy_8q": [
+   0.25,
+   -1.8462,
+   -1.4,
+   0.9615,
+   -10.0,
+   -1.5455,
+   -1.3333,
+   -10.0
+  ],
+  "quarterly_revenue_growth_yoy": -1.0,
+  "quarterly_revenue_growth_yoy_8q": [
+   -0.0275,
+   0.0171,
+   0.1836,
+   1.9751,
+   0.4142,
+   -0.2884,
+   -0.2003,
+   -1.0
+  ],
+  "revenue_cagr_3y": null,
+  "revenue_cagr_5y": null,
+  "revenue_growth_accel": -0.1008,
+  "revenue_growth_qoq": -0.4166,
+  "revenue_growth_yoy": 0.3796,
+  "revenue_growth_yoy_q2": 0.4804,
+  "revenue_growth_yoy_q3": 0.3541,
+  "revenue_growth_yoy_q4": 0.0011,
+  "revenue_growth_yoy_q5": -0.0065,
+  "revenue_growth_yoy_q6": 0.1926,
+  "revenue_growth_yoy_q7": 0.7634,
+  "revenue_growth_yoy_q8": 0.1788,
+  "revenue_history_8q": [
+   42.223,
+   48.959,
+   43.565,
+   71.707,
+   59.711,
+   34.838,
+   34.838,
+   0.0
+  ],
+  "revenue_per_share": 0.086,
+  "roa": -0.1771,
+  "roce": -0.0263,
+  "roe": -0.362,
+  "roic": -0.1744,
+  "rsi_14": 10.5621,
+  "sector_momentum": 0.0127,
+  "share_dilution_1y": 0.0,
+  "stock_vs_sector_20d": -0.5,
+  "stock_vs_spy_20d": -0.5369,
+  "total_assets": 6393.585,
+  "vol_regime": 0.7348,
+  "volatility_20d": 0.0463,
+  "volatility_60d": 0.063,
+  "w52_high": 30.14,
+  "w52_low": 7.9
+ },
+ "market_characters": [
+  {
+   "id": "g9",
+   "name": "Narrative Premium"
+  }
+ ],
+ "model_analogs": {
+  "matches": [
+   {
+    "actual_downside": -0.3114,
+    "actual_return": -0.1962,
+    "actual_upside": 0.0342,
+    "days_in_region": 62,
+    "end_date": "2022-11-15",
+    "end_reason": "reversal",
+    "similarity": 0.979,
+    "start_date": "2022-09-14",
+    "ticker": "GTHX",
+    "trigger_date": "2022-09-20",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": -0.3554,
+    "actual_return": -0.1329,
+    "actual_upside": 0.0,
+    "days_in_region": 206,
+    "end_date": "2016-02-22",
+    "end_reason": "reversal",
+    "similarity": 0.9787,
+    "start_date": "2015-07-31",
+    "ticker": "RDUS",
+    "trigger_date": "2016-01-19",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": -0.1184,
+    "actual_return": 0.0614,
+    "actual_upside": 0.0614,
+    "days_in_region": 224,
+    "end_date": "1998-07-22",
+    "end_reason": "reversal",
+    "similarity": 0.9784,
+    "start_date": "1997-12-10",
+    "ticker": "CORR",
+    "trigger_date": "1998-05-18",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": 0.0,
+    "actual_return": 0.7799,
+    "actual_upside": 0.7799,
+    "days_in_region": 57,
+    "end_date": "2019-11-12",
+    "end_reason": "reversal",
+    "similarity": 0.9782,
+    "start_date": "2019-09-16",
+    "ticker": "MAXR",
+    "trigger_date": "2019-09-24",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": -0.1994,
+    "actual_return": -0.1994,
+    "actual_upside": 0.2237,
+    "days_in_region": 197,
+    "end_date": "2005-04-29",
+    "end_reason": "reversal",
+    "similarity": 0.9781,
+    "start_date": "2004-10-14",
+    "ticker": "NGPS",
+    "trigger_date": "2005-03-29",
+    "trigger_type": "runup"
+   },
+   {
+    "actual_downside": -0.029,
+    "actual_return": 0.6135,
+    "actual_upside": 0.6135,
+    "days_in_region": 59,
+    "end_date": "2019-11-11",
+    "end_reason": "reversal",
+    "similarity": 0.978,
+    "start_date": "2019-09-13",
+    "ticker": "GNC",
+    "trigger_date": "2019-10-15",
+    "trigger_type": "severe_drawdown"
+   },
+   {
+    "actual_downside": -0.0507,
+    "actual_return": 0.4284,
+    "actual_upside": 0.4284,
+    "days_in_region": 242,
+    "end_date": "2019-12-10",
+    "end_reason": "reversal",
+    "similarity": 0.978,
+    "start_date": "2019-04-12",
+    "ticker": "UNFI",
+    "trigger_date": "2019-09-27",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": -0.051,
+    "actual_return": 0.3768,
+    "actual_upside": 0.3768,
+    "days_in_region": 196,
+    "end_date": "1997-01-20",
+    "end_reason": "reversal",
+    "similarity": 0.9779,
+    "start_date": "1996-07-08",
+    "ticker": "PROX",
+    "trigger_date": "1996-08-02",
+    "trigger_type": "compression"
+   },
+   {
+    "actual_downside": -0.2215,
+    "actual_return": 0.1314,
+    "actual_upside": 0.1314,
+    "days_in_region": 265,
+    "end_date": "2015-11-11",
+    "end_reason": "reversal",
+    "similarity": 0.9779,
+    "start_date": "2015-02-19",
+    "ticker": "ALDX",
+    "trigger_date": "2015-08-04",
+    "trigger_type": "severe_drawdown"
+   },
+   {
+    "actual_downside": -0.5538,
+    "actual_return": -0.4355,
+    "actual_upside": 0.0215,
+    "days_in_region": 259,
+    "end_date": "1998-08-07",
+    "end_reason": "reversal",
+    "similarity": 0.9776,
+    "start_date": "1997-11-21",
+    "ticker": "ANST",
+    "trigger_date": "1997-12-19",
+    "trigger_type": "compression"
+   }
+  ],
+  "stats": {
+   "avg_max_drawdown": 0.1738,
+   "avg_similarity": 0.976,
+   "avg_trough": 0.1738,
+   "avg_upside": 0.3081,
+   "best_return": 1.4762,
+   "downside_range": [
+    -0.6516,
+    0.0
+   ],
+   "median_return": 0.0993,
+   "n_matches": 50,
+   "outcome_agreement": true,
+   "return_p25": -0.1295,
+   "return_p5": -0.3385,
+   "return_p75": 0.4265,
+   "return_p95": 0.8882,
+   "sim_weighted_win_rate": 0.58,
+   "top5_avg_trough": 0.1969,
+   "top5_avg_upside": 0.2198,
+   "top_similarity": 0.979,
+   "upside_range": [
+    0.0,
+    1.4762
+   ],
+   "win_rate": 0.58,
+   "worst_return": -0.6516,
+   "years_span": 17
+  },
+  "total_matches": 50
+ },
+ "peer_group": {
+  "buckets": [
+   "Digital Infrastructure & Internet Services",
+   "Digital Asset, Crypto & Blockchain Infrastructure",
+   "Energy Technology, Nuclear, LNG, Hydrogen & Emerging Energy Infrastructure"
+  ],
+  "groups": {
+   "Digital Asset, Crypto & Blockchain Infrastructure": [
+    {
+     "market_cap_m": 6432.2154,
+     "price_vs_sma200": 0.6637,
+     "return_30d": -0.2698,
+     "return_7d": -0.0303,
+     "revenue_driver": "Bitcoin self-mining",
+     "signal_rank": 942,
+     "stock_vs_spy_20d": -0.2292,
+     "ticker": "CORZ"
+    },
+    {
+     "market_cap_m": 134.8699,
+     "price_vs_sma200": 0.3415,
+     "return_30d": -0.3025,
+     "return_7d": -0.0017,
+     "revenue_driver": "digital asset payment infrastructure",
+     "signal_rank": null,
+     "stock_vs_spy_20d": -0.2634,
+     "ticker": "ALTS"
+    },
+    {
+     "market_cap_m": 7565.5837,
+     "price_vs_sma200": 0.625,
+     "return_30d": -0.3238,
+     "return_7d": -0.0191,
+     "revenue_driver": "Bitcoin mining",
+     "signal_rank": 1654,
+     "stock_vs_spy_20d": -0.2655,
+     "ticker": "WULF"
+    },
+    {
+     "market_cap_m": 10929.0229,
+     "price_vs_sma200": 0.7433,
+     "return_30d": -0.379,
+     "return_7d": -0.1822,
+     "revenue_driver": "bitcoin mining operations",
+     "signal_rank": 1003,
+     "stock_vs_spy_20d": -0.3523,
+     "ticker": "HUT"
+    },
+    {
+     "market_cap_m": 1342.5532,
+     "price_vs_sma200": 0.6449,
+     "return_30d": -0.414,
+     "return_7d": -0.147,
+     "revenue_driver": "bitcoin mining operations",
+     "signal_rank": 1057,
+     "stock_vs_spy_20d": -0.4253,
+     "ticker": "MARA"
+    },
+    {
+     "market_cap_m": 144261.116,
+     "price_vs_sma200": 0.6433,
+     "return_30d": -0.4164,
+     "return_7d": -0.1702,
+     "revenue_driver": "bitcoin mining",
+     "signal_rank": 1335,
+     "stock_vs_spy_20d": -0.4399,
+     "ticker": "RIOT"
+    },
+    {
+     "market_cap_m": 3258.6833,
+     "price_vs_sma200": 0.6329,
+     "return_30d": -0.4236,
+     "return_7d": -0.1458,
+     "revenue_driver": "Bitcoin mining operations",
+     "signal_rank": 806,
+     "stock_vs_spy_20d": -0.4198,
+     "ticker": "CLSK"
+    },
+    {
+     "market_cap_m": 8051.975,
+     "price_vs_sma200": 0.4416,
+     "return_30d": -0.5288,
+     "return_7d": -0.2012,
+     "revenue_driver": "bitcoin mining operations",
+     "signal_rank": 1436,
+     "stock_vs_spy_20d": -0.5369,
+     "ticker": "CIFR"
+    },
+    {
+     "market_cap_m": 128.1462,
+     "price_vs_sma200": 0.8273,
+     "return_30d": -0.5377,
+     "return_7d": -0.234,
+     "revenue_driver": "renewable energy-powered bitcoin mining",
+     "signal_rank": null,
+     "stock_vs_spy_20d": -0.1489,
+     "ticker": "SLNH"
+    },
+    {
+     "market_cap_m": 17.8068,
+     "price_vs_sma200": 0.092,
+     "return_30d": null,
+     "return_7d": -0.5,
+     "revenue_driver": "bitcoin ATM kiosks",
+     "signal_rank": null,
+     "stock_vs_spy_20d": -0.8779,
+     "ticker": "BTM"
+    }
+   ],
+   "Digital Infrastructure & Internet Services": [
+    {
+     "market_cap_m": 11181.6491,
+     "price_vs_sma200": 0.9673,
+     "return_30d": 0.1501,
+     "return_7d": 0.0912,
+     "revenue_driver": "domain name registration",
+     "signal_rank": null,
+     "stock_vs_spy_20d": 0.0254,
+     "ticker": "GDDY"
+    },
+    {
+     "market_cap_m": 3888.882,
+     "price_vs_sma200": 1.1593,
+     "return_30d": 0.054,
+     "return_7d": -0.0236,
+     "revenue_driver": "content delivery network",
+     "signal_rank": 1608,
+     "stock_vs_spy_20d": -0.0067,
+     "ticker": "FSLY"
+    },
+    {
+     "market_cap_m": 15902.8371,
+     "price_vs_sma200": 0.8325,
+     "return_30d": -0.1242,
+     "return_7d": 0.0198,
+     "revenue_driver": "content delivery network",
+     "signal_rank": 981,
+     "stock_vs_spy_20d": -0.1638,
+     "ticker": "AKAM"
+    },
+    {
+     "market_cap_m": 6432.2154,
+     "price_vs_sma200": 0.6637,
+     "return_30d": -0.2698,
+     "return_7d": -0.0303,
+     "revenue_driver": "Bitcoin self-mining",
+     "signal_rank": 942,
+     "stock_vs_spy_20d": -0.2292,
+     "ticker": "CORZ"
+    },
+    {
+     "market_cap_m": 249.063,
+     "price_vs_sma200": 0.6413,
+     "return_30d": -0.2918,
+     "return_7d": 0.0446,
+     "revenue_driver": "machine vision systems",
+     "signal_rank": 1671,
+     "stock_vs_spy_20d": -0.3447,
+     "ticker": "DUOT"
+    },
+    {
+     "market_cap_m": 6659.3237,
+     "price_vs_sma200": 0.5746,
+     "return_30d": -0.3092,
+     "return_7d": -0.1021,
+     "revenue_driver": "AI data center hosting",
+     "signal_rank": 1501,
+     "stock_vs_spy_20d": -0.2895,
+     "ticker": "APLD"
+    },
+    {
+     "market_cap_m": 7565.5837,
+     "price_vs_sma200": 0.625,
+     "return_30d": -0.3238,
+     "return_7d": -0.0191,
+     "revenue_driver": "Bitcoin mining",
+     "signal_rank": 1654,
+     "stock_vs_spy_20d": -0.2655,
+     "ticker": "WULF"
+    },
+    {
+     "market_cap_m": 144261.116,
+     "price_vs_sma200": 0.6433,
+     "return_30d": -0.4164,
+     "return_7d": -0.1702,
+     "revenue_driver": "bitcoin mining",
+     "signal_rank": 1335,
+     "stock_vs_spy_20d": -0.4399,
+     "ticker": "RIOT"
+    },
+    {
+     "market_cap_m": 8051.975,
+     "price_vs_sma200": 0.4416,
+     "return_30d": -0.5288,
+     "return_7d": -0.2012,
+     "revenue_driver": "bitcoin mining operations",
+     "signal_rank": 1436,
+     "stock_vs_spy_20d": -0.5369,
+     "ticker": "CIFR"
+    },
+    {
+     "market_cap_m": 128.1462,
+     "price_vs_sma200": 0.8273,
+     "return_30d": -0.5377,
+     "return_7d": -0.234,
+     "revenue_driver": "renewable energy-powered bitcoin mining",
+     "signal_rank": null,
+     "stock_vs_spy_20d": -0.1489,
+     "ticker": "SLNH"
+    }
+   ],
+   "Energy Technology, Nuclear, LNG, Hydrogen & Emerging Energy Infrastructure": [
+    {
+     "market_cap_m": 3480.3832,
+     "price_vs_sma200": 1.6702,
+     "return_30d": 0.1712,
+     "return_7d": -0.0613,
+     "revenue_driver": "petroleum refining",
+     "signal_rank": 1035,
+     "stock_vs_spy_20d": 0.1442,
+     "ticker": "CVI"
+    },
+    {
+     "market_cap_m": 66822.1184,
+     "price_vs_sma200": 1.0629,
+     "return_30d": 0.0539,
+     "return_7d": 0.05,
+     "revenue_driver": "industrial gas supply",
+     "signal_rank": 1900,
+     "stock_vs_spy_20d": 0.1054,
+     "ticker": "APD"
+    },
+    {
+     "market_cap_m": 407.8999,
+     "price_vs_sma200": 0.7171,
+     "return_30d": -0.1043,
+     "return_7d": 0.0815,
+     "revenue_driver": "renewable natural gas",
+     "signal_rank": 657,
+     "stock_vs_spy_20d": -0.0722,
+     "ticker": "CLNE"
+    },
+    {
+     "market_cap_m": 1410.532,
+     "price_vs_sma200": 0.6092,
+     "return_30d": -0.1335,
+     "return_7d": 0.0225,
+     "revenue_driver": "silicon anode battery cells",
+     "signal_rank": 1704,
+     "stock_vs_spy_20d": -0.1457,
+     "ticker": "AMPX"
+    },
+    {
+     "market_cap_m": 22355.2146,
+     "price_vs_sma200": 0.6816,
+     "return_30d": -0.1527,
+     "return_7d": -0.0539,
+     "revenue_driver": "naval nuclear reactors",
+     "signal_rank": 63,
+     "stock_vs_spy_20d": -0.0662,
+     "ticker": "BWXT"
+    },
+    {
+     "market_cap_m": 51505.0005,
+     "price_vs_sma200": 0.8815,
+     "return_30d": -0.299,
+     "return_7d": -0.1924,
+     "revenue_driver": "solid oxide fuel cells",
+     "signal_rank": 1642,
+     "stock_vs_spy_20d": -0.3152,
+     "ticker": "BE"
+    },
+    {
+     "market_cap_m": 198.9043,
+     "price_vs_sma200": 0.8001,
+     "return_30d": -0.3936,
+     "return_7d": -0.0757,
+     "revenue_driver": "silver and gold mining",
+     "signal_rank": null,
+     "stock_vs_spy_20d": -0.2327,
+     "ticker": "LODE"
+    },
+    {
+     "market_cap_m": 3258.6833,
+     "price_vs_sma200": 0.6329,
+     "return_30d": -0.4236,
+     "return_7d": -0.1458,
+     "revenue_driver": "Bitcoin mining operations",
+     "signal_rank": 806,
+     "stock_vs_spy_20d": -0.4198,
+     "ticker": "CLSK"
+    },
+    {
+     "market_cap_m": 8051.975,
+     "price_vs_sma200": 0.4416,
+     "return_30d": -0.5288,
+     "return_7d": -0.2012,
+     "revenue_driver": "bitcoin mining operations",
+     "signal_rank": 1436,
+     "stock_vs_spy_20d": -0.5369,
+     "ticker": "CIFR"
+    },
+    {
+     "market_cap_m": 81538.919,
+     "price_vs_sma200": 1.0283,
+     "return_30d": -1.0,
+     "return_7d": -1.0,
+     "revenue_driver": "nuclear power generation",
+     "signal_rank": null,
+     "stock_vs_spy_20d": 0.0863,
+     "ticker": "CEG"
+    }
+   ]
+  }
+ },
+ "predictions": {
+  "badge_count": 1,
+  "confidence_score": 0.015,
+  "conviction_label": "SPECULATIVE",
+  "data_quality_flags": [],
+  "ev_score": 0.1595,
+  "is_diamond": false,
+  "passes_tradability_filter": true,
+  "quality_label": "HIGH",
+  "quantiles": {
+   "downside_q10": -0.4252,
+   "downside_q25": -0.2532,
+   "downside_q50": -0.1385,
+   "downside_q75": -0.0345,
+   "downside_q90": 0.001,
+   "path_volatility": 0.0606,
+   "risk_reward": 2.0075,
+   "uncertainty": 0.7552,
+   "upside_q10": 0.0363,
+   "upside_q25": 0.1137,
+   "upside_q50": 0.278,
+   "upside_q75": 0.4906,
+   "upside_q90": 0.7915
+  },
+  "rank": 1436,
+  "rank_score": 0.0082,
+  "tradability_filter_reasons": []
+ },
+ "profile": {
+  "_local": {
+   "dividend_yield": 0.0,
+   "eps_growth_yoy": -5.3243,
+   "pe_ratio": -6.4904,
+   "revenue_growth_yoy": 0.3796,
+   "roe": -0.362
+  },
+  "beta": 3.208,
+  "betaTTM": null,
+  "ceo": "Rodney Tyler Page",
+  "companyName": "Cipher Mining Inc.",
+  "country": "US",
+  "debtToEquityTTM": null,
+  "description": "Cipher Mining Inc. is a United States-based technology enterprise actively engaged in the Bitcoin mining sector. Its primary objective involves the development and expansion of cryptocurrency mining operations, specifically tailored for Bitcoin. Established in 2021, the company maintains its headquarters in New York, New York.",
+  "dividendYielTTM": null,
+  "enterpriseValueOverEBITDATTM": null,
+  "exchangeShortName": "NASDAQ",
+  "fullTimeEmployees": "66",
+  "industry": "Information Technology Services",
+  "ipoDate": "2020-10-20",
+  "latest_earnings_date": "2026-08-04",
+  "marketCapTTM": null,
+  "mktCap": 3295343933,
+  "peRatioTTM": null,
+  "price": 7.94,
+  "priceToSalesRatioTTM": null,
+  "returnOnEquityTTM": -1.5628,
+  "revenue_description": "Cipher Mining operates bitcoin mining infrastructure. Revenue is driven by project award backlog execution, infrastructure spending cycles, and residential housing construction activity.",
+  "revenue_description_themes": [
+   "bitcoin price appreciation",
+   "hash rate expansion",
+   "power cost optimization"
+  ],
+  "revenue_taxonomy": [
+   {
+    "bucket": "Digital Asset, Crypto & Blockchain Infrastructure",
+    "matched_tags": [
+     "bitcoin mining operations"
+    ],
+    "path": "Technology › Tech Enabled Services & Infrastructure › Digital Asset, Crypto & Blockchain Infrastructure",
+    "sector": "Technology",
+    "segment": "Tech Enabled Services & Infrastructure"
+   },
+   {
+    "bucket": "Digital Infrastructure & Internet Services",
+    "matched_tags": [
+     "data center hosting"
+    ],
+    "path": "Technology › Tech Enabled Services & Infrastructure › Digital Infrastructure & Internet Services",
+    "sector": "Technology",
+    "segment": "Tech Enabled Services & Infrastructure"
+   },
+   {
+    "bucket": "Energy Technology, Nuclear, LNG, Hydrogen & Emerging Energy Infrastructure",
+    "matched_tags": [
+     "energy infrastructure"
+    ],
+    "path": "Energy & Utilities › Energy Value Chain › Energy Technology, Nuclear, LNG, Hydrogen & Emerging Energy Infrastructure",
+    "sector": "Energy & Utilities",
+    "segment": "Energy Value Chain"
+   }
+  ],
+  "revenue_themes": [
+   "bitcoin mining operations",
+   "data center hosting",
+   "energy infrastructure"
+  ],
+  "sector": "Technology",
+  "website": "https://cipherdigital.com"
+ },
+ "report": null,
+ "scorecard": {
+  "headline": {
+   "avg_universe_pct": 30,
+   "label": "below_average",
+   "metric_count": 7
+  },
+  "metrics": {
+   "debt_to_equity": {
+    "direction": "lower",
+    "label": "D/E Ratio",
+    "sector": "Info Tech",
+    "sector_n": 311,
+    "sector_pct": 81,
+    "universe_n": 2080,
+    "universe_pct": 81,
+    "value": 0.023
+   },
+   "eps_growth_yoy": {
+    "direction": "higher",
+    "label": "EPS Growth",
+    "sector": "Info Tech",
+    "sector_n": 310,
+    "sector_pct": 3,
+    "universe_n": 1890,
+    "universe_pct": 3,
+    "value": -5.3243
+   },
+   "gross_margin": {
+    "direction": "higher",
+    "label": "Gross Margin",
+    "sector": "Info Tech",
+    "sector_n": 310,
+    "sector_pct": 0,
+    "universe_n": 2009,
+    "universe_pct": 1,
+    "value": -2.2186
+   },
+   "operating_margin": {
+    "direction": "higher",
+    "label": "Op. Margin",
+    "sector": "Info Tech",
+    "sector_n": 310,
+    "sector_pct": 4,
+    "universe_n": 2009,
+    "universe_pct": 6,
+    "value": -1.1436
+   },
+   "revenue_growth_yoy": {
+    "direction": "higher",
+    "label": "Rev Growth",
+    "sector": "Info Tech",
+    "sector_n": 310,
+    "sector_pct": 85,
+    "universe_n": 1833,
+    "universe_pct": 89,
+    "value": 0.3796
+   },
+   "roe": {
+    "direction": "higher",
+    "label": "ROE",
+    "sector": "Info Tech",
+    "sector_n": 314,
+    "sector_pct": 11,
+    "universe_n": 2100,
+    "universe_pct": 12,
+    "value": -0.362
+   },
+   "roic": {
+    "direction": "higher",
+    "label": "ROIC",
+    "sector": "Info Tech",
+    "sector_n": 309,
+    "sector_pct": 19,
+    "universe_n": 2051,
+    "universe_pct": 17,
+    "value": -0.0222
+   }
+  }
+ },
+ "signal_rank": 1436,
+ "structural_analogs": {
+  "gp_core_pct": 67.7,
+  "gp_core_ratio": 1.5478,
+  "matches": [
+   {
+    "actual_downside": -0.0783,
+    "actual_return": -0.0783,
+    "actual_upside": 0.1212,
+    "days_in_region": 90,
+    "end_date": "1998-03-05",
+    "end_reason": "reversal",
+    "seq_len": 90,
+    "similarity": 0.4058,
+    "start_date": "1997-12-19",
+    "ticker": "ETFC",
+    "total_distance": 0.4509,
+    "trigger_date": "1997-12-31",
+    "trigger_type": "runup"
+   },
+   {
+    "actual_downside": -0.0601,
+    "actual_return": 0.2187,
+    "actual_upside": 0.2187,
+    "days_in_region": 91,
+    "end_date": "2004-12-06",
+    "end_reason": "reversal",
+    "seq_len": 91,
+    "similarity": 0.4028,
+    "start_date": "2004-09-15",
+    "ticker": "SWIR",
+    "total_distance": 0.4546,
+    "trigger_date": "2004-10-12",
+    "trigger_type": "compression"
+   },
+   {
+    "actual_downside": -0.1002,
+    "actual_return": 0.0436,
+    "actual_upside": 0.0436,
+    "days_in_region": 200,
+    "end_date": "2021-09-09",
+    "end_reason": "reversal",
+    "seq_len": 200,
+    "similarity": 0.3916,
+    "start_date": "2020-12-22",
+    "ticker": "OCUL",
+    "total_distance": 0.4688,
+    "trigger_date": "2021-06-10",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": -0.2434,
+    "actual_return": -0.1067,
+    "actual_upside": 0.0814,
+    "days_in_region": 64,
+    "end_date": "2022-03-11",
+    "end_reason": "new_pattern",
+    "seq_len": 64,
+    "similarity": 0.3906,
+    "start_date": "2022-01-27",
+    "ticker": "SPT",
+    "total_distance": 0.4701,
+    "trigger_date": "2022-02-01",
+    "trigger_type": "runup"
+   },
+   {
+    "actual_downside": -0.0104,
+    "actual_return": 0.3999,
+    "actual_upside": 0.3999,
+    "days_in_region": 164,
+    "end_date": "2014-09-10",
+    "end_reason": "reversal",
+    "seq_len": 164,
+    "similarity": 0.3873,
+    "start_date": "2014-03-06",
+    "ticker": "JKS",
+    "total_distance": 0.4743,
+    "trigger_date": "2014-07-02",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": -0.3526,
+    "actual_return": -0.2372,
+    "actual_upside": 0.0,
+    "days_in_region": 152,
+    "end_date": "1997-02-12",
+    "end_reason": "reversal",
+    "seq_len": 152,
+    "similarity": 0.3865,
+    "start_date": "1996-08-27",
+    "ticker": "ACCS",
+    "total_distance": 0.4753,
+    "trigger_date": "1996-12-19",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": -0.0876,
+    "actual_return": -0.0876,
+    "actual_upside": 0.3363,
+    "days_in_region": 102,
+    "end_date": "2014-10-13",
+    "end_reason": "reversal",
+    "seq_len": 102,
+    "similarity": 0.3847,
+    "start_date": "2014-05-08",
+    "ticker": "EJ",
+    "total_distance": 0.4777,
+    "trigger_date": "2014-07-08",
+    "trigger_type": "shallow_runup"
+   },
+   {
+    "actual_downside": -0.5105,
+    "actual_return": -0.5105,
+    "actual_upside": 0.0316,
+    "days_in_region": 111,
+    "end_date": "1998-08-31",
+    "end_reason": "reversal",
+    "seq_len": 111,
+    "similarity": 0.3846,
+    "start_date": "1998-06-01",
+    "ticker": "CYBX",
+    "total_distance": 0.4778,
+    "trigger_date": "1998-08-11",
+    "trigger_type": "shallow_runup"
+   },
+   {
+    "actual_downside": -0.1623,
+    "actual_return": -0.1623,
+    "actual_upside": 0.1927,
+    "days_in_region": 93,
+    "end_date": "2010-10-04",
+    "end_reason": "reversal",
+    "seq_len": 93,
+    "similarity": 0.3809,
+    "start_date": "2010-06-01",
+    "ticker": "CLNE",
+    "total_distance": 0.4826,
+    "trigger_date": "2010-07-16",
+    "trigger_type": "shallow_runup"
+   },
+   {
+    "actual_downside": 0.0,
+    "actual_return": 0.5278,
+    "actual_upside": 0.5278,
+    "days_in_region": 126,
+    "end_date": "2021-06-28",
+    "end_reason": "reversal",
+    "seq_len": 126,
+    "similarity": 0.3805,
+    "start_date": "2021-02-09",
+    "ticker": "FSLY",
+    "total_distance": 0.4831,
+    "trigger_date": "2021-05-13",
+    "trigger_type": "severe_drawdown"
+   }
+  ],
+  "panel": {
+   "edge": -0.0047,
+   "hit_hi": 0.623,
+   "hit_lo": 0.425,
+   "hit_rate": 0.525,
+   "median_final": 0.0074,
+   "median_pain": 0.1002,
+   "n": 40,
+   "n_eff": 40.0,
+   "p25_final": -0.1623,
+   "p_pain_gt5": 0.725,
+   "return_to_pain": 0.062
+  },
+  "stats": {
+   "avg_similarity": 0.349,
+   "avg_trough": 0.1873,
+   "avg_upside": 0.3097,
+   "median_pain": 0.1496,
+   "median_return": 0.0171,
+   "n_matches": 200,
+   "p25_return": -0.1748,
+   "p_pain_gt5": 0.77,
+   "return_to_pain": 0.101,
+   "top5_avg_trough": 0.0985,
+   "top5_avg_upside": 0.173,
+   "top_similarity": 0.406,
+   "win_rate": 0.52
+  },
+  "total_matches": 200
+ },
+ "ticker": "CIFR",
+ "trending": {
+  "acceleration": -0.0479,
+  "avg_vol_20d": 45350169.5933,
+  "base_high_120": 29.18,
+  "breakout_confirmed": 0,
+  "close": 7.94,
+  "momentum_score": 0.001,
+  "momentum_start": "2026-10-08",
+  "range_20": 1.2645,
+  "range_50": 1.4924,
+  "rank": 2049,
+  "rank_down": 1,
+  "rank_up": null,
+  "ret_120": -0.5562,
+  "ret_20": -0.5522,
+  "ret_60": -0.6495,
+  "rundown_score": 0.9995,
+  "score_date": "2026-10-23",
+  "slope_20": -0.0657,
+  "slope_60": -0.0178,
+  "stage": "rundown",
+  "stage_label": "rundown",
+  "ticker": "CIFR",
+  "total_score": 0.0542,
+  "trend_ratio": 0.4745,
+  "vcp_detected": 0,
+  "vcp_score": 0.0897
+ }
+}
