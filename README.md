@@ -5,12 +5,14 @@ Report, the full ranked signal universe, and a detail file for every ticker the
 report mentions. Pushed automatically after the nightly pipeline finishes.
 
 Everything is plain text (Markdown, CSV, JSON). `SCHEMA.md` documents every file and
-field once; the data files carry no inline documentation.
+field once; the data files carry no inline documentation. `AGENT.md` is the brief for an
+AI agent that turns a day's run into an actionable note (written to `notes/YYYY-MM-DD.md`).
 
 ## Layout
 
 ```
 latest.json                      → {"date": "YYYY-MM-DD", "path": "runs/YYYY/MM/DD"}
+notes/YYYY-MM-DD.md              agent-written daily note (see AGENT.md), if any
 runs/YYYY/MM/DD/
   manifest.json                  run metadata, counts, sha256 of every file
   report.md                      Daily Action Report, human-readable
