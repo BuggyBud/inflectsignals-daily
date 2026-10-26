@@ -37,7 +37,6 @@ value is a text label. Prices USD, `market_cap_m` USD millions, dates `YYYY-MM-D
 | `files` | `{path: {bytes, sha256}}` for every file in the run dir. |
 | `pipeline_git_sha` | Commit of the pipeline code that produced the run. |
 | `source_fingerprint` | Stage 8's hash of its inputs + config; same fingerprint ⇒ identical report. |
-| `tickers_without_detail` | Report-referenced tickers whose detail fetch failed (normally empty). |
 | `stage7_api_url` | Where the detail payloads were read from. |
 
 ## `report.md`

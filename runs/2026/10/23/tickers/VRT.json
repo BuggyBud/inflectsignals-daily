@@ -1,0 +1,1133 @@
+{
+ "date": "2026-10-23",
+ "detected_regions": {
+  "primary": {
+   "days_in_region": 114,
+   "region_start": "2026-08-10",
+   "trigger_date": "2026-09-04",
+   "trigger_type": "compression"
+  },
+  "secondary": [
+   {
+    "confidence_score": 0.1993,
+    "downside_q50": -0.1264,
+    "ev_score": 0.0934,
+    "region_start": "2026-07-29",
+    "seq_len": 122,
+    "trigger_date": "2026-09-08",
+    "trigger_type": "runup",
+    "upside_q25": 0.0894,
+    "upside_q50": 0.2109,
+    "upside_q75": 0.3516
+   }
+  ]
+ },
+ "feature_attribution": {
+  "macro_driver_count": 13,
+  "risk_flags": [
+   "high_volatility"
+  ],
+  "top_drivers": [
+   {
+    "direction": "negative",
+    "feature": "dollar_volume",
+    "feature_value": 1420253056.0,
+    "importance": 0.0009,
+    "importance_pct": 0.4009,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "positive",
+    "feature": "price_vs_sma200",
+    "feature_value": 0.7222,
+    "importance": 0.0003,
+    "importance_pct": 0.1122,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "positive",
+    "feature": "return_1d",
+    "feature_value": -0.0065,
+    "importance": 0.0003,
+    "importance_pct": 0.1074,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "negative",
+    "feature": "ma_200_slope",
+    "feature_value": 0.024,
+    "importance": 0.0003,
+    "importance_pct": 0.1074,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "positive",
+    "feature": "price_vs_low_52w",
+    "feature_value": 1.2969,
+    "importance": 0.0002,
+    "importance_pct": 0.1014,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "positive",
+    "feature": "volatility_20d",
+    "feature_value": 0.029,
+    "importance": 0.0002,
+    "importance_pct": 0.0963,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "positive",
+    "feature": "price_vs_high_52w",
+    "feature_value": 0.5165,
+    "importance": 0.0002,
+    "importance_pct": 0.0743,
+    "method": "integrated_gradients"
+   }
+  ]
+ },
+ "fundamentals": {
+  "accrual": -0.014,
+  "adx_14": 44.3971,
+  "altman_z_score": 4.9645,
+  "amihud_illiquidity": 0.0,
+  "avg_volume": 5254429.5899,
+  "beta_252d": 1.1966,
+  "book_value_per_share": 12.3717,
+  "correlation_spy_60d": 0.5476,
+  "current_liabilities": 7243.0,
+  "current_ratio": 1.3786,
+  "daily_earnings_yield": 0.0233,
+  "daily_fcf_yield": 0.0236,
+  "daily_pb": 15.6163,
+  "daily_pe": 42.896,
+  "daily_ps": 6.472,
+  "days_since_52w_high": 112.0,
+  "debt_ebitda": 1.2661,
+  "debt_to_equity": 0.6844,
+  "dividend_yield": 0.0002,
+  "dollar_volume_20d_avg": 1244377356.4244,
+  "earnings_quality": 3.1304,
+  "ebitda_growth_yoy": 0.3745,
+  "enterprise_value": 74441.5202,
+  "eps_basic": 1.29,
+  "eps_cagr_3y": 1.1117,
+  "eps_cagr_5y": 1.2408,
+  "eps_diluted": 1.27,
+  "eps_growth_accel": -0.1929,
+  "eps_growth_qoq": 0.2647,
+  "eps_growth_yoy": 1.1121,
+  "eps_growth_yoy_q2": 1.3051,
+  "eps_growth_yoy_q3": 1.6439,
+  "eps_growth_yoy_q4": 0.7597,
+  "eps_growth_yoy_q5": 0.6212,
+  "eps_growth_yoy_q6": 0.6698,
+  "eps_growth_yoy_q7": 0.0909,
+  "eps_growth_yoy_q8": 1.2985,
+  "eps_history_8q": [
+   0.46,
+   0.38,
+   0.42,
+   0.83,
+   1.02,
+   1.14,
+   0.99,
+   1.27
+  ],
+  "eps_ttm": 4.53,
+  "ev_to_ebitda": 28.9453,
+  "ev_to_fcf": 53.7484,
+  "ev_to_sales": 22.7351,
+  "fcf_growth_yoy": 1.6297,
+  "fcf_margin": 0.423,
+  "fcf_per_share": 3.6016,
+  "gross_margin": 0.3776,
+  "gross_margin_change_yoy": 0.0273,
+  "gross_margin_history": [
+   0.3746,
+   0.3639,
+   0.3679,
+   0.3651,
+   0.371,
+   0.3776
+  ],
+  "inc_roic": 0.1792,
+  "interest_coverage": 50.7258,
+  "is_pre_revenue": false,
+  "margin_vs_sector_median": null,
+  "market_cap_ratio": 74295.9202,
+  "net_income": 497.8,
+  "net_margin": 0.1509,
+  "operating_income": 637.9,
+  "operating_margin": 0.194,
+  "operating_margin_change_yoy": 0.0227,
+  "pb_ratio": 15.7068,
+  "pe_percentile_1y": 1.0,
+  "pe_ratio": 42.896,
+  "peg_trailing": 0.4526,
+  "piotroski_f_score": 4.0,
+  "price_vs_high_52w": 0.5165,
+  "price_vs_sma200": 0.7222,
+  "ps_percentile_1y": 0.9524,
+  "ps_ratio": 7.4285,
+  "quarter_labels_8q": [
+   "Q3 '24",
+   "Q4 '24",
+   "Q1 '25",
+   "Q2 '25",
+   "Q3 '25",
+   "Q4 '25",
+   "Q1 '26",
+   "Q2 '26"
+  ],
+  "quarterly_eps_growth_yoy": 0.5301,
+  "quarterly_eps_growth_yoy_8q": [
+   0.9167,
+   -0.3667,
+   10.0,
+   0.8043,
+   1.2174,
+   2.0,
+   1.3571,
+   0.5301
+  ],
+  "quarterly_revenue_growth_yoy": 0.2412,
+  "quarterly_revenue_growth_yoy_8q": [
+   0.1899,
+   0.2579,
+   0.2421,
+   0.3509,
+   0.2905,
+   0.2274,
+   0.3013,
+   0.2412
+  ],
+  "revenue_cagr_3y": 0.2156,
+  "revenue_cagr_5y": 0.1892,
+  "revenue_growth_accel": -0.0272,
+  "revenue_growth_qoq": 0.2358,
+  "revenue_growth_yoy": 0.2623,
+  "revenue_growth_yoy_q2": 0.2895,
+  "revenue_growth_yoy_q3": 0.2769,
+  "revenue_growth_yoy_q4": 0.2876,
+  "revenue_growth_yoy_q5": 0.2631,
+  "revenue_growth_yoy_q6": 0.2045,
+  "revenue_growth_yoy_q7": 0.1674,
+  "revenue_growth_yoy_q8": 0.132,
+  "revenue_history_8q": [
+   2073.5,
+   2346.4,
+   2036.0,
+   2638.1,
+   2675.8,
+   2880.0,
+   2649.5,
+   3274.3
+  ],
+  "revenue_per_share": 8.5145,
+  "roa": 0.1182,
+  "roce": 0.2664,
+  "roe": 0.3848,
+  "roic": 0.2,
+  "rsi_14": 20.8609,
+  "sector_momentum": 0.0208,
+  "share_dilution_1y": 0.0,
+  "stock_vs_sector_20d": -0.1809,
+  "stock_vs_spy_20d": -0.2175,
+  "total_assets": 15900.9,
+  "vol_regime": 0.8119,
+  "volatility_20d": 0.029,
+  "volatility_60d": 0.0357,
+  "w52_high": 379.935,
+  "w52_low": 147.82
+ },
+ "market_characters": [
+  {
+   "id": "g3",
+   "name": "Explosive Gainers"
+  }
+ ],
+ "model_analogs": {
+  "matches": [
+   {
+    "actual_downside": -0.0346,
+    "actual_return": -0.0165,
+    "actual_upside": 0.6673,
+    "days_in_region": 276,
+    "end_date": "2020-03-16",
+    "end_reason": "reversal",
+    "similarity": 0.9703,
+    "start_date": "2019-06-14",
+    "ticker": "STAA",
+    "trigger_date": "2019-07-12",
+    "trigger_type": "compression"
+   },
+   {
+    "actual_downside": -0.0368,
+    "actual_return": 0.1786,
+    "actual_upside": 0.1786,
+    "days_in_region": 254,
+    "end_date": "2019-11-27",
+    "end_reason": "reversal",
+    "similarity": 0.9695,
+    "start_date": "2019-03-18",
+    "ticker": "YEXT",
+    "trigger_date": "2019-09-03",
+    "trigger_type": "severe_drawdown"
+   },
+   {
+    "actual_downside": -0.0051,
+    "actual_return": 0.179,
+    "actual_upside": 0.179,
+    "days_in_region": 195,
+    "end_date": "2019-11-05",
+    "end_reason": "reversal",
+    "similarity": 0.9675,
+    "start_date": "2019-04-24",
+    "ticker": "KRA",
+    "trigger_date": "2019-10-14",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": -0.0557,
+    "actual_return": 0.0836,
+    "actual_upside": 0.0836,
+    "days_in_region": 207,
+    "end_date": "2019-11-05",
+    "end_reason": "reversal",
+    "similarity": 0.9652,
+    "start_date": "2019-04-12",
+    "ticker": "DNLI",
+    "trigger_date": "2019-10-02",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": -0.1241,
+    "actual_return": 0.128,
+    "actual_upside": 0.128,
+    "days_in_region": 50,
+    "end_date": "2022-07-27",
+    "end_reason": "reversal",
+    "similarity": 0.9636,
+    "start_date": "2022-06-07",
+    "ticker": "LBRT",
+    "trigger_date": "2022-06-14",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": -0.0248,
+    "actual_return": 0.1907,
+    "actual_upside": 0.1907,
+    "days_in_region": 104,
+    "end_date": "2022-03-02",
+    "end_reason": "reversal",
+    "similarity": 0.9634,
+    "start_date": "2021-11-18",
+    "ticker": "ASPN",
+    "trigger_date": "2022-01-06",
+    "trigger_type": "severe_drawdown"
+   },
+   {
+    "actual_downside": -0.3233,
+    "actual_return": 0.0129,
+    "actual_upside": 0.0334,
+    "days_in_region": 253,
+    "end_date": "2019-04-04",
+    "end_reason": "reversal",
+    "similarity": 0.9631,
+    "start_date": "2018-07-25",
+    "ticker": "RYI",
+    "trigger_date": "2018-10-19",
+    "trigger_type": "severe_drawdown"
+   },
+   {
+    "actual_downside": -0.0958,
+    "actual_return": 0.199,
+    "actual_upside": 0.199,
+    "days_in_region": 150,
+    "end_date": "1998-09-28",
+    "end_reason": "reversal",
+    "similarity": 0.963,
+    "start_date": "1998-05-01",
+    "ticker": "MMWW",
+    "trigger_date": "1998-07-27",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": -0.1556,
+    "actual_return": 0.4311,
+    "actual_upside": 0.4311,
+    "days_in_region": 112,
+    "end_date": "2020-01-03",
+    "end_reason": "reversal",
+    "similarity": 0.9628,
+    "start_date": "2019-09-13",
+    "ticker": "CAAP",
+    "trigger_date": "2019-10-10",
+    "trigger_type": "compression"
+   },
+   {
+    "actual_downside": -0.1794,
+    "actual_return": -0.1794,
+    "actual_upside": 0.0266,
+    "days_in_region": 200,
+    "end_date": "2018-11-19",
+    "end_reason": "reversal",
+    "similarity": 0.9618,
+    "start_date": "2018-05-03",
+    "ticker": "VICR",
+    "trigger_date": "2018-10-18",
+    "trigger_type": "shallow_runup"
+   }
+  ],
+  "stats": {
+   "avg_max_drawdown": 0.1124,
+   "avg_similarity": 0.96,
+   "avg_trough": 0.1124,
+   "avg_upside": 0.2446,
+   "best_return": 0.7738,
+   "downside_range": [
+    -0.6183,
+    0.0
+   ],
+   "median_return": 0.1741,
+   "n_matches": 50,
+   "outcome_agreement": true,
+   "return_p25": 0.01,
+   "return_p5": -0.1916,
+   "return_p75": 0.3131,
+   "return_p95": 0.5895,
+   "sim_weighted_win_rate": 0.76,
+   "top5_avg_trough": 0.0513,
+   "top5_avg_upside": 0.2473,
+   "top_similarity": 0.97,
+   "upside_range": [
+    0.0,
+    0.7738
+   ],
+   "win_rate": 0.76,
+   "worst_return": -0.6183,
+   "years_span": 14
+  },
+  "total_matches": 50
+ },
+ "peer_group": {
+  "buckets": [
+   "Data Centers, Towers, Fiber & Connectivity Assets",
+   "Electrical Equipment, Power Components & Grid Hardware",
+   "Industrial Components, Motion, Filtration & Engineered Products"
+  ],
+  "groups": {
+   "Data Centers, Towers, Fiber & Connectivity Assets": [
+    {
+     "market_cap_m": 53193.9836,
+     "price_vs_sma200": 0.9101,
+     "return_30d": -0.0212,
+     "return_7d": 0.0369,
+     "revenue_driver": "commercial HVAC equipment",
+     "signal_rank": 296,
+     "stock_vs_spy_20d": 0.013,
+     "ticker": "CARR"
+    },
+    {
+     "market_cap_m": 7285.0182,
+     "price_vs_sma200": 0.7023,
+     "return_30d": -0.1372,
+     "return_7d": -0.145,
+     "revenue_driver": "rooftop HVAC units",
+     "signal_rank": 1052,
+     "stock_vs_spy_20d": -0.212,
+     "ticker": "AAON"
+    },
+    {
+     "market_cap_m": 42216.3619,
+     "price_vs_sma200": 0.7688,
+     "return_30d": -0.1642,
+     "return_7d": -0.047,
+     "revenue_driver": "commercial HVAC equipment",
+     "signal_rank": 157,
+     "stock_vs_spy_20d": -0.0568,
+     "ticker": "SPXC"
+    },
+    {
+     "market_cap_m": 535.9101,
+     "price_vs_sma200": 0.463,
+     "return_30d": -0.1983,
+     "return_7d": -0.0311,
+     "revenue_driver": "dedicated internet access",
+     "signal_rank": 1510,
+     "stock_vs_spy_20d": -0.012,
+     "ticker": "CCOI"
+    },
+    {
+     "market_cap_m": 85276.6675,
+     "price_vs_sma200": 0.7222,
+     "return_30d": -0.2441,
+     "return_7d": -0.1279,
+     "revenue_driver": "data center cooling systems",
+     "signal_rank": 1083,
+     "stock_vs_spy_20d": -0.2175,
+     "ticker": "VRT"
+    },
+    {
+     "market_cap_m": 10209.1676,
+     "price_vs_sma200": 0.6177,
+     "return_30d": -0.2956,
+     "return_7d": -0.1547,
+     "revenue_driver": "commercial HVAC equipment",
+     "signal_rank": 1325,
+     "stock_vs_spy_20d": -0.3115,
+     "ticker": "MOD"
+    },
+    {
+     "market_cap_m": 6659.3237,
+     "price_vs_sma200": 0.5746,
+     "return_30d": -0.3092,
+     "return_7d": -0.1021,
+     "revenue_driver": "AI data center hosting",
+     "signal_rank": 1501,
+     "stock_vs_spy_20d": -0.2895,
+     "ticker": "APLD"
+    },
+    {
+     "market_cap_m": 45125.9386,
+     "price_vs_sma200": 0.7259,
+     "return_30d": -0.3134,
+     "return_7d": -0.247,
+     "revenue_driver": "commercial HVAC contracting",
+     "signal_rank": 78,
+     "stock_vs_spy_20d": -0.2849,
+     "ticker": "FIX"
+    },
+    {
+     "market_cap_m": 6882.0712,
+     "price_vs_sma200": 0.6226,
+     "return_30d": -0.3415,
+     "return_7d": 0.0044,
+     "revenue_driver": "fiber network infrastructure",
+     "signal_rank": 1411,
+     "stock_vs_spy_20d": -0.1844,
+     "ticker": "LUMN"
+    },
+    {
+     "market_cap_m": 14782.8417,
+     "price_vs_sma200": 0.4076,
+     "return_30d": -0.3823,
+     "return_7d": -0.1988,
+     "revenue_driver": "electrical contracting",
+     "signal_rank": 641,
+     "stock_vs_spy_20d": -0.3259,
+     "ticker": "IESC"
+    }
+   ],
+   "Electrical Equipment, Power Components & Grid Hardware": [
+    {
+     "market_cap_m": 7127.2194,
+     "price_vs_sma200": 1.1488,
+     "return_30d": 0.0269,
+     "return_7d": 0.0129,
+     "revenue_driver": "construction aggregates",
+     "signal_rank": 310,
+     "stock_vs_spy_20d": 0.0232,
+     "ticker": "ACA"
+    },
+    {
+     "market_cap_m": 3156.731,
+     "price_vs_sma200": 1.2435,
+     "return_30d": 0.014,
+     "return_7d": 0.0012,
+     "revenue_driver": "electrical conduit and fittings",
+     "signal_rank": null,
+     "stock_vs_spy_20d": -0.0159,
+     "ticker": "ATKR"
+    },
+    {
+     "market_cap_m": 9161.8586,
+     "price_vs_sma200": 1.0297,
+     "return_30d": -0.0008,
+     "return_7d": 0.0736,
+     "revenue_driver": "LED lighting systems",
+     "signal_rank": 1972,
+     "stock_vs_spy_20d": 0.0131,
+     "ticker": "AYI"
+    },
+    {
+     "market_cap_m": 13488.7112,
+     "price_vs_sma200": 1.0267,
+     "return_30d": -0.0209,
+     "return_7d": -0.0537,
+     "revenue_driver": "power transmission distribution",
+     "signal_rank": 363,
+     "stock_vs_spy_20d": -0.0339,
+     "ticker": "AIT"
+    },
+    {
+     "market_cap_m": 4109.0925,
+     "price_vs_sma200": 0.9604,
+     "return_30d": -0.0344,
+     "return_7d": -0.0385,
+     "revenue_driver": "metal coating and galvanizing",
+     "signal_rank": 122,
+     "stock_vs_spy_20d": -0.0198,
+     "ticker": "AZZ"
+    },
+    {
+     "market_cap_m": 1739.558,
+     "price_vs_sma200": 1.1748,
+     "return_30d": -0.0886,
+     "return_7d": -0.1004,
+     "revenue_driver": "private lte spectrum licensing to utilities",
+     "signal_rank": 706,
+     "stock_vs_spy_20d": -0.0648,
+     "ticker": "ATEX"
+    },
+    {
+     "market_cap_m": 1579.9347,
+     "price_vs_sma200": 1.0725,
+     "return_30d": -0.1115,
+     "return_7d": -0.1157,
+     "revenue_driver": "precision motion controls",
+     "signal_rank": 132,
+     "stock_vs_spy_20d": -0.2291,
+     "ticker": "ALNT"
+    },
+    {
+     "market_cap_m": 1488.4598,
+     "price_vs_sma200": 0.7088,
+     "return_30d": -0.1493,
+     "return_7d": -0.0207,
+     "revenue_driver": "grid control systems",
+     "signal_rank": 1281,
+     "stock_vs_spy_20d": -0.1477,
+     "ticker": "AMSC"
+    },
+    {
+     "market_cap_m": 85276.6675,
+     "price_vs_sma200": 0.7222,
+     "return_30d": -0.2441,
+     "return_7d": -0.1279,
+     "revenue_driver": "data center cooling systems",
+     "signal_rank": 1083,
+     "stock_vs_spy_20d": -0.2175,
+     "ticker": "VRT"
+    },
+    {
+     "market_cap_m": 11186.8631,
+     "price_vs_sma200": 0.702,
+     "return_30d": -0.2458,
+     "return_7d": -0.1693,
+     "revenue_driver": "power conversion systems",
+     "signal_rank": 1316,
+     "stock_vs_spy_20d": -0.2101,
+     "ticker": "AEIS"
+    }
+   ],
+   "Industrial Components, Motion, Filtration & Engineered Products": [
+    {
+     "market_cap_m": 1807.526,
+     "price_vs_sma200": 1.0166,
+     "return_30d": 0.0387,
+     "return_7d": 0.033,
+     "revenue_driver": "aerospace composite components",
+     "signal_rank": 106,
+     "stock_vs_spy_20d": 0.042,
+     "ticker": "AIN"
+    },
+    {
+     "market_cap_m": 14270.8908,
+     "price_vs_sma200": 1.089,
+     "return_30d": 0.0076,
+     "return_7d": 0.0188,
+     "revenue_driver": "water quality systems",
+     "signal_rank": 560,
+     "stock_vs_spy_20d": 0.0179,
+     "ticker": "WTS"
+    },
+    {
+     "market_cap_m": 32944.2718,
+     "price_vs_sma200": 0.9032,
+     "return_30d": 0.0075,
+     "return_7d": -0.0572,
+     "revenue_driver": "industrial compressed air systems",
+     "signal_rank": 676,
+     "stock_vs_spy_20d": -0.0189,
+     "ticker": "IR"
+    },
+    {
+     "market_cap_m": 13488.7112,
+     "price_vs_sma200": 1.0267,
+     "return_30d": -0.0209,
+     "return_7d": -0.0537,
+     "revenue_driver": "power transmission distribution",
+     "signal_rank": 363,
+     "stock_vs_spy_20d": -0.0339,
+     "ticker": "AIT"
+    },
+    {
+     "market_cap_m": 10249.438,
+     "price_vs_sma200": 0.97,
+     "return_30d": -0.0549,
+     "return_7d": 0.0043,
+     "revenue_driver": "natural gas gathering",
+     "signal_rank": 1906,
+     "stock_vs_spy_20d": 0.0115,
+     "ticker": "AM"
+    },
+    {
+     "market_cap_m": 263876.8586,
+     "price_vs_sma200": 0.9565,
+     "return_30d": -0.0688,
+     "return_7d": -0.0484,
+     "revenue_driver": "braking and shock absorber systems",
+     "signal_rank": 1243,
+     "stock_vs_spy_20d": -0.0631,
+     "ticker": "ITT"
+    },
+    {
+     "market_cap_m": 239.1777,
+     "price_vs_sma200": 0.9672,
+     "return_30d": -0.0738,
+     "return_7d": -0.0215,
+     "revenue_driver": "insulated piping systems",
+     "signal_rank": 189,
+     "stock_vs_spy_20d": -0.0827,
+     "ticker": "PPIH"
+    },
+    {
+     "market_cap_m": 7053.7394,
+     "price_vs_sma200": 0.9072,
+     "return_30d": -0.1091,
+     "return_7d": -0.0894,
+     "revenue_driver": "sealing systems",
+     "signal_rank": 41,
+     "stock_vs_spy_20d": -0.1251,
+     "ticker": "NPO"
+    },
+    {
+     "market_cap_m": 85276.6675,
+     "price_vs_sma200": 0.7222,
+     "return_30d": -0.2441,
+     "return_7d": -0.1279,
+     "revenue_driver": "data center cooling systems",
+     "signal_rank": 1083,
+     "stock_vs_spy_20d": -0.2175,
+     "ticker": "VRT"
+    },
+    {
+     "market_cap_m": 135.6518,
+     "price_vs_sma200": 0.537,
+     "return_30d": -0.3277,
+     "return_7d": -0.201,
+     "revenue_driver": "thermal management systems",
+     "signal_rank": 1524,
+     "stock_vs_spy_20d": -0.3331,
+     "ticker": "KULR"
+    }
+   ]
+  }
+ },
+ "predictions": {
+  "badge_count": 0,
+  "confidence_score": 0.187,
+  "conviction_label": "SPECULATIVE",
+  "data_quality_flags": [],
+  "ev_score": 0.0908,
+  "is_diamond": false,
+  "passes_tradability_filter": true,
+  "quality_label": "HIGH",
+  "quantiles": {
+   "downside_q10": -0.36,
+   "downside_q25": -0.2219,
+   "downside_q50": -0.1293,
+   "downside_q75": -0.0382,
+   "downside_q90": -0.0021,
+   "path_volatility": 0.0483,
+   "risk_reward": 1.6266,
+   "uncertainty": 0.5289,
+   "upside_q10": 0.0298,
+   "upside_q25": 0.0884,
+   "upside_q50": 0.2102,
+   "upside_q75": 0.3505,
+   "upside_q90": 0.5587
+  },
+  "rank": 1083,
+  "rank_score": 0.0171,
+  "tradability_filter_reasons": []
+ },
+ "profile": {
+  "_local": {
+   "dividend_yield": 0.0002,
+   "eps_growth_yoy": 1.1121,
+   "pe_ratio": 50.4615,
+   "revenue_growth_yoy": 0.2623,
+   "roe": 0.3848
+  },
+  "beta": 2.048,
+  "betaTTM": null,
+  "ceo": "Giordano Albertazzi",
+  "companyName": "Vertiv Holdings Co",
+  "country": "US",
+  "debtToEquityTTM": null,
+  "description": "Vertiv Holdings Co, headquartered in Columbus, Ohio, is a global provider of essential digital infrastructure technologies and comprehensive lifecycle services. The company specializes in the design, manufacturing, and servicing of critical systems vital for data centers, communication networks, and diverse commercial and industrial applications. Its extensive product range encompasses AC and DC power management, thermal control solutions, integrated rack systems, modular designs, and sophisticated management platforms for monitoring and governing digital environments. These solutions are fundamental to the operation of numerous modern services, including e-commerce, online banking, file sharing, video on-demand, energy storage, wireless communications, the Internet of Things, and online gaming. In addition to its hardware offerings, Vertiv delivers a full spectrum of lifecycle management services. These include professional deployment, ongoing maintenance, and optimization, supported by predictive analytics. Specific service capabilities extend to preventative maintenance, acceptance testing, engineering and consulting, performance assessments, remote monitoring, training, spare parts, and specialized critical digital infrastructure software. Vertiv's products are marketed under prominent brands like Liebert, NetSure, Geist, E&I, Powerbar, and Avocent. The company serves a wide array of sectors such as social media, financial services, healthcare, transportation, retail, education, and government. Its global reach spans the Americas, Asia Pacific, and Europe, the Middle East, and Africa, facilitated by a robust network of direct sales professionals, independent representatives, channel partners, and original equipment manufacturers.",
+  "dividendYielTTM": null,
+  "enterpriseValueOverEBITDATTM": null,
+  "exchangeShortName": "NYSE",
+  "fullTimeEmployees": "34000",
+  "industry": "Electrical Equipment & Parts",
+  "ipoDate": "2018-08-02",
+  "latest_earnings_date": "2026-07-29",
+  "marketCapTTM": null,
+  "mktCap": 74810868160,
+  "peRatioTTM": null,
+  "price": 194.32,
+  "priceToSalesRatioTTM": null,
+  "returnOnEquityTTM": 0.4211,
+  "revenue_description": "Vertiv sells power and thermal infrastructure for data centers. Revenue is driven by subscription ACV from enterprise license agreements and usage-based consumption, with module expansion and new product attach as growth levers.",
+  "revenue_description_themes": [
+   "liquid cooling for AI data centers",
+   "hyperscale data center infrastructure expansion",
+   "energy efficient power management"
+  ],
+  "revenue_taxonomy": [
+   {
+    "bucket": "Data Centers, Towers, Fiber & Connectivity Assets",
+    "matched_tags": [
+     "data center cooling systems"
+    ],
+    "path": "Real Estate & Infrastructure › Property Ownership & Development › Data Centers, Towers, Fiber & Connectivity Assets",
+    "sector": "Real Estate & Infrastructure",
+    "segment": "Property Ownership & Development"
+   },
+   {
+    "bucket": "Electrical Equipment, Power Components & Grid Hardware",
+    "matched_tags": [
+     "uninterruptible power supplies"
+    ],
+    "path": "Industrials & Transportation › Industrial Products & Services › Electrical Equipment, Power Components & Grid Hardware",
+    "sector": "Industrials & Transportation",
+    "segment": "Industrial Products & Services"
+   },
+   {
+    "bucket": "Industrial Components, Motion, Filtration & Engineered Products",
+    "matched_tags": [
+     "thermal management hardware"
+    ],
+    "path": "Industrials & Transportation › Industrial Products & Services › Industrial Components, Motion, Filtration & Engineered Products",
+    "sector": "Industrials & Transportation",
+    "segment": "Industrial Products & Services"
+   }
+  ],
+  "revenue_themes": [
+   "data center cooling systems",
+   "uninterruptible power supplies",
+   "thermal management hardware"
+  ],
+  "sector": "Industrials",
+  "website": "https://www.vertiv.com"
+ },
+ "report": null,
+ "scorecard": {
+  "headline": {
+   "avg_universe_pct": 64,
+   "label": "above_average",
+   "metric_count": 8
+  },
+  "metrics": {
+   "debt_to_equity": {
+    "direction": "lower",
+    "label": "D/E Ratio",
+    "sector": "Info Tech",
+    "sector_n": 311,
+    "sector_pct": 28,
+    "universe_n": 2080,
+    "universe_pct": 36,
+    "value": 0.6844
+   },
+   "eps_growth_yoy": {
+    "direction": "higher",
+    "label": "EPS Growth",
+    "sector": "Info Tech",
+    "sector_n": 310,
+    "sector_pct": 79,
+    "universe_n": 1890,
+    "universe_pct": 85,
+    "value": 1.1121
+   },
+   "gross_margin": {
+    "direction": "higher",
+    "label": "Gross Margin",
+    "sector": "Info Tech",
+    "sector_n": 310,
+    "sector_pct": 29,
+    "universe_n": 2009,
+    "universe_pct": 39,
+    "value": 0.3776
+   },
+   "operating_margin": {
+    "direction": "higher",
+    "label": "Op. Margin",
+    "sector": "Info Tech",
+    "sector_n": 310,
+    "sector_pct": 78,
+    "universe_n": 2009,
+    "universe_pct": 71,
+    "value": 0.194
+   },
+   "pe_ratio": {
+    "direction": "lower",
+    "label": "P/E",
+    "sector": "Info Tech",
+    "sector_n": 199,
+    "sector_pct": 24,
+    "universe_n": 1471,
+    "universe_pct": 13,
+    "value": 50.4615
+   },
+   "revenue_growth_yoy": {
+    "direction": "higher",
+    "label": "Rev Growth",
+    "sector": "Info Tech",
+    "sector_n": 310,
+    "sector_pct": 75,
+    "universe_n": 1833,
+    "universe_pct": 84,
+    "value": 0.2623
+   },
+   "roe": {
+    "direction": "higher",
+    "label": "ROE",
+    "sector": "Info Tech",
+    "sector_n": 314,
+    "sector_pct": 87,
+    "universe_n": 2100,
+    "universe_pct": 90,
+    "value": 0.3848
+   },
+   "roic": {
+    "direction": "higher",
+    "label": "ROIC",
+    "sector": "Info Tech",
+    "sector_n": 309,
+    "sector_pct": 85,
+    "universe_n": 2051,
+    "universe_pct": 90,
+    "value": 0.0575
+   }
+  }
+ },
+ "signal_rank": 1083,
+ "structural_analogs": {
+  "gp_core_pct": 99.3,
+  "gp_core_ratio": 3.2488,
+  "matches": [
+   {
+    "actual_downside": -0.139,
+    "actual_return": -0.139,
+    "actual_upside": 0.0,
+    "days_in_region": 115,
+    "end_date": "2021-09-15",
+    "end_reason": "reversal",
+    "seq_len": 115,
+    "similarity": 0.5294,
+    "start_date": "2021-05-12",
+    "ticker": "UBER",
+    "total_distance": 0.318,
+    "trigger_date": "2021-05-26",
+    "trigger_type": "runup"
+   },
+   {
+    "actual_downside": -0.1379,
+    "actual_return": -0.1379,
+    "actual_upside": 0.0334,
+    "days_in_region": 118,
+    "end_date": "2021-10-04",
+    "end_reason": "reversal",
+    "seq_len": 118,
+    "similarity": 0.5106,
+    "start_date": "2021-05-12",
+    "ticker": "IPGP",
+    "total_distance": 0.3361,
+    "trigger_date": "2021-08-02",
+    "trigger_type": "runup"
+   },
+   {
+    "actual_downside": 0.0,
+    "actual_return": 0.1727,
+    "actual_upside": 0.1727,
+    "days_in_region": 71,
+    "end_date": "2021-07-02",
+    "end_reason": "reversal",
+    "seq_len": 71,
+    "similarity": 0.5011,
+    "start_date": "2021-04-29",
+    "ticker": "QRVO",
+    "total_distance": 0.3455,
+    "trigger_date": "2021-05-13",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": 0.0,
+    "actual_return": 0.7164,
+    "actual_upside": 0.7164,
+    "days_in_region": 157,
+    "end_date": "2021-09-02",
+    "end_reason": "reversal",
+    "seq_len": 157,
+    "similarity": 0.5002,
+    "start_date": "2020-12-23",
+    "ticker": "PCTY",
+    "total_distance": 0.3464,
+    "trigger_date": "2021-05-13",
+    "trigger_type": "severe_drawdown"
+   },
+   {
+    "actual_downside": -0.1589,
+    "actual_return": -0.1589,
+    "actual_upside": 0.0651,
+    "days_in_region": 118,
+    "end_date": "2021-08-17",
+    "end_reason": "reversal",
+    "seq_len": 118,
+    "similarity": 0.4981,
+    "start_date": "2021-03-30",
+    "ticker": "MTCH",
+    "total_distance": 0.3485,
+    "trigger_date": "2021-06-21",
+    "trigger_type": "runup"
+   },
+   {
+    "actual_downside": -0.0333,
+    "actual_return": 0.4869,
+    "actual_upside": 0.7668,
+    "days_in_region": 133,
+    "end_date": "2021-12-20",
+    "end_reason": "reversal",
+    "seq_len": 133,
+    "similarity": 0.4928,
+    "start_date": "2021-03-08",
+    "ticker": "XLNX",
+    "total_distance": 0.3538,
+    "trigger_date": "2021-06-02",
+    "trigger_type": "shallow_runup"
+   },
+   {
+    "actual_downside": -0.076,
+    "actual_return": -0.076,
+    "actual_upside": 0.0613,
+    "days_in_region": 174,
+    "end_date": "2021-10-04",
+    "end_reason": "reversal",
+    "seq_len": 174,
+    "similarity": 0.4917,
+    "start_date": "2021-03-08",
+    "ticker": "TER",
+    "total_distance": 0.3549,
+    "trigger_date": "2021-05-21",
+    "trigger_type": "runup"
+   },
+   {
+    "actual_downside": -0.2139,
+    "actual_return": -0.0746,
+    "actual_upside": 0.0465,
+    "days_in_region": 151,
+    "end_date": "2004-07-30",
+    "end_reason": "reversal",
+    "seq_len": 151,
+    "similarity": 0.4914,
+    "start_date": "2004-01-16",
+    "ticker": "IRF",
+    "total_distance": 0.3553,
+    "trigger_date": "2004-05-26",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": -0.1254,
+    "actual_return": -0.1254,
+    "actual_upside": 0.0186,
+    "days_in_region": 137,
+    "end_date": "2021-10-06",
+    "end_reason": "reversal",
+    "seq_len": 137,
+    "similarity": 0.4911,
+    "start_date": "2021-05-06",
+    "ticker": "COHR",
+    "total_distance": 0.3555,
+    "trigger_date": "2021-05-28",
+    "trigger_type": "shallow_runup"
+   },
+   {
+    "actual_downside": -0.0311,
+    "actual_return": 0.2465,
+    "actual_upside": 0.5403,
+    "days_in_region": 83,
+    "end_date": "2021-10-11",
+    "end_reason": "reversal",
+    "seq_len": 83,
+    "similarity": 0.4909,
+    "start_date": "2021-04-14",
+    "ticker": "GLOB",
+    "total_distance": 0.3557,
+    "trigger_date": "2021-05-11",
+    "trigger_type": "compression"
+   }
+  ],
+  "panel": {
+   "edge": 0.1129,
+   "hit_hi": 0.738,
+   "hit_lo": 0.506,
+   "hit_rate": 0.63,
+   "median_final": 0.1322,
+   "median_pain": 0.0526,
+   "n": 27,
+   "n_eff": 27.0,
+   "p25_final": -0.076,
+   "p_pain_gt5": 0.519,
+   "return_to_pain": 1.821
+  },
+  "stats": {
+   "avg_similarity": 0.453,
+   "avg_trough": 0.1047,
+   "avg_upside": 0.2142,
+   "median_pain": 0.0671,
+   "median_return": 0.0951,
+   "n_matches": 200,
+   "p25_return": -0.0877,
+   "p_pain_gt5": 0.535,
+   "return_to_pain": 1.092,
+   "top5_avg_trough": 0.0872,
+   "top5_avg_upside": 0.1975,
+   "top_similarity": 0.529,
+   "win_rate": 0.61
+  },
+  "total_matches": 200
+ },
+ "ticker": "VRT",
+ "trending": {
+  "acceleration": -0.0058,
+  "avg_vol_20d": 5617588.4304,
+  "base_high_120": 376.23,
+  "breakout_confirmed": 0,
+  "close": 333.05,
+  "momentum_score": 0.7074,
+  "momentum_start": "2025-05-27",
+  "range_20": 0.2102,
+  "range_50": 0.3145,
+  "rank": 517,
+  "rank_down": null,
+  "rank_up": 333,
+  "ret_120": 0.9959,
+  "ret_20": 0.0551,
+  "ret_60": 0.2295,
+  "rundown_score": 0.7933,
+  "score_date": "2026-06-19",
+  "slope_20": -0.0031,
+  "slope_60": 0.0027,
+  "stage": "sustained",
+  "stage_label": "Trending",
+  "ticker": "VRT",
+  "total_score": 0.4888,
+  "trend_ratio": 1.3881,
+  "vcp_detected": 0,
+  "vcp_score": 0.3431
+ }
+}
