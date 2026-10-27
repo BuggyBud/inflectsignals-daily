@@ -1,0 +1,1132 @@
+{
+ "date": "2026-10-26",
+ "detected_regions": {
+  "primary": {
+   "days_in_region": 87,
+   "region_start": "2026-09-18",
+   "trigger_date": "2026-10-15",
+   "trigger_type": "compression"
+  },
+  "secondary": [
+   {
+    "confidence_score": 0.5118,
+    "downside_q50": -0.0877,
+    "ev_score": 0.1296,
+    "region_start": "2026-07-06",
+    "seq_len": 140,
+    "trigger_date": "2026-09-09",
+    "trigger_type": "severe_drawdown",
+    "upside_q25": 0.0993,
+    "upside_q50": 0.2159,
+    "upside_q75": 0.3392
+   },
+   {
+    "confidence_score": 0.6583,
+    "downside_q50": -0.0774,
+    "ev_score": 0.1328,
+    "region_start": "2026-03-13",
+    "seq_len": 200,
+    "trigger_date": "2026-08-05",
+    "trigger_type": "runup",
+    "upside_q25": 0.0983,
+    "upside_q50": 0.2097,
+    "upside_q75": 0.3352
+   }
+  ]
+ },
+ "feature_attribution": {
+  "macro_driver_count": 14,
+  "risk_flags": [
+   "high_volatility"
+  ],
+  "top_drivers": [
+   {
+    "direction": "negative",
+    "feature": "dollar_volume",
+    "feature_value": 706241728.0,
+    "importance": 0.0009,
+    "importance_pct": 0.3592,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "positive",
+    "feature": "price_vs_sma200",
+    "feature_value": 0.6516,
+    "importance": 0.0004,
+    "importance_pct": 0.1483,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "positive",
+    "feature": "price_vs_high_52w",
+    "feature_value": 0.4675,
+    "importance": 0.0004,
+    "importance_pct": 0.1475,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "positive",
+    "feature": "return_1d",
+    "feature_value": 0.0169,
+    "importance": 0.0003,
+    "importance_pct": 0.1424,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "negative",
+    "feature": "ma_200_slope",
+    "feature_value": 0.0097,
+    "importance": 0.0003,
+    "importance_pct": 0.108,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "positive",
+    "feature": "price_vs_low_52w",
+    "feature_value": 1.0169,
+    "importance": 0.0002,
+    "importance_pct": 0.0945,
+    "method": "integrated_gradients"
+   }
+  ]
+ },
+ "fundamentals": {
+  "accrual": 0.0382,
+  "adx_14": 66.6549,
+  "altman_z_score": 7.1828,
+  "amihud_illiquidity": 0.0,
+  "avg_volume": 802475.1148,
+  "beta_252d": 0.8245,
+  "book_value_per_share": 43.8313,
+  "correlation_spy_60d": 0.5096,
+  "current_liabilities": 467.5,
+  "current_ratio": 3.9403,
+  "daily_earnings_yield": 0.0395,
+  "daily_fcf_yield": 0.0093,
+  "daily_pb": 6.6069,
+  "daily_pe": 25.3099,
+  "daily_ps": 4.5227,
+  "days_since_52w_high": 79.0,
+  "debt_ebitda": 0.8071,
+  "debt_to_equity": 0.3166,
+  "dividend_yield": 0.0021,
+  "dollar_volume_20d_avg": 334595854.3764,
+  "earnings_quality": 0.3249,
+  "ebitda_growth_yoy": 0.218,
+  "enterprise_value": 14953.1041,
+  "eps_basic": 3.26,
+  "eps_cagr_3y": 0.7357,
+  "eps_cagr_5y": 0.2275,
+  "eps_diluted": 3.25,
+  "eps_growth_accel": -0.0319,
+  "eps_growth_qoq": 0.0031,
+  "eps_growth_yoy": 0.3801,
+  "eps_growth_yoy_q2": 0.412,
+  "eps_growth_yoy_q3": 0.3403,
+  "eps_growth_yoy_q4": 0.6194,
+  "eps_growth_yoy_q5": 0.8194,
+  "eps_growth_yoy_q6": 1.0053,
+  "eps_growth_yoy_q7": 1.6943,
+  "eps_growth_yoy_q8": 0.8419,
+  "eps_history_8q": [
+   1.66,
+   1.88,
+   2.21,
+   2.43,
+   2.09,
+   2.77,
+   3.23,
+   3.25
+  ],
+  "eps_ttm": 11.4374,
+  "ev_to_ebitda": 17.4665,
+  "ev_to_fcf": -600.5263,
+  "ev_to_sales": 18.7335,
+  "fcf_growth_yoy": -6.3235,
+  "fcf_margin": -0.0312,
+  "fcf_per_share": -0.5,
+  "gross_margin": 0.3122,
+  "gross_margin_change_yoy": -0.0229,
+  "gross_margin_history": [
+   0.3155,
+   0.3284,
+   0.3249,
+   0.321,
+   0.3174,
+   0.3122
+  ],
+  "inc_roic": -0.0024,
+  "interest_coverage": 26.7531,
+  "is_pre_revenue": false,
+  "margin_vs_sector_median": null,
+  "market_cap_ratio": 14421.6041,
+  "net_income": 162.5,
+  "net_margin": 0.1787,
+  "operating_income": 196.4,
+  "operating_margin": 0.2337,
+  "operating_margin_change_yoy": 0.0371,
+  "pb_ratio": 6.6044,
+  "pe_percentile_1y": 0.996,
+  "pe_ratio": 25.3099,
+  "peg_trailing": 0.6671,
+  "piotroski_f_score": 3.0,
+  "price_vs_high_52w": 0.4675,
+  "price_vs_sma200": 0.6516,
+  "ps_percentile_1y": 0.996,
+  "ps_ratio": 4.5662,
+  "quarter_labels_8q": [
+   "Q2 '25",
+   "Q3 '25",
+   "Q4 '25",
+   "Q1 '26",
+   "Q2 '25",
+   "Q3 '26",
+   "Q4 '26",
+   "Q1 '26"
+  ],
+  "quarterly_eps_growth_yoy": 0.3374,
+  "quarterly_eps_growth_yoy_8q": [
+   0.9529,
+   10.0,
+   0.1946,
+   0.4551,
+   0.259,
+   0.4734,
+   0.4615,
+   0.3374
+  ],
+  "quarterly_revenue_growth_yoy": 0.0879,
+  "quarterly_revenue_growth_yoy_8q": [
+   0.0844,
+   0.0613,
+   -0.0538,
+   0.0224,
+   0.0755,
+   0.1162,
+   0.1263,
+   0.0879
+  ],
+  "revenue_cagr_3y": 0.0597,
+  "revenue_cagr_5y": 0.1613,
+  "revenue_growth_accel": 0.0163,
+  "revenue_growth_qoq": -0.062,
+  "revenue_growth_yoy": 0.1021,
+  "revenue_growth_yoy_q2": 0.0859,
+  "revenue_growth_yoy_q3": 0.0372,
+  "revenue_growth_yoy_q4": 0.023,
+  "revenue_growth_yoy_q5": 0.024,
+  "revenue_growth_yoy_q6": 0.0425,
+  "revenue_growth_yoy_q7": 0.0738,
+  "revenue_growth_yoy_q8": 0.0564,
+  "revenue_history_8q": [
+   676.9,
+   727.0,
+   755.6,
+   733.7,
+   728.0,
+   811.5,
+   851.0,
+   798.2
+  ],
+  "revenue_per_share": 16.0281,
+  "roa": 0.1503,
+  "roce": 0.2259,
+  "roe": 0.2584,
+  "roic": 0.1739,
+  "rsi_14": 10.2706,
+  "sector_momentum": 0.0227,
+  "share_dilution_1y": -0.004,
+  "stock_vs_sector_20d": -0.2098,
+  "stock_vs_spy_20d": -0.2479,
+  "total_assets": 3744.7,
+  "vol_regime": 1.4461,
+  "volatility_20d": 0.0471,
+  "volatility_60d": 0.0326,
+  "w52_high": 625.99,
+  "w52_low": 275.6
+ },
+ "market_characters": [],
+ "model_analogs": {
+  "matches": [
+   {
+    "actual_downside": -0.176,
+    "actual_return": 0.0947,
+    "actual_upside": 0.1082,
+    "days_in_region": 138,
+    "end_date": "2019-02-13",
+    "end_reason": "reversal",
+    "similarity": 0.9614,
+    "start_date": "2018-09-28",
+    "ticker": "AVTA",
+    "trigger_date": "2018-10-11",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": 0.0,
+    "actual_return": 0.2437,
+    "actual_upside": 0.2437,
+    "days_in_region": 207,
+    "end_date": "1990-04-17",
+    "end_reason": "reversal",
+    "similarity": 0.9613,
+    "start_date": "1989-09-22",
+    "ticker": "AGE",
+    "trigger_date": "1989-10-17",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": 0.0,
+    "actual_return": 0.3944,
+    "actual_upside": 0.3944,
+    "days_in_region": 182,
+    "end_date": "1990-04-09",
+    "end_reason": "reversal",
+    "similarity": 0.9568,
+    "start_date": "1989-10-09",
+    "ticker": "CCC",
+    "trigger_date": "1989-12-27",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": -0.0789,
+    "actual_return": 0.0921,
+    "actual_upside": 0.0921,
+    "days_in_region": 112,
+    "end_date": "1989-12-14",
+    "end_reason": "reversal",
+    "similarity": 0.9565,
+    "start_date": "1989-08-24",
+    "ticker": "CCL",
+    "trigger_date": "1989-11-17",
+    "trigger_type": "severe_drawdown"
+   },
+   {
+    "actual_downside": -0.2154,
+    "actual_return": -0.0615,
+    "actual_upside": 0.0769,
+    "days_in_region": 150,
+    "end_date": "1990-03-08",
+    "end_reason": "reversal",
+    "similarity": 0.9552,
+    "start_date": "1989-10-09",
+    "ticker": "CMCSA",
+    "trigger_date": "1989-11-07",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": -0.0644,
+    "actual_return": 0.0712,
+    "actual_upside": 0.0712,
+    "days_in_region": 151,
+    "end_date": "1990-03-05",
+    "end_reason": "reversal",
+    "similarity": 0.9542,
+    "start_date": "1989-10-05",
+    "ticker": "KEM",
+    "trigger_date": "1990-01-29",
+    "trigger_type": "severe_drawdown"
+   },
+   {
+    "actual_downside": 0.0,
+    "actual_return": 0.4048,
+    "actual_upside": 0.4048,
+    "days_in_region": 147,
+    "end_date": "1990-03-19",
+    "end_reason": "reversal",
+    "similarity": 0.9541,
+    "start_date": "1989-10-23",
+    "ticker": "TDM",
+    "trigger_date": "1989-12-18",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": -0.0352,
+    "actual_return": 0.1641,
+    "actual_upside": 0.1641,
+    "days_in_region": 92,
+    "end_date": "1990-01-04",
+    "end_reason": "reversal",
+    "similarity": 0.954,
+    "start_date": "1989-10-04",
+    "ticker": "BBWI",
+    "trigger_date": "1989-11-21",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": -0.0917,
+    "actual_return": 0.1819,
+    "actual_upside": 0.1819,
+    "days_in_region": 124,
+    "end_date": "2005-11-21",
+    "end_reason": "reversal",
+    "similarity": 0.9539,
+    "start_date": "2005-07-20",
+    "ticker": "ASCA",
+    "trigger_date": "2005-09-21",
+    "trigger_type": "severe_drawdown"
+   },
+   {
+    "actual_downside": -0.2357,
+    "actual_return": -0.1214,
+    "actual_upside": 0.0929,
+    "days_in_region": 73,
+    "end_date": "1990-09-28",
+    "end_reason": "reversal",
+    "similarity": 0.9537,
+    "start_date": "1990-07-17",
+    "ticker": "SFA",
+    "trigger_date": "1990-08-03",
+    "trigger_type": "drawdown"
+   }
+  ],
+  "stats": {
+   "avg_max_drawdown": 0.1068,
+   "avg_similarity": 0.952,
+   "avg_trough": 0.1068,
+   "avg_upside": 0.1914,
+   "best_return": 0.7123,
+   "downside_range": [
+    -0.5108,
+    0.0
+   ],
+   "median_return": 0.1465,
+   "n_matches": 50,
+   "outcome_agreement": true,
+   "return_p25": 0.0239,
+   "return_p5": -0.1516,
+   "return_p75": 0.2635,
+   "return_p95": 0.4563,
+   "sim_weighted_win_rate": 0.78,
+   "top5_avg_trough": 0.0941,
+   "top5_avg_upside": 0.1831,
+   "top_similarity": 0.961,
+   "upside_range": [
+    0.0,
+    0.7123
+   ],
+   "win_rate": 0.78,
+   "worst_return": -0.3003,
+   "years_span": 12
+  },
+  "total_matches": 50
+ },
+ "peer_group": {
+  "buckets": [
+   "Advanced Materials, Composites & Performance Polymers",
+   "Medical Devices, Implants & Procedure Equipment",
+   "Metals, Mining, Minerals & Smelting"
+  ],
+  "groups": {
+   "Advanced Materials, Composites & Performance Polymers": [
+    {
+     "market_cap_m": 72463.8448,
+     "price_vs_sma200": 0.9854,
+     "return_30d": 0.0961,
+     "return_7d": 0.0353,
+     "revenue_driver": "specialty electronic materials",
+     "signal_rank": 1740,
+     "stock_vs_spy_20d": 0.0411,
+     "ticker": "DD"
+    },
+    {
+     "market_cap_m": 516.5438,
+     "price_vs_sma200": 1.1179,
+     "return_30d": 0.0637,
+     "return_7d": -0.0407,
+     "revenue_driver": "aerogel insulation materials",
+     "signal_rank": 1223,
+     "stock_vs_spy_20d": 0.0028,
+     "ticker": "ASPN"
+    },
+    {
+     "market_cap_m": 1807.526,
+     "price_vs_sma200": 1.0247,
+     "return_30d": 0.0492,
+     "return_7d": 0.0404,
+     "revenue_driver": "aerospace composite components",
+     "signal_rank": 92,
+     "stock_vs_spy_20d": 0.0519,
+     "ticker": "AIN"
+    },
+    {
+     "market_cap_m": 3905.2046,
+     "price_vs_sma200": 1.0768,
+     "return_30d": 0.0029,
+     "return_7d": 0.0585,
+     "revenue_driver": "specialty polymer additives",
+     "signal_rank": 1517,
+     "stock_vs_spy_20d": 0.003,
+     "ticker": "AVNT"
+    },
+    {
+     "market_cap_m": 7979.1965,
+     "price_vs_sma200": 0.9253,
+     "return_30d": -0.019,
+     "return_7d": 0.0291,
+     "revenue_driver": "specialty chemicals",
+     "signal_rank": 46,
+     "stock_vs_spy_20d": -0.0103,
+     "ticker": "EMN"
+    },
+    {
+     "market_cap_m": 2186.9243,
+     "price_vs_sma200": 0.6985,
+     "return_30d": -0.1173,
+     "return_7d": -0.0031,
+     "revenue_driver": "titanium technologies",
+     "signal_rank": 1107,
+     "stock_vs_spy_20d": -0.0883,
+     "ticker": "CC"
+    },
+    {
+     "market_cap_m": 7151.803,
+     "price_vs_sma200": 0.8793,
+     "return_30d": -0.1239,
+     "return_7d": -0.1126,
+     "revenue_driver": "aerospace composite materials",
+     "signal_rank": 462,
+     "stock_vs_spy_20d": -0.0515,
+     "ticker": "HXL"
+    },
+    {
+     "market_cap_m": 61321.7374,
+     "price_vs_sma200": 0.9541,
+     "return_30d": -0.1255,
+     "return_7d": -0.1308,
+     "revenue_driver": "titanium aerospace materials",
+     "signal_rank": 618,
+     "stock_vs_spy_20d": -0.0885,
+     "ticker": "ATI"
+    },
+    {
+     "market_cap_m": 541.8413,
+     "price_vs_sma200": 0.8581,
+     "return_30d": -0.1394,
+     "return_7d": 0.0061,
+     "revenue_driver": "aerospace composite structures",
+     "signal_rank": 667,
+     "stock_vs_spy_20d": -0.1117,
+     "ticker": "PKE"
+    },
+    {
+     "market_cap_m": 14560.1009,
+     "price_vs_sma200": 0.6516,
+     "return_30d": -0.3114,
+     "return_7d": -0.2393,
+     "revenue_driver": "aerospace specialty alloys",
+     "signal_rank": 185,
+     "stock_vs_spy_20d": -0.2479,
+     "ticker": "CRS"
+    }
+   ],
+   "Medical Devices, Implants & Procedure Equipment": [
+    {
+     "market_cap_m": 433186.0635,
+     "price_vs_sma200": 1.2165,
+     "return_30d": 0.0957,
+     "return_7d": 0.0118,
+     "revenue_driver": "immunology therapeutics",
+     "signal_rank": 1870,
+     "stock_vs_spy_20d": 0.0777,
+     "ticker": "ABBV"
+    },
+    {
+     "market_cap_m": 360166.8678,
+     "price_vs_sma200": 1.0271,
+     "return_30d": 0.0174,
+     "return_7d": 0.0019,
+     "revenue_driver": "continuous glucose monitors",
+     "signal_rank": 1765,
+     "stock_vs_spy_20d": 0.0394,
+     "ticker": "ABT"
+    },
+    {
+     "market_cap_m": 8790.3212,
+     "price_vs_sma200": 1.0019,
+     "return_30d": 0.0173,
+     "return_7d": 0.0226,
+     "revenue_driver": "dispensing and sealing packaging",
+     "signal_rank": 879,
+     "stock_vs_spy_20d": 0.0219,
+     "ticker": "ATR"
+    },
+    {
+     "market_cap_m": 908.695,
+     "price_vs_sma200": 0.6388,
+     "return_30d": 0.0085,
+     "return_7d": -0.072,
+     "revenue_driver": "sleep therapy devices",
+     "signal_rank": 489,
+     "stock_vs_spy_20d": 0.0504,
+     "ticker": "AHCO"
+    },
+    {
+     "market_cap_m": 1537.4925,
+     "price_vs_sma200": 1.017,
+     "return_30d": 0.0037,
+     "return_7d": -0.0027,
+     "revenue_driver": "spinal implants",
+     "signal_rank": 1535,
+     "stock_vs_spy_20d": 0.0854,
+     "ticker": "ATEC"
+    },
+    {
+     "market_cap_m": 12544.0525,
+     "price_vs_sma200": 0.8999,
+     "return_30d": -0.0048,
+     "return_7d": 0.0196,
+     "revenue_driver": "Invisalign clear aligners",
+     "signal_rank": 1020,
+     "stock_vs_spy_20d": 0.0509,
+     "ticker": "ALGN"
+    },
+    {
+     "market_cap_m": 3854.43,
+     "price_vs_sma200": 0.7713,
+     "return_30d": -0.0797,
+     "return_7d": 0.0508,
+     "revenue_driver": "tissue heart valves",
+     "signal_rank": 1534,
+     "stock_vs_spy_20d": 0.0021,
+     "ticker": "AORT"
+    },
+    {
+     "market_cap_m": 462.676,
+     "price_vs_sma200": 0.9788,
+     "return_30d": -0.2153,
+     "return_7d": 0.0509,
+     "revenue_driver": "peripheral vascular devices",
+     "signal_rank": 1104,
+     "stock_vs_spy_20d": -0.216,
+     "ticker": "ANGO"
+    },
+    {
+     "market_cap_m": 14560.1009,
+     "price_vs_sma200": 0.6516,
+     "return_30d": -0.3114,
+     "return_7d": -0.2393,
+     "revenue_driver": "aerospace specialty alloys",
+     "signal_rank": 185,
+     "stock_vs_spy_20d": -0.2479,
+     "ticker": "CRS"
+    },
+    {
+     "market_cap_m": 171.7018,
+     "price_vs_sma200": 0.373,
+     "return_30d": -0.5084,
+     "return_7d": -0.1731,
+     "revenue_driver": "minimally invasive body contouring",
+     "signal_rank": 1807,
+     "stock_vs_spy_20d": -0.3768,
+     "ticker": "AIRS"
+    }
+   ],
+   "Metals, Mining, Minerals & Smelting": [
+    {
+     "market_cap_m": 897.9524,
+     "price_vs_sma200": 1.0661,
+     "return_30d": 0.0875,
+     "return_7d": -0.002,
+     "revenue_driver": "specialty steel bar and rod",
+     "signal_rank": 1185,
+     "stock_vs_spy_20d": 0.0752,
+     "ticker": "MTUS"
+    },
+    {
+     "market_cap_m": 6159.3596,
+     "price_vs_sma200": 1.0787,
+     "return_30d": -0.0569,
+     "return_7d": -0.1016,
+     "revenue_driver": "beryllium and copper alloys",
+     "signal_rank": 640,
+     "stock_vs_spy_20d": -0.1344,
+     "ticker": "MTRN"
+    },
+    {
+     "market_cap_m": 2373.6562,
+     "price_vs_sma200": 0.8717,
+     "return_30d": -0.0809,
+     "return_7d": -0.0221,
+     "revenue_driver": "specialty minerals processing",
+     "signal_rank": 15,
+     "stock_vs_spy_20d": -0.0668,
+     "ticker": "MTX"
+    },
+    {
+     "market_cap_m": 61321.7374,
+     "price_vs_sma200": 0.9541,
+     "return_30d": -0.1255,
+     "return_7d": -0.1308,
+     "revenue_driver": "titanium aerospace materials",
+     "signal_rank": 618,
+     "stock_vs_spy_20d": -0.0885,
+     "ticker": "ATI"
+    },
+    {
+     "market_cap_m": 10467.3249,
+     "price_vs_sma200": 0.68,
+     "return_30d": -0.1757,
+     "return_7d": -0.0426,
+     "revenue_driver": "primary aluminum production",
+     "signal_rank": 1054,
+     "stock_vs_spy_20d": -0.0832,
+     "ticker": "AA"
+    },
+    {
+     "market_cap_m": 1953.7731,
+     "price_vs_sma200": 0.852,
+     "return_30d": -0.1962,
+     "return_7d": -0.0629,
+     "revenue_driver": "metallurgical coal mining",
+     "signal_rank": 1432,
+     "stock_vs_spy_20d": -0.0932,
+     "ticker": "AMR"
+    },
+    {
+     "market_cap_m": 14560.1009,
+     "price_vs_sma200": 0.6516,
+     "return_30d": -0.3114,
+     "return_7d": -0.2393,
+     "revenue_driver": "aerospace specialty alloys",
+     "signal_rank": 185,
+     "stock_vs_spy_20d": -0.2479,
+     "ticker": "CRS"
+    },
+    {
+     "market_cap_m": 75.6597,
+     "price_vs_sma200": 0.5566,
+     "return_30d": -0.3833,
+     "return_7d": -0.1957,
+     "revenue_driver": "lithium mining development",
+     "signal_rank": null,
+     "stock_vs_spy_20d": -0.2645,
+     "ticker": "ATLX"
+    },
+    {
+     "market_cap_m": 306.7292,
+     "price_vs_sma200": 0.4268,
+     "return_30d": -0.4576,
+     "return_7d": -0.1847,
+     "revenue_driver": "lithium ion battery recycling",
+     "signal_rank": 939,
+     "stock_vs_spy_20d": -0.4353,
+     "ticker": "ABAT"
+    },
+    {
+     "market_cap_m": 216.981,
+     "price_vs_sma200": 0.4554,
+     "return_30d": -0.4657,
+     "return_7d": -0.0917,
+     "revenue_driver": "metallurgical coal mining",
+     "signal_rank": 922,
+     "stock_vs_spy_20d": -0.4035,
+     "ticker": "AREC"
+    }
+   ]
+  }
+ },
+ "predictions": {
+  "badge_count": 1,
+  "confidence_score": 0.4819,
+  "conviction_label": "SPECULATIVE",
+  "data_quality_flags": [],
+  "ev_score": 0.1219,
+  "is_diamond": false,
+  "passes_tradability_filter": true,
+  "quality_label": "HIGH",
+  "quantiles": {
+   "downside_q10": -0.2717,
+   "downside_q25": -0.159,
+   "downside_q50": -0.0945,
+   "downside_q75": -0.0262,
+   "downside_q90": 0.0026,
+   "path_volatility": 0.0379,
+   "risk_reward": 2.2503,
+   "uncertainty": 0.4671,
+   "upside_q10": 0.0347,
+   "upside_q25": 0.096,
+   "upside_q50": 0.2127,
+   "upside_q75": 0.3286,
+   "upside_q90": 0.5018
+  },
+  "rank": 185,
+  "rank_score": 0.0745,
+  "tradability_filter_reasons": []
+ },
+ "profile": {
+  "_local": {
+   "dividend_yield": 0.0021,
+   "eps_growth_yoy": 0.3801,
+   "pe_ratio": 25.7725,
+   "revenue_growth_yoy": 0.1021,
+   "roe": 0.2584
+  },
+  "beta": 1.289,
+  "betaTTM": null,
+  "ceo": "Brian J. Malloy",
+  "companyName": "Carpenter Technology Corporation",
+  "country": "US",
+  "debtToEquityTTM": null,
+  "description": "Carpenter Technology Corporation is a global leader in the production and supply of high-performance metallic materials, serving markets across the United States, Europe, Asia Pacific, Mexico, and Canada. The company's operations are structured into two primary divisions: Specialty Alloys Operations and Performance Engineered Products. Its diverse product portfolio encompasses advanced alloys like titanium, stainless, alloy, and tool steels, alongside various powder metals, additives, and custom-fabricated metal components. These specialized materials are critical to numerous industries, including aerospace, defense, medical devices, transportation, energy generation, general manufacturing, and consumer goods. Established in 1889, Carpenter Technology maintains its corporate headquarters in Philadelphia, Pennsylvania.",
+  "dividendYielTTM": null,
+  "enterpriseValueOverEBITDATTM": null,
+  "exchangeShortName": "NYSE",
+  "fullTimeEmployees": "4500",
+  "industry": "Steel",
+  "ipoDate": "1987-11-05",
+  "latest_earnings_date": "2026-10-22",
+  "marketCapTTM": null,
+  "mktCap": 14341051389,
+  "peRatioTTM": null,
+  "price": 289.48,
+  "priceToSalesRatioTTM": null,
+  "returnOnEquityTTM": 0.2693,
+  "revenue_description": "Carpenter Technology produces specialty alloys for aerospace, defense, and industrial applications. Revenue is driven by multi-year government defense contracts and deliveries across platforms, systems, and services, with the DoD budget and international arms sales as demand drivers.",
+  "revenue_description_themes": [
+   "commercial aerospace recovery",
+   "defense program alloy demand",
+   "medical implant material growth"
+  ],
+  "revenue_taxonomy": [
+   {
+    "bucket": "Metals, Mining, Minerals & Smelting",
+    "matched_tags": [
+     "aerospace specialty alloys"
+    ],
+    "path": "Materials & Chemicals › Packaging Metals & Resource Processing › Metals, Mining, Minerals & Smelting",
+    "sector": "Materials & Chemicals",
+    "segment": "Packaging Metals & Resource Processing"
+   },
+   {
+    "bucket": "Advanced Materials, Composites & Performance Polymers",
+    "matched_tags": [
+     "defense titanium alloys"
+    ],
+    "path": "Materials & Chemicals › Chemicals & Advanced Materials › Advanced Materials, Composites & Performance Polymers",
+    "sector": "Materials & Chemicals",
+    "segment": "Chemicals & Advanced Materials"
+   },
+   {
+    "bucket": "Medical Devices, Implants & Procedure Equipment",
+    "matched_tags": [
+     "medical implant materials"
+    ],
+    "path": "Healthcare & Life Sciences › Devices Diagnostics & Tools › Medical Devices, Implants & Procedure Equipment",
+    "sector": "Healthcare & Life Sciences",
+    "segment": "Devices Diagnostics & Tools"
+   }
+  ],
+  "revenue_themes": [
+   "aerospace specialty alloys",
+   "defense titanium alloys",
+   "medical implant materials"
+  ],
+  "sector": "Basic Materials",
+  "website": "https://www.carpentertechnology.com"
+ },
+ "report": null,
+ "scorecard": {
+  "headline": {
+   "avg_universe_pct": 62,
+   "label": "above_average",
+   "metric_count": 8
+  },
+  "metrics": {
+   "debt_to_equity": {
+    "direction": "lower",
+    "label": "D/E Ratio",
+    "sector": "Materials",
+    "sector_n": 121,
+    "sector_pct": 67,
+    "universe_n": 2082,
+    "universe_pct": 53,
+    "value": 0.3166
+   },
+   "eps_growth_yoy": {
+    "direction": "higher",
+    "label": "EPS Growth",
+    "sector": "Materials",
+    "sector_n": 121,
+    "sector_pct": 63,
+    "universe_n": 1892,
+    "universe_pct": 66,
+    "value": 0.3801
+   },
+   "gross_margin": {
+    "direction": "higher",
+    "label": "Gross Margin",
+    "sector": "Materials",
+    "sector_n": 119,
+    "sector_pct": 63,
+    "universe_n": 2010,
+    "universe_pct": 30,
+    "value": 0.3122
+   },
+   "operating_margin": {
+    "direction": "higher",
+    "label": "Op. Margin",
+    "sector": "Materials",
+    "sector_n": 119,
+    "sector_pct": 89,
+    "universe_n": 2010,
+    "universe_pct": 79,
+    "value": 0.2337
+   },
+   "pe_ratio": {
+    "direction": "lower",
+    "label": "P/E",
+    "sector": "Materials",
+    "sector_n": 77,
+    "sector_pct": 45,
+    "universe_n": 1474,
+    "universe_pct": 38,
+    "value": 25.7725
+   },
+   "revenue_growth_yoy": {
+    "direction": "higher",
+    "label": "Rev Growth",
+    "sector": "Materials",
+    "sector_n": 119,
+    "sector_pct": 69,
+    "universe_n": 1834,
+    "universe_pct": 57,
+    "value": 0.1021
+   },
+   "roe": {
+    "direction": "higher",
+    "label": "ROE",
+    "sector": "Materials",
+    "sector_n": 122,
+    "sector_pct": 89,
+    "universe_n": 2102,
+    "universe_pct": 83,
+    "value": 0.2584
+   },
+   "roic": {
+    "direction": "higher",
+    "label": "ROIC",
+    "sector": "Materials",
+    "sector_n": 120,
+    "sector_pct": 92,
+    "universe_n": 2053,
+    "universe_pct": 87,
+    "value": 0.0496
+   }
+  }
+ },
+ "signal_rank": 185,
+ "structural_analogs": {
+  "gp_core_pct": 4.6,
+  "gp_core_ratio": 0.7374,
+  "matches": [
+   {
+    "actual_downside": -0.1352,
+    "actual_return": 0.0749,
+    "actual_upside": 0.0749,
+    "days_in_region": 146,
+    "end_date": "2021-11-12",
+    "end_reason": "reversal",
+    "seq_len": 146,
+    "similarity": 0.5413,
+    "start_date": "2021-04-05",
+    "ticker": "SMG",
+    "total_distance": 0.3069,
+    "trigger_date": "2021-05-20",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": -0.1756,
+    "actual_return": 0.0949,
+    "actual_upside": 0.0949,
+    "days_in_region": 80,
+    "end_date": "2021-11-04",
+    "end_reason": "reversal",
+    "seq_len": 80,
+    "similarity": 0.5244,
+    "start_date": "2021-03-26",
+    "ticker": "TTWO",
+    "total_distance": 0.3228,
+    "trigger_date": "2021-04-23",
+    "trigger_type": "compression"
+   },
+   {
+    "actual_downside": -0.2293,
+    "actual_return": -0.1399,
+    "actual_upside": 0.0,
+    "days_in_region": 70,
+    "end_date": "2018-10-26",
+    "end_reason": "new_pattern",
+    "seq_len": 70,
+    "similarity": 0.5171,
+    "start_date": "2018-09-10",
+    "ticker": "ATHM",
+    "total_distance": 0.3298,
+    "trigger_date": "2018-09-21",
+    "trigger_type": "shallow_runup"
+   },
+   {
+    "actual_downside": -0.0981,
+    "actual_return": 0.0595,
+    "actual_upside": 0.3537,
+    "days_in_region": 73,
+    "end_date": "2006-03-28",
+    "end_reason": "reversal",
+    "seq_len": 73,
+    "similarity": 0.5123,
+    "start_date": "2005-09-21",
+    "ticker": "ANF",
+    "total_distance": 0.3344,
+    "trigger_date": "2005-10-07",
+    "trigger_type": "runup"
+   },
+   {
+    "actual_downside": -0.2235,
+    "actual_return": -0.2235,
+    "actual_upside": 0.002,
+    "days_in_region": 71,
+    "end_date": "2006-08-11",
+    "end_reason": "reversal",
+    "seq_len": 71,
+    "similarity": 0.5052,
+    "start_date": "2006-06-16",
+    "ticker": "JAKK",
+    "total_distance": 0.3414,
+    "trigger_date": "2006-06-30",
+    "trigger_type": "runup"
+   },
+   {
+    "actual_downside": -0.3014,
+    "actual_return": -0.3014,
+    "actual_upside": 0.0251,
+    "days_in_region": 66,
+    "end_date": "2022-06-16",
+    "end_reason": "reversal",
+    "seq_len": 66,
+    "similarity": 0.5029,
+    "start_date": "2022-02-23",
+    "ticker": "POOL",
+    "total_distance": 0.3437,
+    "trigger_date": "2022-03-02",
+    "trigger_type": "shallow_runup"
+   },
+   {
+    "actual_downside": -0.2486,
+    "actual_return": -0.2486,
+    "actual_upside": 0.1792,
+    "days_in_region": 72,
+    "end_date": "2022-05-24",
+    "end_reason": "reversal",
+    "seq_len": 72,
+    "similarity": 0.4983,
+    "start_date": "2022-02-23",
+    "ticker": "BOOT",
+    "total_distance": 0.3483,
+    "trigger_date": "2022-03-10",
+    "trigger_type": "shallow_runup"
+   },
+   {
+    "actual_downside": -0.1282,
+    "actual_return": -0.0371,
+    "actual_upside": 0.0092,
+    "days_in_region": 71,
+    "end_date": "2021-11-05",
+    "end_reason": "new_pattern",
+    "seq_len": 71,
+    "similarity": 0.4969,
+    "start_date": "2021-07-19",
+    "ticker": "MDC",
+    "total_distance": 0.3497,
+    "trigger_date": "2021-08-02",
+    "trigger_type": "shallow_runup"
+   },
+   {
+    "actual_downside": -0.4527,
+    "actual_return": -0.2446,
+    "actual_upside": 0.1904,
+    "days_in_region": 80,
+    "end_date": "1987-11-05",
+    "end_reason": "reversal",
+    "seq_len": 80,
+    "similarity": 0.4954,
+    "start_date": "1987-06-10",
+    "ticker": "CYR",
+    "total_distance": 0.3512,
+    "trigger_date": "1987-07-08",
+    "trigger_type": "compression"
+   },
+   {
+    "actual_downside": -0.3574,
+    "actual_return": -0.3574,
+    "actual_upside": 0.3087,
+    "days_in_region": 71,
+    "end_date": "2020-03-18",
+    "end_reason": "reversal",
+    "seq_len": 71,
+    "similarity": 0.4951,
+    "start_date": "2019-10-23",
+    "ticker": "FICO",
+    "total_distance": 0.3515,
+    "trigger_date": "2019-11-06",
+    "trigger_type": "runup"
+   }
+  ],
+  "panel": {
+   "edge": -0.2175,
+   "hit_hi": 0.528,
+   "hit_lo": 0.216,
+   "hit_rate": 0.357,
+   "median_final": -0.1399,
+   "median_pain": 0.1717,
+   "n": 14,
+   "n_eff": 14.0,
+   "p25_final": -0.2446,
+   "p_pain_gt5": 0.857,
+   "return_to_pain": -0.73
+  },
+  "stats": {
+   "avg_similarity": 0.449,
+   "avg_trough": 0.1482,
+   "avg_upside": 0.1737,
+   "median_pain": 0.1286,
+   "median_return": -0.0083,
+   "n_matches": 200,
+   "p25_return": -0.153,
+   "p_pain_gt5": 0.75,
+   "return_to_pain": -0.056,
+   "top5_avg_trough": 0.1724,
+   "top5_avg_upside": 0.1051,
+   "top_similarity": 0.541,
+   "win_rate": 0.485
+  },
+  "total_matches": 200
+ },
+ "ticker": "CRS",
+ "trending": {
+  "acceleration": -0.0014,
+  "avg_vol_20d": 873006.8585,
+  "base_high_120": 619.25,
+  "breakout_confirmed": 0,
+  "close": 289.48,
+  "momentum_score": 0.028,
+  "momentum_start": "2026-10-22",
+  "range_20": 0.4228,
+  "range_50": 0.9373,
+  "rank": 1419,
+  "rank_down": 78,
+  "rank_up": null,
+  "ret_120": -0.3495,
+  "ret_20": -0.2487,
+  "ret_60": -0.4429,
+  "rundown_score": 0.8636,
+  "score_date": "2026-10-26",
+  "slope_20": -0.0152,
+  "slope_60": -0.0138,
+  "stage": "rundown",
+  "stage_label": "rundown",
+  "ticker": "CRS",
+  "total_score": 0.3437,
+  "trend_ratio": 0.6766,
+  "vcp_detected": 0,
+  "vcp_score": 0.5541
+ }
+}

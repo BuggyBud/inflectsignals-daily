@@ -1,0 +1,977 @@
+{
+ "date": "2026-10-26",
+ "detected_regions": {
+  "primary": {
+   "days_in_region": 140,
+   "region_start": "2026-07-06",
+   "trigger_date": "2026-10-20",
+   "trigger_type": "severe_drawdown"
+  },
+  "secondary": [
+   {
+    "confidence_score": 0.6953,
+    "downside_q50": -0.0847,
+    "ev_score": 0.1021,
+    "region_start": "2026-03-12",
+    "seq_len": 200,
+    "trigger_date": "2026-04-01",
+    "trigger_type": "runup",
+    "upside_q25": 0.0832,
+    "upside_q50": 0.1838,
+    "upside_q75": 0.2968
+   }
+  ]
+ },
+ "feature_attribution": {
+  "macro_driver_count": 16,
+  "risk_flags": [
+   "high_volatility"
+  ],
+  "top_drivers": [
+   {
+    "direction": "negative",
+    "feature": "dollar_volume",
+    "feature_value": 40030724.0,
+    "importance": 0.0003,
+    "importance_pct": 0.4639,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "positive",
+    "feature": "days_since_52w_high",
+    "feature_value": 431.0,
+    "importance": 0.0001,
+    "importance_pct": 0.1814,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "negative",
+    "feature": "ps_percentile_1y",
+    "feature_value": 0.9524,
+    "importance": 0.0001,
+    "importance_pct": 0.1782,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "positive",
+    "feature": "price_vs_high_52w",
+    "feature_value": 0.7106,
+    "importance": 0.0001,
+    "importance_pct": 0.1766,
+    "method": "integrated_gradients"
+   }
+  ]
+ },
+ "fundamentals": {
+  "accrual": -0.225,
+  "adx_14": 44.3933,
+  "altman_z_score": 4.3866,
+  "amihud_illiquidity": 0.0002,
+  "avg_volume": 883964.99,
+  "beta_252d": 0.631,
+  "book_value_per_share": 6.6955,
+  "correlation_spy_60d": 0.3938,
+  "current_liabilities": 13.55,
+  "current_ratio": 20.2694,
+  "daily_earnings_yield": 0.0558,
+  "daily_fcf_yield": 0.1066,
+  "daily_pb": 8.0827,
+  "daily_pe": 17.9109,
+  "daily_ps": 2.5974,
+  "days_since_52w_high": 431.0,
+  "debt_ebitda": 0.0,
+  "debt_to_equity": 0.0,
+  "dividend_yield": 0.0101,
+  "dollar_volume_20d_avg": 60574837.6638,
+  "earnings_quality": 4.767,
+  "ebitda_growth_yoy": 0.1872,
+  "enterprise_value": 3880.539,
+  "eps_basic": 0.64,
+  "eps_cagr_3y": 0.7452,
+  "eps_cagr_5y": -0.0978,
+  "eps_diluted": 0.62,
+  "eps_growth_accel": -0.1408,
+  "eps_growth_qoq": 0.2549,
+  "eps_growth_yoy": 0.1264,
+  "eps_growth_yoy_q2": 0.2672,
+  "eps_growth_yoy_q3": 0.6543,
+  "eps_growth_yoy_q4": 4.5614,
+  "eps_growth_yoy_q5": 10.0,
+  "eps_growth_yoy_q6": 10.0,
+  "eps_growth_yoy_q7": 6.2222,
+  "eps_growth_yoy_q8": 10.0,
+  "eps_history_8q": [
+   0.22,
+   1.15,
+   0.64,
+   0.53,
+   0.67,
+   1.1,
+   0.48,
+   0.62
+  ],
+  "eps_ttm": 3.0847,
+  "ev_to_ebitda": 15.9702,
+  "ev_to_fcf": 17.8027,
+  "ev_to_sales": 9.4789,
+  "fcf_growth_yoy": 1.5553,
+  "fcf_margin": 0.5324,
+  "fcf_per_share": 2.8854,
+  "gross_margin": 0.6672,
+  "gross_margin_change_yoy": 0.8158,
+  "gross_margin_history": [
+   0.1674,
+   0.1848,
+   0.1967,
+   0.4212,
+   0.4632,
+   0.6672
+  ],
+  "inc_roic": 0.0201,
+  "interest_coverage": null,
+  "is_pre_revenue": false,
+  "margin_vs_sector_median": null,
+  "market_cap_ratio": 4088.279,
+  "net_income": 48.593,
+  "net_margin": 0.145,
+  "operating_income": 72.83,
+  "operating_margin": 0.184,
+  "operating_margin_change_yoy": 0.012,
+  "pb_ratio": 8.2518,
+  "pe_percentile_1y": 0.9008,
+  "pe_ratio": 17.9109,
+  "peg_trailing": 1.8331,
+  "piotroski_f_score": 4.0,
+  "price_vs_high_52w": 0.7106,
+  "price_vs_sma200": 0.8591,
+  "ps_percentile_1y": 0.9524,
+  "ps_ratio": 3.2132,
+  "quarter_labels_8q": [
+   "Q3 '24",
+   "Q4 '24",
+   "Q1 '25",
+   "Q2 '25",
+   "Q3 '25",
+   "Q4 '25",
+   "Q1 '26",
+   "Q2 '26"
+  ],
+  "quarterly_eps_growth_yoy": 0.1698,
+  "quarterly_eps_growth_yoy_8q": [
+   2.375,
+   10.0,
+   1.9091,
+   2.1176,
+   2.0455,
+   -0.0435,
+   -0.25,
+   0.1698
+  ],
+  "quarterly_revenue_growth_yoy": 0.1205,
+  "quarterly_revenue_growth_yoy_8q": [
+   0.0058,
+   1.0417,
+   0.4097,
+   0.3809,
+   0.3037,
+   0.1122,
+   0.043,
+   0.1205
+  ],
+  "revenue_cagr_3y": 0.2487,
+  "revenue_cagr_5y": 0.0464,
+  "revenue_growth_accel": -0.055,
+  "revenue_growth_qoq": 0.2802,
+  "revenue_growth_yoy": 0.1369,
+  "revenue_growth_yoy_q2": 0.1919,
+  "revenue_growth_yoy_q3": 0.2698,
+  "revenue_growth_yoy_q4": 0.5119,
+  "revenue_growth_yoy_q5": 0.4285,
+  "revenue_growth_yoy_q6": 0.4514,
+  "revenue_growth_yoy_q7": 0.3975,
+  "revenue_growth_yoy_q8": 0.146,
+  "revenue_history_8q": [
+   273.755,
+   438.719,
+   306.593,
+   365.376,
+   356.892,
+   487.935,
+   319.78,
+   409.387
+  ],
+  "revenue_per_share": 5.4192,
+  "roa": 0.1692,
+  "roce": 0.2536,
+  "roe": 0.4598,
+  "roic": 0.1254,
+  "rsi_14": 49.9343,
+  "sector_momentum": 0.0626,
+  "share_dilution_1y": 0.0,
+  "stock_vs_sector_20d": -0.0778,
+  "stock_vs_spy_20d": -0.0482,
+  "total_assets": 1408.157,
+  "vol_regime": 0.8175,
+  "volatility_20d": 0.0174,
+  "volatility_60d": 0.0213,
+  "w52_high": 78.22,
+  "w52_low": 51.06
+ },
+ "market_characters": [
+  {
+   "id": "g5",
+   "name": "Quality Compressed"
+  }
+ ],
+ "model_analogs": {
+  "matches": [
+   {
+    "actual_downside": 0.0,
+    "actual_return": 0.3275,
+    "actual_upside": 0.3275,
+    "days_in_region": 422,
+    "end_date": "2020-01-03",
+    "end_reason": "reversal",
+    "similarity": 0.9544,
+    "start_date": "2018-11-07",
+    "ticker": "MANU",
+    "trigger_date": "2019-04-22",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": -0.1562,
+    "actual_return": 0.0,
+    "actual_upside": 0.0312,
+    "days_in_region": 236,
+    "end_date": "1990-06-04",
+    "end_reason": "reversal",
+    "similarity": 0.9542,
+    "start_date": "1989-10-11",
+    "ticker": "CDD",
+    "trigger_date": "1990-03-02",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": -0.1555,
+    "actual_return": -0.0313,
+    "actual_upside": 0.08,
+    "days_in_region": 137,
+    "end_date": "2019-01-07",
+    "end_reason": "reversal",
+    "similarity": 0.9523,
+    "start_date": "2018-08-23",
+    "ticker": "TAST",
+    "trigger_date": "2018-10-22",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": 0.0,
+    "actual_return": 0.1861,
+    "actual_upside": 0.1861,
+    "days_in_region": 149,
+    "end_date": "2017-01-05",
+    "end_reason": "reversal",
+    "similarity": 0.9523,
+    "start_date": "2016-08-09",
+    "ticker": "SHAK",
+    "trigger_date": "2016-09-12",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": 0.0,
+    "actual_return": 0.2972,
+    "actual_upside": 0.2972,
+    "days_in_region": 146,
+    "end_date": "2019-11-13",
+    "end_reason": "reversal",
+    "similarity": 0.9522,
+    "start_date": "2019-06-20",
+    "ticker": "NMIH",
+    "trigger_date": "2019-07-17",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": -0.0471,
+    "actual_return": 0.2698,
+    "actual_upside": 0.2698,
+    "days_in_region": 175,
+    "end_date": "2016-04-26",
+    "end_reason": "reversal",
+    "similarity": 0.9519,
+    "start_date": "2015-11-03",
+    "ticker": "SANM",
+    "trigger_date": "2016-01-08",
+    "trigger_type": "severe_drawdown"
+   },
+   {
+    "actual_downside": -0.0999,
+    "actual_return": 0.1832,
+    "actual_upside": 0.1832,
+    "days_in_region": 259,
+    "end_date": "2019-02-20",
+    "end_reason": "reversal",
+    "similarity": 0.9516,
+    "start_date": "2018-06-06",
+    "ticker": "MYRG",
+    "trigger_date": "2018-08-16",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": -0.0912,
+    "actual_return": 0.0253,
+    "actual_upside": 0.0788,
+    "days_in_region": 254,
+    "end_date": "2006-03-31",
+    "end_reason": "reversal",
+    "similarity": 0.9512,
+    "start_date": "2005-07-20",
+    "ticker": "GTIV",
+    "trigger_date": "2006-01-05",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": 0.0,
+    "actual_return": 0.2437,
+    "actual_upside": 0.2437,
+    "days_in_region": 207,
+    "end_date": "1990-04-17",
+    "end_reason": "reversal",
+    "similarity": 0.951,
+    "start_date": "1989-09-22",
+    "ticker": "AGE",
+    "trigger_date": "1989-10-27",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": -0.0578,
+    "actual_return": 0.0435,
+    "actual_upside": 0.2752,
+    "days_in_region": 319,
+    "end_date": "2005-11-28",
+    "end_reason": "reversal",
+    "similarity": 0.9508,
+    "start_date": "2005-01-13",
+    "ticker": "AIT",
+    "trigger_date": "2005-04-25",
+    "trigger_type": "shallow_runup"
+   }
+  ],
+  "stats": {
+   "avg_max_drawdown": 0.0801,
+   "avg_similarity": 0.949,
+   "avg_trough": 0.0801,
+   "avg_upside": 0.2015,
+   "best_return": 1.1167,
+   "downside_range": [
+    -0.3668,
+    0.0
+   ],
+   "median_return": 0.1551,
+   "n_matches": 50,
+   "outcome_agreement": true,
+   "return_p25": 0.0444,
+   "return_p5": -0.1256,
+   "return_p75": 0.2669,
+   "return_p95": 0.473,
+   "sim_weighted_win_rate": 0.8,
+   "top5_avg_trough": 0.0623,
+   "top5_avg_upside": 0.1844,
+   "top_similarity": 0.954,
+   "upside_range": [
+    0.0048,
+    1.1167
+   ],
+   "win_rate": 0.8,
+   "worst_return": -0.1692,
+   "years_span": 12
+  },
+  "total_matches": 50
+ },
+ "peer_group": {
+  "buckets": [
+   "Brokerage, Trading, Exchanges & Market Infrastructure",
+   "Financial Data, Risk, Ratings & Compliance"
+  ],
+  "groups": {
+   "Brokerage, Trading, Exchanges & Market Infrastructure": [
+    {
+     "market_cap_m": 5065.2078,
+     "price_vs_sma200": 1.0088,
+     "return_30d": 0.0699,
+     "return_7d": 0.1037,
+     "revenue_driver": "corporate restructuring advisory",
+     "signal_rank": 1441,
+     "stock_vs_spy_20d": 0.221,
+     "ticker": "FCN"
+    },
+    {
+     "market_cap_m": 6841.0873,
+     "price_vs_sma200": 0.9017,
+     "return_30d": -0.048,
+     "return_7d": 0.021,
+     "revenue_driver": "investment banking advisory",
+     "signal_rank": 2043,
+     "stock_vs_spy_20d": 0.0137,
+     "ticker": "HLI"
+    },
+    {
+     "market_cap_m": 3576.9006,
+     "price_vs_sma200": 0.8472,
+     "return_30d": -0.0513,
+     "return_7d": 0.0426,
+     "revenue_driver": "M&A and restructuring advisory",
+     "signal_rank": 621,
+     "stock_vs_spy_20d": 0.0542,
+     "ticker": "LAZ"
+    },
+    {
+     "market_cap_m": 12329.7728,
+     "price_vs_sma200": 0.8106,
+     "return_30d": -0.0657,
+     "return_7d": 0.003,
+     "revenue_driver": "investment banking advisory",
+     "signal_rank": 241,
+     "stock_vs_spy_20d": -0.0153,
+     "ticker": "EVR"
+    },
+    {
+     "market_cap_m": 267509.6744,
+     "price_vs_sma200": 0.9321,
+     "return_30d": -0.0963,
+     "return_7d": 0.0022,
+     "revenue_driver": "investment banking and advisory",
+     "signal_rank": 452,
+     "stock_vs_spy_20d": -0.0243,
+     "ticker": "GS"
+    },
+    {
+     "market_cap_m": 4072.6379,
+     "price_vs_sma200": 0.9096,
+     "return_30d": -0.1113,
+     "return_7d": 0.0498,
+     "revenue_driver": "restructuring advisory",
+     "signal_rank": 732,
+     "stock_vs_spy_20d": -0.041,
+     "ticker": "PJT"
+    },
+    {
+     "market_cap_m": 5057.6266,
+     "price_vs_sma200": 0.8591,
+     "return_30d": -0.119,
+     "return_7d": -0.0013,
+     "revenue_driver": "M&A advisory",
+     "signal_rank": 195,
+     "stock_vs_spy_20d": -0.0482,
+     "ticker": "MC"
+    },
+    {
+     "market_cap_m": 1153.4275,
+     "price_vs_sma200": 0.7145,
+     "return_30d": -0.1273,
+     "return_7d": -0.0522,
+     "revenue_driver": "investment banking advisory",
+     "signal_rank": 524,
+     "stock_vs_spy_20d": -0.1426,
+     "ticker": "PWP"
+    },
+    {
+     "market_cap_m": 3672.1448,
+     "price_vs_sma200": 0.8373,
+     "return_30d": -0.1852,
+     "return_7d": -0.0192,
+     "revenue_driver": "investment banking advisory",
+     "signal_rank": 291,
+     "stock_vs_spy_20d": -0.0275,
+     "ticker": "STEP"
+    },
+    {
+     "market_cap_m": 222.1342,
+     "price_vs_sma200": 0.5377,
+     "return_30d": -0.3638,
+     "return_7d": -0.1517,
+     "revenue_driver": "investment banking advisory",
+     "signal_rank": 275,
+     "stock_vs_spy_20d": -0.276,
+     "ticker": "RILY"
+    }
+   ],
+   "Financial Data, Risk, Ratings & Compliance": [
+    {
+     "market_cap_m": 1157.9305,
+     "price_vs_sma200": 1.2113,
+     "return_30d": 0.2145,
+     "return_7d": 0.1367,
+     "revenue_driver": "economic litigation consulting",
+     "signal_rank": 1639,
+     "stock_vs_spy_20d": 0.221,
+     "ticker": "CRAI"
+    },
+    {
+     "market_cap_m": 10101.529,
+     "price_vs_sma200": 1.2943,
+     "return_30d": 0.1678,
+     "return_7d": 0.0714,
+     "revenue_driver": "financial data subscriptions",
+     "signal_rank": 1738,
+     "stock_vs_spy_20d": 0.209,
+     "ticker": "FDS"
+    },
+    {
+     "market_cap_m": 5065.2078,
+     "price_vs_sma200": 1.0088,
+     "return_30d": 0.0699,
+     "return_7d": 0.1037,
+     "revenue_driver": "corporate restructuring advisory",
+     "signal_rank": 1441,
+     "stock_vs_spy_20d": 0.221,
+     "ticker": "FCN"
+    },
+    {
+     "market_cap_m": 19658.1625,
+     "price_vs_sma200": 1.0855,
+     "return_30d": 0.0384,
+     "return_7d": 0.0401,
+     "revenue_driver": "proxy voting and communications",
+     "signal_rank": 2060,
+     "stock_vs_spy_20d": 0.1124,
+     "ticker": "BR"
+    },
+    {
+     "market_cap_m": 36644.16,
+     "price_vs_sma200": 1.0043,
+     "return_30d": 0.0364,
+     "return_7d": 0.1073,
+     "revenue_driver": "consumer credit reporting",
+     "signal_rank": 2075,
+     "stock_vs_spy_20d": 0.2257,
+     "ticker": "EFX"
+    },
+    {
+     "market_cap_m": 7002.1422,
+     "price_vs_sma200": 1.0959,
+     "return_30d": 0.008,
+     "return_7d": 0.0004,
+     "revenue_driver": "investment accounting SaaS",
+     "signal_rank": null,
+     "stock_vs_spy_20d": 0.0163,
+     "ticker": "CWAN"
+    },
+    {
+     "market_cap_m": 1910.7371,
+     "price_vs_sma200": 1.281,
+     "return_30d": -0.0003,
+     "return_7d": 0.0019,
+     "revenue_driver": "insurance brokerage commissions",
+     "signal_rank": 449,
+     "stock_vs_spy_20d": 0.0062,
+     "ticker": "BWIN"
+    },
+    {
+     "market_cap_m": 5992.7254,
+     "price_vs_sma200": 1.0916,
+     "return_30d": -0.0304,
+     "return_7d": 0.0164,
+     "revenue_driver": "brokerage commissions",
+     "signal_rank": 1324,
+     "stock_vs_spy_20d": 0.0025,
+     "ticker": "BGC"
+    },
+    {
+     "market_cap_m": 4072.6379,
+     "price_vs_sma200": 0.9096,
+     "return_30d": -0.1113,
+     "return_7d": 0.0498,
+     "revenue_driver": "restructuring advisory",
+     "signal_rank": 732,
+     "stock_vs_spy_20d": -0.041,
+     "ticker": "PJT"
+    },
+    {
+     "market_cap_m": 5057.6266,
+     "price_vs_sma200": 0.8591,
+     "return_30d": -0.119,
+     "return_7d": -0.0013,
+     "revenue_driver": "M&A advisory",
+     "signal_rank": 195,
+     "stock_vs_spy_20d": -0.0482,
+     "ticker": "MC"
+    }
+   ]
+  }
+ },
+ "predictions": {
+  "badge_count": 0,
+  "confidence_score": 0.5946,
+  "conviction_label": "SPECULATIVE",
+  "data_quality_flags": [],
+  "ev_score": 0.1079,
+  "is_diamond": false,
+  "passes_tradability_filter": true,
+  "quality_label": "WEAK",
+  "quantiles": {
+   "downside_q10": -0.2711,
+   "downside_q25": -0.1611,
+   "downside_q50": -0.0873,
+   "downside_q75": -0.0226,
+   "downside_q90": 0.0004,
+   "path_volatility": 0.033,
+   "risk_reward": 2.2186,
+   "uncertainty": 0.4389,
+   "upside_q10": 0.0308,
+   "upside_q25": 0.0878,
+   "upside_q50": 0.1936,
+   "upside_q75": 0.3079,
+   "upside_q90": 0.4697
+  },
+  "rank": 195,
+  "rank_score": 0.0725,
+  "tradability_filter_reasons": []
+ },
+ "profile": {
+  "_local": {
+   "dividend_yield": 0.0101,
+   "eps_growth_yoy": 0.1264,
+   "pe_ratio": 23.8153,
+   "revenue_growth_yoy": 0.1369,
+   "roe": 0.4598
+  },
+  "beta": 1.901,
+  "betaTTM": null,
+  "ceo": "Navid Mahmoodzadegan",
+  "companyName": "Moelis & Company",
+  "country": "US",
+  "debtToEquityTTM": null,
+  "description": "Moelis & Company operates as a dedicated investment banking advisory firm, offering expert counsel on a wide range of corporate finance matters. Its core services include strategic guidance for mergers and acquisitions (M&A), corporate recapitalizations and restructurings, and capital market transactions. The firm serves a diverse global client base, which encompasses large public multinational corporations, private middle-market businesses, financial sponsors, entrepreneurs, governmental organizations, and sovereign wealth funds. With operations spanning North and South America, Europe, the Middle East, Asia, and Australia, Moelis & Company also leverages strategic alliances, specifically with Alfaro, Dávila y Scherer, S.C. in Mexico and MA Moelis Australia. Founded in 2007, the company's headquarters are situated in New York, New York.",
+  "dividendYielTTM": null,
+  "enterpriseValueOverEBITDATTM": null,
+  "exchangeShortName": "NYSE",
+  "fullTimeEmployees": "1416",
+  "industry": "Financial - Capital Markets",
+  "ipoDate": "2014-04-16",
+  "latest_earnings_date": "2026-07-30",
+  "marketCapTTM": null,
+  "mktCap": 4092969338,
+  "peRatioTTM": null,
+  "price": 55.25,
+  "priceToSalesRatioTTM": null,
+  "returnOnEquityTTM": 0.4355,
+  "revenue_description": "Moelis is an independent investment bank. Revenue is driven by advisory fees on M&A and restructuring transactions and underwriting fees from debt and equity capital markets activity.",
+  "revenue_description_themes": [
+   "M&A advisory fee volume",
+   "Restructuring advisory demand",
+   "Private capital advisory growth"
+  ],
+  "revenue_taxonomy": [
+   {
+    "bucket": "Brokerage, Trading, Exchanges & Market Infrastructure",
+    "matched_tags": [
+     "M&A advisory",
+     "Private capital advisory"
+    ],
+    "path": "Financials › Capital Markets Insurance & Investments › Brokerage, Trading, Exchanges & Market Infrastructure",
+    "sector": "Financials",
+    "segment": "Capital Markets Insurance & Investments"
+   },
+   {
+    "bucket": "Financial Data, Risk, Ratings & Compliance",
+    "matched_tags": [
+     "Restructuring advisory"
+    ],
+    "path": "Financials › Capital Markets Insurance & Investments › Financial Data, Risk, Ratings & Compliance",
+    "sector": "Financials",
+    "segment": "Capital Markets Insurance & Investments"
+   }
+  ],
+  "revenue_themes": [
+   "M&A advisory",
+   "Restructuring advisory",
+   "Private capital advisory"
+  ],
+  "sector": "Financial Services",
+  "website": "https://www.moelis.com"
+ },
+ "report": {
+  "display_rank": null,
+  "lane": "risk_avoid",
+  "lane_rank": 5,
+  "setup_label": "broken_trend",
+  "why_now": "Risk/avoid because price is below a non-rising 200-day trend."
+ },
+ "scorecard": {
+  "headline": {
+   "avg_universe_pct": 71,
+   "label": "above_average",
+   "metric_count": 8
+  },
+  "metrics": {
+   "debt_to_equity": {
+    "direction": "lower",
+    "label": "D/E Ratio",
+    "sector": "Financials",
+    "sector_n": 303,
+    "sector_pct": 99,
+    "universe_n": 2082,
+    "universe_pct": 94,
+    "value": 0.0
+   },
+   "eps_growth_yoy": {
+    "direction": "higher",
+    "label": "EPS Growth",
+    "sector": "Financials",
+    "sector_n": 148,
+    "sector_pct": 40,
+    "universe_n": 1892,
+    "universe_pct": 49,
+    "value": 0.1264
+   },
+   "gross_margin": {
+    "direction": "higher",
+    "label": "Gross Margin",
+    "sector": "Financials",
+    "sector_n": 308,
+    "sector_pct": 51,
+    "universe_n": 2010,
+    "universe_pct": 74,
+    "value": 0.6672
+   },
+   "operating_margin": {
+    "direction": "higher",
+    "label": "Op. Margin",
+    "sector": "Financials",
+    "sector_n": 308,
+    "sector_pct": 33,
+    "universe_n": 2010,
+    "universe_pct": 69,
+    "value": 0.184
+   },
+   "pe_ratio": {
+    "direction": "lower",
+    "label": "P/E",
+    "sector": "Financials",
+    "sector_n": 296,
+    "sector_pct": 14,
+    "universe_n": 1474,
+    "universe_pct": 43,
+    "value": 23.8153
+   },
+   "revenue_growth_yoy": {
+    "direction": "higher",
+    "label": "Rev Growth",
+    "sector": "Financials",
+    "sector_n": 147,
+    "sector_pct": 61,
+    "universe_n": 1834,
+    "universe_pct": 66,
+    "value": 0.1369
+   },
+   "roe": {
+    "direction": "higher",
+    "label": "ROE",
+    "sector": "Financials",
+    "sector_n": 309,
+    "sector_pct": 97,
+    "universe_n": 2102,
+    "universe_pct": 93,
+    "value": 0.4598
+   },
+   "roic": {
+    "direction": "higher",
+    "label": "ROIC",
+    "sector": "Financials",
+    "sector_n": 301,
+    "sector_pct": 89,
+    "universe_n": 2053,
+    "universe_pct": 79,
+    "value": 0.0348
+   }
+  }
+ },
+ "signal_rank": 195,
+ "structural_analogs": {
+  "gp_core_pct": 70.2,
+  "gp_core_ratio": 1.583,
+  "matches": [
+   {
+    "actual_downside": -0.0664,
+    "actual_return": 0.0603,
+    "actual_upside": 0.0603,
+    "days_in_region": 131,
+    "end_date": "2016-12-12",
+    "end_reason": "reversal",
+    "seq_len": 131,
+    "similarity": 0.6323,
+    "start_date": "2016-07-14",
+    "ticker": "GIL",
+    "total_distance": 0.2292,
+    "trigger_date": "2016-10-21",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": 0.0,
+    "actual_return": 0.1469,
+    "actual_upside": 0.1469,
+    "days_in_region": 114,
+    "end_date": "2019-10-11",
+    "end_reason": "reversal",
+    "seq_len": 114,
+    "similarity": 0.6304,
+    "start_date": "2019-04-12",
+    "ticker": "PKG",
+    "total_distance": 0.2307,
+    "trigger_date": "2019-05-24",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": -0.1053,
+    "actual_return": 0.0083,
+    "actual_upside": 0.0083,
+    "days_in_region": 141,
+    "end_date": "1992-12-17",
+    "end_reason": "reversal",
+    "seq_len": 141,
+    "similarity": 0.6259,
+    "start_date": "1992-03-26",
+    "ticker": "FSI",
+    "total_distance": 0.2343,
+    "trigger_date": "1992-04-24",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": -0.0253,
+    "actual_return": 0.2108,
+    "actual_upside": 0.2108,
+    "days_in_region": 100,
+    "end_date": "2012-09-14",
+    "end_reason": "reversal",
+    "seq_len": 100,
+    "similarity": 0.6244,
+    "start_date": "2012-04-27",
+    "ticker": "KAMN",
+    "total_distance": 0.2355,
+    "trigger_date": "2012-05-31",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": 0.0,
+    "actual_return": 0.2836,
+    "actual_upside": 0.2836,
+    "days_in_region": 116,
+    "end_date": "2006-08-31",
+    "end_reason": "reversal",
+    "seq_len": 116,
+    "similarity": 0.6237,
+    "start_date": "2006-05-03",
+    "ticker": "ALTR",
+    "total_distance": 0.236,
+    "trigger_date": "2006-05-16",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": -0.0275,
+    "actual_return": 0.118,
+    "actual_upside": 0.118,
+    "days_in_region": 129,
+    "end_date": "2005-09-13",
+    "end_reason": "reversal",
+    "seq_len": 129,
+    "similarity": 0.6213,
+    "start_date": "2004-12-01",
+    "ticker": "DISH",
+    "total_distance": 0.238,
+    "trigger_date": "2005-01-28",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": -0.0832,
+    "actual_return": 0.1401,
+    "actual_upside": 0.1401,
+    "days_in_region": 80,
+    "end_date": "2016-12-08",
+    "end_reason": "reversal",
+    "seq_len": 80,
+    "similarity": 0.6114,
+    "start_date": "2016-08-02",
+    "ticker": "TROW",
+    "total_distance": 0.246,
+    "trigger_date": "2016-08-29",
+    "trigger_type": "compression"
+   },
+   {
+    "actual_downside": -0.3816,
+    "actual_return": -0.2638,
+    "actual_upside": 0.0432,
+    "days_in_region": 111,
+    "end_date": "2015-11-23",
+    "end_reason": "reversal",
+    "seq_len": 111,
+    "similarity": 0.6109,
+    "start_date": "2015-03-12",
+    "ticker": "HIBB",
+    "total_distance": 0.2464,
+    "trigger_date": "2015-05-21",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": -0.1126,
+    "actual_return": 0.2408,
+    "actual_upside": 0.2408,
+    "days_in_region": 120,
+    "end_date": "2006-03-15",
+    "end_reason": "reversal",
+    "seq_len": 120,
+    "similarity": 0.6088,
+    "start_date": "2005-08-02",
+    "ticker": "SAH",
+    "total_distance": 0.2482,
+    "trigger_date": "2005-10-07",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": -0.0939,
+    "actual_return": 0.0761,
+    "actual_upside": 0.0761,
+    "days_in_region": 134,
+    "end_date": "2005-07-22",
+    "end_reason": "reversal",
+    "seq_len": 134,
+    "similarity": 0.6087,
+    "start_date": "2004-12-23",
+    "ticker": "WDR",
+    "total_distance": 0.2482,
+    "trigger_date": "2005-02-10",
+    "trigger_type": "shallow_drawdown"
+   }
+  ],
+  "panel": {
+   "edge": 0.0522,
+   "hit_hi": 0.832,
+   "hit_lo": 0.681,
+   "hit_rate": 0.765,
+   "median_final": 0.1056,
+   "median_pain": 0.0832,
+   "n": 51,
+   "n_eff": 51.0,
+   "p25_final": 0.0015,
+   "p_pain_gt5": 0.608,
+   "return_to_pain": 1.023
+  },
+  "stats": {
+   "avg_similarity": 0.578,
+   "avg_trough": 0.1055,
+   "avg_upside": 0.1542,
+   "median_pain": 0.0682,
+   "median_return": 0.0947,
+   "n_matches": 200,
+   "p25_return": -0.0496,
+   "p_pain_gt5": 0.59,
+   "return_to_pain": 1.074,
+   "top5_avg_trough": 0.0394,
+   "top5_avg_upside": 0.142,
+   "top_similarity": 0.632,
+   "win_rate": 0.685
+  },
+  "total_matches": 200
+ },
+ "ticker": "MC",
+ "trending": null
+}

@@ -1,0 +1,1117 @@
+{
+ "date": "2026-10-26",
+ "detected_regions": {
+  "primary": {
+   "days_in_region": 145,
+   "region_start": "2026-06-26",
+   "trigger_date": "2026-10-15",
+   "trigger_type": "severe_drawdown"
+  },
+  "secondary": [
+   {
+    "confidence_score": 0.7772,
+    "downside_q50": -0.085,
+    "ev_score": 0.0875,
+    "region_start": "2026-04-29",
+    "seq_len": 185,
+    "trigger_date": "2026-09-22",
+    "trigger_type": "runup",
+    "upside_q25": 0.075,
+    "upside_q50": 0.1629,
+    "upside_q75": 0.2732
+   }
+  ]
+ },
+ "feature_attribution": {
+  "macro_driver_count": 15,
+  "risk_flags": [
+   "high_volatility"
+  ],
+  "top_drivers": [
+   {
+    "direction": "negative",
+    "feature": "dollar_volume",
+    "feature_value": 468937088.0,
+    "importance": 0.0005,
+    "importance_pct": 0.5178,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "positive",
+    "feature": "sector_return_60d",
+    "feature_value": -0.0377,
+    "importance": 0.0002,
+    "importance_pct": 0.1832,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "negative",
+    "feature": "capex",
+    "feature_value": 2139.0,
+    "importance": 0.0001,
+    "importance_pct": 0.1263,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "positive",
+    "feature": "revenue_per_share",
+    "feature_value": 54.5968,
+    "importance": 0.0001,
+    "importance_pct": 0.0887,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "positive",
+    "feature": "ps_compression",
+    "feature_value": 0.6824,
+    "importance": 0.0001,
+    "importance_pct": 0.0839,
+    "method": "integrated_gradients"
+   }
+  ]
+ },
+ "fundamentals": {
+  "accrual": 0.0973,
+  "adx_14": 23.4251,
+  "altman_z_score": 0.7546,
+  "amihud_illiquidity": 0.0,
+  "avg_volume": 3989725.0521,
+  "beta_252d": 0.7793,
+  "book_value_per_share": 54.2272,
+  "correlation_spy_60d": 0.6902,
+  "current_liabilities": 26639.0,
+  "current_ratio": 0.7503,
+  "daily_earnings_yield": 0.1097,
+  "daily_fcf_yield": -0.1449,
+  "daily_pb": 1.836,
+  "daily_pe": 9.113,
+  "daily_ps": 0.4973,
+  "days_since_52w_high": 84.0,
+  "debt_ebitda": 4.304,
+  "debt_to_equity": 1.9316,
+  "dividend_yield": 0.0,
+  "dollar_volume_20d_avg": 530722445.3494,
+  "earnings_quality": 0.4519,
+  "ebitda_growth_yoy": -0.018,
+  "enterprise_value": 52238.1792,
+  "eps_basic": 3.14,
+  "eps_cagr_3y": 0.0774,
+  "eps_cagr_5y": 0.0069,
+  "eps_diluted": 3.14,
+  "eps_growth_accel": 0.0208,
+  "eps_growth_qoq": 0.2764,
+  "eps_growth_yoy": 0.0811,
+  "eps_growth_yoy_q2": 0.0603,
+  "eps_growth_yoy_q3": 0.0117,
+  "eps_growth_yoy_q4": 0.0763,
+  "eps_growth_yoy_q5": 0.2036,
+  "eps_growth_yoy_q6": 0.1309,
+  "eps_growth_yoy_q7": 0.3573,
+  "eps_growth_yoy_q8": 0.1977,
+  "eps_history_8q": [
+   2.95,
+   1.16,
+   2.97,
+   2.9,
+   3.19,
+   2.14,
+   2.46,
+   3.14
+  ],
+  "eps_ttm": 11.0491,
+  "ev_to_ebitda": 6.556,
+  "ev_to_fcf": -31.2056,
+  "ev_to_sales": 2.9224,
+  "fcf_growth_yoy": 0.6563,
+  "fcf_margin": -0.0937,
+  "fcf_per_share": -5.113,
+  "gross_margin": 0.6572,
+  "gross_margin_change_yoy": 0.3689,
+  "gross_margin_history": [
+   0.3082,
+   0.3061,
+   0.3897,
+   0.4748,
+   0.5673,
+   0.6572
+  ],
+  "inc_roic": 0.1337,
+  "interest_coverage": 6.1339,
+  "is_pre_revenue": false,
+  "margin_vs_sector_median": null,
+  "market_cap_ratio": 32597.1792,
+  "net_income": 1029.0,
+  "net_margin": 0.0546,
+  "operating_income": 1446.0,
+  "operating_margin": 0.0751,
+  "operating_margin_change_yoy": -0.0059,
+  "pb_ratio": 1.8568,
+  "pe_percentile_1y": 0.7817,
+  "pe_ratio": 9.113,
+  "peg_trailing": 0.9772,
+  "piotroski_f_score": 3.0,
+  "price_vs_high_52w": 0.7398,
+  "price_vs_sma200": 0.9301,
+  "ps_percentile_1y": 0.9127,
+  "ps_ratio": 0.5021,
+  "quarter_labels_8q": [
+   "Q4 '24",
+   "Q1 '25",
+   "Q2 '25",
+   "Q3 '25",
+   "Q4 '25",
+   "Q1 '26",
+   "Q2 '26",
+   "Q3 '26"
+  ],
+  "quarterly_eps_growth_yoy": 0.0828,
+  "quarterly_eps_growth_yoy_8q": [
+   0.6298,
+   4.0526,
+   -0.25,
+   0.0,
+   0.0814,
+   0.8448,
+   -0.1717,
+   0.0828
+  ],
+  "quarterly_revenue_growth_yoy": 0.1741,
+  "quarterly_revenue_growth_yoy_8q": [
+   0.0785,
+   0.0537,
+   0.0167,
+   0.0257,
+   0.0478,
+   0.1057,
+   0.1599,
+   0.1741
+  ],
+  "revenue_cagr_3y": 0.0769,
+  "revenue_cagr_5y": 0.2698,
+  "revenue_growth_accel": 0.0383,
+  "revenue_growth_qoq": 0.0115,
+  "revenue_growth_yoy": 0.1231,
+  "revenue_growth_yoy_q2": 0.0848,
+  "revenue_growth_yoy_q3": 0.0473,
+  "revenue_growth_yoy_q4": 0.0352,
+  "revenue_growth_yoy_q5": 0.0424,
+  "revenue_growth_yoy_q6": 0.0423,
+  "revenue_growth_yoy_q7": 0.0531,
+  "revenue_growth_yoy_q8": 0.0623,
+  "revenue_history_8q": [
+   14695.0,
+   13212.0,
+   15236.0,
+   15225.0,
+   15397.0,
+   14608.0,
+   17672.0,
+   17875.0
+  ],
+  "revenue_per_share": 54.5968,
+  "roa": 0.0422,
+  "roce": 0.0854,
+  "roe": 0.2077,
+  "roic": 0.0612,
+  "rsi_14": 46.1492,
+  "sector_momentum": 0.0115,
+  "share_dilution_1y": 0.0024,
+  "stock_vs_sector_20d": -0.0707,
+  "stock_vs_spy_20d": -0.0962,
+  "total_assets": 85120.0,
+  "vol_regime": 1.0005,
+  "volatility_20d": 0.0251,
+  "volatility_60d": 0.0251,
+  "w52_high": 138.77,
+  "w52_low": 84.64
+ },
+ "market_characters": [
+  {
+   "id": "g5",
+   "name": "Quality Compressed"
+  }
+ ],
+ "model_analogs": {
+  "matches": [
+   {
+    "actual_downside": -0.0833,
+    "actual_return": 0.0588,
+    "actual_upside": 0.0588,
+    "days_in_region": 143,
+    "end_date": "2019-02-21",
+    "end_reason": "reversal",
+    "similarity": 0.939,
+    "start_date": "2018-10-01",
+    "ticker": "S",
+    "trigger_date": "2018-10-30",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": -0.0992,
+    "actual_return": 0.4735,
+    "actual_upside": 0.4735,
+    "days_in_region": 153,
+    "end_date": "2019-02-20",
+    "end_reason": "reversal",
+    "similarity": 0.9328,
+    "start_date": "2018-09-20",
+    "ticker": "AXL",
+    "trigger_date": "2018-10-12",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": -0.275,
+    "actual_return": -0.0469,
+    "actual_upside": 0.0467,
+    "days_in_region": 107,
+    "end_date": "2019-01-18",
+    "end_reason": "reversal",
+    "similarity": 0.931,
+    "start_date": "2018-10-03",
+    "ticker": "CLR",
+    "trigger_date": "2018-10-12",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": 0.0,
+    "actual_return": 0.1153,
+    "actual_upside": 0.2993,
+    "days_in_region": 267,
+    "end_date": "2017-03-21",
+    "end_reason": "reversal",
+    "similarity": 0.9304,
+    "start_date": "2016-06-27",
+    "ticker": "UAL",
+    "trigger_date": "2016-07-13",
+    "trigger_type": "runup"
+   },
+   {
+    "actual_downside": -0.1645,
+    "actual_return": -0.0305,
+    "actual_upside": 0.0,
+    "days_in_region": 124,
+    "end_date": "2005-12-05",
+    "end_reason": "reversal",
+    "similarity": 0.93,
+    "start_date": "2005-08-03",
+    "ticker": "NVL",
+    "trigger_date": "2005-10-06",
+    "trigger_type": "severe_drawdown"
+   },
+   {
+    "actual_downside": 0.0,
+    "actual_return": 0.1406,
+    "actual_upside": 0.3674,
+    "days_in_region": 85,
+    "end_date": "2006-01-05",
+    "end_reason": "reversal",
+    "similarity": 0.9296,
+    "start_date": "2005-10-12",
+    "ticker": "JAKK",
+    "trigger_date": "2005-10-18",
+    "trigger_type": "shallow_runup"
+   },
+   {
+    "actual_downside": -0.0378,
+    "actual_return": 0.2045,
+    "actual_upside": 0.2045,
+    "days_in_region": 182,
+    "end_date": "2006-02-01",
+    "end_reason": "reversal",
+    "similarity": 0.9291,
+    "start_date": "2005-08-03",
+    "ticker": "SRCE",
+    "trigger_date": "2005-09-21",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": 0.0,
+    "actual_return": 0.1824,
+    "actual_upside": 0.1824,
+    "days_in_region": 76,
+    "end_date": "2021-11-17",
+    "end_reason": "reversal",
+    "similarity": 0.9291,
+    "start_date": "2021-09-02",
+    "ticker": "ACHC",
+    "trigger_date": "2021-09-16",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": -0.1233,
+    "actual_return": 0.147,
+    "actual_upside": 0.147,
+    "days_in_region": 154,
+    "end_date": "2019-02-22",
+    "end_reason": "reversal",
+    "similarity": 0.929,
+    "start_date": "2018-09-21",
+    "ticker": "GTES",
+    "trigger_date": "2018-10-24",
+    "trigger_type": "severe_drawdown"
+   },
+   {
+    "actual_downside": -0.0541,
+    "actual_return": -0.0498,
+    "actual_upside": 0.1342,
+    "days_in_region": 122,
+    "end_date": "2017-03-09",
+    "end_reason": "reversal",
+    "similarity": 0.9286,
+    "start_date": "2016-11-07",
+    "ticker": "TEN",
+    "trigger_date": "2016-11-14",
+    "trigger_type": "shallow_runup"
+   }
+  ],
+  "stats": {
+   "avg_max_drawdown": 0.1151,
+   "avg_similarity": 0.926,
+   "avg_trough": 0.1151,
+   "avg_upside": 0.1788,
+   "best_return": 1.1956,
+   "downside_range": [
+    -0.4048,
+    0.0
+   ],
+   "median_return": 0.1073,
+   "n_matches": 50,
+   "outcome_agreement": true,
+   "return_p25": -0.0491,
+   "return_p5": -0.1818,
+   "return_p75": 0.2082,
+   "return_p95": 0.4521,
+   "sim_weighted_win_rate": 0.6,
+   "top5_avg_trough": 0.1244,
+   "top5_avg_upside": 0.1757,
+   "top_similarity": 0.939,
+   "upside_range": [
+    0.0,
+    1.1956
+   ],
+   "win_rate": 0.6,
+   "worst_return": -0.368,
+   "years_span": 10
+  },
+  "total_matches": 50
+ },
+ "peer_group": {
+  "buckets": [
+   "Freight, Logistics, Brokerage & Delivery Services",
+   "Rail, Marine & Aviation Services and Asset Support",
+   "Retail Technology, Merchant Services & Commerce Enablement"
+  ],
+  "groups": {
+   "Freight, Logistics, Brokerage & Delivery Services": [
+    {
+     "market_cap_m": 1249.9615,
+     "price_vs_sma200": 1.5002,
+     "return_30d": 0.5672,
+     "return_7d": 0.0057,
+     "revenue_driver": "digital wholesale vehicle auctions",
+     "signal_rank": null,
+     "stock_vs_spy_20d": -0.0207,
+     "ticker": "ACVA"
+    },
+    {
+     "market_cap_m": 79704.6799,
+     "price_vs_sma200": 1.1365,
+     "return_30d": 0.0709,
+     "return_7d": -0.0086,
+     "revenue_driver": "pharmaceutical distribution",
+     "signal_rank": 1603,
+     "stock_vs_spy_20d": 0.1427,
+     "ticker": "CAH"
+    },
+    {
+     "market_cap_m": 1633.6616,
+     "price_vs_sma200": 1.4466,
+     "return_30d": 0.0382,
+     "return_7d": 0.0031,
+     "revenue_driver": "biopreservation media",
+     "signal_rank": null,
+     "stock_vs_spy_20d": 0.0747,
+     "ticker": "BLFS"
+    },
+    {
+     "market_cap_m": 53653.9697,
+     "price_vs_sma200": 1.035,
+     "return_30d": -0.008,
+     "return_7d": 0.0138,
+     "revenue_driver": "passenger air travel",
+     "signal_rank": 316,
+     "stock_vs_spy_20d": -0.0571,
+     "ticker": "DAL"
+    },
+    {
+     "market_cap_m": 128426.4666,
+     "price_vs_sma200": 0.8979,
+     "return_30d": -0.0687,
+     "return_7d": -0.0065,
+     "revenue_driver": "passenger ticket sales",
+     "signal_rank": 324,
+     "stock_vs_spy_20d": -0.0968,
+     "ticker": "AAL"
+    },
+    {
+     "market_cap_m": 3198.0252,
+     "price_vs_sma200": 1.0207,
+     "return_30d": -0.0688,
+     "return_7d": -0.0505,
+     "revenue_driver": "less-than-truckload shipping",
+     "signal_rank": 19,
+     "stock_vs_spy_20d": -0.0048,
+     "ticker": "ARCB"
+    },
+    {
+     "market_cap_m": 32914.4425,
+     "price_vs_sma200": 0.9301,
+     "return_30d": -0.0759,
+     "return_7d": -0.0061,
+     "revenue_driver": "passenger ticket revenue",
+     "signal_rank": 372,
+     "stock_vs_spy_20d": -0.0962,
+     "ticker": "UAL"
+    },
+    {
+     "market_cap_m": 17452.379,
+     "price_vs_sma200": 0.8227,
+     "return_30d": -0.1091,
+     "return_7d": -0.0255,
+     "revenue_driver": "freight brokerage",
+     "signal_rank": 1207,
+     "stock_vs_spy_20d": -0.0537,
+     "ticker": "CHRW"
+    },
+    {
+     "market_cap_m": 1483.495,
+     "price_vs_sma200": 0.9094,
+     "return_30d": -0.1279,
+     "return_7d": -0.0239,
+     "revenue_driver": "passenger ticket sales",
+     "signal_rank": 826,
+     "stock_vs_spy_20d": -0.1916,
+     "ticker": "ULCC"
+    },
+    {
+     "market_cap_m": 1322.8879,
+     "price_vs_sma200": 0.6678,
+     "return_30d": -0.3158,
+     "return_7d": -0.128,
+     "revenue_driver": "proppant and frac sand",
+     "signal_rank": 1376,
+     "stock_vs_spy_20d": -0.2683,
+     "ticker": "AESI"
+    }
+   ],
+   "Rail, Marine & Aviation Services and Asset Support": [
+    {
+     "market_cap_m": 21736.0247,
+     "price_vs_sma200": 0.986,
+     "return_30d": 0.0843,
+     "return_7d": 0.0495,
+     "revenue_driver": "passenger ticket revenue",
+     "signal_rank": 526,
+     "stock_vs_spy_20d": 0.0143,
+     "ticker": "LUV"
+    },
+    {
+     "market_cap_m": 7127.2194,
+     "price_vs_sma200": 1.1488,
+     "return_30d": 0.0269,
+     "return_7d": 0.0129,
+     "revenue_driver": "construction aggregates",
+     "signal_rank": 296,
+     "stock_vs_spy_20d": 0.0232,
+     "ticker": "ACA"
+    },
+    {
+     "market_cap_m": 53653.9697,
+     "price_vs_sma200": 1.035,
+     "return_30d": -0.008,
+     "return_7d": 0.0138,
+     "revenue_driver": "passenger air travel",
+     "signal_rank": 316,
+     "stock_vs_spy_20d": -0.0571,
+     "ticker": "DAL"
+    },
+    {
+     "market_cap_m": 128426.4666,
+     "price_vs_sma200": 0.8979,
+     "return_30d": -0.0687,
+     "return_7d": -0.0065,
+     "revenue_driver": "passenger ticket sales",
+     "signal_rank": 324,
+     "stock_vs_spy_20d": -0.0968,
+     "ticker": "AAL"
+    },
+    {
+     "market_cap_m": 32914.4425,
+     "price_vs_sma200": 0.9301,
+     "return_30d": -0.0759,
+     "return_7d": -0.0061,
+     "revenue_driver": "passenger ticket revenue",
+     "signal_rank": 372,
+     "stock_vs_spy_20d": -0.0962,
+     "ticker": "UAL"
+    },
+    {
+     "market_cap_m": 1483.495,
+     "price_vs_sma200": 0.9094,
+     "return_30d": -0.1279,
+     "return_7d": -0.0239,
+     "revenue_driver": "passenger ticket sales",
+     "signal_rank": 826,
+     "stock_vs_spy_20d": -0.1916,
+     "ticker": "ULCC"
+    },
+    {
+     "market_cap_m": 3985.382,
+     "price_vs_sma200": 0.7894,
+     "return_30d": -0.1415,
+     "return_7d": -0.0425,
+     "revenue_driver": "passenger airlines",
+     "signal_rank": 224,
+     "stock_vs_spy_20d": -0.1188,
+     "ticker": "ALK"
+    },
+    {
+     "market_cap_m": 4553.1906,
+     "price_vs_sma200": 0.8219,
+     "return_30d": -0.1894,
+     "return_7d": -0.0065,
+     "revenue_driver": "aircraft parts distribution",
+     "signal_rank": 862,
+     "stock_vs_spy_20d": -0.1534,
+     "ticker": "AIR"
+    },
+    {
+     "market_cap_m": 861.9951,
+     "price_vs_sma200": 0.4777,
+     "return_30d": -0.4564,
+     "return_7d": -0.2476,
+     "revenue_driver": "passenger ticket sales",
+     "signal_rank": 1088,
+     "stock_vs_spy_20d": -0.4376,
+     "ticker": "JBLU"
+    },
+    {
+     "market_cap_m": 7226.7249,
+     "price_vs_sma200": 1.0384,
+     "return_30d": -1.0,
+     "return_7d": -1.0,
+     "revenue_driver": "aircraft leasing",
+     "signal_rank": null,
+     "stock_vs_spy_20d": 0.0051,
+     "ticker": "AL"
+    }
+   ],
+   "Retail Technology, Merchant Services & Commerce Enablement": [
+    {
+     "market_cap_m": 12502.7654,
+     "price_vs_sma200": 1.4162,
+     "return_30d": 0.2304,
+     "return_7d": 0.1907,
+     "revenue_driver": "grocery delivery marketplace",
+     "signal_rank": 997,
+     "stock_vs_spy_20d": 0.4055,
+     "ticker": "CART"
+    },
+    {
+     "market_cap_m": 3461.9084,
+     "price_vs_sma200": 1.3444,
+     "return_30d": 0.1318,
+     "return_7d": 0.0884,
+     "revenue_driver": "hospitality PMS SaaS",
+     "signal_rank": 965,
+     "stock_vs_spy_20d": 0.2722,
+     "ticker": "AGYS"
+    },
+    {
+     "market_cap_m": 21736.0247,
+     "price_vs_sma200": 0.986,
+     "return_30d": 0.0843,
+     "return_7d": 0.0495,
+     "revenue_driver": "passenger ticket revenue",
+     "signal_rank": 526,
+     "stock_vs_spy_20d": 0.0143,
+     "ticker": "LUV"
+    },
+    {
+     "market_cap_m": 2696.1224,
+     "price_vs_sma200": 0.9158,
+     "return_30d": 0.0588,
+     "return_7d": 0.0338,
+     "revenue_driver": "atm hardware",
+     "signal_rank": 1713,
+     "stock_vs_spy_20d": 0.1311,
+     "ticker": "DBD"
+    },
+    {
+     "market_cap_m": 825.4064,
+     "price_vs_sma200": 1.0474,
+     "return_30d": 0.0467,
+     "return_7d": 0.0182,
+     "revenue_driver": "self-service payment technology",
+     "signal_rank": null,
+     "stock_vs_spy_20d": -0.0301,
+     "ticker": "CTLP"
+    },
+    {
+     "market_cap_m": 53653.9697,
+     "price_vs_sma200": 1.035,
+     "return_30d": -0.008,
+     "return_7d": 0.0138,
+     "revenue_driver": "passenger air travel",
+     "signal_rank": 316,
+     "stock_vs_spy_20d": -0.0571,
+     "ticker": "DAL"
+    },
+    {
+     "market_cap_m": 128426.4666,
+     "price_vs_sma200": 0.8979,
+     "return_30d": -0.0687,
+     "return_7d": -0.0065,
+     "revenue_driver": "passenger ticket sales",
+     "signal_rank": 324,
+     "stock_vs_spy_20d": -0.0968,
+     "ticker": "AAL"
+    },
+    {
+     "market_cap_m": 32914.4425,
+     "price_vs_sma200": 0.9301,
+     "return_30d": -0.0759,
+     "return_7d": -0.0061,
+     "revenue_driver": "passenger ticket revenue",
+     "signal_rank": 372,
+     "stock_vs_spy_20d": -0.0962,
+     "ticker": "UAL"
+    },
+    {
+     "market_cap_m": 49215.1872,
+     "price_vs_sma200": 0.8293,
+     "return_30d": -0.2327,
+     "return_7d": -0.071,
+     "revenue_driver": "fast-casual restaurant sales",
+     "signal_rank": 301,
+     "stock_vs_spy_20d": -0.1072,
+     "ticker": "CMG"
+    },
+    {
+     "market_cap_m": 861.9951,
+     "price_vs_sma200": 0.4777,
+     "return_30d": -0.4564,
+     "return_7d": -0.2476,
+     "revenue_driver": "passenger ticket sales",
+     "signal_rank": 1088,
+     "stock_vs_spy_20d": -0.4376,
+     "ticker": "JBLU"
+    }
+   ]
+  }
+ },
+ "predictions": {
+  "badge_count": 0,
+  "confidence_score": 0.6647,
+  "conviction_label": "SPECULATIVE",
+  "data_quality_flags": [],
+  "ev_score": 0.072,
+  "is_diamond": false,
+  "passes_tradability_filter": true,
+  "quality_label": "WEAK",
+  "quantiles": {
+   "downside_q10": -0.2745,
+   "downside_q25": -0.1646,
+   "downside_q50": -0.0991,
+   "downside_q75": -0.0321,
+   "downside_q90": -0.0015,
+   "path_volatility": 0.0304,
+   "risk_reward": 1.6351,
+   "uncertainty": 0.4112,
+   "upside_q10": 0.0231,
+   "upside_q25": 0.0713,
+   "upside_q50": 0.162,
+   "upside_q75": 0.2687,
+   "upside_q90": 0.4343
+  },
+  "rank": 372,
+  "rank_score": 0.051,
+  "tradability_filter_reasons": []
+ },
+ "profile": {
+  "_local": {
+   "dividend_yield": 0.0,
+   "eps_growth_yoy": 0.0811,
+   "pe_ratio": 9.3019,
+   "revenue_growth_yoy": 0.1231,
+   "roe": 0.2077
+  },
+  "beta": 1.304,
+  "betaTTM": null,
+  "ceo": "J. Scott Kirby",
+  "companyName": "United Airlines Holdings, Inc.",
+  "country": "US",
+  "debtToEquityTTM": null,
+  "description": "United Airlines Holdings, Inc., through its various subsidiaries, delivers air travel solutions on a global scale. Its vast network extends across North America, Europe, Asia, Africa, the Pacific, the Middle East, and Latin America, facilitating the movement of both passengers and freight. The company operates these services using a combination of its primary and regional aircraft fleets. Beyond its core transportation offerings, United also provides specialized support to external clients, encompassing catering, ground handling, aviation training, and aircraft maintenance. Established in 1968, the enterprise has its principal offices in Chicago, Illinois. Notably, it adopted its current name, United Airlines Holdings, Inc., in June 2019, having previously operated as United Continental Holdings, Inc.",
+  "dividendYielTTM": null,
+  "enterpriseValueOverEBITDATTM": null,
+  "exchangeShortName": "NASDAQ",
+  "fullTimeEmployees": "117500",
+  "industry": "Airlines, Airports & Air Services",
+  "ipoDate": "2006-02-06",
+  "latest_earnings_date": "2026-10-21",
+  "marketCapTTM": null,
+  "mktCap": 32713576860,
+  "peRatioTTM": null,
+  "price": 100.69,
+  "priceToSalesRatioTTM": null,
+  "returnOnEquityTTM": 0.2181,
+  "revenue_description": "United Airlines operates a global passenger airline network. Revenue is driven mainly by passenger ticket sales and fare yield, with loyalty, premium seating, and cargo as added contributors.",
+  "revenue_description_themes": [
+   "domestic passenger demand",
+   "ancillary revenue growth",
+   "dynamic fare pricing"
+  ],
+  "revenue_taxonomy": [
+   {
+    "bucket": "Rail, Marine & Aviation Services and Asset Support",
+    "matched_tags": [
+     "passenger ticket revenue"
+    ],
+    "path": "Industrials & Transportation › Mobility & Logistics › Rail, Marine & Aviation Services and Asset Support",
+    "sector": "Industrials & Transportation",
+    "segment": "Mobility & Logistics"
+   },
+   {
+    "bucket": "Retail Technology, Merchant Services & Commerce Enablement",
+    "matched_tags": [
+     "loyalty program revenue"
+    ],
+    "path": "Consumer Goods & Retail › Retail & Commerce › Retail Technology, Merchant Services & Commerce Enablement",
+    "sector": "Consumer Goods & Retail",
+    "segment": "Retail & Commerce"
+   },
+   {
+    "bucket": "Freight, Logistics, Brokerage & Delivery Services",
+    "matched_tags": [
+     "air cargo revenue"
+    ],
+    "path": "Industrials & Transportation › Mobility & Logistics › Freight, Logistics, Brokerage & Delivery Services",
+    "sector": "Industrials & Transportation",
+    "segment": "Mobility & Logistics"
+   }
+  ],
+  "revenue_themes": [
+   "passenger ticket revenue",
+   "loyalty program revenue",
+   "air cargo revenue"
+  ],
+  "sector": "Industrials",
+  "website": "https://www.united.com"
+ },
+ "report": null,
+ "scorecard": {
+  "headline": {
+   "avg_universe_pct": 57,
+   "label": "mixed",
+   "metric_count": 8
+  },
+  "metrics": {
+   "debt_to_equity": {
+    "direction": "lower",
+    "label": "D/E Ratio",
+    "sector": "Industrials",
+    "sector_n": 361,
+    "sector_pct": 11,
+    "universe_n": 2082,
+    "universe_pct": 11,
+    "value": 1.9316
+   },
+   "eps_growth_yoy": {
+    "direction": "higher",
+    "label": "EPS Growth",
+    "sector": "Industrials",
+    "sector_n": 353,
+    "sector_pct": 49,
+    "universe_n": 1892,
+    "universe_pct": 44,
+    "value": 0.0811
+   },
+   "gross_margin": {
+    "direction": "higher",
+    "label": "Gross Margin",
+    "sector": "Industrials",
+    "sector_n": 338,
+    "sector_pct": 86,
+    "universe_n": 2010,
+    "universe_pct": 73,
+    "value": 0.6572
+   },
+   "operating_margin": {
+    "direction": "higher",
+    "label": "Op. Margin",
+    "sector": "Industrials",
+    "sector_n": 338,
+    "sector_pct": 45,
+    "universe_n": 2010,
+    "universe_pct": 40,
+    "value": 0.0751
+   },
+   "pe_ratio": {
+    "direction": "lower",
+    "label": "P/E",
+    "sector": "Industrials",
+    "sector_n": 247,
+    "sector_pct": 95,
+    "universe_n": 1474,
+    "universe_pct": 91,
+    "value": 9.3019
+   },
+   "revenue_growth_yoy": {
+    "direction": "higher",
+    "label": "Rev Growth",
+    "sector": "Industrials",
+    "sector_n": 333,
+    "sector_pct": 66,
+    "universe_n": 1834,
+    "universe_pct": 62,
+    "value": 0.1231
+   },
+   "roe": {
+    "direction": "higher",
+    "label": "ROE",
+    "sector": "Industrials",
+    "sector_n": 363,
+    "sector_pct": 78,
+    "universe_n": 2102,
+    "universe_pct": 78,
+    "value": 0.2077
+   },
+   "roic": {
+    "direction": "higher",
+    "label": "ROIC",
+    "sector": "Industrials",
+    "sector_n": 356,
+    "sector_pct": 56,
+    "universe_n": 2053,
+    "universe_pct": 57,
+    "value": 0.0176
+   }
+  }
+ },
+ "signal_rank": 372,
+ "structural_analogs": {
+  "gp_core_pct": 66.2,
+  "gp_core_ratio": 1.5227,
+  "matches": [
+   {
+    "actual_downside": -0.0889,
+    "actual_return": 0.1255,
+    "actual_upside": 0.1255,
+    "days_in_region": 114,
+    "end_date": "2012-08-17",
+    "end_reason": "reversal",
+    "seq_len": 114,
+    "similarity": 0.5845,
+    "start_date": "2012-03-19",
+    "ticker": "CMI",
+    "total_distance": 0.2685,
+    "trigger_date": "2012-06-04",
+    "trigger_type": "severe_drawdown"
+   },
+   {
+    "actual_downside": -0.0458,
+    "actual_return": 0.1125,
+    "actual_upside": 0.1125,
+    "days_in_region": 112,
+    "end_date": "1991-08-23",
+    "end_reason": "reversal",
+    "seq_len": 112,
+    "similarity": 0.5752,
+    "start_date": "1991-04-02",
+    "ticker": "PEP",
+    "total_distance": 0.2766,
+    "trigger_date": "1991-06-13",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": 0.0,
+    "actual_return": 0.1763,
+    "actual_upside": 0.1763,
+    "days_in_region": 103,
+    "end_date": "2022-03-29",
+    "end_reason": "reversal",
+    "seq_len": 103,
+    "similarity": 0.5614,
+    "start_date": "2022-01-04",
+    "ticker": "APG",
+    "total_distance": 0.2887,
+    "trigger_date": "2022-03-07",
+    "trigger_type": "severe_drawdown"
+   },
+   {
+    "actual_downside": -0.0385,
+    "actual_return": 0.3364,
+    "actual_upside": 0.3364,
+    "days_in_region": 114,
+    "end_date": "2012-09-14",
+    "end_reason": "reversal",
+    "seq_len": 114,
+    "similarity": 0.56,
+    "start_date": "2012-03-16",
+    "ticker": "ATW",
+    "total_distance": 0.2899,
+    "trigger_date": "2012-04-17",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": -0.035,
+    "actual_return": 0.1595,
+    "actual_upside": 0.1595,
+    "days_in_region": 115,
+    "end_date": "1991-10-18",
+    "end_reason": "reversal",
+    "seq_len": 115,
+    "similarity": 0.5585,
+    "start_date": "1991-04-05",
+    "ticker": "MCD",
+    "total_distance": 0.2912,
+    "trigger_date": "1991-06-21",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": -0.0906,
+    "actual_return": 0.2224,
+    "actual_upside": 0.2224,
+    "days_in_region": 112,
+    "end_date": "2014-12-09",
+    "end_reason": "reversal",
+    "seq_len": 112,
+    "similarity": 0.5582,
+    "start_date": "2014-07-03",
+    "ticker": "GPI",
+    "total_distance": 0.2915,
+    "trigger_date": "2014-07-28",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": -0.1458,
+    "actual_return": 0.1994,
+    "actual_upside": 0.1994,
+    "days_in_region": 114,
+    "end_date": "2012-09-06",
+    "end_reason": "reversal",
+    "seq_len": 114,
+    "similarity": 0.5552,
+    "start_date": "2012-03-14",
+    "ticker": "LSI",
+    "total_distance": 0.2942,
+    "trigger_date": "2012-05-30",
+    "trigger_type": "severe_drawdown"
+   },
+   {
+    "actual_downside": -0.0197,
+    "actual_return": 0.1667,
+    "actual_upside": 0.1667,
+    "days_in_region": 114,
+    "end_date": "2008-02-26",
+    "end_reason": "reversal",
+    "seq_len": 114,
+    "similarity": 0.5544,
+    "start_date": "2007-10-31",
+    "ticker": "ALB",
+    "total_distance": 0.2949,
+    "trigger_date": "2007-11-20",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": 0.0,
+    "actual_return": 0.3387,
+    "actual_upside": 0.3387,
+    "days_in_region": 118,
+    "end_date": "2012-09-14",
+    "end_reason": "reversal",
+    "seq_len": 118,
+    "similarity": 0.554,
+    "start_date": "2012-03-13",
+    "ticker": "FCFS",
+    "total_distance": 0.2953,
+    "trigger_date": "2012-06-04",
+    "trigger_type": "severe_drawdown"
+   },
+   {
+    "actual_downside": -0.0359,
+    "actual_return": 0.1269,
+    "actual_upside": 0.1269,
+    "days_in_region": 121,
+    "end_date": "2012-09-14",
+    "end_reason": "reversal",
+    "seq_len": 121,
+    "similarity": 0.5537,
+    "start_date": "2012-03-19",
+    "ticker": "DVN",
+    "total_distance": 0.2956,
+    "trigger_date": "2012-04-17",
+    "trigger_type": "shallow_drawdown"
+   }
+  ],
+  "panel": {
+   "edge": 0.0996,
+   "hit_hi": 0.898,
+   "hit_lo": 0.767,
+   "hit_rate": 0.843,
+   "median_final": 0.151,
+   "median_pain": 0.0502,
+   "n": 51,
+   "n_eff": 51.0,
+   "p25_final": 0.0176,
+   "p_pain_gt5": 0.51,
+   "return_to_pain": 2.153
+  },
+  "stats": {
+   "avg_similarity": 0.518,
+   "avg_trough": 0.097,
+   "avg_upside": 0.1586,
+   "median_pain": 0.0593,
+   "median_return": 0.1433,
+   "n_matches": 200,
+   "p25_return": 0.0223,
+   "p_pain_gt5": 0.55,
+   "return_to_pain": 1.807,
+   "top5_avg_trough": 0.0416,
+   "top5_avg_upside": 0.1821,
+   "top_similarity": 0.585,
+   "win_rate": 0.81
+  },
+  "total_matches": 200
+ },
+ "ticker": "UAL",
+ "trending": {
+  "acceleration": 0.0022,
+  "avg_vol_20d": 3658674.5025,
+  "base_high_120": 136.11,
+  "breakout_confirmed": 0,
+  "close": 125.34,
+  "momentum_score": 0.8514,
+  "momentum_start": "2026-05-21",
+  "range_20": 0.1895,
+  "range_50": 0.2952,
+  "rank": 324,
+  "rank_down": null,
+  "rank_up": 252,
+  "ret_120": 0.1695,
+  "ret_20": 0.086,
+  "ret_60": 0.4064,
+  "rundown_score": 0.2173,
+  "score_date": "2026-08-14",
+  "slope_20": 0.005,
+  "slope_60": 0.0028,
+  "stage": "sustained",
+  "stage_label": "Trending",
+  "ticker": "UAL",
+  "total_score": 0.5554,
+  "trend_ratio": 1.1548,
+  "vcp_detected": 0,
+  "vcp_score": 0.358
+ }
+}

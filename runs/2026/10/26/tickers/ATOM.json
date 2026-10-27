@@ -1,0 +1,1004 @@
+{
+ "date": "2026-10-26",
+ "detected_regions": {
+  "primary": {
+   "days_in_region": 150,
+   "region_start": "2026-06-18",
+   "trigger_date": "2026-07-17",
+   "trigger_type": "compression"
+  },
+  "secondary": [
+   {
+    "confidence_score": 0.0973,
+    "downside_q50": -0.1061,
+    "ev_score": 0.1835,
+    "region_start": "2026-03-31",
+    "seq_len": 200,
+    "trigger_date": "2026-09-22",
+    "trigger_type": "runup",
+    "upside_q25": 0.111,
+    "upside_q50": 0.2647,
+    "upside_q75": 0.4835
+   }
+  ]
+ },
+ "feature_attribution": {
+  "macro_driver_count": 11,
+  "risk_flags": [
+   "high_volatility"
+  ],
+  "top_drivers": [
+   {
+    "direction": "positive",
+    "feature": "historical_recovery_rate",
+    "feature_value": 0.1202,
+    "importance": 0.0004,
+    "importance_pct": 0.173,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "negative",
+    "feature": "daily_ps",
+    "feature_value": 100.0,
+    "importance": 0.0004,
+    "importance_pct": 0.1655,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "positive",
+    "feature": "price_vs_low_52w",
+    "feature_value": 1.4422,
+    "importance": 0.0003,
+    "importance_pct": 0.126,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "negative",
+    "feature": "altman_x3",
+    "feature_value": -0.168,
+    "importance": 0.0003,
+    "importance_pct": 0.1155,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "positive",
+    "feature": "return_1d",
+    "feature_value": -0.0238,
+    "importance": 0.0003,
+    "importance_pct": 0.1137,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "positive",
+    "feature": "volatility_20d",
+    "feature_value": 0.0386,
+    "importance": 0.0002,
+    "importance_pct": 0.0931,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "positive",
+    "feature": "price_vs_high_52w",
+    "feature_value": 0.237,
+    "importance": 0.0002,
+    "importance_pct": 0.0917,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "negative",
+    "feature": "ma_200_slope",
+    "feature_value": 0.027,
+    "importance": 0.0001,
+    "importance_pct": 0.0637,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "positive",
+    "feature": "price_vs_sma200",
+    "feature_value": 0.5236,
+    "importance": 0.0001,
+    "importance_pct": 0.0579,
+    "method": "integrated_gradients"
+   }
+  ]
+ },
+ "fundamentals": {
+  "accrual": -0.4525,
+  "adx_14": 39.0362,
+  "altman_z_score": 19.1636,
+  "amihud_illiquidity": 0.017,
+  "avg_volume": 541173.3816,
+  "beta_252d": 1.5705,
+  "book_value_per_share": 0.9593,
+  "correlation_spy_60d": 0.4704,
+  "current_liabilities": 2.288,
+  "current_ratio": 17.0245,
+  "daily_earnings_yield": -0.2464,
+  "daily_fcf_yield": -0.038,
+  "daily_pb": 2.4524,
+  "daily_pe": -4.0579,
+  "daily_ps": 100.0,
+  "days_since_52w_high": 106.0,
+  "debt_ebitda": -0.0507,
+  "debt_to_equity": 0.0314,
+  "dividend_yield": 0.0,
+  "dollar_volume_20d_avg": 2420827.3172,
+  "earnings_quality": 1.3422,
+  "ebitda_growth_yoy": -0.188,
+  "enterprise_value": 53.7365,
+  "eps_basic": -0.17,
+  "eps_cagr_3y": -1.9331,
+  "eps_cagr_5y": -1.9825,
+  "eps_diluted": -0.17,
+  "eps_growth_accel": 0.0147,
+  "eps_growth_qoq": 0.0,
+  "eps_growth_yoy": 0.0299,
+  "eps_growth_yoy_q2": 0.0152,
+  "eps_growth_yoy_q3": 0.0441,
+  "eps_growth_yoy_q4": 0.0429,
+  "eps_growth_yoy_q5": 0.0822,
+  "eps_growth_yoy_q6": 0.1538,
+  "eps_growth_yoy_q7": 0.15,
+  "eps_growth_yoy_q8": 0.125,
+  "eps_history_8q": [
+   -0.17,
+   -0.16,
+   -0.17,
+   -0.17,
+   -0.17,
+   -0.14,
+   -0.17,
+   -0.17
+  ],
+  "eps_ttm": -0.7073,
+  "ev_to_ebitda": -2.3401,
+  "ev_to_fcf": -6.3071,
+  "ev_to_sales": 340.1042,
+  "fcf_growth_yoy": -0.0269,
+  "fcf_margin": -53.9241,
+  "fcf_per_share": -0.2205,
+  "gross_margin": null,
+  "gross_margin_change_yoy": null,
+  "gross_margin_history": null,
+  "inc_roic": 0.0749,
+  "interest_coverage": -883.1923,
+  "is_pre_revenue": false,
+  "margin_vs_sector_median": null,
+  "market_cap_ratio": 90.9245,
+  "net_income": -6.336,
+  "net_margin": null,
+  "operating_income": -6.759,
+  "operating_margin": null,
+  "operating_margin_change_yoy": null,
+  "pb_ratio": 2.9917,
+  "pe_percentile_1y": 0.2302,
+  "pe_ratio": -8.1769,
+  "peg_trailing": -2.7393,
+  "piotroski_f_score": 1.0,
+  "price_vs_high_52w": 0.237,
+  "price_vs_sma200": 0.5236,
+  "ps_percentile_1y": 1.0,
+  "ps_ratio": 100,
+  "quarter_labels_8q": [
+   "Q3 '24",
+   "Q4 '24",
+   "Q1 '25",
+   "Q2 '25",
+   "Q3 '25",
+   "Q4 '25",
+   "Q1 '26",
+   "Q2 '26"
+  ],
+  "quarterly_eps_growth_yoy": 0.0,
+  "quarterly_eps_growth_yoy_8q": [
+   0.15,
+   0.1111,
+   0.1053,
+   -0.0625,
+   0.0,
+   0.125,
+   0.0,
+   0.0
+  ],
+  "quarterly_revenue_growth_yoy": 1.75,
+  "quarterly_revenue_growth_yoy_8q": [
+   null,
+   -0.9582,
+   -0.7778,
+   -1.0,
+   -0.5,
+   1.1739,
+   1.75,
+   null
+  ],
+  "revenue_cagr_3y": 2.2029,
+  "revenue_cagr_5y": -0.1048,
+  "revenue_growth_accel": 4.0988,
+  "revenue_growth_qoq": 13.3636,
+  "revenue_growth_yoy": 3.6939,
+  "revenue_growth_yoy_q2": -0.405,
+  "revenue_growth_yoy_q3": -0.5185,
+  "revenue_growth_yoy_q4": -0.9426,
+  "revenue_growth_yoy_q5": -0.9234,
+  "revenue_growth_yoy_q6": -0.787,
+  "revenue_growth_yoy_q7": -0.7545,
+  "revenue_growth_yoy_q8": 10.0,
+  "revenue_history_8q": [
+   0.022,
+   0.023,
+   0.004,
+   0.0,
+   0.011,
+   0.05,
+   0.011,
+   0.158
+  ],
+  "revenue_per_share": 0.0041,
+  "roa": -0.5345,
+  "roce": -0.5918,
+  "roe": -0.5773,
+  "roic": -0.5907,
+  "rsi_14": 16.3598,
+  "sector_momentum": 0.0115,
+  "share_dilution_1y": 0.0,
+  "stock_vs_sector_20d": -0.2821,
+  "stock_vs_spy_20d": -0.3076,
+  "total_assets": 40.223,
+  "vol_regime": 1.0377,
+  "volatility_20d": 0.0386,
+  "volatility_60d": 0.0372,
+  "w52_high": 12.365,
+  "w52_low": 1.8915
+ },
+ "market_characters": [
+  {
+   "id": "g9",
+   "name": "Narrative Premium"
+  }
+ ],
+ "model_analogs": {
+  "matches": [
+   {
+    "actual_downside": -0.0018,
+    "actual_return": 0.3927,
+    "actual_upside": 0.3927,
+    "days_in_region": 238,
+    "end_date": "2021-02-19",
+    "end_reason": "reversal",
+    "similarity": 0.9779,
+    "start_date": "2020-06-26",
+    "ticker": "FULC",
+    "trigger_date": "2020-12-16",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": 0.0,
+    "actual_return": 0.0641,
+    "actual_upside": 0.391,
+    "days_in_region": 236,
+    "end_date": "1998-01-20",
+    "end_reason": "reversal",
+    "similarity": 0.9777,
+    "start_date": "1997-05-29",
+    "ticker": "ARTC",
+    "trigger_date": "1997-11-14",
+    "trigger_type": "runup"
+   },
+   {
+    "actual_downside": -0.1489,
+    "actual_return": -0.1489,
+    "actual_upside": 0.1553,
+    "days_in_region": 228,
+    "end_date": "2020-11-02",
+    "end_reason": "reversal",
+    "similarity": 0.9775,
+    "start_date": "2020-03-19",
+    "ticker": "AAOI",
+    "trigger_date": "2020-09-09",
+    "trigger_type": "runup"
+   },
+   {
+    "actual_downside": -0.018,
+    "actual_return": 0.1753,
+    "actual_upside": 0.5696,
+    "days_in_region": 212,
+    "end_date": "2020-10-30",
+    "end_reason": "reversal",
+    "similarity": 0.9772,
+    "start_date": "2020-04-01",
+    "ticker": "FPRX",
+    "trigger_date": "2020-09-09",
+    "trigger_type": "runup"
+   },
+   {
+    "actual_downside": 0.0,
+    "actual_return": 0.0829,
+    "actual_upside": 0.4578,
+    "days_in_region": 208,
+    "end_date": "2020-10-26",
+    "end_reason": "reversal",
+    "similarity": 0.9769,
+    "start_date": "2020-04-01",
+    "ticker": "SRRK",
+    "trigger_date": "2020-08-04",
+    "trigger_type": "runup"
+   },
+   {
+    "actual_downside": -0.0137,
+    "actual_return": -0.0137,
+    "actual_upside": 0.128,
+    "days_in_region": 198,
+    "end_date": "2020-10-02",
+    "end_reason": "reversal",
+    "similarity": 0.9768,
+    "start_date": "2020-03-18",
+    "ticker": "CTMX",
+    "trigger_date": "2020-09-04",
+    "trigger_type": "runup"
+   },
+   {
+    "actual_downside": -0.1348,
+    "actual_return": -0.0225,
+    "actual_upside": 0.0042,
+    "days_in_region": 202,
+    "end_date": "2021-03-16",
+    "end_reason": "reversal",
+    "similarity": 0.9765,
+    "start_date": "2020-08-26",
+    "ticker": "AUTL",
+    "trigger_date": "2021-02-18",
+    "trigger_type": "severe_drawdown"
+   },
+   {
+    "actual_downside": -0.072,
+    "actual_return": 0.5805,
+    "actual_upside": 0.5805,
+    "days_in_region": 127,
+    "end_date": "2021-01-21",
+    "end_reason": "reversal",
+    "similarity": 0.9765,
+    "start_date": "2020-09-16",
+    "ticker": "CKPT",
+    "trigger_date": "2020-09-24",
+    "trigger_type": "severe_drawdown"
+   },
+   {
+    "actual_downside": 0.0,
+    "actual_return": 0.1667,
+    "actual_upside": 0.1667,
+    "days_in_region": 112,
+    "end_date": "2020-08-12",
+    "end_reason": "reversal",
+    "similarity": 0.9764,
+    "start_date": "2020-04-22",
+    "ticker": "VSTM",
+    "trigger_date": "2020-04-28",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": -0.2081,
+    "actual_return": -0.2081,
+    "actual_upside": 0.0692,
+    "days_in_region": 189,
+    "end_date": "2020-09-23",
+    "end_reason": "reversal",
+    "similarity": 0.976,
+    "start_date": "2020-03-18",
+    "ticker": "CNST",
+    "trigger_date": "2020-08-24",
+    "trigger_type": "shallow_runup"
+   }
+  ],
+  "stats": {
+   "avg_max_drawdown": 0.0963,
+   "avg_similarity": 0.975,
+   "avg_trough": 0.0963,
+   "avg_upside": 0.2989,
+   "best_return": 1.1094,
+   "downside_range": [
+    -0.4946,
+    0.0
+   ],
+   "median_return": 0.0727,
+   "n_matches": 50,
+   "outcome_agreement": true,
+   "return_p25": -0.0508,
+   "return_p5": -0.2525,
+   "return_p75": 0.2759,
+   "return_p95": 0.6936,
+   "sim_weighted_win_rate": 0.62,
+   "top5_avg_trough": 0.0337,
+   "top5_avg_upside": 0.3933,
+   "top_similarity": 0.978,
+   "upside_range": [
+    0.0,
+    1.7623
+   ],
+   "win_rate": 0.62,
+   "worst_return": -0.4589,
+   "years_span": 8
+  },
+  "total_matches": 50
+ },
+ "peer_group": {
+  "buckets": [
+   "Licensing, Royalties, Franchise Fees & Intellectual Property Monetization",
+   "Semiconductor Equipment, Materials & Test"
+  ],
+  "groups": {
+   "Licensing, Royalties, Franchise Fees & Intellectual Property Monetization": [
+    {
+     "market_cap_m": 876.7786,
+     "price_vs_sma200": 0.967,
+     "return_30d": 0.0587,
+     "return_7d": 0.0055,
+     "revenue_driver": "semiconductor IP licensing",
+     "signal_rank": 1001,
+     "stock_vs_spy_20d": -0.1514,
+     "ticker": "CEVA"
+    },
+    {
+     "market_cap_m": 3150.9166,
+     "price_vs_sma200": 1.0636,
+     "return_30d": 0.0189,
+     "return_7d": 0.037,
+     "revenue_driver": "audio technology licensing",
+     "signal_rank": 2061,
+     "stock_vs_spy_20d": 0.0849,
+     "ticker": "DLB"
+    },
+    {
+     "market_cap_m": 233.5752,
+     "price_vs_sma200": 1.0632,
+     "return_30d": -0.0139,
+     "return_7d": -0.0042,
+     "revenue_driver": "haptic licensing",
+     "signal_rank": 1443,
+     "stock_vs_spy_20d": -0.0185,
+     "ticker": "IMMR"
+    },
+    {
+     "market_cap_m": 7809.2308,
+     "price_vs_sma200": 1.0208,
+     "return_30d": -0.0474,
+     "return_7d": -0.0116,
+     "revenue_driver": "wireless patent licensing",
+     "signal_rank": 1190,
+     "stock_vs_spy_20d": -0.008,
+     "ticker": "IDCC"
+    },
+    {
+     "market_cap_m": 1381.2881,
+     "price_vs_sma200": 0.778,
+     "return_30d": -0.0568,
+     "return_7d": -0.0241,
+     "revenue_driver": "network-on-chip IP",
+     "signal_rank": 1423,
+     "stock_vs_spy_20d": -0.1583,
+     "ticker": "AIP"
+    },
+    {
+     "market_cap_m": 317.8581,
+     "price_vs_sma200": 0.81,
+     "return_30d": -0.0974,
+     "return_7d": 0.038,
+     "revenue_driver": "entertainment technology licensing",
+     "signal_rank": 226,
+     "stock_vs_spy_20d": -0.0521,
+     "ticker": "XPER"
+    },
+    {
+     "market_cap_m": 6003.3093,
+     "price_vs_sma200": 0.8391,
+     "return_30d": -0.131,
+     "return_7d": -0.0143,
+     "revenue_driver": "media IP licensing",
+     "signal_rank": 937,
+     "stock_vs_spy_20d": -0.1392,
+     "ticker": "ADEA"
+    },
+    {
+     "market_cap_m": 168.3845,
+     "price_vs_sma200": 0.5236,
+     "return_30d": -0.2697,
+     "return_7d": -0.1368,
+     "revenue_driver": "semiconductor IP licensing",
+     "signal_rank": 958,
+     "stock_vs_spy_20d": -0.3076,
+     "ticker": "ATOM"
+    },
+    {
+     "market_cap_m": 2896.215,
+     "price_vs_sma200": 0.7939,
+     "return_30d": -0.2713,
+     "return_7d": 0.0282,
+     "revenue_driver": "antibody discovery licensing",
+     "signal_rank": 1691,
+     "stock_vs_spy_20d": -0.174,
+     "ticker": "IMNM"
+    },
+    {
+     "market_cap_m": 171.1968,
+     "price_vs_sma200": 0.6867,
+     "return_30d": -0.4866,
+     "return_7d": -0.1598,
+     "revenue_driver": "Allam Cycle technology licensing",
+     "signal_rank": null,
+     "stock_vs_spy_20d": -0.1523,
+     "ticker": "NPWR"
+    }
+   ],
+   "Semiconductor Equipment, Materials & Test": [
+    {
+     "market_cap_m": 1786.7162,
+     "price_vs_sma200": 0.7845,
+     "return_30d": 0.0261,
+     "return_7d": -0.0231,
+     "revenue_driver": "semiconductor photomasks",
+     "signal_rank": 1273,
+     "stock_vs_spy_20d": -0.0854,
+     "ticker": "PLAB"
+    },
+    {
+     "market_cap_m": 3610.9514,
+     "price_vs_sma200": 0.8776,
+     "return_30d": -0.0138,
+     "return_7d": -0.0283,
+     "revenue_driver": "compound semiconductor substrates",
+     "signal_rank": 1835,
+     "stock_vs_spy_20d": -0.2354,
+     "ticker": "AXTI"
+    },
+    {
+     "market_cap_m": 2240.7971,
+     "price_vs_sma200": 1.0476,
+     "return_30d": -0.0224,
+     "return_7d": -0.1102,
+     "revenue_driver": "semiconductor test",
+     "signal_rank": 971,
+     "stock_vs_spy_20d": -0.2598,
+     "ticker": "COHU"
+    },
+    {
+     "market_cap_m": 1813.6467,
+     "price_vs_sma200": 0.9199,
+     "return_30d": -0.0465,
+     "return_7d": -0.0109,
+     "revenue_driver": "semiconductor analytics",
+     "signal_rank": 1508,
+     "stock_vs_spy_20d": -0.1787,
+     "ticker": "PDFS"
+    },
+    {
+     "market_cap_m": 229.8556,
+     "price_vs_sma200": 0.7848,
+     "return_30d": -0.0713,
+     "return_7d": -0.0602,
+     "revenue_driver": "semiconductor capital equipment",
+     "signal_rank": 949,
+     "stock_vs_spy_20d": -0.2017,
+     "ticker": "ASYS"
+    },
+    {
+     "market_cap_m": 423890.22,
+     "price_vs_sma200": 0.876,
+     "return_30d": -0.0863,
+     "return_7d": -0.0986,
+     "revenue_driver": "semiconductor manufacturing equipment",
+     "signal_rank": 924,
+     "stock_vs_spy_20d": -0.2029,
+     "ticker": "AMAT"
+    },
+    {
+     "market_cap_m": 9099.1743,
+     "price_vs_sma200": 0.6404,
+     "return_30d": -0.2188,
+     "return_7d": -0.1644,
+     "revenue_driver": "outsourced semiconductor packaging",
+     "signal_rank": 1338,
+     "stock_vs_spy_20d": -0.307,
+     "ticker": "AMKR"
+    },
+    {
+     "market_cap_m": 5015.849,
+     "price_vs_sma200": 0.7424,
+     "return_30d": -0.2378,
+     "return_7d": -0.1227,
+     "revenue_driver": "semiconductor wafer cleaning",
+     "signal_rank": 846,
+     "stock_vs_spy_20d": -0.3282,
+     "ticker": "ACMR"
+    },
+    {
+     "market_cap_m": 168.3845,
+     "price_vs_sma200": 0.5236,
+     "return_30d": -0.2697,
+     "return_7d": -0.1368,
+     "revenue_driver": "semiconductor IP licensing",
+     "signal_rank": 958,
+     "stock_vs_spy_20d": -0.3076,
+     "ticker": "ATOM"
+    },
+    {
+     "market_cap_m": 1635.6898,
+     "price_vs_sma200": 1.1671,
+     "return_30d": -1.0,
+     "return_7d": -1.0,
+     "revenue_driver": "semiconductor foundry",
+     "signal_rank": null,
+     "stock_vs_spy_20d": -0.0677,
+     "ticker": "SKYT"
+    }
+   ]
+  }
+ },
+ "predictions": {
+  "badge_count": 1,
+  "confidence_score": 0.0792,
+  "conviction_label": "SPECULATIVE",
+  "data_quality_flags": [],
+  "ev_score": 0.2019,
+  "is_diamond": false,
+  "passes_tradability_filter": false,
+  "quality_label": "HIGH",
+  "quantiles": {
+   "downside_q10": -0.3461,
+   "downside_q25": -0.1945,
+   "downside_q50": -0.1019,
+   "downside_q75": -0.0223,
+   "downside_q90": 0.0041,
+   "path_volatility": 0.0493,
+   "risk_reward": 2.7388,
+   "uncertainty": 0.7711,
+   "upside_q10": 0.0365,
+   "upside_q25": 0.1185,
+   "upside_q50": 0.2792,
+   "upside_q75": 0.5025,
+   "upside_q90": 0.8076
+  },
+  "rank": 958,
+  "rank_score": 0.0214,
+  "tradability_filter_reasons": [
+   "market_cap_below_1b",
+   "dollar_volume_below_5m"
+  ]
+ },
+ "profile": {
+  "_local": {
+   "dividend_yield": 0.0,
+   "eps_growth_yoy": 0.0299,
+   "pe_ratio": -8.1769,
+   "revenue_growth_yoy": 3.6939,
+   "roe": -0.5773
+  },
+  "beta": 2.041,
+  "betaTTM": null,
+  "ceo": "Scott A. Bibaud",
+  "companyName": "Atomera Incorporated",
+  "country": "US",
+  "debtToEquityTTM": null,
+  "description": "Atomera Incorporated develops, commercializes, and licenses its unique materials, processes, and technologies for the semiconductor sector across North America and the Asia Pacific region. Central to its offerings is the Mears Silicon Technology (MST), a refined, ultra-thin silicon film designed to enhance the transistor channel of CMOS-type devices. The company serves a diverse range of clients, including foundries, integrated device manufacturers, fabless semiconductor manufacturers, original equipment manufacturers, and electronic design automation companies. Established in 2001, the firm, headquartered in Los Gatos, California, operated as Mears Technologies, Inc. until it adopted the name Atomera Incorporated in January 2016.",
+  "dividendYielTTM": null,
+  "enterpriseValueOverEBITDATTM": null,
+  "exchangeShortName": "NASDAQ",
+  "fullTimeEmployees": "21",
+  "industry": "Semiconductors",
+  "ipoDate": "2016-08-08",
+  "latest_earnings_date": "2026-08-06",
+  "marketCapTTM": null,
+  "mktCap": 111998880,
+  "peRatioTTM": null,
+  "price": 2.87,
+  "priceToSalesRatioTTM": null,
+  "returnOnEquityTTM": -0.7791,
+  "revenue_description": "Atomera Incorporated develops, commercializes, and licenses its unique materials, processes, and technologies for the semiconductor sector across North America and the Asia Pacific region. Revenue is driven by semiconductor IP licensing, advanced electronic materials, and semiconductor process control.",
+  "revenue_description_themes": [
+   "materials licensing adoption",
+   "foundry qualification",
+   "royalty-bearing production"
+  ],
+  "revenue_taxonomy": [
+   {
+    "bucket": "Licensing, Royalties, Franchise Fees & Intellectual Property Monetization",
+    "matched_tags": [
+     "semiconductor IP licensing"
+    ],
+    "path": "Media, Advertising & Information › Entertainment & Ip › Licensing, Royalties, Franchise Fees & Intellectual Property Monetization",
+    "sector": "Media, Advertising & Information",
+    "segment": "Entertainment & Ip"
+   },
+   {
+    "bucket": "Semiconductor Equipment, Materials & Test",
+    "matched_tags": [
+     "advanced electronic materials",
+     "semiconductor process control"
+    ],
+    "path": "Technology › Hardware & Semiconductors › Semiconductor Equipment, Materials & Test",
+    "sector": "Technology",
+    "segment": "Hardware & Semiconductors"
+   }
+  ],
+  "revenue_themes": [
+   "semiconductor IP licensing",
+   "advanced electronic materials",
+   "semiconductor process control"
+  ],
+  "sector": "Technology",
+  "website": "https://www.atomera.com"
+ },
+ "report": null,
+ "scorecard": {
+  "headline": {
+   "avg_universe_pct": 46,
+   "label": "mixed",
+   "metric_count": 5
+  },
+  "metrics": {
+   "debt_to_equity": {
+    "direction": "lower",
+    "label": "D/E Ratio",
+    "sector": "Comm. Services",
+    "sector_n": 44,
+    "sector_pct": 70,
+    "universe_n": 2082,
+    "universe_pct": 79,
+    "value": 0.0314
+   },
+   "eps_growth_yoy": {
+    "direction": "higher",
+    "label": "EPS Growth",
+    "sector": "Comm. Services",
+    "sector_n": 44,
+    "sector_pct": 41,
+    "universe_n": 1892,
+    "universe_pct": 39,
+    "value": 0.0299
+   },
+   "revenue_growth_yoy": {
+    "direction": "higher",
+    "label": "Rev Growth",
+    "sector": "Comm. Services",
+    "sector_n": 44,
+    "sector_pct": 93,
+    "universe_n": 1834,
+    "universe_pct": 98,
+    "value": 3.6939
+   },
+   "roe": {
+    "direction": "higher",
+    "label": "ROE",
+    "sector": "Comm. Services",
+    "sector_n": 44,
+    "sector_pct": 7,
+    "universe_n": 2102,
+    "universe_pct": 8,
+    "value": -0.5773
+   },
+   "roic": {
+    "direction": "higher",
+    "label": "ROIC",
+    "sector": "Comm. Services",
+    "sector_n": 43,
+    "sector_pct": 9,
+    "universe_n": 2053,
+    "universe_pct": 4,
+    "value": -0.167
+   }
+  }
+ },
+ "signal_rank": 958,
+ "structural_analogs": {
+  "gp_core_pct": 18.8,
+  "gp_core_ratio": 0.9632,
+  "matches": [
+   {
+    "actual_downside": -0.241,
+    "actual_return": -0.241,
+    "actual_upside": 0.0833,
+    "days_in_region": 92,
+    "end_date": "2021-07-27",
+    "end_reason": "reversal",
+    "seq_len": 92,
+    "similarity": 0.4186,
+    "start_date": "2021-05-10",
+    "ticker": "SSYS",
+    "total_distance": 0.4355,
+    "trigger_date": "2021-06-23",
+    "trigger_type": "runup"
+   },
+   {
+    "actual_downside": -0.2113,
+    "actual_return": -0.2113,
+    "actual_upside": 0.0728,
+    "days_in_region": 90,
+    "end_date": "2014-07-17",
+    "end_reason": "reversal",
+    "seq_len": 90,
+    "similarity": 0.4128,
+    "start_date": "2014-04-28",
+    "ticker": "ALNY",
+    "total_distance": 0.4424,
+    "trigger_date": "2014-05-13",
+    "trigger_type": "runup"
+   },
+   {
+    "actual_downside": -0.1694,
+    "actual_return": -0.1694,
+    "actual_upside": 0.0432,
+    "days_in_region": 96,
+    "end_date": "2021-08-04",
+    "end_reason": "reversal",
+    "seq_len": 96,
+    "similarity": 0.412,
+    "start_date": "2021-05-06",
+    "ticker": "CKPT",
+    "total_distance": 0.4433,
+    "trigger_date": "2021-06-10",
+    "trigger_type": "runup"
+   },
+   {
+    "actual_downside": -0.5289,
+    "actual_return": -0.5289,
+    "actual_upside": 0.1997,
+    "days_in_region": 79,
+    "end_date": "2022-05-12",
+    "end_reason": "reversal",
+    "seq_len": 79,
+    "similarity": 0.3992,
+    "start_date": "2022-02-17",
+    "ticker": "ASPN",
+    "total_distance": 0.4592,
+    "trigger_date": "2022-03-03",
+    "trigger_type": "runup"
+   },
+   {
+    "actual_downside": -0.0913,
+    "actual_return": -0.0913,
+    "actual_upside": 0.1158,
+    "days_in_region": 104,
+    "end_date": "2014-07-17",
+    "end_reason": "reversal",
+    "seq_len": 104,
+    "similarity": 0.397,
+    "start_date": "2014-04-15",
+    "ticker": "NVAX",
+    "total_distance": 0.4619,
+    "trigger_date": "2014-06-17",
+    "trigger_type": "runup"
+   },
+   {
+    "actual_downside": -0.1347,
+    "actual_return": -0.1347,
+    "actual_upside": 0.0657,
+    "days_in_region": 110,
+    "end_date": "2021-08-19",
+    "end_reason": "reversal",
+    "seq_len": 110,
+    "similarity": 0.3957,
+    "start_date": "2021-05-13",
+    "ticker": "SPWR",
+    "total_distance": 0.4635,
+    "trigger_date": "2021-07-23",
+    "trigger_type": "shallow_runup"
+   },
+   {
+    "actual_downside": -0.1164,
+    "actual_return": -0.1164,
+    "actual_upside": 0.1019,
+    "days_in_region": 90,
+    "end_date": "2021-07-19",
+    "end_reason": "reversal",
+    "seq_len": 90,
+    "similarity": 0.3956,
+    "start_date": "2021-05-13",
+    "ticker": "LAR",
+    "total_distance": 0.4637,
+    "trigger_date": "2021-06-24",
+    "trigger_type": "runup"
+   },
+   {
+    "actual_downside": -0.2544,
+    "actual_return": -0.2544,
+    "actual_upside": 0.0635,
+    "days_in_region": 94,
+    "end_date": "2021-08-20",
+    "end_reason": "reversal",
+    "seq_len": 94,
+    "similarity": 0.3932,
+    "start_date": "2021-05-03",
+    "ticker": "REGI",
+    "total_distance": 0.4668,
+    "trigger_date": "2021-05-17",
+    "trigger_type": "runup"
+   },
+   {
+    "actual_downside": -0.1125,
+    "actual_return": -0.1125,
+    "actual_upside": 0.0254,
+    "days_in_region": 109,
+    "end_date": "2014-10-14",
+    "end_reason": "reversal",
+    "seq_len": 109,
+    "similarity": 0.3851,
+    "start_date": "2014-06-03",
+    "ticker": "PRDO",
+    "total_distance": 0.4771,
+    "trigger_date": "2014-06-11",
+    "trigger_type": "shallow_runup"
+   },
+   {
+    "actual_downside": -0.0053,
+    "actual_return": 0.1083,
+    "actual_upside": 0.3606,
+    "days_in_region": 115,
+    "end_date": "2000-08-02",
+    "end_reason": "reversal",
+    "seq_len": 115,
+    "similarity": 0.3843,
+    "start_date": "2000-04-17",
+    "ticker": "ABMD",
+    "total_distance": 0.4781,
+    "trigger_date": "2000-07-05",
+    "trigger_type": "runup"
+   }
+  ],
+  "panel": {
+   "edge": -0.2283,
+   "hit_hi": 0.3,
+   "hit_lo": 0.061,
+   "hit_rate": 0.143,
+   "median_final": -0.1347,
+   "median_pain": 0.1164,
+   "n": 14,
+   "n_eff": 14.0,
+   "p25_final": -0.241,
+   "p_pain_gt5": 0.786,
+   "return_to_pain": -0.988
+  },
+  "stats": {
+   "avg_similarity": 0.323,
+   "avg_trough": 0.2044,
+   "avg_upside": 0.2566,
+   "median_pain": 0.1671,
+   "median_return": -0.1253,
+   "n_matches": 200,
+   "p25_return": -0.2507,
+   "p_pain_gt5": 0.845,
+   "return_to_pain": -0.67,
+   "top5_avg_trough": 0.2484,
+   "top5_avg_upside": 0.103,
+   "top_similarity": 0.419,
+   "win_rate": 0.31
+  },
+  "total_matches": 200
+ },
+ "ticker": "ATOM",
+ "trending": {
+  "acceleration": -0.0006,
+  "avg_vol_20d": 510986.8156,
+  "base_high_120": 12.11,
+  "breakout_confirmed": 0,
+  "close": 3.94,
+  "momentum_score": 0.0084,
+  "momentum_start": "2026-08-24",
+  "range_20": 0.4848,
+  "range_50": 1.2437,
+  "rank": 1239,
+  "rank_down": 28,
+  "rank_up": null,
+  "ret_120": -0.2275,
+  "ret_20": -0.3027,
+  "ret_60": -0.523,
+  "rundown_score": 0.9266,
+  "score_date": "2026-09-01",
+  "slope_20": -0.0206,
+  "slope_60": -0.0201,
+  "stage": "rundown",
+  "stage_label": "rundown",
+  "ticker": "ATOM",
+  "total_score": 0.3936,
+  "trend_ratio": 0.6872,
+  "vcp_detected": 0,
+  "vcp_score": 0.6504
+ }
+}

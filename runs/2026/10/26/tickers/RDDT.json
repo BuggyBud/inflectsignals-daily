@@ -1,0 +1,1077 @@
+{
+ "date": "2026-10-26",
+ "detected_regions": {
+  "primary": {
+   "days_in_region": 121,
+   "region_start": "2026-07-31",
+   "trigger_date": "2026-10-12",
+   "trigger_type": "runup"
+  },
+  "secondary": [
+   {
+    "confidence_score": 0.2275,
+    "downside_q50": -0.1305,
+    "ev_score": 0.0714,
+    "region_start": "2026-07-14",
+    "seq_len": 134,
+    "trigger_date": "2026-08-20",
+    "trigger_type": "severe_drawdown",
+    "upside_q25": 0.0776,
+    "upside_q50": 0.1887,
+    "upside_q75": 0.337
+   }
+  ]
+ },
+ "feature_attribution": {
+  "macro_driver_count": 16,
+  "risk_flags": [
+   "high_volatility"
+  ],
+  "top_drivers": [
+   {
+    "direction": "negative",
+    "feature": "dollar_volume",
+    "feature_value": 1089874304.0,
+    "importance": 0.0008,
+    "importance_pct": 0.532,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "positive",
+    "feature": "volatility_20d",
+    "feature_value": 0.0304,
+    "importance": 0.0003,
+    "importance_pct": 0.2136,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "negative",
+    "feature": "price_vs_sma200",
+    "feature_value": 0.8551,
+    "importance": 0.0002,
+    "importance_pct": 0.1299,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "positive",
+    "feature": "historical_recovery_rate",
+    "feature_value": 0.4501,
+    "importance": 0.0002,
+    "importance_pct": 0.1246,
+    "method": "integrated_gradients"
+   }
+  ]
+ },
+ "fundamentals": {
+  "accrual": 0.1633,
+  "adx_14": 19.6953,
+  "altman_z_score": 35.3811,
+  "amihud_illiquidity": 0.0,
+  "avg_volume": 5443890.7004,
+  "beta_252d": 0.7559,
+  "book_value_per_share": 17.0823,
+  "correlation_spy_60d": 0.3909,
+  "current_liabilities": 337.749,
+  "current_ratio": 10.4861,
+  "daily_earnings_yield": 0.0457,
+  "daily_fcf_yield": 0.015,
+  "daily_pb": 5.8076,
+  "daily_pe": 21.9056,
+  "daily_ps": 6.8669,
+  "days_since_52w_high": 277.0,
+  "debt_ebitda": 0.0262,
+  "debt_to_equity": 0.0064,
+  "dividend_yield": 0.0,
+  "dollar_volume_20d_avg": 639278091.1245,
+  "earnings_quality": 1.0357,
+  "ebitda_growth_yoy": 4.4103,
+  "enterprise_value": 16316.3812,
+  "eps_basic": 1.31,
+  "eps_cagr_3y": null,
+  "eps_cagr_5y": null,
+  "eps_diluted": 1.25,
+  "eps_growth_accel": -1.8583,
+  "eps_growth_qoq": 0.2243,
+  "eps_growth_yoy": 2.8083,
+  "eps_growth_yoy_q2": 4.6667,
+  "eps_growth_yoy_q3": 1.9065,
+  "eps_growth_yoy_q4": null,
+  "eps_growth_yoy_q5": null,
+  "eps_growth_yoy_q6": null,
+  "eps_growth_yoy_q7": null,
+  "eps_growth_yoy_q8": null,
+  "eps_history_8q": [
+   0.16,
+   0.36,
+   0.13,
+   0.45,
+   0.8,
+   1.24,
+   1.01,
+   1.25
+  ],
+  "eps_ttm": 6.3203,
+  "ev_to_ebitda": 20.4644,
+  "ev_to_fcf": 62.5767,
+  "ev_to_sales": 20.2712,
+  "fcf_growth_yoy": 1.3626,
+  "fcf_margin": 0.3239,
+  "fcf_per_share": 1.3556,
+  "gross_margin": 0.9144,
+  "gross_margin_change_yoy": 0.0045,
+  "gross_margin_history": [
+   0.9082,
+   0.9104,
+   0.9121,
+   0.9118,
+   0.9137,
+   0.9144
+  ],
+  "inc_roic": 0.6074,
+  "interest_coverage": null,
+  "is_pre_revenue": false,
+  "margin_vs_sector_median": null,
+  "market_cap_ratio": 19081.8713,
+  "net_income": 252.848,
+  "net_margin": 0.3135,
+  "operating_income": 231.716,
+  "operating_margin": 0.2825,
+  "operating_margin_change_yoy": 0.1524,
+  "pb_ratio": 8.1049,
+  "pe_percentile_1y": 1.0,
+  "pe_ratio": 21.9056,
+  "peg_trailing": 0.1125,
+  "piotroski_f_score": 4.0,
+  "price_vs_high_52w": 0.5347,
+  "price_vs_sma200": 0.8551,
+  "ps_percentile_1y": 1.0,
+  "ps_ratio": 6.977,
+  "quarter_labels_8q": [
+   "Q3 '24",
+   "Q4 '24",
+   "Q1 '25",
+   "Q2 '25",
+   "Q3 '25",
+   "Q4 '25",
+   "Q1 '26",
+   "Q2 '26"
+  ],
+  "quarterly_eps_growth_yoy": 1.7778,
+  "quarterly_eps_growth_yoy_8q": [
+   null,
+   null,
+   1.0359,
+   8.5,
+   4.0,
+   2.4444,
+   6.7692,
+   1.7778
+  ],
+  "quarterly_revenue_growth_yoy": 0.611,
+  "quarterly_revenue_growth_yoy_8q": [
+   null,
+   null,
+   0.6149,
+   0.7769,
+   0.6791,
+   0.6965,
+   0.6908,
+   0.611
+  ],
+  "revenue_cagr_3y": null,
+  "revenue_cagr_5y": null,
+  "revenue_growth_accel": -0.0404,
+  "revenue_growth_qoq": 0.2133,
+  "revenue_growth_yoy": 0.6659,
+  "revenue_growth_yoy_q2": 0.7064,
+  "revenue_growth_yoy_q3": 0.694,
+  "revenue_growth_yoy_q4": 0.6791,
+  "revenue_growth_yoy_q5": 0.7769,
+  "revenue_growth_yoy_q6": 0.6149,
+  "revenue_growth_yoy_q7": null,
+  "revenue_growth_yoy_q8": null,
+  "revenue_history_8q": [
+   348.351,
+   427.707,
+   392.361,
+   499.627,
+   584.911,
+   725.607,
+   663.411,
+   804.905
+  ],
+  "revenue_per_share": 4.1847,
+  "roa": 0.2447,
+  "roce": 0.2409,
+  "roe": 0.2695,
+  "roic": 0.2641,
+  "rsi_14": 26.4167,
+  "sector_momentum": 0.077,
+  "share_dilution_1y": 0.0,
+  "stock_vs_sector_20d": -0.004,
+  "stock_vs_spy_20d": -0.0315,
+  "total_assets": 3636.605,
+  "vol_regime": 0.7651,
+  "volatility_20d": 0.0304,
+  "volatility_60d": 0.0398,
+  "w52_high": 263.5,
+  "w52_low": 119.27
+ },
+ "market_characters": [],
+ "model_analogs": {
+  "matches": [
+   {
+    "actual_downside": -0.0346,
+    "actual_return": -0.0165,
+    "actual_upside": 0.6673,
+    "days_in_region": 276,
+    "end_date": "2020-03-16",
+    "end_reason": "reversal",
+    "similarity": 0.9768,
+    "start_date": "2019-06-14",
+    "ticker": "STAA",
+    "trigger_date": "2019-07-12",
+    "trigger_type": "compression"
+   },
+   {
+    "actual_downside": -0.0368,
+    "actual_return": 0.1786,
+    "actual_upside": 0.1786,
+    "days_in_region": 254,
+    "end_date": "2019-11-27",
+    "end_reason": "reversal",
+    "similarity": 0.974,
+    "start_date": "2019-03-18",
+    "ticker": "YEXT",
+    "trigger_date": "2019-09-03",
+    "trigger_type": "severe_drawdown"
+   },
+   {
+    "actual_downside": -0.0327,
+    "actual_return": 0.3944,
+    "actual_upside": 0.3944,
+    "days_in_region": 132,
+    "end_date": "2016-04-13",
+    "end_reason": "reversal",
+    "similarity": 0.9702,
+    "start_date": "2015-12-03",
+    "ticker": "RES",
+    "trigger_date": "2016-01-08",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": -0.0239,
+    "actual_return": 0.3584,
+    "actual_upside": 0.3584,
+    "days_in_region": 202,
+    "end_date": "2019-02-13",
+    "end_reason": "reversal",
+    "similarity": 0.9689,
+    "start_date": "2018-07-26",
+    "ticker": "CRTO",
+    "trigger_date": "2018-08-02",
+    "trigger_type": "severe_drawdown"
+   },
+   {
+    "actual_downside": -0.001,
+    "actual_return": 0.1278,
+    "actual_upside": 0.1278,
+    "days_in_region": 182,
+    "end_date": "2019-10-28",
+    "end_reason": "reversal",
+    "similarity": 0.9688,
+    "start_date": "2019-04-29",
+    "ticker": "CVLG",
+    "trigger_date": "2019-10-03",
+    "trigger_type": "severe_drawdown"
+   },
+   {
+    "actual_downside": -0.1917,
+    "actual_return": 0.0111,
+    "actual_upside": 0.101,
+    "days_in_region": 132,
+    "end_date": "2020-01-23",
+    "end_reason": "reversal",
+    "similarity": 0.9685,
+    "start_date": "2019-09-13",
+    "ticker": "LDL",
+    "trigger_date": "2019-10-03",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": -0.0557,
+    "actual_return": 0.0836,
+    "actual_upside": 0.0836,
+    "days_in_region": 207,
+    "end_date": "2019-11-05",
+    "end_reason": "reversal",
+    "similarity": 0.9684,
+    "start_date": "2019-04-12",
+    "ticker": "DNLI",
+    "trigger_date": "2019-10-02",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": -0.3,
+    "actual_return": -0.1844,
+    "actual_upside": 0.0172,
+    "days_in_region": 121,
+    "end_date": "1998-07-15",
+    "end_reason": "reversal",
+    "similarity": 0.9666,
+    "start_date": "1998-03-16",
+    "ticker": "ASML",
+    "trigger_date": "1998-05-08",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": -0.0871,
+    "actual_return": 0.3629,
+    "actual_upside": 0.3629,
+    "days_in_region": 58,
+    "end_date": "2022-12-01",
+    "end_reason": "reversal",
+    "similarity": 0.9666,
+    "start_date": "2022-10-04",
+    "ticker": "KNSA",
+    "trigger_date": "2022-10-21",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": -0.015,
+    "actual_return": 0.2735,
+    "actual_upside": 0.2735,
+    "days_in_region": 176,
+    "end_date": "1997-12-31",
+    "end_reason": "reversal",
+    "similarity": 0.9663,
+    "start_date": "1997-07-08",
+    "ticker": "IT",
+    "trigger_date": "1997-10-27",
+    "trigger_type": "drawdown"
+   }
+  ],
+  "stats": {
+   "avg_max_drawdown": 0.106,
+   "avg_similarity": 0.964,
+   "avg_trough": 0.106,
+   "avg_upside": 0.2283,
+   "best_return": 0.6732,
+   "downside_range": [
+    -0.5038,
+    0.0
+   ],
+   "median_return": 0.1603,
+   "n_matches": 50,
+   "outcome_agreement": true,
+   "return_p25": -0.02,
+   "return_p5": -0.2172,
+   "return_p75": 0.3335,
+   "return_p95": 0.5026,
+   "sim_weighted_win_rate": 0.7,
+   "top5_avg_trough": 0.0258,
+   "top5_avg_upside": 0.3453,
+   "top_similarity": 0.977,
+   "upside_range": [
+    0.0,
+    0.6732
+   ],
+   "win_rate": 0.7,
+   "worst_return": -0.3314,
+   "years_span": 9
+  },
+  "total_matches": 50
+ },
+ "peer_group": {
+  "buckets": [
+   "Creator, Community & Consumer Media Platforms",
+   "Digital Advertising & Performance Marketing",
+   "Vertical Technology Platforms & Marketplaces"
+  ],
+  "groups": {
+   "Creator, Community & Consumer Media Platforms": [
+    {
+     "market_cap_m": 320.7425,
+     "price_vs_sma200": 1.8036,
+     "return_30d": 1.0101,
+     "return_7d": 0.0067,
+     "revenue_driver": "online dating platforms",
+     "signal_rank": 306,
+     "stock_vs_spy_20d": 1.3605,
+     "ticker": "BMBL"
+    },
+    {
+     "market_cap_m": 549.8812,
+     "price_vs_sma200": 1.5586,
+     "return_30d": 0.0972,
+     "return_7d": 0.1029,
+     "revenue_driver": "social media publishing",
+     "signal_rank": 1179,
+     "stock_vs_spy_20d": 0.3482,
+     "ticker": "SPT"
+    },
+    {
+     "market_cap_m": 7501.865,
+     "price_vs_sma200": 1.1558,
+     "return_30d": 0.0893,
+     "return_7d": -0.0155,
+     "revenue_driver": "digital advertising",
+     "signal_rank": 1341,
+     "stock_vs_spy_20d": 0.2154,
+     "ticker": "SNAP"
+    },
+    {
+     "market_cap_m": 294.8678,
+     "price_vs_sma200": 1.6115,
+     "return_30d": -0.0934,
+     "return_7d": 0.0261,
+     "revenue_driver": "social media community platform",
+     "signal_rank": 1478,
+     "stock_vs_spy_20d": -0.0916,
+     "ticker": "ASST"
+    },
+    {
+     "market_cap_m": 1571.7355,
+     "price_vs_sma200": 0.8119,
+     "return_30d": -0.1095,
+     "return_7d": -0.0475,
+     "revenue_driver": "local business advertising",
+     "signal_rank": 497,
+     "stock_vs_spy_20d": 0.106,
+     "ticker": "YELP"
+    },
+    {
+     "market_cap_m": 19387.8427,
+     "price_vs_sma200": 0.8551,
+     "return_30d": -0.1474,
+     "return_7d": -0.1312,
+     "revenue_driver": "social media advertising",
+     "signal_rank": 1164,
+     "stock_vs_spy_20d": -0.0315,
+     "ticker": "RDDT"
+    },
+    {
+     "market_cap_m": 3062.8897,
+     "price_vs_sma200": 0.9624,
+     "return_30d": -0.1659,
+     "return_7d": -0.1311,
+     "revenue_driver": "LGBTQ+ dating app",
+     "signal_rank": 132,
+     "stock_vs_spy_20d": -0.1587,
+     "ticker": "GRND"
+    },
+    {
+     "market_cap_m": 108.3799,
+     "price_vs_sma200": 0.4366,
+     "return_30d": -0.1754,
+     "return_7d": -0.1358,
+     "revenue_driver": "crypto swap fees",
+     "signal_rank": null,
+     "stock_vs_spy_20d": -0.1542,
+     "ticker": "EXOD"
+    },
+    {
+     "market_cap_m": 2629.1812,
+     "price_vs_sma200": 0.6483,
+     "return_30d": -0.3062,
+     "return_7d": -0.1703,
+     "revenue_driver": "advertising sales",
+     "signal_rank": 1365,
+     "stock_vs_spy_20d": -0.3259,
+     "ticker": "DJT"
+    },
+    {
+     "market_cap_m": 1337.516,
+     "price_vs_sma200": 0.7967,
+     "return_30d": -0.3287,
+     "return_7d": -0.1268,
+     "revenue_driver": "video advertising",
+     "signal_rank": 729,
+     "stock_vs_spy_20d": -0.322,
+     "ticker": "RUM"
+    }
+   ],
+   "Digital Advertising & Performance Marketing": [
+    {
+     "market_cap_m": 549.8812,
+     "price_vs_sma200": 1.5586,
+     "return_30d": 0.0972,
+     "return_7d": 0.1029,
+     "revenue_driver": "social media publishing",
+     "signal_rank": 1179,
+     "stock_vs_spy_20d": 0.3482,
+     "ticker": "SPT"
+    },
+    {
+     "market_cap_m": 12874.688,
+     "price_vs_sma200": 1.0469,
+     "return_30d": -0.0467,
+     "return_7d": 0.0211,
+     "revenue_driver": "advertising sales",
+     "signal_rank": 1084,
+     "stock_vs_spy_20d": 0.0368,
+     "ticker": "FOXA"
+    },
+    {
+     "market_cap_m": 1413123.2777,
+     "price_vs_sma200": 0.997,
+     "return_30d": -0.0526,
+     "return_7d": -0.1441,
+     "revenue_driver": "social media advertising",
+     "signal_rank": 1677,
+     "stock_vs_spy_20d": -0.118,
+     "ticker": "META"
+    },
+    {
+     "market_cap_m": 3690911.0467,
+     "price_vs_sma200": 0.9258,
+     "return_30d": -0.0912,
+     "return_7d": -0.0891,
+     "revenue_driver": "search advertising",
+     "signal_rank": 703,
+     "stock_vs_spy_20d": -0.0728,
+     "ticker": "GOOG"
+    },
+    {
+     "market_cap_m": 3690911.0467,
+     "price_vs_sma200": 0.9283,
+     "return_30d": -0.0933,
+     "return_7d": -0.0928,
+     "revenue_driver": "search advertising",
+     "signal_rank": 833,
+     "stock_vs_spy_20d": -0.0749,
+     "ticker": "GOOGL"
+    },
+    {
+     "market_cap_m": 294.8678,
+     "price_vs_sma200": 1.6115,
+     "return_30d": -0.0934,
+     "return_7d": 0.0261,
+     "revenue_driver": "social media community platform",
+     "signal_rank": 1478,
+     "stock_vs_spy_20d": -0.0916,
+     "ticker": "ASST"
+    },
+    {
+     "market_cap_m": 19387.8427,
+     "price_vs_sma200": 0.8551,
+     "return_30d": -0.1474,
+     "return_7d": -0.1312,
+     "revenue_driver": "social media advertising",
+     "signal_rank": 1164,
+     "stock_vs_spy_20d": -0.0315,
+     "ticker": "RDDT"
+    },
+    {
+     "market_cap_m": 2629.1812,
+     "price_vs_sma200": 0.6483,
+     "return_30d": -0.3062,
+     "return_7d": -0.1703,
+     "revenue_driver": "advertising sales",
+     "signal_rank": 1365,
+     "stock_vs_spy_20d": -0.3259,
+     "ticker": "DJT"
+    },
+    {
+     "market_cap_m": 1337.516,
+     "price_vs_sma200": 0.7967,
+     "return_30d": -0.3287,
+     "return_7d": -0.1268,
+     "revenue_driver": "video advertising",
+     "signal_rank": 729,
+     "stock_vs_spy_20d": -0.322,
+     "ticker": "RUM"
+    },
+    {
+     "market_cap_m": 478.4824,
+     "price_vs_sma200": 0.5109,
+     "return_30d": -0.3516,
+     "return_7d": 0.0,
+     "revenue_driver": "advertising revenue",
+     "signal_rank": 779,
+     "stock_vs_spy_20d": -0.2019,
+     "ticker": "IHRT"
+    }
+   ],
+   "Vertical Technology Platforms & Marketplaces": [
+    {
+     "market_cap_m": 267.9677,
+     "price_vs_sma200": 0.9238,
+     "return_30d": 0.2903,
+     "return_7d": -0.0093,
+     "revenue_driver": "home services marketplace",
+     "signal_rank": 1235,
+     "stock_vs_spy_20d": 0.1519,
+     "ticker": "ANGI"
+    },
+    {
+     "market_cap_m": 2838.1468,
+     "price_vs_sma200": 1.2859,
+     "return_30d": 0.2535,
+     "return_7d": 0.0502,
+     "revenue_driver": "physician-targeted digital advertising",
+     "signal_rank": 1521,
+     "stock_vs_spy_20d": 0.2634,
+     "ticker": "DOCS"
+    },
+    {
+     "market_cap_m": 12502.7654,
+     "price_vs_sma200": 1.4162,
+     "return_30d": 0.2304,
+     "return_7d": 0.1907,
+     "revenue_driver": "grocery delivery marketplace",
+     "signal_rank": 997,
+     "stock_vs_spy_20d": 0.4055,
+     "ticker": "CART"
+    },
+    {
+     "market_cap_m": 4564563.2052,
+     "price_vs_sma200": 1.1664,
+     "return_30d": 0.0325,
+     "return_7d": 0.0056,
+     "revenue_driver": "iphone sales",
+     "signal_rank": 1858,
+     "stock_vs_spy_20d": 0.0171,
+     "ticker": "AAPL"
+    },
+    {
+     "market_cap_m": 2903248.8613,
+     "price_vs_sma200": 1.0238,
+     "return_30d": -0.0176,
+     "return_7d": -0.0223,
+     "revenue_driver": "cloud infrastructure",
+     "signal_rank": 1598,
+     "stock_vs_spy_20d": 0.0128,
+     "ticker": "AMZN"
+    },
+    {
+     "market_cap_m": 5014.4551,
+     "price_vs_sma200": 1.1666,
+     "return_30d": -0.034,
+     "return_7d": -0.0196,
+     "revenue_driver": "property management SaaS",
+     "signal_rank": 1090,
+     "stock_vs_spy_20d": 0.0837,
+     "ticker": "APPF"
+    },
+    {
+     "market_cap_m": 702.2046,
+     "price_vs_sma200": 1.0167,
+     "return_30d": -0.0803,
+     "return_7d": 0.0528,
+     "revenue_driver": "dealer advertising subscriptions",
+     "signal_rank": 657,
+     "stock_vs_spy_20d": 0.0344,
+     "ticker": "CARS"
+    },
+    {
+     "market_cap_m": 6945.5815,
+     "price_vs_sma200": 0.9717,
+     "return_30d": -0.0901,
+     "return_7d": 0.0073,
+     "revenue_driver": "residential real estate brokerage",
+     "signal_rank": 1419,
+     "stock_vs_spy_20d": 0.0657,
+     "ticker": "COMP"
+    },
+    {
+     "market_cap_m": 2955.4021,
+     "price_vs_sma200": 0.9454,
+     "return_30d": -0.1076,
+     "return_7d": 0.0287,
+     "revenue_driver": "dealer listing subscriptions",
+     "signal_rank": 570,
+     "stock_vs_spy_20d": 0.0125,
+     "ticker": "CARG"
+    },
+    {
+     "market_cap_m": 19387.8427,
+     "price_vs_sma200": 0.8551,
+     "return_30d": -0.1474,
+     "return_7d": -0.1312,
+     "revenue_driver": "social media advertising",
+     "signal_rank": 1164,
+     "stock_vs_spy_20d": -0.0315,
+     "ticker": "RDDT"
+    }
+   ]
+  }
+ },
+ "predictions": {
+  "badge_count": 0,
+  "confidence_score": 0.1986,
+  "conviction_label": "SPECULATIVE",
+  "data_quality_flags": [],
+  "ev_score": 0.08,
+  "is_diamond": false,
+  "passes_tradability_filter": true,
+  "quality_label": "HIGH",
+  "quantiles": {
+   "downside_q10": -0.3668,
+   "downside_q25": -0.2298,
+   "downside_q50": -0.1302,
+   "downside_q75": -0.0407,
+   "downside_q90": -0.0054,
+   "path_volatility": 0.045,
+   "risk_reward": 1.5119,
+   "uncertainty": 0.5414,
+   "upside_q10": 0.0253,
+   "upside_q25": 0.0804,
+   "upside_q50": 0.1968,
+   "upside_q75": 0.3471,
+   "upside_q90": 0.5667
+  },
+  "rank": 1164,
+  "rank_score": 0.0149,
+  "tradability_filter_reasons": []
+ },
+ "profile": {
+  "_local": {
+   "dividend_yield": 0.0,
+   "eps_growth_yoy": 2.8083,
+   "pe_ratio": 32.714,
+   "revenue_growth_yoy": 0.6659,
+   "roe": 0.2695
+  },
+  "beta": 2.053,
+  "betaTTM": null,
+  "ceo": "Steven Ladd Huffman",
+  "companyName": "Reddit, Inc.",
+  "country": "US",
+  "debtToEquityTTM": null,
+  "description": "Reddit, Inc. oversees an internet-based service dedicated to fostering diverse online communities. This platform categorizes groups by shared passions, enabling its users to participate in dialogues through recounting experiences, sharing external web addresses, uploading visual and video content, and engaging in direct replies. Founded in 2005, the corporation maintains its central operations in San Francisco, California. Reddit, Inc. also functions as a controlled subsidiary of Advance Publications, Inc.",
+  "dividendYielTTM": null,
+  "enterpriseValueOverEBITDATTM": null,
+  "exchangeShortName": "NYSE",
+  "fullTimeEmployees": "2555",
+  "industry": "Internet Content & Information",
+  "ipoDate": "2024-03-21",
+  "latest_earnings_date": "2026-07-31",
+  "marketCapTTM": null,
+  "mktCap": 26641145571,
+  "peRatioTTM": null,
+  "price": 138.47,
+  "priceToSalesRatioTTM": null,
+  "returnOnEquityTTM": 0.2902,
+  "revenue_description": "Reddit operates a social-media and community platform. Revenue is driven by subscription ACV from enterprise license agreements and usage-based consumption, with module expansion and new product attach as growth levers.",
+  "revenue_description_themes": [
+   "advertising platform monetization",
+   "AI-powered ad targeting tools",
+   "international user and advertiser growth"
+  ],
+  "revenue_taxonomy": [
+   {
+    "bucket": "Digital Advertising & Performance Marketing",
+    "matched_tags": [
+     "social media advertising"
+    ],
+    "path": "Media, Advertising & Information › Advertising & Media › Digital Advertising & Performance Marketing",
+    "sector": "Media, Advertising & Information",
+    "segment": "Advertising & Media"
+   },
+   {
+    "bucket": "Creator, Community & Consumer Media Platforms",
+    "matched_tags": [
+     "community platform"
+    ],
+    "path": "Media, Advertising & Information › Entertainment & Ip › Creator, Community & Consumer Media Platforms",
+    "sector": "Media, Advertising & Information",
+    "segment": "Entertainment & Ip"
+   },
+   {
+    "bucket": "Vertical Technology Platforms & Marketplaces",
+    "matched_tags": [
+     "consumer internet platform"
+    ],
+    "path": "Technology › Tech Enabled Services & Infrastructure › Vertical Technology Platforms & Marketplaces",
+    "sector": "Technology",
+    "segment": "Tech Enabled Services & Infrastructure"
+   }
+  ],
+  "revenue_themes": [
+   "social media advertising",
+   "community platform",
+   "consumer internet platform"
+  ],
+  "sector": "Communication Services",
+  "website": "https://www.redditinc.com"
+ },
+ "report": null,
+ "scorecard": {
+  "headline": {
+   "avg_universe_pct": 83,
+   "label": "strong",
+   "metric_count": 8
+  },
+  "metrics": {
+   "debt_to_equity": {
+    "direction": "lower",
+    "label": "D/E Ratio",
+    "sector": "Comm. Services",
+    "sector_n": 44,
+    "sector_pct": 82,
+    "universe_n": 2082,
+    "universe_pct": 86,
+    "value": 0.0064
+   },
+   "eps_growth_yoy": {
+    "direction": "higher",
+    "label": "EPS Growth",
+    "sector": "Comm. Services",
+    "sector_n": 44,
+    "sector_pct": 86,
+    "universe_n": 1892,
+    "universe_pct": 93,
+    "value": 2.8083
+   },
+   "gross_margin": {
+    "direction": "higher",
+    "label": "Gross Margin",
+    "sector": "Comm. Services",
+    "sector_n": 43,
+    "sector_pct": 88,
+    "universe_n": 2010,
+    "universe_pct": 97,
+    "value": 0.9144
+   },
+   "operating_margin": {
+    "direction": "higher",
+    "label": "Op. Margin",
+    "sector": "Comm. Services",
+    "sector_n": 43,
+    "sector_pct": 93,
+    "universe_n": 2010,
+    "universe_pct": 86,
+    "value": 0.2825
+   },
+   "pe_ratio": {
+    "direction": "lower",
+    "label": "P/E",
+    "sector": "Comm. Services",
+    "sector_n": 28,
+    "sector_pct": 32,
+    "universe_n": 1474,
+    "universe_pct": 28,
+    "value": 32.714
+   },
+   "revenue_growth_yoy": {
+    "direction": "higher",
+    "label": "Rev Growth",
+    "sector": "Comm. Services",
+    "sector_n": 44,
+    "sector_pct": 86,
+    "universe_n": 1834,
+    "universe_pct": 94,
+    "value": 0.6659
+   },
+   "roe": {
+    "direction": "higher",
+    "label": "ROE",
+    "sector": "Comm. Services",
+    "sector_n": 44,
+    "sector_pct": 86,
+    "universe_n": 2102,
+    "universe_pct": 84,
+    "value": 0.2695
+   },
+   "roic": {
+    "direction": "higher",
+    "label": "ROIC",
+    "sector": "Comm. Services",
+    "sector_n": 43,
+    "sector_pct": 91,
+    "universe_n": 2053,
+    "universe_pct": 94,
+    "value": 0.0766
+   }
+  }
+ },
+ "signal_rank": 1164,
+ "structural_analogs": {
+  "gp_core_pct": 79.2,
+  "gp_core_ratio": 1.743,
+  "matches": [
+   {
+    "actual_downside": -0.1655,
+    "actual_return": 0.1286,
+    "actual_upside": 0.1286,
+    "days_in_region": 137,
+    "end_date": "2017-06-08",
+    "end_reason": "reversal",
+    "seq_len": 137,
+    "similarity": 0.5447,
+    "start_date": "2016-10-24",
+    "ticker": "SYNA",
+    "total_distance": 0.3037,
+    "trigger_date": "2017-02-13",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": -0.0066,
+    "actual_return": 0.1466,
+    "actual_upside": 0.1466,
+    "days_in_region": 136,
+    "end_date": "2013-01-02",
+    "end_reason": "reversal",
+    "seq_len": 136,
+    "similarity": 0.5372,
+    "start_date": "2012-07-27",
+    "ticker": "SGNT",
+    "total_distance": 0.3107,
+    "trigger_date": "2012-11-14",
+    "trigger_type": "severe_drawdown"
+   },
+   {
+    "actual_downside": -0.12,
+    "actual_return": 0.0226,
+    "actual_upside": 0.0226,
+    "days_in_region": 149,
+    "end_date": "2022-02-09",
+    "end_reason": "reversal",
+    "seq_len": 149,
+    "similarity": 0.5355,
+    "start_date": "2021-09-03",
+    "ticker": "RARE",
+    "total_distance": 0.3123,
+    "trigger_date": "2022-01-10",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": -0.3379,
+    "actual_return": -0.2466,
+    "actual_upside": 0.0657,
+    "days_in_region": 160,
+    "end_date": "2022-02-01",
+    "end_reason": "reversal",
+    "seq_len": 160,
+    "similarity": 0.5344,
+    "start_date": "2021-07-06",
+    "ticker": "ZM",
+    "total_distance": 0.3133,
+    "trigger_date": "2021-09-01",
+    "trigger_type": "severe_drawdown"
+   },
+   {
+    "actual_downside": -0.0044,
+    "actual_return": 0.1508,
+    "actual_upside": 0.1508,
+    "days_in_region": 145,
+    "end_date": "2015-06-17",
+    "end_reason": "reversal",
+    "seq_len": 145,
+    "similarity": 0.5286,
+    "start_date": "2015-01-05",
+    "ticker": "CTRL",
+    "total_distance": 0.3188,
+    "trigger_date": "2015-03-09",
+    "trigger_type": "severe_drawdown"
+   },
+   {
+    "actual_downside": -0.1574,
+    "actual_return": 0.2104,
+    "actual_upside": 0.2104,
+    "days_in_region": 123,
+    "end_date": "2016-12-20",
+    "end_reason": "reversal",
+    "seq_len": 123,
+    "similarity": 0.5274,
+    "start_date": "2016-07-08",
+    "ticker": "IRMD",
+    "total_distance": 0.3199,
+    "trigger_date": "2016-10-05",
+    "trigger_type": "severe_drawdown"
+   },
+   {
+    "actual_downside": -0.1579,
+    "actual_return": 0.0099,
+    "actual_upside": 0.0099,
+    "days_in_region": 139,
+    "end_date": "2001-10-11",
+    "end_reason": "reversal",
+    "seq_len": 139,
+    "similarity": 0.5268,
+    "start_date": "2001-05-22",
+    "ticker": "VARI",
+    "total_distance": 0.3204,
+    "trigger_date": "2001-09-18",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": -0.2444,
+    "actual_return": -0.2444,
+    "actual_upside": 0.1111,
+    "days_in_region": 101,
+    "end_date": "1993-01-27",
+    "end_reason": "reversal",
+    "seq_len": 101,
+    "similarity": 0.5232,
+    "start_date": "1992-10-06",
+    "ticker": "BMET",
+    "total_distance": 0.3239,
+    "trigger_date": "1992-11-02",
+    "trigger_type": "shallow_runup"
+   },
+   {
+    "actual_downside": -0.0518,
+    "actual_return": 0.1653,
+    "actual_upside": 0.1653,
+    "days_in_region": 135,
+    "end_date": "2019-09-16",
+    "end_reason": "reversal",
+    "seq_len": 135,
+    "similarity": 0.5204,
+    "start_date": "2019-04-22",
+    "ticker": "MRO",
+    "total_distance": 0.3266,
+    "trigger_date": "2019-05-31",
+    "trigger_type": "severe_drawdown"
+   },
+   {
+    "actual_downside": 0.0,
+    "actual_return": 0.4166,
+    "actual_upside": 0.4166,
+    "days_in_region": 161,
+    "end_date": "2005-07-18",
+    "end_reason": "reversal",
+    "seq_len": 161,
+    "similarity": 0.5204,
+    "start_date": "2004-12-08",
+    "ticker": "PRDO",
+    "total_distance": 0.3266,
+    "trigger_date": "2005-02-22",
+    "trigger_type": "drawdown"
+   }
+  ],
+  "panel": {
+   "edge": 0.0875,
+   "hit_hi": 0.881,
+   "hit_lo": 0.745,
+   "hit_rate": 0.824,
+   "median_final": 0.1466,
+   "median_pain": 0.0829,
+   "n": 51,
+   "n_eff": 51.0,
+   "p25_final": 0.0259,
+   "p_pain_gt5": 0.667,
+   "return_to_pain": 1.424
+  },
+  "stats": {
+   "avg_similarity": 0.477,
+   "avg_trough": 0.1467,
+   "avg_upside": 0.2292,
+   "median_pain": 0.1176,
+   "median_return": 0.0495,
+   "n_matches": 200,
+   "p25_return": -0.1185,
+   "p_pain_gt5": 0.705,
+   "return_to_pain": 0.36,
+   "top5_avg_trough": 0.1269,
+   "top5_avg_upside": 0.1028,
+   "top_similarity": 0.545,
+   "win_rate": 0.59
+  },
+  "total_matches": 200
+ },
+ "ticker": "RDDT",
+ "trending": null
+}

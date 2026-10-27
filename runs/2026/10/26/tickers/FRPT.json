@@ -1,0 +1,1111 @@
+{
+ "date": "2026-10-26",
+ "detected_regions": {
+  "primary": {
+   "days_in_region": 105,
+   "region_start": "2026-08-24",
+   "trigger_date": "2026-09-29",
+   "trigger_type": "severe_drawdown"
+  },
+  "secondary": [
+   {
+    "confidence_score": 0.5482,
+    "downside_q50": -0.0861,
+    "ev_score": 0.1233,
+    "region_start": "2026-03-10",
+    "seq_len": 200,
+    "trigger_date": "2026-08-31",
+    "trigger_type": "shallow_drawdown",
+    "upside_q25": 0.0853,
+    "upside_q50": 0.1958,
+    "upside_q75": 0.3386
+   }
+  ]
+ },
+ "feature_attribution": {
+  "macro_driver_count": 17,
+  "risk_flags": [
+   "high_volatility"
+  ],
+  "top_drivers": [
+   {
+    "direction": "negative",
+    "feature": "dollar_volume",
+    "feature_value": 53053432.0,
+    "importance": 0.0005,
+    "importance_pct": 0.4846,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "positive",
+    "feature": "historical_recovery_rate",
+    "feature_value": 0.3027,
+    "importance": 0.0003,
+    "importance_pct": 0.3453,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "positive",
+    "feature": "sector_return_60d",
+    "feature_value": -0.0377,
+    "importance": 0.0002,
+    "importance_pct": 0.1701,
+    "method": "integrated_gradients"
+   }
+  ]
+ },
+ "fundamentals": {
+  "accrual": 0.056,
+  "adx_14": 16.6628,
+  "altman_z_score": 4.7493,
+  "amihud_illiquidity": 0.0003,
+  "avg_volume": 1212447.0112,
+  "beta_252d": 0.0693,
+  "book_value_per_share": 25.158,
+  "correlation_spy_60d": -0.0051,
+  "current_liabilities": 85.519,
+  "current_ratio": 6.0462,
+  "daily_earnings_yield": 0.0644,
+  "daily_fcf_yield": 0.0156,
+  "daily_pb": 2.5534,
+  "daily_pe": 15.5318,
+  "daily_ps": 2.6844,
+  "days_since_52w_high": 436.0,
+  "debt_ebitda": 2.8605,
+  "debt_to_equity": 0.3989,
+  "dividend_yield": 0.0,
+  "dollar_volume_20d_avg": 65930527.0439,
+  "earnings_quality": 4.349,
+  "ebitda_growth_yoy": 0.3105,
+  "enterprise_value": 3303.166,
+  "eps_basic": 0.4,
+  "eps_cagr_3y": 0.4661,
+  "eps_cagr_5y": 0.5819,
+  "eps_diluted": 0.39,
+  "eps_growth_accel": -5.0571,
+  "eps_growth_qoq": -0.596,
+  "eps_growth_yoy": 4.9429,
+  "eps_growth_yoy_q2": 10.0,
+  "eps_growth_yoy_q3": 1.9381,
+  "eps_growth_yoy_q4": 1.75,
+  "eps_growth_yoy_q5": 0.3462,
+  "eps_growth_yoy_q6": 0.65,
+  "eps_growth_yoy_q7": 2.3857,
+  "eps_growth_yoy_q8": 1.8519,
+  "eps_history_8q": [
+   0.24,
+   0.36,
+   -0.26,
+   0.33,
+   1.86,
+   0.64,
+   0.91,
+   0.39
+  ],
+  "eps_ttm": 4.1689,
+  "ev_to_ebitda": 19.1405,
+  "ev_to_fcf": 120.4217,
+  "ev_to_sales": 10.8092,
+  "fcf_growth_yoy": 32.0337,
+  "fcf_margin": 0.0898,
+  "fcf_per_share": 0.5576,
+  "gross_margin": 0.413,
+  "gross_margin_change_yoy": -0.0421,
+  "gross_margin_history": [
+   0.4611,
+   0.4635,
+   0.463,
+   0.4347,
+   0.4225,
+   0.413
+  ],
+  "inc_roic": 1.178,
+  "interest_coverage": 23.0592,
+  "is_pre_revenue": false,
+  "margin_vs_sector_median": null,
+  "market_cap_ratio": 3160.318,
+  "net_income": 19.488,
+  "net_margin": 0.1728,
+  "operating_income": 21.709,
+  "operating_margin": 0.0882,
+  "operating_margin_change_yoy": 0.0038,
+  "pb_ratio": 2.5737,
+  "pe_percentile_1y": 0.6667,
+  "pe_ratio": 15.5318,
+  "peg_trailing": 0.0403,
+  "piotroski_f_score": 4.0,
+  "price_vs_high_52w": 0.7573,
+  "price_vs_sma200": 1.0149,
+  "ps_percentile_1y": 0.5198,
+  "ps_ratio": 2.963,
+  "quarter_labels_8q": [
+   "Q3 '24",
+   "Q4 '24",
+   "Q1 '25",
+   "Q2 '25",
+   "Q3 '25",
+   "Q4 '25",
+   "Q1 '26",
+   "Q2 '26"
+  ],
+  "quarterly_eps_growth_yoy": 0.1818,
+  "quarterly_eps_growth_yoy_8q": [
+   2.6,
+   0.1613,
+   -1.7027,
+   10.0,
+   6.75,
+   0.7778,
+   4.5,
+   0.1818
+  ],
+  "quarterly_revenue_growth_yoy": 0.1545,
+  "quarterly_revenue_growth_yoy_8q": [
+   0.2629,
+   0.2195,
+   0.176,
+   0.1251,
+   0.14,
+   0.0857,
+   0.1307,
+   0.1545
+  ],
+  "revenue_cagr_3y": 0.2079,
+  "revenue_cagr_5y": 0.26,
+  "revenue_growth_accel": 0.0076,
+  "revenue_growth_qoq": 0.0267,
+  "revenue_growth_yoy": 0.1277,
+  "revenue_growth_yoy_q2": 0.1201,
+  "revenue_growth_yoy_q3": 0.1301,
+  "revenue_growth_yoy_q4": 0.1634,
+  "revenue_growth_yoy_q5": 0.193,
+  "revenue_growth_yoy_q6": 0.2324,
+  "revenue_growth_yoy_q7": 0.2716,
+  "revenue_growth_yoy_q8": 0.2936,
+  "revenue_history_8q": [
+   253.367,
+   262.708,
+   263.249,
+   264.689,
+   288.848,
+   285.229,
+   297.644,
+   305.587
+  ],
+  "revenue_per_share": 6.2115,
+  "roa": 0.1114,
+  "roce": 0.0597,
+  "roe": 0.1628,
+  "roic": 0.1178,
+  "rsi_14": 49.936,
+  "sector_momentum": 0.0115,
+  "share_dilution_1y": 0.0,
+  "stock_vs_sector_20d": 0.1589,
+  "stock_vs_spy_20d": 0.1334,
+  "total_assets": 1812.415,
+  "vol_regime": 0.8993,
+  "volatility_20d": 0.0278,
+  "volatility_60d": 0.0309,
+  "w52_high": 86.0,
+  "w52_low": 46.46
+ },
+ "market_characters": [
+  {
+   "id": "g5",
+   "name": "Quality Compressed"
+  },
+  {
+   "id": "g8",
+   "name": "Boom-Bust"
+  }
+ ],
+ "model_analogs": {
+  "matches": [
+   {
+    "actual_downside": -0.0741,
+    "actual_return": 0.1184,
+    "actual_upside": 0.1184,
+    "days_in_region": 132,
+    "end_date": "2020-01-23",
+    "end_reason": "reversal",
+    "similarity": 0.9647,
+    "start_date": "2019-09-13",
+    "ticker": "CEVA",
+    "trigger_date": "2019-10-23",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": 0.0,
+    "actual_return": 0.325,
+    "actual_upside": 0.325,
+    "days_in_region": 229,
+    "end_date": "1990-06-06",
+    "end_reason": "reversal",
+    "similarity": 0.9641,
+    "start_date": "1989-10-20",
+    "ticker": "PBEN",
+    "trigger_date": "1990-01-31",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": -0.0203,
+    "actual_return": 0.3158,
+    "actual_upside": 0.3158,
+    "days_in_region": 128,
+    "end_date": "2017-01-04",
+    "end_reason": "reversal",
+    "similarity": 0.9626,
+    "start_date": "2016-08-29",
+    "ticker": "DAKT",
+    "trigger_date": "2016-10-28",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": -0.0327,
+    "actual_return": -0.0327,
+    "actual_upside": 0.1272,
+    "days_in_region": 46,
+    "end_date": "2019-11-01",
+    "end_reason": "new_pattern",
+    "similarity": 0.9621,
+    "start_date": "2019-09-16",
+    "ticker": "SRDX",
+    "trigger_date": "2019-10-10",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": 0.0,
+    "actual_return": 0.0192,
+    "actual_upside": 0.1917,
+    "days_in_region": 130,
+    "end_date": "2016-12-06",
+    "end_reason": "reversal",
+    "similarity": 0.9621,
+    "start_date": "2016-07-29",
+    "ticker": "LE",
+    "trigger_date": "2016-11-03",
+    "trigger_type": "shallow_runup"
+   },
+   {
+    "actual_downside": -0.2424,
+    "actual_return": -0.2424,
+    "actual_upside": 0.0886,
+    "days_in_region": 59,
+    "end_date": "2018-12-24",
+    "end_reason": "reversal",
+    "similarity": 0.962,
+    "start_date": "2018-10-26",
+    "ticker": "UAA",
+    "trigger_date": "2018-10-31",
+    "trigger_type": "runup"
+   },
+   {
+    "actual_downside": -0.2059,
+    "actual_return": 0.0294,
+    "actual_upside": 0.0588,
+    "days_in_region": 287,
+    "end_date": "1990-07-20",
+    "end_reason": "reversal",
+    "similarity": 0.9616,
+    "start_date": "1989-10-06",
+    "ticker": "AFL",
+    "trigger_date": "1989-10-16",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": -0.0203,
+    "actual_return": 0.2093,
+    "actual_upside": 0.2093,
+    "days_in_region": 89,
+    "end_date": "1999-11-17",
+    "end_reason": "reversal",
+    "similarity": 0.9612,
+    "start_date": "1999-08-20",
+    "ticker": "GLYT",
+    "trigger_date": "1999-10-15",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": -0.2996,
+    "actual_return": -0.0729,
+    "actual_upside": 0.0734,
+    "days_in_region": 143,
+    "end_date": "2019-02-04",
+    "end_reason": "reversal",
+    "similarity": 0.9611,
+    "start_date": "2018-09-14",
+    "ticker": "CTRL",
+    "trigger_date": "2018-10-11",
+    "trigger_type": "severe_drawdown"
+   },
+   {
+    "actual_downside": -0.1104,
+    "actual_return": 0.2209,
+    "actual_upside": 0.2209,
+    "days_in_region": 139,
+    "end_date": "1999-12-30",
+    "end_reason": "reversal",
+    "similarity": 0.961,
+    "start_date": "1999-08-13",
+    "ticker": "AZZ",
+    "trigger_date": "1999-09-07",
+    "trigger_type": "shallow_drawdown"
+   }
+  ],
+  "stats": {
+   "avg_max_drawdown": 0.1403,
+   "avg_similarity": 0.96,
+   "avg_trough": 0.1403,
+   "avg_upside": 0.2264,
+   "best_return": 0.9232,
+   "downside_range": [
+    -0.8002,
+    0.0
+   ],
+   "median_return": 0.1886,
+   "n_matches": 50,
+   "outcome_agreement": true,
+   "return_p25": 0.0217,
+   "return_p5": -0.31,
+   "return_p75": 0.285,
+   "return_p95": 0.5718,
+   "sim_weighted_win_rate": 0.76,
+   "top5_avg_trough": 0.0254,
+   "top5_avg_upside": 0.2156,
+   "top_similarity": 0.965,
+   "upside_range": [
+    0.0,
+    0.9232
+   ],
+   "win_rate": 0.76,
+   "worst_return": -0.6252,
+   "years_span": 13
+  },
+  "total_matches": 50
+ },
+ "peer_group": {
+  "buckets": [
+   "E-commerce Retail & Direct-to-Consumer Commerce",
+   "Packaged Food, Snacks & Staples",
+   "Wellness, Nutrition & Lifestyle Consumer Products"
+  ],
+  "groups": {
+   "E-commerce Retail & Direct-to-Consumer Commerce": [
+    {
+     "market_cap_m": 4536.4704,
+     "price_vs_sma200": 1.0467,
+     "return_30d": 0.1219,
+     "return_7d": 0.037,
+     "revenue_driver": "denim apparel",
+     "signal_rank": 454,
+     "stock_vs_spy_20d": 0.1658,
+     "ticker": "KTB"
+    },
+    {
+     "market_cap_m": 7399.1788,
+     "price_vs_sma200": 0.9302,
+     "return_30d": 0.0991,
+     "return_7d": 0.0729,
+     "revenue_driver": "grocery retail sales",
+     "signal_rank": 1783,
+     "stock_vs_spy_20d": 0.2019,
+     "ticker": "ACI"
+    },
+    {
+     "market_cap_m": 6419.9326,
+     "price_vs_sma200": 1.0911,
+     "return_30d": 0.066,
+     "return_7d": -0.0474,
+     "revenue_driver": "casual footwear",
+     "signal_rank": 268,
+     "stock_vs_spy_20d": -0.0279,
+     "ticker": "CROX"
+    },
+    {
+     "market_cap_m": 13734.3165,
+     "price_vs_sma200": 0.7578,
+     "return_30d": 0.026,
+     "return_7d": 0.0386,
+     "revenue_driver": "premium athletic apparel",
+     "signal_rank": 527,
+     "stock_vs_spy_20d": 0.024,
+     "ticker": "LULU"
+    },
+    {
+     "market_cap_m": 4670.0365,
+     "price_vs_sma200": 0.9314,
+     "return_30d": 0.0258,
+     "return_7d": 0.0277,
+     "revenue_driver": "pet food and supplies retail",
+     "signal_rank": 1529,
+     "stock_vs_spy_20d": 0.1776,
+     "ticker": "CHWY"
+    },
+    {
+     "market_cap_m": 3488.3078,
+     "price_vs_sma200": 1.0149,
+     "return_30d": 0.0154,
+     "return_7d": -0.0429,
+     "revenue_driver": "fresh dog food",
+     "signal_rank": 1024,
+     "stock_vs_spy_20d": 0.1334,
+     "ticker": "FRPT"
+    },
+    {
+     "market_cap_m": 12429.1336,
+     "price_vs_sma200": 0.8063,
+     "return_30d": -0.0021,
+     "return_7d": -0.0717,
+     "revenue_driver": "footwear brands",
+     "signal_rank": 340,
+     "stock_vs_spy_20d": 0.0265,
+     "ticker": "DECK"
+    },
+    {
+     "market_cap_m": 167.6234,
+     "price_vs_sma200": 0.9697,
+     "return_30d": -0.0752,
+     "return_7d": -0.0105,
+     "revenue_driver": "online gift delivery",
+     "signal_rank": null,
+     "stock_vs_spy_20d": -0.028,
+     "ticker": "FLWS"
+    },
+    {
+     "market_cap_m": 28003.2191,
+     "price_vs_sma200": 0.7894,
+     "return_30d": -0.09,
+     "return_7d": -0.0703,
+     "revenue_driver": "South Korea ecommerce marketplace",
+     "signal_rank": 678,
+     "stock_vs_spy_20d": 0.0008,
+     "ticker": "CPNG"
+    },
+    {
+     "market_cap_m": 56859.456,
+     "price_vs_sma200": 1.5684,
+     "return_30d": -0.2222,
+     "return_7d": -0.1667,
+     "revenue_driver": "digital media platform",
+     "signal_rank": 1721,
+     "stock_vs_spy_20d": -0.1658,
+     "ticker": "GDC"
+    }
+   ],
+   "Packaged Food, Snacks & Staples": [
+    {
+     "market_cap_m": 5227.9274,
+     "price_vs_sma200": 1.4,
+     "return_30d": 0.0472,
+     "return_7d": -0.0554,
+     "revenue_driver": "full service restaurant dining",
+     "signal_rank": 362,
+     "stock_vs_spy_20d": 0.0481,
+     "ticker": "CAKE"
+    },
+    {
+     "market_cap_m": 1499.3638,
+     "price_vs_sma200": 0.7579,
+     "return_30d": 0.0233,
+     "return_7d": 0.0033,
+     "revenue_driver": "fresh bread and rolls",
+     "signal_rank": 609,
+     "stock_vs_spy_20d": 0.0876,
+     "ticker": "FLO"
+    },
+    {
+     "market_cap_m": 3488.3078,
+     "price_vs_sma200": 1.0149,
+     "return_30d": 0.0154,
+     "return_7d": -0.0429,
+     "revenue_driver": "fresh dog food",
+     "signal_rank": 1024,
+     "stock_vs_spy_20d": 0.1334,
+     "ticker": "FRPT"
+    },
+    {
+     "market_cap_m": 175484.4156,
+     "price_vs_sma200": 0.9268,
+     "return_30d": -0.0065,
+     "return_7d": 0.0551,
+     "revenue_driver": "snack food brands",
+     "signal_rank": 1877,
+     "stock_vs_spy_20d": 0.055,
+     "ticker": "PEP"
+    },
+    {
+     "market_cap_m": 6429.2794,
+     "price_vs_sma200": 0.9504,
+     "return_30d": -0.0135,
+     "return_7d": 0.0282,
+     "revenue_driver": "consumer packaged goods",
+     "signal_rank": 2071,
+     "stock_vs_spy_20d": 0.0305,
+     "ticker": "CAG"
+    },
+    {
+     "market_cap_m": 446.1465,
+     "price_vs_sma200": 1.045,
+     "return_30d": -0.0217,
+     "return_7d": -0.0206,
+     "revenue_driver": "avocados",
+     "signal_rank": null,
+     "stock_vs_spy_20d": -0.1214,
+     "ticker": "CVGW"
+    },
+    {
+     "market_cap_m": 6597.7054,
+     "price_vs_sma200": 0.9144,
+     "return_30d": -0.0292,
+     "return_7d": 0.0398,
+     "revenue_driver": "packaged foods",
+     "signal_rank": 1454,
+     "stock_vs_spy_20d": 0.0303,
+     "ticker": "CPB"
+    },
+    {
+     "market_cap_m": 553.299,
+     "price_vs_sma200": 0.8563,
+     "return_30d": -0.1,
+     "return_7d": -0.071,
+     "revenue_driver": "Fresh doughnuts",
+     "signal_rank": 48,
+     "stock_vs_spy_20d": -0.0026,
+     "ticker": "DNUT"
+    },
+    {
+     "market_cap_m": 239.2582,
+     "price_vs_sma200": 0.599,
+     "return_30d": -0.3346,
+     "return_7d": -0.0432,
+     "revenue_driver": "plant-based meat alternatives",
+     "signal_rank": null,
+     "stock_vs_spy_20d": -0.2041,
+     "ticker": "BYND"
+    },
+    {
+     "market_cap_m": 286.3177,
+     "price_vs_sma200": 0.4931,
+     "return_30d": -0.3544,
+     "return_7d": -0.157,
+     "revenue_driver": "branded shelf-stable foods",
+     "signal_rank": 229,
+     "stock_vs_spy_20d": -0.3325,
+     "ticker": "BGS"
+    }
+   ],
+   "Wellness, Nutrition & Lifestyle Consumer Products": [
+    {
+     "market_cap_m": 2737.6748,
+     "price_vs_sma200": 1.0624,
+     "return_30d": 0.0668,
+     "return_7d": -0.0002,
+     "revenue_driver": "wholesale food distribution",
+     "signal_rank": 829,
+     "stock_vs_spy_20d": 0.0555,
+     "ticker": "UNFI"
+    },
+    {
+     "market_cap_m": 2212.8448,
+     "price_vs_sma200": 0.9997,
+     "return_30d": 0.0628,
+     "return_7d": -0.015,
+     "revenue_driver": "connected fitness equipment",
+     "signal_rank": 17,
+     "stock_vs_spy_20d": 0.0946,
+     "ticker": "PTON"
+    },
+    {
+     "market_cap_m": 747.6512,
+     "price_vs_sma200": 1.0861,
+     "return_30d": 0.0545,
+     "return_7d": 0.0118,
+     "revenue_driver": "natural and organic groceries",
+     "signal_rank": 583,
+     "stock_vs_spy_20d": 0.0093,
+     "ticker": "NGVC"
+    },
+    {
+     "market_cap_m": 1509.9188,
+     "price_vs_sma200": 0.702,
+     "return_30d": 0.0391,
+     "return_7d": 0.0634,
+     "revenue_driver": "ready-to-drink protein shakes",
+     "signal_rank": 105,
+     "stock_vs_spy_20d": 0.236,
+     "ticker": "BRBR"
+    },
+    {
+     "market_cap_m": 360166.8678,
+     "price_vs_sma200": 1.0271,
+     "return_30d": 0.0174,
+     "return_7d": 0.0019,
+     "revenue_driver": "continuous glucose monitors",
+     "signal_rank": 1765,
+     "stock_vs_spy_20d": 0.0394,
+     "ticker": "ABT"
+    },
+    {
+     "market_cap_m": 3488.3078,
+     "price_vs_sma200": 1.0149,
+     "return_30d": 0.0154,
+     "return_7d": -0.0429,
+     "revenue_driver": "fresh dog food",
+     "signal_rank": 1024,
+     "stock_vs_spy_20d": 0.1334,
+     "ticker": "FRPT"
+    },
+    {
+     "market_cap_m": 107.0523,
+     "price_vs_sma200": 1.1279,
+     "return_30d": 0.0092,
+     "return_7d": 0.0041,
+     "revenue_driver": "weight management nutrition",
+     "signal_rank": null,
+     "stock_vs_spy_20d": 0.1534,
+     "ticker": "MED"
+    },
+    {
+     "market_cap_m": 6127.5495,
+     "price_vs_sma200": 0.804,
+     "return_30d": -0.0105,
+     "return_7d": -0.0004,
+     "revenue_driver": "fitness energy drinks",
+     "signal_rank": 1406,
+     "stock_vs_spy_20d": 0.0062,
+     "ticker": "CELH"
+    },
+    {
+     "market_cap_m": 251.0625,
+     "price_vs_sma200": 0.7204,
+     "return_30d": -0.037,
+     "return_7d": -0.0998,
+     "revenue_driver": "direct-selling beauty products",
+     "signal_rank": 808,
+     "stock_vs_spy_20d": 0.0116,
+     "ticker": "NUS"
+    },
+    {
+     "market_cap_m": 355.8686,
+     "price_vs_sma200": 0.5913,
+     "return_30d": -0.0877,
+     "return_7d": -0.0293,
+     "revenue_driver": "nutritional supplements",
+     "signal_rank": 453,
+     "stock_vs_spy_20d": -0.0428,
+     "ticker": "NATR"
+    }
+   ]
+  }
+ },
+ "predictions": {
+  "badge_count": 0,
+  "confidence_score": 0.2622,
+  "conviction_label": "SPECULATIVE",
+  "data_quality_flags": [],
+  "ev_score": 0.0767,
+  "is_diamond": false,
+  "passes_tradability_filter": true,
+  "quality_label": "WEAK",
+  "quantiles": {
+   "downside_q10": -0.3462,
+   "downside_q25": -0.2068,
+   "downside_q50": -0.1229,
+   "downside_q75": -0.0373,
+   "downside_q90": -0.0006,
+   "path_volatility": 0.043,
+   "risk_reward": 1.5327,
+   "uncertainty": 0.5032,
+   "upside_q10": 0.0241,
+   "upside_q25": 0.0748,
+   "upside_q50": 0.1883,
+   "upside_q75": 0.3195,
+   "upside_q90": 0.5273
+  },
+  "rank": 1024,
+  "rank_score": 0.019,
+  "tradability_filter_reasons": []
+ },
+ "profile": {
+  "_local": {
+   "dividend_yield": 0.0,
+   "eps_growth_yoy": 4.9429,
+   "pe_ratio": 18.8079,
+   "revenue_growth_yoy": 0.1277,
+   "roe": 0.1628
+  },
+  "beta": 1.778,
+  "betaTTM": null,
+  "ceo": "William Cyr",
+  "companyName": "Freshpet, Inc.",
+  "country": "US",
+  "debtToEquityTTM": null,
+  "description": "Freshpet, Inc. produces and distributes natural, fresh, and ready-to-eat food and treats specifically formulated for dogs and cats. These products are available to consumers throughout the United States, Canada, and Europe. The company offers its pet nutrition items under its flagship Freshpet brand, alongside its Dognation and Dog Joy labels. They reach customers through a wide array of retail channels, including major grocery chains, mass-market retailers, warehouse clubs, specialized pet stores, and natural food outlets, as well as via online platforms. Freshpet, Inc. was established in 2004 and is based in Secaucus, New Jersey.",
+  "dividendYielTTM": null,
+  "enterpriseValueOverEBITDATTM": null,
+  "exchangeShortName": "NASDAQ",
+  "fullTimeEmployees": "1288",
+  "industry": "Packaged Foods",
+  "ipoDate": "2014-11-07",
+  "latest_earnings_date": "2026-08-05",
+  "marketCapTTM": null,
+  "mktCap": 3181995717,
+  "peRatioTTM": null,
+  "price": 64.75,
+  "priceToSalesRatioTTM": null,
+  "returnOnEquityTTM": 0.1665,
+  "revenue_description": "Freshpet sells refrigerated pet food. Revenue is driven by unit volume growth and pricing realization in its core end markets, with new product introductions and geographic expansion as incremental catalysts.",
+  "revenue_description_themes": [
+   "retail distribution expansion",
+   "manufacturing capacity scaling",
+   "pricing and margin expansion"
+  ],
+  "revenue_taxonomy": [
+   {
+    "bucket": "Wellness, Nutrition & Lifestyle Consumer Products",
+    "matched_tags": [
+     "fresh dog food"
+    ],
+    "path": "Consumer Goods & Retail › Branded Consumer Goods › Wellness, Nutrition & Lifestyle Consumer Products",
+    "sector": "Consumer Goods & Retail",
+    "segment": "Branded Consumer Goods"
+   },
+   {
+    "bucket": "Packaged Food, Snacks & Staples",
+    "matched_tags": [
+     "refrigerated pet food"
+    ],
+    "path": "Consumer Goods & Retail › Food Beverage & Staples › Packaged Food, Snacks & Staples",
+    "sector": "Consumer Goods & Retail",
+    "segment": "Food Beverage & Staples"
+   },
+   {
+    "bucket": "E-commerce Retail & Direct-to-Consumer Commerce",
+    "matched_tags": [
+     "pet food subscriptions"
+    ],
+    "path": "Consumer Goods & Retail › Retail & Commerce › E-commerce Retail & Direct-to-Consumer Commerce",
+    "sector": "Consumer Goods & Retail",
+    "segment": "Retail & Commerce"
+   }
+  ],
+  "revenue_themes": [
+   "fresh dog food",
+   "refrigerated pet food",
+   "pet food subscriptions"
+  ],
+  "sector": "Consumer Defensive",
+  "website": "https://www.freshpet.com"
+ },
+ "report": {
+  "display_rank": null,
+  "lane": "wait",
+  "lane_rank": 31,
+  "setup_label": "early_trend",
+  "why_now": "Structural analogs leads the readiness mix (+8.6); early-stage trend"
+ },
+ "scorecard": {
+  "headline": {
+   "avg_universe_pct": 59,
+   "label": "mixed",
+   "metric_count": 8
+  },
+  "metrics": {
+   "debt_to_equity": {
+    "direction": "lower",
+    "label": "D/E Ratio",
+    "sector": "Consumer Staples",
+    "sector_n": 62,
+    "sector_pct": 60,
+    "universe_n": 2082,
+    "universe_pct": 49,
+    "value": 0.3989
+   },
+   "eps_growth_yoy": {
+    "direction": "higher",
+    "label": "EPS Growth",
+    "sector": "Consumer Staples",
+    "sector_n": 62,
+    "sector_pct": 97,
+    "universe_n": 1892,
+    "universe_pct": 96,
+    "value": 4.9429
+   },
+   "gross_margin": {
+    "direction": "higher",
+    "label": "Gross Margin",
+    "sector": "Consumer Staples",
+    "sector_n": 63,
+    "sector_pct": 76,
+    "universe_n": 2010,
+    "universe_pct": 44,
+    "value": 0.413
+   },
+   "operating_margin": {
+    "direction": "higher",
+    "label": "Op. Margin",
+    "sector": "Consumer Staples",
+    "sector_n": 63,
+    "sector_pct": 54,
+    "universe_n": 2010,
+    "universe_pct": 44,
+    "value": 0.0882
+   },
+   "pe_ratio": {
+    "direction": "lower",
+    "label": "P/E",
+    "sector": "Consumer Staples",
+    "sector_n": 51,
+    "sector_pct": 67,
+    "universe_n": 1474,
+    "universe_pct": 57,
+    "value": 18.8079
+   },
+   "revenue_growth_yoy": {
+    "direction": "higher",
+    "label": "Rev Growth",
+    "sector": "Consumer Staples",
+    "sector_n": 62,
+    "sector_pct": 81,
+    "universe_n": 1834,
+    "universe_pct": 64,
+    "value": 0.1277
+   },
+   "roe": {
+    "direction": "higher",
+    "label": "ROE",
+    "sector": "Consumer Staples",
+    "sector_n": 63,
+    "sector_pct": 75,
+    "universe_n": 2102,
+    "universe_pct": 70,
+    "value": 0.1628
+   },
+   "roic": {
+    "direction": "higher",
+    "label": "ROIC",
+    "sector": "Consumer Staples",
+    "sector_n": 61,
+    "sector_pct": 34,
+    "universe_n": 2053,
+    "universe_pct": 47,
+    "value": 0.0113
+   }
+  }
+ },
+ "signal_rank": 1024,
+ "structural_analogs": {
+  "gp_core_pct": 36.7,
+  "gp_core_ratio": 1.1703,
+  "matches": [
+   {
+    "actual_downside": -0.0475,
+    "actual_return": 0.092,
+    "actual_upside": 0.092,
+    "days_in_region": 100,
+    "end_date": "2016-11-29",
+    "end_reason": "reversal",
+    "seq_len": 100,
+    "similarity": 0.6096,
+    "start_date": "2016-08-26",
+    "ticker": "SAM",
+    "total_distance": 0.2475,
+    "trigger_date": "2016-09-19",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": 0.0,
+    "actual_return": 0.2245,
+    "actual_upside": 0.2245,
+    "days_in_region": 114,
+    "end_date": "2018-01-26",
+    "end_reason": "reversal",
+    "seq_len": 114,
+    "similarity": 0.5899,
+    "start_date": "2017-10-02",
+    "ticker": "MNRO",
+    "total_distance": 0.2639,
+    "trigger_date": "2017-10-24",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": -0.2378,
+    "actual_return": 0.0749,
+    "actual_upside": 0.0861,
+    "days_in_region": 98,
+    "end_date": "2006-09-20",
+    "end_reason": "reversal",
+    "seq_len": 98,
+    "similarity": 0.5891,
+    "start_date": "2006-04-20",
+    "ticker": "SWKS",
+    "total_distance": 0.2646,
+    "trigger_date": "2006-05-10",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": -0.0706,
+    "actual_return": 0.2811,
+    "actual_upside": 0.2811,
+    "days_in_region": 111,
+    "end_date": "2015-12-07",
+    "end_reason": "reversal",
+    "seq_len": 111,
+    "similarity": 0.588,
+    "start_date": "2015-06-15",
+    "ticker": "HMIN",
+    "total_distance": 0.2655,
+    "trigger_date": "2015-08-25",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": -0.3368,
+    "actual_return": 0.2065,
+    "actual_upside": 0.2065,
+    "days_in_region": 105,
+    "end_date": "2000-05-17",
+    "end_reason": "reversal",
+    "seq_len": 105,
+    "similarity": 0.5875,
+    "start_date": "1999-07-16",
+    "ticker": "NOC",
+    "total_distance": 0.2659,
+    "trigger_date": "1999-09-17",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": -0.247,
+    "actual_return": 0.0071,
+    "actual_upside": 0.0689,
+    "days_in_region": 108,
+    "end_date": "2005-12-02",
+    "end_reason": "reversal",
+    "seq_len": 108,
+    "similarity": 0.5856,
+    "start_date": "2005-07-20",
+    "ticker": "PMCS",
+    "total_distance": 0.2676,
+    "trigger_date": "2005-08-11",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": -0.1948,
+    "actual_return": -0.0564,
+    "actual_upside": 0.0,
+    "days_in_region": 108,
+    "end_date": "2018-11-06",
+    "end_reason": "reversal",
+    "seq_len": 108,
+    "similarity": 0.5847,
+    "start_date": "2018-07-05",
+    "ticker": "TACO",
+    "total_distance": 0.2683,
+    "trigger_date": "2018-07-31",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": -0.0185,
+    "actual_return": 0.1001,
+    "actual_upside": 0.1001,
+    "days_in_region": 103,
+    "end_date": "2015-07-16",
+    "end_reason": "reversal",
+    "seq_len": 103,
+    "similarity": 0.5809,
+    "start_date": "2015-03-04",
+    "ticker": "VIVO",
+    "total_distance": 0.2716,
+    "trigger_date": "2015-05-04",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": -0.0462,
+    "actual_return": 0.158,
+    "actual_upside": 0.158,
+    "days_in_region": 100,
+    "end_date": "2011-05-12",
+    "end_reason": "reversal",
+    "seq_len": 100,
+    "similarity": 0.5777,
+    "start_date": "2011-01-13",
+    "ticker": "IGT",
+    "total_distance": 0.2743,
+    "trigger_date": "2011-03-11",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": -0.0653,
+    "actual_return": 0.1106,
+    "actual_upside": 0.1106,
+    "days_in_region": 98,
+    "end_date": "1995-04-12",
+    "end_reason": "reversal",
+    "seq_len": 98,
+    "similarity": 0.5776,
+    "start_date": "1994-11-10",
+    "ticker": "FTL",
+    "total_distance": 0.2744,
+    "trigger_date": "1994-12-13",
+    "trigger_type": "drawdown"
+   }
+  ],
+  "panel": {
+   "edge": 0.0475,
+   "hit_hi": 0.763,
+   "hit_lo": 0.598,
+   "hit_rate": 0.686,
+   "median_final": 0.092,
+   "median_pain": 0.0728,
+   "n": 51,
+   "n_eff": 51.0,
+   "p25_final": -0.0302,
+   "p_pain_gt5": 0.588,
+   "return_to_pain": 0.992
+  },
+  "stats": {
+   "avg_similarity": 0.539,
+   "avg_trough": 0.1274,
+   "avg_upside": 0.1674,
+   "median_pain": 0.0805,
+   "median_return": 0.0893,
+   "n_matches": 200,
+   "p25_return": -0.0881,
+   "p_pain_gt5": 0.59,
+   "return_to_pain": 0.889,
+   "top5_avg_trough": 0.1385,
+   "top5_avg_upside": 0.178,
+   "top_similarity": 0.61,
+   "win_rate": 0.645
+  },
+  "total_matches": 200
+ },
+ "ticker": "FRPT",
+ "trending": {
+  "acceleration": -0.008,
+  "avg_vol_20d": 1832794.35,
+  "base_high_120": 85.5,
+  "breakout_confirmed": 0,
+  "close": 52.33,
+  "momentum_score": 0.016,
+  "momentum_start": "2026-05-08",
+  "range_20": 0.4108,
+  "range_50": 0.6117,
+  "rank": 1651,
+  "rank_down": 21,
+  "rank_up": null,
+  "ret_120": -0.1002,
+  "ret_20": -0.2029,
+  "ret_60": -0.3797,
+  "rundown_score": 0.9531,
+  "score_date": "2026-05-27",
+  "slope_20": -0.0169,
+  "slope_60": -0.0089,
+  "stage": "rundown",
+  "stage_label": "rundown",
+  "ticker": "FRPT",
+  "total_score": 0.2034,
+  "trend_ratio": 0.7782,
+  "vcp_detected": 0,
+  "vcp_score": 0.3283
+ }
+}

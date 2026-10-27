@@ -1,0 +1,1116 @@
+{
+ "date": "2026-10-26",
+ "detected_regions": {
+  "primary": {
+   "days_in_region": 97,
+   "region_start": "2026-09-03",
+   "trigger_date": "2026-09-17",
+   "trigger_type": "shallow_drawdown"
+  },
+  "secondary": [
+   {
+    "confidence_score": 0.5078,
+    "downside_q50": -0.0763,
+    "ev_score": 0.1635,
+    "region_start": "2026-04-23",
+    "seq_len": 189,
+    "trigger_date": "2026-10-09",
+    "trigger_type": "runup",
+    "upside_q25": 0.0962,
+    "upside_q50": 0.2166,
+    "upside_q75": 0.3907
+   }
+  ]
+ },
+ "feature_attribution": {
+  "macro_driver_count": 14,
+  "risk_flags": [
+   "high_volatility"
+  ],
+  "top_drivers": [
+   {
+    "direction": "positive",
+    "feature": "price_vs_sma200",
+    "feature_value": 1.4666,
+    "importance": 0.0005,
+    "importance_pct": 0.2343,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "positive",
+    "feature": "price_vs_low_52w",
+    "feature_value": 2.7141,
+    "importance": 0.0004,
+    "importance_pct": 0.1819,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "negative",
+    "feature": "dollar_volume",
+    "feature_value": 16969274.0,
+    "importance": 0.0004,
+    "importance_pct": 0.1788,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "positive",
+    "feature": "historical_recovery_rate",
+    "feature_value": 0.3361,
+    "importance": 0.0003,
+    "importance_pct": 0.1547,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "negative",
+    "feature": "price_vs_high_52w",
+    "feature_value": 0.9344,
+    "importance": 0.0003,
+    "importance_pct": 0.1375,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "positive",
+    "feature": "volatility_20d",
+    "feature_value": 0.0256,
+    "importance": 0.0002,
+    "importance_pct": 0.1128,
+    "method": "integrated_gradients"
+   }
+  ]
+ },
+ "fundamentals": {
+  "accrual": -0.0477,
+  "adx_14": 17.6832,
+  "altman_z_score": 1.5888,
+  "amihud_illiquidity": 0.0007,
+  "avg_volume": 1478681.9802,
+  "beta_252d": 0.7371,
+  "book_value_per_share": 0.1783,
+  "correlation_spy_60d": 0.5789,
+  "current_liabilities": 64.573,
+  "current_ratio": 1.3698,
+  "daily_earnings_yield": -0.0113,
+  "daily_fcf_yield": 0.0033,
+  "daily_pb": 93.8963,
+  "daily_pe": -88.1732,
+  "daily_ps": 3.6051,
+  "days_since_52w_high": 3.0,
+  "debt_ebitda": 7.7087,
+  "debt_to_equity": 20.9276,
+  "dividend_yield": 0.0,
+  "dollar_volume_20d_avg": 27629830.4461,
+  "earnings_quality": -4.4042,
+  "ebitda_growth_yoy": 0.1044,
+  "enterprise_value": 2169.5388,
+  "eps_basic": 0.05,
+  "eps_cagr_3y": -1.3645,
+  "eps_cagr_5y": null,
+  "eps_diluted": 0.05,
+  "eps_growth_accel": -1.1236,
+  "eps_growth_qoq": 2.25,
+  "eps_growth_yoy": -1.2236,
+  "eps_growth_yoy_q2": -0.1,
+  "eps_growth_yoy_q3": 0.9343,
+  "eps_growth_yoy_q4": 1.4559,
+  "eps_growth_yoy_q5": 1.625,
+  "eps_growth_yoy_q6": 0.886,
+  "eps_growth_yoy_q7": 0.7518,
+  "eps_growth_yoy_q8": 0.6092,
+  "eps_history_8q": [
+   0.12,
+   0.3,
+   0.07,
+   0.0,
+   -0.1,
+   -0.033,
+   -0.04,
+   0.05
+  ],
+  "eps_ttm": -0.197,
+  "ev_to_ebitda": 41.2656,
+  "ev_to_fcf": 60.0481,
+  "ev_to_sales": 15.3997,
+  "fcf_growth_yoy": -0.2698,
+  "fcf_margin": 0.2565,
+  "fcf_per_share": 0.3327,
+  "gross_margin": 0.7276,
+  "gross_margin_change_yoy": -0.0598,
+  "gross_margin_history": [
+   0.6051,
+   0.7272,
+   0.7725,
+   0.7317,
+   0.7471,
+   0.7276
+  ],
+  "inc_roic": -0.017,
+  "interest_coverage": -57.7113,
+  "is_pre_revenue": false,
+  "margin_vs_sector_median": null,
+  "market_cap_ratio": 1818.3958,
+  "net_income": -9.37,
+  "net_margin": -0.0409,
+  "operating_income": -4.113,
+  "operating_margin": 0.0803,
+  "operating_margin_change_yoy": -0.0715,
+  "pb_ratio": 97.4015,
+  "pe_percentile_1y": 0.6825,
+  "pe_ratio": -100.4878,
+  "peg_trailing": 0.8032,
+  "piotroski_f_score": 3.0,
+  "price_vs_high_52w": 0.9344,
+  "price_vs_sma200": 1.4666,
+  "ps_percentile_1y": 0.1032,
+  "ps_ratio": 2.5653,
+  "quarter_labels_8q": [
+   "Q3 '24",
+   "Q4 '24",
+   "Q1 '25",
+   "Q2 '25",
+   "Q3 '25",
+   "Q4 '25",
+   "Q1 '26",
+   "Q2 '26"
+  ],
+  "quarterly_eps_growth_yoy": -1.5714,
+  "quarterly_eps_growth_yoy_8q": [
+   3.0,
+   10.0,
+   1.5,
+   1.0,
+   -1.8333,
+   -1.11,
+   -1.5714,
+   null
+  ],
+  "quarterly_revenue_growth_yoy": 0.181,
+  "quarterly_revenue_growth_yoy_8q": [
+   -0.1417,
+   -0.1243,
+   -0.0927,
+   0.0762,
+   0.0619,
+   0.2386,
+   0.1564,
+   0.181
+  ],
+  "revenue_cagr_3y": 0.1547,
+  "revenue_cagr_5y": null,
+  "revenue_growth_accel": 0.0276,
+  "revenue_growth_qoq": 0.1631,
+  "revenue_growth_yoy": 0.1579,
+  "revenue_growth_yoy_q2": 0.1303,
+  "revenue_growth_yoy_q3": 0.0653,
+  "revenue_growth_yoy_q4": -0.0213,
+  "revenue_growth_yoy_q5": -0.0741,
+  "revenue_growth_yoy_q6": -0.0681,
+  "revenue_growth_yoy_q7": 0.0175,
+  "revenue_growth_yoy_q8": 0.1904,
+  "revenue_history_8q": [
+   111.2,
+   100.361,
+   104.745,
+   119.295,
+   118.082,
+   124.304,
+   121.123,
+   140.882
+  ],
+  "revenue_per_share": 1.2973,
+  "roa": -0.0254,
+  "roce": 0.0659,
+  "roe": 6.8356,
+  "roic": -0.0274,
+  "rsi_14": 45.8598,
+  "sector_momentum": 0.0115,
+  "share_dilution_1y": 0.0,
+  "stock_vs_sector_20d": 0.0584,
+  "stock_vs_spy_20d": 0.0329,
+  "total_assets": 815.958,
+  "vol_regime": 0.9026,
+  "volatility_20d": 0.0256,
+  "volatility_60d": 0.0284,
+  "w52_high": 18.75,
+  "w52_low": 6.36
+ },
+ "market_characters": [],
+ "model_analogs": {
+  "matches": [
+   {
+    "actual_downside": -0.0373,
+    "actual_return": 0.3254,
+    "actual_upside": 0.3254,
+    "days_in_region": 83,
+    "end_date": "2005-12-01",
+    "end_reason": "reversal",
+    "similarity": 0.9755,
+    "start_date": "2005-09-09",
+    "ticker": "AEIS",
+    "trigger_date": "2005-09-22",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": -0.1951,
+    "actual_return": 0.4049,
+    "actual_upside": 0.4049,
+    "days_in_region": 190,
+    "end_date": "2017-04-11",
+    "end_reason": "reversal",
+    "similarity": 0.9743,
+    "start_date": "2016-10-03",
+    "ticker": "BLDP",
+    "trigger_date": "2016-10-28",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": -0.0627,
+    "actual_return": 0.1442,
+    "actual_upside": 0.1442,
+    "days_in_region": 59,
+    "end_date": "2018-12-03",
+    "end_reason": "reversal",
+    "similarity": 0.9741,
+    "start_date": "2018-10-05",
+    "ticker": "ATRS",
+    "trigger_date": "2018-10-29",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": -0.0543,
+    "actual_return": 0.1747,
+    "actual_upside": 0.1747,
+    "days_in_region": 85,
+    "end_date": "2005-12-01",
+    "end_reason": "reversal",
+    "similarity": 0.9741,
+    "start_date": "2005-09-07",
+    "ticker": "GNSS",
+    "trigger_date": "2005-09-16",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": -0.0814,
+    "actual_return": 0.3379,
+    "actual_upside": 0.3379,
+    "days_in_region": 196,
+    "end_date": "2006-02-09",
+    "end_reason": "reversal",
+    "similarity": 0.9738,
+    "start_date": "2005-07-28",
+    "ticker": "PRFT",
+    "trigger_date": "2005-10-10",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": -0.0738,
+    "actual_return": 0.2398,
+    "actual_upside": 0.2398,
+    "days_in_region": 221,
+    "end_date": "2005-08-22",
+    "end_reason": "reversal",
+    "similarity": 0.9734,
+    "start_date": "2005-01-13",
+    "ticker": "RICK",
+    "trigger_date": "2005-01-19",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": -0.3158,
+    "actual_return": 0.249,
+    "actual_upside": 0.249,
+    "days_in_region": 150,
+    "end_date": "2019-02-25",
+    "end_reason": "reversal",
+    "similarity": 0.9729,
+    "start_date": "2018-09-28",
+    "ticker": "TCMD",
+    "trigger_date": "2018-10-08",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": -0.1091,
+    "actual_return": 0.0909,
+    "actual_upside": 0.0909,
+    "days_in_region": 84,
+    "end_date": "1993-11-11",
+    "end_reason": "reversal",
+    "similarity": 0.9729,
+    "start_date": "1993-08-19",
+    "ticker": "BBRC",
+    "trigger_date": "1993-08-26",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": -0.006,
+    "actual_return": 0.1786,
+    "actual_upside": 0.1786,
+    "days_in_region": 120,
+    "end_date": "2016-12-16",
+    "end_reason": "reversal",
+    "similarity": 0.9726,
+    "start_date": "2016-08-18",
+    "ticker": "SALE",
+    "trigger_date": "2016-09-13",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": -0.125,
+    "actual_return": 0.1875,
+    "actual_upside": 0.1875,
+    "days_in_region": 133,
+    "end_date": "2017-02-15",
+    "end_reason": "reversal",
+    "similarity": 0.9724,
+    "start_date": "2016-10-05",
+    "ticker": "GLBL",
+    "trigger_date": "2016-10-14",
+    "trigger_type": "shallow_drawdown"
+   }
+  ],
+  "stats": {
+   "avg_max_drawdown": 0.0847,
+   "avg_similarity": 0.971,
+   "avg_trough": 0.0847,
+   "avg_upside": 0.2971,
+   "best_return": 0.9351,
+   "downside_range": [
+    -0.6304,
+    0.0
+   ],
+   "median_return": 0.2172,
+   "n_matches": 50,
+   "outcome_agreement": true,
+   "return_p25": 0.1651,
+   "return_p5": -0.0717,
+   "return_p75": 0.3443,
+   "return_p95": 0.566,
+   "sim_weighted_win_rate": 0.94,
+   "top5_avg_trough": 0.0862,
+   "top5_avg_upside": 0.2774,
+   "top_similarity": 0.976,
+   "upside_range": [
+    0.0,
+    0.9351
+   ],
+   "win_rate": 0.94,
+   "worst_return": -0.4348,
+   "years_span": 11
+  },
+  "total_matches": 50
+ },
+ "peer_group": {
+  "buckets": [
+   "Digital Advertising & Performance Marketing",
+   "Insurance Brokerage, Distribution & Claims Services",
+   "Vertical Market Software"
+  ],
+  "groups": {
+   "Digital Advertising & Performance Marketing": [
+    {
+     "market_cap_m": 12502.7654,
+     "price_vs_sma200": 1.4162,
+     "return_30d": 0.2304,
+     "return_7d": 0.1907,
+     "revenue_driver": "grocery delivery marketplace",
+     "signal_rank": 997,
+     "stock_vs_spy_20d": 0.4055,
+     "ticker": "CART"
+    },
+    {
+     "market_cap_m": 1293.919,
+     "price_vs_sma200": 1.4666,
+     "return_30d": 0.0515,
+     "return_7d": -0.0114,
+     "revenue_driver": "home services SaaS",
+     "signal_rank": 178,
+     "stock_vs_spy_20d": 0.0329,
+     "ticker": "PRCH"
+    },
+    {
+     "market_cap_m": 1513.0668,
+     "price_vs_sma200": 1.2015,
+     "return_30d": 0.0071,
+     "return_7d": 0.0046,
+     "revenue_driver": "SEO and marketing SaaS",
+     "signal_rank": null,
+     "stock_vs_spy_20d": -0.1201,
+     "ticker": "SEMR"
+    },
+    {
+     "market_cap_m": 8.4167,
+     "price_vs_sma200": 1.1009,
+     "return_30d": -0.0115,
+     "return_7d": 0.0124,
+     "revenue_driver": "news and information services",
+     "signal_rank": 2008,
+     "stock_vs_spy_20d": 0.039,
+     "ticker": "NWS"
+    },
+    {
+     "market_cap_m": 2903248.8613,
+     "price_vs_sma200": 1.0238,
+     "return_30d": -0.0176,
+     "return_7d": -0.0223,
+     "revenue_driver": "cloud infrastructure",
+     "signal_rank": 1598,
+     "stock_vs_spy_20d": 0.0128,
+     "ticker": "AMZN"
+    },
+    {
+     "market_cap_m": 702.2046,
+     "price_vs_sma200": 1.0167,
+     "return_30d": -0.0803,
+     "return_7d": 0.0528,
+     "revenue_driver": "dealer advertising subscriptions",
+     "signal_rank": 657,
+     "stock_vs_spy_20d": 0.0344,
+     "ticker": "CARS"
+    },
+    {
+     "market_cap_m": 294.8678,
+     "price_vs_sma200": 1.6115,
+     "return_30d": -0.0934,
+     "return_7d": 0.0261,
+     "revenue_driver": "social media community platform",
+     "signal_rank": 1478,
+     "stock_vs_spy_20d": -0.0916,
+     "ticker": "ASST"
+    },
+    {
+     "market_cap_m": 2955.4021,
+     "price_vs_sma200": 0.9454,
+     "return_30d": -0.1076,
+     "return_7d": 0.0287,
+     "revenue_driver": "dealer listing subscriptions",
+     "signal_rank": 570,
+     "stock_vs_spy_20d": 0.0125,
+     "ticker": "CARG"
+    },
+    {
+     "market_cap_m": 1477.0023,
+     "price_vs_sma200": 1.2942,
+     "return_30d": -0.1795,
+     "return_7d": -0.0873,
+     "revenue_driver": "mobile advertising platform",
+     "signal_rank": 1569,
+     "stock_vs_spy_20d": -0.1418,
+     "ticker": "APPS"
+    },
+    {
+     "market_cap_m": 128514.0266,
+     "price_vs_sma200": 0.6153,
+     "return_30d": -0.2199,
+     "return_7d": -0.0664,
+     "revenue_driver": "mobile advertising technology",
+     "signal_rank": 196,
+     "stock_vs_spy_20d": -0.1533,
+     "ticker": "APP"
+    }
+   ],
+   "Insurance Brokerage, Distribution & Claims Services": [
+    {
+     "market_cap_m": 3200.3752,
+     "price_vs_sma200": 1.3594,
+     "return_30d": 0.1719,
+     "return_7d": 0.0536,
+     "revenue_driver": "workers compensation claims management",
+     "signal_rank": 855,
+     "stock_vs_spy_20d": 0.1464,
+     "ticker": "CRVL"
+    },
+    {
+     "market_cap_m": 5686.7482,
+     "price_vs_sma200": 1.1367,
+     "return_30d": 0.1204,
+     "return_7d": 0.1106,
+     "revenue_driver": "wholesale brokerage commissions",
+     "signal_rank": 2101,
+     "stock_vs_spy_20d": 0.1674,
+     "ticker": "RYAN"
+    },
+    {
+     "market_cap_m": 64464.504,
+     "price_vs_sma200": 1.1502,
+     "return_30d": 0.0533,
+     "return_7d": 0.0667,
+     "revenue_driver": "commercial insurance brokerage",
+     "signal_rank": 2026,
+     "stock_vs_spy_20d": 0.1635,
+     "ticker": "AJG"
+    },
+    {
+     "market_cap_m": 1293.919,
+     "price_vs_sma200": 1.4666,
+     "return_30d": 0.0515,
+     "return_7d": -0.0114,
+     "revenue_driver": "home services SaaS",
+     "signal_rank": 178,
+     "stock_vs_spy_20d": 0.0329,
+     "ticker": "PRCH"
+    },
+    {
+     "market_cap_m": 24268.2047,
+     "price_vs_sma200": 1.0631,
+     "return_30d": 0.0402,
+     "return_7d": 0.0456,
+     "revenue_driver": "insurance brokerage commissions",
+     "signal_rank": 2069,
+     "stock_vs_spy_20d": 0.1808,
+     "ticker": "BRO"
+    },
+    {
+     "market_cap_m": 784.7922,
+     "price_vs_sma200": 1.1206,
+     "return_30d": 0.0241,
+     "return_7d": 0.0171,
+     "revenue_driver": "online insurance marketplace",
+     "signal_rank": 1049,
+     "stock_vs_spy_20d": 0.2921,
+     "ticker": "MAX"
+    },
+    {
+     "market_cap_m": 2980.0868,
+     "price_vs_sma200": 1.368,
+     "return_30d": 0.0046,
+     "return_7d": 0.0022,
+     "revenue_driver": "accounting and tax services",
+     "signal_rank": 683,
+     "stock_vs_spy_20d": 0.0034,
+     "ticker": "CBZ"
+    },
+    {
+     "market_cap_m": 1910.7371,
+     "price_vs_sma200": 1.281,
+     "return_30d": -0.0003,
+     "return_7d": 0.0019,
+     "revenue_driver": "insurance brokerage commissions",
+     "signal_rank": 449,
+     "stock_vs_spy_20d": 0.0062,
+     "ticker": "BWIN"
+    },
+    {
+     "market_cap_m": 1342.5951,
+     "price_vs_sma200": 0.9349,
+     "return_30d": -0.2001,
+     "return_7d": 0.0509,
+     "revenue_driver": "insurance commissions",
+     "signal_rank": 1199,
+     "stock_vs_spy_20d": 0.0804,
+     "ticker": "GSHD"
+    },
+    {
+     "market_cap_m": 483.214,
+     "price_vs_sma200": 1.1525,
+     "return_30d": 0.0,
+     "return_7d": 0.0286,
+     "revenue_driver": "community banking",
+     "signal_rank": 1991,
+     "stock_vs_spy_20d": 0.0295,
+     "ticker": "ACNB"
+    }
+   ],
+   "Vertical Market Software": [
+    {
+     "market_cap_m": 10325.7918,
+     "price_vs_sma200": 1.1602,
+     "return_30d": 0.2568,
+     "return_7d": 0.0996,
+     "revenue_driver": "infrastructure engineering SaaS",
+     "signal_rank": 1077,
+     "stock_vs_spy_20d": 0.2741,
+     "ticker": "BSY"
+    },
+    {
+     "market_cap_m": 40258.7956,
+     "price_vs_sma200": 1.533,
+     "return_30d": 0.1977,
+     "return_7d": 0.0165,
+     "revenue_driver": "life sciences SaaS platform",
+     "signal_rank": 2078,
+     "stock_vs_spy_20d": 0.1373,
+     "ticker": "VEEV"
+    },
+    {
+     "market_cap_m": 3461.9084,
+     "price_vs_sma200": 1.3444,
+     "return_30d": 0.1318,
+     "return_7d": 0.0884,
+     "revenue_driver": "hospitality PMS SaaS",
+     "signal_rank": 965,
+     "stock_vs_spy_20d": 0.2722,
+     "ticker": "AGYS"
+    },
+    {
+     "market_cap_m": 8515.0919,
+     "price_vs_sma200": 1.1715,
+     "return_30d": 0.1063,
+     "return_7d": 0.0712,
+     "revenue_driver": "construction project management SaaS",
+     "signal_rank": 1837,
+     "stock_vs_spy_20d": 0.2803,
+     "ticker": "PCOR"
+    },
+    {
+     "market_cap_m": 16303.5152,
+     "price_vs_sma200": 0.9603,
+     "return_30d": 0.0849,
+     "return_7d": -0.0015,
+     "revenue_driver": "mortgage servicing software",
+     "signal_rank": 730,
+     "stock_vs_spy_20d": 0.0509,
+     "ticker": "APG"
+    },
+    {
+     "market_cap_m": 1293.919,
+     "price_vs_sma200": 1.4666,
+     "return_30d": 0.0515,
+     "return_7d": -0.0114,
+     "revenue_driver": "home services SaaS",
+     "signal_rank": 178,
+     "stock_vs_spy_20d": 0.0329,
+     "ticker": "PRCH"
+    },
+    {
+     "market_cap_m": 722.0253,
+     "price_vs_sma200": 1.1511,
+     "return_30d": 0.0421,
+     "return_7d": 0.0055,
+     "revenue_driver": "OTT streaming platform SaaS",
+     "signal_rank": 899,
+     "stock_vs_spy_20d": 0.0483,
+     "ticker": "CNNE"
+    },
+    {
+     "market_cap_m": 519.6532,
+     "price_vs_sma200": 1.2039,
+     "return_30d": 0.0123,
+     "return_7d": 0.0014,
+     "revenue_driver": "vertical practice management SaaS",
+     "signal_rank": 868,
+     "stock_vs_spy_20d": 0.0221,
+     "ticker": "WEAV"
+    },
+    {
+     "market_cap_m": 21850.1776,
+     "price_vs_sma200": 1.1035,
+     "return_30d": 0.0097,
+     "return_7d": -0.0259,
+     "revenue_driver": "financial services software",
+     "signal_rank": 590,
+     "stock_vs_spy_20d": 0.0522,
+     "ticker": "SSNC"
+    },
+    {
+     "market_cap_m": 5014.4551,
+     "price_vs_sma200": 1.1666,
+     "return_30d": -0.034,
+     "return_7d": -0.0196,
+     "revenue_driver": "property management SaaS",
+     "signal_rank": 1090,
+     "stock_vs_spy_20d": 0.0837,
+     "ticker": "APPF"
+    }
+   ]
+  }
+ },
+ "predictions": {
+  "badge_count": 1,
+  "confidence_score": 0.3009,
+  "conviction_label": "SPECULATIVE",
+  "data_quality_flags": [],
+  "ev_score": 0.1572,
+  "is_diamond": false,
+  "passes_tradability_filter": true,
+  "quality_label": "AVOID",
+  "quantiles": {
+   "downside_q10": -0.2904,
+   "downside_q25": -0.1599,
+   "downside_q50": -0.0891,
+   "downside_q75": -0.021,
+   "downside_q90": 0.0039,
+   "path_volatility": 0.0399,
+   "risk_reward": 2.5827,
+   "uncertainty": 0.6019,
+   "upside_q10": 0.0335,
+   "upside_q25": 0.0994,
+   "upside_q50": 0.2301,
+   "upside_q75": 0.3943,
+   "upside_q90": 0.6354
+  },
+  "rank": 178,
+  "rank_score": 0.0759,
+  "tradability_filter_reasons": []
+ },
+ "profile": {
+  "_local": {
+   "dividend_yield": 0.0,
+   "eps_growth_yoy": -1.2236,
+   "pe_ratio": -100.4878,
+   "revenue_growth_yoy": 0.1579,
+   "roe": 6.8356
+  },
+  "beta": 3.162,
+  "betaTTM": null,
+  "ceo": "Matthew Ehrlichman",
+  "companyName": "Porch Group, Inc.",
+  "country": "US",
+  "debtToEquityTTM": null,
+  "description": "Porch Group, Inc. functions as a technology company, delivering a comprehensive software platform across both the United States and Canada. Its business model is structured around two core segments: Vertical Software and Insurance. The Vertical Software division furnishes specialized software solutions and a range of services tailored for companies in the home services industry. It also facilitates early connections and resources for both prospective and current homeowners. This segment's clientele spans various entities, including home service professionals (such as inspectors), consumers (homebuyers and existing homeowners), and diverse service providers covering moving, insurance, home warranty, security, and telecommunication services. Noteworthy brands within this segment include Floify, HireAHelper, ISN, iRoofing, Palm-Tech, Porch.com, Rynoh, and V12. Conversely, the Insurance segment specializes in providing property-related insurance policies. This is achieved through its proprietary risk-bearing insurance carrier, an independent agency network, and its own home warranty underwriting entity. Key brands associated with this segment are American Home Protect, Elite Insurance Group, and Homeowners of America. Beyond these primary segments, Porch Group also offers a spectrum of additional insurance products, encompassing property and casualty, residential, automotive, flood, and umbrella coverage, in addition to various services for contractors. The company was established in 2011 and maintains its corporate headquarters in Seattle, Washington.",
+  "dividendYielTTM": null,
+  "enterpriseValueOverEBITDATTM": null,
+  "exchangeShortName": "NASDAQ",
+  "fullTimeEmployees": "801",
+  "industry": "Insurance - Property & Casualty",
+  "ipoDate": "2020-01-13",
+  "latest_earnings_date": "2026-07-29",
+  "marketCapTTM": null,
+  "mktCap": 1971839551,
+  "peRatioTTM": null,
+  "price": 17.37,
+  "priceToSalesRatioTTM": null,
+  "returnOnEquityTTM": 0.2517,
+  "revenue_description": "Porch provides software and services tied to homeownership, moving, and insurance. Revenue is driven by subscription ACV from enterprise license agreements and usage-based consumption, with module expansion and new product attach as growth levers.",
+  "revenue_description_themes": [
+   "net new ARR bookings and logo acquisition",
+   "platform module and feature upsell within installed base",
+   "AI-powered lead matching"
+  ],
+  "revenue_taxonomy": [
+   {
+    "bucket": "Vertical Market Software",
+    "matched_tags": [
+     "home services SaaS"
+    ],
+    "path": "Technology › Software & Platforms › Vertical Market Software",
+    "sector": "Technology",
+    "segment": "Software & Platforms"
+   },
+   {
+    "bucket": "Digital Advertising & Performance Marketing",
+    "matched_tags": [
+     "contractor lead gen"
+    ],
+    "path": "Media, Advertising & Information › Advertising & Media › Digital Advertising & Performance Marketing",
+    "sector": "Media, Advertising & Information",
+    "segment": "Advertising & Media"
+   },
+   {
+    "bucket": "Insurance Brokerage, Distribution & Claims Services",
+    "matched_tags": [
+     "home insurance platform"
+    ],
+    "path": "Financials › Capital Markets Insurance & Investments › Insurance Brokerage, Distribution & Claims Services",
+    "sector": "Financials",
+    "segment": "Capital Markets Insurance & Investments"
+   }
+  ],
+  "revenue_themes": [
+   "home services SaaS",
+   "contractor lead gen",
+   "home insurance platform"
+  ],
+  "sector": "Financial Services",
+  "website": "https://porchgroup.com"
+ },
+ "report": {
+  "display_rank": 4,
+  "lane": "wait",
+  "lane_rank": 4,
+  "setup_label": "smooth_continuation",
+  "why_now": "Structural analogs leads the readiness mix (+13.0); smooth uptrend continuation"
+ },
+ "scorecard": {
+  "headline": {
+   "avg_universe_pct": 46,
+   "label": "mixed",
+   "metric_count": 7
+  },
+  "metrics": {
+   "debt_to_equity": {
+    "direction": "lower",
+    "label": "D/E Ratio",
+    "sector": "Info Tech",
+    "sector_n": 312,
+    "sector_pct": 0,
+    "universe_n": 2082,
+    "universe_pct": 1,
+    "value": 20.9276
+   },
+   "eps_growth_yoy": {
+    "direction": "higher",
+    "label": "EPS Growth",
+    "sector": "Info Tech",
+    "sector_n": 311,
+    "sector_pct": 7,
+    "universe_n": 1892,
+    "universe_pct": 9,
+    "value": -1.2236
+   },
+   "gross_margin": {
+    "direction": "higher",
+    "label": "Gross Margin",
+    "sector": "Info Tech",
+    "sector_n": 311,
+    "sector_pct": 71,
+    "universe_n": 2010,
+    "universe_pct": 82,
+    "value": 0.7276
+   },
+   "operating_margin": {
+    "direction": "higher",
+    "label": "Op. Margin",
+    "sector": "Info Tech",
+    "sector_n": 311,
+    "sector_pct": 48,
+    "universe_n": 2010,
+    "universe_pct": 42,
+    "value": 0.0803
+   },
+   "revenue_growth_yoy": {
+    "direction": "higher",
+    "label": "Rev Growth",
+    "sector": "Info Tech",
+    "sector_n": 311,
+    "sector_pct": 54,
+    "universe_n": 1834,
+    "universe_pct": 70,
+    "value": 0.1579
+   },
+   "roe": {
+    "direction": "higher",
+    "label": "ROE",
+    "sector": "Info Tech",
+    "sector_n": 315,
+    "sector_pct": 100,
+    "universe_n": 2102,
+    "universe_pct": 99,
+    "value": 6.8356
+   },
+   "roic": {
+    "direction": "higher",
+    "label": "ROIC",
+    "sector": "Info Tech",
+    "sector_n": 311,
+    "sector_pct": 21,
+    "universe_n": 2053,
+    "universe_pct": 19,
+    "value": -0.0125
+   }
+  }
+ },
+ "signal_rank": 178,
+ "structural_analogs": {
+  "gp_core_pct": 98.0,
+  "gp_core_ratio": 2.7859,
+  "matches": [
+   {
+    "actual_downside": -0.1917,
+    "actual_return": 0.0394,
+    "actual_upside": 0.0394,
+    "days_in_region": 103,
+    "end_date": "2002-08-26",
+    "end_reason": "reversal",
+    "seq_len": 103,
+    "similarity": 0.53,
+    "start_date": "2002-05-13",
+    "ticker": "PTEN",
+    "total_distance": 0.3175,
+    "trigger_date": "2002-06-03",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": -0.1217,
+    "actual_return": 0.0278,
+    "actual_upside": 0.0278,
+    "days_in_region": 98,
+    "end_date": "2021-07-30",
+    "end_reason": "reversal",
+    "seq_len": 98,
+    "similarity": 0.5176,
+    "start_date": "2021-05-04",
+    "ticker": "MEG",
+    "total_distance": 0.3292,
+    "trigger_date": "2021-05-21",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": -0.0833,
+    "actual_return": 0.3021,
+    "actual_upside": 0.3021,
+    "days_in_region": 96,
+    "end_date": "1991-08-28",
+    "end_reason": "reversal",
+    "seq_len": 96,
+    "similarity": 0.5165,
+    "start_date": "1991-04-18",
+    "ticker": "MEC",
+    "total_distance": 0.3303,
+    "trigger_date": "1991-04-25",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": 0.0,
+    "actual_return": 0.4254,
+    "actual_upside": 0.4254,
+    "days_in_region": 96,
+    "end_date": "2015-11-02",
+    "end_reason": "reversal",
+    "seq_len": 96,
+    "similarity": 0.5163,
+    "start_date": "2015-02-26",
+    "ticker": "DGII",
+    "total_distance": 0.3305,
+    "trigger_date": "2015-04-17",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": -0.0974,
+    "actual_return": 0.161,
+    "actual_upside": 0.161,
+    "days_in_region": 89,
+    "end_date": "1999-11-26",
+    "end_reason": "reversal",
+    "seq_len": 89,
+    "similarity": 0.514,
+    "start_date": "1999-07-12",
+    "ticker": "MLI",
+    "total_distance": 0.3327,
+    "trigger_date": "1999-08-19",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": -0.2386,
+    "actual_return": 0.4365,
+    "actual_upside": 0.4365,
+    "days_in_region": 95,
+    "end_date": "1992-03-20",
+    "end_reason": "reversal",
+    "seq_len": 95,
+    "similarity": 0.5113,
+    "start_date": "1991-08-14",
+    "ticker": "JPM",
+    "total_distance": 0.3354,
+    "trigger_date": "1991-10-02",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": -0.2236,
+    "actual_return": 0.5404,
+    "actual_upside": 0.5404,
+    "days_in_region": 103,
+    "end_date": "1992-02-26",
+    "end_reason": "reversal",
+    "seq_len": 103,
+    "similarity": 0.5102,
+    "start_date": "1991-08-13",
+    "ticker": "SBK",
+    "total_distance": 0.3365,
+    "trigger_date": "1991-10-11",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": -0.0169,
+    "actual_return": 0.3127,
+    "actual_upside": 0.3127,
+    "days_in_region": 91,
+    "end_date": "2020-10-13",
+    "end_reason": "reversal",
+    "seq_len": 91,
+    "similarity": 0.5101,
+    "start_date": "2020-08-05",
+    "ticker": "GDOT",
+    "total_distance": 0.3365,
+    "trigger_date": "2020-09-17",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": -0.0172,
+    "actual_return": 0.2349,
+    "actual_upside": 0.2349,
+    "days_in_region": 101,
+    "end_date": "2003-11-07",
+    "end_reason": "reversal",
+    "seq_len": 101,
+    "similarity": 0.5081,
+    "start_date": "2003-07-08",
+    "ticker": "HVT",
+    "total_distance": 0.3385,
+    "trigger_date": "2003-07-18",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": -0.0426,
+    "actual_return": 0.3418,
+    "actual_upside": 0.3418,
+    "days_in_region": 100,
+    "end_date": "2012-11-06",
+    "end_reason": "reversal",
+    "seq_len": 100,
+    "similarity": 0.5072,
+    "start_date": "2012-04-27",
+    "ticker": "ASGN",
+    "total_distance": 0.3394,
+    "trigger_date": "2012-06-04",
+    "trigger_type": "drawdown"
+   }
+  ],
+  "panel": {
+   "edge": 0.2002,
+   "hit_hi": 0.913,
+   "hit_lo": 0.775,
+   "hit_rate": 0.857,
+   "median_final": 0.2299,
+   "median_pain": 0.0422,
+   "n": 42,
+   "n_eff": 42.0,
+   "p25_final": 0.1186,
+   "p_pain_gt5": 0.476,
+   "return_to_pain": 3.698
+  },
+  "stats": {
+   "avg_similarity": 0.457,
+   "avg_trough": 0.106,
+   "avg_upside": 0.225,
+   "median_pain": 0.0867,
+   "median_return": 0.1541,
+   "n_matches": 200,
+   "p25_return": -0.032,
+   "p_pain_gt5": 0.59,
+   "return_to_pain": 1.444,
+   "top5_avg_trough": 0.0988,
+   "top5_avg_upside": 0.1911,
+   "top_similarity": 0.53,
+   "win_rate": 0.72
+  },
+  "total_matches": 200
+ },
+ "ticker": "PRCH",
+ "trending": {
+  "acceleration": 0.0022,
+  "avg_vol_20d": 1610633.535,
+  "base_high_120": 18.59,
+  "breakout_confirmed": 0,
+  "close": 17.37,
+  "momentum_score": 0.8356,
+  "momentum_start": "2026-06-11",
+  "range_20": 0.1543,
+  "range_50": 0.1877,
+  "rank": 834,
+  "rank_down": null,
+  "rank_up": 194,
+  "ret_120": 0.5467,
+  "ret_20": 0.0321,
+  "ret_60": 0.2021,
+  "rundown_score": 0.1499,
+  "score_date": "2026-10-26",
+  "slope_20": 0.0034,
+  "slope_60": 0.0012,
+  "stage": "sustained",
+  "stage_label": "Trending",
+  "ticker": "PRCH",
+  "total_score": 0.441,
+  "trend_ratio": 1.2798,
+  "vcp_detected": 0,
+  "vcp_score": 0.1779
+ }
+}

@@ -1,0 +1,1129 @@
+{
+ "date": "2026-10-26",
+ "detected_regions": {
+  "primary": {
+   "days_in_region": 104,
+   "region_start": "2026-08-25",
+   "trigger_date": "2026-09-22",
+   "trigger_type": "compression"
+  },
+  "secondary": [
+   {
+    "confidence_score": 0.0429,
+    "downside_q50": -0.1641,
+    "ev_score": 0.0682,
+    "region_start": "2026-06-22",
+    "seq_len": 149,
+    "trigger_date": "2026-10-26",
+    "trigger_type": "severe_drawdown",
+    "upside_q25": 0.0784,
+    "upside_q50": 0.2166,
+    "upside_q75": 0.3845
+   }
+  ]
+ },
+ "feature_attribution": {
+  "macro_driver_count": 14,
+  "risk_flags": [
+   "high_volatility"
+  ],
+  "top_drivers": [
+   {
+    "direction": "negative",
+    "feature": "dollar_volume",
+    "feature_value": 704357696.0,
+    "importance": 0.0009,
+    "importance_pct": 0.3062,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "positive",
+    "feature": "price_vs_low_52w",
+    "feature_value": 1.4628,
+    "importance": 0.0005,
+    "importance_pct": 0.1906,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "negative",
+    "feature": "ma_200_slope",
+    "feature_value": 0.0316,
+    "importance": 0.0004,
+    "importance_pct": 0.1508,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "positive",
+    "feature": "volatility_20d",
+    "feature_value": 0.0838,
+    "importance": 0.0004,
+    "importance_pct": 0.1459,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "positive",
+    "feature": "price_vs_sma200",
+    "feature_value": 0.6672,
+    "importance": 0.0004,
+    "importance_pct": 0.1306,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "negative",
+    "feature": "stock_vs_spy_change_5d",
+    "feature_value": -0.1193,
+    "importance": 0.0002,
+    "importance_pct": 0.0758,
+    "method": "integrated_gradients"
+   }
+  ]
+ },
+ "fundamentals": {
+  "accrual": 0.0678,
+  "adx_14": 54.0376,
+  "altman_z_score": 2.7223,
+  "amihud_illiquidity": 0.0001,
+  "avg_volume": 3072946.8592,
+  "beta_252d": 1.2039,
+  "book_value_per_share": 19.3294,
+  "correlation_spy_60d": 0.5426,
+  "current_liabilities": 1773.485,
+  "current_ratio": 1.67,
+  "daily_earnings_yield": 0.0304,
+  "daily_fcf_yield": -0.0065,
+  "daily_pb": 4.3256,
+  "daily_pe": 32.9015,
+  "daily_ps": 2.3078,
+  "days_since_52w_high": 88.0,
+  "debt_ebitda": 2.8355,
+  "debt_to_equity": 0.8049,
+  "dividend_yield": 0.0,
+  "dollar_volume_20d_avg": 432057652.2049,
+  "earnings_quality": null,
+  "ebitda_growth_yoy": 0.5313,
+  "enterprise_value": 9602.3255,
+  "eps_basic": 0.8,
+  "eps_cagr_3y": 1.0694,
+  "eps_cagr_5y": 0.2661,
+  "eps_diluted": 0.79,
+  "eps_growth_accel": -0.486,
+  "eps_growth_qoq": 0.0,
+  "eps_growth_yoy": 0.9922,
+  "eps_growth_yoy_q2": 1.4783,
+  "eps_growth_yoy_q3": 1.4545,
+  "eps_growth_yoy_q4": 2.1455,
+  "eps_growth_yoy_q5": 0.9254,
+  "eps_growth_yoy_q6": 4.4118,
+  "eps_growth_yoy_q7": 10.0,
+  "eps_growth_yoy_q8": 4.0556,
+  "eps_history_8q": [
+   0.05,
+   0.31,
+   0.4,
+   0.5,
+   0.48,
+   0.47,
+   0.77,
+   0.79
+  ],
+  "eps_ttm": 2.5987,
+  "ev_to_ebitda": 16.5627,
+  "ev_to_fcf": null,
+  "ev_to_sales": 7.9763,
+  "fcf_growth_yoy": null,
+  "fcf_margin": null,
+  "fcf_per_share": null,
+  "gross_margin": 0.216,
+  "gross_margin_change_yoy": -0.0117,
+  "gross_margin_history": [
+   0.247,
+   0.2445,
+   0.2339,
+   0.2241,
+   0.2159,
+   0.216
+  ],
+  "inc_roic": 0.0028,
+  "interest_coverage": 12.5269,
+  "is_pre_revenue": false,
+  "margin_vs_sector_median": null,
+  "market_cap_ratio": 8834.8005,
+  "net_income": 84.803,
+  "net_margin": 0.0701,
+  "operating_income": 162.117,
+  "operating_margin": 0.1103,
+  "operating_margin_change_yoy": 0.0385,
+  "pb_ratio": 4.4233,
+  "pe_percentile_1y": 0.9921,
+  "pe_ratio": 32.9015,
+  "peg_trailing": 0.2967,
+  "piotroski_f_score": 2.0,
+  "price_vs_high_52w": 0.3861,
+  "price_vs_sma200": 0.6672,
+  "ps_percentile_1y": 0.9683,
+  "ps_ratio": 1.9944,
+  "quarter_labels_8q": [
+   "Q4 '24",
+   "Q1 '25",
+   "Q2 '25",
+   "Q3 '25",
+   "Q4 '25",
+   "Q1 '26",
+   "Q2 '26",
+   "Q3 '26"
+  ],
+  "quarterly_eps_growth_yoy": 0.58,
+  "quarterly_eps_growth_yoy_8q": [
+   -0.7059,
+   2.1,
+   0.6,
+   2.5714,
+   8.6,
+   0.5161,
+   0.925,
+   0.58
+  ],
+  "quarterly_revenue_growth_yoy": 0.5993,
+  "quarterly_revenue_growth_yoy_8q": [
+   0.144,
+   0.1378,
+   0.2074,
+   0.2209,
+   0.1895,
+   0.3042,
+   0.3742,
+   0.5993
+  ],
+  "revenue_cagr_3y": 0.1884,
+  "revenue_cagr_5y": 0.1198,
+  "revenue_growth_accel": 0.0997,
+  "revenue_growth_qoq": 0.199,
+  "revenue_growth_yoy": 0.3756,
+  "revenue_growth_yoy_q2": 0.2759,
+  "revenue_growth_yoy_q3": 0.231,
+  "revenue_growth_yoy_q4": 0.1898,
+  "revenue_growth_yoy_q5": 0.1788,
+  "revenue_growth_yoy_q6": 0.1424,
+  "revenue_growth_yoy_q7": 0.1165,
+  "revenue_growth_yoy_q8": 0.0941,
+  "revenue_history_8q": [
+   650.965,
+   648.668,
+   730.621,
+   752.736,
+   774.32,
+   845.976,
+   1004.054,
+   1203.855
+  ],
+  "revenue_per_share": 11.3931,
+  "roa": 0.0538,
+  "roce": 0.1217,
+  "roe": 0.135,
+  "roic": 0.0709,
+  "rsi_14": 36.888,
+  "sector_momentum": -0.0615,
+  "share_dilution_1y": 0.0132,
+  "stock_vs_sector_20d": -0.2849,
+  "stock_vs_spy_20d": -0.3107,
+  "total_assets": 5562.92,
+  "vol_regime": 1.377,
+  "volatility_20d": 0.0838,
+  "volatility_60d": 0.0609,
+  "w52_high": 223.83,
+  "w52_low": 55.44
+ },
+ "market_characters": [
+  {
+   "id": "g8",
+   "name": "Boom-Bust"
+  },
+  {
+   "id": "g11",
+   "name": "Overnight Momentum"
+  }
+ ],
+ "model_analogs": {
+  "matches": [
+   {
+    "actual_downside": -0.362,
+    "actual_return": -0.0792,
+    "actual_upside": 0.7229,
+    "days_in_region": 183,
+    "end_date": "2020-03-31",
+    "end_reason": "reversal",
+    "similarity": 0.9765,
+    "start_date": "2019-09-30",
+    "ticker": "CVET",
+    "trigger_date": "2019-10-25",
+    "trigger_type": "compression"
+   },
+   {
+    "actual_downside": -0.0535,
+    "actual_return": 0.0838,
+    "actual_upside": 0.0838,
+    "days_in_region": 127,
+    "end_date": "2019-11-05",
+    "end_reason": "reversal",
+    "similarity": 0.9752,
+    "start_date": "2019-07-01",
+    "ticker": "XONE",
+    "trigger_date": "2019-10-14",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": -0.6117,
+    "actual_return": -0.5491,
+    "actual_upside": 0.0063,
+    "days_in_region": 45,
+    "end_date": "1998-10-15",
+    "end_reason": "new_pattern",
+    "similarity": 0.9749,
+    "start_date": "1998-08-31",
+    "ticker": "AVID",
+    "trigger_date": "1998-09-02",
+    "trigger_type": "runup"
+   },
+   {
+    "actual_downside": -0.2684,
+    "actual_return": -0.2684,
+    "actual_upside": 0.0455,
+    "days_in_region": 48,
+    "end_date": "2018-11-27",
+    "end_reason": "reversal",
+    "similarity": 0.9744,
+    "start_date": "2018-10-10",
+    "ticker": "XNET",
+    "trigger_date": "2018-11-02",
+    "trigger_type": "runup"
+   },
+   {
+    "actual_downside": -0.2252,
+    "actual_return": -0.0751,
+    "actual_upside": 0.1359,
+    "days_in_region": 42,
+    "end_date": "2019-11-25",
+    "end_reason": "new_pattern",
+    "similarity": 0.9738,
+    "start_date": "2019-10-14",
+    "ticker": "APHA",
+    "trigger_date": "2019-10-17",
+    "trigger_type": "shallow_runup"
+   },
+   {
+    "actual_downside": -0.2359,
+    "actual_return": -0.0078,
+    "actual_upside": 0.0,
+    "days_in_region": 75,
+    "end_date": "2019-09-11",
+    "end_reason": "reversal",
+    "similarity": 0.9736,
+    "start_date": "2019-06-28",
+    "ticker": "HROW",
+    "trigger_date": "2019-08-13",
+    "trigger_type": "severe_drawdown"
+   },
+   {
+    "actual_downside": -0.4121,
+    "actual_return": -0.4121,
+    "actual_upside": 0.0,
+    "days_in_region": 53,
+    "end_date": "2018-12-21",
+    "end_reason": "reversal",
+    "similarity": 0.9735,
+    "start_date": "2018-10-29",
+    "ticker": "CWH",
+    "trigger_date": "2018-11-05",
+    "trigger_type": "shallow_runup"
+   },
+   {
+    "actual_downside": -0.2726,
+    "actual_return": -0.1617,
+    "actual_upside": 0.5414,
+    "days_in_region": 207,
+    "end_date": "2020-03-13",
+    "end_reason": "reversal",
+    "similarity": 0.9733,
+    "start_date": "2019-08-19",
+    "ticker": "LOMA",
+    "trigger_date": "2019-09-16",
+    "trigger_type": "compression"
+   },
+   {
+    "actual_downside": -0.0568,
+    "actual_return": -0.0568,
+    "actual_upside": 0.6288,
+    "days_in_region": 53,
+    "end_date": "2018-12-21",
+    "end_reason": "reversal",
+    "similarity": 0.9732,
+    "start_date": "2018-10-29",
+    "ticker": "KODK",
+    "trigger_date": "2018-11-05",
+    "trigger_type": "shallow_runup"
+   },
+   {
+    "actual_downside": -0.2302,
+    "actual_return": -0.2302,
+    "actual_upside": 0.1512,
+    "days_in_region": 207,
+    "end_date": "2019-12-13",
+    "end_reason": "reversal",
+    "similarity": 0.9729,
+    "start_date": "2019-05-20",
+    "ticker": "HUYA",
+    "trigger_date": "2019-10-28",
+    "trigger_type": "shallow_runup"
+   }
+  ],
+  "stats": {
+   "avg_max_drawdown": 0.203,
+   "avg_similarity": 0.972,
+   "avg_trough": 0.203,
+   "avg_upside": 0.2368,
+   "best_return": 0.5518,
+   "downside_range": [
+    -0.6117,
+    0.0
+   ],
+   "median_return": -0.0752,
+   "n_matches": 50,
+   "outcome_agreement": false,
+   "return_p25": -0.2415,
+   "return_p5": -0.4765,
+   "return_p75": 0.1671,
+   "return_p95": 0.4226,
+   "sim_weighted_win_rate": 0.38,
+   "top5_avg_trough": 0.3042,
+   "top5_avg_upside": 0.1989,
+   "top_similarity": 0.977,
+   "upside_range": [
+    0.0,
+    0.8553
+   ],
+   "win_rate": 0.38,
+   "worst_return": -0.5491,
+   "years_span": 13
+  },
+  "total_matches": 50
+ },
+ "peer_group": {
+  "buckets": [
+   "Aerospace & Defense Components, Electronics & Aftermarket",
+   "Industrial Electronics, Sensors & Embedded Systems",
+   "RF, Connectivity & Communications Semiconductors"
+  ],
+  "groups": {
+   "Aerospace & Defense Components, Electronics & Aftermarket": [
+    {
+     "market_cap_m": 1807.526,
+     "price_vs_sma200": 1.0247,
+     "return_30d": 0.0492,
+     "return_7d": 0.0404,
+     "revenue_driver": "aerospace composite components",
+     "signal_rank": 92,
+     "stock_vs_spy_20d": 0.0519,
+     "ticker": "AIN"
+    },
+    {
+     "market_cap_m": 1460.116,
+     "price_vs_sma200": 0.622,
+     "return_30d": -0.0894,
+     "return_7d": -0.006,
+     "revenue_driver": "silicon anode battery cells",
+     "signal_rank": 1660,
+     "stock_vs_spy_20d": -0.1294,
+     "ticker": "AMPX"
+    },
+    {
+     "market_cap_m": 61321.7374,
+     "price_vs_sma200": 0.9541,
+     "return_30d": -0.1255,
+     "return_7d": -0.1308,
+     "revenue_driver": "titanium aerospace materials",
+     "signal_rank": 618,
+     "stock_vs_spy_20d": -0.0885,
+     "ticker": "ATI"
+    },
+    {
+     "market_cap_m": 278.3915,
+     "price_vs_sma200": 0.7695,
+     "return_30d": -0.131,
+     "return_7d": 0.0043,
+     "revenue_driver": "used aircraft sales",
+     "signal_rank": null,
+     "stock_vs_spy_20d": -0.1094,
+     "ticker": "ASLE"
+    },
+    {
+     "market_cap_m": 9831.8418,
+     "price_vs_sma200": 0.9051,
+     "return_30d": -0.132,
+     "return_7d": -0.0476,
+     "revenue_driver": "commercial vehicle transmissions",
+     "signal_rank": 357,
+     "stock_vs_spy_20d": -0.0561,
+     "ticker": "ALSN"
+    },
+    {
+     "market_cap_m": 6889.657,
+     "price_vs_sma200": 0.806,
+     "return_30d": -0.1565,
+     "return_7d": -0.0278,
+     "revenue_driver": "aircraft lighting systems",
+     "signal_rank": 885,
+     "stock_vs_spy_20d": -0.1143,
+     "ticker": "ATRO"
+    },
+    {
+     "market_cap_m": 4553.1906,
+     "price_vs_sma200": 0.8219,
+     "return_30d": -0.1894,
+     "return_7d": -0.0065,
+     "revenue_driver": "aircraft parts distribution",
+     "signal_rank": 862,
+     "stock_vs_spy_20d": -0.1534,
+     "ticker": "AIR"
+    },
+    {
+     "market_cap_m": 7635.1276,
+     "price_vs_sma200": 0.6672,
+     "return_30d": -0.2448,
+     "return_7d": -0.1565,
+     "revenue_driver": "PCB manufacturing",
+     "signal_rank": 1775,
+     "stock_vs_spy_20d": -0.3107,
+     "ticker": "TTMI"
+    },
+    {
+     "market_cap_m": 7503.9741,
+     "price_vs_sma200": 0.5311,
+     "return_30d": -0.2556,
+     "return_7d": -0.0249,
+     "revenue_driver": "eVTOL aircraft manufacturing",
+     "signal_rank": 1386,
+     "stock_vs_spy_20d": -0.2316,
+     "ticker": "JOBY"
+    },
+    {
+     "market_cap_m": null,
+     "price_vs_sma200": null,
+     "return_30d": null,
+     "return_7d": null,
+     "revenue_driver": "aerospace engineered components",
+     "signal_rank": null,
+     "stock_vs_spy_20d": null,
+     "ticker": "B"
+    }
+   ],
+   "Industrial Electronics, Sensors & Embedded Systems": [
+    {
+     "market_cap_m": 86.6362,
+     "price_vs_sma200": 0.6631,
+     "return_30d": 0.125,
+     "return_7d": 0.0237,
+     "revenue_driver": "AI video analytics",
+     "signal_rank": null,
+     "stock_vs_spy_20d": -0.2819,
+     "ticker": "AISP"
+    },
+    {
+     "market_cap_m": 13395.2235,
+     "price_vs_sma200": 1.0658,
+     "return_30d": 0.0732,
+     "return_7d": 0.0429,
+     "revenue_driver": "pressure-sensitive labeling",
+     "signal_rank": 2011,
+     "stock_vs_spy_20d": 0.068,
+     "ticker": "AVY"
+    },
+    {
+     "market_cap_m": 613.0742,
+     "price_vs_sma200": 0.9755,
+     "return_30d": 0.0497,
+     "return_7d": -0.0513,
+     "revenue_driver": "electronics manufacturing services",
+     "signal_rank": 387,
+     "stock_vs_spy_20d": -0.086,
+     "ticker": "KE"
+    },
+    {
+     "market_cap_m": 5745.2852,
+     "price_vs_sma200": 0.972,
+     "return_30d": -0.0282,
+     "return_7d": 0.0029,
+     "revenue_driver": "residential security monitoring",
+     "signal_rank": 1354,
+     "stock_vs_spy_20d": 0.1123,
+     "ticker": "ADT"
+    },
+    {
+     "market_cap_m": 196705.7992,
+     "price_vs_sma200": 0.556,
+     "return_30d": -0.0418,
+     "return_7d": -0.0763,
+     "revenue_driver": "electronic connectors",
+     "signal_rank": 477,
+     "stock_vs_spy_20d": -0.1097,
+     "ticker": "APH"
+    },
+    {
+     "market_cap_m": 2644.1707,
+     "price_vs_sma200": 0.9278,
+     "return_30d": -0.0734,
+     "return_7d": -0.0856,
+     "revenue_driver": "contract electronics manufacturing",
+     "signal_rank": 519,
+     "stock_vs_spy_20d": -0.1905,
+     "ticker": "BHE"
+    },
+    {
+     "market_cap_m": 409.5045,
+     "price_vs_sma200": 0.7271,
+     "return_30d": -0.1475,
+     "return_7d": 0.0442,
+     "revenue_driver": "fleet management telematics",
+     "signal_rank": 1229,
+     "stock_vs_spy_20d": -0.0068,
+     "ticker": "AIOT"
+    },
+    {
+     "market_cap_m": 11398.4196,
+     "price_vs_sma200": 0.8416,
+     "return_30d": -0.177,
+     "return_7d": -0.1452,
+     "revenue_driver": "electronics manufacturing services",
+     "signal_rank": 1007,
+     "stock_vs_spy_20d": -0.266,
+     "ticker": "SANM"
+    },
+    {
+     "market_cap_m": 7635.1276,
+     "price_vs_sma200": 0.6672,
+     "return_30d": -0.2448,
+     "return_7d": -0.1565,
+     "revenue_driver": "PCB manufacturing",
+     "signal_rank": 1775,
+     "stock_vs_spy_20d": -0.3107,
+     "ticker": "TTMI"
+    },
+    {
+     "market_cap_m": 1517.6208,
+     "price_vs_sma200": 0.5794,
+     "return_30d": -0.3245,
+     "return_7d": -0.0987,
+     "revenue_driver": "FMCW lidar sensing systems",
+     "signal_rank": 1651,
+     "stock_vs_spy_20d": -0.3047,
+     "ticker": "AEVA"
+    }
+   ],
+   "RF, Connectivity & Communications Semiconductors": [
+    {
+     "market_cap_m": 876.7786,
+     "price_vs_sma200": 0.967,
+     "return_30d": 0.0587,
+     "return_7d": 0.0055,
+     "revenue_driver": "semiconductor IP licensing",
+     "signal_rank": 1001,
+     "stock_vs_spy_20d": -0.1514,
+     "ticker": "CEVA"
+    },
+    {
+     "market_cap_m": 53784.1007,
+     "price_vs_sma200": 1.0257,
+     "return_30d": 0.0096,
+     "return_7d": -0.1406,
+     "revenue_driver": "data-center connectivity chips",
+     "signal_rank": 1177,
+     "stock_vs_spy_20d": -0.2605,
+     "ticker": "ALAB"
+    },
+    {
+     "market_cap_m": 68707.6057,
+     "price_vs_sma200": 1.2989,
+     "return_30d": -0.0203,
+     "return_7d": -0.0592,
+     "revenue_driver": "optical transceivers and switches",
+     "signal_rank": null,
+     "stock_vs_spy_20d": 0.071,
+     "ticker": "LITE"
+    },
+    {
+     "market_cap_m": 1741084.84,
+     "price_vs_sma200": 0.895,
+     "return_30d": -0.0451,
+     "return_7d": -0.044,
+     "revenue_driver": "data center semiconductors",
+     "signal_rank": 106,
+     "stock_vs_spy_20d": -0.0575,
+     "ticker": "AVGO"
+    },
+    {
+     "market_cap_m": 7783.1579,
+     "price_vs_sma200": 0.8216,
+     "return_30d": -0.1049,
+     "return_7d": -0.0677,
+     "revenue_driver": "utility test equipment",
+     "signal_rank": 381,
+     "stock_vs_spy_20d": -0.1137,
+     "ticker": "ESE"
+    },
+    {
+     "market_cap_m": 1011.6094,
+     "price_vs_sma200": 0.557,
+     "return_30d": -0.142,
+     "return_7d": -0.0214,
+     "revenue_driver": "electro-optic polymer materials",
+     "signal_rank": 1375,
+     "stock_vs_spy_20d": -0.1772,
+     "ticker": "LWLG"
+    },
+    {
+     "market_cap_m": 51205.4878,
+     "price_vs_sma200": 0.7494,
+     "return_30d": -0.1689,
+     "return_7d": -0.1161,
+     "revenue_driver": "industrial laser systems",
+     "signal_rank": 1702,
+     "stock_vs_spy_20d": -0.215,
+     "ticker": "COHR"
+    },
+    {
+     "market_cap_m": 836.019,
+     "price_vs_sma200": 1.0808,
+     "return_30d": -0.2131,
+     "return_7d": -0.0386,
+     "revenue_driver": "precision frequency electronics",
+     "signal_rank": 1502,
+     "stock_vs_spy_20d": -0.1836,
+     "ticker": "FEIM"
+    },
+    {
+     "market_cap_m": 123.6216,
+     "price_vs_sma200": 0.6812,
+     "return_30d": -0.2249,
+     "return_7d": 0.0214,
+     "revenue_driver": "rf microwave components",
+     "signal_rank": 1278,
+     "stock_vs_spy_20d": -0.1674,
+     "ticker": "AMPG"
+    },
+    {
+     "market_cap_m": 7635.1276,
+     "price_vs_sma200": 0.6672,
+     "return_30d": -0.2448,
+     "return_7d": -0.1565,
+     "revenue_driver": "PCB manufacturing",
+     "signal_rank": 1775,
+     "stock_vs_spy_20d": -0.3107,
+     "ticker": "TTMI"
+    }
+   ]
+  }
+ },
+ "predictions": {
+  "badge_count": 0,
+  "confidence_score": 0.0287,
+  "conviction_label": "SPECULATIVE",
+  "data_quality_flags": [],
+  "ev_score": 0.0427,
+  "is_diamond": false,
+  "passes_tradability_filter": true,
+  "quality_label": "MEDIUM",
+  "quantiles": {
+   "downside_q10": -0.4684,
+   "downside_q25": -0.2937,
+   "downside_q50": -0.1806,
+   "downside_q75": -0.0623,
+   "downside_q90": -0.0092,
+   "path_volatility": 0.0603,
+   "risk_reward": 1.1479,
+   "uncertainty": 0.606,
+   "upside_q10": 0.0191,
+   "upside_q25": 0.0695,
+   "upside_q50": 0.2073,
+   "upside_q75": 0.3635,
+   "upside_q90": 0.6251
+  },
+  "rank": 1775,
+  "rank_score": 0.0014,
+  "tradability_filter_reasons": []
+ },
+ "profile": {
+  "_local": {
+   "dividend_yield": 0.0,
+   "eps_growth_yoy": 0.9922,
+   "pe_ratio": 29.4382,
+   "revenue_growth_yoy": 0.3756,
+   "roe": 0.135
+  },
+  "beta": 2.138,
+  "betaTTM": null,
+  "ceo": "Edwin Roks",
+  "companyName": "TTM Technologies, Inc.",
+  "country": "US",
+  "debtToEquityTTM": null,
+  "description": "Operating globally, TTM Technologies, Inc. (TTMI) specializes in the production and distribution of printed circuit boards (PCBs). The company's operations are structured into two key segments: Printed Circuit Boards (PCBs) and RF&S Components. Their diverse product line encompasses a wide array of PCB solutions, from conventional and high-density interconnect (HDI) designs to substrate-like (SLP), flexible, and rigid-flex boards, as well as specialized RF and microwave circuits. Additionally, TTM offers integrated circuit (IC) substrates, custom assemblies, system integration products, multi-chip modules, and various RF components, including passive and advanced ceramic types, along with beamforming and switching networks. Furthermore, their capabilities extend to advanced printed circuits incorporating heavy copper cores, embedded or press-fit coins, and sophisticated thermal management features, such as electrically passive heat sinks and active thermal cores. To support clients, the firm provides an array of value-added services, including RF design-to-specification, design for manufacturability (DFM), PCB layout creation, simulation, testing, and expedited turnaround times. Their primary customers are original equipment manufacturers (OEMs) and electronic manufacturing services (EMS) companies. These clients serve critical markets such as aerospace and defense, data center computing, automotive components, medical devices, industrial applications, and instrumentation. Founded in 1978, TTM Technologies, Inc. maintains its corporate headquarters in Santa Ana, California.",
+  "dividendYielTTM": null,
+  "enterpriseValueOverEBITDATTM": null,
+  "exchangeShortName": "NASDAQ",
+  "fullTimeEmployees": "18200",
+  "industry": "Hardware, Equipment & Parts",
+  "ipoDate": "2000-09-25",
+  "latest_earnings_date": "2026-10-22",
+  "marketCapTTM": null,
+  "mktCap": 9007327872,
+  "peRatioTTM": null,
+  "price": 85.5,
+  "priceToSalesRatioTTM": null,
+  "returnOnEquityTTM": 0.1418,
+  "revenue_description": "TTM Technologies manufactures printed circuit boards and related electronics. Revenue is driven by unit volume growth and pricing realization in its core end markets, with new product introductions and geographic expansion as incremental catalysts.",
+  "revenue_description_themes": [
+   "Aerospace and defense demand recovery",
+   "Pricing realization above input cost inflation",
+   "RF components and assemblies expansion"
+  ],
+  "revenue_taxonomy": [
+   {
+    "bucket": "Industrial Electronics, Sensors & Embedded Systems",
+    "matched_tags": [
+     "PCB manufacturing"
+    ],
+    "path": "Technology › Hardware & Semiconductors › Industrial Electronics, Sensors & Embedded Systems",
+    "sector": "Technology",
+    "segment": "Hardware & Semiconductors"
+   },
+   {
+    "bucket": "Aerospace & Defense Components, Electronics & Aftermarket",
+    "matched_tags": [
+     "Aerospace and defense PCBs"
+    ],
+    "path": "Industrials & Transportation › Aerospace Defense & Automation › Aerospace & Defense Components, Electronics & Aftermarket",
+    "sector": "Industrials & Transportation",
+    "segment": "Aerospace Defense & Automation"
+   },
+   {
+    "bucket": "RF, Connectivity & Communications Semiconductors",
+    "matched_tags": [
+     "RF components"
+    ],
+    "path": "Technology › Hardware & Semiconductors › RF, Connectivity & Communications Semiconductors",
+    "sector": "Technology",
+    "segment": "Hardware & Semiconductors"
+   }
+  ],
+  "revenue_themes": [
+   "PCB manufacturing",
+   "Aerospace and defense PCBs",
+   "RF components"
+  ],
+  "sector": "Technology",
+  "website": "https://www.ttm.com"
+ },
+ "report": null,
+ "scorecard": {
+  "headline": {
+   "avg_universe_pct": 54,
+   "label": "mixed",
+   "metric_count": 8
+  },
+  "metrics": {
+   "debt_to_equity": {
+    "direction": "lower",
+    "label": "D/E Ratio",
+    "sector": "Info Tech",
+    "sector_n": 312,
+    "sector_pct": 26,
+    "universe_n": 2082,
+    "universe_pct": 31,
+    "value": 0.8049
+   },
+   "eps_growth_yoy": {
+    "direction": "higher",
+    "label": "EPS Growth",
+    "sector": "Info Tech",
+    "sector_n": 311,
+    "sector_pct": 77,
+    "universe_n": 1892,
+    "universe_pct": 83,
+    "value": 0.9922
+   },
+   "gross_margin": {
+    "direction": "higher",
+    "label": "Gross Margin",
+    "sector": "Info Tech",
+    "sector_n": 311,
+    "sector_pct": 10,
+    "universe_n": 2010,
+    "universe_pct": 18,
+    "value": 0.216
+   },
+   "operating_margin": {
+    "direction": "higher",
+    "label": "Op. Margin",
+    "sector": "Info Tech",
+    "sector_n": 311,
+    "sector_pct": 57,
+    "universe_n": 2010,
+    "universe_pct": 51,
+    "value": 0.1103
+   },
+   "pe_ratio": {
+    "direction": "lower",
+    "label": "P/E",
+    "sector": "Info Tech",
+    "sector_n": 200,
+    "sector_pct": 54,
+    "universe_n": 1474,
+    "universe_pct": 32,
+    "value": 29.4382
+   },
+   "revenue_growth_yoy": {
+    "direction": "higher",
+    "label": "Rev Growth",
+    "sector": "Info Tech",
+    "sector_n": 311,
+    "sector_pct": 85,
+    "universe_n": 1834,
+    "universe_pct": 89,
+    "value": 0.3756
+   },
+   "roe": {
+    "direction": "higher",
+    "label": "ROE",
+    "sector": "Info Tech",
+    "sector_n": 315,
+    "sector_pct": 61,
+    "universe_n": 2102,
+    "universe_pct": 63,
+    "value": 0.135
+   },
+   "roic": {
+    "direction": "higher",
+    "label": "ROIC",
+    "sector": "Info Tech",
+    "sector_n": 311,
+    "sector_pct": 60,
+    "universe_n": 2053,
+    "universe_pct": 64,
+    "value": 0.0224
+   }
+  }
+ },
+ "signal_rank": 1775,
+ "structural_analogs": {
+  "gp_core_pct": 57.5,
+  "gp_core_ratio": 1.4069,
+  "matches": [
+   {
+    "actual_downside": 0.0,
+    "actual_return": 0.2421,
+    "actual_upside": 0.479,
+    "days_in_region": 111,
+    "end_date": "2020-02-25",
+    "end_reason": "reversal",
+    "seq_len": 111,
+    "similarity": 0.465,
+    "start_date": "2019-10-22",
+    "ticker": "AYX",
+    "total_distance": 0.3828,
+    "trigger_date": "2020-01-03",
+    "trigger_type": "runup"
+   },
+   {
+    "actual_downside": -0.2544,
+    "actual_return": -0.2544,
+    "actual_upside": 0.0635,
+    "days_in_region": 94,
+    "end_date": "2021-08-20",
+    "end_reason": "reversal",
+    "seq_len": 94,
+    "similarity": 0.462,
+    "start_date": "2021-05-03",
+    "ticker": "REGI",
+    "total_distance": 0.3861,
+    "trigger_date": "2021-05-17",
+    "trigger_type": "runup"
+   },
+   {
+    "actual_downside": -0.0044,
+    "actual_return": 0.6045,
+    "actual_upside": 1.4628,
+    "days_in_region": 140,
+    "end_date": "2022-01-27",
+    "end_reason": "reversal",
+    "seq_len": 140,
+    "similarity": 0.461,
+    "start_date": "2021-04-06",
+    "ticker": "AOSL",
+    "total_distance": 0.3872,
+    "trigger_date": "2021-05-03",
+    "trigger_type": "compression"
+   },
+   {
+    "actual_downside": -0.3127,
+    "actual_return": -0.3127,
+    "actual_upside": 0.0192,
+    "days_in_region": 102,
+    "end_date": "2022-01-20",
+    "end_reason": "reversal",
+    "seq_len": 102,
+    "similarity": 0.4566,
+    "start_date": "2021-09-08",
+    "ticker": "ANF",
+    "total_distance": 0.3919,
+    "trigger_date": "2021-09-24",
+    "trigger_type": "runup"
+   },
+   {
+    "actual_downside": -0.3671,
+    "actual_return": -0.3671,
+    "actual_upside": 0.0515,
+    "days_in_region": 115,
+    "end_date": "2014-10-15",
+    "end_reason": "reversal",
+    "seq_len": 115,
+    "similarity": 0.454,
+    "start_date": "2014-05-08",
+    "ticker": "QIHU",
+    "total_distance": 0.3948,
+    "trigger_date": "2014-05-23",
+    "trigger_type": "runup"
+   },
+   {
+    "actual_downside": -0.0793,
+    "actual_return": -0.0793,
+    "actual_upside": 0.28,
+    "days_in_region": 65,
+    "end_date": "2021-08-03",
+    "end_reason": "reversal",
+    "seq_len": 65,
+    "similarity": 0.4529,
+    "start_date": "2021-05-13",
+    "ticker": "PSNL",
+    "total_distance": 0.396,
+    "trigger_date": "2021-05-19",
+    "trigger_type": "runup"
+   },
+   {
+    "actual_downside": -0.0512,
+    "actual_return": 0.4892,
+    "actual_upside": 0.7783,
+    "days_in_region": 105,
+    "end_date": "2011-02-22",
+    "end_reason": "reversal",
+    "seq_len": 105,
+    "similarity": 0.4521,
+    "start_date": "2010-07-01",
+    "ticker": "WLT",
+    "total_distance": 0.397,
+    "trigger_date": "2010-07-22",
+    "trigger_type": "runup"
+   },
+   {
+    "actual_downside": -0.2492,
+    "actual_return": -0.2492,
+    "actual_upside": 0.0508,
+    "days_in_region": 112,
+    "end_date": "1997-01-02",
+    "end_reason": "reversal",
+    "seq_len": 112,
+    "similarity": 0.4482,
+    "start_date": "1996-08-20",
+    "ticker": "RSAS",
+    "total_distance": 0.4013,
+    "trigger_date": "1996-10-31",
+    "trigger_type": "runup"
+   },
+   {
+    "actual_downside": -0.0783,
+    "actual_return": -0.0783,
+    "actual_upside": 0.1212,
+    "days_in_region": 90,
+    "end_date": "1998-03-05",
+    "end_reason": "reversal",
+    "seq_len": 90,
+    "similarity": 0.4462,
+    "start_date": "1997-12-19",
+    "ticker": "ETFC",
+    "total_distance": 0.4035,
+    "trigger_date": "1997-12-31",
+    "trigger_type": "runup"
+   },
+   {
+    "actual_downside": -0.0447,
+    "actual_return": -0.0447,
+    "actual_upside": 0.3385,
+    "days_in_region": 96,
+    "end_date": "2021-08-19",
+    "end_reason": "reversal",
+    "seq_len": 96,
+    "similarity": 0.4447,
+    "start_date": "2021-04-07",
+    "ticker": "TRUP",
+    "total_distance": 0.4052,
+    "trigger_date": "2021-05-26",
+    "trigger_type": "runup"
+   }
+  ],
+  "panel": {
+   "edge": -0.1157,
+   "hit_hi": 0.462,
+   "hit_lo": 0.291,
+   "hit_rate": 0.373,
+   "median_final": -0.0788,
+   "median_pain": 0.1331,
+   "n": 51,
+   "n_eff": 51.0,
+   "p25_final": -0.1655,
+   "p_pain_gt5": 0.765,
+   "return_to_pain": -0.515
+  },
+  "stats": {
+   "avg_similarity": 0.41,
+   "avg_trough": 0.1764,
+   "avg_upside": 0.2592,
+   "median_pain": 0.1483,
+   "median_return": -0.0689,
+   "n_matches": 200,
+   "p25_return": -0.1942,
+   "p_pain_gt5": 0.785,
+   "return_to_pain": -0.409,
+   "top5_avg_trough": 0.1877,
+   "top5_avg_upside": 0.4152,
+   "top_similarity": 0.465,
+   "win_rate": 0.415
+  },
+  "total_matches": 200
+ },
+ "ticker": "TTMI",
+ "trending": {
+  "acceleration": -0.027,
+  "avg_vol_20d": 3744568.9492,
+  "base_high_120": 221.47,
+  "breakout_confirmed": 0,
+  "close": 80.11,
+  "momentum_score": 0.0271,
+  "momentum_start": "2026-10-22",
+  "range_20": 0.826,
+  "range_50": 0.9249,
+  "rank": 2036,
+  "rank_down": 18,
+  "rank_up": null,
+  "ret_120": -0.4913,
+  "ret_20": -0.3798,
+  "ret_60": -0.3065,
+  "rundown_score": 0.9874,
+  "score_date": "2026-10-23",
+  "slope_20": -0.0324,
+  "slope_60": -0.0054,
+  "stage": "rundown",
+  "stage_label": "rundown",
+  "ticker": "TTMI",
+  "total_score": 0.075,
+  "trend_ratio": 0.6733,
+  "vcp_detected": 0,
+  "vcp_score": 0.1069
+ }
+}

@@ -1,0 +1,1118 @@
+{
+ "date": "2026-10-26",
+ "detected_regions": {
+  "primary": {
+   "days_in_region": 200,
+   "region_start": "2026-03-23",
+   "trigger_date": "2026-09-11",
+   "trigger_type": "severe_drawdown"
+  },
+  "secondary": [
+   {
+    "confidence_score": 0.2671,
+    "downside_q50": -0.1031,
+    "ev_score": 0.135,
+    "region_start": "2026-02-24",
+    "seq_len": 200,
+    "trigger_date": "2026-08-17",
+    "trigger_type": "shallow_drawdown",
+    "upside_q25": 0.0856,
+    "upside_q50": 0.216,
+    "upside_q75": 0.4025
+   }
+  ]
+ },
+ "feature_attribution": {
+  "macro_driver_count": 13,
+  "risk_flags": [
+   "high_volatility"
+  ],
+  "top_drivers": [
+   {
+    "direction": "positive",
+    "feature": "historical_recovery_rate",
+    "feature_value": 0.3552,
+    "importance": 0.0002,
+    "importance_pct": 0.2305,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "negative",
+    "feature": "dollar_volume",
+    "feature_value": 84802168.0,
+    "importance": 0.0002,
+    "importance_pct": 0.2061,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "positive",
+    "feature": "volatility_20d",
+    "feature_value": 0.0276,
+    "importance": 0.0002,
+    "importance_pct": 0.1574,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "positive",
+    "feature": "days_since_52w_high",
+    "feature_value": 603.0,
+    "importance": 0.0001,
+    "importance_pct": 0.1208,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "negative",
+    "feature": "beta_252d",
+    "feature_value": 0.1825,
+    "importance": 0.0001,
+    "importance_pct": 0.1066,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "positive",
+    "feature": "sector_return_60d",
+    "feature_value": -0.0377,
+    "importance": 0.0001,
+    "importance_pct": 0.0954,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "negative",
+    "feature": "stock_vs_sector_20d",
+    "feature_value": 0.1773,
+    "importance": 0.0001,
+    "importance_pct": 0.0832,
+    "method": "integrated_gradients"
+   }
+  ]
+ },
+ "fundamentals": {
+  "accrual": -0.067,
+  "adx_14": 25.7414,
+  "altman_z_score": 1.6638,
+  "amihud_illiquidity": 0.0006,
+  "avg_volume": 2117538.4712,
+  "beta_252d": 0.1825,
+  "book_value_per_share": 1.9063,
+  "correlation_spy_60d": 0.1797,
+  "current_liabilities": 253.005,
+  "current_ratio": 3.1803,
+  "daily_earnings_yield": -0.0494,
+  "daily_fcf_yield": 0.0048,
+  "daily_pb": 9.828,
+  "daily_pe": -20.2394,
+  "daily_ps": 1.2305,
+  "days_since_52w_high": 603.0,
+  "debt_ebitda": -29.5311,
+  "debt_to_equity": 5.6696,
+  "dividend_yield": 0.0,
+  "dollar_volume_20d_avg": 35712657.7888,
+  "earnings_quality": 1.1138,
+  "ebitda_growth_yoy": 0.6702,
+  "enterprise_value": 1564.7148,
+  "eps_basic": -0.31,
+  "eps_cagr_3y": -1.6438,
+  "eps_cagr_5y": -2.5616,
+  "eps_diluted": -0.31,
+  "eps_growth_accel": 0.2026,
+  "eps_growth_qoq": -0.0333,
+  "eps_growth_yoy": 0.6994,
+  "eps_growth_yoy_q2": 0.4969,
+  "eps_growth_yoy_q3": -1.1018,
+  "eps_growth_yoy_q4": -0.5803,
+  "eps_growth_yoy_q5": -0.4785,
+  "eps_growth_yoy_q6": -0.2811,
+  "eps_growth_yoy_q7": 0.5756,
+  "eps_growth_yoy_q8": 0.4025,
+  "eps_history_8q": [
+   -0.35,
+   0.01,
+   -1.97,
+   -0.78,
+   -0.31,
+   -0.0087,
+   -0.3,
+   -0.31
+  ],
+  "eps_ttm": -0.9338,
+  "ev_to_ebitda": -62.5061,
+  "ev_to_fcf": -46.1649,
+  "ev_to_sales": 6.1467,
+  "fcf_growth_yoy": 0.187,
+  "fcf_margin": -0.1331,
+  "fcf_per_share": -0.4955,
+  "gross_margin": 0.5644,
+  "gross_margin_change_yoy": 0.0277,
+  "gross_margin_history": [
+   0.5394,
+   0.5426,
+   0.5496,
+   0.5511,
+   0.5579,
+   0.5644
+  ],
+  "inc_roic": 0.1829,
+  "interest_coverage": -5.7075,
+  "is_pre_revenue": false,
+  "margin_vs_sector_median": null,
+  "market_cap_ratio": 1281.4578,
+  "net_income": -21.168,
+  "net_margin": -0.0608,
+  "operating_income": -13.792,
+  "operating_margin": -0.0413,
+  "operating_margin_change_yoy": 0.0782,
+  "pb_ratio": 9.9143,
+  "pe_percentile_1y": 0.9087,
+  "pe_ratio": -20.2326,
+  "peg_trailing": -0.2893,
+  "piotroski_f_score": 1.0,
+  "price_vs_high_52w": 0.6688,
+  "price_vs_sma200": 0.9965,
+  "ps_percentile_1y": 0.5833,
+  "ps_ratio": 1.2233,
+  "quarter_labels_8q": [
+   "Q3 '24",
+   "Q4 '24",
+   "Q1 '25",
+   "Q2 '25",
+   "Q3 '25",
+   "Q4 '25",
+   "Q1 '26",
+   "Q2 '26"
+  ],
+  "quarterly_eps_growth_yoy": 0.6026,
+  "quarterly_eps_growth_yoy_8q": [
+   0.3137,
+   1.0217,
+   -2.0308,
+   -0.6596,
+   0.1143,
+   -1.87,
+   0.8477,
+   0.6026
+  ],
+  "quarterly_revenue_growth_yoy": 0.0577,
+  "quarterly_revenue_growth_yoy_8q": [
+   0.3143,
+   0.4362,
+   0.223,
+   0.0846,
+   0.0217,
+   0.0274,
+   0.0546,
+   0.0577
+  ],
+  "revenue_cagr_3y": 0.0963,
+  "revenue_cagr_5y": 0.1148,
+  "revenue_growth_accel": -0.0057,
+  "revenue_growth_qoq": 0.0297,
+  "revenue_growth_yoy": 0.0396,
+  "revenue_growth_yoy_q2": 0.0454,
+  "revenue_growth_yoy_q3": 0.0793,
+  "revenue_growth_yoy_q4": 0.1787,
+  "revenue_growth_yoy_q5": 0.2584,
+  "revenue_growth_yoy_q6": 0.2765,
+  "revenue_growth_yoy_q7": 0.2574,
+  "revenue_growth_yoy_q8": 0.1075,
+  "revenue_history_8q": [
+   243.971,
+   282.648,
+   234.422,
+   240.678,
+   249.253,
+   290.383,
+   247.221,
+   254.56
+  ],
+  "revenue_per_share": 3.7218,
+  "roa": -0.0549,
+  "roce": -0.0476,
+  "roe": -0.4819,
+  "roic": -0.0703,
+  "rsi_14": 80.1072,
+  "sector_momentum": 0.0115,
+  "share_dilution_1y": 0.0,
+  "stock_vs_sector_20d": 0.1773,
+  "stock_vs_spy_20d": 0.1519,
+  "total_assets": 1154.202,
+  "vol_regime": 0.6777,
+  "volatility_20d": 0.0276,
+  "volatility_60d": 0.0408,
+  "w52_high": 29.65,
+  "w52_low": 12.26
+ },
+ "market_characters": [],
+ "model_analogs": {
+  "matches": [
+   {
+    "actual_downside": 0.0,
+    "actual_return": 0.2093,
+    "actual_upside": 0.8004,
+    "days_in_region": 360,
+    "end_date": "2006-08-14",
+    "end_reason": "reversal",
+    "similarity": 0.9676,
+    "start_date": "2005-08-19",
+    "ticker": "THRM",
+    "trigger_date": "2006-02-08",
+    "trigger_type": "runup"
+   },
+   {
+    "actual_downside": -0.3661,
+    "actual_return": -0.2913,
+    "actual_upside": 0.0,
+    "days_in_region": 218,
+    "end_date": "2006-08-15",
+    "end_reason": "reversal",
+    "similarity": 0.9655,
+    "start_date": "2006-01-09",
+    "ticker": "INOD",
+    "trigger_date": "2006-06-30",
+    "trigger_type": "severe_drawdown"
+   },
+   {
+    "actual_downside": -0.0162,
+    "actual_return": 0.162,
+    "actual_upside": 0.6039,
+    "days_in_region": 217,
+    "end_date": "2006-03-10",
+    "end_reason": "reversal",
+    "similarity": 0.965,
+    "start_date": "2005-08-05",
+    "ticker": "UCTT",
+    "trigger_date": "2005-09-13",
+    "trigger_type": "shallow_runup"
+   },
+   {
+    "actual_downside": -0.0165,
+    "actual_return": 0.3374,
+    "actual_upside": 1.07,
+    "days_in_region": 217,
+    "end_date": "2006-05-24",
+    "end_reason": "reversal",
+    "similarity": 0.9647,
+    "start_date": "2005-10-19",
+    "ticker": "HSTM",
+    "trigger_date": "2005-12-12",
+    "trigger_type": "shallow_runup"
+   },
+   {
+    "actual_downside": -0.0188,
+    "actual_return": 0.1387,
+    "actual_upside": 0.2837,
+    "days_in_region": 202,
+    "end_date": "2005-06-30",
+    "end_reason": "reversal",
+    "similarity": 0.9642,
+    "start_date": "2004-12-10",
+    "ticker": "CMCO",
+    "trigger_date": "2005-05-27",
+    "trigger_type": "runup"
+   },
+   {
+    "actual_downside": -0.0948,
+    "actual_return": -0.0948,
+    "actual_upside": 0.0709,
+    "days_in_region": 50,
+    "end_date": "2005-12-09",
+    "end_reason": "reversal",
+    "similarity": 0.9622,
+    "start_date": "2005-10-20",
+    "ticker": "OSIP",
+    "trigger_date": "2005-11-07",
+    "trigger_type": "runup"
+   },
+   {
+    "actual_downside": -0.1719,
+    "actual_return": -0.1719,
+    "actual_upside": 0.0,
+    "days_in_region": 46,
+    "end_date": "2016-11-29",
+    "end_reason": "reversal",
+    "similarity": 0.9621,
+    "start_date": "2016-10-14",
+    "ticker": "ABUS",
+    "trigger_date": "2016-10-27",
+    "trigger_type": "shallow_runup"
+   },
+   {
+    "actual_downside": 0.0,
+    "actual_return": 0.3966,
+    "actual_upside": 1.3799,
+    "days_in_region": 51,
+    "end_date": "2006-01-19",
+    "end_reason": "reversal",
+    "similarity": 0.9617,
+    "start_date": "2005-11-29",
+    "ticker": "EXAS",
+    "trigger_date": "2005-12-06",
+    "trigger_type": "runup"
+   },
+   {
+    "actual_downside": -0.087,
+    "actual_return": 0.1304,
+    "actual_upside": 0.5652,
+    "days_in_region": 112,
+    "end_date": "1994-01-03",
+    "end_reason": "reversal",
+    "similarity": 0.9616,
+    "start_date": "1993-09-13",
+    "ticker": "PPD",
+    "trigger_date": "1993-11-02",
+    "trigger_type": "runup"
+   },
+   {
+    "actual_downside": 0.0,
+    "actual_return": 0.9675,
+    "actual_upside": 0.9675,
+    "days_in_region": 93,
+    "end_date": "2006-03-30",
+    "end_reason": "reversal",
+    "similarity": 0.961,
+    "start_date": "2005-12-27",
+    "ticker": "APFC",
+    "trigger_date": "2006-02-14",
+    "trigger_type": "severe_drawdown"
+   }
+  ],
+  "stats": {
+   "avg_max_drawdown": 0.1267,
+   "avg_similarity": 0.96,
+   "avg_trough": 0.1267,
+   "avg_upside": 0.3108,
+   "best_return": 1.2759,
+   "downside_range": [
+    -0.543,
+    0.0
+   ],
+   "median_return": 0.0087,
+   "n_matches": 50,
+   "outcome_agreement": true,
+   "return_p25": -0.1358,
+   "return_p5": -0.3542,
+   "return_p75": 0.1617,
+   "return_p95": 0.8743,
+   "sim_weighted_win_rate": 0.5,
+   "top5_avg_trough": 0.0835,
+   "top5_avg_upside": 0.5516,
+   "top_similarity": 0.968,
+   "upside_range": [
+    0.0,
+    1.3799
+   ],
+   "win_rate": 0.5,
+   "worst_return": -0.4503,
+   "years_span": 11
+  },
+  "total_matches": 50
+ },
+ "peer_group": {
+  "buckets": [
+   "Healthcare IT, Revenue Cycle & Clinical Workflow Software",
+   "Medical Devices, Implants & Procedure Equipment",
+   "Patient Monitoring, Hospital Consumables & Care Equipment"
+  ],
+  "groups": {
+   "Healthcare IT, Revenue Cycle & Clinical Workflow Software": [
+    {
+     "market_cap_m": 2295.7222,
+     "price_vs_sma200": 0.6948,
+     "return_30d": 0.3882,
+     "return_7d": 0.6468,
+     "revenue_driver": "prescription digital therapeutics",
+     "signal_rank": 1770,
+     "stock_vs_spy_20d": 0.7588,
+     "ticker": "BETR"
+    },
+    {
+     "market_cap_m": 2838.1468,
+     "price_vs_sma200": 1.2859,
+     "return_30d": 0.2535,
+     "return_7d": 0.0502,
+     "revenue_driver": "physician-targeted digital advertising",
+     "signal_rank": 1521,
+     "stock_vs_spy_20d": 0.2634,
+     "ticker": "DOCS"
+    },
+    {
+     "market_cap_m": 3200.3752,
+     "price_vs_sma200": 1.3594,
+     "return_30d": 0.1719,
+     "return_7d": 0.0536,
+     "revenue_driver": "workers compensation claims management",
+     "signal_rank": 855,
+     "stock_vs_spy_20d": 0.1464,
+     "ticker": "CRVL"
+    },
+    {
+     "market_cap_m": 1273.9996,
+     "price_vs_sma200": 0.9965,
+     "return_30d": 0.1243,
+     "return_7d": 0.1441,
+     "revenue_driver": "insulin pump systems",
+     "signal_rank": 502,
+     "stock_vs_spy_20d": 0.1519,
+     "ticker": "TNDM"
+    },
+    {
+     "market_cap_m": 3979.7862,
+     "price_vs_sma200": 1.5311,
+     "return_30d": 0.1212,
+     "return_7d": -0.0173,
+     "revenue_driver": "plasma collection systems",
+     "signal_rank": 82,
+     "stock_vs_spy_20d": 0.1275,
+     "ticker": "HAE"
+    },
+    {
+     "market_cap_m": 9374.4412,
+     "price_vs_sma200": 0.8227,
+     "return_30d": 0.0832,
+     "return_7d": 0.0756,
+     "revenue_driver": "tubeless insulin pumps",
+     "signal_rank": 2079,
+     "stock_vs_spy_20d": 0.1222,
+     "ticker": "PODD"
+    },
+    {
+     "market_cap_m": 12544.0525,
+     "price_vs_sma200": 0.8999,
+     "return_30d": -0.0048,
+     "return_7d": 0.0196,
+     "revenue_driver": "Invisalign clear aligners",
+     "signal_rank": 1020,
+     "stock_vs_spy_20d": 0.0509,
+     "ticker": "ALGN"
+    },
+    {
+     "market_cap_m": 29071.7926,
+     "price_vs_sma200": 1.0567,
+     "return_30d": -0.0722,
+     "return_7d": -0.1042,
+     "revenue_driver": "continuous glucose monitors",
+     "signal_rank": 706,
+     "stock_vs_spy_20d": -0.0927,
+     "ticker": "DXCM"
+    },
+    {
+     "market_cap_m": 1847.8498,
+     "price_vs_sma200": 1.1125,
+     "return_30d": -0.1012,
+     "return_7d": -0.1516,
+     "revenue_driver": "handheld ultrasound imaging",
+     "signal_rank": 1630,
+     "stock_vs_spy_20d": -0.2713,
+     "ticker": "BFLY"
+    },
+    {
+     "market_cap_m": 2019.6918,
+     "price_vs_sma200": 1.3021,
+     "return_30d": -0.1059,
+     "return_7d": -0.0256,
+     "revenue_driver": "Medicare Advantage plans",
+     "signal_rank": 373,
+     "stock_vs_spy_20d": 0.0539,
+     "ticker": "CLOV"
+    }
+   ],
+   "Medical Devices, Implants & Procedure Equipment": [
+    {
+     "market_cap_m": 261.717,
+     "price_vs_sma200": 1.0362,
+     "return_30d": 0.2977,
+     "return_7d": 0.0543,
+     "revenue_driver": "insulin delivery devices",
+     "signal_rank": 38,
+     "stock_vs_spy_20d": 0.1475,
+     "ticker": "EMBC"
+    },
+    {
+     "market_cap_m": 151766.8275,
+     "price_vs_sma200": 1.0369,
+     "return_30d": 0.195,
+     "return_7d": 0.0556,
+     "revenue_driver": "robotic surgery systems",
+     "signal_rank": 2053,
+     "stock_vs_spy_20d": 0.0896,
+     "ticker": "ISRG"
+    },
+    {
+     "market_cap_m": 1273.9996,
+     "price_vs_sma200": 0.9965,
+     "return_30d": 0.1243,
+     "return_7d": 0.1441,
+     "revenue_driver": "insulin pump systems",
+     "signal_rank": 502,
+     "stock_vs_spy_20d": 0.1519,
+     "ticker": "TNDM"
+    },
+    {
+     "market_cap_m": 3979.7862,
+     "price_vs_sma200": 1.5311,
+     "return_30d": 0.1212,
+     "return_7d": -0.0173,
+     "revenue_driver": "plasma collection systems",
+     "signal_rank": 82,
+     "stock_vs_spy_20d": 0.1275,
+     "ticker": "HAE"
+    },
+    {
+     "market_cap_m": 9374.4412,
+     "price_vs_sma200": 0.8227,
+     "return_30d": 0.0832,
+     "return_7d": 0.0756,
+     "revenue_driver": "tubeless insulin pumps",
+     "signal_rank": 2079,
+     "stock_vs_spy_20d": 0.1222,
+     "ticker": "PODD"
+    },
+    {
+     "market_cap_m": 4107.1762,
+     "price_vs_sma200": 1.1192,
+     "return_30d": 0.053,
+     "return_7d": -0.0076,
+     "revenue_driver": "infusion therapy systems",
+     "signal_rank": 520,
+     "stock_vs_spy_20d": 0.0126,
+     "ticker": "ICUI"
+    },
+    {
+     "market_cap_m": 1146.5493,
+     "price_vs_sma200": 1.4772,
+     "return_30d": 0.0004,
+     "return_7d": 0.0008,
+     "revenue_driver": "nerve monitoring systems",
+     "signal_rank": null,
+     "stock_vs_spy_20d": -0.0039,
+     "ticker": "AVNS"
+    },
+    {
+     "market_cap_m": 218.4703,
+     "price_vs_sma200": 1.2007,
+     "return_30d": -0.2289,
+     "return_7d": 0.1487,
+     "revenue_driver": "neurostimulation systems",
+     "signal_rank": 1635,
+     "stock_vs_spy_20d": -0.1242,
+     "ticker": "STIM"
+    },
+    {
+     "market_cap_m": 437.1457,
+     "price_vs_sma200": 0.6924,
+     "return_30d": -0.3284,
+     "return_7d": -0.0622,
+     "revenue_driver": "neurosurgical robotic systems",
+     "signal_rank": 1747,
+     "stock_vs_spy_20d": -0.4087,
+     "ticker": "CLPT"
+    },
+    {
+     "market_cap_m": 62.6807,
+     "price_vs_sma200": 0.5042,
+     "return_30d": -0.3506,
+     "return_7d": -0.0087,
+     "revenue_driver": "robotic catheter systems",
+     "signal_rank": 1554,
+     "stock_vs_spy_20d": -0.2458,
+     "ticker": "MBOT"
+    }
+   ],
+   "Patient Monitoring, Hospital Consumables & Care Equipment": [
+    {
+     "market_cap_m": 261.717,
+     "price_vs_sma200": 1.0362,
+     "return_30d": 0.2977,
+     "return_7d": 0.0543,
+     "revenue_driver": "insulin delivery devices",
+     "signal_rank": 38,
+     "stock_vs_spy_20d": 0.1475,
+     "ticker": "EMBC"
+    },
+    {
+     "market_cap_m": 1273.9996,
+     "price_vs_sma200": 0.9965,
+     "return_30d": 0.1243,
+     "return_7d": 0.1441,
+     "revenue_driver": "insulin pump systems",
+     "signal_rank": 502,
+     "stock_vs_spy_20d": 0.1519,
+     "ticker": "TNDM"
+    },
+    {
+     "market_cap_m": 715.9528,
+     "price_vs_sma200": 1.306,
+     "return_30d": 0.111,
+     "return_7d": -0.0221,
+     "revenue_driver": "eeg monitoring systems",
+     "signal_rank": 993,
+     "stock_vs_spy_20d": 0.1036,
+     "ticker": "CBLL"
+    },
+    {
+     "market_cap_m": 79704.6799,
+     "price_vs_sma200": 1.1365,
+     "return_30d": 0.0709,
+     "return_7d": -0.0086,
+     "revenue_driver": "pharmaceutical distribution",
+     "signal_rank": 1603,
+     "stock_vs_spy_20d": 0.1427,
+     "ticker": "CAH"
+    },
+    {
+     "market_cap_m": 4107.1762,
+     "price_vs_sma200": 1.1192,
+     "return_30d": 0.053,
+     "return_7d": -0.0076,
+     "revenue_driver": "infusion therapy systems",
+     "signal_rank": 520,
+     "stock_vs_spy_20d": 0.0126,
+     "ticker": "ICUI"
+    },
+    {
+     "market_cap_m": 908.695,
+     "price_vs_sma200": 0.6388,
+     "return_30d": 0.0085,
+     "return_7d": -0.072,
+     "revenue_driver": "sleep therapy devices",
+     "signal_rank": 489,
+     "stock_vs_spy_20d": 0.0504,
+     "ticker": "AHCO"
+    },
+    {
+     "market_cap_m": 641.3425,
+     "price_vs_sma200": 1.0353,
+     "return_30d": 0.0063,
+     "return_7d": 0.0643,
+     "revenue_driver": "catheter lock solutions",
+     "signal_rank": 51,
+     "stock_vs_spy_20d": 0.0072,
+     "ticker": "CRMD"
+    },
+    {
+     "market_cap_m": 1146.5493,
+     "price_vs_sma200": 1.4772,
+     "return_30d": 0.0004,
+     "return_7d": 0.0008,
+     "revenue_driver": "nerve monitoring systems",
+     "signal_rank": null,
+     "stock_vs_spy_20d": -0.0039,
+     "ticker": "AVNS"
+    },
+    {
+     "market_cap_m": 3509.8619,
+     "price_vs_sma200": 0.8279,
+     "return_30d": -0.0093,
+     "return_7d": 0.0096,
+     "revenue_driver": "checkpoint security systems",
+     "signal_rank": 150,
+     "stock_vs_spy_20d": 0.027,
+     "ticker": "OSIS"
+    },
+    {
+     "market_cap_m": 437.1457,
+     "price_vs_sma200": 0.6924,
+     "return_30d": -0.3284,
+     "return_7d": -0.0622,
+     "revenue_driver": "neurosurgical robotic systems",
+     "signal_rank": 1747,
+     "stock_vs_spy_20d": -0.4087,
+     "ticker": "CLPT"
+    }
+   ]
+  }
+ },
+ "predictions": {
+  "badge_count": 1,
+  "confidence_score": 0.2561,
+  "conviction_label": "SPECULATIVE",
+  "data_quality_flags": [],
+  "ev_score": 0.1379,
+  "is_diamond": false,
+  "passes_tradability_filter": true,
+  "quality_label": "WEAK",
+  "quantiles": {
+   "downside_q10": -0.3212,
+   "downside_q25": -0.1864,
+   "downside_q50": -0.1032,
+   "downside_q75": -0.03,
+   "downside_q90": -0.0034,
+   "path_volatility": 0.0389,
+   "risk_reward": 2.1151,
+   "uncertainty": 0.6464,
+   "upside_q10": 0.0238,
+   "upside_q25": 0.0862,
+   "upside_q50": 0.2184,
+   "upside_q75": 0.4049,
+   "upside_q90": 0.6703
+  },
+  "rank": 502,
+  "rank_score": 0.0408,
+  "tradability_filter_reasons": []
+ },
+ "profile": {
+  "_local": {
+   "dividend_yield": 0.0,
+   "eps_growth_yoy": 0.6994,
+   "pe_ratio": -20.2326,
+   "revenue_growth_yoy": 0.0396,
+   "roe": -0.4819
+  },
+  "beta": 1.662,
+  "betaTTM": null,
+  "ceo": "John F. Sheridan",
+  "companyName": "Tandem Diabetes Care, Inc.",
+  "country": "US",
+  "debtToEquityTTM": null,
+  "description": "Tandem Diabetes Care, Inc., a medical technology firm, specializes in creating, developing, and marketing solutions for individuals globally who manage insulin-dependent diabetes. At the core of its offerings is the t:slim X2 insulin delivery system, an advanced pump platform that integrates the t:slim X2 pump, a disposable 300-unit insulin cartridge, and an infusion set. Tandem further enhances this platform with innovative features like Basal-IQ and Control-IQ technology, as well as G5 Integration capabilities. The company also provides the Tandem Device Updater, enabling users to easily update their pump's software. To facilitate therapy management, Tandem offers t:connect, a web-based application that visually presents diabetes data from the pump, continuous glucose monitoring (CGM) devices, and supported blood glucose meters to patients, their caregivers, and healthcare professionals. Additionally, the Sugarmate mobile application caters specifically to insulin users with diabetes. Tandem has strategic development and commercialization partnerships with leading companies such as Dexcom, Inc. and Abbott Laboratories. Established in 2006 and headquartered in San Diego, California, the company was initially known as Phluid Inc. before rebranding as Tandem Diabetes Care, Inc. in January 2008.",
+  "dividendYielTTM": null,
+  "enterpriseValueOverEBITDATTM": null,
+  "exchangeShortName": "NASDAQ",
+  "fullTimeEmployees": "2500",
+  "industry": "Medical - Devices",
+  "ipoDate": "2013-11-14",
+  "latest_earnings_date": "2026-08-06",
+  "marketCapTTM": null,
+  "mktCap": 1315037430,
+  "peRatioTTM": null,
+  "price": 18.9,
+  "priceToSalesRatioTTM": null,
+  "returnOnEquityTTM": -0.4597,
+  "revenue_description": "Tandem sells insulin-pump systems and diabetes-management technology. Revenue is driven mainly by device placements plus recurring consumables, sensors, tests, or procedure-linked usage tied to its installed base.",
+  "revenue_description_themes": [
+   "automated insulin delivery",
+   "continuous glucose monitoring integration",
+   "diabetes care"
+  ],
+  "revenue_taxonomy": [
+   {
+    "bucket": "Medical Devices, Implants & Procedure Equipment",
+    "matched_tags": [
+     "insulin pump systems"
+    ],
+    "path": "Healthcare & Life Sciences › Devices Diagnostics & Tools › Medical Devices, Implants & Procedure Equipment",
+    "sector": "Healthcare & Life Sciences",
+    "segment": "Devices Diagnostics & Tools"
+   },
+   {
+    "bucket": "Patient Monitoring, Hospital Consumables & Care Equipment",
+    "matched_tags": [
+     "infusion set consumables"
+    ],
+    "path": "Healthcare & Life Sciences › Devices Diagnostics & Tools › Patient Monitoring, Hospital Consumables & Care Equipment",
+    "sector": "Healthcare & Life Sciences",
+    "segment": "Devices Diagnostics & Tools"
+   },
+   {
+    "bucket": "Healthcare IT, Revenue Cycle & Clinical Workflow Software",
+    "matched_tags": [
+     "diabetes management technology"
+    ],
+    "path": "Healthcare & Life Sciences › Care Delivery & Healthtech › Healthcare IT, Revenue Cycle & Clinical Workflow Software",
+    "sector": "Healthcare & Life Sciences",
+    "segment": "Care Delivery & Healthtech"
+   }
+  ],
+  "revenue_themes": [
+   "insulin pump systems",
+   "infusion set consumables",
+   "diabetes management technology"
+  ],
+  "sector": "Healthcare",
+  "website": "https://www.tandemdiabetes.com"
+ },
+ "report": null,
+ "scorecard": {
+  "headline": {
+   "avg_universe_pct": 31,
+   "label": "below_average",
+   "metric_count": 7
+  },
+  "metrics": {
+   "debt_to_equity": {
+    "direction": "lower",
+    "label": "D/E Ratio",
+    "sector": "Health Care",
+    "sector_n": 287,
+    "sector_pct": 2,
+    "universe_n": 2082,
+    "universe_pct": 3,
+    "value": 5.6696
+   },
+   "eps_growth_yoy": {
+    "direction": "higher",
+    "label": "EPS Growth",
+    "sector": "Health Care",
+    "sector_n": 281,
+    "sector_pct": 78,
+    "universe_n": 1892,
+    "universe_pct": 77,
+    "value": 0.6994
+   },
+   "gross_margin": {
+    "direction": "higher",
+    "label": "Gross Margin",
+    "sector": "Health Care",
+    "sector_n": 237,
+    "sector_pct": 46,
+    "universe_n": 2010,
+    "universe_pct": 62,
+    "value": 0.5644
+   },
+   "operating_margin": {
+    "direction": "higher",
+    "label": "Op. Margin",
+    "sector": "Health Care",
+    "sector_n": 237,
+    "sector_pct": 41,
+    "universe_n": 2010,
+    "universe_pct": 15,
+    "value": -0.0413
+   },
+   "revenue_growth_yoy": {
+    "direction": "higher",
+    "label": "Rev Growth",
+    "sector": "Health Care",
+    "sector_n": 249,
+    "sector_pct": 33,
+    "universe_n": 1834,
+    "universe_pct": 33,
+    "value": 0.0396
+   },
+   "roe": {
+    "direction": "higher",
+    "label": "ROE",
+    "sector": "Health Care",
+    "sector_n": 288,
+    "sector_pct": 24,
+    "universe_n": 2102,
+    "universe_pct": 9,
+    "value": -0.4819
+   },
+   "roic": {
+    "direction": "higher",
+    "label": "ROIC",
+    "sector": "Health Care",
+    "sector_n": 282,
+    "sector_pct": 46,
+    "universe_n": 2053,
+    "universe_pct": 16,
+    "value": -0.0235
+   }
+  }
+ },
+ "signal_rank": 502,
+ "structural_analogs": {
+  "gp_core_pct": 97.8,
+  "gp_core_ratio": 2.6847,
+  "matches": [
+   {
+    "actual_downside": -0.4171,
+    "actual_return": -0.2714,
+    "actual_upside": 0.0,
+    "days_in_region": 111,
+    "end_date": "1998-09-23",
+    "end_reason": "reversal",
+    "seq_len": 111,
+    "similarity": 0.4804,
+    "start_date": "1998-03-11",
+    "ticker": "IMGC",
+    "total_distance": 0.3666,
+    "trigger_date": "1998-04-21",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": -0.1708,
+    "actual_return": -0.0302,
+    "actual_upside": 0.1121,
+    "days_in_region": 97,
+    "end_date": "2004-05-26",
+    "end_reason": "reversal",
+    "seq_len": 97,
+    "similarity": 0.4758,
+    "start_date": "2004-01-22",
+    "ticker": "AORT",
+    "total_distance": 0.3714,
+    "trigger_date": "2004-01-29",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": -0.0201,
+    "actual_return": 0.1358,
+    "actual_upside": 0.1358,
+    "days_in_region": 94,
+    "end_date": "2014-11-12",
+    "end_reason": "reversal",
+    "seq_len": 94,
+    "similarity": 0.4727,
+    "start_date": "2014-09-08",
+    "ticker": "ALJ",
+    "total_distance": 0.3747,
+    "trigger_date": "2014-10-23",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": 0.0,
+    "actual_return": 0.4205,
+    "actual_upside": 0.4205,
+    "days_in_region": 88,
+    "end_date": "2021-06-23",
+    "end_reason": "reversal",
+    "seq_len": 88,
+    "similarity": 0.4717,
+    "start_date": "2021-03-11",
+    "ticker": "CRK",
+    "total_distance": 0.3757,
+    "trigger_date": "2021-03-18",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": -0.5116,
+    "actual_return": -0.3488,
+    "actual_upside": 0.0,
+    "days_in_region": 90,
+    "end_date": "1990-10-02",
+    "end_reason": "reversal",
+    "seq_len": 90,
+    "similarity": 0.465,
+    "start_date": "1990-07-02",
+    "ticker": "LEAF",
+    "total_distance": 0.3828,
+    "trigger_date": "1990-08-06",
+    "trigger_type": "severe_drawdown"
+   },
+   {
+    "actual_downside": -0.0145,
+    "actual_return": 0.4587,
+    "actual_upside": 0.4587,
+    "days_in_region": 97,
+    "end_date": "2014-01-06",
+    "end_reason": "reversal",
+    "seq_len": 97,
+    "similarity": 0.4621,
+    "start_date": "2013-07-31",
+    "ticker": "TTGT",
+    "total_distance": 0.386,
+    "trigger_date": "2013-08-16",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": -0.2155,
+    "actual_return": 0.0302,
+    "actual_upside": 0.0453,
+    "days_in_region": 107,
+    "end_date": "2006-09-05",
+    "end_reason": "reversal",
+    "seq_len": 107,
+    "similarity": 0.4601,
+    "start_date": "2006-04-24",
+    "ticker": "PLUG",
+    "total_distance": 0.3882,
+    "trigger_date": "2006-05-15",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": -0.0185,
+    "actual_return": 0.1852,
+    "actual_upside": 0.1852,
+    "days_in_region": 98,
+    "end_date": "2000-06-29",
+    "end_reason": "reversal",
+    "seq_len": 98,
+    "similarity": 0.4596,
+    "start_date": "2000-04-03",
+    "ticker": "RL",
+    "total_distance": 0.3887,
+    "trigger_date": "2000-04-07",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": 0.0,
+    "actual_return": 0.3111,
+    "actual_upside": 0.3111,
+    "days_in_region": 107,
+    "end_date": "1996-10-14",
+    "end_reason": "reversal",
+    "seq_len": 107,
+    "similarity": 0.459,
+    "start_date": "1996-05-15",
+    "ticker": "UIS",
+    "total_distance": 0.3894,
+    "trigger_date": "1996-05-24",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": -0.3396,
+    "actual_return": -0.2249,
+    "actual_upside": 0.0448,
+    "days_in_region": 94,
+    "end_date": "2022-02-01",
+    "end_reason": "reversal",
+    "seq_len": 94,
+    "similarity": 0.4588,
+    "start_date": "2021-11-01",
+    "ticker": "AMSC",
+    "total_distance": 0.3895,
+    "trigger_date": "2021-11-19",
+    "trigger_type": "severe_drawdown"
+   }
+  ],
+  "panel": {
+   "edge": 0.202,
+   "hit_hi": 0.835,
+   "hit_lo": 0.657,
+   "hit_rate": 0.757,
+   "median_final": 0.1852,
+   "median_pain": 0.0327,
+   "n": 37,
+   "n_eff": 37.0,
+   "p25_final": 0.0118,
+   "p_pain_gt5": 0.459,
+   "return_to_pain": 3.517
+  },
+  "stats": {
+   "avg_similarity": 0.405,
+   "avg_trough": 0.1384,
+   "avg_upside": 0.2408,
+   "median_pain": 0.0945,
+   "median_return": 0.0782,
+   "n_matches": 200,
+   "p25_return": -0.0886,
+   "p_pain_gt5": 0.6,
+   "return_to_pain": 0.683,
+   "top5_avg_trough": 0.2239,
+   "top5_avg_upside": 0.1337,
+   "top_similarity": 0.48,
+   "win_rate": 0.63
+  },
+  "total_matches": 200
+ },
+ "ticker": "TNDM",
+ "trending": {
+  "acceleration": -0.0168,
+  "avg_vol_20d": 2683275.35,
+  "base_high_120": 28.26,
+  "breakout_confirmed": 0,
+  "close": 15.04,
+  "momentum_score": 0.0078,
+  "momentum_start": "2026-05-08",
+  "range_20": 0.6223,
+  "range_50": 0.9388,
+  "rank": 1615,
+  "rank_down": 15,
+  "rank_up": null,
+  "ret_120": -0.3114,
+  "ret_20": -0.2762,
+  "ret_60": -0.4409,
+  "rundown_score": 0.9824,
+  "score_date": "2026-05-20",
+  "slope_20": -0.0275,
+  "slope_60": -0.0107,
+  "stage": "rundown",
+  "stage_label": "rundown",
+  "ticker": "TNDM",
+  "total_score": 0.2054,
+  "trend_ratio": 0.7584,
+  "vcp_detected": 0,
+  "vcp_score": 0.3371
+ }
+}

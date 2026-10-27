@@ -1,0 +1,1022 @@
+{
+ "date": "2026-10-26",
+ "detected_regions": {
+  "primary": {
+   "days_in_region": 81,
+   "region_start": "2026-09-28",
+   "trigger_date": "2026-10-07",
+   "trigger_type": "runup"
+  },
+  "secondary": [
+   {
+    "confidence_score": 0.1168,
+    "downside_q50": -0.1443,
+    "ev_score": 0.0777,
+    "region_start": "2026-09-22",
+    "seq_len": 85,
+    "trigger_date": "2026-10-19",
+    "trigger_type": "compression",
+    "upside_q25": 0.0826,
+    "upside_q50": 0.2076,
+    "upside_q75": 0.3593
+   }
+  ]
+ },
+ "feature_attribution": {
+  "macro_driver_count": 13,
+  "risk_flags": [
+   "high_volatility"
+  ],
+  "top_drivers": [
+   {
+    "direction": "negative",
+    "feature": "dollar_volume",
+    "feature_value": 82567184.0,
+    "importance": 0.0008,
+    "importance_pct": 0.2744,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "negative",
+    "feature": "macd_line",
+    "feature_value": -21.1395,
+    "importance": 0.0005,
+    "importance_pct": 0.1813,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "negative",
+    "feature": "ma_200_slope",
+    "feature_value": 0.0092,
+    "importance": 0.0004,
+    "importance_pct": 0.1336,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "positive",
+    "feature": "return_1d",
+    "feature_value": -0.0051,
+    "importance": 0.0004,
+    "importance_pct": 0.1238,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "positive",
+    "feature": "volatility_20d",
+    "feature_value": 0.0348,
+    "importance": 0.0003,
+    "importance_pct": 0.1096,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "positive",
+    "feature": "price_vs_low_52w",
+    "feature_value": 1.127,
+    "importance": 0.0003,
+    "importance_pct": 0.0937,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "negative",
+    "feature": "stock_vs_sector_20d",
+    "feature_value": -0.0465,
+    "importance": 0.0002,
+    "importance_pct": 0.0836,
+    "method": "integrated_gradients"
+   }
+  ]
+ },
+ "fundamentals": {
+  "accrual": -0.2074,
+  "adx_14": 46.0377,
+  "altman_z_score": 4.3575,
+  "amihud_illiquidity": 0.0002,
+  "avg_volume": 352986.6139,
+  "beta_252d": 0.5799,
+  "book_value_per_share": 36.1305,
+  "correlation_spy_60d": 0.3921,
+  "current_liabilities": 878.11,
+  "current_ratio": 1.5015,
+  "daily_earnings_yield": 0.0392,
+  "daily_fcf_yield": 0.1142,
+  "daily_pb": 9.0146,
+  "daily_pe": 25.4801,
+  "daily_ps": 3.8455,
+  "days_since_52w_high": 82.0,
+  "debt_ebitda": 0.0,
+  "debt_to_equity": 0.0,
+  "dividend_yield": 0.0012,
+  "dollar_volume_20d_avg": 122948270.9509,
+  "earnings_quality": null,
+  "ebitda_growth_yoy": 0.4601,
+  "enterprise_value": 4204.4528,
+  "eps_basic": 3.8,
+  "eps_cagr_3y": 0.6867,
+  "eps_cagr_5y": 0.3654,
+  "eps_diluted": 3.76,
+  "eps_growth_accel": -0.0784,
+  "eps_growth_qoq": 0.1515,
+  "eps_growth_yoy": 0.4953,
+  "eps_growth_yoy_q2": 0.5737,
+  "eps_growth_yoy_q3": 0.5766,
+  "eps_growth_yoy_q4": 0.7785,
+  "eps_growth_yoy_q5": 1.638,
+  "eps_growth_yoy_q6": 1.593,
+  "eps_growth_yoy_q7": 1.6157,
+  "eps_growth_yoy_q8": 0.9447,
+  "eps_history_8q": [
+   2.0,
+   2.22,
+   1.6,
+   2.5,
+   2.17,
+   3.47,
+   3.24,
+   3.76
+  ],
+  "eps_ttm": 12.9254,
+  "ev_to_ebitda": 24.0662,
+  "ev_to_fcf": null,
+  "ev_to_sales": 10.9498,
+  "fcf_growth_yoy": null,
+  "fcf_margin": null,
+  "fcf_per_share": null,
+  "gross_margin": 0.2091,
+  "gross_margin_change_yoy": 0.0046,
+  "gross_margin_history": [
+   0.1781,
+   0.1904,
+   0.1946,
+   0.2068,
+   0.2103,
+   0.2091
+  ],
+  "inc_roic": 0.2439,
+  "interest_coverage": null,
+  "is_pre_revenue": false,
+  "margin_vs_sector_median": null,
+  "market_cap_ratio": 4568.9338,
+  "net_income": 53.302,
+  "net_margin": 0.1509,
+  "operating_income": 56.805,
+  "operating_margin": 0.1536,
+  "operating_margin_change_yoy": 0.0215,
+  "pb_ratio": 9.1153,
+  "pe_percentile_1y": 1.0,
+  "pe_ratio": 25.4801,
+  "peg_trailing": 0.6253,
+  "piotroski_f_score": 2.0,
+  "price_vs_high_52w": 0.4124,
+  "price_vs_sma200": 0.6331,
+  "ps_percentile_1y": 1.0,
+  "ps_ratio": 4.792,
+  "quarter_labels_8q": [
+   "Q3 '24",
+   "Q4 '24",
+   "Q1 '25",
+   "Q2 '25",
+   "Q3 '25",
+   "Q4 '26",
+   "Q1 '26",
+   "Q2 '26"
+  ],
+  "quarterly_eps_growth_yoy": 0.504,
+  "quarterly_eps_growth_yoy_8q": [
+   4.0,
+   1.4944,
+   1.7586,
+   0.9084,
+   0.085,
+   0.5631,
+   1.025,
+   0.504
+  ],
+  "quarterly_revenue_growth_yoy": 0.6151,
+  "quarterly_revenue_growth_yoy_8q": [
+   0.5695,
+   0.4128,
+   0.2282,
+   0.0473,
+   -0.0228,
+   0.1272,
+   0.5024,
+   0.6151
+  ],
+  "revenue_cagr_3y": 0.3511,
+  "revenue_cagr_5y": 0.1871,
+  "revenue_growth_accel": 0.1455,
+  "revenue_growth_qoq": 0.3197,
+  "revenue_growth_yoy": 0.2902,
+  "revenue_growth_yoy_q2": 0.1447,
+  "revenue_growth_yoy_q3": 0.0806,
+  "revenue_growth_yoy_q4": 0.1349,
+  "revenue_growth_yoy_q5": 0.2916,
+  "revenue_growth_yoy_q6": 0.4508,
+  "revenue_growth_yoy_q7": 0.5247,
+  "revenue_growth_yoy_q8": 0.5283,
+  "revenue_history_8q": [
+   257.008,
+   232.474,
+   193.66,
+   237.743,
+   251.153,
+   262.05,
+   290.954,
+   383.976
+  ],
+  "revenue_per_share": 27.3721,
+  "roa": 0.1334,
+  "roce": 0.3592,
+  "roe": 0.3658,
+  "roic": 0.3429,
+  "rsi_14": 23.9719,
+  "sector_momentum": 0.0115,
+  "share_dilution_1y": 0.0,
+  "stock_vs_sector_20d": -0.0465,
+  "stock_vs_spy_20d": -0.072,
+  "total_assets": 1400.97,
+  "vol_regime": 1.0218,
+  "volatility_20d": 0.0348,
+  "volatility_60d": 0.034,
+  "w52_high": 805.75,
+  "w52_low": 276.28
+ },
+ "market_characters": [
+  {
+   "id": "g8",
+   "name": "Boom-Bust"
+  }
+ ],
+ "model_analogs": {
+  "matches": [
+   {
+    "actual_downside": -0.6117,
+    "actual_return": -0.5491,
+    "actual_upside": 0.0063,
+    "days_in_region": 45,
+    "end_date": "1998-10-15",
+    "end_reason": "new_pattern",
+    "similarity": 0.9617,
+    "start_date": "1998-08-31",
+    "ticker": "AVID",
+    "trigger_date": "1998-09-02",
+    "trigger_type": "runup"
+   },
+   {
+    "actual_downside": 0.0,
+    "actual_return": 0.1538,
+    "actual_upside": 0.1538,
+    "days_in_region": 92,
+    "end_date": "1990-01-02",
+    "end_reason": "reversal",
+    "similarity": 0.9612,
+    "start_date": "1989-10-02",
+    "ticker": "OPTX",
+    "trigger_date": "1989-12-06",
+    "trigger_type": "severe_drawdown"
+   },
+   {
+    "actual_downside": -0.0495,
+    "actual_return": 0.2784,
+    "actual_upside": 0.2784,
+    "days_in_region": 90,
+    "end_date": "2018-12-03",
+    "end_reason": "reversal",
+    "similarity": 0.9608,
+    "start_date": "2018-09-04",
+    "ticker": "SGMO",
+    "trigger_date": "2018-11-12",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": -0.0915,
+    "actual_return": 0.087,
+    "actual_upside": 0.1164,
+    "days_in_region": 45,
+    "end_date": "2000-11-13",
+    "end_reason": "reversal",
+    "similarity": 0.9608,
+    "start_date": "2000-09-29",
+    "ticker": "PHCC",
+    "trigger_date": "2000-10-23",
+    "trigger_type": "severe_drawdown"
+   },
+   {
+    "actual_downside": -0.1601,
+    "actual_return": -0.0158,
+    "actual_upside": 0.5573,
+    "days_in_region": 178,
+    "end_date": "2020-03-13",
+    "end_reason": "reversal",
+    "similarity": 0.9604,
+    "start_date": "2019-09-17",
+    "ticker": "HROW",
+    "trigger_date": "2019-10-14",
+    "trigger_type": "compression"
+   },
+   {
+    "actual_downside": 0.0,
+    "actual_return": 0.3351,
+    "actual_upside": 0.6999,
+    "days_in_region": 204,
+    "end_date": "2002-04-16",
+    "end_reason": "reversal",
+    "similarity": 0.9603,
+    "start_date": "2001-09-24",
+    "ticker": "HYDL",
+    "trigger_date": "2001-12-19",
+    "trigger_type": "shallow_runup"
+   },
+   {
+    "actual_downside": -0.0581,
+    "actual_return": 0.1337,
+    "actual_upside": 0.1337,
+    "days_in_region": 74,
+    "end_date": "2000-11-03",
+    "end_reason": "reversal",
+    "similarity": 0.96,
+    "start_date": "2000-08-21",
+    "ticker": "CDT",
+    "trigger_date": "2000-10-09",
+    "trigger_type": "severe_drawdown"
+   },
+   {
+    "actual_downside": -0.0282,
+    "actual_return": 0.1128,
+    "actual_upside": 0.1128,
+    "days_in_region": 127,
+    "end_date": "2019-11-05",
+    "end_reason": "reversal",
+    "similarity": 0.9599,
+    "start_date": "2019-07-01",
+    "ticker": "XONE",
+    "trigger_date": "2019-10-15",
+    "trigger_type": "severe_drawdown"
+   },
+   {
+    "actual_downside": -0.0789,
+    "actual_return": 0.3584,
+    "actual_upside": 0.3584,
+    "days_in_region": 53,
+    "end_date": "2000-11-06",
+    "end_reason": "reversal",
+    "similarity": 0.9594,
+    "start_date": "2000-09-14",
+    "ticker": "RBK",
+    "trigger_date": "2000-10-10",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": 0.0,
+    "actual_return": 0.5383,
+    "actual_upside": 0.5383,
+    "days_in_region": 174,
+    "end_date": "2018-12-03",
+    "end_reason": "reversal",
+    "similarity": 0.9594,
+    "start_date": "2018-06-12",
+    "ticker": "LE",
+    "trigger_date": "2018-09-07",
+    "trigger_type": "severe_drawdown"
+   }
+  ],
+  "stats": {
+   "avg_max_drawdown": 0.1397,
+   "avg_similarity": 0.958,
+   "avg_trough": 0.1397,
+   "avg_upside": 0.311,
+   "best_return": 0.6182,
+   "downside_range": [
+    -0.6117,
+    0.0
+   ],
+   "median_return": 0.1194,
+   "n_matches": 50,
+   "outcome_agreement": true,
+   "return_p25": -0.0231,
+   "return_p5": -0.3137,
+   "return_p75": 0.375,
+   "return_p95": 0.5956,
+   "sim_weighted_win_rate": 0.7,
+   "top5_avg_trough": 0.1826,
+   "top5_avg_upside": 0.2224,
+   "top_similarity": 0.962,
+   "upside_range": [
+    0.0,
+    0.9435
+   ],
+   "win_rate": 0.7,
+   "worst_return": -0.5491,
+   "years_span": 15
+  },
+  "total_matches": 50
+ },
+ "peer_group": {
+  "buckets": [
+   "Engineering, Construction & Technical Services",
+   "Renewable Power Generation & Utility-Scale Projects"
+  ],
+  "groups": {
+   "Engineering, Construction & Technical Services": [
+    {
+     "market_cap_m": 860.44,
+     "price_vs_sma200": 1.1484,
+     "return_30d": 0.1862,
+     "return_7d": 0.0686,
+     "revenue_driver": "architectural glass fabrication",
+     "signal_rank": 322,
+     "stock_vs_spy_20d": 0.2118,
+     "ticker": "APOG"
+    },
+    {
+     "market_cap_m": 5466.4602,
+     "price_vs_sma200": 0.8925,
+     "return_30d": 0.118,
+     "return_7d": 0.1561,
+     "revenue_driver": "federal engineering services",
+     "signal_rank": 1809,
+     "stock_vs_spy_20d": 0.1944,
+     "ticker": "AMTM"
+    },
+    {
+     "market_cap_m": 736.9627,
+     "price_vs_sma200": 1.2526,
+     "return_30d": 0.0097,
+     "return_7d": 0.0012,
+     "revenue_driver": "civil engineering design",
+     "signal_rank": 260,
+     "stock_vs_spy_20d": 0.0062,
+     "ticker": "BWMN"
+    },
+    {
+     "market_cap_m": 7383.3981,
+     "price_vs_sma200": 1.4686,
+     "return_30d": 0.0074,
+     "return_7d": 0.0021,
+     "revenue_driver": "architectural glass fabrication",
+     "signal_rank": null,
+     "stock_vs_spy_20d": 0.0135,
+     "ticker": "APGE"
+    },
+    {
+     "market_cap_m": 11450.3802,
+     "price_vs_sma200": 1.1345,
+     "return_30d": 0.0028,
+     "return_7d": -0.026,
+     "revenue_driver": "semiconductor distribution",
+     "signal_rank": 350,
+     "stock_vs_spy_20d": -0.0687,
+     "ticker": "ARW"
+    },
+    {
+     "market_cap_m": 9663.3589,
+     "price_vs_sma200": 0.7901,
+     "return_30d": -0.0601,
+     "return_7d": 0.0276,
+     "revenue_driver": "engineering design",
+     "signal_rank": 440,
+     "stock_vs_spy_20d": 0.0227,
+     "ticker": "ACM"
+    },
+    {
+     "market_cap_m": 2644.1707,
+     "price_vs_sma200": 0.9278,
+     "return_30d": -0.0734,
+     "return_7d": -0.0856,
+     "revenue_driver": "contract electronics manufacturing",
+     "signal_rank": 519,
+     "stock_vs_spy_20d": -0.1905,
+     "ticker": "BHE"
+    },
+    {
+     "market_cap_m": 12323.0466,
+     "price_vs_sma200": 0.8297,
+     "return_30d": -0.1103,
+     "return_7d": -0.1298,
+     "revenue_driver": "insulation installation",
+     "signal_rank": null,
+     "stock_vs_spy_20d": -0.1228,
+     "ticker": "BLD"
+    },
+    {
+     "market_cap_m": 5693.4792,
+     "price_vs_sma200": 0.6331,
+     "return_30d": -0.161,
+     "return_7d": -0.103,
+     "revenue_driver": "power plant EPC",
+     "signal_rank": 1494,
+     "stock_vs_spy_20d": -0.072,
+     "ticker": "AGX"
+    },
+    {
+     "market_cap_m": 3946.272,
+     "price_vs_sma200": 0.3607,
+     "return_30d": -0.4068,
+     "return_7d": -0.1593,
+     "revenue_driver": "industrial boiler systems",
+     "signal_rank": 1741,
+     "stock_vs_spy_20d": -0.274,
+     "ticker": "BW"
+    }
+   ],
+   "Renewable Power Generation & Utility-Scale Projects": [
+    {
+     "market_cap_m": 15069.7299,
+     "price_vs_sma200": 0.9647,
+     "return_30d": 0.1789,
+     "return_7d": -0.0447,
+     "revenue_driver": "Nuclear power generation",
+     "signal_rank": 861,
+     "stock_vs_spy_20d": 0.1138,
+     "ticker": "TLN"
+    },
+    {
+     "market_cap_m": 2645.4671,
+     "price_vs_sma200": 0.8821,
+     "return_30d": 0.037,
+     "return_7d": 0.0484,
+     "revenue_driver": "renewable energy assets",
+     "signal_rank": 1797,
+     "stock_vs_spy_20d": 0.0761,
+     "ticker": "CWEN"
+    },
+    {
+     "market_cap_m": 10453.9363,
+     "price_vs_sma200": 1.0189,
+     "return_30d": 0.0155,
+     "return_7d": 0.004,
+     "revenue_driver": "regulated electric utilities",
+     "signal_rank": 1887,
+     "stock_vs_spy_20d": 0.0116,
+     "ticker": "AES"
+    },
+    {
+     "market_cap_m": 47635.4068,
+     "price_vs_sma200": 0.9194,
+     "return_30d": 0.0071,
+     "return_7d": -0.0807,
+     "revenue_driver": "competitive power generation",
+     "signal_rank": 204,
+     "stock_vs_spy_20d": 0.0277,
+     "ticker": "VST"
+    },
+    {
+     "market_cap_m": 6526.7712,
+     "price_vs_sma200": 0.7777,
+     "return_30d": -0.0538,
+     "return_7d": -0.0269,
+     "revenue_driver": "geothermal power generation",
+     "signal_rank": 1383,
+     "stock_vs_spy_20d": -0.0349,
+     "ticker": "ORA"
+    },
+    {
+     "market_cap_m": 5693.4792,
+     "price_vs_sma200": 0.6331,
+     "return_30d": -0.161,
+     "return_7d": -0.103,
+     "revenue_driver": "power plant EPC",
+     "signal_rank": 1494,
+     "stock_vs_spy_20d": -0.072,
+     "ticker": "AGX"
+    },
+    {
+     "market_cap_m": 972.2282,
+     "price_vs_sma200": 0.6856,
+     "return_30d": -0.1922,
+     "return_7d": -0.0881,
+     "revenue_driver": "energy efficiency projects",
+     "signal_rank": 198,
+     "stock_vs_spy_20d": -0.0976,
+     "ticker": "AMRC"
+    },
+    {
+     "market_cap_m": 861.4987,
+     "price_vs_sma200": 0.4485,
+     "return_30d": -0.2857,
+     "return_7d": -0.1176,
+     "revenue_driver": "solar tracker manufacturer",
+     "signal_rank": 450,
+     "stock_vs_spy_20d": -0.1767,
+     "ticker": "ARRY"
+    },
+    {
+     "market_cap_m": 33.6071,
+     "price_vs_sma200": 0.3607,
+     "return_30d": -0.4291,
+     "return_7d": -0.1481,
+     "revenue_driver": "thin-film solar modules",
+     "signal_rank": 1724,
+     "stock_vs_spy_20d": -0.4073,
+     "ticker": "ASTI"
+    },
+    {
+     "market_cap_m": 81538.919,
+     "price_vs_sma200": 1.0283,
+     "return_30d": -1.0,
+     "return_7d": -1.0,
+     "revenue_driver": "nuclear power generation",
+     "signal_rank": null,
+     "stock_vs_spy_20d": 0.0863,
+     "ticker": "CEG"
+    }
+   ]
+  }
+ },
+ "predictions": {
+  "badge_count": 0,
+  "confidence_score": 0.1067,
+  "conviction_label": "SPECULATIVE",
+  "data_quality_flags": [],
+  "ev_score": 0.0717,
+  "is_diamond": false,
+  "passes_tradability_filter": true,
+  "quality_label": "HIGH",
+  "quantiles": {
+   "downside_q10": -0.3884,
+   "downside_q25": -0.2492,
+   "downside_q50": -0.1496,
+   "downside_q75": -0.0525,
+   "downside_q90": -0.008,
+   "path_volatility": 0.0534,
+   "risk_reward": 1.3758,
+   "uncertainty": 0.5648,
+   "upside_q10": 0.0257,
+   "upside_q25": 0.0802,
+   "upside_q50": 0.2059,
+   "upside_q75": 0.3575,
+   "upside_q90": 0.5905
+  },
+  "rank": 1494,
+  "rank_score": 0.0073,
+  "tradability_filter_reasons": []
+ },
+ "profile": {
+  "_local": {
+   "dividend_yield": 0.0012,
+   "eps_growth_yoy": 0.4953,
+   "pe_ratio": 32.4684,
+   "revenue_growth_yoy": 0.2902,
+   "roe": 0.3658
+  },
+  "beta": 0.554,
+  "betaTTM": null,
+  "ceo": "David Hibbert Watson",
+  "companyName": "Argan, Inc.",
+  "country": "US",
+  "debtToEquityTTM": null,
+  "description": "Argan, Inc., operating through its various subsidiaries, offers a comprehensive suite of services to the power generation and renewable energy sectors. These services span engineering, procurement, construction (EPC), commissioning, operations management, maintenance, project development, and technical and consulting support. The company is structured into three main operating divisions: 1. Power Industry Services: This segment specializes in delivering EPC solutions for alternative energy projects, such as biomass plants, wind farms, and solar fields. It also provides design, construction, project management, start-up, and ongoing operation services for power generation facilities, with a portfolio that includes projects accounting for approximately 15 gigawatts of power-generating capacity. Its client base includes independent power project developers, public utilities, power plant equipment suppliers, and other energy plant construction companies. 2. Industrial Fabrication and Field Services: This division provides specialized industrial field services, alongside pipe and vessel fabrication, for clients in industries such as forest products, industrial gas, fertilizer, and mining, predominantly within the southeastern United States. 3. Telecommunications Infrastructure Services: This segment offers a range of services related to communication and power networks. This includes trenchless directional boring and excavation for underground systems, aerial cabling, installation of buried cables, high and low voltage electric lines, and outdoor lighting systems. Additionally, it provides structured cabling, terminations, and connectivity solutions critical for the physical transmission of high-speed data, voice, video, and security networks. Its customers include state and local government bodies, regional communications providers, electric utilities, various commercial entities, and federal government facilities, including cleared sites, primarily located in the mid-Atlantic region of the United States. Argan, Inc. was founded in 1961 and is headquartered in Rockville, Maryland.",
+  "dividendYielTTM": null,
+  "enterpriseValueOverEBITDATTM": null,
+  "exchangeShortName": "NYSE",
+  "fullTimeEmployees": "1409",
+  "industry": "Engineering & Construction",
+  "ipoDate": "1995-08-18",
+  "latest_earnings_date": "2026-09-02",
+  "marketCapTTM": null,
+  "mktCap": 4620574332,
+  "peRatioTTM": null,
+  "price": 329.34,
+  "priceToSalesRatioTTM": null,
+  "returnOnEquityTTM": 0.3851,
+  "revenue_description": "Argan provides engineering, procurement, construction, commissioning, maintenance, and consulting for power generation and industrial facilities. Revenue is driven primarily by large project contracts, with margins sensitive to project execution, labor and material costs, and contract pricing.",
+  "revenue_description_themes": [
+   "gas power plant demand",
+   "renewable project expansion",
+   "construction backlog growth"
+  ],
+  "revenue_taxonomy": [
+   {
+    "bucket": "Engineering, Construction & Technical Services",
+    "matched_tags": [
+     "power plant EPC",
+     "industrial facility construction"
+    ],
+    "path": "Industrials & Transportation › Industrial Products & Services › Engineering, Construction & Technical Services",
+    "sector": "Industrials & Transportation",
+    "segment": "Industrial Products & Services"
+   },
+   {
+    "bucket": "Renewable Power Generation & Utility-Scale Projects",
+    "matched_tags": [
+     "renewable energy infrastructure"
+    ],
+    "path": "Energy & Utilities › Utilities Power & Water › Renewable Power Generation & Utility-Scale Projects",
+    "sector": "Energy & Utilities",
+    "segment": "Utilities Power & Water"
+   }
+  ],
+  "revenue_themes": [
+   "power plant EPC",
+   "industrial facility construction",
+   "renewable energy infrastructure"
+  ],
+  "sector": "Industrials",
+  "website": "https://www.arganinc.com"
+ },
+ "report": null,
+ "scorecard": {
+  "headline": {
+   "avg_universe_pct": 68,
+   "label": "above_average",
+   "metric_count": 8
+  },
+  "metrics": {
+   "debt_to_equity": {
+    "direction": "lower",
+    "label": "D/E Ratio",
+    "sector": "Industrials",
+    "sector_n": 361,
+    "sector_pct": 96,
+    "universe_n": 2082,
+    "universe_pct": 94,
+    "value": 0.0
+   },
+   "eps_growth_yoy": {
+    "direction": "higher",
+    "label": "EPS Growth",
+    "sector": "Industrials",
+    "sector_n": 353,
+    "sector_pct": 74,
+    "universe_n": 1892,
+    "universe_pct": 71,
+    "value": 0.4953
+   },
+   "gross_margin": {
+    "direction": "higher",
+    "label": "Gross Margin",
+    "sector": "Industrials",
+    "sector_n": 338,
+    "sector_pct": 22,
+    "universe_n": 2010,
+    "universe_pct": 17,
+    "value": 0.2091
+   },
+   "operating_margin": {
+    "direction": "higher",
+    "label": "Op. Margin",
+    "sector": "Industrials",
+    "sector_n": 338,
+    "sector_pct": 74,
+    "universe_n": 2010,
+    "universe_pct": 63,
+    "value": 0.1536
+   },
+   "pe_ratio": {
+    "direction": "lower",
+    "label": "P/E",
+    "sector": "Industrials",
+    "sector_n": 247,
+    "sector_pct": 38,
+    "universe_n": 1474,
+    "universe_pct": 28,
+    "value": 32.4684
+   },
+   "revenue_growth_yoy": {
+    "direction": "higher",
+    "label": "Rev Growth",
+    "sector": "Industrials",
+    "sector_n": 333,
+    "sector_pct": 88,
+    "universe_n": 1834,
+    "universe_pct": 86,
+    "value": 0.2902
+   },
+   "roe": {
+    "direction": "higher",
+    "label": "ROE",
+    "sector": "Industrials",
+    "sector_n": 363,
+    "sector_pct": 90,
+    "universe_n": 2102,
+    "universe_pct": 90,
+    "value": 0.3658
+   },
+   "roic": {
+    "direction": "higher",
+    "label": "ROIC",
+    "sector": "Industrials",
+    "sector_n": 356,
+    "sector_pct": 96,
+    "universe_n": 2053,
+    "universe_pct": 97,
+    "value": 0.1019
+   }
+  }
+ },
+ "signal_rank": 1494,
+ "structural_analogs": {
+  "gp_core_pct": 0.2,
+  "gp_core_ratio": 0.4214,
+  "matches": [
+   {
+    "actual_downside": -0.1622,
+    "actual_return": -0.1622,
+    "actual_upside": 0.0858,
+    "days_in_region": 78,
+    "end_date": "2006-03-09",
+    "end_reason": "reversal",
+    "seq_len": 78,
+    "similarity": 0.4918,
+    "start_date": "2005-10-27",
+    "ticker": "HOV",
+    "total_distance": 0.3548,
+    "trigger_date": "2005-11-21",
+    "trigger_type": "shallow_runup"
+   },
+   {
+    "actual_downside": -0.4743,
+    "actual_return": -0.4743,
+    "actual_upside": 0.0141,
+    "days_in_region": 78,
+    "end_date": "2021-10-01",
+    "end_reason": "reversal",
+    "seq_len": 78,
+    "similarity": 0.4681,
+    "start_date": "2021-05-13",
+    "ticker": "CGC",
+    "total_distance": 0.3796,
+    "trigger_date": "2021-06-08",
+    "trigger_type": "runup"
+   },
+   {
+    "actual_downside": -0.1785,
+    "actual_return": -0.1785,
+    "actual_upside": 0.0539,
+    "days_in_region": 72,
+    "end_date": "2018-06-27",
+    "end_reason": "reversal",
+    "seq_len": 72,
+    "similarity": 0.4656,
+    "start_date": "2018-04-25",
+    "ticker": "OLED",
+    "total_distance": 0.3822,
+    "trigger_date": "2018-05-10",
+    "trigger_type": "shallow_runup"
+   },
+   {
+    "actual_downside": -0.3392,
+    "actual_return": -0.3392,
+    "actual_upside": 0.2229,
+    "days_in_region": 76,
+    "end_date": "2011-08-08",
+    "end_reason": "reversal",
+    "seq_len": 76,
+    "similarity": 0.4553,
+    "start_date": "2011-06-06",
+    "ticker": "NOG",
+    "total_distance": 0.3934,
+    "trigger_date": "2011-06-27",
+    "trigger_type": "shallow_runup"
+   },
+   {
+    "actual_downside": -0.0644,
+    "actual_return": -0.0644,
+    "actual_upside": 0.1598,
+    "days_in_region": 66,
+    "end_date": "1998-04-13",
+    "end_reason": "reversal",
+    "seq_len": 66,
+    "similarity": 0.4498,
+    "start_date": "1998-02-23",
+    "ticker": "NBR",
+    "total_distance": 0.3994,
+    "trigger_date": "1998-03-02",
+    "trigger_type": "shallow_runup"
+   },
+   {
+    "actual_downside": -0.5599,
+    "actual_return": -0.4718,
+    "actual_upside": 0.0096,
+    "days_in_region": 86,
+    "end_date": "2021-07-28",
+    "end_reason": "reversal",
+    "seq_len": 86,
+    "similarity": 0.448,
+    "start_date": "2021-05-20",
+    "ticker": "CWEB",
+    "total_distance": 0.4015,
+    "trigger_date": "2021-06-17",
+    "trigger_type": "compression"
+   },
+   {
+    "actual_downside": -0.1845,
+    "actual_return": 0.1165,
+    "actual_upside": 0.1165,
+    "days_in_region": 80,
+    "end_date": "2000-10-09",
+    "end_reason": "reversal",
+    "seq_len": 80,
+    "similarity": 0.4471,
+    "start_date": "2000-08-14",
+    "ticker": "AXLL",
+    "total_distance": 0.4025,
+    "trigger_date": "2000-09-11",
+    "trigger_type": "compression"
+   },
+   {
+    "actual_downside": -0.3703,
+    "actual_return": -0.3703,
+    "actual_upside": 0.0017,
+    "days_in_region": 78,
+    "end_date": "2022-04-29",
+    "end_reason": "reversal",
+    "seq_len": 78,
+    "similarity": 0.4463,
+    "start_date": "2022-02-23",
+    "ticker": "ETSY",
+    "total_distance": 0.4034,
+    "trigger_date": "2022-02-28",
+    "trigger_type": "runup"
+   },
+   {
+    "actual_downside": -0.2187,
+    "actual_return": -0.2187,
+    "actual_upside": 0.0764,
+    "days_in_region": 91,
+    "end_date": "1998-04-13",
+    "end_reason": "reversal",
+    "seq_len": 91,
+    "similarity": 0.4415,
+    "start_date": "1998-01-27",
+    "ticker": "WOLF",
+    "total_distance": 0.4088,
+    "trigger_date": "1998-02-03",
+    "trigger_type": "runup"
+   },
+   {
+    "actual_downside": -0.0257,
+    "actual_return": 0.2739,
+    "actual_upside": 0.2739,
+    "days_in_region": 178,
+    "end_date": "2022-08-03",
+    "end_reason": "reversal",
+    "seq_len": 178,
+    "similarity": 0.4382,
+    "start_date": "2021-12-29",
+    "ticker": "SYNA",
+    "total_distance": 0.4126,
+    "trigger_date": "2022-06-01",
+    "trigger_type": "severe_drawdown"
+   }
+  ],
+  "panel": {
+   "edge": -0.357,
+   "hit_hi": 0.398,
+   "hit_lo": 0.086,
+   "hit_rate": 0.2,
+   "median_final": -0.2187,
+   "median_pain": 0.1845,
+   "n": 10,
+   "n_eff": 10.0,
+   "p25_final": -0.3703,
+   "p_pain_gt5": 0.9,
+   "return_to_pain": -1.07
+  },
+  "stats": {
+   "avg_similarity": 0.389,
+   "avg_trough": 0.1973,
+   "avg_upside": 0.1934,
+   "median_pain": 0.1742,
+   "median_return": -0.1162,
+   "n_matches": 200,
+   "p25_return": -0.2608,
+   "p_pain_gt5": 0.85,
+   "return_to_pain": -0.598,
+   "top5_avg_trough": 0.2437,
+   "top5_avg_upside": 0.1073,
+   "top_similarity": 0.492,
+   "win_rate": 0.28
+  },
+  "total_matches": 200
+ },
+ "ticker": "AGX",
+ "trending": {
+  "acceleration": -0.0005,
+  "avg_vol_20d": 395273.4663,
+  "base_high_120": 798.55,
+  "breakout_confirmed": 0,
+  "close": 393.72,
+  "momentum_score": 0.0064,
+  "momentum_start": "2026-09-14",
+  "range_20": 0.4393,
+  "range_50": 0.8169,
+  "rank": 1705,
+  "rank_down": 40,
+  "rank_up": null,
+  "ret_120": -0.1,
+  "ret_20": -0.2881,
+  "ret_60": -0.5016,
+  "rundown_score": 0.8501,
+  "score_date": "2026-09-16",
+  "slope_20": -0.0159,
+  "slope_60": -0.0154,
+  "stage": "rundown",
+  "stage_label": "rundown",
+  "ticker": "AGX",
+  "total_score": 0.2458,
+  "trend_ratio": 0.7814,
+  "vcp_detected": 0,
+  "vcp_score": 0.4053
+ }
+}
