@@ -1,0 +1,1020 @@
+{
+ "date": "2026-10-27",
+ "detected_regions": {
+  "primary": {
+   "days_in_region": 105,
+   "region_start": "2026-08-25",
+   "trigger_date": "2026-10-26",
+   "trigger_type": "severe_drawdown"
+  },
+  "secondary": [
+   {
+    "confidence_score": 0.2782,
+    "downside_q50": -0.1135,
+    "ev_score": 0.1033,
+    "region_start": "2026-04-15",
+    "seq_len": 196,
+    "trigger_date": "2026-10-06",
+    "trigger_type": "runup",
+    "upside_q25": 0.0831,
+    "upside_q50": 0.1986,
+    "upside_q75": 0.3611
+   }
+  ]
+ },
+ "feature_attribution": {
+  "macro_driver_count": 12,
+  "risk_flags": [
+   "high_volatility"
+  ],
+  "top_drivers": [
+   {
+    "direction": "positive",
+    "feature": "price_vs_low_52w",
+    "feature_value": 2.7244,
+    "importance": 0.0006,
+    "importance_pct": 0.2196,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "negative",
+    "feature": "dollar_volume",
+    "feature_value": 81057184.0,
+    "importance": 0.0006,
+    "importance_pct": 0.2134,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "positive",
+    "feature": "price_vs_sma200",
+    "feature_value": 1.1828,
+    "importance": 0.0005,
+    "importance_pct": 0.1966,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "positive",
+    "feature": "historical_recovery_rate",
+    "feature_value": 0.2815,
+    "importance": 0.0002,
+    "importance_pct": 0.0787,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "positive",
+    "feature": "rally_from_low_20d",
+    "feature_value": 0.0201,
+    "importance": 0.0002,
+    "importance_pct": 0.0754,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "positive",
+    "feature": "rsi_overbought",
+    "feature_value": 0.0,
+    "importance": 0.0002,
+    "importance_pct": 0.0743,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "positive",
+    "feature": "volatility_20d",
+    "feature_value": 0.0522,
+    "importance": 0.0002,
+    "importance_pct": 0.0725,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "negative",
+    "feature": "stock_vs_industry_20d",
+    "feature_value": -0.1806,
+    "importance": 0.0002,
+    "importance_pct": 0.0696,
+    "method": "integrated_gradients"
+   }
+  ]
+ },
+ "fundamentals": {
+  "accrual": 0.0375,
+  "adx_14": 43.6046,
+  "altman_z_score": 32.1596,
+  "amihud_illiquidity": 0.0003,
+  "avg_volume": 1136588.584,
+  "beta_252d": 0.9779,
+  "book_value_per_share": 6.6976,
+  "correlation_spy_60d": 0.2459,
+  "current_liabilities": 153.802,
+  "current_ratio": 2.8587,
+  "daily_earnings_yield": 0.006,
+  "daily_fcf_yield": 0.0022,
+  "daily_pb": 13.0543,
+  "daily_pe": 167.8371,
+  "daily_ps": 11.0896,
+  "days_since_52w_high": 44.0,
+  "debt_ebitda": 1.1719,
+  "debt_to_equity": 0.0133,
+  "dividend_yield": 0.0,
+  "dollar_volume_20d_avg": 93210195.4451,
+  "earnings_quality": 0.796,
+  "ebitda_growth_yoy": -0.922,
+  "enterprise_value": 8914.6409,
+  "eps_basic": 0.4,
+  "eps_cagr_3y": -0.1587,
+  "eps_cagr_5y": -0.088,
+  "eps_diluted": 0.36,
+  "eps_growth_accel": 0.0584,
+  "eps_growth_qoq": 2.3333,
+  "eps_growth_yoy": -0.5794,
+  "eps_growth_yoy_q2": -0.6378,
+  "eps_growth_yoy_q3": -0.2963,
+  "eps_growth_yoy_q4": -0.2647,
+  "eps_growth_yoy_q5": 0.0328,
+  "eps_growth_yoy_q6": 0.1043,
+  "eps_growth_yoy_q7": 0.3107,
+  "eps_growth_yoy_q8": 0.5455,
+  "eps_history_8q": [
+   0.41,
+   0.26,
+   0.17,
+   0.29,
+   0.16,
+   0.2,
+   -0.3,
+   0.36
+  ],
+  "eps_ttm": 0.5219,
+  "ev_to_ebitda": 1108.9241,
+  "ev_to_fcf": 287.43,
+  "ev_to_sales": 34.8028,
+  "fcf_growth_yoy": 0.0936,
+  "fcf_margin": 0.1211,
+  "fcf_per_share": 0.2943,
+  "gross_margin": 0.9834,
+  "gross_margin_change_yoy": 0.0003,
+  "gross_margin_history": [
+   0.9857,
+   0.9854,
+   0.9835,
+   0.9841,
+   0.9833,
+   0.9834
+  ],
+  "inc_roic": 1.0598,
+  "interest_coverage": null,
+  "is_pre_revenue": false,
+  "margin_vs_sector_median": null,
+  "market_cap_ratio": 9213.4169,
+  "net_income": 42.141,
+  "net_margin": 0.0661,
+  "operating_income": 41.3,
+  "operating_margin": 0.0077,
+  "operating_margin_change_yoy": 0.024,
+  "pb_ratio": 13.0778,
+  "pe_percentile_1y": 0.381,
+  "pe_ratio": 167.8371,
+  "peg_trailing": -3.5223,
+  "piotroski_f_score": 3.0,
+  "price_vs_high_52w": 0.7088,
+  "price_vs_sma200": 1.1828,
+  "ps_percentile_1y": 0.4603,
+  "ps_ratio": 11.7683,
+  "quarter_labels_8q": [
+   "Q3 '24",
+   "Q4 '24",
+   "Q1 '25",
+   "Q2 '25",
+   "Q3 '25",
+   "Q4 '25",
+   "Q1 '26",
+   "Q2 '26"
+  ],
+  "quarterly_eps_growth_yoy": 0.2414,
+  "quarterly_eps_growth_yoy_8q": [
+   0.4643,
+   -0.0714,
+   -0.32,
+   -0.0938,
+   -0.6098,
+   -0.2308,
+   -2.7647,
+   0.2414
+  ],
+  "quarterly_revenue_growth_yoy": 0.3174,
+  "quarterly_revenue_growth_yoy_8q": [
+   0.4769,
+   0.3433,
+   0.0709,
+   0.187,
+   0.1375,
+   0.1112,
+   0.0489,
+   0.3174
+  ],
+  "revenue_cagr_3y": 0.2473,
+  "revenue_cagr_5y": 0.1935,
+  "revenue_growth_accel": 0.0382,
+  "revenue_growth_qoq": 0.5533,
+  "revenue_growth_yoy": 0.1602,
+  "revenue_growth_yoy_q2": 0.122,
+  "revenue_growth_yoy_q3": 0.1279,
+  "revenue_growth_yoy_q4": 0.1792,
+  "revenue_growth_yoy_q5": 0.2571,
+  "revenue_growth_yoy_q6": 0.3093,
+  "revenue_growth_yoy_q7": 0.3994,
+  "revenue_growth_yoy_q8": 0.3967,
+  "revenue_history_8q": [
+   182.546,
+   181.89,
+   157.214,
+   194.43,
+   207.638,
+   202.125,
+   164.903,
+   256.147
+  ],
+  "revenue_per_share": 2.4308,
+  "roa": 0.0644,
+  "roce": 0.0091,
+  "roe": 0.0817,
+  "roic": 0.0747,
+  "rsi_14": 19.3031,
+  "sector_momentum": -0.0163,
+  "share_dilution_1y": 0.0,
+  "stock_vs_sector_20d": -0.2251,
+  "stock_vs_spy_20d": -0.2434,
+  "total_assets": 888.702,
+  "vol_regime": 1.4779,
+  "volatility_20d": 0.0522,
+  "volatility_60d": 0.0353,
+  "w52_high": 126.38,
+  "w52_low": 28.66
+ },
+ "market_characters": [
+  {
+   "id": "g9",
+   "name": "Narrative Premium"
+  }
+ ],
+ "model_analogs": {
+  "matches": [
+   {
+    "actual_downside": 0.0,
+    "actual_return": 0.509,
+    "actual_upside": 0.509,
+    "days_in_region": 112,
+    "end_date": "2005-12-12",
+    "end_reason": "reversal",
+    "similarity": 0.984,
+    "start_date": "2005-08-22",
+    "ticker": "KOMG",
+    "trigger_date": "2005-10-07",
+    "trigger_type": "severe_drawdown"
+   },
+   {
+    "actual_downside": -0.0045,
+    "actual_return": 0.219,
+    "actual_upside": 0.219,
+    "days_in_region": 88,
+    "end_date": "2016-12-05",
+    "end_reason": "reversal",
+    "similarity": 0.9832,
+    "start_date": "2016-09-08",
+    "ticker": "FTK",
+    "trigger_date": "2016-10-28",
+    "trigger_type": "severe_drawdown"
+   },
+   {
+    "actual_downside": 0.0,
+    "actual_return": 0.2422,
+    "actual_upside": 0.2422,
+    "days_in_region": 85,
+    "end_date": "2005-12-01",
+    "end_reason": "reversal",
+    "similarity": 0.9803,
+    "start_date": "2005-09-07",
+    "ticker": "GNSS",
+    "trigger_date": "2005-09-16",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": 0.0,
+    "actual_return": 0.7848,
+    "actual_upside": 0.7848,
+    "days_in_region": 181,
+    "end_date": "2006-01-24",
+    "end_reason": "reversal",
+    "similarity": 0.9788,
+    "start_date": "2005-07-27",
+    "ticker": "PTRY",
+    "trigger_date": "2005-10-18",
+    "trigger_type": "severe_drawdown"
+   },
+   {
+    "actual_downside": 0.0,
+    "actual_return": 0.5297,
+    "actual_upside": 0.5297,
+    "days_in_region": 113,
+    "end_date": "2005-11-23",
+    "end_reason": "reversal",
+    "similarity": 0.9787,
+    "start_date": "2005-08-02",
+    "ticker": "RADS",
+    "trigger_date": "2005-09-19",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": 0.0,
+    "actual_return": 0.1545,
+    "actual_upside": 0.1545,
+    "days_in_region": 141,
+    "end_date": "2005-12-01",
+    "end_reason": "reversal",
+    "similarity": 0.9782,
+    "start_date": "2005-07-13",
+    "ticker": "LSI",
+    "trigger_date": "2005-10-11",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": -0.0365,
+    "actual_return": 0.6116,
+    "actual_upside": 0.6116,
+    "days_in_region": 139,
+    "end_date": "2005-12-14",
+    "end_reason": "reversal",
+    "similarity": 0.9781,
+    "start_date": "2005-07-28",
+    "ticker": "SCVL",
+    "trigger_date": "2005-08-05",
+    "trigger_type": "severe_drawdown"
+   },
+   {
+    "actual_downside": -0.0475,
+    "actual_return": 0.2004,
+    "actual_upside": 0.2004,
+    "days_in_region": 112,
+    "end_date": "2005-12-01",
+    "end_reason": "reversal",
+    "similarity": 0.9778,
+    "start_date": "2005-08-11",
+    "ticker": "ITRI",
+    "trigger_date": "2005-08-29",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": -0.0385,
+    "actual_return": 0.1923,
+    "actual_upside": 0.1923,
+    "days_in_region": 124,
+    "end_date": "1994-01-05",
+    "end_reason": "reversal",
+    "similarity": 0.9771,
+    "start_date": "1993-09-03",
+    "ticker": "FLC",
+    "trigger_date": "1993-11-16",
+    "trigger_type": "severe_drawdown"
+   },
+   {
+    "actual_downside": 0.0,
+    "actual_return": 0.6011,
+    "actual_upside": 0.6011,
+    "days_in_region": 165,
+    "end_date": "2005-08-09",
+    "end_reason": "reversal",
+    "similarity": 0.9771,
+    "start_date": "2005-02-25",
+    "ticker": "PRVD",
+    "trigger_date": "2005-03-24",
+    "trigger_type": "compression"
+   }
+  ],
+  "stats": {
+   "avg_max_drawdown": 0.065,
+   "avg_similarity": 0.976,
+   "avg_trough": 0.065,
+   "avg_upside": 0.3203,
+   "best_return": 1.0371,
+   "downside_range": [
+    -0.3594,
+    0.0
+   ],
+   "median_return": 0.2525,
+   "n_matches": 50,
+   "outcome_agreement": true,
+   "return_p25": 0.1629,
+   "return_p5": -0.0359,
+   "return_p75": 0.4638,
+   "return_p95": 0.7161,
+   "sim_weighted_win_rate": 0.88,
+   "top5_avg_trough": 0.0009,
+   "top5_avg_upside": 0.4569,
+   "top_similarity": 0.984,
+   "upside_range": [
+    0.0068,
+    1.0371
+   ],
+   "win_rate": 0.88,
+   "worst_return": -0.1875,
+   "years_span": 7
+  },
+  "total_matches": 50
+ },
+ "peer_group": {
+  "buckets": [
+   "Branded Biopharma",
+   "Rare Disease, Autoimmune & Specialty Therapies"
+  ],
+  "groups": {
+   "Branded Biopharma": [
+    {
+     "market_cap_m": 30694.4595,
+     "price_vs_sma200": 1.263,
+     "return_30d": 0.1691,
+     "return_7d": 0.0863,
+     "revenue_driver": "neurology therapeutics",
+     "signal_rank": 1897,
+     "stock_vs_spy_20d": 0.1063,
+     "ticker": "BIIB"
+    },
+    {
+     "market_cap_m": 433186.0635,
+     "price_vs_sma200": 1.2135,
+     "return_30d": 0.089,
+     "return_7d": 0.0036,
+     "revenue_driver": "immunology therapeutics",
+     "signal_rank": 1835,
+     "stock_vs_spy_20d": 0.0812,
+     "ticker": "ABBV"
+    },
+    {
+     "market_cap_m": 621068.0651,
+     "price_vs_sma200": 1.092,
+     "return_30d": 0.0057,
+     "return_7d": 0.0515,
+     "revenue_driver": "immunology therapeutics",
+     "signal_rank": 1840,
+     "stock_vs_spy_20d": -0.0024,
+     "ticker": "JNJ"
+    },
+    {
+     "market_cap_m": 389.6505,
+     "price_vs_sma200": 0.9208,
+     "return_30d": -0.009,
+     "return_7d": 0.0973,
+     "revenue_driver": "antiviral therapeutics",
+     "signal_rank": 163,
+     "stock_vs_spy_20d": -0.0431,
+     "ticker": "ENTA"
+    },
+    {
+     "market_cap_m": 6082.4998,
+     "price_vs_sma200": 0.8785,
+     "return_30d": -0.0924,
+     "return_7d": 0.0648,
+     "revenue_driver": "antibody therapeutics",
+     "signal_rank": 744,
+     "stock_vs_spy_20d": -0.0214,
+     "ticker": "ANAB"
+    },
+    {
+     "market_cap_m": 9777.2246,
+     "price_vs_sma200": 1.1828,
+     "return_30d": -0.2096,
+     "return_7d": -0.2049,
+     "revenue_driver": "cushing's syndrome therapeutics",
+     "signal_rank": 78,
+     "stock_vs_spy_20d": -0.2434,
+     "ticker": "CORT"
+    },
+    {
+     "market_cap_m": 658.1064,
+     "price_vs_sma200": 0.4272,
+     "return_30d": -0.2406,
+     "return_7d": -0.0709,
+     "revenue_driver": "cannabinoid therapeutics",
+     "signal_rank": null,
+     "stock_vs_spy_20d": -0.1698,
+     "ticker": "IXHL"
+    },
+    {
+     "market_cap_m": 23.2887,
+     "price_vs_sma200": 0.383,
+     "return_30d": -0.2553,
+     "return_7d": -0.0367,
+     "revenue_driver": "presbyopia therapeutics",
+     "signal_rank": 1523,
+     "stock_vs_spy_20d": -0.1907,
+     "ticker": "LENZ"
+    },
+    {
+     "market_cap_m": 950.2636,
+     "price_vs_sma200": 0.5018,
+     "return_30d": -0.279,
+     "return_7d": -0.0327,
+     "revenue_driver": "antibody therapeutics",
+     "signal_rank": 1219,
+     "stock_vs_spy_20d": -0.3028,
+     "ticker": "IVVD"
+    },
+    {
+     "market_cap_m": 74.1359,
+     "price_vs_sma200": 0.1469,
+     "return_30d": null,
+     "return_7d": 0.01,
+     "revenue_driver": "neuroscience therapeutics",
+     "signal_rank": null,
+     "stock_vs_spy_20d": -0.7412,
+     "ticker": "BTAI"
+    }
+   ],
+   "Rare Disease, Autoimmune & Specialty Therapies": [
+    {
+     "market_cap_m": 1221.2006,
+     "price_vs_sma200": 1.4018,
+     "return_30d": 0.3952,
+     "return_7d": 0.0136,
+     "revenue_driver": "hypoglycemia therapeutics",
+     "signal_rank": 252,
+     "stock_vs_spy_20d": 0.0403,
+     "ticker": "XERS"
+    },
+    {
+     "market_cap_m": 30694.4595,
+     "price_vs_sma200": 1.263,
+     "return_30d": 0.1691,
+     "return_7d": 0.0863,
+     "revenue_driver": "neurology therapeutics",
+     "signal_rank": 1897,
+     "stock_vs_spy_20d": 0.1063,
+     "ticker": "BIIB"
+    },
+    {
+     "market_cap_m": 433186.0635,
+     "price_vs_sma200": 1.2135,
+     "return_30d": 0.089,
+     "return_7d": 0.0036,
+     "revenue_driver": "immunology therapeutics",
+     "signal_rank": 1835,
+     "stock_vs_spy_20d": 0.0812,
+     "ticker": "ABBV"
+    },
+    {
+     "market_cap_m": 621068.0651,
+     "price_vs_sma200": 1.092,
+     "return_30d": 0.0057,
+     "return_7d": 0.0515,
+     "revenue_driver": "immunology therapeutics",
+     "signal_rank": 1840,
+     "stock_vs_spy_20d": -0.0024,
+     "ticker": "JNJ"
+    },
+    {
+     "market_cap_m": 5728.875,
+     "price_vs_sma200": 0.9286,
+     "return_30d": -0.0074,
+     "return_7d": 0.0398,
+     "revenue_driver": "rare disease therapeutics",
+     "signal_rank": 37,
+     "stock_vs_spy_20d": -0.0273,
+     "ticker": "BCRX"
+    },
+    {
+     "market_cap_m": 27146.7847,
+     "price_vs_sma200": 0.787,
+     "return_30d": -0.0482,
+     "return_7d": -0.0217,
+     "revenue_driver": "RNA interference therapeutics",
+     "signal_rank": 1594,
+     "stock_vs_spy_20d": -0.1141,
+     "ticker": "ALNY"
+    },
+    {
+     "market_cap_m": 26259.2249,
+     "price_vs_sma200": 0.653,
+     "return_30d": -0.0696,
+     "return_7d": 0.0238,
+     "revenue_driver": "antisense therapeutics",
+     "signal_rank": 1694,
+     "stock_vs_spy_20d": -0.0488,
+     "ticker": "IONS"
+    },
+    {
+     "market_cap_m": 9777.2246,
+     "price_vs_sma200": 1.1828,
+     "return_30d": -0.2096,
+     "return_7d": -0.2049,
+     "revenue_driver": "cushing's syndrome therapeutics",
+     "signal_rank": 78,
+     "stock_vs_spy_20d": -0.2434,
+     "ticker": "CORT"
+    },
+    {
+     "market_cap_m": 23.2887,
+     "price_vs_sma200": 0.383,
+     "return_30d": -0.2553,
+     "return_7d": -0.0367,
+     "revenue_driver": "presbyopia therapeutics",
+     "signal_rank": 1523,
+     "stock_vs_spy_20d": -0.1907,
+     "ticker": "LENZ"
+    },
+    {
+     "market_cap_m": 345.6981,
+     "price_vs_sma200": 0.5687,
+     "return_30d": -0.6865,
+     "return_7d": -0.2989,
+     "revenue_driver": "immunology therapeutics",
+     "signal_rank": null,
+     "stock_vs_spy_20d": -0.1601,
+     "ticker": "ATYR"
+    }
+   ]
+  }
+ },
+ "predictions": {
+  "badge_count": 1,
+  "confidence_score": 0.3057,
+  "conviction_label": "HIGH CONVICTION",
+  "data_quality_flags": [],
+  "ev_score": 0.2044,
+  "is_diamond": false,
+  "passes_tradability_filter": true,
+  "quality_label": "WEAK",
+  "quantiles": {
+   "downside_q10": -0.2677,
+   "downside_q25": -0.1354,
+   "downside_q50": -0.0669,
+   "downside_q75": -0.0068,
+   "downside_q90": 0.0138,
+   "path_volatility": 0.0393,
+   "risk_reward": 3.911,
+   "uncertainty": 0.6138,
+   "upside_q10": 0.0436,
+   "upside_q25": 0.1217,
+   "upside_q50": 0.2615,
+   "upside_q75": 0.4297,
+   "upside_q90": 0.6574
+  },
+  "rank": 78,
+  "rank_score": 0.0945,
+  "tradability_filter_reasons": []
+ },
+ "profile": {
+  "_local": {
+   "dividend_yield": 0.0,
+   "eps_growth_yoy": -0.5794,
+   "pe_ratio": 221.3095,
+   "revenue_growth_yoy": 0.1602,
+   "roe": 0.0817
+  },
+  "beta": 0.446,
+  "betaTTM": null,
+  "ceo": "Joseph K. Belanoff",
+  "companyName": "Corcept Therapeutics Incorporated",
+  "country": "US",
+  "debtToEquityTTM": null,
+  "description": "Corcept Therapeutics Incorporated, founded in 1998 and headquartered in Menlo Park, California, is a pharmaceutical firm dedicated to the discovery, development, and commercialization of treatments for serious metabolic, oncological, and neuropsychiatric disorders across the United States. Its primary commercial offering is Korlym (mifepristone) tablets, an oral medication taken once daily. Korlym is prescribed for adult patients diagnosed with endogenous Cushing's syndrome who suffer from hyperglycemia due to hypercortisolism, particularly those with type 2 diabetes or glucose intolerance, and for whom surgical options have either failed or are not viable. The company's development pipeline is robust, featuring relacorilant, which is being advanced for Cushing's syndrome. It is also investigating a combination of relacorilant with nab-paclitaxel; this pairing has concluded Phase II clinical trials for advanced ovarian tumors and is additionally being studied for conditions involving cortisol excess. Furthermore, Corcept is developing distinct selective cortisol modulators for specific indications such as metastatic castration-resistant prostate cancer and antipsychotic-induced weight gain, alongside research into FKBP5 gene expression assays.",
+  "dividendYielTTM": null,
+  "enterpriseValueOverEBITDATTM": null,
+  "exchangeShortName": "NASDAQ",
+  "fullTimeEmployees": "730",
+  "industry": "Medical - Pharmaceuticals",
+  "ipoDate": "2004-04-14",
+  "latest_earnings_date": "2026-07-29",
+  "marketCapTTM": null,
+  "mktCap": 9468303820,
+  "peRatioTTM": null,
+  "price": 87.59,
+  "priceToSalesRatioTTM": null,
+  "returnOnEquityTTM": 0.0837,
+  "revenue_description": "Corcept develops and markets therapies focused on cortisol modulation. Revenue is driven mainly by branded drug sales, while growth depends on product uptake, patent life, and pipeline or label-expansion execution.",
+  "revenue_description_themes": [
+   "cortisol receptor antagonists",
+   "hypercortisolism treatment",
+   "oncology clinical pipeline"
+  ],
+  "revenue_taxonomy": [
+   {
+    "bucket": "Rare Disease, Autoimmune & Specialty Therapies",
+    "matched_tags": [
+     "cushing's syndrome therapeutics"
+    ],
+    "path": "Healthcare & Life Sciences › Therapeutics & Biopharma › Rare Disease, Autoimmune & Specialty Therapies",
+    "sector": "Healthcare & Life Sciences",
+    "segment": "Therapeutics & Biopharma"
+   },
+   {
+    "bucket": "Branded Biopharma",
+    "matched_tags": [
+     "selective cortisol modulators",
+     "glucocorticoid receptor antagonists"
+    ],
+    "path": "Healthcare & Life Sciences › Therapeutics & Biopharma › Branded Biopharma",
+    "sector": "Healthcare & Life Sciences",
+    "segment": "Therapeutics & Biopharma"
+   }
+  ],
+  "revenue_themes": [
+   "cushing's syndrome therapeutics",
+   "selective cortisol modulators",
+   "glucocorticoid receptor antagonists"
+  ],
+  "sector": "Healthcare",
+  "website": "https://www.corcept.com"
+ },
+ "report": null,
+ "scorecard": {
+  "headline": {
+   "avg_universe_pct": 60,
+   "label": "above_average",
+   "metric_count": 7
+  },
+  "metrics": {
+   "debt_to_equity": {
+    "direction": "lower",
+    "label": "D/E Ratio",
+    "sector": "Health Care",
+    "sector_n": 290,
+    "sector_pct": 73,
+    "universe_n": 2075,
+    "universe_pct": 82,
+    "value": 0.0133
+   },
+   "eps_growth_yoy": {
+    "direction": "higher",
+    "label": "EPS Growth",
+    "sector": "Health Care",
+    "sector_n": 284,
+    "sector_pct": 22,
+    "universe_n": 1892,
+    "universe_pct": 15,
+    "value": -0.5794
+   },
+   "gross_margin": {
+    "direction": "higher",
+    "label": "Gross Margin",
+    "sector": "Health Care",
+    "sector_n": 239,
+    "sector_pct": 99,
+    "universe_n": 2009,
+    "universe_pct": 99,
+    "value": 0.9834
+   },
+   "operating_margin": {
+    "direction": "higher",
+    "label": "Op. Margin",
+    "sector": "Health Care",
+    "sector_n": 239,
+    "sector_pct": 48,
+    "universe_n": 2009,
+    "universe_pct": 21,
+    "value": 0.0077
+   },
+   "revenue_growth_yoy": {
+    "direction": "higher",
+    "label": "Rev Growth",
+    "sector": "Health Care",
+    "sector_n": 251,
+    "sector_pct": 61,
+    "universe_n": 1834,
+    "universe_pct": 70,
+    "value": 0.1602
+   },
+   "roe": {
+    "direction": "higher",
+    "label": "ROE",
+    "sector": "Health Care",
+    "sector_n": 291,
+    "sector_pct": 67,
+    "universe_n": 2101,
+    "universe_pct": 45,
+    "value": 0.0817
+   },
+   "roic": {
+    "direction": "higher",
+    "label": "ROIC",
+    "sector": "Health Care",
+    "sector_n": 285,
+    "sector_pct": 92,
+    "universe_n": 2044,
+    "universe_pct": 90,
+    "value": 0.0573
+   }
+  }
+ },
+ "signal_rank": 78,
+ "structural_analogs": {
+  "gp_core_pct": 93.5,
+  "gp_core_ratio": 2.2384,
+  "matches": [
+   {
+    "actual_downside": -0.0875,
+    "actual_return": 0.303,
+    "actual_upside": 0.303,
+    "days_in_region": 82,
+    "end_date": "2006-01-17",
+    "end_reason": "reversal",
+    "seq_len": 82,
+    "similarity": 0.5422,
+    "start_date": "2005-09-12",
+    "ticker": "LIFC",
+    "total_distance": 0.3061,
+    "trigger_date": "2005-09-30",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": -0.1103,
+    "actual_return": 0.1856,
+    "actual_upside": 0.1856,
+    "days_in_region": 116,
+    "end_date": "2014-06-20",
+    "end_reason": "reversal",
+    "seq_len": 116,
+    "similarity": 0.5301,
+    "start_date": "2014-01-22",
+    "ticker": "ATRC",
+    "total_distance": 0.3174,
+    "trigger_date": "2014-03-26",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": -0.1116,
+    "actual_return": 0.1051,
+    "actual_upside": 0.1051,
+    "days_in_region": 88,
+    "end_date": "2014-07-29",
+    "end_reason": "reversal",
+    "seq_len": 88,
+    "similarity": 0.5285,
+    "start_date": "2014-03-06",
+    "ticker": "LOGI",
+    "total_distance": 0.3188,
+    "trigger_date": "2014-04-14",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": -0.1921,
+    "actual_return": 0.0136,
+    "actual_upside": 0.0475,
+    "days_in_region": 109,
+    "end_date": "2018-06-13",
+    "end_reason": "reversal",
+    "seq_len": 109,
+    "similarity": 0.5268,
+    "start_date": "2017-11-24",
+    "ticker": "CTRL",
+    "total_distance": 0.3205,
+    "trigger_date": "2018-02-05",
+    "trigger_type": "severe_drawdown"
+   },
+   {
+    "actual_downside": 0.0,
+    "actual_return": 0.1747,
+    "actual_upside": 0.1747,
+    "days_in_region": 87,
+    "end_date": "2014-11-28",
+    "end_reason": "reversal",
+    "seq_len": 87,
+    "similarity": 0.5243,
+    "start_date": "2014-09-08",
+    "ticker": "UAA",
+    "total_distance": 0.3228,
+    "trigger_date": "2014-10-14",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": -0.1654,
+    "actual_return": 0.0551,
+    "actual_upside": 0.0551,
+    "days_in_region": 119,
+    "end_date": "2016-11-25",
+    "end_reason": "reversal",
+    "seq_len": 119,
+    "similarity": 0.5226,
+    "start_date": "2016-08-11",
+    "ticker": "EVH",
+    "total_distance": 0.3244,
+    "trigger_date": "2016-11-02",
+    "trigger_type": "severe_drawdown"
+   },
+   {
+    "actual_downside": -0.1663,
+    "actual_return": 0.0954,
+    "actual_upside": 0.1264,
+    "days_in_region": 86,
+    "end_date": "2007-10-08",
+    "end_reason": "reversal",
+    "seq_len": 86,
+    "similarity": 0.5225,
+    "start_date": "2007-06-20",
+    "ticker": "BWLD",
+    "total_distance": 0.3246,
+    "trigger_date": "2007-07-26",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": -0.0399,
+    "actual_return": 0.265,
+    "actual_upside": 0.265,
+    "days_in_region": 105,
+    "end_date": "2010-04-23",
+    "end_reason": "reversal",
+    "seq_len": 105,
+    "similarity": 0.5181,
+    "start_date": "2009-11-16",
+    "ticker": "AWI",
+    "total_distance": 0.3288,
+    "trigger_date": "2009-12-09",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": 0.0,
+    "actual_return": 0.7104,
+    "actual_upside": 0.7104,
+    "days_in_region": 117,
+    "end_date": "1991-09-25",
+    "end_reason": "reversal",
+    "seq_len": 117,
+    "similarity": 0.5172,
+    "start_date": "1991-04-05",
+    "ticker": "NOVL",
+    "total_distance": 0.3296,
+    "trigger_date": "1991-06-25",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": -0.1714,
+    "actual_return": 0.3929,
+    "actual_upside": 0.3929,
+    "days_in_region": 99,
+    "end_date": "1998-03-12",
+    "end_reason": "reversal",
+    "seq_len": 99,
+    "similarity": 0.5162,
+    "start_date": "1997-10-10",
+    "ticker": "SLOT",
+    "total_distance": 0.3306,
+    "trigger_date": "1997-12-04",
+    "trigger_type": "severe_drawdown"
+   }
+  ],
+  "panel": {
+   "edge": 0.1528,
+   "hit_hi": 0.941,
+   "hit_lo": 0.809,
+   "hit_rate": 0.892,
+   "median_final": 0.1856,
+   "median_pain": 0.0754,
+   "n": 37,
+   "n_eff": 37.0,
+   "p25_final": 0.0926,
+   "p_pain_gt5": 0.541,
+   "return_to_pain": 1.945
+  },
+  "stats": {
+   "avg_similarity": 0.463,
+   "avg_trough": 0.1196,
+   "avg_upside": 0.2228,
+   "median_pain": 0.0804,
+   "median_return": 0.1807,
+   "n_matches": 200,
+   "p25_return": 0.0091,
+   "p_pain_gt5": 0.595,
+   "return_to_pain": 1.8,
+   "top5_avg_trough": 0.1003,
+   "top5_avg_upside": 0.1632,
+   "top_similarity": 0.542,
+   "win_rate": 0.76
+  },
+  "total_matches": 200
+ },
+ "ticker": "CORT",
+ "trending": {
+  "acceleration": 0.0014,
+  "avg_vol_20d": 1680498.0331,
+  "base_high_120": 123.57,
+  "breakout_confirmed": 0,
+  "close": 121.19,
+  "momentum_score": 0.942,
+  "momentum_start": "2026-05-13",
+  "range_20": 0.1188,
+  "range_50": 0.1573,
+  "rank": 663,
+  "rank_down": null,
+  "rank_up": 242,
+  "ret_120": 1.6871,
+  "ret_20": 0.084,
+  "ret_60": 0.3388,
+  "rundown_score": 0.0877,
+  "score_date": "2026-10-12",
+  "slope_20": 0.0039,
+  "slope_60": 0.0025,
+  "stage": "sustained",
+  "stage_label": "Trending",
+  "ticker": "CORT",
+  "total_score": 0.5235,
+  "trend_ratio": 1.413,
+  "vcp_detected": 0,
+  "vcp_score": 0.2445
+ }
+}

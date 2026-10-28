@@ -1,0 +1,1110 @@
+{
+ "date": "2026-10-27",
+ "detected_regions": {
+  "primary": {
+   "days_in_region": 145,
+   "region_start": "2026-06-29",
+   "trigger_date": "2026-10-27",
+   "trigger_type": "severe_drawdown"
+  },
+  "secondary": [
+   {
+    "confidence_score": 0.1081,
+    "downside_q50": -0.1237,
+    "ev_score": 0.1302,
+    "region_start": "2026-05-07",
+    "seq_len": 180,
+    "trigger_date": "2026-10-27",
+    "trigger_type": "runup",
+    "upside_q25": 0.0915,
+    "upside_q50": 0.2317,
+    "upside_q75": 0.4306
+   }
+  ]
+ },
+ "feature_attribution": {
+  "macro_driver_count": 14,
+  "risk_flags": [
+   "high_volatility"
+  ],
+  "top_drivers": [
+   {
+    "direction": "positive",
+    "feature": "volatility_20d",
+    "feature_value": 0.0563,
+    "importance": 0.0004,
+    "importance_pct": 0.2596,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "positive",
+    "feature": "price_vs_sma200",
+    "feature_value": 1.1993,
+    "importance": 0.0004,
+    "importance_pct": 0.2572,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "positive",
+    "feature": "price_vs_low_52w",
+    "feature_value": 2.7366,
+    "importance": 0.0003,
+    "importance_pct": 0.1855,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "positive",
+    "feature": "rally_from_low_20d",
+    "feature_value": 0.1403,
+    "importance": 0.0002,
+    "importance_pct": 0.1199,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "positive",
+    "feature": "historical_recovery_rate",
+    "feature_value": 0.4636,
+    "importance": 0.0001,
+    "importance_pct": 0.0898,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "negative",
+    "feature": "ma_200_slope",
+    "feature_value": 0.0693,
+    "importance": 0.0001,
+    "importance_pct": 0.088,
+    "method": "integrated_gradients"
+   }
+  ]
+ },
+ "fundamentals": {
+  "accrual": -0.0269,
+  "adx_14": 35.7581,
+  "altman_z_score": 2.536,
+  "amihud_illiquidity": 0.0049,
+  "avg_volume": 683208.3521,
+  "beta_252d": 0.9486,
+  "book_value_per_share": 18.6932,
+  "correlation_spy_60d": 0.3103,
+  "current_liabilities": 242.3,
+  "current_ratio": 2.4119,
+  "daily_earnings_yield": -0.0288,
+  "daily_fcf_yield": -0.0233,
+  "daily_pb": 1.9249,
+  "daily_pe": -34.6844,
+  "daily_ps": 1.2225,
+  "days_since_52w_high": 84.0,
+  "debt_ebitda": -8.3092,
+  "debt_to_equity": 0.5025,
+  "dividend_yield": 0.0033,
+  "dollar_volume_20d_avg": 9314390.2631,
+  "earnings_quality": 0.6842,
+  "ebitda_growth_yoy": -1.8532,
+  "enterprise_value": 1493.3868,
+  "eps_basic": -0.32,
+  "eps_cagr_3y": -1.8695,
+  "eps_cagr_5y": -1.787,
+  "eps_diluted": -0.32,
+  "eps_growth_accel": -0.1034,
+  "eps_growth_qoq": -29.3186,
+  "eps_growth_yoy": 0.3299,
+  "eps_growth_yoy_q2": 0.4333,
+  "eps_growth_yoy_q3": 0.3027,
+  "eps_growth_yoy_q4": 0.2964,
+  "eps_growth_yoy_q5": 0.6154,
+  "eps_growth_yoy_q6": 0.4885,
+  "eps_growth_yoy_q7": -0.6111,
+  "eps_growth_yoy_q8": -2.4658,
+  "eps_history_8q": [
+   -0.05,
+   -0.41,
+   -0.8,
+   -0.29,
+   -0.28,
+   -0.45,
+   0.0113,
+   -0.32
+  ],
+  "eps_ttm": -0.3984,
+  "ev_to_ebitda": -37.2416,
+  "ev_to_fcf": -137.008,
+  "ev_to_sales": 5.6269,
+  "fcf_growth_yoy": -1.6056,
+  "fcf_margin": -0.0411,
+  "fcf_per_share": -0.3073,
+  "gross_margin": 0.2066,
+  "gross_margin_change_yoy": -0.039,
+  "gross_margin_history": [
+   0.1904,
+   0.1933,
+   0.1927,
+   0.177,
+   0.2164,
+   0.2066
+  ],
+  "inc_roic": -0.0207,
+  "interest_coverage": -1.7743,
+  "is_pre_revenue": false,
+  "margin_vs_sector_median": null,
+  "market_cap_ratio": 1276.3868,
+  "net_income": -11.4,
+  "net_margin": -0.0352,
+  "operating_income": -3.3,
+  "operating_margin": 0.0053,
+  "operating_margin_change_yoy": -0.0208,
+  "pb_ratio": 0.7393,
+  "pe_percentile_1y": 0.7143,
+  "pe_ratio": -17.4256,
+  "peg_trailing": -0.5283,
+  "piotroski_f_score": 2.0,
+  "price_vs_high_52w": 0.7116,
+  "price_vs_sma200": 1.1993,
+  "ps_percentile_1y": 0.3095,
+  "ps_ratio": 1.6011,
+  "quarter_labels_8q": [
+   "Q2 '24",
+   "Q3 '24",
+   "Q4 '24",
+   "Q1 '25",
+   "Q2 '25",
+   "Q3 '26",
+   "Q4 '26",
+   "Q1 '26"
+  ],
+  "quarterly_eps_growth_yoy": -0.1034,
+  "quarterly_eps_growth_yoy_8q": [
+   0.9677,
+   -0.2424,
+   0.5092,
+   0.4423,
+   -4.6,
+   -0.0976,
+   1.0141,
+   -0.1034
+  ],
+  "quarterly_revenue_growth_yoy": 0.1035,
+  "quarterly_revenue_growth_yoy_8q": [
+   0.016,
+   -0.0755,
+   -0.0728,
+   -0.0696,
+   -0.1562,
+   -0.0258,
+   0.1595,
+   0.1035
+  ],
+  "revenue_cagr_3y": -0.0418,
+  "revenue_cagr_5y": -0.025,
+  "revenue_growth_accel": 0.0412,
+  "revenue_growth_qoq": -0.1097,
+  "revenue_growth_yoy": 0.0136,
+  "revenue_growth_yoy_q2": -0.0276,
+  "revenue_growth_yoy_q3": -0.0843,
+  "revenue_growth_yoy_q4": -0.0951,
+  "revenue_growth_yoy_q5": -0.0491,
+  "revenue_growth_yoy_q6": -0.0596,
+  "revenue_growth_yoy_q7": -0.0616,
+  "revenue_growth_yoy_q8": -0.0613,
+  "revenue_history_8q": [
+   292.6,
+   239.9,
+   257.1,
+   240.5,
+   246.9,
+   233.7,
+   298.1,
+   265.4
+  ],
+  "revenue_per_share": 7.4818,
+  "roa": -0.0374,
+  "roce": 0.0075,
+  "roe": -0.0549,
+  "roic": -0.036,
+  "rsi_14": 50.8235,
+  "sector_momentum": -0.0615,
+  "share_dilution_1y": 0.0,
+  "stock_vs_sector_20d": -0.0096,
+  "stock_vs_spy_20d": -0.043,
+  "total_assets": 1263.7,
+  "vol_regime": 0.9518,
+  "volatility_20d": 0.0563,
+  "volatility_60d": 0.0592,
+  "w52_high": 20.38,
+  "w52_low": 4.88
+ },
+ "market_characters": [],
+ "model_analogs": {
+  "matches": [
+   {
+    "actual_downside": -0.098,
+    "actual_return": -0.098,
+    "actual_upside": 0.0471,
+    "days_in_region": 211,
+    "end_date": "2019-11-13",
+    "end_reason": "reversal",
+    "similarity": 0.9799,
+    "start_date": "2019-04-16",
+    "ticker": "HROW",
+    "trigger_date": "2019-10-07",
+    "trigger_type": "runup"
+   },
+   {
+    "actual_downside": -0.4062,
+    "actual_return": -0.4062,
+    "actual_upside": 0.175,
+    "days_in_region": 204,
+    "end_date": "1998-10-06",
+    "end_reason": "reversal",
+    "similarity": 0.9798,
+    "start_date": "1998-03-16",
+    "ticker": "IMCL",
+    "trigger_date": "1998-09-02",
+    "trigger_type": "runup"
+   },
+   {
+    "actual_downside": -0.2435,
+    "actual_return": -0.2435,
+    "actual_upside": 0.0,
+    "days_in_region": 161,
+    "end_date": "2019-10-29",
+    "end_reason": "reversal",
+    "similarity": 0.9796,
+    "start_date": "2019-05-21",
+    "ticker": "FLGT",
+    "trigger_date": "2019-10-07",
+    "trigger_type": "runup"
+   },
+   {
+    "actual_downside": -0.126,
+    "actual_return": -0.126,
+    "actual_upside": 0.0752,
+    "days_in_region": 255,
+    "end_date": "2019-12-09",
+    "end_reason": "reversal",
+    "similarity": 0.9791,
+    "start_date": "2019-03-29",
+    "ticker": "ISSC",
+    "trigger_date": "2019-09-17",
+    "trigger_type": "runup"
+   },
+   {
+    "actual_downside": -0.3495,
+    "actual_return": -0.3495,
+    "actual_upside": 0.0361,
+    "days_in_region": 253,
+    "end_date": "2019-02-08",
+    "end_reason": "reversal",
+    "similarity": 0.9787,
+    "start_date": "2018-05-31",
+    "ticker": "NGVC",
+    "trigger_date": "2018-11-19",
+    "trigger_type": "runup"
+   },
+   {
+    "actual_downside": -0.0333,
+    "actual_return": 0.1333,
+    "actual_upside": 0.1476,
+    "days_in_region": 90,
+    "end_date": "2022-12-12",
+    "end_reason": "reversal",
+    "similarity": 0.9781,
+    "start_date": "2022-09-13",
+    "ticker": "GERN",
+    "trigger_date": "2022-10-10",
+    "trigger_type": "severe_drawdown"
+   },
+   {
+    "actual_downside": -0.1006,
+    "actual_return": -0.1006,
+    "actual_upside": 0.0794,
+    "days_in_region": 196,
+    "end_date": "2018-11-27",
+    "end_reason": "reversal",
+    "similarity": 0.978,
+    "start_date": "2018-05-15",
+    "ticker": "PCMI",
+    "trigger_date": "2018-11-02",
+    "trigger_type": "runup"
+   },
+   {
+    "actual_downside": 0.0,
+    "actual_return": 0.2081,
+    "actual_upside": 0.3604,
+    "days_in_region": 213,
+    "end_date": "1999-05-27",
+    "end_reason": "reversal",
+    "similarity": 0.9779,
+    "start_date": "1998-10-26",
+    "ticker": "SEBL",
+    "trigger_date": "1999-04-20",
+    "trigger_type": "runup"
+   },
+   {
+    "actual_downside": -0.3029,
+    "actual_return": -0.3029,
+    "actual_upside": 0.0826,
+    "days_in_region": 235,
+    "end_date": "2019-12-30",
+    "end_reason": "reversal",
+    "similarity": 0.9776,
+    "start_date": "2019-05-09",
+    "ticker": "CPRX",
+    "trigger_date": "2019-10-15",
+    "trigger_type": "runup"
+   },
+   {
+    "actual_downside": -0.1528,
+    "actual_return": -0.1528,
+    "actual_upside": 0.0787,
+    "days_in_region": 150,
+    "end_date": "2019-11-15",
+    "end_reason": "reversal",
+    "similarity": 0.9776,
+    "start_date": "2019-06-18",
+    "ticker": "ARCT",
+    "trigger_date": "2019-10-04",
+    "trigger_type": "runup"
+   }
+  ],
+  "stats": {
+   "avg_max_drawdown": 0.1528,
+   "avg_similarity": 0.976,
+   "avg_trough": 0.1528,
+   "avg_upside": 0.3148,
+   "best_return": 1.3636,
+   "downside_range": [
+    -0.4687,
+    0.0
+   ],
+   "median_return": -0.0007,
+   "n_matches": 50,
+   "outcome_agreement": false,
+   "return_p25": -0.2087,
+   "return_p5": -0.3546,
+   "return_p75": 0.2851,
+   "return_p95": 0.7852,
+   "sim_weighted_win_rate": 0.5,
+   "top5_avg_trough": 0.2446,
+   "top5_avg_upside": 0.0667,
+   "top_similarity": 0.98,
+   "upside_range": [
+    0.0,
+    1.4305
+   ],
+   "win_rate": 0.5,
+   "worst_return": -0.4687,
+   "years_span": 13
+  },
+  "total_matches": 50
+ },
+ "peer_group": {
+  "buckets": [
+   "Automotive & Industrial Semiconductors",
+   "Automotive OEM Systems & Components",
+   "Electrical Equipment, Power Components & Grid Hardware"
+  ],
+  "groups": {
+   "Automotive & Industrial Semiconductors": [
+    {
+     "market_cap_m": 40187.6389,
+     "price_vs_sma200": 1.0068,
+     "return_30d": 0.1214,
+     "return_7d": 0.0856,
+     "revenue_driver": "microcontrollers",
+     "signal_rank": 1522,
+     "stock_vs_spy_20d": 0.0109,
+     "ticker": "MCHP"
+    },
+    {
+     "market_cap_m": 1671.6788,
+     "price_vs_sma200": 1.1993,
+     "return_30d": 0.0494,
+     "return_7d": 0.0368,
+     "revenue_driver": "automotive sensing components",
+     "signal_rank": 1117,
+     "stock_vs_spy_20d": -0.043,
+     "ticker": "MEI"
+    },
+    {
+     "market_cap_m": 91036.0283,
+     "price_vs_sma200": 1.0658,
+     "return_30d": 0.042,
+     "return_7d": 0.0415,
+     "revenue_driver": "industrial adhesives and tapes",
+     "signal_rank": 1619,
+     "stock_vs_spy_20d": 0.0116,
+     "ticker": "MMM"
+    },
+    {
+     "market_cap_m": 7682.4385,
+     "price_vs_sma200": 0.8326,
+     "return_30d": 0.0216,
+     "return_7d": 0.0746,
+     "revenue_driver": "magnetic sensor ICs",
+     "signal_rank": 1241,
+     "stock_vs_spy_20d": -0.0783,
+     "ticker": "ALGM"
+    },
+    {
+     "market_cap_m": 18876.468,
+     "price_vs_sma200": 0.8961,
+     "return_30d": -0.0279,
+     "return_7d": -0.0013,
+     "revenue_driver": "low power programmable chips",
+     "signal_rank": 931,
+     "stock_vs_spy_20d": -0.1816,
+     "ticker": "LSCC"
+    },
+    {
+     "market_cap_m": 1613.5648,
+     "price_vs_sma200": 0.7992,
+     "return_30d": -0.1326,
+     "return_7d": -0.0485,
+     "revenue_driver": "ADAS & autonomy",
+     "signal_rank": 439,
+     "stock_vs_spy_20d": -0.0986,
+     "ticker": "MBLY"
+    },
+    {
+     "market_cap_m": 54.9671,
+     "price_vs_sma200": 0.7386,
+     "return_30d": -0.1405,
+     "return_7d": 0.2117,
+     "revenue_driver": "FMCW lidar systems",
+     "signal_rank": null,
+     "stock_vs_spy_20d": 0.0262,
+     "ticker": "LIDR"
+    },
+    {
+     "market_cap_m": 238.1486,
+     "price_vs_sma200": 0.6835,
+     "return_30d": -0.1895,
+     "return_7d": 0.0973,
+     "revenue_driver": "MEMS-based lidar sensors",
+     "signal_rank": null,
+     "stock_vs_spy_20d": -0.088,
+     "ticker": "MVIS"
+    },
+    {
+     "market_cap_m": 1517.6208,
+     "price_vs_sma200": 0.612,
+     "return_30d": -0.2643,
+     "return_7d": 0.0409,
+     "revenue_driver": "FMCW lidar sensing systems",
+     "signal_rank": 1617,
+     "stock_vs_spy_20d": -0.2594,
+     "ticker": "AEVA"
+    },
+    {
+     "market_cap_m": 818.5484,
+     "price_vs_sma200": 0.485,
+     "return_30d": -0.4351,
+     "return_7d": -0.044,
+     "revenue_driver": "automotive semiconductors",
+     "signal_rank": 1278,
+     "stock_vs_spy_20d": -0.4189,
+     "ticker": "INDI"
+    }
+   ],
+   "Automotive OEM Systems & Components": [
+    {
+     "market_cap_m": 405.3498,
+     "price_vs_sma200": 0.9376,
+     "return_30d": 0.0548,
+     "return_7d": -0.0515,
+     "revenue_driver": "automotive voice assistants",
+     "signal_rank": 7,
+     "stock_vs_spy_20d": 0.0975,
+     "ticker": "CRNC"
+    },
+    {
+     "market_cap_m": 1671.6788,
+     "price_vs_sma200": 1.1993,
+     "return_30d": 0.0494,
+     "return_7d": 0.0368,
+     "revenue_driver": "automotive sensing components",
+     "signal_rank": 1117,
+     "stock_vs_spy_20d": -0.043,
+     "ticker": "MEI"
+    },
+    {
+     "market_cap_m": 2878.7068,
+     "price_vs_sma200": 0.7471,
+     "return_30d": 0.016,
+     "return_7d": 0.0572,
+     "revenue_driver": "RV interior components",
+     "signal_rank": 1084,
+     "stock_vs_spy_20d": 0.0339,
+     "ticker": "PATK"
+    },
+    {
+     "market_cap_m": 12362.5708,
+     "price_vs_sma200": 0.9798,
+     "return_30d": -0.0017,
+     "return_7d": 0.0001,
+     "revenue_driver": "automotive airbags and seatbelts",
+     "signal_rank": 1457,
+     "stock_vs_spy_20d": 0.0194,
+     "ticker": "ALV"
+    },
+    {
+     "market_cap_m": 6776.2968,
+     "price_vs_sma200": 0.9072,
+     "return_30d": -0.0756,
+     "return_7d": -0.0281,
+     "revenue_driver": "automotive seating systems",
+     "signal_rank": 541,
+     "stock_vs_spy_20d": -0.0292,
+     "ticker": "LEA"
+    },
+    {
+     "market_cap_m": 487.3103,
+     "price_vs_sma200": 0.7276,
+     "return_30d": -0.0906,
+     "return_7d": 0.0077,
+     "revenue_driver": "automotive sealing systems",
+     "signal_rank": 906,
+     "stock_vs_spy_20d": -0.0171,
+     "ticker": "CPS"
+    },
+    {
+     "market_cap_m": 14286.1118,
+     "price_vs_sma200": 0.9206,
+     "return_30d": -0.1082,
+     "return_7d": -0.0413,
+     "revenue_driver": "automotive powertrain components",
+     "signal_rank": 378,
+     "stock_vs_spy_20d": -0.0922,
+     "ticker": "BWA"
+    },
+    {
+     "market_cap_m": 501.7969,
+     "price_vs_sma200": 0.8535,
+     "return_30d": -0.1201,
+     "return_7d": 0.0062,
+     "revenue_driver": "automotive electronic components",
+     "signal_rank": 690,
+     "stock_vs_spy_20d": -0.0883,
+     "ticker": "HY"
+    },
+    {
+     "market_cap_m": 1185.8446,
+     "price_vs_sma200": 0.7756,
+     "return_30d": -0.1227,
+     "return_7d": -0.0417,
+     "revenue_driver": "commercial vehicle components",
+     "signal_rank": 518,
+     "stock_vs_spy_20d": -0.0951,
+     "ticker": "GBX"
+    },
+    {
+     "market_cap_m": 571.4808,
+     "price_vs_sma200": 0.539,
+     "return_30d": -0.181,
+     "return_7d": 0.0734,
+     "revenue_driver": "automotive wiring harnesses",
+     "signal_rank": 1234,
+     "stock_vs_spy_20d": -0.0274,
+     "ticker": "KLC"
+    }
+   ],
+   "Electrical Equipment, Power Components & Grid Hardware": [
+    {
+     "market_cap_m": 1543.3174,
+     "price_vs_sma200": 0.8799,
+     "return_30d": 0.0595,
+     "return_7d": 0.0432,
+     "revenue_driver": "solar EBOS components",
+     "signal_rank": 1262,
+     "stock_vs_spy_20d": -0.0441,
+     "ticker": "SHLS"
+    },
+    {
+     "market_cap_m": 1671.6788,
+     "price_vs_sma200": 1.1993,
+     "return_30d": 0.0494,
+     "return_7d": 0.0368,
+     "revenue_driver": "automotive sensing components",
+     "signal_rank": 1117,
+     "stock_vs_spy_20d": -0.043,
+     "ticker": "MEI"
+    },
+    {
+     "market_cap_m": 1579.9347,
+     "price_vs_sma200": 1.1457,
+     "return_30d": 0.0302,
+     "return_7d": 0.0151,
+     "revenue_driver": "precision motion controls",
+     "signal_rank": 211,
+     "stock_vs_spy_20d": -0.1679,
+     "ticker": "ALNT"
+    },
+    {
+     "market_cap_m": 7127.2194,
+     "price_vs_sma200": 1.1488,
+     "return_30d": 0.0269,
+     "return_7d": 0.0129,
+     "revenue_driver": "construction aggregates",
+     "signal_rank": 297,
+     "stock_vs_spy_20d": 0.0232,
+     "ticker": "ACA"
+    },
+    {
+     "market_cap_m": 10221.5239,
+     "price_vs_sma200": 0.9611,
+     "return_30d": -0.032,
+     "return_7d": 0.0055,
+     "revenue_driver": "circuit protection components",
+     "signal_rank": 523,
+     "stock_vs_spy_20d": -0.1135,
+     "ticker": "LFUS"
+    },
+    {
+     "market_cap_m": 3170.2488,
+     "price_vs_sma200": 0.9023,
+     "return_30d": -0.0343,
+     "return_7d": 0.0774,
+     "revenue_driver": "circuit protection components",
+     "signal_rank": 1317,
+     "stock_vs_spy_20d": -0.0951,
+     "ticker": "BELFB"
+    },
+    {
+     "market_cap_m": 13488.7112,
+     "price_vs_sma200": 0.9625,
+     "return_30d": -0.0578,
+     "return_7d": -0.0996,
+     "revenue_driver": "power transmission distribution",
+     "signal_rank": 296,
+     "stock_vs_spy_20d": -0.1215,
+     "ticker": "AIT"
+    },
+    {
+     "market_cap_m": 11186.8631,
+     "price_vs_sma200": 0.7544,
+     "return_30d": -0.0705,
+     "return_7d": -0.0216,
+     "revenue_driver": "power conversion systems",
+     "signal_rank": 1404,
+     "stock_vs_spy_20d": -0.1847,
+     "ticker": "AEIS"
+    },
+    {
+     "market_cap_m": 130.086,
+     "price_vs_sma200": 0.8137,
+     "return_30d": -0.078,
+     "return_7d": 0.0467,
+     "revenue_driver": "circuit protection components",
+     "signal_rank": 784,
+     "stock_vs_spy_20d": -0.1193,
+     "ticker": "BELFA"
+    },
+    {
+     "market_cap_m": 1185.8446,
+     "price_vs_sma200": 0.7756,
+     "return_30d": -0.1227,
+     "return_7d": -0.0417,
+     "revenue_driver": "commercial vehicle components",
+     "signal_rank": 518,
+     "stock_vs_spy_20d": -0.0951,
+     "ticker": "GBX"
+    }
+   ]
+  }
+ },
+ "predictions": {
+  "badge_count": 1,
+  "confidence_score": 0.0903,
+  "conviction_label": "SPECULATIVE",
+  "data_quality_flags": [],
+  "ev_score": 0.1369,
+  "is_diamond": false,
+  "passes_tradability_filter": true,
+  "quality_label": "WEAK",
+  "quantiles": {
+   "downside_q10": -0.3774,
+   "downside_q25": -0.2307,
+   "downside_q50": -0.1236,
+   "downside_q75": -0.0362,
+   "downside_q90": -0.0044,
+   "path_volatility": 0.0477,
+   "risk_reward": 1.9465,
+   "uncertainty": 0.6954,
+   "upside_q10": 0.0283,
+   "upside_q25": 0.0966,
+   "upside_q50": 0.2406,
+   "upside_q75": 0.4357,
+   "upside_q90": 0.7238
+  },
+  "rank": 1117,
+  "rank_score": 0.0137,
+  "tradability_filter_reasons": []
+ },
+ "profile": {
+  "_local": {
+   "dividend_yield": 0.0033,
+   "eps_growth_yoy": 0.3299,
+   "pe_ratio": -17.4256,
+   "revenue_growth_yoy": 0.0136,
+   "roe": -0.0549
+  },
+  "beta": 1.565,
+  "betaTTM": null,
+  "ceo": "Jonathan DeGaynor",
+  "companyName": "Methode Electronics, Inc.",
+  "country": "US",
+  "debtToEquityTTM": null,
+  "description": "Methode Electronics, Inc. designs, engineers, produces, and sells mechatronic products internationally. The company operates in three segments: Automotive, Industrial, and Interface. The Automotive segment supplies electronic and electro-mechanical devices and related products to automobile original equipment manufacturers directly or through their tiered suppliers. This segment products include integrated overhead and center consoles, hidden and ergonomic switches, transmission lead-frames, complex insert molded solutions, LED-based lighting solutions, and sensors, which incorporate magneto-elastic sensing, or other sensing technologies that monitor the operation or status of a component or system. The Industrial segment manufactures exterior and interior lighting solutions, industrial safety radio remote controls, braided flexible cables, current-carrying laminated busbars and devices, custom power-product assemblies comprising PowerRail solutions, high-current high-voltage flexible power cabling systems, and powder-coated busbars that are used in various markets and applications, including aerospace, commercial vehicles, data centers, industrial equipment, military, power conversion, telecommunications, and transportation. The Interface segment provides a variety of high-speed digital communication over copper media solutions for the data center and broadband markets, and interface panel solutions for the appliance market; and solutions, including copper transceivers, distribution point units, and solid-state field-effect consumer touch panels. The company serves end markets of transportation, including automotive, commercial vehicle, e-bike, aerospace, bus, and rail; and cloud computing infrastructure, construction equipment, and consumer appliance industries. Methode Electronics, Inc. was incorporated in 1946 and is headquartered in Chicago, Illinois.",
+  "dividendYielTTM": null,
+  "enterpriseValueOverEBITDATTM": null,
+  "exchangeShortName": "NYSE",
+  "fullTimeEmployees": "6650",
+  "industry": "Hardware, Equipment & Parts",
+  "ipoDate": "1982-10-20",
+  "latest_earnings_date": "2026-09-02",
+  "marketCapTTM": null,
+  "mktCap": 492614632,
+  "peRatioTTM": null,
+  "price": 13.82,
+  "priceToSalesRatioTTM": null,
+  "returnOnEquityTTM": -0.0546,
+  "revenue_description": "Methode Electronics makes electronic and sensing components for automotive and industrial markets. Revenue is driven by vehicle production volumes and content-per-vehicle, with EV transition and ADAS adoption creating new product opportunities.",
+  "revenue_description_themes": [
+   "vehicle production volume and OEM build rate",
+   "EV powertrain content growth per vehicle",
+   "ADAS sensor and software content per platform"
+  ],
+  "revenue_taxonomy": [
+   {
+    "bucket": "Automotive & Industrial Semiconductors",
+    "matched_tags": [
+     "automotive sensing components"
+    ],
+    "path": "Technology › Hardware & Semiconductors › Automotive & Industrial Semiconductors",
+    "sector": "Technology",
+    "segment": "Hardware & Semiconductors"
+   },
+   {
+    "bucket": "Automotive OEM Systems & Components",
+    "matched_tags": [
+     "EV interface technology"
+    ],
+    "path": "Industrials & Transportation › Mobility & Logistics › Automotive OEM Systems & Components",
+    "sector": "Industrials & Transportation",
+    "segment": "Mobility & Logistics"
+   },
+   {
+    "bucket": "Electrical Equipment, Power Components & Grid Hardware",
+    "matched_tags": [
+     "industrial and medical interconnect solutions"
+    ],
+    "path": "Industrials & Transportation › Industrial Products & Services › Electrical Equipment, Power Components & Grid Hardware",
+    "sector": "Industrials & Transportation",
+    "segment": "Industrial Products & Services"
+   }
+  ],
+  "revenue_themes": [
+   "automotive sensing components",
+   "EV interface technology",
+   "industrial and medical interconnect solutions"
+  ],
+  "sector": "Technology",
+  "website": "https://www.methode.com"
+ },
+ "report": null,
+ "scorecard": {
+  "headline": {
+   "avg_universe_pct": 30,
+   "label": "below_average",
+   "metric_count": 7
+  },
+  "metrics": {
+   "debt_to_equity": {
+    "direction": "lower",
+    "label": "D/E Ratio",
+    "sector": "Info Tech",
+    "sector_n": 309,
+    "sector_pct": 36,
+    "universe_n": 2075,
+    "universe_pct": 43,
+    "value": 0.5025
+   },
+   "eps_growth_yoy": {
+    "direction": "higher",
+    "label": "EPS Growth",
+    "sector": "Info Tech",
+    "sector_n": 308,
+    "sector_pct": 51,
+    "universe_n": 1892,
+    "universe_pct": 63,
+    "value": 0.3299
+   },
+   "gross_margin": {
+    "direction": "higher",
+    "label": "Gross Margin",
+    "sector": "Info Tech",
+    "sector_n": 308,
+    "sector_pct": 9,
+    "universe_n": 2009,
+    "universe_pct": 17,
+    "value": 0.2066
+   },
+   "operating_margin": {
+    "direction": "higher",
+    "label": "Op. Margin",
+    "sector": "Info Tech",
+    "sector_n": 308,
+    "sector_pct": 29,
+    "universe_n": 2009,
+    "universe_pct": 20,
+    "value": 0.0053
+   },
+   "revenue_growth_yoy": {
+    "direction": "higher",
+    "label": "Rev Growth",
+    "sector": "Info Tech",
+    "sector_n": 308,
+    "sector_pct": 14,
+    "universe_n": 1834,
+    "universe_pct": 25,
+    "value": 0.0136
+   },
+   "roe": {
+    "direction": "higher",
+    "label": "ROE",
+    "sector": "Info Tech",
+    "sector_n": 312,
+    "sector_pct": 25,
+    "universe_n": 2101,
+    "universe_pct": 24,
+    "value": -0.0549
+   },
+   "roic": {
+    "direction": "higher",
+    "label": "ROIC",
+    "sector": "Info Tech",
+    "sector_n": 308,
+    "sector_pct": 22,
+    "universe_n": 2044,
+    "universe_pct": 19,
+    "value": -0.0112
+   }
+  }
+ },
+ "signal_rank": 1117,
+ "structural_analogs": {
+  "gp_core_pct": 68.6,
+  "gp_core_ratio": 1.5536,
+  "matches": [
+   {
+    "actual_downside": 0.0,
+    "actual_return": 0.3026,
+    "actual_upside": 0.3026,
+    "days_in_region": 119,
+    "end_date": "2005-05-26",
+    "end_reason": "reversal",
+    "seq_len": 119,
+    "similarity": 0.4441,
+    "start_date": "2005-02-08",
+    "ticker": "OSPN",
+    "total_distance": 0.4059,
+    "trigger_date": "2005-05-03",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": -0.4375,
+    "actual_return": -0.4375,
+    "actual_upside": 0.0977,
+    "days_in_region": 171,
+    "end_date": "1998-01-13",
+    "end_reason": "reversal",
+    "seq_len": 171,
+    "similarity": 0.444,
+    "start_date": "1997-06-13",
+    "ticker": "DSPG",
+    "total_distance": 0.406,
+    "trigger_date": "1997-11-18",
+    "trigger_type": "runup"
+   },
+   {
+    "actual_downside": 0.0,
+    "actual_return": 1.2199,
+    "actual_upside": 1.2199,
+    "days_in_region": 140,
+    "end_date": "2010-11-03",
+    "end_reason": "reversal",
+    "seq_len": 140,
+    "similarity": 0.4414,
+    "start_date": "2010-05-03",
+    "ticker": "GSL",
+    "total_distance": 0.4089,
+    "trigger_date": "2010-08-16",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": -0.4508,
+    "actual_return": -0.3638,
+    "actual_upside": 0.0483,
+    "days_in_region": 96,
+    "end_date": "2011-07-07",
+    "end_reason": "reversal",
+    "seq_len": 96,
+    "similarity": 0.4399,
+    "start_date": "2011-01-13",
+    "ticker": "MIPS",
+    "total_distance": 0.4106,
+    "trigger_date": "2011-01-27",
+    "trigger_type": "severe_drawdown"
+   },
+   {
+    "actual_downside": -0.0667,
+    "actual_return": 0.0667,
+    "actual_upside": 0.0667,
+    "days_in_region": 114,
+    "end_date": "1992-07-09",
+    "end_reason": "reversal",
+    "seq_len": 114,
+    "similarity": 0.4392,
+    "start_date": "1992-04-01",
+    "ticker": "OAK",
+    "total_distance": 0.4114,
+    "trigger_date": "1992-06-17",
+    "trigger_type": "severe_drawdown"
+   },
+   {
+    "actual_downside": -0.0486,
+    "actual_return": 0.5753,
+    "actual_upside": 0.5753,
+    "days_in_region": 149,
+    "end_date": "2004-01-13",
+    "end_reason": "reversal",
+    "seq_len": 149,
+    "similarity": 0.4369,
+    "start_date": "2003-07-09",
+    "ticker": "TLRK",
+    "total_distance": 0.414,
+    "trigger_date": "2003-09-26",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": -0.1556,
+    "actual_return": 0.0333,
+    "actual_upside": 0.0333,
+    "days_in_region": 107,
+    "end_date": "2000-11-16",
+    "end_reason": "reversal",
+    "seq_len": 107,
+    "similarity": 0.4364,
+    "start_date": "2000-08-18",
+    "ticker": "SCOR",
+    "total_distance": 0.4146,
+    "trigger_date": "2000-10-24",
+    "trigger_type": "severe_drawdown"
+   },
+   {
+    "actual_downside": -0.0741,
+    "actual_return": -0.0741,
+    "actual_upside": 0.0556,
+    "days_in_region": 194,
+    "end_date": "1992-08-12",
+    "end_reason": "reversal",
+    "seq_len": 194,
+    "similarity": 0.4364,
+    "start_date": "1991-12-31",
+    "ticker": "ADAC",
+    "total_distance": 0.4147,
+    "trigger_date": "1992-06-19",
+    "trigger_type": "runup"
+   },
+   {
+    "actual_downside": -0.4047,
+    "actual_return": -0.2336,
+    "actual_upside": 0.0,
+    "days_in_region": 130,
+    "end_date": "2011-08-31",
+    "end_reason": "reversal",
+    "seq_len": 130,
+    "similarity": 0.4363,
+    "start_date": "2011-02-28",
+    "ticker": "EXEL",
+    "total_distance": 0.4147,
+    "trigger_date": "2011-06-07",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": -0.1685,
+    "actual_return": -0.05,
+    "actual_upside": 0.0951,
+    "days_in_region": 140,
+    "end_date": "2018-12-03",
+    "end_reason": "reversal",
+    "seq_len": 140,
+    "similarity": 0.4349,
+    "start_date": "2018-07-09",
+    "ticker": "ROCC",
+    "total_distance": 0.4164,
+    "trigger_date": "2018-10-25",
+    "trigger_type": "severe_drawdown"
+   }
+  ],
+  "panel": {
+   "edge": 0.0228,
+   "hit_hi": 0.672,
+   "hit_lo": 0.499,
+   "hit_rate": 0.588,
+   "median_final": 0.0894,
+   "median_pain": 0.1014,
+   "n": 51,
+   "n_eff": 51.0,
+   "p25_final": -0.1282,
+   "p_pain_gt5": 0.667,
+   "return_to_pain": 0.736
+  },
+  "stats": {
+   "avg_similarity": 0.398,
+   "avg_trough": 0.1323,
+   "avg_upside": 0.299,
+   "median_pain": 0.0872,
+   "median_return": 0.0873,
+   "n_matches": 200,
+   "p25_return": -0.0958,
+   "p_pain_gt5": 0.6,
+   "return_to_pain": 0.814,
+   "top5_avg_trough": 0.191,
+   "top5_avg_upside": 0.347,
+   "top_similarity": 0.444,
+   "win_rate": 0.635
+  },
+  "total_matches": 200
+ },
+ "ticker": "MEI",
+ "trending": {
+  "acceleration": -0.0006,
+  "avg_vol_20d": 729126.7608,
+  "base_high_120": 19.42,
+  "breakout_confirmed": 0,
+  "close": 15.69,
+  "momentum_score": 0.9036,
+  "momentum_start": "2026-04-22",
+  "range_20": 0.3442,
+  "range_50": 0.4863,
+  "rank": 629,
+  "rank_down": null,
+  "rank_up": 401,
+  "ret_120": 2.1069,
+  "ret_20": -0.0588,
+  "ret_60": 0.4872,
+  "rundown_score": 0.2374,
+  "score_date": "2026-09-04",
+  "slope_20": 0.0022,
+  "slope_60": 0.0028,
+  "stage": "sustained",
+  "stage_label": "Trending",
+  "ticker": "MEI",
+  "total_score": 0.5368,
+  "trend_ratio": 1.3471,
+  "vcp_detected": 0,
+  "vcp_score": 0.2923
+ }
+}

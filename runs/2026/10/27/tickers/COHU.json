@@ -1,0 +1,1012 @@
+{
+ "date": "2026-10-27",
+ "detected_regions": {
+  "primary": {
+   "days_in_region": 124,
+   "region_start": "2026-07-29",
+   "trigger_date": "2026-10-27",
+   "trigger_type": "runup"
+  },
+  "secondary": [
+   {
+    "confidence_score": 0.1036,
+    "downside_q50": -0.1298,
+    "ev_score": 0.1105,
+    "region_start": "2026-06-30",
+    "seq_len": 144,
+    "trigger_date": "2026-10-27",
+    "trigger_type": "severe_drawdown",
+    "upside_q25": 0.0906,
+    "upside_q50": 0.224,
+    "upside_q75": 0.3962
+   }
+  ]
+ },
+ "feature_attribution": {
+  "macro_driver_count": 13,
+  "risk_flags": [
+   "high_volatility"
+  ],
+  "top_drivers": [
+   {
+    "direction": "positive",
+    "feature": "price_vs_sma200",
+    "feature_value": 1.0905,
+    "importance": 0.0006,
+    "importance_pct": 0.2335,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "positive",
+    "feature": "price_vs_low_52w",
+    "feature_value": 2.3845,
+    "importance": 0.0005,
+    "importance_pct": 0.1882,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "negative",
+    "feature": "dollar_volume",
+    "feature_value": 53164644.0,
+    "importance": 0.0004,
+    "importance_pct": 0.1708,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "positive",
+    "feature": "volatility_20d",
+    "feature_value": 0.0552,
+    "importance": 0.0004,
+    "importance_pct": 0.1404,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "negative",
+    "feature": "ma_200_slope",
+    "feature_value": 0.0844,
+    "importance": 0.0003,
+    "importance_pct": 0.1258,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "negative",
+    "feature": "stock_vs_spy_change_5d",
+    "feature_value": -0.0578,
+    "importance": 0.0002,
+    "importance_pct": 0.0832,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "positive",
+    "feature": "rally_from_low_20d",
+    "feature_value": 0.102,
+    "importance": 0.0001,
+    "importance_pct": 0.058,
+    "method": "integrated_gradients"
+   }
+  ]
+ },
+ "fundamentals": {
+  "accrual": -0.0668,
+  "adx_14": 48.0269,
+  "altman_z_score": 4.5541,
+  "amihud_illiquidity": 0.0006,
+  "avg_volume": 1008709.6676,
+  "beta_252d": 1.2061,
+  "book_value_per_share": 16.3664,
+  "correlation_spy_60d": 0.4951,
+  "current_liabilities": 137.353,
+  "current_ratio": 5.7417,
+  "daily_earnings_yield": -0.0163,
+  "daily_fcf_yield": 0.0153,
+  "daily_pb": 3.0731,
+  "daily_pe": -61.3255,
+  "daily_ps": 4.5549,
+  "days_since_52w_high": 83.0,
+  "debt_ebitda": 26.8979,
+  "debt_to_equity": 0.4221,
+  "dividend_yield": 0.0,
+  "dollar_volume_20d_avg": 70438727.1655,
+  "earnings_quality": -10.0,
+  "ebitda_growth_yoy": 1.5596,
+  "enterprise_value": 2209.1861,
+  "eps_basic": -0.0034,
+  "eps_cagr_3y": -1.8167,
+  "eps_cagr_5y": -1.7859,
+  "eps_diluted": -0.0034,
+  "eps_growth_accel": 0.1976,
+  "eps_growth_qoq": 0.9869,
+  "eps_growth_yoy": 0.5543,
+  "eps_growth_yoy_q2": 0.3568,
+  "eps_growth_yoy_q3": -0.06,
+  "eps_growth_yoy_q4": -0.4537,
+  "eps_growth_yoy_q5": -2.0656,
+  "eps_growth_yoy_q6": -10.0,
+  "eps_growth_yoy_q7": -3.5424,
+  "eps_growth_yoy_q8": -1.9908,
+  "eps_history_8q": [
+   -0.39,
+   -0.46,
+   -0.66,
+   -0.36,
+   -0.09,
+   -0.48,
+   -0.26,
+   -0.0034
+  ],
+  "eps_ttm": -0.8313,
+  "ev_to_ebitda": 181.7512,
+  "ev_to_fcf": 271.4321,
+  "ev_to_sales": 14.8266,
+  "fcf_growth_yoy": -1.0111,
+  "fcf_margin": 0.0546,
+  "fcf_per_share": 0.172,
+  "gross_margin": 0.4178,
+  "gross_margin_change_yoy": -0.018,
+  "gross_margin_history": [
+   0.4764,
+   0.474,
+   0.4646,
+   0.4342,
+   0.4188,
+   0.4178
+  ],
+  "inc_roic": 3.5914,
+  "interest_coverage": 2.4452,
+  "is_pre_revenue": false,
+  "margin_vs_sector_median": null,
+  "market_cap_ratio": 2380.4091,
+  "net_income": -0.159,
+  "net_margin": -0.0743,
+  "operating_income": 0.292,
+  "operating_margin": -0.0628,
+  "operating_margin_change_yoy": 0.1469,
+  "pb_ratio": 3.1149,
+  "pe_percentile_1y": 0.8175,
+  "pe_ratio": -57.5834,
+  "peg_trailing": -1.0388,
+  "piotroski_f_score": 3.0,
+  "price_vs_high_52w": 0.6898,
+  "price_vs_sma200": 1.0905,
+  "ps_percentile_1y": 0.4206,
+  "ps_ratio": 4.2878,
+  "quarter_labels_8q": [
+   "Q3 '24",
+   "Q4 '24",
+   "Q1 '25",
+   "Q2 '25",
+   "Q3 '25",
+   "Q4 '25",
+   "Q1 '26",
+   "Q2 '26"
+  ],
+  "quarterly_eps_growth_yoy": 0.9906,
+  "quarterly_eps_growth_yoy_8q": [
+   -5.875,
+   -10.0,
+   -1.129,
+   -0.0588,
+   0.7692,
+   -0.0435,
+   0.6061,
+   0.9906
+  ],
+  "quarterly_revenue_growth_yoy": 0.3837,
+  "quarterly_revenue_growth_yoy_8q": [
+   -0.3678,
+   -0.3141,
+   -0.1005,
+   0.0285,
+   0.3242,
+   0.2986,
+   0.2926,
+   0.3837
+  ],
+  "revenue_cagr_3y": -0.1119,
+  "revenue_cagr_5y": -0.0869,
+  "revenue_growth_accel": 0.0956,
+  "revenue_growth_qoq": 0.1909,
+  "revenue_growth_yoy": 0.3266,
+  "revenue_growth_yoy_q2": 0.231,
+  "revenue_growth_yoy_q3": 0.1274,
+  "revenue_growth_yoy_q4": -0.045,
+  "revenue_growth_yoy_q5": -0.2127,
+  "revenue_growth_yoy_q6": -0.3075,
+  "revenue_growth_yoy_q7": -0.3686,
+  "revenue_growth_yoy_q8": -0.3554,
+  "revenue_history_8q": [
+   95.342,
+   94.122,
+   96.797,
+   107.68,
+   126.249,
+   122.23,
+   125.119,
+   149.002
+  ],
+  "revenue_per_share": 3.1483,
+  "roa": -0.0311,
+  "roce": -0.0293,
+  "roe": -0.0503,
+  "roic": -0.0346,
+  "rsi_14": 39.4095,
+  "sector_momentum": -0.0615,
+  "share_dilution_1y": 0.0,
+  "stock_vs_sector_20d": -0.2006,
+  "stock_vs_spy_20d": -0.234,
+  "total_assets": 1258.398,
+  "vol_regime": 1.0559,
+  "volatility_20d": 0.0552,
+  "volatility_60d": 0.0523,
+  "w52_high": 75.72,
+  "w52_low": 21.1
+ },
+ "market_characters": [
+  {
+   "id": "g4",
+   "name": "Volatile Uptrend"
+  }
+ ],
+ "model_analogs": {
+  "matches": [
+   {
+    "actual_downside": -0.0109,
+    "actual_return": 0.6165,
+    "actual_upside": 0.6165,
+    "days_in_region": 145,
+    "end_date": "2020-01-13",
+    "end_reason": "reversal",
+    "similarity": 0.9824,
+    "start_date": "2019-08-21",
+    "ticker": "DQ",
+    "trigger_date": "2019-10-02",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": -0.0375,
+    "actual_return": 0.6479,
+    "actual_upside": 0.6479,
+    "days_in_region": 61,
+    "end_date": "2018-12-03",
+    "end_reason": "reversal",
+    "similarity": 0.9823,
+    "start_date": "2018-10-03",
+    "ticker": "VCEL",
+    "trigger_date": "2018-10-25",
+    "trigger_type": "severe_drawdown"
+   },
+   {
+    "actual_downside": -0.1225,
+    "actual_return": 0.0474,
+    "actual_upside": 0.0593,
+    "days_in_region": 88,
+    "end_date": "2019-12-20",
+    "end_reason": "reversal",
+    "similarity": 0.9791,
+    "start_date": "2019-09-23",
+    "ticker": "GEVO",
+    "trigger_date": "2019-10-25",
+    "trigger_type": "severe_drawdown"
+   },
+   {
+    "actual_downside": -0.0145,
+    "actual_return": 0.1468,
+    "actual_upside": 0.1468,
+    "days_in_region": 53,
+    "end_date": "2019-10-28",
+    "end_reason": "reversal",
+    "similarity": 0.9787,
+    "start_date": "2019-09-05",
+    "ticker": "TLRA",
+    "trigger_date": "2019-09-17",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": -0.0545,
+    "actual_return": 0.3392,
+    "actual_upside": 0.3392,
+    "days_in_region": 78,
+    "end_date": "2007-12-26",
+    "end_reason": "reversal",
+    "similarity": 0.9786,
+    "start_date": "2007-10-09",
+    "ticker": "CCC",
+    "trigger_date": "2007-11-06",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": -0.1565,
+    "actual_return": -0.0155,
+    "actual_upside": 0.05,
+    "days_in_region": 146,
+    "end_date": "2019-12-26",
+    "end_reason": "reversal",
+    "similarity": 0.9781,
+    "start_date": "2019-08-02",
+    "ticker": "SPWR",
+    "trigger_date": "2019-10-01",
+    "trigger_type": "severe_drawdown"
+   },
+   {
+    "actual_downside": -0.1601,
+    "actual_return": -0.0158,
+    "actual_upside": 0.5573,
+    "days_in_region": 178,
+    "end_date": "2020-03-13",
+    "end_reason": "reversal",
+    "similarity": 0.9781,
+    "start_date": "2019-09-17",
+    "ticker": "HROW",
+    "trigger_date": "2019-10-14",
+    "trigger_type": "compression"
+   },
+   {
+    "actual_downside": -0.297,
+    "actual_return": -0.297,
+    "actual_upside": 0.0143,
+    "days_in_region": 116,
+    "end_date": "1998-09-04",
+    "end_reason": "reversal",
+    "similarity": 0.9778,
+    "start_date": "1998-05-11",
+    "ticker": "SAPE",
+    "trigger_date": "1998-08-10",
+    "trigger_type": "runup"
+   },
+   {
+    "actual_downside": -0.1327,
+    "actual_return": 0.1248,
+    "actual_upside": 0.1248,
+    "days_in_region": 70,
+    "end_date": "2019-11-14",
+    "end_reason": "reversal",
+    "similarity": 0.9776,
+    "start_date": "2019-09-05",
+    "ticker": "OPRA",
+    "trigger_date": "2019-09-20",
+    "trigger_type": "severe_drawdown"
+   },
+   {
+    "actual_downside": 0.0,
+    "actual_return": 0.2299,
+    "actual_upside": 0.2299,
+    "days_in_region": 50,
+    "end_date": "2019-11-07",
+    "end_reason": "reversal",
+    "similarity": 0.9775,
+    "start_date": "2019-09-18",
+    "ticker": "GOGO",
+    "trigger_date": "2019-10-09",
+    "trigger_type": "severe_drawdown"
+   }
+  ],
+  "stats": {
+   "avg_max_drawdown": 0.147,
+   "avg_similarity": 0.975,
+   "avg_trough": 0.147,
+   "avg_upside": 0.2965,
+   "best_return": 2.3168,
+   "downside_range": [
+    -0.4899,
+    0.0
+   ],
+   "median_return": 0.0974,
+   "n_matches": 50,
+   "outcome_agreement": true,
+   "return_p25": -0.1236,
+   "return_p5": -0.2971,
+   "return_p75": 0.2327,
+   "return_p95": 0.7682,
+   "sim_weighted_win_rate": 0.56,
+   "top5_avg_trough": 0.048,
+   "top5_avg_upside": 0.3619,
+   "top_similarity": 0.982,
+   "upside_range": [
+    0.0005,
+    2.3168
+   ],
+   "win_rate": 0.56,
+   "worst_return": -0.3974,
+   "years_span": 10
+  },
+  "total_matches": 50
+ },
+ "peer_group": {
+  "buckets": [
+   "Semiconductor Equipment, Materials & Test",
+   "Testing, Measurement & Analytical Instruments"
+  ],
+  "groups": {
+   "Semiconductor Equipment, Materials & Test": [
+    {
+     "market_cap_m": 1813.6467,
+     "price_vs_sma200": 0.9953,
+     "return_30d": 0.0678,
+     "return_7d": 0.1277,
+     "revenue_driver": "semiconductor analytics",
+     "signal_rank": 1509,
+     "stock_vs_spy_20d": -0.1181,
+     "ticker": "PDFS"
+    },
+    {
+     "market_cap_m": 1786.7162,
+     "price_vs_sma200": 0.8118,
+     "return_30d": 0.0572,
+     "return_7d": 0.0472,
+     "revenue_driver": "semiconductor photomasks",
+     "signal_rank": 1330,
+     "stock_vs_spy_20d": -0.0792,
+     "ticker": "PLAB"
+    },
+    {
+     "market_cap_m": 2240.7971,
+     "price_vs_sma200": 1.0905,
+     "return_30d": 0.0202,
+     "return_7d": 0.0033,
+     "revenue_driver": "semiconductor test",
+     "signal_rank": 1333,
+     "stock_vs_spy_20d": -0.234,
+     "ticker": "COHU"
+    },
+    {
+     "market_cap_m": 229.8556,
+     "price_vs_sma200": 0.8352,
+     "return_30d": -0.0275,
+     "return_7d": 0.0508,
+     "revenue_driver": "semiconductor capital equipment",
+     "signal_rank": 988,
+     "stock_vs_spy_20d": -0.197,
+     "ticker": "ASYS"
+    },
+    {
+     "market_cap_m": 57583.1955,
+     "price_vs_sma200": 0.9287,
+     "return_30d": -0.0275,
+     "return_7d": -0.0041,
+     "revenue_driver": "semiconductor test equipment",
+     "signal_rank": 944,
+     "stock_vs_spy_20d": -0.2036,
+     "ticker": "TER"
+    },
+    {
+     "market_cap_m": 423890.22,
+     "price_vs_sma200": 0.8939,
+     "return_30d": -0.0599,
+     "return_7d": -0.0326,
+     "revenue_driver": "semiconductor manufacturing equipment",
+     "signal_rank": 905,
+     "stock_vs_spy_20d": -0.2335,
+     "ticker": "AMAT"
+    },
+    {
+     "market_cap_m": 9099.1743,
+     "price_vs_sma200": 0.6956,
+     "return_30d": -0.1389,
+     "return_7d": -0.045,
+     "revenue_driver": "outsourced semiconductor packaging",
+     "signal_rank": 1338,
+     "stock_vs_spy_20d": -0.269,
+     "ticker": "AMKR"
+    },
+    {
+     "market_cap_m": 5015.849,
+     "price_vs_sma200": 0.7572,
+     "return_30d": -0.1872,
+     "return_7d": -0.0213,
+     "revenue_driver": "semiconductor wafer cleaning",
+     "signal_rank": 842,
+     "stock_vs_spy_20d": -0.3194,
+     "ticker": "ACMR"
+    },
+    {
+     "market_cap_m": 168.3845,
+     "price_vs_sma200": 0.5324,
+     "return_30d": -0.2396,
+     "return_7d": -0.0519,
+     "revenue_driver": "semiconductor IP licensing",
+     "signal_rank": 949,
+     "stock_vs_spy_20d": -0.3164,
+     "ticker": "ATOM"
+    },
+    {
+     "market_cap_m": 1635.6898,
+     "price_vs_sma200": 1.1671,
+     "return_30d": -1.0,
+     "return_7d": -1.0,
+     "revenue_driver": "semiconductor foundry",
+     "signal_rank": null,
+     "stock_vs_spy_20d": -0.0677,
+     "ticker": "SKYT"
+    }
+   ],
+   "Testing, Measurement & Analytical Instruments": [
+    {
+     "market_cap_m": 4457.0428,
+     "price_vs_sma200": 1.0923,
+     "return_30d": 0.2033,
+     "return_7d": 0.1998,
+     "revenue_driver": "water flow metering",
+     "signal_rank": 382,
+     "stock_vs_spy_20d": 0.1977,
+     "ticker": "BMI"
+    },
+    {
+     "market_cap_m": 60731.7906,
+     "price_vs_sma200": 1.3092,
+     "return_30d": 0.1818,
+     "return_7d": 0.0261,
+     "revenue_driver": "analytical instruments",
+     "signal_rank": 1960,
+     "stock_vs_spy_20d": 0.0073,
+     "ticker": "A"
+    },
+    {
+     "market_cap_m": 7972.3443,
+     "price_vs_sma200": 1.2129,
+     "return_30d": 0.0895,
+     "return_7d": 0.1084,
+     "revenue_driver": "mass spectrometry systems",
+     "signal_rank": 230,
+     "stock_vs_spy_20d": -0.0652,
+     "ticker": "BRKR"
+    },
+    {
+     "market_cap_m": 58589.597,
+     "price_vs_sma200": 1.067,
+     "return_30d": 0.0726,
+     "return_7d": 0.0148,
+     "revenue_driver": "electronic test and measurement",
+     "signal_rank": 535,
+     "stock_vs_spy_20d": -0.0748,
+     "ticker": "KEYS"
+    },
+    {
+     "market_cap_m": 58483.3262,
+     "price_vs_sma200": 1.0537,
+     "return_30d": 0.0502,
+     "return_7d": -0.0079,
+     "revenue_driver": "electronic instruments",
+     "signal_rank": 1198,
+     "stock_vs_spy_20d": -0.0249,
+     "ticker": "AME"
+    },
+    {
+     "market_cap_m": 2240.7971,
+     "price_vs_sma200": 1.0905,
+     "return_30d": 0.0202,
+     "return_7d": 0.0033,
+     "revenue_driver": "semiconductor test",
+     "signal_rank": 1333,
+     "stock_vs_spy_20d": -0.234,
+     "ticker": "COHU"
+    },
+    {
+     "market_cap_m": 16099.8519,
+     "price_vs_sma200": 0.8643,
+     "return_30d": -0.0136,
+     "return_7d": -0.0024,
+     "revenue_driver": "network test equipment",
+     "signal_rank": 1228,
+     "stock_vs_spy_20d": -0.2105,
+     "ticker": "VIAV"
+    },
+    {
+     "market_cap_m": 57583.1955,
+     "price_vs_sma200": 0.9287,
+     "return_30d": -0.0275,
+     "return_7d": -0.0041,
+     "revenue_driver": "semiconductor test equipment",
+     "signal_rank": 944,
+     "stock_vs_spy_20d": -0.2036,
+     "ticker": "TER"
+    },
+    {
+     "market_cap_m": 7783.1579,
+     "price_vs_sma200": 0.8305,
+     "return_30d": -0.084,
+     "return_7d": -0.0437,
+     "revenue_driver": "utility test equipment",
+     "signal_rank": 416,
+     "stock_vs_spy_20d": -0.1101,
+     "ticker": "ESE"
+    },
+    {
+     "market_cap_m": 473.2868,
+     "price_vs_sma200": 0.4176,
+     "return_30d": -0.3481,
+     "return_7d": -0.0374,
+     "revenue_driver": "specialty label printers",
+     "signal_rank": 1756,
+     "stock_vs_spy_20d": -0.225,
+     "ticker": "ASPI"
+    }
+   ]
+  }
+ },
+ "predictions": {
+  "badge_count": 1,
+  "confidence_score": 0.0642,
+  "conviction_label": "SPECULATIVE",
+  "data_quality_flags": [],
+  "ev_score": 0.1109,
+  "is_diamond": false,
+  "passes_tradability_filter": true,
+  "quality_label": "HIGH",
+  "quantiles": {
+   "downside_q10": -0.3992,
+   "downside_q25": -0.2389,
+   "downside_q50": -0.1372,
+   "downside_q75": -0.0407,
+   "downside_q90": -0.0013,
+   "path_volatility": 0.0523,
+   "risk_reward": 1.6823,
+   "uncertainty": 0.6468,
+   "upside_q10": 0.0286,
+   "upside_q25": 0.0903,
+   "upside_q50": 0.2309,
+   "upside_q75": 0.4047,
+   "upside_q90": 0.6754
+  },
+  "rank": 1333,
+  "rank_score": 0.0085,
+  "tradability_filter_reasons": []
+ },
+ "profile": {
+  "_local": {
+   "dividend_yield": 0.0,
+   "eps_growth_yoy": 0.5543,
+   "pe_ratio": -57.5834,
+   "revenue_growth_yoy": 0.3266,
+   "roe": -0.0503
+  },
+  "beta": 1.512,
+  "betaTTM": null,
+  "ceo": "Luis Antonio Müller",
+  "companyName": "Cohu, Inc.",
+  "country": "US",
+  "debtToEquityTTM": null,
+  "description": "Cohu, Inc. stands as a prominent global provider of advanced semiconductor test equipment and comprehensive associated services. Operating through its various subsidiaries, the company extends its reach across key international markets including China, the United States, Taiwan, Malaysia, and the Philippines. Its diverse product portfolio caters to semiconductor and electronics manufacturers, as well as test subcontractors, encompassing crucial equipment such as automated test equipment (ATE) for both wafer-level and device package testing, and a wide array of test and inspection handlers. These handlers include specialized pick-and-place, turret, gravity, strip, and advanced micro-electromechanical system (MEMS) and thermal sub-systems. Cohu also offers vital interface components like test contactors, probe heads, and pins. Beyond hardware, Cohu delivers extensive post-sales support, including spare parts and kits, robust parts and labor warranties for its systems and instruments, and essential training for system maintenance and operation. The company further provides application and data management software, alongside expert consulting services related to its product offerings. A significant technological offering is the DI-Core data analytics product suite. This sophisticated software is engineered to optimize the performance of Cohu equipment, facilitating real-time online monitoring and precise process control. Cohu distributes its solutions through a combination of its direct sales force and a network of independent sales representatives. Established in 1947, the company originally operated as Cohu Electronics, Inc. before adopting its current name, Cohu, Inc., in 1972. Its corporate headquarters are located in Poway, California.",
+  "dividendYielTTM": null,
+  "enterpriseValueOverEBITDATTM": null,
+  "exchangeShortName": "NASDAQ",
+  "fullTimeEmployees": "2777",
+  "industry": "Semiconductors",
+  "ipoDate": "1980-03-17",
+  "latest_earnings_date": "2026-07-31",
+  "marketCapTTM": null,
+  "mktCap": 2312480840,
+  "peRatioTTM": null,
+  "price": 48.85,
+  "priceToSalesRatioTTM": null,
+  "returnOnEquityTTM": -0.0491,
+  "revenue_description": "Cohu provides semiconductor test and inspection equipment. Revenue is driven mainly by chip shipments and average selling prices across data center, AI, gaming, or other compute markets, with mix shifts heavily affecting margins.",
+  "revenue_description_themes": [
+   "AI semiconductor testing",
+   "advanced packaging growth",
+   "semiconductor capex recovery"
+  ],
+  "revenue_taxonomy": [
+   {
+    "bucket": "Semiconductor Equipment, Materials & Test",
+    "matched_tags": [
+     "semiconductor test",
+     "test handlers"
+    ],
+    "path": "Technology › Hardware & Semiconductors › Semiconductor Equipment, Materials & Test",
+    "sector": "Technology",
+    "segment": "Hardware & Semiconductors"
+   },
+   {
+    "bucket": "Testing, Measurement & Analytical Instruments",
+    "matched_tags": [
+     "inspection equipment"
+    ],
+    "path": "Industrials & Transportation › Aerospace Defense & Automation › Testing, Measurement & Analytical Instruments",
+    "sector": "Industrials & Transportation",
+    "segment": "Aerospace Defense & Automation"
+   }
+  ],
+  "revenue_themes": [
+   "semiconductor test",
+   "inspection equipment",
+   "test handlers"
+  ],
+  "sector": "Technology",
+  "website": "https://www.cohu.com"
+ },
+ "report": null,
+ "scorecard": {
+  "headline": {
+   "avg_universe_pct": 45,
+   "label": "mixed",
+   "metric_count": 7
+  },
+  "metrics": {
+   "debt_to_equity": {
+    "direction": "lower",
+    "label": "D/E Ratio",
+    "sector": "Info Tech",
+    "sector_n": 309,
+    "sector_pct": 39,
+    "universe_n": 2075,
+    "universe_pct": 48,
+    "value": 0.4221
+   },
+   "eps_growth_yoy": {
+    "direction": "higher",
+    "label": "EPS Growth",
+    "sector": "Info Tech",
+    "sector_n": 308,
+    "sector_pct": 63,
+    "universe_n": 1892,
+    "universe_pct": 73,
+    "value": 0.5543
+   },
+   "gross_margin": {
+    "direction": "higher",
+    "label": "Gross Margin",
+    "sector": "Info Tech",
+    "sector_n": 308,
+    "sector_pct": 36,
+    "universe_n": 2009,
+    "universe_pct": 45,
+    "value": 0.4178
+   },
+   "operating_margin": {
+    "direction": "higher",
+    "label": "Op. Margin",
+    "sector": "Info Tech",
+    "sector_n": 308,
+    "sector_pct": 19,
+    "universe_n": 2009,
+    "universe_pct": 14,
+    "value": -0.0628
+   },
+   "revenue_growth_yoy": {
+    "direction": "higher",
+    "label": "Rev Growth",
+    "sector": "Info Tech",
+    "sector_n": 308,
+    "sector_pct": 82,
+    "universe_n": 1834,
+    "universe_pct": 88,
+    "value": 0.3266
+   },
+   "roe": {
+    "direction": "higher",
+    "label": "ROE",
+    "sector": "Info Tech",
+    "sector_n": 312,
+    "sector_pct": 26,
+    "universe_n": 2101,
+    "universe_pct": 24,
+    "value": -0.0503
+   },
+   "roic": {
+    "direction": "higher",
+    "label": "ROIC",
+    "sector": "Info Tech",
+    "sector_n": 308,
+    "sector_pct": 30,
+    "universe_n": 2044,
+    "universe_pct": 26,
+    "value": -0.0001
+   }
+  }
+ },
+ "signal_rank": 1333,
+ "structural_analogs": {
+  "gp_core_pct": 81.1,
+  "gp_core_ratio": 1.7653,
+  "matches": [
+   {
+    "actual_downside": -0.297,
+    "actual_return": -0.297,
+    "actual_upside": 0.0143,
+    "days_in_region": 124,
+    "end_date": "1998-09-04",
+    "end_reason": "reversal",
+    "seq_len": 124,
+    "similarity": 0.4933,
+    "start_date": "1998-05-11",
+    "ticker": "SAPE",
+    "total_distance": 0.3533,
+    "trigger_date": "1998-08-10",
+    "trigger_type": "runup"
+   },
+   {
+    "actual_downside": -0.0259,
+    "actual_return": 0.1186,
+    "actual_upside": 0.2769,
+    "days_in_region": 175,
+    "end_date": "2010-11-16",
+    "end_reason": "reversal",
+    "seq_len": 175,
+    "similarity": 0.491,
+    "start_date": "2010-03-25",
+    "ticker": "LDSH",
+    "total_distance": 0.3556,
+    "trigger_date": "2010-09-07",
+    "trigger_type": "runup"
+   },
+   {
+    "actual_downside": -0.0519,
+    "actual_return": -0.0519,
+    "actual_upside": 0.2296,
+    "days_in_region": 127,
+    "end_date": "1993-12-09",
+    "end_reason": "reversal",
+    "seq_len": 127,
+    "similarity": 0.487,
+    "start_date": "1993-06-21",
+    "ticker": "EA",
+    "total_distance": 0.3598,
+    "trigger_date": "1993-09-23",
+    "trigger_type": "runup"
+   },
+   {
+    "actual_downside": 0.0,
+    "actual_return": 0.2737,
+    "actual_upside": 0.8983,
+    "days_in_region": 125,
+    "end_date": "2014-04-07",
+    "end_reason": "reversal",
+    "seq_len": 125,
+    "similarity": 0.4844,
+    "start_date": "2013-11-07",
+    "ticker": "DANG",
+    "total_distance": 0.3624,
+    "trigger_date": "2014-02-11",
+    "trigger_type": "runup"
+   },
+   {
+    "actual_downside": -0.0468,
+    "actual_return": 0.5855,
+    "actual_upside": 0.5855,
+    "days_in_region": 70,
+    "end_date": "2021-02-24",
+    "end_reason": "reversal",
+    "seq_len": 70,
+    "similarity": 0.4838,
+    "start_date": "2021-01-05",
+    "ticker": "EXK",
+    "total_distance": 0.363,
+    "trigger_date": "2021-01-19",
+    "trigger_type": "severe_drawdown"
+   },
+   {
+    "actual_downside": -0.5221,
+    "actual_return": -0.313,
+    "actual_upside": 0.0,
+    "days_in_region": 108,
+    "end_date": "2008-02-27",
+    "end_reason": "reversal",
+    "seq_len": 108,
+    "similarity": 0.4811,
+    "start_date": "2007-09-05",
+    "ticker": "TPC",
+    "total_distance": 0.3658,
+    "trigger_date": "2007-10-02",
+    "trigger_type": "compression"
+   },
+   {
+    "actual_downside": -0.0083,
+    "actual_return": 0.4639,
+    "actual_upside": 0.4639,
+    "days_in_region": 80,
+    "end_date": "2012-09-17",
+    "end_reason": "reversal",
+    "seq_len": 80,
+    "similarity": 0.4795,
+    "start_date": "2012-07-03",
+    "ticker": "BLDR",
+    "total_distance": 0.3675,
+    "trigger_date": "2012-07-23",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": -0.2976,
+    "actual_return": -0.2976,
+    "actual_upside": 0.0672,
+    "days_in_region": 175,
+    "end_date": "2000-08-04",
+    "end_reason": "reversal",
+    "seq_len": 175,
+    "similarity": 0.4748,
+    "start_date": "2000-01-31",
+    "ticker": "ADI",
+    "total_distance": 0.3724,
+    "trigger_date": "2000-07-13",
+    "trigger_type": "runup"
+   },
+   {
+    "actual_downside": -0.0665,
+    "actual_return": 0.2168,
+    "actual_upside": 0.2168,
+    "days_in_region": 154,
+    "end_date": "2006-12-14",
+    "end_reason": "reversal",
+    "seq_len": 154,
+    "similarity": 0.4746,
+    "start_date": "2006-05-10",
+    "ticker": "TTI",
+    "total_distance": 0.3727,
+    "trigger_date": "2006-09-21",
+    "trigger_type": "severe_drawdown"
+   },
+   {
+    "actual_downside": 0.0,
+    "actual_return": 0.5569,
+    "actual_upside": 0.7886,
+    "days_in_region": 176,
+    "end_date": "1999-07-26",
+    "end_reason": "reversal",
+    "seq_len": 176,
+    "similarity": 0.4743,
+    "start_date": "1998-12-14",
+    "ticker": "PMCS",
+    "total_distance": 0.3729,
+    "trigger_date": "1999-06-01",
+    "trigger_type": "runup"
+   }
+  ],
+  "panel": {
+   "edge": -0.0388,
+   "hit_hi": 0.513,
+   "hit_lo": 0.315,
+   "hit_rate": 0.41,
+   "median_final": -0.0519,
+   "median_pain": 0.0617,
+   "n": 39,
+   "n_eff": 39.0,
+   "p25_final": -0.174,
+   "p_pain_gt5": 0.615,
+   "return_to_pain": -0.635
+  },
+  "stats": {
+   "avg_similarity": 0.429,
+   "avg_trough": 0.1301,
+   "avg_upside": 0.2299,
+   "median_pain": 0.0853,
+   "median_return": -0.0044,
+   "n_matches": 200,
+   "p25_return": -0.1746,
+   "p_pain_gt5": 0.67,
+   "return_to_pain": -0.042,
+   "top5_avg_trough": 0.0843,
+   "top5_avg_upside": 0.4009,
+   "top_similarity": 0.493,
+   "win_rate": 0.495
+  },
+  "total_matches": 200
+ },
+ "ticker": "COHU",
+ "trending": {
+  "acceleration": 0.0095,
+  "avg_vol_20d": 1008764.6312,
+  "base_high_120": 73.91,
+  "breakout_confirmed": 0,
+  "close": 65.21,
+  "momentum_score": 0.9691,
+  "momentum_start": "2026-07-30",
+  "range_20": 0.4229,
+  "range_50": 0.4977,
+  "rank": 882,
+  "rank_down": null,
+  "rank_up": 277,
+  "ret_120": 0.453,
+  "ret_20": 0.305,
+  "ret_60": 0.2739,
+  "rundown_score": 0.0877,
+  "score_date": "2026-10-12",
+  "slope_20": 0.0146,
+  "slope_60": 0.0052,
+  "stage": "sustained",
+  "stage_label": "Trending",
+  "ticker": "COHU",
+  "total_score": 0.4778,
+  "trend_ratio": 1.378,
+  "vcp_detected": 0,
+  "vcp_score": 0.1502
+ }
+}

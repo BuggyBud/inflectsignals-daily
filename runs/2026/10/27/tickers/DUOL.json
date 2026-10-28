@@ -1,0 +1,874 @@
+{
+ "date": "2026-10-27",
+ "detected_regions": {
+  "primary": {
+   "days_in_region": 98,
+   "region_start": "2026-09-03",
+   "trigger_date": "2026-09-30",
+   "trigger_type": "shallow_drawdown"
+  },
+  "secondary": [
+   {
+    "confidence_score": 0.4042,
+    "downside_q50": -0.0988,
+    "ev_score": 0.1191,
+    "region_start": "2026-04-14",
+    "seq_len": 197,
+    "trigger_date": "2026-10-02",
+    "trigger_type": "runup",
+    "upside_q25": 0.0843,
+    "upside_q50": 0.1971,
+    "upside_q75": 0.3602
+   }
+  ]
+ },
+ "feature_attribution": {
+  "macro_driver_count": 16,
+  "risk_flags": [
+   "high_volatility"
+  ],
+  "top_drivers": [
+   {
+    "direction": "negative",
+    "feature": "dollar_volume",
+    "feature_value": 113523088.0,
+    "importance": 0.0008,
+    "importance_pct": 0.3902,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "positive",
+    "feature": "historical_recovery_rate",
+    "feature_value": 0.1665,
+    "importance": 0.0005,
+    "importance_pct": 0.2574,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "positive",
+    "feature": "ma_200_slope",
+    "feature_value": -0.0299,
+    "importance": 0.0004,
+    "importance_pct": 0.1965,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "positive",
+    "feature": "volatility_20d",
+    "feature_value": 0.0278,
+    "importance": 0.0003,
+    "importance_pct": 0.1558,
+    "method": "integrated_gradients"
+   }
+  ]
+ },
+ "fundamentals": {
+  "accrual": 0.1262,
+  "adx_14": 10.8286,
+  "altman_z_score": 6.832,
+  "amihud_illiquidity": 0.0002,
+  "avg_volume": 1133221.7218,
+  "beta_252d": 0.2081,
+  "book_value_per_share": 30.1904,
+  "correlation_spy_60d": 0.1313,
+  "current_liabilities": 577.833,
+  "current_ratio": 2.719,
+  "daily_earnings_yield": 0.0726,
+  "daily_fcf_yield": 0.0251,
+  "daily_pb": 4.0109,
+  "daily_pe": 13.7654,
+  "daily_ps": 4.9383,
+  "days_since_52w_high": 365.0,
+  "debt_ebitda": 0.4847,
+  "debt_to_equity": 0.0611,
+  "dividend_yield": 0.0,
+  "dollar_volume_20d_avg": 120379206.0233,
+  "earnings_quality": 7.2088,
+  "ebitda_growth_yoy": 0.7833,
+  "enterprise_value": 4426.6483,
+  "eps_basic": 0.71,
+  "eps_cagr_3y": 1.253,
+  "eps_cagr_5y": null,
+  "eps_diluted": 0.66,
+  "eps_growth_accel": -0.7787,
+  "eps_growth_qoq": -0.2366,
+  "eps_growth_yoy": 2.4176,
+  "eps_growth_yoy_q2": 3.1963,
+  "eps_growth_yoy_q3": 3.4314,
+  "eps_growth_yoy_q4": 3.199,
+  "eps_growth_yoy_q5": 0.6839,
+  "eps_growth_yoy_q6": 1.0278,
+  "eps_growth_yoy_q7": 4.2308,
+  "eps_growth_yoy_q8": 9.04,
+  "eps_history_8q": [
+   0.49,
+   0.29,
+   0.72,
+   0.91,
+   5.95,
+   0.84,
+   0.93,
+   0.66
+  ],
+  "eps_ttm": 10.2656,
+  "ev_to_ebitda": 24.9111,
+  "ev_to_fcf": 19.0801,
+  "ev_to_sales": 14.8319,
+  "fcf_growth_yoy": -0.0907,
+  "fcf_margin": 0.7773,
+  "fcf_per_share": 4.9685,
+  "gross_margin": 0.729,
+  "gross_margin_change_yoy": -0.0053,
+  "gross_margin_history": [
+   0.7307,
+   0.7291,
+   0.7287,
+   0.7284,
+   0.7304,
+   0.729
+  ],
+  "inc_roic": -0.8417,
+  "interest_coverage": null,
+  "is_pre_revenue": false,
+  "margin_vs_sector_median": null,
+  "market_cap_ratio": 5654.3783,
+  "net_income": 33.158,
+  "net_margin": 0.3587,
+  "operating_income": 33.945,
+  "operating_margin": 0.1414,
+  "operating_margin_change_yoy": -0.0213,
+  "pb_ratio": 4.6806,
+  "pe_percentile_1y": 0.4286,
+  "pe_ratio": 13.7654,
+  "peg_trailing": 0.059,
+  "piotroski_f_score": 4.0,
+  "price_vs_high_52w": 0.4607,
+  "price_vs_sma200": 1.1369,
+  "ps_percentile_1y": 0.4603,
+  "ps_ratio": 4.2838,
+  "quarter_labels_8q": [
+   "Q3 '24",
+   "Q4 '24",
+   "Q1 '25",
+   "Q2 '25",
+   "Q3 '25",
+   "Q4 '25",
+   "Q1 '26",
+   "Q2 '26"
+  ],
+  "quarterly_eps_growth_yoy": -0.2747,
+  "quarterly_eps_growth_yoy_8q": [
+   7.1667,
+   0.1154,
+   0.2632,
+   0.7843,
+   10.0,
+   1.8966,
+   0.2917,
+   -0.2747
+  ],
+  "quarterly_revenue_growth_yoy": 0.1831,
+  "quarterly_revenue_growth_yoy_8q": [
+   0.3994,
+   0.3879,
+   0.3771,
+   0.4146,
+   0.4108,
+   0.3499,
+   0.2653,
+   0.1831
+  ],
+  "revenue_cagr_3y": 0.373,
+  "revenue_cagr_5y": null,
+  "revenue_growth_accel": -0.061,
+  "revenue_growth_qoq": 0.0222,
+  "revenue_growth_yoy": 0.2936,
+  "revenue_growth_yoy_q2": 0.3545,
+  "revenue_growth_yoy_q3": 0.3871,
+  "revenue_growth_yoy_q4": 0.3986,
+  "revenue_growth_yoy_q5": 0.3951,
+  "revenue_growth_yoy_q6": 0.3914,
+  "revenue_growth_yoy_q7": 0.4084,
+  "revenue_growth_yoy_q8": 0.4247,
+  "revenue_history_8q": [
+   192.594,
+   209.55,
+   230.743,
+   252.265,
+   271.713,
+   282.868,
+   291.967,
+   298.454
+  ],
+  "revenue_per_share": 6.3916,
+  "roa": 0.1988,
+  "roce": 0.1087,
+  "roe": 0.2932,
+  "roic": 0.2746,
+  "rsi_14": 47.6664,
+  "sector_momentum": 0.0115,
+  "share_dilution_1y": 0.0,
+  "stock_vs_sector_20d": 0.0171,
+  "stock_vs_spy_20d": -0.0159,
+  "total_assets": 2073.953,
+  "vol_regime": 0.7418,
+  "volatility_20d": 0.0278,
+  "volatility_60d": 0.0375,
+  "w52_high": 318.84,
+  "w52_low": 87.89
+ },
+ "market_characters": [
+  {
+   "id": "g5",
+   "name": "Quality Compressed"
+  },
+  {
+   "id": "g8",
+   "name": "Boom-Bust"
+  },
+  {
+   "id": "g12",
+   "name": "Swing Range"
+  }
+ ],
+ "model_analogs": {
+  "matches": [
+   {
+    "actual_downside": -0.2552,
+    "actual_return": -0.1307,
+    "actual_upside": 0.1178,
+    "days_in_region": 58,
+    "end_date": "2022-12-02",
+    "end_reason": "reversal",
+    "similarity": 0.9667,
+    "start_date": "2022-10-05",
+    "ticker": "XMTR",
+    "trigger_date": "2022-10-17",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": -0.3037,
+    "actual_return": -0.121,
+    "actual_upside": 0.0288,
+    "days_in_region": 132,
+    "end_date": "2017-02-02",
+    "end_reason": "reversal",
+    "similarity": 0.9666,
+    "start_date": "2016-09-23",
+    "ticker": "GPRO",
+    "trigger_date": "2016-10-13",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": -0.1752,
+    "actual_return": 0.3686,
+    "actual_upside": 0.3686,
+    "days_in_region": 153,
+    "end_date": "2019-02-20",
+    "end_reason": "reversal",
+    "similarity": 0.9666,
+    "start_date": "2018-09-20",
+    "ticker": "BLDP",
+    "trigger_date": "2018-10-25",
+    "trigger_type": "severe_drawdown"
+   },
+   {
+    "actual_downside": 0.0,
+    "actual_return": 0.6117,
+    "actual_upside": 0.6117,
+    "days_in_region": 68,
+    "end_date": "2022-11-15",
+    "end_reason": "reversal",
+    "similarity": 0.9653,
+    "start_date": "2022-09-08",
+    "ticker": "IMCR",
+    "trigger_date": "2022-09-13",
+    "trigger_type": "severe_drawdown"
+   },
+   {
+    "actual_downside": -0.1255,
+    "actual_return": 0.032,
+    "actual_upside": 0.032,
+    "days_in_region": 125,
+    "end_date": "2007-02-21",
+    "end_reason": "reversal",
+    "similarity": 0.9644,
+    "start_date": "2006-10-19",
+    "ticker": "FOXH",
+    "trigger_date": "2006-11-10",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": -0.2221,
+    "actual_return": -0.1085,
+    "actual_upside": 0.0,
+    "days_in_region": 126,
+    "end_date": "2012-07-02",
+    "end_reason": "reversal",
+    "similarity": 0.9641,
+    "start_date": "2012-02-27",
+    "ticker": "HOLI",
+    "trigger_date": "2012-05-01",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": -0.0346,
+    "actual_return": -0.0165,
+    "actual_upside": 0.6673,
+    "days_in_region": 276,
+    "end_date": "2020-03-16",
+    "end_reason": "reversal",
+    "similarity": 0.9635,
+    "start_date": "2019-06-14",
+    "ticker": "STAA",
+    "trigger_date": "2019-07-12",
+    "trigger_type": "compression"
+   },
+   {
+    "actual_downside": -0.068,
+    "actual_return": 0.1429,
+    "actual_upside": 0.1429,
+    "days_in_region": 77,
+    "end_date": "1998-07-07",
+    "end_reason": "reversal",
+    "similarity": 0.9635,
+    "start_date": "1998-04-21",
+    "ticker": "PETM",
+    "trigger_date": "1998-06-02",
+    "trigger_type": "severe_drawdown"
+   },
+   {
+    "actual_downside": 0.0,
+    "actual_return": 0.1659,
+    "actual_upside": 0.1659,
+    "days_in_region": 80,
+    "end_date": "2020-01-16",
+    "end_reason": "reversal",
+    "similarity": 0.9631,
+    "start_date": "2019-10-28",
+    "ticker": "STMP",
+    "trigger_date": "2019-12-17",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": -0.0871,
+    "actual_return": 0.3629,
+    "actual_upside": 0.3629,
+    "days_in_region": 58,
+    "end_date": "2022-12-01",
+    "end_reason": "reversal",
+    "similarity": 0.9628,
+    "start_date": "2022-10-04",
+    "ticker": "KNSA",
+    "trigger_date": "2022-10-21",
+    "trigger_type": "shallow_drawdown"
+   }
+  ],
+  "stats": {
+   "avg_max_drawdown": 0.1256,
+   "avg_similarity": 0.961,
+   "avg_trough": 0.1256,
+   "avg_upside": 0.2259,
+   "best_return": 1.1497,
+   "downside_range": [
+    -0.4909,
+    0.0
+   ],
+   "median_return": 0.1519,
+   "n_matches": 50,
+   "outcome_agreement": true,
+   "return_p25": -0.0806,
+   "return_p5": -0.2019,
+   "return_p75": 0.2325,
+   "return_p95": 0.4987,
+   "sim_weighted_win_rate": 0.66,
+   "top5_avg_trough": 0.1719,
+   "top5_avg_upside": 0.2318,
+   "top_similarity": 0.967,
+   "upside_range": [
+    0.0,
+    1.7803
+   ],
+   "win_rate": 0.66,
+   "worst_return": -0.3505,
+   "years_span": 17
+  },
+  "total_matches": 50
+ },
+ "peer_group": {
+  "buckets": [
+   "Education, Training & Career Services"
+  ],
+  "groups": {
+   "Education, Training & Career Services": [
+    {
+     "market_cap_m": 15603.3711,
+     "price_vs_sma200": 1.2747,
+     "return_30d": 0.2628,
+     "return_7d": 0.0502,
+     "revenue_driver": "college bookstore operations",
+     "signal_rank": 436,
+     "stock_vs_spy_20d": 0.1883,
+     "ticker": "BNED"
+    },
+    {
+     "market_cap_m": 5660.4433,
+     "price_vs_sma200": 1.0585,
+     "return_30d": 0.0496,
+     "return_7d": -0.0251,
+     "revenue_driver": "Brazilian higher education",
+     "signal_rank": 47,
+     "stock_vs_spy_20d": -0.026,
+     "ticker": "LAUR"
+    },
+    {
+     "market_cap_m": 4183.2994,
+     "price_vs_sma200": 0.9455,
+     "return_30d": 0.0467,
+     "return_7d": -0.0083,
+     "revenue_driver": "center-based care",
+     "signal_rank": 1626,
+     "stock_vs_spy_20d": 0.0994,
+     "ticker": "BFAM"
+    },
+    {
+     "market_cap_m": 857.0482,
+     "price_vs_sma200": 0.9291,
+     "return_30d": 0.0315,
+     "return_7d": -0.0614,
+     "revenue_driver": "military and veteran education",
+     "signal_rank": 1064,
+     "stock_vs_spy_20d": 0.1169,
+     "ticker": "APEI"
+    },
+    {
+     "market_cap_m": 6559.7778,
+     "price_vs_sma200": 1.0443,
+     "return_30d": 0.0232,
+     "return_7d": -0.0138,
+     "revenue_driver": "for-profit higher education",
+     "signal_rank": 1948,
+     "stock_vs_spy_20d": 0.0455,
+     "ticker": "GHC"
+    },
+    {
+     "market_cap_m": 260.0631,
+     "price_vs_sma200": 1.1157,
+     "return_30d": 0.0178,
+     "return_7d": 0.0206,
+     "revenue_driver": "corporate training and consulting",
+     "signal_rank": null,
+     "stock_vs_spy_20d": -0.1897,
+     "ticker": "FC"
+    },
+    {
+     "market_cap_m": 68.0334,
+     "price_vs_sma200": 1.5166,
+     "return_30d": -0.0101,
+     "return_7d": 0.0036,
+     "revenue_driver": "digital student study tools",
+     "signal_rank": null,
+     "stock_vs_spy_20d": 0.4738,
+     "ticker": "CHGG"
+    },
+    {
+     "market_cap_m": 4234.5803,
+     "price_vs_sma200": 1.0715,
+     "return_30d": -0.0227,
+     "return_7d": 0.0416,
+     "revenue_driver": "executive search services",
+     "signal_rank": 1113,
+     "stock_vs_spy_20d": 0.0501,
+     "ticker": "KFY"
+    },
+    {
+     "market_cap_m": 4904.9161,
+     "price_vs_sma200": 1.1369,
+     "return_30d": -0.0819,
+     "return_7d": -0.0032,
+     "revenue_driver": "language learning app",
+     "signal_rank": 572,
+     "stock_vs_spy_20d": -0.0159,
+     "ticker": "DUOL"
+    },
+    {
+     "market_cap_m": 975.5513,
+     "price_vs_sma200": 0.8297,
+     "return_30d": -0.1004,
+     "return_7d": -0.0385,
+     "revenue_driver": "online learning marketplace",
+     "signal_rank": 1247,
+     "stock_vs_spy_20d": 0.0104,
+     "ticker": "COUR"
+    }
+   ]
+  }
+ },
+ "predictions": {
+  "badge_count": 0,
+  "confidence_score": 0.2344,
+  "conviction_label": "SPECULATIVE",
+  "data_quality_flags": [],
+  "ev_score": 0.0949,
+  "is_diamond": false,
+  "passes_tradability_filter": true,
+  "quality_label": "AVOID",
+  "quantiles": {
+   "downside_q10": -0.3497,
+   "downside_q25": -0.2079,
+   "downside_q50": -0.1187,
+   "downside_q75": -0.0363,
+   "downside_q90": -0.0023,
+   "path_volatility": 0.0418,
+   "risk_reward": 1.67,
+   "uncertainty": 0.5492,
+   "upside_q10": 0.0256,
+   "upside_q25": 0.0812,
+   "upside_q50": 0.1982,
+   "upside_q75": 0.3542,
+   "upside_q90": 0.5748
+  },
+  "rank": 572,
+  "rank_score": 0.0319,
+  "tradability_filter_reasons": []
+ },
+ "profile": {
+  "_local": {
+   "dividend_yield": 0.0,
+   "eps_growth_yoy": 2.4176,
+   "pe_ratio": 14.6277,
+   "revenue_growth_yoy": 0.2936,
+   "roe": 0.2932
+  },
+  "beta": 0.89,
+  "betaTTM": null,
+  "ceo": "Luis Alfonso von Ahn Arellano",
+  "companyName": "Duolingo, Inc.",
+  "country": "US",
+  "debtToEquityTTM": null,
+  "description": "Duolingo, Inc. builds and operates an online platform and a mobile application dedicated to language learning, catering to audiences in both the United States and China. The company's comprehensive curriculum spans 40 diverse languages, featuring prominent options such as Spanish, English, French, Japanese, German, Italian, Chinese, and Portuguese, among others. Furthermore, it offers a digital examination for assessing language proficiency. This enterprise was founded in 2011 and its main offices are located in Pittsburgh, Pennsylvania.",
+  "dividendYielTTM": null,
+  "enterpriseValueOverEBITDATTM": null,
+  "exchangeShortName": "NASDAQ",
+  "fullTimeEmployees": "900",
+  "industry": "Software - Application",
+  "ipoDate": "2021-07-28",
+  "latest_earnings_date": "2026-08-06",
+  "marketCapTTM": null,
+  "mktCap": 6457805462,
+  "peRatioTTM": null,
+  "price": 138.6,
+  "priceToSalesRatioTTM": null,
+  "returnOnEquityTTM": 0.3011,
+  "revenue_description": "Duolingo provides language-learning and education apps. Revenue is driven by unit volume growth and pricing realization in its core end markets, with new product introductions and geographic expansion as incremental catalysts.",
+  "revenue_description_themes": [
+   "paid subscriber growth",
+   "advertising monetization expansion",
+   "new subject expansion"
+  ],
+  "revenue_taxonomy": [
+   {
+    "bucket": "Education, Training & Career Services",
+    "matched_tags": [
+     "language learning app",
+     "subscription education platform",
+     "gamified learning"
+    ],
+    "path": "Consumer Services & Leisure › Gaming Education & Local Services › Education, Training & Career Services",
+    "sector": "Consumer Services & Leisure",
+    "segment": "Gaming Education & Local Services"
+   }
+  ],
+  "revenue_themes": [
+   "language learning app",
+   "subscription education platform",
+   "gamified learning"
+  ],
+  "sector": "Technology",
+  "website": "https://www.duolingo.com"
+ },
+ "report": {
+  "display_rank": null,
+  "lane": "wait",
+  "lane_rank": 15,
+  "setup_label": "countertrend",
+  "why_now": "Structural analogs leads the readiness mix (+9.7); countertrend move"
+ },
+ "scorecard": {
+  "headline": {
+   "avg_universe_pct": 77,
+   "label": "above_average",
+   "metric_count": 8
+  },
+  "metrics": {
+   "debt_to_equity": {
+    "direction": "lower",
+    "label": "D/E Ratio",
+    "sector": null,
+    "sector_n": 0,
+    "sector_pct": null,
+    "universe_n": 2075,
+    "universe_pct": 73,
+    "value": 0.0611
+   },
+   "eps_growth_yoy": {
+    "direction": "higher",
+    "label": "EPS Growth",
+    "sector": null,
+    "sector_n": 0,
+    "sector_pct": null,
+    "universe_n": 1892,
+    "universe_pct": 93,
+    "value": 2.4176
+   },
+   "gross_margin": {
+    "direction": "higher",
+    "label": "Gross Margin",
+    "sector": null,
+    "sector_n": 0,
+    "sector_pct": null,
+    "universe_n": 2009,
+    "universe_pct": 82,
+    "value": 0.729
+   },
+   "operating_margin": {
+    "direction": "higher",
+    "label": "Op. Margin",
+    "sector": null,
+    "sector_n": 0,
+    "sector_pct": null,
+    "universe_n": 2009,
+    "universe_pct": 61,
+    "value": 0.1414
+   },
+   "pe_ratio": {
+    "direction": "lower",
+    "label": "P/E",
+    "sector": null,
+    "sector_n": 0,
+    "sector_pct": null,
+    "universe_n": 1474,
+    "universe_pct": 70,
+    "value": 14.6277
+   },
+   "revenue_growth_yoy": {
+    "direction": "higher",
+    "label": "Rev Growth",
+    "sector": null,
+    "sector_n": 0,
+    "sector_pct": null,
+    "universe_n": 1834,
+    "universe_pct": 86,
+    "value": 0.2936
+   },
+   "roe": {
+    "direction": "higher",
+    "label": "ROE",
+    "sector": null,
+    "sector_n": 0,
+    "sector_pct": null,
+    "universe_n": 2101,
+    "universe_pct": 86,
+    "value": 0.2932
+   },
+   "roic": {
+    "direction": "higher",
+    "label": "ROIC",
+    "sector": null,
+    "sector_n": 0,
+    "sector_pct": null,
+    "universe_n": 2044,
+    "universe_pct": 64,
+    "value": 0.0222
+   }
+  }
+ },
+ "signal_rank": 572,
+ "structural_analogs": {
+  "gp_core_pct": 69.5,
+  "gp_core_ratio": 1.5678,
+  "matches": [
+   {
+    "actual_downside": -0.1579,
+    "actual_return": 0.0226,
+    "actual_upside": 0.0226,
+    "days_in_region": 103,
+    "end_date": "2005-05-31",
+    "end_reason": "reversal",
+    "seq_len": 103,
+    "similarity": 0.5838,
+    "start_date": "2005-02-18",
+    "ticker": "AGR",
+    "total_distance": 0.2691,
+    "trigger_date": "2005-03-30",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": -0.0859,
+    "actual_return": 0.8748,
+    "actual_upside": 0.8748,
+    "days_in_region": 91,
+    "end_date": "2005-07-13",
+    "end_reason": "reversal",
+    "seq_len": 91,
+    "similarity": 0.5706,
+    "start_date": "2005-02-15",
+    "ticker": "LSI",
+    "total_distance": 0.2805,
+    "trigger_date": "2005-03-31",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": -0.3839,
+    "actual_return": -0.0149,
+    "actual_upside": 0.1298,
+    "days_in_region": 93,
+    "end_date": "2002-08-01",
+    "end_reason": "reversal",
+    "seq_len": 93,
+    "similarity": 0.5582,
+    "start_date": "2002-04-25",
+    "ticker": "VTS",
+    "total_distance": 0.2915,
+    "trigger_date": "2002-05-23",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": -0.0342,
+    "actual_return": 0.0342,
+    "actual_upside": 0.1111,
+    "days_in_region": 117,
+    "end_date": "2005-05-27",
+    "end_reason": "data_end",
+    "seq_len": 117,
+    "similarity": 0.5545,
+    "start_date": "2005-02-04",
+    "ticker": "AGR",
+    "total_distance": 0.2948,
+    "trigger_date": "2005-04-27",
+    "trigger_type": "severe_drawdown"
+   },
+   {
+    "actual_downside": -0.0395,
+    "actual_return": 0.5044,
+    "actual_upside": 0.5044,
+    "days_in_region": 76,
+    "end_date": "2016-11-29",
+    "end_reason": "reversal",
+    "seq_len": 76,
+    "similarity": 0.5505,
+    "start_date": "2016-10-10",
+    "ticker": "SCMP",
+    "total_distance": 0.2984,
+    "trigger_date": "2016-10-31",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": -0.0849,
+    "actual_return": 0.1567,
+    "actual_upside": 0.1567,
+    "days_in_region": 73,
+    "end_date": "2019-07-01",
+    "end_reason": "reversal",
+    "seq_len": 73,
+    "similarity": 0.5495,
+    "start_date": "2019-05-03",
+    "ticker": "VIPS",
+    "total_distance": 0.2993,
+    "trigger_date": "2019-05-21",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": -0.032,
+    "actual_return": 0.293,
+    "actual_upside": 0.293,
+    "days_in_region": 102,
+    "end_date": "2016-07-27",
+    "end_reason": "reversal",
+    "seq_len": 102,
+    "similarity": 0.5483,
+    "start_date": "2016-04-27",
+    "ticker": "WRLD",
+    "total_distance": 0.3004,
+    "trigger_date": "2016-06-14",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": -0.125,
+    "actual_return": 0.1875,
+    "actual_upside": 0.1875,
+    "days_in_region": 87,
+    "end_date": "2017-02-15",
+    "end_reason": "reversal",
+    "seq_len": 87,
+    "similarity": 0.5476,
+    "start_date": "2016-10-05",
+    "ticker": "GLBL",
+    "total_distance": 0.3011,
+    "trigger_date": "2016-10-14",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": -0.1607,
+    "actual_return": -0.0331,
+    "actual_upside": 0.0045,
+    "days_in_region": 102,
+    "end_date": "2015-08-12",
+    "end_reason": "reversal",
+    "seq_len": 102,
+    "similarity": 0.5472,
+    "start_date": "2015-04-29",
+    "ticker": "PTEN",
+    "total_distance": 0.3015,
+    "trigger_date": "2015-05-28",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": -0.0025,
+    "actual_return": 0.2902,
+    "actual_upside": 0.2902,
+    "days_in_region": 95,
+    "end_date": "2005-02-25",
+    "end_reason": "reversal",
+    "seq_len": 95,
+    "similarity": 0.5466,
+    "start_date": "2004-12-02",
+    "ticker": "OVTI",
+    "total_distance": 0.302,
+    "trigger_date": "2004-12-15",
+    "trigger_type": "shallow_drawdown"
+   }
+  ],
+  "panel": {
+   "edge": 0.1237,
+   "hit_hi": 0.809,
+   "hit_lo": 0.596,
+   "hit_rate": 0.714,
+   "median_final": 0.1745,
+   "median_pain": 0.0743,
+   "n": 28,
+   "n_eff": 28.0,
+   "p25_final": -0.0331,
+   "p_pain_gt5": 0.571,
+   "return_to_pain": 1.85
+  },
+  "stats": {
+   "avg_similarity": 0.489,
+   "avg_trough": 0.1518,
+   "avg_upside": 0.2211,
+   "median_pain": 0.1237,
+   "median_return": 0.079,
+   "n_matches": 200,
+   "p25_return": -0.0917,
+   "p_pain_gt5": 0.69,
+   "return_to_pain": 0.55,
+   "top5_avg_trough": 0.1403,
+   "top5_avg_upside": 0.3285,
+   "top_similarity": 0.584,
+   "win_rate": 0.6
+  },
+  "total_matches": 200
+ },
+ "ticker": "DUOL",
+ "trending": null
+}
