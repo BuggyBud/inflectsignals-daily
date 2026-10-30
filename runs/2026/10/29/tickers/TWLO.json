@@ -1,0 +1,1012 @@
+{
+ "date": "2026-10-29",
+ "detected_regions": {
+  "primary": {
+   "days_in_region": 81,
+   "region_start": "2026-10-01",
+   "trigger_date": "2026-10-28",
+   "trigger_type": "drawdown"
+  },
+  "secondary": [
+   {
+    "confidence_score": 0.3073,
+    "downside_q50": -0.1381,
+    "ev_score": 0.0274,
+    "region_start": "2026-04-10",
+    "seq_len": 200,
+    "trigger_date": "2026-09-16",
+    "trigger_type": "runup",
+    "upside_q25": 0.0548,
+    "upside_q50": 0.1498,
+    "upside_q75": 0.2797
+   }
+  ]
+ },
+ "feature_attribution": {
+  "macro_driver_count": 15,
+  "risk_flags": [
+   "high_volatility"
+  ],
+  "top_drivers": [
+   {
+    "direction": "negative",
+    "feature": "dollar_volume",
+    "feature_value": 1125854336.0,
+    "importance": 0.001,
+    "importance_pct": 0.3977,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "positive",
+    "feature": "price_vs_sma200",
+    "feature_value": 1.2843,
+    "importance": 0.0006,
+    "importance_pct": 0.2467,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "positive",
+    "feature": "price_vs_low_52w",
+    "feature_value": 2.2297,
+    "importance": 0.0003,
+    "importance_pct": 0.1323,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "positive",
+    "feature": "volatility_20d",
+    "feature_value": 0.0402,
+    "importance": 0.0003,
+    "importance_pct": 0.1292,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "negative",
+    "feature": "stock_vs_spy_change_5d",
+    "feature_value": -0.0557,
+    "importance": 0.0002,
+    "importance_pct": 0.0942,
+    "method": "integrated_gradients"
+   }
+  ]
+ },
+ "fundamentals": {
+  "accrual": 0.1192,
+  "adx_14": 37.693,
+  "altman_z_score": 13.039,
+  "amihud_illiquidity": 0.0,
+  "avg_volume": 3109387.3997,
+  "beta_252d": 0.2835,
+  "book_value_per_share": 59.4034,
+  "correlation_spy_60d": 0.3464,
+  "current_liabilities": 891.498,
+  "current_ratio": 4.4705,
+  "daily_earnings_yield": 0.0347,
+  "daily_fcf_yield": -0.0011,
+  "daily_pb": 3.9992,
+  "daily_pe": 28.8179,
+  "daily_ps": 6.2892,
+  "days_since_52w_high": 20.0,
+  "debt_ebitda": 0.1089,
+  "debt_to_equity": 0.0069,
+  "dividend_yield": 0.0,
+  "dollar_volume_20d_avg": 1177509586.5147,
+  "earnings_quality": 2.4148,
+  "ebitda_growth_yoy": 0.7959,
+  "enterprise_value": 33847.1077,
+  "eps_basic": 1.04,
+  "eps_cagr_3y": 0.2037,
+  "eps_cagr_5y": 0.1099,
+  "eps_diluted": 1.0,
+  "eps_growth_accel": 0.0,
+  "eps_growth_qoq": -0.8512,
+  "eps_growth_yoy": 10.0,
+  "eps_growth_yoy_q2": 10.0,
+  "eps_growth_yoy_q3": 4.4,
+  "eps_growth_yoy_q4": 1.3438,
+  "eps_growth_yoy_q5": 1.1712,
+  "eps_growth_yoy_q6": 1.0426,
+  "eps_growth_yoy_q7": 0.9501,
+  "eps_growth_yoy_q8": 0.8845,
+  "eps_history_8q": [
+   -0.08,
+   0.12,
+   0.14,
+   0.23,
+   -0.3,
+   0.57,
+   6.68,
+   1.0
+  ],
+  "eps_ttm": 8.3941,
+  "ev_to_ebitda": 58.1265,
+  "ev_to_fcf": 86.9739,
+  "ev_to_sales": 21.7033,
+  "fcf_growth_yoy": 0.5723,
+  "fcf_margin": 0.2495,
+  "fcf_per_share": 2.5208,
+  "gross_margin": 0.4873,
+  "gross_margin_change_yoy": -0.0269,
+  "gross_margin_history": [
+   0.5321,
+   0.5245,
+   0.5147,
+   0.5027,
+   0.4935,
+   0.4873
+  ],
+  "inc_roic": -4.8323,
+  "interest_coverage": null,
+  "is_pre_revenue": false,
+  "margin_vs_sector_median": null,
+  "market_cap_ratio": 36675.1847,
+  "net_income": 161.157,
+  "net_margin": 0.2182,
+  "operating_income": 148.63,
+  "operating_margin": 0.0695,
+  "operating_margin_change_yoy": 0.0638,
+  "pb_ratio": 4.0722,
+  "pe_percentile_1y": 1.0,
+  "pe_ratio": 28.8179,
+  "peg_trailing": 0.0165,
+  "piotroski_f_score": 6.0,
+  "price_vs_high_52w": 0.8029,
+  "price_vs_sma200": 1.2843,
+  "ps_percentile_1y": 0.2024,
+  "ps_ratio": 6.2892,
+  "quarter_labels_8q": [
+   "Q4 '24",
+   "Q1 '25",
+   "Q2 '25",
+   "Q3 '25",
+   "Q4 '25",
+   "Q1 '26",
+   "Q2 '26",
+   "Q3 '26"
+  ],
+  "quarterly_eps_growth_yoy": 3.3478,
+  "quarterly_eps_growth_yoy_8q": [
+   0.9602,
+   1.3871,
+   1.7368,
+   4.8333,
+   -2.75,
+   3.75,
+   10.0,
+   3.3478
+  ],
+  "quarterly_revenue_growth_yoy": 0.1993,
+  "quarterly_revenue_growth_yoy_8q": [
+   0.1105,
+   0.1198,
+   0.1348,
+   0.1471,
+   0.1432,
+   0.2,
+   0.2203,
+   0.1993
+  ],
+  "revenue_cagr_3y": 0.1244,
+  "revenue_cagr_5y": 0.1802,
+  "revenue_growth_accel": 0.0128,
+  "revenue_growth_qoq": 0.0403,
+  "revenue_growth_yoy": 0.191,
+  "revenue_growth_yoy_q2": 0.1782,
+  "revenue_growth_yoy_q3": 0.1567,
+  "revenue_growth_yoy_q4": 0.1366,
+  "revenue_growth_yoy_q5": 0.1284,
+  "revenue_growth_yoy_q6": 0.1156,
+  "revenue_growth_yoy_q7": 0.0927,
+  "revenue_growth_yoy_q8": 0.0732,
+  "revenue_history_8q": [
+   1194.835,
+   1172.463,
+   1228.425,
+   1300.402,
+   1365.93,
+   1406.907,
+   1499.089,
+   1559.536
+  ],
+  "revenue_per_share": 10.102,
+  "roa": 0.116,
+  "roce": 0.04,
+  "roe": 0.1402,
+  "roic": 0.1246,
+  "rsi_14": 32.433,
+  "sector_momentum": -0.0224,
+  "share_dilution_1y": 0.0104,
+  "stock_vs_sector_20d": -0.1715,
+  "stock_vs_spy_20d": -0.2041,
+  "total_assets": 11106.939,
+  "vol_regime": 0.8214,
+  "volatility_20d": 0.0402,
+  "volatility_60d": 0.049,
+  "w52_high": 308.4,
+  "w52_low": 105.0
+ },
+ "market_characters": [
+  {
+   "id": "g3",
+   "name": "Explosive Gainers"
+  }
+ ],
+ "model_analogs": {
+  "matches": [
+   {
+    "actual_downside": -0.0662,
+    "actual_return": 0.2422,
+    "actual_upside": 0.2422,
+    "days_in_region": 107,
+    "end_date": "2019-11-01",
+    "end_reason": "reversal",
+    "similarity": 0.9757,
+    "start_date": "2019-07-17",
+    "ticker": "PRNB",
+    "trigger_date": "2019-09-27",
+    "trigger_type": "severe_drawdown"
+   },
+   {
+    "actual_downside": -0.5835,
+    "actual_return": -0.4042,
+    "actual_upside": 0.0,
+    "days_in_region": 109,
+    "end_date": "2019-01-18",
+    "end_reason": "reversal",
+    "similarity": 0.9754,
+    "start_date": "2018-10-01",
+    "ticker": "OAS",
+    "trigger_date": "2018-10-23",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": -0.2613,
+    "actual_return": 0.1916,
+    "actual_upside": 0.1916,
+    "days_in_region": 180,
+    "end_date": "2020-02-18",
+    "end_reason": "reversal",
+    "similarity": 0.9752,
+    "start_date": "2019-08-22",
+    "ticker": "BAND",
+    "trigger_date": "2019-09-27",
+    "trigger_type": "severe_drawdown"
+   },
+   {
+    "actual_downside": -0.0415,
+    "actual_return": 0.2143,
+    "actual_upside": 0.2143,
+    "days_in_region": 49,
+    "end_date": "2019-11-11",
+    "end_reason": "reversal",
+    "similarity": 0.9751,
+    "start_date": "2019-09-23",
+    "ticker": "HRI",
+    "trigger_date": "2019-10-03",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": -0.2673,
+    "actual_return": -0.1166,
+    "actual_upside": 0.1001,
+    "days_in_region": 125,
+    "end_date": "2019-01-10",
+    "end_reason": "reversal",
+    "similarity": 0.9746,
+    "start_date": "2018-09-07",
+    "ticker": "YEXT",
+    "trigger_date": "2018-10-01",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": -0.2968,
+    "actual_return": -0.1078,
+    "actual_upside": 0.0,
+    "days_in_region": 150,
+    "end_date": "2019-02-08",
+    "end_reason": "reversal",
+    "similarity": 0.9738,
+    "start_date": "2018-09-11",
+    "ticker": "GRUB",
+    "trigger_date": "2018-10-25",
+    "trigger_type": "severe_drawdown"
+   },
+   {
+    "actual_downside": -0.0165,
+    "actual_return": 0.2955,
+    "actual_upside": 0.2955,
+    "days_in_region": 75,
+    "end_date": "2014-03-18",
+    "end_reason": "reversal",
+    "similarity": 0.9731,
+    "start_date": "2014-01-02",
+    "ticker": "SWIR",
+    "trigger_date": "2014-01-14",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": -0.2648,
+    "actual_return": -0.2648,
+    "actual_upside": 0.1256,
+    "days_in_region": 61,
+    "end_date": "2018-12-24",
+    "end_reason": "reversal",
+    "similarity": 0.9729,
+    "start_date": "2018-10-24",
+    "ticker": "VRTV",
+    "trigger_date": "2018-10-29",
+    "trigger_type": "shallow_runup"
+   },
+   {
+    "actual_downside": 0.0,
+    "actual_return": 0.4155,
+    "actual_upside": 0.4155,
+    "days_in_region": 92,
+    "end_date": "2006-04-28",
+    "end_reason": "reversal",
+    "similarity": 0.9728,
+    "start_date": "2006-01-26",
+    "ticker": "ANGO",
+    "trigger_date": "2006-02-06",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": -0.0588,
+    "actual_return": 0.2698,
+    "actual_upside": 0.2698,
+    "days_in_region": 124,
+    "end_date": "2014-05-27",
+    "end_reason": "reversal",
+    "similarity": 0.9728,
+    "start_date": "2014-01-23",
+    "ticker": "QLYS",
+    "trigger_date": "2014-03-27",
+    "trigger_type": "drawdown"
+   }
+  ],
+  "stats": {
+   "avg_max_drawdown": 0.1465,
+   "avg_similarity": 0.972,
+   "avg_trough": 0.1465,
+   "avg_upside": 0.2744,
+   "best_return": 2.0461,
+   "downside_range": [
+    -0.5835,
+    0.0
+   ],
+   "median_return": 0.2042,
+   "n_matches": 50,
+   "outcome_agreement": true,
+   "return_p25": -0.0388,
+   "return_p5": -0.349,
+   "return_p75": 0.2985,
+   "return_p95": 0.7539,
+   "sim_weighted_win_rate": 0.68,
+   "top5_avg_trough": 0.244,
+   "top5_avg_upside": 0.1496,
+   "top_similarity": 0.976,
+   "upside_range": [
+    0.0,
+    2.0461
+   ],
+   "win_rate": 0.68,
+   "worst_return": -0.4042,
+   "years_span": 15
+  },
+  "total_matches": 50
+ },
+ "peer_group": {
+  "buckets": [
+   "CRM, CX & Contact Center Software",
+   "Enterprise Connectivity, Network Services & Communications Platforms"
+  ],
+  "groups": {
+   "CRM, CX & Contact Center Software": [
+    {
+     "market_cap_m": 3099.7128,
+     "price_vs_sma200": 1.8687,
+     "return_30d": 0.8371,
+     "return_7d": 0.005,
+     "revenue_driver": "customer engagement platform",
+     "signal_rank": 1408,
+     "stock_vs_spy_20d": 0.7786,
+     "ticker": "BRZE"
+    },
+    {
+     "market_cap_m": 1010.7802,
+     "price_vs_sma200": 1.1671,
+     "return_30d": 0.2117,
+     "return_7d": 0.0558,
+     "revenue_driver": "customer experience management SaaS",
+     "signal_rank": 1209,
+     "stock_vs_spy_20d": 0.2976,
+     "ticker": "CXM"
+    },
+    {
+     "market_cap_m": 6322.7132,
+     "price_vs_sma200": 1.7067,
+     "return_30d": 0.1193,
+     "return_7d": 0.0255,
+     "revenue_driver": "unified communications SaaS",
+     "signal_rank": 1341,
+     "stock_vs_spy_20d": 0.0618,
+     "ticker": "RNG"
+    },
+    {
+     "market_cap_m": 2218.9879,
+     "price_vs_sma200": 1.5556,
+     "return_30d": 0.0843,
+     "return_7d": 0.0904,
+     "revenue_driver": "cloud contact center platform",
+     "signal_rank": 697,
+     "stock_vs_spy_20d": 0.0394,
+     "ticker": "FIVN"
+    },
+    {
+     "market_cap_m": 2292.7228,
+     "price_vs_sma200": 1.0831,
+     "return_30d": 0.008,
+     "return_7d": 0.0044,
+     "revenue_driver": "customer engagement software",
+     "signal_rank": null,
+     "stock_vs_spy_20d": -0.0344,
+     "ticker": "CSGS"
+    },
+    {
+     "market_cap_m": 36675.1847,
+     "price_vs_sma200": 1.2843,
+     "return_30d": -0.0176,
+     "return_7d": -0.0649,
+     "revenue_driver": "cloud communications APIs",
+     "signal_rank": 993,
+     "stock_vs_spy_20d": -0.2041,
+     "ticker": "TWLO"
+    },
+    {
+     "market_cap_m": 104160.238,
+     "price_vs_sma200": 0.9897,
+     "return_30d": -0.018,
+     "return_7d": -0.0335,
+     "revenue_driver": "creative software SaaS",
+     "signal_rank": 1549,
+     "stock_vs_spy_20d": 0.0214,
+     "ticker": "ADBE"
+    },
+    {
+     "market_cap_m": 192665.94,
+     "price_vs_sma200": 1.164,
+     "return_30d": -0.0492,
+     "return_7d": -0.0476,
+     "revenue_driver": "CRM SaaS",
+     "signal_rank": 2062,
+     "stock_vs_spy_20d": -0.0315,
+     "ticker": "CRM"
+    },
+    {
+     "market_cap_m": 899.2,
+     "price_vs_sma200": 0.9508,
+     "return_30d": -0.3669,
+     "return_7d": -0.048,
+     "revenue_driver": "customer engagement software",
+     "signal_rank": 1151,
+     "stock_vs_spy_20d": -0.3913,
+     "ticker": "BLZE"
+    },
+    {
+     "market_cap_m": 18.5871,
+     "price_vs_sma200": 0.1968,
+     "return_30d": -0.3989,
+     "return_7d": -0.1869,
+     "revenue_driver": "enterprise AI platform",
+     "signal_rank": 943,
+     "stock_vs_spy_20d": -0.3141,
+     "ticker": "BNAI"
+    }
+   ],
+   "Enterprise Connectivity, Network Services & Communications Platforms": [
+    {
+     "market_cap_m": 1739.558,
+     "price_vs_sma200": 1.412,
+     "return_30d": 0.1859,
+     "return_7d": 0.1557,
+     "revenue_driver": "private lte spectrum licensing to utilities",
+     "signal_rank": 746,
+     "stock_vs_spy_20d": 0.1061,
+     "ticker": "ATEX"
+    },
+    {
+     "market_cap_m": 6322.7132,
+     "price_vs_sma200": 1.7067,
+     "return_30d": 0.1193,
+     "return_7d": 0.0255,
+     "revenue_driver": "unified communications SaaS",
+     "signal_rank": 1341,
+     "stock_vs_spy_20d": 0.0618,
+     "ticker": "RNG"
+    },
+    {
+     "market_cap_m": 2483.3617,
+     "price_vs_sma200": 0.8985,
+     "return_30d": 0.0902,
+     "return_7d": 0.0618,
+     "revenue_driver": "fiber broadband access systems",
+     "signal_rank": 2044,
+     "stock_vs_spy_20d": 0.0907,
+     "ticker": "CALX"
+    },
+    {
+     "market_cap_m": 18021.4678,
+     "price_vs_sma200": 1.1207,
+     "return_30d": 0.0705,
+     "return_7d": 0.0618,
+     "revenue_driver": "mission-critical communications",
+     "signal_rank": 1910,
+     "stock_vs_spy_20d": 0.0913,
+     "ticker": "MSI"
+    },
+    {
+     "market_cap_m": 1517.034,
+     "price_vs_sma200": 1.2988,
+     "return_30d": 0.0515,
+     "return_7d": 0.1879,
+     "revenue_driver": "voice API services",
+     "signal_rank": 1491,
+     "stock_vs_spy_20d": -0.1564,
+     "ticker": "BAND"
+    },
+    {
+     "market_cap_m": 275.2253,
+     "price_vs_sma200": 0.9778,
+     "return_30d": 0.0063,
+     "return_7d": 0.0686,
+     "revenue_driver": "microwave networking equipment",
+     "signal_rank": 915,
+     "stock_vs_spy_20d": 0.0218,
+     "ticker": "AVNW"
+    },
+    {
+     "market_cap_m": 284.7516,
+     "price_vs_sma200": 0.8967,
+     "return_30d": -0.0006,
+     "return_7d": 0.0765,
+     "revenue_driver": "land mobile radio equipment",
+     "signal_rank": 971,
+     "stock_vs_spy_20d": -0.043,
+     "ticker": "BKTI"
+    },
+    {
+     "market_cap_m": 36675.1847,
+     "price_vs_sma200": 1.2843,
+     "return_30d": -0.0176,
+     "return_7d": -0.0649,
+     "revenue_driver": "cloud communications APIs",
+     "signal_rank": 993,
+     "stock_vs_spy_20d": -0.2041,
+     "ticker": "TWLO"
+    },
+    {
+     "market_cap_m": 566.628,
+     "price_vs_sma200": 1.1522,
+     "return_30d": -0.0913,
+     "return_7d": 0.0206,
+     "revenue_driver": "cloud business communications",
+     "signal_rank": 463,
+     "stock_vs_spy_20d": -0.0287,
+     "ticker": "OOMA"
+    },
+    {
+     "market_cap_m": 250.6448,
+     "price_vs_sma200": 0.0926,
+     "return_30d": -0.7062,
+     "return_7d": -0.1433,
+     "revenue_driver": "high-speed internet",
+     "signal_rank": 1784,
+     "stock_vs_spy_20d": -0.4935,
+     "ticker": "CABO"
+    }
+   ]
+  }
+ },
+ "predictions": {
+  "badge_count": 0,
+  "confidence_score": 0.1685,
+  "conviction_label": "SPECULATIVE",
+  "data_quality_flags": [],
+  "ev_score": 0.0913,
+  "is_diamond": false,
+  "passes_tradability_filter": true,
+  "quality_label": "HIGH",
+  "quantiles": {
+   "downside_q10": -0.3501,
+   "downside_q25": -0.2042,
+   "downside_q50": -0.1233,
+   "downside_q75": -0.0373,
+   "downside_q90": 0.0017,
+   "path_volatility": 0.0464,
+   "risk_reward": 1.6348,
+   "uncertainty": 0.5374,
+   "upside_q10": 0.0278,
+   "upside_q25": 0.081,
+   "upside_q50": 0.2015,
+   "upside_q75": 0.3381,
+   "upside_q90": 0.5651
+  },
+  "rank": 993,
+  "rank_score": 0.0152,
+  "tradability_filter_reasons": []
+ },
+ "profile": {
+  "_local": {
+   "dividend_yield": 0.0,
+   "eps_growth_yoy": 10.0,
+   "pe_ratio": 30.4277,
+   "revenue_growth_yoy": 0.191,
+   "roe": 0.1402
+  },
+  "beta": 1.357,
+  "betaTTM": null,
+  "ceo": "Khozema Z. Shipchandler",
+  "companyName": "Twilio Inc.",
+  "country": "US",
+  "debtToEquityTTM": null,
+  "description": "Twilio Inc. offers a comprehensive cloud-based communications platform, empowering developers to build, scale, and manage customer engagement features directly within their software applications across both U.S. and international markets. Central to its customer engagement solution is a robust suite of application programming interfaces (APIs). These APIs streamline the complex communication logic required for various customer interactions and enable developers to seamlessly integrate voice, messaging, video, and email functionalities into their applications. Established in 2008, Twilio's corporate headquarters are located in San Francisco, California.",
+  "dividendYielTTM": null,
+  "enterpriseValueOverEBITDATTM": null,
+  "exchangeShortName": "NYSE",
+  "fullTimeEmployees": "5587",
+  "industry": "Software - Infrastructure",
+  "ipoDate": "2016-06-23",
+  "latest_earnings_date": "2026-10-29",
+  "marketCapTTM": null,
+  "mktCap": 37149792500,
+  "peRatioTTM": null,
+  "price": 241.9,
+  "priceToSalesRatioTTM": null,
+  "returnOnEquityTTM": 0.1508,
+  "revenue_description": "Twilio sells cloud communications and customer-engagement software. Revenue is driven by subscription ACV from enterprise license agreements and usage-based consumption, with module expansion and new product attach as growth levers.",
+  "revenue_description_themes": [
+   "usage volume expansion",
+   "installed base upsell",
+   "AI engagement features"
+  ],
+  "revenue_taxonomy": [
+   {
+    "bucket": "Enterprise Connectivity, Network Services & Communications Platforms",
+    "matched_tags": [
+     "cloud communications APIs"
+    ],
+    "path": "Communications › Telecom & Connectivity › Enterprise Connectivity, Network Services & Communications Platforms",
+    "sector": "Communications",
+    "segment": "Telecom & Connectivity"
+   },
+   {
+    "bucket": "CRM, CX & Contact Center Software",
+    "matched_tags": [
+     "omnichannel contact center",
+     "customer data platform"
+    ],
+    "path": "Technology › Software & Platforms › CRM, CX & Contact Center Software",
+    "sector": "Technology",
+    "segment": "Software & Platforms"
+   }
+  ],
+  "revenue_themes": [
+   "cloud communications APIs",
+   "omnichannel contact center",
+   "customer data platform"
+  ],
+  "sector": "Technology",
+  "website": "https://www.twilio.com"
+ },
+ "report": {
+  "display_rank": null,
+  "lane": "act_now",
+  "lane_rank": 6,
+  "setup_label": "countertrend",
+  "why_now": "Structural analogs leads the readiness mix (+13.0); countertrend move"
+ },
+ "scorecard": {
+  "headline": {
+   "avg_universe_pct": 62,
+   "label": "above_average",
+   "metric_count": 8
+  },
+  "metrics": {
+   "debt_to_equity": {
+    "direction": "lower",
+    "label": "D/E Ratio",
+    "sector": "Comm. Services",
+    "sector_n": 44,
+    "sector_pct": 84,
+    "universe_n": 2056,
+    "universe_pct": 84,
+    "value": 0.0069
+   },
+   "eps_growth_yoy": {
+    "direction": "higher",
+    "label": "EPS Growth",
+    "sector": "Comm. Services",
+    "sector_n": 44,
+    "sector_pct": 98,
+    "universe_n": 1880,
+    "universe_pct": 98,
+    "value": 10.0
+   },
+   "gross_margin": {
+    "direction": "higher",
+    "label": "Gross Margin",
+    "sector": "Comm. Services",
+    "sector_n": 43,
+    "sector_pct": 42,
+    "universe_n": 1998,
+    "universe_pct": 52,
+    "value": 0.4873
+   },
+   "operating_margin": {
+    "direction": "higher",
+    "label": "Op. Margin",
+    "sector": "Comm. Services",
+    "sector_n": 43,
+    "sector_pct": 35,
+    "universe_n": 1998,
+    "universe_pct": 39,
+    "value": 0.0695
+   },
+   "pe_ratio": {
+    "direction": "lower",
+    "label": "P/E",
+    "sector": "Comm. Services",
+    "sector_n": 28,
+    "sector_pct": 32,
+    "universe_n": 1468,
+    "universe_pct": 29,
+    "value": 30.4277
+   },
+   "revenue_growth_yoy": {
+    "direction": "higher",
+    "label": "Rev Growth",
+    "sector": "Comm. Services",
+    "sector_n": 44,
+    "sector_pct": 73,
+    "universe_n": 1824,
+    "universe_pct": 74,
+    "value": 0.191
+   },
+   "roe": {
+    "direction": "higher",
+    "label": "ROE",
+    "sector": "Comm. Services",
+    "sector_n": 44,
+    "sector_pct": 64,
+    "universe_n": 2088,
+    "universe_pct": 64,
+    "value": 0.1402
+   },
+   "roic": {
+    "direction": "higher",
+    "label": "ROIC",
+    "sector": "Comm. Services",
+    "sector_n": 43,
+    "sector_pct": 70,
+    "universe_n": 2026,
+    "universe_pct": 54,
+    "value": 0.0158
+   }
+  }
+ },
+ "signal_rank": 993,
+ "structural_analogs": {
+  "gp_core_pct": 97.6,
+  "gp_core_ratio": 2.5907,
+  "matches": [
+   {
+    "actual_downside": -0.1402,
+    "actual_return": 0.0797,
+    "actual_upside": 0.0797,
+    "days_in_region": 82,
+    "end_date": "2005-06-07",
+    "end_reason": "reversal",
+    "seq_len": 82,
+    "similarity": 0.5445,
+    "start_date": "2005-03-11",
+    "ticker": "FFIV",
+    "total_distance": 0.304,
+    "trigger_date": "2005-04-12",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": -0.4242,
+    "actual_return": -0.2694,
+    "actual_upside": 0.0299,
+    "days_in_region": 82,
+    "end_date": "2019-02-08",
+    "end_reason": "reversal",
+    "seq_len": 82,
+    "similarity": 0.5397,
+    "start_date": "2018-09-11",
+    "ticker": "GRUB",
+    "total_distance": 0.3083,
+    "trigger_date": "2018-10-08",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": -0.0451,
+    "actual_return": 0.1782,
+    "actual_upside": 0.1782,
+    "days_in_region": 87,
+    "end_date": "2021-08-04",
+    "end_reason": "reversal",
+    "seq_len": 87,
+    "similarity": 0.5392,
+    "start_date": "2021-04-05",
+    "ticker": "KLAC",
+    "total_distance": 0.3089,
+    "trigger_date": "2021-05-11",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": -0.29,
+    "actual_return": -0.0736,
+    "actual_upside": 0.0736,
+    "days_in_region": 80,
+    "end_date": "2014-08-19",
+    "end_reason": "reversal",
+    "seq_len": 80,
+    "similarity": 0.5293,
+    "start_date": "2014-03-18",
+    "ticker": "UCTT",
+    "total_distance": 0.3181,
+    "trigger_date": "2014-03-28",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": 0.0,
+    "actual_return": 0.2224,
+    "actual_upside": 0.2224,
+    "days_in_region": 85,
+    "end_date": "2021-08-04",
+    "end_reason": "reversal",
+    "seq_len": 85,
+    "similarity": 0.5292,
+    "start_date": "2021-04-08",
+    "ticker": "ENTG",
+    "total_distance": 0.3182,
+    "trigger_date": "2021-05-12",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": -0.0892,
+    "actual_return": 0.1422,
+    "actual_upside": 0.1422,
+    "days_in_region": 80,
+    "end_date": "2013-04-10",
+    "end_reason": "reversal",
+    "seq_len": 80,
+    "similarity": 0.5266,
+    "start_date": "2013-01-18",
+    "ticker": "SSYS",
+    "total_distance": 0.3206,
+    "trigger_date": "2013-01-30",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": 0.0,
+    "actual_return": 0.5455,
+    "actual_upside": 0.5455,
+    "days_in_region": 88,
+    "end_date": "1996-10-23",
+    "end_reason": "reversal",
+    "seq_len": 88,
+    "similarity": 0.5197,
+    "start_date": "1996-07-10",
+    "ticker": "RDC",
+    "total_distance": 0.3272,
+    "trigger_date": "1996-07-29",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": 0.0,
+    "actual_return": 0.2531,
+    "actual_upside": 0.2531,
+    "days_in_region": 80,
+    "end_date": "2003-11-05",
+    "end_reason": "reversal",
+    "seq_len": 80,
+    "similarity": 0.5101,
+    "start_date": "2003-09-04",
+    "ticker": "JNPR",
+    "total_distance": 0.3366,
+    "trigger_date": "2003-10-01",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": -0.0056,
+    "actual_return": 0.631,
+    "actual_upside": 0.9763,
+    "days_in_region": 80,
+    "end_date": "2014-02-05",
+    "end_reason": "reversal",
+    "seq_len": 80,
+    "similarity": 0.5093,
+    "start_date": "2013-07-03",
+    "ticker": "WAGE",
+    "total_distance": 0.3374,
+    "trigger_date": "2013-07-31",
+    "trigger_type": "compression"
+   },
+   {
+    "actual_downside": -0.1766,
+    "actual_return": 0.0627,
+    "actual_upside": 0.0627,
+    "days_in_region": 77,
+    "end_date": "2011-07-26",
+    "end_reason": "reversal",
+    "seq_len": 77,
+    "similarity": 0.5091,
+    "start_date": "2011-05-02",
+    "ticker": "FMCN",
+    "total_distance": 0.3375,
+    "trigger_date": "2011-05-24",
+    "trigger_type": "drawdown"
+   }
+  ],
+  "panel": {
+   "edge": 0.1821,
+   "hit_hi": 0.934,
+   "hit_lo": 0.811,
+   "hit_rate": 0.886,
+   "median_final": 0.1782,
+   "median_pain": 0.0442,
+   "n": 44,
+   "n_eff": 44.0,
+   "p25_final": 0.0627,
+   "p_pain_gt5": 0.477,
+   "return_to_pain": 2.778
+  },
+  "stats": {
+   "avg_similarity": 0.474,
+   "avg_trough": 0.1107,
+   "avg_upside": 0.2282,
+   "median_pain": 0.0747,
+   "median_return": 0.1706,
+   "n_matches": 200,
+   "p25_return": 0.0592,
+   "p_pain_gt5": 0.6,
+   "return_to_pain": 1.801,
+   "top5_avg_trough": 0.1799,
+   "top5_avg_upside": 0.1168,
+   "top_similarity": 0.544,
+   "win_rate": 0.815
+  },
+  "total_matches": 200
+ },
+ "ticker": "TWLO",
+ "trending": {
+  "acceleration": -0.0132,
+  "avg_vol_20d": 4273382.2333,
+  "base_high_120": 301.27,
+  "breakout_confirmed": 0,
+  "close": 263.65,
+  "momentum_score": 0.8409,
+  "momentum_start": "2026-04-13",
+  "range_20": 0.2714,
+  "range_50": 0.3513,
+  "rank": 627,
+  "rank_down": null,
+  "rank_up": 162,
+  "ret_120": 0.348,
+  "ret_20": -0.0813,
+  "ret_60": 0.336,
+  "rundown_score": 0.9014,
+  "score_date": "2026-10-26",
+  "slope_20": -0.0087,
+  "slope_60": 0.0044,
+  "stage": "sustained",
+  "stage_label": "Trending",
+  "ticker": "TWLO",
+  "total_score": 0.4728,
+  "trend_ratio": 1.3058,
+  "vcp_detected": 0,
+  "vcp_score": 0.2274
+ }
+}

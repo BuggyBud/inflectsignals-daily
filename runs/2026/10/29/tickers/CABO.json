@@ -1,0 +1,1144 @@
+{
+ "date": "2026-10-29",
+ "detected_regions": {
+  "primary": {
+   "days_in_region": 96,
+   "region_start": "2026-09-10",
+   "trigger_date": "2026-10-07",
+   "trigger_type": "compression"
+  },
+  "secondary": [
+   {
+    "confidence_score": 0.0053,
+    "downside_q50": -0.1761,
+    "ev_score": 0.105,
+    "region_start": "2026-04-22",
+    "seq_len": 193,
+    "trigger_date": "2026-10-13",
+    "trigger_type": "severe_drawdown",
+    "upside_q25": 0.0795,
+    "upside_q50": 0.2472,
+    "upside_q75": 0.4964
+   }
+  ]
+ },
+ "feature_attribution": {
+  "macro_driver_count": 10,
+  "risk_flags": [
+   "high_volatility"
+  ],
+  "top_drivers": [
+   {
+    "direction": "negative",
+    "feature": "price_vs_sma200",
+    "feature_value": 0.0926,
+    "importance": 0.0013,
+    "importance_pct": 0.1813,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "positive",
+    "feature": "ma_200_slope",
+    "feature_value": -0.1553,
+    "importance": 0.0009,
+    "importance_pct": 0.1358,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "positive",
+    "feature": "historical_recovery_rate",
+    "feature_value": 0.0272,
+    "importance": 0.0008,
+    "importance_pct": 0.1131,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "positive",
+    "feature": "return_1d",
+    "feature_value": -0.0093,
+    "importance": 0.0008,
+    "importance_pct": 0.113,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "positive",
+    "feature": "volatility_20d",
+    "feature_value": 0.1244,
+    "importance": 0.0007,
+    "importance_pct": 0.105,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "negative",
+    "feature": "stock_vs_sector_20d",
+    "feature_value": -0.4666,
+    "importance": 0.0007,
+    "importance_pct": 0.1024,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "positive",
+    "feature": "days_since_52w_high",
+    "feature_value": 1465.0,
+    "importance": 0.0005,
+    "importance_pct": 0.0657,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "negative",
+    "feature": "altman_x3",
+    "feature_value": -0.1135,
+    "importance": 0.0005,
+    "importance_pct": 0.0655,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "positive",
+    "feature": "price_vs_high_52w",
+    "feature_value": 0.0343,
+    "importance": 0.0004,
+    "importance_pct": 0.0642,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "negative",
+    "feature": "beta_252d",
+    "feature_value": -0.0945,
+    "importance": 0.0004,
+    "importance_pct": 0.0539,
+    "method": "integrated_gradients"
+   }
+  ]
+ },
+ "fundamentals": {
+  "accrual": -0.2078,
+  "adx_14": 32.515,
+  "altman_z_score": -0.2775,
+  "amihud_illiquidity": 0.0142,
+  "avg_volume": 549444.6088,
+  "beta_252d": -0.0945,
+  "book_value_per_share": 57.2724,
+  "correlation_spy_60d": 0.1662,
+  "current_liabilities": 596.866,
+  "current_ratio": 0.4752,
+  "daily_earnings_yield": -0.5,
+  "daily_fcf_yield": -0.1122,
+  "daily_pb": 0.0918,
+  "daily_pe": -0.0286,
+  "daily_ps": 0.0208,
+  "days_since_52w_high": 1465.0,
+  "debt_ebitda": 4.2198,
+  "debt_to_equity": 9.3535,
+  "dividend_yield": 0.0688,
+  "dollar_volume_20d_avg": 9199609.6557,
+  "earnings_quality": -0.1038,
+  "ebitda_growth_yoy": -0.0849,
+  "enterprise_value": 2916.6282,
+  "eps_basic": -204.35,
+  "eps_cagr_3y": -3.3232,
+  "eps_cagr_5y": -2.2608,
+  "eps_diluted": -204.35,
+  "eps_growth_accel": 8.9103,
+  "eps_growth_qoq": -33.4881,
+  "eps_growth_yoy": -1.0897,
+  "eps_growth_yoy_q2": -10.0,
+  "eps_growth_yoy_q3": -10.0,
+  "eps_growth_yoy_q4": -3.0277,
+  "eps_growth_yoy_q5": -3.3617,
+  "eps_growth_yoy_q6": -1.0939,
+  "eps_growth_yoy_q7": -0.935,
+  "eps_growth_yoy_q8": 3.9825,
+  "eps_history_8q": [
+   7.58,
+   -18.71,
+   0.46,
+   -77.7,
+   14.52,
+   -1.35,
+   6.12,
+   -204.35
+  ],
+  "eps_ttm": -186.3162,
+  "ev_to_ebitda": 4.0315,
+  "ev_to_fcf": 62.248,
+  "ev_to_sales": 8.3589,
+  "fcf_growth_yoy": -1.0384,
+  "fcf_margin": 0.1343,
+  "fcf_per_share": 8.2219,
+  "gross_margin": 0.5111,
+  "gross_margin_change_yoy": 0.2686,
+  "gross_margin_history": [
+   0.7364,
+   0.7363,
+   0.7389,
+   0.5134,
+   0.4523,
+   0.5111
+  ],
+  "inc_roic": 0.9009,
+  "interest_coverage": 11.7964,
+  "is_pre_revenue": false,
+  "margin_vs_sector_median": null,
+  "market_cap_ratio": 29.9782,
+  "net_income": -1164.576,
+  "net_margin": -0.7283,
+  "operating_income": -524.917,
+  "operating_margin": 0.2532,
+  "operating_margin_change_yoy": -1.7849,
+  "pb_ratio": 0.0929,
+  "pe_percentile_1y": 0.0159,
+  "pe_ratio": -0.2404,
+  "peg_trailing": 0.0022,
+  "piotroski_f_score": 3.0,
+  "price_vs_high_52w": 0.0343,
+  "price_vs_sma200": 0.0926,
+  "ps_percentile_1y": 0.9881,
+  "ps_ratio": 0.1739,
+  "quarter_labels_8q": [
+   "Q3 '24",
+   "Q4 '24",
+   "Q1 '25",
+   "Q2 '25",
+   "Q3 '25",
+   "Q4 '25",
+   "Q1 '26",
+   "Q2 '26"
+  ],
+  "quarterly_eps_growth_yoy": -1.63,
+  "quarterly_eps_growth_yoy_8q": [
+   0.4329,
+   -2.0728,
+   -0.9288,
+   -10.0,
+   0.9156,
+   0.9278,
+   10.0,
+   -1.63
+  ],
+  "quarterly_revenue_growth_yoy": -0.0844,
+  "quarterly_revenue_growth_yoy_8q": [
+   -0.0637,
+   -0.0597,
+   -0.0586,
+   -0.0339,
+   -0.0446,
+   -0.0606,
+   -0.0726,
+   -0.0844
+  ],
+  "revenue_cagr_3y": -0.0528,
+  "revenue_cagr_5y": 0.0032,
+  "revenue_growth_accel": -0.0126,
+  "revenue_growth_qoq": -0.0114,
+  "revenue_growth_yoy": -0.0654,
+  "revenue_growth_yoy_q2": -0.0527,
+  "revenue_growth_yoy_q3": -0.0495,
+  "revenue_growth_yoy_q4": -0.0494,
+  "revenue_growth_yoy_q5": -0.0543,
+  "revenue_growth_yoy_q6": -0.063,
+  "revenue_growth_yoy_q7": -0.0587,
+  "revenue_growth_yoy_q8": -0.0518,
+  "revenue_history_8q": [
+   393.555,
+   387.213,
+   380.601,
+   381.072,
+   376.011,
+   363.738,
+   352.957,
+   348.926
+  ],
+  "revenue_per_share": 61.2278,
+  "roa": -0.2068,
+  "roce": 0.0778,
+  "roe": -1.1632,
+  "roic": -0.2608,
+  "rsi_14": 29.2698,
+  "sector_momentum": 0.0968,
+  "share_dilution_1y": 0.0,
+  "stock_vs_sector_20d": -0.4666,
+  "stock_vs_spy_20d": -0.4935,
+  "total_assets": 4622.812,
+  "vol_regime": 1.2908,
+  "volatility_20d": 0.1244,
+  "volatility_60d": 0.0964,
+  "w52_high": 162.83,
+  "w52_low": 4.355
+ },
+ "market_characters": [],
+ "model_analogs": {
+  "matches": [
+   {
+    "actual_downside": -0.2549,
+    "actual_return": -0.1201,
+    "actual_upside": 0.0,
+    "days_in_region": 60,
+    "end_date": "2018-11-30",
+    "end_reason": "reversal",
+    "similarity": 0.9822,
+    "start_date": "2018-10-01",
+    "ticker": "ALT",
+    "trigger_date": "2018-10-26",
+    "trigger_type": "compression"
+   },
+   {
+    "actual_downside": -0.6574,
+    "actual_return": -0.5833,
+    "actual_upside": 0.0,
+    "days_in_region": 197,
+    "end_date": "2015-11-03",
+    "end_reason": "reversal",
+    "similarity": 0.9817,
+    "start_date": "2015-04-20",
+    "ticker": "ACI",
+    "trigger_date": "2015-10-08",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": -0.6092,
+    "actual_return": -0.4855,
+    "actual_upside": 0.1145,
+    "days_in_region": 45,
+    "end_date": "2016-01-29",
+    "end_reason": "new_pattern",
+    "similarity": 0.9804,
+    "start_date": "2015-12-15",
+    "ticker": "BTU",
+    "trigger_date": "2015-12-23",
+    "trigger_type": "runup"
+   },
+   {
+    "actual_downside": -0.4665,
+    "actual_return": -0.3454,
+    "actual_upside": 0.0,
+    "days_in_region": 46,
+    "end_date": "2019-10-21",
+    "end_reason": "reversal",
+    "similarity": 0.9804,
+    "start_date": "2019-09-05",
+    "ticker": "MNK",
+    "trigger_date": "2019-09-09",
+    "trigger_type": "runup"
+   },
+   {
+    "actual_downside": -0.293,
+    "actual_return": -0.1371,
+    "actual_upside": 0.0,
+    "days_in_region": 124,
+    "end_date": "2012-05-29",
+    "end_reason": "reversal",
+    "similarity": 0.9801,
+    "start_date": "2012-01-26",
+    "ticker": "YELL",
+    "trigger_date": "2012-05-01",
+    "trigger_type": "severe_drawdown"
+   },
+   {
+    "actual_downside": -0.2621,
+    "actual_return": 0.0324,
+    "actual_upside": 0.0324,
+    "days_in_region": 237,
+    "end_date": "2020-01-16",
+    "end_reason": "reversal",
+    "similarity": 0.9799,
+    "start_date": "2019-05-24",
+    "ticker": "YELL",
+    "trigger_date": "2019-11-13",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": -0.3061,
+    "actual_return": -0.3061,
+    "actual_upside": 0.0,
+    "days_in_region": 43,
+    "end_date": "1999-03-09",
+    "end_reason": "reversal",
+    "similarity": 0.9789,
+    "start_date": "1999-01-25",
+    "ticker": "BYI",
+    "trigger_date": "1999-02-12",
+    "trigger_type": "runup"
+   },
+   {
+    "actual_downside": -0.3144,
+    "actual_return": 0.0524,
+    "actual_upside": 0.0957,
+    "days_in_region": 44,
+    "end_date": "2007-12-26",
+    "end_reason": "new_pattern",
+    "similarity": 0.9786,
+    "start_date": "2007-11-12",
+    "ticker": "WCI",
+    "trigger_date": "2007-11-15",
+    "trigger_type": "shallow_runup"
+   },
+   {
+    "actual_downside": -0.2,
+    "actual_return": 0.35,
+    "actual_upside": 0.35,
+    "days_in_region": 48,
+    "end_date": "1998-09-16",
+    "end_reason": "reversal",
+    "similarity": 0.9786,
+    "start_date": "1998-07-30",
+    "ticker": "ANCR",
+    "trigger_date": "1998-08-26",
+    "trigger_type": "compression"
+   },
+   {
+    "actual_downside": -0.4898,
+    "actual_return": 0.0,
+    "actual_upside": 0.0102,
+    "days_in_region": 47,
+    "end_date": "2001-01-17",
+    "end_reason": "new_pattern",
+    "similarity": 0.9782,
+    "start_date": "2000-12-01",
+    "ticker": "CYBS",
+    "trigger_date": "2000-12-07",
+    "trigger_type": "shallow_runup"
+   }
+  ],
+  "stats": {
+   "avg_max_drawdown": 0.2744,
+   "avg_similarity": 0.977,
+   "avg_trough": 0.2744,
+   "avg_upside": 0.2538,
+   "best_return": 1.1667,
+   "downside_range": [
+    -0.6574,
+    0.0
+   ],
+   "median_return": -0.0617,
+   "n_matches": 50,
+   "outcome_agreement": false,
+   "return_p25": -0.3191,
+   "return_p5": -0.478,
+   "return_p75": 0.1668,
+   "return_p95": 0.3935,
+   "sim_weighted_win_rate": 0.38,
+   "top5_avg_trough": 0.4562,
+   "top5_avg_upside": 0.0229,
+   "top_similarity": 0.982,
+   "upside_range": [
+    0.0,
+    1.1667
+   ],
+   "win_rate": 0.38,
+   "worst_return": -0.626,
+   "years_span": 13
+  },
+  "total_matches": 50
+ },
+ "peer_group": {
+  "buckets": [
+   "Broadcast, Cable & Streaming Media",
+   "Consumer Broadband, Wireless & Subscription Connectivity",
+   "Enterprise Connectivity, Network Services & Communications Platforms"
+  ],
+  "groups": {
+   "Broadcast, Cable & Streaming Media": [
+    {
+     "market_cap_m": 722.0253,
+     "price_vs_sma200": 1.2087,
+     "return_30d": 0.1209,
+     "return_7d": 0.0626,
+     "revenue_driver": "OTT streaming platform SaaS",
+     "signal_rank": 1250,
+     "stock_vs_spy_20d": 0.1023,
+     "ticker": "CNNE"
+    },
+    {
+     "market_cap_m": 181671.0086,
+     "price_vs_sma200": 1.0719,
+     "return_30d": 0.0528,
+     "return_7d": -0.0068,
+     "revenue_driver": "theme park admissions",
+     "signal_rank": 1850,
+     "stock_vs_spy_20d": 0.0875,
+     "ticker": "DIS"
+    },
+    {
+     "market_cap_m": 56859.456,
+     "price_vs_sma200": 1.9629,
+     "return_30d": -0.0074,
+     "return_7d": 0.1345,
+     "revenue_driver": "digital media platform",
+     "signal_rank": 1649,
+     "stock_vs_spy_20d": 0.0005,
+     "ticker": "GDC"
+    },
+    {
+     "market_cap_m": 1346.796,
+     "price_vs_sma200": 0.9076,
+     "return_30d": -0.0173,
+     "return_7d": -0.0253,
+     "revenue_driver": "video processing solutions",
+     "signal_rank": null,
+     "stock_vs_spy_20d": -0.093,
+     "ticker": "HLIT"
+    },
+    {
+     "market_cap_m": 83010.838,
+     "price_vs_sma200": 0.8531,
+     "return_30d": -0.0279,
+     "return_7d": -0.004,
+     "revenue_driver": "cable broadband services",
+     "signal_rank": 922,
+     "stock_vs_spy_20d": 0.0193,
+     "ticker": "CMCSA"
+    },
+    {
+     "market_cap_m": 496.725,
+     "price_vs_sma200": 0.9737,
+     "return_30d": -0.0346,
+     "return_7d": -0.0346,
+     "revenue_driver": "local broadcast TV stations",
+     "signal_rank": 1063,
+     "stock_vs_spy_20d": -0.0159,
+     "ticker": "GTN"
+    },
+    {
+     "market_cap_m": 182.4759,
+     "price_vs_sma200": 0.7222,
+     "return_30d": -0.0948,
+     "return_7d": -0.0932,
+     "revenue_driver": "consumer streaming subscriptions",
+     "signal_rank": null,
+     "stock_vs_spy_20d": -0.121,
+     "ticker": "CURI"
+    },
+    {
+     "market_cap_m": 538.0004,
+     "price_vs_sma200": 0.7529,
+     "return_30d": -0.1168,
+     "return_7d": -0.001,
+     "revenue_driver": "fiber optic internet",
+     "signal_rank": 1137,
+     "stock_vs_spy_20d": -0.0985,
+     "ticker": "SHEN"
+    },
+    {
+     "market_cap_m": 311.1278,
+     "price_vs_sma200": 0.8405,
+     "return_30d": -0.3229,
+     "return_7d": -0.207,
+     "revenue_driver": "cable TV networks",
+     "signal_rank": 134,
+     "stock_vs_spy_20d": -0.2967,
+     "ticker": "AMCX"
+    },
+    {
+     "market_cap_m": 250.6448,
+     "price_vs_sma200": 0.0926,
+     "return_30d": -0.7062,
+     "return_7d": -0.1433,
+     "revenue_driver": "high-speed internet",
+     "signal_rank": 1784,
+     "stock_vs_spy_20d": -0.4935,
+     "ticker": "CABO"
+    }
+   ],
+   "Consumer Broadband, Wireless & Subscription Connectivity": [
+    {
+     "market_cap_m": 3914.3118,
+     "price_vs_sma200": 1.4526,
+     "return_30d": 0.161,
+     "return_7d": 0.0642,
+     "revenue_driver": "residential broadband subscriptions",
+     "signal_rank": 1950,
+     "stock_vs_spy_20d": 0.1726,
+     "ticker": "CON"
+    },
+    {
+     "market_cap_m": 10557.9951,
+     "price_vs_sma200": 1.1007,
+     "return_30d": 0.0122,
+     "return_7d": 0.0016,
+     "revenue_driver": "low earth orbit communications",
+     "signal_rank": 799,
+     "stock_vs_spy_20d": 0.0008,
+     "ticker": "GSAT"
+    },
+    {
+     "market_cap_m": 487.2286,
+     "price_vs_sma200": 0.6875,
+     "return_30d": 0.004,
+     "return_7d": 0.2222,
+     "revenue_driver": "in-flight Wi-Fi connectivity",
+     "signal_rank": 283,
+     "stock_vs_spy_20d": 0.1589,
+     "ticker": "GOGO"
+    },
+    {
+     "market_cap_m": 83010.838,
+     "price_vs_sma200": 0.8531,
+     "return_30d": -0.0279,
+     "return_7d": -0.004,
+     "revenue_driver": "cable broadband services",
+     "signal_rank": 922,
+     "stock_vs_spy_20d": 0.0193,
+     "ticker": "CMCSA"
+    },
+    {
+     "market_cap_m": 7546.7607,
+     "price_vs_sma200": 0.8556,
+     "return_30d": -0.0596,
+     "return_7d": -0.0044,
+     "revenue_driver": "Wireless service subscriptions",
+     "signal_rank": 965,
+     "stock_vs_spy_20d": -0.0434,
+     "ticker": "TDS"
+    },
+    {
+     "market_cap_m": 165628.5166,
+     "price_vs_sma200": 0.7871,
+     "return_30d": -0.1151,
+     "return_7d": -0.0663,
+     "revenue_driver": "wireless service subscriptions",
+     "signal_rank": 1589,
+     "stock_vs_spy_20d": -0.0963,
+     "ticker": "TMUS"
+    },
+    {
+     "market_cap_m": 538.0004,
+     "price_vs_sma200": 0.7529,
+     "return_30d": -0.1168,
+     "return_7d": -0.001,
+     "revenue_driver": "fiber optic internet",
+     "signal_rank": 1137,
+     "stock_vs_spy_20d": -0.0985,
+     "ticker": "SHEN"
+    },
+    {
+     "market_cap_m": 15957.4238,
+     "price_vs_sma200": 0.6592,
+     "return_30d": -0.1827,
+     "return_7d": -0.0094,
+     "revenue_driver": "cable broadband operator",
+     "signal_rank": 1445,
+     "stock_vs_spy_20d": -0.0283,
+     "ticker": "CHTR"
+    },
+    {
+     "market_cap_m": 250.6448,
+     "price_vs_sma200": 0.0926,
+     "return_30d": -0.7062,
+     "return_7d": -0.1433,
+     "revenue_driver": "high-speed internet",
+     "signal_rank": 1784,
+     "stock_vs_spy_20d": -0.4935,
+     "ticker": "CABO"
+    },
+    {
+     "market_cap_m": 2404.0011,
+     "price_vs_sma200": 0.837,
+     "return_30d": -1.0,
+     "return_7d": -1.0,
+     "revenue_driver": "geospatial positioning technology",
+     "signal_rank": null,
+     "stock_vs_spy_20d": -0.1807,
+     "ticker": "NN"
+    }
+   ],
+   "Enterprise Connectivity, Network Services & Communications Platforms": [
+    {
+     "market_cap_m": 1739.558,
+     "price_vs_sma200": 1.412,
+     "return_30d": 0.1859,
+     "return_7d": 0.1557,
+     "revenue_driver": "private lte spectrum licensing to utilities",
+     "signal_rank": 746,
+     "stock_vs_spy_20d": 0.1061,
+     "ticker": "ATEX"
+    },
+    {
+     "market_cap_m": 2483.3617,
+     "price_vs_sma200": 0.8985,
+     "return_30d": 0.0902,
+     "return_7d": 0.0618,
+     "revenue_driver": "fiber broadband access systems",
+     "signal_rank": 2044,
+     "stock_vs_spy_20d": 0.0907,
+     "ticker": "CALX"
+    },
+    {
+     "market_cap_m": 368.9477,
+     "price_vs_sma200": 1.0245,
+     "return_30d": 0.0855,
+     "return_7d": 0.1348,
+     "revenue_driver": "fiber optic connectivity",
+     "signal_rank": 1228,
+     "stock_vs_spy_20d": 0.0269,
+     "ticker": "CLFD"
+    },
+    {
+     "market_cap_m": 1517.034,
+     "price_vs_sma200": 1.2988,
+     "return_30d": 0.0515,
+     "return_7d": 0.1879,
+     "revenue_driver": "voice API services",
+     "signal_rank": 1491,
+     "stock_vs_spy_20d": -0.1564,
+     "ticker": "BAND"
+    },
+    {
+     "market_cap_m": 667.8708,
+     "price_vs_sma200": 1.1824,
+     "return_30d": 0.0484,
+     "return_7d": 0.0525,
+     "revenue_driver": "digital fax subscriptions",
+     "signal_rank": 203,
+     "stock_vs_spy_20d": 0.0479,
+     "ticker": "CCSI"
+    },
+    {
+     "market_cap_m": 275.2253,
+     "price_vs_sma200": 0.9778,
+     "return_30d": 0.0063,
+     "return_7d": 0.0686,
+     "revenue_driver": "microwave networking equipment",
+     "signal_rank": 915,
+     "stock_vs_spy_20d": 0.0218,
+     "ticker": "AVNW"
+    },
+    {
+     "market_cap_m": 284.7516,
+     "price_vs_sma200": 0.8967,
+     "return_30d": -0.0006,
+     "return_7d": 0.0765,
+     "revenue_driver": "land mobile radio equipment",
+     "signal_rank": 971,
+     "stock_vs_spy_20d": -0.043,
+     "ticker": "BKTI"
+    },
+    {
+     "market_cap_m": 535.9101,
+     "price_vs_sma200": 0.4896,
+     "return_30d": -0.1574,
+     "return_7d": 0.0052,
+     "revenue_driver": "dedicated internet access",
+     "signal_rank": 1628,
+     "stock_vs_spy_20d": -0.0641,
+     "ticker": "CCOI"
+    },
+    {
+     "market_cap_m": 15957.4238,
+     "price_vs_sma200": 0.6592,
+     "return_30d": -0.1827,
+     "return_7d": -0.0094,
+     "revenue_driver": "cable broadband operator",
+     "signal_rank": 1445,
+     "stock_vs_spy_20d": -0.0283,
+     "ticker": "CHTR"
+    },
+    {
+     "market_cap_m": 250.6448,
+     "price_vs_sma200": 0.0926,
+     "return_30d": -0.7062,
+     "return_7d": -0.1433,
+     "revenue_driver": "high-speed internet",
+     "signal_rank": 1784,
+     "stock_vs_spy_20d": -0.4935,
+     "ticker": "CABO"
+    }
+   ]
+  }
+ },
+ "predictions": {
+  "badge_count": 1,
+  "confidence_score": 0.0004,
+  "conviction_label": "SPECULATIVE",
+  "data_quality_flags": [],
+  "ev_score": 0.0954,
+  "is_diamond": false,
+  "passes_tradability_filter": false,
+  "quality_label": "HIGH",
+  "quantiles": {
+   "downside_q10": -0.5098,
+   "downside_q25": -0.3343,
+   "downside_q50": -0.1926,
+   "downside_q75": -0.0692,
+   "downside_q90": -0.0169,
+   "path_volatility": 0.0645,
+   "risk_reward": 1.3063,
+   "uncertainty": 0.8463,
+   "upside_q10": 0.0181,
+   "upside_q25": 0.0788,
+   "upside_q50": 0.2517,
+   "upside_q75": 0.5057,
+   "upside_q90": 0.8644
+  },
+  "rank": 1784,
+  "rank_score": 0.0002,
+  "tradability_filter_reasons": [
+   "market_cap_below_1b"
+  ]
+ },
+ "profile": {
+  "_local": {
+   "dividend_yield": 0.0688,
+   "eps_growth_yoy": -1.0897,
+   "pe_ratio": -0.2404,
+   "revenue_growth_yoy": -0.0654,
+   "roe": -1.1632
+  },
+  "beta": 0.524,
+  "betaTTM": null,
+  "ceo": "James Holanda",
+  "companyName": "Cable One, Inc.",
+  "country": "US",
+  "debtToEquityTTM": null,
+  "description": "Cable One, Inc., through its various subsidiaries, delivers a full spectrum of data, video, and voice communication services across the United States. For individual households, the company provides internet connectivity, including solutions designed to enhance Wi-Fi signal strength throughout the home. Its extensive video offerings encompass local and community-focused programming, alongside a variety of digital channels featuring national and regional networks, music, and an interactive viewing guide equipped with parental controls. Premium subscriptions offer access to a selection of movies, original series, live sporting events, and concerts. Advanced video functionalities, such as whole-home DVRs, high-definition set-top boxes, and the TV Everywhere streaming service, allow subscribers to access content on their mobile devices and computers. Residential voice services include essential features like local and long-distance calling, voicemail, call waiting, three-way calling, caller ID, anonymous call rejection, and per-minute international calling options. Furthermore, Cable One extends its data, voice, and video solutions to business customers, catering to small and mid-sized markets, large enterprises, and wholesale and carrier clients. As of December 31, 2021, the company served approximately 1.2 million residential and business customers across 24 states, operating under its Sparklight, Fidelity, and Clearwave brands. Founded in 1980, Cable One, Inc. maintains its headquarters in Phoenix, Arizona.",
+  "dividendYielTTM": null,
+  "enterpriseValueOverEBITDATTM": null,
+  "exchangeShortName": "NYSE",
+  "fullTimeEmployees": "2592",
+  "industry": "Telecommunications Services",
+  "ipoDate": "2015-06-11",
+  "latest_earnings_date": "2026-08-06",
+  "marketCapTTM": null,
+  "mktCap": 30185254,
+  "peRatioTTM": null,
+  "price": 5.32,
+  "priceToSalesRatioTTM": null,
+  "returnOnEquityTTM": -0.8991,
+  "revenue_description": "Cable One provides broadband, business data, and communications services. Revenue is driven by subscription ACV from enterprise license agreements and usage-based consumption, with module expansion and new product attach as growth levers.",
+  "revenue_description_themes": [
+   "residential broadband growth",
+   "business services expansion",
+   "bundled service upsell"
+  ],
+  "revenue_taxonomy": [
+   {
+    "bucket": "Consumer Broadband, Wireless & Subscription Connectivity",
+    "matched_tags": [
+     "high-speed internet"
+    ],
+    "path": "Communications › Telecom & Connectivity › Consumer Broadband, Wireless & Subscription Connectivity",
+    "sector": "Communications",
+    "segment": "Telecom & Connectivity"
+   },
+   {
+    "bucket": "Broadcast, Cable & Streaming Media",
+    "matched_tags": [
+     "cable television"
+    ],
+    "path": "Media, Advertising & Information › Advertising & Media › Broadcast, Cable & Streaming Media",
+    "sector": "Media, Advertising & Information",
+    "segment": "Advertising & Media"
+   },
+   {
+    "bucket": "Enterprise Connectivity, Network Services & Communications Platforms",
+    "matched_tags": [
+     "business connectivity"
+    ],
+    "path": "Communications › Telecom & Connectivity › Enterprise Connectivity, Network Services & Communications Platforms",
+    "sector": "Communications",
+    "segment": "Telecom & Connectivity"
+   }
+  ],
+  "revenue_themes": [
+   "high-speed internet",
+   "cable television",
+   "business connectivity"
+  ],
+  "sector": "Communication Services",
+  "website": "https://www.cableone.biz"
+ },
+ "report": null,
+ "scorecard": {
+  "headline": {
+   "avg_universe_pct": 23,
+   "label": "below_average",
+   "metric_count": 7
+  },
+  "metrics": {
+   "debt_to_equity": {
+    "direction": "lower",
+    "label": "D/E Ratio",
+    "sector": "Comm. Services",
+    "sector_n": 44,
+    "sector_pct": 5,
+    "universe_n": 2056,
+    "universe_pct": 2,
+    "value": 9.3535
+   },
+   "eps_growth_yoy": {
+    "direction": "higher",
+    "label": "EPS Growth",
+    "sector": "Comm. Services",
+    "sector_n": 44,
+    "sector_pct": 11,
+    "universe_n": 1880,
+    "universe_pct": 10,
+    "value": -1.0897
+   },
+   "gross_margin": {
+    "direction": "higher",
+    "label": "Gross Margin",
+    "sector": "Comm. Services",
+    "sector_n": 43,
+    "sector_pct": 53,
+    "universe_n": 1998,
+    "universe_pct": 55,
+    "value": 0.5111
+   },
+   "operating_margin": {
+    "direction": "higher",
+    "label": "Op. Margin",
+    "sector": "Comm. Services",
+    "sector_n": 43,
+    "sector_pct": 91,
+    "universe_n": 1998,
+    "universe_pct": 82,
+    "value": 0.2532
+   },
+   "revenue_growth_yoy": {
+    "direction": "higher",
+    "label": "Rev Growth",
+    "sector": "Comm. Services",
+    "sector_n": 44,
+    "sector_pct": 11,
+    "universe_n": 1824,
+    "universe_pct": 10,
+    "value": -0.0654
+   },
+   "roe": {
+    "direction": "higher",
+    "label": "ROE",
+    "sector": "Comm. Services",
+    "sector_n": 44,
+    "sector_pct": 2,
+    "universe_n": 2088,
+    "universe_pct": 4,
+    "value": -1.1632
+   },
+   "roic": {
+    "direction": "higher",
+    "label": "ROIC",
+    "sector": "Comm. Services",
+    "sector_n": 43,
+    "sector_pct": 5,
+    "universe_n": 2026,
+    "universe_pct": 1,
+    "value": -0.2893
+   }
+  }
+ },
+ "signal_rank": 1784,
+ "structural_analogs": {
+  "gp_core_pct": 45.9,
+  "gp_core_ratio": 1.2431,
+  "matches": [
+   {
+    "actual_downside": -0.4665,
+    "actual_return": -0.3454,
+    "actual_upside": 0.0,
+    "days_in_region": 64,
+    "end_date": "2019-10-21",
+    "end_reason": "reversal",
+    "seq_len": 64,
+    "similarity": 0.4776,
+    "start_date": "2019-09-05",
+    "ticker": "MNK",
+    "total_distance": 0.3695,
+    "trigger_date": "2019-09-09",
+    "trigger_type": "runup"
+   },
+   {
+    "actual_downside": -0.7566,
+    "actual_return": -0.7566,
+    "actual_upside": 0.9322,
+    "days_in_region": 81,
+    "end_date": "2016-04-14",
+    "end_reason": "data_end",
+    "seq_len": 81,
+    "similarity": 0.4695,
+    "start_date": "2016-02-04",
+    "ticker": "BTU",
+    "total_distance": 0.378,
+    "trigger_date": "2016-03-03",
+    "trigger_type": "compression"
+   },
+   {
+    "actual_downside": -0.1639,
+    "actual_return": 1.2131,
+    "actual_upside": 1.2131,
+    "days_in_region": 68,
+    "end_date": "2015-08-31",
+    "end_reason": "new_pattern",
+    "seq_len": 68,
+    "similarity": 0.4584,
+    "start_date": "2015-07-20",
+    "ticker": "BTU",
+    "total_distance": 0.39,
+    "trigger_date": "2015-07-23",
+    "trigger_type": "runup"
+   },
+   {
+    "actual_downside": -0.3844,
+    "actual_return": -0.3844,
+    "actual_upside": 0.1532,
+    "days_in_region": 68,
+    "end_date": "2008-01-15",
+    "end_reason": "reversal",
+    "seq_len": 68,
+    "similarity": 0.4528,
+    "start_date": "2007-11-20",
+    "ticker": "CAA",
+    "total_distance": 0.3961,
+    "trigger_date": "2007-11-30",
+    "trigger_type": "runup"
+   },
+   {
+    "actual_downside": -0.2901,
+    "actual_return": -0.2901,
+    "actual_upside": 0.1308,
+    "days_in_region": 69,
+    "end_date": "2022-12-27",
+    "end_reason": "reversal",
+    "seq_len": 69,
+    "similarity": 0.4441,
+    "start_date": "2022-10-19",
+    "ticker": "TREE",
+    "total_distance": 0.4058,
+    "trigger_date": "2022-10-31",
+    "trigger_type": "runup"
+   },
+   {
+    "actual_downside": -0.0942,
+    "actual_return": 0.8565,
+    "actual_upside": 0.8565,
+    "days_in_region": 176,
+    "end_date": "2016-12-13",
+    "end_reason": "reversal",
+    "seq_len": 176,
+    "similarity": 0.4373,
+    "start_date": "2016-06-08",
+    "ticker": "TDW",
+    "total_distance": 0.4135,
+    "trigger_date": "2016-11-18",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": -0.3411,
+    "actual_return": -0.087,
+    "actual_upside": 1.0769,
+    "days_in_region": 66,
+    "end_date": "2009-02-05",
+    "end_reason": "reversal",
+    "seq_len": 66,
+    "similarity": 0.4357,
+    "start_date": "2008-10-28",
+    "ticker": "ATLC",
+    "total_distance": 0.4154,
+    "trigger_date": "2008-10-31",
+    "trigger_type": "runup"
+   },
+   {
+    "actual_downside": -0.2873,
+    "actual_return": -0.0442,
+    "actual_upside": 0.0497,
+    "days_in_region": 64,
+    "end_date": "2015-09-08",
+    "end_reason": "new_pattern",
+    "seq_len": 64,
+    "similarity": 0.4341,
+    "start_date": "2015-07-27",
+    "ticker": "EXXI",
+    "total_distance": 0.4173,
+    "trigger_date": "2015-07-30",
+    "trigger_type": "shallow_runup"
+   },
+   {
+    "actual_downside": -0.3634,
+    "actual_return": -0.3634,
+    "actual_upside": 0.0,
+    "days_in_region": 73,
+    "end_date": "2002-09-19",
+    "end_reason": "reversal",
+    "seq_len": 73,
+    "similarity": 0.4338,
+    "start_date": "2002-08-01",
+    "ticker": "GMST",
+    "total_distance": 0.4176,
+    "trigger_date": "2002-08-06",
+    "trigger_type": "shallow_runup"
+   },
+   {
+    "actual_downside": -0.3626,
+    "actual_return": 0.0989,
+    "actual_upside": 0.1231,
+    "days_in_region": 64,
+    "end_date": "2002-08-21",
+    "end_reason": "new_pattern",
+    "seq_len": 64,
+    "similarity": 0.4331,
+    "start_date": "2002-07-10",
+    "ticker": "SWKS",
+    "total_distance": 0.4184,
+    "trigger_date": "2002-07-15",
+    "trigger_type": "runup"
+   }
+  ],
+  "panel": {
+   "edge": -0.3555,
+   "hit_hi": 0.502,
+   "hit_lo": 0.154,
+   "hit_rate": 0.3,
+   "median_final": -0.2901,
+   "median_pain": 0.3411,
+   "n": 10,
+   "n_eff": 10.0,
+   "p25_final": -0.3634,
+   "p_pain_gt5": 1.0,
+   "return_to_pain": -0.803
+  },
+  "stats": {
+   "avg_similarity": 0.388,
+   "avg_trough": 0.2268,
+   "avg_upside": 0.3911,
+   "median_pain": 0.2,
+   "median_return": -0.0844,
+   "n_matches": 200,
+   "p25_return": -0.2767,
+   "p_pain_gt5": 0.84,
+   "return_to_pain": -0.384,
+   "top5_avg_trough": 0.4123,
+   "top5_avg_upside": 0.4858,
+   "top_similarity": 0.478,
+   "win_rate": 0.405
+  },
+  "total_matches": 200
+ },
+ "ticker": "CABO",
+ "trending": {
+  "acceleration": -0.0208,
+  "avg_vol_20d": 376544.0417,
+  "base_high_120": 116.96,
+  "breakout_confirmed": 0,
+  "close": 10.36,
+  "momentum_score": 0.0005,
+  "momentum_start": "2026-04-27",
+  "range_20": 1.8494,
+  "range_50": 3.443,
+  "rank": 1723,
+  "rank_down": 3,
+  "rank_up": null,
+  "ret_120": -0.8872,
+  "ret_20": -0.6366,
+  "ret_60": -0.7465,
+  "rundown_score": 0.9981,
+  "score_date": "2026-10-01",
+  "slope_20": -0.0731,
+  "slope_60": -0.0523,
+  "stage": "rundown",
+  "stage_label": "rundown",
+  "ticker": "CABO",
+  "total_score": 0.2768,
+  "trend_ratio": 0.1558,
+  "vcp_detected": 0,
+  "vcp_score": 0.461
+ }
+}

@@ -1,0 +1,1022 @@
+{
+ "date": "2026-10-29",
+ "detected_regions": {
+  "primary": {
+   "days_in_region": 142,
+   "region_start": "2026-07-07",
+   "trigger_date": "2026-08-21",
+   "trigger_type": "shallow_drawdown"
+  },
+  "secondary": [
+   {
+    "confidence_score": 0.4251,
+    "downside_q50": -0.1496,
+    "ev_score": -0.014,
+    "region_start": "2026-03-31",
+    "seq_len": 200,
+    "trigger_date": "2026-09-22",
+    "trigger_type": "runup",
+    "upside_q25": 0.0364,
+    "upside_q50": 0.1172,
+    "upside_q75": 0.2375
+   }
+  ]
+ },
+ "feature_attribution": {
+  "macro_driver_count": 13,
+  "risk_flags": [
+   "high_volatility"
+  ],
+  "top_drivers": [
+   {
+    "direction": "negative",
+    "feature": "dollar_volume",
+    "feature_value": 121849624.0,
+    "importance": 0.0004,
+    "importance_pct": 0.3128,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "positive",
+    "feature": "historical_recovery_rate",
+    "feature_value": 0.3847,
+    "importance": 0.0002,
+    "importance_pct": 0.1362,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "negative",
+    "feature": "price_vs_high_52w",
+    "feature_value": 0.9946,
+    "importance": 0.0002,
+    "importance_pct": 0.1307,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "positive",
+    "feature": "rsi_overbought",
+    "feature_value": 0.0,
+    "importance": 0.0002,
+    "importance_pct": 0.1183,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "negative",
+    "feature": "return_1d",
+    "feature_value": 0.0309,
+    "importance": 0.0001,
+    "importance_pct": 0.1113,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "positive",
+    "feature": "ma_200_slope",
+    "feature_value": 0.0291,
+    "importance": 0.0001,
+    "importance_pct": 0.0965,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "positive",
+    "feature": "rally_from_low_20d",
+    "feature_value": 0.1509,
+    "importance": 0.0001,
+    "importance_pct": 0.0942,
+    "method": "integrated_gradients"
+   }
+  ]
+ },
+ "fundamentals": {
+  "accrual": -0.0106,
+  "adx_14": 25.8371,
+  "altman_z_score": 3.0513,
+  "amihud_illiquidity": 0.0003,
+  "avg_volume": 596560.2165,
+  "beta_252d": 0.2865,
+  "book_value_per_share": 0.3038,
+  "correlation_spy_60d": 0.3677,
+  "current_liabilities": 639.789,
+  "current_ratio": 1.9383,
+  "daily_earnings_yield": 0.0109,
+  "daily_fcf_yield": 0.0129,
+  "daily_pb": 100.0,
+  "daily_pe": 91.5201,
+  "daily_ps": 6.0437,
+  "days_since_52w_high": 280.0,
+  "debt_ebitda": 7.5907,
+  "debt_to_equity": 73.5096,
+  "dividend_yield": 0.0,
+  "dollar_volume_20d_avg": 113447001.9724,
+  "earnings_quality": 2.5694,
+  "ebitda_growth_yoy": 0.2018,
+  "enterprise_value": 7591.0903,
+  "eps_basic": 0.71,
+  "eps_cagr_3y": 0.6985,
+  "eps_cagr_5y": 0.309,
+  "eps_diluted": 0.69,
+  "eps_growth_accel": 0.2242,
+  "eps_growth_qoq": 0.3922,
+  "eps_growth_yoy": 0.0829,
+  "eps_growth_yoy_q2": -0.1413,
+  "eps_growth_yoy_q3": -0.0751,
+  "eps_growth_yoy_q4": -0.5,
+  "eps_growth_yoy_q5": -0.5542,
+  "eps_growth_yoy_q6": -0.54,
+  "eps_growth_yoy_q7": -0.553,
+  "eps_growth_yoy_q8": 10.0,
+  "eps_history_8q": [
+   0.24,
+   0.69,
+   0.52,
+   0.33,
+   0.4,
+   0.34,
+   0.5,
+   0.69
+  ],
+  "eps_ttm": 1.8751,
+  "ev_to_ebitda": 62.5394,
+  "ev_to_fcf": 107.1189,
+  "ev_to_sales": 24.3001,
+  "fcf_growth_yoy": -0.7314,
+  "fcf_margin": 0.2269,
+  "fcf_per_share": 1.7175,
+  "gross_margin": 0.8112,
+  "gross_margin_change_yoy": 0.0108,
+  "gross_margin_history": [
+   0.8195,
+   0.8155,
+   0.8144,
+   0.8093,
+   0.8088,
+   0.8112
+  ],
+  "inc_roic": -0.227,
+  "interest_coverage": 20.8022,
+  "is_pre_revenue": false,
+  "margin_vs_sector_median": null,
+  "market_cap_ratio": 7566.9713,
+  "net_income": 29.111,
+  "net_margin": 0.066,
+  "operating_income": 30.377,
+  "operating_margin": 0.0887,
+  "operating_margin_change_yoy": 0.0335,
+  "pb_ratio": 564.9274,
+  "pe_percentile_1y": 0.1944,
+  "pe_ratio": 91.5201,
+  "peg_trailing": 10.0,
+  "piotroski_f_score": 4.0,
+  "price_vs_high_52w": 0.9946,
+  "price_vs_sma200": 1.4455,
+  "ps_percentile_1y": 0.0198,
+  "ps_ratio": 6.0768,
+  "quarter_labels_8q": [
+   "Q3 '24",
+   "Q4 '24",
+   "Q1 '25",
+   "Q2 '25",
+   "Q3 '25",
+   "Q4 '26",
+   "Q1 '26",
+   "Q2 '26"
+  ],
+  "quarterly_eps_growth_yoy": 1.0909,
+  "quarterly_eps_growth_yoy_8q": [
+   -0.3684,
+   -0.7544,
+   0.2683,
+   -0.0571,
+   0.6667,
+   -0.5072,
+   -0.0385,
+   1.0909
+  ],
+  "quarterly_revenue_growth_yoy": 0.1311,
+  "quarterly_revenue_growth_yoy_8q": [
+   0.2113,
+   0.2317,
+   0.2551,
+   0.1839,
+   0.195,
+   0.1333,
+   0.114,
+   0.1311
+  ],
+  "revenue_cagr_3y": 0.1621,
+  "revenue_cagr_5y": 0.1107,
+  "revenue_growth_accel": -0.0122,
+  "revenue_growth_qoq": -0.0055,
+  "revenue_growth_yoy": 0.1425,
+  "revenue_growth_yoy_q2": 0.1547,
+  "revenue_growth_yoy_q3": 0.1889,
+  "revenue_growth_yoy_q4": 0.2152,
+  "revenue_growth_yoy_q5": 0.2202,
+  "revenue_growth_yoy_q6": 0.2162,
+  "revenue_growth_yoy_q7": 0.1863,
+  "revenue_growth_yoy_q8": 0.1519,
+  "revenue_history_8q": [
+   262.63,
+   275.039,
+   281.978,
+   276.188,
+   313.832,
+   311.692,
+   314.131,
+   312.389
+  ],
+  "revenue_per_share": 7.571,
+  "roa": 0.0439,
+  "roce": 0.0887,
+  "roe": 2.5604,
+  "roic": 0.0669,
+  "rsi_14": 65.2422,
+  "sector_momentum": -0.0224,
+  "share_dilution_1y": -0.002,
+  "stock_vs_sector_20d": 0.1869,
+  "stock_vs_spy_20d": 0.1543,
+  "total_assets": 1875.062,
+  "vol_regime": 1.0158,
+  "volatility_20d": 0.0288,
+  "volatility_60d": 0.0284,
+  "w52_high": 174.25,
+  "w52_low": 71.75
+ },
+ "market_characters": [
+  {
+   "id": "g12",
+   "name": "Swing Range"
+  }
+ ],
+ "model_analogs": {
+  "matches": [
+   {
+    "actual_downside": -0.163,
+    "actual_return": -0.163,
+    "actual_upside": 0.0261,
+    "days_in_region": 132,
+    "end_date": "2018-12-04",
+    "end_reason": "reversal",
+    "similarity": 0.9667,
+    "start_date": "2018-07-25",
+    "ticker": "IMKTA",
+    "trigger_date": "2018-10-31",
+    "trigger_type": "runup"
+   },
+   {
+    "actual_downside": -0.3277,
+    "actual_return": -0.3277,
+    "actual_upside": 0.0,
+    "days_in_region": 212,
+    "end_date": "2018-12-20",
+    "end_reason": "reversal",
+    "similarity": 0.9653,
+    "start_date": "2018-05-22",
+    "ticker": "MTRX",
+    "trigger_date": "2018-11-08",
+    "trigger_type": "runup"
+   },
+   {
+    "actual_downside": -0.2157,
+    "actual_return": -0.2157,
+    "actual_upside": 0.0113,
+    "days_in_region": 147,
+    "end_date": "2018-12-24",
+    "end_reason": "reversal",
+    "similarity": 0.965,
+    "start_date": "2018-07-30",
+    "ticker": "ACIA",
+    "trigger_date": "2018-11-05",
+    "trigger_type": "runup"
+   },
+   {
+    "actual_downside": -0.344,
+    "actual_return": -0.344,
+    "actual_upside": 0.0449,
+    "days_in_region": 218,
+    "end_date": "2018-12-21",
+    "end_reason": "reversal",
+    "similarity": 0.9645,
+    "start_date": "2018-05-17",
+    "ticker": "AVAV",
+    "trigger_date": "2018-11-06",
+    "trigger_type": "runup"
+   },
+   {
+    "actual_downside": -0.2114,
+    "actual_return": -0.2114,
+    "actual_upside": 0.3128,
+    "days_in_region": 303,
+    "end_date": "2020-03-18",
+    "end_reason": "reversal",
+    "similarity": 0.9644,
+    "start_date": "2019-05-20",
+    "ticker": "PODD",
+    "trigger_date": "2019-11-07",
+    "trigger_type": "runup"
+   },
+   {
+    "actual_downside": 0.0,
+    "actual_return": 0.137,
+    "actual_upside": 0.2904,
+    "days_in_region": 212,
+    "end_date": "2019-12-11",
+    "end_reason": "reversal",
+    "similarity": 0.9627,
+    "start_date": "2019-05-13",
+    "ticker": "PEN",
+    "trigger_date": "2019-10-08",
+    "trigger_type": "shallow_runup"
+   },
+   {
+    "actual_downside": -0.2753,
+    "actual_return": -0.2753,
+    "actual_upside": 0.167,
+    "days_in_region": 174,
+    "end_date": "2018-12-24",
+    "end_reason": "reversal",
+    "similarity": 0.9627,
+    "start_date": "2018-07-03",
+    "ticker": "WKC",
+    "trigger_date": "2018-07-30",
+    "trigger_type": "runup"
+   },
+   {
+    "actual_downside": -0.0137,
+    "actual_return": 0.0069,
+    "actual_upside": 0.1753,
+    "days_in_region": 223,
+    "end_date": "2020-02-03",
+    "end_reason": "reversal",
+    "similarity": 0.962,
+    "start_date": "2019-06-25",
+    "ticker": "TSEM",
+    "trigger_date": "2019-09-12",
+    "trigger_type": "runup"
+   },
+   {
+    "actual_downside": -0.3981,
+    "actual_return": -0.3981,
+    "actual_upside": 0.0907,
+    "days_in_region": 213,
+    "end_date": "2018-12-24",
+    "end_reason": "reversal",
+    "similarity": 0.9616,
+    "start_date": "2018-05-25",
+    "ticker": "SWN",
+    "trigger_date": "2018-11-02",
+    "trigger_type": "runup"
+   },
+   {
+    "actual_downside": -0.5596,
+    "actual_return": -0.5596,
+    "actual_upside": 0.0,
+    "days_in_region": 204,
+    "end_date": "2018-12-28",
+    "end_reason": "reversal",
+    "similarity": 0.9614,
+    "start_date": "2018-06-07",
+    "ticker": "BBW",
+    "trigger_date": "2018-08-09",
+    "trigger_type": "shallow_runup"
+   }
+  ],
+  "stats": {
+   "avg_max_drawdown": 0.1693,
+   "avg_similarity": 0.959,
+   "avg_trough": 0.1693,
+   "avg_upside": 0.1637,
+   "best_return": 0.5159,
+   "downside_range": [
+    -0.5596,
+    0.0
+   ],
+   "median_return": -0.0901,
+   "n_matches": 50,
+   "outcome_agreement": false,
+   "return_p25": -0.215,
+   "return_p5": -0.4466,
+   "return_p75": 0.0847,
+   "return_p95": 0.3449,
+   "sim_weighted_win_rate": 0.34,
+   "top5_avg_trough": 0.2524,
+   "top5_avg_upside": 0.079,
+   "top_similarity": 0.967,
+   "upside_range": [
+    0.0,
+    0.7397
+   ],
+   "win_rate": 0.34,
+   "worst_return": -0.5596,
+   "years_span": 4
+  },
+  "total_matches": 50
+ },
+ "peer_group": {
+  "buckets": [
+   "Cloud Infrastructure, Database & DevOps Software",
+   "Security, Identity & Compliance Software"
+  ],
+  "groups": {
+   "Cloud Infrastructure, Database & DevOps Software": [
+    {
+     "market_cap_m": 16255.6959,
+     "price_vs_sma200": 1.7501,
+     "return_30d": 0.2393,
+     "return_7d": 0.1662,
+     "revenue_driver": "cloud data backup SaaS",
+     "signal_rank": 2073,
+     "stock_vs_spy_20d": 0.151,
+     "ticker": "RBRK"
+    },
+    {
+     "market_cap_m": 7608.4197,
+     "price_vs_sma200": 1.4455,
+     "return_30d": 0.1534,
+     "return_7d": 0.1011,
+     "revenue_driver": "data protection software",
+     "signal_rank": 1437,
+     "stock_vs_spy_20d": 0.1543,
+     "ticker": "CVLT"
+    },
+    {
+     "market_cap_m": 1639.6962,
+     "price_vs_sma200": 1.1022,
+     "return_30d": 0.1049,
+     "return_7d": 0.1781,
+     "revenue_driver": "consumer security hardware",
+     "signal_rank": 1372,
+     "stock_vs_spy_20d": 0.1481,
+     "ticker": "ARLO"
+    },
+    {
+     "market_cap_m": 235656.0409,
+     "price_vs_sma200": 1.0355,
+     "return_30d": 0.0864,
+     "return_7d": 0.0676,
+     "revenue_driver": "hybrid cloud software",
+     "signal_rank": 2058,
+     "stock_vs_spy_20d": 0.1378,
+     "ticker": "IBM"
+    },
+    {
+     "market_cap_m": 104658.448,
+     "price_vs_sma200": 1.384,
+     "return_30d": -0.024,
+     "return_7d": 0.0334,
+     "revenue_driver": "cloud data warehousing",
+     "signal_rank": 2080,
+     "stock_vs_spy_20d": -0.0413,
+     "ticker": "SNOW"
+    },
+    {
+     "market_cap_m": 2606167.7586,
+     "price_vs_sma200": 1.0017,
+     "return_30d": -0.0295,
+     "return_7d": -0.0717,
+     "revenue_driver": "cloud infrastructure",
+     "signal_rank": 1569,
+     "stock_vs_spy_20d": -0.0249,
+     "ticker": "AMZN"
+    },
+    {
+     "market_cap_m": 1979.6376,
+     "price_vs_sma200": 0.9756,
+     "return_30d": -0.0412,
+     "return_7d": 0.0491,
+     "revenue_driver": "application delivery controllers",
+     "signal_rank": 864,
+     "stock_vs_spy_20d": -0.0708,
+     "ticker": "ATEN"
+    },
+    {
+     "market_cap_m": 248469.5234,
+     "price_vs_sma200": 1.1168,
+     "return_30d": -0.0767,
+     "return_7d": 0.0167,
+     "revenue_driver": "data center Ethernet switches",
+     "signal_rank": 1619,
+     "stock_vs_spy_20d": -0.1061,
+     "ticker": "ANET"
+    },
+    {
+     "market_cap_m": 2001.4184,
+     "price_vs_sma200": 0.7776,
+     "return_30d": -0.1919,
+     "return_7d": 0.0492,
+     "revenue_driver": "quantum computing software",
+     "signal_rank": 935,
+     "stock_vs_spy_20d": -0.1941,
+     "ticker": "QUBT"
+    },
+    {
+     "market_cap_m": 6659.3237,
+     "price_vs_sma200": 0.5626,
+     "return_30d": -0.2642,
+     "return_7d": 0.0041,
+     "revenue_driver": "AI data center hosting",
+     "signal_rank": null,
+     "stock_vs_spy_20d": -0.2723,
+     "ticker": "APLD"
+    }
+   ],
+   "Security, Identity & Compliance Software": [
+    {
+     "market_cap_m": 7415.1936,
+     "price_vs_sma200": 1.1916,
+     "return_30d": 0.3629,
+     "return_7d": 0.0005,
+     "revenue_driver": "security and compliance software",
+     "signal_rank": null,
+     "stock_vs_spy_20d": 0.0119,
+     "ticker": "NUVL"
+    },
+    {
+     "market_cap_m": 16255.6959,
+     "price_vs_sma200": 1.7501,
+     "return_30d": 0.2393,
+     "return_7d": 0.1662,
+     "revenue_driver": "cloud data backup SaaS",
+     "signal_rank": 2073,
+     "stock_vs_spy_20d": 0.151,
+     "ticker": "RBRK"
+    },
+    {
+     "market_cap_m": 7608.4197,
+     "price_vs_sma200": 1.4455,
+     "return_30d": 0.1534,
+     "return_7d": 0.1011,
+     "revenue_driver": "data protection software",
+     "signal_rank": 1437,
+     "stock_vs_spy_20d": 0.1543,
+     "ticker": "CVLT"
+    },
+    {
+     "market_cap_m": 86.6362,
+     "price_vs_sma200": 0.6631,
+     "return_30d": 0.1509,
+     "return_7d": 0.0417,
+     "revenue_driver": "AI video analytics",
+     "signal_rank": null,
+     "stock_vs_spy_20d": -0.2819,
+     "ticker": "AISP"
+    },
+    {
+     "market_cap_m": 3211.46,
+     "price_vs_sma200": 1.3147,
+     "return_30d": 0.129,
+     "return_7d": 0.0426,
+     "revenue_driver": "governance risk and compliance software",
+     "signal_rank": 1485,
+     "stock_vs_spy_20d": 0.1798,
+     "ticker": "WK"
+    },
+    {
+     "market_cap_m": 5065.4886,
+     "price_vs_sma200": 0.9641,
+     "return_30d": 0.1288,
+     "return_7d": 0.0489,
+     "revenue_driver": "life sciences CRM software",
+     "signal_rank": 567,
+     "stock_vs_spy_20d": 0.1218,
+     "ticker": "LIF"
+    },
+    {
+     "market_cap_m": 4792.513,
+     "price_vs_sma200": 1.3785,
+     "return_30d": 0.0211,
+     "return_7d": 0.0029,
+     "revenue_driver": "data security and analytics SaaS",
+     "signal_rank": 934,
+     "stock_vs_spy_20d": 0.0219,
+     "ticker": "VRNS"
+    },
+    {
+     "market_cap_m": 2405.9322,
+     "price_vs_sma200": 1.1535,
+     "return_30d": 0.009,
+     "return_7d": 0.0008,
+     "revenue_driver": "identity resolution software",
+     "signal_rank": 1116,
+     "stock_vs_spy_20d": 0.0071,
+     "ticker": "RAMP"
+    },
+    {
+     "market_cap_m": 15902.8371,
+     "price_vs_sma200": 0.8763,
+     "return_30d": -0.0719,
+     "return_7d": 0.1088,
+     "revenue_driver": "content delivery network",
+     "signal_rank": null,
+     "stock_vs_spy_20d": -0.0954,
+     "ticker": "AKAM"
+    },
+    {
+     "market_cap_m": 32554.3537,
+     "price_vs_sma200": 0.6289,
+     "return_30d": -0.2661,
+     "return_7d": -0.1132,
+     "revenue_driver": "credit scoring software",
+     "signal_rank": 1307,
+     "stock_vs_spy_20d": 0.0647,
+     "ticker": "FICO"
+    }
+   ]
+  }
+ },
+ "predictions": {
+  "badge_count": 0,
+  "confidence_score": 0.353,
+  "conviction_label": "SPECULATIVE",
+  "data_quality_flags": [],
+  "ev_score": 0.0279,
+  "is_diamond": false,
+  "passes_tradability_filter": true,
+  "quality_label": "AVOID",
+  "quantiles": {
+   "downside_q10": -0.3525,
+   "downside_q25": -0.2291,
+   "downside_q50": -0.134,
+   "downside_q75": -0.0479,
+   "downside_q90": -0.0116,
+   "path_volatility": 0.0362,
+   "risk_reward": 1.0974,
+   "uncertainty": 0.4617,
+   "upside_q10": 0.0139,
+   "upside_q25": 0.0542,
+   "upside_q50": 0.147,
+   "upside_q75": 0.2734,
+   "upside_q90": 0.4756
+  },
+  "rank": 1437,
+  "rank_score": 0.0054,
+  "tradability_filter_reasons": []
+ },
+ "profile": {
+  "_local": {
+   "dividend_yield": 0.0,
+   "eps_growth_yoy": 0.0829,
+   "pe_ratio": 89.4041,
+   "revenue_growth_yoy": 0.1425,
+   "roe": 2.5604
+  },
+  "beta": 0.792,
+  "betaTTM": null,
+  "ceo": "Sanjay Mirchandani",
+  "companyName": "Commvault Systems, Inc.",
+  "country": "US",
+  "debtToEquityTTM": null,
+  "description": "Commvault Systems, Inc. provides a cyber resilience platform for protecting and recovering data and cloud-native applications in the Americas and internationally. The company offers Operational Recovery, which provides backup, verifiable recovery, and cost-optimized cloud workload mobility to ensure data availability and granular recovery; autonomous recovery for automated disaster and cyber recovery use cases to deliver backup, replication, and disaster recovery for all workloads on-premises, in the cloud, across various clouds, and in hybrid environments; and Cyber Recovery for threat scanning to hunt for threats within backup data, cyber deception, and threat detection to provide early warning of attacks. It also provides Commvault Cloud’s Cleanroom Recovery for organizations to be ready to recover by providing a clean, isolated, and on-demand recovery location in the cloud, as well as the ability to test their incident response plans and recover; and Commvault HyperScale X, an intuitive, easy-to-deploy and scale-out, and integrated data protection solution to support enterprises' transformations, such as legacy scale-up infrastructures, hybrid cloud, container, and virtualized environments. In addition, the company offers Commvault Cloud Air Gap Protect, an integrated air-gapped cloud storage target that enables IT organizations to adopt cloud storage to ease digital transformation, reduce risks, and scale; and Commvault's Compliance, which provides built-in reporting, auditing, and logging to help ensure data is not modified or deleted for legal and compliance purposes. Further, it provides Commvault Cloud Rewind to restore an organization’s cloud application and data environment; and Commvault’s Clumio Backtrack to revert objects and datasets stored in Amazon Simple Storage Service (Amazon S3), as well as professional and customer support services. The company was incorporated in 1996 and is headquartered in Tinton Falls, New Jersey.",
+  "dividendYielTTM": null,
+  "enterpriseValueOverEBITDATTM": null,
+  "exchangeShortName": "NASDAQ",
+  "fullTimeEmployees": "3300",
+  "industry": "Software - Application",
+  "ipoDate": "2006-09-22",
+  "latest_earnings_date": "2026-10-27",
+  "marketCapTTM": null,
+  "mktCap": 7112301628,
+  "peRatioTTM": null,
+  "price": 171.61,
+  "priceToSalesRatioTTM": null,
+  "returnOnEquityTTM": 1.1451,
+  "revenue_description": "Commvault sells data backup, cyber recovery, and data management software. Revenue is driven by subscription ACV from enterprise license agreements and usage-based consumption, with module expansion and new product attach as growth levers.",
+  "revenue_description_themes": [
+   "net new ARR bookings and logo acquisition",
+   "platform module and feature upsell within installed base",
+   "AI product capability driving competitive differentiation"
+  ],
+  "revenue_taxonomy": [
+   {
+    "bucket": "Security, Identity & Compliance Software",
+    "matched_tags": [
+     "data protection software",
+     "cyber resilience platform"
+    ],
+    "path": "Technology › Software & Platforms › Security, Identity & Compliance Software",
+    "sector": "Technology",
+    "segment": "Software & Platforms"
+   },
+   {
+    "bucket": "Cloud Infrastructure, Database & DevOps Software",
+    "matched_tags": [
+     "cloud backup and recovery"
+    ],
+    "path": "Technology › Software & Platforms › Cloud Infrastructure, Database & DevOps Software",
+    "sector": "Technology",
+    "segment": "Software & Platforms"
+   }
+  ],
+  "revenue_themes": [
+   "data protection software",
+   "cyber resilience platform",
+   "cloud backup and recovery"
+  ],
+  "sector": "Technology",
+  "website": "https://www.commvault.com"
+ },
+ "report": null,
+ "scorecard": {
+  "headline": {
+   "avg_universe_pct": 52,
+   "label": "mixed",
+   "metric_count": 8
+  },
+  "metrics": {
+   "debt_to_equity": {
+    "direction": "lower",
+    "label": "D/E Ratio",
+    "sector": "Info Tech",
+    "sector_n": 299,
+    "sector_pct": 0,
+    "universe_n": 2056,
+    "universe_pct": 0,
+    "value": 73.5096
+   },
+   "eps_growth_yoy": {
+    "direction": "higher",
+    "label": "EPS Growth",
+    "sector": "Info Tech",
+    "sector_n": 298,
+    "sector_pct": 32,
+    "universe_n": 1880,
+    "universe_pct": 43,
+    "value": 0.0829
+   },
+   "gross_margin": {
+    "direction": "higher",
+    "label": "Gross Margin",
+    "sector": "Info Tech",
+    "sector_n": 298,
+    "sector_pct": 87,
+    "universe_n": 1998,
+    "universe_pct": 91,
+    "value": 0.8112
+   },
+   "operating_margin": {
+    "direction": "higher",
+    "label": "Op. Margin",
+    "sector": "Info Tech",
+    "sector_n": 298,
+    "sector_pct": 51,
+    "universe_n": 1998,
+    "universe_pct": 45,
+    "value": 0.0887
+   },
+   "pe_ratio": {
+    "direction": "lower",
+    "label": "P/E",
+    "sector": "Info Tech",
+    "sector_n": 196,
+    "sector_pct": 10,
+    "universe_n": 1468,
+    "universe_pct": 4,
+    "value": 89.4041
+   },
+   "revenue_growth_yoy": {
+    "direction": "higher",
+    "label": "Rev Growth",
+    "sector": "Info Tech",
+    "sector_n": 298,
+    "sector_pct": 51,
+    "universe_n": 1824,
+    "universe_pct": 67,
+    "value": 0.1425
+   },
+   "roe": {
+    "direction": "higher",
+    "label": "ROE",
+    "sector": "Info Tech",
+    "sector_n": 302,
+    "sector_pct": 99,
+    "universe_n": 2088,
+    "universe_pct": 99,
+    "value": 2.5604
+   },
+   "roic": {
+    "direction": "higher",
+    "label": "ROIC",
+    "sector": "Info Tech",
+    "sector_n": 298,
+    "sector_pct": 58,
+    "universe_n": 2026,
+    "universe_pct": 66,
+    "value": 0.0236
+   }
+  }
+ },
+ "signal_rank": 1437,
+ "structural_analogs": {
+  "gp_core_pct": 37.9,
+  "gp_core_ratio": 1.1573,
+  "matches": [
+   {
+    "actual_downside": -0.0356,
+    "actual_return": 0.0681,
+    "actual_upside": 0.0681,
+    "days_in_region": 136,
+    "end_date": "2005-05-31",
+    "end_reason": "reversal",
+    "seq_len": 136,
+    "similarity": 0.5675,
+    "start_date": "2004-12-31",
+    "ticker": "SY",
+    "total_distance": 0.2833,
+    "trigger_date": "2005-01-24",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": -0.2466,
+    "actual_return": -0.2466,
+    "actual_upside": 0.0,
+    "days_in_region": 200,
+    "end_date": "2018-10-26",
+    "end_reason": "reversal",
+    "seq_len": 200,
+    "similarity": 0.5626,
+    "start_date": "2018-02-05",
+    "ticker": "EVH",
+    "total_distance": 0.2876,
+    "trigger_date": "2018-07-24",
+    "trigger_type": "runup"
+   },
+   {
+    "actual_downside": 0.0,
+    "actual_return": 0.2581,
+    "actual_upside": 0.2581,
+    "days_in_region": 141,
+    "end_date": "2018-08-06",
+    "end_reason": "reversal",
+    "seq_len": 141,
+    "similarity": 0.5593,
+    "start_date": "2018-01-26",
+    "ticker": "AAP",
+    "total_distance": 0.2906,
+    "trigger_date": "2018-02-09",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": -0.0526,
+    "actual_return": 0.1158,
+    "actual_upside": 0.2526,
+    "days_in_region": 176,
+    "end_date": "1999-10-18",
+    "end_reason": "reversal",
+    "seq_len": 176,
+    "similarity": 0.5533,
+    "start_date": "1999-03-04",
+    "ticker": "HET",
+    "total_distance": 0.2959,
+    "trigger_date": "1999-08-16",
+    "trigger_type": "runup"
+   },
+   {
+    "actual_downside": -0.0412,
+    "actual_return": 0.2951,
+    "actual_upside": 0.4691,
+    "days_in_region": 200,
+    "end_date": "2005-08-10",
+    "end_reason": "reversal",
+    "seq_len": 200,
+    "similarity": 0.5445,
+    "start_date": "2004-08-13",
+    "ticker": "ARRS",
+    "total_distance": 0.304,
+    "trigger_date": "2005-02-03",
+    "trigger_type": "runup"
+   },
+   {
+    "actual_downside": -0.0411,
+    "actual_return": 0.0582,
+    "actual_upside": 0.1884,
+    "days_in_region": 156,
+    "end_date": "1991-09-18",
+    "end_reason": "reversal",
+    "seq_len": 156,
+    "similarity": 0.5413,
+    "start_date": "1991-01-16",
+    "ticker": "PNC",
+    "total_distance": 0.3069,
+    "trigger_date": "1991-06-03",
+    "trigger_type": "runup"
+   },
+   {
+    "actual_downside": -0.0333,
+    "actual_return": 0.0835,
+    "actual_upside": 0.2735,
+    "days_in_region": 181,
+    "end_date": "2016-11-04",
+    "end_reason": "reversal",
+    "seq_len": 181,
+    "similarity": 0.5387,
+    "start_date": "2016-01-20",
+    "ticker": "URBN",
+    "total_distance": 0.3093,
+    "trigger_date": "2016-07-12",
+    "trigger_type": "runup"
+   },
+   {
+    "actual_downside": 0.0,
+    "actual_return": 0.1247,
+    "actual_upside": 0.1247,
+    "days_in_region": 139,
+    "end_date": "2013-03-01",
+    "end_reason": "reversal",
+    "seq_len": 139,
+    "similarity": 0.5385,
+    "start_date": "2012-10-03",
+    "ticker": "VHS",
+    "total_distance": 0.3095,
+    "trigger_date": "2012-10-31",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": -0.0322,
+    "actual_return": 0.0949,
+    "actual_upside": 0.0949,
+    "days_in_region": 102,
+    "end_date": "2017-01-25",
+    "end_reason": "reversal",
+    "seq_len": 102,
+    "similarity": 0.5354,
+    "start_date": "2016-10-19",
+    "ticker": "KS",
+    "total_distance": 0.3123,
+    "trigger_date": "2016-10-31",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": -0.0915,
+    "actual_return": 0.0347,
+    "actual_upside": 0.0347,
+    "days_in_region": 143,
+    "end_date": "1999-11-02",
+    "end_reason": "reversal",
+    "seq_len": 143,
+    "similarity": 0.5308,
+    "start_date": "1999-05-13",
+    "ticker": "BLC",
+    "total_distance": 0.3167,
+    "trigger_date": "1999-06-15",
+    "trigger_type": "shallow_drawdown"
+   }
+  ],
+  "panel": {
+   "edge": -0.0601,
+   "hit_hi": 0.602,
+   "hit_lo": 0.398,
+   "hit_rate": 0.5,
+   "median_final": -0.0217,
+   "median_pain": 0.0915,
+   "n": 38,
+   "n_eff": 38.0,
+   "p25_final": -0.188,
+   "p_pain_gt5": 0.605,
+   "return_to_pain": -0.194
+  },
+  "stats": {
+   "avg_similarity": 0.493,
+   "avg_trough": 0.1244,
+   "avg_upside": 0.1498,
+   "median_pain": 0.0908,
+   "median_return": -0.0357,
+   "n_matches": 200,
+   "p25_return": -0.1702,
+   "p_pain_gt5": 0.68,
+   "return_to_pain": -0.322,
+   "top5_avg_trough": 0.0752,
+   "top5_avg_upside": 0.2096,
+   "top_similarity": 0.568,
+   "win_rate": 0.45
+  },
+  "total_matches": 200
+ },
+ "ticker": "CVLT",
+ "trending": {
+  "acceleration": 0.0032,
+  "avg_vol_20d": 703487.4441,
+  "base_high_120": 172.55,
+  "breakout_confirmed": 0,
+  "close": 171.61,
+  "momentum_score": 0.9396,
+  "momentum_start": "2026-08-03",
+  "range_20": 0.1586,
+  "range_50": 0.2818,
+  "rank": 88,
+  "rank_down": null,
+  "rank_up": 49,
+  "ret_120": 0.633,
+  "ret_20": 0.1613,
+  "ret_60": 0.2887,
+  "rundown_score": 0.1418,
+  "score_date": "2026-10-29",
+  "slope_20": 0.0063,
+  "slope_60": 0.0031,
+  "stage": "sustained",
+  "stage_label": "Trending",
+  "ticker": "CVLT",
+  "total_score": 0.6214,
+  "trend_ratio": 1.2726,
+  "vcp_detected": 1,
+  "vcp_score": 0.4094
+ }
+}

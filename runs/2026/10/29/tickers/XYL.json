@@ -1,0 +1,1097 @@
+{
+ "date": "2026-10-29",
+ "detected_regions": {
+  "primary": {
+   "days_in_region": 135,
+   "region_start": "2026-07-16",
+   "trigger_date": "2026-10-28",
+   "trigger_type": "severe_drawdown"
+  },
+  "secondary": [
+   {
+    "confidence_score": 0.7517,
+    "downside_q50": -0.1165,
+    "ev_score": 0.0051,
+    "region_start": "2026-05-19",
+    "seq_len": 174,
+    "trigger_date": "2026-07-01",
+    "trigger_type": "runup",
+    "upside_q25": 0.049,
+    "upside_q50": 0.119,
+    "upside_q75": 0.1962
+   },
+   {
+    "confidence_score": 0.8196,
+    "downside_q50": -0.1136,
+    "ev_score": 0.0035,
+    "region_start": "2026-04-14",
+    "seq_len": 199,
+    "trigger_date": "2026-09-01",
+    "trigger_type": "drawdown",
+    "upside_q25": 0.0478,
+    "upside_q50": 0.115,
+    "upside_q75": 0.1905
+   }
+  ]
+ },
+ "feature_attribution": {
+  "macro_driver_count": 15,
+  "risk_flags": [
+   "high_volatility"
+  ],
+  "top_drivers": [
+   {
+    "direction": "negative",
+    "feature": "dollar_volume",
+    "feature_value": 446343808.0,
+    "importance": 0.0004,
+    "importance_pct": 0.4391,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "negative",
+    "feature": "price_vs_sma200",
+    "feature_value": 0.7722,
+    "importance": 0.0002,
+    "importance_pct": 0.211,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "positive",
+    "feature": "sector_rank_1d",
+    "feature_value": 0.7273,
+    "importance": 0.0001,
+    "importance_pct": 0.1217,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "positive",
+    "feature": "return_1d",
+    "feature_value": 0.0287,
+    "importance": 0.0001,
+    "importance_pct": 0.1146,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "negative",
+    "feature": "volatility_20d",
+    "feature_value": 0.0367,
+    "importance": 0.0001,
+    "importance_pct": 0.1136,
+    "method": "integrated_gradients"
+   }
+  ]
+ },
+ "fundamentals": {
+  "accrual": 0.0939,
+  "adx_14": 44.8014,
+  "altman_z_score": 3.0822,
+  "amihud_illiquidity": 0.0,
+  "avg_volume": 2542395.5331,
+  "beta_252d": 0.2564,
+  "book_value_per_share": 44.1052,
+  "correlation_spy_60d": -0.0336,
+  "current_liabilities": 2724.0,
+  "current_ratio": 1.3906,
+  "daily_earnings_yield": 0.0457,
+  "daily_fcf_yield": 0.0218,
+  "daily_pb": 2.1205,
+  "daily_pe": 21.8785,
+  "daily_ps": 2.4214,
+  "days_since_52w_high": 251.0,
+  "debt_ebitda": 2.0532,
+  "debt_to_equity": 0.2819,
+  "dividend_yield": 0.0086,
+  "dollar_volume_20d_avg": 311162732.3897,
+  "earnings_quality": 1.1027,
+  "ebitda_growth_yoy": 0.0629,
+  "enterprise_value": 23747.2464,
+  "eps_basic": 1.11,
+  "eps_cagr_3y": 0.3027,
+  "eps_cagr_5y": 0.1444,
+  "eps_diluted": 1.11,
+  "eps_growth_accel": 0.0103,
+  "eps_growth_qoq": 0.4051,
+  "eps_growth_yoy": 0.0909,
+  "eps_growth_yoy_q2": 0.0806,
+  "eps_growth_yoy_q3": 0.071,
+  "eps_growth_yoy_q4": 0.1374,
+  "eps_growth_yoy_q5": 0.2184,
+  "eps_growth_yoy_q6": 0.3238,
+  "eps_growth_yoy_q7": 0.3407,
+  "eps_growth_yoy_q8": 0.3902,
+  "eps_history_8q": [
+   1.34,
+   0.69,
+   0.93,
+   0.93,
+   1.37,
+   0.79,
+   1.11,
+   1.25
+  ],
+  "eps_ttm": 4.1484,
+  "ev_to_ebitda": 12.3298,
+  "ev_to_fcf": 118.1455,
+  "ev_to_sales": 10.1658,
+  "fcf_growth_yoy": -0.5507,
+  "fcf_margin": 0.086,
+  "fcf_per_share": 0.8507,
+  "gross_margin": 0.3934,
+  "gross_margin_change_yoy": -0.0384,
+  "gross_margin_history": [
+   0.4438,
+   0.4468,
+   0.4324,
+   0.4177,
+   0.408,
+   0.3934
+  ],
+  "inc_roic": 0.1862,
+  "interest_coverage": 82.9412,
+  "is_pre_revenue": false,
+  "margin_vs_sector_median": null,
+  "market_cap_ratio": 22097.2464,
+  "net_income": 263.0,
+  "net_margin": 0.1566,
+  "operating_income": 390.0,
+  "operating_margin": 0.1439,
+  "operating_margin_change_yoy": 0.0161,
+  "pb_ratio": 2.0578,
+  "pe_percentile_1y": 0.996,
+  "pe_ratio": 21.8785,
+  "peg_trailing": 1.2685,
+  "piotroski_f_score": 4.0,
+  "price_vs_high_52w": 0.5934,
+  "price_vs_sma200": 0.7722,
+  "ps_percentile_1y": 0.996,
+  "ps_ratio": 3.2967,
+  "quarter_labels_8q": [
+   "Q4 '24",
+   "Q1 '25",
+   "Q2 '25",
+   "Q3 '25",
+   "Q4 '25",
+   "Q1 '26",
+   "Q2 '26",
+   "Q3 '26"
+  ],
+  "quarterly_eps_growth_yoy": 0.3441,
+  "quarterly_eps_growth_yoy_8q": [
+   0.2182,
+   0.0952,
+   0.1625,
+   0.0449,
+   0.0224,
+   0.1449,
+   0.1935,
+   0.3441
+  ],
+  "quarterly_revenue_growth_yoy": -1.0,
+  "quarterly_revenue_growth_yoy_8q": [
+   0.0652,
+   0.0177,
+   0.0609,
+   0.0779,
+   0.0625,
+   0.0271,
+   0.0152,
+   -1.0
+  ],
+  "revenue_cagr_3y": 0.1465,
+  "revenue_cagr_5y": 0.1191,
+  "revenue_growth_accel": -0.012,
+  "revenue_growth_qoq": 0.0993,
+  "revenue_growth_yoy": 0.0454,
+  "revenue_growth_yoy_q2": 0.0573,
+  "revenue_growth_yoy_q3": 0.0552,
+  "revenue_growth_yoy_q4": 0.0558,
+  "revenue_growth_yoy_q5": 0.0398,
+  "revenue_growth_yoy_q6": 0.0816,
+  "revenue_growth_yoy_q7": 0.1627,
+  "revenue_growth_yoy_q8": 0.2476,
+  "revenue_history_8q": [
+   2256.0,
+   2069.0,
+   2301.0,
+   2268.0,
+   2397.0,
+   2125.0,
+   2336.0,
+   0.0
+  ],
+  "revenue_per_share": 9.8867,
+  "roa": 0.062,
+  "roce": 0.0678,
+  "roe": 0.1038,
+  "roic": 0.0691,
+  "rsi_14": 25.944,
+  "sector_momentum": 0.0937,
+  "share_dilution_1y": 0.0,
+  "stock_vs_sector_20d": -0.0937,
+  "stock_vs_spy_20d": -0.1073,
+  "total_assets": 17342.0,
+  "vol_regime": 1.5248,
+  "volatility_20d": 0.0367,
+  "volatility_60d": 0.0241,
+  "w52_high": 154.27,
+  "w52_low": 87.4
+ },
+ "market_characters": [],
+ "model_analogs": {
+  "matches": [
+   {
+    "actual_downside": -0.0206,
+    "actual_return": 0.5936,
+    "actual_upside": 0.5936,
+    "days_in_region": 233,
+    "end_date": "2019-12-12",
+    "end_reason": "reversal",
+    "similarity": 0.9543,
+    "start_date": "2019-04-23",
+    "ticker": "AMTD",
+    "trigger_date": "2019-10-02",
+    "trigger_type": "severe_drawdown"
+   },
+   {
+    "actual_downside": 0.0,
+    "actual_return": 0.2063,
+    "actual_upside": 0.2063,
+    "days_in_region": 220,
+    "end_date": "2019-12-09",
+    "end_reason": "reversal",
+    "similarity": 0.9477,
+    "start_date": "2019-05-03",
+    "ticker": "IP",
+    "trigger_date": "2019-10-09",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": -0.0133,
+    "actual_return": 0.2253,
+    "actual_upside": 0.2253,
+    "days_in_region": 289,
+    "end_date": "2020-02-20",
+    "end_reason": "reversal",
+    "similarity": 0.9471,
+    "start_date": "2019-05-07",
+    "ticker": "IBKR",
+    "trigger_date": "2019-10-25",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": -0.0096,
+    "actual_return": 0.1999,
+    "actual_upside": 0.1999,
+    "days_in_region": 255,
+    "end_date": "2020-01-16",
+    "end_reason": "reversal",
+    "similarity": 0.947,
+    "start_date": "2019-05-06",
+    "ticker": "PJT",
+    "trigger_date": "2019-10-03",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": -0.051,
+    "actual_return": 0.1285,
+    "actual_upside": 0.1285,
+    "days_in_region": 77,
+    "end_date": "2022-11-02",
+    "end_reason": "reversal",
+    "similarity": 0.9468,
+    "start_date": "2022-08-17",
+    "ticker": "ACT",
+    "trigger_date": "2022-09-06",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": 0.0,
+    "actual_return": 0.3046,
+    "actual_upside": 0.3046,
+    "days_in_region": 196,
+    "end_date": "2019-11-04",
+    "end_reason": "reversal",
+    "similarity": 0.9465,
+    "start_date": "2019-04-22",
+    "ticker": "STLA",
+    "trigger_date": "2019-10-09",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": -0.0217,
+    "actual_return": 0.1013,
+    "actual_upside": 0.1013,
+    "days_in_region": 226,
+    "end_date": "2019-12-18",
+    "end_reason": "reversal",
+    "similarity": 0.9452,
+    "start_date": "2019-05-06",
+    "ticker": "SLM",
+    "trigger_date": "2019-10-02",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": 0.0,
+    "actual_return": 0.1943,
+    "actual_upside": 0.1943,
+    "days_in_region": 143,
+    "end_date": "2019-11-07",
+    "end_reason": "reversal",
+    "similarity": 0.9448,
+    "start_date": "2019-06-17",
+    "ticker": "LYB",
+    "trigger_date": "2019-07-15",
+    "trigger_type": "compression"
+   },
+   {
+    "actual_downside": -0.0316,
+    "actual_return": 0.2003,
+    "actual_upside": 0.2003,
+    "days_in_region": 217,
+    "end_date": "2020-01-23",
+    "end_reason": "reversal",
+    "similarity": 0.944,
+    "start_date": "2019-06-20",
+    "ticker": "KFY",
+    "trigger_date": "2019-10-02",
+    "trigger_type": "severe_drawdown"
+   },
+   {
+    "actual_downside": -0.2886,
+    "actual_return": -0.2886,
+    "actual_upside": 0.5695,
+    "days_in_region": 292,
+    "end_date": "2020-03-18",
+    "end_reason": "reversal",
+    "similarity": 0.9439,
+    "start_date": "2019-05-31",
+    "ticker": "DOOR",
+    "trigger_date": "2019-09-10",
+    "trigger_type": "runup"
+   }
+  ],
+  "stats": {
+   "avg_max_drawdown": 0.1031,
+   "avg_similarity": 0.941,
+   "avg_trough": 0.1031,
+   "avg_upside": 0.1764,
+   "best_return": 0.5936,
+   "downside_range": [
+    -0.5086,
+    0.0
+   ],
+   "median_return": 0.1579,
+   "n_matches": 50,
+   "outcome_agreement": true,
+   "return_p25": 0.0038,
+   "return_p5": -0.3762,
+   "return_p75": 0.221,
+   "return_p95": 0.3388,
+   "sim_weighted_win_rate": 0.76,
+   "top5_avg_trough": 0.0189,
+   "top5_avg_upside": 0.2707,
+   "top_similarity": 0.954,
+   "upside_range": [
+    0.0,
+    0.5936
+   ],
+   "win_rate": 0.76,
+   "worst_return": -0.5086,
+   "years_span": 4
+  },
+  "total_matches": 50
+ },
+ "peer_group": {
+  "buckets": [
+   "Engineering, Construction & Technical Services",
+   "Industrial Components, Motion, Filtration & Engineered Products",
+   "Industrial Electronics, Sensors & Embedded Systems"
+  ],
+  "groups": {
+   "Engineering, Construction & Technical Services": [
+    {
+     "market_cap_m": 13954.4712,
+     "price_vs_sma200": 0.8772,
+     "return_30d": 0.1118,
+     "return_7d": 0.0062,
+     "revenue_driver": "e-infrastructure construction",
+     "signal_rank": 1688,
+     "stock_vs_spy_20d": 0.0323,
+     "ticker": "SATS"
+    },
+    {
+     "market_cap_m": 3177.0396,
+     "price_vs_sma200": 1.0262,
+     "return_30d": 0.0764,
+     "return_7d": 0.0036,
+     "revenue_driver": "civil infrastructure construction",
+     "signal_rank": 1362,
+     "stock_vs_spy_20d": 0.1432,
+     "ticker": "KD"
+    },
+    {
+     "market_cap_m": 9663.3589,
+     "price_vs_sma200": 0.8323,
+     "return_30d": 0.0016,
+     "return_7d": 0.0766,
+     "revenue_driver": "engineering design",
+     "signal_rank": 795,
+     "stock_vs_spy_20d": 0.0586,
+     "ticker": "ACM"
+    },
+    {
+     "market_cap_m": 3459.4462,
+     "price_vs_sma200": 1.029,
+     "return_30d": -0.0009,
+     "return_7d": -0.0183,
+     "revenue_driver": "construction and infrastructure",
+     "signal_rank": 1238,
+     "stock_vs_spy_20d": 0.0081,
+     "ticker": "NATL"
+    },
+    {
+     "market_cap_m": 4506.2688,
+     "price_vs_sma200": 0.6634,
+     "return_30d": -0.0128,
+     "return_7d": 0.0481,
+     "revenue_driver": "utility and energy infrastructure construction",
+     "signal_rank": 729,
+     "stock_vs_spy_20d": -0.0154,
+     "ticker": "PRIM"
+    },
+    {
+     "market_cap_m": 5693.4792,
+     "price_vs_sma200": 0.6852,
+     "return_30d": -0.0683,
+     "return_7d": 0.0206,
+     "revenue_driver": "power plant EPC",
+     "signal_rank": 1672,
+     "stock_vs_spy_20d": -0.0669,
+     "ticker": "AGX"
+    },
+    {
+     "market_cap_m": 24278.3073,
+     "price_vs_sma200": 0.5877,
+     "return_30d": -0.1441,
+     "return_7d": -0.0508,
+     "revenue_driver": "utility infrastructure construction",
+     "signal_rank": 99,
+     "stock_vs_spy_20d": -0.1747,
+     "ticker": "MTZ"
+    },
+    {
+     "market_cap_m": 22608.5313,
+     "price_vs_sma200": 0.7722,
+     "return_30d": -0.1565,
+     "return_7d": -0.1358,
+     "revenue_driver": "water infrastructure equipment",
+     "signal_rank": 1659,
+     "stock_vs_spy_20d": -0.1073,
+     "ticker": "XYL"
+    },
+    {
+     "market_cap_m": 155329.8276,
+     "price_vs_sma200": 0.8369,
+     "return_30d": -0.1761,
+     "return_7d": -0.1067,
+     "revenue_driver": "infrastructure construction",
+     "signal_rank": 1462,
+     "stock_vs_spy_20d": -0.1461,
+     "ticker": "T"
+    },
+    {
+     "market_cap_m": 11478.4615,
+     "price_vs_sma200": 0.6772,
+     "return_30d": -0.2611,
+     "return_7d": -0.0936,
+     "revenue_driver": "e-infrastructure construction",
+     "signal_rank": 1210,
+     "stock_vs_spy_20d": -0.2673,
+     "ticker": "STRL"
+    }
+   ],
+   "Industrial Components, Motion, Filtration & Engineered Products": [
+    {
+     "market_cap_m": 7197.9883,
+     "price_vs_sma200": 1.0003,
+     "return_30d": 0.1152,
+     "return_7d": 0.0663,
+     "revenue_driver": "residential water heaters",
+     "signal_rank": 1911,
+     "stock_vs_spy_20d": 0.1133,
+     "ticker": "AOS"
+    },
+    {
+     "market_cap_m": 5737.7966,
+     "price_vs_sma200": 0.7924,
+     "return_30d": 0.1119,
+     "return_7d": 0.1371,
+     "revenue_driver": "welding equipment",
+     "signal_rank": 1039,
+     "stock_vs_spy_20d": 0.0976,
+     "ticker": "ESAB"
+    },
+    {
+     "market_cap_m": 15537.6916,
+     "price_vs_sma200": 1.0693,
+     "return_30d": 0.1065,
+     "return_7d": 0.0934,
+     "revenue_driver": "welding equipment",
+     "signal_rank": 1223,
+     "stock_vs_spy_20d": 0.0485,
+     "ticker": "LECO"
+    },
+    {
+     "market_cap_m": 1009.9113,
+     "price_vs_sma200": 1.4148,
+     "return_30d": 0.0786,
+     "return_7d": 0.0542,
+     "revenue_driver": "oilfield equipment",
+     "signal_rank": 1311,
+     "stock_vs_spy_20d": 0.0715,
+     "ticker": "FET"
+    },
+    {
+     "market_cap_m": 2857.3382,
+     "price_vs_sma200": 1.1838,
+     "return_30d": 0.0445,
+     "return_7d": 0.0564,
+     "revenue_driver": "energy equipment distribution",
+     "signal_rank": 1183,
+     "stock_vs_spy_20d": 0.0833,
+     "ticker": "DNOW"
+    },
+    {
+     "market_cap_m": 4235.7924,
+     "price_vs_sma200": 0.8801,
+     "return_30d": 0.0426,
+     "return_7d": 0.0359,
+     "revenue_driver": "water distribution equipment",
+     "signal_rank": 112,
+     "stock_vs_spy_20d": 0.0525,
+     "ticker": "MWA"
+    },
+    {
+     "market_cap_m": 4301.8915,
+     "price_vs_sma200": 0.9655,
+     "return_30d": 0.0056,
+     "return_7d": -0.0344,
+     "revenue_driver": "water transfer pumps",
+     "signal_rank": 287,
+     "stock_vs_spy_20d": -0.0042,
+     "ticker": "FELE"
+    },
+    {
+     "market_cap_m": 7449.451,
+     "price_vs_sma200": 1.0065,
+     "return_30d": 0.0026,
+     "return_7d": -0.0167,
+     "revenue_driver": "personal protective equipment",
+     "signal_rank": 1498,
+     "stock_vs_spy_20d": -0.0063,
+     "ticker": "MSA"
+    },
+    {
+     "market_cap_m": 2837.7234,
+     "price_vs_sma200": 1.0213,
+     "return_30d": -0.0054,
+     "return_7d": 0.0247,
+     "revenue_driver": "regulated water utility",
+     "signal_rank": 1847,
+     "stock_vs_spy_20d": 0.05,
+     "ticker": "CWT"
+    },
+    {
+     "market_cap_m": 22608.5313,
+     "price_vs_sma200": 0.7722,
+     "return_30d": -0.1565,
+     "return_7d": -0.1358,
+     "revenue_driver": "water infrastructure equipment",
+     "signal_rank": 1659,
+     "stock_vs_spy_20d": -0.1073,
+     "ticker": "XYL"
+    }
+   ],
+   "Industrial Electronics, Sensors & Embedded Systems": [
+    {
+     "market_cap_m": 5745.2852,
+     "price_vs_sma200": 1.3949,
+     "return_30d": 0.412,
+     "return_7d": 0.4536,
+     "revenue_driver": "residential security monitoring",
+     "signal_rank": 997,
+     "stock_vs_spy_20d": 0.5773,
+     "ticker": "ADT"
+    },
+    {
+     "market_cap_m": 86.6362,
+     "price_vs_sma200": 0.6631,
+     "return_30d": 0.1509,
+     "return_7d": 0.0417,
+     "revenue_driver": "AI video analytics",
+     "signal_rank": null,
+     "stock_vs_spy_20d": -0.2819,
+     "ticker": "AISP"
+    },
+    {
+     "market_cap_m": 14072.3277,
+     "price_vs_sma200": 1.0584,
+     "return_30d": 0.0641,
+     "return_7d": 0.0221,
+     "revenue_driver": "pressure-sensitive labeling",
+     "signal_rank": 1973,
+     "stock_vs_spy_20d": 0.0538,
+     "ticker": "AVY"
+    },
+    {
+     "market_cap_m": 99099.5738,
+     "price_vs_sma200": 0.6106,
+     "return_30d": 0.0473,
+     "return_7d": 0.0348,
+     "revenue_driver": "electronic connectors",
+     "signal_rank": 878,
+     "stock_vs_spy_20d": -0.0489,
+     "ticker": "APH"
+    },
+    {
+     "market_cap_m": 41227.3186,
+     "price_vs_sma200": 0.9129,
+     "return_30d": -0.0341,
+     "return_7d": 0.1157,
+     "revenue_driver": "body camera ecosystem",
+     "signal_rank": 1347,
+     "stock_vs_spy_20d": 0.0305,
+     "ticker": "AXON"
+    },
+    {
+     "market_cap_m": 409.5045,
+     "price_vs_sma200": 0.8093,
+     "return_30d": -0.037,
+     "return_7d": 0.1216,
+     "revenue_driver": "fleet management telematics",
+     "signal_rank": 1366,
+     "stock_vs_spy_20d": 0.0144,
+     "ticker": "AIOT"
+    },
+    {
+     "market_cap_m": 4012.9081,
+     "price_vs_sma200": 0.8942,
+     "return_30d": -0.0373,
+     "return_7d": -0.0477,
+     "revenue_driver": "commercial foodservice equipment",
+     "signal_rank": 37,
+     "stock_vs_spy_20d": -0.1365,
+     "ticker": "SXI"
+    },
+    {
+     "market_cap_m": 75.0028,
+     "price_vs_sma200": 0.4848,
+     "return_30d": -0.0855,
+     "return_7d": 0.0431,
+     "revenue_driver": "seismic sensing equipment",
+     "signal_rank": null,
+     "stock_vs_spy_20d": -0.07,
+     "ticker": "GEOS"
+    },
+    {
+     "market_cap_m": 22608.5313,
+     "price_vs_sma200": 0.7722,
+     "return_30d": -0.1565,
+     "return_7d": -0.1358,
+     "revenue_driver": "water infrastructure equipment",
+     "signal_rank": 1659,
+     "stock_vs_spy_20d": -0.1073,
+     "ticker": "XYL"
+    },
+    {
+     "market_cap_m": 1517.6208,
+     "price_vs_sma200": 0.5859,
+     "return_30d": -0.3482,
+     "return_7d": -0.0321,
+     "revenue_driver": "FMCW lidar sensing systems",
+     "signal_rank": 1651,
+     "stock_vs_spy_20d": -0.3114,
+     "ticker": "AEVA"
+    }
+   ]
+  }
+ },
+ "predictions": {
+  "badge_count": 0,
+  "confidence_score": 0.6528,
+  "conviction_label": "SPECULATIVE",
+  "data_quality_flags": [],
+  "ev_score": 0.0046,
+  "is_diamond": false,
+  "passes_tradability_filter": true,
+  "quality_label": "WEAK",
+  "quantiles": {
+   "downside_q10": -0.3139,
+   "downside_q25": -0.202,
+   "downside_q50": -0.1232,
+   "downside_q75": -0.0453,
+   "downside_q90": -0.0087,
+   "path_volatility": 0.0309,
+   "risk_reward": 1.0181,
+   "uncertainty": 0.3162,
+   "upside_q10": 0.0165,
+   "upside_q25": 0.0498,
+   "upside_q50": 0.1254,
+   "upside_q75": 0.2026,
+   "upside_q90": 0.3328
+  },
+  "rank": 1659,
+  "rank_score": 0.0022,
+  "tradability_filter_reasons": []
+ },
+ "profile": {
+  "_local": {
+   "dividend_yield": 0.0086,
+   "eps_growth_yoy": 0.0909,
+   "pe_ratio": 20.5442,
+   "revenue_growth_yoy": 0.0454,
+   "roe": 0.1038
+  },
+  "beta": 0.991,
+  "betaTTM": null,
+  "ceo": "Matthew F. Pine",
+  "companyName": "Xylem Inc.",
+  "country": "US",
+  "debtToEquityTTM": null,
+  "description": "Xylem Inc., together with its subsidiaries, engages in the design, manufacture, and servicing of engineered products and solutions for utility, industrial, and residential and commercial building services settings worldwide. It operates through Water Infrastructure; Applied Water; Measurement and Control Solutions; and Water Solutions and Services segments. The company offers water, wastewater, and storm water pumps and controls and systems; filtration, disinfection, and biological treatment equipment under the Flygt, Ionpure, Leopold, Neptune Benson, Sanitare, Wallace & Tiernan, and Wedeco brands; and pumps, valves, heat exchangers, controls, and dispensing equipment used for water and focuses on the residential, commercial and industrial markets under the Rule, Bell & Gossett, Flojet, Goulds Water Technology, Jabsco, and Lowara brands. It also provides smart meters, network communication devices, data analytics, test instruments, controls, sensor devices, software and managed services, critical infrastructure services, cloud-based analytics, and remote monitoring and data management under the Ebro, Sensus, Sentec, Smith Blair, WTW, YSI, and Xylem Vue brands. In addition, the company offers preventative maintenance services, rapid response mobile services, digitally enabled/outsourced solutions, process and wastewater treatment systems, environmental remediation, odor and corrosion control, filtration, reverse osmosis, continuous deionization, and mobile dewatering equipment and rental services; and municipal services comprising odor and corrosion control services, as well as condition assessment and asset management, and pressure monitoring solutions under the Grindex, Mar Cor, and Godwin brands. Xylem Inc. was formerly known as ITT WCO, Inc. and changed its name to Xylem Inc. in July 2011. The company was incorporated in 2011 and is headquartered in Washington, District Of Columbia.",
+  "dividendYielTTM": null,
+  "enterpriseValueOverEBITDATTM": null,
+  "exchangeShortName": "NYSE",
+  "fullTimeEmployees": "22000",
+  "industry": "Industrial - Machinery",
+  "ipoDate": "2011-10-13",
+  "latest_earnings_date": "2026-10-27",
+  "marketCapTTM": null,
+  "mktCap": 21191280120,
+  "peRatioTTM": null,
+  "price": 90.76,
+  "priceToSalesRatioTTM": null,
+  "returnOnEquityTTM": 0.0996,
+  "revenue_description": "Xylem sells water infrastructure, treatment, and analytics products. Revenue is driven by project award backlog execution, infrastructure spending cycles, and residential housing construction activity.",
+  "revenue_description_themes": [
+   "water infrastructure investment",
+   "utility backlog conversion",
+   "smart water technology adoption"
+  ],
+  "revenue_taxonomy": [
+   {
+    "bucket": "Industrial Components, Motion, Filtration & Engineered Products",
+    "matched_tags": [
+     "water infrastructure equipment"
+    ],
+    "path": "Industrials & Transportation › Industrial Products & Services › Industrial Components, Motion, Filtration & Engineered Products",
+    "sector": "Industrials & Transportation",
+    "segment": "Industrial Products & Services"
+   },
+   {
+    "bucket": "Engineering, Construction & Technical Services",
+    "matched_tags": [
+     "utility project backlog"
+    ],
+    "path": "Industrials & Transportation › Industrial Products & Services › Engineering, Construction & Technical Services",
+    "sector": "Industrials & Transportation",
+    "segment": "Industrial Products & Services"
+   },
+   {
+    "bucket": "Industrial Electronics, Sensors & Embedded Systems",
+    "matched_tags": [
+     "smart water metering"
+    ],
+    "path": "Technology › Hardware & Semiconductors › Industrial Electronics, Sensors & Embedded Systems",
+    "sector": "Technology",
+    "segment": "Hardware & Semiconductors"
+   }
+  ],
+  "revenue_themes": [
+   "water infrastructure equipment",
+   "utility project backlog",
+   "smart water metering"
+  ],
+  "sector": "Industrials",
+  "website": "https://www.xylem.com"
+ },
+ "report": null,
+ "scorecard": {
+  "headline": {
+   "avg_universe_pct": 50,
+   "label": "mixed",
+   "metric_count": 8
+  },
+  "metrics": {
+   "debt_to_equity": {
+    "direction": "lower",
+    "label": "D/E Ratio",
+    "sector": "Industrials",
+    "sector_n": 357,
+    "sector_pct": 58,
+    "universe_n": 2056,
+    "universe_pct": 54,
+    "value": 0.2819
+   },
+   "eps_growth_yoy": {
+    "direction": "higher",
+    "label": "EPS Growth",
+    "sector": "Industrials",
+    "sector_n": 352,
+    "sector_pct": 48,
+    "universe_n": 1880,
+    "universe_pct": 44,
+    "value": 0.0909
+   },
+   "gross_margin": {
+    "direction": "higher",
+    "label": "Gross Margin",
+    "sector": "Industrials",
+    "sector_n": 337,
+    "sector_pct": 59,
+    "universe_n": 1998,
+    "universe_pct": 41,
+    "value": 0.3934
+   },
+   "operating_margin": {
+    "direction": "higher",
+    "label": "Op. Margin",
+    "sector": "Industrials",
+    "sector_n": 337,
+    "sector_pct": 71,
+    "universe_n": 1998,
+    "universe_pct": 61,
+    "value": 0.1439
+   },
+   "pe_ratio": {
+    "direction": "lower",
+    "label": "P/E",
+    "sector": "Industrials",
+    "sector_n": 250,
+    "sector_pct": 62,
+    "universe_n": 1468,
+    "universe_pct": 50,
+    "value": 20.5442
+   },
+   "revenue_growth_yoy": {
+    "direction": "higher",
+    "label": "Rev Growth",
+    "sector": "Industrials",
+    "sector_n": 333,
+    "sector_pct": 35,
+    "universe_n": 1824,
+    "universe_pct": 35,
+    "value": 0.0454
+   },
+   "roe": {
+    "direction": "higher",
+    "label": "ROE",
+    "sector": "Industrials",
+    "sector_n": 361,
+    "sector_pct": 53,
+    "universe_n": 2088,
+    "universe_pct": 53,
+    "value": 0.1038
+   },
+   "roic": {
+    "direction": "higher",
+    "label": "ROIC",
+    "sector": "Industrials",
+    "sector_n": 351,
+    "sector_pct": 57,
+    "universe_n": 2026,
+    "universe_pct": 58,
+    "value": 0.018
+   }
+  }
+ },
+ "signal_rank": 1659,
+ "structural_analogs": {
+  "gp_core_pct": 54.6,
+  "gp_core_ratio": 1.3324,
+  "matches": [
+   {
+    "actual_downside": -0.129,
+    "actual_return": -0.0085,
+    "actual_upside": 0.0128,
+    "days_in_region": 118,
+    "end_date": "2018-10-12",
+    "end_reason": "reversal",
+    "seq_len": 118,
+    "similarity": 0.6754,
+    "start_date": "2018-06-15",
+    "ticker": "TCOM",
+    "total_distance": 0.1962,
+    "trigger_date": "2018-07-06",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": -0.033,
+    "actual_return": 0.1497,
+    "actual_upside": 0.1497,
+    "days_in_region": 125,
+    "end_date": "2015-12-01",
+    "end_reason": "reversal",
+    "seq_len": 125,
+    "similarity": 0.6693,
+    "start_date": "2015-05-22",
+    "ticker": "DOV",
+    "total_distance": 0.2008,
+    "trigger_date": "2015-07-07",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": -0.0414,
+    "actual_return": 0.1481,
+    "actual_upside": 0.1481,
+    "days_in_region": 125,
+    "end_date": "2005-12-13",
+    "end_reason": "reversal",
+    "seq_len": 125,
+    "similarity": 0.6601,
+    "start_date": "2005-07-11",
+    "ticker": "RCL",
+    "total_distance": 0.2077,
+    "trigger_date": "2005-10-10",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": -0.2878,
+    "actual_return": -0.2117,
+    "actual_upside": 0.0232,
+    "days_in_region": 135,
+    "end_date": "2011-07-27",
+    "end_reason": "reversal",
+    "seq_len": 135,
+    "similarity": 0.6534,
+    "start_date": "2010-11-02",
+    "ticker": "DWA",
+    "total_distance": 0.2128,
+    "trigger_date": "2010-11-22",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": -0.0265,
+    "actual_return": 0.3806,
+    "actual_upside": 0.3806,
+    "days_in_region": 126,
+    "end_date": "2016-05-10",
+    "end_reason": "reversal",
+    "seq_len": 126,
+    "similarity": 0.6532,
+    "start_date": "2015-11-05",
+    "ticker": "STAG",
+    "total_distance": 0.2129,
+    "trigger_date": "2016-02-10",
+    "trigger_type": "severe_drawdown"
+   },
+   {
+    "actual_downside": -0.0482,
+    "actual_return": 0.203,
+    "actual_upside": 0.203,
+    "days_in_region": 181,
+    "end_date": "2019-02-25",
+    "end_reason": "reversal",
+    "seq_len": 181,
+    "similarity": 0.6452,
+    "start_date": "2018-06-19",
+    "ticker": "BWA",
+    "total_distance": 0.2191,
+    "trigger_date": "2018-12-10",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": -0.1667,
+    "actual_return": -0.1667,
+    "actual_upside": 0.0,
+    "days_in_region": 156,
+    "end_date": "2012-07-24",
+    "end_reason": "reversal",
+    "seq_len": 156,
+    "similarity": 0.6445,
+    "start_date": "2012-01-13",
+    "ticker": "SLH",
+    "total_distance": 0.2196,
+    "trigger_date": "2012-02-06",
+    "trigger_type": "runup"
+   },
+   {
+    "actual_downside": -0.0316,
+    "actual_return": 0.1645,
+    "actual_upside": 0.1645,
+    "days_in_region": 124,
+    "end_date": "2014-12-22",
+    "end_reason": "reversal",
+    "seq_len": 124,
+    "similarity": 0.6437,
+    "start_date": "2014-07-28",
+    "ticker": "IPCM",
+    "total_distance": 0.2203,
+    "trigger_date": "2014-10-24",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": -0.184,
+    "actual_return": -0.0729,
+    "actual_upside": 0.0484,
+    "days_in_region": 141,
+    "end_date": "2018-11-16",
+    "end_reason": "reversal",
+    "seq_len": 141,
+    "similarity": 0.6394,
+    "start_date": "2018-06-20",
+    "ticker": "LGF",
+    "total_distance": 0.2236,
+    "trigger_date": "2018-10-12",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": -0.0552,
+    "actual_return": -0.0552,
+    "actual_upside": 0.0594,
+    "days_in_region": 181,
+    "end_date": "2005-07-06",
+    "end_reason": "reversal",
+    "seq_len": 181,
+    "similarity": 0.639,
+    "start_date": "2004-08-09",
+    "ticker": "KRI",
+    "total_distance": 0.2239,
+    "trigger_date": "2004-11-05",
+    "trigger_type": "shallow_runup"
+   }
+  ],
+  "panel": {
+   "edge": 0.0526,
+   "hit_hi": 0.745,
+   "hit_lo": 0.578,
+   "hit_rate": 0.667,
+   "median_final": 0.1096,
+   "median_pain": 0.0552,
+   "n": 51,
+   "n_eff": 51.0,
+   "p25_final": -0.0549,
+   "p_pain_gt5": 0.549,
+   "return_to_pain": 1.457
+  },
+  "stats": {
+   "avg_similarity": 0.606,
+   "avg_trough": 0.1055,
+   "avg_upside": 0.1448,
+   "median_pain": 0.0707,
+   "median_return": 0.0986,
+   "n_matches": 200,
+   "p25_return": -0.0336,
+   "p_pain_gt5": 0.575,
+   "return_to_pain": 1.087,
+   "top5_avg_trough": 0.1035,
+   "top5_avg_upside": 0.1429,
+   "top_similarity": 0.675,
+   "win_rate": 0.7
+  },
+  "total_matches": 200
+ },
+ "ticker": "XYL",
+ "trending": null
+}

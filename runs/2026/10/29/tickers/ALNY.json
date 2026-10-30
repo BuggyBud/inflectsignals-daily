@@ -1,0 +1,1129 @@
+{
+ "date": "2026-10-29",
+ "detected_regions": {
+  "primary": {
+   "days_in_region": 125,
+   "region_start": "2026-07-30",
+   "trigger_date": "2026-08-14",
+   "trigger_type": "runup"
+  },
+  "secondary": [
+   {
+    "confidence_score": 0.3863,
+    "downside_q50": -0.1383,
+    "ev_score": 0.0086,
+    "region_start": "2026-04-15",
+    "seq_len": 198,
+    "trigger_date": "2026-10-06",
+    "trigger_type": "severe_drawdown",
+    "upside_q25": 0.0492,
+    "upside_q50": 0.1369,
+    "upside_q75": 0.2526
+   },
+   {
+    "confidence_score": 0.3884,
+    "downside_q50": -0.1381,
+    "ev_score": 0.009,
+    "region_start": "2026-04-14",
+    "seq_len": 199,
+    "trigger_date": "2026-09-16",
+    "trigger_type": "drawdown",
+    "upside_q25": 0.0492,
+    "upside_q50": 0.137,
+    "upside_q75": 0.2529
+   }
+  ]
+ },
+ "feature_attribution": {
+  "macro_driver_count": 15,
+  "risk_flags": [
+   "high_volatility"
+  ],
+  "top_drivers": [
+   {
+    "direction": "negative",
+    "feature": "dollar_volume",
+    "feature_value": 2052453888.0,
+    "importance": 0.0006,
+    "importance_pct": 0.4172,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "negative",
+    "feature": "price_vs_sma200",
+    "feature_value": 0.6074,
+    "importance": 0.0004,
+    "importance_pct": 0.27,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "positive",
+    "feature": "ma_200_slope",
+    "feature_value": -0.0568,
+    "importance": 0.0002,
+    "importance_pct": 0.1104,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "positive",
+    "feature": "historical_recovery_rate",
+    "feature_value": 0.3613,
+    "importance": 0.0002,
+    "importance_pct": 0.1058,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "positive",
+    "feature": "ps_ratio",
+    "feature_value": 4.5854,
+    "importance": 0.0001,
+    "importance_pct": 0.0966,
+    "method": "integrated_gradients"
+   }
+  ]
+ },
+ "fundamentals": {
+  "accrual": 0.3807,
+  "adx_14": 20.3183,
+  "altman_z_score": 4.5552,
+  "amihud_illiquidity": 0.0001,
+  "avg_volume": 1658392.554,
+  "beta_252d": 0.1826,
+  "book_value_per_share": 26.929,
+  "correlation_spy_60d": 0.2245,
+  "current_liabilities": 2063.006,
+  "current_ratio": 2.4783,
+  "daily_earnings_yield": 0.1185,
+  "daily_fcf_yield": 0.0038,
+  "daily_pb": 6.3787,
+  "daily_pe": 8.4383,
+  "daily_ps": 4.5854,
+  "days_since_52w_high": 258.0,
+  "debt_ebitda": 1.2383,
+  "debt_to_equity": 0.3502,
+  "dividend_yield": 0.0,
+  "dollar_volume_20d_avg": 397396872.9394,
+  "earnings_quality": 0.1573,
+  "ebitda_growth_yoy": 2.1746,
+  "enterprise_value": 20662.574,
+  "eps_basic": 16.19,
+  "eps_cagr_3y": 0.7052,
+  "eps_cagr_5y": 0.2337,
+  "eps_diluted": 15.72,
+  "eps_growth_accel": 6.5304,
+  "eps_growth_qoq": 12.1626,
+  "eps_growth_yoy": 10.0,
+  "eps_growth_yoy_q2": 3.4696,
+  "eps_growth_yoy_q3": 3.0861,
+  "eps_growth_yoy_q4": 2.0922,
+  "eps_growth_yoy_q5": 1.1183,
+  "eps_growth_yoy_q6": -3.3333,
+  "eps_growth_yoy_q7": 0.2113,
+  "eps_growth_yoy_q8": 0.3853,
+  "eps_history_8q": [
+   -0.65,
+   -0.44,
+   -0.51,
+   1.84,
+   1.37,
+   1.51,
+   1.2,
+   15.72
+  ],
+  "eps_ttm": 20.6204,
+  "ev_to_ebitda": 20.2748,
+  "ev_to_fcf": 76.2026,
+  "ev_to_sales": 14.171,
+  "fcf_growth_yoy": -0.2635,
+  "fcf_margin": 0.186,
+  "fcf_per_share": 2.0261,
+  "gross_margin": 0.7728,
+  "gross_margin_change_yoy": -0.0989,
+  "gross_margin_history": [
+   0.8594,
+   0.8565,
+   0.8278,
+   0.8147,
+   0.7995,
+   0.7728
+  ],
+  "inc_roic": 1.0623,
+  "interest_coverage": 2.7918,
+  "is_pre_revenue": false,
+  "margin_vs_sector_median": null,
+  "market_cap_ratio": 22987.836,
+  "net_income": 2167.335,
+  "net_margin": 0.5434,
+  "operating_income": 345.798,
+  "operating_margin": 0.195,
+  "operating_margin_change_yoy": -0.0575,
+  "pb_ratio": 6.4614,
+  "pe_percentile_1y": 0.996,
+  "pe_ratio": 8.4383,
+  "peg_trailing": 0.0011,
+  "piotroski_f_score": 4.0,
+  "price_vs_high_52w": 0.3613,
+  "price_vs_sma200": 0.6074,
+  "ps_percentile_1y": 1.0,
+  "ps_ratio": 4.5854,
+  "quarter_labels_8q": [
+   "Q4 '24",
+   "Q1 '25",
+   "Q2 '25",
+   "Q3 '25",
+   "Q4 '25",
+   "Q1 '26",
+   "Q2 '26",
+   "Q3 '26"
+  ],
+  "quarterly_eps_growth_yoy": 7.5435,
+  "quarterly_eps_growth_yoy_8q": [
+   0.4091,
+   0.1538,
+   -2.9231,
+   3.1149,
+   3.1077,
+   4.4318,
+   3.3529,
+   7.5435
+  ],
+  "quarterly_revenue_growth_yoy": 0.1674,
+  "quarterly_revenue_growth_yoy_8q": [
+   0.349,
+   0.202,
+   0.1726,
+   1.4935,
+   0.8495,
+   0.9643,
+   0.6686,
+   0.1674
+  ],
+  "revenue_cagr_3y": 0.4274,
+  "revenue_cagr_5y": 0.4625,
+  "revenue_growth_accel": -0.3896,
+  "revenue_growth_qoq": 0.1295,
+  "revenue_growth_yoy": 0.5617,
+  "revenue_growth_yoy_q2": 0.9514,
+  "revenue_growth_yoy_q3": 0.8257,
+  "revenue_growth_yoy_q4": 0.6519,
+  "revenue_growth_yoy_q5": 0.5324,
+  "revenue_growth_yoy_q6": 0.0501,
+  "revenue_growth_yoy_q7": 0.1721,
+  "revenue_growth_yoy_q8": 0.2297,
+  "revenue_history_8q": [
+   593.166,
+   594.189,
+   773.689,
+   1249.026,
+   1097.033,
+   1167.175,
+   1290.948,
+   1458.086
+  ],
+  "revenue_per_share": 10.8952,
+  "roa": 0.402,
+  "roce": 0.196,
+  "roe": 1.0989,
+  "roic": 0.4593,
+  "rsi_14": 16.3864,
+  "sector_momentum": 0.0284,
+  "share_dilution_1y": 0.0044,
+  "stock_vs_sector_20d": -0.2862,
+  "stock_vs_spy_20d": -0.2543,
+  "total_assets": 7994.672,
+  "vol_regime": 1.4252,
+  "volatility_20d": 0.0603,
+  "volatility_60d": 0.0423,
+  "w52_high": 482.73,
+  "w52_low": 172.31
+ },
+ "market_characters": [
+  {
+   "id": "g8",
+   "name": "Boom-Bust"
+  }
+ ],
+ "model_analogs": {
+  "matches": [
+   {
+    "actual_downside": -0.5518,
+    "actual_return": -0.5518,
+    "actual_upside": 0.3351,
+    "days_in_region": 194,
+    "end_date": "2020-03-24",
+    "end_reason": "reversal",
+    "similarity": 0.97,
+    "start_date": "2019-09-12",
+    "ticker": "DESP",
+    "trigger_date": "2019-10-09",
+    "trigger_type": "compression"
+   },
+   {
+    "actual_downside": -0.0351,
+    "actual_return": 0.2401,
+    "actual_upside": 0.2401,
+    "days_in_region": 246,
+    "end_date": "2019-12-19",
+    "end_reason": "reversal",
+    "similarity": 0.9618,
+    "start_date": "2019-04-17",
+    "ticker": "IIIN",
+    "trigger_date": "2019-10-03",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": -0.2157,
+    "actual_return": -0.2157,
+    "actual_upside": 0.0113,
+    "days_in_region": 147,
+    "end_date": "2018-12-24",
+    "end_reason": "reversal",
+    "similarity": 0.9611,
+    "start_date": "2018-07-30",
+    "ticker": "ACIA",
+    "trigger_date": "2018-11-05",
+    "trigger_type": "runup"
+   },
+   {
+    "actual_downside": -0.0112,
+    "actual_return": 0.1281,
+    "actual_upside": 0.1281,
+    "days_in_region": 279,
+    "end_date": "2020-01-16",
+    "end_reason": "reversal",
+    "similarity": 0.961,
+    "start_date": "2019-04-12",
+    "ticker": "ECOM",
+    "trigger_date": "2019-10-03",
+    "trigger_type": "severe_drawdown"
+   },
+   {
+    "actual_downside": -0.0511,
+    "actual_return": 0.1459,
+    "actual_upside": 0.1459,
+    "days_in_region": 118,
+    "end_date": "2007-02-21",
+    "end_reason": "reversal",
+    "similarity": 0.9607,
+    "start_date": "2006-10-26",
+    "ticker": "AFFX",
+    "trigger_date": "2007-01-04",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": -0.2785,
+    "actual_return": 0.0776,
+    "actual_upside": 0.0776,
+    "days_in_region": 186,
+    "end_date": "2006-02-27",
+    "end_reason": "reversal",
+    "similarity": 0.9605,
+    "start_date": "2005-08-25",
+    "ticker": "AMWD",
+    "trigger_date": "2005-09-22",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": -0.0137,
+    "actual_return": 0.0069,
+    "actual_upside": 0.1753,
+    "days_in_region": 223,
+    "end_date": "2020-02-03",
+    "end_reason": "reversal",
+    "similarity": 0.9605,
+    "start_date": "2019-06-25",
+    "ticker": "TSEM",
+    "trigger_date": "2019-09-12",
+    "trigger_type": "runup"
+   },
+   {
+    "actual_downside": -0.2742,
+    "actual_return": -0.2742,
+    "actual_upside": 0.02,
+    "days_in_region": 95,
+    "end_date": "2018-12-10",
+    "end_reason": "reversal",
+    "similarity": 0.9601,
+    "start_date": "2018-09-06",
+    "ticker": "NEX",
+    "trigger_date": "2018-11-13",
+    "trigger_type": "shallow_runup"
+   },
+   {
+    "actual_downside": -0.0574,
+    "actual_return": -0.0574,
+    "actual_upside": 0.2056,
+    "days_in_region": 155,
+    "end_date": "2019-01-03",
+    "end_reason": "reversal",
+    "similarity": 0.96,
+    "start_date": "2018-08-01",
+    "ticker": "XENT",
+    "trigger_date": "2018-10-11",
+    "trigger_type": "runup"
+   },
+   {
+    "actual_downside": -0.2805,
+    "actual_return": 0.0874,
+    "actual_upside": 0.0874,
+    "days_in_region": 189,
+    "end_date": "2020-02-18",
+    "end_reason": "reversal",
+    "similarity": 0.96,
+    "start_date": "2019-08-13",
+    "ticker": "VG",
+    "trigger_date": "2019-09-26",
+    "trigger_type": "shallow_drawdown"
+   }
+  ],
+  "stats": {
+   "avg_max_drawdown": 0.1254,
+   "avg_similarity": 0.958,
+   "avg_trough": 0.1254,
+   "avg_upside": 0.1791,
+   "best_return": 0.5243,
+   "downside_range": [
+    -0.7313,
+    0.0
+   ],
+   "median_return": 0.0953,
+   "n_matches": 50,
+   "outcome_agreement": true,
+   "return_p25": -0.0649,
+   "return_p5": -0.3202,
+   "return_p75": 0.2293,
+   "return_p95": 0.4027,
+   "sim_weighted_win_rate": 0.64,
+   "top5_avg_trough": 0.173,
+   "top5_avg_upside": 0.1721,
+   "top_similarity": 0.97,
+   "upside_range": [
+    0.0,
+    0.5243
+   ],
+   "win_rate": 0.64,
+   "worst_return": -0.6896,
+   "years_span": 10
+  },
+  "total_matches": 50
+ },
+ "peer_group": {
+  "buckets": [
+   "Biotech Platforms, Pipelines & Collaboration Revenue",
+   "Branded Biopharma",
+   "Rare Disease, Autoimmune & Specialty Therapies"
+  ],
+  "groups": {
+   "Biotech Platforms, Pipelines & Collaboration Revenue": [
+    {
+     "market_cap_m": 3545.206,
+     "price_vs_sma200": 1.1304,
+     "return_30d": -0.0409,
+     "return_7d": -0.1077,
+     "revenue_driver": "oncology therapeutics",
+     "signal_rank": null,
+     "stock_vs_spy_20d": -0.0396,
+     "ticker": "TNGX"
+    },
+    {
+     "market_cap_m": 26259.2249,
+     "price_vs_sma200": 0.6629,
+     "return_30d": -0.0505,
+     "return_7d": -0.0222,
+     "revenue_driver": "antisense therapeutics",
+     "signal_rank": 1725,
+     "stock_vs_spy_20d": 0.0019,
+     "ticker": "IONS"
+    },
+    {
+     "market_cap_m": 4132.7652,
+     "price_vs_sma200": 0.8823,
+     "return_30d": -0.0565,
+     "return_7d": 0.0473,
+     "revenue_driver": "oligonucleotide therapeutics",
+     "signal_rank": 1330,
+     "stock_vs_spy_20d": 0.0701,
+     "ticker": "DYN"
+    },
+    {
+     "market_cap_m": 389.6505,
+     "price_vs_sma200": 0.844,
+     "return_30d": -0.1094,
+     "return_7d": -0.0446,
+     "revenue_driver": "antiviral therapeutics",
+     "signal_rank": 122,
+     "stock_vs_spy_20d": -0.1386,
+     "ticker": "ENTA"
+    },
+    {
+     "market_cap_m": 9289.1754,
+     "price_vs_sma200": 0.6626,
+     "return_30d": -0.136,
+     "return_7d": 0.0351,
+     "revenue_driver": "RNA-targeted therapeutics",
+     "signal_rank": 1103,
+     "stock_vs_spy_20d": 0.0077,
+     "ticker": "RNA"
+    },
+    {
+     "market_cap_m": 165.6827,
+     "price_vs_sma200": 0.7906,
+     "return_30d": -0.1886,
+     "return_7d": -0.1603,
+     "revenue_driver": "oligonucleotide therapeutics",
+     "signal_rank": 1754,
+     "stock_vs_spy_20d": 0.0835,
+     "ticker": "PEPG"
+    },
+    {
+     "market_cap_m": 950.2636,
+     "price_vs_sma200": 0.5125,
+     "return_30d": -0.1932,
+     "return_7d": -0.0544,
+     "revenue_driver": "antibody therapeutics",
+     "signal_rank": 1251,
+     "stock_vs_spy_20d": -0.2697,
+     "ticker": "IVVD"
+    },
+    {
+     "market_cap_m": 658.1064,
+     "price_vs_sma200": 0.4272,
+     "return_30d": -0.2813,
+     "return_7d": -0.0602,
+     "revenue_driver": "cannabinoid therapeutics",
+     "signal_rank": null,
+     "stock_vs_spy_20d": -0.1698,
+     "ticker": "IXHL"
+    },
+    {
+     "market_cap_m": 22987.836,
+     "price_vs_sma200": 0.6074,
+     "return_30d": -0.2913,
+     "return_7d": -0.2458,
+     "revenue_driver": "RNA interference therapeutics",
+     "signal_rank": 1574,
+     "stock_vs_spy_20d": -0.2543,
+     "ticker": "ALNY"
+    },
+    {
+     "market_cap_m": 987.903,
+     "price_vs_sma200": 0.6416,
+     "return_30d": -0.3,
+     "return_7d": -0.1678,
+     "revenue_driver": "gastrointestinal therapeutics",
+     "signal_rank": 1577,
+     "stock_vs_spy_20d": -0.1748,
+     "ticker": "PALI"
+    }
+   ],
+   "Branded Biopharma": [
+    {
+     "market_cap_m": 35802.6231,
+     "price_vs_sma200": 1.2435,
+     "return_30d": 0.1397,
+     "return_7d": 0.0269,
+     "revenue_driver": "neurology therapeutics",
+     "signal_rank": 1903,
+     "stock_vs_spy_20d": 0.1134,
+     "ticker": "BIIB"
+    },
+    {
+     "market_cap_m": 433186.0635,
+     "price_vs_sma200": 1.2292,
+     "return_30d": 0.1022,
+     "return_7d": 0.0065,
+     "revenue_driver": "immunology therapeutics",
+     "signal_rank": 1824,
+     "stock_vs_spy_20d": 0.112,
+     "ticker": "ABBV"
+    },
+    {
+     "market_cap_m": 621068.0651,
+     "price_vs_sma200": 1.1155,
+     "return_30d": 0.0184,
+     "return_7d": 0.0611,
+     "revenue_driver": "immunology therapeutics",
+     "signal_rank": 1832,
+     "stock_vs_spy_20d": 0.0569,
+     "ticker": "JNJ"
+    },
+    {
+     "market_cap_m": 389.6505,
+     "price_vs_sma200": 0.844,
+     "return_30d": -0.1094,
+     "return_7d": -0.0446,
+     "revenue_driver": "antiviral therapeutics",
+     "signal_rank": 122,
+     "stock_vs_spy_20d": -0.1386,
+     "ticker": "ENTA"
+    },
+    {
+     "market_cap_m": 6082.4998,
+     "price_vs_sma200": 0.8608,
+     "return_30d": -0.1166,
+     "return_7d": 0.0707,
+     "revenue_driver": "antibody therapeutics",
+     "signal_rank": 268,
+     "stock_vs_spy_20d": -0.0068,
+     "ticker": "ANAB"
+    },
+    {
+     "market_cap_m": 9289.1754,
+     "price_vs_sma200": 0.6626,
+     "return_30d": -0.136,
+     "return_7d": 0.0351,
+     "revenue_driver": "RNA-targeted therapeutics",
+     "signal_rank": 1103,
+     "stock_vs_spy_20d": 0.0077,
+     "ticker": "RNA"
+    },
+    {
+     "market_cap_m": 950.2636,
+     "price_vs_sma200": 0.5125,
+     "return_30d": -0.1932,
+     "return_7d": -0.0544,
+     "revenue_driver": "antibody therapeutics",
+     "signal_rank": 1251,
+     "stock_vs_spy_20d": -0.2697,
+     "ticker": "IVVD"
+    },
+    {
+     "market_cap_m": 658.1064,
+     "price_vs_sma200": 0.4272,
+     "return_30d": -0.2813,
+     "return_7d": -0.0602,
+     "revenue_driver": "cannabinoid therapeutics",
+     "signal_rank": null,
+     "stock_vs_spy_20d": -0.1698,
+     "ticker": "IXHL"
+    },
+    {
+     "market_cap_m": 22987.836,
+     "price_vs_sma200": 0.6074,
+     "return_30d": -0.2913,
+     "return_7d": -0.2458,
+     "revenue_driver": "RNA interference therapeutics",
+     "signal_rank": 1574,
+     "stock_vs_spy_20d": -0.2543,
+     "ticker": "ALNY"
+    },
+    {
+     "market_cap_m": 74.1359,
+     "price_vs_sma200": 0.1469,
+     "return_30d": null,
+     "return_7d": 0.01,
+     "revenue_driver": "neuroscience therapeutics",
+     "signal_rank": null,
+     "stock_vs_spy_20d": -0.7412,
+     "ticker": "BTAI"
+    }
+   ],
+   "Rare Disease, Autoimmune & Specialty Therapies": [
+    {
+     "market_cap_m": 1221.2006,
+     "price_vs_sma200": 1.4364,
+     "return_30d": 0.3174,
+     "return_7d": -0.0341,
+     "revenue_driver": "hypoglycemia therapeutics",
+     "signal_rank": 324,
+     "stock_vs_spy_20d": 0.1552,
+     "ticker": "XERS"
+    },
+    {
+     "market_cap_m": 35802.6231,
+     "price_vs_sma200": 1.2435,
+     "return_30d": 0.1397,
+     "return_7d": 0.0269,
+     "revenue_driver": "neurology therapeutics",
+     "signal_rank": 1903,
+     "stock_vs_spy_20d": 0.1134,
+     "ticker": "BIIB"
+    },
+    {
+     "market_cap_m": 433186.0635,
+     "price_vs_sma200": 1.2292,
+     "return_30d": 0.1022,
+     "return_7d": 0.0065,
+     "revenue_driver": "immunology therapeutics",
+     "signal_rank": 1824,
+     "stock_vs_spy_20d": 0.112,
+     "ticker": "ABBV"
+    },
+    {
+     "market_cap_m": 621068.0651,
+     "price_vs_sma200": 1.1155,
+     "return_30d": 0.0184,
+     "return_7d": 0.0611,
+     "revenue_driver": "immunology therapeutics",
+     "signal_rank": 1832,
+     "stock_vs_spy_20d": 0.0569,
+     "ticker": "JNJ"
+    },
+    {
+     "market_cap_m": 5728.875,
+     "price_vs_sma200": 0.975,
+     "return_30d": -0.0207,
+     "return_7d": 0.073,
+     "revenue_driver": "rare disease therapeutics",
+     "signal_rank": 85,
+     "stock_vs_spy_20d": 0.0423,
+     "ticker": "BCRX"
+    },
+    {
+     "market_cap_m": 26259.2249,
+     "price_vs_sma200": 0.6629,
+     "return_30d": -0.0505,
+     "return_7d": -0.0222,
+     "revenue_driver": "antisense therapeutics",
+     "signal_rank": 1725,
+     "stock_vs_spy_20d": 0.0019,
+     "ticker": "IONS"
+    },
+    {
+     "market_cap_m": 9289.1754,
+     "price_vs_sma200": 0.6626,
+     "return_30d": -0.136,
+     "return_7d": 0.0351,
+     "revenue_driver": "RNA-targeted therapeutics",
+     "signal_rank": 1103,
+     "stock_vs_spy_20d": 0.0077,
+     "ticker": "RNA"
+    },
+    {
+     "market_cap_m": 23.2887,
+     "price_vs_sma200": 0.431,
+     "return_30d": -0.155,
+     "return_7d": 0.094,
+     "revenue_driver": "presbyopia therapeutics",
+     "signal_rank": 1523,
+     "stock_vs_spy_20d": -0.0862,
+     "ticker": "LENZ"
+    },
+    {
+     "market_cap_m": 22987.836,
+     "price_vs_sma200": 0.6074,
+     "return_30d": -0.2913,
+     "return_7d": -0.2458,
+     "revenue_driver": "RNA interference therapeutics",
+     "signal_rank": 1574,
+     "stock_vs_spy_20d": -0.2543,
+     "ticker": "ALNY"
+    },
+    {
+     "market_cap_m": 345.6981,
+     "price_vs_sma200": 0.5687,
+     "return_30d": -0.7147,
+     "return_7d": -0.3803,
+     "revenue_driver": "immunology therapeutics",
+     "signal_rank": null,
+     "stock_vs_spy_20d": -0.1601,
+     "ticker": "ATYR"
+    }
+   ]
+  }
+ },
+ "predictions": {
+  "badge_count": 0,
+  "confidence_score": 0.225,
+  "conviction_label": "SPECULATIVE",
+  "data_quality_flags": [],
+  "ev_score": 0.0223,
+  "is_diamond": false,
+  "passes_tradability_filter": true,
+  "quality_label": "MEDIUM",
+  "quantiles": {
+   "downside_q10": -0.3819,
+   "downside_q25": -0.2432,
+   "downside_q50": -0.1447,
+   "downside_q75": -0.0511,
+   "downside_q90": -0.0103,
+   "path_volatility": 0.043,
+   "risk_reward": 1.0833,
+   "uncertainty": 0.4569,
+   "upside_q10": 0.0161,
+   "upside_q25": 0.0565,
+   "upside_q50": 0.1567,
+   "upside_q75": 0.277,
+   "upside_q90": 0.473
+  },
+  "rank": 1574,
+  "rank_score": 0.0034,
+  "tradability_filter_reasons": []
+ },
+ "profile": {
+  "_local": {
+   "dividend_yield": 0.0,
+   "eps_growth_yoy": 10.0,
+   "pe_ratio": 8.7879,
+   "revenue_growth_yoy": 0.5617,
+   "roe": 1.0989
+  },
+  "beta": 0.269,
+  "betaTTM": null,
+  "ceo": "Yvonne L. Greenstreet",
+  "companyName": "Alnylam Pharmaceuticals, Inc.",
+  "country": "US",
+  "debtToEquityTTM": null,
+  "description": "Alnylam Pharmaceuticals, Inc. is a biopharmaceutical company primarily dedicated to the discovery, development, and commercialization of innovative therapeutic solutions leveraging ribonucleic acid interference (RNAi) technology. Its robust pipeline of RNAi-based treatments addresses a range of critical therapeutic areas, including inherited genetic disorders, cardio-metabolic conditions, hepatic infectious diseases, and central nervous system (CNS) and ocular disorders. Currently, Alnylam offers several approved therapies: ONPATTRO (patisiran) for adults suffering from polyneuropathy associated with hereditary transthyretin-mediated amyloidosis; GIVLAARI for adult patients with acute hepatic porphyria (AHP); and OXLUMO (lumasiran) for primary hyperoxaluria type 1 (PH1). Beyond its commercial portfolio, the company maintains an active development pipeline. Key investigational therapies include givosiran, aimed at adolescent patients with AHP; patisiran, being explored for transthyretin amyloidosis (ATTR) with cardiomyopathy; cemdisiran for complement-mediated disorders; ALN-AAT02 for AAT deficiency-associated liver disease; ALN-HBV02 for chronic hepatitis B virus infection; Zilebesiran for hypertension; and ALN-HSD for non-alcoholic steatohepatitis (NASH). Additionally, other candidates such as Fitusiran for hemophilia and bleeding disorders, Inclisiran for hypercholesterolemia, an expanded indication for lumasiran for advanced PH1 and recurrent kidney stones, and vutrisiran for ATTR amyloidosis (currently in Phase 3 clinical trials) are also progressing. Alnylam also engages in strategic alliances with other pharmaceutical leaders. Notable collaborations include those with Regeneron Pharmaceuticals, Inc., focused on discovering and developing RNAi therapeutics for ocular and CNS targets, and with Sanofi Genzyme for broader RNAi therapeutic development and commercialization efforts. Further licensing and partnership agreements are in place with entities such as Novartis AG, Vir Biotechnology, Inc., Dicerna Pharmaceuticals, Inc., Ionis Pharmaceuticals, Inc., and PeptiDream, Inc. Established in 2002, Alnylam Pharmaceuticals maintains its corporate headquarters in Cambridge, Massachusetts.",
+  "dividendYielTTM": null,
+  "enterpriseValueOverEBITDATTM": null,
+  "exchangeShortName": "NASDAQ",
+  "fullTimeEmployees": "2500",
+  "industry": "Biotechnology",
+  "ipoDate": "2004-06-01",
+  "latest_earnings_date": "2026-10-29",
+  "marketCapTTM": null,
+  "mktCap": 23282766000,
+  "peRatioTTM": null,
+  "price": 174,
+  "priceToSalesRatioTTM": null,
+  "returnOnEquityTTM": 1.5972,
+  "revenue_description": "Alnylam develops RNA interference medicines for rare and specialty diseases. Revenue is driven by prescription volume for marketed drugs and net price realization after rebates and discounts, with pipeline approvals as the primary growth catalyst.",
+  "revenue_description_themes": [
+   "branded drug volume growth and market share",
+   "net price realization and payer rebate dynamics",
+   "pipeline approval and label expansion catalysts"
+  ],
+  "revenue_taxonomy": [
+   {
+    "bucket": "Biotech Platforms, Pipelines & Collaboration Revenue",
+    "matched_tags": [
+     "RNA interference therapeutics"
+    ],
+    "path": "Healthcare & Life Sciences › Therapeutics & Biopharma › Biotech Platforms, Pipelines & Collaboration Revenue",
+    "sector": "Healthcare & Life Sciences",
+    "segment": "Therapeutics & Biopharma"
+   },
+   {
+    "bucket": "Rare Disease, Autoimmune & Specialty Therapies",
+    "matched_tags": [
+     "rare disease drugs"
+    ],
+    "path": "Healthcare & Life Sciences › Therapeutics & Biopharma › Rare Disease, Autoimmune & Specialty Therapies",
+    "sector": "Healthcare & Life Sciences",
+    "segment": "Therapeutics & Biopharma"
+   },
+   {
+    "bucket": "Branded Biopharma",
+    "matched_tags": [
+     "branded RNAi therapeutics"
+    ],
+    "path": "Healthcare & Life Sciences › Therapeutics & Biopharma › Branded Biopharma",
+    "sector": "Healthcare & Life Sciences",
+    "segment": "Therapeutics & Biopharma"
+   }
+  ],
+  "revenue_themes": [
+   "RNA interference therapeutics",
+   "rare disease drugs",
+   "branded RNAi therapeutics"
+  ],
+  "sector": "Healthcare",
+  "website": "https://www.alnylam.com"
+ },
+ "report": null,
+ "scorecard": {
+  "headline": {
+   "avg_universe_pct": 86,
+   "label": "strong",
+   "metric_count": 8
+  },
+  "metrics": {
+   "debt_to_equity": {
+    "direction": "lower",
+    "label": "D/E Ratio",
+    "sector": "Health Care",
+    "sector_n": 287,
+    "sector_pct": 37,
+    "universe_n": 2056,
+    "universe_pct": 50,
+    "value": 0.3502
+   },
+   "eps_growth_yoy": {
+    "direction": "higher",
+    "label": "EPS Growth",
+    "sector": "Health Care",
+    "sector_n": 283,
+    "sector_pct": 98,
+    "universe_n": 1880,
+    "universe_pct": 98,
+    "value": 10.0
+   },
+   "gross_margin": {
+    "direction": "higher",
+    "label": "Gross Margin",
+    "sector": "Health Care",
+    "sector_n": 239,
+    "sector_pct": 77,
+    "universe_n": 1998,
+    "universe_pct": 86,
+    "value": 0.7728
+   },
+   "operating_margin": {
+    "direction": "higher",
+    "label": "Op. Margin",
+    "sector": "Health Care",
+    "sector_n": 239,
+    "sector_pct": 82,
+    "universe_n": 1998,
+    "universe_pct": 72,
+    "value": 0.195
+   },
+   "pe_ratio": {
+    "direction": "lower",
+    "label": "P/E",
+    "sector": "Health Care",
+    "sector_n": 112,
+    "sector_pct": 90,
+    "universe_n": 1468,
+    "universe_pct": 92,
+    "value": 8.7879
+   },
+   "revenue_growth_yoy": {
+    "direction": "higher",
+    "label": "Rev Growth",
+    "sector": "Health Care",
+    "sector_n": 251,
+    "sector_pct": 87,
+    "universe_n": 1824,
+    "universe_pct": 94,
+    "value": 0.5617
+   },
+   "roe": {
+    "direction": "higher",
+    "label": "ROE",
+    "sector": "Health Care",
+    "sector_n": 290,
+    "sector_pct": 96,
+    "universe_n": 2088,
+    "universe_pct": 97,
+    "value": 1.0989
+   },
+   "roic": {
+    "direction": "higher",
+    "label": "ROIC",
+    "sector": "Health Care",
+    "sector_n": 281,
+    "sector_pct": 99,
+    "universe_n": 2026,
+    "universe_pct": 99,
+    "value": 0.3654
+   }
+  }
+ },
+ "signal_rank": 1574,
+ "structural_analogs": {
+  "gp_core_pct": 72.4,
+  "gp_core_ratio": 1.5829,
+  "matches": [
+   {
+    "actual_downside": 0.0,
+    "actual_return": 0.1774,
+    "actual_upside": 0.1774,
+    "days_in_region": 184,
+    "end_date": "2018-12-03",
+    "end_reason": "reversal",
+    "seq_len": 184,
+    "similarity": 0.5618,
+    "start_date": "2018-05-04",
+    "ticker": "TSEM",
+    "total_distance": 0.2883,
+    "trigger_date": "2018-10-09",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": 0.0,
+    "actual_return": 0.2109,
+    "actual_upside": 0.2109,
+    "days_in_region": 173,
+    "end_date": "2020-01-09",
+    "end_reason": "reversal",
+    "seq_len": 173,
+    "similarity": 0.5562,
+    "start_date": "2019-05-01",
+    "ticker": "USNA",
+    "total_distance": 0.2933,
+    "trigger_date": "2019-10-09",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": -0.2201,
+    "actual_return": -0.2201,
+    "actual_upside": 0.1218,
+    "days_in_region": 133,
+    "end_date": "2013-02-15",
+    "end_reason": "reversal",
+    "seq_len": 133,
+    "similarity": 0.5528,
+    "start_date": "2012-07-31",
+    "ticker": "LOGM",
+    "total_distance": 0.2964,
+    "trigger_date": "2012-11-13",
+    "trigger_type": "shallow_runup"
+   },
+   {
+    "actual_downside": -0.0305,
+    "actual_return": 0.127,
+    "actual_upside": 0.127,
+    "days_in_region": 200,
+    "end_date": "2018-11-30",
+    "end_reason": "reversal",
+    "seq_len": 200,
+    "similarity": 0.55,
+    "start_date": "2018-02-16",
+    "ticker": "SAFM",
+    "total_distance": 0.2989,
+    "trigger_date": "2018-07-26",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": 0.0,
+    "actual_return": 0.1763,
+    "actual_upside": 0.1763,
+    "days_in_region": 179,
+    "end_date": "2018-11-26",
+    "end_reason": "reversal",
+    "seq_len": 179,
+    "similarity": 0.5494,
+    "start_date": "2018-04-26",
+    "ticker": "PPC",
+    "total_distance": 0.2994,
+    "trigger_date": "2018-10-12",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": -0.0085,
+    "actual_return": 0.1463,
+    "actual_upside": 0.1463,
+    "days_in_region": 115,
+    "end_date": "2016-12-16",
+    "end_reason": "reversal",
+    "seq_len": 115,
+    "similarity": 0.5454,
+    "start_date": "2016-08-17",
+    "ticker": "MYGN",
+    "total_distance": 0.3031,
+    "trigger_date": "2016-09-14",
+    "trigger_type": "compression"
+   },
+   {
+    "actual_downside": -0.0394,
+    "actual_return": 0.1983,
+    "actual_upside": 0.1983,
+    "days_in_region": 142,
+    "end_date": "2011-06-02",
+    "end_reason": "reversal",
+    "seq_len": 142,
+    "similarity": 0.5448,
+    "start_date": "2010-12-20",
+    "ticker": "STRA",
+    "total_distance": 0.3036,
+    "trigger_date": "2011-04-15",
+    "trigger_type": "severe_drawdown"
+   },
+   {
+    "actual_downside": -0.1992,
+    "actual_return": -0.1992,
+    "actual_upside": 0.0765,
+    "days_in_region": 125,
+    "end_date": "2007-04-30",
+    "end_reason": "reversal",
+    "seq_len": 125,
+    "similarity": 0.5448,
+    "start_date": "2006-11-01",
+    "ticker": "OCR",
+    "total_distance": 0.3036,
+    "trigger_date": "2007-02-06",
+    "trigger_type": "shallow_runup"
+   },
+   {
+    "actual_downside": -0.1313,
+    "actual_return": 0.159,
+    "actual_upside": 0.159,
+    "days_in_region": 181,
+    "end_date": "2022-03-29",
+    "end_reason": "reversal",
+    "seq_len": 181,
+    "similarity": 0.5394,
+    "start_date": "2021-09-13",
+    "ticker": "ZM",
+    "total_distance": 0.3086,
+    "trigger_date": "2022-03-04",
+    "trigger_type": "severe_drawdown"
+   },
+   {
+    "actual_downside": -0.161,
+    "actual_return": 0.1865,
+    "actual_upside": 0.1865,
+    "days_in_region": 115,
+    "end_date": "2015-05-27",
+    "end_reason": "reversal",
+    "seq_len": 115,
+    "similarity": 0.5393,
+    "start_date": "2014-08-22",
+    "ticker": "PRKS",
+    "total_distance": 0.3088,
+    "trigger_date": "2014-09-19",
+    "trigger_type": "compression"
+   }
+  ],
+  "panel": {
+   "edge": -0.0385,
+   "hit_hi": 0.635,
+   "hit_lo": 0.46,
+   "hit_rate": 0.549,
+   "median_final": 0.1118,
+   "median_pain": 0.112,
+   "n": 51,
+   "n_eff": 51.0,
+   "p25_final": -0.1562,
+   "p_pain_gt5": 0.569,
+   "return_to_pain": 0.847
+  },
+  "stats": {
+   "avg_similarity": 0.493,
+   "avg_trough": 0.1391,
+   "avg_upside": 0.1885,
+   "median_pain": 0.0991,
+   "median_return": 0.0155,
+   "n_matches": 200,
+   "p25_return": -0.16,
+   "p_pain_gt5": 0.635,
+   "return_to_pain": 0.13,
+   "top5_avg_trough": 0.0501,
+   "top5_avg_upside": 0.1627,
+   "top_similarity": 0.562,
+   "win_rate": 0.535
+  },
+  "total_matches": 200
+ },
+ "ticker": "ALNY",
+ "trending": {
+  "acceleration": -0.0176,
+  "avg_vol_20d": 1986926.7144,
+  "base_high_120": 339.41,
+  "breakout_confirmed": 0,
+  "close": 205.52,
+  "momentum_score": 0.0179,
+  "momentum_start": "2026-07-30",
+  "range_20": 0.8865,
+  "range_50": 0.8865,
+  "rank": 2009,
+  "rank_down": 9,
+  "rank_up": null,
+  "ret_120": -0.3737,
+  "ret_20": -0.3429,
+  "ret_60": -0.3175,
+  "rundown_score": 0.9777,
+  "score_date": "2026-07-31",
+  "slope_20": -0.0199,
+  "slope_60": -0.0023,
+  "stage": "rundown",
+  "stage_label": "rundown",
+  "ticker": "ALNY",
+  "total_score": 0.0071,
+  "trend_ratio": 0.6363,
+  "vcp_detected": 0,
+  "vcp_score": 0.0
+ }
+}

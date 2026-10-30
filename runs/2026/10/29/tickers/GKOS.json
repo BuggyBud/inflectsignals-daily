@@ -1,0 +1,1000 @@
+{
+ "date": "2026-10-29",
+ "detected_regions": {
+  "primary": {
+   "days_in_region": 111,
+   "region_start": "2026-08-19",
+   "trigger_date": "2026-09-23",
+   "trigger_type": "drawdown"
+  },
+  "secondary": [
+   {
+    "confidence_score": 0.5918,
+    "downside_q50": -0.0924,
+    "ev_score": 0.1009,
+    "region_start": "2026-06-01",
+    "seq_len": 166,
+    "trigger_date": "2026-10-08",
+    "trigger_type": "runup",
+    "upside_q25": 0.072,
+    "upside_q50": 0.1742,
+    "upside_q75": 0.3184
+   }
+  ]
+ },
+ "feature_attribution": {
+  "macro_driver_count": 15,
+  "risk_flags": [
+   "high_volatility"
+  ],
+  "top_drivers": [
+   {
+    "direction": "negative",
+    "feature": "dollar_volume",
+    "feature_value": 1311889024.0,
+    "importance": 0.0006,
+    "importance_pct": 0.4465,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "positive",
+    "feature": "price_vs_sma200",
+    "feature_value": 1.7223,
+    "importance": 0.0002,
+    "importance_pct": 0.191,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "positive",
+    "feature": "price_vs_low_52w",
+    "feature_value": 3.1454,
+    "importance": 0.0002,
+    "importance_pct": 0.1321,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "positive",
+    "feature": "sector_return_60d",
+    "feature_value": -0.0429,
+    "importance": 0.0002,
+    "importance_pct": 0.1258,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "positive",
+    "feature": "historical_recovery_rate",
+    "feature_value": 0.4782,
+    "importance": 0.0001,
+    "importance_pct": 0.1046,
+    "method": "integrated_gradients"
+   }
+  ]
+ },
+ "fundamentals": {
+  "accrual": -0.2493,
+  "adx_14": 45.6533,
+  "altman_z_score": 33.6608,
+  "amihud_illiquidity": 0.0001,
+  "avg_volume": 924882.957,
+  "beta_252d": 0.1257,
+  "book_value_per_share": 12.1356,
+  "correlation_spy_60d": 0.0151,
+  "current_liabilities": 126.726,
+  "current_ratio": 4.574,
+  "daily_earnings_yield": -0.0122,
+  "daily_fcf_yield": 0.0036,
+  "daily_pb": 19.4163,
+  "daily_pe": -82.0196,
+  "daily_ps": 20.1741,
+  "days_since_52w_high": 0.0,
+  "debt_ebitda": -4.2698,
+  "debt_to_equity": 0.1422,
+  "dividend_yield": 0.0,
+  "dollar_volume_20d_avg": 242468739.1033,
+  "earnings_quality": 10.0,
+  "ebitda_growth_yoy": 0.5016,
+  "enterprise_value": 13692.1228,
+  "eps_basic": 0.03,
+  "eps_cagr_3y": -2.0301,
+  "eps_cagr_5y": -2.2817,
+  "eps_diluted": 0.03,
+  "eps_growth_accel": 0.0606,
+  "eps_growth_qoq": 1.0968,
+  "eps_growth_yoy": -0.9091,
+  "eps_growth_yoy_q2": -0.9697,
+  "eps_growth_yoy_q3": -0.4199,
+  "eps_growth_yoy_q4": -0.1601,
+  "eps_growth_yoy_q5": 0.4797,
+  "eps_growth_yoy_q6": 0.4844,
+  "eps_growth_yoy_q7": 0.1979,
+  "eps_growth_yoy_q8": -0.0108,
+  "eps_history_8q": [
+   -0.6,
+   -0.32,
+   -0.34,
+   -0.28,
+   -2.32,
+   -0.34,
+   -0.31,
+   0.03
+  ],
+  "eps_ttm": -2.9564,
+  "ev_to_ebitda": -573.2519,
+  "ev_to_fcf": 375.2192,
+  "ev_to_sales": 64.8824,
+  "fcf_growth_yoy": 1.9313,
+  "fcf_margin": 0.1729,
+  "fcf_per_share": 0.6174,
+  "gross_margin": 0.8237,
+  "gross_margin_change_yoy": -0.0077,
+  "gross_margin_history": [
+   0.8509,
+   0.8532,
+   0.8497,
+   0.8304,
+   0.8218,
+   0.8237
+  ],
+  "inc_roic": 0.5893,
+  "interest_coverage": -4.9585,
+  "is_pre_revenue": false,
+  "margin_vs_sector_median": null,
+  "market_cap_ratio": 13926.8388,
+  "net_income": 2.018,
+  "net_margin": -0.246,
+  "operating_income": 0.828,
+  "operating_margin": -0.0792,
+  "operating_margin_change_yoy": 0.1186,
+  "pb_ratio": 19.9809,
+  "pe_percentile_1y": 0.996,
+  "pe_ratio": -61.7109,
+  "peg_trailing": 0.6788,
+  "piotroski_f_score": 4.0,
+  "price_vs_high_52w": 1.0,
+  "price_vs_sma200": 1.7223,
+  "ps_percentile_1y": 0.004,
+  "ps_ratio": 15.0948,
+  "quarter_labels_8q": [
+   "Q4 '24",
+   "Q1 '25",
+   "Q2 '25",
+   "Q3 '25",
+   "Q4 '25",
+   "Q1 '26",
+   "Q2 '26",
+   "Q3 '26"
+  ],
+  "quarterly_eps_growth_yoy": 1.1071,
+  "quarterly_eps_growth_yoy_8q": [
+   0.2,
+   0.6098,
+   0.66,
+   0.2821,
+   -2.8667,
+   -0.0625,
+   0.0882,
+   1.1071
+  ],
+  "quarterly_revenue_growth_yoy": 0.5803,
+  "quarterly_revenue_growth_yoy_8q": [
+   0.2809,
+   0.2458,
+   0.2971,
+   0.3814,
+   0.3566,
+   0.4116,
+   0.4954,
+   0.5803
+  ],
+  "revenue_cagr_3y": 0.315,
+  "revenue_cagr_5y": 0.1862,
+  "revenue_growth_accel": 0.0539,
+  "revenue_growth_qoq": 0.137,
+  "revenue_growth_yoy": 0.4694,
+  "revenue_growth_yoy_q2": 0.4155,
+  "revenue_growth_yoy_q3": 0.363,
+  "revenue_growth_yoy_q4": 0.3233,
+  "revenue_growth_yoy_q5": 0.3038,
+  "revenue_growth_yoy_q6": 0.267,
+  "revenue_growth_yoy_q7": 0.2392,
+  "revenue_growth_yoy_q8": 0.2185,
+  "revenue_history_8q": [
+   105.499,
+   106.664,
+   124.12,
+   133.537,
+   143.121,
+   150.571,
+   185.61,
+   211.03
+  ],
+  "revenue_per_share": 3.5704,
+  "roa": -0.1787,
+  "roce": -0.0655,
+  "roe": -0.2426,
+  "roic": -0.1991,
+  "rsi_14": 95.0643,
+  "sector_momentum": 0.0566,
+  "share_dilution_1y": 0.0117,
+  "stock_vs_sector_20d": 0.4724,
+  "stock_vs_spy_20d": 0.4791,
+  "total_assets": 979.529,
+  "vol_regime": 1.5832,
+  "volatility_20d": 0.0781,
+  "volatility_60d": 0.0493,
+  "w52_high": 243.71,
+  "w52_low": 76.875
+ },
+ "market_characters": [
+  {
+   "id": "g1",
+   "name": "Steady Climbers"
+  },
+  {
+   "id": "g9",
+   "name": "Narrative Premium"
+  }
+ ],
+ "model_analogs": {
+  "matches": [
+   {
+    "actual_downside": -0.2582,
+    "actual_return": -0.2582,
+    "actual_upside": 0.1631,
+    "days_in_region": 161,
+    "end_date": "2019-01-16",
+    "end_reason": "reversal",
+    "similarity": 0.9717,
+    "start_date": "2018-08-08",
+    "ticker": "KEYW",
+    "trigger_date": "2018-09-05",
+    "trigger_type": "compression"
+   },
+   {
+    "actual_downside": -0.0636,
+    "actual_return": 0.1312,
+    "actual_upside": 0.1312,
+    "days_in_region": 132,
+    "end_date": "2020-01-23",
+    "end_reason": "reversal",
+    "similarity": 0.9711,
+    "start_date": "2019-09-13",
+    "ticker": "CEVA",
+    "trigger_date": "2019-10-03",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": -0.3519,
+    "actual_return": -0.3519,
+    "actual_upside": 0.1472,
+    "days_in_region": 136,
+    "end_date": "2016-01-08",
+    "end_reason": "reversal",
+    "similarity": 0.9702,
+    "start_date": "2015-08-25",
+    "ticker": "QNST",
+    "trigger_date": "2015-09-04",
+    "trigger_type": "shallow_runup"
+   },
+   {
+    "actual_downside": -0.0702,
+    "actual_return": 0.1841,
+    "actual_upside": 0.1841,
+    "days_in_region": 42,
+    "end_date": "2021-11-05",
+    "end_reason": "reversal",
+    "similarity": 0.9699,
+    "start_date": "2021-09-24",
+    "ticker": "VRAY",
+    "trigger_date": "2021-10-08",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": -0.3864,
+    "actual_return": -0.3864,
+    "actual_upside": 0.0,
+    "days_in_region": 61,
+    "end_date": "2018-12-24",
+    "end_reason": "reversal",
+    "similarity": 0.9694,
+    "start_date": "2018-10-24",
+    "ticker": "CLNE",
+    "trigger_date": "2018-11-08",
+    "trigger_type": "shallow_runup"
+   },
+   {
+    "actual_downside": -0.0652,
+    "actual_return": 1.2923,
+    "actual_upside": 1.7959,
+    "days_in_region": 97,
+    "end_date": "2014-03-03",
+    "end_reason": "reversal",
+    "similarity": 0.969,
+    "start_date": "2013-11-26",
+    "ticker": "ABUS",
+    "trigger_date": "2013-12-24",
+    "trigger_type": "compression"
+   },
+   {
+    "actual_downside": -0.1017,
+    "actual_return": -0.0039,
+    "actual_upside": 0.1573,
+    "days_in_region": 213,
+    "end_date": "2019-02-08",
+    "end_reason": "reversal",
+    "similarity": 0.9686,
+    "start_date": "2018-07-10",
+    "ticker": "GCO",
+    "trigger_date": "2018-11-14",
+    "trigger_type": "shallow_runup"
+   },
+   {
+    "actual_downside": -0.0773,
+    "actual_return": 0.1705,
+    "actual_upside": 0.1705,
+    "days_in_region": 94,
+    "end_date": "2006-05-05",
+    "end_reason": "reversal",
+    "similarity": 0.9686,
+    "start_date": "2006-01-31",
+    "ticker": "ASGN",
+    "trigger_date": "2006-03-03",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": -0.5688,
+    "actual_return": -0.5688,
+    "actual_upside": 0.0,
+    "days_in_region": 74,
+    "end_date": "2018-12-24",
+    "end_reason": "reversal",
+    "similarity": 0.9685,
+    "start_date": "2018-10-11",
+    "ticker": "CVRR",
+    "trigger_date": "2018-11-01",
+    "trigger_type": "shallow_runup"
+   },
+   {
+    "actual_downside": -0.309,
+    "actual_return": -0.309,
+    "actual_upside": 0.0188,
+    "days_in_region": 52,
+    "end_date": "2005-11-10",
+    "end_reason": "reversal",
+    "similarity": 0.9685,
+    "start_date": "2005-09-19",
+    "ticker": "QLTY",
+    "trigger_date": "2005-09-28",
+    "trigger_type": "shallow_runup"
+   }
+  ],
+  "stats": {
+   "avg_max_drawdown": 0.1504,
+   "avg_similarity": 0.966,
+   "avg_trough": 0.1504,
+   "avg_upside": 0.1866,
+   "best_return": 1.2923,
+   "downside_range": [
+    -0.5688,
+    0.0
+   ],
+   "median_return": -0.0432,
+   "n_matches": 50,
+   "outcome_agreement": false,
+   "return_p25": -0.1827,
+   "return_p5": -0.3484,
+   "return_p75": 0.1248,
+   "return_p95": 0.4465,
+   "sim_weighted_win_rate": 0.4,
+   "top5_avg_trough": 0.2261,
+   "top5_avg_upside": 0.1251,
+   "top_similarity": 0.972,
+   "upside_range": [
+    0.0,
+    1.7959
+   ],
+   "win_rate": 0.4,
+   "worst_return": -0.5688,
+   "years_span": 17
+  },
+  "total_matches": 50
+ },
+ "peer_group": {
+  "buckets": [
+   "Medical Devices, Implants & Procedure Equipment",
+   "Rare Disease, Autoimmune & Specialty Therapies"
+  ],
+  "groups": {
+   "Medical Devices, Implants & Procedure Equipment": [
+    {
+     "market_cap_m": 10420.4321,
+     "price_vs_sma200": 1.7223,
+     "return_30d": 0.5022,
+     "return_7d": 0.3981,
+     "revenue_driver": "glaucoma surgical devices",
+     "signal_rank": 731,
+     "stock_vs_spy_20d": 0.4791,
+     "ticker": "GKOS"
+    },
+    {
+     "market_cap_m": 261.717,
+     "price_vs_sma200": 1.0141,
+     "return_30d": 0.264,
+     "return_7d": 0.0218,
+     "revenue_driver": "insulin delivery devices",
+     "signal_rank": 27,
+     "stock_vs_spy_20d": 0.126,
+     "ticker": "EMBC"
+    },
+    {
+     "market_cap_m": 6138.1047,
+     "price_vs_sma200": 1.1313,
+     "return_30d": 0.1258,
+     "return_7d": 0.0781,
+     "revenue_driver": "surgical instruments",
+     "signal_rank": 1625,
+     "stock_vs_spy_20d": 0.1142,
+     "ticker": "TFX"
+    },
+    {
+     "market_cap_m": 50467.2519,
+     "price_vs_sma200": 1.1963,
+     "return_30d": 0.0935,
+     "return_7d": 0.0234,
+     "revenue_driver": "medication delivery devices",
+     "signal_rank": 1934,
+     "stock_vs_spy_20d": 0.1068,
+     "ticker": "BDX"
+    },
+    {
+     "market_cap_m": 5537.0931,
+     "price_vs_sma200": 1.2141,
+     "return_30d": 0.0914,
+     "return_7d": 0.0242,
+     "revenue_driver": "electrophysiology devices",
+     "signal_rank": 217,
+     "stock_vs_spy_20d": 0.077,
+     "ticker": "MMSI"
+    },
+    {
+     "market_cap_m": 1857.9243,
+     "price_vs_sma200": 1.6457,
+     "return_30d": 0.0568,
+     "return_7d": 0.0834,
+     "revenue_driver": "cardiac ablation devices",
+     "signal_rank": 737,
+     "stock_vs_spy_20d": 0.1589,
+     "ticker": "ATRC"
+    },
+    {
+     "market_cap_m": 908.695,
+     "price_vs_sma200": 0.6436,
+     "return_30d": 0.0295,
+     "return_7d": -0.0279,
+     "revenue_driver": "sleep therapy devices",
+     "signal_rank": 406,
+     "stock_vs_spy_20d": 0.037,
+     "ticker": "AHCO"
+    },
+    {
+     "market_cap_m": 1417.0957,
+     "price_vs_sma200": 1.1044,
+     "return_30d": -0.0089,
+     "return_7d": -0.0391,
+     "revenue_driver": "orthopedic surgical instruments",
+     "signal_rank": 485,
+     "stock_vs_spy_20d": -0.0116,
+     "ticker": "CNMD"
+    },
+    {
+     "market_cap_m": 64708.5933,
+     "price_vs_sma200": 0.7519,
+     "return_30d": -0.0197,
+     "return_7d": -0.0634,
+     "revenue_driver": "interventional medical devices",
+     "signal_rank": 2031,
+     "stock_vs_spy_20d": -0.0195,
+     "ticker": "BSX"
+    },
+    {
+     "market_cap_m": 462.676,
+     "price_vs_sma200": 0.9906,
+     "return_30d": -0.1965,
+     "return_7d": 0.0457,
+     "revenue_driver": "peripheral vascular devices",
+     "signal_rank": 1190,
+     "stock_vs_spy_20d": -0.1902,
+     "ticker": "ANGO"
+    }
+   ],
+   "Rare Disease, Autoimmune & Specialty Therapies": [
+    {
+     "market_cap_m": 10420.4321,
+     "price_vs_sma200": 1.7223,
+     "return_30d": 0.5022,
+     "return_7d": 0.3981,
+     "revenue_driver": "glaucoma surgical devices",
+     "signal_rank": 731,
+     "stock_vs_spy_20d": 0.4791,
+     "ticker": "GKOS"
+    },
+    {
+     "market_cap_m": 1909.7835,
+     "price_vs_sma200": 1.1749,
+     "return_30d": 0.1077,
+     "return_7d": 0.0161,
+     "revenue_driver": "PYRUKYND sales",
+     "signal_rank": 774,
+     "stock_vs_spy_20d": 0.1392,
+     "ticker": "AGIO"
+    },
+    {
+     "market_cap_m": 433186.0635,
+     "price_vs_sma200": 1.2292,
+     "return_30d": 0.1022,
+     "return_7d": 0.0065,
+     "revenue_driver": "immunology therapeutics",
+     "signal_rank": 1824,
+     "stock_vs_spy_20d": 0.112,
+     "ticker": "ABBV"
+    },
+    {
+     "market_cap_m": 650.871,
+     "price_vs_sma200": 0.9385,
+     "return_30d": 0.0776,
+     "return_7d": 0.0336,
+     "revenue_driver": "pneumatic compression devices",
+     "signal_rank": 804,
+     "stock_vs_spy_20d": 0.1128,
+     "ticker": "TCMD"
+    },
+    {
+     "market_cap_m": 972.039,
+     "price_vs_sma200": 1.4079,
+     "return_30d": 0.0271,
+     "return_7d": 0.145,
+     "revenue_driver": "ophthalmic surgical drugs",
+     "signal_rank": 1439,
+     "stock_vs_spy_20d": 0.019,
+     "ticker": "OMER"
+    },
+    {
+     "market_cap_m": 4107.8657,
+     "price_vs_sma200": 0.6452,
+     "return_30d": -0.1712,
+     "return_7d": 0.2008,
+     "revenue_driver": "CKD anemia drugs",
+     "signal_rank": 953,
+     "stock_vs_spy_20d": -0.1549,
+     "ticker": "AKBA"
+    },
+    {
+     "market_cap_m": 343.8419,
+     "price_vs_sma200": 0.8294,
+     "return_30d": -0.1843,
+     "return_7d": -0.0087,
+     "revenue_driver": "rare disease gene therapies",
+     "signal_rank": 801,
+     "stock_vs_spy_20d": -0.0968,
+     "ticker": "ABEO"
+    },
+    {
+     "market_cap_m": 14617.3248,
+     "price_vs_sma200": 0.8755,
+     "return_30d": -0.2437,
+     "return_7d": 0.0157,
+     "revenue_driver": "CNS drugs",
+     "signal_rank": 1324,
+     "stock_vs_spy_20d": 0.0367,
+     "ticker": "ACAD"
+    },
+    {
+     "market_cap_m": 465.1911,
+     "price_vs_sma200": 0.6306,
+     "return_30d": -0.2775,
+     "return_7d": -0.0602,
+     "revenue_driver": "allogeneic cell and gene therapy",
+     "signal_rank": 1112,
+     "stock_vs_spy_20d": -0.1953,
+     "ticker": "ALLO"
+    },
+    {
+     "market_cap_m": 3443.7301,
+     "price_vs_sma200": 0.5575,
+     "return_30d": -0.5224,
+     "return_7d": -0.1024,
+     "revenue_driver": "ophthalmic drug development",
+     "signal_rank": null,
+     "stock_vs_spy_20d": -0.3831,
+     "ticker": "ALDX"
+    }
+   ]
+  }
+ },
+ "predictions": {
+  "badge_count": 0,
+  "confidence_score": 0.2403,
+  "conviction_label": "SPECULATIVE",
+  "data_quality_flags": [],
+  "ev_score": 0.0706,
+  "is_diamond": false,
+  "passes_tradability_filter": true,
+  "quality_label": "MEDIUM",
+  "quantiles": {
+   "downside_q10": -0.3454,
+   "downside_q25": -0.2098,
+   "downside_q50": -0.1273,
+   "downside_q75": -0.0412,
+   "downside_q90": -0.0032,
+   "path_volatility": 0.0413,
+   "risk_reward": 1.4223,
+   "uncertainty": 0.5233,
+   "upside_q10": 0.0208,
+   "upside_q25": 0.0674,
+   "upside_q50": 0.1811,
+   "upside_q75": 0.3208,
+   "upside_q90": 0.5441
+  },
+  "rank": 731,
+  "rank_score": 0.0231,
+  "tradability_filter_reasons": []
+ },
+ "profile": {
+  "_local": {
+   "dividend_yield": 0.0,
+   "eps_growth_yoy": -0.9091,
+   "pe_ratio": -61.7109,
+   "revenue_growth_yoy": 0.4694,
+   "roe": -0.2426
+  },
+  "beta": 0.695,
+  "betaTTM": null,
+  "ceo": "Thomas William Burns",
+  "companyName": "Glaukos Corporation",
+  "country": "US",
+  "debtToEquityTTM": null,
+  "description": "Glaukos Corporation operates as an ophthalmic medical technology and pharmaceutical enterprise, primarily focused on pioneering novel therapies for glaucoma, corneal disorders, and retinal diseases. The company offers a range of micro-bypass stents, including iStent, iStent inject, and iStent inject W. These devices are designed to enhance aqueous humor outflow, being inserted during cataract surgery to treat mild-to-moderate open-angle glaucoma. Its promising product pipeline features iStent Infinite, a three-stent system intended for standalone use in patients with refractory glaucoma, as well as iDose TR, a targeted injectable implant that utilizes Glaukos's micro-scale device platform to deliver therapeutic levels of medication. The company distributes its products through a direct sales organization and a network of distributors, serving markets across the United States and internationally. Glaukos Corporation, founded in 1998, is headquartered in San Clemente, California.",
+  "dividendYielTTM": null,
+  "enterpriseValueOverEBITDATTM": null,
+  "exchangeShortName": "NYSE",
+  "fullTimeEmployees": "1094",
+  "industry": "Medical - Devices",
+  "ipoDate": "2015-06-25",
+  "latest_earnings_date": "2026-10-28",
+  "marketCapTTM": null,
+  "mktCap": 14302416072,
+  "peRatioTTM": null,
+  "price": 242.48,
+  "priceToSalesRatioTTM": null,
+  "returnOnEquityTTM": -0.2491,
+  "revenue_description": "Glaukos sells ophthalmology devices and therapies for glaucoma and related eye conditions. Revenue is driven mainly by device placements plus recurring consumables, sensors, tests, or procedure-linked usage tied to its installed base.",
+  "revenue_description_themes": [
+   "MIGS procedure adoption",
+   "corneal therapy expansion",
+   "international market growth"
+  ],
+  "revenue_taxonomy": [
+   {
+    "bucket": "Medical Devices, Implants & Procedure Equipment",
+    "matched_tags": [
+     "glaucoma surgical devices",
+     "corneal cross-linking"
+    ],
+    "path": "Healthcare & Life Sciences › Devices Diagnostics & Tools › Medical Devices, Implants & Procedure Equipment",
+    "sector": "Healthcare & Life Sciences",
+    "segment": "Devices Diagnostics & Tools"
+   },
+   {
+    "bucket": "Rare Disease, Autoimmune & Specialty Therapies",
+    "matched_tags": [
+     "ophthalmic drug delivery"
+    ],
+    "path": "Healthcare & Life Sciences › Therapeutics & Biopharma › Rare Disease, Autoimmune & Specialty Therapies",
+    "sector": "Healthcare & Life Sciences",
+    "segment": "Therapeutics & Biopharma"
+   }
+  ],
+  "revenue_themes": [
+   "glaucoma surgical devices",
+   "corneal cross-linking",
+   "ophthalmic drug delivery"
+  ],
+  "sector": "Healthcare",
+  "website": "https://www.glaukos.com"
+ },
+ "report": null,
+ "scorecard": {
+  "headline": {
+   "avg_universe_pct": 45,
+   "label": "mixed",
+   "metric_count": 7
+  },
+  "metrics": {
+   "debt_to_equity": {
+    "direction": "lower",
+    "label": "D/E Ratio",
+    "sector": "Industrials",
+    "sector_n": 357,
+    "sector_pct": 67,
+    "universe_n": 2056,
+    "universe_pct": 64,
+    "value": 0.1422
+   },
+   "eps_growth_yoy": {
+    "direction": "higher",
+    "label": "EPS Growth",
+    "sector": "Industrials",
+    "sector_n": 352,
+    "sector_pct": 11,
+    "universe_n": 1880,
+    "universe_pct": 12,
+    "value": -0.9091
+   },
+   "gross_margin": {
+    "direction": "higher",
+    "label": "Gross Margin",
+    "sector": "Industrials",
+    "sector_n": 337,
+    "sector_pct": 95,
+    "universe_n": 1998,
+    "universe_pct": 92,
+    "value": 0.8237
+   },
+   "operating_margin": {
+    "direction": "higher",
+    "label": "Op. Margin",
+    "sector": "Industrials",
+    "sector_n": 337,
+    "sector_pct": 11,
+    "universe_n": 1998,
+    "universe_pct": 13,
+    "value": -0.0792
+   },
+   "revenue_growth_yoy": {
+    "direction": "higher",
+    "label": "Rev Growth",
+    "sector": "Industrials",
+    "sector_n": 333,
+    "sector_pct": 92,
+    "universe_n": 1824,
+    "universe_pct": 92,
+    "value": 0.4694
+   },
+   "roe": {
+    "direction": "higher",
+    "label": "ROE",
+    "sector": "Industrials",
+    "sector_n": 361,
+    "sector_pct": 18,
+    "universe_n": 2088,
+    "universe_pct": 16,
+    "value": -0.2426
+   },
+   "roic": {
+    "direction": "higher",
+    "label": "ROIC",
+    "sector": "Industrials",
+    "sector_n": 351,
+    "sector_pct": 29,
+    "universe_n": 2026,
+    "universe_pct": 29,
+    "value": 0.0024
+   }
+  }
+ },
+ "signal_rank": 731,
+ "structural_analogs": {
+  "gp_core_pct": 80.9,
+  "gp_core_ratio": 1.7518,
+  "matches": [
+   {
+    "actual_downside": -0.0267,
+    "actual_return": 0.2446,
+    "actual_upside": 0.2446,
+    "days_in_region": 95,
+    "end_date": "2005-11-25",
+    "end_reason": "reversal",
+    "seq_len": 95,
+    "similarity": 0.5383,
+    "start_date": "2005-08-02",
+    "ticker": "CME",
+    "total_distance": 0.3097,
+    "trigger_date": "2005-08-17",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": -0.1278,
+    "actual_return": 0.0528,
+    "actual_upside": 0.0528,
+    "days_in_region": 108,
+    "end_date": "2022-02-09",
+    "end_reason": "reversal",
+    "seq_len": 108,
+    "similarity": 0.5315,
+    "start_date": "2021-11-08",
+    "ticker": "AZTA",
+    "total_distance": 0.316,
+    "trigger_date": "2022-01-14",
+    "trigger_type": "severe_drawdown"
+   },
+   {
+    "actual_downside": -0.1019,
+    "actual_return": 0.0191,
+    "actual_upside": 0.0207,
+    "days_in_region": 112,
+    "end_date": "1996-01-02",
+    "end_reason": "reversal",
+    "seq_len": 112,
+    "similarity": 0.529,
+    "start_date": "1995-09-19",
+    "ticker": "STAR",
+    "total_distance": 0.3184,
+    "trigger_date": "1995-10-27",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": 0.0,
+    "actual_return": 0.1447,
+    "actual_upside": 0.1447,
+    "days_in_region": 93,
+    "end_date": "2017-11-24",
+    "end_reason": "reversal",
+    "seq_len": 93,
+    "similarity": 0.5288,
+    "start_date": "2017-09-13",
+    "ticker": "ATHM",
+    "total_distance": 0.3186,
+    "trigger_date": "2017-10-27",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": -0.2944,
+    "actual_return": -0.1619,
+    "actual_upside": 0.0348,
+    "days_in_region": 104,
+    "end_date": "2021-12-30",
+    "end_reason": "reversal",
+    "seq_len": 104,
+    "similarity": 0.5266,
+    "start_date": "2021-08-24",
+    "ticker": "HSKA",
+    "total_distance": 0.3207,
+    "trigger_date": "2021-10-25",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": -0.0206,
+    "actual_return": 0.4381,
+    "actual_upside": 0.4381,
+    "days_in_region": 96,
+    "end_date": "2004-06-01",
+    "end_reason": "reversal",
+    "seq_len": 96,
+    "similarity": 0.5261,
+    "start_date": "2004-02-12",
+    "ticker": "OME",
+    "total_distance": 0.3212,
+    "trigger_date": "2004-03-22",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": -0.0047,
+    "actual_return": 0.7032,
+    "actual_upside": 0.7032,
+    "days_in_region": 105,
+    "end_date": "1999-12-07",
+    "end_reason": "reversal",
+    "seq_len": 105,
+    "similarity": 0.5254,
+    "start_date": "1999-07-19",
+    "ticker": "TDS",
+    "total_distance": 0.3218,
+    "trigger_date": "1999-08-06",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": 0.0,
+    "actual_return": 0.3795,
+    "actual_upside": 0.3795,
+    "days_in_region": 107,
+    "end_date": "1995-07-26",
+    "end_reason": "reversal",
+    "seq_len": 107,
+    "similarity": 0.5223,
+    "start_date": "1995-04-17",
+    "ticker": "HLYW",
+    "total_distance": 0.3248,
+    "trigger_date": "1995-05-02",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": -0.0747,
+    "actual_return": 0.125,
+    "actual_upside": 0.125,
+    "days_in_region": 104,
+    "end_date": "2004-06-24",
+    "end_reason": "reversal",
+    "seq_len": 104,
+    "similarity": 0.5217,
+    "start_date": "2004-03-05",
+    "ticker": "CHS",
+    "total_distance": 0.3253,
+    "trigger_date": "2004-04-30",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": -0.0197,
+    "actual_return": 0.2356,
+    "actual_upside": 0.2356,
+    "days_in_region": 105,
+    "end_date": "2007-11-05",
+    "end_reason": "reversal",
+    "seq_len": 105,
+    "similarity": 0.5204,
+    "start_date": "2007-07-17",
+    "ticker": "SINA",
+    "total_distance": 0.3266,
+    "trigger_date": "2007-08-10",
+    "trigger_type": "drawdown"
+   }
+  ],
+  "panel": {
+   "edge": 0.0791,
+   "hit_hi": 0.798,
+   "hit_lo": 0.639,
+   "hit_rate": 0.725,
+   "median_final": 0.1257,
+   "median_pain": 0.0573,
+   "n": 51,
+   "n_eff": 51.0,
+   "p25_final": -0.0181,
+   "p_pain_gt5": 0.549,
+   "return_to_pain": 1.626
+  },
+  "stats": {
+   "avg_similarity": 0.488,
+   "avg_trough": 0.0971,
+   "avg_upside": 0.2026,
+   "median_pain": 0.0599,
+   "median_return": 0.1011,
+   "n_matches": 200,
+   "p25_return": -0.0795,
+   "p_pain_gt5": 0.53,
+   "return_to_pain": 1.265,
+   "top5_avg_trough": 0.1102,
+   "top5_avg_upside": 0.0995,
+   "top_similarity": 0.538,
+   "win_rate": 0.645
+  },
+  "total_matches": 200
+ },
+ "ticker": "GKOS",
+ "trending": {
+  "acceleration": -0.0094,
+  "avg_vol_20d": 649061.6434,
+  "base_high_120": 189.55,
+  "breakout_confirmed": 0,
+  "close": 171.68,
+  "momentum_score": 0.8457,
+  "momentum_start": "2026-06-03",
+  "range_20": 0.1526,
+  "range_50": 0.2826,
+  "rank": 380,
+  "rank_down": null,
+  "rank_up": 248,
+  "ret_120": 0.6315,
+  "ret_20": -0.0751,
+  "ret_60": 0.3137,
+  "rundown_score": 0.8215,
+  "score_date": "2026-09-15",
+  "slope_20": -0.0047,
+  "slope_60": 0.0047,
+  "stage": "sustained",
+  "stage_label": "Trending",
+  "ticker": "GKOS",
+  "total_score": 0.6143,
+  "trend_ratio": 1.2409,
+  "vcp_detected": 1,
+  "vcp_score": 0.4601
+ }
+}

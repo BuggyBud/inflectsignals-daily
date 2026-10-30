@@ -1,0 +1,1117 @@
+{
+ "date": "2026-10-29",
+ "detected_regions": {
+  "primary": {
+   "days_in_region": 122,
+   "region_start": "2026-08-04",
+   "trigger_date": "2026-08-31",
+   "trigger_type": "compression"
+  },
+  "secondary": [
+   {
+    "confidence_score": 0.3003,
+    "downside_q50": -0.1218,
+    "ev_score": 0.0682,
+    "region_start": "2026-06-30",
+    "seq_len": 146,
+    "trigger_date": "2026-10-29",
+    "trigger_type": "severe_drawdown",
+    "upside_q25": 0.0769,
+    "upside_q50": 0.1823,
+    "upside_q75": 0.3054
+   }
+  ]
+ },
+ "feature_attribution": {
+  "macro_driver_count": 15,
+  "risk_flags": [
+   "high_volatility"
+  ],
+  "top_drivers": [
+   {
+    "direction": "negative",
+    "feature": "dollar_volume",
+    "feature_value": 2518200832.0,
+    "importance": 0.0009,
+    "importance_pct": 0.4808,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "positive",
+    "feature": "price_vs_sma200",
+    "feature_value": 0.92,
+    "importance": 0.0004,
+    "importance_pct": 0.1882,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "positive",
+    "feature": "price_vs_low_52w",
+    "feature_value": 1.5261,
+    "importance": 0.0002,
+    "importance_pct": 0.1194,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "negative",
+    "feature": "ma_200_slope",
+    "feature_value": 0.0259,
+    "importance": 0.0002,
+    "importance_pct": 0.1098,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "positive",
+    "feature": "volatility_20d",
+    "feature_value": 0.035,
+    "importance": 0.0002,
+    "importance_pct": 0.1018,
+    "method": "integrated_gradients"
+   }
+  ]
+ },
+ "fundamentals": {
+  "accrual": 0.08,
+  "adx_14": 43.6019,
+  "altman_z_score": 12.6869,
+  "amihud_illiquidity": 0.0,
+  "avg_volume": 9810275.0133,
+  "beta_252d": 1.119,
+  "book_value_per_share": 4.9975,
+  "correlation_spy_60d": 0.4069,
+  "current_liabilities": 4555.086,
+  "current_ratio": 2.7603,
+  "daily_earnings_yield": 0.0239,
+  "daily_fcf_yield": 0.0049,
+  "daily_pb": 33.7231,
+  "daily_pe": 41.8365,
+  "daily_ps": 15.1656,
+  "days_since_52w_high": 85.0,
+  "debt_ebitda": 0.9107,
+  "debt_to_equity": 0.8773,
+  "dividend_yield": 0.0039,
+  "dollar_volume_20d_avg": 1883874078.8468,
+  "earnings_quality": 0.9886,
+  "ebitda_growth_yoy": 0.116,
+  "enterprise_value": 220971.7236,
+  "eps_basic": 1.19,
+  "eps_cagr_3y": 0.2149,
+  "eps_cagr_5y": 0.177,
+  "eps_diluted": 1.18,
+  "eps_growth_accel": 0.0509,
+  "eps_growth_qoq": 0.1442,
+  "eps_growth_yoy": 0.2559,
+  "eps_growth_yoy_q2": 0.2049,
+  "eps_growth_yoy_q3": 0.2842,
+  "eps_growth_yoy_q4": 0.4454,
+  "eps_growth_yoy_q5": 0.453,
+  "eps_growth_yoy_q6": 0.4968,
+  "eps_growth_yoy_q7": 0.4414,
+  "eps_growth_yoy_q8": 0.2082,
+  "eps_history_8q": [
+   6.16,
+   8.16,
+   9.06,
+   8.47,
+   8.68,
+   9.11,
+   1.04,
+   1.18
+  ],
+  "eps_ttm": 4.002,
+  "ev_to_ebitda": 35.1626,
+  "ev_to_fcf": 165.3753,
+  "ev_to_sales": 53.4262,
+  "fcf_growth_yoy": 0.2538,
+  "fcf_margin": 0.3231,
+  "fcf_per_share": 1.0236,
+  "gross_margin": 0.6147,
+  "gross_margin_change_yoy": -0.0244,
+  "gross_margin_history": [
+   0.6418,
+   0.6447,
+   0.6388,
+   0.6294,
+   0.6202,
+   0.6147
+  ],
+  "inc_roic": 0.9138,
+  "interest_coverage": 22.3408,
+  "is_pre_revenue": false,
+  "margin_vs_sector_median": null,
+  "market_cap_ratio": 219989.6256,
+  "net_income": 1548.588,
+  "net_margin": 0.3625,
+  "operating_income": 1861.67,
+  "operating_margin": 0.4264,
+  "operating_margin_change_yoy": 0.0335,
+  "pb_ratio": 33.5026,
+  "pe_percentile_1y": 0.7262,
+  "pe_ratio": 41.8365,
+  "peg_trailing": -0.2251,
+  "piotroski_f_score": 7.0,
+  "price_vs_high_52w": 0.5549,
+  "price_vs_sma200": 0.92,
+  "ps_percentile_1y": 0.6786,
+  "ps_ratio": 15.1656,
+  "quarter_labels_8q": [
+   "Q2 '25",
+   "Q3 '25",
+   "Q4 '25",
+   "Q1 '26",
+   "Q2 '25",
+   "Q3 '26",
+   "Q4 '26",
+   "Q1 '26"
+  ],
+  "quarterly_eps_growth_yoy": -0.8607,
+  "quarterly_eps_growth_yoy_8q": [
+   0.4393,
+   0.842,
+   0.466,
+   0.2083,
+   0.4091,
+   0.1164,
+   -0.8852,
+   -0.8607
+  ],
+  "quarterly_revenue_growth_yoy": 0.2886,
+  "quarterly_revenue_growth_yoy_8q": [
+   0.2373,
+   0.298,
+   0.2359,
+   0.1296,
+   0.0716,
+   0.1149,
+   0.1521,
+   0.2886
+  ],
+  "revenue_cagr_3y": 0.1257,
+  "revenue_cagr_5y": 0.1421,
+  "revenue_growth_accel": 0.0411,
+  "revenue_growth_qoq": 0.1308,
+  "revenue_growth_yoy": 0.1582,
+  "revenue_growth_yoy_q2": 0.1171,
+  "revenue_growth_yoy_q3": 0.1339,
+  "revenue_growth_yoy_q4": 0.1749,
+  "revenue_growth_yoy_q5": 0.2211,
+  "revenue_growth_yoy_q6": 0.2389,
+  "revenue_growth_yoy_q7": 0.2033,
+  "revenue_growth_yoy_q8": 0.1215,
+  "revenue_history_8q": [
+   3076.851,
+   3063.029,
+   3174.741,
+   3209.696,
+   3297.146,
+   3415.078,
+   3657.556,
+   4136.015
+  ],
+  "revenue_per_share": 3.1686,
+  "roa": 0.2893,
+  "roce": 0.4499,
+  "roe": 0.8169,
+  "roic": 0.3797,
+  "rsi_14": 53.5602,
+  "sector_momentum": -0.0224,
+  "share_dilution_1y": -0.0047,
+  "stock_vs_sector_20d": -0.1386,
+  "stock_vs_spy_20d": -0.1712,
+  "total_assets": 18404.735,
+  "vol_regime": 1.1321,
+  "volatility_20d": 0.035,
+  "volatility_60d": 0.0309,
+  "w52_high": 307.3743,
+  "w52_low": 107.196
+ },
+ "market_characters": [
+  {
+   "id": "g8",
+   "name": "Boom-Bust"
+  }
+ ],
+ "model_analogs": {
+  "matches": [
+   {
+    "actual_downside": -0.214,
+    "actual_return": 0.004,
+    "actual_upside": 0.0474,
+    "days_in_region": 108,
+    "end_date": "2020-01-02",
+    "end_reason": "reversal",
+    "similarity": 0.9698,
+    "start_date": "2019-09-16",
+    "ticker": "FNKO",
+    "trigger_date": "2019-09-20",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": -0.1475,
+    "actual_return": 0.3753,
+    "actual_upside": 0.3753,
+    "days_in_region": 180,
+    "end_date": "2020-02-18",
+    "end_reason": "reversal",
+    "similarity": 0.9661,
+    "start_date": "2019-08-22",
+    "ticker": "BAND",
+    "trigger_date": "2019-09-12",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": 0.0,
+    "actual_return": 0.2935,
+    "actual_upside": 0.2935,
+    "days_in_region": 106,
+    "end_date": "2019-11-13",
+    "end_reason": "reversal",
+    "similarity": 0.9656,
+    "start_date": "2019-07-30",
+    "ticker": "FLEX",
+    "trigger_date": "2019-10-09",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": -0.2689,
+    "actual_return": 0.0943,
+    "actual_upside": 0.1164,
+    "days_in_region": 253,
+    "end_date": "2019-04-04",
+    "end_reason": "reversal",
+    "similarity": 0.9641,
+    "start_date": "2018-07-25",
+    "ticker": "RYI",
+    "trigger_date": "2018-10-19",
+    "trigger_type": "severe_drawdown"
+   },
+   {
+    "actual_downside": -0.0647,
+    "actual_return": 0.2437,
+    "actual_upside": 0.2437,
+    "days_in_region": 80,
+    "end_date": "2006-04-21",
+    "end_reason": "reversal",
+    "similarity": 0.9639,
+    "start_date": "2006-01-31",
+    "ticker": "KWK",
+    "trigger_date": "2006-02-28",
+    "trigger_type": "severe_drawdown"
+   },
+   {
+    "actual_downside": -0.0233,
+    "actual_return": 0.1399,
+    "actual_upside": 0.1399,
+    "days_in_region": 131,
+    "end_date": "2018-12-12",
+    "end_reason": "reversal",
+    "similarity": 0.9636,
+    "start_date": "2018-08-03",
+    "ticker": "TWTR",
+    "trigger_date": "2018-08-30",
+    "trigger_type": "compression"
+   },
+   {
+    "actual_downside": -0.0933,
+    "actual_return": -0.0933,
+    "actual_upside": 0.3057,
+    "days_in_region": 310,
+    "end_date": "2020-02-26",
+    "end_reason": "reversal",
+    "similarity": 0.963,
+    "start_date": "2019-04-22",
+    "ticker": "FBM",
+    "trigger_date": "2019-10-09",
+    "trigger_type": "runup"
+   },
+   {
+    "actual_downside": 0.0,
+    "actual_return": 0.3142,
+    "actual_upside": 0.3142,
+    "days_in_region": 77,
+    "end_date": "2019-12-06",
+    "end_reason": "reversal",
+    "similarity": 0.963,
+    "start_date": "2019-09-20",
+    "ticker": "ASTH",
+    "trigger_date": "2019-09-30",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": -0.0258,
+    "actual_return": 0.1737,
+    "actual_upside": 0.1737,
+    "days_in_region": 75,
+    "end_date": "2019-11-05",
+    "end_reason": "reversal",
+    "similarity": 0.9629,
+    "start_date": "2019-08-22",
+    "ticker": "AXIA",
+    "trigger_date": "2019-10-11",
+    "trigger_type": "severe_drawdown"
+   },
+   {
+    "actual_downside": -0.2597,
+    "actual_return": -0.2597,
+    "actual_upside": 0.1362,
+    "days_in_region": 144,
+    "end_date": "2018-12-21",
+    "end_reason": "reversal",
+    "similarity": 0.9627,
+    "start_date": "2018-07-30",
+    "ticker": "HZO",
+    "trigger_date": "2018-10-31",
+    "trigger_type": "runup"
+   }
+  ],
+  "stats": {
+   "avg_max_drawdown": 0.1299,
+   "avg_similarity": 0.96,
+   "avg_trough": 0.1299,
+   "avg_upside": 0.191,
+   "best_return": 0.8005,
+   "downside_range": [
+    -0.4152,
+    0.0
+   ],
+   "median_return": 0.1171,
+   "n_matches": 50,
+   "outcome_agreement": true,
+   "return_p25": -0.0751,
+   "return_p5": -0.3355,
+   "return_p75": 0.2621,
+   "return_p95": 0.37,
+   "sim_weighted_win_rate": 0.68,
+   "top5_avg_trough": 0.139,
+   "top5_avg_upside": 0.2153,
+   "top_similarity": 0.97,
+   "upside_range": [
+    0.0,
+    0.8005
+   ],
+   "win_rate": 0.68,
+   "worst_return": -0.3793,
+   "years_span": 12
+  },
+  "total_matches": 50
+ },
+ "peer_group": {
+  "buckets": [
+   "Data, Analytics & AI Software",
+   "Industrial Automation, Robotics & Control Systems",
+   "Testing, Measurement & Analytical Instruments"
+  ],
+  "groups": {
+   "Data, Analytics & AI Software": [
+    {
+     "market_cap_m": 10325.7918,
+     "price_vs_sma200": 1.1552,
+     "return_30d": 0.2627,
+     "return_7d": 0.0401,
+     "revenue_driver": "infrastructure engineering SaaS",
+     "signal_rank": 1056,
+     "stock_vs_spy_20d": 0.204,
+     "ticker": "BSY"
+    },
+    {
+     "market_cap_m": 1115.8797,
+     "price_vs_sma200": 1.7866,
+     "return_30d": 0.2382,
+     "return_7d": 0.0892,
+     "revenue_driver": "digital product analytics SaaS",
+     "signal_rank": 669,
+     "stock_vs_spy_20d": 0.1888,
+     "ticker": "AMPL"
+    },
+    {
+     "market_cap_m": 86.6362,
+     "price_vs_sma200": 0.6631,
+     "return_30d": 0.1509,
+     "return_7d": 0.0417,
+     "revenue_driver": "AI video analytics",
+     "signal_rank": null,
+     "stock_vs_spy_20d": -0.2819,
+     "ticker": "AISP"
+    },
+    {
+     "market_cap_m": 1443.9016,
+     "price_vs_sma200": 1.211,
+     "return_30d": 0.1289,
+     "return_7d": 0.0411,
+     "revenue_driver": "enterprise AI applications",
+     "signal_rank": 2084,
+     "stock_vs_spy_20d": 0.0884,
+     "ticker": "AI"
+    },
+    {
+     "market_cap_m": 219989.6256,
+     "price_vs_sma200": 0.92,
+     "return_30d": -0.0092,
+     "return_7d": 0.0352,
+     "revenue_driver": "process control",
+     "signal_rank": 1020,
+     "stock_vs_spy_20d": -0.1712,
+     "ticker": "KLAC"
+    },
+    {
+     "market_cap_m": 1073.9155,
+     "price_vs_sma200": 0.7367,
+     "return_30d": -0.0599,
+     "return_7d": 0.2304,
+     "revenue_driver": "big data analytics software",
+     "signal_rank": 347,
+     "stock_vs_spy_20d": -0.0325,
+     "ticker": "BBAI"
+    },
+    {
+     "market_cap_m": 1000.2455,
+     "price_vs_sma200": 0.7024,
+     "return_30d": -0.1564,
+     "return_7d": 0.1381,
+     "revenue_driver": "satellite imagery data",
+     "signal_rank": 1575,
+     "stock_vs_spy_20d": -0.0992,
+     "ticker": "BKSY"
+    },
+    {
+     "market_cap_m": 8126.6176,
+     "price_vs_sma200": 0.7831,
+     "return_30d": -0.3205,
+     "return_7d": -0.1198,
+     "revenue_driver": "autonomous trucking software",
+     "signal_rank": 664,
+     "stock_vs_spy_20d": -0.2081,
+     "ticker": "AUR"
+    },
+    {
+     "market_cap_m": 1332.5008,
+     "price_vs_sma200": 0.735,
+     "return_30d": -0.3236,
+     "return_7d": -0.1344,
+     "revenue_driver": "digital banking SaaS",
+     "signal_rank": 991,
+     "stock_vs_spy_20d": -0.1032,
+     "ticker": "ALKT"
+    },
+    {
+     "market_cap_m": 18.5871,
+     "price_vs_sma200": 0.1968,
+     "return_30d": -0.3989,
+     "return_7d": -0.1869,
+     "revenue_driver": "enterprise AI platform",
+     "signal_rank": 943,
+     "stock_vs_spy_20d": -0.3141,
+     "ticker": "BNAI"
+    }
+   ],
+   "Industrial Automation, Robotics & Control Systems": [
+    {
+     "market_cap_m": 89236.312,
+     "price_vs_sma200": 1.1619,
+     "return_30d": 0.1583,
+     "return_7d": 0.0641,
+     "revenue_driver": "process automation and control",
+     "signal_rank": 1917,
+     "stock_vs_spy_20d": 0.0698,
+     "ticker": "EMR"
+    },
+    {
+     "market_cap_m": 8572.4662,
+     "price_vs_sma200": 1.0295,
+     "return_30d": 0.041,
+     "return_7d": 0.0387,
+     "revenue_driver": "dispensing and sealing packaging",
+     "signal_rank": 701,
+     "stock_vs_spy_20d": 0.0738,
+     "ticker": "ATR"
+    },
+    {
+     "market_cap_m": 2685.3557,
+     "price_vs_sma200": 0.93,
+     "return_30d": 0.004,
+     "return_7d": 0.0032,
+     "revenue_driver": "hydraulic motion control",
+     "signal_rank": 59,
+     "stock_vs_spy_20d": -0.0161,
+     "ticker": "HLIO"
+    },
+    {
+     "market_cap_m": 219989.6256,
+     "price_vs_sma200": 0.92,
+     "return_30d": -0.0092,
+     "return_7d": 0.0352,
+     "revenue_driver": "process control",
+     "signal_rank": 1020,
+     "stock_vs_spy_20d": -0.1712,
+     "ticker": "KLAC"
+    },
+    {
+     "market_cap_m": 21330.1273,
+     "price_vs_sma200": 0.8638,
+     "return_30d": -0.0145,
+     "return_7d": -0.0282,
+     "revenue_driver": "aerospace fuel control systems",
+     "signal_rank": 769,
+     "stock_vs_spy_20d": -0.0703,
+     "ticker": "WWD"
+    },
+    {
+     "market_cap_m": 11292.7532,
+     "price_vs_sma200": 1.0202,
+     "return_30d": -0.0309,
+     "return_7d": 0.0388,
+     "revenue_driver": "machine vision systems",
+     "signal_rank": 908,
+     "stock_vs_spy_20d": -0.0592,
+     "ticker": "CGNX"
+    },
+    {
+     "market_cap_m": 11224.1224,
+     "price_vs_sma200": 0.9774,
+     "return_30d": -0.0459,
+     "return_7d": -0.0858,
+     "revenue_driver": "power transmission distribution",
+     "signal_rank": 214,
+     "stock_vs_spy_20d": -0.1159,
+     "ticker": "AIT"
+    },
+    {
+     "market_cap_m": 11186.8631,
+     "price_vs_sma200": 0.7763,
+     "return_30d": -0.0577,
+     "return_7d": 0.0004,
+     "revenue_driver": "power conversion systems",
+     "signal_rank": 1296,
+     "stock_vs_spy_20d": -0.1918,
+     "ticker": "AEIS"
+    },
+    {
+     "market_cap_m": 1579.9347,
+     "price_vs_sma200": 1.1135,
+     "return_30d": -0.0742,
+     "return_7d": -0.0128,
+     "revenue_driver": "precision motion controls",
+     "signal_rank": 166,
+     "stock_vs_spy_20d": -0.2156,
+     "ticker": "ALNT"
+    },
+    {
+     "market_cap_m": null,
+     "price_vs_sma200": null,
+     "return_30d": null,
+     "return_7d": null,
+     "revenue_driver": "aerospace engineered components",
+     "signal_rank": null,
+     "stock_vs_spy_20d": null,
+     "ticker": "B"
+    }
+   ],
+   "Testing, Measurement & Analytical Instruments": [
+    {
+     "market_cap_m": 4457.0428,
+     "price_vs_sma200": 1.0793,
+     "return_30d": 0.1729,
+     "return_7d": 0.1602,
+     "revenue_driver": "water flow metering",
+     "signal_rank": 246,
+     "stock_vs_spy_20d": 0.159,
+     "ticker": "BMI"
+    },
+    {
+     "market_cap_m": 60731.7906,
+     "price_vs_sma200": 1.3328,
+     "return_30d": 0.1587,
+     "return_7d": 0.047,
+     "revenue_driver": "analytical instruments",
+     "signal_rank": 1953,
+     "stock_vs_spy_20d": 0.0798,
+     "ticker": "A"
+    },
+    {
+     "market_cap_m": 89236.312,
+     "price_vs_sma200": 1.1619,
+     "return_30d": 0.1583,
+     "return_7d": 0.0641,
+     "revenue_driver": "process automation and control",
+     "signal_rank": 1917,
+     "stock_vs_spy_20d": 0.0698,
+     "ticker": "EMR"
+    },
+    {
+     "market_cap_m": 58483.3262,
+     "price_vs_sma200": 1.0757,
+     "return_30d": 0.0745,
+     "return_7d": 0.0179,
+     "revenue_driver": "electronic instruments",
+     "signal_rank": 1561,
+     "stock_vs_spy_20d": 0.0038,
+     "ticker": "AME"
+    },
+    {
+     "market_cap_m": 1609.659,
+     "price_vs_sma200": 1.1573,
+     "return_30d": 0.0049,
+     "return_7d": -0.0009,
+     "revenue_driver": "industrial MRO supplies",
+     "signal_rank": 138,
+     "stock_vs_spy_20d": -0.005,
+     "ticker": "DSGR"
+    },
+    {
+     "market_cap_m": 219989.6256,
+     "price_vs_sma200": 0.92,
+     "return_30d": -0.0092,
+     "return_7d": 0.0352,
+     "revenue_driver": "process control",
+     "signal_rank": 1020,
+     "stock_vs_spy_20d": -0.1712,
+     "ticker": "KLAC"
+    },
+    {
+     "market_cap_m": 7972.3443,
+     "price_vs_sma200": 1.2356,
+     "return_30d": -0.0167,
+     "return_7d": 0.1085,
+     "revenue_driver": "mass spectrometry systems",
+     "signal_rank": 643,
+     "stock_vs_spy_20d": -0.006,
+     "ticker": "BRKR"
+    },
+    {
+     "market_cap_m": 2493.4062,
+     "price_vs_sma200": 1.136,
+     "return_30d": -0.0291,
+     "return_7d": 0.0125,
+     "revenue_driver": "semiconductor test",
+     "signal_rank": 1442,
+     "stock_vs_spy_20d": -0.2478,
+     "ticker": "COHU"
+    },
+    {
+     "market_cap_m": 7783.1579,
+     "price_vs_sma200": 0.8528,
+     "return_30d": -0.0586,
+     "return_7d": -0.0111,
+     "revenue_driver": "utility test equipment",
+     "signal_rank": 560,
+     "stock_vs_spy_20d": -0.0997,
+     "ticker": "ESE"
+    },
+    {
+     "market_cap_m": 473.2868,
+     "price_vs_sma200": 0.4365,
+     "return_30d": -0.3436,
+     "return_7d": 0.0493,
+     "revenue_driver": "specialty label printers",
+     "signal_rank": 1746,
+     "stock_vs_spy_20d": -0.2181,
+     "ticker": "ASPI"
+    }
+   ]
+  }
+ },
+ "predictions": {
+  "badge_count": 0,
+  "confidence_score": 0.2245,
+  "conviction_label": "SPECULATIVE",
+  "data_quality_flags": [],
+  "ev_score": 0.0634,
+  "is_diamond": false,
+  "passes_tradability_filter": true,
+  "quality_label": "MEDIUM",
+  "quantiles": {
+   "downside_q10": -0.3568,
+   "downside_q25": -0.2174,
+   "downside_q50": -0.1312,
+   "downside_q75": -0.0419,
+   "downside_q90": -0.0037,
+   "path_volatility": 0.0436,
+   "risk_reward": 1.4144,
+   "uncertainty": 0.4835,
+   "upside_q10": 0.024,
+   "upside_q25": 0.0752,
+   "upside_q50": 0.1855,
+   "upside_q75": 0.3068,
+   "upside_q90": 0.5075
+  },
+  "rank": 1020,
+  "rank_score": 0.0146,
+  "tradability_filter_reasons": []
+ },
+ "profile": {
+  "_local": {
+   "dividend_yield": 0.0039,
+   "eps_growth_yoy": 0.2559,
+   "pe_ratio": 8.3673,
+   "revenue_growth_yoy": 0.1582,
+   "roe": 0.8169
+  },
+  "beta": 1.447,
+  "betaTTM": null,
+  "ceo": "Richard Wallace",
+  "companyName": "KLA Corporation",
+  "country": "US",
+  "debtToEquityTTM": null,
+  "description": "KLA Corporation specializes in creating, manufacturing, and distributing advanced solutions vital for process control, process optimization, and yield enhancement throughout the global semiconductor and broader electronics industries. The company organizes its business into four main segments: Semiconductor Process Control, Specialty Semiconductor Process, PCB, Display and Component Inspection, and an 'Other' category. For integrated circuit (IC) fabrication, KLA offers a comprehensive range of products. These include systems for wafer inspection, review, and metrology; defect inspection and metrology for both wafers/substrates and reticles; chemical and materials quality analysis tools; and real-time process management and wafer handling diagnostics essential for IC and original equipment manufacturer (OEM) production. Furthermore, the company develops software for live process control, defect excursion identification, process corrections, and defect classification. KLA also supplies refurbished and remanufactured equipment. Beyond IC manufacturing, KLA supports specialty semiconductor production. This includes benchtop metrology, surface characterization, and electrical property measurement services suitable for general-purpose and laboratory use. They also provide technologies and solutions for etching, plasma dicing, deposition, and various other wafer processing tasks within the semiconductor and microelectronics sectors. Within the printed circuit board (PCB) market, KLA delivers solutions such as direct imaging, inspection, optical shaping, additive printing, and computer-aided manufacturing and engineering. For the display industry, their offerings encompass inspection and electrical testing systems to pinpoint and categorize defects, as well as equipment for defect repair. KLA also supplies inspection and metrology systems designed to improve quality control and yield in both advanced and conventional semiconductor packaging markets. Established in 1975, the company was initially known as KLA-Tencor Corporation before rebranding as KLA Corporation in July 2019. Its corporate headquarters are situated in Milpitas, California.",
+  "dividendYielTTM": null,
+  "enterpriseValueOverEBITDATTM": null,
+  "exchangeShortName": "NASDAQ",
+  "fullTimeEmployees": "17100",
+  "industry": "Semiconductors",
+  "ipoDate": "1980-10-08",
+  "latest_earnings_date": "2026-10-29",
+  "marketCapTTM": null,
+  "mktCap": 218497824300,
+  "peRatioTTM": null,
+  "price": 167.43,
+  "priceToSalesRatioTTM": null,
+  "returnOnEquityTTM": 0.8702,
+  "revenue_description": "KLA sells process-control and inspection equipment used in semiconductor manufacturing. Revenue is driven mainly by chip shipments and average selling prices across data center, AI, gaming, or other compute markets, with mix shifts heavily affecting margins.",
+  "revenue_description_themes": [
+   "semiconductor demand",
+   "AI-driven compute",
+   "semiconductor inventory cycle"
+  ],
+  "revenue_taxonomy": [
+   {
+    "bucket": "Industrial Automation, Robotics & Control Systems",
+    "matched_tags": [
+     "process control"
+    ],
+    "path": "Industrials & Transportation › Aerospace Defense & Automation › Industrial Automation, Robotics & Control Systems",
+    "sector": "Industrials & Transportation",
+    "segment": "Aerospace Defense & Automation"
+   },
+   {
+    "bucket": "Testing, Measurement & Analytical Instruments",
+    "matched_tags": [
+     "inspection equipment"
+    ],
+    "path": "Industrials & Transportation › Aerospace Defense & Automation › Testing, Measurement & Analytical Instruments",
+    "sector": "Industrials & Transportation",
+    "segment": "Aerospace Defense & Automation"
+   },
+   {
+    "bucket": "Data, Analytics & AI Software",
+    "matched_tags": [
+     "data analytics"
+    ],
+    "path": "Technology › Software & Platforms › Data, Analytics & AI Software",
+    "sector": "Technology",
+    "segment": "Software & Platforms"
+   }
+  ],
+  "revenue_themes": [
+   "process control",
+   "inspection equipment",
+   "data analytics"
+  ],
+  "sector": "Technology",
+  "website": "https://www.kla.com"
+ },
+ "report": null,
+ "scorecard": {
+  "headline": {
+   "avg_universe_pct": 76,
+   "label": "above_average",
+   "metric_count": 8
+  },
+  "metrics": {
+   "debt_to_equity": {
+    "direction": "lower",
+    "label": "D/E Ratio",
+    "sector": "Industrials",
+    "sector_n": 357,
+    "sector_pct": 29,
+    "universe_n": 2056,
+    "universe_pct": 28,
+    "value": 0.8773
+   },
+   "eps_growth_yoy": {
+    "direction": "higher",
+    "label": "EPS Growth",
+    "sector": "Industrials",
+    "sector_n": 352,
+    "sector_pct": 63,
+    "universe_n": 1880,
+    "universe_pct": 57,
+    "value": 0.2559
+   },
+   "gross_margin": {
+    "direction": "higher",
+    "label": "Gross Margin",
+    "sector": "Industrials",
+    "sector_n": 337,
+    "sector_pct": 85,
+    "universe_n": 1998,
+    "universe_pct": 67,
+    "value": 0.6147
+   },
+   "operating_margin": {
+    "direction": "higher",
+    "label": "Op. Margin",
+    "sector": "Industrials",
+    "sector_n": 337,
+    "sector_pct": 99,
+    "universe_n": 1998,
+    "universe_pct": 96,
+    "value": 0.4264
+   },
+   "pe_ratio": {
+    "direction": "lower",
+    "label": "P/E",
+    "sector": "Industrials",
+    "sector_n": 250,
+    "sector_pct": 96,
+    "universe_n": 1468,
+    "universe_pct": 93,
+    "value": 8.3673
+   },
+   "revenue_growth_yoy": {
+    "direction": "higher",
+    "label": "Rev Growth",
+    "sector": "Industrials",
+    "sector_n": 333,
+    "sector_pct": 74,
+    "universe_n": 1824,
+    "universe_pct": 70,
+    "value": 0.1582
+   },
+   "roe": {
+    "direction": "higher",
+    "label": "ROE",
+    "sector": "Industrials",
+    "sector_n": 361,
+    "sector_pct": 96,
+    "universe_n": 2088,
+    "universe_pct": 96,
+    "value": 0.8169
+   },
+   "roic": {
+    "direction": "higher",
+    "label": "ROIC",
+    "sector": "Industrials",
+    "sector_n": 351,
+    "sector_pct": 96,
+    "universe_n": 2026,
+    "universe_pct": 97,
+    "value": 0.1118
+   }
+  }
+ },
+ "signal_rank": 1020,
+ "structural_analogs": {
+  "gp_core_pct": 93.1,
+  "gp_core_ratio": 2.1828,
+  "matches": [
+   {
+    "actual_downside": -0.008,
+    "actual_return": 0.1165,
+    "actual_upside": 0.1165,
+    "days_in_region": 147,
+    "end_date": "2021-06-29",
+    "end_reason": "reversal",
+    "seq_len": 147,
+    "similarity": 0.505,
+    "start_date": "2021-01-13",
+    "ticker": "ALRM",
+    "total_distance": 0.3416,
+    "trigger_date": "2021-05-18",
+    "trigger_type": "severe_drawdown"
+   },
+   {
+    "actual_downside": -0.0827,
+    "actual_return": 0.1627,
+    "actual_upside": 0.1627,
+    "days_in_region": 163,
+    "end_date": "1999-10-11",
+    "end_reason": "reversal",
+    "seq_len": 163,
+    "similarity": 0.4975,
+    "start_date": "1999-03-11",
+    "ticker": "LOW",
+    "total_distance": 0.349,
+    "trigger_date": "1999-08-05",
+    "trigger_type": "severe_drawdown"
+   },
+   {
+    "actual_downside": -0.1586,
+    "actual_return": -0.1586,
+    "actual_upside": 0.0581,
+    "days_in_region": 112,
+    "end_date": "2022-01-21",
+    "end_reason": "reversal",
+    "seq_len": 112,
+    "similarity": 0.4927,
+    "start_date": "2021-10-06",
+    "ticker": "STLD",
+    "total_distance": 0.354,
+    "trigger_date": "2021-10-26",
+    "trigger_type": "runup"
+   },
+   {
+    "actual_downside": -0.1135,
+    "actual_return": 0.3088,
+    "actual_upside": 0.3088,
+    "days_in_region": 140,
+    "end_date": "2014-07-24",
+    "end_reason": "reversal",
+    "seq_len": 140,
+    "similarity": 0.4888,
+    "start_date": "2013-12-02",
+    "ticker": "PRLB",
+    "total_distance": 0.3579,
+    "trigger_date": "2013-12-30",
+    "trigger_type": "compression"
+   },
+   {
+    "actual_downside": -0.3904,
+    "actual_return": -0.3904,
+    "actual_upside": 0.0978,
+    "days_in_region": 114,
+    "end_date": "2011-08-10",
+    "end_reason": "reversal",
+    "seq_len": 114,
+    "similarity": 0.4879,
+    "start_date": "2011-04-12",
+    "ticker": "RVBD",
+    "total_distance": 0.3588,
+    "trigger_date": "2011-06-28",
+    "trigger_type": "runup"
+   },
+   {
+    "actual_downside": -0.0638,
+    "actual_return": 0.2932,
+    "actual_upside": 0.2932,
+    "days_in_region": 149,
+    "end_date": "2013-12-23",
+    "end_reason": "reversal",
+    "seq_len": 149,
+    "similarity": 0.4877,
+    "start_date": "2013-05-17",
+    "ticker": "VRTS",
+    "total_distance": 0.3591,
+    "trigger_date": "2013-06-27",
+    "trigger_type": "severe_drawdown"
+   },
+   {
+    "actual_downside": -0.0185,
+    "actual_return": 0.3233,
+    "actual_upside": 0.3233,
+    "days_in_region": 153,
+    "end_date": "2007-12-24",
+    "end_reason": "reversal",
+    "seq_len": 153,
+    "similarity": 0.4874,
+    "start_date": "2007-07-12",
+    "ticker": "CTV",
+    "total_distance": 0.3593,
+    "trigger_date": "2007-11-01",
+    "trigger_type": "severe_drawdown"
+   },
+   {
+    "actual_downside": -0.0328,
+    "actual_return": 0.2725,
+    "actual_upside": 0.2725,
+    "days_in_region": 154,
+    "end_date": "2008-06-19",
+    "end_reason": "reversal",
+    "seq_len": 154,
+    "similarity": 0.4873,
+    "start_date": "2007-11-07",
+    "ticker": "BB",
+    "total_distance": 0.3595,
+    "trigger_date": "2008-03-25",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": -0.127,
+    "actual_return": 0.0538,
+    "actual_upside": 0.1079,
+    "days_in_region": 149,
+    "end_date": "2021-11-08",
+    "end_reason": "reversal",
+    "seq_len": 149,
+    "similarity": 0.4871,
+    "start_date": "2021-03-12",
+    "ticker": "PRIM",
+    "total_distance": 0.3596,
+    "trigger_date": "2021-03-19",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": 0.0,
+    "actual_return": 0.2868,
+    "actual_upside": 0.2868,
+    "days_in_region": 157,
+    "end_date": "2022-01-14",
+    "end_reason": "reversal",
+    "seq_len": 157,
+    "similarity": 0.4854,
+    "start_date": "2021-04-05",
+    "ticker": "MKSI",
+    "total_distance": 0.3614,
+    "trigger_date": "2021-07-08",
+    "trigger_type": "drawdown"
+   }
+  ],
+  "panel": {
+   "edge": 0.0825,
+   "hit_hi": 0.825,
+   "hit_lo": 0.669,
+   "hit_rate": 0.755,
+   "median_final": 0.1338,
+   "median_pain": 0.0638,
+   "n": 49,
+   "n_eff": 49.0,
+   "p25_final": 0.0001,
+   "p_pain_gt5": 0.612,
+   "return_to_pain": 1.598
+  },
+  "stats": {
+   "avg_similarity": 0.443,
+   "avg_trough": 0.1154,
+   "avg_upside": 0.2333,
+   "median_pain": 0.0663,
+   "median_return": 0.071,
+   "n_matches": 200,
+   "p25_return": -0.1164,
+   "p_pain_gt5": 0.61,
+   "return_to_pain": 0.823,
+   "top5_avg_trough": 0.1506,
+   "top5_avg_upside": 0.1488,
+   "top_similarity": 0.505,
+   "win_rate": 0.59
+  },
+  "total_matches": 200
+ },
+ "ticker": "KLAC",
+ "trending": {
+  "acceleration": -0.02,
+  "avg_vol_20d": 13612515.6351,
+  "base_high_120": 301.71,
+  "breakout_confirmed": 0,
+  "close": 218.73,
+  "momentum_score": 0.4916,
+  "momentum_start": "2025-05-02",
+  "range_20": 0.47,
+  "range_50": 0.6325,
+  "rank": 1342,
+  "rank_down": null,
+  "rank_up": 624,
+  "ret_120": 0.2983,
+  "ret_20": -0.0904,
+  "ret_60": 0.1512,
+  "rundown_score": 0.9738,
+  "score_date": "2026-07-23",
+  "slope_20": -0.0144,
+  "slope_60": 0.0056,
+  "stage": "sustained",
+  "stage_label": "Trending",
+  "ticker": "KLAC",
+  "total_score": 0.3508,
+  "trend_ratio": 1.295,
+  "vcp_detected": 0,
+  "vcp_score": 0.257
+ }
+}

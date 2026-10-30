@@ -1,0 +1,1010 @@
+{
+ "date": "2026-10-29",
+ "detected_regions": {
+  "primary": {
+   "days_in_region": 116,
+   "region_start": "2026-08-12",
+   "trigger_date": "2026-09-16",
+   "trigger_type": "drawdown"
+  },
+  "secondary": [
+   {
+    "confidence_score": 0.526,
+    "downside_q50": -0.0947,
+    "ev_score": 0.0891,
+    "region_start": "2026-05-13",
+    "seq_len": 178,
+    "trigger_date": "2026-09-30",
+    "trigger_type": "runup",
+    "upside_q25": 0.0758,
+    "upside_q50": 0.1751,
+    "upside_q75": 0.2958
+   }
+  ]
+ },
+ "feature_attribution": {
+  "macro_driver_count": 14,
+  "risk_flags": [
+   "high_volatility"
+  ],
+  "top_drivers": [
+   {
+    "direction": "negative",
+    "feature": "dollar_volume",
+    "feature_value": 277256224.0,
+    "importance": 0.0006,
+    "importance_pct": 0.3333,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "positive",
+    "feature": "price_vs_sma200",
+    "feature_value": 1.4244,
+    "importance": 0.0004,
+    "importance_pct": 0.2264,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "negative",
+    "feature": "correlation_spy_60d",
+    "feature_value": 0.1258,
+    "importance": 0.0002,
+    "importance_pct": 0.1165,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "positive",
+    "feature": "price_vs_low_52w",
+    "feature_value": 2.6222,
+    "importance": 0.0002,
+    "importance_pct": 0.1159,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "positive",
+    "feature": "rsi_overbought",
+    "feature_value": 0.0,
+    "importance": 0.0002,
+    "importance_pct": 0.1147,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "positive",
+    "feature": "sector_return_60d",
+    "feature_value": -0.0384,
+    "importance": 0.0002,
+    "importance_pct": 0.093,
+    "method": "integrated_gradients"
+   }
+  ]
+ },
+ "fundamentals": {
+  "accrual": 0.0963,
+  "adx_14": 32.691,
+  "altman_z_score": null,
+  "amihud_illiquidity": 0.0001,
+  "avg_volume": 1546008.0255,
+  "beta_252d": 0.3475,
+  "book_value_per_share": 0.0,
+  "correlation_spy_60d": 0.1258,
+  "current_liabilities": 0.0,
+  "current_ratio": null,
+  "daily_earnings_yield": 0.0369,
+  "daily_fcf_yield": 0.0363,
+  "daily_pb": null,
+  "daily_pe": 27.1042,
+  "daily_ps": 1.4083,
+  "days_since_52w_high": 55.0,
+  "debt_ebitda": 0.0,
+  "debt_to_equity": null,
+  "dividend_yield": 0.0006,
+  "dollar_volume_20d_avg": 165142132.7883,
+  "earnings_quality": null,
+  "ebitda_growth_yoy": 0.1571,
+  "enterprise_value": 5388.858,
+  "eps_basic": 1.31,
+  "eps_cagr_3y": 0.3634,
+  "eps_cagr_5y": 0.9708,
+  "eps_diluted": 1.19,
+  "eps_growth_accel": 0.168,
+  "eps_growth_qoq": -0.1088,
+  "eps_growth_yoy": 0.3079,
+  "eps_growth_yoy_q2": 0.1399,
+  "eps_growth_yoy_q3": 0.0793,
+  "eps_growth_yoy_q4": -0.0365,
+  "eps_growth_yoy_q5": 0.263,
+  "eps_growth_yoy_q6": 0.377,
+  "eps_growth_yoy_q7": 0.4775,
+  "eps_growth_yoy_q8": 0.5667,
+  "eps_history_8q": [
+   0.83,
+   0.67,
+   1.14,
+   0.66,
+   0.6,
+   1.02,
+   1.41,
+   1.19
+  ],
+  "eps_ttm": 4.1735,
+  "ev_to_ebitda": 15.1078,
+  "ev_to_fcf": null,
+  "ev_to_sales": 5.2145,
+  "fcf_growth_yoy": null,
+  "fcf_margin": null,
+  "fcf_per_share": null,
+  "gross_margin": 0.4758,
+  "gross_margin_change_yoy": 0.6437,
+  "gross_margin_history": [
+   0.1583,
+   0.1595,
+   0.3181,
+   0.3156,
+   0.315,
+   0.4758
+  ],
+  "inc_roic": 0.003,
+  "interest_coverage": 70.437,
+  "is_pre_revenue": false,
+  "margin_vs_sector_median": null,
+  "market_cap_ratio": 5638.127,
+  "net_income": 61.3,
+  "net_margin": 0.052,
+  "operating_income": 74.873,
+  "operating_margin": 0.0604,
+  "operating_margin_change_yoy": 0.0307,
+  "pb_ratio": null,
+  "pe_percentile_1y": 0.2381,
+  "pe_ratio": 27.1042,
+  "peg_trailing": 0.922,
+  "piotroski_f_score": 2.0,
+  "price_vs_high_52w": 0.9644,
+  "price_vs_sma200": 1.4244,
+  "ps_percentile_1y": 0.0873,
+  "ps_ratio": 1.3504,
+  "quarter_labels_8q": [
+   "Q4 '24",
+   "Q1 '25",
+   "Q2 '25",
+   "Q3 '25",
+   "Q4 '25",
+   "Q1 '26",
+   "Q2 '26",
+   "Q3 '26"
+  ],
+  "quarterly_eps_growth_yoy": 0.803,
+  "quarterly_eps_growth_yoy_8q": [
+   2.1923,
+   -0.0147,
+   0.0556,
+   0.082,
+   -0.2771,
+   0.5224,
+   0.2368,
+   0.803
+  ],
+  "quarterly_revenue_growth_yoy": 0.1391,
+  "quarterly_revenue_growth_yoy_8q": [
+   0.0501,
+   0.0404,
+   0.0573,
+   0.0482,
+   0.0441,
+   0.0557,
+   0.0772,
+   0.1391
+  ],
+  "revenue_cagr_3y": 0.0503,
+  "revenue_cagr_5y": 0.0815,
+  "revenue_growth_accel": 0.0221,
+  "revenue_growth_qoq": 0.0037,
+  "revenue_growth_yoy": 0.0787,
+  "revenue_growth_yoy_q2": 0.0566,
+  "revenue_growth_yoy_q3": 0.0514,
+  "revenue_growth_yoy_q4": 0.0475,
+  "revenue_growth_yoy_q5": 0.049,
+  "revenue_growth_yoy_q6": 0.0477,
+  "revenue_growth_yoy_q7": 0.0442,
+  "revenue_growth_yoy_q8": 0.0413,
+  "revenue_history_8q": [
+   920.963,
+   927.197,
+   955.825,
+   907.226,
+   961.558,
+   978.833,
+   1029.633,
+   1033.44
+  ],
+  "revenue_per_share": 22.0939,
+  "roa": 0.1174,
+  "roce": 0.1709,
+  "roe": 0.9059,
+  "roic": 0.8345,
+  "rsi_14": 56.9277,
+  "sector_momentum": 0.0806,
+  "share_dilution_1y": 0.0032,
+  "stock_vs_sector_20d": 0.0057,
+  "stock_vs_spy_20d": 0.0409,
+  "total_assets": 249.269,
+  "vol_regime": 0.9217,
+  "volatility_20d": 0.0239,
+  "volatility_60d": 0.026,
+  "w52_high": 118.6349,
+  "w52_low": 43.07
+ },
+ "market_characters": [
+  {
+   "id": "g3",
+   "name": "Explosive Gainers"
+  }
+ ],
+ "model_analogs": {
+  "matches": [
+   {
+    "actual_downside": -0.1535,
+    "actual_return": 0.0328,
+    "actual_upside": 0.0685,
+    "days_in_region": 101,
+    "end_date": "2019-12-13",
+    "end_reason": "reversal",
+    "similarity": 0.972,
+    "start_date": "2019-09-03",
+    "ticker": "QIWI",
+    "trigger_date": "2019-10-03",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": -0.1135,
+    "actual_return": 0.0708,
+    "actual_upside": 0.0708,
+    "days_in_region": 83,
+    "end_date": "2018-12-13",
+    "end_reason": "reversal",
+    "similarity": 0.9707,
+    "start_date": "2018-09-21",
+    "ticker": "MOH",
+    "trigger_date": "2018-10-23",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": -0.3828,
+    "actual_return": -0.1784,
+    "actual_upside": 0.0,
+    "days_in_region": 169,
+    "end_date": "2020-02-20",
+    "end_reason": "reversal",
+    "similarity": 0.9697,
+    "start_date": "2019-09-04",
+    "ticker": "SHAK",
+    "trigger_date": "2019-10-09",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": -0.3089,
+    "actual_return": -0.2051,
+    "actual_upside": 0.0,
+    "days_in_region": 122,
+    "end_date": "2019-01-04",
+    "end_reason": "reversal",
+    "similarity": 0.9686,
+    "start_date": "2018-09-04",
+    "ticker": "MYGN",
+    "trigger_date": "2018-10-08",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": 0.0,
+    "actual_return": 0.2884,
+    "actual_upside": 0.2884,
+    "days_in_region": 73,
+    "end_date": "2018-12-10",
+    "end_reason": "reversal",
+    "similarity": 0.9674,
+    "start_date": "2018-09-28",
+    "ticker": "ALNT",
+    "trigger_date": "2018-10-08",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": -0.2011,
+    "actual_return": 0.1736,
+    "actual_upside": 0.1736,
+    "days_in_region": 154,
+    "end_date": "2019-02-12",
+    "end_reason": "reversal",
+    "similarity": 0.9673,
+    "start_date": "2018-09-11",
+    "ticker": "FIVE",
+    "trigger_date": "2018-10-25",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": 0.0,
+    "actual_return": 0.6589,
+    "actual_upside": 0.6589,
+    "days_in_region": 56,
+    "end_date": "2018-12-03",
+    "end_reason": "reversal",
+    "similarity": 0.9672,
+    "start_date": "2018-10-08",
+    "ticker": "VNDA",
+    "trigger_date": "2018-10-31",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": -0.0169,
+    "actual_return": 0.1248,
+    "actual_upside": 0.1248,
+    "days_in_region": 112,
+    "end_date": "2019-11-20",
+    "end_reason": "reversal",
+    "similarity": 0.9671,
+    "start_date": "2019-07-31",
+    "ticker": "BV",
+    "trigger_date": "2019-09-30",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": -0.1177,
+    "actual_return": 0.4874,
+    "actual_upside": 0.4874,
+    "days_in_region": 178,
+    "end_date": "2019-03-21",
+    "end_reason": "reversal",
+    "similarity": 0.9667,
+    "start_date": "2018-09-24",
+    "ticker": "RAMP",
+    "trigger_date": "2018-10-12",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": 0.0,
+    "actual_return": 0.3533,
+    "actual_upside": 0.3533,
+    "days_in_region": 63,
+    "end_date": "2018-12-03",
+    "end_reason": "reversal",
+    "similarity": 0.9665,
+    "start_date": "2018-10-01",
+    "ticker": "IRDM",
+    "trigger_date": "2018-10-29",
+    "trigger_type": "drawdown"
+   }
+  ],
+  "stats": {
+   "avg_max_drawdown": 0.1238,
+   "avg_similarity": 0.964,
+   "avg_trough": 0.1238,
+   "avg_upside": 0.241,
+   "best_return": 1.1848,
+   "downside_range": [
+    -0.4747,
+    0.0
+   ],
+   "median_return": 0.193,
+   "n_matches": 50,
+   "outcome_agreement": true,
+   "return_p25": 0.0456,
+   "return_p5": -0.1931,
+   "return_p75": 0.3392,
+   "return_p95": 0.5939,
+   "sim_weighted_win_rate": 0.86,
+   "top5_avg_trough": 0.1917,
+   "top5_avg_upside": 0.0855,
+   "top_similarity": 0.972,
+   "upside_range": [
+    0.0,
+    1.1848
+   ],
+   "win_rate": 0.86,
+   "worst_return": -0.3052,
+   "years_span": 8
+  },
+  "total_matches": 50
+ },
+ "peer_group": {
+  "buckets": [
+   "Packaged Food, Snacks & Staples",
+   "Restaurants, QSR & Foodservice"
+  ],
+  "groups": {
+   "Packaged Food, Snacks & Staples": [
+    {
+     "market_cap_m": 2992.0798,
+     "price_vs_sma200": 0.9378,
+     "return_30d": 0.262,
+     "return_7d": 0.011,
+     "revenue_driver": "company operated restaurant sales",
+     "signal_rank": 1357,
+     "stock_vs_spy_20d": 0.1645,
+     "ticker": "SHAK"
+    },
+    {
+     "market_cap_m": 5406.3617,
+     "price_vs_sma200": 1.4244,
+     "return_30d": 0.1799,
+     "return_7d": -0.0284,
+     "revenue_driver": "full service restaurant dining",
+     "signal_rank": 220,
+     "stock_vs_spy_20d": 0.0409,
+     "ticker": "CAKE"
+    },
+    {
+     "market_cap_m": 553.299,
+     "price_vs_sma200": 0.9569,
+     "return_30d": 0.0492,
+     "return_7d": 0.0774,
+     "revenue_driver": "Fresh doughnuts",
+     "signal_rank": 94,
+     "stock_vs_spy_20d": 0.0965,
+     "ticker": "DNUT"
+    },
+    {
+     "market_cap_m": 27710.7809,
+     "price_vs_sma200": 1.0336,
+     "return_30d": 0.0411,
+     "return_7d": -0.0306,
+     "revenue_driver": "discount retail",
+     "signal_rank": 1227,
+     "stock_vs_spy_20d": 0.0868,
+     "ticker": "DG"
+    },
+    {
+     "market_cap_m": 1499.3638,
+     "price_vs_sma200": 0.7692,
+     "return_30d": 0.0148,
+     "return_7d": 0.03,
+     "revenue_driver": "fresh bread and rolls",
+     "signal_rank": 696,
+     "stock_vs_spy_20d": 0.1045,
+     "ticker": "FLO"
+    },
+    {
+     "market_cap_m": 6597.7054,
+     "price_vs_sma200": 0.9342,
+     "return_30d": -0.0085,
+     "return_7d": 0.0574,
+     "revenue_driver": "packaged foods",
+     "signal_rank": 1703,
+     "stock_vs_spy_20d": 0.0705,
+     "ticker": "CPB"
+    },
+    {
+     "market_cap_m": 446.1465,
+     "price_vs_sma200": 1.045,
+     "return_30d": -0.0217,
+     "return_7d": -0.0206,
+     "revenue_driver": "avocados",
+     "signal_rank": null,
+     "stock_vs_spy_20d": -0.1214,
+     "ticker": "CVGW"
+    },
+    {
+     "market_cap_m": 6429.2794,
+     "price_vs_sma200": 0.9208,
+     "return_30d": -0.0718,
+     "return_7d": -0.0242,
+     "revenue_driver": "consumer packaged goods",
+     "signal_rank": 2042,
+     "stock_vs_spy_20d": 0.0604,
+     "ticker": "CAG"
+    },
+    {
+     "market_cap_m": 286.3177,
+     "price_vs_sma200": 0.5503,
+     "return_30d": -0.2566,
+     "return_7d": 0.032,
+     "revenue_driver": "branded shelf-stable foods",
+     "signal_rank": 516,
+     "stock_vs_spy_20d": -0.2357,
+     "ticker": "BGS"
+    },
+    {
+     "market_cap_m": 239.2582,
+     "price_vs_sma200": 0.599,
+     "return_30d": -0.3692,
+     "return_7d": 0.0837,
+     "revenue_driver": "plant-based meat alternatives",
+     "signal_rank": null,
+     "stock_vs_spy_20d": -0.2041,
+     "ticker": "BYND"
+    }
+   ],
+   "Restaurants, QSR & Foodservice": [
+    {
+     "market_cap_m": 1156.8137,
+     "price_vs_sma200": 1.7032,
+     "return_30d": 0.6556,
+     "return_7d": 0.0864,
+     "revenue_driver": "restaurant meals",
+     "signal_rank": 672,
+     "stock_vs_spy_20d": 0.3938,
+     "ticker": "CBRL"
+    },
+    {
+     "market_cap_m": 1009.8214,
+     "price_vs_sma200": 1.3591,
+     "return_30d": 0.328,
+     "return_7d": 0.0338,
+     "revenue_driver": "casual dining",
+     "signal_rank": 270,
+     "stock_vs_spy_20d": 0.2687,
+     "ticker": "BLMN"
+    },
+    {
+     "market_cap_m": 5406.3617,
+     "price_vs_sma200": 1.4244,
+     "return_30d": 0.1799,
+     "return_7d": -0.0284,
+     "revenue_driver": "full service restaurant dining",
+     "signal_rank": 220,
+     "stock_vs_spy_20d": 0.0409,
+     "ticker": "CAKE"
+    },
+    {
+     "market_cap_m": 8057.5474,
+     "price_vs_sma200": 0.827,
+     "return_30d": 0.1562,
+     "return_7d": 0.0306,
+     "revenue_driver": "fast-casual restaurant sales",
+     "signal_rank": 1054,
+     "stock_vs_spy_20d": 0.0814,
+     "ticker": "CAVA"
+    },
+    {
+     "market_cap_m": 9807.6989,
+     "price_vs_sma200": 1.2626,
+     "return_30d": 0.1019,
+     "return_7d": 0.1257,
+     "revenue_driver": "casual dining restaurants",
+     "signal_rank": 549,
+     "stock_vs_spy_20d": 0.1246,
+     "ticker": "EAT"
+    },
+    {
+     "market_cap_m": 13758.368,
+     "price_vs_sma200": 1.0229,
+     "return_30d": 0.0969,
+     "return_7d": 0.0813,
+     "revenue_driver": "steakhouse dining",
+     "signal_rank": 1167,
+     "stock_vs_spy_20d": 0.1606,
+     "ticker": "TXRH"
+    },
+    {
+     "market_cap_m": 23861.4064,
+     "price_vs_sma200": 1.0721,
+     "return_30d": 0.0665,
+     "return_7d": 0.0114,
+     "revenue_driver": "casual dining restaurants",
+     "signal_rank": 1740,
+     "stock_vs_spy_20d": 0.1099,
+     "ticker": "DRI"
+    },
+    {
+     "market_cap_m": 1428.9374,
+     "price_vs_sma200": 1.2469,
+     "return_30d": 0.0559,
+     "return_7d": 0.0713,
+     "revenue_driver": "casual dining restaurants",
+     "signal_rank": 355,
+     "stock_vs_spy_20d": 0.061,
+     "ticker": "BJRI"
+    },
+    {
+     "market_cap_m": 195472.0299,
+     "price_vs_sma200": 0.9081,
+     "return_30d": 0.0358,
+     "return_7d": 0.0441,
+     "revenue_driver": "quick service restaurant sales",
+     "signal_rank": 1170,
+     "stock_vs_spy_20d": 0.1032,
+     "ticker": "MCD"
+    },
+    {
+     "market_cap_m": 15899.619,
+     "price_vs_sma200": 1.1202,
+     "return_30d": -0.0153,
+     "return_7d": -0.0018,
+     "revenue_driver": "institutional food service",
+     "signal_rank": 677,
+     "stock_vs_spy_20d": 0.0192,
+     "ticker": "ARMK"
+    }
+   ]
+  }
+ },
+ "predictions": {
+  "badge_count": 1,
+  "confidence_score": 0.3933,
+  "conviction_label": "SPECULATIVE",
+  "data_quality_flags": [],
+  "ev_score": 0.1225,
+  "is_diamond": false,
+  "passes_tradability_filter": true,
+  "quality_label": "HIGH",
+  "quantiles": {
+   "downside_q10": -0.2909,
+   "downside_q25": -0.1578,
+   "downside_q50": -0.0901,
+   "downside_q75": -0.0207,
+   "downside_q90": 0.0079,
+   "path_volatility": 0.0362,
+   "risk_reward": 2.2683,
+   "uncertainty": 0.4938,
+   "upside_q10": 0.0331,
+   "upside_q25": 0.091,
+   "upside_q50": 0.2045,
+   "upside_q75": 0.333,
+   "upside_q90": 0.5269
+  },
+  "rank": 220,
+  "rank_score": 0.0564,
+  "tradability_filter_reasons": []
+ },
+ "profile": {
+  "_local": {
+   "dividend_yield": 0.0006,
+   "eps_growth_yoy": 0.3079,
+   "pe_ratio": 25.7038,
+   "revenue_growth_yoy": 0.0787,
+   "roe": 0.9059
+  },
+  "beta": 1.037,
+  "betaTTM": null,
+  "ceo": "David Overton",
+  "companyName": "The Cheesecake Factory Incorporated",
+  "country": "US",
+  "debtToEquityTTM": null,
+  "description": "The Cheesecake Factory Incorporated primarily operates restaurants. The company also maintains two bakeries that produce its signature cheesecakes and other baked goods. These products are distributed to its own restaurant network, international licensees, external foodservice operators, third-party bakery customers, retailers, and distributors. The Cheesecake Factory operates 306 restaurants across the United States and Canada, featuring brands such as 208 The Cheesecake Factory locations, 29 North Italia outlets, and various Fox Restaurant Concepts. Furthermore, 29 The Cheesecake Factory restaurants are run internationally under licensing agreements. Founded in 1972, the company's headquarters are located in Calabasas, California.",
+  "dividendYielTTM": null,
+  "enterpriseValueOverEBITDATTM": null,
+  "exchangeShortName": "NASDAQ",
+  "fullTimeEmployees": "48400",
+  "industry": "Restaurants",
+  "ipoDate": "1992-09-18",
+  "latest_earnings_date": "2026-10-27",
+  "marketCapTTM": null,
+  "mktCap": 5628919072,
+  "peRatioTTM": null,
+  "price": 113.12,
+  "priceToSalesRatioTTM": null,
+  "returnOnEquityTTM": 0.4303,
+  "revenue_description": "Cheesecake Factory operates restaurant brands and licenses bakery or restaurant concepts. Revenue is driven mainly by same-store sales, traffic, and menu pricing, while margins are sensitive to labor and food costs.",
+  "revenue_description_themes": [
+   "restaurant traffic",
+   "menu pricing",
+   "labor costs"
+  ],
+  "revenue_taxonomy": [
+   {
+    "bucket": "Restaurants, QSR & Foodservice",
+    "matched_tags": [
+     "full service restaurant dining",
+     "multi-concept restaurants"
+    ],
+    "path": "Consumer Services & Leisure › Hospitality & Experiences › Restaurants, QSR & Foodservice",
+    "sector": "Consumer Services & Leisure",
+    "segment": "Hospitality & Experiences"
+   },
+   {
+    "bucket": "Packaged Food, Snacks & Staples",
+    "matched_tags": [
+     "bakery desserts"
+    ],
+    "path": "Consumer Goods & Retail › Food Beverage & Staples › Packaged Food, Snacks & Staples",
+    "sector": "Consumer Goods & Retail",
+    "segment": "Food Beverage & Staples"
+   }
+  ],
+  "revenue_themes": [
+   "full service restaurant dining",
+   "bakery desserts",
+   "multi-concept restaurants"
+  ],
+  "sector": "Consumer Cyclical",
+  "website": "https://www.thecheesecakefactory.com"
+ },
+ "report": {
+  "display_rank": null,
+  "lane": "act_now",
+  "lane_rank": 9,
+  "setup_label": "early_trend",
+  "why_now": "Model analogs leads the readiness mix (+8.7); early-stage trend"
+ },
+ "scorecard": {
+  "headline": {
+   "avg_universe_pct": 61,
+   "label": "above_average",
+   "metric_count": 7
+  },
+  "metrics": {
+   "eps_growth_yoy": {
+    "direction": "higher",
+    "label": "EPS Growth",
+    "sector": "Consumer Disc.",
+    "sector_n": 251,
+    "sector_pct": 61,
+    "universe_n": 1880,
+    "universe_pct": 61,
+    "value": 0.3079
+   },
+   "gross_margin": {
+    "direction": "higher",
+    "label": "Gross Margin",
+    "sector": "Consumer Disc.",
+    "sector_n": 252,
+    "sector_pct": 75,
+    "universe_n": 1998,
+    "universe_pct": 51,
+    "value": 0.4758
+   },
+   "operating_margin": {
+    "direction": "higher",
+    "label": "Op. Margin",
+    "sector": "Consumer Disc.",
+    "sector_n": 252,
+    "sector_pct": 42,
+    "universe_n": 1998,
+    "universe_pct": 37,
+    "value": 0.0604
+   },
+   "pe_ratio": {
+    "direction": "lower",
+    "label": "P/E",
+    "sector": "Consumer Disc.",
+    "sector_n": 207,
+    "sector_pct": 32,
+    "universe_n": 1468,
+    "universe_pct": 37,
+    "value": 25.7038
+   },
+   "revenue_growth_yoy": {
+    "direction": "higher",
+    "label": "Rev Growth",
+    "sector": "Consumer Disc.",
+    "sector_n": 251,
+    "sector_pct": 60,
+    "universe_n": 1824,
+    "universe_pct": 48,
+    "value": 0.0787
+   },
+   "roe": {
+    "direction": "higher",
+    "label": "ROE",
+    "sector": "Consumer Disc.",
+    "sector_n": 252,
+    "sector_pct": 95,
+    "universe_n": 2088,
+    "universe_pct": 96,
+    "value": 0.9059
+   },
+   "roic": {
+    "direction": "higher",
+    "label": "ROIC",
+    "sector": "Consumer Disc.",
+    "sector_n": 247,
+    "sector_pct": 99,
+    "universe_n": 2026,
+    "universe_pct": 99,
+    "value": 0.2459
+   }
+  }
+ },
+ "signal_rank": 220,
+ "structural_analogs": {
+  "gp_core_pct": 54.9,
+  "gp_core_ratio": 1.3357,
+  "matches": [
+   {
+    "actual_downside": -0.0778,
+    "actual_return": 0.0647,
+    "actual_upside": 0.0647,
+    "days_in_region": 124,
+    "end_date": "2005-12-01",
+    "end_reason": "reversal",
+    "seq_len": 124,
+    "similarity": 0.5617,
+    "start_date": "2005-07-13",
+    "ticker": "LSI",
+    "total_distance": 0.2884,
+    "trigger_date": "2005-10-11",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": 0.0,
+    "actual_return": 0.2082,
+    "actual_upside": 0.2082,
+    "days_in_region": 110,
+    "end_date": "2017-10-04",
+    "end_reason": "reversal",
+    "seq_len": 110,
+    "similarity": 0.5556,
+    "start_date": "2017-06-15",
+    "ticker": "SAFM",
+    "total_distance": 0.2939,
+    "trigger_date": "2017-07-07",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": -0.0376,
+    "actual_return": 0.2251,
+    "actual_upside": 0.2251,
+    "days_in_region": 115,
+    "end_date": "2018-01-11",
+    "end_reason": "reversal",
+    "seq_len": 115,
+    "similarity": 0.5536,
+    "start_date": "2017-09-19",
+    "ticker": "SQM",
+    "total_distance": 0.2956,
+    "trigger_date": "2017-09-27",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": 0.0,
+    "actual_return": 0.2128,
+    "actual_upside": 0.2128,
+    "days_in_region": 103,
+    "end_date": "2005-07-08",
+    "end_reason": "reversal",
+    "seq_len": 103,
+    "similarity": 0.5528,
+    "start_date": "2005-02-25",
+    "ticker": "HOLX",
+    "total_distance": 0.2963,
+    "trigger_date": "2005-03-22",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": -0.113,
+    "actual_return": 0.3157,
+    "actual_upside": 0.3157,
+    "days_in_region": 107,
+    "end_date": "2006-12-05",
+    "end_reason": "reversal",
+    "seq_len": 107,
+    "similarity": 0.5492,
+    "start_date": "2006-04-25",
+    "ticker": "FUL",
+    "total_distance": 0.2997,
+    "trigger_date": "2006-06-29",
+    "trigger_type": "severe_drawdown"
+   },
+   {
+    "actual_downside": 0.0,
+    "actual_return": 0.1447,
+    "actual_upside": 0.1447,
+    "days_in_region": 93,
+    "end_date": "2017-11-24",
+    "end_reason": "reversal",
+    "seq_len": 93,
+    "similarity": 0.542,
+    "start_date": "2017-09-13",
+    "ticker": "ATHM",
+    "total_distance": 0.3063,
+    "trigger_date": "2017-10-27",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": -0.0553,
+    "actual_return": 0.5044,
+    "actual_upside": 0.5044,
+    "days_in_region": 106,
+    "end_date": "2013-02-14",
+    "end_reason": "reversal",
+    "seq_len": 106,
+    "similarity": 0.54,
+    "start_date": "2012-09-04",
+    "ticker": "DK",
+    "total_distance": 0.3081,
+    "trigger_date": "2012-10-24",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": -0.1807,
+    "actual_return": 0.0351,
+    "actual_upside": 0.0609,
+    "days_in_region": 93,
+    "end_date": "2012-07-19",
+    "end_reason": "reversal",
+    "seq_len": 93,
+    "similarity": 0.5342,
+    "start_date": "2012-04-03",
+    "ticker": "SHFL",
+    "total_distance": 0.3135,
+    "trigger_date": "2012-05-18",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": -0.0836,
+    "actual_return": -0.0836,
+    "actual_upside": 0.0751,
+    "days_in_region": 188,
+    "end_date": "2018-12-10",
+    "end_reason": "reversal",
+    "seq_len": 188,
+    "similarity": 0.5328,
+    "start_date": "2018-05-08",
+    "ticker": "FRPT",
+    "total_distance": 0.3148,
+    "trigger_date": "2018-10-17",
+    "trigger_type": "runup"
+   },
+   {
+    "actual_downside": -0.0314,
+    "actual_return": 0.4244,
+    "actual_upside": 0.4244,
+    "days_in_region": 110,
+    "end_date": "2011-04-29",
+    "end_reason": "reversal",
+    "seq_len": 110,
+    "similarity": 0.532,
+    "start_date": "2010-12-07",
+    "ticker": "IOSP",
+    "total_distance": 0.3156,
+    "trigger_date": "2011-01-21",
+    "trigger_type": "shallow_drawdown"
+   }
+  ],
+  "panel": {
+   "edge": 0.0146,
+   "hit_hi": 0.691,
+   "hit_lo": 0.518,
+   "hit_rate": 0.608,
+   "median_final": 0.0806,
+   "median_pain": 0.086,
+   "n": 51,
+   "n_eff": 51.0,
+   "p25_final": -0.0997,
+   "p_pain_gt5": 0.725,
+   "return_to_pain": 0.761
+  },
+  "stats": {
+   "avg_similarity": 0.501,
+   "avg_trough": 0.112,
+   "avg_upside": 0.1989,
+   "median_pain": 0.0683,
+   "median_return": 0.082,
+   "n_matches": 200,
+   "p25_return": -0.0703,
+   "p_pain_gt5": 0.615,
+   "return_to_pain": 0.929,
+   "top5_avg_trough": 0.0457,
+   "top5_avg_upside": 0.2053,
+   "top_similarity": 0.562,
+   "win_rate": 0.655
+  },
+  "total_matches": 200
+ },
+ "ticker": "CAKE",
+ "trending": {
+  "acceleration": 0.001,
+  "avg_vol_20d": 1415725.5925,
+  "base_high_120": 117.29,
+  "breakout_confirmed": 0,
+  "close": 113.12,
+  "momentum_score": 0.7037,
+  "momentum_start": "2026-05-14",
+  "range_20": 0.1864,
+  "range_50": 0.213,
+  "rank": 1234,
+  "rank_down": null,
+  "rank_up": 315,
+  "ret_120": 0.8349,
+  "ret_20": 0.0479,
+  "ret_60": 0.0742,
+  "rundown_score": 0.1418,
+  "score_date": "2026-10-29",
+  "slope_20": 0.0011,
+  "slope_60": 0.0001,
+  "stage": "sustained",
+  "stage_label": "Trending",
+  "ticker": "CAKE",
+  "total_score": 0.3564,
+  "trend_ratio": 1.3233,
+  "vcp_detected": 0,
+  "vcp_score": 0.1249
+ }
+}

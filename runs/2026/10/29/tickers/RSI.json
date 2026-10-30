@@ -1,0 +1,1016 @@
+{
+ "date": "2026-10-29",
+ "detected_regions": {
+  "primary": {
+   "days_in_region": 133,
+   "region_start": "2026-07-20",
+   "trigger_date": "2026-08-07",
+   "trigger_type": "severe_drawdown"
+  },
+  "secondary": [
+   {
+    "confidence_score": 0.3384,
+    "downside_q50": -0.085,
+    "ev_score": 0.1562,
+    "region_start": "2026-02-13",
+    "seq_len": 200,
+    "trigger_date": "2026-08-07",
+    "trigger_type": "runup",
+    "upside_q25": 0.1086,
+    "upside_q50": 0.2351,
+    "upside_q75": 0.3904
+   }
+  ]
+ },
+ "feature_attribution": {
+  "macro_driver_count": 12,
+  "risk_flags": [
+   "high_volatility"
+  ],
+  "top_drivers": [
+   {
+    "direction": "positive",
+    "feature": "return_1d",
+    "feature_value": -0.0998,
+    "importance": 0.0004,
+    "importance_pct": 0.1886,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "negative",
+    "feature": "dollar_volume",
+    "feature_value": 140049360.0,
+    "importance": 0.0004,
+    "importance_pct": 0.1785,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "positive",
+    "feature": "price_vs_high_52w",
+    "feature_value": 0.3946,
+    "importance": 0.0003,
+    "importance_pct": 0.169,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "positive",
+    "feature": "price_vs_sma200",
+    "feature_value": 0.5708,
+    "importance": 0.0003,
+    "importance_pct": 0.1274,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "negative",
+    "feature": "stock_vs_sector_20d",
+    "feature_value": -0.3207,
+    "importance": 0.0002,
+    "importance_pct": 0.0913,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "negative",
+    "feature": "beta_252d",
+    "feature_value": 0.1291,
+    "importance": 0.0002,
+    "importance_pct": 0.0893,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "positive",
+    "feature": "williams_14",
+    "feature_value": -98.5222,
+    "importance": 0.0002,
+    "importance_pct": 0.0802,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "negative",
+    "feature": "ps_percentile_1y",
+    "feature_value": 1.0,
+    "importance": 0.0002,
+    "importance_pct": 0.0757,
+    "method": "integrated_gradients"
+   }
+  ]
+ },
+ "fundamentals": {
+  "accrual": -0.0082,
+  "adx_14": 61.176,
+  "altman_z_score": 3.0442,
+  "amihud_illiquidity": 0.0006,
+  "avg_volume": 3084457.8549,
+  "beta_252d": 0.1291,
+  "book_value_per_share": 1.6879,
+  "correlation_spy_60d": 0.0203,
+  "current_liabilities": 205.85,
+  "current_ratio": 2.216,
+  "daily_earnings_yield": 0.0283,
+  "daily_fcf_yield": 0.0329,
+  "daily_pb": 6.828,
+  "daily_pe": 35.3767,
+  "daily_ps": 0.9042,
+  "days_since_52w_high": 72.0,
+  "debt_ebitda": 0.0,
+  "debt_to_equity": 0.0,
+  "dividend_yield": 0.0,
+  "dollar_volume_20d_avg": 58701796.1397,
+  "earnings_quality": 6.0134,
+  "ebitda_growth_yoy": 0.8717,
+  "enterprise_value": 951.6514,
+  "eps_basic": 0.1,
+  "eps_cagr_3y": -0.0414,
+  "eps_cagr_5y": null,
+  "eps_diluted": 0.1,
+  "eps_growth_accel": -0.0506,
+  "eps_growth_qoq": 0.0,
+  "eps_growth_yoy": 0.0734,
+  "eps_growth_yoy_q2": 0.1241,
+  "eps_growth_yoy_q3": 3.2611,
+  "eps_growth_yoy_q4": 10.0,
+  "eps_growth_yoy_q5": 10.0,
+  "eps_growth_yoy_q6": 4.0,
+  "eps_growth_yoy_q7": 1.5294,
+  "eps_growth_yoy_q8": 1.0741,
+  "eps_history_8q": [
+   0.02,
+   0.05,
+   0.12,
+   0.06,
+   0.0492,
+   0.08,
+   0.1,
+   0.1
+  ],
+  "eps_ttm": 0.385,
+  "ev_to_ebitda": 4.6471,
+  "ev_to_fcf": 13.541,
+  "ev_to_sales": 2.4664,
+  "fcf_growth_yoy": -0.5492,
+  "fcf_margin": 0.1821,
+  "fcf_per_share": 0.6074,
+  "gross_margin": 0.3553,
+  "gross_margin_change_yoy": 0.0241,
+  "gross_margin_history": [
+   0.3535,
+   0.3512,
+   0.3462,
+   0.3489,
+   0.3497,
+   0.3553
+  ],
+  "inc_roic": 0.0095,
+  "interest_coverage": null,
+  "is_pre_revenue": false,
+  "margin_vs_sector_median": null,
+  "market_cap_ratio": 1333.5614,
+  "net_income": 11.834,
+  "net_margin": 0.0256,
+  "operating_income": 42.653,
+  "operating_margin": 0.1087,
+  "operating_margin_change_yoy": 0.0405,
+  "pb_ratio": 8.0691,
+  "pe_percentile_1y": 1.0,
+  "pe_ratio": 35.3767,
+  "peg_trailing": 1.306,
+  "piotroski_f_score": 5.0,
+  "price_vs_high_52w": 0.3946,
+  "price_vs_sma200": 0.5708,
+  "ps_percentile_1y": 1.0,
+  "ps_ratio": 0.9042,
+  "quarter_labels_8q": [
+   "Q4 '24",
+   "Q1 '25",
+   "Q2 '25",
+   "Q3 '25",
+   "Q4 '25",
+   "Q1 '26",
+   "Q2 '26",
+   "Q3 '26"
+  ],
+  "quarterly_eps_growth_yoy": 0.6667,
+  "quarterly_eps_growth_yoy_8q": [
+   2.0,
+   6.0,
+   null,
+   5.0,
+   1.46,
+   0.6,
+   -0.1667,
+   0.6667
+  ],
+  "quarterly_revenue_growth_yoy": 0.3884,
+  "quarterly_revenue_growth_yoy_8q": [
+   0.3111,
+   0.2069,
+   0.2216,
+   0.1973,
+   0.2783,
+   0.4114,
+   0.4627,
+   0.3884
+  ],
+  "revenue_cagr_3y": 0.3055,
+  "revenue_cagr_5y": 0.2637,
+  "revenue_growth_accel": 0.0437,
+  "revenue_growth_qoq": -0.0201,
+  "revenue_growth_yoy": 0.3866,
+  "revenue_growth_yoy_q2": 0.3429,
+  "revenue_growth_yoy_q3": 0.282,
+  "revenue_growth_yoy_q4": 0.2276,
+  "revenue_growth_yoy_q5": 0.2315,
+  "revenue_growth_yoy_q6": 0.2699,
+  "revenue_growth_yoy_q7": 0.2986,
+  "revenue_growth_yoy_q8": 0.337,
+  "revenue_history_8q": [
+   254.167,
+   262.407,
+   269.217,
+   277.911,
+   324.893,
+   370.361,
+   393.776,
+   385.851
+  ],
+  "revenue_per_share": 3.3347,
+  "roa": 0.0465,
+  "roce": 0.2639,
+  "roe": 0.1982,
+  "roic": 0.0605,
+  "rsi_14": 12.0288,
+  "sector_momentum": 0.066,
+  "share_dilution_1y": 0.0856,
+  "stock_vs_sector_20d": -0.3207,
+  "stock_vs_spy_20d": -0.3243,
+  "total_assets": 828.605,
+  "vol_regime": 1.1721,
+  "volatility_20d": 0.035,
+  "volatility_60d": 0.0299,
+  "w52_high": 34.53,
+  "w52_low": 13.53
+ },
+ "market_characters": [
+  {
+   "id": "g3",
+   "name": "Explosive Gainers"
+  }
+ ],
+ "model_analogs": {
+  "matches": [
+   {
+    "actual_downside": -0.4194,
+    "actual_return": -0.2715,
+    "actual_upside": 0.0257,
+    "days_in_region": 186,
+    "end_date": "2019-01-28",
+    "end_reason": "data_end",
+    "similarity": 0.9724,
+    "start_date": "2018-07-26",
+    "ticker": "CVRR",
+    "trigger_date": "2018-11-23",
+    "trigger_type": "severe_drawdown"
+   },
+   {
+    "actual_downside": -0.2093,
+    "actual_return": 0.1304,
+    "actual_upside": 0.1304,
+    "days_in_region": 175,
+    "end_date": "2019-01-24",
+    "end_reason": "reversal",
+    "similarity": 0.9698,
+    "start_date": "2018-08-02",
+    "ticker": "TALO",
+    "trigger_date": "2018-10-25",
+    "trigger_type": "severe_drawdown"
+   },
+   {
+    "actual_downside": -0.3831,
+    "actual_return": 0.4253,
+    "actual_upside": 0.4253,
+    "days_in_region": 214,
+    "end_date": "2019-02-26",
+    "end_reason": "reversal",
+    "similarity": 0.969,
+    "start_date": "2018-07-27",
+    "ticker": "ASPN",
+    "trigger_date": "2018-12-12",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": 0.0,
+    "actual_return": 0.5391,
+    "actual_upside": 0.5391,
+    "days_in_region": 170,
+    "end_date": "2008-04-24",
+    "end_reason": "reversal",
+    "similarity": 0.9677,
+    "start_date": "2007-11-06",
+    "ticker": "TTMI",
+    "trigger_date": "2008-01-07",
+    "trigger_type": "severe_drawdown"
+   },
+   {
+    "actual_downside": -0.1257,
+    "actual_return": 0.2457,
+    "actual_upside": 0.2457,
+    "days_in_region": 125,
+    "end_date": "1998-10-27",
+    "end_reason": "reversal",
+    "similarity": 0.9671,
+    "start_date": "1998-06-24",
+    "ticker": "CSH",
+    "trigger_date": "1998-07-30",
+    "trigger_type": "severe_drawdown"
+   },
+   {
+    "actual_downside": -0.178,
+    "actual_return": 0.1038,
+    "actual_upside": 0.1038,
+    "days_in_region": 146,
+    "end_date": "2019-01-24",
+    "end_reason": "reversal",
+    "similarity": 0.9666,
+    "start_date": "2018-08-31",
+    "ticker": "BBW",
+    "trigger_date": "2018-11-30",
+    "trigger_type": "severe_drawdown"
+   },
+   {
+    "actual_downside": -0.1777,
+    "actual_return": 0.2175,
+    "actual_upside": 0.2175,
+    "days_in_region": 162,
+    "end_date": "2005-12-29",
+    "end_reason": "reversal",
+    "similarity": 0.9661,
+    "start_date": "2005-07-20",
+    "ticker": "CNC",
+    "trigger_date": "2005-07-25",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": -0.0241,
+    "actual_return": 0.1995,
+    "actual_upside": 0.1995,
+    "days_in_region": 137,
+    "end_date": "2008-02-26",
+    "end_reason": "reversal",
+    "similarity": 0.9654,
+    "start_date": "2007-10-12",
+    "ticker": "KBR",
+    "trigger_date": "2008-01-17",
+    "trigger_type": "severe_drawdown"
+   },
+   {
+    "actual_downside": -0.1718,
+    "actual_return": 0.1658,
+    "actual_upside": 0.1658,
+    "days_in_region": 220,
+    "end_date": "2019-02-28",
+    "end_reason": "reversal",
+    "similarity": 0.9649,
+    "start_date": "2018-07-23",
+    "ticker": "ENVA",
+    "trigger_date": "2018-10-02",
+    "trigger_type": "severe_drawdown"
+   },
+   {
+    "actual_downside": 0.0,
+    "actual_return": 0.5193,
+    "actual_upside": 0.5193,
+    "days_in_region": 137,
+    "end_date": "2000-12-29",
+    "end_reason": "reversal",
+    "similarity": 0.9648,
+    "start_date": "2000-08-14",
+    "ticker": "RSG",
+    "trigger_date": "2000-09-28",
+    "trigger_type": "severe_drawdown"
+   }
+  ],
+  "stats": {
+   "avg_max_drawdown": 0.1238,
+   "avg_similarity": 0.963,
+   "avg_trough": 0.1238,
+   "avg_upside": 0.2575,
+   "best_return": 1.2192,
+   "downside_range": [
+    -0.4194,
+    0.0
+   ],
+   "median_return": 0.2031,
+   "n_matches": 50,
+   "outcome_agreement": true,
+   "return_p25": 0.0896,
+   "return_p5": -0.0167,
+   "return_p75": 0.3672,
+   "return_p95": 0.65,
+   "sim_weighted_win_rate": 0.84,
+   "top5_avg_trough": 0.2275,
+   "top5_avg_upside": 0.2732,
+   "top_similarity": 0.972,
+   "upside_range": [
+    0.0,
+    1.2192
+   ],
+   "win_rate": 0.84,
+   "worst_return": -0.2715,
+   "years_span": 17
+  },
+  "total_matches": 50
+ },
+ "peer_group": {
+  "buckets": [
+   "Casinos, Gaming & Sports Betting",
+   "Video Games, Interactive Content & Virtual Goods"
+  ],
+  "groups": {
+   "Casinos, Gaming & Sports Betting": [
+    {
+     "market_cap_m": 5714.2915,
+     "price_vs_sma200": 1.0332,
+     "return_30d": 0.1087,
+     "return_7d": 0.098,
+     "revenue_driver": "historical horse racing",
+     "signal_rank": 1333,
+     "stock_vs_spy_20d": 0.2114,
+     "ticker": "CHDN"
+    },
+    {
+     "market_cap_m": 756.4286,
+     "price_vs_sma200": 1.0724,
+     "return_30d": 0.0806,
+     "return_7d": 0.0,
+     "revenue_driver": "casino gaming",
+     "signal_rank": null,
+     "stock_vs_spy_20d": -0.0653,
+     "ticker": "GDEN"
+    },
+    {
+     "market_cap_m": 1011.8093,
+     "price_vs_sma200": 0.965,
+     "return_30d": -0.0131,
+     "return_7d": 0.0434,
+     "revenue_driver": "gaming terminals",
+     "signal_rank": 189,
+     "stock_vs_spy_20d": 0.06,
+     "ticker": "ACEL"
+    },
+    {
+     "market_cap_m": 5888.5158,
+     "price_vs_sma200": 1.0543,
+     "return_30d": -0.0182,
+     "return_7d": 0.0014,
+     "revenue_driver": "casino gaming operations",
+     "signal_rank": 8,
+     "stock_vs_spy_20d": -0.0235,
+     "ticker": "CZR"
+    },
+    {
+     "market_cap_m": 3710.9436,
+     "price_vs_sma200": 0.8463,
+     "return_30d": -0.068,
+     "return_7d": -0.0215,
+     "revenue_driver": "las vegas locals casino gaming",
+     "signal_rank": 89,
+     "stock_vs_spy_20d": -0.0015,
+     "ticker": "RRR"
+    },
+    {
+     "market_cap_m": 11961.4852,
+     "price_vs_sma200": 0.8522,
+     "return_30d": -0.0779,
+     "return_7d": 0.0117,
+     "revenue_driver": "online sports betting",
+     "signal_rank": 326,
+     "stock_vs_spy_20d": 0.0638,
+     "ticker": "DKNG"
+    },
+    {
+     "market_cap_m": 10553.361,
+     "price_vs_sma200": 0.7522,
+     "return_30d": -0.1055,
+     "return_7d": -0.0418,
+     "revenue_driver": "casino gaming",
+     "signal_rank": 833,
+     "stock_vs_spy_20d": -0.047,
+     "ticker": "WYNN"
+    },
+    {
+     "market_cap_m": 11778.2868,
+     "price_vs_sma200": 0.9126,
+     "return_30d": -0.122,
+     "return_7d": 0.0247,
+     "revenue_driver": "regional casino gaming",
+     "signal_rank": 335,
+     "stock_vs_spy_20d": 0.0488,
+     "ticker": "PENN"
+    },
+    {
+     "market_cap_m": 7458.5086,
+     "price_vs_sma200": 0.7379,
+     "return_30d": -0.2475,
+     "return_7d": -0.0024,
+     "revenue_driver": "casino and resort management",
+     "signal_rank": 196,
+     "stock_vs_spy_20d": -0.0608,
+     "ticker": "MGM"
+    },
+    {
+     "market_cap_m": 1333.5614,
+     "price_vs_sma200": 0.5708,
+     "return_30d": -0.4606,
+     "return_7d": -0.2365,
+     "revenue_driver": "online casino gambling",
+     "signal_rank": 229,
+     "stock_vs_spy_20d": -0.3243,
+     "ticker": "RSI"
+    }
+   ],
+   "Video Games, Interactive Content & Virtual Goods": [
+    {
+     "market_cap_m": 34353.6933,
+     "price_vs_sma200": 0.9989,
+     "return_30d": 0.1044,
+     "return_7d": 0.0021,
+     "revenue_driver": "virtual economy",
+     "signal_rank": 1663,
+     "stock_vs_spy_20d": 0.213,
+     "ticker": "RBLX"
+    },
+    {
+     "market_cap_m": 52499.7505,
+     "price_vs_sma200": 1.0328,
+     "return_30d": 0.0217,
+     "return_7d": 0.0005,
+     "revenue_driver": "video game publishing",
+     "signal_rank": null,
+     "stock_vs_spy_20d": -0.0154,
+     "ticker": "EA"
+    },
+    {
+     "market_cap_m": 1235.7387,
+     "price_vs_sma200": 0.8835,
+     "return_30d": -0.0783,
+     "return_7d": -0.0042,
+     "revenue_driver": "digital comics platform",
+     "signal_rank": 173,
+     "stock_vs_spy_20d": -0.1295,
+     "ticker": "WBTN"
+    },
+    {
+     "market_cap_m": 45548.0235,
+     "price_vs_sma200": 0.8786,
+     "return_30d": -0.0818,
+     "return_7d": -0.0644,
+     "revenue_driver": "AAA video game publisher",
+     "signal_rank": 1086,
+     "stock_vs_spy_20d": -0.0572,
+     "ticker": "TTWO"
+    },
+    {
+     "market_cap_m": 11778.2868,
+     "price_vs_sma200": 0.9126,
+     "return_30d": -0.122,
+     "return_7d": 0.0247,
+     "revenue_driver": "regional casino gaming",
+     "signal_rank": 335,
+     "stock_vs_spy_20d": 0.0488,
+     "ticker": "PENN"
+    },
+    {
+     "market_cap_m": 1237.2242,
+     "price_vs_sma200": 0.6372,
+     "return_30d": -0.1472,
+     "return_7d": -0.0529,
+     "revenue_driver": "social casino games",
+     "signal_rank": 140,
+     "stock_vs_spy_20d": -0.0992,
+     "ticker": "PLTK"
+    },
+    {
+     "market_cap_m": 9325.2025,
+     "price_vs_sma200": 0.8669,
+     "return_30d": -0.2197,
+     "return_7d": 0.0023,
+     "revenue_driver": "live entertainment venues",
+     "signal_rank": 1269,
+     "stock_vs_spy_20d": -0.1272,
+     "ticker": "SPHR"
+    },
+    {
+     "market_cap_m": 1333.5614,
+     "price_vs_sma200": 0.5708,
+     "return_30d": -0.4606,
+     "return_7d": -0.2365,
+     "revenue_driver": "online casino gambling",
+     "signal_rank": 229,
+     "stock_vs_spy_20d": -0.3243,
+     "ticker": "RSI"
+    }
+   ]
+  }
+ },
+ "predictions": {
+  "badge_count": 1,
+  "confidence_score": 0.2539,
+  "conviction_label": "SPECULATIVE",
+  "data_quality_flags": [],
+  "ev_score": 0.168,
+  "is_diamond": false,
+  "passes_tradability_filter": true,
+  "quality_label": "WEAK",
+  "quantiles": {
+   "downside_q10": -0.2998,
+   "downside_q25": -0.1737,
+   "downside_q50": -0.0862,
+   "downside_q75": -0.0171,
+   "downside_q90": 0.0056,
+   "path_volatility": 0.0411,
+   "risk_reward": 2.8882,
+   "uncertainty": 0.5792,
+   "upside_q10": 0.0395,
+   "upside_q25": 0.1147,
+   "upside_q50": 0.2491,
+   "upside_q75": 0.4086,
+   "upside_q90": 0.6188
+  },
+  "rank": 229,
+  "rank_score": 0.0552,
+  "tradability_filter_reasons": []
+ },
+ "profile": {
+  "_local": {
+   "dividend_yield": 0.0,
+   "eps_growth_yoy": 0.0734,
+   "pe_ratio": 41.373,
+   "revenue_growth_yoy": 0.3866,
+   "roe": 0.1982
+  },
+  "beta": 1.512,
+  "betaTTM": null,
+  "ceo": "Richard Todd Schwartz",
+  "companyName": "Rush Street Interactive, Inc.",
+  "country": "US",
+  "debtToEquityTTM": null,
+  "description": "Rush Street Interactive, Inc. (RSI) functions as a prominent online casino and sports betting enterprise, catering to markets in both the United States and Latin America. The company's diverse service portfolio includes real-money online casino games, options for both online and retail sports wagering, and social gaming platforms. Additionally, RSI provides a comprehensive collection of digital games, such as virtual versions of classic table games and slot machines, mirroring those found in traditional casinos. Its online casino and sports betting products are recognized under the brand names BetRivers.com, PlaySugarHouse.com, and RushBet.co. Rush Street Interactive, Inc. was established in 2012 and maintains its corporate headquarters in Chicago, Illinois.",
+  "dividendYielTTM": null,
+  "enterpriseValueOverEBITDATTM": null,
+  "exchangeShortName": "NYSE",
+  "fullTimeEmployees": "912",
+  "industry": "Gambling, Resorts & Casinos",
+  "ipoDate": "2020-04-27",
+  "latest_earnings_date": "2026-10-29",
+  "marketCapTTM": null,
+  "mktCap": 3825499889,
+  "peRatioTTM": null,
+  "price": 13.62,
+  "priceToSalesRatioTTM": null,
+  "returnOnEquityTTM": 0.2196,
+  "revenue_description": "Rush Street Interactive operates online casino and sports-betting platforms. Revenue is driven by subscription ACV from enterprise license agreements and usage-based consumption, with module expansion and new product attach as growth levers.",
+  "revenue_description_themes": [
+   "online casino market share expansion",
+   "sports betting handle growth",
+   "proprietary gaming platform development"
+  ],
+  "revenue_taxonomy": [
+   {
+    "bucket": "Casinos, Gaming & Sports Betting",
+    "matched_tags": [
+     "online casino gambling",
+     "digital sports betting"
+    ],
+    "path": "Consumer Services & Leisure › Gaming Education & Local Services › Casinos, Gaming & Sports Betting",
+    "sector": "Consumer Services & Leisure",
+    "segment": "Gaming Education & Local Services"
+   },
+   {
+    "bucket": "Video Games, Interactive Content & Virtual Goods",
+    "matched_tags": [
+     "social gaming platform"
+    ],
+    "path": "Media, Advertising & Information › Entertainment & Ip › Video Games, Interactive Content & Virtual Goods",
+    "sector": "Media, Advertising & Information",
+    "segment": "Entertainment & Ip"
+   }
+  ],
+  "revenue_themes": [
+   "online casino gambling",
+   "digital sports betting",
+   "social gaming platform"
+  ],
+  "sector": "Consumer Cyclical",
+  "website": "https://www.rushstreetinteractive.com"
+ },
+ "report": {
+  "display_rank": 1,
+  "lane": "risk_avoid",
+  "lane_rank": 1,
+  "setup_label": "broken_trend",
+  "why_now": "Risk/avoid because price is below a non-rising 200-day trend."
+ },
+ "scorecard": {
+  "headline": {
+   "avg_universe_pct": 58,
+   "label": "mixed",
+   "metric_count": 8
+  },
+  "metrics": {
+   "debt_to_equity": {
+    "direction": "lower",
+    "label": "D/E Ratio",
+    "sector": "Consumer Disc.",
+    "sector_n": 247,
+    "sector_pct": 89,
+    "universe_n": 2056,
+    "universe_pct": 94,
+    "value": 0.0
+   },
+   "eps_growth_yoy": {
+    "direction": "higher",
+    "label": "EPS Growth",
+    "sector": "Consumer Disc.",
+    "sector_n": 251,
+    "sector_pct": 37,
+    "universe_n": 1880,
+    "universe_pct": 42,
+    "value": 0.0734
+   },
+   "gross_margin": {
+    "direction": "higher",
+    "label": "Gross Margin",
+    "sector": "Consumer Disc.",
+    "sector_n": 252,
+    "sector_pct": 49,
+    "universe_n": 1998,
+    "universe_pct": 35,
+    "value": 0.3553
+   },
+   "operating_margin": {
+    "direction": "higher",
+    "label": "Op. Margin",
+    "sector": "Consumer Disc.",
+    "sector_n": 252,
+    "sector_pct": 62,
+    "universe_n": 1998,
+    "universe_pct": 50,
+    "value": 0.1087
+   },
+   "pe_ratio": {
+    "direction": "lower",
+    "label": "P/E",
+    "sector": "Consumer Disc.",
+    "sector_n": 207,
+    "sector_pct": 12,
+    "universe_n": 1468,
+    "universe_pct": 17,
+    "value": 41.373
+   },
+   "revenue_growth_yoy": {
+    "direction": "higher",
+    "label": "Rev Growth",
+    "sector": "Consumer Disc.",
+    "sector_n": 251,
+    "sector_pct": 98,
+    "universe_n": 1824,
+    "universe_pct": 90,
+    "value": 0.3866
+   },
+   "roe": {
+    "direction": "higher",
+    "label": "ROE",
+    "sector": "Consumer Disc.",
+    "sector_n": 252,
+    "sector_pct": 70,
+    "universe_n": 2088,
+    "universe_pct": 76,
+    "value": 0.1982
+   },
+   "roic": {
+    "direction": "higher",
+    "label": "ROIC",
+    "sector": "Consumer Disc.",
+    "sector_n": 247,
+    "sector_pct": 43,
+    "universe_n": 2026,
+    "universe_pct": 59,
+    "value": 0.019
+   }
+  }
+ },
+ "signal_rank": 229,
+ "structural_analogs": {
+  "gp_core_pct": 87.9,
+  "gp_core_ratio": 1.9529,
+  "matches": [
+   {
+    "actual_downside": -0.6293,
+    "actual_return": -0.5721,
+    "actual_upside": 0.0338,
+    "days_in_region": 124,
+    "end_date": "2005-11-28",
+    "end_reason": "reversal",
+    "seq_len": 124,
+    "similarity": 0.5901,
+    "start_date": "2005-06-20",
+    "ticker": "MOVI",
+    "total_distance": 0.2637,
+    "trigger_date": "2005-06-23",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": 0.0,
+    "actual_return": 0.3514,
+    "actual_upside": 0.3514,
+    "days_in_region": 126,
+    "end_date": "2014-06-26",
+    "end_reason": "reversal",
+    "seq_len": 126,
+    "similarity": 0.5901,
+    "start_date": "2014-02-13",
+    "ticker": "LOCK",
+    "total_distance": 0.2638,
+    "trigger_date": "2014-02-26",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": -0.038,
+    "actual_return": 0.1125,
+    "actual_upside": 0.1125,
+    "days_in_region": 134,
+    "end_date": "2005-06-10",
+    "end_reason": "reversal",
+    "seq_len": 134,
+    "similarity": 0.5759,
+    "start_date": "2004-12-31",
+    "ticker": "TIBX",
+    "total_distance": 0.2759,
+    "trigger_date": "2005-01-20",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": -0.0414,
+    "actual_return": 0.1146,
+    "actual_upside": 0.1146,
+    "days_in_region": 124,
+    "end_date": "2014-06-25",
+    "end_reason": "reversal",
+    "seq_len": 124,
+    "similarity": 0.573,
+    "start_date": "2014-01-30",
+    "ticker": "GDOT",
+    "total_distance": 0.2784,
+    "trigger_date": "2014-02-04",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": -0.0163,
+    "actual_return": 0.3906,
+    "actual_upside": 0.3906,
+    "days_in_region": 130,
+    "end_date": "2020-01-13",
+    "end_reason": "reversal",
+    "seq_len": 130,
+    "similarity": 0.5673,
+    "start_date": "2019-07-18",
+    "ticker": "TPB",
+    "total_distance": 0.2834,
+    "trigger_date": "2019-07-31",
+    "trigger_type": "severe_drawdown"
+   },
+   {
+    "actual_downside": -0.2229,
+    "actual_return": 0.0926,
+    "actual_upside": 0.0926,
+    "days_in_region": 122,
+    "end_date": "2018-11-01",
+    "end_reason": "reversal",
+    "seq_len": 122,
+    "similarity": 0.5673,
+    "start_date": "2018-06-08",
+    "ticker": "TAL",
+    "total_distance": 0.2835,
+    "trigger_date": "2018-07-30",
+    "trigger_type": "severe_drawdown"
+   },
+   {
+    "actual_downside": -0.1043,
+    "actual_return": 0.0111,
+    "actual_upside": 0.0172,
+    "days_in_region": 139,
+    "end_date": "2014-06-25",
+    "end_reason": "reversal",
+    "seq_len": 139,
+    "similarity": 0.5616,
+    "start_date": "2014-01-02",
+    "ticker": "CHEF",
+    "total_distance": 0.2885,
+    "trigger_date": "2014-01-29",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": -0.0481,
+    "actual_return": 0.2104,
+    "actual_upside": 0.2104,
+    "days_in_region": 132,
+    "end_date": "2014-01-15",
+    "end_reason": "reversal",
+    "seq_len": 132,
+    "similarity": 0.5605,
+    "start_date": "2013-08-05",
+    "ticker": "DIOD",
+    "total_distance": 0.2895,
+    "trigger_date": "2013-08-12",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": -0.0155,
+    "actual_return": 0.2431,
+    "actual_upside": 0.2431,
+    "days_in_region": 147,
+    "end_date": "2018-04-18",
+    "end_reason": "reversal",
+    "seq_len": 147,
+    "similarity": 0.5603,
+    "start_date": "2017-10-02",
+    "ticker": "AJRD",
+    "total_distance": 0.2897,
+    "trigger_date": "2017-11-06",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": 0.0,
+    "actual_return": 0.5171,
+    "actual_upside": 0.5171,
+    "days_in_region": 138,
+    "end_date": "2006-10-16",
+    "end_reason": "reversal",
+    "seq_len": 138,
+    "similarity": 0.559,
+    "start_date": "2006-03-31",
+    "ticker": "FDRY",
+    "total_distance": 0.2908,
+    "trigger_date": "2006-05-17",
+    "trigger_type": "severe_drawdown"
+   }
+  ],
+  "panel": {
+   "edge": 0.1398,
+   "hit_hi": 0.913,
+   "hit_lo": 0.79,
+   "hit_rate": 0.863,
+   "median_final": 0.1569,
+   "median_pain": 0.0459,
+   "n": 51,
+   "n_eff": 51.0,
+   "p25_final": 0.0739,
+   "p_pain_gt5": 0.471,
+   "return_to_pain": 2.381
+  },
+  "stats": {
+   "avg_similarity": 0.525,
+   "avg_trough": 0.1092,
+   "avg_upside": 0.2,
+   "median_pain": 0.0776,
+   "median_return": 0.1387,
+   "n_matches": 200,
+   "p25_return": 0.0402,
+   "p_pain_gt5": 0.63,
+   "return_to_pain": 1.421,
+   "top5_avg_trough": 0.145,
+   "top5_avg_upside": 0.2006,
+   "top_similarity": 0.59,
+   "win_rate": 0.805
+  },
+  "total_matches": 200
+ },
+ "ticker": "RSI",
+ "trending": {
+  "acceleration": -0.0101,
+  "avg_vol_20d": 3042338.1992,
+  "base_high_120": 34.52,
+  "breakout_confirmed": 0,
+  "close": 13.62,
+  "momentum_score": 0.0112,
+  "momentum_start": "2026-10-14",
+  "range_20": 0.6013,
+  "range_50": 1.0279,
+  "rank": 1643,
+  "rank_down": 32,
+  "rank_up": null,
+  "ret_120": -0.509,
+  "ret_20": -0.3173,
+  "ret_60": -0.4745,
+  "rundown_score": 0.9635,
+  "score_date": "2026-10-29",
+  "slope_20": -0.0244,
+  "slope_60": -0.0143,
+  "stage": "rundown",
+  "stage_label": "rundown",
+  "ticker": "RSI",
+  "total_score": 0.2788,
+  "trend_ratio": 0.5918,
+  "vcp_detected": 0,
+  "vcp_score": 0.4572
+ }
+}
