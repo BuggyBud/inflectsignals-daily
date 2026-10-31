@@ -1,0 +1,1015 @@
+{
+ "date": "2026-10-30",
+ "detected_regions": {
+  "primary": {
+   "days_in_region": 122,
+   "region_start": "2026-08-05",
+   "trigger_date": "2026-09-01",
+   "trigger_type": "compression"
+  },
+  "secondary": [
+   {
+    "confidence_score": 0.0654,
+    "downside_q50": -0.1226,
+    "ev_score": 0.164,
+    "region_start": "2026-07-06",
+    "seq_len": 144,
+    "trigger_date": "2026-10-29",
+    "trigger_type": "severe_drawdown",
+    "upside_q25": 0.1052,
+    "upside_q50": 0.2581,
+    "upside_q75": 0.4785
+   }
+  ]
+ },
+ "feature_attribution": {
+  "macro_driver_count": 13,
+  "risk_flags": [
+   "high_volatility"
+  ],
+  "top_drivers": [
+   {
+    "direction": "negative",
+    "feature": "price_vs_sma200",
+    "feature_value": 0.622,
+    "importance": 0.0011,
+    "importance_pct": 0.3054,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "positive",
+    "feature": "historical_recovery_rate",
+    "feature_value": 0.1151,
+    "importance": 0.0006,
+    "importance_pct": 0.1786,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "positive",
+    "feature": "ma_200_slope",
+    "feature_value": -0.1541,
+    "importance": 0.0006,
+    "importance_pct": 0.1729,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "positive",
+    "feature": "volatility_20d",
+    "feature_value": 0.0552,
+    "importance": 0.0004,
+    "importance_pct": 0.1199,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "positive",
+    "feature": "price_vs_high_52w",
+    "feature_value": 0.2123,
+    "importance": 0.0004,
+    "importance_pct": 0.1035,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "positive",
+    "feature": "sector_return_60d",
+    "feature_value": -0.0429,
+    "importance": 0.0003,
+    "importance_pct": 0.0719,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "positive",
+    "feature": "dollar_volume",
+    "feature_value": 1183957.75,
+    "importance": 0.0002,
+    "importance_pct": 0.0477,
+    "method": "integrated_gradients"
+   }
+  ]
+ },
+ "fundamentals": {
+  "accrual": -0.4066,
+  "adx_14": 41.5529,
+  "altman_z_score": 8.1739,
+  "amihud_illiquidity": 0.0147,
+  "avg_volume": 476273.1304,
+  "beta_252d": 0.432,
+  "book_value_per_share": 2.3984,
+  "correlation_spy_60d": 0.0833,
+  "current_liabilities": 8.265,
+  "current_ratio": 5.5356,
+  "daily_earnings_yield": -0.0904,
+  "daily_fcf_yield": 0.146,
+  "daily_pb": 1.7729,
+  "daily_pe": -11.062,
+  "daily_ps": 1.0182,
+  "days_since_52w_high": 433.0,
+  "debt_ebitda": -0.1229,
+  "debt_to_equity": 0.0224,
+  "dividend_yield": 0.0,
+  "dollar_volume_20d_avg": 3347349.2597,
+  "earnings_quality": 1.1089,
+  "ebitda_growth_yoy": -1.7202,
+  "enterprise_value": 89.5398,
+  "eps_basic": -0.13,
+  "eps_cagr_3y": -2.0278,
+  "eps_cagr_5y": null,
+  "eps_diluted": -0.13,
+  "eps_growth_accel": -0.3079,
+  "eps_growth_qoq": 0.7045,
+  "eps_growth_yoy": -1.5352,
+  "eps_growth_yoy_q2": -1.2273,
+  "eps_growth_yoy_q3": -0.375,
+  "eps_growth_yoy_q4": -0.2456,
+  "eps_growth_yoy_q5": 6.1,
+  "eps_growth_yoy_q6": 5.7143,
+  "eps_growth_yoy_q7": 3.2857,
+  "eps_growth_yoy_q8": 2.5,
+  "eps_history_8q": [
+   0.41,
+   0.07,
+   0.1,
+   0.09,
+   0.14,
+   0.03,
+   -0.44,
+   -0.13
+  ],
+  "eps_ttm": -0.3887,
+  "ev_to_ebitda": -8.897,
+  "ev_to_fcf": -26.8888,
+  "ev_to_sales": 5.8538,
+  "fcf_growth_yoy": 0.7579,
+  "fcf_margin": -0.2177,
+  "fcf_per_share": -0.1449,
+  "gross_margin": 0.5459,
+  "gross_margin_change_yoy": 0.1721,
+  "gross_margin_history": [
+   0.6363,
+   0.6312,
+   0.6188,
+   0.6127,
+   0.5308,
+   0.5459
+  ],
+  "inc_roic": -3.6711,
+  "interest_coverage": null,
+  "is_pre_revenue": false,
+  "margin_vs_sector_median": null,
+  "market_cap_ratio": 97.7218,
+  "net_income": -2.911,
+  "net_margin": -0.092,
+  "operating_income": -2.93,
+  "operating_margin": -0.11,
+  "operating_margin_change_yoy": -0.2932,
+  "pb_ratio": 1.7928,
+  "pe_percentile_1y": 0.6825,
+  "pe_ratio": -11.825,
+  "peg_trailing": 0.074,
+  "piotroski_f_score": 1.0,
+  "price_vs_high_52w": 0.2123,
+  "price_vs_sma200": 0.622,
+  "ps_percentile_1y": 0.7024,
+  "ps_ratio": 1.12,
+  "quarter_labels_8q": [
+   "Q4 '24",
+   "Q1 '25",
+   "Q2 '25",
+   "Q3 '25",
+   "Q4 '25",
+   "Q1 '26",
+   "Q2 '26",
+   "Q3 '26"
+  ],
+  "quarterly_eps_growth_yoy": -2.4444,
+  "quarterly_eps_growth_yoy_8q": [
+   10.0,
+   null,
+   0.1111,
+   1.25,
+   -0.6585,
+   -0.5714,
+   -5.4,
+   -2.4444
+  ],
+  "quarterly_revenue_growth_yoy": -0.4572,
+  "quarterly_revenue_growth_yoy_8q": [
+   0.7889,
+   0.5726,
+   0.4063,
+   0.3513,
+   0.2597,
+   0.1092,
+   -0.4251,
+   -0.4572
+  ],
+  "revenue_cagr_3y": 0.3067,
+  "revenue_cagr_5y": null,
+  "revenue_growth_accel": -0.1857,
+  "revenue_growth_qoq": -0.0666,
+  "revenue_growth_yoy": -0.1342,
+  "revenue_growth_yoy_q2": 0.0515,
+  "revenue_growth_yoy_q3": 0.2696,
+  "revenue_growth_yoy_q4": 0.3774,
+  "revenue_growth_yoy_q5": 0.5099,
+  "revenue_growth_yoy_q6": 0.7356,
+  "revenue_growth_yoy_q7": 0.8726,
+  "revenue_growth_yoy_q8": 1.011,
+  "revenue_history_8q": [
+   27.979,
+   26.19,
+   28.505,
+   28.179,
+   35.246,
+   29.049,
+   16.387,
+   15.296
+  ],
+  "revenue_per_share": 0.6656,
+  "roa": -0.1328,
+  "roce": -0.1843,
+  "roe": -0.1576,
+  "roic": -0.1569,
+  "rsi_14": 34.1311,
+  "sector_momentum": 0.0566,
+  "share_dilution_1y": 0.0,
+  "stock_vs_sector_20d": 0.222,
+  "stock_vs_spy_20d": 0.2566,
+  "total_assets": 64.583,
+  "vol_regime": 1.2488,
+  "volatility_20d": 0.0552,
+  "volatility_60d": 0.0442,
+  "w52_high": 21.19,
+  "w52_low": 3.165
+ },
+ "market_characters": [
+  {
+   "id": "g8",
+   "name": "Boom-Bust"
+  }
+ ],
+ "model_analogs": {
+  "matches": [
+   {
+    "actual_downside": -0.2174,
+    "actual_return": -0.0116,
+    "actual_upside": 0.0232,
+    "days_in_region": 203,
+    "end_date": "2020-07-24",
+    "end_reason": "reversal",
+    "similarity": 0.9797,
+    "start_date": "2020-01-03",
+    "ticker": "BTU",
+    "trigger_date": "2020-06-10",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": -0.2143,
+    "actual_return": 0.5714,
+    "actual_upside": 0.8571,
+    "days_in_region": 71,
+    "end_date": "1992-01-21",
+    "end_reason": "reversal",
+    "similarity": 0.9794,
+    "start_date": "1991-11-11",
+    "ticker": "NTK",
+    "trigger_date": "1991-11-25",
+    "trigger_type": "runup"
+   },
+   {
+    "actual_downside": -0.084,
+    "actual_return": 0.1527,
+    "actual_upside": 0.1527,
+    "days_in_region": 120,
+    "end_date": "2016-03-03",
+    "end_reason": "reversal",
+    "similarity": 0.9788,
+    "start_date": "2015-11-04",
+    "ticker": "BLDP",
+    "trigger_date": "2016-01-07",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": -0.4241,
+    "actual_return": -0.2292,
+    "actual_upside": 0.0,
+    "days_in_region": 42,
+    "end_date": "2006-04-04",
+    "end_reason": "new_pattern",
+    "similarity": 0.9786,
+    "start_date": "2006-02-21",
+    "ticker": "MOVI",
+    "trigger_date": "2006-02-24",
+    "trigger_type": "shallow_runup"
+   },
+   {
+    "actual_downside": -0.0605,
+    "actual_return": 0.114,
+    "actual_upside": 0.214,
+    "days_in_region": 231,
+    "end_date": "1999-04-09",
+    "end_reason": "reversal",
+    "similarity": 0.9784,
+    "start_date": "1998-08-21",
+    "ticker": "DURA",
+    "trigger_date": "1999-02-12",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": -0.2172,
+    "actual_return": -0.2172,
+    "actual_upside": 0.0533,
+    "days_in_region": 50,
+    "end_date": "2012-11-21",
+    "end_reason": "reversal",
+    "similarity": 0.9781,
+    "start_date": "2012-10-02",
+    "ticker": "RSH",
+    "trigger_date": "2012-10-17",
+    "trigger_type": "runup"
+   },
+   {
+    "actual_downside": -0.0634,
+    "actual_return": 0.1901,
+    "actual_upside": 0.1901,
+    "days_in_region": 92,
+    "end_date": "1999-04-08",
+    "end_reason": "reversal",
+    "similarity": 0.9777,
+    "start_date": "1999-01-06",
+    "ticker": "CORR",
+    "trigger_date": "1999-03-10",
+    "trigger_type": "severe_drawdown"
+   },
+   {
+    "actual_downside": -0.2143,
+    "actual_return": -0.0714,
+    "actual_upside": 0.0357,
+    "days_in_region": 55,
+    "end_date": "1991-12-30",
+    "end_reason": "reversal",
+    "similarity": 0.9777,
+    "start_date": "1991-11-05",
+    "ticker": "FST",
+    "trigger_date": "1991-11-18",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": -0.1282,
+    "actual_return": 0.8205,
+    "actual_upside": 1.2564,
+    "days_in_region": 123,
+    "end_date": "2017-03-10",
+    "end_reason": "reversal",
+    "similarity": 0.9775,
+    "start_date": "2016-11-07",
+    "ticker": "IOTS",
+    "trigger_date": "2016-11-11",
+    "trigger_type": "runup"
+   },
+   {
+    "actual_downside": -0.1966,
+    "actual_return": -0.0769,
+    "actual_upside": 0.0427,
+    "days_in_region": 124,
+    "end_date": "1997-12-16",
+    "end_reason": "reversal",
+    "similarity": 0.9774,
+    "start_date": "1997-08-14",
+    "ticker": "IART",
+    "trigger_date": "1997-08-25",
+    "trigger_type": "drawdown"
+   }
+  ],
+  "stats": {
+   "avg_max_drawdown": 0.174,
+   "avg_similarity": 0.976,
+   "avg_trough": 0.174,
+   "avg_upside": 0.3708,
+   "best_return": 1.7739,
+   "downside_range": [
+    -0.6985,
+    0.0
+   ],
+   "median_return": 0.0746,
+   "n_matches": 50,
+   "outcome_agreement": true,
+   "return_p25": -0.0944,
+   "return_p5": -0.3003,
+   "return_p75": 0.2753,
+   "return_p95": 1.0959,
+   "sim_weighted_win_rate": 0.58,
+   "top5_avg_trough": 0.2001,
+   "top5_avg_upside": 0.2494,
+   "top_similarity": 0.98,
+   "upside_range": [
+    0.0,
+    1.8182
+   ],
+   "win_rate": 0.58,
+   "worst_return": -0.5902,
+   "years_span": 14
+  },
+  "total_matches": 50
+ },
+ "peer_group": {
+  "buckets": [
+   "Aerospace & Defense Components, Electronics & Aftermarket",
+   "Consumer Electronics, Audio & Accessories"
+  ],
+  "groups": {
+   "Aerospace & Defense Components, Electronics & Aftermarket": [
+    {
+     "market_cap_m": 107.494,
+     "price_vs_sma200": 0.622,
+     "return_30d": 0.1685,
+     "return_7d": -0.1134,
+     "revenue_driver": "self defense launchers",
+     "signal_rank": 1399,
+     "stock_vs_spy_20d": 0.2566,
+     "ticker": "BYRN"
+    },
+    {
+     "market_cap_m": 1864.352,
+     "price_vs_sma200": 1.0847,
+     "return_30d": 0.1054,
+     "return_7d": 0.0308,
+     "revenue_driver": "aerospace composite components",
+     "signal_rank": 81,
+     "stock_vs_spy_20d": 0.1215,
+     "ticker": "AIN"
+    },
+    {
+     "market_cap_m": 2723.9933,
+     "price_vs_sma200": 1.0883,
+     "return_30d": 0.0459,
+     "return_7d": 0.1317,
+     "revenue_driver": "defense training and simulation",
+     "signal_rank": 502,
+     "stock_vs_spy_20d": 0.1563,
+     "ticker": "VVX"
+    },
+    {
+     "market_cap_m": 469906.7515,
+     "price_vs_sma200": 1.023,
+     "return_30d": 0.0299,
+     "return_7d": 0.0428,
+     "revenue_driver": "aerospace engines and defense systems",
+     "signal_rank": 1526,
+     "stock_vs_spy_20d": 0.1029,
+     "ticker": "RTX"
+    },
+    {
+     "market_cap_m": 11298.1667,
+     "price_vs_sma200": 0.8936,
+     "return_30d": 0.0132,
+     "return_7d": 0.1102,
+     "revenue_driver": "defense electronics and sensors",
+     "signal_rank": 405,
+     "stock_vs_spy_20d": 0.0449,
+     "ticker": "DRS"
+    },
+    {
+     "market_cap_m": 6791.3399,
+     "price_vs_sma200": 0.9338,
+     "return_30d": -0.036,
+     "return_7d": -0.0129,
+     "revenue_driver": "defense systems and platforms",
+     "signal_rank": 530,
+     "stock_vs_spy_20d": 0.0273,
+     "ticker": "LOAR"
+    },
+    {
+     "market_cap_m": 9831.8418,
+     "price_vs_sma200": 0.912,
+     "return_30d": -0.0773,
+     "return_7d": -0.0261,
+     "revenue_driver": "commercial vehicle transmissions",
+     "signal_rank": 377,
+     "stock_vs_spy_20d": -0.0631,
+     "ticker": "ALSN"
+    },
+    {
+     "market_cap_m": 4553.1906,
+     "price_vs_sma200": 0.8461,
+     "return_30d": -0.1109,
+     "return_7d": 0.0062,
+     "revenue_driver": "aircraft parts distribution",
+     "signal_rank": 1064,
+     "stock_vs_spy_20d": -0.001,
+     "ticker": "AIR"
+    },
+    {
+     "market_cap_m": 26330.225,
+     "price_vs_sma200": 0.7116,
+     "return_30d": -0.1624,
+     "return_7d": -0.0368,
+     "revenue_driver": "aerospace and defense electronics",
+     "signal_rank": 737,
+     "stock_vs_spy_20d": -0.1066,
+     "ticker": "CW"
+    },
+    {
+     "market_cap_m": 916.9264,
+     "price_vs_sma200": 0.9998,
+     "return_30d": -0.2004,
+     "return_7d": 0.0706,
+     "revenue_driver": "defense microdisplays",
+     "signal_rank": 1819,
+     "stock_vs_spy_20d": -0.2071,
+     "ticker": "KOPN"
+    }
+   ],
+   "Consumer Electronics, Audio & Accessories": [
+    {
+     "market_cap_m": 393.8943,
+     "price_vs_sma200": 1.3896,
+     "return_30d": 0.3189,
+     "return_7d": 0.2141,
+     "revenue_driver": "office products",
+     "signal_rank": 866,
+     "stock_vs_spy_20d": 0.3001,
+     "ticker": "ACCO"
+    },
+    {
+     "market_cap_m": 107.494,
+     "price_vs_sma200": 0.622,
+     "return_30d": 0.1685,
+     "return_7d": -0.1134,
+     "revenue_driver": "self defense launchers",
+     "signal_rank": 1399,
+     "stock_vs_spy_20d": 0.2566,
+     "ticker": "BYRN"
+    },
+    {
+     "market_cap_m": 932.5492,
+     "price_vs_sma200": 0.923,
+     "return_30d": 0.0833,
+     "return_7d": -0.0131,
+     "revenue_driver": "electronic display systems",
+     "signal_rank": 344,
+     "stock_vs_spy_20d": 0.0711,
+     "ticker": "DAKT"
+    },
+    {
+     "market_cap_m": 1479.7622,
+     "price_vs_sma200": 1.1349,
+     "return_30d": 0.0828,
+     "return_7d": 0.0171,
+     "revenue_driver": "consumer batteries",
+     "signal_rank": 1662,
+     "stock_vs_spy_20d": 0.068,
+     "ticker": "ENR"
+    },
+    {
+     "market_cap_m": 1020.8097,
+     "price_vs_sma200": 0.4438,
+     "return_30d": 0.0535,
+     "return_7d": 0.2402,
+     "revenue_driver": "silicon-anode battery cells",
+     "signal_rank": null,
+     "stock_vs_spy_20d": -0.2268,
+     "ticker": "ENVX"
+    },
+    {
+     "market_cap_m": 1130.7607,
+     "price_vs_sma200": 1.3979,
+     "return_30d": -0.0583,
+     "return_7d": -0.0876,
+     "revenue_driver": "gaming hardware",
+     "signal_rank": 140,
+     "stock_vs_spy_20d": -0.0653,
+     "ticker": "CRSR"
+    },
+    {
+     "market_cap_m": 6604.3026,
+     "price_vs_sma200": 0.7909,
+     "return_30d": -0.0757,
+     "return_7d": -0.0074,
+     "revenue_driver": "audio mixed signal chips",
+     "signal_rank": 1408,
+     "stock_vs_spy_20d": -0.0727,
+     "ticker": "CRUS"
+    },
+    {
+     "market_cap_m": 108284.568,
+     "price_vs_sma200": 0.7922,
+     "return_30d": -0.1785,
+     "return_7d": -0.0861,
+     "revenue_driver": "Optical communications",
+     "signal_rank": 1528,
+     "stock_vs_spy_20d": -0.228,
+     "ticker": "GLW"
+    },
+    {
+     "market_cap_m": 296125.7859,
+     "price_vs_sma200": 1.2809,
+     "return_30d": -0.2531,
+     "return_7d": -0.1267,
+     "revenue_driver": "server and storage hardware",
+     "signal_rank": 826,
+     "stock_vs_spy_20d": -0.2247,
+     "ticker": "DELL"
+    },
+    {
+     "market_cap_m": 473.2868,
+     "price_vs_sma200": 0.4161,
+     "return_30d": -0.3355,
+     "return_7d": -0.0691,
+     "revenue_driver": "specialty label printers",
+     "signal_rank": 1810,
+     "stock_vs_spy_20d": -0.2849,
+     "ticker": "ASPI"
+    }
+   ]
+  }
+ },
+ "predictions": {
+  "badge_count": 1,
+  "confidence_score": 0.0392,
+  "conviction_label": "SPECULATIVE",
+  "data_quality_flags": [],
+  "ev_score": 0.1383,
+  "is_diamond": false,
+  "passes_tradability_filter": false,
+  "quality_label": "HIGH",
+  "quantiles": {
+   "downside_q10": -0.4045,
+   "downside_q25": -0.2477,
+   "downside_q50": -0.1389,
+   "downside_q75": -0.0439,
+   "downside_q90": -0.007,
+   "path_volatility": 0.0513,
+   "risk_reward": 1.7927,
+   "uncertainty": 0.7513,
+   "upside_q10": 0.0271,
+   "upside_q25": 0.098,
+   "upside_q50": 0.2491,
+   "upside_q75": 0.4679,
+   "upside_q90": 0.7784
+  },
+  "rank": 1399,
+  "rank_score": 0.0078,
+  "tradability_filter_reasons": [
+   "market_cap_below_1b",
+   "dollar_volume_below_5m"
+  ]
+ },
+ "profile": {
+  "_local": {
+   "dividend_yield": 0.0,
+   "eps_growth_yoy": -1.5352,
+   "pe_ratio": -11.825,
+   "revenue_growth_yoy": -0.1342,
+   "roe": -0.1576
+  },
+  "beta": 1.688,
+  "betaTTM": null,
+  "ceo": "Conn Davis",
+  "companyName": "Byrna Technologies Inc.",
+  "country": "US",
+  "debtToEquityTTM": null,
+  "description": "Byrna Technologies Inc. (BYRN) specializes in less-lethal defense technology, focusing on the creation and manufacturing of non-lethal munitions and associated security equipment. The company's primary offerings include a line of Byrna-branded handheld personal protection instruments, such as the Byrna SD and Byrna SD .68 caliber models, which are specifically designed for both civilians and private security professionals. Complementing these devices, Byrna also provides related products like Byrna HD magazines, shoulder-fired launchers, and various projectiles. Its comprehensive catalog further extends to a range of accessories and safety gear, notably the Byrna Banshee, Byrna Shield, compressed carbon dioxide cartridges, aiming systems, holsters, and branded apparel. Incorporated in 2005 and headquartered in Andover, Massachusetts, the firm conducts its business in the United States and South Africa. It previously operated as Security Devices International, Inc., changing its name to Byrna Technologies Inc. in March 2020.",
+  "dividendYielTTM": null,
+  "enterpriseValueOverEBITDATTM": null,
+  "exchangeShortName": "NASDAQ",
+  "fullTimeEmployees": "159",
+  "industry": "Aerospace & Defense",
+  "ipoDate": "2006-09-12",
+  "latest_earnings_date": "2026-10-08",
+  "marketCapTTM": null,
+  "mktCap": 100640442,
+  "peRatioTTM": null,
+  "price": 4.3,
+  "priceToSalesRatioTTM": null,
+  "returnOnEquityTTM": -0.1446,
+  "revenue_description": "Byrna sells non-lethal self-defense launchers, ammunition, and related accessories. Revenue is driven mainly by insurance premiums and investment income, while earnings depend on underwriting margins, claims severity, and catastrophe losses.",
+  "revenue_description_themes": [
+   "direct-to-consumer expansion",
+   "law enforcement adoption",
+   "international market growth"
+  ],
+  "revenue_taxonomy": [
+   {
+    "bucket": "Aerospace & Defense Components, Electronics & Aftermarket",
+    "matched_tags": [
+     "self defense launchers",
+     "kinetic ammunition"
+    ],
+    "path": "Industrials & Transportation › Aerospace Defense & Automation › Aerospace & Defense Components, Electronics & Aftermarket",
+    "sector": "Industrials & Transportation",
+    "segment": "Aerospace Defense & Automation"
+   },
+   {
+    "bucket": "Consumer Electronics, Audio & Accessories",
+    "matched_tags": [
+     "consumer accessories"
+    ],
+    "path": "Consumer Goods & Retail › Branded Consumer Goods › Consumer Electronics, Audio & Accessories",
+    "sector": "Consumer Goods & Retail",
+    "segment": "Branded Consumer Goods"
+   }
+  ],
+  "revenue_themes": [
+   "self defense launchers",
+   "kinetic ammunition",
+   "consumer accessories"
+  ],
+  "sector": "Industrials",
+  "website": "https://www.byrna.com"
+ },
+ "report": null,
+ "scorecard": {
+  "headline": {
+   "avg_universe_pct": 28,
+   "label": "below_average",
+   "metric_count": 7
+  },
+  "metrics": {
+   "debt_to_equity": {
+    "direction": "lower",
+    "label": "D/E Ratio",
+    "sector": "Info Tech",
+    "sector_n": 299,
+    "sector_pct": 80,
+    "universe_n": 2061,
+    "universe_pct": 80,
+    "value": 0.0224
+   },
+   "eps_growth_yoy": {
+    "direction": "higher",
+    "label": "EPS Growth",
+    "sector": "Info Tech",
+    "sector_n": 297,
+    "sector_pct": 7,
+    "universe_n": 1882,
+    "universe_pct": 8,
+    "value": -1.5352
+   },
+   "gross_margin": {
+    "direction": "higher",
+    "label": "Gross Margin",
+    "sector": "Info Tech",
+    "sector_n": 297,
+    "sector_pct": 47,
+    "universe_n": 1999,
+    "universe_pct": 59,
+    "value": 0.5459
+   },
+   "operating_margin": {
+    "direction": "higher",
+    "label": "Op. Margin",
+    "sector": "Info Tech",
+    "sector_n": 297,
+    "sector_pct": 16,
+    "universe_n": 1999,
+    "universe_pct": 12,
+    "value": -0.11
+   },
+   "revenue_growth_yoy": {
+    "direction": "higher",
+    "label": "Rev Growth",
+    "sector": "Info Tech",
+    "sector_n": 297,
+    "sector_pct": 2,
+    "universe_n": 1826,
+    "universe_pct": 7,
+    "value": -0.1342
+   },
+   "roe": {
+    "direction": "higher",
+    "label": "ROE",
+    "sector": "Info Tech",
+    "sector_n": 301,
+    "sector_pct": 19,
+    "universe_n": 2090,
+    "universe_pct": 18,
+    "value": -0.1576
+   },
+   "roic": {
+    "direction": "higher",
+    "label": "ROIC",
+    "sector": "Info Tech",
+    "sector_n": 298,
+    "sector_pct": 11,
+    "universe_n": 2031,
+    "universe_pct": 12,
+    "value": -0.0517
+   }
+  }
+ },
+ "signal_rank": 1399,
+ "structural_analogs": {
+  "gp_core_pct": 95.0,
+  "gp_core_ratio": 2.315,
+  "matches": [
+   {
+    "actual_downside": -0.024,
+    "actual_return": -0.024,
+    "actual_upside": 0.3347,
+    "days_in_region": 76,
+    "end_date": "2005-08-09",
+    "end_reason": "reversal",
+    "seq_len": 76,
+    "similarity": 0.4855,
+    "start_date": "2005-04-27",
+    "ticker": "MGAM",
+    "total_distance": 0.3613,
+    "trigger_date": "2005-05-02",
+    "trigger_type": "runup"
+   },
+   {
+    "actual_downside": -0.0538,
+    "actual_return": 0.1385,
+    "actual_upside": 0.1385,
+    "days_in_region": 162,
+    "end_date": "1999-07-15",
+    "end_reason": "reversal",
+    "seq_len": 162,
+    "similarity": 0.4829,
+    "start_date": "1999-01-08",
+    "ticker": "NTY",
+    "total_distance": 0.364,
+    "trigger_date": "1999-06-04",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": 0.0,
+    "actual_return": 0.508,
+    "actual_upside": 0.508,
+    "days_in_region": 157,
+    "end_date": "1997-05-29",
+    "end_reason": "reversal",
+    "seq_len": 157,
+    "similarity": 0.473,
+    "start_date": "1996-12-09",
+    "ticker": "MACR",
+    "total_distance": 0.3744,
+    "trigger_date": "1997-04-15",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": -0.1761,
+    "actual_return": -0.1761,
+    "actual_upside": 0.1338,
+    "days_in_region": 80,
+    "end_date": "2020-01-31",
+    "end_reason": "reversal",
+    "seq_len": 80,
+    "similarity": 0.4606,
+    "start_date": "2019-11-20",
+    "ticker": "PDS",
+    "total_distance": 0.3876,
+    "trigger_date": "2019-12-09",
+    "trigger_type": "runup"
+   },
+   {
+    "actual_downside": -0.0593,
+    "actual_return": 0.2281,
+    "actual_upside": 0.2281,
+    "days_in_region": 165,
+    "end_date": "2006-09-14",
+    "end_reason": "reversal",
+    "seq_len": 165,
+    "similarity": 0.4602,
+    "start_date": "2006-01-10",
+    "ticker": "SNDA",
+    "total_distance": 0.388,
+    "trigger_date": "2006-06-09",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": -0.1042,
+    "actual_return": 0.1806,
+    "actual_upside": 0.1806,
+    "days_in_region": 109,
+    "end_date": "2000-05-01",
+    "end_reason": "reversal",
+    "seq_len": 109,
+    "similarity": 0.4571,
+    "start_date": "2000-01-28",
+    "ticker": "STEI",
+    "total_distance": 0.3914,
+    "trigger_date": "2000-04-06",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": 0.0,
+    "actual_return": 0.6765,
+    "actual_upside": 0.6765,
+    "days_in_region": 65,
+    "end_date": "1997-10-09",
+    "end_reason": "reversal",
+    "seq_len": 65,
+    "similarity": 0.4563,
+    "start_date": "1997-07-30",
+    "ticker": "MACR",
+    "total_distance": 0.3923,
+    "trigger_date": "1997-08-05",
+    "trigger_type": "severe_drawdown"
+   },
+   {
+    "actual_downside": -0.2451,
+    "actual_return": -0.0564,
+    "actual_upside": 0.0157,
+    "days_in_region": 181,
+    "end_date": "2005-05-11",
+    "end_reason": "reversal",
+    "seq_len": 181,
+    "similarity": 0.4524,
+    "start_date": "2004-10-07",
+    "ticker": "KKD",
+    "total_distance": 0.3966,
+    "trigger_date": "2005-03-31",
+    "trigger_type": "severe_drawdown"
+   },
+   {
+    "actual_downside": 0.0,
+    "actual_return": 0.0506,
+    "actual_upside": 0.3101,
+    "days_in_region": 93,
+    "end_date": "1999-06-14",
+    "end_reason": "reversal",
+    "seq_len": 93,
+    "similarity": 0.4523,
+    "start_date": "1999-03-16",
+    "ticker": "AGCO",
+    "total_distance": 0.3967,
+    "trigger_date": "1999-04-12",
+    "trigger_type": "runup"
+   },
+   {
+    "actual_downside": -0.2037,
+    "actual_return": -0.0988,
+    "actual_upside": 0.0123,
+    "days_in_region": 135,
+    "end_date": "2005-04-08",
+    "end_reason": "reversal",
+    "seq_len": 135,
+    "similarity": 0.4509,
+    "start_date": "2004-11-19",
+    "ticker": "CNXT",
+    "total_distance": 0.3983,
+    "trigger_date": "2005-03-09",
+    "trigger_type": "drawdown"
+   }
+  ],
+  "panel": {
+   "edge": 0.1887,
+   "hit_hi": 0.754,
+   "hit_lo": 0.544,
+   "hit_rate": 0.656,
+   "median_final": 0.1274,
+   "median_pain": 0.0596,
+   "n": 32,
+   "n_eff": 32.0,
+   "p25_final": -0.0763,
+   "p_pain_gt5": 0.594,
+   "return_to_pain": 1.599
+  },
+  "stats": {
+   "avg_similarity": 0.421,
+   "avg_trough": 0.1659,
+   "avg_upside": 0.2856,
+   "median_pain": 0.1237,
+   "median_return": 0.0939,
+   "n_matches": 200,
+   "p25_return": -0.1449,
+   "p_pain_gt5": 0.715,
+   "return_to_pain": 0.653,
+   "top5_avg_trough": 0.0626,
+   "top5_avg_upside": 0.2686,
+   "top_similarity": 0.486,
+   "win_rate": 0.565
+  },
+  "total_matches": 200
+ },
+ "ticker": "BYRN",
+ "trending": {
+  "acceleration": -0.0048,
+  "avg_vol_20d": 592056.9702,
+  "base_high_120": 12.5,
+  "breakout_confirmed": 0,
+  "close": 3.69,
+  "momentum_score": 0.0198,
+  "momentum_start": "2026-01-16",
+  "range_20": 0.4309,
+  "range_50": 1.1152,
+  "rank": 1162,
+  "rank_down": 25,
+  "rank_up": null,
+  "ret_120": -0.7048,
+  "ret_20": -0.1478,
+  "ret_60": -0.4,
+  "rundown_score": 0.9554,
+  "score_date": "2026-08-26",
+  "slope_20": -0.018,
+  "slope_60": -0.0132,
+  "stage": "rundown",
+  "stage_label": "rundown",
+  "ticker": "BYRN",
+  "total_score": 0.3761,
+  "trend_ratio": 0.3806,
+  "vcp_detected": 0,
+  "vcp_score": 0.6136
+ }
+}

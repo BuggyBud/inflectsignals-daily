@@ -1,0 +1,1003 @@
+{
+ "date": "2026-10-30",
+ "detected_regions": {
+  "primary": {
+   "days_in_region": 147,
+   "region_start": "2026-06-30",
+   "trigger_date": "2026-07-13",
+   "trigger_type": "runup"
+  },
+  "secondary": [
+   {
+    "confidence_score": 0.8929,
+    "downside_q50": -0.1116,
+    "ev_score": -0.0078,
+    "region_start": "2026-02-24",
+    "seq_len": 200,
+    "trigger_date": "2026-07-24",
+    "trigger_type": "drawdown",
+    "upside_q25": 0.0385,
+    "upside_q50": 0.1006,
+    "upside_q75": 0.1772
+   }
+  ]
+ },
+ "feature_attribution": {
+  "macro_driver_count": 12,
+  "risk_flags": [
+   "unfavorable_risk_reward"
+  ],
+  "top_drivers": [
+   {
+    "direction": "negative",
+    "feature": "dollar_volume",
+    "feature_value": 1731211136.0,
+    "importance": 0.0005,
+    "importance_pct": 0.3088,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "negative",
+    "feature": "free_cash_flow",
+    "feature_value": 5071.0,
+    "importance": 0.0002,
+    "importance_pct": 0.12,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "negative",
+    "feature": "capex",
+    "feature_value": 2270.0,
+    "importance": 0.0002,
+    "importance_pct": 0.1078,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "negative",
+    "feature": "total_assets",
+    "feature_value": 213104.0,
+    "importance": 0.0002,
+    "importance_pct": 0.1066,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "negative",
+    "feature": "correlation_spy_60d",
+    "feature_value": -0.2772,
+    "importance": 0.0002,
+    "importance_pct": 0.0974,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "positive",
+    "feature": "dividends_paid",
+    "feature_value": 1089.0,
+    "importance": 0.0001,
+    "importance_pct": 0.0907,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "negative",
+    "feature": "intangibles",
+    "feature_value": 16731.0,
+    "importance": 0.0001,
+    "importance_pct": 0.0883,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "negative",
+    "feature": "price_vs_sma200",
+    "feature_value": 0.8368,
+    "importance": 0.0001,
+    "importance_pct": 0.0804,
+    "method": "integrated_gradients"
+   }
+  ]
+ },
+ "fundamentals": {
+  "accrual": 0.0872,
+  "adx_14": 24.5953,
+  "altman_z_score": 1.2281,
+  "amihud_illiquidity": 0.0,
+  "avg_volume": 5310991.2365,
+  "beta_252d": -0.2357,
+  "book_value_per_share": 52.5915,
+  "correlation_spy_60d": -0.2772,
+  "current_liabilities": 23991.0,
+  "current_ratio": 0.9104,
+  "daily_earnings_yield": 0.0646,
+  "daily_fcf_yield": -0.0574,
+  "daily_pb": 3.1076,
+  "daily_pe": 15.4835,
+  "daily_ps": 1.8651,
+  "days_since_52w_high": 419.0,
+  "debt_ebitda": 3.6439,
+  "debt_to_equity": 2.0356,
+  "dividend_yield": 0.0046,
+  "dollar_volume_20d_avg": 1097074263.3993,
+  "earnings_quality": 2.1247,
+  "ebitda_growth_yoy": -0.0377,
+  "enterprise_value": 283980.2351,
+  "eps_basic": 3.23,
+  "eps_cagr_3y": 0.171,
+  "eps_cagr_5y": 0.3103,
+  "eps_diluted": 3.22,
+  "eps_growth_accel": 0.0949,
+  "eps_growth_qoq": 0.0803,
+  "eps_growth_yoy": -0.0038,
+  "eps_growth_yoy_q2": -0.0988,
+  "eps_growth_yoy_q3": -0.0836,
+  "eps_growth_yoy_q4": 0.0041,
+  "eps_growth_yoy_q5": 0.1772,
+  "eps_growth_yoy_q6": 0.3172,
+  "eps_growth_yoy_q7": 0.3849,
+  "eps_growth_yoy_q8": 0.3818,
+  "eps_history_8q": [
+   2.57,
+   2.58,
+   2.84,
+   2.41,
+   1.88,
+   2.27,
+   2.99,
+   3.22
+  ],
+  "eps_ttm": 10.1036,
+  "ev_to_ebitda": 9.0279,
+  "ev_to_fcf": 56.0008,
+  "ev_to_sales": 12.0412,
+  "fcf_growth_yoy": 0.0525,
+  "fcf_margin": 0.215,
+  "fcf_per_share": 4.7364,
+  "gross_margin": 0.5443,
+  "gross_margin_change_yoy": -0.1558,
+  "gross_margin_history": [
+   0.6383,
+   0.6377,
+   0.588,
+   0.5821,
+   0.5822,
+   0.5443
+  ],
+  "inc_roic": -0.2438,
+  "interest_coverage": 7.8758,
+  "is_pre_revenue": false,
+  "margin_vs_sector_median": null,
+  "market_cap_ratio": 174979.2351,
+  "net_income": 3455.0,
+  "net_margin": 0.1205,
+  "operating_income": 5813.0,
+  "operating_margin": 0.2096,
+  "operating_margin_change_yoy": 0.0161,
+  "pb_ratio": 2.9746,
+  "pe_percentile_1y": 0.9921,
+  "pe_ratio": 15.4835,
+  "peg_trailing": -10.0,
+  "piotroski_f_score": 4.0,
+  "price_vs_high_52w": 0.7047,
+  "price_vs_sma200": 0.8368,
+  "ps_percentile_1y": 0.9722,
+  "ps_ratio": 1.7655,
+  "quarter_labels_8q": [
+   "Q4 '24",
+   "Q1 '25",
+   "Q2 '25",
+   "Q3 '25",
+   "Q4 '25",
+   "Q1 '26",
+   "Q2 '26",
+   "Q3 '26"
+  ],
+  "quarterly_eps_growth_yoy": 0.3361,
+  "quarterly_eps_growth_yoy_8q": [
+   0.5389,
+   0.29,
+   0.1406,
+   -0.0766,
+   -0.2685,
+   -0.1202,
+   0.0528,
+   0.3361
+  ],
+  "quarterly_revenue_growth_yoy": 0.0741,
+  "quarterly_revenue_growth_yoy_8q": [
+   0.0681,
+   0.0659,
+   0.0688,
+   0.089,
+   0.1126,
+   0.1063,
+   0.0785,
+   0.0741
+  ],
+  "revenue_cagr_3y": 0.0619,
+  "revenue_cagr_5y": 0.0332,
+  "revenue_growth_accel": -0.004,
+  "revenue_growth_qoq": 0.0348,
+  "revenue_growth_yoy": 0.0928,
+  "revenue_growth_yoy_q2": 0.0968,
+  "revenue_growth_yoy_q3": 0.0948,
+  "revenue_growth_yoy_q4": 0.0849,
+  "revenue_growth_yoy_q5": 0.073,
+  "revenue_growth_yoy_q6": 0.0627,
+  "revenue_growth_yoy_q7": 0.0531,
+  "revenue_growth_yoy_q8": 0.0362,
+  "revenue_history_8q": [
+   21872.0,
+   20886.0,
+   21132.0,
+   21957.0,
+   24334.0,
+   23107.0,
+   22791.0,
+   23584.0
+  ],
+  "revenue_per_share": 22.0278,
+  "roa": 0.053,
+  "roce": 0.1037,
+  "roe": 0.2008,
+  "roic": 0.0598,
+  "rsi_14": 56.2368,
+  "sector_momentum": 0.0968,
+  "share_dilution_1y": -0.0103,
+  "stock_vs_sector_20d": -0.0241,
+  "stock_vs_spy_20d": -0.023,
+  "total_assets": 213104.0,
+  "vol_regime": 1.5054,
+  "volatility_20d": 0.041,
+  "volatility_60d": 0.0272,
+  "w52_high": 224.75,
+  "w52_low": 143.75
+ },
+ "market_characters": [
+  {
+   "id": "g5",
+   "name": "Quality Compressed"
+  }
+ ],
+ "model_analogs": {
+  "matches": [
+   {
+    "actual_downside": 0.0,
+    "actual_return": 0.3046,
+    "actual_upside": 0.3046,
+    "days_in_region": 196,
+    "end_date": "2019-11-04",
+    "end_reason": "reversal",
+    "similarity": 0.9468,
+    "start_date": "2019-04-22",
+    "ticker": "STLA",
+    "trigger_date": "2019-10-09",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": 0.0,
+    "actual_return": 0.0503,
+    "actual_upside": 0.2748,
+    "days_in_region": 178,
+    "end_date": "2018-02-08",
+    "end_reason": "reversal",
+    "similarity": 0.9385,
+    "start_date": "2017-08-14",
+    "ticker": "MYL",
+    "trigger_date": "2017-09-13",
+    "trigger_type": "shallow_runup"
+   },
+   {
+    "actual_downside": -0.1158,
+    "actual_return": -0.1036,
+    "actual_upside": 0.0695,
+    "days_in_region": 177,
+    "end_date": "2019-03-07",
+    "end_reason": "reversal",
+    "similarity": 0.9372,
+    "start_date": "2018-09-11",
+    "ticker": "TSU",
+    "trigger_date": "2018-11-01",
+    "trigger_type": "shallow_runup"
+   },
+   {
+    "actual_downside": -0.1463,
+    "actual_return": -0.1463,
+    "actual_upside": 0.0,
+    "days_in_region": 216,
+    "end_date": "2022-04-18",
+    "end_reason": "reversal",
+    "similarity": 0.9344,
+    "start_date": "2021-09-14",
+    "ticker": "MATW",
+    "trigger_date": "2021-11-04",
+    "trigger_type": "runup"
+   },
+   {
+    "actual_downside": -0.258,
+    "actual_return": 0.0111,
+    "actual_upside": 0.0111,
+    "days_in_region": 201,
+    "end_date": "2019-02-25",
+    "end_reason": "reversal",
+    "similarity": 0.9327,
+    "start_date": "2018-08-08",
+    "ticker": "ADT",
+    "trigger_date": "2018-10-12",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": -0.3021,
+    "actual_return": 0.0402,
+    "actual_upside": 0.0402,
+    "days_in_region": 301,
+    "end_date": "2019-03-18",
+    "end_reason": "reversal",
+    "similarity": 0.9317,
+    "start_date": "2018-05-21",
+    "ticker": "IR",
+    "trigger_date": "2018-11-08",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": 0.0,
+    "actual_return": 0.2258,
+    "actual_upside": 0.2258,
+    "days_in_region": 276,
+    "end_date": "2020-01-06",
+    "end_reason": "reversal",
+    "similarity": 0.9316,
+    "start_date": "2019-04-05",
+    "ticker": "ET",
+    "trigger_date": "2019-08-15",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": -0.2257,
+    "actual_return": -0.2257,
+    "actual_upside": 0.0836,
+    "days_in_region": 56,
+    "end_date": "2018-12-24",
+    "end_reason": "reversal",
+    "similarity": 0.9313,
+    "start_date": "2018-10-29",
+    "ticker": "DISH",
+    "trigger_date": "2018-11-05",
+    "trigger_type": "shallow_runup"
+   },
+   {
+    "actual_downside": -0.1553,
+    "actual_return": 0.1275,
+    "actual_upside": 0.1275,
+    "days_in_region": 308,
+    "end_date": "2022-08-05",
+    "end_reason": "reversal",
+    "similarity": 0.9312,
+    "start_date": "2021-10-01",
+    "ticker": "PRGO",
+    "trigger_date": "2022-02-01",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": -0.4069,
+    "actual_return": -0.4069,
+    "actual_upside": 0.0106,
+    "days_in_region": 218,
+    "end_date": "2018-12-21",
+    "end_reason": "reversal",
+    "similarity": 0.9311,
+    "start_date": "2018-05-17",
+    "ticker": "EYE",
+    "trigger_date": "2018-11-06",
+    "trigger_type": "runup"
+   }
+  ],
+  "stats": {
+   "avg_max_drawdown": 0.1509,
+   "avg_similarity": 0.928,
+   "avg_trough": 0.1509,
+   "avg_upside": 0.1347,
+   "best_return": 0.4443,
+   "downside_range": [
+    -0.4537,
+    0.0
+   ],
+   "median_return": -0.0841,
+   "n_matches": 50,
+   "outcome_agreement": true,
+   "return_p25": -0.1955,
+   "return_p5": -0.3391,
+   "return_p75": 0.125,
+   "return_p95": 0.31,
+   "sim_weighted_win_rate": 0.44,
+   "top5_avg_trough": 0.104,
+   "top5_avg_upside": 0.132,
+   "top_similarity": 0.947,
+   "upside_range": [
+    0.0,
+    0.5183
+   ],
+   "win_rate": 0.44,
+   "worst_return": -0.4537,
+   "years_span": 6
+  },
+  "total_matches": 50
+ },
+ "peer_group": {
+  "buckets": [
+   "Consumer Broadband, Wireless & Subscription Connectivity",
+   "Consumer Devices, Gaming & Connected Hardware"
+  ],
+  "groups": {
+   "Consumer Broadband, Wireless & Subscription Connectivity": [
+    {
+     "market_cap_m": 3914.3118,
+     "price_vs_sma200": 1.417,
+     "return_30d": 0.1384,
+     "return_7d": 0.033,
+     "revenue_driver": "residential broadband subscriptions",
+     "signal_rank": 1657,
+     "stock_vs_spy_20d": 0.1537,
+     "ticker": "CON"
+    },
+    {
+     "market_cap_m": 83010.838,
+     "price_vs_sma200": 0.8904,
+     "return_30d": 0.0211,
+     "return_7d": 0.0516,
+     "revenue_driver": "cable broadband services",
+     "signal_rank": 1171,
+     "stock_vs_spy_20d": 0.0975,
+     "ticker": "CMCSA"
+    },
+    {
+     "market_cap_m": 10557.9951,
+     "price_vs_sma200": 1.0832,
+     "return_30d": -0.0065,
+     "return_7d": -0.0134,
+     "revenue_driver": "low earth orbit communications",
+     "signal_rank": 774,
+     "stock_vs_spy_20d": 0.0099,
+     "ticker": "GSAT"
+    },
+    {
+     "market_cap_m": 487.2286,
+     "price_vs_sma200": 0.6435,
+     "return_30d": -0.0288,
+     "return_7d": 0.1346,
+     "revenue_driver": "in-flight Wi-Fi connectivity",
+     "signal_rank": 271,
+     "stock_vs_spy_20d": 0.1395,
+     "ticker": "GOGO"
+    },
+    {
+     "market_cap_m": 7546.7607,
+     "price_vs_sma200": 0.8663,
+     "return_30d": -0.0446,
+     "return_7d": 0.0341,
+     "revenue_driver": "Wireless service subscriptions",
+     "signal_rank": 888,
+     "stock_vs_spy_20d": -0.0098,
+     "ticker": "TDS"
+    },
+    {
+     "market_cap_m": 165628.5166,
+     "price_vs_sma200": 0.8368,
+     "return_30d": -0.0698,
+     "return_7d": 0.0175,
+     "revenue_driver": "wireless service subscriptions",
+     "signal_rank": 1837,
+     "stock_vs_spy_20d": -0.023,
+     "ticker": "TMUS"
+    },
+    {
+     "market_cap_m": 193407.4147,
+     "price_vs_sma200": 0.9554,
+     "return_30d": -0.0699,
+     "return_7d": 0.0269,
+     "revenue_driver": "wireless subscription services",
+     "signal_rank": 1872,
+     "stock_vs_spy_20d": -0.0049,
+     "ticker": "VZ"
+    },
+    {
+     "market_cap_m": 15957.4238,
+     "price_vs_sma200": 0.6761,
+     "return_30d": -0.1301,
+     "return_7d": 0.0394,
+     "revenue_driver": "cable broadband operator",
+     "signal_rank": 1613,
+     "stock_vs_spy_20d": 0.0411,
+     "ticker": "CHTR"
+    },
+    {
+     "market_cap_m": 250.6448,
+     "price_vs_sma200": 0.0958,
+     "return_30d": -0.6857,
+     "return_7d": -0.0488,
+     "revenue_driver": "high-speed internet",
+     "signal_rank": 1851,
+     "stock_vs_spy_20d": -0.5318,
+     "ticker": "CABO"
+    },
+    {
+     "market_cap_m": 2404.0011,
+     "price_vs_sma200": 0.837,
+     "return_30d": -1.0,
+     "return_7d": -1.0,
+     "revenue_driver": "geospatial positioning technology",
+     "signal_rank": null,
+     "stock_vs_spy_20d": -0.1807,
+     "ticker": "NN"
+    }
+   ],
+   "Consumer Devices, Gaming & Connected Hardware": [
+    {
+     "market_cap_m": 5745.2852,
+     "price_vs_sma200": 1.3919,
+     "return_30d": 0.429,
+     "return_7d": 0.45,
+     "revenue_driver": "residential security monitoring",
+     "signal_rank": 1042,
+     "stock_vs_spy_20d": 0.5986,
+     "ticker": "ADT"
+    },
+    {
+     "market_cap_m": 1639.6962,
+     "price_vs_sma200": 1.0811,
+     "return_30d": 0.0929,
+     "return_7d": 0.1909,
+     "revenue_driver": "consumer security hardware",
+     "signal_rank": 1429,
+     "stock_vs_spy_20d": 0.1532,
+     "ticker": "ARLO"
+    },
+    {
+     "market_cap_m": 1340.6098,
+     "price_vs_sma200": 1.0052,
+     "return_30d": 0.0891,
+     "return_7d": 0.0567,
+     "revenue_driver": "security alarm products",
+     "signal_rank": 1617,
+     "stock_vs_spy_20d": 0.1089,
+     "ticker": "NSSC"
+    },
+    {
+     "market_cap_m": 323.2579,
+     "price_vs_sma200": 1.2538,
+     "return_30d": 0.078,
+     "return_7d": -0.0395,
+     "revenue_driver": "connected crafting machines",
+     "signal_rank": 72,
+     "stock_vs_spy_20d": -0.0465,
+     "ticker": "CRCT"
+    },
+    {
+     "market_cap_m": 8462.89,
+     "price_vs_sma200": 1.068,
+     "return_30d": 0.0702,
+     "return_7d": -0.0784,
+     "revenue_driver": "video game retail",
+     "signal_rank": 698,
+     "stock_vs_spy_20d": 0.002,
+     "ticker": "GME"
+    },
+    {
+     "market_cap_m": 2106.6223,
+     "price_vs_sma200": 1.0593,
+     "return_30d": 0.0412,
+     "return_7d": -0.0744,
+     "revenue_driver": "wireless smart speakers",
+     "signal_rank": 1056,
+     "stock_vs_spy_20d": -0.0655,
+     "ticker": "SONO"
+    },
+    {
+     "market_cap_m": 1103.949,
+     "price_vs_sma200": 0.9835,
+     "return_30d": 0.041,
+     "return_7d": -0.007,
+     "revenue_driver": "home networking hardware",
+     "signal_rank": 1109,
+     "stock_vs_spy_20d": -0.0198,
+     "ticker": "NTGR"
+    },
+    {
+     "market_cap_m": 4564563.2052,
+     "price_vs_sma200": 1.1621,
+     "return_30d": 0.0253,
+     "return_7d": 0.0019,
+     "revenue_driver": "iphone sales",
+     "signal_rank": 1884,
+     "stock_vs_spy_20d": 0.0538,
+     "ticker": "AAPL"
+    },
+    {
+     "market_cap_m": 1130.7607,
+     "price_vs_sma200": 1.3979,
+     "return_30d": -0.0583,
+     "return_7d": -0.0876,
+     "revenue_driver": "gaming hardware",
+     "signal_rank": 140,
+     "stock_vs_spy_20d": -0.0653,
+     "ticker": "CRSR"
+    },
+    {
+     "market_cap_m": 165628.5166,
+     "price_vs_sma200": 0.8368,
+     "return_30d": -0.0698,
+     "return_7d": 0.0175,
+     "revenue_driver": "wireless service subscriptions",
+     "signal_rank": 1837,
+     "stock_vs_spy_20d": -0.023,
+     "ticker": "TMUS"
+    }
+   ]
+  }
+ },
+ "predictions": {
+  "badge_count": 0,
+  "confidence_score": 0.7813,
+  "conviction_label": "SPECULATIVE",
+  "data_quality_flags": [],
+  "ev_score": 0.0011,
+  "is_diamond": false,
+  "passes_tradability_filter": true,
+  "quality_label": "MEDIUM",
+  "quantiles": {
+   "downside_q10": -0.2964,
+   "downside_q25": -0.1945,
+   "downside_q50": -0.1159,
+   "downside_q75": -0.0485,
+   "downside_q90": -0.0104,
+   "path_volatility": 0.0252,
+   "risk_reward": 0.973,
+   "uncertainty": 0.3153,
+   "upside_q10": 0.0118,
+   "upside_q25": 0.0425,
+   "upside_q50": 0.1127,
+   "upside_q75": 0.1963,
+   "upside_q90": 0.3272
+  },
+  "rank": 1837,
+  "rank_score": 0.0004,
+  "tradability_filter_reasons": []
+ },
+ "profile": {
+  "_local": {
+   "dividend_yield": 0.0046,
+   "eps_growth_yoy": -0.0038,
+   "pe_ratio": 14.2934,
+   "revenue_growth_yoy": 0.0928,
+   "roe": 0.2008
+  },
+  "beta": 0.317,
+  "betaTTM": null,
+  "ceo": "Srinivasan Gopalan",
+  "companyName": "T-Mobile US, Inc.",
+  "country": "US",
+  "debtToEquityTTM": null,
+  "description": "T-Mobile US, Inc., alongside its subsidiaries, offers mobile telecommunications services across the United States, Puerto Rico, and the U.S. Virgin Islands. Catering to approximately 108.7 million subscribers, the company delivers essential voice, messaging, and data connectivity to customers in postpaid, prepaid, and wholesale segments. Beyond services, T-Mobile also supplies a broad array of wireless devices, such as smartphones, wearables, tablets, and other mobile communication gadgets, along with associated accessories. These offerings are marketed under both the T-Mobile and Metro by T-Mobile brands. Direct distribution occurs through its proprietary retail stores, the T-Mobile mobile application, customer service channels, and its official online platforms. Additionally, the company provides devices to independent dealers and other distributors for resale via external retail locations and various third-party websites. As of December 31, 2021, its robust network infrastructure encompassed approximately 102,000 macro cell sites and 41,000 small cell/distributed antenna system locations. T-Mobile US, Inc. was established in 1994 and maintains its headquarters in Bellevue, Washington.",
+  "dividendYielTTM": null,
+  "enterpriseValueOverEBITDATTM": null,
+  "exchangeShortName": "NASDAQ",
+  "fullTimeEmployees": "75000",
+  "industry": "Telecommunications Services",
+  "ipoDate": "2007-04-19",
+  "latest_earnings_date": "2026-10-28",
+  "marketCapTTM": null,
+  "mktCap": 165712601007,
+  "peRatioTTM": null,
+  "price": 156.44,
+  "priceToSalesRatioTTM": null,
+  "returnOnEquityTTM": 0.1986,
+  "revenue_description": "T-Mobile provides wireless and broadband services. Revenue is driven by project award backlog execution, infrastructure spending cycles, and residential housing construction activity.",
+  "revenue_description_themes": [
+   "fixed wireless access growth",
+   "5G network expansion",
+   "postpaid subscriber growth"
+  ],
+  "revenue_taxonomy": [
+   {
+    "bucket": "Consumer Broadband, Wireless & Subscription Connectivity",
+    "matched_tags": [
+     "wireless service subscriptions",
+     "5G home internet"
+    ],
+    "path": "Communications › Telecom & Connectivity › Consumer Broadband, Wireless & Subscription Connectivity",
+    "sector": "Communications",
+    "segment": "Telecom & Connectivity"
+   },
+   {
+    "bucket": "Consumer Devices, Gaming & Connected Hardware",
+    "matched_tags": [
+     "mobile device sales"
+    ],
+    "path": "Technology › Hardware & Semiconductors › Consumer Devices, Gaming & Connected Hardware",
+    "sector": "Technology",
+    "segment": "Hardware & Semiconductors"
+   }
+  ],
+  "revenue_themes": [
+   "wireless service subscriptions",
+   "mobile device sales",
+   "5G home internet"
+  ],
+  "sector": "Communication Services",
+  "website": "https://www.t-mobile.com"
+ },
+ "report": null,
+ "scorecard": {
+  "headline": {
+   "avg_universe_pct": 55,
+   "label": "mixed",
+   "metric_count": 8
+  },
+  "metrics": {
+   "debt_to_equity": {
+    "direction": "lower",
+    "label": "D/E Ratio",
+    "sector": "Comm. Services",
+    "sector_n": 44,
+    "sector_pct": 18,
+    "universe_n": 2061,
+    "universe_pct": 10,
+    "value": 2.0356
+   },
+   "eps_growth_yoy": {
+    "direction": "higher",
+    "label": "EPS Growth",
+    "sector": "Comm. Services",
+    "sector_n": 44,
+    "sector_pct": 41,
+    "universe_n": 1882,
+    "universe_pct": 35,
+    "value": -0.0038
+   },
+   "gross_margin": {
+    "direction": "higher",
+    "label": "Gross Margin",
+    "sector": "Comm. Services",
+    "sector_n": 43,
+    "sector_pct": 60,
+    "universe_n": 1999,
+    "universe_pct": 59,
+    "value": 0.5443
+   },
+   "operating_margin": {
+    "direction": "higher",
+    "label": "Op. Margin",
+    "sector": "Comm. Services",
+    "sector_n": 43,
+    "sector_pct": 86,
+    "universe_n": 1999,
+    "universe_pct": 76,
+    "value": 0.2096
+   },
+   "pe_ratio": {
+    "direction": "lower",
+    "label": "P/E",
+    "sector": "Comm. Services",
+    "sector_n": 28,
+    "sector_pct": 71,
+    "universe_n": 1469,
+    "universe_pct": 70,
+    "value": 14.2934
+   },
+   "revenue_growth_yoy": {
+    "direction": "higher",
+    "label": "Rev Growth",
+    "sector": "Comm. Services",
+    "sector_n": 44,
+    "sector_pct": 50,
+    "universe_n": 1826,
+    "universe_pct": 54,
+    "value": 0.0928
+   },
+   "roe": {
+    "direction": "higher",
+    "label": "ROE",
+    "sector": "Comm. Services",
+    "sector_n": 44,
+    "sector_pct": 77,
+    "universe_n": 2090,
+    "universe_pct": 77,
+    "value": 0.2008
+   },
+   "roic": {
+    "direction": "higher",
+    "label": "ROIC",
+    "sector": "Comm. Services",
+    "sector_n": 43,
+    "sector_pct": 72,
+    "universe_n": 2031,
+    "universe_pct": 58,
+    "value": 0.0183
+   }
+  }
+ },
+ "signal_rank": 1837,
+ "structural_analogs": {
+  "gp_core_pct": 21.8,
+  "gp_core_ratio": 0.9953,
+  "matches": [
+   {
+    "actual_downside": -0.0675,
+    "actual_return": -0.0675,
+    "actual_upside": 0.0,
+    "days_in_region": 162,
+    "end_date": "2017-05-17",
+    "end_reason": "reversal",
+    "seq_len": 162,
+    "similarity": 0.5405,
+    "start_date": "2016-10-05",
+    "ticker": "KR",
+    "total_distance": 0.3077,
+    "trigger_date": "2016-11-11",
+    "trigger_type": "shallow_runup"
+   },
+   {
+    "actual_downside": -0.1389,
+    "actual_return": 0.0463,
+    "actual_upside": 0.0463,
+    "days_in_region": 200,
+    "end_date": "1999-11-17",
+    "end_reason": "reversal",
+    "seq_len": 200,
+    "similarity": 0.5337,
+    "start_date": "1998-12-28",
+    "ticker": "ADM",
+    "total_distance": 0.3139,
+    "trigger_date": "1999-05-27",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": -0.1269,
+    "actual_return": -0.0038,
+    "actual_upside": 0.0549,
+    "days_in_region": 127,
+    "end_date": "2018-04-17",
+    "end_reason": "reversal",
+    "seq_len": 127,
+    "similarity": 0.5146,
+    "start_date": "2017-12-04",
+    "ticker": "BGS",
+    "total_distance": 0.3322,
+    "trigger_date": "2017-12-12",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": -0.1151,
+    "actual_return": 0.0742,
+    "actual_upside": 0.0742,
+    "days_in_region": 146,
+    "end_date": "2015-12-02",
+    "end_reason": "reversal",
+    "seq_len": 146,
+    "similarity": 0.5142,
+    "start_date": "2015-04-24",
+    "ticker": "DFRG",
+    "total_distance": 0.3325,
+    "trigger_date": "2015-08-25",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": -0.0996,
+    "actual_return": 0.0142,
+    "actual_upside": 0.0142,
+    "days_in_region": 127,
+    "end_date": "2000-03-16",
+    "end_reason": "reversal",
+    "seq_len": 127,
+    "similarity": 0.5088,
+    "start_date": "1999-10-29",
+    "ticker": "HNZ",
+    "total_distance": 0.3379,
+    "trigger_date": "2000-02-03",
+    "trigger_type": "severe_drawdown"
+   },
+   {
+    "actual_downside": -0.0038,
+    "actual_return": 0.1317,
+    "actual_upside": 0.1317,
+    "days_in_region": 129,
+    "end_date": "2018-01-24",
+    "end_reason": "reversal",
+    "seq_len": 129,
+    "similarity": 0.5072,
+    "start_date": "2017-09-07",
+    "ticker": "GDXJ",
+    "total_distance": 0.3395,
+    "trigger_date": "2017-11-14",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": -0.2126,
+    "actual_return": 0.0551,
+    "actual_upside": 0.0551,
+    "days_in_region": 150,
+    "end_date": "1990-12-03",
+    "end_reason": "reversal",
+    "seq_len": 150,
+    "similarity": 0.4984,
+    "start_date": "1990-05-18",
+    "ticker": "FRT",
+    "total_distance": 0.3481,
+    "trigger_date": "1990-09-25",
+    "trigger_type": "severe_drawdown"
+   },
+   {
+    "actual_downside": -0.1504,
+    "actual_return": -0.0531,
+    "actual_upside": 0.0,
+    "days_in_region": 167,
+    "end_date": "1999-11-11",
+    "end_reason": "reversal",
+    "seq_len": 167,
+    "similarity": 0.4982,
+    "start_date": "1999-05-18",
+    "ticker": "SVM",
+    "total_distance": 0.3483,
+    "trigger_date": "1999-10-18",
+    "trigger_type": "severe_drawdown"
+   },
+   {
+    "actual_downside": -0.0883,
+    "actual_return": 0.161,
+    "actual_upside": 0.161,
+    "days_in_region": 200,
+    "end_date": "2018-05-17",
+    "end_reason": "reversal",
+    "seq_len": 200,
+    "similarity": 0.4981,
+    "start_date": "2017-08-11",
+    "ticker": "ULTA",
+    "total_distance": 0.3485,
+    "trigger_date": "2018-02-02",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": -0.0116,
+    "actual_return": 0.1744,
+    "actual_upside": 0.1744,
+    "days_in_region": 170,
+    "end_date": "1991-11-22",
+    "end_reason": "reversal",
+    "seq_len": 170,
+    "similarity": 0.4968,
+    "start_date": "1991-04-09",
+    "ticker": "PDG",
+    "total_distance": 0.3497,
+    "trigger_date": "1991-09-12",
+    "trigger_type": "severe_drawdown"
+   }
+  ],
+  "panel": {
+   "edge": -0.0263,
+   "hit_hi": 0.665,
+   "hit_lo": 0.384,
+   "hit_rate": 0.526,
+   "median_final": 0.0142,
+   "median_pain": 0.1042,
+   "n": 19,
+   "n_eff": 19.0,
+   "p25_final": -0.0675,
+   "p_pain_gt5": 0.789,
+   "return_to_pain": 0.115
+  },
+  "stats": {
+   "avg_similarity": 0.449,
+   "avg_trough": 0.0955,
+   "avg_upside": 0.1507,
+   "median_pain": 0.0707,
+   "median_return": 0.066,
+   "n_matches": 200,
+   "p25_return": -0.0733,
+   "p_pain_gt5": 0.605,
+   "return_to_pain": 0.728,
+   "top5_avg_trough": 0.1096,
+   "top5_avg_upside": 0.0379,
+   "top_similarity": 0.54,
+   "win_rate": 0.64
+  },
+  "total_matches": 200
+ },
+ "ticker": "TMUS",
+ "trending": null
+}

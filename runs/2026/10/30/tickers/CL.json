@@ -1,0 +1,1120 @@
+{
+ "date": "2026-10-30",
+ "detected_regions": {
+  "primary": {
+   "days_in_region": 145,
+   "region_start": "2026-07-02",
+   "trigger_date": "2026-10-02",
+   "trigger_type": "shallow_drawdown"
+  },
+  "secondary": [
+   {
+    "confidence_score": 0.9762,
+    "downside_q50": -0.0954,
+    "ev_score": 0.0134,
+    "region_start": "2026-04-27",
+    "seq_len": 191,
+    "trigger_date": "2026-10-15",
+    "trigger_type": "runup",
+    "upside_q25": 0.0471,
+    "upside_q50": 0.1049,
+    "upside_q75": 0.1807
+   }
+  ]
+ },
+ "feature_attribution": {
+  "macro_driver_count": 14,
+  "risk_flags": [
+   "unfavorable_risk_reward"
+  ],
+  "top_drivers": [
+   {
+    "direction": "negative",
+    "feature": "dollar_volume",
+    "feature_value": 815953280.0,
+    "importance": 0.0005,
+    "importance_pct": 0.3965,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "negative",
+    "feature": "volatility_20d",
+    "feature_value": 0.0177,
+    "importance": 0.0002,
+    "importance_pct": 0.1649,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "negative",
+    "feature": "correlation_spy_60d",
+    "feature_value": -0.2496,
+    "importance": 0.0002,
+    "importance_pct": 0.15,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "positive",
+    "feature": "sector_rank_1d",
+    "feature_value": 0.7273,
+    "importance": 0.0001,
+    "importance_pct": 0.1149,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "negative",
+    "feature": "historical_recovery_rate",
+    "feature_value": 0.769,
+    "importance": 0.0001,
+    "importance_pct": 0.0921,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "positive",
+    "feature": "pe_percentile_1y",
+    "feature_value": 0.0119,
+    "importance": 0.0001,
+    "importance_pct": 0.0816,
+    "method": "integrated_gradients"
+   }
+  ]
+ },
+ "fundamentals": {
+  "accrual": 0.1297,
+  "adx_14": 48.9912,
+  "altman_z_score": 3.4078,
+  "amihud_illiquidity": 0.0,
+  "avg_volume": 4707416.0639,
+  "beta_252d": -0.117,
+  "book_value_per_share": 0.3605,
+  "correlation_spy_60d": -0.2496,
+  "current_liabilities": 6639.0,
+  "current_ratio": 0.9575,
+  "daily_earnings_yield": 0.0267,
+  "daily_fcf_yield": -0.0026,
+  "daily_pb": 100.0,
+  "daily_pe": 37.4135,
+  "daily_ps": 3.6088,
+  "days_since_52w_high": 170.0,
+  "debt_ebitda": 1.6466,
+  "debt_to_equity": 26.7917,
+  "dividend_yield": 0.0101,
+  "dollar_volume_20d_avg": 443671295.7094,
+  "earnings_quality": 1.5593,
+  "ebitda_growth_yoy": -0.0592,
+  "enterprise_value": 82998.9339,
+  "eps_basic": 0.94,
+  "eps_cagr_3y": 0.1007,
+  "eps_cagr_5y": -0.039,
+  "eps_diluted": 0.94,
+  "eps_growth_accel": 0.0064,
+  "eps_growth_qoq": 0.0805,
+  "eps_growth_yoy": -0.283,
+  "eps_growth_yoy_q2": -0.2894,
+  "eps_growth_yoy_q3": -0.2693,
+  "eps_growth_yoy_q4": -0.2538,
+  "eps_growth_yoy_q5": 0.0287,
+  "eps_growth_yoy_q6": 0.0377,
+  "eps_growth_yoy_q7": 0.1199,
+  "eps_growth_yoy_q8": 0.2652,
+  "eps_history_8q": [
+   0.9,
+   0.85,
+   0.91,
+   0.91,
+   -0.046,
+   0.8,
+   0.86,
+   0.94
+  ],
+  "eps_ttm": 2.5469,
+  "ev_to_ebitda": 17.7121,
+  "ev_to_fcf": 80.0375,
+  "ev_to_sales": 15.4589,
+  "fcf_growth_yoy": -0.8463,
+  "fcf_margin": 0.1931,
+  "fcf_per_share": 1.2979,
+  "gross_margin": 0.6061,
+  "gross_margin_change_yoy": -0.0229,
+  "gross_margin_history": [
+   0.6361,
+   0.6316,
+   0.6235,
+   0.6155,
+   0.6118,
+   0.6061
+  ],
+  "inc_roic": -0.1076,
+  "interest_coverage": 18.744,
+  "is_pre_revenue": false,
+  "margin_vs_sector_median": null,
+  "market_cap_ratio": 76809.9339,
+  "net_income": 751.0,
+  "net_margin": 0.0965,
+  "operating_income": 1122.0,
+  "operating_margin": 0.2054,
+  "operating_margin_change_yoy": -0.0009,
+  "pb_ratio": 264.3636,
+  "pe_percentile_1y": 0.0119,
+  "pe_ratio": 37.4135,
+  "peg_trailing": -1.311,
+  "piotroski_f_score": 6.0,
+  "price_vs_high_52w": 0.9612,
+  "price_vs_sma200": 1.0625,
+  "ps_percentile_1y": 0.1429,
+  "ps_ratio": 3.6088,
+  "quarter_labels_8q": [
+   "Q4 '24",
+   "Q1 '25",
+   "Q2 '25",
+   "Q3 '25",
+   "Q4 '25",
+   "Q1 '26",
+   "Q2 '26",
+   "Q3 '26"
+  ],
+  "quarterly_eps_growth_yoy": 0.033,
+  "quarterly_eps_growth_yoy_8q": [
+   0.0345,
+   0.0241,
+   0.0225,
+   0.0111,
+   -1.0511,
+   -0.0588,
+   -0.0549,
+   0.033
+  ],
+  "quarterly_revenue_growth_yoy": 0.0464,
+  "quarterly_revenue_growth_yoy_8q": [
+   -0.001,
+   -0.0304,
+   0.0101,
+   0.0197,
+   0.0576,
+   0.0841,
+   0.0491,
+   0.0464
+  ],
+  "revenue_cagr_3y": 0.0361,
+  "revenue_cagr_5y": 0.0418,
+  "revenue_growth_accel": 0.0067,
+  "revenue_growth_qoq": 0.0015,
+  "revenue_growth_yoy": 0.0591,
+  "revenue_growth_yoy_q2": 0.0524,
+  "revenue_growth_yoy_q3": 0.0425,
+  "revenue_growth_yoy_q4": 0.014,
+  "revenue_growth_yoy_q5": -0.0004,
+  "revenue_growth_yoy_q6": 0.0005,
+  "revenue_growth_yoy_q7": 0.0099,
+  "revenue_growth_yoy_q8": 0.0331,
+  "revenue_history_8q": [
+   4945.0,
+   4911.0,
+   5110.0,
+   5131.0,
+   5230.0,
+   5324.0,
+   5361.0,
+   5369.0
+  ],
+  "revenue_per_share": 6.7196,
+  "roa": 0.1225,
+  "roce": 0.4214,
+  "roe": 7.8359,
+  "roic": 0.2032,
+  "rsi_14": 63.52,
+  "sector_momentum": 0.0937,
+  "share_dilution_1y": 0.0031,
+  "stock_vs_sector_20d": 0.1375,
+  "stock_vs_spy_20d": 0.1519,
+  "total_assets": 16742.0,
+  "vol_regime": 1.3357,
+  "volatility_20d": 0.0177,
+  "volatility_60d": 0.0133,
+  "w52_high": 99.33,
+  "w52_low": 74.545
+ },
+ "market_characters": [],
+ "model_analogs": {
+  "matches": [
+   {
+    "actual_downside": 0.0,
+    "actual_return": 0.1588,
+    "actual_upside": 0.1588,
+    "days_in_region": 110,
+    "end_date": "2022-04-04",
+    "end_reason": "reversal",
+    "similarity": 0.9483,
+    "start_date": "2021-12-15",
+    "ticker": "TR",
+    "trigger_date": "2022-02-07",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": -0.0519,
+    "actual_return": -0.0014,
+    "actual_upside": 0.0199,
+    "days_in_region": 427,
+    "end_date": "2019-12-12",
+    "end_reason": "reversal",
+    "similarity": 0.9463,
+    "start_date": "2018-10-11",
+    "ticker": "AQN",
+    "trigger_date": "2019-03-25",
+    "trigger_type": "runup"
+   },
+   {
+    "actual_downside": -0.5947,
+    "actual_return": -0.3706,
+    "actual_upside": 0.0,
+    "days_in_region": 209,
+    "end_date": "2020-03-25",
+    "end_reason": "reversal",
+    "similarity": 0.9429,
+    "start_date": "2019-08-29",
+    "ticker": "QSR",
+    "trigger_date": "2019-10-16",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": -0.0003,
+    "actual_return": 0.1812,
+    "actual_upside": 0.1812,
+    "days_in_region": 104,
+    "end_date": "2022-02-28",
+    "end_reason": "reversal",
+    "similarity": 0.9424,
+    "start_date": "2021-11-16",
+    "ticker": "CTS",
+    "trigger_date": "2022-01-28",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": -0.0026,
+    "actual_return": 0.1514,
+    "actual_upside": 0.1514,
+    "days_in_region": 168,
+    "end_date": "2019-01-11",
+    "end_reason": "reversal",
+    "similarity": 0.9413,
+    "start_date": "2018-07-27",
+    "ticker": "PSO",
+    "trigger_date": "2018-09-13",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": 0.0,
+    "actual_return": 0.3605,
+    "actual_upside": 0.3605,
+    "days_in_region": 166,
+    "end_date": "2022-04-20",
+    "end_reason": "reversal",
+    "similarity": 0.9411,
+    "start_date": "2021-11-05",
+    "ticker": "AVTA",
+    "trigger_date": "2022-01-27",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": -0.0038,
+    "actual_return": 0.111,
+    "actual_upside": 0.111,
+    "days_in_region": 172,
+    "end_date": "2019-12-27",
+    "end_reason": "reversal",
+    "similarity": 0.9409,
+    "start_date": "2019-07-08",
+    "ticker": "TWNK",
+    "trigger_date": "2019-10-22",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": -0.3458,
+    "actual_return": -0.3458,
+    "actual_upside": 0.1279,
+    "days_in_region": 312,
+    "end_date": "2020-03-23",
+    "end_reason": "reversal",
+    "similarity": 0.9407,
+    "start_date": "2019-05-16",
+    "ticker": "ORLY",
+    "trigger_date": "2019-09-10",
+    "trigger_type": "shallow_runup"
+   },
+   {
+    "actual_downside": -0.033,
+    "actual_return": -0.017,
+    "actual_upside": 0.0571,
+    "days_in_region": 385,
+    "end_date": "2020-01-13",
+    "end_reason": "reversal",
+    "similarity": 0.9406,
+    "start_date": "2018-12-24",
+    "ticker": "CBOE",
+    "trigger_date": "2019-04-22",
+    "trigger_type": "shallow_runup"
+   },
+   {
+    "actual_downside": -0.3938,
+    "actual_return": -0.2847,
+    "actual_upside": 0.0483,
+    "days_in_region": 282,
+    "end_date": "2022-08-19",
+    "end_reason": "reversal",
+    "similarity": 0.9393,
+    "start_date": "2021-11-10",
+    "ticker": "HAIN",
+    "trigger_date": "2022-01-27",
+    "trigger_type": "severe_drawdown"
+   }
+  ],
+  "stats": {
+   "avg_max_drawdown": 0.0997,
+   "avg_similarity": 0.938,
+   "avg_trough": 0.0997,
+   "avg_upside": 0.1366,
+   "best_return": 0.5936,
+   "downside_range": [
+    -0.5947,
+    0.0
+   ],
+   "median_return": 0.1044,
+   "n_matches": 50,
+   "outcome_agreement": false,
+   "return_p25": -0.041,
+   "return_p5": -0.3594,
+   "return_p75": 0.1636,
+   "return_p95": 0.3404,
+   "sim_weighted_win_rate": 0.7,
+   "top5_avg_trough": 0.1299,
+   "top5_avg_upside": 0.1023,
+   "top_similarity": 0.948,
+   "upside_range": [
+    0.0,
+    0.5936
+   ],
+   "win_rate": 0.7,
+   "worst_return": -0.5499,
+   "years_span": 5
+  },
+  "total_matches": 50
+ },
+ "peer_group": {
+  "buckets": [
+   "Animal Health, Feed Additives & Livestock Inputs",
+   "Beauty, Personal Care & Cosmetics",
+   "Home Furnishings, Household Products & Appliances"
+  ],
+  "groups": {
+   "Animal Health, Feed Additives & Livestock Inputs": [
+    {
+     "market_cap_m": 996.2406,
+     "price_vs_sma200": 1.142,
+     "return_30d": 0.1381,
+     "return_7d": 0.062,
+     "revenue_driver": "pet food and treats",
+     "signal_rank": 716,
+     "stock_vs_spy_20d": 0.1659,
+     "ticker": "CENT"
+    },
+    {
+     "market_cap_m": 737.9683,
+     "price_vs_sma200": 0.9423,
+     "return_30d": 0.125,
+     "return_7d": -0.0094,
+     "revenue_driver": "animal health products",
+     "signal_rank": 69,
+     "stock_vs_spy_20d": 0.065,
+     "ticker": "PAHC"
+    },
+    {
+     "market_cap_m": 76809.9339,
+     "price_vs_sma200": 1.0625,
+     "return_30d": 0.0894,
+     "return_7d": 0.0202,
+     "revenue_driver": "oral care products",
+     "signal_rank": 1675,
+     "stock_vs_spy_20d": 0.1519,
+     "ticker": "CL"
+    },
+    {
+     "market_cap_m": 46959.5746,
+     "price_vs_sma200": 0.9626,
+     "return_30d": 0.0773,
+     "return_7d": -0.0041,
+     "revenue_driver": "veterinary diagnostic tests",
+     "signal_rank": 2049,
+     "stock_vs_spy_20d": 0.0843,
+     "ticker": "IDXX"
+    },
+    {
+     "market_cap_m": 28054.4704,
+     "price_vs_sma200": 1.1682,
+     "return_30d": 0.0565,
+     "return_7d": 0.0164,
+     "revenue_driver": "branded coffee products",
+     "signal_rank": 1453,
+     "stock_vs_spy_20d": 0.1294,
+     "ticker": "SJM"
+    },
+    {
+     "market_cap_m": 13027.7479,
+     "price_vs_sma200": 0.9692,
+     "return_30d": 0.0285,
+     "return_7d": 0.0226,
+     "revenue_driver": "veterinary pharmaceuticals",
+     "signal_rank": 1372,
+     "stock_vs_spy_20d": 0.0625,
+     "ticker": "ELAN"
+    },
+    {
+     "market_cap_m": 360662.7621,
+     "price_vs_sma200": 1.18,
+     "return_30d": 0.0188,
+     "return_7d": -0.0024,
+     "revenue_driver": "oncology therapeutics",
+     "signal_rank": 1430,
+     "stock_vs_spy_20d": 0.0572,
+     "ticker": "MRK"
+    },
+    {
+     "market_cap_m": 19112.9072,
+     "price_vs_sma200": 0.9143,
+     "return_30d": -0.0559,
+     "return_7d": 0.0528,
+     "revenue_driver": "packaged cereals and meals",
+     "signal_rank": 1541,
+     "stock_vs_spy_20d": 0.0922,
+     "ticker": "GIS"
+    },
+    {
+     "market_cap_m": 1061.492,
+     "price_vs_sma200": 0.9244,
+     "return_30d": -0.0693,
+     "return_7d": -0.0042,
+     "revenue_driver": "biofuel production",
+     "signal_rank": 1023,
+     "stock_vs_spy_20d": -0.0532,
+     "ticker": "GPRE"
+    },
+    {
+     "market_cap_m": 7430.5213,
+     "price_vs_sma200": 0.7699,
+     "return_30d": -0.2488,
+     "return_7d": 0.0402,
+     "revenue_driver": "phosphate fertilizers",
+     "signal_rank": 2071,
+     "stock_vs_spy_20d": -0.1062,
+     "ticker": "MOS"
+    }
+   ],
+   "Beauty, Personal Care & Cosmetics": [
+    {
+     "market_cap_m": 3869.2458,
+     "price_vs_sma200": 1.1499,
+     "return_30d": 0.3086,
+     "return_7d": 0.1151,
+     "revenue_driver": "body care",
+     "signal_rank": 1315,
+     "stock_vs_spy_20d": 0.4388,
+     "ticker": "BBWI"
+    },
+    {
+     "market_cap_m": 24035.5302,
+     "price_vs_sma200": 1.1583,
+     "return_30d": 0.1838,
+     "return_7d": 0.0551,
+     "revenue_driver": "beauty products retail",
+     "signal_rank": 1797,
+     "stock_vs_spy_20d": 0.1989,
+     "ticker": "ULTA"
+    },
+    {
+     "market_cap_m": 1585.0306,
+     "price_vs_sma200": 1.2059,
+     "return_30d": 0.1495,
+     "return_7d": 0.0934,
+     "revenue_driver": "professional beauty products",
+     "signal_rank": 1210,
+     "stock_vs_spy_20d": 0.1386,
+     "ticker": "SBH"
+    },
+    {
+     "market_cap_m": 25749.1399,
+     "price_vs_sma200": 1.0973,
+     "return_30d": 0.1317,
+     "return_7d": 0.0212,
+     "revenue_driver": "baking soda consumer products",
+     "signal_rank": 1923,
+     "stock_vs_spy_20d": 0.158,
+     "ticker": "CHD"
+    },
+    {
+     "market_cap_m": 37025.3971,
+     "price_vs_sma200": 1.048,
+     "return_30d": 0.103,
+     "return_7d": 0.0122,
+     "revenue_driver": "tissue and paper products",
+     "signal_rank": 1157,
+     "stock_vs_spy_20d": 0.1649,
+     "ticker": "KMB"
+    },
+    {
+     "market_cap_m": 76809.9339,
+     "price_vs_sma200": 1.0625,
+     "return_30d": 0.0894,
+     "return_7d": 0.0202,
+     "revenue_driver": "oral care products",
+     "signal_rank": 1675,
+     "stock_vs_spy_20d": 0.1519,
+     "ticker": "CL"
+    },
+    {
+     "market_cap_m": 36998.1917,
+     "price_vs_sma200": 1.0615,
+     "return_30d": 0.0842,
+     "return_7d": 0.0142,
+     "revenue_driver": "OTC self-care brands",
+     "signal_rank": 1928,
+     "stock_vs_spy_20d": 0.1437,
+     "ticker": "KVUE"
+    },
+    {
+     "market_cap_m": 12826.197,
+     "price_vs_sma200": 0.882,
+     "return_30d": 0.059,
+     "return_7d": 0.0381,
+     "revenue_driver": "cleaning and disinfecting products",
+     "signal_rank": 788,
+     "stock_vs_spy_20d": 0.1154,
+     "ticker": "CLX"
+    },
+    {
+     "market_cap_m": 251.0625,
+     "price_vs_sma200": 0.7275,
+     "return_30d": 0.0153,
+     "return_7d": -0.0231,
+     "revenue_driver": "direct-selling beauty products",
+     "signal_rank": 672,
+     "stock_vs_spy_20d": 0.0297,
+     "ticker": "NUS"
+    },
+    {
+     "market_cap_m": 2106.7888,
+     "price_vs_sma200": 1.0365,
+     "return_30d": -0.0317,
+     "return_7d": 0.0567,
+     "revenue_driver": "pet care consumer products",
+     "signal_rank": 1204,
+     "stock_vs_spy_20d": 0.0864,
+     "ticker": "SPB"
+    }
+   ],
+   "Home Furnishings, Household Products & Appliances": [
+    {
+     "market_cap_m": 3869.2458,
+     "price_vs_sma200": 1.1499,
+     "return_30d": 0.3086,
+     "return_7d": 0.1151,
+     "revenue_driver": "body care",
+     "signal_rank": 1315,
+     "stock_vs_spy_20d": 0.4388,
+     "ticker": "BBWI"
+    },
+    {
+     "market_cap_m": 3836.0029,
+     "price_vs_sma200": 1.0059,
+     "return_30d": 0.1887,
+     "return_7d": 0.1128,
+     "revenue_driver": "lawn and garden products",
+     "signal_rank": 1791,
+     "stock_vs_spy_20d": 0.2907,
+     "ticker": "SMG"
+    },
+    {
+     "market_cap_m": 25749.1399,
+     "price_vs_sma200": 1.0973,
+     "return_30d": 0.1317,
+     "return_7d": 0.0212,
+     "revenue_driver": "baking soda consumer products",
+     "signal_rank": 1923,
+     "stock_vs_spy_20d": 0.158,
+     "ticker": "CHD"
+    },
+    {
+     "market_cap_m": 2069.8692,
+     "price_vs_sma200": 1.1145,
+     "return_30d": 0.1316,
+     "return_7d": 0.0622,
+     "revenue_driver": "lawn and garden products",
+     "signal_rank": 1057,
+     "stock_vs_spy_20d": 0.1622,
+     "ticker": "CENTA"
+    },
+    {
+     "market_cap_m": 7197.9883,
+     "price_vs_sma200": 0.9943,
+     "return_30d": 0.1075,
+     "return_7d": 0.0573,
+     "revenue_driver": "residential water heaters",
+     "signal_rank": 1655,
+     "stock_vs_spy_20d": 0.1323,
+     "ticker": "AOS"
+    },
+    {
+     "market_cap_m": 386939.7831,
+     "price_vs_sma200": 1.0849,
+     "return_30d": 0.1037,
+     "return_7d": 0.0302,
+     "revenue_driver": "fabric and home care brands",
+     "signal_rank": 1867,
+     "stock_vs_spy_20d": 0.136,
+     "ticker": "PG"
+    },
+    {
+     "market_cap_m": 76809.9339,
+     "price_vs_sma200": 1.0625,
+     "return_30d": 0.0894,
+     "return_7d": 0.0202,
+     "revenue_driver": "oral care products",
+     "signal_rank": 1675,
+     "stock_vs_spy_20d": 0.1519,
+     "ticker": "CL"
+    },
+    {
+     "market_cap_m": 12826.197,
+     "price_vs_sma200": 0.882,
+     "return_30d": 0.059,
+     "return_7d": 0.0381,
+     "revenue_driver": "cleaning and disinfecting products",
+     "signal_rank": 788,
+     "stock_vs_spy_20d": 0.1154,
+     "ticker": "CLX"
+    },
+    {
+     "market_cap_m": 2106.7888,
+     "price_vs_sma200": 1.0365,
+     "return_30d": -0.0317,
+     "return_7d": 0.0567,
+     "revenue_driver": "pet care consumer products",
+     "signal_rank": 1204,
+     "stock_vs_spy_20d": 0.0864,
+     "ticker": "SPB"
+    },
+    {
+     "market_cap_m": 872.6389,
+     "price_vs_sma200": 0.8944,
+     "return_30d": -0.1961,
+     "return_7d": -0.0346,
+     "revenue_driver": "pet care absorbents",
+     "signal_rank": 611,
+     "stock_vs_spy_20d": -0.1821,
+     "ticker": "ODC"
+    }
+   ]
+  }
+ },
+ "predictions": {
+  "badge_count": 1,
+  "confidence_score": 0.9148,
+  "conviction_label": "SPECULATIVE",
+  "data_quality_flags": [],
+  "ev_score": -0.0006,
+  "is_diamond": false,
+  "passes_tradability_filter": true,
+  "quality_label": "AVOID",
+  "quantiles": {
+   "downside_q10": -0.278,
+   "downside_q25": -0.1795,
+   "downside_q50": -0.1078,
+   "downside_q75": -0.0417,
+   "downside_q90": -0.0124,
+   "path_volatility": 0.0216,
+   "risk_reward": 0.9502,
+   "uncertainty": 0.2758,
+   "upside_q10": 0.0148,
+   "upside_q25": 0.0441,
+   "upside_q50": 0.1024,
+   "upside_q75": 0.1774,
+   "upside_q90": 0.2907
+  },
+  "rank": 1675,
+  "rank_score": 0.003,
+  "tradability_filter_reasons": []
+ },
+ "profile": {
+  "_local": {
+   "dividend_yield": 0.0101,
+   "eps_growth_yoy": -0.283,
+   "pe_ratio": 37.3101,
+   "revenue_growth_yoy": 0.0591,
+   "roe": 7.8359
+  },
+  "beta": 0.322,
+  "betaTTM": null,
+  "ceo": "Noel R. Wallace",
+  "companyName": "Colgate-Palmolive Company",
+  "country": "US",
+  "debtToEquityTTM": null,
+  "description": "Operating globally, Colgate-Palmolive Company and its affiliated entities are engaged in the production and distribution of a diverse range of consumer goods. Its operations are structured into two primary divisions: Oral, Personal and Home Care, and Pet Nutrition. The Oral, Personal and Home Care division encompasses a broad array of offerings, spanning oral hygiene (e.g., toothpastes, toothbrushes, mouthwashes), personal care (e.g., bar and liquid soaps, shower gels, shampoos, conditioners, deodorants, antiperspirants, skin health items), and home care solutions (e.g., dishwashing detergents, fabric conditioners, household cleaners). These products are distributed through various channels, including traditional and online retailers, wholesalers, and distributors, under well-known brand names such as Colgate, Darlie, elmex, hello, meridol, Sorriso, Tom's of Maine, Irish Spring, Palmolive, Protex, Sanex, Softsoap, Lady Speed Stick, Speed Stick, EltaMD, Filorga, PCA SKIN, Ajax, Axion, Fabuloso, Murphy, Suavitel, Soupline, and Cuddly. Furthermore, this segment supplies specialized pharmaceutical products to dentists and other professionals in oral healthcare. Conversely, the Pet Nutrition segment focuses on providing specialized pet food. This includes everyday nutritional options marketed under the Hill's Science Diet brand, as well as therapeutic diets designed to assist in managing various health conditions in dogs and cats, sold under the Hill's Prescription Diet brand. Distribution for these pet nutrition items occurs via pet supply stores, veterinary clinics, and online retail platforms. Established in 1806, Colgate-Palmolive Company maintains its corporate headquarters in New York, New York.",
+  "dividendYielTTM": null,
+  "enterpriseValueOverEBITDATTM": null,
+  "exchangeShortName": "NYSE",
+  "fullTimeEmployees": "33600",
+  "industry": "Household & Personal Products",
+  "ipoDate": "1973-05-02",
+  "latest_earnings_date": "2026-10-30",
+  "marketCapTTM": null,
+  "mktCap": 75962615170,
+  "peRatioTTM": null,
+  "price": 95.29,
+  "priceToSalesRatioTTM": null,
+  "returnOnEquityTTM": 11.3582,
+  "revenue_description": "Colgate-Palmolive sells oral care, personal care, home care, and pet nutrition products. Revenue is driven by vehicle production volumes and content-per-vehicle, with EV transition and ADAS adoption creating new product opportunities.",
+  "revenue_description_themes": [
+   "oral care market share expansion",
+   "emerging market volume growth",
+   "premium product innovation"
+  ],
+  "revenue_taxonomy": [
+   {
+    "bucket": "Beauty, Personal Care & Cosmetics",
+    "matched_tags": [
+     "oral care products"
+    ],
+    "path": "Consumer Goods & Retail › Branded Consumer Goods › Beauty, Personal Care & Cosmetics",
+    "sector": "Consumer Goods & Retail",
+    "segment": "Branded Consumer Goods"
+   },
+   {
+    "bucket": "Home Furnishings, Household Products & Appliances",
+    "matched_tags": [
+     "personal and home care"
+    ],
+    "path": "Consumer Goods & Retail › Branded Consumer Goods › Home Furnishings, Household Products & Appliances",
+    "sector": "Consumer Goods & Retail",
+    "segment": "Branded Consumer Goods"
+   },
+   {
+    "bucket": "Animal Health, Feed Additives & Livestock Inputs",
+    "matched_tags": [
+     "pet nutrition products"
+    ],
+    "path": "Agriculture & Food Supply › Upstream Agriculture › Animal Health, Feed Additives & Livestock Inputs",
+    "sector": "Agriculture & Food Supply",
+    "segment": "Upstream Agriculture"
+   }
+  ],
+  "revenue_themes": [
+   "oral care products",
+   "personal and home care",
+   "pet nutrition products"
+  ],
+  "sector": "Consumer Defensive",
+  "website": "https://www.colgatepalmolive.com"
+ },
+ "report": null,
+ "scorecard": {
+  "headline": {
+   "avg_universe_pct": 52,
+   "label": "mixed",
+   "metric_count": 8
+  },
+  "metrics": {
+   "debt_to_equity": {
+    "direction": "lower",
+    "label": "D/E Ratio",
+    "sector": "Materials",
+    "sector_n": 120,
+    "sector_pct": 2,
+    "universe_n": 2061,
+    "universe_pct": 1,
+    "value": 26.7917
+   },
+   "eps_growth_yoy": {
+    "direction": "higher",
+    "label": "EPS Growth",
+    "sector": "Materials",
+    "sector_n": 121,
+    "sector_pct": 30,
+    "universe_n": 1882,
+    "universe_pct": 22,
+    "value": -0.283
+   },
+   "gross_margin": {
+    "direction": "higher",
+    "label": "Gross Margin",
+    "sector": "Materials",
+    "sector_n": 119,
+    "sector_pct": 92,
+    "universe_n": 1999,
+    "universe_pct": 66,
+    "value": 0.6061
+   },
+   "operating_margin": {
+    "direction": "higher",
+    "label": "Op. Margin",
+    "sector": "Materials",
+    "sector_n": 119,
+    "sector_pct": 84,
+    "universe_n": 1999,
+    "universe_pct": 75,
+    "value": 0.2054
+   },
+   "pe_ratio": {
+    "direction": "lower",
+    "label": "P/E",
+    "sector": "Materials",
+    "sector_n": 77,
+    "sector_pct": 26,
+    "universe_n": 1469,
+    "universe_pct": 20,
+    "value": 37.3101
+   },
+   "revenue_growth_yoy": {
+    "direction": "higher",
+    "label": "Rev Growth",
+    "sector": "Materials",
+    "sector_n": 119,
+    "sector_pct": 54,
+    "universe_n": 1826,
+    "universe_pct": 40,
+    "value": 0.0591
+   },
+   "roe": {
+    "direction": "higher",
+    "label": "ROE",
+    "sector": "Materials",
+    "sector_n": 122,
+    "sector_pct": 98,
+    "universe_n": 2090,
+    "universe_pct": 99,
+    "value": 7.8359
+   },
+   "roic": {
+    "direction": "higher",
+    "label": "ROIC",
+    "sector": "Materials",
+    "sector_n": 120,
+    "sector_pct": 97,
+    "universe_n": 2031,
+    "universe_pct": 93,
+    "value": 0.0743
+   }
+  }
+ },
+ "signal_rank": 1675,
+ "structural_analogs": {
+  "gp_core_pct": 55.2,
+  "gp_core_ratio": 1.3919,
+  "matches": [
+   {
+    "actual_downside": -0.0643,
+    "actual_return": 0.1231,
+    "actual_upside": 0.1231,
+    "days_in_region": 109,
+    "end_date": "2017-04-18",
+    "end_reason": "reversal",
+    "seq_len": 109,
+    "similarity": 0.6091,
+    "start_date": "2016-07-29",
+    "ticker": "DPS",
+    "total_distance": 0.2478,
+    "trigger_date": "2016-10-06",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": -0.0545,
+    "actual_return": 0.0152,
+    "actual_upside": 0.0758,
+    "days_in_region": 200,
+    "end_date": "2019-04-16",
+    "end_reason": "reversal",
+    "seq_len": 200,
+    "similarity": 0.6078,
+    "start_date": "2018-02-08",
+    "ticker": "AWR",
+    "total_distance": 0.2489,
+    "trigger_date": "2018-06-25",
+    "trigger_type": "runup"
+   },
+   {
+    "actual_downside": -0.1517,
+    "actual_return": -0.1517,
+    "actual_upside": 0.0431,
+    "days_in_region": 158,
+    "end_date": "2005-10-12",
+    "end_reason": "reversal",
+    "seq_len": 158,
+    "similarity": 0.6077,
+    "start_date": "2005-03-09",
+    "ticker": "CRL",
+    "total_distance": 0.249,
+    "trigger_date": "2005-07-21",
+    "trigger_type": "runup"
+   },
+   {
+    "actual_downside": -0.0046,
+    "actual_return": 0.0913,
+    "actual_upside": 0.0913,
+    "days_in_region": 149,
+    "end_date": "2006-07-03",
+    "end_reason": "reversal",
+    "seq_len": 149,
+    "similarity": 0.6072,
+    "start_date": "2006-01-20",
+    "ticker": "NNI",
+    "total_distance": 0.2495,
+    "trigger_date": "2006-05-24",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": -0.0218,
+    "actual_return": 0.0447,
+    "actual_upside": 0.0447,
+    "days_in_region": 127,
+    "end_date": "2020-01-13",
+    "end_reason": "reversal",
+    "seq_len": 127,
+    "similarity": 0.6021,
+    "start_date": "2019-09-03",
+    "ticker": "TSN",
+    "total_distance": 0.2537,
+    "trigger_date": "2019-09-11",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": -0.0385,
+    "actual_return": 0.0774,
+    "actual_upside": 0.1194,
+    "days_in_region": 200,
+    "end_date": "2019-01-29",
+    "end_reason": "reversal",
+    "seq_len": 200,
+    "similarity": 0.5982,
+    "start_date": "2018-02-08",
+    "ticker": "OGE",
+    "total_distance": 0.2569,
+    "trigger_date": "2018-05-07",
+    "trigger_type": "runup"
+   },
+   {
+    "actual_downside": -0.1124,
+    "actual_return": -0.1124,
+    "actual_upside": 0.0225,
+    "days_in_region": 166,
+    "end_date": "2018-12-24",
+    "end_reason": "reversal",
+    "seq_len": 166,
+    "similarity": 0.5976,
+    "start_date": "2018-06-21",
+    "ticker": "SON",
+    "total_distance": 0.2575,
+    "trigger_date": "2018-11-19",
+    "trigger_type": "shallow_runup"
+   },
+   {
+    "actual_downside": -0.0689,
+    "actual_return": -0.0224,
+    "actual_upside": 0.0344,
+    "days_in_region": 200,
+    "end_date": "2019-01-16",
+    "end_reason": "reversal",
+    "seq_len": 200,
+    "similarity": 0.5966,
+    "start_date": "2018-02-08",
+    "ticker": "CMS",
+    "total_distance": 0.2583,
+    "trigger_date": "2018-04-30",
+    "trigger_type": "shallow_runup"
+   },
+   {
+    "actual_downside": -0.2271,
+    "actual_return": -0.2271,
+    "actual_upside": 0.0079,
+    "days_in_region": 200,
+    "end_date": "2007-08-16",
+    "end_reason": "reversal",
+    "seq_len": 200,
+    "similarity": 0.5961,
+    "start_date": "2006-07-18",
+    "ticker": "NWL",
+    "total_distance": 0.2587,
+    "trigger_date": "2006-09-05",
+    "trigger_type": "shallow_runup"
+   },
+   {
+    "actual_downside": -0.1506,
+    "actual_return": -0.1506,
+    "actual_upside": 0.0135,
+    "days_in_region": 180,
+    "end_date": "2013-11-12",
+    "end_reason": "reversal",
+    "seq_len": 180,
+    "similarity": 0.5937,
+    "start_date": "2012-11-15",
+    "ticker": "KFN",
+    "total_distance": 0.2607,
+    "trigger_date": "2013-05-09",
+    "trigger_type": "shallow_runup"
+   }
+  ],
+  "panel": {
+   "edge": 0.003,
+   "hit_hi": 0.672,
+   "hit_lo": 0.499,
+   "hit_rate": 0.588,
+   "median_final": 0.0291,
+   "median_pain": 0.0545,
+   "n": 51,
+   "n_eff": 51.0,
+   "p25_final": -0.061,
+   "p_pain_gt5": 0.549,
+   "return_to_pain": 0.39
+  },
+  "stats": {
+   "avg_similarity": 0.567,
+   "avg_trough": 0.0794,
+   "avg_upside": 0.108,
+   "median_pain": 0.0601,
+   "median_return": 0.026,
+   "n_matches": 200,
+   "p25_return": -0.0745,
+   "p_pain_gt5": 0.565,
+   "return_to_pain": 0.325,
+   "top5_avg_trough": 0.0594,
+   "top5_avg_upside": 0.0756,
+   "top_similarity": 0.609,
+   "win_rate": 0.56
+  },
+  "total_matches": 200
+ },
+ "ticker": "CL",
+ "trending": {
+  "acceleration": 0.0042,
+  "avg_vol_20d": 4723925.2005,
+  "base_high_120": 97.39,
+  "breakout_confirmed": 0,
+  "close": 95.29,
+  "momentum_score": 0.7719,
+  "momentum_start": "2026-10-12",
+  "range_20": 0.1474,
+  "range_50": 0.151,
+  "rank": 1481,
+  "rank_down": null,
+  "rank_up": 365,
+  "ret_120": 0.0986,
+  "ret_20": 0.1309,
+  "ret_60": 0.0246,
+  "rundown_score": 0.1396,
+  "score_date": "2026-10-30",
+  "slope_20": 0.0043,
+  "slope_60": 0.0001,
+  "stage": "sustained",
+  "stage_label": "Trending",
+  "ticker": "CL",
+  "total_score": 0.3088,
+  "trend_ratio": 1.0699,
+  "vcp_detected": 0,
+  "vcp_score": 0.0
+ }
+}
