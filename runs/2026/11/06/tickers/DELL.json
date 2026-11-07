@@ -1,0 +1,1150 @@
+{
+ "date": "2026-11-06",
+ "detected_regions": {
+  "primary": {
+   "days_in_region": 97,
+   "region_start": "2026-09-17",
+   "trigger_date": "2026-11-02",
+   "trigger_type": "severe_drawdown"
+  },
+  "secondary": [
+   {
+    "confidence_score": 0.2333,
+    "downside_q50": -0.0672,
+    "ev_score": 0.2036,
+    "region_start": "2026-05-07",
+    "seq_len": 188,
+    "trigger_date": "2026-10-28",
+    "trigger_type": "runup",
+    "upside_q25": 0.1219,
+    "upside_q50": 0.2612,
+    "upside_q75": 0.431
+   }
+  ]
+ },
+ "feature_attribution": {
+  "macro_driver_count": 11,
+  "risk_flags": [
+   "high_volatility"
+  ],
+  "top_drivers": [
+   {
+    "direction": "negative",
+    "feature": "dollar_volume",
+    "feature_value": 2806003968.0,
+    "importance": 0.0013,
+    "importance_pct": 0.2819,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "positive",
+    "feature": "price_vs_sma200",
+    "feature_value": 0.9736,
+    "importance": 0.0008,
+    "importance_pct": 0.1879,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "positive",
+    "feature": "price_vs_low_52w",
+    "feature_value": 2.9579,
+    "importance": 0.0007,
+    "importance_pct": 0.1634,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "negative",
+    "feature": "ma_200_slope",
+    "feature_value": 0.109,
+    "importance": 0.0004,
+    "importance_pct": 0.0919,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "positive",
+    "feature": "volatility_20d",
+    "feature_value": 0.061,
+    "importance": 0.0003,
+    "importance_pct": 0.0754,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "negative",
+    "feature": "intangibles",
+    "feature_value": 23795.0,
+    "importance": 0.0003,
+    "importance_pct": 0.0565,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "positive",
+    "feature": "return_1d",
+    "feature_value": 0.0367,
+    "importance": 0.0002,
+    "importance_pct": 0.0524,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "negative",
+    "feature": "stock_vs_spy_change_5d",
+    "feature_value": -0.1594,
+    "importance": 0.0002,
+    "importance_pct": 0.0471,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "negative",
+    "feature": "price_vs_low_change_5d",
+    "feature_value": -0.8622,
+    "importance": 0.0002,
+    "importance_pct": 0.0435,
+    "method": "integrated_gradients"
+   }
+  ]
+ },
+ "fundamentals": {
+  "accrual": 0.0856,
+  "adx_14": 46.2564,
+  "altman_z_score": 1.5298,
+  "amihud_illiquidity": 0.0,
+  "avg_volume": 7826901.6469,
+  "beta_252d": 1.0237,
+  "book_value_per_share": -2.2124,
+  "correlation_spy_60d": 0.5932,
+  "current_liabilities": 83703.0,
+  "current_ratio": 0.9623,
+  "daily_earnings_yield": 0.0579,
+  "daily_fcf_yield": -0.0052,
+  "daily_pb": -50.0,
+  "daily_pe": 17.2657,
+  "daily_ps": 1.3633,
+  "days_since_52w_high": 36.0,
+  "debt_ebitda": 2.0143,
+  "debt_to_equity": -24.1528,
+  "dividend_yield": 0.0016,
+  "dollar_volume_20d_avg": 3334461088.2202,
+  "earnings_quality": 0.0,
+  "ebitda_growth_yoy": 0.6052,
+  "enterprise_value": 251978.201,
+  "eps_basic": 6.41,
+  "eps_cagr_3y": 0.7426,
+  "eps_cagr_5y": 0.2024,
+  "eps_diluted": 6.34,
+  "eps_growth_accel": 0.3411,
+  "eps_growth_qoq": 0.2094,
+  "eps_growth_yoy": 1.6912,
+  "eps_growth_yoy_q2": 1.3501,
+  "eps_growth_yoy_q3": 0.9692,
+  "eps_growth_yoy_q4": 0.3635,
+  "eps_growth_yoy_q5": 0.262,
+  "eps_growth_yoy_q6": 0.1976,
+  "eps_growth_yoy_q7": 0.2405,
+  "eps_growth_yoy_q8": 0.3843,
+  "eps_history_8q": [
+   1.37,
+   1.7,
+   2.28,
+   3.37,
+   5.24,
+   5.24,
+   5.24,
+   6.34
+  ],
+  "eps_ttm": 19.0279,
+  "ev_to_ebitda": 15.799,
+  "ev_to_fcf": null,
+  "ev_to_sales": 5.3645,
+  "fcf_growth_yoy": -1.0,
+  "fcf_margin": 0.0,
+  "fcf_per_share": 0.0,
+  "gross_margin": 0.1859,
+  "gross_margin_change_yoy": -0.0241,
+  "gross_margin_history": [
+   0.2388,
+   0.2352,
+   0.2186,
+   0.1931,
+   0.1824,
+   0.1859
+  ],
+  "inc_roic": 0.2059,
+  "interest_coverage": 43.7621,
+  "is_pre_revenue": false,
+  "margin_vs_sector_median": null,
+  "market_cap_ratio": 229081.201,
+  "net_income": 4133.0,
+  "net_margin": 0.0809,
+  "operating_income": 5385.0,
+  "operating_margin": 0.0916,
+  "operating_margin_change_yoy": 0.0319,
+  "pb_ratio": -100,
+  "pe_percentile_1y": 0.8135,
+  "pe_ratio": 17.2657,
+  "peg_trailing": 0.1258,
+  "piotroski_f_score": 2.0,
+  "price_vs_high_52w": 0.5583,
+  "price_vs_sma200": 0.9736,
+  "ps_percentile_1y": 0.5079,
+  "ps_ratio": 1.659,
+  "quarter_labels_8q": [
+   "Q1 '25",
+   "Q2 '25",
+   "Q3 '25",
+   "Q4 '26",
+   "Q1 '26",
+   "Q1 '26",
+   "Q1 '26",
+   "Q2 '26"
+  ],
+  "quarterly_eps_growth_yoy": 0.8813,
+  "quarterly_eps_growth_yoy_8q": [
+   0.0,
+   0.3821,
+   0.3902,
+   0.5674,
+   2.8248,
+   2.0824,
+   1.2982,
+   0.8813
+  ],
+  "quarterly_revenue_growth_yoy": 0.4072,
+  "quarterly_revenue_growth_yoy_8q": [
+   0.051,
+   0.1898,
+   0.1083,
+   0.3948,
+   0.8754,
+   0.4724,
+   0.6235,
+   0.4072
+  ],
+  "revenue_cagr_3y": 0.2262,
+  "revenue_cagr_5y": 0.1109,
+  "revenue_growth_accel": 0.1548,
+  "revenue_growth_qoq": 0.0714,
+  "revenue_growth_yoy": 0.6143,
+  "revenue_growth_yoy_q2": 0.4595,
+  "revenue_growth_yoy_q3": 0.3857,
+  "revenue_growth_yoy_q4": 0.188,
+  "revenue_growth_yoy_q5": 0.1079,
+  "revenue_growth_yoy_q6": 0.1047,
+  "revenue_growth_yoy_q7": 0.0775,
+  "revenue_growth_yoy_q8": 0.0808,
+  "revenue_history_8q": [
+   23378.0,
+   29776.0,
+   27005.0,
+   33379.0,
+   43842.0,
+   43842.0,
+   43842.0,
+   46971.0
+  ],
+  "revenue_per_share": 72.8233,
+  "roa": 0.1192,
+  "roce": 0.3893,
+  "roe": -10.2063,
+  "roic": 0.2604,
+  "rsi_14": 23.4348,
+  "sector_momentum": 0.0725,
+  "share_dilution_1y": 0.0,
+  "stock_vs_sector_20d": -0.4231,
+  "stock_vs_spy_20d": -0.3841,
+  "total_assets": 127393.0,
+  "vol_regime": 1.1619,
+  "volatility_20d": 0.061,
+  "volatility_60d": 0.0525,
+  "w52_high": 595.51,
+  "w52_low": 110.22
+ },
+ "market_characters": [],
+ "model_analogs": {
+  "matches": [
+   {
+    "actual_downside": -0.0179,
+    "actual_return": 0.3889,
+    "actual_upside": 0.3889,
+    "days_in_region": 61,
+    "end_date": "2000-11-20",
+    "end_reason": "reversal",
+    "similarity": 0.9716,
+    "start_date": "2000-09-20",
+    "ticker": "NSP",
+    "trigger_date": "2000-10-03",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": 0.0,
+    "actual_return": 0.8647,
+    "actual_upside": 0.8647,
+    "days_in_region": 67,
+    "end_date": "2000-12-11",
+    "end_reason": "reversal",
+    "similarity": 0.9712,
+    "start_date": "2000-10-05",
+    "ticker": "BBC",
+    "trigger_date": "2000-10-25",
+    "trigger_type": "severe_drawdown"
+   },
+   {
+    "actual_downside": -0.7188,
+    "actual_return": -0.5547,
+    "actual_upside": 0.0938,
+    "days_in_region": 78,
+    "end_date": "2000-12-15",
+    "end_reason": "reversal",
+    "similarity": 0.9705,
+    "start_date": "2000-09-28",
+    "ticker": "PSTI",
+    "trigger_date": "2000-10-03",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": -0.304,
+    "actual_return": -0.1876,
+    "actual_upside": 0.0,
+    "days_in_region": 146,
+    "end_date": "2019-12-26",
+    "end_reason": "reversal",
+    "similarity": 0.9701,
+    "start_date": "2019-08-02",
+    "ticker": "SPWR",
+    "trigger_date": "2019-10-01",
+    "trigger_type": "severe_drawdown"
+   },
+   {
+    "actual_downside": -0.2885,
+    "actual_return": -0.1079,
+    "actual_upside": 0.12,
+    "days_in_region": 97,
+    "end_date": "2021-05-18",
+    "end_reason": "reversal",
+    "similarity": 0.9699,
+    "start_date": "2021-02-10",
+    "ticker": "REGI",
+    "trigger_date": "2021-02-24",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": -0.1335,
+    "actual_return": 0.3284,
+    "actual_upside": 0.3284,
+    "days_in_region": 62,
+    "end_date": "2000-11-15",
+    "end_reason": "reversal",
+    "similarity": 0.9698,
+    "start_date": "2000-09-14",
+    "ticker": "ANN",
+    "trigger_date": "2000-10-06",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": -0.1095,
+    "actual_return": 0.5594,
+    "actual_upside": 0.5594,
+    "days_in_region": 83,
+    "end_date": "2021-06-08",
+    "end_reason": "reversal",
+    "similarity": 0.9692,
+    "start_date": "2021-03-17",
+    "ticker": "LE",
+    "trigger_date": "2021-03-19",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": -0.1453,
+    "actual_return": -0.0032,
+    "actual_upside": 0.1975,
+    "days_in_region": 63,
+    "end_date": "2018-12-03",
+    "end_reason": "reversal",
+    "similarity": 0.9692,
+    "start_date": "2018-10-01",
+    "ticker": "WTI",
+    "trigger_date": "2018-10-10",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": -0.3292,
+    "actual_return": -0.1729,
+    "actual_upside": 0.15,
+    "days_in_region": 88,
+    "end_date": "2000-12-11",
+    "end_reason": "reversal",
+    "similarity": 0.9682,
+    "start_date": "2000-09-14",
+    "ticker": "CWEI",
+    "trigger_date": "2000-09-26",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": -0.0786,
+    "actual_return": 0.2865,
+    "actual_upside": 0.2865,
+    "days_in_region": 69,
+    "end_date": "2022-08-10",
+    "end_reason": "reversal",
+    "similarity": 0.9679,
+    "start_date": "2022-06-02",
+    "ticker": "VRTV",
+    "trigger_date": "2022-06-14",
+    "trigger_type": "drawdown"
+   }
+  ],
+  "stats": {
+   "avg_max_drawdown": 0.1498,
+   "avg_similarity": 0.966,
+   "avg_trough": 0.1498,
+   "avg_upside": 0.2357,
+   "best_return": 0.8647,
+   "downside_range": [
+    -0.7188,
+    0.0
+   ],
+   "median_return": 0.1631,
+   "n_matches": 50,
+   "outcome_agreement": true,
+   "return_p25": 0.003,
+   "return_p5": -0.282,
+   "return_p75": 0.2886,
+   "return_p95": 0.5784,
+   "sim_weighted_win_rate": 0.74,
+   "top5_avg_trough": 0.2658,
+   "top5_avg_upside": 0.2935,
+   "top_similarity": 0.972,
+   "upside_range": [
+    0.0,
+    0.8647
+   ],
+   "win_rate": 0.74,
+   "worst_return": -0.5547,
+   "years_span": 10
+  },
+  "total_matches": 50
+ },
+ "peer_group": {
+  "buckets": [
+   "Consumer Electronics, Audio & Accessories",
+   "Enterprise Hardware, Storage & Systems",
+   "IT Services, Systems Integration & Digital Transformation"
+  ],
+  "groups": {
+   "Consumer Electronics, Audio & Accessories": [
+    {
+     "market_cap_m": 393.8943,
+     "price_vs_sma200": 1.2683,
+     "return_30d": 0.174,
+     "return_7d": 0.1553,
+     "revenue_driver": "office products",
+     "signal_rank": 862,
+     "stock_vs_spy_20d": 0.1823,
+     "ticker": "ACCO"
+    },
+    {
+     "market_cap_m": 932.5492,
+     "price_vs_sma200": 0.9525,
+     "return_30d": 0.1404,
+     "return_7d": -0.0192,
+     "revenue_driver": "electronic display systems",
+     "signal_rank": 428,
+     "stock_vs_spy_20d": 0.1331,
+     "ticker": "DAKT"
+    },
+    {
+     "market_cap_m": 107.494,
+     "price_vs_sma200": 0.5799,
+     "return_30d": 0.0974,
+     "return_7d": -0.1763,
+     "revenue_driver": "self defense launchers",
+     "signal_rank": 1796,
+     "stock_vs_spy_20d": -0.0973,
+     "ticker": "BYRN"
+    },
+    {
+     "market_cap_m": 1479.7622,
+     "price_vs_sma200": 1.1631,
+     "return_30d": 0.0836,
+     "return_7d": 0.0667,
+     "revenue_driver": "consumer batteries",
+     "signal_rank": 1465,
+     "stock_vs_spy_20d": 0.173,
+     "ticker": "ENR"
+    },
+    {
+     "market_cap_m": 1020.8097,
+     "price_vs_sma200": 0.4438,
+     "return_30d": -0.0383,
+     "return_7d": -0.2159,
+     "revenue_driver": "silicon-anode battery cells",
+     "signal_rank": null,
+     "stock_vs_spy_20d": -0.2268,
+     "ticker": "ENVX"
+    },
+    {
+     "market_cap_m": 5918.9697,
+     "price_vs_sma200": 0.82,
+     "return_30d": -0.0529,
+     "return_7d": 0.0044,
+     "revenue_driver": "audio mixed signal chips",
+     "signal_rank": 1162,
+     "stock_vs_spy_20d": 0.1181,
+     "ticker": "CRUS"
+    },
+    {
+     "market_cap_m": 57370.827,
+     "price_vs_sma200": 1.1495,
+     "return_30d": -0.0907,
+     "return_7d": -0.123,
+     "revenue_driver": "personal computers and laptops",
+     "signal_rank": 954,
+     "stock_vs_spy_20d": -0.0023,
+     "ticker": "HPQ"
+    },
+    {
+     "market_cap_m": 1364.16,
+     "price_vs_sma200": 1.289,
+     "return_30d": -0.1332,
+     "return_7d": -0.123,
+     "revenue_driver": "gaming hardware",
+     "signal_rank": 688,
+     "stock_vs_spy_20d": -0.076,
+     "ticker": "CRSR"
+    },
+    {
+     "market_cap_m": 473.2868,
+     "price_vs_sma200": 0.4403,
+     "return_30d": -0.2918,
+     "return_7d": 0.0222,
+     "revenue_driver": "specialty label printers",
+     "signal_rank": 1504,
+     "stock_vs_spy_20d": -0.1617,
+     "ticker": "ASPI"
+    },
+    {
+     "market_cap_m": 296125.7859,
+     "price_vs_sma200": 0.9736,
+     "return_30d": -0.4164,
+     "return_7d": -0.3347,
+     "revenue_driver": "server and storage hardware",
+     "signal_rank": 1695,
+     "stock_vs_spy_20d": -0.3841,
+     "ticker": "DELL"
+    }
+   ],
+   "Enterprise Hardware, Storage & Systems": [
+    {
+     "market_cap_m": 772.0317,
+     "price_vs_sma200": 1.5254,
+     "return_30d": 0.2543,
+     "return_7d": 0.1983,
+     "revenue_driver": "networking hardware distribution",
+     "signal_rank": 1090,
+     "stock_vs_spy_20d": 0.249,
+     "ticker": "CLMB"
+    },
+    {
+     "market_cap_m": 21616.3608,
+     "price_vs_sma200": 1.1826,
+     "return_30d": 0.0024,
+     "return_7d": 0.0659,
+     "revenue_driver": "all-flash storage arrays",
+     "signal_rank": null,
+     "stock_vs_spy_20d": 0.1462,
+     "ticker": "PSTG"
+    },
+    {
+     "market_cap_m": 2082.7967,
+     "price_vs_sma200": 0.7806,
+     "return_30d": -0.071,
+     "return_7d": 0.0034,
+     "revenue_driver": "atm hardware",
+     "signal_rank": 1166,
+     "stock_vs_spy_20d": -0.0295,
+     "ticker": "DBD"
+    },
+    {
+     "market_cap_m": 5095786.3,
+     "price_vs_sma200": 0.9119,
+     "return_30d": -0.1707,
+     "return_7d": -0.1334,
+     "revenue_driver": "ai and data center semiconductors",
+     "signal_rank": 1149,
+     "stock_vs_spy_20d": -0.1306,
+     "ticker": "NVDA"
+    },
+    {
+     "market_cap_m": 795754.3688,
+     "price_vs_sma200": 1.0795,
+     "return_30d": -0.288,
+     "return_7d": -0.2237,
+     "revenue_driver": "data center and pc semiconductors",
+     "signal_rank": 1719,
+     "stock_vs_spy_20d": -0.2062,
+     "ticker": "AMD"
+    },
+    {
+     "market_cap_m": 69168.8454,
+     "price_vs_sma200": 1.0797,
+     "return_30d": -0.2887,
+     "return_7d": -0.2579,
+     "revenue_driver": "enterprise servers",
+     "signal_rank": 1406,
+     "stock_vs_spy_20d": -0.3352,
+     "ticker": "HPE"
+    },
+    {
+     "market_cap_m": 17168.886,
+     "price_vs_sma200": 0.8818,
+     "return_30d": -0.3352,
+     "return_7d": -0.1969,
+     "revenue_driver": "AI GPU server systems",
+     "signal_rank": 1791,
+     "stock_vs_spy_20d": -0.2576,
+     "ticker": "SMCI"
+    },
+    {
+     "market_cap_m": 6728.0822,
+     "price_vs_sma200": 0.5665,
+     "return_30d": -0.3866,
+     "return_7d": -0.0926,
+     "revenue_driver": "quantum computing hardware",
+     "signal_rank": 1889,
+     "stock_vs_spy_20d": -0.2117,
+     "ticker": "QBTS"
+    },
+    {
+     "market_cap_m": 296125.7859,
+     "price_vs_sma200": 0.9736,
+     "return_30d": -0.4164,
+     "return_7d": -0.3347,
+     "revenue_driver": "server and storage hardware",
+     "signal_rank": 1695,
+     "stock_vs_spy_20d": -0.3841,
+     "ticker": "DELL"
+    },
+    {
+     "market_cap_m": 88.7291,
+     "price_vs_sma200": 1.0882,
+     "return_30d": -0.5432,
+     "return_7d": -0.3016,
+     "revenue_driver": "scale-out storage",
+     "signal_rank": 2002,
+     "stock_vs_spy_20d": -0.4692,
+     "ticker": "QMCO"
+    }
+   ],
+   "IT Services, Systems Integration & Digital Transformation": [
+    {
+     "market_cap_m": 772.0317,
+     "price_vs_sma200": 1.5254,
+     "return_30d": 0.2543,
+     "return_7d": 0.1983,
+     "revenue_driver": "networking hardware distribution",
+     "signal_rank": 1090,
+     "stock_vs_spy_20d": 0.249,
+     "ticker": "CLMB"
+    },
+    {
+     "market_cap_m": 21970.2375,
+     "price_vs_sma200": 1.1731,
+     "return_30d": 0.1593,
+     "return_7d": -0.0348,
+     "revenue_driver": "IT hardware reseller",
+     "signal_rank": 644,
+     "stock_vs_spy_20d": 0.1596,
+     "ticker": "CDW"
+    },
+    {
+     "market_cap_m": 1443.9016,
+     "price_vs_sma200": 1.1683,
+     "return_30d": 0.0977,
+     "return_7d": -0.0519,
+     "revenue_driver": "enterprise AI applications",
+     "signal_rank": 1845,
+     "stock_vs_spy_20d": 0.0692,
+     "ticker": "AI"
+    },
+    {
+     "market_cap_m": 2179.3668,
+     "price_vs_sma200": 1.0737,
+     "return_30d": 0.0177,
+     "return_7d": -0.0321,
+     "revenue_driver": "IT hardware and software resale",
+     "signal_rank": 900,
+     "stock_vs_spy_20d": 0.0426,
+     "ticker": "PLUS"
+    },
+    {
+     "market_cap_m": 8556.3686,
+     "price_vs_sma200": 0.9197,
+     "return_30d": 0.0121,
+     "return_7d": -0.0259,
+     "revenue_driver": "defense vehicles and equipment",
+     "signal_rank": 602,
+     "stock_vs_spy_20d": 0.1282,
+     "ticker": "OSK"
+    },
+    {
+     "market_cap_m": 13391.1858,
+     "price_vs_sma200": 1.3516,
+     "return_30d": 0.0117,
+     "return_7d": -0.1326,
+     "revenue_driver": "IT research and advisory",
+     "signal_rank": null,
+     "stock_vs_spy_20d": 0.259,
+     "ticker": "IT"
+    },
+    {
+     "market_cap_m": 2980.0868,
+     "price_vs_sma200": 1.3702,
+     "return_30d": 0.0064,
+     "return_7d": 0.0024,
+     "revenue_driver": "accounting and tax services",
+     "signal_rank": null,
+     "stock_vs_spy_20d": 0.0263,
+     "ticker": "CBZ"
+    },
+    {
+     "market_cap_m": 4731.2656,
+     "price_vs_sma200": 1.3744,
+     "return_30d": -0.0049,
+     "return_7d": -0.1102,
+     "revenue_driver": "IT hardware resale",
+     "signal_rank": 980,
+     "stock_vs_spy_20d": 0.0226,
+     "ticker": "NSIT"
+    },
+    {
+     "market_cap_m": 2183.6925,
+     "price_vs_sma200": 1.0836,
+     "return_30d": -0.1139,
+     "return_7d": -0.085,
+     "revenue_driver": "hardware sales",
+     "signal_rank": 216,
+     "stock_vs_spy_20d": -0.0919,
+     "ticker": "CNXN"
+    },
+    {
+     "market_cap_m": 296125.7859,
+     "price_vs_sma200": 0.9736,
+     "return_30d": -0.4164,
+     "return_7d": -0.3347,
+     "revenue_driver": "server and storage hardware",
+     "signal_rank": 1695,
+     "stock_vs_spy_20d": -0.3841,
+     "ticker": "DELL"
+    }
+   ]
+  }
+ },
+ "predictions": {
+  "badge_count": 1,
+  "confidence_score": 0.0799,
+  "conviction_label": "SPECULATIVE",
+  "data_quality_flags": [],
+  "ev_score": 0.1691,
+  "is_diamond": false,
+  "passes_tradability_filter": true,
+  "quality_label": "WEAK",
+  "quantiles": {
+   "downside_q10": -0.3449,
+   "downside_q25": -0.1904,
+   "downside_q50": -0.1039,
+   "downside_q75": -0.0246,
+   "downside_q90": 0.0096,
+   "path_volatility": 0.0508,
+   "risk_reward": 2.5562,
+   "uncertainty": 0.6357,
+   "upside_q10": 0.0389,
+   "upside_q25": 0.1149,
+   "upside_q50": 0.2655,
+   "upside_q75": 0.4335,
+   "upside_q90": 0.6746
+  },
+  "rank": 1695,
+  "rank_score": 0.0167,
+  "tradability_filter_reasons": []
+ },
+ "profile": {
+  "_local": {
+   "dividend_yield": 0.0016,
+   "eps_growth_yoy": 1.6912,
+   "pe_ratio": 19.2511,
+   "revenue_growth_yoy": 0.6143,
+   "roe": -10.2063
+  },
+  "beta": 1.437,
+  "betaTTM": null,
+  "ceo": "Michael Saul Dell",
+  "companyName": "Dell Technologies Inc.",
+  "country": "US",
+  "debtToEquityTTM": null,
+  "description": "Dell Technologies Inc. is a worldwide technology leader that designs, develops, manufactures, markets, sells, and provides support for a broad spectrum of information technology (IT) solutions, products, and services. The company's business activities are structured into three primary segments: the Infrastructure Solutions Group (ISG), the Client Solutions Group (CSG), and VMware. The ISG division focuses on delivering enterprise-grade offerings, including both traditional and next-generation storage solutions, alongside various server configurations such as rack, blade, tower, and hyperscale models. This segment also provides networking products and related services aimed at helping corporate clients modernize their IT infrastructure, enrich end-user experiences, and accelerate critical business applications and processes. Complementary software, peripherals, and extensive support services—encompassing deployment, configuration, and extended warranties—are also part of its portfolio. The CSG segment addresses end-user computing requirements by offering personal computers like desktops, workstations, and notebooks, as well as displays and projectors. It further includes proprietary and third-party software, peripheral devices, and a full suite of support, installation, setup, and extended warranty services. The VMware division specializes in assisting customers with managing intricate IT landscapes, particularly concerning hybrid and multi-cloud environments, modern applications, network infrastructure, security protocols, and digital workspaces. Its services enable efficient resource management across private, multi-cloud, and multi-device setups. Furthermore, Dell Technologies offers information security solutions and cloud software, including Infrastructure-as-a-Service (IaaS), which empower customers to migrate, operate, and manage mission-critical applications within cloud-based IT environments. Founded in 1984, the company was initially known as Denali Holding Inc. before officially changing its name to Dell Technologies Inc. in August 2016. Its global headquarters are situated in Round Rock, Texas.",
+  "dividendYielTTM": null,
+  "enterpriseValueOverEBITDATTM": null,
+  "exchangeShortName": "NYSE",
+  "fullTimeEmployees": "97000",
+  "industry": "Computer Hardware",
+  "ipoDate": "2016-08-17",
+  "latest_earnings_date": "2026-09-01",
+  "marketCapTTM": null,
+  "mktCap": 208883547317,
+  "peRatioTTM": null,
+  "price": 328.53,
+  "priceToSalesRatioTTM": null,
+  "returnOnEquityTTM": -5.7457,
+  "revenue_description": "Dell sells PCs, servers, storage, and enterprise IT infrastructure. Revenue is driven by cloud ERP subscription migration from on-premise installations and module expansion within the installed base.",
+  "revenue_description_themes": [
+   "AI-optimized server demand",
+   "edge computing infrastructure",
+   "APEX as-a-service expansion"
+  ],
+  "revenue_taxonomy": [
+   {
+    "bucket": "Enterprise Hardware, Storage & Systems",
+    "matched_tags": [
+     "server and storage hardware"
+    ],
+    "path": "Technology › Hardware & Semiconductors › Enterprise Hardware, Storage & Systems",
+    "sector": "Technology",
+    "segment": "Hardware & Semiconductors"
+   },
+   {
+    "bucket": "Consumer Electronics, Audio & Accessories",
+    "matched_tags": [
+     "personal computers and monitors"
+    ],
+    "path": "Consumer Goods & Retail › Branded Consumer Goods › Consumer Electronics, Audio & Accessories",
+    "sector": "Consumer Goods & Retail",
+    "segment": "Branded Consumer Goods"
+   },
+   {
+    "bucket": "IT Services, Systems Integration & Digital Transformation",
+    "matched_tags": [
+     "IT services and support"
+    ],
+    "path": "Technology › Tech Enabled Services & Infrastructure › IT Services, Systems Integration & Digital Transformation",
+    "sector": "Technology",
+    "segment": "Tech Enabled Services & Infrastructure"
+   }
+  ],
+  "revenue_themes": [
+   "server and storage hardware",
+   "personal computers and monitors",
+   "IT services and support"
+  ],
+  "sector": "Technology",
+  "website": "https://www.dell.com"
+ },
+ "report": {
+  "display_rank": null,
+  "lane": "act_now",
+  "lane_rank": 82,
+  "setup_label": "countertrend",
+  "why_now": "Structural analogs leads the readiness mix (+10.1); countertrend move"
+ },
+ "scorecard": {
+  "headline": {
+   "avg_universe_pct": 61,
+   "label": "above_average",
+   "metric_count": 8
+  },
+  "metrics": {
+   "debt_to_equity": {
+    "direction": "lower",
+    "label": "D/E Ratio",
+    "sector": "Info Tech",
+    "sector_n": 281,
+    "sector_pct": 100,
+    "universe_n": 2005,
+    "universe_pct": 99,
+    "value": -24.1528
+   },
+   "eps_growth_yoy": {
+    "direction": "higher",
+    "label": "EPS Growth",
+    "sector": "Info Tech",
+    "sector_n": 278,
+    "sector_pct": 86,
+    "universe_n": 1823,
+    "universe_pct": 89,
+    "value": 1.6912
+   },
+   "gross_margin": {
+    "direction": "higher",
+    "label": "Gross Margin",
+    "sector": "Info Tech",
+    "sector_n": 277,
+    "sector_pct": 6,
+    "universe_n": 1940,
+    "universe_pct": 13,
+    "value": 0.1859
+   },
+   "operating_margin": {
+    "direction": "higher",
+    "label": "Op. Margin",
+    "sector": "Info Tech",
+    "sector_n": 277,
+    "sector_pct": 49,
+    "universe_n": 1940,
+    "universe_pct": 45,
+    "value": 0.0916
+   },
+   "pe_ratio": {
+    "direction": "lower",
+    "label": "P/E",
+    "sector": "Info Tech",
+    "sector_n": 185,
+    "sector_pct": 76,
+    "universe_n": 1450,
+    "universe_pct": 53,
+    "value": 19.2511
+   },
+   "revenue_growth_yoy": {
+    "direction": "higher",
+    "label": "Rev Growth",
+    "sector": "Info Tech",
+    "sector_n": 278,
+    "sector_pct": 90,
+    "universe_n": 1771,
+    "universe_pct": 94,
+    "value": 0.6143
+   },
+   "roe": {
+    "direction": "higher",
+    "label": "ROE",
+    "sector": "Info Tech",
+    "sector_n": 281,
+    "sector_pct": 1,
+    "universe_n": 2021,
+    "universe_pct": 0,
+    "value": -10.2063
+   },
+   "roic": {
+    "direction": "higher",
+    "label": "ROIC",
+    "sector": "Info Tech",
+    "sector_n": 279,
+    "sector_pct": 92,
+    "universe_n": 1994,
+    "universe_pct": 95,
+    "value": 0.0946
+   }
+  }
+ },
+ "signal_rank": 1695,
+ "structural_analogs": {
+  "gp_core_pct": 84.0,
+  "gp_core_ratio": 1.84,
+  "matches": [
+   {
+    "actual_downside": -0.0732,
+    "actual_return": 0.1594,
+    "actual_upside": 0.1594,
+    "days_in_region": 99,
+    "end_date": "2021-11-03",
+    "end_reason": "reversal",
+    "seq_len": 99,
+    "similarity": 0.3771,
+    "start_date": "2021-08-09",
+    "ticker": "BNTX",
+    "total_distance": 0.4876,
+    "trigger_date": "2021-08-12",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": -0.0642,
+    "actual_return": 0.9903,
+    "actual_upside": 0.9903,
+    "days_in_region": 95,
+    "end_date": "2014-02-20",
+    "end_reason": "reversal",
+    "seq_len": 95,
+    "similarity": 0.3757,
+    "start_date": "2013-08-29",
+    "ticker": "GMCR",
+    "total_distance": 0.4894,
+    "trigger_date": "2013-09-25",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": -0.1072,
+    "actual_return": 0.0878,
+    "actual_upside": 0.0878,
+    "days_in_region": 100,
+    "end_date": "2021-07-29",
+    "end_reason": "reversal",
+    "seq_len": 100,
+    "similarity": 0.3689,
+    "start_date": "2021-03-17",
+    "ticker": "LAD",
+    "total_distance": 0.4987,
+    "trigger_date": "2021-05-12",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": 0.0,
+    "actual_return": 1.336,
+    "actual_upside": 1.336,
+    "days_in_region": 67,
+    "end_date": "2021-11-23",
+    "end_reason": "reversal",
+    "seq_len": 67,
+    "similarity": 0.3675,
+    "start_date": "2021-09-23",
+    "ticker": "DDS",
+    "total_distance": 0.5005,
+    "trigger_date": "2021-10-01",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": 0.0,
+    "actual_return": 0.5886,
+    "actual_upside": 0.5886,
+    "days_in_region": 84,
+    "end_date": "2002-09-17",
+    "end_reason": "reversal",
+    "seq_len": 84,
+    "similarity": 0.3601,
+    "start_date": "2002-07-01",
+    "ticker": "HOV",
+    "total_distance": 0.5108,
+    "trigger_date": "2002-07-17",
+    "trigger_type": "severe_drawdown"
+   },
+   {
+    "actual_downside": -0.2408,
+    "actual_return": -0.1226,
+    "actual_upside": 0.0921,
+    "days_in_region": 89,
+    "end_date": "2022-02-09",
+    "end_reason": "reversal",
+    "seq_len": 89,
+    "similarity": 0.3596,
+    "start_date": "2021-11-12",
+    "ticker": "CROX",
+    "total_distance": 0.5113,
+    "trigger_date": "2021-12-13",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": -0.1219,
+    "actual_return": 0.0642,
+    "actual_upside": 0.0642,
+    "days_in_region": 89,
+    "end_date": "2021-09-02",
+    "end_reason": "reversal",
+    "seq_len": 89,
+    "similarity": 0.3563,
+    "start_date": "2021-06-25",
+    "ticker": "SGRY",
+    "total_distance": 0.5159,
+    "trigger_date": "2021-08-05",
+    "trigger_type": "severe_drawdown"
+   },
+   {
+    "actual_downside": 0.0,
+    "actual_return": 0.3773,
+    "actual_upside": 0.3773,
+    "days_in_region": 84,
+    "end_date": "2021-04-26",
+    "end_reason": "reversal",
+    "seq_len": 84,
+    "similarity": 0.3562,
+    "start_date": "2021-02-19",
+    "ticker": "SE",
+    "total_distance": 0.5161,
+    "trigger_date": "2021-02-25",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": 0.0,
+    "actual_return": 0.3382,
+    "actual_upside": 0.3382,
+    "days_in_region": 85,
+    "end_date": "2020-12-22",
+    "end_reason": "reversal",
+    "seq_len": 85,
+    "similarity": 0.3543,
+    "start_date": "2020-10-13",
+    "ticker": "BAND",
+    "total_distance": 0.5188,
+    "trigger_date": "2020-10-22",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": -0.2007,
+    "actual_return": -0.0106,
+    "actual_upside": 0.1325,
+    "days_in_region": 99,
+    "end_date": "2008-09-19",
+    "end_reason": "reversal",
+    "seq_len": 99,
+    "similarity": 0.3537,
+    "start_date": "2008-06-17",
+    "ticker": "MOS",
+    "total_distance": 0.5196,
+    "trigger_date": "2008-07-02",
+    "trigger_type": "shallow_drawdown"
+   }
+  ],
+  "panel": {
+   "edge": 0.1314,
+   "hit_hi": 0.805,
+   "hit_lo": 0.627,
+   "hit_rate": 0.725,
+   "median_final": 0.1563,
+   "median_pain": 0.0899,
+   "n": 40,
+   "n_eff": 40.0,
+   "p25_final": -0.0196,
+   "p_pain_gt5": 0.625,
+   "return_to_pain": 1.422
+  },
+  "stats": {
+   "avg_similarity": 0.33,
+   "avg_trough": 0.1057,
+   "avg_upside": 0.2531,
+   "median_pain": 0.0743,
+   "median_return": 0.1749,
+   "n_matches": 200,
+   "p25_return": 0.028,
+   "p_pain_gt5": 0.575,
+   "return_to_pain": 1.855,
+   "top5_avg_trough": 0.0489,
+   "top5_avg_upside": 0.6324,
+   "top_similarity": 0.377,
+   "win_rate": 0.795
+  },
+  "total_matches": 200
+ },
+ "ticker": "DELL",
+ "trending": {
+  "acceleration": -0.0155,
+  "avg_vol_20d": 6402397.3717,
+  "base_high_120": 588.4,
+  "breakout_confirmed": 0,
+  "close": 501.57,
+  "momentum_score": 0.672,
+  "momentum_start": "2026-02-27",
+  "range_20": 0.3101,
+  "range_50": 0.3462,
+  "rank": 1450,
+  "rank_down": null,
+  "rank_up": 324,
+  "ret_120": 1.1004,
+  "ret_20": -0.0705,
+  "ret_60": 0.1691,
+  "rundown_score": 0.9284,
+  "score_date": "2026-10-27",
+  "slope_20": -0.0131,
+  "slope_60": 0.0024,
+  "stage": "sustained",
+  "stage_label": "Trending",
+  "ticker": "DELL",
+  "total_score": 0.3312,
+  "trend_ratio": 1.3612,
+  "vcp_detected": 0,
+  "vcp_score": 0.104
+ }
+}

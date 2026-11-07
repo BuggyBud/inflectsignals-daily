@@ -1,0 +1,1139 @@
+{
+ "date": "2026-11-06",
+ "detected_regions": {
+  "primary": {
+   "days_in_region": 123,
+   "region_start": "2026-08-11",
+   "trigger_date": "2026-09-08",
+   "trigger_type": "compression"
+  },
+  "secondary": [
+   {
+    "confidence_score": 0.5693,
+    "downside_q50": -0.0618,
+    "ev_score": 0.1613,
+    "region_start": "2026-06-30",
+    "seq_len": 152,
+    "trigger_date": "2026-09-01",
+    "trigger_type": "severe_drawdown",
+    "upside_q25": 0.1096,
+    "upside_q50": 0.2217,
+    "upside_q75": 0.3423
+   }
+  ]
+ },
+ "feature_attribution": {
+  "macro_driver_count": 13,
+  "risk_flags": [
+   "high_volatility"
+  ],
+  "top_drivers": [
+   {
+    "direction": "negative",
+    "feature": "dollar_volume",
+    "feature_value": 2642670080.0,
+    "importance": 0.0008,
+    "importance_pct": 0.4216,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "positive",
+    "feature": "return_1d",
+    "feature_value": 0.009,
+    "importance": 0.0003,
+    "importance_pct": 0.1384,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "positive",
+    "feature": "price_vs_sma200",
+    "feature_value": 0.6909,
+    "importance": 0.0002,
+    "importance_pct": 0.1222,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "positive",
+    "feature": "price_vs_high_52w",
+    "feature_value": 0.5246,
+    "importance": 0.0002,
+    "importance_pct": 0.0827,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "negative",
+    "feature": "macd_line",
+    "feature_value": -57.1151,
+    "importance": 0.0002,
+    "importance_pct": 0.0822,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "positive",
+    "feature": "williams_14",
+    "feature_value": -95.973,
+    "importance": 0.0001,
+    "importance_pct": 0.0795,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "negative",
+    "feature": "historical_recovery_rate",
+    "feature_value": 0.5199,
+    "importance": 0.0001,
+    "importance_pct": 0.0735,
+    "method": "integrated_gradients"
+   }
+  ]
+ },
+ "fundamentals": {
+  "accrual": 0.1149,
+  "adx_14": 59.3348,
+  "altman_z_score": 2.6356,
+  "amihud_illiquidity": 0.0,
+  "avg_volume": 2811927.7653,
+  "beta_252d": 0.8069,
+  "book_value_per_share": 46.7915,
+  "correlation_spy_60d": 0.4796,
+  "current_liabilities": 40666.0,
+  "current_ratio": 1.4222,
+  "daily_earnings_yield": 0.0453,
+  "daily_fcf_yield": -0.0067,
+  "daily_pb": 12.1696,
+  "daily_pe": 22.0987,
+  "daily_ps": 3.3614,
+  "days_since_52w_high": 91.0,
+  "debt_ebitda": 0.0,
+  "debt_to_equity": 0.0,
+  "dividend_yield": 0.0044,
+  "dollar_volume_20d_avg": 2517151095.3289,
+  "earnings_quality": 1.324,
+  "ebitda_growth_yoy": 0.0285,
+  "enterprise_value": 253498.6674,
+  "eps_basic": 7.16,
+  "eps_cagr_3y": 0.13,
+  "eps_cagr_5y": 0.2212,
+  "eps_diluted": 7.13,
+  "eps_growth_accel": 0.1258,
+  "eps_growth_qoq": -0.0821,
+  "eps_growth_yoy": 0.308,
+  "eps_growth_yoy_q2": 0.1822,
+  "eps_growth_yoy_q3": -0.0204,
+  "eps_growth_yoy_q4": -0.147,
+  "eps_growth_yoy_q5": -0.0969,
+  "eps_growth_yoy_q6": -0.1047,
+  "eps_growth_yoy_q7": -0.0741,
+  "eps_growth_yoy_q8": 0.0953,
+  "eps_history_8q": [
+   5.78,
+   4.2,
+   4.62,
+   4.88,
+   5.12,
+   5.47,
+   7.77,
+   7.13
+  ],
+  "eps_ttm": 25.2789,
+  "ev_to_ebitda": 15.1996,
+  "ev_to_fcf": 74.4708,
+  "ev_to_sales": 12.257,
+  "fcf_growth_yoy": 0.2768,
+  "fcf_margin": 0.1646,
+  "fcf_per_share": 7.4145,
+  "gross_margin": 0.3433,
+  "gross_margin_change_yoy": -0.0154,
+  "gross_margin_history": [
+   0.4005,
+   0.3896,
+   0.3581,
+   0.3459,
+   0.3464,
+   0.3433
+  ],
+  "inc_roic": -0.0911,
+  "interest_coverage": 19.0388,
+  "is_pre_revenue": false,
+  "margin_vs_sector_median": null,
+  "market_cap_ratio": 261427.6674,
+  "net_income": 3287.0,
+  "net_margin": 0.1521,
+  "operating_income": 4214.0,
+  "operating_margin": 0.1833,
+  "operating_margin_change_yoy": 0.0,
+  "pb_ratio": 11.9387,
+  "pe_percentile_1y": 0.996,
+  "pe_ratio": 22.0987,
+  "peg_trailing": 0.8232,
+  "piotroski_f_score": 4.0,
+  "price_vs_high_52w": 0.5246,
+  "price_vs_sma200": 0.6909,
+  "ps_percentile_1y": 0.996,
+  "ps_ratio": 3.8955,
+  "quarter_labels_8q": [
+   "Q4 '24",
+   "Q1 '25",
+   "Q2 '25",
+   "Q3 '25",
+   "Q4 '25",
+   "Q1 '26",
+   "Q2 '26",
+   "Q3 '26"
+  ],
+  "quarterly_eps_growth_yoy": 0.4611,
+  "quarterly_eps_growth_yoy_8q": [
+   0.0947,
+   -0.2696,
+   -0.1569,
+   -0.0356,
+   -0.1142,
+   0.3024,
+   0.6818,
+   0.4611
+  ],
+  "quarterly_revenue_growth_yoy": 0.1726,
+  "quarterly_revenue_growth_yoy_8q": [
+   -0.0501,
+   -0.0981,
+   -0.0072,
+   0.0951,
+   0.18,
+   0.2222,
+   0.2398,
+   0.1726
+  ],
+  "revenue_cagr_3y": 0.0531,
+  "revenue_cagr_5y": 0.0995,
+  "revenue_growth_accel": 0.019,
+  "revenue_growth_qoq": 0.0068,
+  "revenue_growth_yoy": 0.2026,
+  "revenue_growth_yoy_q2": 0.1836,
+  "revenue_growth_yoy_q3": 0.1185,
+  "revenue_growth_yoy_q4": 0.0429,
+  "revenue_growth_yoy_q5": -0.0151,
+  "revenue_growth_yoy_q6": -0.0487,
+  "revenue_growth_yoy_q7": -0.0558,
+  "revenue_growth_yoy_q8": -0.0336,
+  "revenue_history_8q": [
+   16215.0,
+   14249.0,
+   16569.0,
+   17638.0,
+   19133.0,
+   17415.0,
+   20543.0,
+   20682.0
+  ],
+  "revenue_per_share": 45.049,
+  "roa": 0.113,
+  "roce": 0.221,
+  "roe": 0.5788,
+  "roic": 0.1788,
+  "rsi_14": 16.7984,
+  "sector_momentum": 0.0725,
+  "share_dilution_1y": 0.0,
+  "stock_vs_sector_20d": -0.2858,
+  "stock_vs_spy_20d": -0.2468,
+  "total_assets": 106843.0,
+  "vol_regime": 1.2355,
+  "volatility_20d": 0.031,
+  "volatility_60d": 0.0251,
+  "w52_high": 1073.46,
+  "w52_low": 537.08
+ },
+ "market_characters": [
+  {
+   "id": "g3",
+   "name": "Explosive Gainers"
+  }
+ ],
+ "model_analogs": {
+  "matches": [
+   {
+    "actual_downside": 0.0,
+    "actual_return": 0.3767,
+    "actual_upside": 0.3767,
+    "days_in_region": 140,
+    "end_date": "2013-02-01",
+    "end_reason": "reversal",
+    "similarity": 0.9563,
+    "start_date": "2012-09-14",
+    "ticker": "PDS",
+    "trigger_date": "2012-11-15",
+    "trigger_type": "severe_drawdown"
+   },
+   {
+    "actual_downside": -0.0498,
+    "actual_return": 0.2116,
+    "actual_upside": 0.2116,
+    "days_in_region": 174,
+    "end_date": "2006-01-10",
+    "end_reason": "reversal",
+    "similarity": 0.954,
+    "start_date": "2005-07-20",
+    "ticker": "HOV",
+    "trigger_date": "2005-09-19",
+    "trigger_type": "severe_drawdown"
+   },
+   {
+    "actual_downside": -0.0263,
+    "actual_return": 0.4142,
+    "actual_upside": 0.4142,
+    "days_in_region": 258,
+    "end_date": "2006-09-26",
+    "end_reason": "reversal",
+    "similarity": 0.95,
+    "start_date": "2006-01-11",
+    "ticker": "ATVI",
+    "trigger_date": "2006-05-17",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": -0.0439,
+    "actual_return": 0.1295,
+    "actual_upside": 0.1295,
+    "days_in_region": 139,
+    "end_date": "2008-02-28",
+    "end_reason": "reversal",
+    "similarity": 0.9497,
+    "start_date": "2007-10-12",
+    "ticker": "NTG",
+    "trigger_date": "2008-02-05",
+    "trigger_type": "severe_drawdown"
+   },
+   {
+    "actual_downside": 0.0,
+    "actual_return": 0.2364,
+    "actual_upside": 0.2364,
+    "days_in_region": 83,
+    "end_date": "2000-11-13",
+    "end_reason": "reversal",
+    "similarity": 0.9494,
+    "start_date": "2000-08-22",
+    "ticker": "AH",
+    "trigger_date": "2000-10-17",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": -0.176,
+    "actual_return": 0.0947,
+    "actual_upside": 0.1082,
+    "days_in_region": 138,
+    "end_date": "2019-02-13",
+    "end_reason": "reversal",
+    "similarity": 0.9493,
+    "start_date": "2018-09-28",
+    "ticker": "AVTA",
+    "trigger_date": "2018-10-11",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": -0.1456,
+    "actual_return": -0.0485,
+    "actual_upside": 0.0609,
+    "days_in_region": 199,
+    "end_date": "2006-07-27",
+    "end_reason": "reversal",
+    "similarity": 0.9492,
+    "start_date": "2006-01-09",
+    "ticker": "TALX",
+    "trigger_date": "2006-03-24",
+    "trigger_type": "severe_drawdown"
+   },
+   {
+    "actual_downside": -0.0134,
+    "actual_return": 0.2331,
+    "actual_upside": 0.2331,
+    "days_in_region": 126,
+    "end_date": "2013-01-18",
+    "end_reason": "reversal",
+    "similarity": 0.9489,
+    "start_date": "2012-09-14",
+    "ticker": "NOG",
+    "trigger_date": "2012-11-12",
+    "trigger_type": "severe_drawdown"
+   },
+   {
+    "actual_downside": 0.0,
+    "actual_return": 0.4985,
+    "actual_upside": 0.4985,
+    "days_in_region": 202,
+    "end_date": "2019-04-03",
+    "end_reason": "reversal",
+    "similarity": 0.9484,
+    "start_date": "2018-09-13",
+    "ticker": "APPF",
+    "trigger_date": "2018-10-09",
+    "trigger_type": "severe_drawdown"
+   },
+   {
+    "actual_downside": -0.2221,
+    "actual_return": 0.0447,
+    "actual_upside": 0.0447,
+    "days_in_region": 288,
+    "end_date": "2006-11-16",
+    "end_reason": "reversal",
+    "similarity": 0.9475,
+    "start_date": "2006-02-01",
+    "ticker": "AGYS",
+    "trigger_date": "2006-07-25",
+    "trigger_type": "drawdown"
+   }
+  ],
+  "stats": {
+   "avg_max_drawdown": 0.0833,
+   "avg_similarity": 0.946,
+   "avg_trough": 0.0833,
+   "avg_upside": 0.2232,
+   "best_return": 0.5188,
+   "downside_range": [
+    -0.359,
+    0.0
+   ],
+   "median_return": 0.2025,
+   "n_matches": 50,
+   "outcome_agreement": true,
+   "return_p25": 0.062,
+   "return_p5": -0.1779,
+   "return_p75": 0.3349,
+   "return_p95": 0.4668,
+   "sim_weighted_win_rate": 0.84,
+   "top5_avg_trough": 0.024,
+   "top5_avg_upside": 0.2737,
+   "top_similarity": 0.956,
+   "upside_range": [
+    0.0142,
+    0.5188
+   ],
+   "win_rate": 0.84,
+   "worst_return": -0.2872,
+   "years_span": 12
+  },
+  "total_matches": 50
+ },
+ "peer_group": {
+  "buckets": [
+   "Automotive OEM Systems & Components",
+   "Construction Materials, Distribution & Building Supply",
+   "Machinery, Heavy Equipment & Tools"
+  ],
+  "groups": {
+   "Automotive OEM Systems & Components": [
+    {
+     "market_cap_m": 2888.2586,
+     "price_vs_sma200": 0.8775,
+     "return_30d": 0.0903,
+     "return_7d": -0.002,
+     "revenue_driver": "aftermarket auto parts",
+     "signal_rank": 1632,
+     "stock_vs_spy_20d": 0.131,
+     "ticker": "AAP"
+    },
+    {
+     "market_cap_m": 12362.5708,
+     "price_vs_sma200": 1.0451,
+     "return_30d": 0.0506,
+     "return_7d": 0.0685,
+     "revenue_driver": "automotive airbags and seatbelts",
+     "signal_rank": 997,
+     "stock_vs_spy_20d": 0.1802,
+     "ticker": "ALV"
+    },
+    {
+     "market_cap_m": 241121.0025,
+     "price_vs_sma200": 1.0299,
+     "return_30d": -0.0034,
+     "return_7d": 0.0487,
+     "revenue_driver": "braking and shock absorber systems",
+     "signal_rank": 1264,
+     "stock_vs_spy_20d": 0.0761,
+     "ticker": "ITT"
+    },
+    {
+     "market_cap_m": 262.525,
+     "price_vs_sma200": 0.8108,
+     "return_30d": -0.0741,
+     "return_7d": -0.0316,
+     "revenue_driver": "automotive locks and latches",
+     "signal_rank": 307,
+     "stock_vs_spy_20d": 0.0276,
+     "ticker": "STRT"
+    },
+    {
+     "market_cap_m": 61920.1889,
+     "price_vs_sma200": 0.7495,
+     "return_30d": -0.1428,
+     "return_7d": -0.153,
+     "revenue_driver": "diesel and natural gas engines",
+     "signal_rank": 161,
+     "stock_vs_spy_20d": -0.0848,
+     "ticker": "CMI"
+    },
+    {
+     "market_cap_m": 1273.4164,
+     "price_vs_sma200": 0.6681,
+     "return_30d": -0.1501,
+     "return_7d": -0.0113,
+     "revenue_driver": "passenger and truck tires",
+     "signal_rank": 285,
+     "stock_vs_spy_20d": -0.013,
+     "ticker": "GT"
+    },
+    {
+     "market_cap_m": 1300.1856,
+     "price_vs_sma200": 0.8559,
+     "return_30d": -0.1866,
+     "return_7d": -0.0171,
+     "revenue_driver": "bedding and mattress components",
+     "signal_rank": null,
+     "stock_vs_spy_20d": -0.1213,
+     "ticker": "LEG"
+    },
+    {
+     "market_cap_m": 2977.0068,
+     "price_vs_sma200": 0.693,
+     "return_30d": -0.2078,
+     "return_7d": -0.1562,
+     "revenue_driver": "axles and driveshafts",
+     "signal_rank": 420,
+     "stock_vs_spy_20d": -0.2119,
+     "ticker": "DAN"
+    },
+    {
+     "market_cap_m": 302965.5722,
+     "price_vs_sma200": 0.6909,
+     "return_30d": -0.3201,
+     "return_7d": -0.2169,
+     "revenue_driver": "heavy construction and mining equipment",
+     "signal_rank": 468,
+     "stock_vs_spy_20d": -0.2468,
+     "ticker": "CAT"
+    },
+    {
+     "market_cap_m": 10209.1676,
+     "price_vs_sma200": 0.6321,
+     "return_30d": -0.5122,
+     "return_7d": -0.3269,
+     "revenue_driver": "commercial HVAC equipment",
+     "signal_rank": null,
+     "stock_vs_spy_20d": -0.2637,
+     "ticker": "MOD"
+    }
+   ],
+   "Construction Materials, Distribution & Building Supply": [
+    {
+     "market_cap_m": 335975.0074,
+     "price_vs_sma200": 1.0301,
+     "return_30d": 0.1715,
+     "return_7d": 0.0816,
+     "revenue_driver": "home improvement retail",
+     "signal_rank": 1058,
+     "stock_vs_spy_20d": 0.2367,
+     "ticker": "HD"
+    },
+    {
+     "market_cap_m": 7854.2048,
+     "price_vs_sma200": 0.965,
+     "return_30d": 0.0781,
+     "return_7d": 0.0927,
+     "revenue_driver": "waterworks distribution",
+     "signal_rank": 1231,
+     "stock_vs_spy_20d": 0.1946,
+     "ticker": "CNM"
+    },
+    {
+     "market_cap_m": 6973.2379,
+     "price_vs_sma200": 0.7947,
+     "return_30d": 0.057,
+     "return_7d": 0.1192,
+     "revenue_driver": "lumber distribution",
+     "signal_rank": 1377,
+     "stock_vs_spy_20d": 0.2387,
+     "ticker": "BLDR"
+    },
+    {
+     "market_cap_m": 51581.1239,
+     "price_vs_sma200": 0.9849,
+     "return_30d": 0.0492,
+     "return_7d": 0.0128,
+     "revenue_driver": "plumbing distribution",
+     "signal_rank": 1016,
+     "stock_vs_spy_20d": 0.1174,
+     "ticker": "FERG"
+    },
+    {
+     "market_cap_m": 2704.45,
+     "price_vs_sma200": 0.8597,
+     "return_30d": -0.004,
+     "return_7d": 0.0103,
+     "revenue_driver": "industrial adhesives",
+     "signal_rank": 654,
+     "stock_vs_spy_20d": 0.0614,
+     "ticker": "FUL"
+    },
+    {
+     "market_cap_m": 2778.225,
+     "price_vs_sma200": 0.913,
+     "return_30d": -0.0894,
+     "return_7d": -0.0579,
+     "revenue_driver": "building material distribution",
+     "signal_rank": 394,
+     "stock_vs_spy_20d": 0.0101,
+     "ticker": "BCC"
+    },
+    {
+     "market_cap_m": 12323.0466,
+     "price_vs_sma200": 0.8297,
+     "return_30d": -0.1103,
+     "return_7d": -0.1298,
+     "revenue_driver": "insulation installation",
+     "signal_rank": null,
+     "stock_vs_spy_20d": -0.1228,
+     "ticker": "BLD"
+    },
+    {
+     "market_cap_m": 1620.729,
+     "price_vs_sma200": 0.9297,
+     "return_30d": -0.1995,
+     "return_7d": -0.1529,
+     "revenue_driver": "infrastructure construction products",
+     "signal_rank": null,
+     "stock_vs_spy_20d": 0.0197,
+     "ticker": "ROCK"
+    },
+    {
+     "market_cap_m": 570.6844,
+     "price_vs_sma200": 0.9372,
+     "return_30d": -0.206,
+     "return_7d": -0.1908,
+     "revenue_driver": "building product distribution",
+     "signal_rank": 1414,
+     "stock_vs_spy_20d": -0.088,
+     "ticker": "BXC"
+    },
+    {
+     "market_cap_m": 302965.5722,
+     "price_vs_sma200": 0.6909,
+     "return_30d": -0.3201,
+     "return_7d": -0.2169,
+     "revenue_driver": "heavy construction and mining equipment",
+     "signal_rank": 468,
+     "stock_vs_spy_20d": -0.2468,
+     "ticker": "CAT"
+    }
+   ],
+   "Machinery, Heavy Equipment & Tools": [
+    {
+     "market_cap_m": 4757.314,
+     "price_vs_sma200": 0.8979,
+     "return_30d": 0.1519,
+     "return_7d": 0.1681,
+     "revenue_driver": "welding equipment",
+     "signal_rank": 1168,
+     "stock_vs_spy_20d": 0.2944,
+     "ticker": "ESAB"
+    },
+    {
+     "market_cap_m": 1724.5251,
+     "price_vs_sma200": 1.1922,
+     "return_30d": 0.1225,
+     "return_7d": -0.0856,
+     "revenue_driver": "construction equipment rental",
+     "signal_rank": null,
+     "stock_vs_spy_20d": 0.2189,
+     "ticker": "HRI"
+    },
+    {
+     "market_cap_m": 15537.6916,
+     "price_vs_sma200": 1.0332,
+     "return_30d": 0.0134,
+     "return_7d": -0.0187,
+     "revenue_driver": "welding equipment",
+     "signal_rank": 799,
+     "stock_vs_spy_20d": 0.1098,
+     "ticker": "LECO"
+    },
+    {
+     "market_cap_m": 68019.1974,
+     "price_vs_sma200": 1.0823,
+     "return_30d": 0.0081,
+     "return_7d": -0.1013,
+     "revenue_driver": "construction equipment rental",
+     "signal_rank": 740,
+     "stock_vs_spy_20d": 0.0546,
+     "ticker": "URI"
+    },
+    {
+     "market_cap_m": 167930.1183,
+     "price_vs_sma200": 1.1036,
+     "return_30d": -0.0272,
+     "return_7d": 0.0484,
+     "revenue_driver": "ag equipment",
+     "signal_rank": 1006,
+     "stock_vs_spy_20d": 0.137,
+     "ticker": "DE"
+    },
+    {
+     "market_cap_m": 844.6831,
+     "price_vs_sma200": 0.8436,
+     "return_30d": -0.0856,
+     "return_7d": -0.0846,
+     "revenue_driver": "snow and ice removal equipment",
+     "signal_rank": 702,
+     "stock_vs_spy_20d": -0.0174,
+     "ticker": "PLOW"
+    },
+    {
+     "market_cap_m": 7028.7903,
+     "price_vs_sma200": 0.8931,
+     "return_30d": -0.1158,
+     "return_7d": -0.0887,
+     "revenue_driver": "equipment sales",
+     "signal_rank": 648,
+     "stock_vs_spy_20d": -0.019,
+     "ticker": "NOV"
+    },
+    {
+     "market_cap_m": 808.8954,
+     "price_vs_sma200": 0.707,
+     "return_30d": -0.1349,
+     "return_7d": -0.0837,
+     "revenue_driver": "asphalt and concrete production equipment",
+     "signal_rank": 25,
+     "stock_vs_spy_20d": -0.0222,
+     "ticker": "ASTE"
+    },
+    {
+     "market_cap_m": 1746.0138,
+     "price_vs_sma200": 0.7977,
+     "return_30d": -0.1615,
+     "return_7d": -0.0734,
+     "revenue_driver": "vegetation management equipment",
+     "signal_rank": 80,
+     "stock_vs_spy_20d": -0.0675,
+     "ticker": "ALG"
+    },
+    {
+     "market_cap_m": 302965.5722,
+     "price_vs_sma200": 0.6909,
+     "return_30d": -0.3201,
+     "return_7d": -0.2169,
+     "revenue_driver": "heavy construction and mining equipment",
+     "signal_rank": 468,
+     "stock_vs_spy_20d": -0.2468,
+     "ticker": "CAT"
+    }
+   ]
+  }
+ },
+ "predictions": {
+  "badge_count": 0,
+  "confidence_score": 0.3901,
+  "conviction_label": "SPECULATIVE",
+  "data_quality_flags": [],
+  "ev_score": 0.1388,
+  "is_diamond": false,
+  "passes_tradability_filter": true,
+  "quality_label": "HIGH",
+  "quantiles": {
+   "downside_q10": -0.2684,
+   "downside_q25": -0.1479,
+   "downside_q50": -0.0812,
+   "downside_q75": -0.0194,
+   "downside_q90": 0.0076,
+   "path_volatility": 0.0377,
+   "risk_reward": 2.7184,
+   "uncertainty": 0.4705,
+   "upside_q10": 0.0372,
+   "upside_q25": 0.1039,
+   "upside_q50": 0.2206,
+   "upside_q75": 0.3367,
+   "upside_q90": 0.5077
+  },
+  "rank": 468,
+  "rank_score": 0.0873,
+  "tradability_filter_reasons": []
+ },
+ "profile": {
+  "_local": {
+   "dividend_yield": 0.0044,
+   "eps_growth_yoy": 0.308,
+   "pe_ratio": 25.3978,
+   "revenue_growth_yoy": 0.2026,
+   "roe": 0.5788
+  },
+  "beta": 1.64,
+  "betaTTM": null,
+  "ceo": "Joseph E. Creed",
+  "companyName": "Caterpillar Inc.",
+  "country": "US",
+  "debtToEquityTTM": null,
+  "description": "Caterpillar Inc., a global enterprise founded in 1925 and headquartered in Deerfield, Illinois (having previously operated as Caterpillar Tractor Co. until its rebranding in 1986), is a premier manufacturer and vendor of heavy construction and mining equipment, diesel and natural gas power units, and industrial gas turbines across the world. The company's extensive offerings are organized into several operational divisions: Construction Industries: This segment delivers a broad spectrum of machinery for construction projects, including asphalt pavers, versatile backhoe and skid steer loaders, various sizes of excavators (from compact to heavy-duty), compactors, road-building equipment like cold planers and motorgraders, pipelayers, site preparation tractors, telehandlers, and utility vehicles, alongside a range of wheel loaders and track-type equipment. Resource Industries: Dedicated to the mining sector, this division supplies powerful equipment such as electric rope and hydraulic shovels, draglines, rotary drills, specialized hard rock vehicles, and a diverse fleet of mining, off-highway, and articulated trucks. It also offers longwall miners, wheel dozers, fleet management systems, autonomous vehicle solutions, crucial machinery components, selected work tools, and comprehensive safety and performance solutions for mining operations. Energy & Transportation: This segment focuses on power generation and propulsion systems. It provides reciprocating engines, generator sets, integrated power solutions, industrial turbines and associated services, remanufactured engines and parts, centrifugal gas compressors, and diesel-electric locomotives with related components and services. These products serve critical sectors including marine, oil and gas, industrial applications, and electric power generation. Financial Products: This segment supports customers with a variety of financial services, such as operating and finance leases, installment sale agreements, working capital loans, and wholesale financing schemes. It also offers insurance and risk management products tailored for vehicles, power generation facilities, and marine vessels. All Other: This encompassing segment is responsible for manufacturing essential consumables and components like filters, fluids, undercarriage parts, and ground engaging tools.",
+  "dividendYielTTM": null,
+  "enterpriseValueOverEBITDATTM": null,
+  "exchangeShortName": "NYSE",
+  "fullTimeEmployees": "118000",
+  "industry": "Agricultural - Machinery",
+  "ipoDate": "1929-12-02",
+  "latest_earnings_date": "2026-10-29",
+  "marketCapTTM": null,
+  "mktCap": 256788245250,
+  "peRatioTTM": null,
+  "price": 558.63,
+  "priceToSalesRatioTTM": null,
+  "returnOnEquityTTM": 0.5852,
+  "revenue_description": "Caterpillar makes construction, mining, and energy equipment. Revenue is driven by construction and mining equipment sales cycles, with dealer inventory normalization, infrastructure spending, and energy transition (large engines for power) as demand levers.",
+  "revenue_description_themes": [
+   "construction equipment dealer inventory normalization",
+   "mining equipment demand from copper and lithium investment",
+   "energy and large industrial engine demand for power generation"
+  ],
+  "revenue_taxonomy": [
+   {
+    "bucket": "Machinery, Heavy Equipment & Tools",
+    "matched_tags": [
+     "heavy construction and mining equipment"
+    ],
+    "path": "Industrials & Transportation › Industrial Products & Services › Machinery, Heavy Equipment & Tools",
+    "sector": "Industrials & Transportation",
+    "segment": "Industrial Products & Services"
+   },
+   {
+    "bucket": "Automotive OEM Systems & Components",
+    "matched_tags": [
+     "diesel engines and turbines"
+    ],
+    "path": "Industrials & Transportation › Mobility & Logistics › Automotive OEM Systems & Components",
+    "sector": "Industrials & Transportation",
+    "segment": "Mobility & Logistics"
+   },
+   {
+    "bucket": "Construction Materials, Distribution & Building Supply",
+    "matched_tags": [
+     "dealer distribution network"
+    ],
+    "path": "Real Estate & Infrastructure › Property & Infrastructure Services › Construction Materials, Distribution & Building Supply",
+    "sector": "Real Estate & Infrastructure",
+    "segment": "Property & Infrastructure Services"
+   }
+  ],
+  "revenue_themes": [
+   "heavy construction and mining equipment",
+   "diesel engines and turbines",
+   "dealer distribution network"
+  ],
+  "sector": "Industrials",
+  "website": "https://www.caterpillar.com"
+ },
+ "report": {
+  "display_rank": null,
+  "lane": "act_now",
+  "lane_rank": 73,
+  "setup_label": "countertrend",
+  "why_now": "Model analogs leads the readiness mix (+9.0); countertrend move"
+ },
+ "scorecard": {
+  "headline": {
+   "avg_universe_pct": 68,
+   "label": "above_average",
+   "metric_count": 8
+  },
+  "metrics": {
+   "debt_to_equity": {
+    "direction": "lower",
+    "label": "D/E Ratio",
+    "sector": "Industrials",
+    "sector_n": 344,
+    "sector_pct": 96,
+    "universe_n": 2005,
+    "universe_pct": 94,
+    "value": 0.0
+   },
+   "eps_growth_yoy": {
+    "direction": "higher",
+    "label": "EPS Growth",
+    "sector": "Industrials",
+    "sector_n": 343,
+    "sector_pct": 65,
+    "universe_n": 1823,
+    "universe_pct": 61,
+    "value": 0.308
+   },
+   "gross_margin": {
+    "direction": "higher",
+    "label": "Gross Margin",
+    "sector": "Industrials",
+    "sector_n": 325,
+    "sector_pct": 46,
+    "universe_n": 1940,
+    "universe_pct": 31,
+    "value": 0.3433
+   },
+   "operating_margin": {
+    "direction": "higher",
+    "label": "Op. Margin",
+    "sector": "Industrials",
+    "sector_n": 325,
+    "sector_pct": 80,
+    "universe_n": 1940,
+    "universe_pct": 68,
+    "value": 0.1833
+   },
+   "pe_ratio": {
+    "direction": "lower",
+    "label": "P/E",
+    "sector": "Industrials",
+    "sector_n": 248,
+    "sector_pct": 49,
+    "universe_n": 1450,
+    "universe_pct": 37,
+    "value": 25.3978
+   },
+   "revenue_growth_yoy": {
+    "direction": "higher",
+    "label": "Rev Growth",
+    "sector": "Industrials",
+    "sector_n": 324,
+    "sector_pct": 82,
+    "universe_n": 1771,
+    "universe_pct": 76,
+    "value": 0.2026
+   },
+   "roe": {
+    "direction": "higher",
+    "label": "ROE",
+    "sector": "Industrials",
+    "sector_n": 346,
+    "sector_pct": 95,
+    "universe_n": 2021,
+    "universe_pct": 94,
+    "value": 0.5788
+   },
+   "roic": {
+    "direction": "higher",
+    "label": "ROIC",
+    "sector": "Industrials",
+    "sector_n": 340,
+    "sector_pct": 87,
+    "universe_n": 1994,
+    "universe_pct": 87,
+    "value": 0.0497
+   }
+  }
+ },
+ "signal_rank": 468,
+ "structural_analogs": {
+  "gp_core_pct": 32.4,
+  "gp_core_ratio": 1.1178,
+  "matches": [
+   {
+    "actual_downside": 0.0,
+    "actual_return": 0.2123,
+    "actual_upside": 0.2123,
+    "days_in_region": 145,
+    "end_date": "2007-12-26",
+    "end_reason": "reversal",
+    "seq_len": 145,
+    "similarity": 0.4791,
+    "start_date": "2007-07-19",
+    "ticker": "TDW",
+    "total_distance": 0.3679,
+    "trigger_date": "2007-10-19",
+    "trigger_type": "severe_drawdown"
+   },
+   {
+    "actual_downside": -0.1228,
+    "actual_return": 0.0855,
+    "actual_upside": 0.0855,
+    "days_in_region": 153,
+    "end_date": "2022-03-29",
+    "end_reason": "reversal",
+    "seq_len": 153,
+    "similarity": 0.4786,
+    "start_date": "2021-09-15",
+    "ticker": "ASML",
+    "total_distance": 0.3684,
+    "trigger_date": "2022-01-26",
+    "trigger_type": "severe_drawdown"
+   },
+   {
+    "actual_downside": -0.0186,
+    "actual_return": 0.1445,
+    "actual_upside": 0.1445,
+    "days_in_region": 162,
+    "end_date": "2021-01-25",
+    "end_reason": "reversal",
+    "seq_len": 162,
+    "similarity": 0.4728,
+    "start_date": "2020-07-20",
+    "ticker": "REGN",
+    "total_distance": 0.3745,
+    "trigger_date": "2020-09-11",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": -0.2753,
+    "actual_return": -0.1108,
+    "actual_upside": 0.0054,
+    "days_in_region": 145,
+    "end_date": "2021-12-20",
+    "end_reason": "reversal",
+    "seq_len": 145,
+    "similarity": 0.4726,
+    "start_date": "2021-04-20",
+    "ticker": "SAM",
+    "total_distance": 0.3748,
+    "trigger_date": "2021-06-18",
+    "trigger_type": "severe_drawdown"
+   },
+   {
+    "actual_downside": -0.3363,
+    "actual_return": -0.2286,
+    "actual_upside": 0.0,
+    "days_in_region": 150,
+    "end_date": "2022-02-15",
+    "end_reason": "reversal",
+    "seq_len": 150,
+    "similarity": 0.4719,
+    "start_date": "2021-08-12",
+    "ticker": "RH",
+    "total_distance": 0.3755,
+    "trigger_date": "2021-12-17",
+    "trigger_type": "severe_drawdown"
+   },
+   {
+    "actual_downside": -0.0064,
+    "actual_return": 0.1014,
+    "actual_upside": 0.1014,
+    "days_in_region": 158,
+    "end_date": "2022-03-22",
+    "end_reason": "reversal",
+    "seq_len": 158,
+    "similarity": 0.4687,
+    "start_date": "2021-09-08",
+    "ticker": "WAT",
+    "total_distance": 0.3789,
+    "trigger_date": "2022-01-26",
+    "trigger_type": "severe_drawdown"
+   },
+   {
+    "actual_downside": -0.1781,
+    "actual_return": -0.0273,
+    "actual_upside": 0.1161,
+    "days_in_region": 146,
+    "end_date": "2022-04-08",
+    "end_reason": "reversal",
+    "seq_len": 146,
+    "similarity": 0.4662,
+    "start_date": "2021-09-24",
+    "ticker": "CRL",
+    "total_distance": 0.3815,
+    "trigger_date": "2021-11-04",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": -0.0143,
+    "actual_return": 0.353,
+    "actual_upside": 0.353,
+    "days_in_region": 159,
+    "end_date": "2021-06-08",
+    "end_reason": "reversal",
+    "seq_len": 159,
+    "similarity": 0.4636,
+    "start_date": "2020-10-12",
+    "ticker": "EQIX",
+    "total_distance": 0.3844,
+    "trigger_date": "2021-03-04",
+    "trigger_type": "severe_drawdown"
+   },
+   {
+    "actual_downside": -0.0699,
+    "actual_return": 0.0682,
+    "actual_upside": 0.0682,
+    "days_in_region": 159,
+    "end_date": "2022-04-08",
+    "end_reason": "reversal",
+    "seq_len": 159,
+    "similarity": 0.4635,
+    "start_date": "2021-09-03",
+    "ticker": "EQIX",
+    "total_distance": 0.3845,
+    "trigger_date": "2021-10-04",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": -0.205,
+    "actual_return": -0.0109,
+    "actual_upside": 0.0617,
+    "days_in_region": 89,
+    "end_date": "2022-08-10",
+    "end_reason": "reversal",
+    "seq_len": 89,
+    "similarity": 0.4622,
+    "start_date": "2021-12-15",
+    "ticker": "SPGI",
+    "total_distance": 0.3859,
+    "trigger_date": "2022-01-26",
+    "trigger_type": "drawdown"
+   }
+  ],
+  "panel": {
+   "edge": 0.0053,
+   "hit_hi": 0.799,
+   "hit_lo": 0.627,
+   "hit_rate": 0.721,
+   "median_final": 0.0868,
+   "median_pain": 0.0979,
+   "n": 43,
+   "n_eff": 43.0,
+   "p25_final": -0.0273,
+   "p_pain_gt5": 0.605,
+   "return_to_pain": 0.737
+  },
+  "stats": {
+   "avg_similarity": 0.411,
+   "avg_trough": 0.0999,
+   "avg_upside": 0.1467,
+   "median_pain": 0.0647,
+   "median_return": 0.0969,
+   "n_matches": 200,
+   "p25_return": -0.0289,
+   "p_pain_gt5": 0.56,
+   "return_to_pain": 1.144,
+   "top5_avg_trough": 0.1506,
+   "top5_avg_upside": 0.0896,
+   "top_similarity": 0.479,
+   "win_rate": 0.7
+  },
+  "total_matches": 200
+ },
+ "ticker": "CAT",
+ "trending": {
+  "acceleration": -0.0141,
+  "avg_vol_20d": 3624850.95,
+  "base_high_120": 1064.9,
+  "breakout_confirmed": 0,
+  "close": 558.63,
+  "momentum_score": 0.0634,
+  "momentum_start": "2026-11-04",
+  "range_20": 0.4676,
+  "range_50": 0.5838,
+  "rank": 1809,
+  "rank_down": 46,
+  "rank_up": null,
+  "ret_120": -0.3532,
+  "ret_20": -0.3021,
+  "ret_60": -0.3463,
+  "rundown_score": 0.9637,
+  "score_date": "2026-11-06",
+  "slope_20": -0.0202,
+  "slope_60": -0.006,
+  "stage": "rundown",
+  "stage_label": "rundown",
+  "ticker": "CAT",
+  "total_score": 0.1449,
+  "trend_ratio": 0.734,
+  "vcp_detected": 0,
+  "vcp_score": 0.1991
+ }
+}

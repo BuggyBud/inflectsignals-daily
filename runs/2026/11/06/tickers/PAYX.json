@@ -1,0 +1,1113 @@
+{
+ "date": "2026-11-06",
+ "detected_regions": {
+  "primary": {
+   "days_in_region": 109,
+   "region_start": "2026-08-31",
+   "trigger_date": "2026-09-24",
+   "trigger_type": "drawdown"
+  },
+  "secondary": [
+   {
+    "confidence_score": 0.7376,
+    "downside_q50": -0.1038,
+    "ev_score": 0.0291,
+    "region_start": "2026-05-14",
+    "seq_len": 183,
+    "trigger_date": "2026-10-15",
+    "trigger_type": "runup",
+    "upside_q25": 0.052,
+    "upside_q50": 0.1261,
+    "upside_q75": 0.2218
+   }
+  ]
+ },
+ "feature_attribution": {
+  "macro_driver_count": 16,
+  "risk_flags": [],
+  "top_drivers": [
+   {
+    "direction": "negative",
+    "feature": "dollar_volume",
+    "feature_value": 293624288.0,
+    "importance": 0.0007,
+    "importance_pct": 0.5722,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "negative",
+    "feature": "correlation_spy_60d",
+    "feature_value": -0.0668,
+    "importance": 0.0002,
+    "importance_pct": 0.1757,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "positive",
+    "feature": "sector_rank_1d",
+    "feature_value": 0.8182,
+    "importance": 0.0002,
+    "importance_pct": 0.1391,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "negative",
+    "feature": "ma_trend",
+    "feature_value": 1.0,
+    "importance": 0.0001,
+    "importance_pct": 0.113,
+    "method": "integrated_gradients"
+   }
+  ]
+ },
+ "fundamentals": {
+  "accrual": 0.023,
+  "adx_14": 35.2866,
+  "altman_z_score": 2.8146,
+  "amihud_illiquidity": 0.0001,
+  "avg_volume": 2951911.7276,
+  "beta_252d": -0.1545,
+  "book_value_per_share": 10.4146,
+  "correlation_spy_60d": -0.0668,
+  "current_liabilities": 6340.0,
+  "current_ratio": 1.2766,
+  "daily_earnings_yield": 0.0429,
+  "daily_fcf_yield": 0.005,
+  "daily_pb": 11.3694,
+  "daily_pe": 23.3273,
+  "daily_ps": 6.3808,
+  "days_since_52w_high": 357.0,
+  "debt_ebitda": 1.516,
+  "debt_to_equity": 1.247,
+  "dividend_yield": 0.0338,
+  "dollar_volume_20d_avg": 335205023.9786,
+  "earnings_quality": 0.9623,
+  "ebitda_growth_yoy": 0.1599,
+  "enterprise_value": 45815.8916,
+  "eps_basic": 1.21,
+  "eps_cagr_3y": 0.0446,
+  "eps_cagr_5y": 0.083,
+  "eps_diluted": 1.21,
+  "eps_growth_accel": 0.0598,
+  "eps_growth_qoq": 0.0254,
+  "eps_growth_yoy": 0.1272,
+  "eps_growth_yoy_q2": 0.0674,
+  "eps_growth_yoy_q3": -0.0599,
+  "eps_growth_yoy_q4": -0.0752,
+  "eps_growth_yoy_q5": -0.0529,
+  "eps_growth_yoy_q6": -0.0213,
+  "eps_growth_yoy_q7": 0.0499,
+  "eps_growth_yoy_q8": 0.0597,
+  "eps_history_8q": [
+   1.14,
+   1.43,
+   0.82,
+   1.06,
+   1.1,
+   1.55,
+   1.17,
+   1.21
+  ],
+  "eps_ttm": 5.0181,
+  "ev_to_ebitda": 15.031,
+  "ev_to_fcf": 128.1922,
+  "ev_to_sales": 28.0993,
+  "fcf_growth_yoy": -0.4605,
+  "fcf_margin": 0.2192,
+  "fcf_per_share": 1.0045,
+  "gross_margin": 0.7604,
+  "gross_margin_change_yoy": -0.0661,
+  "gross_margin_history": [
+   0.7611,
+   0.7766,
+   0.7912,
+   0.7873,
+   0.7764,
+   0.7604
+  ],
+  "inc_roic": -0.6894,
+  "interest_coverage": 11.4418,
+  "is_pre_revenue": false,
+  "margin_vs_sector_median": null,
+  "market_cap_ratio": 42129.1916,
+  "net_income": 429.7,
+  "net_margin": 0.2735,
+  "operating_income": 619.2,
+  "operating_margin": 0.3945,
+  "operating_margin_change_yoy": 0.0125,
+  "pb_ratio": 11.24,
+  "pe_percentile_1y": 0.4444,
+  "pe_ratio": 23.3273,
+  "peg_trailing": 1.5496,
+  "piotroski_f_score": 3.0,
+  "price_vs_high_52w": 0.9193,
+  "price_vs_sma200": 1.1295,
+  "ps_percentile_1y": 0.377,
+  "ps_ratio": 5.5375,
+  "quarter_labels_8q": [
+   "Q2 '24",
+   "Q3 '24",
+   "Q4 '24",
+   "Q1 '25",
+   "Q2 '25",
+   "Q3 '26",
+   "Q4 '26",
+   "Q1 '26"
+  ],
+  "quarterly_eps_growth_yoy": 0.1415,
+  "quarterly_eps_growth_yoy_8q": [
+   0.0556,
+   0.0362,
+   -0.219,
+   -0.1017,
+   -0.0351,
+   0.0839,
+   0.4268,
+   0.1415
+  ],
+  "quarterly_revenue_growth_yoy": 0.0588,
+  "quarterly_revenue_growth_yoy_8q": [
+   0.0469,
+   0.0484,
+   0.1021,
+   0.168,
+   0.1828,
+   0.1987,
+   0.1249,
+   0.0588
+  ],
+  "revenue_cagr_3y": 0.0908,
+  "revenue_cagr_5y": 0.0943,
+  "revenue_growth_accel": -0.0291,
+  "revenue_growth_qoq": 0.0156,
+  "revenue_growth_yoy": 0.1397,
+  "revenue_growth_yoy_q2": 0.1688,
+  "revenue_growth_yoy_q3": 0.1644,
+  "revenue_growth_yoy_q4": 0.1237,
+  "revenue_growth_yoy_q5": 0.0908,
+  "revenue_growth_yoy_q6": 0.0556,
+  "revenue_growth_yoy_q7": 0.0435,
+  "revenue_growth_yoy_q8": 0.0418,
+  "revenue_history_8q": [
+   1316.9,
+   1509.0,
+   1427.3,
+   1540.0,
+   1557.6,
+   1808.9,
+   1605.5,
+   1630.5
+  ],
+  "revenue_per_share": 4.5826,
+  "roa": 0.1135,
+  "roce": 0.2793,
+  "roe": 0.4854,
+  "roic": 0.1938,
+  "rsi_14": 60.4678,
+  "sector_momentum": 0.093,
+  "share_dilution_1y": 0.0,
+  "stock_vs_sector_20d": 0.1165,
+  "stock_vs_spy_20d": 0.1811,
+  "total_assets": 15660.7,
+  "vol_regime": 1.0599,
+  "volatility_20d": 0.0234,
+  "volatility_60d": 0.0221,
+  "w52_high": 127.98,
+  "w52_low": 85.45
+ },
+ "market_characters": [
+  {
+   "id": "g5",
+   "name": "Quality Compressed"
+  }
+ ],
+ "model_analogs": {
+  "matches": [
+   {
+    "actual_downside": -0.2262,
+    "actual_return": -0.0902,
+    "actual_upside": 0.1073,
+    "days_in_region": 151,
+    "end_date": "2019-02-04",
+    "end_reason": "reversal",
+    "similarity": 0.9551,
+    "start_date": "2018-09-06",
+    "ticker": "FIZZ",
+    "trigger_date": "2018-10-04",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": -0.0151,
+    "actual_return": 0.0298,
+    "actual_upside": 0.1664,
+    "days_in_region": 363,
+    "end_date": "2014-10-13",
+    "end_reason": "reversal",
+    "similarity": 0.9536,
+    "start_date": "2013-10-15",
+    "ticker": "BERY",
+    "trigger_date": "2013-11-06",
+    "trigger_type": "shallow_runup"
+   },
+   {
+    "actual_downside": 0.0,
+    "actual_return": 0.2315,
+    "actual_upside": 0.2315,
+    "days_in_region": 138,
+    "end_date": "2019-02-05",
+    "end_reason": "reversal",
+    "similarity": 0.9525,
+    "start_date": "2018-09-20",
+    "ticker": "RDY",
+    "trigger_date": "2018-10-08",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": -0.1577,
+    "actual_return": 0.2026,
+    "actual_upside": 0.2026,
+    "days_in_region": 157,
+    "end_date": "2019-02-22",
+    "end_reason": "reversal",
+    "similarity": 0.9521,
+    "start_date": "2018-09-18",
+    "ticker": "ABM",
+    "trigger_date": "2018-10-15",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": -0.1836,
+    "actual_return": -0.1836,
+    "actual_upside": 0.0384,
+    "days_in_region": 61,
+    "end_date": "2018-12-24",
+    "end_reason": "reversal",
+    "similarity": 0.9513,
+    "start_date": "2018-10-24",
+    "ticker": "CMG",
+    "trigger_date": "2018-11-01",
+    "trigger_type": "shallow_runup"
+   },
+   {
+    "actual_downside": -0.1689,
+    "actual_return": -0.1689,
+    "actual_upside": 0.0759,
+    "days_in_region": 247,
+    "end_date": "2005-10-27",
+    "end_reason": "reversal",
+    "similarity": 0.9508,
+    "start_date": "2005-02-22",
+    "ticker": "CACI",
+    "trigger_date": "2005-04-22",
+    "trigger_type": "runup"
+   },
+   {
+    "actual_downside": -0.1544,
+    "actual_return": 0.0117,
+    "actual_upside": 0.1004,
+    "days_in_region": 131,
+    "end_date": "2019-02-05",
+    "end_reason": "reversal",
+    "similarity": 0.9505,
+    "start_date": "2018-09-27",
+    "ticker": "VIAB",
+    "trigger_date": "2018-10-26",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": -0.0734,
+    "actual_return": 0.3136,
+    "actual_upside": 0.3136,
+    "days_in_region": 144,
+    "end_date": "2004-06-07",
+    "end_reason": "reversal",
+    "similarity": 0.9503,
+    "start_date": "2004-01-15",
+    "ticker": "RHB",
+    "trigger_date": "2004-03-11",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": -0.0264,
+    "actual_return": 0.2887,
+    "actual_upside": 0.2887,
+    "days_in_region": 164,
+    "end_date": "2014-05-12",
+    "end_reason": "reversal",
+    "similarity": 0.9503,
+    "start_date": "2013-11-29",
+    "ticker": "AFSI",
+    "trigger_date": "2013-12-19",
+    "trigger_type": "severe_drawdown"
+   },
+   {
+    "actual_downside": -0.0856,
+    "actual_return": 0.163,
+    "actual_upside": 0.163,
+    "days_in_region": 121,
+    "end_date": "2019-01-16",
+    "end_reason": "reversal",
+    "similarity": 0.9501,
+    "start_date": "2018-09-17",
+    "ticker": "APTS",
+    "trigger_date": "2018-10-23",
+    "trigger_type": "shallow_drawdown"
+   }
+  ],
+  "stats": {
+   "avg_max_drawdown": 0.1015,
+   "avg_similarity": 0.948,
+   "avg_trough": 0.1015,
+   "avg_upside": 0.1709,
+   "best_return": 0.5819,
+   "downside_range": [
+    -0.501,
+    0.0
+   ],
+   "median_return": 0.0635,
+   "n_matches": 50,
+   "outcome_agreement": true,
+   "return_p25": -0.0822,
+   "return_p5": -0.1792,
+   "return_p75": 0.2128,
+   "return_p95": 0.3511,
+   "sim_weighted_win_rate": 0.68,
+   "top5_avg_trough": 0.1165,
+   "top5_avg_upside": 0.1492,
+   "top_similarity": 0.955,
+   "upside_range": [
+    0.0,
+    0.5819
+   ],
+   "win_rate": 0.68,
+   "worst_return": -0.2412,
+   "years_span": 12
+  },
+  "total_matches": 50
+ },
+ "peer_group": {
+  "buckets": [
+   "Brokerage, Trading, Exchanges & Market Infrastructure",
+   "Business Process Outsourcing & Managed Services",
+   "Finance, HR & Administrative Software"
+  ],
+  "groups": {
+   "Brokerage, Trading, Exchanges & Market Infrastructure": [
+    {
+     "market_cap_m": 21449.9373,
+     "price_vs_sma200": 1.1517,
+     "return_30d": 0.1626,
+     "return_7d": 0.0759,
+     "revenue_driver": "proxy voting and communications",
+     "signal_rank": 1499,
+     "stock_vs_spy_20d": 0.2061,
+     "ticker": "BR"
+    },
+    {
+     "market_cap_m": 36561.6315,
+     "price_vs_sma200": 1.1295,
+     "return_30d": 0.1548,
+     "return_7d": 0.0818,
+     "revenue_driver": "payroll and HCM SaaS",
+     "signal_rank": 1155,
+     "stock_vs_spy_20d": 0.1811,
+     "ticker": "PAYX"
+    },
+    {
+     "market_cap_m": 58983.7835,
+     "price_vs_sma200": 1.1795,
+     "return_30d": 0.1451,
+     "return_7d": 0.0149,
+     "revenue_driver": "market data and analytics",
+     "signal_rank": 1630,
+     "stock_vs_spy_20d": 0.1992,
+     "ticker": "NDAQ"
+    },
+    {
+     "market_cap_m": 92961.9842,
+     "price_vs_sma200": 1.1151,
+     "return_30d": 0.1164,
+     "return_7d": 0.1046,
+     "revenue_driver": "financial exchanges and data",
+     "signal_rank": 1870,
+     "stock_vs_spy_20d": 0.1583,
+     "ticker": "ICE"
+    },
+    {
+     "market_cap_m": 94030.5392,
+     "price_vs_sma200": 1.1895,
+     "return_30d": 0.0575,
+     "return_7d": -0.0155,
+     "revenue_driver": "custody and asset servicing",
+     "signal_rank": null,
+     "stock_vs_spy_20d": 0.0498,
+     "ticker": "BK"
+    },
+    {
+     "market_cap_m": 920070.1108,
+     "price_vs_sma200": 1.033,
+     "return_30d": -0.025,
+     "return_7d": -0.0142,
+     "revenue_driver": "consumer and commercial banking",
+     "signal_rank": 1277,
+     "stock_vs_spy_20d": 0.0598,
+     "ticker": "JPM"
+    },
+    {
+     "market_cap_m": 269552.1909,
+     "price_vs_sma200": 0.9055,
+     "return_30d": -0.0744,
+     "return_7d": -0.0642,
+     "revenue_driver": "investment banking and advisory",
+     "signal_rank": 423,
+     "stock_vs_spy_20d": 0.0224,
+     "ticker": "GS"
+    },
+    {
+     "market_cap_m": 211938.5577,
+     "price_vs_sma200": 0.9395,
+     "return_30d": -0.1134,
+     "return_7d": -0.0408,
+     "revenue_driver": "institutional banking and markets",
+     "signal_rank": 445,
+     "stock_vs_spy_20d": -0.0264,
+     "ticker": "C"
+    },
+    {
+     "market_cap_m": 365197.825,
+     "price_vs_sma200": 0.9003,
+     "return_30d": -0.1284,
+     "return_7d": -0.0281,
+     "revenue_driver": "consumer banking and credit cards",
+     "signal_rank": 186,
+     "stock_vs_spy_20d": -0.0349,
+     "ticker": "BAC"
+    },
+    {
+     "market_cap_m": 32391.3237,
+     "price_vs_sma200": 0.9133,
+     "return_30d": -0.1504,
+     "return_7d": -0.0924,
+     "revenue_driver": "brokerage commissions and fees",
+     "signal_rank": 449,
+     "stock_vs_spy_20d": -0.0818,
+     "ticker": "IBKR"
+    }
+   ],
+   "Business Process Outsourcing & Managed Services": [
+    {
+     "market_cap_m": 455.8633,
+     "price_vs_sma200": 0.3546,
+     "return_30d": 0.167,
+     "return_7d": 0.4226,
+     "revenue_driver": "benefits administration BPaaS",
+     "signal_rank": null,
+     "stock_vs_spy_20d": -0.3615,
+     "ticker": "ALIT"
+    },
+    {
+     "market_cap_m": 36561.6315,
+     "price_vs_sma200": 1.1295,
+     "return_30d": 0.1548,
+     "return_7d": 0.0818,
+     "revenue_driver": "payroll and HCM SaaS",
+     "signal_rank": 1155,
+     "stock_vs_spy_20d": 0.1811,
+     "ticker": "PAYX"
+    },
+    {
+     "market_cap_m": 115417.6111,
+     "price_vs_sma200": 1.2563,
+     "return_30d": 0.1505,
+     "return_7d": 0.063,
+     "revenue_driver": "payroll processing SaaS",
+     "signal_rank": 2025,
+     "stock_vs_spy_20d": 0.1752,
+     "ticker": "ADP"
+    },
+    {
+     "market_cap_m": 30175.0279,
+     "price_vs_sma200": 1.1067,
+     "return_30d": 0.1289,
+     "return_7d": -0.0247,
+     "revenue_driver": "IT outsourcing services",
+     "signal_rank": 1811,
+     "stock_vs_spy_20d": 0.1486,
+     "ticker": "CTSH"
+    },
+    {
+     "market_cap_m": 1628.6431,
+     "price_vs_sma200": 1.0826,
+     "return_30d": 0.1196,
+     "return_7d": -0.0069,
+     "revenue_driver": "customer experience outsourcing",
+     "signal_rank": null,
+     "stock_vs_spy_20d": 0.24,
+     "ticker": "CNXC"
+    },
+    {
+     "market_cap_m": 3409.2731,
+     "price_vs_sma200": 1.0288,
+     "return_30d": 0.0515,
+     "return_7d": 0.0314,
+     "revenue_driver": "commercial and retail banking",
+     "signal_rank": 304,
+     "stock_vs_spy_20d": 0.1595,
+     "ticker": "CBU"
+    },
+    {
+     "market_cap_m": 11281.1189,
+     "price_vs_sma200": 1.0024,
+     "return_30d": 0.0321,
+     "return_7d": 0.1004,
+     "revenue_driver": "cash logistics",
+     "signal_rank": 1640,
+     "stock_vs_spy_20d": 0.1216,
+     "ticker": "BCO"
+    },
+    {
+     "market_cap_m": 2980.0868,
+     "price_vs_sma200": 1.3702,
+     "return_30d": 0.0064,
+     "return_7d": 0.0024,
+     "revenue_driver": "accounting and tax services",
+     "signal_rank": null,
+     "stock_vs_spy_20d": 0.0263,
+     "ticker": "CBZ"
+    },
+    {
+     "market_cap_m": 57370.827,
+     "price_vs_sma200": 1.1495,
+     "return_30d": -0.0907,
+     "return_7d": -0.123,
+     "revenue_driver": "personal computers and laptops",
+     "signal_rank": 954,
+     "stock_vs_spy_20d": -0.0023,
+     "ticker": "HPQ"
+    },
+    {
+     "market_cap_m": 259.9113,
+     "price_vs_sma200": 1.0536,
+     "return_30d": -0.1341,
+     "return_7d": -0.1013,
+     "revenue_driver": "government payment processing",
+     "signal_rank": null,
+     "stock_vs_spy_20d": 0.1027,
+     "ticker": "CNDT"
+    }
+   ],
+   "Finance, HR & Administrative Software": [
+    {
+     "market_cap_m": 9416.2433,
+     "price_vs_sma200": 1.3624,
+     "return_30d": 0.2079,
+     "return_7d": 0.0276,
+     "revenue_driver": "payroll and HCM SaaS",
+     "signal_rank": 659,
+     "stock_vs_spy_20d": 0.18,
+     "ticker": "PCTY"
+    },
+    {
+     "market_cap_m": 5249.2284,
+     "price_vs_sma200": 1.2288,
+     "return_30d": 0.1844,
+     "return_7d": 0.0914,
+     "revenue_driver": "SMB financial operations SaaS",
+     "signal_rank": 1449,
+     "stock_vs_spy_20d": 0.2244,
+     "ticker": "BILL"
+    },
+    {
+     "market_cap_m": 36561.6315,
+     "price_vs_sma200": 1.1295,
+     "return_30d": 0.1548,
+     "return_7d": 0.0818,
+     "revenue_driver": "payroll and HCM SaaS",
+     "signal_rank": 1155,
+     "stock_vs_spy_20d": 0.1811,
+     "ticker": "PAYX"
+    },
+    {
+     "market_cap_m": 115417.6111,
+     "price_vs_sma200": 1.2563,
+     "return_30d": 0.1505,
+     "return_7d": 0.063,
+     "revenue_driver": "payroll processing SaaS",
+     "signal_rank": 2025,
+     "stock_vs_spy_20d": 0.1752,
+     "ticker": "ADP"
+    },
+    {
+     "market_cap_m": 24606.4721,
+     "price_vs_sma200": 1.0609,
+     "return_30d": 0.0877,
+     "return_7d": 0.0877,
+     "revenue_driver": "cloud ERP SaaS",
+     "signal_rank": 200,
+     "stock_vs_spy_20d": 0.167,
+     "ticker": "EPAC"
+    },
+    {
+     "market_cap_m": 14068.3754,
+     "price_vs_sma200": 1.425,
+     "return_30d": 0.0765,
+     "return_7d": -0.0969,
+     "revenue_driver": "payroll and HCM SaaS",
+     "signal_rank": 1473,
+     "stock_vs_spy_20d": 0.0773,
+     "ticker": "PAYC"
+    },
+    {
+     "market_cap_m": 41230.41,
+     "price_vs_sma200": 1.2374,
+     "return_30d": 0.0182,
+     "return_7d": -0.0561,
+     "revenue_driver": "cloud HCM platform",
+     "signal_rank": 1529,
+     "stock_vs_spy_20d": 0.0891,
+     "ticker": "WDAY"
+    },
+    {
+     "market_cap_m": 7002.1422,
+     "price_vs_sma200": 1.0959,
+     "return_30d": 0.008,
+     "return_7d": 0.0004,
+     "revenue_driver": "investment accounting SaaS",
+     "signal_rank": null,
+     "stock_vs_spy_20d": 0.0163,
+     "ticker": "CWAN"
+    },
+    {
+     "market_cap_m": 1332.5008,
+     "price_vs_sma200": 0.7866,
+     "return_30d": -0.0283,
+     "return_7d": -0.1365,
+     "revenue_driver": "digital banking SaaS",
+     "signal_rank": 1175,
+     "stock_vs_spy_20d": -0.0063,
+     "ticker": "ALKT"
+    },
+    {
+     "market_cap_m": 136.7909,
+     "price_vs_sma200": 0.2783,
+     "return_30d": -0.631,
+     "return_7d": -0.2774,
+     "revenue_driver": "cloud ERP SaaS",
+     "signal_rank": 1906,
+     "stock_vs_spy_20d": -0.0705,
+     "ticker": "VERI"
+    }
+   ]
+  }
+ },
+ "predictions": {
+  "badge_count": 0,
+  "confidence_score": 0.6815,
+  "conviction_label": "SPECULATIVE",
+  "data_quality_flags": [],
+  "ev_score": 0.0723,
+  "is_diamond": false,
+  "passes_tradability_filter": true,
+  "quality_label": "MEDIUM",
+  "quantiles": {
+   "downside_q10": -0.2639,
+   "downside_q25": -0.1517,
+   "downside_q50": -0.0891,
+   "downside_q75": -0.0276,
+   "downside_q90": -0.0018,
+   "path_volatility": 0.028,
+   "risk_reward": 1.7594,
+   "uncertainty": 0.3767,
+   "upside_q10": 0.0242,
+   "upside_q25": 0.069,
+   "upside_q50": 0.1568,
+   "upside_q75": 0.2569,
+   "upside_q90": 0.4009
+  },
+  "rank": 1155,
+  "rank_score": 0.04,
+  "tradability_filter_reasons": []
+ },
+ "profile": {
+  "_local": {
+   "dividend_yield": 0.0338,
+   "eps_growth_yoy": 0.1272,
+   "pe_ratio": 20.1968,
+   "revenue_growth_yoy": 0.1397,
+   "roe": 0.4854
+  },
+  "beta": 0.799,
+  "betaTTM": null,
+  "ceo": "John Gibson Jr.",
+  "companyName": "Paychex, Inc.",
+  "country": "US",
+  "debtToEquityTTM": null,
+  "description": "Founded in 1971 and headquartered in Rochester, New York, Paychex, Inc. delivers comprehensive human capital management (HCM) solutions. The company primarily serves small to medium-sized enterprises (SMEs) across the United States, Europe, and India, addressing their needs in human resources, payroll administration, employee benefits, and insurance. Its diverse service portfolio includes: Payroll Management: Encompassing core payroll processing, payroll tax administration, employee payment facilitation, and ensuring compliance with regulations like new-hire reporting and garnishment processing. Human Resources Solutions: Providing support for employer compliance, HR and employee benefits administration, risk management outsourcing, and even the availability of professionally trained on-site HR representatives. Retirement Services: Offering full administration for retirement plans, which covers implementation, ongoing adherence to government regulations, reporting for both participants and employers, online access capabilities, electronic funds transfers, and other administrative tasks. Cloud-based HR Software: A suite of software products designed for efficient HR administration, including tools for benefits management, time and attendance tracking, digital communication, recruitment, and onboarding processes. Additional Business Services: This category features plan administration outsourcing, state unemployment insurance services, and various support functions for SMBs such as payroll funding and outsourcing (including payroll processing, invoicing, and tax preparation), payment processing solutions, financial wellness programs, and a resource center for small business loans. Insurance Offerings: Providing both property and casualty coverage, which includes workers' compensation, business-owner policies, cybersecurity protection, and commercial auto insurance, alongside health and benefits coverage like medical, dental, vision, and life insurance. Paychex primarily distributes its services through its dedicated direct sales team.",
+  "dividendYielTTM": null,
+  "enterpriseValueOverEBITDATTM": null,
+  "exchangeShortName": "NASDAQ",
+  "fullTimeEmployees": "17600",
+  "industry": "Staffing & Employment Services",
+  "ipoDate": "1983-08-26",
+  "latest_earnings_date": "2026-09-24",
+  "marketCapTTM": null,
+  "mktCap": 41671018800,
+  "peRatioTTM": null,
+  "price": 117.06,
+  "priceToSalesRatioTTM": null,
+  "returnOnEquityTTM": 0.4711,
+  "revenue_description": "Paychex provides payroll, HR, and benefits outsourcing services. Revenue is driven by employer-count-based subscription ACV tied to payroll seats processed, float income on client funds, and upsell of adjacent HR modules.",
+  "revenue_description_themes": [
+   "net new employer bookings and headcount growth",
+   "float income sensitivity to interest rate levels",
+   "HR module cross-sell within existing base"
+  ],
+  "revenue_taxonomy": [
+   {
+    "bucket": "Finance, HR & Administrative Software",
+    "matched_tags": [
+     "payroll and HCM SaaS"
+    ],
+    "path": "Technology › Software & Platforms › Finance, HR & Administrative Software",
+    "sector": "Technology",
+    "segment": "Software & Platforms"
+   },
+   {
+    "bucket": "Business Process Outsourcing & Managed Services",
+    "matched_tags": [
+     "HR outsourcing services"
+    ],
+    "path": "Technology › Tech Enabled Services & Infrastructure › Business Process Outsourcing & Managed Services",
+    "sector": "Technology",
+    "segment": "Tech Enabled Services & Infrastructure"
+   },
+   {
+    "bucket": "Brokerage, Trading, Exchanges & Market Infrastructure",
+    "matched_tags": [
+     "interest income on client funds"
+    ],
+    "path": "Financials › Capital Markets Insurance & Investments › Brokerage, Trading, Exchanges & Market Infrastructure",
+    "sector": "Financials",
+    "segment": "Capital Markets Insurance & Investments"
+   }
+  ],
+  "revenue_themes": [
+   "payroll and HCM SaaS",
+   "HR outsourcing services",
+   "interest income on client funds"
+  ],
+  "sector": "Industrials",
+  "website": "https://www.paychex.com"
+ },
+ "report": {
+  "display_rank": null,
+  "lane": "act_now",
+  "lane_rank": 76,
+  "setup_label": "early_trend",
+  "why_now": "Structural analogs leads the readiness mix (+7.6); early-stage trend"
+ },
+ "scorecard": {
+  "headline": {
+   "avg_universe_pct": 67,
+   "label": "above_average",
+   "metric_count": 8
+  },
+  "metrics": {
+   "debt_to_equity": {
+    "direction": "lower",
+    "label": "D/E Ratio",
+    "sector": "Industrials",
+    "sector_n": 344,
+    "sector_pct": 16,
+    "universe_n": 2005,
+    "universe_pct": 19,
+    "value": 1.247
+   },
+   "eps_growth_yoy": {
+    "direction": "higher",
+    "label": "EPS Growth",
+    "sector": "Industrials",
+    "sector_n": 343,
+    "sector_pct": 50,
+    "universe_n": 1823,
+    "universe_pct": 47,
+    "value": 0.1272
+   },
+   "gross_margin": {
+    "direction": "higher",
+    "label": "Gross Margin",
+    "sector": "Industrials",
+    "sector_n": 325,
+    "sector_pct": 91,
+    "universe_n": 1940,
+    "universe_pct": 84,
+    "value": 0.7604
+   },
+   "operating_margin": {
+    "direction": "higher",
+    "label": "Op. Margin",
+    "sector": "Industrials",
+    "sector_n": 325,
+    "sector_pct": 98,
+    "universe_n": 1940,
+    "universe_pct": 95,
+    "value": 0.3945
+   },
+   "pe_ratio": {
+    "direction": "lower",
+    "label": "P/E",
+    "sector": "Industrials",
+    "sector_n": 248,
+    "sector_pct": 62,
+    "universe_n": 1450,
+    "universe_pct": 49,
+    "value": 20.1968
+   },
+   "revenue_growth_yoy": {
+    "direction": "higher",
+    "label": "Rev Growth",
+    "sector": "Industrials",
+    "sector_n": 324,
+    "sector_pct": 69,
+    "universe_n": 1771,
+    "universe_pct": 67,
+    "value": 0.1397
+   },
+   "roe": {
+    "direction": "higher",
+    "label": "ROE",
+    "sector": "Industrials",
+    "sector_n": 346,
+    "sector_pct": 93,
+    "universe_n": 2021,
+    "universe_pct": 92,
+    "value": 0.4854
+   },
+   "roic": {
+    "direction": "higher",
+    "label": "ROIC",
+    "sector": "Industrials",
+    "sector_n": 340,
+    "sector_pct": 86,
+    "universe_n": 1994,
+    "universe_pct": 86,
+    "value": 0.0461
+   }
+  }
+ },
+ "signal_rank": 1155,
+ "structural_analogs": {
+  "gp_core_pct": 47.4,
+  "gp_core_ratio": 1.2786,
+  "matches": [
+   {
+    "actual_downside": -0.2096,
+    "actual_return": 0.0023,
+    "actual_upside": 0.0327,
+    "days_in_region": 109,
+    "end_date": "2019-02-22",
+    "end_reason": "reversal",
+    "seq_len": 109,
+    "similarity": 0.6,
+    "start_date": "2018-08-30",
+    "ticker": "CXW",
+    "total_distance": 0.2554,
+    "trigger_date": "2018-11-07",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": -0.0204,
+    "actual_return": 0.2725,
+    "actual_upside": 0.2725,
+    "days_in_region": 106,
+    "end_date": "2015-12-04",
+    "end_reason": "reversal",
+    "seq_len": 106,
+    "similarity": 0.5926,
+    "start_date": "2015-06-19",
+    "ticker": "FOXF",
+    "total_distance": 0.2616,
+    "trigger_date": "2015-08-24",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": -0.0302,
+    "actual_return": 0.2095,
+    "actual_upside": 0.2095,
+    "days_in_region": 133,
+    "end_date": "2000-12-28",
+    "end_reason": "reversal",
+    "seq_len": 133,
+    "similarity": 0.5897,
+    "start_date": "2000-07-07",
+    "ticker": "HNZ",
+    "total_distance": 0.2641,
+    "trigger_date": "2000-07-25",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": -0.1015,
+    "actual_return": 0.0338,
+    "actual_upside": 0.0338,
+    "days_in_region": 108,
+    "end_date": "2022-02-09",
+    "end_reason": "reversal",
+    "seq_len": 108,
+    "similarity": 0.5874,
+    "start_date": "2021-11-05",
+    "ticker": "SGEN",
+    "total_distance": 0.266,
+    "trigger_date": "2022-01-13",
+    "trigger_type": "severe_drawdown"
+   },
+   {
+    "actual_downside": -0.0621,
+    "actual_return": 0.0603,
+    "actual_upside": 0.0603,
+    "days_in_region": 132,
+    "end_date": "2000-10-12",
+    "end_reason": "reversal",
+    "seq_len": 132,
+    "similarity": 0.5814,
+    "start_date": "2000-05-31",
+    "ticker": "UCL",
+    "total_distance": 0.2711,
+    "trigger_date": "2000-07-06",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": 0.0,
+    "actual_return": 0.5125,
+    "actual_upside": 0.5125,
+    "days_in_region": 118,
+    "end_date": "2006-02-06",
+    "end_reason": "reversal",
+    "seq_len": 118,
+    "similarity": 0.5813,
+    "start_date": "2005-09-16",
+    "ticker": "AEM",
+    "total_distance": 0.2712,
+    "trigger_date": "2005-10-24",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": -0.0871,
+    "actual_return": 0.1218,
+    "actual_upside": 0.1218,
+    "days_in_region": 132,
+    "end_date": "2018-06-22",
+    "end_reason": "reversal",
+    "seq_len": 132,
+    "similarity": 0.581,
+    "start_date": "2017-12-18",
+    "ticker": "WRI",
+    "total_distance": 0.2715,
+    "trigger_date": "2018-01-30",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": -0.2071,
+    "actual_return": 0.0071,
+    "actual_upside": 0.1357,
+    "days_in_region": 109,
+    "end_date": "1994-08-26",
+    "end_reason": "reversal",
+    "seq_len": 109,
+    "similarity": 0.5809,
+    "start_date": "1993-10-26",
+    "ticker": "PLL",
+    "total_distance": 0.2716,
+    "trigger_date": "1993-12-17",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": -0.0238,
+    "actual_return": 0.2292,
+    "actual_upside": 0.2292,
+    "days_in_region": 112,
+    "end_date": "2006-02-01",
+    "end_reason": "reversal",
+    "seq_len": 112,
+    "similarity": 0.5807,
+    "start_date": "2005-09-29",
+    "ticker": "NEM",
+    "total_distance": 0.2717,
+    "trigger_date": "2005-11-02",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": -0.1375,
+    "actual_return": -0.03,
+    "actual_upside": 0.04,
+    "days_in_region": 123,
+    "end_date": "1999-12-03",
+    "end_reason": "reversal",
+    "seq_len": 123,
+    "similarity": 0.5796,
+    "start_date": "1999-05-13",
+    "ticker": "SPG",
+    "total_distance": 0.2727,
+    "trigger_date": "1999-08-11",
+    "trigger_type": "drawdown"
+   }
+  ],
+  "panel": {
+   "edge": 0.0237,
+   "hit_hi": 0.798,
+   "hit_lo": 0.639,
+   "hit_rate": 0.725,
+   "median_final": 0.0811,
+   "median_pain": 0.0836,
+   "n": 51,
+   "n_eff": 51.0,
+   "p25_final": -0.03,
+   "p_pain_gt5": 0.725,
+   "return_to_pain": 0.783
+  },
+  "stats": {
+   "avg_similarity": 0.542,
+   "avg_trough": 0.1044,
+   "avg_upside": 0.1328,
+   "median_pain": 0.0827,
+   "median_return": 0.0384,
+   "n_matches": 200,
+   "p25_return": -0.1079,
+   "p_pain_gt5": 0.645,
+   "return_to_pain": 0.374,
+   "top5_avg_trough": 0.0847,
+   "top5_avg_upside": 0.1218,
+   "top_similarity": 0.6,
+   "win_rate": 0.575
+  },
+  "total_matches": 200
+ },
+ "ticker": "PAYX",
+ "trending": {
+  "acceleration": -0.0071,
+  "avg_vol_20d": 2280404.3466,
+  "base_high_120": 127.34,
+  "breakout_confirmed": 0,
+  "close": 118.3,
+  "momentum_score": 0.8225,
+  "momentum_start": "2026-07-07",
+  "range_20": 0.1139,
+  "range_50": 0.2049,
+  "rank": 453,
+  "rank_down": null,
+  "rank_up": 285,
+  "ret_120": 0.3056,
+  "ret_20": -0.002,
+  "ret_60": 0.2042,
+  "rundown_score": 0.7091,
+  "score_date": "2026-09-15",
+  "slope_20": -0.0036,
+  "slope_60": 0.0036,
+  "stage": "sustained",
+  "stage_label": "Trending",
+  "ticker": "PAYX",
+  "total_score": 0.5956,
+  "trend_ratio": 1.0649,
+  "vcp_detected": 1,
+  "vcp_score": 0.4443
+ }
+}

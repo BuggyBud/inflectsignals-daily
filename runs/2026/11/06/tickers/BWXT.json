@@ -1,0 +1,1113 @@
+{
+ "date": "2026-11-06",
+ "detected_regions": {
+  "primary": {
+   "days_in_region": 200,
+   "region_start": "2026-04-17",
+   "trigger_date": "2026-10-07",
+   "trigger_type": "drawdown"
+  },
+  "secondary": [
+   {
+    "confidence_score": 0.7585,
+    "downside_q50": -0.0493,
+    "ev_score": 0.1707,
+    "region_start": "2026-04-15",
+    "seq_len": 200,
+    "trigger_date": "2026-07-16",
+    "trigger_type": "severe_drawdown",
+    "upside_q25": 0.1105,
+    "upside_q50": 0.2157,
+    "upside_q75": 0.3442
+   }
+  ]
+ },
+ "feature_attribution": {
+  "macro_driver_count": 16,
+  "risk_flags": [],
+  "top_drivers": [
+   {
+    "direction": "negative",
+    "feature": "dollar_volume",
+    "feature_value": 255694640.0,
+    "importance": 0.0003,
+    "importance_pct": 0.4645,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "positive",
+    "feature": "price_vs_high_52w",
+    "feature_value": 0.5013,
+    "importance": 0.0002,
+    "importance_pct": 0.2469,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "positive",
+    "feature": "return_1d",
+    "feature_value": 0.0397,
+    "importance": 0.0001,
+    "importance_pct": 0.1451,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "negative",
+    "feature": "stock_vs_sector_20d",
+    "feature_value": -0.1527,
+    "importance": 0.0001,
+    "importance_pct": 0.1435,
+    "method": "integrated_gradients"
+   }
+  ]
+ },
+ "fundamentals": {
+  "accrual": 0.1674,
+  "adx_14": 34.2715,
+  "altman_z_score": 3.6872,
+  "amihud_illiquidity": 0.0001,
+  "avg_volume": 1239137.1135,
+  "beta_252d": 0.8355,
+  "book_value_per_share": 15.463,
+  "correlation_spy_60d": 0.3669,
+  "current_liabilities": 960.926,
+  "current_ratio": 1.8751,
+  "daily_earnings_yield": 0.0244,
+  "daily_fcf_yield": -0.002,
+  "daily_pb": 10.8395,
+  "daily_pe": 41.0086,
+  "daily_ps": 4.2688,
+  "days_since_52w_high": 143.0,
+  "debt_ebitda": 3.8872,
+  "debt_to_equity": 1.4255,
+  "dividend_yield": 0.0013,
+  "dollar_volume_20d_avg": 167207827.0747,
+  "earnings_quality": 1.993,
+  "ebitda_growth_yoy": 0.1753,
+  "enterprise_value": 16827.632,
+  "eps_basic": 1.11,
+  "eps_cagr_3y": 0.1879,
+  "eps_cagr_5y": 0.0882,
+  "eps_diluted": 1.11,
+  "eps_growth_accel": 0.0123,
+  "eps_growth_qoq": 0.1443,
+  "eps_growth_yoy": 0.2173,
+  "eps_growth_yoy_q2": 0.205,
+  "eps_growth_yoy_q3": 0.193,
+  "eps_growth_yoy_q4": 0.165,
+  "eps_growth_yoy_q5": 0.1089,
+  "eps_growth_yoy_q6": 0.099,
+  "eps_growth_yoy_q7": 0.1408,
+  "eps_growth_yoy_q8": 0.1487,
+  "eps_history_8q": [
+   0.77,
+   0.82,
+   0.85,
+   0.89,
+   1.02,
+   0.99,
+   0.97,
+   1.11
+  ],
+  "eps_ttm": 2.9145,
+  "ev_to_ebitda": 32.3523,
+  "ev_to_fcf": 111.8472,
+  "ev_to_sales": 17.6581,
+  "fcf_growth_yoy": 0.5855,
+  "fcf_margin": 0.1579,
+  "fcf_per_share": 1.6402,
+  "gross_margin": 0.2258,
+  "gross_margin_change_yoy": -0.0127,
+  "gross_margin_history": [
+   0.2757,
+   0.2687,
+   0.2536,
+   0.2428,
+   0.2286,
+   0.2258
+  ],
+  "inc_roic": 0.0028,
+  "interest_coverage": 20.3361,
+  "is_pre_revenue": false,
+  "margin_vs_sector_median": null,
+  "market_cap_ratio": 15374.275,
+  "net_income": 101.712,
+  "net_margin": 0.1041,
+  "operating_income": 132.077,
+  "operating_margin": 0.1189,
+  "operating_margin_change_yoy": 0.0322,
+  "pb_ratio": 7.7294,
+  "pe_percentile_1y": 0.996,
+  "pe_ratio": 41.0086,
+  "peg_trailing": 1.3977,
+  "piotroski_f_score": 4.0,
+  "price_vs_high_52w": 0.5013,
+  "price_vs_sma200": 0.6542,
+  "ps_percentile_1y": 0.996,
+  "ps_ratio": 4.6599,
+  "quarter_labels_8q": [
+   "Q4 '24",
+   "Q1 '25",
+   "Q2 '25",
+   "Q3 '25",
+   "Q4 '25",
+   "Q1 '26",
+   "Q2 '26",
+   "Q3 '26"
+  ],
+  "quarterly_eps_growth_yoy": 0.2472,
+  "quarterly_eps_growth_yoy_8q": [
+   0.0694,
+   0.0933,
+   0.0759,
+   0.1711,
+   0.3247,
+   0.2073,
+   0.1412,
+   0.2472
+  ],
+  "quarterly_revenue_growth_yoy": 0.1001,
+  "quarterly_revenue_growth_yoy_8q": [
+   0.0286,
+   0.1296,
+   0.1212,
+   0.2892,
+   0.187,
+   0.2621,
+   0.1801,
+   0.1001
+  ],
+  "revenue_cagr_3y": 0.1457,
+  "revenue_cagr_5y": 0.1151,
+  "revenue_growth_accel": -0.0496,
+  "revenue_growth_qoq": 0.0569,
+  "revenue_growth_yoy": 0.1774,
+  "revenue_growth_yoy_q2": 0.227,
+  "revenue_growth_yoy_q3": 0.214,
+  "revenue_growth_yoy_q4": 0.183,
+  "revenue_growth_yoy_q5": 0.1401,
+  "revenue_growth_yoy_q6": 0.1013,
+  "revenue_growth_yoy_q7": 0.0988,
+  "revenue_growth_yoy_q8": 0.0831,
+  "revenue_history_8q": [
+   746.267,
+   682.258,
+   764.039,
+   866.286,
+   885.815,
+   861.095,
+   901.625,
+   952.972
+  ],
+  "revenue_per_share": 10.3894,
+  "roa": 0.1577,
+  "roce": 0.2779,
+  "roe": 0.2724,
+  "roic": 0.0988,
+  "rsi_14": 33.1748,
+  "sector_momentum": 0.0725,
+  "share_dilution_1y": 0.0,
+  "stock_vs_sector_20d": -0.1527,
+  "stock_vs_spy_20d": -0.1137,
+  "total_assets": 4754.294,
+  "vol_regime": 1.174,
+  "volatility_20d": 0.0323,
+  "volatility_60d": 0.0275,
+  "w52_high": 241.82,
+  "w52_low": 112.545
+ },
+ "market_characters": [
+  {
+   "id": "g8",
+   "name": "Boom-Bust"
+  }
+ ],
+ "model_analogs": {
+  "matches": [
+   {
+    "actual_downside": -0.0437,
+    "actual_return": 0.104,
+    "actual_upside": 0.104,
+    "days_in_region": 95,
+    "end_date": "2012-12-18",
+    "end_reason": "reversal",
+    "similarity": 0.9574,
+    "start_date": "2012-09-14",
+    "ticker": "WTI",
+    "trigger_date": "2012-10-16",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": 0.0,
+    "actual_return": 0.3354,
+    "actual_upside": 0.3354,
+    "days_in_region": 175,
+    "end_date": "2017-01-27",
+    "end_reason": "reversal",
+    "similarity": 0.9561,
+    "start_date": "2016-08-05",
+    "ticker": "ELNK",
+    "trigger_date": "2016-11-10",
+    "trigger_type": "severe_drawdown"
+   },
+   {
+    "actual_downside": -0.0985,
+    "actual_return": -0.0985,
+    "actual_upside": 0.0383,
+    "days_in_region": 148,
+    "end_date": "2005-12-21",
+    "end_reason": "reversal",
+    "similarity": 0.9554,
+    "start_date": "2005-07-26",
+    "ticker": "RSH",
+    "trigger_date": "2005-08-02",
+    "trigger_type": "runup"
+   },
+   {
+    "actual_downside": -0.0312,
+    "actual_return": 0.3047,
+    "actual_upside": 0.3047,
+    "days_in_region": 260,
+    "end_date": "2006-01-10",
+    "end_reason": "reversal",
+    "similarity": 0.9553,
+    "start_date": "2005-04-25",
+    "ticker": "ACO",
+    "trigger_date": "2005-10-10",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": -0.0351,
+    "actual_return": 0.2214,
+    "actual_upside": 0.2214,
+    "days_in_region": 167,
+    "end_date": "2006-01-04",
+    "end_reason": "reversal",
+    "similarity": 0.9552,
+    "start_date": "2005-07-21",
+    "ticker": "EPIC",
+    "trigger_date": "2005-08-09",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": -0.0313,
+    "actual_return": 0.2538,
+    "actual_upside": 0.2538,
+    "days_in_region": 181,
+    "end_date": "2006-01-09",
+    "end_reason": "reversal",
+    "similarity": 0.9551,
+    "start_date": "2005-07-12",
+    "ticker": "PENN",
+    "trigger_date": "2005-10-11",
+    "trigger_type": "severe_drawdown"
+   },
+   {
+    "actual_downside": 0.0,
+    "actual_return": 0.2231,
+    "actual_upside": 0.2231,
+    "days_in_region": 139,
+    "end_date": "2016-12-20",
+    "end_reason": "reversal",
+    "similarity": 0.9549,
+    "start_date": "2016-08-03",
+    "ticker": "RPXC",
+    "trigger_date": "2016-11-04",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": -0.0366,
+    "actual_return": 0.1638,
+    "actual_upside": 0.1638,
+    "days_in_region": 121,
+    "end_date": "2005-11-30",
+    "end_reason": "reversal",
+    "similarity": 0.9548,
+    "start_date": "2005-08-01",
+    "ticker": "FLIR",
+    "trigger_date": "2005-09-09",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": -0.1563,
+    "actual_return": 0.2706,
+    "actual_upside": 0.2706,
+    "days_in_region": 228,
+    "end_date": "2006-02-27",
+    "end_reason": "reversal",
+    "similarity": 0.9547,
+    "start_date": "2005-07-14",
+    "ticker": "NCOG",
+    "trigger_date": "2005-10-14",
+    "trigger_type": "severe_drawdown"
+   },
+   {
+    "actual_downside": -0.0287,
+    "actual_return": 0.1985,
+    "actual_upside": 0.1985,
+    "days_in_region": 200,
+    "end_date": "2006-01-27",
+    "end_reason": "reversal",
+    "similarity": 0.9541,
+    "start_date": "2005-07-11",
+    "ticker": "WMGI",
+    "trigger_date": "2005-08-08",
+    "trigger_type": "shallow_drawdown"
+   }
+  ],
+  "stats": {
+   "avg_max_drawdown": 0.0348,
+   "avg_similarity": 0.952,
+   "avg_trough": 0.0348,
+   "avg_upside": 0.2944,
+   "best_return": 0.7268,
+   "downside_range": [
+    -0.1621,
+    0.0
+   ],
+   "median_return": 0.2736,
+   "n_matches": 50,
+   "outcome_agreement": true,
+   "return_p25": 0.1898,
+   "return_p5": 0.094,
+   "return_p75": 0.3607,
+   "return_p95": 0.5422,
+   "sim_weighted_win_rate": 0.98,
+   "top5_avg_trough": 0.0417,
+   "top5_avg_upside": 0.2008,
+   "top_similarity": 0.957,
+   "upside_range": [
+    0.0383,
+    0.7268
+   ],
+   "win_rate": 0.98,
+   "worst_return": -0.0985,
+   "years_span": 5
+  },
+  "total_matches": 50
+ },
+ "peer_group": {
+  "buckets": [
+   "Aerospace & Defense Components, Electronics & Aftermarket",
+   "Aerospace & Defense Platforms",
+   "Energy Technology, Nuclear, LNG, Hydrogen & Emerging Energy Infrastructure"
+  ],
+  "groups": {
+   "Aerospace & Defense Components, Electronics & Aftermarket": [
+    {
+     "market_cap_m": 1864.352,
+     "price_vs_sma200": 1.0835,
+     "return_30d": 0.1033,
+     "return_7d": 0.077,
+     "revenue_driver": "aerospace composite components",
+     "signal_rank": 128,
+     "stock_vs_spy_20d": 0.144,
+     "ticker": "AIN"
+    },
+    {
+     "market_cap_m": 10030.7591,
+     "price_vs_sma200": 0.9851,
+     "return_30d": 0.0265,
+     "return_7d": 0.0694,
+     "revenue_driver": "commercial vehicle transmissions",
+     "signal_rank": 571,
+     "stock_vs_spy_20d": 0.1192,
+     "ticker": "ALSN"
+    },
+    {
+     "market_cap_m": 48029.8261,
+     "price_vs_sma200": 1.0066,
+     "return_30d": -0.0522,
+     "return_7d": 0.0635,
+     "revenue_driver": "titanium aerospace materials",
+     "signal_rank": 1158,
+     "stock_vs_spy_20d": -0.0283,
+     "ticker": "ATI"
+    },
+    {
+     "market_cap_m": 4553.1906,
+     "price_vs_sma200": 0.9213,
+     "return_30d": -0.0594,
+     "return_7d": 0.0832,
+     "revenue_driver": "aircraft parts distribution",
+     "signal_rank": 1202,
+     "stock_vs_spy_20d": 0.1428,
+     "ticker": "AIR"
+    },
+    {
+     "market_cap_m": 792.2348,
+     "price_vs_sma200": 0.8546,
+     "return_30d": -0.1054,
+     "return_7d": 0.0964,
+     "revenue_driver": "naval valves and actuators",
+     "signal_rank": 1392,
+     "stock_vs_spy_20d": 0.0025,
+     "ticker": "GHM"
+    },
+    {
+     "market_cap_m": 1460.116,
+     "price_vs_sma200": 0.6408,
+     "return_30d": -0.1056,
+     "return_7d": -0.048,
+     "revenue_driver": "silicon anode battery cells",
+     "signal_rank": null,
+     "stock_vs_spy_20d": -0.0907,
+     "ticker": "AMPX"
+    },
+    {
+     "market_cap_m": 16782.8117,
+     "price_vs_sma200": 0.6542,
+     "return_30d": -0.1369,
+     "return_7d": -0.1144,
+     "revenue_driver": "naval nuclear reactors",
+     "signal_rank": 63,
+     "stock_vs_spy_20d": -0.1137,
+     "ticker": "BWXT"
+    },
+    {
+     "market_cap_m": 278.3915,
+     "price_vs_sma200": 0.7695,
+     "return_30d": -0.15,
+     "return_7d": 0.0022,
+     "revenue_driver": "used aircraft sales",
+     "signal_rank": null,
+     "stock_vs_spy_20d": -0.1094,
+     "ticker": "ASLE"
+    },
+    {
+     "market_cap_m": 6889.657,
+     "price_vs_sma200": 0.7426,
+     "return_30d": -0.2096,
+     "return_7d": -0.0964,
+     "revenue_driver": "aircraft lighting systems",
+     "signal_rank": 1032,
+     "stock_vs_spy_20d": -0.0928,
+     "ticker": "ATRO"
+    },
+    {
+     "market_cap_m": null,
+     "price_vs_sma200": null,
+     "return_30d": null,
+     "return_7d": null,
+     "revenue_driver": "aerospace engineered components",
+     "signal_rank": null,
+     "stock_vs_spy_20d": null,
+     "ticker": "B"
+    }
+   ],
+   "Aerospace & Defense Platforms": [
+    {
+     "market_cap_m": 5466.4602,
+     "price_vs_sma200": 0.8796,
+     "return_30d": 0.1073,
+     "return_7d": -0.0203,
+     "revenue_driver": "federal engineering services",
+     "signal_rank": 1549,
+     "stock_vs_spy_20d": 0.1569,
+     "ticker": "AMTM"
+    },
+    {
+     "market_cap_m": 4553.1906,
+     "price_vs_sma200": 0.9213,
+     "return_30d": -0.0594,
+     "return_7d": 0.0832,
+     "revenue_driver": "aircraft parts distribution",
+     "signal_rank": 1202,
+     "stock_vs_spy_20d": 0.1428,
+     "ticker": "AIR"
+    },
+    {
+     "market_cap_m": 131696.8808,
+     "price_vs_sma200": 0.8061,
+     "return_30d": -0.1246,
+     "return_7d": 0.0375,
+     "revenue_driver": "commercial aircraft manufacturing",
+     "signal_rank": 1174,
+     "stock_vs_spy_20d": -0.0338,
+     "ticker": "BA"
+    },
+    {
+     "market_cap_m": 16782.8117,
+     "price_vs_sma200": 0.6542,
+     "return_30d": -0.1369,
+     "return_7d": -0.1144,
+     "revenue_driver": "naval nuclear reactors",
+     "signal_rank": 63,
+     "stock_vs_spy_20d": -0.1137,
+     "ticker": "BWXT"
+    },
+    {
+     "market_cap_m": 15998.9562,
+     "price_vs_sma200": 0.6979,
+     "return_30d": -0.1413,
+     "return_7d": -0.0294,
+     "revenue_driver": "aerospace and defense electronics",
+     "signal_rank": 580,
+     "stock_vs_spy_20d": -0.0405,
+     "ticker": "CW"
+    },
+    {
+     "market_cap_m": 1073.9155,
+     "price_vs_sma200": 0.721,
+     "return_30d": -0.2071,
+     "return_7d": -0.0976,
+     "revenue_driver": "big data analytics software",
+     "signal_rank": null,
+     "stock_vs_spy_20d": 0.0021,
+     "ticker": "BBAI"
+    },
+    {
+     "market_cap_m": 4586.0259,
+     "price_vs_sma200": 0.7228,
+     "return_30d": -0.2086,
+     "return_7d": 0.023,
+     "revenue_driver": "eVTOL aircraft",
+     "signal_rank": null,
+     "stock_vs_spy_20d": -0.1201,
+     "ticker": "ACHR"
+    },
+    {
+     "market_cap_m": 7029.7216,
+     "price_vs_sma200": 0.6802,
+     "return_30d": -0.2584,
+     "return_7d": -0.1047,
+     "revenue_driver": "small unmanned aircraft systems",
+     "signal_rank": null,
+     "stock_vs_spy_20d": -0.0835,
+     "ticker": "AVAV"
+    },
+    {
+     "market_cap_m": 7226.7249,
+     "price_vs_sma200": 1.0384,
+     "return_30d": -1.0,
+     "return_7d": -1.0,
+     "revenue_driver": "aircraft leasing",
+     "signal_rank": null,
+     "stock_vs_spy_20d": 0.0051,
+     "ticker": "AL"
+    },
+    {
+     "market_cap_m": 11298.1667,
+     "price_vs_sma200": 0.8936,
+     "return_30d": -1.0,
+     "return_7d": -1.0,
+     "revenue_driver": "defense electronics and sensors",
+     "signal_rank": null,
+     "stock_vs_spy_20d": 0.0449,
+     "ticker": "DRS"
+    }
+   ],
+   "Energy Technology, Nuclear, LNG, Hydrogen & Emerging Energy Infrastructure": [
+    {
+     "market_cap_m": 16323.4086,
+     "price_vs_sma200": 0.9718,
+     "return_30d": 0.1124,
+     "return_7d": -0.0262,
+     "revenue_driver": "Nuclear power generation",
+     "signal_rank": 1040,
+     "stock_vs_spy_20d": -0.0501,
+     "ticker": "TLN"
+    },
+    {
+     "market_cap_m": 68889.9981,
+     "price_vs_sma200": 1.0465,
+     "return_30d": 0.0819,
+     "return_7d": -0.0077,
+     "revenue_driver": "industrial gas supply",
+     "signal_rank": 1056,
+     "stock_vs_spy_20d": 0.1392,
+     "ticker": "APD"
+    },
+    {
+     "market_cap_m": 81538.919,
+     "price_vs_sma200": 0.8969,
+     "return_30d": -0.0506,
+     "return_7d": -0.0315,
+     "revenue_driver": "nuclear power generation",
+     "signal_rank": 223,
+     "stock_vs_spy_20d": -0.1061,
+     "ticker": "CEG"
+    },
+    {
+     "market_cap_m": 1460.116,
+     "price_vs_sma200": 0.6408,
+     "return_30d": -0.1056,
+     "return_7d": -0.048,
+     "revenue_driver": "silicon anode battery cells",
+     "signal_rank": null,
+     "stock_vs_spy_20d": -0.0907,
+     "ticker": "AMPX"
+    },
+    {
+     "market_cap_m": 16782.8117,
+     "price_vs_sma200": 0.6542,
+     "return_30d": -0.1369,
+     "return_7d": -0.1144,
+     "revenue_driver": "naval nuclear reactors",
+     "signal_rank": 63,
+     "stock_vs_spy_20d": -0.1137,
+     "ticker": "BWXT"
+    },
+    {
+     "market_cap_m": 793.4394,
+     "price_vs_sma200": 0.5263,
+     "return_30d": -0.3461,
+     "return_7d": -0.1033,
+     "revenue_driver": "micro nuclear reactor development",
+     "signal_rank": 1562,
+     "stock_vs_spy_20d": -0.2204,
+     "ticker": "NNE"
+    },
+    {
+     "market_cap_m": 3679.6168,
+     "price_vs_sma200": 0.4518,
+     "return_30d": -0.3809,
+     "return_7d": -0.1316,
+     "revenue_driver": "small modular reactors",
+     "signal_rank": 1983,
+     "stock_vs_spy_20d": -0.266,
+     "ticker": "OKLO"
+    },
+    {
+     "market_cap_m": 144.3747,
+     "price_vs_sma200": 0.4292,
+     "return_30d": -0.3869,
+     "return_7d": -0.2279,
+     "revenue_driver": "advanced nuclear fuel",
+     "signal_rank": 1678,
+     "stock_vs_spy_20d": -0.2527,
+     "ticker": "LTBR"
+    },
+    {
+     "market_cap_m": 51505.0005,
+     "price_vs_sma200": 0.7789,
+     "return_30d": -0.3999,
+     "return_7d": -0.2404,
+     "revenue_driver": "solid oxide fuel cells",
+     "signal_rank": 1963,
+     "stock_vs_spy_20d": -0.3271,
+     "ticker": "BE"
+    },
+    {
+     "market_cap_m": 8051.975,
+     "price_vs_sma200": 0.4108,
+     "return_30d": -0.6309,
+     "return_7d": -0.2621,
+     "revenue_driver": "bitcoin mining operations",
+     "signal_rank": null,
+     "stock_vs_spy_20d": -0.515,
+     "ticker": "CIFR"
+    }
+   ]
+  }
+ },
+ "predictions": {
+  "badge_count": 1,
+  "confidence_score": 0.7622,
+  "conviction_label": "HIGH CONVICTION",
+  "data_quality_flags": [],
+  "ev_score": 0.1714,
+  "is_diamond": false,
+  "passes_tradability_filter": true,
+  "quality_label": "HIGH",
+  "quantiles": {
+   "downside_q10": -0.1947,
+   "downside_q25": -0.0988,
+   "downside_q50": -0.0489,
+   "downside_q75": -0.006,
+   "downside_q90": 0.0065,
+   "path_volatility": 0.0259,
+   "risk_reward": 4.4171,
+   "uncertainty": 0.4525,
+   "upside_q10": 0.0404,
+   "upside_q25": 0.1108,
+   "upside_q50": 0.216,
+   "upside_q75": 0.3443,
+   "upside_q90": 0.4929
+  },
+  "rank": 63,
+  "rank_score": 0.2065,
+  "tradability_filter_reasons": []
+ },
+ "profile": {
+  "_local": {
+   "dividend_yield": 0.0013,
+   "eps_growth_yoy": 0.2173,
+   "pe_ratio": 31.8998,
+   "revenue_growth_yoy": 0.1774,
+   "roe": 0.2724
+  },
+  "beta": 0.738,
+  "betaTTM": null,
+  "ceo": "Rex D. Geveden",
+  "companyName": "BWX Technologies, Inc.",
+  "country": "US",
+  "debtToEquityTTM": null,
+  "description": "BWX Technologies, Inc. operates globally, specializing in the production and sale of nuclear components across the United States, Canada, and other international regions. The company's multifaceted operations are categorized into three distinct segments: Nuclear Operations Group, Nuclear Power Group, and Nuclear Services Group. The Nuclear Operations Group is a pivotal supplier of precision naval and critical nuclear components, including reactors, nuclear fuel, and assemblies, primarily supporting the United States Department of Energy/National Nuclear Security Administration's Naval Nuclear Propulsion Program. This segment also fabricates missile launch tubes for U.S. Navy submarines, produces specialized close-tolerance equipment for various nuclear applications, and is involved in converting Cold War-era stockpiles of high-enriched uranium. Its responsibilities further extend to the receiving, storage, characterization, dissolution, recovery, and purification of uranium-bearing materials, alongside providing research reactor fuel elements for academic and national laboratories, and other defense-related components. The Nuclear Power Group caters to the commercial nuclear sector, offering a comprehensive range of products such as nuclear steam generators, fuel, fuel handling systems, pressure vessels, reactor components, heat exchangers, tooling delivery systems, and specialized containers. This group provides engineering and in-plant services for nuclear power facilities, overseeing the design, manufacturing, commissioning, and servicing of nuclear power generation equipment. It also delivers essential in-plant inspection, maintenance, and modification services, non-destructive examination, and tooling/repair solutions. Moreover, it is a key provider of medical radioisotopes and radiopharmaceuticals for research, diagnostic, and therapeutic applications. Finally, the Nuclear Services Group focuses on critical support functions, encompassing nuclear materials processing, environmental site remediation, and comprehensive management and operating services. This segment is also dedicated to advancing technology for nuclear power sources and plays a role in the design, engineering, licensing, and manufacturing of nuclear reactors. Founded in 1867 as The Babcock & Wilcox Company, the corporation adopted its current name, BWX Technologies, Inc., in June 2015, and is headquartered in Lynchburg, Virginia.",
+  "dividendYielTTM": null,
+  "enterpriseValueOverEBITDATTM": null,
+  "exchangeShortName": "NYSE",
+  "fullTimeEmployees": "10400",
+  "industry": "Aerospace & Defense",
+  "ipoDate": "2010-08-02",
+  "latest_earnings_date": "2026-11-02",
+  "marketCapTTM": null,
+  "mktCap": 10951043545,
+  "peRatioTTM": null,
+  "price": 119.52,
+  "priceToSalesRatioTTM": null,
+  "returnOnEquityTTM": 0.2848,
+  "revenue_description": "BWX Technologies supplies nuclear components and services for defense and commercial applications. Revenue is driven by multi-year government defense contracts and deliveries across platforms, systems, and services, with the DoD budget and international arms sales as demand drivers.",
+  "revenue_description_themes": [
+   "naval nuclear reactor funding",
+   "nuclear weapons modernization",
+   "Columbia-class submarine ramp"
+  ],
+  "revenue_taxonomy": [
+   {
+    "bucket": "Aerospace & Defense Platforms",
+    "matched_tags": [
+     "naval nuclear reactors"
+    ],
+    "path": "Industrials & Transportation › Aerospace Defense & Automation › Aerospace & Defense Platforms",
+    "sector": "Industrials & Transportation",
+    "segment": "Aerospace Defense & Automation"
+   },
+   {
+    "bucket": "Aerospace & Defense Components, Electronics & Aftermarket",
+    "matched_tags": [
+     "nuclear weapons components"
+    ],
+    "path": "Industrials & Transportation › Aerospace Defense & Automation › Aerospace & Defense Components, Electronics & Aftermarket",
+    "sector": "Industrials & Transportation",
+    "segment": "Aerospace Defense & Automation"
+   },
+   {
+    "bucket": "Energy Technology, Nuclear, LNG, Hydrogen & Emerging Energy Infrastructure",
+    "matched_tags": [
+     "government nuclear services"
+    ],
+    "path": "Energy & Utilities › Energy Value Chain › Energy Technology, Nuclear, LNG, Hydrogen & Emerging Energy Infrastructure",
+    "sector": "Energy & Utilities",
+    "segment": "Energy Value Chain"
+   }
+  ],
+  "revenue_themes": [
+   "naval nuclear reactors",
+   "nuclear weapons components",
+   "government nuclear services"
+  ],
+  "sector": "Industrials",
+  "website": "https://www.bwxt.com"
+ },
+ "report": {
+  "display_rank": null,
+  "lane": "risk_avoid",
+  "lane_rank": 31,
+  "setup_label": "broken_trend",
+  "why_now": "Risk/avoid because model and structural analog panels materially disagree, and price is below a non-rising 200-day trend."
+ },
+ "scorecard": {
+  "headline": {
+   "avg_universe_pct": 49,
+   "label": "mixed",
+   "metric_count": 8
+  },
+  "metrics": {
+   "debt_to_equity": {
+    "direction": "lower",
+    "label": "D/E Ratio",
+    "sector": "Industrials",
+    "sector_n": 344,
+    "sector_pct": 14,
+    "universe_n": 2005,
+    "universe_pct": 17,
+    "value": 1.4255
+   },
+   "eps_growth_yoy": {
+    "direction": "higher",
+    "label": "EPS Growth",
+    "sector": "Industrials",
+    "sector_n": 343,
+    "sector_pct": 57,
+    "universe_n": 1823,
+    "universe_pct": 54,
+    "value": 0.2173
+   },
+   "gross_margin": {
+    "direction": "higher",
+    "label": "Gross Margin",
+    "sector": "Industrials",
+    "sector_n": 325,
+    "sector_pct": 24,
+    "universe_n": 1940,
+    "universe_pct": 18,
+    "value": 0.2258
+   },
+   "operating_margin": {
+    "direction": "higher",
+    "label": "Op. Margin",
+    "sector": "Industrials",
+    "sector_n": 325,
+    "sector_pct": 62,
+    "universe_n": 1940,
+    "universe_pct": 53,
+    "value": 0.1189
+   },
+   "pe_ratio": {
+    "direction": "lower",
+    "label": "P/E",
+    "sector": "Industrials",
+    "sector_n": 248,
+    "sector_pct": 35,
+    "universe_n": 1450,
+    "universe_pct": 25,
+    "value": 31.8998
+   },
+   "revenue_growth_yoy": {
+    "direction": "higher",
+    "label": "Rev Growth",
+    "sector": "Industrials",
+    "sector_n": 324,
+    "sector_pct": 77,
+    "universe_n": 1771,
+    "universe_pct": 73,
+    "value": 0.1774
+   },
+   "roe": {
+    "direction": "higher",
+    "label": "ROE",
+    "sector": "Industrials",
+    "sector_n": 346,
+    "sector_pct": 83,
+    "universe_n": 2021,
+    "universe_pct": 83,
+    "value": 0.2724
+   },
+   "roic": {
+    "direction": "higher",
+    "label": "ROIC",
+    "sector": "Industrials",
+    "sector_n": 340,
+    "sector_pct": 68,
+    "universe_n": 1994,
+    "universe_pct": 70,
+    "value": 0.0268
+   }
+  }
+ },
+ "signal_rank": 63,
+ "structural_analogs": {
+  "gp_core_pct": 16.5,
+  "gp_core_ratio": 0.9405,
+  "matches": [
+   {
+    "actual_downside": -0.0714,
+    "actual_return": -0.0714,
+    "actual_upside": 0.4867,
+    "days_in_region": 86,
+    "end_date": "2016-09-28",
+    "end_reason": "reversal",
+    "seq_len": 86,
+    "similarity": 0.5923,
+    "start_date": "2016-01-25",
+    "ticker": "HAIN",
+    "total_distance": 0.2619,
+    "trigger_date": "2016-03-01",
+    "trigger_type": "shallow_runup"
+   },
+   {
+    "actual_downside": -0.1141,
+    "actual_return": -0.1141,
+    "actual_upside": 0.1382,
+    "days_in_region": 64,
+    "end_date": "2018-12-24",
+    "end_reason": "reversal",
+    "seq_len": 64,
+    "similarity": 0.5871,
+    "start_date": "2018-10-26",
+    "ticker": "ON",
+    "total_distance": 0.2663,
+    "trigger_date": "2018-10-31",
+    "trigger_type": "runup"
+   },
+   {
+    "actual_downside": -0.1283,
+    "actual_return": -0.1283,
+    "actual_upside": 0.0191,
+    "days_in_region": 80,
+    "end_date": "2014-11-17",
+    "end_reason": "reversal",
+    "seq_len": 80,
+    "similarity": 0.5721,
+    "start_date": "2014-08-07",
+    "ticker": "KELYA",
+    "total_distance": 0.2792,
+    "trigger_date": "2014-09-04",
+    "trigger_type": "shallow_runup"
+   },
+   {
+    "actual_downside": -0.3059,
+    "actual_return": -0.3059,
+    "actual_upside": 0.0,
+    "days_in_region": 66,
+    "end_date": "2019-01-03",
+    "end_reason": "reversal",
+    "seq_len": 66,
+    "similarity": 0.5702,
+    "start_date": "2018-10-26",
+    "ticker": "VC",
+    "total_distance": 0.2809,
+    "trigger_date": "2018-11-02",
+    "trigger_type": "runup"
+   },
+   {
+    "actual_downside": -0.1335,
+    "actual_return": 0.2356,
+    "actual_upside": 0.2356,
+    "days_in_region": 82,
+    "end_date": "2022-08-16",
+    "end_reason": "reversal",
+    "seq_len": 82,
+    "similarity": 0.5698,
+    "start_date": "2022-03-16",
+    "ticker": "XYL",
+    "total_distance": 0.2812,
+    "trigger_date": "2022-04-12",
+    "trigger_type": "compression"
+   },
+   {
+    "actual_downside": -0.1919,
+    "actual_return": -0.1919,
+    "actual_upside": 0.0,
+    "days_in_region": 67,
+    "end_date": "2018-12-24",
+    "end_reason": "reversal",
+    "seq_len": 67,
+    "similarity": 0.5672,
+    "start_date": "2018-10-24",
+    "ticker": "EDU",
+    "total_distance": 0.2835,
+    "trigger_date": "2018-11-01",
+    "trigger_type": "shallow_runup"
+   },
+   {
+    "actual_downside": -0.0044,
+    "actual_return": 0.2211,
+    "actual_upside": 0.607,
+    "days_in_region": 81,
+    "end_date": "2003-10-22",
+    "end_reason": "reversal",
+    "seq_len": 81,
+    "similarity": 0.5671,
+    "start_date": "2003-03-11",
+    "ticker": "ODP",
+    "total_distance": 0.2836,
+    "trigger_date": "2003-03-18",
+    "trigger_type": "shallow_runup"
+   },
+   {
+    "actual_downside": -0.1306,
+    "actual_return": -0.0208,
+    "actual_upside": 0.0026,
+    "days_in_region": 78,
+    "end_date": "2006-08-03",
+    "end_reason": "new_pattern",
+    "seq_len": 78,
+    "similarity": 0.5668,
+    "start_date": "2006-06-08",
+    "ticker": "CTX",
+    "total_distance": 0.2839,
+    "trigger_date": "2006-07-03",
+    "trigger_type": "shallow_runup"
+   },
+   {
+    "actual_downside": -0.1414,
+    "actual_return": -0.0101,
+    "actual_upside": 0.0505,
+    "days_in_region": 71,
+    "end_date": "2018-09-27",
+    "end_reason": "new_pattern",
+    "seq_len": 71,
+    "similarity": 0.5651,
+    "start_date": "2018-08-15",
+    "ticker": "HBM",
+    "total_distance": 0.2854,
+    "trigger_date": "2018-08-29",
+    "trigger_type": "shallow_runup"
+   },
+   {
+    "actual_downside": -0.1148,
+    "actual_return": -0.1148,
+    "actual_upside": 0.0564,
+    "days_in_region": 75,
+    "end_date": "2014-12-12",
+    "end_reason": "reversal",
+    "seq_len": 75,
+    "similarity": 0.5616,
+    "start_date": "2014-10-10",
+    "ticker": "RAVN",
+    "total_distance": 0.2884,
+    "trigger_date": "2014-10-30",
+    "trigger_type": "shallow_runup"
+   }
+  ],
+  "panel": {
+   "edge": -0.1792,
+   "hit_hi": 0.361,
+   "hit_lo": 0.202,
+   "hit_rate": 0.275,
+   "median_final": -0.1148,
+   "median_pain": 0.1329,
+   "n": 51,
+   "n_eff": 51.0,
+   "p25_final": -0.1921,
+   "p_pain_gt5": 0.765,
+   "return_to_pain": -0.751
+  },
+  "stats": {
+   "avg_similarity": 0.518,
+   "avg_trough": 0.173,
+   "avg_upside": 0.1449,
+   "median_pain": 0.161,
+   "median_return": -0.131,
+   "n_matches": 200,
+   "p25_return": -0.242,
+   "p_pain_gt5": 0.83,
+   "return_to_pain": -0.724,
+   "top5_avg_trough": 0.1506,
+   "top5_avg_upside": 0.1759,
+   "top_similarity": 0.592,
+   "win_rate": 0.24
+  },
+  "total_matches": 200
+ },
+ "ticker": "BWXT",
+ "trending": {
+  "acceleration": -0.0065,
+  "avg_vol_20d": 923068.9784,
+  "base_high_120": 238.42,
+  "breakout_confirmed": 0,
+  "close": 216.65,
+  "momentum_score": 0.6505,
+  "momentum_start": "2025-05-23",
+  "range_20": 0.167,
+  "range_50": 0.2445,
+  "rank": 733,
+  "rank_down": null,
+  "rank_up": 406,
+  "ret_120": 0.1193,
+  "ret_20": 0.0031,
+  "ret_60": 0.156,
+  "rundown_score": 0.9012,
+  "score_date": "2026-05-04",
+  "slope_20": -0.0043,
+  "slope_60": 0.0022,
+  "stage": "sustained",
+  "stage_label": "Trending",
+  "ticker": "BWXT",
+  "total_score": 0.4506,
+  "trend_ratio": 1.1472,
+  "vcp_detected": 0,
+  "vcp_score": 0.3173
+ }
+}

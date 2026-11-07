@@ -1,0 +1,1117 @@
+{
+ "date": "2026-11-06",
+ "detected_regions": {
+  "primary": {
+   "days_in_region": 125,
+   "region_start": "2026-08-07",
+   "trigger_date": "2026-09-23",
+   "trigger_type": "drawdown"
+  },
+  "secondary": [
+   {
+    "confidence_score": 0.8174,
+    "downside_q50": -0.0575,
+    "ev_score": 0.1449,
+    "region_start": "2026-06-01",
+    "seq_len": 172,
+    "trigger_date": "2026-10-09",
+    "trigger_type": "runup",
+    "upside_q25": 0.0906,
+    "upside_q50": 0.1896,
+    "upside_q75": 0.3213
+   }
+  ]
+ },
+ "feature_attribution": {
+  "macro_driver_count": 15,
+  "risk_flags": [
+   "high_volatility"
+  ],
+  "top_drivers": [
+   {
+    "direction": "negative",
+    "feature": "dollar_volume",
+    "feature_value": 97914976.0,
+    "importance": 0.0003,
+    "importance_pct": 0.3326,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "positive",
+    "feature": "sector_return_60d",
+    "feature_value": -0.0888,
+    "importance": 0.0002,
+    "importance_pct": 0.1807,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "negative",
+    "feature": "return_1d",
+    "feature_value": 0.0116,
+    "importance": 0.0002,
+    "importance_pct": 0.1711,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "positive",
+    "feature": "price_vs_sma200",
+    "feature_value": 1.3828,
+    "importance": 0.0001,
+    "importance_pct": 0.1604,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "negative",
+    "feature": "williams_14",
+    "feature_value": -25.9211,
+    "importance": 0.0001,
+    "importance_pct": 0.1551,
+    "method": "integrated_gradients"
+   }
+  ]
+ },
+ "fundamentals": {
+  "accrual": 0.1928,
+  "adx_14": 58.5421,
+  "altman_z_score": 3.11,
+  "amihud_illiquidity": 0.0003,
+  "avg_volume": 603506.2396,
+  "beta_252d": 0.1633,
+  "book_value_per_share": 4.5852,
+  "correlation_spy_60d": 0.0833,
+  "current_liabilities": 414.0,
+  "current_ratio": 1.7488,
+  "daily_earnings_yield": 0.0406,
+  "daily_fcf_yield": -0.021,
+  "daily_pb": 22.2268,
+  "daily_pe": 24.653,
+  "daily_ps": 3.2058,
+  "days_since_52w_high": 0.0,
+  "debt_ebitda": 2.093,
+  "debt_to_equity": 3.7143,
+  "dividend_yield": 0.0,
+  "dollar_volume_20d_avg": 63114697.2688,
+  "earnings_quality": 0.6293,
+  "ebitda_growth_yoy": 0.1431,
+  "enterprise_value": 7590.4512,
+  "eps_basic": 1.69,
+  "eps_cagr_3y": 0.2457,
+  "eps_cagr_5y": 0.2327,
+  "eps_diluted": 1.65,
+  "eps_growth_accel": 0.0264,
+  "eps_growth_qoq": -0.0611,
+  "eps_growth_yoy": 0.1447,
+  "eps_growth_yoy_q2": 0.1183,
+  "eps_growth_yoy_q3": 0.1437,
+  "eps_growth_yoy_q4": 0.1437,
+  "eps_growth_yoy_q5": 0.1776,
+  "eps_growth_yoy_q6": 0.3218,
+  "eps_growth_yoy_q7": 0.3624,
+  "eps_growth_yoy_q8": 0.4319,
+  "eps_history_8q": [
+   0.11,
+   0.49,
+   1.48,
+   1.42,
+   0.0282,
+   0.57,
+   1.76,
+   1.65
+  ],
+  "eps_ttm": 3.9383,
+  "ev_to_ebitda": 13.5786,
+  "ev_to_fcf": 116.7762,
+  "ev_to_sales": 11.5885,
+  "fcf_growth_yoy": 0.1404,
+  "fcf_margin": 0.0992,
+  "fcf_per_share": 0.9461,
+  "gross_margin": 0.5408,
+  "gross_margin_change_yoy": -0.0211,
+  "gross_margin_history": [
+   0.5498,
+   0.5529,
+   0.5528,
+   0.5425,
+   0.5466,
+   0.5408
+  ],
+  "inc_roic": -0.1552,
+  "interest_coverage": 7.4533,
+  "is_pre_revenue": false,
+  "margin_vs_sector_median": null,
+  "market_cap_ratio": 7001.4512,
+  "net_income": 116.0,
+  "net_margin": 0.13,
+  "operating_income": 167.0,
+  "operating_margin": 0.2271,
+  "operating_margin_change_yoy": -0.0027,
+  "pb_ratio": 21.1749,
+  "pe_percentile_1y": 0.004,
+  "pe_ratio": 24.653,
+  "peg_trailing": 1.6492,
+  "piotroski_f_score": 3.0,
+  "price_vs_high_52w": 1.0,
+  "price_vs_sma200": 1.3828,
+  "ps_percentile_1y": 0.004,
+  "ps_ratio": 3.1691,
+  "quarter_labels_8q": [
+   "Q4 '24",
+   "Q1 '25",
+   "Q2 '25",
+   "Q3 '25",
+   "Q4 '25",
+   "Q1 '26",
+   "Q2 '26",
+   "Q3 '26"
+  ],
+  "quarterly_eps_growth_yoy": 0.162,
+  "quarterly_eps_growth_yoy_8q": [
+   0.0,
+   0.1395,
+   0.2542,
+   0.0923,
+   -0.7436,
+   0.1633,
+   0.1892,
+   0.162
+  ],
+  "quarterly_revenue_growth_yoy": 0.0616,
+  "quarterly_revenue_growth_yoy_8q": [
+   0.0437,
+   0.127,
+   0.1384,
+   0.1405,
+   0.1335,
+   0.0587,
+   0.0454,
+   0.0616
+  ],
+  "revenue_cagr_3y": 0.0758,
+  "revenue_cagr_5y": 0.0661,
+  "revenue_growth_accel": -0.022,
+  "revenue_growth_qoq": 0.0155,
+  "revenue_growth_yoy": 0.0695,
+  "revenue_growth_yoy_q2": 0.0916,
+  "revenue_growth_yoy_q3": 0.12,
+  "revenue_growth_yoy_q4": 0.1356,
+  "revenue_growth_yoy_q5": 0.1177,
+  "revenue_growth_yoy_q6": 0.0862,
+  "revenue_growth_yoy_q7": 0.0558,
+  "revenue_growth_yoy_q8": 0.0354,
+  "revenue_history_8q": [
+   382.0,
+   426.0,
+   617.0,
+   617.0,
+   433.0,
+   451.0,
+   645.0,
+   655.0
+  ],
+  "revenue_per_share": 9.5342,
+  "roa": 0.1288,
+  "roce": 0.2787,
+  "roe": 0.9482,
+  "roic": 0.157,
+  "rsi_14": 88.4028,
+  "sector_momentum": 0.0725,
+  "share_dilution_1y": -0.0172,
+  "stock_vs_sector_20d": 0.233,
+  "stock_vs_spy_20d": 0.272,
+  "total_assets": 2223.0,
+  "vol_regime": 1.1229,
+  "volatility_20d": 0.0226,
+  "volatility_60d": 0.0201,
+  "w52_high": 103.07,
+  "w52_low": 48.47
+ },
+ "market_characters": [
+  {
+   "id": "g5",
+   "name": "Quality Compressed"
+  }
+ ],
+ "model_analogs": {
+  "matches": [
+   {
+    "actual_downside": -0.201,
+    "actual_return": -0.201,
+    "actual_upside": 0.0176,
+    "days_in_region": 76,
+    "end_date": "2005-12-06",
+    "end_reason": "reversal",
+    "similarity": 0.9608,
+    "start_date": "2005-09-21",
+    "ticker": "AEO",
+    "trigger_date": "2005-10-03",
+    "trigger_type": "runup"
+   },
+   {
+    "actual_downside": -0.1836,
+    "actual_return": -0.1836,
+    "actual_upside": 0.0384,
+    "days_in_region": 61,
+    "end_date": "2018-12-24",
+    "end_reason": "reversal",
+    "similarity": 0.9589,
+    "start_date": "2018-10-24",
+    "ticker": "CMG",
+    "trigger_date": "2018-11-01",
+    "trigger_type": "shallow_runup"
+   },
+   {
+    "actual_downside": -0.0194,
+    "actual_return": 0.149,
+    "actual_upside": 0.149,
+    "days_in_region": 166,
+    "end_date": "2006-01-10",
+    "end_reason": "reversal",
+    "similarity": 0.9588,
+    "start_date": "2005-07-28",
+    "ticker": "WCC",
+    "trigger_date": "2005-09-23",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": -0.0429,
+    "actual_return": 0.2434,
+    "actual_upside": 0.2434,
+    "days_in_region": 180,
+    "end_date": "2005-12-14",
+    "end_reason": "reversal",
+    "similarity": 0.958,
+    "start_date": "2005-06-17",
+    "ticker": "PNRA",
+    "trigger_date": "2005-07-29",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": -0.0577,
+    "actual_return": -0.0368,
+    "actual_upside": 0.1804,
+    "days_in_region": 173,
+    "end_date": "2021-07-19",
+    "end_reason": "reversal",
+    "similarity": 0.957,
+    "start_date": "2021-01-27",
+    "ticker": "ETRN",
+    "trigger_date": "2021-02-11",
+    "trigger_type": "shallow_runup"
+   },
+   {
+    "actual_downside": -0.0373,
+    "actual_return": 0.1023,
+    "actual_upside": 0.1023,
+    "days_in_region": 126,
+    "end_date": "2005-11-14",
+    "end_reason": "reversal",
+    "similarity": 0.9569,
+    "start_date": "2005-07-11",
+    "ticker": "GHCI",
+    "trigger_date": "2005-08-04",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": -0.1731,
+    "actual_return": -0.0779,
+    "actual_upside": 0.0263,
+    "days_in_region": 43,
+    "end_date": "2005-11-29",
+    "end_reason": "new_pattern",
+    "similarity": 0.9566,
+    "start_date": "2005-10-17",
+    "ticker": "BLUD",
+    "trigger_date": "2005-10-21",
+    "trigger_type": "shallow_runup"
+   },
+   {
+    "actual_downside": -0.1999,
+    "actual_return": -0.1999,
+    "actual_upside": 0.3316,
+    "days_in_region": 296,
+    "end_date": "2006-07-14",
+    "end_reason": "reversal",
+    "similarity": 0.9565,
+    "start_date": "2005-09-21",
+    "ticker": "HZO",
+    "trigger_date": "2005-09-27",
+    "trigger_type": "shallow_runup"
+   },
+   {
+    "actual_downside": -0.2412,
+    "actual_return": -0.2412,
+    "actual_upside": 0.0184,
+    "days_in_region": 74,
+    "end_date": "2018-12-24",
+    "end_reason": "reversal",
+    "similarity": 0.9559,
+    "start_date": "2018-10-11",
+    "ticker": "ANET",
+    "trigger_date": "2018-11-05",
+    "trigger_type": "runup"
+   },
+   {
+    "actual_downside": -0.1238,
+    "actual_return": -0.1238,
+    "actual_upside": 0.0724,
+    "days_in_region": 118,
+    "end_date": "2006-01-18",
+    "end_reason": "reversal",
+    "similarity": 0.9554,
+    "start_date": "2005-09-22",
+    "ticker": "TXRH",
+    "trigger_date": "2005-10-24",
+    "trigger_type": "runup"
+   }
+  ],
+  "stats": {
+   "avg_max_drawdown": 0.0951,
+   "avg_similarity": 0.954,
+   "avg_trough": 0.0951,
+   "avg_upside": 0.1673,
+   "best_return": 0.6006,
+   "downside_range": [
+    -0.3052,
+    0.0
+   ],
+   "median_return": 0.0854,
+   "n_matches": 50,
+   "outcome_agreement": true,
+   "return_p25": -0.0768,
+   "return_p5": -0.2333,
+   "return_p75": 0.1773,
+   "return_p95": 0.2786,
+   "sim_weighted_win_rate": 0.62,
+   "top5_avg_trough": 0.1009,
+   "top5_avg_upside": 0.1258,
+   "top_similarity": 0.961,
+   "upside_range": [
+    0.0,
+    0.6832
+   ],
+   "win_rate": 0.62,
+   "worst_return": -0.3052,
+   "years_span": 13
+  },
+  "total_matches": 50
+ },
+ "peer_group": {
+  "buckets": [
+   "Local Consumer Services, Auto Retail & Personal Services",
+   "Property & Casualty Insurance Premiums",
+   "Vertical Technology Platforms & Marketplaces"
+  ],
+  "groups": {
+   "Local Consumer Services, Auto Retail & Personal Services": [
+    {
+     "market_cap_m": 1249.9615,
+     "price_vs_sma200": 1.5002,
+     "return_30d": 0.5672,
+     "return_7d": 0.0057,
+     "revenue_driver": "digital wholesale vehicle auctions",
+     "signal_rank": null,
+     "stock_vs_spy_20d": -0.0207,
+     "ticker": "ACVA"
+    },
+    {
+     "market_cap_m": 7535.4273,
+     "price_vs_sma200": 1.3836,
+     "return_30d": 0.5406,
+     "return_7d": 0.3306,
+     "revenue_driver": "residential security monitoring",
+     "signal_rank": 1013,
+     "stock_vs_spy_20d": 0.5888,
+     "ticker": "ADT"
+    },
+    {
+     "market_cap_m": 6921.4057,
+     "price_vs_sma200": 1.3828,
+     "return_30d": 0.3122,
+     "return_7d": 0.1531,
+     "revenue_driver": "home warranty plans",
+     "signal_rank": 513,
+     "stock_vs_spy_20d": 0.272,
+     "ticker": "FTDR"
+    },
+    {
+     "market_cap_m": 29766.5535,
+     "price_vs_sma200": 0.994,
+     "return_30d": 0.158,
+     "return_7d": 0.1032,
+     "revenue_driver": "online vehicle auctions",
+     "signal_rank": 1294,
+     "stock_vs_spy_20d": 0.2248,
+     "ticker": "CPRT"
+    },
+    {
+     "market_cap_m": 6467.04,
+     "price_vs_sma200": 0.9542,
+     "return_30d": 0.1019,
+     "return_7d": 0.1207,
+     "revenue_driver": "auto dealerships",
+     "signal_rank": 1825,
+     "stock_vs_spy_20d": 0.2245,
+     "ticker": "AN"
+    },
+    {
+     "market_cap_m": 2364.715,
+     "price_vs_sma200": 1.1642,
+     "return_30d": 0.0982,
+     "return_7d": 0.0174,
+     "revenue_driver": "personal care services",
+     "signal_rank": 100,
+     "stock_vs_spy_20d": 0.1426,
+     "ticker": "ADUS"
+    },
+    {
+     "market_cap_m": 3790.8006,
+     "price_vs_sma200": 0.9992,
+     "return_30d": 0.0945,
+     "return_7d": 0.0471,
+     "revenue_driver": "new vehicle sales",
+     "signal_rank": 1031,
+     "stock_vs_spy_20d": 0.2645,
+     "ticker": "ABG"
+    },
+    {
+     "market_cap_m": 2936.7175,
+     "price_vs_sma200": 1.0262,
+     "return_30d": 0.078,
+     "return_7d": 0.0773,
+     "revenue_driver": "dealer listing subscriptions",
+     "signal_rank": 656,
+     "stock_vs_spy_20d": 0.2248,
+     "ticker": "CARG"
+    },
+    {
+     "market_cap_m": 7210.7508,
+     "price_vs_sma200": 1.1358,
+     "return_30d": 0.031,
+     "return_7d": -0.01,
+     "revenue_driver": "hospice care delivery",
+     "signal_rank": 1111,
+     "stock_vs_spy_20d": 0.1118,
+     "ticker": "CHE"
+    },
+    {
+     "market_cap_m": 3787.9869,
+     "price_vs_sma200": 0.7323,
+     "return_30d": -0.1874,
+     "return_7d": -0.2276,
+     "revenue_driver": "center-based care",
+     "signal_rank": 1346,
+     "stock_vs_spy_20d": -0.174,
+     "ticker": "BFAM"
+    }
+   ],
+   "Property & Casualty Insurance Premiums": [
+    {
+     "market_cap_m": 6921.4057,
+     "price_vs_sma200": 1.3828,
+     "return_30d": 0.3122,
+     "return_7d": 0.1531,
+     "revenue_driver": "home warranty plans",
+     "signal_rank": 513,
+     "stock_vs_spy_20d": 0.272,
+     "ticker": "FTDR"
+    },
+    {
+     "market_cap_m": 15368.3565,
+     "price_vs_sma200": 1.1983,
+     "return_30d": 0.1585,
+     "return_7d": 0.0772,
+     "revenue_driver": "mobile device protection",
+     "signal_rank": 1123,
+     "stock_vs_spy_20d": 0.2073,
+     "ticker": "AIZ"
+    },
+    {
+     "market_cap_m": 70408.1589,
+     "price_vs_sma200": 1.1075,
+     "return_30d": 0.1196,
+     "return_7d": 0.0184,
+     "revenue_driver": "auto insurance",
+     "signal_rank": 651,
+     "stock_vs_spy_20d": 0.166,
+     "ticker": "ALL"
+    },
+    {
+     "market_cap_m": 13040.2154,
+     "price_vs_sma200": 1.128,
+     "return_30d": 0.1181,
+     "return_7d": 0.0283,
+     "revenue_driver": "specialty casualty insurance",
+     "signal_rank": 506,
+     "stock_vs_spy_20d": 0.1508,
+     "ticker": "AFG"
+    },
+    {
+     "market_cap_m": 500.5727,
+     "price_vs_sma200": 0.9418,
+     "return_30d": 0.0681,
+     "return_7d": -0.0764,
+     "revenue_driver": "property & casualty insurance premiums",
+     "signal_rank": 383,
+     "stock_vs_spy_20d": 0.0819,
+     "ticker": "ACIC"
+    },
+    {
+     "market_cap_m": 132266.2649,
+     "price_vs_sma200": 1.0096,
+     "return_30d": 0.0483,
+     "return_7d": -0.0267,
+     "revenue_driver": "commercial insurance premiums",
+     "signal_rank": 418,
+     "stock_vs_spy_20d": 0.0645,
+     "ticker": "AIG"
+    },
+    {
+     "market_cap_m": 6897.7969,
+     "price_vs_sma200": 1.0422,
+     "return_30d": -0.0115,
+     "return_7d": -0.0281,
+     "revenue_driver": "private mortgage insurance",
+     "signal_rank": 21,
+     "stock_vs_spy_20d": 0.0653,
+     "ticker": "ACT"
+    },
+    {
+     "market_cap_m": 11893.9263,
+     "price_vs_sma200": 0.913,
+     "return_30d": -0.016,
+     "return_7d": -0.0162,
+     "revenue_driver": "consumer auto loans",
+     "signal_rank": 1292,
+     "stock_vs_spy_20d": 0.0708,
+     "ticker": "ALLY"
+    },
+    {
+     "market_cap_m": 778.7437,
+     "price_vs_sma200": 0.9123,
+     "return_30d": -0.0395,
+     "return_7d": -0.078,
+     "revenue_driver": "professional employer organization",
+     "signal_rank": 433,
+     "stock_vs_spy_20d": -0.0017,
+     "ticker": "BBSI"
+    },
+    {
+     "market_cap_m": 395.7008,
+     "price_vs_sma200": 0.6431,
+     "return_30d": -0.1667,
+     "return_7d": -0.2257,
+     "revenue_driver": "workers' compensation premiums",
+     "signal_rank": 472,
+     "stock_vs_spy_20d": -0.1421,
+     "ticker": "AMSF"
+    }
+   ],
+   "Vertical Technology Platforms & Marketplaces": [
+    {
+     "market_cap_m": 14232.2689,
+     "price_vs_sma200": 1.3268,
+     "return_30d": 0.3457,
+     "return_7d": -0.0051,
+     "revenue_driver": "grocery delivery marketplace",
+     "signal_rank": 920,
+     "stock_vs_spy_20d": 0.2722,
+     "ticker": "CART"
+    },
+    {
+     "market_cap_m": 6921.4057,
+     "price_vs_sma200": 1.3828,
+     "return_30d": 0.3122,
+     "return_7d": 0.1531,
+     "revenue_driver": "home warranty plans",
+     "signal_rank": 513,
+     "stock_vs_spy_20d": 0.272,
+     "ticker": "FTDR"
+    },
+    {
+     "market_cap_m": 811.0643,
+     "price_vs_sma200": 1.2614,
+     "return_30d": 0.2248,
+     "return_7d": 0.2203,
+     "revenue_driver": "dealer advertising subscriptions",
+     "signal_rank": 1047,
+     "stock_vs_spy_20d": 0.4302,
+     "ticker": "CARS"
+    },
+    {
+     "market_cap_m": 5014.4551,
+     "price_vs_sma200": 1.2558,
+     "return_30d": 0.1299,
+     "return_7d": 0.1256,
+     "revenue_driver": "property management SaaS",
+     "signal_rank": 1220,
+     "stock_vs_spy_20d": 0.1965,
+     "ticker": "APPF"
+    },
+    {
+     "market_cap_m": 5637.0737,
+     "price_vs_sma200": 1.0389,
+     "return_30d": 0.0885,
+     "return_7d": 0.1134,
+     "revenue_driver": "residential real estate brokerage",
+     "signal_rank": 1460,
+     "stock_vs_spy_20d": 0.1427,
+     "ticker": "COMP"
+    },
+    {
+     "market_cap_m": 2936.7175,
+     "price_vs_sma200": 1.0262,
+     "return_30d": 0.078,
+     "return_7d": 0.0773,
+     "revenue_driver": "dealer listing subscriptions",
+     "signal_rank": 656,
+     "stock_vs_spy_20d": 0.2248,
+     "ticker": "CARG"
+    },
+    {
+     "market_cap_m": 2606167.7586,
+     "price_vs_sma200": 1.063,
+     "return_30d": 0.0386,
+     "return_7d": 0.0185,
+     "revenue_driver": "cloud infrastructure",
+     "signal_rank": 1713,
+     "stock_vs_spy_20d": 0.0434,
+     "ticker": "AMZN"
+    },
+    {
+     "market_cap_m": 4904271.5607,
+     "price_vs_sma200": 1.1458,
+     "return_30d": 0.0038,
+     "return_7d": -0.0042,
+     "revenue_driver": "iphone sales",
+     "signal_rank": 1644,
+     "stock_vs_spy_20d": 0.0724,
+     "ticker": "AAPL"
+    },
+    {
+     "market_cap_m": 1706.6325,
+     "price_vs_sma200": 0.3423,
+     "return_30d": -0.4553,
+     "return_7d": -0.267,
+     "revenue_driver": "iBuying home resales",
+     "signal_rank": 1554,
+     "stock_vs_spy_20d": -0.314,
+     "ticker": "OPEN"
+    },
+    {
+     "market_cap_m": 267.9677,
+     "price_vs_sma200": 0.8828,
+     "return_30d": -1.0,
+     "return_7d": -1.0,
+     "revenue_driver": "home services marketplace",
+     "signal_rank": null,
+     "stock_vs_spy_20d": 0.0111,
+     "ticker": "ANGI"
+    }
+   ]
+  }
+ },
+ "predictions": {
+  "badge_count": 0,
+  "confidence_score": 0.5324,
+  "conviction_label": "SPECULATIVE",
+  "data_quality_flags": [],
+  "ev_score": 0.1114,
+  "is_diamond": false,
+  "passes_tradability_filter": true,
+  "quality_label": "HIGH",
+  "quantiles": {
+   "downside_q10": -0.2617,
+   "downside_q25": -0.1483,
+   "downside_q50": -0.0858,
+   "downside_q75": -0.0239,
+   "downside_q90": 0.0017,
+   "path_volatility": 0.0316,
+   "risk_reward": 2.199,
+   "uncertainty": 0.4629,
+   "upside_q10": 0.0285,
+   "upside_q25": 0.0829,
+   "upside_q50": 0.1887,
+   "upside_q75": 0.3106,
+   "upside_q90": 0.4914
+  },
+  "rank": 513,
+  "rank_score": 0.0838,
+  "tradability_filter_reasons": []
+ },
+ "profile": {
+  "_local": {
+   "dividend_yield": 0.0,
+   "eps_growth_yoy": 0.1447,
+   "pe_ratio": 23.9459,
+   "revenue_growth_yoy": 0.0695,
+   "roe": 0.9482
+  },
+  "beta": 1.532,
+  "betaTTM": null,
+  "ceo": "William C. Cobb",
+  "companyName": "Frontdoor, Inc.",
+  "country": "US",
+  "debtToEquityTTM": null,
+  "description": "Frontdoor, Inc. operates as a U.S.-based provider of extensive home service plans. These comprehensive plans are designed to cover the repair or replacement of key components for roughly two dozen household systems and appliances. This broad coverage includes critical areas such as electrical infrastructure, plumbing, water heating units, and major kitchen equipment like refrigerators, dishwashers, and ranges/ovens/cooktops. Furthermore, it extends to electronics, swimming pools, spa components and their pumps, and central heating, ventilation, and air conditioning (HVAC) systems. Beyond its core service offerings, Frontdoor, Inc. also manages ProConnect, an on-demand business for various home service requirements, and Streem, an innovative technology platform. Streem leverages augmented reality, computer vision, and machine learning to empower home service professionals, enabling them to diagnose problems and perform repairs with enhanced speed and accuracy. The company reaches its residential clientele through a portfolio of recognized brands, which include American Home Shield, HSA, Landmark Home Warranty, OneGuard, Frontdoor, and Streem. Established in 1971, Frontdoor, Inc. has its corporate headquarters situated in Memphis, Tennessee.",
+  "dividendYielTTM": null,
+  "enterpriseValueOverEBITDATTM": null,
+  "exchangeShortName": "NASDAQ",
+  "fullTimeEmployees": "2034",
+  "industry": "Personal Products & Services",
+  "ipoDate": "2018-09-13",
+  "latest_earnings_date": "2026-11-05",
+  "marketCapTTM": null,
+  "mktCap": 6688852050,
+  "peRatioTTM": null,
+  "price": 97.09,
+  "priceToSalesRatioTTM": null,
+  "returnOnEquityTTM": 1.0607,
+  "revenue_description": "Frontdoor provides home-service plans and warranties. Revenue is driven by unit volume growth and pricing realization in its core end markets, with new product introductions and geographic expansion as incremental catalysts.",
+  "revenue_description_themes": [
+   "home warranty pricing power",
+   "contract renewal rates",
+   "service network cost optimization"
+  ],
+  "revenue_taxonomy": [
+   {
+    "bucket": "Property & Casualty Insurance Premiums",
+    "matched_tags": [
+     "home warranty plans"
+    ],
+    "path": "Financials › Capital Markets Insurance & Investments › Property & Casualty Insurance Premiums",
+    "sector": "Financials",
+    "segment": "Capital Markets Insurance & Investments"
+   },
+   {
+    "bucket": "Local Consumer Services, Auto Retail & Personal Services",
+    "matched_tags": [
+     "appliance repair services"
+    ],
+    "path": "Consumer Services & Leisure › Gaming Education & Local Services › Local Consumer Services, Auto Retail & Personal Services",
+    "sector": "Consumer Services & Leisure",
+    "segment": "Gaming Education & Local Services"
+   },
+   {
+    "bucket": "Vertical Technology Platforms & Marketplaces",
+    "matched_tags": [
+     "home service networks"
+    ],
+    "path": "Technology › Tech Enabled Services & Infrastructure › Vertical Technology Platforms & Marketplaces",
+    "sector": "Technology",
+    "segment": "Tech Enabled Services & Infrastructure"
+   }
+  ],
+  "revenue_themes": [
+   "home warranty plans",
+   "appliance repair services",
+   "home service networks"
+  ],
+  "sector": "Consumer Cyclical",
+  "website": "https://www.frontdoorhome.com"
+ },
+ "report": null,
+ "scorecard": {
+  "headline": {
+   "avg_universe_pct": 58,
+   "label": "mixed",
+   "metric_count": 8
+  },
+  "metrics": {
+   "debt_to_equity": {
+    "direction": "lower",
+    "label": "D/E Ratio",
+    "sector": "Financials",
+    "sector_n": 307,
+    "sector_pct": 3,
+    "universe_n": 2005,
+    "universe_pct": 5,
+    "value": 3.7143
+   },
+   "eps_growth_yoy": {
+    "direction": "higher",
+    "label": "EPS Growth",
+    "sector": "Financials",
+    "sector_n": 147,
+    "sector_pct": 50,
+    "universe_n": 1823,
+    "universe_pct": 48,
+    "value": 0.1447
+   },
+   "gross_margin": {
+    "direction": "higher",
+    "label": "Gross Margin",
+    "sector": "Financials",
+    "sector_n": 307,
+    "sector_pct": 19,
+    "universe_n": 1940,
+    "universe_pct": 56,
+    "value": 0.5408
+   },
+   "operating_margin": {
+    "direction": "higher",
+    "label": "Op. Margin",
+    "sector": "Financials",
+    "sector_n": 307,
+    "sector_pct": 49,
+    "universe_n": 1940,
+    "universe_pct": 78,
+    "value": 0.2271
+   },
+   "pe_ratio": {
+    "direction": "lower",
+    "label": "P/E",
+    "sector": "Financials",
+    "sector_n": 297,
+    "sector_pct": 13,
+    "universe_n": 1450,
+    "universe_pct": 40,
+    "value": 23.9459
+   },
+   "revenue_growth_yoy": {
+    "direction": "higher",
+    "label": "Rev Growth",
+    "sector": "Financials",
+    "sector_n": 146,
+    "sector_pct": 48,
+    "universe_n": 1771,
+    "universe_pct": 46,
+    "value": 0.0695
+   },
+   "roe": {
+    "direction": "higher",
+    "label": "ROE",
+    "sector": "Financials",
+    "sector_n": 308,
+    "sector_pct": 99,
+    "universe_n": 2021,
+    "universe_pct": 96,
+    "value": 0.9482
+   },
+   "roic": {
+    "direction": "higher",
+    "label": "ROIC",
+    "sector": "Financials",
+    "sector_n": 306,
+    "sector_pct": 97,
+    "universe_n": 1994,
+    "universe_pct": 92,
+    "value": 0.0641
+   }
+  }
+ },
+ "signal_rank": 513,
+ "structural_analogs": {
+  "gp_core_pct": 55.8,
+  "gp_core_ratio": 1.3849,
+  "matches": [
+   {
+    "actual_downside": -0.0446,
+    "actual_return": 0.1139,
+    "actual_upside": 0.1139,
+    "days_in_region": 116,
+    "end_date": "2006-01-09",
+    "end_reason": "reversal",
+    "seq_len": 116,
+    "similarity": 0.5844,
+    "start_date": "2005-07-25",
+    "ticker": "CPKI",
+    "total_distance": 0.2686,
+    "trigger_date": "2005-09-06",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": -0.1899,
+    "actual_return": -0.0562,
+    "actual_upside": 0.0407,
+    "days_in_region": 137,
+    "end_date": "1998-01-27",
+    "end_reason": "reversal",
+    "seq_len": 137,
+    "similarity": 0.5828,
+    "start_date": "1997-07-16",
+    "ticker": "MODG",
+    "total_distance": 0.27,
+    "trigger_date": "1997-10-31",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": -0.1248,
+    "actual_return": 0.1015,
+    "actual_upside": 0.1015,
+    "days_in_region": 120,
+    "end_date": "2022-03-22",
+    "end_reason": "reversal",
+    "seq_len": 120,
+    "similarity": 0.5795,
+    "start_date": "2021-05-10",
+    "ticker": "HSIC",
+    "total_distance": 0.2728,
+    "trigger_date": "2021-06-30",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": 0.0,
+    "actual_return": 0.301,
+    "actual_upside": 0.301,
+    "days_in_region": 127,
+    "end_date": "2005-08-11",
+    "end_reason": "reversal",
+    "seq_len": 127,
+    "similarity": 0.576,
+    "start_date": "2005-03-22",
+    "ticker": "VPI",
+    "total_distance": 0.2759,
+    "trigger_date": "2005-05-10",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": -0.0326,
+    "actual_return": 0.0968,
+    "actual_upside": 0.0968,
+    "days_in_region": 125,
+    "end_date": "2019-02-25",
+    "end_reason": "reversal",
+    "seq_len": 125,
+    "similarity": 0.5724,
+    "start_date": "2018-10-09",
+    "ticker": "WAAS",
+    "total_distance": 0.279,
+    "trigger_date": "2018-10-15",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": -0.0396,
+    "actual_return": 0.0904,
+    "actual_upside": 0.0904,
+    "days_in_region": 124,
+    "end_date": "2017-10-04",
+    "end_reason": "reversal",
+    "seq_len": 124,
+    "similarity": 0.5719,
+    "start_date": "2017-05-04",
+    "ticker": "MGPI",
+    "total_distance": 0.2794,
+    "trigger_date": "2017-06-06",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": -0.1827,
+    "actual_return": -0.1827,
+    "actual_upside": 0.0771,
+    "days_in_region": 200,
+    "end_date": "2006-03-14",
+    "end_reason": "reversal",
+    "seq_len": 200,
+    "similarity": 0.5697,
+    "start_date": "2005-02-09",
+    "ticker": "WFM",
+    "total_distance": 0.2814,
+    "trigger_date": "2005-08-01",
+    "trigger_type": "runup"
+   },
+   {
+    "actual_downside": -0.1043,
+    "actual_return": -0.1043,
+    "actual_upside": 0.0362,
+    "days_in_region": 172,
+    "end_date": "2007-06-26",
+    "end_reason": "reversal",
+    "seq_len": 172,
+    "similarity": 0.5681,
+    "start_date": "2006-11-01",
+    "ticker": "COGN",
+    "total_distance": 0.2827,
+    "trigger_date": "2007-04-16",
+    "trigger_type": "runup"
+   },
+   {
+    "actual_downside": -0.1019,
+    "actual_return": -0.1019,
+    "actual_upside": 0.0133,
+    "days_in_region": 176,
+    "end_date": "2008-03-20",
+    "end_reason": "reversal",
+    "seq_len": 176,
+    "similarity": 0.5675,
+    "start_date": "2007-09-10",
+    "ticker": "UPL",
+    "total_distance": 0.2833,
+    "trigger_date": "2008-02-25",
+    "trigger_type": "runup"
+   },
+   {
+    "actual_downside": -0.0542,
+    "actual_return": 0.1557,
+    "actual_upside": 0.1557,
+    "days_in_region": 120,
+    "end_date": "2015-10-29",
+    "end_reason": "reversal",
+    "seq_len": 120,
+    "similarity": 0.5668,
+    "start_date": "2015-05-20",
+    "ticker": "FLO",
+    "total_distance": 0.2839,
+    "trigger_date": "2015-07-07",
+    "trigger_type": "shallow_drawdown"
+   }
+  ],
+  "panel": {
+   "edge": 0.0041,
+   "hit_hi": 0.691,
+   "hit_lo": 0.518,
+   "hit_rate": 0.608,
+   "median_final": 0.0793,
+   "median_pain": 0.0542,
+   "n": 51,
+   "n_eff": 51.0,
+   "p25_final": -0.1043,
+   "p_pain_gt5": 0.529,
+   "return_to_pain": 1.068
+  },
+  "stats": {
+   "avg_similarity": 0.543,
+   "avg_trough": 0.0995,
+   "avg_upside": 0.1322,
+   "median_pain": 0.0691,
+   "median_return": 0.0012,
+   "n_matches": 200,
+   "p25_return": -0.1287,
+   "p_pain_gt5": 0.63,
+   "return_to_pain": 0.013,
+   "top5_avg_trough": 0.0784,
+   "top5_avg_upside": 0.1308,
+   "top_similarity": 0.584,
+   "win_rate": 0.5
+  },
+  "total_matches": 200
+ },
+ "ticker": "FTDR",
+ "trending": {
+  "acceleration": 0.0092,
+  "avg_vol_20d": 711396.6775,
+  "base_high_120": 95.98,
+  "breakout_confirmed": 0,
+  "close": 97.09,
+  "momentum_score": 0.9355,
+  "momentum_start": "2026-04-13",
+  "range_20": 0.2915,
+  "range_50": 0.338,
+  "rank": 425,
+  "rank_down": null,
+  "rank_up": 200,
+  "ret_120": 0.5304,
+  "ret_20": 0.2167,
+  "ret_60": 0.1468,
+  "rundown_score": 0.1329,
+  "score_date": "2026-11-06",
+  "slope_20": 0.01,
+  "slope_60": 0.0008,
+  "stage": "sustained",
+  "stage_label": "Trending",
+  "ticker": "FTDR",
+  "total_score": 0.4569,
+  "trend_ratio": 1.338,
+  "vcp_detected": 0,
+  "vcp_score": 0.1377
+ }
+}

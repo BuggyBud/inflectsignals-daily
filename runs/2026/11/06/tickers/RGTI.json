@@ -1,0 +1,1115 @@
+{
+ "date": "2026-11-06",
+ "detected_regions": {
+  "primary": {
+   "days_in_region": 174,
+   "region_start": "2026-05-28",
+   "trigger_date": "2026-11-06",
+   "trigger_type": "severe_drawdown"
+  },
+  "secondary": [
+   {
+    "confidence_score": 0.0844,
+    "downside_q50": -0.127,
+    "ev_score": 0.1135,
+    "region_start": "2025-11-10",
+    "seq_len": 200,
+    "trigger_date": "2025-12-08",
+    "trigger_type": "compression",
+    "upside_q25": 0.0937,
+    "upside_q50": 0.2248,
+    "upside_q75": 0.4111
+   }
+  ]
+ },
+ "feature_attribution": {
+  "macro_driver_count": 14,
+  "risk_flags": [
+   "high_volatility"
+  ],
+  "top_drivers": [
+   {
+    "direction": "negative",
+    "feature": "dollar_volume",
+    "feature_value": 319731456.0,
+    "importance": 0.0005,
+    "importance_pct": 0.3023,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "negative",
+    "feature": "daily_ps",
+    "feature_value": 100.0,
+    "importance": 0.0003,
+    "importance_pct": 0.1761,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "positive",
+    "feature": "historical_recovery_rate",
+    "feature_value": 0.2073,
+    "importance": 0.0003,
+    "importance_pct": 0.1725,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "negative",
+    "feature": "price_vs_sma200",
+    "feature_value": 0.6982,
+    "importance": 0.0003,
+    "importance_pct": 0.1541,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "positive",
+    "feature": "volatility_20d",
+    "feature_value": 0.0705,
+    "importance": 0.0002,
+    "importance_pct": 0.1322,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "positive",
+    "feature": "ps_ratio",
+    "feature_value": 100.0,
+    "importance": 0.0001,
+    "importance_pct": 0.0628,
+    "method": "integrated_gradients"
+   }
+  ]
+ },
+ "fundamentals": {
+  "accrual": -0.3412,
+  "adx_14": 46.8245,
+  "altman_z_score": 22.5975,
+  "amihud_illiquidity": 0.0003,
+  "avg_volume": 15645149.702,
+  "beta_252d": 1.6963,
+  "book_value_per_share": 1.6129,
+  "correlation_spy_60d": 0.5913,
+  "current_liabilities": 105.057,
+  "current_ratio": 3.9444,
+  "daily_earnings_yield": -0.0615,
+  "daily_fcf_yield": -0.0077,
+  "daily_pb": 7.2154,
+  "daily_pe": -16.2474,
+  "daily_ps": 100.0,
+  "days_since_52w_high": 267.0,
+  "debt_ebitda": -0.0855,
+  "debt_to_equity": 0.0143,
+  "dividend_yield": 0.0,
+  "dollar_volume_20d_avg": 176284174.7686,
+  "earnings_quality": 0.6082,
+  "ebitda_growth_yoy": -0.286,
+  "enterprise_value": 3857.7435,
+  "eps_basic": -0.16,
+  "eps_cagr_3y": -2.0314,
+  "eps_cagr_5y": null,
+  "eps_diluted": -0.16,
+  "eps_growth_accel": 0.0435,
+  "eps_growth_qoq": -2.6,
+  "eps_growth_yoy": 0.0066,
+  "eps_growth_yoy_q2": -0.0369,
+  "eps_growth_yoy_q3": 0.3246,
+  "eps_growth_yoy_q4": -2.3684,
+  "eps_growth_yoy_q5": -0.5745,
+  "eps_growth_yoy_q6": -0.283,
+  "eps_growth_yoy_q7": -0.6724,
+  "eps_growth_yoy_q8": 0.4412,
+  "eps_history_8q": [
+   -0.08,
+   -0.68,
+   0.13,
+   -0.13,
+   -0.62,
+   -0.0551,
+   -0.0614,
+   -0.16
+  ],
+  "eps_ttm": -0.7232,
+  "ev_to_ebitda": -42.8172,
+  "ev_to_fcf": -79.7104,
+  "ev_to_sales": 750.8259,
+  "fcf_growth_yoy": -0.2395,
+  "fcf_margin": -9.4194,
+  "fcf_per_share": -0.1452,
+  "gross_margin": -1.2635,
+  "gross_margin_change_yoy": 10.4136,
+  "gross_margin_history": [
+   -7.2322,
+   -8.8403,
+   -9.7423,
+   -7.8462,
+   -3.6989,
+   -1.2635
+  ],
+  "inc_roic": 1.8785,
+  "interest_coverage": null,
+  "is_pre_revenue": false,
+  "margin_vs_sector_median": null,
+  "market_cap_ratio": 3877.8055,
+  "net_income": -52.606,
+  "net_margin": -17.874,
+  "operating_income": -28.062,
+  "operating_margin": -7.2762,
+  "operating_margin_change_yoy": 5.5778,
+  "pb_ratio": 7.2851,
+  "pe_percentile_1y": 0.0992,
+  "pe_ratio": -18.4384,
+  "peg_trailing": 1.0266,
+  "piotroski_f_score": 2.0,
+  "price_vs_high_52w": 0.342,
+  "price_vs_sma200": 0.6982,
+  "ps_percentile_1y": 1.0,
+  "ps_ratio": 100,
+  "quarter_labels_8q": [
+   "Q3 '24",
+   "Q4 '24",
+   "Q1 '25",
+   "Q2 '25",
+   "Q3 '25",
+   "Q4 '25",
+   "Q1 '26",
+   "Q2 '26"
+  ],
+  "quarterly_eps_growth_yoy": -0.2308,
+  "quarterly_eps_growth_yoy_8q": [
+   0.5294,
+   -6.5556,
+   1.9286,
+   -0.8571,
+   -6.75,
+   0.919,
+   -1.4723,
+   -0.2308
+  ],
+  "quarterly_revenue_growth_yoy": 1.8529,
+  "quarterly_revenue_growth_yoy_8q": [
+   -0.2341,
+   -0.3264,
+   -0.5177,
+   -0.4164,
+   -0.1812,
+   -0.1785,
+   1.9891,
+   1.8529
+  ],
+  "revenue_cagr_3y": -0.0246,
+  "revenue_cagr_5y": null,
+  "revenue_growth_accel": 0.5974,
+  "revenue_growth_qoq": 0.1677,
+  "revenue_growth_yoy": 0.6849,
+  "revenue_growth_yoy_q2": 0.0875,
+  "revenue_growth_yoy_q3": -0.3431,
+  "revenue_growth_yoy_q4": -0.3698,
+  "revenue_growth_yoy_q5": -0.372,
+  "revenue_growth_yoy_q6": -0.2838,
+  "revenue_growth_yoy_q7": -0.1014,
+  "revenue_growth_yoy_q8": -0.1906,
+  "revenue_history_8q": [
+   2.378,
+   2.274,
+   1.472,
+   1.801,
+   1.947,
+   1.868,
+   4.4,
+   5.138
+  ],
+  "revenue_per_share": 0.0154,
+  "roa": -0.3675,
+  "roce": -0.1717,
+  "roe": -0.4258,
+  "roic": -0.4394,
+  "rsi_14": 51.7026,
+  "sector_momentum": 0.093,
+  "share_dilution_1y": 0.0,
+  "stock_vs_sector_20d": -0.1718,
+  "stock_vs_spy_20d": -0.1072,
+  "total_assets": 648.233,
+  "vol_regime": 1.392,
+  "volatility_20d": 0.0705,
+  "volatility_60d": 0.0507,
+  "w52_high": 37.14,
+  "w52_low": 9.191
+ },
+ "market_characters": [
+  {
+   "id": "g8",
+   "name": "Boom-Bust"
+  }
+ ],
+ "model_analogs": {
+  "matches": [
+   {
+    "actual_downside": -0.0146,
+    "actual_return": 0.277,
+    "actual_upside": 0.277,
+    "days_in_region": 114,
+    "end_date": "2005-11-11",
+    "end_reason": "reversal",
+    "similarity": 0.9744,
+    "start_date": "2005-07-20",
+    "ticker": "LXRX",
+    "trigger_date": "2005-09-22",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": -0.0242,
+    "actual_return": 0.2225,
+    "actual_upside": 0.2225,
+    "days_in_region": 95,
+    "end_date": "2022-11-15",
+    "end_reason": "reversal",
+    "similarity": 0.9743,
+    "start_date": "2022-08-12",
+    "ticker": "INVZ",
+    "trigger_date": "2022-10-12",
+    "trigger_type": "severe_drawdown"
+   },
+   {
+    "actual_downside": -0.0302,
+    "actual_return": 0.413,
+    "actual_upside": 0.413,
+    "days_in_region": 245,
+    "end_date": "2019-12-04",
+    "end_reason": "reversal",
+    "similarity": 0.9733,
+    "start_date": "2019-04-03",
+    "ticker": "SGMO",
+    "trigger_date": "2019-08-27",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": -0.0488,
+    "actual_return": 0.6667,
+    "actual_upside": 0.6667,
+    "days_in_region": 89,
+    "end_date": "2019-12-24",
+    "end_reason": "reversal",
+    "similarity": 0.9731,
+    "start_date": "2019-09-26",
+    "ticker": "TTI",
+    "trigger_date": "2019-11-08",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": -0.0426,
+    "actual_return": 0.4209,
+    "actual_upside": 0.5898,
+    "days_in_region": 265,
+    "end_date": "2006-01-12",
+    "end_reason": "reversal",
+    "similarity": 0.9731,
+    "start_date": "2005-04-22",
+    "ticker": "ID",
+    "trigger_date": "2005-10-07",
+    "trigger_type": "runup"
+   },
+   {
+    "actual_downside": -0.019,
+    "actual_return": 0.2242,
+    "actual_upside": 0.2242,
+    "days_in_region": 85,
+    "end_date": "2022-11-11",
+    "end_reason": "reversal",
+    "similarity": 0.9724,
+    "start_date": "2022-08-18",
+    "ticker": "ICPT",
+    "trigger_date": "2022-09-08",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": -0.2318,
+    "actual_return": 0.3239,
+    "actual_upside": 0.3239,
+    "days_in_region": 158,
+    "end_date": "2019-12-23",
+    "end_reason": "reversal",
+    "similarity": 0.9723,
+    "start_date": "2019-07-18",
+    "ticker": "CTMX",
+    "trigger_date": "2019-09-24",
+    "trigger_type": "severe_drawdown"
+   },
+   {
+    "actual_downside": -0.3249,
+    "actual_return": -0.3249,
+    "actual_upside": 0.0443,
+    "days_in_region": 134,
+    "end_date": "2022-12-06",
+    "end_reason": "reversal",
+    "similarity": 0.9722,
+    "start_date": "2022-07-25",
+    "ticker": "ARBE",
+    "trigger_date": "2022-08-03",
+    "trigger_type": "shallow_runup"
+   },
+   {
+    "actual_downside": -0.0189,
+    "actual_return": 0.1757,
+    "actual_upside": 0.1757,
+    "days_in_region": 148,
+    "end_date": "2004-06-16",
+    "end_reason": "reversal",
+    "similarity": 0.9718,
+    "start_date": "2004-01-20",
+    "ticker": "STEC",
+    "trigger_date": "2004-05-18",
+    "trigger_type": "severe_drawdown"
+   },
+   {
+    "actual_downside": -0.4687,
+    "actual_return": -0.4687,
+    "actual_upside": 0.0444,
+    "days_in_region": 138,
+    "end_date": "2005-11-09",
+    "end_reason": "reversal",
+    "similarity": 0.9715,
+    "start_date": "2005-06-24",
+    "ticker": "TWTI",
+    "trigger_date": "2005-07-07",
+    "trigger_type": "shallow_runup"
+   }
+  ],
+  "stats": {
+   "avg_max_drawdown": 0.1321,
+   "avg_similarity": 0.97,
+   "avg_trough": 0.1321,
+   "avg_upside": 0.3077,
+   "best_return": 0.9477,
+   "downside_range": [
+    -0.5172,
+    0.0
+   ],
+   "median_return": 0.1649,
+   "n_matches": 50,
+   "outcome_agreement": true,
+   "return_p25": 0.0276,
+   "return_p5": -0.3058,
+   "return_p75": 0.3554,
+   "return_p95": 0.7251,
+   "sim_weighted_win_rate": 0.82,
+   "top5_avg_trough": 0.0321,
+   "top5_avg_upside": 0.4338,
+   "top_similarity": 0.974,
+   "upside_range": [
+    0.0086,
+    1.0742
+   ],
+   "win_rate": 0.82,
+   "worst_return": -0.4687,
+   "years_span": 16
+  },
+  "total_matches": 50
+ },
+ "peer_group": {
+  "buckets": [
+   "AI & Data Center Semiconductors",
+   "Cloud Infrastructure, Database & DevOps Software",
+   "Enterprise Hardware, Storage & Systems"
+  ],
+  "groups": {
+   "AI & Data Center Semiconductors": [
+    {
+     "market_cap_m": 1741084.84,
+     "price_vs_sma200": 0.8,
+     "return_30d": -0.1676,
+     "return_7d": -0.1652,
+     "revenue_driver": "data center semiconductors",
+     "signal_rank": 71,
+     "stock_vs_spy_20d": -0.1323,
+     "ticker": "AVGO"
+    },
+    {
+     "market_cap_m": 14488.3731,
+     "price_vs_sma200": 0.9038,
+     "return_30d": -0.1799,
+     "return_7d": 0.0082,
+     "revenue_driver": "low power programmable chips",
+     "signal_rank": 1636,
+     "stock_vs_spy_20d": -0.1115,
+     "ticker": "LSCC"
+    },
+    {
+     "market_cap_m": 876.7786,
+     "price_vs_sma200": 0.883,
+     "return_30d": -0.2514,
+     "return_7d": -0.1628,
+     "revenue_driver": "semiconductor IP licensing",
+     "signal_rank": 1495,
+     "stock_vs_spy_20d": -0.1355,
+     "ticker": "CEVA"
+    },
+    {
+     "market_cap_m": 695.8861,
+     "price_vs_sma200": 0.7102,
+     "return_30d": -0.2549,
+     "return_7d": -0.1694,
+     "revenue_driver": "network-on-chip IP",
+     "signal_rank": 1815,
+     "stock_vs_spy_20d": -0.1514,
+     "ticker": "AIP"
+    },
+    {
+     "market_cap_m": 795754.3688,
+     "price_vs_sma200": 1.0795,
+     "return_30d": -0.288,
+     "return_7d": -0.2237,
+     "revenue_driver": "data center and pc semiconductors",
+     "signal_rank": 1719,
+     "stock_vs_spy_20d": -0.2062,
+     "ticker": "AMD"
+    },
+    {
+     "market_cap_m": 5455.3298,
+     "price_vs_sma200": 0.6982,
+     "return_30d": -0.2947,
+     "return_7d": -0.0524,
+     "revenue_driver": "superconducting quantum processors",
+     "signal_rank": 1868,
+     "stock_vs_spy_20d": -0.1072,
+     "ticker": "RGTI"
+    },
+    {
+     "market_cap_m": 334.8551,
+     "price_vs_sma200": 0.7023,
+     "return_30d": -0.3644,
+     "return_7d": -0.1986,
+     "revenue_driver": "spintronic MRAM",
+     "signal_rank": 1667,
+     "stock_vs_spy_20d": -0.231,
+     "ticker": "MRAM"
+    },
+    {
+     "market_cap_m": 106.2546,
+     "price_vs_sma200": 0.4555,
+     "return_30d": -0.4626,
+     "return_7d": -0.33,
+     "revenue_driver": "associative computing chips",
+     "signal_rank": 1710,
+     "stock_vs_spy_20d": -0.3179,
+     "ticker": "GSIT"
+    },
+    {
+     "market_cap_m": 37711.1961,
+     "price_vs_sma200": 0.7448,
+     "return_30d": -0.477,
+     "return_7d": -0.3583,
+     "revenue_driver": "data-center connectivity chips",
+     "signal_rank": 1721,
+     "stock_vs_spy_20d": -0.3874,
+     "ticker": "ALAB"
+    },
+    {
+     "market_cap_m": 439173.9,
+     "price_vs_sma200": 0.6466,
+     "return_30d": -0.5424,
+     "return_7d": -0.4109,
+     "revenue_driver": "PC & Client Processors",
+     "signal_rank": 1887,
+     "stock_vs_spy_20d": -0.4071,
+     "ticker": "INTC"
+    }
+   ],
+   "Cloud Infrastructure, Database & DevOps Software": [
+    {
+     "market_cap_m": 21970.2375,
+     "price_vs_sma200": 1.1731,
+     "return_30d": 0.1593,
+     "return_7d": -0.0348,
+     "revenue_driver": "IT hardware reseller",
+     "signal_rank": 644,
+     "stock_vs_spy_20d": 0.1596,
+     "ticker": "CDW"
+    },
+    {
+     "market_cap_m": 2606167.7586,
+     "price_vs_sma200": 1.063,
+     "return_30d": 0.0386,
+     "return_7d": 0.0185,
+     "revenue_driver": "cloud infrastructure",
+     "signal_rank": 1713,
+     "stock_vs_spy_20d": 0.0434,
+     "ticker": "AMZN"
+    },
+    {
+     "market_cap_m": 1775.9358,
+     "price_vs_sma200": 0.9278,
+     "return_30d": -0.0377,
+     "return_7d": -0.0639,
+     "revenue_driver": "application delivery controllers",
+     "signal_rank": 633,
+     "stock_vs_spy_20d": -0.109,
+     "ticker": "ATEN"
+    },
+    {
+     "market_cap_m": 1639.6962,
+     "price_vs_sma200": 1.0811,
+     "return_30d": -0.0389,
+     "return_7d": -0.0953,
+     "revenue_driver": "consumer security hardware",
+     "signal_rank": null,
+     "stock_vs_spy_20d": 0.1532,
+     "ticker": "ARLO"
+    },
+    {
+     "market_cap_m": 224757.1868,
+     "price_vs_sma200": 1.0282,
+     "return_30d": -0.1731,
+     "return_7d": -0.0853,
+     "revenue_driver": "data center Ethernet switches",
+     "signal_rank": 1212,
+     "stock_vs_spy_20d": -0.1566,
+     "ticker": "ANET"
+    },
+    {
+     "market_cap_m": 9363.6204,
+     "price_vs_sma200": 0.7853,
+     "return_30d": -0.2828,
+     "return_7d": 0.0059,
+     "revenue_driver": "trapped-ion quantum computing",
+     "signal_rank": 1923,
+     "stock_vs_spy_20d": -0.1269,
+     "ticker": "IONQ"
+    },
+    {
+     "market_cap_m": 2001.4184,
+     "price_vs_sma200": 0.7365,
+     "return_30d": -0.2935,
+     "return_7d": -0.0839,
+     "revenue_driver": "quantum computing software",
+     "signal_rank": 1030,
+     "stock_vs_spy_20d": -0.0939,
+     "ticker": "QUBT"
+    },
+    {
+     "market_cap_m": 5455.3298,
+     "price_vs_sma200": 0.6982,
+     "return_30d": -0.2947,
+     "return_7d": -0.0524,
+     "revenue_driver": "superconducting quantum processors",
+     "signal_rank": 1868,
+     "stock_vs_spy_20d": -0.1072,
+     "ticker": "RGTI"
+    },
+    {
+     "market_cap_m": 6728.0822,
+     "price_vs_sma200": 0.5665,
+     "return_30d": -0.3866,
+     "return_7d": -0.0926,
+     "revenue_driver": "quantum computing hardware",
+     "signal_rank": 1889,
+     "stock_vs_spy_20d": -0.2117,
+     "ticker": "QBTS"
+    },
+    {
+     "market_cap_m": 6659.3237,
+     "price_vs_sma200": 0.5626,
+     "return_30d": -0.4076,
+     "return_7d": -0.2374,
+     "revenue_driver": "AI data center hosting",
+     "signal_rank": null,
+     "stock_vs_spy_20d": -0.2723,
+     "ticker": "APLD"
+    }
+   ],
+   "Enterprise Hardware, Storage & Systems": [
+    {
+     "market_cap_m": 772.0317,
+     "price_vs_sma200": 1.5254,
+     "return_30d": 0.2543,
+     "return_7d": 0.1983,
+     "revenue_driver": "networking hardware distribution",
+     "signal_rank": 1090,
+     "stock_vs_spy_20d": 0.249,
+     "ticker": "CLMB"
+    },
+    {
+     "market_cap_m": 235656.0409,
+     "price_vs_sma200": 0.988,
+     "return_30d": 0.0864,
+     "return_7d": -0.0325,
+     "revenue_driver": "hybrid cloud software",
+     "signal_rank": 1744,
+     "stock_vs_spy_20d": 0.134,
+     "ticker": "IBM"
+    },
+    {
+     "market_cap_m": 2082.7967,
+     "price_vs_sma200": 0.7806,
+     "return_30d": -0.071,
+     "return_7d": 0.0034,
+     "revenue_driver": "atm hardware",
+     "signal_rank": 1166,
+     "stock_vs_spy_20d": -0.0295,
+     "ticker": "DBD"
+    },
+    {
+     "market_cap_m": 9363.6204,
+     "price_vs_sma200": 0.7853,
+     "return_30d": -0.2828,
+     "return_7d": 0.0059,
+     "revenue_driver": "trapped-ion quantum computing",
+     "signal_rank": 1923,
+     "stock_vs_spy_20d": -0.1269,
+     "ticker": "IONQ"
+    },
+    {
+     "market_cap_m": 795754.3688,
+     "price_vs_sma200": 1.0795,
+     "return_30d": -0.288,
+     "return_7d": -0.2237,
+     "revenue_driver": "data center and pc semiconductors",
+     "signal_rank": 1719,
+     "stock_vs_spy_20d": -0.2062,
+     "ticker": "AMD"
+    },
+    {
+     "market_cap_m": 69168.8454,
+     "price_vs_sma200": 1.0797,
+     "return_30d": -0.2887,
+     "return_7d": -0.2579,
+     "revenue_driver": "enterprise servers",
+     "signal_rank": 1406,
+     "stock_vs_spy_20d": -0.3352,
+     "ticker": "HPE"
+    },
+    {
+     "market_cap_m": 5455.3298,
+     "price_vs_sma200": 0.6982,
+     "return_30d": -0.2947,
+     "return_7d": -0.0524,
+     "revenue_driver": "superconducting quantum processors",
+     "signal_rank": 1868,
+     "stock_vs_spy_20d": -0.1072,
+     "ticker": "RGTI"
+    },
+    {
+     "market_cap_m": 6728.0822,
+     "price_vs_sma200": 0.5665,
+     "return_30d": -0.3866,
+     "return_7d": -0.0926,
+     "revenue_driver": "quantum computing hardware",
+     "signal_rank": 1889,
+     "stock_vs_spy_20d": -0.2117,
+     "ticker": "QBTS"
+    },
+    {
+     "market_cap_m": 296125.7859,
+     "price_vs_sma200": 0.9736,
+     "return_30d": -0.4164,
+     "return_7d": -0.3347,
+     "revenue_driver": "server and storage hardware",
+     "signal_rank": 1695,
+     "stock_vs_spy_20d": -0.3841,
+     "ticker": "DELL"
+    },
+    {
+     "market_cap_m": 10929.0229,
+     "price_vs_sma200": 0.8169,
+     "return_30d": -1.0,
+     "return_7d": -1.0,
+     "revenue_driver": "bitcoin mining operations",
+     "signal_rank": null,
+     "stock_vs_spy_20d": -0.2816,
+     "ticker": "HUT"
+    }
+   ]
+  }
+ },
+ "predictions": {
+  "badge_count": 0,
+  "confidence_score": 0.0769,
+  "conviction_label": "SPECULATIVE",
+  "data_quality_flags": [],
+  "ev_score": 0.1078,
+  "is_diamond": false,
+  "passes_tradability_filter": true,
+  "quality_label": "WEAK",
+  "quantiles": {
+   "downside_q10": -0.3875,
+   "downside_q25": -0.2429,
+   "downside_q50": -0.1314,
+   "downside_q75": -0.0438,
+   "downside_q90": -0.0104,
+   "path_volatility": 0.0477,
+   "risk_reward": 1.6902,
+   "uncertainty": 0.6392,
+   "upside_q10": 0.0251,
+   "upside_q25": 0.0907,
+   "upside_q50": 0.2221,
+   "upside_q75": 0.4079,
+   "upside_q90": 0.6644
+  },
+  "rank": 1868,
+  "rank_score": 0.0083,
+  "tradability_filter_reasons": []
+ },
+ "profile": {
+  "_local": {
+   "dividend_yield": 0.0,
+   "eps_growth_yoy": 0.0066,
+   "pe_ratio": -18.4384,
+   "revenue_growth_yoy": 0.6849,
+   "roe": -0.4258
+  },
+  "beta": 2.153,
+  "betaTTM": null,
+  "ceo": "Subodh K. Kulkarni",
+  "companyName": "Rigetti Computing, Inc.",
+  "country": "US",
+  "debtToEquityTTM": null,
+  "description": "Rigetti Computing, Inc. operates as a full-stack quantum computing enterprise. This company develops and manufactures both quantum computers and the crucial superconducting quantum processors that enable their operation. Its sophisticated machines are made accessible through diverse cloud environments—public, private, or hybrid—via its specialized Quantum Cloud Services platform. The firm was established in 2013 and has its headquarters in Berkeley, California.",
+  "dividendYielTTM": null,
+  "enterpriseValueOverEBITDATTM": null,
+  "exchangeShortName": "NASDAQ",
+  "fullTimeEmployees": "163",
+  "industry": "Computer Hardware",
+  "ipoDate": "2021-04-22",
+  "latest_earnings_date": "2026-08-06",
+  "marketCapTTM": null,
+  "mktCap": 3921782777,
+  "peRatioTTM": null,
+  "price": 11.75,
+  "priceToSalesRatioTTM": null,
+  "returnOnEquityTTM": -0.4682,
+  "revenue_description": "Rigetti develops quantum computing hardware and services. Revenue is driven by vehicle production volumes and content-per-vehicle, with EV transition and ADAS adoption creating new product opportunities.",
+  "revenue_description_themes": [
+   "quantum computing system scale-up",
+   "quantum cloud access growth",
+   "quantum algorithm partnerships"
+  ],
+  "revenue_taxonomy": [
+   {
+    "bucket": "AI & Data Center Semiconductors",
+    "matched_tags": [
+     "superconducting quantum processors"
+    ],
+    "path": "Technology › Hardware & Semiconductors › AI & Data Center Semiconductors",
+    "sector": "Technology",
+    "segment": "Hardware & Semiconductors"
+   },
+   {
+    "bucket": "Cloud Infrastructure, Database & DevOps Software",
+    "matched_tags": [
+     "quantum cloud computing"
+    ],
+    "path": "Technology › Software & Platforms › Cloud Infrastructure, Database & DevOps Software",
+    "sector": "Technology",
+    "segment": "Software & Platforms"
+   },
+   {
+    "bucket": "Enterprise Hardware, Storage & Systems",
+    "matched_tags": [
+     "quantum computing systems"
+    ],
+    "path": "Technology › Hardware & Semiconductors › Enterprise Hardware, Storage & Systems",
+    "sector": "Technology",
+    "segment": "Hardware & Semiconductors"
+   }
+  ],
+  "revenue_themes": [
+   "superconducting quantum processors",
+   "quantum cloud computing",
+   "quantum computing systems"
+  ],
+  "sector": "Technology",
+  "website": "https://www.rigetti.com"
+ },
+ "report": null,
+ "scorecard": {
+  "headline": {
+   "avg_universe_pct": 33,
+   "label": "below_average",
+   "metric_count": 7
+  },
+  "metrics": {
+   "debt_to_equity": {
+    "direction": "lower",
+    "label": "D/E Ratio",
+    "sector": null,
+    "sector_n": 0,
+    "sector_pct": null,
+    "universe_n": 2005,
+    "universe_pct": 84,
+    "value": 0.0143
+   },
+   "eps_growth_yoy": {
+    "direction": "higher",
+    "label": "EPS Growth",
+    "sector": null,
+    "sector_n": 0,
+    "sector_pct": null,
+    "universe_n": 1823,
+    "universe_pct": 35,
+    "value": 0.0066
+   },
+   "gross_margin": {
+    "direction": "higher",
+    "label": "Gross Margin",
+    "sector": null,
+    "sector_n": 0,
+    "sector_pct": null,
+    "universe_n": 1940,
+    "universe_pct": 1,
+    "value": -1.2635
+   },
+   "operating_margin": {
+    "direction": "higher",
+    "label": "Op. Margin",
+    "sector": null,
+    "sector_n": 0,
+    "sector_pct": null,
+    "universe_n": 1940,
+    "universe_pct": 2,
+    "value": -7.2762
+   },
+   "revenue_growth_yoy": {
+    "direction": "higher",
+    "label": "Rev Growth",
+    "sector": null,
+    "sector_n": 0,
+    "sector_pct": null,
+    "universe_n": 1771,
+    "universe_pct": 95,
+    "value": 0.6849
+   },
+   "roe": {
+    "direction": "higher",
+    "label": "ROE",
+    "sector": null,
+    "sector_n": 0,
+    "sector_pct": null,
+    "universe_n": 2021,
+    "universe_pct": 9,
+    "value": -0.4258
+   },
+   "roic": {
+    "direction": "higher",
+    "label": "ROIC",
+    "sector": null,
+    "sector_n": 0,
+    "sector_pct": null,
+    "universe_n": 1994,
+    "universe_pct": 7,
+    "value": -0.0968
+   }
+  }
+ },
+ "signal_rank": 1868,
+ "structural_analogs": {
+  "gp_core_pct": 5.4,
+  "gp_core_ratio": 0.7607,
+  "matches": [
+   {
+    "actual_downside": -0.5445,
+    "actual_return": -0.5445,
+    "actual_upside": 0.0103,
+    "days_in_region": 64,
+    "end_date": "2022-03-14",
+    "end_reason": "reversal",
+    "seq_len": 64,
+    "similarity": 0.4964,
+    "start_date": "2022-01-27",
+    "ticker": "FSLY",
+    "total_distance": 0.3502,
+    "trigger_date": "2022-02-01",
+    "trigger_type": "runup"
+   },
+   {
+    "actual_downside": -0.2349,
+    "actual_return": -0.2349,
+    "actual_upside": 0.0228,
+    "days_in_region": 65,
+    "end_date": "2017-10-12",
+    "end_reason": "reversal",
+    "seq_len": 65,
+    "similarity": 0.4735,
+    "start_date": "2017-08-21",
+    "ticker": "NPTN",
+    "total_distance": 0.3738,
+    "trigger_date": "2017-08-25",
+    "trigger_type": "runup"
+   },
+   {
+    "actual_downside": -0.027,
+    "actual_return": 0.0914,
+    "actual_upside": 0.3371,
+    "days_in_region": 68,
+    "end_date": "2008-08-25",
+    "end_reason": "reversal",
+    "seq_len": 68,
+    "similarity": 0.4722,
+    "start_date": "2008-07-14",
+    "ticker": "SVVS",
+    "total_distance": 0.3752,
+    "trigger_date": "2008-07-23",
+    "trigger_type": "runup"
+   },
+   {
+    "actual_downside": -0.2683,
+    "actual_return": -0.2683,
+    "actual_upside": 0.0981,
+    "days_in_region": 67,
+    "end_date": "2022-03-14",
+    "end_reason": "reversal",
+    "seq_len": 67,
+    "similarity": 0.4713,
+    "start_date": "2022-01-25",
+    "ticker": "QTRX",
+    "total_distance": 0.3761,
+    "trigger_date": "2022-02-02",
+    "trigger_type": "runup"
+   },
+   {
+    "actual_downside": -0.2149,
+    "actual_return": -0.1086,
+    "actual_upside": 0.0209,
+    "days_in_region": 66,
+    "end_date": "2022-12-02",
+    "end_reason": "new_pattern",
+    "seq_len": 66,
+    "similarity": 0.4709,
+    "start_date": "2022-10-20",
+    "ticker": "QTWO",
+    "total_distance": 0.3766,
+    "trigger_date": "2022-10-27",
+    "trigger_type": "shallow_runup"
+   },
+   {
+    "actual_downside": -0.7561,
+    "actual_return": -0.7466,
+    "actual_upside": 0.097,
+    "days_in_region": 69,
+    "end_date": "2022-11-29",
+    "end_reason": "reversal",
+    "seq_len": 69,
+    "similarity": 0.4697,
+    "start_date": "2022-10-14",
+    "ticker": "BVS",
+    "total_distance": 0.3779,
+    "trigger_date": "2022-10-26",
+    "trigger_type": "runup"
+   },
+   {
+    "actual_downside": -0.0846,
+    "actual_return": -0.0697,
+    "actual_upside": 0.1144,
+    "days_in_region": 64,
+    "end_date": "2005-06-10",
+    "end_reason": "reversal",
+    "seq_len": 64,
+    "similarity": 0.4686,
+    "start_date": "2005-04-28",
+    "ticker": "MOVE",
+    "total_distance": 0.379,
+    "trigger_date": "2005-05-03",
+    "trigger_type": "runup"
+   },
+   {
+    "actual_downside": -0.1046,
+    "actual_return": -0.1046,
+    "actual_upside": 0.4433,
+    "days_in_region": 67,
+    "end_date": "2022-05-24",
+    "end_reason": "reversal",
+    "seq_len": 67,
+    "similarity": 0.4666,
+    "start_date": "2022-02-03",
+    "ticker": "MAXR",
+    "total_distance": 0.3811,
+    "trigger_date": "2022-02-11",
+    "trigger_type": "shallow_runup"
+   },
+   {
+    "actual_downside": -0.409,
+    "actual_return": -0.3325,
+    "actual_upside": 0.0,
+    "days_in_region": 67,
+    "end_date": "2022-08-01",
+    "end_reason": "reversal",
+    "seq_len": 67,
+    "similarity": 0.46,
+    "start_date": "2022-06-16",
+    "ticker": "CGC",
+    "total_distance": 0.3883,
+    "trigger_date": "2022-06-27",
+    "trigger_type": "runup"
+   },
+   {
+    "actual_downside": -0.3559,
+    "actual_return": -0.3559,
+    "actual_upside": 0.0418,
+    "days_in_region": 70,
+    "end_date": "2022-03-14",
+    "end_reason": "reversal",
+    "seq_len": 70,
+    "similarity": 0.4593,
+    "start_date": "2022-01-27",
+    "ticker": "CGC",
+    "total_distance": 0.3891,
+    "trigger_date": "2022-02-01",
+    "trigger_type": "runup"
+   }
+  ],
+  "panel": {
+   "edge": -0.3626,
+   "hit_hi": 0.351,
+   "hit_lo": 0.143,
+   "hit_rate": 0.231,
+   "median_final": -0.2103,
+   "median_pain": 0.2103,
+   "n": 26,
+   "n_eff": 26.0,
+   "p25_final": -0.3559,
+   "p_pain_gt5": 0.808,
+   "return_to_pain": -0.913
+  },
+  "stats": {
+   "avg_similarity": 0.421,
+   "avg_trough": 0.1873,
+   "avg_upside": 0.2683,
+   "median_pain": 0.1525,
+   "median_return": -0.0666,
+   "n_matches": 200,
+   "p25_return": -0.2125,
+   "p_pain_gt5": 0.805,
+   "return_to_pain": -0.386,
+   "top5_avg_trough": 0.2579,
+   "top5_avg_upside": 0.0979,
+   "top_similarity": 0.496,
+   "win_rate": 0.36
+  },
+  "total_matches": 200
+ },
+ "ticker": "RGTI",
+ "trending": {
+  "acceleration": -0.0062,
+  "avg_vol_20d": 14097475.783,
+  "base_high_120": 27.03,
+  "breakout_confirmed": 0,
+  "close": 11.25,
+  "momentum_score": 0.0556,
+  "momentum_start": "2026-10-08",
+  "range_20": 0.44,
+  "range_50": 0.6436,
+  "rank": 1843,
+  "rank_down": 66,
+  "rank_up": null,
+  "ret_120": -0.4515,
+  "ret_20": -0.2623,
+  "ret_60": -0.3194,
+  "rundown_score": 0.9157,
+  "score_date": "2026-10-30",
+  "slope_20": -0.0158,
+  "slope_60": -0.0096,
+  "stage": "rundown",
+  "stage_label": "rundown",
+  "ticker": "RGTI",
+  "total_score": 0.191,
+  "trend_ratio": 0.6583,
+  "vcp_detected": 0,
+  "vcp_score": 0.2813
+ }
+}

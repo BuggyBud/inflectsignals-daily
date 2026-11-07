@@ -1,0 +1,1026 @@
+{
+ "date": "2026-11-06",
+ "detected_regions": {
+  "primary": {
+   "days_in_region": 114,
+   "region_start": "2026-08-24",
+   "trigger_date": "2026-10-01",
+   "trigger_type": "drawdown"
+  },
+  "secondary": [
+   {
+    "confidence_score": 0.3112,
+    "downside_q50": -0.0477,
+    "ev_score": 0.2396,
+    "region_start": "2026-06-02",
+    "seq_len": 171,
+    "trigger_date": "2026-11-06",
+    "trigger_type": "runup",
+    "upside_q25": 0.1292,
+    "upside_q50": 0.2713,
+    "upside_q75": 0.4595
+   }
+  ]
+ },
+ "feature_attribution": {
+  "macro_driver_count": 13,
+  "risk_flags": [
+   "high_volatility"
+  ],
+  "top_drivers": [
+   {
+    "direction": "positive",
+    "feature": "price_vs_sma200",
+    "feature_value": 1.5424,
+    "importance": 0.0007,
+    "importance_pct": 0.2981,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "positive",
+    "feature": "price_vs_low_52w",
+    "feature_value": 3.9345,
+    "importance": 0.0006,
+    "importance_pct": 0.2262,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "negative",
+    "feature": "ma_200_slope",
+    "feature_value": 0.1065,
+    "importance": 0.0003,
+    "importance_pct": 0.1209,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "negative",
+    "feature": "dollar_volume",
+    "feature_value": 71674104.0,
+    "importance": 0.0003,
+    "importance_pct": 0.1123,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "positive",
+    "feature": "volatility_20d",
+    "feature_value": 0.0519,
+    "importance": 0.0003,
+    "importance_pct": 0.1053,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "negative",
+    "feature": "beta_252d",
+    "feature_value": 0.0097,
+    "importance": 0.0002,
+    "importance_pct": 0.0687,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "negative",
+    "feature": "correlation_spy_60d",
+    "feature_value": 0.1202,
+    "importance": 0.0002,
+    "importance_pct": 0.0687,
+    "method": "integrated_gradients"
+   }
+  ]
+ },
+ "fundamentals": {
+  "accrual": 0.4304,
+  "adx_14": 30.6148,
+  "altman_z_score": 14.8645,
+  "amihud_illiquidity": 0.001,
+  "avg_volume": 576749.6767,
+  "beta_252d": 0.0097,
+  "book_value_per_share": 3.0328,
+  "correlation_spy_60d": 0.1202,
+  "current_liabilities": 54.095,
+  "current_ratio": 1.7891,
+  "daily_earnings_yield": 0.0329,
+  "daily_fcf_yield": -0.006,
+  "daily_pb": 17.4194,
+  "daily_pe": 30.3655,
+  "daily_ps": 10.734,
+  "days_since_52w_high": 53.0,
+  "debt_ebitda": 0.5717,
+  "debt_to_equity": 0.2771,
+  "dividend_yield": 0.0,
+  "dollar_volume_20d_avg": 23792418.2472,
+  "earnings_quality": 0.9998,
+  "ebitda_growth_yoy": 10.0,
+  "enterprise_value": 1482.6023,
+  "eps_basic": 1.23,
+  "eps_cagr_3y": 1.6034,
+  "eps_cagr_5y": 0.3263,
+  "eps_diluted": 1.06,
+  "eps_growth_accel": 4.1547,
+  "eps_growth_qoq": 1.9286,
+  "eps_growth_yoy": 8.0584,
+  "eps_growth_yoy_q2": 3.9038,
+  "eps_growth_yoy_q3": 0.6922,
+  "eps_growth_yoy_q4": -0.1693,
+  "eps_growth_yoy_q5": -0.1364,
+  "eps_growth_yoy_q6": 0.3846,
+  "eps_growth_yoy_q7": -5.5,
+  "eps_growth_yoy_q8": -4.0,
+  "eps_history_8q": [
+   -0.02,
+   -0.06,
+   -0.1,
+   -0.07,
+   0.0546,
+   0.05,
+   0.35,
+   1.06
+  ],
+  "eps_ttm": 1.8593,
+  "ev_to_ebitda": 35.192,
+  "ev_to_fcf": 42.0859,
+  "ev_to_sales": 25.5952,
+  "fcf_growth_yoy": 1.3827,
+  "fcf_margin": 0.6082,
+  "fcf_per_share": 1.2291,
+  "gross_margin": 0.6915,
+  "gross_margin_change_yoy": 0.3701,
+  "gross_margin_history": [
+   0.6396,
+   0.5617,
+   0.5724,
+   0.5709,
+   0.5882,
+   0.6915
+  ],
+  "inc_roic": 0.7285,
+  "interest_coverage": 290.5448,
+  "is_pre_revenue": false,
+  "margin_vs_sector_median": null,
+  "market_cap_ratio": 1514.1443,
+  "net_income": 35.249,
+  "net_margin": 0.3535,
+  "operating_income": 23.013,
+  "operating_margin": 0.2884,
+  "operating_margin_change_yoy": 0.458,
+  "pb_ratio": 18.6162,
+  "pe_percentile_1y": 0.2381,
+  "pe_ratio": 30.3655,
+  "peg_trailing": 0.0441,
+  "piotroski_f_score": 3.0,
+  "price_vs_high_52w": 0.8763,
+  "price_vs_sma200": 1.5424,
+  "ps_percentile_1y": 0.373,
+  "ps_ratio": 8.964,
+  "quarter_labels_8q": [
+   "Q4 '24",
+   "Q1 '25",
+   "Q2 '25",
+   "Q3 '25",
+   "Q4 '25",
+   "Q1 '26",
+   "Q2 '26",
+   "Q3 '26"
+  ],
+  "quarterly_eps_growth_yoy": 10.0,
+  "quarterly_eps_growth_yoy_8q": [
+   0.7778,
+   -1.0,
+   0.1667,
+   -4.5,
+   3.73,
+   1.8333,
+   4.5,
+   10.0
+  ],
+  "quarterly_revenue_growth_yoy": 1.5791,
+  "quarterly_revenue_growth_yoy_8q": [
+   0.5926,
+   1.1695,
+   1.086,
+   1.1754,
+   0.8272,
+   0.4041,
+   0.9859,
+   1.5791
+  ],
+  "revenue_cagr_3y": 0.6258,
+  "revenue_cagr_5y": 0.549,
+  "revenue_growth_accel": 0.1912,
+  "revenue_growth_qoq": 0.541,
+  "revenue_growth_yoy": 1.0061,
+  "revenue_growth_yoy_q2": 0.8149,
+  "revenue_growth_yoy_q3": 0.7989,
+  "revenue_growth_yoy_q4": 1.0494,
+  "revenue_growth_yoy_q5": 1.0277,
+  "revenue_growth_yoy_q6": 0.854,
+  "revenue_growth_yoy_q7": 0.4088,
+  "revenue_growth_yoy_q8": 0.2329,
+  "revenue_history_8q": [
+   11.647,
+   17.282,
+   18.928,
+   22.459,
+   21.281,
+   24.266,
+   37.589,
+   57.925
+  ],
+  "revenue_per_share": 2.0211,
+  "roa": 0.3652,
+  "roce": 0.468,
+  "roe": 0.747,
+  "roic": 0.4833,
+  "rsi_14": 66.0912,
+  "sector_momentum": 0.0725,
+  "share_dilution_1y": 0.0368,
+  "stock_vs_sector_20d": 0.0389,
+  "stock_vs_spy_20d": 0.078,
+  "total_assets": 157.273,
+  "vol_regime": 0.7375,
+  "volatility_20d": 0.0519,
+  "volatility_60d": 0.0703,
+  "w52_high": 66.37,
+  "w52_low": 14.27
+ },
+ "market_characters": [
+  {
+   "id": "g3",
+   "name": "Explosive Gainers"
+  },
+  {
+   "id": "g9",
+   "name": "Narrative Premium"
+  }
+ ],
+ "model_analogs": {
+  "matches": [
+   {
+    "actual_downside": 0.0,
+    "actual_return": 0.509,
+    "actual_upside": 0.509,
+    "days_in_region": 112,
+    "end_date": "2005-12-12",
+    "end_reason": "reversal",
+    "similarity": 0.9806,
+    "start_date": "2005-08-22",
+    "ticker": "KOMG",
+    "trigger_date": "2005-08-31",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": -0.0257,
+    "actual_return": 0.304,
+    "actual_upside": 0.304,
+    "days_in_region": 221,
+    "end_date": "2005-08-22",
+    "end_reason": "reversal",
+    "similarity": 0.9792,
+    "start_date": "2005-01-13",
+    "ticker": "RICK",
+    "trigger_date": "2005-03-14",
+    "trigger_type": "severe_drawdown"
+   },
+   {
+    "actual_downside": 0.0,
+    "actual_return": 0.4494,
+    "actual_upside": 0.4494,
+    "days_in_region": 119,
+    "end_date": "2006-01-30",
+    "end_reason": "reversal",
+    "similarity": 0.9787,
+    "start_date": "2005-10-03",
+    "ticker": "NTG",
+    "trigger_date": "2005-12-28",
+    "trigger_type": "severe_drawdown"
+   },
+   {
+    "actual_downside": 0.0,
+    "actual_return": 0.428,
+    "actual_upside": 0.428,
+    "days_in_region": 127,
+    "end_date": "2006-01-17",
+    "end_reason": "reversal",
+    "similarity": 0.9786,
+    "start_date": "2005-09-12",
+    "ticker": "LIFC",
+    "trigger_date": "2005-10-06",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": -0.3012,
+    "actual_return": -0.1637,
+    "actual_upside": 0.1082,
+    "days_in_region": 175,
+    "end_date": "2017-03-01",
+    "end_reason": "reversal",
+    "similarity": 0.9785,
+    "start_date": "2016-09-07",
+    "ticker": "CLNE",
+    "trigger_date": "2016-10-31",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": -0.1045,
+    "actual_return": 1.0299,
+    "actual_upside": 1.0299,
+    "days_in_region": 115,
+    "end_date": "1992-02-24",
+    "end_reason": "reversal",
+    "similarity": 0.9784,
+    "start_date": "1991-11-01",
+    "ticker": "SHYF",
+    "trigger_date": "1991-11-25",
+    "trigger_type": "severe_drawdown"
+   },
+   {
+    "actual_downside": -0.3131,
+    "actual_return": -0.1577,
+    "actual_upside": 0.0991,
+    "days_in_region": 102,
+    "end_date": "2004-05-17",
+    "end_reason": "reversal",
+    "similarity": 0.9783,
+    "start_date": "2004-02-05",
+    "ticker": "SPTN",
+    "trigger_date": "2004-03-12",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": -0.048,
+    "actual_return": 0.3204,
+    "actual_upside": 0.3204,
+    "days_in_region": 88,
+    "end_date": "2004-04-19",
+    "end_reason": "reversal",
+    "similarity": 0.9777,
+    "start_date": "2004-01-22",
+    "ticker": "EBIX",
+    "trigger_date": "2004-02-02",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": -0.1178,
+    "actual_return": 0.2627,
+    "actual_upside": 0.2627,
+    "days_in_region": 172,
+    "end_date": "2017-02-06",
+    "end_reason": "reversal",
+    "similarity": 0.9777,
+    "start_date": "2016-08-18",
+    "ticker": "BVN",
+    "trigger_date": "2016-11-14",
+    "trigger_type": "severe_drawdown"
+   },
+   {
+    "actual_downside": -0.0365,
+    "actual_return": 0.6116,
+    "actual_upside": 0.6116,
+    "days_in_region": 139,
+    "end_date": "2005-12-14",
+    "end_reason": "reversal",
+    "similarity": 0.9777,
+    "start_date": "2005-07-28",
+    "ticker": "SCVL",
+    "trigger_date": "2005-08-05",
+    "trigger_type": "severe_drawdown"
+   }
+  ],
+  "stats": {
+   "avg_max_drawdown": 0.0799,
+   "avg_similarity": 0.976,
+   "avg_trough": 0.0799,
+   "avg_upside": 0.4023,
+   "best_return": 1.1029,
+   "downside_range": [
+    -0.4589,
+    0.0
+   ],
+   "median_return": 0.3227,
+   "n_matches": 50,
+   "outcome_agreement": true,
+   "return_p25": 0.1398,
+   "return_p5": -0.161,
+   "return_p75": 0.5075,
+   "return_p95": 0.9761,
+   "sim_weighted_win_rate": 0.86,
+   "top5_avg_trough": 0.0654,
+   "top5_avg_upside": 0.3597,
+   "top_similarity": 0.981,
+   "upside_range": [
+    0.0,
+    1.2029
+   ],
+   "win_rate": 0.86,
+   "worst_return": -0.1746,
+   "years_span": 12
+  },
+  "total_matches": 50
+ },
+ "peer_group": {
+  "buckets": [
+   "Branded Biopharma",
+   "Rare Disease, Autoimmune & Specialty Therapies"
+  ],
+  "groups": {
+   "Branded Biopharma": [
+    {
+     "market_cap_m": 257652.3889,
+     "price_vs_sma200": 1.218,
+     "return_30d": 0.1105,
+     "return_7d": 0.019,
+     "revenue_driver": "biologic drug sales",
+     "signal_rank": 1404,
+     "stock_vs_spy_20d": 0.1651,
+     "ticker": "AMGN"
+    },
+    {
+     "market_cap_m": 205469.0148,
+     "price_vs_sma200": 1.1839,
+     "return_30d": 0.1057,
+     "return_7d": 0.0483,
+     "revenue_driver": "HIV antiviral drug sales",
+     "signal_rank": 1520,
+     "stock_vs_spy_20d": 0.1593,
+     "ticker": "GILD"
+    },
+    {
+     "market_cap_m": 655.5964,
+     "price_vs_sma200": 1.1087,
+     "return_30d": 0.063,
+     "return_7d": 0.2161,
+     "revenue_driver": "Linzess sales",
+     "signal_rank": 37,
+     "stock_vs_spy_20d": 0.2045,
+     "ticker": "IRWD"
+    },
+    {
+     "market_cap_m": 124974.8767,
+     "price_vs_sma200": 1.0332,
+     "return_30d": -0.0115,
+     "return_7d": 0.0259,
+     "revenue_driver": "oncology drug sales",
+     "signal_rank": 632,
+     "stock_vs_spy_20d": 0.1064,
+     "ticker": "BMY"
+    },
+    {
+     "market_cap_m": 1264.4687,
+     "price_vs_sma200": 1.5424,
+     "return_30d": -0.0212,
+     "return_7d": 0.09,
+     "revenue_driver": "specialty pharmaceutical sales",
+     "signal_rank": 1316,
+     "stock_vs_spy_20d": 0.078,
+     "ticker": "ETON"
+    },
+    {
+     "market_cap_m": 667.4595,
+     "price_vs_sma200": 0.6201,
+     "return_30d": -0.102,
+     "return_7d": -0.0258,
+     "revenue_driver": "pharmaceutical and biologic drugs",
+     "signal_rank": 1885,
+     "stock_vs_spy_20d": 0.0815,
+     "ticker": "GLUE"
+    },
+    {
+     "market_cap_m": 7467.1399,
+     "price_vs_sma200": 1.0604,
+     "return_30d": -0.177,
+     "return_7d": -0.2186,
+     "revenue_driver": "hematology drug sales",
+     "signal_rank": 309,
+     "stock_vs_spy_20d": -0.1368,
+     "ticker": "RIGL"
+    },
+    {
+     "market_cap_m": 135012.3528,
+     "price_vs_sma200": 0.8031,
+     "return_30d": -0.2264,
+     "return_7d": -0.0728,
+     "revenue_driver": "resmetirom sales",
+     "signal_rank": 1592,
+     "stock_vs_spy_20d": -0.0975,
+     "ticker": "MDGL"
+    },
+    {
+     "market_cap_m": 442.4784,
+     "price_vs_sma200": 0.5135,
+     "return_30d": -0.2808,
+     "return_7d": -0.164,
+     "revenue_driver": "specialty pharmaceuticals",
+     "signal_rank": 1571,
+     "stock_vs_spy_20d": -0.2205,
+     "ticker": "PHAT"
+    },
+    {
+     "market_cap_m": 961.8274,
+     "price_vs_sma200": 0.438,
+     "return_30d": -0.552,
+     "return_7d": -0.0267,
+     "revenue_driver": "IV tramadol sales",
+     "signal_rank": 1631,
+     "stock_vs_spy_20d": -0.437,
+     "ticker": "AVTX"
+    }
+   ],
+   "Rare Disease, Autoimmune & Specialty Therapies": [
+    {
+     "market_cap_m": 257652.3889,
+     "price_vs_sma200": 1.218,
+     "return_30d": 0.1105,
+     "return_7d": 0.019,
+     "revenue_driver": "biologic drug sales",
+     "signal_rank": 1404,
+     "stock_vs_spy_20d": 0.1651,
+     "ticker": "AMGN"
+    },
+    {
+     "market_cap_m": 505472.11,
+     "price_vs_sma200": 1.2192,
+     "return_30d": 0.102,
+     "return_7d": 0.0186,
+     "revenue_driver": "immunology therapeutics",
+     "signal_rank": 2021,
+     "stock_vs_spy_20d": 0.109,
+     "ticker": "ABBV"
+    },
+    {
+     "market_cap_m": 655.5964,
+     "price_vs_sma200": 1.1087,
+     "return_30d": 0.063,
+     "return_7d": 0.2161,
+     "revenue_driver": "Linzess sales",
+     "signal_rank": 37,
+     "stock_vs_spy_20d": 0.2045,
+     "ticker": "IRWD"
+    },
+    {
+     "market_cap_m": 6353.2762,
+     "price_vs_sma200": 1.2661,
+     "return_30d": 0.0187,
+     "return_7d": -0.0473,
+     "revenue_driver": "generic drug sales",
+     "signal_rank": 953,
+     "stock_vs_spy_20d": 0.0669,
+     "ticker": "AMRX"
+    },
+    {
+     "market_cap_m": 15166.142,
+     "price_vs_sma200": 1.4454,
+     "return_30d": 0.0003,
+     "return_7d": 0.0509,
+     "revenue_driver": "ALS drug sales",
+     "signal_rank": 1899,
+     "stock_vs_spy_20d": 0.1037,
+     "ticker": "AMLX"
+    },
+    {
+     "market_cap_m": 1264.4687,
+     "price_vs_sma200": 1.5424,
+     "return_30d": -0.0212,
+     "return_7d": 0.09,
+     "revenue_driver": "specialty pharmaceutical sales",
+     "signal_rank": 1316,
+     "stock_vs_spy_20d": 0.078,
+     "ticker": "ETON"
+    },
+    {
+     "market_cap_m": 1648.5368,
+     "price_vs_sma200": 0.926,
+     "return_30d": -0.0973,
+     "return_7d": -0.2285,
+     "revenue_driver": "PYRUKYND sales",
+     "signal_rank": 1177,
+     "stock_vs_spy_20d": -0.0201,
+     "ticker": "AGIO"
+    },
+    {
+     "market_cap_m": 1982.1663,
+     "price_vs_sma200": 0.9554,
+     "return_30d": -0.1975,
+     "return_7d": -0.14,
+     "revenue_driver": "narcolepsy therapy sales",
+     "signal_rank": 269,
+     "stock_vs_spy_20d": -0.1227,
+     "ticker": "HRMY"
+    },
+    {
+     "market_cap_m": 343.8419,
+     "price_vs_sma200": 0.7632,
+     "return_30d": -0.2278,
+     "return_7d": -0.0835,
+     "revenue_driver": "rare disease gene therapies",
+     "signal_rank": 1325,
+     "stock_vs_spy_20d": -0.1005,
+     "ticker": "ABEO"
+    },
+    {
+     "market_cap_m": 442.4784,
+     "price_vs_sma200": 0.5135,
+     "return_30d": -0.2808,
+     "return_7d": -0.164,
+     "revenue_driver": "specialty pharmaceuticals",
+     "signal_rank": 1571,
+     "stock_vs_spy_20d": -0.2205,
+     "ticker": "PHAT"
+    }
+   ]
+  }
+ },
+ "predictions": {
+  "badge_count": 1,
+  "confidence_score": 0.1055,
+  "conviction_label": "HIGH CONVICTION",
+  "data_quality_flags": [],
+  "ev_score": 0.2104,
+  "is_diamond": false,
+  "passes_tradability_filter": true,
+  "quality_label": "HIGH",
+  "quantiles": {
+   "downside_q10": -0.305,
+   "downside_q25": -0.154,
+   "downside_q50": -0.0785,
+   "downside_q75": -0.0114,
+   "downside_q90": 0.0135,
+   "path_volatility": 0.0471,
+   "risk_reward": 3.5177,
+   "uncertainty": 0.6827,
+   "upside_q10": 0.0425,
+   "upside_q25": 0.1234,
+   "upside_q50": 0.2762,
+   "upside_q75": 0.4606,
+   "upside_q90": 0.7252
+  },
+  "rank": 1316,
+  "rank_score": 0.0321,
+  "tradability_filter_reasons": []
+ },
+ "profile": {
+  "_local": {
+   "dividend_yield": 0.0,
+   "eps_growth_yoy": 8.0584,
+   "pe_ratio": 31.1303,
+   "revenue_growth_yoy": 1.0061,
+   "roe": 0.747
+  },
+  "beta": 0.9,
+  "betaTTM": null,
+  "ceo": "Sean E. Brynjelsen",
+  "companyName": "Eton Pharmaceuticals, Inc.",
+  "country": "US",
+  "debtToEquityTTM": null,
+  "description": "Eton Pharmaceuticals, Inc., a pharmaceutical company, focuses on developing and commercializing treatments for rare diseases. Its commercial rare disease products include Increlex for the treatment of severe primary igf-1 deficiency; Alkindi Sprinkle for adrenal insufficiency; Khindivi for adrenocortical insufficiency; Galzin for Wilson disease; PKU Golike for phenylketonuria; Carglumic Acid for N-acetylglutamate synthase deficiency; Betaine Anhydrous for homocystinuria; and Nitisinone for tyrosinemia type 1. The company is also developing various product candidates, which are in late-stage development, including ET-600 for diabetes insipidus; Amglidia for neonatal diabetes mellitus; ET-700 for Wilson disease; ET-800 for adrenal insufficiency; and ZENEO hydrocortisone autoinjector for adrenal crisis. Eton Pharmaceuticals, Inc. was incorporated in 2017 and is based in Deer Park, Illinois.",
+  "dividendYielTTM": null,
+  "enterpriseValueOverEBITDATTM": null,
+  "exchangeShortName": "NASDAQ",
+  "fullTimeEmployees": "44",
+  "industry": "Drug Manufacturers - Specialty & Generic",
+  "ipoDate": "2018-11-14",
+  "latest_earnings_date": "2026-11-05",
+  "marketCapTTM": null,
+  "mktCap": 1613801826,
+  "peRatioTTM": null,
+  "price": 56.46,
+  "priceToSalesRatioTTM": null,
+  "returnOnEquityTTM": 1.0482,
+  "revenue_description": "Eton Pharmaceuticals markets and develops specialty pharmaceutical products. Revenue is driven mainly by flagship device sales, especially smartphones and related hardware, with services adding a higher-margin recurring stream.",
+  "revenue_description_themes": [
+   "specialty pharmaceuticals",
+   "rare disease drugs",
+   "product launches"
+  ],
+  "revenue_taxonomy": [
+   {
+    "bucket": "Rare Disease, Autoimmune & Specialty Therapies",
+    "matched_tags": [
+     "specialty pharmaceutical sales",
+     "rare disease treatments"
+    ],
+    "path": "Healthcare & Life Sciences › Therapeutics & Biopharma › Rare Disease, Autoimmune & Specialty Therapies",
+    "sector": "Healthcare & Life Sciences",
+    "segment": "Therapeutics & Biopharma"
+   },
+   {
+    "bucket": "Branded Biopharma",
+    "matched_tags": [
+     "hospital injectable drugs"
+    ],
+    "path": "Healthcare & Life Sciences › Therapeutics & Biopharma › Branded Biopharma",
+    "sector": "Healthcare & Life Sciences",
+    "segment": "Therapeutics & Biopharma"
+   }
+  ],
+  "revenue_themes": [
+   "specialty pharmaceutical sales",
+   "hospital injectable drugs",
+   "rare disease treatments"
+  ],
+  "sector": "Healthcare",
+  "website": "https://www.etonpharma.com"
+ },
+ "report": null,
+ "scorecard": {
+  "headline": {
+   "avg_universe_pct": 79,
+   "label": "above_average",
+   "metric_count": 8
+  },
+  "metrics": {
+   "debt_to_equity": {
+    "direction": "lower",
+    "label": "D/E Ratio",
+    "sector": "Health Care",
+    "sector_n": 279,
+    "sector_pct": 46,
+    "universe_n": 2005,
+    "universe_pct": 57,
+    "value": 0.2771
+   },
+   "eps_growth_yoy": {
+    "direction": "higher",
+    "label": "EPS Growth",
+    "sector": "Health Care",
+    "sector_n": 274,
+    "sector_pct": 97,
+    "universe_n": 1823,
+    "universe_pct": 97,
+    "value": 8.0584
+   },
+   "gross_margin": {
+    "direction": "higher",
+    "label": "Gross Margin",
+    "sector": "Health Care",
+    "sector_n": 236,
+    "sector_pct": 56,
+    "universe_n": 1940,
+    "universe_pct": 75,
+    "value": 0.6915
+   },
+   "operating_margin": {
+    "direction": "higher",
+    "label": "Op. Margin",
+    "sector": "Health Care",
+    "sector_n": 236,
+    "sector_pct": 92,
+    "universe_n": 1940,
+    "universe_pct": 87,
+    "value": 0.2884
+   },
+   "pe_ratio": {
+    "direction": "lower",
+    "label": "P/E",
+    "sector": "Health Care",
+    "sector_n": 112,
+    "sector_pct": 41,
+    "universe_n": 1450,
+    "universe_pct": 26,
+    "value": 31.1303
+   },
+   "revenue_growth_yoy": {
+    "direction": "higher",
+    "label": "Rev Growth",
+    "sector": "Health Care",
+    "sector_n": 246,
+    "sector_pct": 91,
+    "universe_n": 1771,
+    "universe_pct": 96,
+    "value": 1.0061
+   },
+   "roe": {
+    "direction": "higher",
+    "label": "ROE",
+    "sector": "Health Care",
+    "sector_n": 282,
+    "sector_pct": 93,
+    "universe_n": 2021,
+    "universe_pct": 95,
+    "value": 0.747
+   },
+   "roic": {
+    "direction": "higher",
+    "label": "ROIC",
+    "sector": "Health Care",
+    "sector_n": 279,
+    "sector_pct": 99,
+    "universe_n": 1994,
+    "universe_pct": 99,
+    "value": 0.3416
+   }
+  }
+ },
+ "signal_rank": 1316,
+ "structural_analogs": {
+  "gp_core_pct": 82.7,
+  "gp_core_ratio": 1.8099,
+  "matches": [
+   {
+    "actual_downside": -0.0016,
+    "actual_return": 0.7597,
+    "actual_upside": 0.7597,
+    "days_in_region": 112,
+    "end_date": "2018-03-20",
+    "end_reason": "reversal",
+    "seq_len": 112,
+    "similarity": 0.5097,
+    "start_date": "2017-11-24",
+    "ticker": "SEDG",
+    "total_distance": 0.337,
+    "trigger_date": "2018-02-08",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": -0.2351,
+    "actual_return": 0.0624,
+    "actual_upside": 0.0624,
+    "days_in_region": 108,
+    "end_date": "2007-09-20",
+    "end_reason": "reversal",
+    "seq_len": 108,
+    "similarity": 0.5044,
+    "start_date": "2007-05-23",
+    "ticker": "NXST",
+    "total_distance": 0.3422,
+    "trigger_date": "2007-07-26",
+    "trigger_type": "severe_drawdown"
+   },
+   {
+    "actual_downside": -0.1068,
+    "actual_return": 0.2754,
+    "actual_upside": 0.2754,
+    "days_in_region": 81,
+    "end_date": "2006-01-17",
+    "end_reason": "reversal",
+    "seq_len": 81,
+    "similarity": 0.4981,
+    "start_date": "2005-09-12",
+    "ticker": "LIFC",
+    "total_distance": 0.3485,
+    "trigger_date": "2005-10-10",
+    "trigger_type": "severe_drawdown"
+   },
+   {
+    "actual_downside": -0.2216,
+    "actual_return": 0.0373,
+    "actual_upside": 0.056,
+    "days_in_region": 106,
+    "end_date": "2014-06-20",
+    "end_reason": "reversal",
+    "seq_len": 106,
+    "similarity": 0.4931,
+    "start_date": "2014-01-22",
+    "ticker": "ATRC",
+    "total_distance": 0.3536,
+    "trigger_date": "2014-03-27",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": -0.0265,
+    "actual_return": 0.1513,
+    "actual_upside": 0.1513,
+    "days_in_region": 108,
+    "end_date": "2018-11-07",
+    "end_reason": "reversal",
+    "seq_len": 108,
+    "similarity": 0.4806,
+    "start_date": "2018-08-06",
+    "ticker": "PCMI",
+    "total_distance": 0.3664,
+    "trigger_date": "2018-10-11",
+    "trigger_type": "severe_drawdown"
+   },
+   {
+    "actual_downside": -0.1135,
+    "actual_return": 0.2224,
+    "actual_upside": 0.2224,
+    "days_in_region": 92,
+    "end_date": "2002-07-16",
+    "end_reason": "reversal",
+    "seq_len": 92,
+    "similarity": 0.4802,
+    "start_date": "2002-04-19",
+    "ticker": "BYD",
+    "total_distance": 0.3667,
+    "trigger_date": "2002-06-04",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": 0.0,
+    "actual_return": 0.5487,
+    "actual_upside": 0.5487,
+    "days_in_region": 101,
+    "end_date": "1997-12-08",
+    "end_reason": "reversal",
+    "seq_len": 101,
+    "similarity": 0.4788,
+    "start_date": "1997-08-29",
+    "ticker": "WIRE",
+    "total_distance": 0.3682,
+    "trigger_date": "1997-09-12",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": -0.0732,
+    "actual_return": 0.4623,
+    "actual_upside": 0.4623,
+    "days_in_region": 76,
+    "end_date": "1991-09-20",
+    "end_reason": "reversal",
+    "seq_len": 76,
+    "similarity": 0.4765,
+    "start_date": "1991-04-25",
+    "ticker": "AMGN",
+    "total_distance": 0.3706,
+    "trigger_date": "1991-05-16",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": 0.0,
+    "actual_return": 0.255,
+    "actual_upside": 0.255,
+    "days_in_region": 75,
+    "end_date": "1995-11-03",
+    "end_reason": "reversal",
+    "seq_len": 75,
+    "similarity": 0.4742,
+    "start_date": "1995-09-20",
+    "ticker": "LRNG",
+    "total_distance": 0.373,
+    "trigger_date": "1995-10-10",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": -0.4538,
+    "actual_return": -0.2767,
+    "actual_upside": 0.0108,
+    "days_in_region": 100,
+    "end_date": "2015-11-27",
+    "end_reason": "reversal",
+    "seq_len": 100,
+    "similarity": 0.474,
+    "start_date": "2015-08-04",
+    "ticker": "ADPT",
+    "total_distance": 0.3733,
+    "trigger_date": "2015-09-29",
+    "trigger_type": "severe_drawdown"
+   }
+  ],
+  "panel": {
+   "edge": 0.0988,
+   "hit_hi": 0.821,
+   "hit_lo": 0.576,
+   "hit_rate": 0.714,
+   "median_final": 0.2224,
+   "median_pain": 0.1068,
+   "n": 21,
+   "n_eff": 21.0,
+   "p25_final": -0.1364,
+   "p_pain_gt5": 0.667,
+   "return_to_pain": 1.753
+  },
+  "stats": {
+   "avg_similarity": 0.433,
+   "avg_trough": 0.1317,
+   "avg_upside": 0.2203,
+   "median_pain": 0.0932,
+   "median_return": 0.0866,
+   "n_matches": 200,
+   "p25_return": -0.0994,
+   "p_pain_gt5": 0.685,
+   "return_to_pain": 0.765,
+   "top5_avg_trough": 0.1183,
+   "top5_avg_upside": 0.261,
+   "top_similarity": 0.51,
+   "win_rate": 0.62
+  },
+  "total_matches": 200
+ },
+ "ticker": "ETON",
+ "trending": {
+  "acceleration": -0.006,
+  "avg_vol_20d": 615557.483,
+  "base_high_120": 64.43,
+  "breakout_confirmed": 0,
+  "close": 55.25,
+  "momentum_score": 0.8879,
+  "momentum_start": "2026-02-12",
+  "range_20": 0.2138,
+  "range_50": 0.4662,
+  "rank": 125,
+  "rank_down": null,
+  "rank_up": 90,
+  "ret_120": 1.3471,
+  "ret_20": -0.0411,
+  "ret_60": 0.3055,
+  "rundown_score": 0.7826,
+  "score_date": "2026-10-12",
+  "slope_20": -0.0018,
+  "slope_60": 0.0042,
+  "stage": "sustained",
+  "stage_label": "Trending",
+  "ticker": "ETON",
+  "total_score": 0.6801,
+  "trend_ratio": 1.448,
+  "vcp_detected": 1,
+  "vcp_score": 0.5415
+ }
+}

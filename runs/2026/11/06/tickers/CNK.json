@@ -1,0 +1,1098 @@
+{
+ "date": "2026-11-06",
+ "detected_regions": {
+  "primary": {
+   "days_in_region": 114,
+   "region_start": "2026-08-24",
+   "trigger_date": "2026-09-17",
+   "trigger_type": "shallow_drawdown"
+  },
+  "secondary": [
+   {
+    "confidence_score": 0.6781,
+    "downside_q50": -0.0812,
+    "ev_score": 0.0904,
+    "region_start": "2026-05-15",
+    "seq_len": 182,
+    "trigger_date": "2026-09-28",
+    "trigger_type": "runup",
+    "upside_q25": 0.0758,
+    "upside_q50": 0.1644,
+    "upside_q75": 0.281
+   }
+  ]
+ },
+ "feature_attribution": {
+  "macro_driver_count": 15,
+  "risk_flags": [
+   "high_volatility"
+  ],
+  "top_drivers": [
+   {
+    "direction": "negative",
+    "feature": "dollar_volume",
+    "feature_value": 107288184.0,
+    "importance": 0.0004,
+    "importance_pct": 0.4006,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "positive",
+    "feature": "price_vs_sma200",
+    "feature_value": 1.2277,
+    "importance": 0.0002,
+    "importance_pct": 0.1998,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "positive",
+    "feature": "rsi_overbought",
+    "feature_value": 0.0,
+    "importance": 0.0001,
+    "importance_pct": 0.1424,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "positive",
+    "feature": "sector_rank_1d",
+    "feature_value": 0.8182,
+    "importance": 0.0001,
+    "importance_pct": 0.13,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "negative",
+    "feature": "correlation_spy_60d",
+    "feature_value": 0.2142,
+    "importance": 0.0001,
+    "importance_pct": 0.1272,
+    "method": "integrated_gradients"
+   }
+  ]
+ },
+ "fundamentals": {
+  "accrual": 0.0462,
+  "adx_14": 26.1368,
+  "altman_z_score": 1.2469,
+  "amihud_illiquidity": 0.0002,
+  "avg_volume": 2008934.2308,
+  "beta_252d": 0.1654,
+  "book_value_per_share": 5.347,
+  "correlation_spy_60d": 0.2142,
+  "current_liabilities": 846.9,
+  "current_ratio": 0.9424,
+  "daily_earnings_yield": 0.0634,
+  "daily_fcf_yield": -0.0093,
+  "daily_pb": 7.4512,
+  "daily_pe": 15.7634,
+  "daily_ps": 1.2819,
+  "days_since_52w_high": 2.0,
+  "debt_ebitda": 3.9923,
+  "debt_to_equity": 4.836,
+  "dividend_yield": 0.0016,
+  "dollar_volume_20d_avg": 84014618.3432,
+  "earnings_quality": 1.1083,
+  "ebitda_growth_yoy": 0.3121,
+  "enterprise_value": 6980.2164,
+  "eps_basic": 1.06,
+  "eps_cagr_3y": 0.4198,
+  "eps_cagr_5y": -0.1502,
+  "eps_diluted": 1.04,
+  "eps_growth_accel": 1.099,
+  "eps_growth_qoq": -0.1167,
+  "eps_growth_yoy": 0.8582,
+  "eps_growth_yoy_q2": -0.2408,
+  "eps_growth_yoy_q3": -0.2687,
+  "eps_growth_yoy_q4": -0.5217,
+  "eps_growth_yoy_q5": -0.3163,
+  "eps_growth_yoy_q6": 1.1121,
+  "eps_growth_yoy_q7": 0.1356,
+  "eps_growth_yoy_q8": 0.6429,
+  "eps_history_8q": [
+   0.33,
+   -0.32,
+   0.63,
+   0.4,
+   0.27,
+   -0.06,
+   1.19,
+   1.04
+  ],
+  "eps_ttm": 2.4677,
+  "ev_to_ebitda": 9.3959,
+  "ev_to_fcf": 106.2438,
+  "ev_to_sales": 6.5907,
+  "fcf_growth_yoy": 1.7139,
+  "fcf_margin": 0.062,
+  "fcf_per_share": 0.5728,
+  "gross_margin": 0.569,
+  "gross_margin_change_yoy": 0.4363,
+  "gross_margin_history": [
+   0.1895,
+   0.1796,
+   0.1789,
+   0.207,
+   0.454,
+   0.569
+  ],
+  "inc_roic": 0.0092,
+  "interest_coverage": 5.5111,
+  "is_pre_revenue": false,
+  "margin_vs_sector_median": null,
+  "market_cap_ratio": 4569.8164,
+  "net_income": 122.8,
+  "net_margin": 0.0813,
+  "operating_income": 206.6,
+  "operating_margin": 0.1498,
+  "operating_margin_change_yoy": 0.0575,
+  "pb_ratio": 7.2751,
+  "pe_percentile_1y": 0.996,
+  "pe_ratio": 15.7634,
+  "peg_trailing": 0.1172,
+  "piotroski_f_score": 4.0,
+  "price_vs_high_52w": 0.9633,
+  "price_vs_sma200": 1.2277,
+  "ps_percentile_1y": 0.1587,
+  "ps_ratio": 1.269,
+  "quarter_labels_8q": [
+   "Q4 '24",
+   "Q1 '25",
+   "Q2 '25",
+   "Q3 '25",
+   "Q4 '25",
+   "Q1 '26",
+   "Q2 '26",
+   "Q3 '26"
+  ],
+  "quarterly_eps_growth_yoy": 1.6,
+  "quarterly_eps_growth_yoy_8q": [
+   3.2,
+   -2.6842,
+   0.9688,
+   -0.6639,
+   -0.1818,
+   0.8125,
+   0.8889,
+   1.6
+  ],
+  "quarterly_revenue_growth_yoy": 0.2351,
+  "quarterly_revenue_growth_yoy_8q": [
+   0.2745,
+   -0.0665,
+   0.281,
+   -0.0698,
+   -0.0467,
+   0.1894,
+   0.1551,
+   0.2351
+  ],
+  "revenue_cagr_3y": 0.056,
+  "revenue_cagr_5y": 0.3049,
+  "revenue_growth_accel": 0.0853,
+  "revenue_growth_qoq": -0.0251,
+  "revenue_growth_yoy": 0.1306,
+  "revenue_growth_yoy_q2": 0.0454,
+  "revenue_growth_yoy_q3": 0.0685,
+  "revenue_growth_yoy_q4": 0.0215,
+  "revenue_growth_yoy_q5": 0.097,
+  "revenue_growth_yoy_q6": 0.138,
+  "revenue_growth_yoy_q7": -0.008,
+  "revenue_growth_yoy_q8": -0.0056,
+  "revenue_history_8q": [
+   814.3,
+   540.7,
+   940.5,
+   857.5,
+   776.3,
+   643.1,
+   1086.4,
+   1059.1
+  ],
+  "revenue_per_share": 9.2337,
+  "roa": 0.0526,
+  "roce": 0.1153,
+  "roe": 0.217,
+  "roic": 0.0776,
+  "rsi_14": 47.2659,
+  "sector_momentum": 0.093,
+  "share_dilution_1y": -0.0026,
+  "stock_vs_sector_20d": 0.0594,
+  "stock_vs_spy_20d": 0.124,
+  "total_assets": 4582.7,
+  "vol_regime": 1.0122,
+  "volatility_20d": 0.0196,
+  "volatility_60d": 0.0193,
+  "w52_high": 41.55,
+  "w52_low": 21.6
+ },
+ "market_characters": [],
+ "model_analogs": {
+  "matches": [
+   {
+    "actual_downside": -0.1619,
+    "actual_return": -0.0482,
+    "actual_upside": 0.02,
+    "days_in_region": 178,
+    "end_date": "2006-02-06",
+    "end_reason": "reversal",
+    "similarity": 0.9632,
+    "start_date": "2005-08-12",
+    "ticker": "ARLP",
+    "trigger_date": "2005-10-07",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": -0.1176,
+    "actual_return": 0.1886,
+    "actual_upside": 0.1886,
+    "days_in_region": 189,
+    "end_date": "2019-03-21",
+    "end_reason": "reversal",
+    "similarity": 0.9628,
+    "start_date": "2018-09-13",
+    "ticker": "IAC",
+    "trigger_date": "2018-10-29",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": -0.1013,
+    "actual_return": 0.0588,
+    "actual_upside": 0.0588,
+    "days_in_region": 146,
+    "end_date": "2019-02-20",
+    "end_reason": "reversal",
+    "similarity": 0.9617,
+    "start_date": "2018-09-27",
+    "ticker": "RGR",
+    "trigger_date": "2018-10-22",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": -0.1769,
+    "actual_return": -0.0678,
+    "actual_upside": 0.0,
+    "days_in_region": 109,
+    "end_date": "2018-12-14",
+    "end_reason": "reversal",
+    "similarity": 0.9606,
+    "start_date": "2018-08-27",
+    "ticker": "CEQP",
+    "trigger_date": "2018-09-26",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": 0.0,
+    "actual_return": 0.2884,
+    "actual_upside": 0.2884,
+    "days_in_region": 73,
+    "end_date": "2018-12-10",
+    "end_reason": "reversal",
+    "similarity": 0.9603,
+    "start_date": "2018-09-28",
+    "ticker": "ALNT",
+    "trigger_date": "2018-10-11",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": -0.3089,
+    "actual_return": -0.2051,
+    "actual_upside": 0.0,
+    "days_in_region": 122,
+    "end_date": "2019-01-04",
+    "end_reason": "reversal",
+    "similarity": 0.9598,
+    "start_date": "2018-09-04",
+    "ticker": "MYGN",
+    "trigger_date": "2018-10-08",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": -0.0374,
+    "actual_return": 0.2297,
+    "actual_upside": 0.2361,
+    "days_in_region": 45,
+    "end_date": "2018-11-15",
+    "end_reason": "reversal",
+    "similarity": 0.9598,
+    "start_date": "2018-10-01",
+    "ticker": "KTOS",
+    "trigger_date": "2018-10-26",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": -0.0893,
+    "actual_return": 0.1733,
+    "actual_upside": 0.1733,
+    "days_in_region": 158,
+    "end_date": "2019-02-25",
+    "end_reason": "reversal",
+    "similarity": 0.9593,
+    "start_date": "2018-09-20",
+    "ticker": "ROCK",
+    "trigger_date": "2018-10-25",
+    "trigger_type": "severe_drawdown"
+   },
+   {
+    "actual_downside": -0.0814,
+    "actual_return": 0.2442,
+    "actual_upside": 0.2442,
+    "days_in_region": 260,
+    "end_date": "2019-05-22",
+    "end_reason": "reversal",
+    "similarity": 0.9591,
+    "start_date": "2018-09-04",
+    "ticker": "LIND",
+    "trigger_date": "2018-10-12",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": -0.0078,
+    "actual_return": 0.1339,
+    "actual_upside": 0.1339,
+    "days_in_region": 78,
+    "end_date": "2018-11-30",
+    "end_reason": "reversal",
+    "similarity": 0.9584,
+    "start_date": "2018-09-13",
+    "ticker": "NUVA",
+    "trigger_date": "2018-10-23",
+    "trigger_type": "shallow_drawdown"
+   }
+  ],
+  "stats": {
+   "avg_max_drawdown": 0.092,
+   "avg_similarity": 0.956,
+   "avg_trough": 0.092,
+   "avg_upside": 0.1797,
+   "best_return": 0.6589,
+   "downside_range": [
+    -0.3381,
+    0.0
+   ],
+   "median_return": 0.1639,
+   "n_matches": 50,
+   "outcome_agreement": true,
+   "return_p25": 0.0618,
+   "return_p5": -0.0864,
+   "return_p75": 0.2448,
+   "return_p95": 0.3878,
+   "sim_weighted_win_rate": 0.82,
+   "top5_avg_trough": 0.1115,
+   "top5_avg_upside": 0.1112,
+   "top_similarity": 0.963,
+   "upside_range": [
+    0.0,
+    0.6589
+   ],
+   "win_rate": 0.82,
+   "worst_return": -0.2222,
+   "years_span": 9
+  },
+  "total_matches": 50
+ },
+ "peer_group": {
+  "buckets": [
+   "Entertainment Content, Events & Live Experiences",
+   "Fitness, Wellness, Attractions & Leisure Venues",
+   "Outdoor Advertising, Venue Media & Transit Media"
+  ],
+  "groups": {
+   "Entertainment Content, Events & Live Experiences": [
+    {
+     "market_cap_m": 986.8469,
+     "price_vs_sma200": 1.168,
+     "return_30d": 0.2394,
+     "return_7d": 0.2372,
+     "revenue_driver": "gaming terminals",
+     "signal_rank": 878,
+     "stock_vs_spy_20d": 0.3026,
+     "ticker": "ACEL"
+    },
+    {
+     "market_cap_m": 6206.5022,
+     "price_vs_sma200": 1.1933,
+     "return_30d": 0.1683,
+     "return_7d": 0.2042,
+     "revenue_driver": "media rights",
+     "signal_rank": 1172,
+     "stock_vs_spy_20d": 0.2208,
+     "ticker": "FWONA"
+    },
+    {
+     "market_cap_m": 65186.6222,
+     "price_vs_sma200": 1.1535,
+     "return_30d": 0.1239,
+     "return_7d": 0.1703,
+     "revenue_driver": "media rights",
+     "signal_rank": 1438,
+     "stock_vs_spy_20d": 0.186,
+     "ticker": "FWONK"
+    },
+    {
+     "market_cap_m": 710.3148,
+     "price_vs_sma200": 1.5571,
+     "return_30d": 0.068,
+     "return_7d": 0.0502,
+     "revenue_driver": "cinema admissions",
+     "signal_rank": 1809,
+     "stock_vs_spy_20d": 0.109,
+     "ticker": "AMC"
+    },
+    {
+     "market_cap_m": 4524.0008,
+     "price_vs_sma200": 1.2277,
+     "return_30d": 0.0299,
+     "return_7d": -0.0031,
+     "revenue_driver": "box office admissions",
+     "signal_rank": 622,
+     "stock_vs_spy_20d": 0.124,
+     "ticker": "CNK"
+    },
+    {
+     "market_cap_m": 42087.8812,
+     "price_vs_sma200": 1.0457,
+     "return_30d": 0.0256,
+     "return_7d": 0.0159,
+     "revenue_driver": "concert promotion",
+     "signal_rank": 753,
+     "stock_vs_spy_20d": 0.0842,
+     "ticker": "LYV"
+    },
+    {
+     "market_cap_m": 13391.1858,
+     "price_vs_sma200": 1.3516,
+     "return_30d": 0.0117,
+     "return_7d": -0.1326,
+     "revenue_driver": "IT research and advisory",
+     "signal_rank": null,
+     "stock_vs_spy_20d": 0.259,
+     "ticker": "IT"
+    },
+    {
+     "market_cap_m": 56859.456,
+     "price_vs_sma200": 1.6591,
+     "return_30d": -0.1176,
+     "return_7d": -0.0551,
+     "revenue_driver": "digital media platform",
+     "signal_rank": 1952,
+     "stock_vs_spy_20d": -0.0558,
+     "ticker": "GDC"
+    },
+    {
+     "market_cap_m": 1024.9883,
+     "price_vs_sma200": 0.8779,
+     "return_30d": -0.2728,
+     "return_7d": -0.0566,
+     "revenue_driver": "local deals marketplace",
+     "signal_rank": 1365,
+     "stock_vs_spy_20d": -0.1132,
+     "ticker": "GRPN"
+    },
+    {
+     "market_cap_m": 311.1278,
+     "price_vs_sma200": 0.8845,
+     "return_30d": -0.31,
+     "return_7d": 0.0967,
+     "revenue_driver": "cable TV networks",
+     "signal_rank": 485,
+     "stock_vs_spy_20d": -0.1685,
+     "ticker": "AMCX"
+    }
+   ],
+   "Fitness, Wellness, Attractions & Leisure Venues": [
+    {
+     "market_cap_m": 4984.7888,
+     "price_vs_sma200": 0.9885,
+     "return_30d": 0.4131,
+     "return_7d": 0.1459,
+     "revenue_driver": "low-cost gym memberships",
+     "signal_rank": 1812,
+     "stock_vs_spy_20d": 0.3123,
+     "ticker": "PLNT"
+    },
+    {
+     "market_cap_m": 5714.2915,
+     "price_vs_sma200": 1.113,
+     "return_30d": 0.2278,
+     "return_7d": 0.1951,
+     "revenue_driver": "historical horse racing",
+     "signal_rank": 1524,
+     "stock_vs_spy_20d": 0.2802,
+     "ticker": "CHDN"
+    },
+    {
+     "market_cap_m": 293.7396,
+     "price_vs_sma200": 0.6925,
+     "return_30d": 0.1798,
+     "return_7d": 0.013,
+     "revenue_driver": "arcade game centers",
+     "signal_rank": 1565,
+     "stock_vs_spy_20d": 0.1872,
+     "ticker": "PLAY"
+    },
+    {
+     "market_cap_m": 10000.2192,
+     "price_vs_sma200": 1.3199,
+     "return_30d": 0.1789,
+     "return_7d": 0.0923,
+     "revenue_driver": "premium fitness club memberships",
+     "signal_rank": 727,
+     "stock_vs_spy_20d": 0.2154,
+     "ticker": "LTH"
+    },
+    {
+     "market_cap_m": 4940.3078,
+     "price_vs_sma200": 1.1442,
+     "return_30d": 0.1652,
+     "return_7d": 0.0437,
+     "revenue_driver": "ski resort operations",
+     "signal_rank": 575,
+     "stock_vs_spy_20d": 0.1413,
+     "ticker": "MTN"
+    },
+    {
+     "market_cap_m": 181671.0086,
+     "price_vs_sma200": 1.1275,
+     "return_30d": 0.0999,
+     "return_7d": 0.0707,
+     "revenue_driver": "theme park admissions",
+     "signal_rank": 2023,
+     "stock_vs_spy_20d": 0.1358,
+     "ticker": "DIS"
+    },
+    {
+     "market_cap_m": 710.3148,
+     "price_vs_sma200": 1.5571,
+     "return_30d": 0.068,
+     "return_7d": 0.0502,
+     "revenue_driver": "cinema admissions",
+     "signal_rank": 1809,
+     "stock_vs_spy_20d": 0.109,
+     "ticker": "AMC"
+    },
+    {
+     "market_cap_m": 4524.0008,
+     "price_vs_sma200": 1.2277,
+     "return_30d": 0.0299,
+     "return_7d": -0.0031,
+     "revenue_driver": "box office admissions",
+     "signal_rank": 622,
+     "stock_vs_spy_20d": 0.124,
+     "ticker": "CNK"
+    },
+    {
+     "market_cap_m": 10953.6741,
+     "price_vs_sma200": 0.8794,
+     "return_30d": -0.2062,
+     "return_7d": -0.1899,
+     "revenue_driver": "professional sports franchises",
+     "signal_rank": 1462,
+     "stock_vs_spy_20d": -0.185,
+     "ticker": "MSGS"
+    },
+    {
+     "market_cap_m": 1598.2155,
+     "price_vs_sma200": 0.6827,
+     "return_30d": -1.0,
+     "return_7d": -1.0,
+     "revenue_driver": "amusement park admissions",
+     "signal_rank": null,
+     "stock_vs_spy_20d": -0.1201,
+     "ticker": "FUN"
+    }
+   ],
+   "Outdoor Advertising, Venue Media & Transit Media": [
+    {
+     "market_cap_m": 941.7667,
+     "price_vs_sma200": 1.4041,
+     "return_30d": 0.5461,
+     "return_7d": 0.3417,
+     "revenue_driver": "insurance lead generation fees",
+     "signal_rank": 1185,
+     "stock_vs_spy_20d": 0.5109,
+     "ticker": "EVER"
+    },
+    {
+     "market_cap_m": 1156.8137,
+     "price_vs_sma200": 1.4869,
+     "return_30d": 0.2509,
+     "return_7d": -0.0855,
+     "revenue_driver": "restaurant meals",
+     "signal_rank": 1267,
+     "stock_vs_spy_20d": 0.1832,
+     "ticker": "CBRL"
+    },
+    {
+     "market_cap_m": 932.5492,
+     "price_vs_sma200": 0.9525,
+     "return_30d": 0.1404,
+     "return_7d": -0.0192,
+     "revenue_driver": "electronic display systems",
+     "signal_rank": 428,
+     "stock_vs_spy_20d": 0.1331,
+     "ticker": "DAKT"
+    },
+    {
+     "market_cap_m": 5149.1656,
+     "price_vs_sma200": 1.0343,
+     "return_30d": 0.1136,
+     "return_7d": -0.0194,
+     "revenue_driver": "out-of-home advertising",
+     "signal_rank": 593,
+     "stock_vs_spy_20d": 0.0823,
+     "ticker": "OUT"
+    },
+    {
+     "market_cap_m": 710.3148,
+     "price_vs_sma200": 1.5571,
+     "return_30d": 0.068,
+     "return_7d": 0.0502,
+     "revenue_driver": "cinema admissions",
+     "signal_rank": 1809,
+     "stock_vs_spy_20d": 0.109,
+     "ticker": "AMC"
+    },
+    {
+     "market_cap_m": 4524.0008,
+     "price_vs_sma200": 1.2277,
+     "return_30d": 0.0299,
+     "return_7d": -0.0031,
+     "revenue_driver": "box office admissions",
+     "signal_rank": 622,
+     "stock_vs_spy_20d": 0.124,
+     "ticker": "CNK"
+    },
+    {
+     "market_cap_m": 1203.4781,
+     "price_vs_sma200": 1.0348,
+     "return_30d": 0.0254,
+     "return_7d": 0.0083,
+     "revenue_driver": "billboard advertising",
+     "signal_rank": null,
+     "stock_vs_spy_20d": -0.0035,
+     "ticker": "CCO"
+    },
+    {
+     "market_cap_m": 440.249,
+     "price_vs_sma200": 1.0868,
+     "return_30d": 0.0104,
+     "return_7d": 0.0666,
+     "revenue_driver": "billboard advertising",
+     "signal_rank": null,
+     "stock_vs_spy_20d": -0.0581,
+     "ticker": "BOC"
+    }
+   ]
+  }
+ },
+ "predictions": {
+  "badge_count": 0,
+  "confidence_score": 0.5572,
+  "conviction_label": "SPECULATIVE",
+  "data_quality_flags": [],
+  "ev_score": 0.1124,
+  "is_diamond": false,
+  "passes_tradability_filter": true,
+  "quality_label": "AVOID",
+  "quantiles": {
+   "downside_q10": -0.257,
+   "downside_q25": -0.1424,
+   "downside_q50": -0.0798,
+   "downside_q75": -0.0196,
+   "downside_q90": 0.003,
+   "path_volatility": 0.032,
+   "risk_reward": 2.3388,
+   "uncertainty": 0.4303,
+   "upside_q10": 0.0325,
+   "upside_q25": 0.0867,
+   "upside_q50": 0.1866,
+   "upside_q75": 0.303,
+   "upside_q90": 0.4628
+  },
+  "rank": 622,
+  "rank_score": 0.0717,
+  "tradability_filter_reasons": []
+ },
+ "profile": {
+  "_local": {
+   "dividend_yield": 0.0016,
+   "eps_growth_yoy": 0.8582,
+   "pe_ratio": 15.7828,
+   "revenue_growth_yoy": 0.1306,
+   "roe": 0.217
+  },
+  "beta": 1.043,
+  "betaTTM": null,
+  "ceo": "Sean Gamble",
+  "companyName": "Cinemark Holdings, Inc.",
+  "country": "US",
+  "debtToEquityTTM": null,
+  "description": "Cinemark Holdings, Inc., through its various subsidiaries, operates in the business of exhibiting motion pictures. As of June 30, 2022, the company managed a portfolio of 522 movie theaters, encompassing 5,868 screens located across the United States, South America, and Central America. The company was established in 1984 and maintains its principal executive offices in Plano, Texas.",
+  "dividendYielTTM": null,
+  "enterpriseValueOverEBITDATTM": null,
+  "exchangeShortName": "NYSE",
+  "fullTimeEmployees": "27900",
+  "industry": "Entertainment",
+  "ipoDate": "2007-04-24",
+  "latest_earnings_date": "2026-11-03",
+  "marketCapTTM": null,
+  "mktCap": 4508976800,
+  "peRatioTTM": null,
+  "price": 38.9,
+  "priceToSalesRatioTTM": null,
+  "returnOnEquityTTM": 0.3353,
+  "revenue_description": "Cinemark operates movie theaters and related concession businesses. Revenue is driven by unit volume growth and pricing realization in its core end markets, with new product introductions and geographic expansion as incremental catalysts.",
+  "revenue_description_themes": [
+   "premium format expansion",
+   "concession margin optimization",
+   "theatrical attendance recovery"
+  ],
+  "revenue_taxonomy": [
+   {
+    "bucket": "Entertainment Content, Events & Live Experiences",
+    "matched_tags": [
+     "box office admissions"
+    ],
+    "path": "Media, Advertising & Information › Entertainment & Ip › Entertainment Content, Events & Live Experiences",
+    "sector": "Media, Advertising & Information",
+    "segment": "Entertainment & Ip"
+   },
+   {
+    "bucket": "Fitness, Wellness, Attractions & Leisure Venues",
+    "matched_tags": [
+     "theatrical concessions"
+    ],
+    "path": "Consumer Services & Leisure › Hospitality & Experiences › Fitness, Wellness, Attractions & Leisure Venues",
+    "sector": "Consumer Services & Leisure",
+    "segment": "Hospitality & Experiences"
+   },
+   {
+    "bucket": "Outdoor Advertising, Venue Media & Transit Media",
+    "matched_tags": [
+     "cinema advertising"
+    ],
+    "path": "Media, Advertising & Information › Advertising & Media › Outdoor Advertising, Venue Media & Transit Media",
+    "sector": "Media, Advertising & Information",
+    "segment": "Advertising & Media"
+   }
+  ],
+  "revenue_themes": [
+   "box office admissions",
+   "theatrical concessions",
+   "cinema advertising"
+  ],
+  "sector": "Communication Services",
+  "website": "https://ir.cinemark.com"
+ },
+ "report": {
+  "display_rank": null,
+  "lane": "wait",
+  "lane_rank": 76,
+  "setup_label": "early_trend",
+  "why_now": "Model analogs leads the readiness mix (+8.4); early-stage trend"
+ },
+ "scorecard": {
+  "headline": {
+   "avg_universe_pct": 61,
+   "label": "above_average",
+   "metric_count": 8
+  },
+  "metrics": {
+   "debt_to_equity": {
+    "direction": "lower",
+    "label": "D/E Ratio",
+    "sector": "Comm. Services",
+    "sector_n": 43,
+    "sector_pct": 9,
+    "universe_n": 2005,
+    "universe_pct": 3,
+    "value": 4.836
+   },
+   "eps_growth_yoy": {
+    "direction": "higher",
+    "label": "EPS Growth",
+    "sector": "Comm. Services",
+    "sector_n": 44,
+    "sector_pct": 59,
+    "universe_n": 1823,
+    "universe_pct": 80,
+    "value": 0.8582
+   },
+   "gross_margin": {
+    "direction": "higher",
+    "label": "Gross Margin",
+    "sector": "Comm. Services",
+    "sector_n": 43,
+    "sector_pct": 72,
+    "universe_n": 1940,
+    "universe_pct": 59,
+    "value": 0.569
+   },
+   "operating_margin": {
+    "direction": "higher",
+    "label": "Op. Margin",
+    "sector": "Comm. Services",
+    "sector_n": 43,
+    "sector_pct": 67,
+    "universe_n": 1940,
+    "universe_pct": 62,
+    "value": 0.1498
+   },
+   "pe_ratio": {
+    "direction": "lower",
+    "label": "P/E",
+    "sector": "Comm. Services",
+    "sector_n": 31,
+    "sector_pct": 58,
+    "universe_n": 1450,
+    "universe_pct": 63,
+    "value": 15.7828
+   },
+   "revenue_growth_yoy": {
+    "direction": "higher",
+    "label": "Rev Growth",
+    "sector": "Comm. Services",
+    "sector_n": 44,
+    "sector_pct": 61,
+    "universe_n": 1771,
+    "universe_pct": 65,
+    "value": 0.1306
+   },
+   "roe": {
+    "direction": "higher",
+    "label": "ROE",
+    "sector": "Comm. Services",
+    "sector_n": 44,
+    "sector_pct": 75,
+    "universe_n": 2021,
+    "universe_pct": 78,
+    "value": 0.217
+   },
+   "roic": {
+    "direction": "higher",
+    "label": "ROIC",
+    "sector": "Comm. Services",
+    "sector_n": 44,
+    "sector_pct": 77,
+    "universe_n": 1994,
+    "universe_pct": 77,
+    "value": 0.0329
+   }
+  }
+ },
+ "signal_rank": 622,
+ "structural_analogs": {
+  "gp_core_pct": 18.2,
+  "gp_core_ratio": 0.9627,
+  "matches": [
+   {
+    "actual_downside": -0.2088,
+    "actual_return": 0.0503,
+    "actual_upside": 0.055,
+    "days_in_region": 114,
+    "end_date": "2019-02-20",
+    "end_reason": "reversal",
+    "seq_len": 114,
+    "similarity": 0.5864,
+    "start_date": "2018-07-26",
+    "ticker": "CIGI",
+    "total_distance": 0.2668,
+    "trigger_date": "2018-10-10",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": -0.0775,
+    "actual_return": 0.047,
+    "actual_upside": 0.047,
+    "days_in_region": 131,
+    "end_date": "2018-11-16",
+    "end_reason": "reversal",
+    "seq_len": 131,
+    "similarity": 0.5737,
+    "start_date": "2018-07-02",
+    "ticker": "DGII",
+    "total_distance": 0.2778,
+    "trigger_date": "2018-10-10",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": -0.0485,
+    "actual_return": 0.0664,
+    "actual_upside": 0.0664,
+    "days_in_region": 110,
+    "end_date": "2005-06-09",
+    "end_reason": "reversal",
+    "seq_len": 110,
+    "similarity": 0.5706,
+    "start_date": "2005-03-01",
+    "ticker": "SNRR",
+    "total_distance": 0.2805,
+    "trigger_date": "2005-03-30",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": -0.1308,
+    "actual_return": -0.0339,
+    "actual_upside": 0.0479,
+    "days_in_region": 129,
+    "end_date": "2021-12-27",
+    "end_reason": "reversal",
+    "seq_len": 129,
+    "similarity": 0.5626,
+    "start_date": "2021-06-25",
+    "ticker": "LMAT",
+    "total_distance": 0.2876,
+    "trigger_date": "2021-10-01",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": -0.0394,
+    "actual_return": 0.1071,
+    "actual_upside": 0.1071,
+    "days_in_region": 115,
+    "end_date": "2006-02-23",
+    "end_reason": "reversal",
+    "seq_len": 115,
+    "similarity": 0.5592,
+    "start_date": "2005-08-25",
+    "ticker": "TRW",
+    "total_distance": 0.2906,
+    "trigger_date": "2005-11-10",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": -0.0753,
+    "actual_return": 0.3825,
+    "actual_upside": 0.3825,
+    "days_in_region": 104,
+    "end_date": "2015-10-20",
+    "end_reason": "reversal",
+    "seq_len": 104,
+    "similarity": 0.5589,
+    "start_date": "2015-06-15",
+    "ticker": "PRMW",
+    "total_distance": 0.2909,
+    "trigger_date": "2015-07-06",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": 0.0,
+    "actual_return": 0.245,
+    "actual_upside": 0.245,
+    "days_in_region": 107,
+    "end_date": "2017-02-10",
+    "end_reason": "reversal",
+    "seq_len": 107,
+    "similarity": 0.5585,
+    "start_date": "2016-09-07",
+    "ticker": "NXRT",
+    "total_distance": 0.2913,
+    "trigger_date": "2016-10-06",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": -0.026,
+    "actual_return": 0.3419,
+    "actual_upside": 0.3419,
+    "days_in_region": 113,
+    "end_date": "2013-05-07",
+    "end_reason": "reversal",
+    "seq_len": 113,
+    "similarity": 0.5583,
+    "start_date": "2012-10-05",
+    "ticker": "ZD",
+    "total_distance": 0.2914,
+    "trigger_date": "2012-10-26",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": -0.2927,
+    "actual_return": -0.1699,
+    "actual_upside": 0.0,
+    "days_in_region": 117,
+    "end_date": "2014-11-07",
+    "end_reason": "reversal",
+    "seq_len": 117,
+    "similarity": 0.5573,
+    "start_date": "2014-04-17",
+    "ticker": "SWN",
+    "total_distance": 0.2923,
+    "trigger_date": "2014-07-09",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": -0.0343,
+    "actual_return": 0.1051,
+    "actual_upside": 0.1051,
+    "days_in_region": 131,
+    "end_date": "2004-01-26",
+    "end_reason": "reversal",
+    "seq_len": 131,
+    "similarity": 0.5566,
+    "start_date": "2003-08-19",
+    "ticker": "CHH",
+    "total_distance": 0.293,
+    "trigger_date": "2003-09-29",
+    "trigger_type": "shallow_drawdown"
+   }
+  ],
+  "panel": {
+   "edge": -0.0192,
+   "hit_hi": 0.672,
+   "hit_lo": 0.499,
+   "hit_rate": 0.588,
+   "median_final": 0.061,
+   "median_pain": 0.1079,
+   "n": 51,
+   "n_eff": 51.0,
+   "p25_final": -0.0784,
+   "p_pain_gt5": 0.627,
+   "return_to_pain": 0.477
+  },
+  "stats": {
+   "avg_similarity": 0.531,
+   "avg_trough": 0.1099,
+   "avg_upside": 0.158,
+   "median_pain": 0.0881,
+   "median_return": 0.0523,
+   "n_matches": 200,
+   "p25_return": -0.1038,
+   "p_pain_gt5": 0.605,
+   "return_to_pain": 0.484,
+   "top5_avg_trough": 0.101,
+   "top5_avg_upside": 0.0647,
+   "top_similarity": 0.586,
+   "win_rate": 0.59
+  },
+  "total_matches": 200
+ },
+ "ticker": "CNK",
+ "trending": {
+  "acceleration": 0.0004,
+  "avg_vol_20d": 2049785.7301,
+  "base_high_120": 40.38,
+  "breakout_confirmed": 0,
+  "close": 38.9,
+  "momentum_score": 0.714,
+  "momentum_start": "2026-05-26",
+  "range_20": 0.1344,
+  "range_50": 0.2008,
+  "rank": 335,
+  "rank_down": null,
+  "rank_up": 167,
+  "ret_120": 0.4499,
+  "ret_20": 0.0687,
+  "ret_60": 0.0329,
+  "rundown_score": 0.1329,
+  "score_date": "2026-11-06",
+  "slope_20": 0.002,
+  "slope_60": 0.0017,
+  "stage": "sustained",
+  "stage_label": "Trending",
+  "ticker": "CNK",
+  "total_score": 0.4777,
+  "trend_ratio": 1.1763,
+  "vcp_detected": 0,
+  "vcp_score": 0.3201
+ }
+}
