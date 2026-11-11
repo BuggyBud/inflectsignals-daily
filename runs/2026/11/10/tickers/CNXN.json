@@ -1,0 +1,1119 @@
+{
+ "date": "2026-11-10",
+ "detected_regions": {
+  "primary": {
+   "days_in_region": 81,
+   "region_start": "2026-10-13",
+   "trigger_date": "2026-11-06",
+   "trigger_type": "drawdown"
+  },
+  "secondary": [
+   {
+    "confidence_score": 0.7729,
+    "downside_q50": -0.0558,
+    "ev_score": 0.1253,
+    "region_start": "2026-03-27",
+    "seq_len": 200,
+    "trigger_date": "2026-09-14",
+    "trigger_type": "runup",
+    "upside_q25": 0.0865,
+    "upside_q50": 0.179,
+    "upside_q75": 0.2912
+   }
+  ]
+ },
+ "feature_attribution": {
+  "macro_driver_count": 16,
+  "risk_flags": [
+   "high_volatility"
+  ],
+  "top_drivers": [
+   {
+    "direction": "positive",
+    "feature": "rsi_overbought",
+    "feature_value": 0.0,
+    "importance": 0.0005,
+    "importance_pct": 0.3516,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "positive",
+    "feature": "price_vs_sma200",
+    "feature_value": 1.1204,
+    "importance": 0.0003,
+    "importance_pct": 0.245,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "negative",
+    "feature": "volatility_20d",
+    "feature_value": 0.0254,
+    "importance": 0.0003,
+    "importance_pct": 0.2428,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "negative",
+    "feature": "dollar_volume",
+    "feature_value": 10657155.0,
+    "importance": 0.0002,
+    "importance_pct": 0.1607,
+    "method": "integrated_gradients"
+   }
+  ]
+ },
+ "fundamentals": {
+  "accrual": 0.0703,
+  "adx_14": 29.0912,
+  "altman_z_score": 4.5879,
+  "amihud_illiquidity": 0.001,
+  "avg_volume": 153690.7353,
+  "beta_252d": 0.1937,
+  "book_value_per_share": 38.8704,
+  "correlation_spy_60d": 0.4903,
+  "current_liabilities": 508.196,
+  "current_ratio": 2.7218,
+  "daily_earnings_yield": 0.0495,
+  "daily_fcf_yield": -0.0009,
+  "daily_pb": 2.1125,
+  "daily_pe": 20.2086,
+  "daily_ps": 0.6573,
+  "days_since_52w_high": 20.0,
+  "debt_ebitda": 0.0454,
+  "debt_to_equity": 0.0068,
+  "dividend_yield": 0.0012,
+  "dollar_volume_20d_avg": 16384263.5052,
+  "earnings_quality": 0.3091,
+  "ebitda_growth_yoy": 0.3057,
+  "enterprise_value": 1736.0125,
+  "eps_basic": 1.25,
+  "eps_cagr_3y": 0.1086,
+  "eps_cagr_5y": 0.1072,
+  "eps_diluted": 1.24,
+  "eps_growth_accel": 0.1,
+  "eps_growth_qoq": -0.0458,
+  "eps_growth_yoy": 0.2416,
+  "eps_growth_yoy_q2": 0.1416,
+  "eps_growth_yoy_q3": 0.039,
+  "eps_growth_yoy_q4": -0.003,
+  "eps_growth_yoy_q5": -0.0439,
+  "eps_growth_yoy_q6": -0.0119,
+  "eps_growth_yoy_q7": 0.0673,
+  "eps_growth_yoy_q8": 0.0475,
+  "eps_history_8q": [
+   0.78,
+   0.51,
+   0.97,
+   0.97,
+   0.82,
+   0.68,
+   1.31,
+   1.24
+  ],
+  "eps_ttm": 4.0626,
+  "ev_to_ebitda": 11.7381,
+  "ev_to_fcf": 227.0188,
+  "ev_to_sales": 1.9856,
+  "fcf_growth_yoy": 0.1784,
+  "fcf_margin": 0.0087,
+  "fcf_per_share": 0.303,
+  "gross_margin": 0.1864,
+  "gross_margin_change_yoy": -0.0104,
+  "gross_margin_history": [
+   0.1832,
+   0.1853,
+   0.1877,
+   0.1883,
+   0.1889,
+   0.1864
+  ],
+  "inc_roic": -0.0574,
+  "interest_coverage": null,
+  "is_pre_revenue": false,
+  "margin_vs_sector_median": null,
+  "market_cap_ratio": 2072.6145,
+  "net_income": 31.458,
+  "net_margin": 0.0325,
+  "operating_income": 40.98,
+  "operating_margin": 0.0434,
+  "operating_margin_change_yoy": 0.0042,
+  "pb_ratio": 2.1121,
+  "pe_percentile_1y": 0.4325,
+  "pe_ratio": 20.2086,
+  "peg_trailing": 0.8413,
+  "piotroski_f_score": 3.0,
+  "price_vs_high_52w": 0.8622,
+  "price_vs_sma200": 1.1204,
+  "ps_percentile_1y": 0.3333,
+  "ps_ratio": 0.6926,
+  "quarter_labels_8q": [
+   "Q4 '24",
+   "Q1 '25",
+   "Q2 '25",
+   "Q3 '25",
+   "Q4 '25",
+   "Q1 '26",
+   "Q2 '26",
+   "Q3 '26"
+  ],
+  "quarterly_eps_growth_yoy": 0.2784,
+  "quarterly_eps_growth_yoy_8q": [
+   -0.1333,
+   0.02,
+   -0.0202,
+   -0.049,
+   0.0513,
+   0.3333,
+   0.3505,
+   0.2784
+  ],
+  "quarterly_revenue_growth_yoy": 0.233,
+  "quarterly_revenue_growth_yoy_8q": [
+   0.0178,
+   0.1092,
+   0.0315,
+   -0.0216,
+   -0.0084,
+   0.0297,
+   0.1241,
+   0.233
+  ],
+  "revenue_cagr_3y": 0.0299,
+  "revenue_cagr_5y": 0.0264,
+  "revenue_growth_accel": 0.063,
+  "revenue_growth_qoq": 0.0238,
+  "revenue_growth_yoy": 0.0953,
+  "revenue_growth_yoy_q2": 0.0323,
+  "revenue_growth_yoy_q3": 0.0078,
+  "revenue_growth_yoy_q4": 0.0252,
+  "revenue_growth_yoy_q5": 0.0319,
+  "revenue_growth_yoy_q6": 0.0494,
+  "revenue_growth_yoy_q7": 0.0421,
+  "revenue_growth_yoy_q8": -0.017,
+  "revenue_history_8q": [
+   708.897,
+   701.046,
+   759.693,
+   709.068,
+   702.939,
+   721.866,
+   853.996,
+   874.313
+  ],
+  "revenue_per_share": 34.6386,
+  "roa": 0.0697,
+  "roce": 0.1378,
+  "roe": 0.1061,
+  "roic": 0.1017,
+  "rsi_14": 37.6028,
+  "sector_momentum": 0.0861,
+  "share_dilution_1y": 0.0,
+  "stock_vs_sector_20d": -0.1976,
+  "stock_vs_spy_20d": -0.1014,
+  "total_assets": 1516.298,
+  "vol_regime": 1.3437,
+  "volatility_20d": 0.0254,
+  "volatility_60d": 0.0189,
+  "w52_high": 96.905,
+  "w52_low": 54.965
+ },
+ "market_characters": [
+  {
+   "id": "g1",
+   "name": "Steady Climbers"
+  },
+  {
+   "id": "g5",
+   "name": "Quality Compressed"
+  }
+ ],
+ "model_analogs": {
+  "matches": [
+   {
+    "actual_downside": -0.07,
+    "actual_return": 0.1697,
+    "actual_upside": 0.1697,
+    "days_in_region": 178,
+    "end_date": "2006-03-27",
+    "end_reason": "reversal",
+    "similarity": 0.9748,
+    "start_date": "2005-09-30",
+    "ticker": "PFGC",
+    "trigger_date": "2005-10-31",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": -0.0009,
+    "actual_return": 0.3962,
+    "actual_upside": 0.3962,
+    "days_in_region": 147,
+    "end_date": "2006-02-27",
+    "end_reason": "reversal",
+    "similarity": 0.973,
+    "start_date": "2005-10-03",
+    "ticker": "ORB",
+    "trigger_date": "2005-10-24",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": -0.0561,
+    "actual_return": 0.2194,
+    "actual_upside": 0.2194,
+    "days_in_region": 106,
+    "end_date": "2006-01-17",
+    "end_reason": "reversal",
+    "similarity": 0.9718,
+    "start_date": "2005-10-03",
+    "ticker": "NRG",
+    "trigger_date": "2005-11-02",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": 0.0,
+    "actual_return": 0.2839,
+    "actual_upside": 0.2839,
+    "days_in_region": 110,
+    "end_date": "2016-12-21",
+    "end_reason": "reversal",
+    "similarity": 0.9712,
+    "start_date": "2016-09-02",
+    "ticker": "UFPI",
+    "trigger_date": "2016-09-15",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": -0.0189,
+    "actual_return": 0.4581,
+    "actual_upside": 0.4581,
+    "days_in_region": 120,
+    "end_date": "2006-01-31",
+    "end_reason": "reversal",
+    "similarity": 0.9707,
+    "start_date": "2005-10-03",
+    "ticker": "FTI",
+    "trigger_date": "2005-10-19",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": -0.0083,
+    "actual_return": 0.1653,
+    "actual_upside": 0.1653,
+    "days_in_region": 182,
+    "end_date": "2017-02-15",
+    "end_reason": "reversal",
+    "similarity": 0.9699,
+    "start_date": "2016-08-17",
+    "ticker": "UGP",
+    "trigger_date": "2016-11-11",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": -0.0493,
+    "actual_return": 0.4454,
+    "actual_upside": 0.4454,
+    "days_in_region": 153,
+    "end_date": "2006-02-06",
+    "end_reason": "reversal",
+    "similarity": 0.9698,
+    "start_date": "2005-09-06",
+    "ticker": "AZZ",
+    "trigger_date": "2005-10-26",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": 0.0,
+    "actual_return": 0.3135,
+    "actual_upside": 0.3135,
+    "days_in_region": 120,
+    "end_date": "2006-01-31",
+    "end_reason": "reversal",
+    "similarity": 0.9694,
+    "start_date": "2005-10-03",
+    "ticker": "OII",
+    "trigger_date": "2005-10-21",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": 0.0,
+    "actual_return": 0.5579,
+    "actual_upside": 0.5579,
+    "days_in_region": 156,
+    "end_date": "2017-02-09",
+    "end_reason": "reversal",
+    "similarity": 0.9694,
+    "start_date": "2016-09-06",
+    "ticker": "PATK",
+    "trigger_date": "2016-09-20",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": -0.0644,
+    "actual_return": 0.1809,
+    "actual_upside": 0.1809,
+    "days_in_region": 312,
+    "end_date": "2013-08-02",
+    "end_reason": "reversal",
+    "similarity": 0.969,
+    "start_date": "2012-09-24",
+    "ticker": "UNFI",
+    "trigger_date": "2012-11-19",
+    "trigger_type": "drawdown"
+   }
+  ],
+  "stats": {
+   "avg_max_drawdown": 0.0375,
+   "avg_similarity": 0.967,
+   "avg_trough": 0.0375,
+   "avg_upside": 0.2783,
+   "best_return": 0.7184,
+   "downside_range": [
+    -0.2894,
+    0.0
+   ],
+   "median_return": 0.238,
+   "n_matches": 50,
+   "outcome_agreement": true,
+   "return_p25": 0.1725,
+   "return_p5": 0.0399,
+   "return_p75": 0.3571,
+   "return_p95": 0.5462,
+   "sim_weighted_win_rate": 0.98,
+   "top5_avg_trough": 0.0292,
+   "top5_avg_upside": 0.3055,
+   "top_similarity": 0.975,
+   "upside_range": [
+    0.0432,
+    0.7184
+   ],
+   "win_rate": 0.98,
+   "worst_return": -0.1366,
+   "years_span": 5
+  },
+  "total_matches": 50
+ },
+ "peer_group": {
+  "buckets": [
+   "Building Products, Fixtures & Architectural Materials",
+   "Enterprise Applications & Workflow Software",
+   "IT Services, Systems Integration & Digital Transformation"
+  ],
+  "groups": {
+   "Building Products, Fixtures & Architectural Materials": [
+    {
+     "market_cap_m": 860.44,
+     "price_vs_sma200": 1.2296,
+     "return_30d": 0.3345,
+     "return_7d": 0.0573,
+     "revenue_driver": "architectural glass fabrication",
+     "signal_rank": 284,
+     "stock_vs_spy_20d": 0.176,
+     "ticker": "APOG"
+    },
+    {
+     "market_cap_m": 749.2837,
+     "price_vs_sma200": 0.8788,
+     "return_30d": 0.1644,
+     "return_7d": 0.355,
+     "revenue_driver": "kitchen and bath cabinetry",
+     "signal_rank": null,
+     "stock_vs_spy_20d": -0.0056,
+     "ticker": "AMWD"
+    },
+    {
+     "market_cap_m": 7197.9883,
+     "price_vs_sma200": 1.0186,
+     "return_30d": 0.1094,
+     "return_7d": 0.0206,
+     "revenue_driver": "residential water heaters",
+     "signal_rank": 863,
+     "stock_vs_spy_20d": 0.1483,
+     "ticker": "AOS"
+    },
+    {
+     "market_cap_m": 426.4585,
+     "price_vs_sma200": 1.2066,
+     "return_30d": 0.0929,
+     "return_7d": 0.1297,
+     "revenue_driver": "aerogel insulation materials",
+     "signal_rank": 1776,
+     "stock_vs_spy_20d": 0.0794,
+     "ticker": "ASPN"
+    },
+    {
+     "market_cap_m": 6700.3661,
+     "price_vs_sma200": 1.0477,
+     "return_30d": 0.0848,
+     "return_7d": 0.0636,
+     "revenue_driver": "ceiling systems",
+     "signal_rank": 1040,
+     "stock_vs_spy_20d": 0.1109,
+     "ticker": "AWI"
+    },
+    {
+     "market_cap_m": 80815.9229,
+     "price_vs_sma200": 1.068,
+     "return_30d": 0.0754,
+     "return_7d": 0.0683,
+     "revenue_driver": "architectural paint sales",
+     "signal_rank": 797,
+     "stock_vs_spy_20d": 0.1328,
+     "ticker": "SHW"
+    },
+    {
+     "market_cap_m": 3156.731,
+     "price_vs_sma200": 1.2435,
+     "return_30d": 0.014,
+     "return_7d": 0.0012,
+     "revenue_driver": "electrical conduit and fittings",
+     "signal_rank": null,
+     "stock_vs_spy_20d": -0.0159,
+     "ticker": "ATKR"
+    },
+    {
+     "market_cap_m": 7383.3981,
+     "price_vs_sma200": 1.4686,
+     "return_30d": 0.0074,
+     "return_7d": 0.0021,
+     "revenue_driver": "architectural glass fabrication",
+     "signal_rank": null,
+     "stock_vs_spy_20d": 0.0135,
+     "ticker": "APGE"
+    },
+    {
+     "market_cap_m": 2183.6925,
+     "price_vs_sma200": 1.1204,
+     "return_30d": -0.0826,
+     "return_7d": -0.0545,
+     "revenue_driver": "hardware sales",
+     "signal_rank": 119,
+     "stock_vs_spy_20d": -0.1014,
+     "ticker": "CNXN"
+    },
+    {
+     "market_cap_m": 7285.0182,
+     "price_vs_sma200": 0.7742,
+     "return_30d": -0.1186,
+     "return_7d": 0.1129,
+     "revenue_driver": "rooftop HVAC units",
+     "signal_rank": null,
+     "stock_vs_spy_20d": -0.1157,
+     "ticker": "AAON"
+    }
+   ],
+   "Enterprise Applications & Workflow Software": [
+    {
+     "market_cap_m": 2308.9721,
+     "price_vs_sma200": 1.7629,
+     "return_30d": 0.4817,
+     "return_7d": 0.0662,
+     "revenue_driver": "low-code development SaaS",
+     "signal_rank": 1273,
+     "stock_vs_spy_20d": 0.3888,
+     "ticker": "APPN"
+    },
+    {
+     "market_cap_m": 1589.5584,
+     "price_vs_sma200": 1.1852,
+     "return_30d": 0.1659,
+     "return_7d": -0.1456,
+     "revenue_driver": "work management SaaS",
+     "signal_rank": 1861,
+     "stock_vs_spy_20d": 0.0095,
+     "ticker": "ASAN"
+    },
+    {
+     "market_cap_m": 9161.8586,
+     "price_vs_sma200": 1.0705,
+     "return_30d": 0.0749,
+     "return_7d": 0.0433,
+     "revenue_driver": "LED lighting systems",
+     "signal_rank": 842,
+     "stock_vs_spy_20d": 0.1387,
+     "ticker": "AYI"
+    },
+    {
+     "market_cap_m": 104160.238,
+     "price_vs_sma200": 0.9604,
+     "return_30d": 0.0151,
+     "return_7d": -0.0541,
+     "revenue_driver": "creative software SaaS",
+     "signal_rank": null,
+     "stock_vs_spy_20d": 0.0431,
+     "ticker": "ADBE"
+    },
+    {
+     "market_cap_m": 373.3718,
+     "price_vs_sma200": 0.7707,
+     "return_30d": -0.04,
+     "return_7d": -0.0865,
+     "revenue_driver": "fleet management telematics",
+     "signal_rank": 1535,
+     "stock_vs_spy_20d": 0.0178,
+     "ticker": "AIOT"
+    },
+    {
+     "market_cap_m": 3494.8802,
+     "price_vs_sma200": 1.134,
+     "return_30d": -0.0556,
+     "return_7d": -0.1929,
+     "revenue_driver": "CRM and sales automation SaaS",
+     "signal_rank": 258,
+     "stock_vs_spy_20d": -0.1089,
+     "ticker": "FRSH"
+    },
+    {
+     "market_cap_m": 432486.8587,
+     "price_vs_sma200": 0.9619,
+     "return_30d": -0.0822,
+     "return_7d": -0.0609,
+     "revenue_driver": "router and switch sales",
+     "signal_rank": 396,
+     "stock_vs_spy_20d": -0.1106,
+     "ticker": "CSCO"
+    },
+    {
+     "market_cap_m": 2183.6925,
+     "price_vs_sma200": 1.1204,
+     "return_30d": -0.0826,
+     "return_7d": -0.0545,
+     "revenue_driver": "hardware sales",
+     "signal_rank": 119,
+     "stock_vs_spy_20d": -0.1014,
+     "ticker": "CNXN"
+    },
+    {
+     "market_cap_m": 2617.4114,
+     "price_vs_sma200": 0.8699,
+     "return_30d": -0.2381,
+     "return_7d": -0.0692,
+     "revenue_driver": "contract electronics manufacturing",
+     "signal_rank": 1037,
+     "stock_vs_spy_20d": -0.1555,
+     "ticker": "BHE"
+    },
+    {
+     "market_cap_m": 546.7244,
+     "price_vs_sma200": 0.4863,
+     "return_30d": null,
+     "return_7d": 0.115,
+     "revenue_driver": "enterprise SaaS platform",
+     "signal_rank": 1560,
+     "stock_vs_spy_20d": -0.3765,
+     "ticker": "BCAX"
+    }
+   ],
+   "IT Services, Systems Integration & Digital Transformation": [
+    {
+     "market_cap_m": 772.0317,
+     "price_vs_sma200": 1.6502,
+     "return_30d": 0.3183,
+     "return_7d": 0.062,
+     "revenue_driver": "networking hardware distribution",
+     "signal_rank": 1157,
+     "stock_vs_spy_20d": 0.3152,
+     "ticker": "CLMB"
+    },
+    {
+     "market_cap_m": 21970.2375,
+     "price_vs_sma200": 1.2617,
+     "return_30d": 0.3057,
+     "return_7d": 0.1012,
+     "revenue_driver": "IT hardware reseller",
+     "signal_rank": 788,
+     "stock_vs_spy_20d": 0.1508,
+     "ticker": "CDW"
+    },
+    {
+     "market_cap_m": 9500.2943,
+     "price_vs_sma200": 1.1462,
+     "return_30d": 0.2533,
+     "return_7d": -0.0127,
+     "revenue_driver": "government consulting",
+     "signal_rank": 438,
+     "stock_vs_spy_20d": 0.2447,
+     "ticker": "BAH"
+    },
+    {
+     "market_cap_m": 1443.9016,
+     "price_vs_sma200": 1.1833,
+     "return_30d": 0.1441,
+     "return_7d": -0.0017,
+     "revenue_driver": "enterprise AI applications",
+     "signal_rank": 1819,
+     "stock_vs_spy_20d": 0.0214,
+     "ticker": "AI"
+    },
+    {
+     "market_cap_m": 4731.2656,
+     "price_vs_sma200": 1.455,
+     "return_30d": 0.0842,
+     "return_7d": -0.0231,
+     "revenue_driver": "IT hardware resale",
+     "signal_rank": 739,
+     "stock_vs_spy_20d": -0.0041,
+     "ticker": "NSIT"
+    },
+    {
+     "market_cap_m": 2179.3668,
+     "price_vs_sma200": 1.125,
+     "return_30d": 0.0756,
+     "return_7d": 0.0398,
+     "revenue_driver": "IT hardware and software resale",
+     "signal_rank": 1316,
+     "stock_vs_spy_20d": 0.0331,
+     "ticker": "PLUS"
+    },
+    {
+     "market_cap_m": 2183.6925,
+     "price_vs_sma200": 1.1204,
+     "return_30d": -0.0826,
+     "return_7d": -0.0545,
+     "revenue_driver": "hardware sales",
+     "signal_rank": 119,
+     "stock_vs_spy_20d": -0.1014,
+     "ticker": "CNXN"
+    },
+    {
+     "market_cap_m": 9121.0528,
+     "price_vs_sma200": 1.0024,
+     "return_30d": -0.1564,
+     "return_7d": -0.0677,
+     "revenue_driver": "semiconductor distribution",
+     "signal_rank": 908,
+     "stock_vs_spy_20d": -0.1255,
+     "ticker": "ARW"
+    },
+    {
+     "market_cap_m": 6447.7631,
+     "price_vs_sma200": 1.0352,
+     "return_30d": -0.1698,
+     "return_7d": -0.0351,
+     "revenue_driver": "electronic component distribution",
+     "signal_rank": 896,
+     "stock_vs_spy_20d": -0.1092,
+     "ticker": "AVT"
+    },
+    {
+     "market_cap_m": 296125.7859,
+     "price_vs_sma200": 0.9844,
+     "return_30d": -0.3803,
+     "return_7d": -0.2119,
+     "revenue_driver": "server and storage hardware",
+     "signal_rank": 1753,
+     "stock_vs_spy_20d": -0.3795,
+     "ticker": "DELL"
+    }
+   ]
+  }
+ },
+ "predictions": {
+  "badge_count": 1,
+  "confidence_score": 0.5497,
+  "conviction_label": "HIGH CONVICTION",
+  "data_quality_flags": [],
+  "ev_score": 0.1959,
+  "is_diamond": false,
+  "passes_tradability_filter": true,
+  "quality_label": "HIGH",
+  "quantiles": {
+   "downside_q10": -0.1993,
+   "downside_q25": -0.0833,
+   "downside_q50": -0.0393,
+   "downside_q75": 0.0011,
+   "downside_q90": 0.0157,
+   "path_volatility": 0.0322,
+   "risk_reward": 5.984,
+   "uncertainty": 0.4726,
+   "upside_q10": 0.0467,
+   "upside_q25": 0.1179,
+   "upside_q50": 0.235,
+   "upside_q75": 0.3612,
+   "upside_q90": 0.5193
+  },
+  "rank": 119,
+  "rank_score": 0.1727,
+  "tradability_filter_reasons": []
+ },
+ "profile": {
+  "_local": {
+   "dividend_yield": 0.0012,
+   "eps_growth_yoy": 0.2416,
+   "pe_ratio": 21.358,
+   "revenue_growth_yoy": 0.0953,
+   "roe": 0.1061
+  },
+  "beta": 0.822,
+  "betaTTM": null,
+  "ceo": "Timothy J. McGrath",
+  "companyName": "PC Connection, Inc.",
+  "country": "US",
+  "debtToEquityTTM": null,
+  "description": "PC Connection, Inc., together with its affiliates, offers a comprehensive range of information technology (IT) solutions. The company structures its operations into three main divisions: Business Solutions, Enterprise Solutions, and Public Sector Solutions. Its product portfolio features a wide selection of IT hardware, including computer systems, peripheral devices, and data center infrastructure, as well as software applications and networking communication equipment. Beyond just products, PC Connection also delivers critical services spanning the entire IT solution lifecycle, from initial design and intricate configuration to final implementation. The company engages a broad spectrum of clients, serving small to medium-sized businesses (including home office customers), governmental entities, educational organizations, and large corporate enterprises. It employs a multi-faceted marketing strategy, leveraging both digital and print media, alongside direct sales channels such as outbound telemarketing and a dedicated field sales team, often tailoring programs to specific customer groups. Established in 1982, PC Connection's corporate headquarters are located in Merrimack, New Hampshire.",
+  "dividendYielTTM": null,
+  "enterpriseValueOverEBITDATTM": null,
+  "exchangeShortName": "NASDAQ",
+  "fullTimeEmployees": "2525",
+  "industry": "Technology Distributors",
+  "ipoDate": "1998-03-03",
+  "latest_earnings_date": "2026-10-28",
+  "marketCapTTM": null,
+  "mktCap": 2121328558,
+  "peRatioTTM": null,
+  "price": 84.02,
+  "priceToSalesRatioTTM": null,
+  "returnOnEquityTTM": 0.1089,
+  "revenue_description": "PC Connection resells IT hardware, software, and related services to business and government clients. Revenue is driven by subscription ACV from enterprise license agreements and usage-based consumption, with module expansion and new product attach as growth levers.",
+  "revenue_description_themes": [
+   "expanding managed services revenue",
+   "growing cloud infrastructure sales",
+   "increasing software license renewals"
+  ],
+  "revenue_taxonomy": [
+   {
+    "bucket": "Building Products, Fixtures & Architectural Materials",
+    "matched_tags": [
+     "hardware sales"
+    ],
+    "path": "Real Estate & Infrastructure › Property & Infrastructure Services › Building Products, Fixtures & Architectural Materials",
+    "sector": "Real Estate & Infrastructure",
+    "segment": "Property & Infrastructure Services"
+   },
+   {
+    "bucket": "Enterprise Applications & Workflow Software",
+    "matched_tags": [
+     "software licensing"
+    ],
+    "path": "Technology › Software & Platforms › Enterprise Applications & Workflow Software",
+    "sector": "Technology",
+    "segment": "Software & Platforms"
+   },
+   {
+    "bucket": "IT Services, Systems Integration & Digital Transformation",
+    "matched_tags": [
+     "IT services"
+    ],
+    "path": "Technology › Tech Enabled Services & Infrastructure › IT Services, Systems Integration & Digital Transformation",
+    "sector": "Technology",
+    "segment": "Tech Enabled Services & Infrastructure"
+   }
+  ],
+  "revenue_themes": [
+   "hardware sales",
+   "software licensing",
+   "IT services"
+  ],
+  "sector": "Technology",
+  "website": "https://www.connection.com"
+ },
+ "report": {
+  "display_rank": null,
+  "lane": "wait",
+  "lane_rank": 48,
+  "setup_label": "countertrend",
+  "why_now": "Structural analogs leads the readiness mix (+12.0); countertrend move"
+ },
+ "scorecard": {
+  "headline": {
+   "avg_universe_pct": 52,
+   "label": "mixed",
+   "metric_count": 8
+  },
+  "metrics": {
+   "debt_to_equity": {
+    "direction": "lower",
+    "label": "D/E Ratio",
+    "sector": "Consumer Disc.",
+    "sector_n": 235,
+    "sector_pct": 85,
+    "universe_n": 1985,
+    "universe_pct": 86,
+    "value": 0.0068
+   },
+   "eps_growth_yoy": {
+    "direction": "higher",
+    "label": "EPS Growth",
+    "sector": "Consumer Disc.",
+    "sector_n": 240,
+    "sector_pct": 52,
+    "universe_n": 1804,
+    "universe_pct": 56,
+    "value": 0.2416
+   },
+   "gross_margin": {
+    "direction": "higher",
+    "label": "Gross Margin",
+    "sector": "Consumer Disc.",
+    "sector_n": 240,
+    "sector_pct": 20,
+    "universe_n": 1922,
+    "universe_pct": 13,
+    "value": 0.1864
+   },
+   "operating_margin": {
+    "direction": "higher",
+    "label": "Op. Margin",
+    "sector": "Consumer Disc.",
+    "sector_n": 240,
+    "sector_pct": 30,
+    "universe_n": 1922,
+    "universe_pct": 30,
+    "value": 0.0434
+   },
+   "pe_ratio": {
+    "direction": "lower",
+    "label": "P/E",
+    "sector": "Consumer Disc.",
+    "sector_n": 204,
+    "sector_pct": 42,
+    "universe_n": 1439,
+    "universe_pct": 46,
+    "value": 21.358
+   },
+   "revenue_growth_yoy": {
+    "direction": "higher",
+    "label": "Rev Growth",
+    "sector": "Consumer Disc.",
+    "sector_n": 240,
+    "sector_pct": 69,
+    "universe_n": 1754,
+    "universe_pct": 56,
+    "value": 0.0953
+   },
+   "roe": {
+    "direction": "higher",
+    "label": "ROE",
+    "sector": "Consumer Disc.",
+    "sector_n": 239,
+    "sector_pct": 43,
+    "universe_n": 2000,
+    "universe_pct": 52,
+    "value": 0.1061
+   },
+   "roic": {
+    "direction": "higher",
+    "label": "ROIC",
+    "sector": "Consumer Disc.",
+    "sector_n": 234,
+    "sector_pct": 66,
+    "universe_n": 1969,
+    "universe_pct": 76,
+    "value": 0.0312
+   }
+  }
+ },
+ "signal_rank": 119,
+ "structural_analogs": {
+  "gp_core_pct": 88.7,
+  "gp_core_ratio": 1.9889,
+  "matches": [
+   {
+    "actual_downside": -0.0308,
+    "actual_return": 0.1201,
+    "actual_upside": 0.1201,
+    "days_in_region": 82,
+    "end_date": "2004-11-26",
+    "end_reason": "reversal",
+    "seq_len": 82,
+    "similarity": 0.6472,
+    "start_date": "2004-10-06",
+    "ticker": "BJS",
+    "total_distance": 0.2176,
+    "trigger_date": "2004-11-04",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": -0.0868,
+    "actual_return": 0.2158,
+    "actual_upside": 0.2158,
+    "days_in_region": 85,
+    "end_date": "2006-10-16",
+    "end_reason": "reversal",
+    "seq_len": 85,
+    "similarity": 0.6468,
+    "start_date": "2006-05-09",
+    "ticker": "MOLX",
+    "total_distance": 0.2178,
+    "trigger_date": "2006-06-13",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": -0.1803,
+    "actual_return": 0.3686,
+    "actual_upside": 0.3686,
+    "days_in_region": 80,
+    "end_date": "2004-11-29",
+    "end_reason": "reversal",
+    "seq_len": 80,
+    "similarity": 0.6467,
+    "start_date": "2004-06-25",
+    "ticker": "ANF",
+    "total_distance": 0.2179,
+    "trigger_date": "2004-07-23",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": -0.0228,
+    "actual_return": 0.3484,
+    "actual_upside": 0.3484,
+    "days_in_region": 85,
+    "end_date": "2019-07-18",
+    "end_reason": "reversal",
+    "seq_len": 85,
+    "similarity": 0.6436,
+    "start_date": "2018-12-03",
+    "ticker": "HELE",
+    "total_distance": 0.2203,
+    "trigger_date": "2019-01-09",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": -0.2026,
+    "actual_return": -0.1073,
+    "actual_upside": 0.0193,
+    "days_in_region": 83,
+    "end_date": "2006-02-21",
+    "end_reason": "reversal",
+    "seq_len": 83,
+    "similarity": 0.6386,
+    "start_date": "2005-06-22",
+    "ticker": "TRI",
+    "total_distance": 0.2243,
+    "trigger_date": "2005-07-25",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": -0.1258,
+    "actual_return": 0.1291,
+    "actual_upside": 0.1291,
+    "days_in_region": 80,
+    "end_date": "2014-08-26",
+    "end_reason": "reversal",
+    "seq_len": 80,
+    "similarity": 0.6381,
+    "start_date": "2014-04-01",
+    "ticker": "BRCD",
+    "total_distance": 0.2246,
+    "trigger_date": "2014-04-29",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": -0.1512,
+    "actual_return": 0.0159,
+    "actual_upside": 0.0159,
+    "days_in_region": 80,
+    "end_date": "2006-07-03",
+    "end_reason": "reversal",
+    "seq_len": 80,
+    "similarity": 0.6368,
+    "start_date": "2006-04-19",
+    "ticker": "HYDL",
+    "total_distance": 0.2257,
+    "trigger_date": "2006-05-16",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": -0.0325,
+    "actual_return": 0.4609,
+    "actual_upside": 0.4609,
+    "days_in_region": 84,
+    "end_date": "2014-05-12",
+    "end_reason": "reversal",
+    "seq_len": 84,
+    "similarity": 0.6357,
+    "start_date": "2013-12-31",
+    "ticker": "TPC",
+    "total_distance": 0.2265,
+    "trigger_date": "2014-02-04",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": -0.0421,
+    "actual_return": 0.1049,
+    "actual_upside": 0.1049,
+    "days_in_region": 79,
+    "end_date": "2004-11-24",
+    "end_reason": "reversal",
+    "seq_len": 79,
+    "similarity": 0.6353,
+    "start_date": "2004-10-06",
+    "ticker": "FTI",
+    "total_distance": 0.2269,
+    "trigger_date": "2004-11-01",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": -0.0508,
+    "actual_return": 0.2424,
+    "actual_upside": 0.2424,
+    "days_in_region": 84,
+    "end_date": "2018-07-12",
+    "end_reason": "reversal",
+    "seq_len": 84,
+    "similarity": 0.6342,
+    "start_date": "2018-01-04",
+    "ticker": "UNF",
+    "total_distance": 0.2277,
+    "trigger_date": "2018-02-07",
+    "trigger_type": "shallow_drawdown"
+   }
+  ],
+  "panel": {
+   "edge": 0.1271,
+   "hit_hi": 0.913,
+   "hit_lo": 0.79,
+   "hit_rate": 0.863,
+   "median_final": 0.1579,
+   "median_pain": 0.0592,
+   "n": 51,
+   "n_eff": 51.0,
+   "p25_final": 0.0826,
+   "p_pain_gt5": 0.569,
+   "return_to_pain": 1.993
+  },
+  "stats": {
+   "avg_similarity": 0.604,
+   "avg_trough": 0.0954,
+   "avg_upside": 0.1725,
+   "median_pain": 0.0589,
+   "median_return": 0.152,
+   "n_matches": 200,
+   "p25_return": 0.063,
+   "p_pain_gt5": 0.575,
+   "return_to_pain": 1.926,
+   "top5_avg_trough": 0.1047,
+   "top5_avg_upside": 0.2144,
+   "top_similarity": 0.647,
+   "win_rate": 0.85
+  },
+  "total_matches": 200
+ },
+ "ticker": "CNXN",
+ "trending": {
+  "acceleration": -0.007,
+  "avg_vol_20d": 162904.9907,
+  "base_high_120": 95.22,
+  "breakout_confirmed": 0,
+  "close": 86.83,
+  "momentum_score": 0.4347,
+  "momentum_start": "2026-04-07",
+  "range_20": 0.1542,
+  "range_50": 0.2385,
+  "rank": 1041,
+  "rank_down": null,
+  "rank_up": 290,
+  "ret_120": 0.3055,
+  "ret_20": -0.0601,
+  "ret_60": 0.0027,
+  "rundown_score": 0.8134,
+  "score_date": "2026-10-30",
+  "slope_20": -0.0045,
+  "slope_60": 0.0025,
+  "stage": "sustained",
+  "stage_label": "Trending",
+  "ticker": "CNXN",
+  "total_score": 0.386,
+  "trend_ratio": 1.1423,
+  "vcp_detected": 0,
+  "vcp_score": 0.3535
+ }
+}

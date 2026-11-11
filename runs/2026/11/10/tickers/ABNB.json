@@ -1,0 +1,1008 @@
+{
+ "date": "2026-11-10",
+ "detected_regions": {
+  "primary": {
+   "days_in_region": 115,
+   "region_start": "2026-08-25",
+   "trigger_date": "2026-09-23",
+   "trigger_type": "drawdown"
+  },
+  "secondary": [
+   {
+    "confidence_score": 0.7603,
+    "downside_q50": -0.0612,
+    "ev_score": 0.1295,
+    "region_start": "2026-06-10",
+    "seq_len": 167,
+    "trigger_date": "2026-10-12",
+    "trigger_type": "runup",
+    "upside_q25": 0.0871,
+    "upside_q50": 0.1811,
+    "upside_q75": 0.3017
+   }
+  ]
+ },
+ "feature_attribution": {
+  "macro_driver_count": 16,
+  "risk_flags": [
+   "high_volatility"
+  ],
+  "top_drivers": [
+   {
+    "direction": "negative",
+    "feature": "dollar_volume",
+    "feature_value": 779132288.0,
+    "importance": 0.0007,
+    "importance_pct": 0.657,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "positive",
+    "feature": "sector_rank_1d",
+    "feature_value": 0.2727,
+    "importance": 0.0001,
+    "importance_pct": 0.1279,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "positive",
+    "feature": "price_vs_sma200",
+    "feature_value": 1.26,
+    "importance": 0.0001,
+    "importance_pct": 0.1134,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "negative",
+    "feature": "free_cash_flow",
+    "feature_value": 1508.0,
+    "importance": 0.0001,
+    "importance_pct": 0.1017,
+    "method": "integrated_gradients"
+   }
+  ]
+ },
+ "fundamentals": {
+  "accrual": 0.1993,
+  "adx_14": 32.9081,
+  "altman_z_score": 4.616,
+  "amihud_illiquidity": 0.0,
+  "avg_volume": 4562941.6668,
+  "beta_252d": 0.3213,
+  "book_value_per_share": 15.8098,
+  "correlation_spy_60d": 0.2956,
+  "current_liabilities": 12172.0,
+  "current_ratio": 1.7341,
+  "daily_earnings_yield": 0.0403,
+  "daily_fcf_yield": -0.0263,
+  "daily_pb": 8.536,
+  "daily_pe": 24.7856,
+  "daily_ps": 5.705,
+  "days_since_52w_high": 54.0,
+  "debt_ebitda": 0.0,
+  "debt_to_equity": 0.0,
+  "dividend_yield": 0.0,
+  "dollar_volume_20d_avg": 789601665.6947,
+  "earnings_quality": 0.7979,
+  "ebitda_growth_yoy": 0.1024,
+  "enterprise_value": 66897.4486,
+  "eps_basic": 3.21,
+  "eps_cagr_3y": -0.1403,
+  "eps_cagr_5y": -0.056,
+  "eps_diluted": 3.16,
+  "eps_growth_accel": 0.2045,
+  "eps_growth_qoq": 1.3261,
+  "eps_growth_yoy": 0.2664,
+  "eps_growth_yoy_q2": 0.0619,
+  "eps_growth_yoy_q3": 0.0223,
+  "eps_growth_yoy_q4": -0.0215,
+  "eps_growth_yoy_q5": 0.4759,
+  "eps_growth_yoy_q6": -0.4444,
+  "eps_growth_yoy_q7": -0.4773,
+  "eps_growth_yoy_q8": -0.4398,
+  "eps_history_8q": [
+   0.73,
+   0.24,
+   1.03,
+   2.21,
+   0.54,
+   0.26,
+   1.37,
+   3.16
+  ],
+  "eps_ttm": 7.5407,
+  "ev_to_ebitda": 21.812,
+  "ev_to_fcf": 44.3617,
+  "ev_to_sales": 13.7395,
+  "fcf_growth_yoy": 0.1121,
+  "fcf_margin": 0.3097,
+  "fcf_per_share": 2.5603,
+  "gross_margin": 0.8312,
+  "gross_margin_change_yoy": 0.0841,
+  "gross_margin_history": [
+   0.7277,
+   0.7299,
+   0.7535,
+   0.7774,
+   0.8029,
+   0.8312
+  ],
+  "inc_roic": 0.6997,
+  "interest_coverage": 37.4024,
+  "is_pre_revenue": false,
+  "margin_vs_sector_median": null,
+  "market_cap_ratio": 79487.4486,
+  "net_income": 1890.0,
+  "net_margin": 0.2302,
+  "operating_income": 2021.0,
+  "operating_margin": 0.2249,
+  "operating_margin_change_yoy": 0.018,
+  "pb_ratio": 11.8217,
+  "pe_percentile_1y": 0.3175,
+  "pe_ratio": 24.7856,
+  "peg_trailing": 1.1998,
+  "piotroski_f_score": 3.0,
+  "price_vs_high_52w": 0.9811,
+  "price_vs_sma200": 1.26,
+  "ps_percentile_1y": 0.0992,
+  "ps_ratio": 5.1931,
+  "quarter_labels_8q": [
+   "Q4 '24",
+   "Q1 '25",
+   "Q2 '25",
+   "Q3 '25",
+   "Q4 '25",
+   "Q1 '26",
+   "Q2 '26",
+   "Q3 '26"
+  ],
+  "quarterly_eps_growth_yoy": 0.4299,
+  "quarterly_eps_growth_yoy_8q": [
+   2.3273,
+   -0.4146,
+   0.1977,
+   0.0376,
+   -0.2603,
+   0.0833,
+   0.3301,
+   0.4299
+  ],
+  "quarterly_revenue_growth_yoy": 0.189,
+  "quarterly_revenue_growth_yoy_8q": [
+   0.1181,
+   0.0607,
+   0.1266,
+   0.0973,
+   0.1202,
+   0.1787,
+   0.1654,
+   0.189
+  ],
+  "revenue_cagr_3y": 0.1322,
+  "revenue_cagr_5y": 0.2124,
+  "revenue_growth_accel": 0.0303,
+  "revenue_growth_qoq": 0.3495,
+  "revenue_growth_yoy": 0.1666,
+  "revenue_growth_yoy_q2": 0.1364,
+  "revenue_growth_yoy_q3": 0.126,
+  "revenue_growth_yoy_q4": 0.1026,
+  "revenue_growth_yoy_q5": 0.1018,
+  "revenue_growth_yoy_q6": 0.1023,
+  "revenue_growth_yoy_q7": 0.0968,
+  "revenue_growth_yoy_q8": 0.1195,
+  "revenue_history_8q": [
+   2480.0,
+   2272.0,
+   3096.0,
+   4095.0,
+   2778.0,
+   2678.0,
+   3608.0,
+   4869.0
+  ],
+  "revenue_per_share": 8.2666,
+  "roa": 0.1207,
+  "roce": 0.2742,
+  "roe": 0.3748,
+  "roic": 0.2629,
+  "rsi_14": 65.5707,
+  "sector_momentum": 0.0882,
+  "share_dilution_1y": -0.0051,
+  "stock_vs_sector_20d": 0.0987,
+  "stock_vs_spy_20d": 0.1652,
+  "total_assets": 24369.0,
+  "vol_regime": 1.3143,
+  "volatility_20d": 0.0351,
+  "volatility_60d": 0.0267,
+  "w52_high": 197.87,
+  "w52_low": 110.81
+ },
+ "market_characters": [
+  {
+   "id": "g4",
+   "name": "Volatile Uptrend"
+  },
+  {
+   "id": "g5",
+   "name": "Quality Compressed"
+  }
+ ],
+ "model_analogs": {
+  "matches": [
+   {
+    "actual_downside": 0.0,
+    "actual_return": 0.2972,
+    "actual_upside": 0.2972,
+    "days_in_region": 146,
+    "end_date": "2019-11-13",
+    "end_reason": "reversal",
+    "similarity": 0.9551,
+    "start_date": "2019-06-20",
+    "ticker": "NMIH",
+    "trigger_date": "2019-07-17",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": -0.1174,
+    "actual_return": 0.0905,
+    "actual_upside": 0.0905,
+    "days_in_region": 109,
+    "end_date": "2019-12-30",
+    "end_reason": "reversal",
+    "similarity": 0.9534,
+    "start_date": "2019-09-12",
+    "ticker": "SMPL",
+    "trigger_date": "2019-10-08",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": -0.1617,
+    "actual_return": 0.2547,
+    "actual_upside": 0.2547,
+    "days_in_region": 133,
+    "end_date": "2020-01-23",
+    "end_reason": "reversal",
+    "similarity": 0.9525,
+    "start_date": "2019-09-12",
+    "ticker": "WDC",
+    "trigger_date": "2019-10-09",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": -0.3115,
+    "actual_return": -0.1065,
+    "actual_upside": 0.0097,
+    "days_in_region": 132,
+    "end_date": "2019-02-19",
+    "end_reason": "reversal",
+    "similarity": 0.9522,
+    "start_date": "2018-10-10",
+    "ticker": "AM",
+    "trigger_date": "2018-10-30",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": -0.2262,
+    "actual_return": -0.0902,
+    "actual_upside": 0.1073,
+    "days_in_region": 151,
+    "end_date": "2019-02-04",
+    "end_reason": "reversal",
+    "similarity": 0.9517,
+    "start_date": "2018-09-06",
+    "ticker": "FIZZ",
+    "trigger_date": "2018-10-04",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": -0.0226,
+    "actual_return": 0.2592,
+    "actual_upside": 0.2592,
+    "days_in_region": 158,
+    "end_date": "2019-02-25",
+    "end_reason": "reversal",
+    "similarity": 0.9516,
+    "start_date": "2018-09-20",
+    "ticker": "ROCK",
+    "trigger_date": "2018-10-25",
+    "trigger_type": "severe_drawdown"
+   },
+   {
+    "actual_downside": -0.0197,
+    "actual_return": 0.5305,
+    "actual_upside": 0.5305,
+    "days_in_region": 275,
+    "end_date": "2020-01-16",
+    "end_reason": "reversal",
+    "similarity": 0.9514,
+    "start_date": "2019-04-16",
+    "ticker": "FTNT",
+    "trigger_date": "2019-10-07",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": -0.1615,
+    "actual_return": 0.1417,
+    "actual_upside": 0.1417,
+    "days_in_region": 181,
+    "end_date": "2019-04-02",
+    "end_reason": "reversal",
+    "similarity": 0.9507,
+    "start_date": "2018-10-03",
+    "ticker": "NS",
+    "trigger_date": "2018-10-25",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": -0.2045,
+    "actual_return": 0.184,
+    "actual_upside": 0.184,
+    "days_in_region": 167,
+    "end_date": "2019-02-26",
+    "end_reason": "reversal",
+    "similarity": 0.9505,
+    "start_date": "2018-09-12",
+    "ticker": "SSTK",
+    "trigger_date": "2018-10-31",
+    "trigger_type": "severe_drawdown"
+   },
+   {
+    "actual_downside": -0.1689,
+    "actual_return": -0.1689,
+    "actual_upside": 0.0759,
+    "days_in_region": 247,
+    "end_date": "2005-10-27",
+    "end_reason": "reversal",
+    "similarity": 0.9498,
+    "start_date": "2005-02-22",
+    "ticker": "CACI",
+    "trigger_date": "2005-04-22",
+    "trigger_type": "runup"
+   }
+  ],
+  "stats": {
+   "avg_max_drawdown": 0.1241,
+   "avg_similarity": 0.948,
+   "avg_trough": 0.1241,
+   "avg_upside": 0.1728,
+   "best_return": 0.5305,
+   "downside_range": [
+    -0.5358,
+    0.0
+   ],
+   "median_return": 0.1394,
+   "n_matches": 50,
+   "outcome_agreement": true,
+   "return_p25": -0.0366,
+   "return_p5": -0.1466,
+   "return_p75": 0.2453,
+   "return_p95": 0.3907,
+   "sim_weighted_win_rate": 0.72,
+   "top5_avg_trough": 0.1634,
+   "top5_avg_upside": 0.1519,
+   "top_similarity": 0.955,
+   "upside_range": [
+    0.0,
+    0.691
+   ],
+   "win_rate": 0.72,
+   "worst_return": -0.452,
+   "years_span": 13
+  },
+  "total_matches": 50
+ },
+ "peer_group": {
+  "buckets": [
+   "Cruises, Travel Services & Experience Platforms",
+   "Hotels, Resorts, Lodging & Vacation Ownership"
+  ],
+  "groups": {
+   "Cruises, Travel Services & Experience Platforms": [
+    {
+     "market_cap_m": 9775.7851,
+     "price_vs_sma200": 1.1385,
+     "return_30d": 0.2559,
+     "return_7d": 0.1211,
+     "revenue_driver": "vacation ownership resorts",
+     "signal_rank": 1303,
+     "stock_vs_spy_20d": 0.312,
+     "ticker": "TNL"
+    },
+    {
+     "market_cap_m": 1684.3386,
+     "price_vs_sma200": 1.083,
+     "return_30d": 0.2293,
+     "return_7d": 0.3273,
+     "revenue_driver": "low cost leisure airline tickets",
+     "signal_rank": 1214,
+     "stock_vs_spy_20d": 0.3454,
+     "ticker": "ALGT"
+    },
+    {
+     "market_cap_m": 72355.2682,
+     "price_vs_sma200": 1.26,
+     "return_30d": 0.1907,
+     "return_7d": 0.1369,
+     "revenue_driver": "travel marketplace fees",
+     "signal_rank": 953,
+     "stock_vs_spy_20d": 0.1652,
+     "ticker": "ABNB"
+    },
+    {
+     "market_cap_m": 31271.226,
+     "price_vs_sma200": 1.2786,
+     "return_30d": 0.1705,
+     "return_7d": 0.1464,
+     "revenue_driver": "accounts payable automation",
+     "signal_rank": 1298,
+     "stock_vs_spy_20d": 0.1881,
+     "ticker": "CPAY"
+    },
+    {
+     "market_cap_m": 1814.9368,
+     "price_vs_sma200": 1.4114,
+     "return_30d": 0.1311,
+     "return_7d": -0.053,
+     "revenue_driver": "expedition cruise travel",
+     "signal_rank": 92,
+     "stock_vs_spy_20d": 0.0089,
+     "ticker": "LIND"
+    },
+    {
+     "market_cap_m": 4936.8502,
+     "price_vs_sma200": 1.1993,
+     "return_30d": 0.0064,
+     "return_7d": 0.0042,
+     "revenue_driver": "corporate travel bookings",
+     "signal_rank": null,
+     "stock_vs_spy_20d": 0.0057,
+     "ticker": "GBTG"
+    },
+    {
+     "market_cap_m": 125446.6695,
+     "price_vs_sma200": 0.9084,
+     "return_30d": -0.019,
+     "return_7d": 0.0751,
+     "revenue_driver": "online hotel bookings",
+     "signal_rank": 339,
+     "stock_vs_spy_20d": 0.0475,
+     "ticker": "BKNG"
+    },
+    {
+     "market_cap_m": 31756.8673,
+     "price_vs_sma200": 0.9795,
+     "return_30d": -0.0472,
+     "return_7d": -0.1125,
+     "revenue_driver": "hotel commissions",
+     "signal_rank": 1243,
+     "stock_vs_spy_20d": -0.0355,
+     "ticker": "EXPE"
+    },
+    {
+     "market_cap_m": 862.781,
+     "price_vs_sma200": 0.6545,
+     "return_30d": -0.156,
+     "return_7d": -0.231,
+     "revenue_driver": "travel reviews",
+     "signal_rank": 1096,
+     "stock_vs_spy_20d": -0.1524,
+     "ticker": "TRIP"
+    },
+    {
+     "market_cap_m": 663.4068,
+     "price_vs_sma200": 1.0114,
+     "return_30d": -0.169,
+     "return_7d": 0.0926,
+     "revenue_driver": "global distribution system",
+     "signal_rank": 1155,
+     "stock_vs_spy_20d": 0.0143,
+     "ticker": "SABR"
+    }
+   ],
+   "Hotels, Resorts, Lodging & Vacation Ownership": [
+    {
+     "market_cap_m": 3054.7405,
+     "price_vs_sma200": 1.0234,
+     "return_30d": 0.2728,
+     "return_7d": 0.1847,
+     "revenue_driver": "vacation ownership",
+     "signal_rank": 1562,
+     "stock_vs_spy_20d": 0.3309,
+     "ticker": "HGV"
+    },
+    {
+     "market_cap_m": 72355.2682,
+     "price_vs_sma200": 1.26,
+     "return_30d": 0.1907,
+     "return_7d": 0.1369,
+     "revenue_driver": "travel marketplace fees",
+     "signal_rank": 953,
+     "stock_vs_spy_20d": 0.1652,
+     "ticker": "ABNB"
+    },
+    {
+     "market_cap_m": 112151.22,
+     "price_vs_sma200": 1.1913,
+     "return_30d": 0.1843,
+     "return_7d": 0.0725,
+     "revenue_driver": "hotel franchising and management",
+     "signal_rank": 1221,
+     "stock_vs_spy_20d": 0.1892,
+     "ticker": "MAR"
+    },
+    {
+     "market_cap_m": 7707.2417,
+     "price_vs_sma200": 1.1233,
+     "return_30d": 0.1823,
+     "return_7d": 0.0608,
+     "revenue_driver": "hotel and hospitality",
+     "signal_rank": 1115,
+     "stock_vs_spy_20d": 0.2121,
+     "ticker": "H"
+    },
+    {
+     "market_cap_m": 41360.8558,
+     "price_vs_sma200": 1.0607,
+     "return_30d": 0.1267,
+     "return_7d": 0.1264,
+     "revenue_driver": "fast-casual restaurant sales",
+     "signal_rank": 1299,
+     "stock_vs_spy_20d": 0.2199,
+     "ticker": "CMG"
+    },
+    {
+     "market_cap_m": 24124.4611,
+     "price_vs_sma200": 0.8454,
+     "return_30d": 0.0652,
+     "return_7d": 0.1041,
+     "revenue_driver": "integrated resorts",
+     "signal_rank": 1165,
+     "stock_vs_spy_20d": 0.1385,
+     "ticker": "LVS"
+    },
+    {
+     "market_cap_m": 7458.5086,
+     "price_vs_sma200": 0.8483,
+     "return_30d": 0.0489,
+     "return_7d": 0.1035,
+     "revenue_driver": "casino and resort management",
+     "signal_rank": 765,
+     "stock_vs_spy_20d": 0.1609,
+     "ticker": "MGM"
+    },
+    {
+     "market_cap_m": 23009.5244,
+     "price_vs_sma200": 1.0114,
+     "return_30d": 0.0472,
+     "return_7d": -0.0035,
+     "revenue_driver": "property & casualty insurance premiums",
+     "signal_rank": 968,
+     "stock_vs_spy_20d": 0.0591,
+     "ticker": "L"
+    },
+    {
+     "market_cap_m": 2017.355,
+     "price_vs_sma200": 0.9712,
+     "return_30d": -0.051,
+     "return_7d": -0.0033,
+     "revenue_driver": "hotel franchising",
+     "signal_rank": 141,
+     "stock_vs_spy_20d": -0.0125,
+     "ticker": "MCRI"
+    },
+    {
+     "market_cap_m": 666.073,
+     "price_vs_sma200": 1.2149,
+     "return_30d": -0.0523,
+     "return_7d": 0.0245,
+     "revenue_driver": "hotel operations",
+     "signal_rank": 202,
+     "stock_vs_spy_20d": -0.0031,
+     "ticker": "MCS"
+    }
+   ]
+  }
+ },
+ "predictions": {
+  "badge_count": 0,
+  "confidence_score": 0.5213,
+  "conviction_label": "SPECULATIVE",
+  "data_quality_flags": [],
+  "ev_score": 0.0927,
+  "is_diamond": false,
+  "passes_tradability_filter": true,
+  "quality_label": "MEDIUM",
+  "quantiles": {
+   "downside_q10": -0.2694,
+   "downside_q25": -0.1527,
+   "downside_q50": -0.0869,
+   "downside_q75": -0.0233,
+   "downside_q90": 0.0019,
+   "path_volatility": 0.0313,
+   "risk_reward": 2.0145,
+   "uncertainty": 0.4086,
+   "upside_q10": 0.0296,
+   "upside_q25": 0.0788,
+   "upside_q50": 0.175,
+   "upside_q75": 0.2844,
+   "upside_q90": 0.4382
+  },
+  "rank": 953,
+  "rank_score": 0.0524,
+  "tradability_filter_reasons": []
+ },
+ "profile": {
+  "_local": {
+   "dividend_yield": 0.0,
+   "eps_growth_yoy": 0.2664,
+   "pe_ratio": 31.9193,
+   "revenue_growth_yoy": 0.1666,
+   "roe": 0.3748
+  },
+  "beta": 1.268,
+  "betaTTM": null,
+  "ceo": "Brian Chesky",
+  "companyName": "Airbnb, Inc.",
+  "country": "US",
+  "debtToEquityTTM": null,
+  "description": "Airbnb, Inc., along with its affiliated entities, manages a global digital marketplace. This platform seamlessly connects individuals, known as hosts, who wish to offer a variety of accommodations and unique local experiences, with guests seeking such services worldwide. Users can easily book anything from private rooms and primary residences to vacation homes through its online and mobile channels. Originally established as AirBed & Breakfast, Inc. in 2007, the company officially rebranded to Airbnb, Inc. in November 2010. Its corporate headquarters are situated in San Francisco, California.",
+  "dividendYielTTM": null,
+  "enterpriseValueOverEBITDATTM": null,
+  "exchangeShortName": "NASDAQ",
+  "fullTimeEmployees": "8200",
+  "industry": "Travel Services",
+  "ipoDate": "2020-12-10",
+  "latest_earnings_date": "2026-11-05",
+  "marketCapTTM": null,
+  "mktCap": 106975943657,
+  "peRatioTTM": null,
+  "price": 179.2666,
+  "priceToSalesRatioTTM": null,
+  "returnOnEquityTTM": 0.3894,
+  "revenue_description": "Airbnb, Inc., along with its affiliated entities, manages a global digital marketplace. Revenue is driven by travel marketplace fees, vacation rental bookings, and specialty rental accommodations.",
+  "revenue_description_themes": [
+   "travel demand",
+   "host supply growth",
+   "take-rate expansion"
+  ],
+  "revenue_taxonomy": [
+   {
+    "bucket": "Cruises, Travel Services & Experience Platforms",
+    "matched_tags": [
+     "travel marketplace fees",
+     "vacation rental bookings"
+    ],
+    "path": "Consumer Services & Leisure › Hospitality & Experiences › Cruises, Travel Services & Experience Platforms",
+    "sector": "Consumer Services & Leisure",
+    "segment": "Hospitality & Experiences"
+   },
+   {
+    "bucket": "Hotels, Resorts, Lodging & Vacation Ownership",
+    "matched_tags": [
+     "specialty rental accommodations"
+    ],
+    "path": "Consumer Services & Leisure › Hospitality & Experiences › Hotels, Resorts, Lodging & Vacation Ownership",
+    "sector": "Consumer Services & Leisure",
+    "segment": "Hospitality & Experiences"
+   }
+  ],
+  "revenue_themes": [
+   "travel marketplace fees",
+   "vacation rental bookings",
+   "specialty rental accommodations"
+  ],
+  "sector": "Consumer Cyclical",
+  "website": "https://www.airbnb.com"
+ },
+ "report": {
+  "display_rank": null,
+  "lane": "wait",
+  "lane_rank": 31,
+  "setup_label": "extended",
+  "why_now": "Model analogs leads the readiness mix (+6.2); extended move"
+ },
+ "scorecard": {
+  "headline": {
+   "avg_universe_pct": 75,
+   "label": "above_average",
+   "metric_count": 8
+  },
+  "metrics": {
+   "debt_to_equity": {
+    "direction": "lower",
+    "label": "D/E Ratio",
+    "sector": "Info Tech",
+    "sector_n": 272,
+    "sector_pct": 95,
+    "universe_n": 1985,
+    "universe_pct": 94,
+    "value": 0.0
+   },
+   "eps_growth_yoy": {
+    "direction": "higher",
+    "label": "EPS Growth",
+    "sector": "Info Tech",
+    "sector_n": 269,
+    "sector_pct": 51,
+    "universe_n": 1804,
+    "universe_pct": 58,
+    "value": 0.2664
+   },
+   "gross_margin": {
+    "direction": "higher",
+    "label": "Gross Margin",
+    "sector": "Info Tech",
+    "sector_n": 269,
+    "sector_pct": 91,
+    "universe_n": 1922,
+    "universe_pct": 89,
+    "value": 0.8312
+   },
+   "operating_margin": {
+    "direction": "higher",
+    "label": "Op. Margin",
+    "sector": "Info Tech",
+    "sector_n": 269,
+    "sector_pct": 78,
+    "universe_n": 1922,
+    "universe_pct": 77,
+    "value": 0.2249
+   },
+   "pe_ratio": {
+    "direction": "lower",
+    "label": "P/E",
+    "sector": "Info Tech",
+    "sector_n": 180,
+    "sector_pct": 49,
+    "universe_n": 1439,
+    "universe_pct": 24,
+    "value": 31.9193
+   },
+   "revenue_growth_yoy": {
+    "direction": "higher",
+    "label": "Rev Growth",
+    "sector": "Info Tech",
+    "sector_n": 269,
+    "sector_pct": 55,
+    "universe_n": 1754,
+    "universe_pct": 71,
+    "value": 0.1666
+   },
+   "roe": {
+    "direction": "higher",
+    "label": "ROE",
+    "sector": "Info Tech",
+    "sector_n": 272,
+    "sector_pct": 85,
+    "universe_n": 2000,
+    "universe_pct": 90,
+    "value": 0.3748
+   },
+   "roic": {
+    "direction": "higher",
+    "label": "ROIC",
+    "sector": "Info Tech",
+    "sector_n": 269,
+    "sector_pct": 96,
+    "universe_n": 1969,
+    "universe_pct": 98,
+    "value": 0.155
+   }
+  }
+ },
+ "signal_rank": 953,
+ "structural_analogs": {
+  "gp_core_pct": 30.0,
+  "gp_core_ratio": 1.0796,
+  "matches": [
+   {
+    "actual_downside": -0.0786,
+    "actual_return": 0.0243,
+    "actual_upside": 0.0647,
+    "days_in_region": 129,
+    "end_date": "2022-06-02",
+    "end_reason": "reversal",
+    "seq_len": 129,
+    "similarity": 0.5846,
+    "start_date": "2021-11-05",
+    "ticker": "MTRN",
+    "total_distance": 0.2684,
+    "trigger_date": "2022-01-27",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": -0.1072,
+    "actual_return": 0.2907,
+    "actual_upside": 0.2907,
+    "days_in_region": 126,
+    "end_date": "2019-04-25",
+    "end_reason": "reversal",
+    "seq_len": 126,
+    "similarity": 0.5806,
+    "start_date": "2018-09-14",
+    "ticker": "HEI",
+    "total_distance": 0.2719,
+    "trigger_date": "2018-10-12",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": -0.1619,
+    "actual_return": 0.0165,
+    "actual_upside": 0.0212,
+    "days_in_region": 116,
+    "end_date": "2019-02-22",
+    "end_reason": "reversal",
+    "seq_len": 116,
+    "similarity": 0.5795,
+    "start_date": "2018-09-05",
+    "ticker": "RAVN",
+    "total_distance": 0.2728,
+    "trigger_date": "2018-11-21",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": -0.1941,
+    "actual_return": 0.1007,
+    "actual_upside": 0.1007,
+    "days_in_region": 102,
+    "end_date": "2019-04-23",
+    "end_reason": "reversal",
+    "seq_len": 102,
+    "similarity": 0.5774,
+    "start_date": "2018-09-05",
+    "ticker": "CACI",
+    "total_distance": 0.2746,
+    "trigger_date": "2018-10-26",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": -0.1583,
+    "actual_return": -0.0569,
+    "actual_upside": 0.0477,
+    "days_in_region": 118,
+    "end_date": "1999-12-31",
+    "end_reason": "reversal",
+    "seq_len": 118,
+    "similarity": 0.5757,
+    "start_date": "1999-05-11",
+    "ticker": "TXT",
+    "total_distance": 0.2761,
+    "trigger_date": "1999-08-02",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": -0.2566,
+    "actual_return": -0.1791,
+    "actual_upside": 0.0133,
+    "days_in_region": 124,
+    "end_date": "2014-10-31",
+    "end_reason": "reversal",
+    "seq_len": 124,
+    "similarity": 0.5747,
+    "start_date": "2014-02-25",
+    "ticker": "CPRI",
+    "total_distance": 0.2769,
+    "trigger_date": "2014-04-08",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": -0.1362,
+    "actual_return": 0.0639,
+    "actual_upside": 0.0648,
+    "days_in_region": 128,
+    "end_date": "2019-04-03",
+    "end_reason": "reversal",
+    "seq_len": 128,
+    "similarity": 0.5724,
+    "start_date": "2018-07-06",
+    "ticker": "MSGS",
+    "total_distance": 0.279,
+    "trigger_date": "2018-10-10",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": -0.1733,
+    "actual_return": -0.1733,
+    "actual_upside": 0.0,
+    "days_in_region": 200,
+    "end_date": "2017-12-04",
+    "end_reason": "reversal",
+    "seq_len": 200,
+    "similarity": 0.5721,
+    "start_date": "2016-12-01",
+    "ticker": "EA",
+    "total_distance": 0.2792,
+    "trigger_date": "2017-02-16",
+    "trigger_type": "runup"
+   },
+   {
+    "actual_downside": -0.0697,
+    "actual_return": 0.0484,
+    "actual_upside": 0.0484,
+    "days_in_region": 113,
+    "end_date": "2006-09-01",
+    "end_reason": "reversal",
+    "seq_len": 113,
+    "similarity": 0.57,
+    "start_date": "2006-03-17",
+    "ticker": "BF",
+    "total_distance": 0.2811,
+    "trigger_date": "2006-04-25",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": -0.226,
+    "actual_return": 0.0292,
+    "actual_upside": 0.0292,
+    "days_in_region": 104,
+    "end_date": "2006-09-15",
+    "end_reason": "reversal",
+    "seq_len": 104,
+    "similarity": 0.569,
+    "start_date": "2006-03-29",
+    "ticker": "ALOG",
+    "total_distance": 0.2819,
+    "trigger_date": "2006-05-16",
+    "trigger_type": "shallow_drawdown"
+   }
+  ],
+  "panel": {
+   "edge": -0.0162,
+   "hit_hi": 0.745,
+   "hit_lo": 0.578,
+   "hit_rate": 0.667,
+   "median_final": 0.0635,
+   "median_pain": 0.1019,
+   "n": 51,
+   "n_eff": 51.0,
+   "p25_final": -0.076,
+   "p_pain_gt5": 0.686,
+   "return_to_pain": 0.521
+  },
+  "stats": {
+   "avg_similarity": 0.543,
+   "avg_trough": 0.1066,
+   "avg_upside": 0.1421,
+   "median_pain": 0.0808,
+   "median_return": 0.0498,
+   "n_matches": 200,
+   "p25_return": -0.0943,
+   "p_pain_gt5": 0.655,
+   "return_to_pain": 0.494,
+   "top5_avg_trough": 0.14,
+   "top5_avg_upside": 0.105,
+   "top_similarity": 0.585,
+   "win_rate": 0.56
+  },
+  "total_matches": 200
+ },
+ "ticker": "ABNB",
+ "trending": {
+  "acceleration": -0.0026,
+  "avg_vol_20d": 4723770.5971,
+  "base_high_120": 190.5,
+  "breakout_confirmed": 0,
+  "close": 165.87,
+  "momentum_score": 0.7812,
+  "momentum_start": "2026-06-12",
+  "range_20": 0.1478,
+  "range_50": 0.2701,
+  "rank": 408,
+  "rank_down": null,
+  "rank_up": 194,
+  "ret_120": 0.1552,
+  "ret_20": -0.0254,
+  "ret_60": 0.1223,
+  "rundown_score": 0.4371,
+  "score_date": "2026-10-09",
+  "slope_20": -0.0016,
+  "slope_60": 0.001,
+  "stage": "sustained",
+  "stage_label": "Trending",
+  "ticker": "ABNB",
+  "total_score": 0.5842,
+  "trend_ratio": 1.1142,
+  "vcp_detected": 1,
+  "vcp_score": 0.4529
+ }
+}

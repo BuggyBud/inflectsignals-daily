@@ -1,0 +1,1012 @@
+{
+ "date": "2026-11-10",
+ "detected_regions": {
+  "primary": {
+   "days_in_region": 82,
+   "region_start": "2026-10-12",
+   "trigger_date": "2026-11-06",
+   "trigger_type": "compression"
+  },
+  "secondary": [
+   {
+    "confidence_score": 0.3465,
+    "downside_q50": -0.1199,
+    "ev_score": 0.0421,
+    "region_start": "2026-08-27",
+    "seq_len": 113,
+    "trigger_date": "2026-09-09",
+    "trigger_type": "drawdown",
+    "upside_q25": 0.0603,
+    "upside_q50": 0.1518,
+    "upside_q75": 0.263
+   }
+  ]
+ },
+ "feature_attribution": {
+  "macro_driver_count": 15,
+  "risk_flags": [
+   "high_volatility"
+  ],
+  "top_drivers": [
+   {
+    "direction": "negative",
+    "feature": "dollar_volume",
+    "feature_value": 305133056.0,
+    "importance": 0.0008,
+    "importance_pct": 0.4313,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "negative",
+    "feature": "price_vs_high_52w",
+    "feature_value": 1.0,
+    "importance": 0.0004,
+    "importance_pct": 0.188,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "positive",
+    "feature": "volatility_20d",
+    "feature_value": 0.0031,
+    "importance": 0.0003,
+    "importance_pct": 0.1395,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "negative",
+    "feature": "price_vs_sma200",
+    "feature_value": 1.3265,
+    "importance": 0.0003,
+    "importance_pct": 0.1339,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "negative",
+    "feature": "williams_14",
+    "feature_value": -7.9208,
+    "importance": 0.0002,
+    "importance_pct": 0.1073,
+    "method": "integrated_gradients"
+   }
+  ]
+ },
+ "fundamentals": {
+  "accrual": 0.1083,
+  "adx_14": 71.1048,
+  "altman_z_score": 5.2774,
+  "amihud_illiquidity": 0.0,
+  "avg_volume": 2531758.3903,
+  "beta_252d": 0.0644,
+  "book_value_per_share": 31.3548,
+  "correlation_spy_60d": 0.1607,
+  "current_liabilities": 821.091,
+  "current_ratio": 1.632,
+  "daily_earnings_yield": 0.044,
+  "daily_fcf_yield": 0.0016,
+  "daily_pb": 6.8805,
+  "daily_pe": 22.7213,
+  "daily_ps": 8.589,
+  "days_since_52w_high": 0.0,
+  "debt_ebitda": 1.7605,
+  "debt_to_equity": 0.5266,
+  "dividend_yield": 0.0,
+  "dollar_volume_20d_avg": 416477673.5129,
+  "earnings_quality": 0.3009,
+  "ebitda_growth_yoy": -0.0802,
+  "enterprise_value": 25041.4834,
+  "eps_basic": 1.45,
+  "eps_cagr_3y": 0.6216,
+  "eps_cagr_5y": 0.168,
+  "eps_diluted": 1.44,
+  "eps_growth_accel": -0.9708,
+  "eps_growth_qoq": 0.3942,
+  "eps_growth_yoy": 0.4517,
+  "eps_growth_yoy_q2": 1.4225,
+  "eps_growth_yoy_q3": 1.8579,
+  "eps_growth_yoy_q4": 1.0887,
+  "eps_growth_yoy_q5": 0.9397,
+  "eps_growth_yoy_q6": 0.7177,
+  "eps_growth_yoy_q7": 0.5124,
+  "eps_growth_yoy_q8": 0.635,
+  "eps_history_8q": [
+   0.68,
+   1.35,
+   1.17,
+   2.88,
+   1.39,
+   4.99,
+   1.03,
+   1.44
+  ],
+  "eps_ttm": 8.6505,
+  "ev_to_ebitda": 24.5347,
+  "ev_to_fcf": 664.9182,
+  "ev_to_sales": 37.1947,
+  "fcf_growth_yoy": -0.6252,
+  "fcf_margin": 0.0559,
+  "fcf_per_share": 0.3461,
+  "gross_margin": 0.8285,
+  "gross_margin_change_yoy": -0.0571,
+  "gross_margin_history": [
+   0.8454,
+   0.8582,
+   0.8571,
+   0.8525,
+   0.8457,
+   0.8285
+  ],
+  "inc_roic": 0.4256,
+  "interest_coverage": 66.5876,
+  "is_pre_revenue": false,
+  "margin_vs_sector_median": null,
+  "market_cap_ratio": 23477.5044,
+  "net_income": 157.263,
+  "net_margin": 0.378,
+  "operating_income": 212.623,
+  "operating_margin": 0.3278,
+  "operating_margin_change_yoy": -0.1896,
+  "pb_ratio": 6.2686,
+  "pe_percentile_1y": 0.3056,
+  "pe_ratio": 22.7213,
+  "peg_trailing": 0.4841,
+  "piotroski_f_score": 3.0,
+  "price_vs_high_52w": 1.0,
+  "price_vs_sma200": 1.3265,
+  "ps_percentile_1y": 0.004,
+  "ps_ratio": 8.5292,
+  "quarter_labels_8q": [
+   "Q1 '25",
+   "Q2 '25",
+   "Q3 '25",
+   "Q4 '25",
+   "Q1 '25",
+   "Q2 '26",
+   "Q3 '26",
+   "Q4 '26"
+  ],
+  "quarterly_eps_growth_yoy": -0.5,
+  "quarterly_eps_growth_yoy_8q": [
+   0.2364,
+   0.4211,
+   1.0526,
+   1.7692,
+   1.0441,
+   2.6963,
+   -0.1197,
+   -0.5
+  ],
+  "quarterly_revenue_growth_yoy": -0.2467,
+  "quarterly_revenue_growth_yoy_8q": [
+   0.0271,
+   0.0552,
+   0.2416,
+   0.4265,
+   0.2136,
+   0.2168,
+   -0.0682,
+   -0.2467
+  ],
+  "revenue_cagr_3y": 0.0924,
+  "revenue_cagr_5y": 0.0863,
+  "revenue_growth_accel": -0.1971,
+  "revenue_growth_qoq": 0.122,
+  "revenue_growth_yoy": -0.0021,
+  "revenue_growth_yoy_q2": 0.195,
+  "revenue_growth_yoy_q3": 0.2775,
+  "revenue_growth_yoy_q4": 0.2362,
+  "revenue_growth_yoy_q5": 0.1918,
+  "revenue_growth_yoy_q6": 0.1142,
+  "revenue_growth_yoy_q7": 0.0466,
+  "revenue_growth_yoy_q8": 0.0605,
+  "revenue_history_8q": [
+   565.128,
+   636.366,
+   643.937,
+   893.795,
+   685.825,
+   774.303,
+   600.049,
+   673.254
+  ],
+  "revenue_per_share": 6.1866,
+  "roa": 0.1562,
+  "roce": 0.1533,
+  "roe": 0.3003,
+  "roic": 0.1754,
+  "rsi_14": 76.0944,
+  "sector_momentum": 0.0256,
+  "share_dilution_1y": 0.0,
+  "stock_vs_sector_20d": 0.0708,
+  "stock_vs_spy_20d": 0.0498,
+  "total_assets": 6712.556,
+  "vol_regime": 0.0654,
+  "volatility_20d": 0.0031,
+  "volatility_60d": 0.0474,
+  "w52_high": 196.79,
+  "w52_low": 108.5
+ },
+ "market_characters": [
+  {
+   "id": "g2",
+   "name": "Recent Momentum"
+  }
+ ],
+ "model_analogs": {
+  "matches": [
+   {
+    "actual_downside": -0.1617,
+    "actual_return": 0.2547,
+    "actual_upside": 0.2547,
+    "days_in_region": 133,
+    "end_date": "2020-01-23",
+    "end_reason": "reversal",
+    "similarity": 0.9696,
+    "start_date": "2019-09-12",
+    "ticker": "WDC",
+    "trigger_date": "2019-10-09",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": -0.2336,
+    "actual_return": -0.0534,
+    "actual_upside": 0.0343,
+    "days_in_region": 160,
+    "end_date": "2019-02-28",
+    "end_reason": "data_end",
+    "similarity": 0.9678,
+    "start_date": "2018-09-21",
+    "ticker": "NXEO",
+    "trigger_date": "2018-10-25",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": -0.22,
+    "actual_return": -0.22,
+    "actual_upside": 0.0079,
+    "days_in_region": 61,
+    "end_date": "2018-12-24",
+    "end_reason": "reversal",
+    "similarity": 0.9666,
+    "start_date": "2018-10-24",
+    "ticker": "FORM",
+    "trigger_date": "2018-11-02",
+    "trigger_type": "runup"
+   },
+   {
+    "actual_downside": -0.0312,
+    "actual_return": 0.1139,
+    "actual_upside": 0.1139,
+    "days_in_region": 73,
+    "end_date": "2018-12-10",
+    "end_reason": "reversal",
+    "similarity": 0.9649,
+    "start_date": "2018-09-28",
+    "ticker": "ALNT",
+    "trigger_date": "2018-10-11",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": -0.3462,
+    "actual_return": -0.3462,
+    "actual_upside": 0.0363,
+    "days_in_region": 61,
+    "end_date": "2018-12-24",
+    "end_reason": "reversal",
+    "similarity": 0.9639,
+    "start_date": "2018-10-24",
+    "ticker": "COHR",
+    "trigger_date": "2018-11-02",
+    "trigger_type": "runup"
+   },
+   {
+    "actual_downside": -0.0208,
+    "actual_return": 0.2693,
+    "actual_upside": 0.2693,
+    "days_in_region": 85,
+    "end_date": "2019-12-06",
+    "end_reason": "reversal",
+    "similarity": 0.9634,
+    "start_date": "2019-09-12",
+    "ticker": "MEI",
+    "trigger_date": "2019-10-03",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": -0.234,
+    "actual_return": -0.234,
+    "actual_upside": 0.1387,
+    "days_in_region": 59,
+    "end_date": "2018-12-24",
+    "end_reason": "reversal",
+    "similarity": 0.9627,
+    "start_date": "2018-10-26",
+    "ticker": "UA",
+    "trigger_date": "2018-10-31",
+    "trigger_type": "runup"
+   },
+   {
+    "actual_downside": -0.16,
+    "actual_return": 0.1315,
+    "actual_upside": 0.1315,
+    "days_in_region": 189,
+    "end_date": "2019-03-21",
+    "end_reason": "reversal",
+    "similarity": 0.9625,
+    "start_date": "2018-09-13",
+    "ticker": "IAC",
+    "trigger_date": "2018-10-23",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": -0.4617,
+    "actual_return": -0.2386,
+    "actual_upside": 0.082,
+    "days_in_region": 107,
+    "end_date": "2019-01-18",
+    "end_reason": "reversal",
+    "similarity": 0.9624,
+    "start_date": "2018-10-03",
+    "ticker": "PR",
+    "trigger_date": "2018-10-25",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": -0.144,
+    "actual_return": 0.0839,
+    "actual_upside": 0.1177,
+    "days_in_region": 43,
+    "end_date": "2018-11-13",
+    "end_reason": "reversal",
+    "similarity": 0.9624,
+    "start_date": "2018-10-01",
+    "ticker": "MBUU",
+    "trigger_date": "2018-10-22",
+    "trigger_type": "drawdown"
+   }
+  ],
+  "stats": {
+   "avg_max_drawdown": 0.1529,
+   "avg_similarity": 0.961,
+   "avg_trough": 0.1529,
+   "avg_upside": 0.1644,
+   "best_return": 0.5313,
+   "downside_range": [
+    -0.5358,
+    -0.0018
+   ],
+   "median_return": 0.1142,
+   "n_matches": 50,
+   "outcome_agreement": true,
+   "return_p25": -0.0975,
+   "return_p5": -0.2725,
+   "return_p75": 0.2061,
+   "return_p95": 0.4173,
+   "sim_weighted_win_rate": 0.64,
+   "top5_avg_trough": 0.1985,
+   "top5_avg_upside": 0.0894,
+   "top_similarity": 0.97,
+   "upside_range": [
+    0.0,
+    0.5313
+   ],
+   "win_rate": 0.64,
+   "worst_return": -0.452,
+   "years_span": 10
+  },
+  "total_matches": 50
+ },
+ "peer_group": {
+  "buckets": [
+   "Developer, Design & Engineering Software",
+   "Enterprise Applications & Workflow Software"
+  ],
+  "groups": {
+   "Developer, Design & Engineering Software": [
+    {
+     "market_cap_m": 2308.9721,
+     "price_vs_sma200": 1.7629,
+     "return_30d": 0.4817,
+     "return_7d": 0.0662,
+     "revenue_driver": "low-code development SaaS",
+     "signal_rank": 1273,
+     "stock_vs_spy_20d": 0.3888,
+     "ticker": "APPN"
+    },
+    {
+     "market_cap_m": 23313.8606,
+     "price_vs_sma200": 1.3265,
+     "return_30d": 0.4288,
+     "return_7d": 0.0052,
+     "revenue_driver": "PLM software",
+     "signal_rank": 1566,
+     "stock_vs_spy_20d": 0.0498,
+     "ticker": "PTC"
+    },
+    {
+     "market_cap_m": 55259.92,
+     "price_vs_sma200": 1.1122,
+     "return_30d": 0.2802,
+     "return_7d": 0.0421,
+     "revenue_driver": "AEC design software",
+     "signal_rank": 1614,
+     "stock_vs_spy_20d": 0.1652,
+     "ticker": "ADSK"
+    },
+    {
+     "market_cap_m": 20882.1544,
+     "price_vs_sma200": 1.5837,
+     "return_30d": 0.2674,
+     "return_7d": 0.3353,
+     "revenue_driver": "game engine software",
+     "signal_rank": 1873,
+     "stock_vs_spy_20d": 0.116,
+     "ticker": "U"
+    },
+    {
+     "market_cap_m": 76257.54,
+     "price_vs_sma200": 1.0685,
+     "return_30d": 0.1081,
+     "return_7d": -0.0164,
+     "revenue_driver": "semiconductor design software",
+     "signal_rank": null,
+     "stock_vs_spy_20d": 0.1362,
+     "ticker": "SNPS"
+    },
+    {
+     "market_cap_m": 1839.5685,
+     "price_vs_sma200": 1.8836,
+     "return_30d": 0.0686,
+     "return_7d": 0.1942,
+     "revenue_driver": "computational chemistry software",
+     "signal_rank": 1675,
+     "stock_vs_spy_20d": 0.2882,
+     "ticker": "SDGR"
+    },
+    {
+     "market_cap_m": 87694.9962,
+     "price_vs_sma200": 1.0115,
+     "return_30d": 0.023,
+     "return_7d": 0.0114,
+     "revenue_driver": "chip design software",
+     "signal_rank": 1207,
+     "stock_vs_spy_20d": 0.0287,
+     "ticker": "CDNS"
+    },
+    {
+     "market_cap_m": 104160.238,
+     "price_vs_sma200": 0.9604,
+     "return_30d": 0.0151,
+     "return_7d": -0.0541,
+     "revenue_driver": "creative software SaaS",
+     "signal_rank": null,
+     "stock_vs_spy_20d": 0.0431,
+     "ticker": "ADBE"
+    },
+    {
+     "market_cap_m": 25824.6946,
+     "price_vs_sma200": 1.2446,
+     "return_30d": -0.1555,
+     "return_7d": -0.2249,
+     "revenue_driver": "project management software",
+     "signal_rank": 1134,
+     "stock_vs_spy_20d": -0.2493,
+     "ticker": "TEAM"
+    },
+    {
+     "market_cap_m": 1537.4838,
+     "price_vs_sma200": 0.737,
+     "return_30d": -0.2553,
+     "return_7d": -0.0455,
+     "revenue_driver": "quantum computing software",
+     "signal_rank": 1495,
+     "stock_vs_spy_20d": -0.0466,
+     "ticker": "QUBT"
+    }
+   ],
+   "Enterprise Applications & Workflow Software": [
+    {
+     "market_cap_m": 23313.8606,
+     "price_vs_sma200": 1.3265,
+     "return_30d": 0.4288,
+     "return_7d": 0.0052,
+     "revenue_driver": "PLM software",
+     "signal_rank": 1566,
+     "stock_vs_spy_20d": 0.0498,
+     "ticker": "PTC"
+    },
+    {
+     "market_cap_m": 46954.4885,
+     "price_vs_sma200": 1.2916,
+     "return_30d": 0.3578,
+     "return_7d": 0.0169,
+     "revenue_driver": "vertical market software",
+     "signal_rank": 1442,
+     "stock_vs_spy_20d": 0.3243,
+     "ticker": "ROP"
+    },
+    {
+     "market_cap_m": 1939.9451,
+     "price_vs_sma200": 1.6537,
+     "return_30d": 0.3094,
+     "return_7d": 0.1003,
+     "revenue_driver": "enterprise software SaaS",
+     "signal_rank": 497,
+     "stock_vs_spy_20d": 0.2994,
+     "ticker": "CERT"
+    },
+    {
+     "market_cap_m": 803.6075,
+     "price_vs_sma200": 1.5301,
+     "return_30d": 0.1975,
+     "return_7d": 0.1995,
+     "revenue_driver": "enterprise software SaaS",
+     "signal_rank": 61,
+     "stock_vs_spy_20d": 0.26,
+     "ticker": "CYRX"
+    },
+    {
+     "market_cap_m": 16704.176,
+     "price_vs_sma200": 0.6679,
+     "return_30d": 0.1825,
+     "return_7d": 0.0273,
+     "revenue_driver": "credit scoring software",
+     "signal_rank": 1608,
+     "stock_vs_spy_20d": 0.047,
+     "ticker": "FICO"
+    },
+    {
+     "market_cap_m": 13213.5931,
+     "price_vs_sma200": 1.4031,
+     "return_30d": 0.1595,
+     "return_7d": -0.0549,
+     "revenue_driver": "e-signature software",
+     "signal_rank": 434,
+     "stock_vs_spy_20d": 0.1104,
+     "ticker": "DOCU"
+    },
+    {
+     "market_cap_m": 104160.238,
+     "price_vs_sma200": 0.9604,
+     "return_30d": 0.0151,
+     "return_7d": -0.0541,
+     "revenue_driver": "creative software SaaS",
+     "signal_rank": null,
+     "stock_vs_spy_20d": 0.0431,
+     "ticker": "ADBE"
+    },
+    {
+     "market_cap_m": 2184.6109,
+     "price_vs_sma200": 1.188,
+     "return_30d": 0.0127,
+     "return_7d": 0.0007,
+     "revenue_driver": "enterprise software SaaS",
+     "signal_rank": 654,
+     "stock_vs_spy_20d": 0.0371,
+     "ticker": "DV"
+    },
+    {
+     "market_cap_m": 2292.7228,
+     "price_vs_sma200": 1.0831,
+     "return_30d": 0.008,
+     "return_7d": 0.0044,
+     "revenue_driver": "customer engagement software",
+     "signal_rank": null,
+     "stock_vs_spy_20d": -0.0344,
+     "ticker": "CSGS"
+    },
+    {
+     "market_cap_m": 369.4593,
+     "price_vs_sma200": 1.1316,
+     "return_30d": 0.006,
+     "return_7d": 0.0011,
+     "revenue_driver": "pharmaceutical simulation software",
+     "signal_rank": null,
+     "stock_vs_spy_20d": -0.0145,
+     "ticker": "SLP"
+    }
+   ]
+  }
+ },
+ "predictions": {
+  "badge_count": 0,
+  "confidence_score": 0.2903,
+  "conviction_label": "SPECULATIVE",
+  "data_quality_flags": [],
+  "ev_score": 0.0882,
+  "is_diamond": false,
+  "passes_tradability_filter": true,
+  "quality_label": "HIGH",
+  "quantiles": {
+   "downside_q10": -0.3068,
+   "downside_q25": -0.1713,
+   "downside_q50": -0.1028,
+   "downside_q75": -0.0318,
+   "downside_q90": -0.0004,
+   "path_volatility": 0.0382,
+   "risk_reward": 1.7678,
+   "uncertainty": 0.462,
+   "upside_q10": 0.0276,
+   "upside_q25": 0.0784,
+   "upside_q50": 0.1818,
+   "upside_q75": 0.3026,
+   "upside_q90": 0.4897
+  },
+  "rank": 1566,
+  "rank_score": 0.022,
+  "tradability_filter_reasons": []
+ },
+ "profile": {
+  "_local": {
+   "dividend_yield": 0.0,
+   "eps_growth_yoy": 0.4517,
+   "pe_ratio": 22.0542,
+   "revenue_growth_yoy": -0.0021,
+   "roe": 0.3003
+  },
+  "beta": 0.931,
+  "betaTTM": null,
+  "ceo": "Neil Barua",
+  "companyName": "PTC Inc.",
+  "country": "US",
+  "debtToEquityTTM": null,
+  "description": "PTC Inc. operates as a global provider of software and services, with its market presence extending across the Americas, Europe, and the Asia Pacific regions. The company's business is organized into two primary divisions: Software Products and Professional Services. Among its key offerings is the ThingWorx platform, which furnishes enterprises with a suite of functionalities to drive digital innovation across their operations. These solutions are characterized by ease of creation and deployment, scalability for future demands, and their ability to accelerate value realization for customers. Another significant product, Vuforia, enables the visualization of digital information within real-world contexts and facilitates the development of augmented reality applications. PTC also delivers Onshape, a cloud-based product development platform that seamlessly integrates computer-aided design with robust data management, collaborative tools, and real-time analytical capabilities. For product lifecycle management (PLM), the company provides Arena, a solution designed to empower product teams to collaborate virtually from any location, and Windchill, another comprehensive PLM software. Furthermore, Creo stands as a leading 3D CAD technology, supporting the digital design, validation, and refinement of product models. Additional specialized software includes Integrity, an application lifecycle management solution, and Servigistics, focused on optimizing service parts management. Beyond its software portfolio, PTC offers an extensive array of professional services, encompassing consulting, implementation support, training programs, cloud solutions, and ongoing licensing and technical assistance. Established in 1985 and headquartered in Boston, Massachusetts, the company was originally named Parametric Technology Corporation before officially rebranding as PTC Inc. in January 2013.",
+  "dividendYielTTM": null,
+  "enterpriseValueOverEBITDATTM": null,
+  "exchangeShortName": "NASDAQ",
+  "fullTimeEmployees": "7000",
+  "industry": "Software - Application",
+  "ipoDate": "1989-12-08",
+  "latest_earnings_date": "2026-11-04",
+  "marketCapTTM": null,
+  "mktCap": 21275621854,
+  "peRatioTTM": null,
+  "price": 195.85,
+  "priceToSalesRatioTTM": null,
+  "returnOnEquityTTM": 0.2834,
+  "revenue_description": "PTC sells software for CAD, product lifecycle management, and industrial IoT. Revenue is driven by subscription ACV from enterprise license agreements and usage-based consumption, with module expansion and new product attach as growth levers.",
+  "revenue_description_themes": [
+   "net new ARR bookings and logo acquisition",
+   "platform module and feature upsell within installed base",
+   "AI product capability driving competitive differentiation"
+  ],
+  "revenue_taxonomy": [
+   {
+    "bucket": "Developer, Design & Engineering Software",
+    "matched_tags": [
+     "PLM software",
+     "CAD software"
+    ],
+    "path": "Technology › Software & Platforms › Developer, Design & Engineering Software",
+    "sector": "Technology",
+    "segment": "Software & Platforms"
+   },
+   {
+    "bucket": "Enterprise Applications & Workflow Software",
+    "matched_tags": [
+     "IoT and AR platforms"
+    ],
+    "path": "Technology › Software & Platforms › Enterprise Applications & Workflow Software",
+    "sector": "Technology",
+    "segment": "Software & Platforms"
+   }
+  ],
+  "revenue_themes": [
+   "PLM software",
+   "CAD software",
+   "IoT and AR platforms"
+  ],
+  "sector": "Technology",
+  "website": "https://www.ptc.com"
+ },
+ "report": {
+  "display_rank": null,
+  "lane": "wait",
+  "lane_rank": 66,
+  "setup_label": "extended",
+  "why_now": "EPS expansion leads the readiness mix (+7.0); extended move"
+ },
+ "scorecard": {
+  "headline": {
+   "avg_universe_pct": 64,
+   "label": "above_average",
+   "metric_count": 8
+  },
+  "metrics": {
+   "debt_to_equity": {
+    "direction": "lower",
+    "label": "D/E Ratio",
+    "sector": "Info Tech",
+    "sector_n": 272,
+    "sector_pct": 35,
+    "universe_n": 1985,
+    "universe_pct": 44,
+    "value": 0.5266
+   },
+   "eps_growth_yoy": {
+    "direction": "higher",
+    "label": "EPS Growth",
+    "sector": "Info Tech",
+    "sector_n": 269,
+    "sector_pct": 60,
+    "universe_n": 1804,
+    "universe_pct": 68,
+    "value": 0.4517
+   },
+   "gross_margin": {
+    "direction": "higher",
+    "label": "Gross Margin",
+    "sector": "Info Tech",
+    "sector_n": 269,
+    "sector_pct": 91,
+    "universe_n": 1922,
+    "universe_pct": 89,
+    "value": 0.8285
+   },
+   "operating_margin": {
+    "direction": "higher",
+    "label": "Op. Margin",
+    "sector": "Info Tech",
+    "sector_n": 269,
+    "sector_pct": 88,
+    "universe_n": 1922,
+    "universe_pct": 91,
+    "value": 0.3278
+   },
+   "pe_ratio": {
+    "direction": "lower",
+    "label": "P/E",
+    "sector": "Info Tech",
+    "sector_n": 180,
+    "sector_pct": 69,
+    "universe_n": 1439,
+    "universe_pct": 44,
+    "value": 22.0542
+   },
+   "revenue_growth_yoy": {
+    "direction": "higher",
+    "label": "Rev Growth",
+    "sector": "Info Tech",
+    "sector_n": 269,
+    "sector_pct": 11,
+    "universe_n": 1754,
+    "universe_pct": 20,
+    "value": -0.0021
+   },
+   "roe": {
+    "direction": "higher",
+    "label": "ROE",
+    "sector": "Info Tech",
+    "sector_n": 272,
+    "sector_pct": 78,
+    "universe_n": 2000,
+    "universe_pct": 86,
+    "value": 0.3003
+   },
+   "roic": {
+    "direction": "higher",
+    "label": "ROIC",
+    "sector": "Info Tech",
+    "sector_n": 269,
+    "sector_pct": 58,
+    "universe_n": 1969,
+    "universe_pct": 70,
+    "value": 0.0267
+   }
+  }
+ },
+ "signal_rank": 1566,
+ "structural_analogs": {
+  "gp_core_pct": 32.0,
+  "gp_core_ratio": 1.1096,
+  "matches": [
+   {
+    "actual_downside": -0.0342,
+    "actual_return": -0.0306,
+    "actual_upside": 0.0156,
+    "days_in_region": 80,
+    "end_date": "2019-10-02",
+    "end_reason": "data_end",
+    "seq_len": 80,
+    "similarity": 0.5399,
+    "start_date": "2019-06-28",
+    "ticker": "BID",
+    "total_distance": 0.3081,
+    "trigger_date": "2019-07-26",
+    "trigger_type": "compression"
+   },
+   {
+    "actual_downside": -0.0439,
+    "actual_return": 0.0358,
+    "actual_upside": 0.0358,
+    "days_in_region": 80,
+    "end_date": "2014-11-21",
+    "end_reason": "data_end",
+    "seq_len": 80,
+    "similarity": 0.5348,
+    "start_date": "2014-08-08",
+    "ticker": "BYI",
+    "total_distance": 0.313,
+    "trigger_date": "2014-09-05",
+    "trigger_type": "compression"
+   },
+   {
+    "actual_downside": -0.053,
+    "actual_return": -0.0448,
+    "actual_upside": 0.0068,
+    "days_in_region": 84,
+    "end_date": "2000-10-17",
+    "end_reason": "data_end",
+    "seq_len": 84,
+    "similarity": 0.5286,
+    "start_date": "2000-07-07",
+    "ticker": "MKG",
+    "total_distance": 0.3187,
+    "trigger_date": "2000-08-03",
+    "trigger_type": "compression"
+   },
+   {
+    "actual_downside": -0.0002,
+    "actual_return": 0.0044,
+    "actual_upside": 0.0044,
+    "days_in_region": 80,
+    "end_date": "2011-06-17",
+    "end_reason": "data_end",
+    "seq_len": 80,
+    "similarity": 0.528,
+    "start_date": "2011-04-18",
+    "ticker": "AMMD",
+    "total_distance": 0.3193,
+    "trigger_date": "2011-05-16",
+    "trigger_type": "compression"
+   },
+   {
+    "actual_downside": -0.0303,
+    "actual_return": 0.0524,
+    "actual_upside": 0.0565,
+    "days_in_region": 80,
+    "end_date": "2019-07-08",
+    "end_reason": "data_end",
+    "seq_len": 80,
+    "similarity": 0.5198,
+    "start_date": "2018-11-05",
+    "ticker": "RHT",
+    "total_distance": 0.3272,
+    "trigger_date": "2018-12-03",
+    "trigger_type": "compression"
+   },
+   {
+    "actual_downside": -0.004,
+    "actual_return": 0.0063,
+    "actual_upside": 0.0063,
+    "days_in_region": 84,
+    "end_date": "2011-05-24",
+    "end_reason": "data_end",
+    "seq_len": 84,
+    "similarity": 0.5163,
+    "start_date": "2011-01-10",
+    "ticker": "ATHR",
+    "total_distance": 0.3305,
+    "trigger_date": "2011-02-07",
+    "trigger_type": "compression"
+   },
+   {
+    "actual_downside": -0.0562,
+    "actual_return": -0.0351,
+    "actual_upside": 0.0534,
+    "days_in_region": 80,
+    "end_date": "2022-07-05",
+    "end_reason": "data_end",
+    "seq_len": 80,
+    "similarity": 0.5148,
+    "start_date": "2021-12-23",
+    "ticker": "CCMP",
+    "total_distance": 0.3319,
+    "trigger_date": "2022-01-21",
+    "trigger_type": "compression"
+   },
+   {
+    "actual_downside": -0.0016,
+    "actual_return": 0.0099,
+    "actual_upside": 0.0099,
+    "days_in_region": 80,
+    "end_date": "2018-11-15",
+    "end_reason": "data_end",
+    "seq_len": 80,
+    "similarity": 0.5122,
+    "start_date": "2018-07-30",
+    "ticker": "LPNT",
+    "total_distance": 0.3345,
+    "trigger_date": "2018-08-24",
+    "trigger_type": "compression"
+   },
+   {
+    "actual_downside": -0.0792,
+    "actual_return": -0.0792,
+    "actual_upside": 0.0016,
+    "days_in_region": 80,
+    "end_date": "2015-08-21",
+    "end_reason": "data_end",
+    "seq_len": 80,
+    "similarity": 0.511,
+    "start_date": "2015-05-26",
+    "ticker": "ANN",
+    "total_distance": 0.3357,
+    "trigger_date": "2015-06-22",
+    "trigger_type": "compression"
+   },
+   {
+    "actual_downside": -0.1551,
+    "actual_return": -0.1551,
+    "actual_upside": 0.0222,
+    "days_in_region": 80,
+    "end_date": "2008-10-10",
+    "end_reason": "reversal",
+    "seq_len": 80,
+    "similarity": 0.5089,
+    "start_date": "2008-07-29",
+    "ticker": "FDRY",
+    "total_distance": 0.3378,
+    "trigger_date": "2008-08-25",
+    "trigger_type": "compression"
+   }
+  ],
+  "panel": {
+   "edge": 0.005,
+   "hit_hi": 0.851,
+   "hit_lo": 0.637,
+   "hit_rate": 0.76,
+   "median_final": 0.0063,
+   "median_pain": 0.0056,
+   "n": 25,
+   "n_eff": 25.0,
+   "p25_final": 0.0011,
+   "p_pain_gt5": 0.24,
+   "return_to_pain": 0.244
+  },
+  "stats": {
+   "avg_similarity": 0.459,
+   "avg_trough": 0.0762,
+   "avg_upside": 0.095,
+   "median_pain": 0.0215,
+   "median_return": 0.0142,
+   "n_matches": 200,
+   "p25_return": 0.0009,
+   "p_pain_gt5": 0.4,
+   "return_to_pain": 0.342,
+   "top5_avg_trough": 0.0323,
+   "top5_avg_upside": 0.0238,
+   "top_similarity": 0.54,
+   "win_rate": 0.76
+  },
+  "total_matches": 200
+ },
+ "ticker": "PTC",
+ "trending": {
+  "acceleration": -0.0053,
+  "avg_vol_20d": 2203067.9959,
+  "base_high_120": 195.87,
+  "breakout_confirmed": 0,
+  "close": 196.55,
+  "momentum_score": 0.8846,
+  "momentum_start": "2026-10-05",
+  "range_20": 0.0205,
+  "range_50": 0.3561,
+  "rank": 4,
+  "rank_down": null,
+  "rank_up": 4,
+  "ret_120": 0.3282,
+  "ret_20": 0.0134,
+  "ret_60": 0.3464,
+  "rundown_score": 0.7318,
+  "score_date": "2026-11-10",
+  "slope_20": 0.0007,
+  "slope_60": 0.006,
+  "stage": "sustained",
+  "stage_label": "Trending",
+  "ticker": "PTC",
+  "total_score": 0.9253,
+  "trend_ratio": 1.2478,
+  "vcp_detected": 1,
+  "vcp_score": 0.9525
+ }
+}

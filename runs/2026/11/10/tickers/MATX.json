@@ -1,0 +1,1016 @@
+{
+ "date": "2026-11-10",
+ "detected_regions": {
+  "primary": {
+   "days_in_region": 101,
+   "region_start": "2026-09-15",
+   "trigger_date": "2026-11-06",
+   "trigger_type": "shallow_drawdown"
+  },
+  "secondary": [
+   {
+    "confidence_score": 0.6486,
+    "downside_q50": -0.0575,
+    "ev_score": 0.1448,
+    "region_start": "2025-10-13",
+    "seq_len": 200,
+    "trigger_date": "2026-04-07",
+    "trigger_type": "runup",
+    "upside_q25": 0.0977,
+    "upside_q50": 0.1968,
+    "upside_q75": 0.3193
+   }
+  ]
+ },
+ "feature_attribution": {
+  "macro_driver_count": 15,
+  "risk_flags": [
+   "high_volatility"
+  ],
+  "top_drivers": [
+   {
+    "direction": "negative",
+    "feature": "dollar_volume",
+    "feature_value": 98729888.0,
+    "importance": 0.0005,
+    "importance_pct": 0.298,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "positive",
+    "feature": "price_vs_sma200",
+    "feature_value": 1.0615,
+    "importance": 0.0004,
+    "importance_pct": 0.2569,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "positive",
+    "feature": "price_vs_low_52w",
+    "feature_value": 2.0284,
+    "importance": 0.0003,
+    "importance_pct": 0.2045,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "negative",
+    "feature": "book_value_per_share",
+    "feature_value": 98.2651,
+    "importance": 0.0002,
+    "importance_pct": 0.1338,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "negative",
+    "feature": "volatility_20d",
+    "feature_value": 0.0157,
+    "importance": 0.0002,
+    "importance_pct": 0.1067,
+    "method": "integrated_gradients"
+   }
+  ]
+ },
+ "fundamentals": {
+  "accrual": 0.1111,
+  "adx_14": 38.7203,
+  "altman_z_score": 5.0619,
+  "amihud_illiquidity": 0.0002,
+  "avg_volume": 292238.6791,
+  "beta_252d": 0.2503,
+  "book_value_per_share": 98.2651,
+  "correlation_spy_60d": -0.0318,
+  "current_liabilities": 623.9,
+  "current_ratio": 1.1007,
+  "daily_earnings_yield": 0.0437,
+  "daily_fcf_yield": -0.0032,
+  "daily_pb": 4.2078,
+  "daily_pe": 22.8817,
+  "daily_ps": 3.3369,
+  "days_since_52w_high": 40.0,
+  "debt_ebitda": 0.829,
+  "debt_to_equity": 0.2386,
+  "dividend_yield": 0.0009,
+  "dollar_volume_20d_avg": 73147599.2795,
+  "earnings_quality": 1.0936,
+  "ebitda_growth_yoy": 0.2924,
+  "enterprise_value": 12798.6697,
+  "eps_basic": 7.03,
+  "eps_cagr_3y": 0.2671,
+  "eps_cagr_5y": 0.0442,
+  "eps_diluted": 6.96,
+  "eps_growth_accel": 0.335,
+  "eps_growth_qoq": 0.6349,
+  "eps_growth_yoy": 0.3383,
+  "eps_growth_yoy_q2": 0.0033,
+  "eps_growth_yoy_q3": -0.1098,
+  "eps_growth_yoy_q4": -0.014,
+  "eps_growth_yoy_q5": 0.0929,
+  "eps_growth_yoy_q6": 0.5609,
+  "eps_growth_yoy_q7": 0.8,
+  "eps_growth_yoy_q8": 0.6872,
+  "eps_history_8q": [
+   3.8,
+   2.18,
+   2.92,
+   4.24,
+   4.6,
+   1.85,
+   4.27,
+   6.96
+  ],
+  "eps_ttm": 9.0465,
+  "ev_to_ebitda": 15.1841,
+  "ev_to_fcf": 95.0161,
+  "ev_to_sales": 11.4941,
+  "fcf_growth_yoy": -1.0314,
+  "fcf_margin": 0.121,
+  "fcf_per_share": 4.5201,
+  "gross_margin": 0.2457,
+  "gross_margin_change_yoy": -0.0004,
+  "gross_margin_history": [
+   0.2986,
+   0.2809,
+   0.2647,
+   0.2493,
+   0.2424,
+   0.2457
+  ],
+  "inc_roic": 0.1186,
+  "interest_coverage": 131.7031,
+  "is_pre_revenue": false,
+  "margin_vs_sector_median": null,
+  "market_cap_ratio": 12321.7697,
+  "net_income": 209.4,
+  "net_margin": 0.1458,
+  "operating_income": 255.2,
+  "operating_margin": 0.1638,
+  "operating_margin_change_yoy": 0.0568,
+  "pb_ratio": 2.1065,
+  "pe_percentile_1y": 0.6111,
+  "pe_ratio": 22.8817,
+  "peg_trailing": 0.3501,
+  "piotroski_f_score": 4.0,
+  "price_vs_high_52w": 0.8676,
+  "price_vs_sma200": 1.0615,
+  "ps_percentile_1y": 0.4563,
+  "ps_ratio": 3.4476,
+  "quarter_labels_8q": [
+   "Q4 '24",
+   "Q1 '25",
+   "Q2 '25",
+   "Q3 '25",
+   "Q4 '25",
+   "Q1 '26",
+   "Q2 '26",
+   "Q3 '26"
+  ],
+  "quarterly_eps_growth_yoy": 0.6415,
+  "quarterly_eps_growth_yoy_8q": [
+   1.1348,
+   1.0962,
+   -0.1178,
+   -0.2801,
+   0.2105,
+   -0.1514,
+   0.4623,
+   0.6415
+  ],
+  "quarterly_revenue_growth_yoy": 0.2652,
+  "quarterly_revenue_growth_yoy_8q": [
+   0.1285,
+   0.083,
+   -0.0199,
+   -0.0851,
+   -0.0431,
+   -0.0309,
+   0.1672,
+   0.2652
+  ],
+  "revenue_cagr_3y": 0.0592,
+  "revenue_cagr_5y": 0.0192,
+  "revenue_growth_accel": 0.0932,
+  "revenue_growth_qoq": 0.1486,
+  "revenue_growth_yoy": 0.0915,
+  "revenue_growth_yoy_q2": -0.0016,
+  "revenue_growth_yoy_q3": -0.0464,
+  "revenue_growth_yoy_q4": -0.0226,
+  "revenue_growth_yoy_q5": 0.0188,
+  "revenue_growth_yoy_q6": 0.0875,
+  "revenue_growth_yoy_q7": 0.1188,
+  "revenue_growth_yoy_q8": 0.1057,
+  "revenue_history_8q": [
+   890.3,
+   782.0,
+   830.5,
+   880.1,
+   851.9,
+   757.8,
+   969.4,
+   1113.5
+  ],
+  "revenue_per_share": 37.3658,
+  "roa": 0.119,
+  "roce": 0.1547,
+  "roe": 0.1889,
+  "roic": 0.1268,
+  "rsi_14": 20.5672,
+  "sector_momentum": 0.0882,
+  "share_dilution_1y": -0.01,
+  "stock_vs_sector_20d": -0.15,
+  "stock_vs_spy_20d": -0.0836,
+  "total_assets": 4872.0,
+  "vol_regime": 0.9532,
+  "volatility_20d": 0.0156,
+  "volatility_60d": 0.0164,
+  "w52_high": 240.87,
+  "w52_low": 101.98
+ },
+ "market_characters": [
+  {
+   "id": "g1",
+   "name": "Steady Climbers"
+  },
+  {
+   "id": "g5",
+   "name": "Quality Compressed"
+  }
+ ],
+ "model_analogs": {
+  "matches": [
+   {
+    "actual_downside": -0.0144,
+    "actual_return": 0.1798,
+    "actual_upside": 0.1798,
+    "days_in_region": 107,
+    "end_date": "2005-11-18",
+    "end_reason": "reversal",
+    "similarity": 0.9671,
+    "start_date": "2005-08-03",
+    "ticker": "PLSB",
+    "trigger_date": "2005-10-14",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": -0.0425,
+    "actual_return": 0.1747,
+    "actual_upside": 0.1747,
+    "days_in_region": 150,
+    "end_date": "2006-01-09",
+    "end_reason": "reversal",
+    "similarity": 0.9666,
+    "start_date": "2005-08-12",
+    "ticker": "NTR",
+    "trigger_date": "2005-10-13",
+    "trigger_type": "severe_drawdown"
+   },
+   {
+    "actual_downside": -0.1117,
+    "actual_return": 0.0087,
+    "actual_upside": 0.0743,
+    "days_in_region": 178,
+    "end_date": "2006-02-06",
+    "end_reason": "reversal",
+    "similarity": 0.9661,
+    "start_date": "2005-08-12",
+    "ticker": "ARLP",
+    "trigger_date": "2005-10-14",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": -0.0104,
+    "actual_return": 0.2587,
+    "actual_upside": 0.2587,
+    "days_in_region": 147,
+    "end_date": "2006-02-01",
+    "end_reason": "reversal",
+    "similarity": 0.965,
+    "start_date": "2005-09-07",
+    "ticker": "DP",
+    "trigger_date": "2005-10-27",
+    "trigger_type": "severe_drawdown"
+   },
+   {
+    "actual_downside": -0.0039,
+    "actual_return": 0.4926,
+    "actual_upside": 0.4926,
+    "days_in_region": 134,
+    "end_date": "2016-12-09",
+    "end_reason": "reversal",
+    "similarity": 0.9636,
+    "start_date": "2016-07-28",
+    "ticker": "MCRN",
+    "trigger_date": "2016-11-03",
+    "trigger_type": "severe_drawdown"
+   },
+   {
+    "actual_downside": 0.0,
+    "actual_return": 0.1629,
+    "actual_upside": 0.1629,
+    "days_in_region": 120,
+    "end_date": "2005-12-02",
+    "end_reason": "reversal",
+    "similarity": 0.9636,
+    "start_date": "2005-08-04",
+    "ticker": "OSG",
+    "trigger_date": "2005-08-18",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": -0.0073,
+    "actual_return": 0.2717,
+    "actual_upside": 0.2717,
+    "days_in_region": 217,
+    "end_date": "2006-03-16",
+    "end_reason": "reversal",
+    "similarity": 0.9633,
+    "start_date": "2005-08-11",
+    "ticker": "AHO",
+    "trigger_date": "2005-09-09",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": -0.09,
+    "actual_return": 0.1981,
+    "actual_upside": 0.1981,
+    "days_in_region": 127,
+    "end_date": "2006-02-03",
+    "end_reason": "reversal",
+    "similarity": 0.9631,
+    "start_date": "2005-09-29",
+    "ticker": "UTI",
+    "trigger_date": "2005-10-28",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": -0.0604,
+    "actual_return": 0.1468,
+    "actual_upside": 0.1468,
+    "days_in_region": 79,
+    "end_date": "2005-11-30",
+    "end_reason": "reversal",
+    "similarity": 0.9625,
+    "start_date": "2005-09-12",
+    "ticker": "SMBI",
+    "trigger_date": "2005-10-07",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": -0.0488,
+    "actual_return": 0.251,
+    "actual_upside": 0.251,
+    "days_in_region": 188,
+    "end_date": "2006-02-14",
+    "end_reason": "reversal",
+    "similarity": 0.9625,
+    "start_date": "2005-08-10",
+    "ticker": "AGU",
+    "trigger_date": "2005-10-13",
+    "trigger_type": "drawdown"
+   }
+  ],
+  "stats": {
+   "avg_max_drawdown": 0.0451,
+   "avg_similarity": 0.961,
+   "avg_trough": 0.0451,
+   "avg_upside": 0.2567,
+   "best_return": 0.5733,
+   "downside_range": [
+    -0.2894,
+    0.0
+   ],
+   "median_return": 0.2414,
+   "n_matches": 50,
+   "outcome_agreement": true,
+   "return_p25": 0.1508,
+   "return_p5": 0.0052,
+   "return_p75": 0.3266,
+   "return_p95": 0.4768,
+   "sim_weighted_win_rate": 0.96,
+   "top5_avg_trough": 0.0366,
+   "top5_avg_upside": 0.236,
+   "top_similarity": 0.967,
+   "upside_range": [
+    0.059,
+    0.5733
+   ],
+   "win_rate": 0.96,
+   "worst_return": -0.1366,
+   "years_span": 4
+  },
+  "total_matches": 50
+ },
+ "peer_group": {
+  "buckets": [
+   "Freight, Logistics, Brokerage & Delivery Services",
+   "Rail, Marine & Aviation Services and Asset Support"
+  ],
+  "groups": {
+   "Freight, Logistics, Brokerage & Delivery Services": [
+    {
+     "market_cap_m": 1249.9615,
+     "price_vs_sma200": 1.5002,
+     "return_30d": 0.5672,
+     "return_7d": 0.0057,
+     "revenue_driver": "digital wholesale vehicle auctions",
+     "signal_rank": null,
+     "stock_vs_spy_20d": -0.0207,
+     "ticker": "ACVA"
+    },
+    {
+     "market_cap_m": 88847.5293,
+     "price_vs_sma200": 1.2351,
+     "return_30d": 0.2362,
+     "return_7d": 0.105,
+     "revenue_driver": "pharmaceutical distribution",
+     "signal_rank": 1484,
+     "stock_vs_spy_20d": 0.191,
+     "ticker": "CAH"
+    },
+    {
+     "market_cap_m": 3135.5572,
+     "price_vs_sma200": 1.0616,
+     "return_30d": 0.0386,
+     "return_7d": 0.067,
+     "revenue_driver": "less-than-truckload shipping",
+     "signal_rank": 44,
+     "stock_vs_spy_20d": 0.0632,
+     "ticker": "ARCB"
+    },
+    {
+     "market_cap_m": 1633.6616,
+     "price_vs_sma200": 1.4466,
+     "return_30d": 0.0382,
+     "return_7d": 0.0031,
+     "revenue_driver": "biopreservation media",
+     "signal_rank": null,
+     "stock_vs_spy_20d": 0.0747,
+     "ticker": "BLFS"
+    },
+    {
+     "market_cap_m": 128426.4666,
+     "price_vs_sma200": 1.0475,
+     "return_30d": 0.0367,
+     "return_7d": 0.1198,
+     "revenue_driver": "passenger ticket sales",
+     "signal_rank": 687,
+     "stock_vs_spy_20d": 0.1652,
+     "ticker": "AAL"
+    },
+    {
+     "market_cap_m": 9140.414,
+     "price_vs_sma200": 0.8751,
+     "return_30d": 0.0094,
+     "return_7d": -0.0149,
+     "revenue_driver": "less-than-truckload shipping",
+     "signal_rank": 139,
+     "stock_vs_spy_20d": 0.0504,
+     "ticker": "SAIA"
+    },
+    {
+     "market_cap_m": 12730.7096,
+     "price_vs_sma200": 1.0615,
+     "return_30d": -0.0858,
+     "return_7d": -0.0753,
+     "revenue_driver": "ocean container shipping",
+     "signal_rank": 225,
+     "stock_vs_spy_20d": -0.0836,
+     "ticker": "MATX"
+    },
+    {
+     "market_cap_m": 15074.2812,
+     "price_vs_sma200": 0.7684,
+     "return_30d": -0.1384,
+     "return_7d": 0.0351,
+     "revenue_driver": "freight brokerage",
+     "signal_rank": 959,
+     "stock_vs_spy_20d": -0.0287,
+     "ticker": "CHRW"
+    },
+    {
+     "market_cap_m": 1668.6587,
+     "price_vs_sma200": 0.7736,
+     "return_30d": -0.185,
+     "return_7d": 0.0014,
+     "revenue_driver": "one-way truckload shipping",
+     "signal_rank": 179,
+     "stock_vs_spy_20d": -0.1018,
+     "ticker": "WERN"
+    },
+    {
+     "market_cap_m": 1009.2135,
+     "price_vs_sma200": 0.4035,
+     "return_30d": -0.5408,
+     "return_7d": -0.4197,
+     "revenue_driver": "proppant and frac sand",
+     "signal_rank": 1751,
+     "stock_vs_spy_20d": -0.5121,
+     "ticker": "AESI"
+    }
+   ],
+   "Rail, Marine & Aviation Services and Asset Support": [
+    {
+     "market_cap_m": 1684.3386,
+     "price_vs_sma200": 1.083,
+     "return_30d": 0.2293,
+     "return_7d": 0.3273,
+     "revenue_driver": "low cost leisure airline tickets",
+     "signal_rank": 1214,
+     "stock_vs_spy_20d": 0.3454,
+     "ticker": "ALGT"
+    },
+    {
+     "market_cap_m": 90127.4308,
+     "price_vs_sma200": 1.1078,
+     "return_30d": 0.0884,
+     "return_7d": -0.0175,
+     "revenue_driver": "freight rail transportation",
+     "signal_rank": 374,
+     "stock_vs_spy_20d": 0.1059,
+     "ticker": "CSX"
+    },
+    {
+     "market_cap_m": 4553.1906,
+     "price_vs_sma200": 0.9746,
+     "return_30d": 0.0832,
+     "return_7d": 0.1533,
+     "revenue_driver": "aircraft parts distribution",
+     "signal_rank": 1267,
+     "stock_vs_spy_20d": 0.2003,
+     "ticker": "AIR"
+    },
+    {
+     "market_cap_m": 3985.382,
+     "price_vs_sma200": 0.9514,
+     "return_30d": 0.0406,
+     "return_7d": 0.1635,
+     "revenue_driver": "passenger airlines",
+     "signal_rank": 838,
+     "stock_vs_spy_20d": 0.1353,
+     "ticker": "ALK"
+    },
+    {
+     "market_cap_m": 128426.4666,
+     "price_vs_sma200": 1.0475,
+     "return_30d": 0.0367,
+     "return_7d": 0.1198,
+     "revenue_driver": "passenger ticket sales",
+     "signal_rank": 687,
+     "stock_vs_spy_20d": 0.1652,
+     "ticker": "AAL"
+    },
+    {
+     "market_cap_m": 9140.414,
+     "price_vs_sma200": 0.8751,
+     "return_30d": 0.0094,
+     "return_7d": -0.0149,
+     "revenue_driver": "less-than-truckload shipping",
+     "signal_rank": 139,
+     "stock_vs_spy_20d": 0.0504,
+     "ticker": "SAIA"
+    },
+    {
+     "market_cap_m": 278.3915,
+     "price_vs_sma200": 0.7695,
+     "return_30d": -0.0245,
+     "return_7d": 0.0725,
+     "revenue_driver": "used aircraft sales",
+     "signal_rank": null,
+     "stock_vs_spy_20d": -0.1094,
+     "ticker": "ASLE"
+    },
+    {
+     "market_cap_m": 12730.7096,
+     "price_vs_sma200": 1.0615,
+     "return_30d": -0.0858,
+     "return_7d": -0.0753,
+     "revenue_driver": "ocean container shipping",
+     "signal_rank": 225,
+     "stock_vs_spy_20d": -0.0836,
+     "ticker": "MATX"
+    },
+    {
+     "market_cap_m": 7127.2194,
+     "price_vs_sma200": 1.1488,
+     "return_30d": -1.0,
+     "return_7d": -1.0,
+     "revenue_driver": "construction aggregates",
+     "signal_rank": null,
+     "stock_vs_spy_20d": 0.0232,
+     "ticker": "ACA"
+    },
+    {
+     "market_cap_m": 7226.7249,
+     "price_vs_sma200": 1.0384,
+     "return_30d": -1.0,
+     "return_7d": -1.0,
+     "revenue_driver": "aircraft leasing",
+     "signal_rank": null,
+     "stock_vs_spy_20d": 0.0051,
+     "ticker": "AL"
+    }
+   ]
+  }
+ },
+ "predictions": {
+  "badge_count": 1,
+  "confidence_score": 0.5465,
+  "conviction_label": "HIGH CONVICTION",
+  "data_quality_flags": [],
+  "ev_score": 0.1664,
+  "is_diamond": false,
+  "passes_tradability_filter": true,
+  "quality_label": "AVOID",
+  "quantiles": {
+   "downside_q10": -0.2165,
+   "downside_q25": -0.105,
+   "downside_q50": -0.0549,
+   "downside_q75": -0.0064,
+   "downside_q90": 0.0119,
+   "path_volatility": 0.0321,
+   "risk_reward": 3.986,
+   "uncertainty": 0.4528,
+   "upside_q10": 0.0414,
+   "upside_q25": 0.1086,
+   "upside_q50": 0.219,
+   "upside_q75": 0.3411,
+   "upside_q90": 0.4942
+  },
+  "rank": 225,
+  "rank_score": 0.1366,
+  "tradability_filter_reasons": []
+ },
+ "profile": {
+  "_local": {
+   "dividend_yield": 0.0009,
+   "eps_growth_yoy": 0.3383,
+   "pe_ratio": 12.0967,
+   "revenue_growth_yoy": 0.0915,
+   "roe": 0.1889
+  },
+  "beta": 1.329,
+  "betaTTM": null,
+  "ceo": "Matthew J. Cox",
+  "companyName": "Matson, Inc.",
+  "country": "US",
+  "debtToEquityTTM": null,
+  "description": "Matson, Inc. specializes in providing integrated ocean transportation and logistics solutions. Its Ocean Transportation segment offers crucial ocean freight services connecting the domestic non-contiguous economies of Hawaii, Alaska, and Guam, alongside other island nations within Micronesia. Their diverse cargo includes everything from refrigerated foodstuffs, packaged consumer goods, building materials, and automobiles to livestock, seafood, general sustenance, and a wide array of retail and e-commerce merchandise. Additionally, the company operates an expedited express service facilitating trade between China and Long Beach, California, extending its reach to various South Pacific islands and Okinawa, Japan. Beyond direct shipping, this segment manages comprehensive terminal operations, including container stevedoring, refrigerated cargo handling, inland transport, and container equipment maintenance across key locations in Hawaii (Oahu, Hawaii, Maui, and Kauai) and Alaska (Anchorage, Kodiak, and Dutch Harbor). They also offer vessel management and container transshipment services. Matson's Logistics division delivers a broad spectrum of multimodal transportation brokerage services. These encompass domestic and international rail intermodal, various highway trucking options (long-haul, regional, specialized, flat-bed, less-than-truckload, and expedited freight), less-than-container load consolidation, freight forwarding, warehousing, distribution, and comprehensive supply chain management, including non-vessel operating common carrier freight forwarding. Key clients include the U.S. military, freight forwarders, major retailers, consumer goods companies, and automobile manufacturers. Established in Honolulu, Hawaii, in 1882, the company was formerly known as Alexander & Baldwin Holdings, Inc. before adopting its current name, Matson, Inc., in June 2012.",
+  "dividendYielTTM": null,
+  "enterpriseValueOverEBITDATTM": null,
+  "exchangeShortName": "NYSE",
+  "fullTimeEmployees": "4170",
+  "industry": "Marine Shipping",
+  "ipoDate": "1973-05-03",
+  "latest_earnings_date": "2026-11-05",
+  "marketCapTTM": null,
+  "mktCap": 6287933771,
+  "peRatioTTM": null,
+  "price": 212.17,
+  "priceToSalesRatioTTM": null,
+  "returnOnEquityTTM": 0.1925,
+  "revenue_description": "Matson provides ocean shipping and logistics services. Revenue is driven by freight volume and yield per shipment, with fuel surcharges and network density as key margin levers.",
+  "revenue_description_themes": [
+   "China express demand",
+   "ocean freight pricing",
+   "container volume recovery"
+  ],
+  "revenue_taxonomy": [
+   {
+    "bucket": "Rail, Marine & Aviation Services and Asset Support",
+    "matched_tags": [
+     "ocean container shipping",
+     "Hawaii and Alaska routes"
+    ],
+    "path": "Industrials & Transportation › Mobility & Logistics › Rail, Marine & Aviation Services and Asset Support",
+    "sector": "Industrials & Transportation",
+    "segment": "Mobility & Logistics"
+   },
+   {
+    "bucket": "Freight, Logistics, Brokerage & Delivery Services",
+    "matched_tags": [
+     "logistics freight forwarding"
+    ],
+    "path": "Industrials & Transportation › Mobility & Logistics › Freight, Logistics, Brokerage & Delivery Services",
+    "sector": "Industrials & Transportation",
+    "segment": "Mobility & Logistics"
+   }
+  ],
+  "revenue_themes": [
+   "ocean container shipping",
+   "Hawaii and Alaska routes",
+   "logistics freight forwarding"
+  ],
+  "sector": "Industrials",
+  "website": "https://www.matson.com"
+ },
+ "report": {
+  "display_rank": null,
+  "lane": "act_now",
+  "lane_rank": 21,
+  "setup_label": "countertrend",
+  "why_now": "Structural analogs leads the readiness mix (+11.2); countertrend move"
+ },
+ "scorecard": {
+  "headline": {
+   "avg_universe_pct": 62,
+   "label": "above_average",
+   "metric_count": 8
+  },
+  "metrics": {
+   "debt_to_equity": {
+    "direction": "lower",
+    "label": "D/E Ratio",
+    "sector": "Industrials",
+    "sector_n": 340,
+    "sector_pct": 63,
+    "universe_n": 1985,
+    "universe_pct": 60,
+    "value": 0.2386
+   },
+   "eps_growth_yoy": {
+    "direction": "higher",
+    "label": "EPS Growth",
+    "sector": "Industrials",
+    "sector_n": 339,
+    "sector_pct": 67,
+    "universe_n": 1804,
+    "universe_pct": 63,
+    "value": 0.3383
+   },
+   "gross_margin": {
+    "direction": "higher",
+    "label": "Gross Margin",
+    "sector": "Industrials",
+    "sector_n": 323,
+    "sector_pct": 29,
+    "universe_n": 1922,
+    "universe_pct": 19,
+    "value": 0.2457
+   },
+   "operating_margin": {
+    "direction": "higher",
+    "label": "Op. Margin",
+    "sector": "Industrials",
+    "sector_n": 323,
+    "sector_pct": 76,
+    "universe_n": 1922,
+    "universe_pct": 64,
+    "value": 0.1638
+   },
+   "pe_ratio": {
+    "direction": "lower",
+    "label": "P/E",
+    "sector": "Industrials",
+    "sector_n": 247,
+    "sector_pct": 89,
+    "universe_n": 1439,
+    "universe_pct": 78,
+    "value": 12.0967
+   },
+   "revenue_growth_yoy": {
+    "direction": "higher",
+    "label": "Rev Growth",
+    "sector": "Industrials",
+    "sector_n": 322,
+    "sector_pct": 54,
+    "universe_n": 1754,
+    "universe_pct": 54,
+    "value": 0.0915
+   },
+   "roe": {
+    "direction": "higher",
+    "label": "ROE",
+    "sector": "Industrials",
+    "sector_n": 342,
+    "sector_pct": 72,
+    "universe_n": 2000,
+    "universe_pct": 74,
+    "value": 0.1889
+   },
+   "roic": {
+    "direction": "higher",
+    "label": "ROIC",
+    "sector": "Industrials",
+    "sector_n": 335,
+    "sector_pct": 87,
+    "universe_n": 1969,
+    "universe_pct": 87,
+    "value": 0.0493
+   }
+  }
+ },
+ "signal_rank": 225,
+ "structural_analogs": {
+  "gp_core_pct": 75.3,
+  "gp_core_ratio": 1.6464,
+  "matches": [
+   {
+    "actual_downside": -0.028,
+    "actual_return": 0.1576,
+    "actual_upside": 0.1576,
+    "days_in_region": 85,
+    "end_date": "2021-11-09",
+    "end_reason": "reversal",
+    "seq_len": 85,
+    "similarity": 0.6043,
+    "start_date": "2021-05-17",
+    "ticker": "CE",
+    "total_distance": 0.2518,
+    "trigger_date": "2021-06-21",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": -0.1867,
+    "actual_return": -0.0917,
+    "actual_upside": 0.0123,
+    "days_in_region": 96,
+    "end_date": "2022-02-15",
+    "end_reason": "reversal",
+    "seq_len": 96,
+    "similarity": 0.5986,
+    "start_date": "2021-05-17",
+    "ticker": "WRK",
+    "total_distance": 0.2566,
+    "trigger_date": "2021-07-07",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": -0.0208,
+    "actual_return": 0.1762,
+    "actual_upside": 0.1762,
+    "days_in_region": 81,
+    "end_date": "2021-10-28",
+    "end_reason": "reversal",
+    "seq_len": 81,
+    "similarity": 0.5969,
+    "start_date": "2021-09-01",
+    "ticker": "TFII",
+    "total_distance": 0.258,
+    "trigger_date": "2021-09-30",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": -0.1757,
+    "actual_return": 0.0424,
+    "actual_upside": 0.1483,
+    "days_in_region": 97,
+    "end_date": "2019-02-05",
+    "end_reason": "reversal",
+    "seq_len": 97,
+    "similarity": 0.5955,
+    "start_date": "2018-08-21",
+    "ticker": "AEO",
+    "total_distance": 0.2591,
+    "trigger_date": "2018-09-18",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": -0.3466,
+    "actual_return": -0.2466,
+    "actual_upside": 0.0706,
+    "days_in_region": 73,
+    "end_date": "2018-12-03",
+    "end_reason": "reversal",
+    "seq_len": 73,
+    "similarity": 0.5927,
+    "start_date": "2018-09-25",
+    "ticker": "ALGN",
+    "total_distance": 0.2616,
+    "trigger_date": "2018-10-11",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": 0.0,
+    "actual_return": 0.3224,
+    "actual_upside": 0.3224,
+    "days_in_region": 98,
+    "end_date": "2005-07-19",
+    "end_reason": "reversal",
+    "seq_len": 98,
+    "similarity": 0.5917,
+    "start_date": "2005-03-08",
+    "ticker": "GLYT",
+    "total_distance": 0.2624,
+    "trigger_date": "2005-04-29",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": 0.0,
+    "actual_return": 0.4706,
+    "actual_upside": 0.4955,
+    "days_in_region": 101,
+    "end_date": "2005-08-05",
+    "end_reason": "data_end",
+    "seq_len": 101,
+    "similarity": 0.5914,
+    "start_date": "2005-03-04",
+    "ticker": "SSI",
+    "total_distance": 0.2626,
+    "trigger_date": "2005-04-19",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": -0.0477,
+    "actual_return": 0.315,
+    "actual_upside": 0.315,
+    "days_in_region": 101,
+    "end_date": "2017-11-28",
+    "end_reason": "reversal",
+    "seq_len": 101,
+    "similarity": 0.5911,
+    "start_date": "2017-06-09",
+    "ticker": "CCF",
+    "total_distance": 0.2629,
+    "trigger_date": "2017-08-07",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": 0.0,
+    "actual_return": 0.2278,
+    "actual_upside": 0.2278,
+    "days_in_region": 76,
+    "end_date": "2021-11-09",
+    "end_reason": "reversal",
+    "seq_len": 76,
+    "similarity": 0.5905,
+    "start_date": "2021-07-28",
+    "ticker": "ZD",
+    "total_distance": 0.2634,
+    "trigger_date": "2021-08-18",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": -0.0875,
+    "actual_return": 0.1581,
+    "actual_upside": 0.1581,
+    "days_in_region": 98,
+    "end_date": "2018-12-03",
+    "end_reason": "reversal",
+    "seq_len": 98,
+    "similarity": 0.5904,
+    "start_date": "2018-09-14",
+    "ticker": "ZEN",
+    "total_distance": 0.2635,
+    "trigger_date": "2018-11-06",
+    "trigger_type": "severe_drawdown"
+   }
+  ],
+  "panel": {
+   "edge": 0.095,
+   "hit_hi": 0.865,
+   "hit_lo": 0.724,
+   "hit_rate": 0.804,
+   "median_final": 0.1581,
+   "median_pain": 0.0703,
+   "n": 51,
+   "n_eff": 51.0,
+   "p25_final": 0.036,
+   "p_pain_gt5": 0.647,
+   "return_to_pain": 1.751
+  },
+  "stats": {
+   "avg_similarity": 0.554,
+   "avg_trough": 0.11,
+   "avg_upside": 0.1876,
+   "median_pain": 0.0814,
+   "median_return": 0.1469,
+   "n_matches": 200,
+   "p25_return": 0.0299,
+   "p_pain_gt5": 0.65,
+   "return_to_pain": 1.449,
+   "top5_avg_trough": 0.1516,
+   "top5_avg_upside": 0.113,
+   "top_similarity": 0.604,
+   "win_rate": 0.795
+  },
+  "total_matches": 200
+ },
+ "ticker": "MATX",
+ "trending": {
+  "acceleration": -0.0009,
+  "avg_vol_20d": 255990.8546,
+  "base_high_120": 238.6,
+  "breakout_confirmed": 0,
+  "close": 226.99,
+  "momentum_score": 0.6827,
+  "momentum_start": "2025-11-25",
+  "range_20": 0.0889,
+  "range_50": 0.1109,
+  "rank": 1136,
+  "rank_down": null,
+  "rank_up": 293,
+  "ret_120": 0.2423,
+  "ret_20": 0.0066,
+  "ret_60": 0.1045,
+  "rundown_score": 0.4157,
+  "score_date": "2026-10-29",
+  "slope_20": 0.0005,
+  "slope_60": 0.0014,
+  "stage": "sustained",
+  "stage_label": "Trending",
+  "ticker": "MATX",
+  "total_score": 0.3714,
+  "trend_ratio": 1.1697,
+  "vcp_detected": 0,
+  "vcp_score": 0.1638
+ }
+}

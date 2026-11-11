@@ -1,0 +1,1069 @@
+{
+ "date": "2026-11-10",
+ "detected_regions": {
+  "primary": {
+   "days_in_region": 129,
+   "region_start": "2026-08-05",
+   "trigger_date": "2026-09-24",
+   "trigger_type": "runup"
+  },
+  "secondary": [
+   {
+    "confidence_score": 0.4683,
+    "downside_q50": -0.0786,
+    "ev_score": 0.1184,
+    "region_start": "2026-05-01",
+    "seq_len": 194,
+    "trigger_date": "2026-06-08",
+    "trigger_type": "severe_drawdown",
+    "upside_q25": 0.0873,
+    "upside_q50": 0.1895,
+    "upside_q75": 0.332
+   }
+  ]
+ },
+ "feature_attribution": {
+  "macro_driver_count": 16,
+  "risk_flags": [
+   "high_volatility"
+  ],
+  "top_drivers": [
+   {
+    "direction": "negative",
+    "feature": "dollar_volume",
+    "feature_value": 65538308.0,
+    "importance": 0.0004,
+    "importance_pct": 0.4181,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "positive",
+    "feature": "historical_recovery_rate",
+    "feature_value": 0.4602,
+    "importance": 0.0003,
+    "importance_pct": 0.2816,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "negative",
+    "feature": "beta_252d",
+    "feature_value": 0.112,
+    "importance": 0.0002,
+    "importance_pct": 0.16,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "negative",
+    "feature": "correlation_spy_60d",
+    "feature_value": 0.1369,
+    "importance": 0.0001,
+    "importance_pct": 0.1403,
+    "method": "integrated_gradients"
+   }
+  ]
+ },
+ "fundamentals": {
+  "accrual": 0.0173,
+  "adx_14": 28.3293,
+  "altman_z_score": 0.6979,
+  "amihud_illiquidity": 0.0002,
+  "avg_volume": 1643587.0202,
+  "beta_252d": 0.112,
+  "book_value_per_share": 38.3971,
+  "correlation_spy_60d": 0.1369,
+  "current_liabilities": 4350.0,
+  "current_ratio": 1.2621,
+  "daily_earnings_yield": 0.0489,
+  "daily_fcf_yield": -0.0392,
+  "daily_pb": 1.2709,
+  "daily_pe": 20.4507,
+  "daily_ps": 0.544,
+  "days_since_52w_high": 133.0,
+  "debt_ebitda": 8.2919,
+  "debt_to_equity": 2.8164,
+  "dividend_yield": 0.0002,
+  "dollar_volume_20d_avg": 77274355.559,
+  "earnings_quality": 7.2703,
+  "ebitda_growth_yoy": -0.1005,
+  "enterprise_value": 15870.0796,
+  "eps_basic": 0.67,
+  "eps_cagr_3y": -0.497,
+  "eps_cagr_5y": -0.3749,
+  "eps_diluted": 0.67,
+  "eps_growth_accel": 0.8116,
+  "eps_growth_qoq": -0.4123,
+  "eps_growth_yoy": 1.0846,
+  "eps_growth_yoy_q2": 0.273,
+  "eps_growth_yoy_q3": 0.3439,
+  "eps_growth_yoy_q4": 0.245,
+  "eps_growth_yoy_q5": -3.8158,
+  "eps_growth_yoy_q6": -1.8309,
+  "eps_growth_yoy_q7": -1.8286,
+  "eps_growth_yoy_q8": -1.7699,
+  "eps_history_8q": [
+   -17.45,
+   -0.15,
+   1.86,
+   -12.39,
+   0.17,
+   0.4,
+   1.13,
+   0.67
+  ],
+  "eps_ttm": 2.3926,
+  "ev_to_ebitda": 11.0825,
+  "ev_to_fcf": 33.8381,
+  "ev_to_sales": 6.209,
+  "fcf_growth_yoy": -0.1593,
+  "fcf_margin": 0.1835,
+  "fcf_per_share": 4.2714,
+  "gross_margin": 0.2013,
+  "gross_margin_change_yoy": -0.0661,
+  "gross_margin_history": [
+   0.2786,
+   0.2733,
+   0.2462,
+   0.229,
+   0.2177,
+   0.2013
+  ],
+  "inc_roic": 0.4722,
+  "interest_coverage": 1.8892,
+  "is_pre_revenue": false,
+  "margin_vs_sector_median": null,
+  "market_cap_ratio": 5358.0797,
+  "net_income": 74.0,
+  "net_margin": 0.0266,
+  "operating_income": 198.0,
+  "operating_margin": 0.0803,
+  "operating_margin_change_yoy": -0.0122,
+  "pb_ratio": 1.2743,
+  "pe_percentile_1y": 0.0119,
+  "pe_ratio": 20.4507,
+  "peg_trailing": 0.196,
+  "piotroski_f_score": 4.0,
+  "price_vs_high_52w": 0.7067,
+  "price_vs_sma200": 0.9473,
+  "ps_percentile_1y": 0.4603,
+  "ps_ratio": 0.5599,
+  "quarter_labels_8q": [
+   "Q4 '24",
+   "Q1 '25",
+   "Q2 '25",
+   "Q3 '25",
+   "Q4 '25",
+   "Q1 '26",
+   "Q2 '26",
+   "Q3 '26"
+  ],
+  "quarterly_eps_growth_yoy": 1.0541,
+  "quarterly_eps_growth_yoy_8q": [
+   -3.7138,
+   -1.1364,
+   0.3577,
+   -10.0,
+   1.0097,
+   3.6667,
+   -0.3925,
+   1.0541
+  ],
+  "quarterly_revenue_growth_yoy": 0.0566,
+  "quarterly_revenue_growth_yoy_8q": [
+   -0.0775,
+   -0.085,
+   -0.0449,
+   -0.0865,
+   -0.07,
+   -0.0218,
+   0.0869,
+   0.0566
+  ],
+  "revenue_cagr_3y": -0.0278,
+  "revenue_cagr_5y": 0.0463,
+  "revenue_growth_accel": 0.0372,
+  "revenue_growth_qoq": -0.0712,
+  "revenue_growth_yoy": 0.0143,
+  "revenue_growth_yoy_q2": -0.0228,
+  "revenue_growth_yoy_q3": -0.0563,
+  "revenue_growth_yoy_q4": -0.0716,
+  "revenue_growth_yoy_q5": -0.0734,
+  "revenue_growth_yoy_q6": -0.0583,
+  "revenue_growth_yoy_q7": -0.0598,
+  "revenue_growth_yoy_q8": -0.0603,
+  "revenue_history_8q": [
+   2370.0,
+   2389.0,
+   2532.0,
+   2419.0,
+   2204.0,
+   2337.0,
+   2752.0,
+   2556.0
+  ],
+  "revenue_per_share": 23.2787,
+  "roa": 0.0124,
+  "roce": 0.0475,
+  "roe": 0.0625,
+  "roic": 0.0158,
+  "rsi_14": 55.252,
+  "sector_momentum": 0.1062,
+  "share_dilution_1y": 0.0,
+  "stock_vs_sector_20d": 0.0831,
+  "stock_vs_spy_20d": 0.1303,
+  "total_assets": 20934.0,
+  "vol_regime": 0.9528,
+  "volatility_20d": 0.0229,
+  "volatility_60d": 0.024,
+  "w52_high": 70.7,
+  "w52_low": 35.13
+ },
+ "market_characters": [
+  {
+   "id": "g6",
+   "name": "Turnaround"
+  }
+ ],
+ "model_analogs": {
+  "matches": [
+   {
+    "actual_downside": 0.0,
+    "actual_return": 0.0312,
+    "actual_upside": 0.1906,
+    "days_in_region": 132,
+    "end_date": "2017-01-10",
+    "end_reason": "reversal",
+    "similarity": 0.9506,
+    "start_date": "2016-08-31",
+    "ticker": "PARR",
+    "trigger_date": "2016-10-06",
+    "trigger_type": "runup"
+   },
+   {
+    "actual_downside": -0.1866,
+    "actual_return": -0.0437,
+    "actual_upside": 0.0401,
+    "days_in_region": 174,
+    "end_date": "2006-01-09",
+    "end_reason": "reversal",
+    "similarity": 0.9475,
+    "start_date": "2005-07-19",
+    "ticker": "AXL",
+    "trigger_date": "2005-07-25",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": 0.0,
+    "actual_return": 0.0713,
+    "actual_upside": 0.2888,
+    "days_in_region": 187,
+    "end_date": "2006-03-14",
+    "end_reason": "reversal",
+    "similarity": 0.9469,
+    "start_date": "2005-09-08",
+    "ticker": "BBW",
+    "trigger_date": "2005-09-16",
+    "trigger_type": "runup"
+   },
+   {
+    "actual_downside": -0.0117,
+    "actual_return": 0.154,
+    "actual_upside": 0.154,
+    "days_in_region": 202,
+    "end_date": "2019-11-05",
+    "end_reason": "reversal",
+    "similarity": 0.946,
+    "start_date": "2019-04-17",
+    "ticker": "CYD",
+    "trigger_date": "2019-10-03",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": 0.0,
+    "actual_return": 0.3164,
+    "actual_upside": 0.3164,
+    "days_in_region": 209,
+    "end_date": "2006-01-11",
+    "end_reason": "reversal",
+    "similarity": 0.946,
+    "start_date": "2005-06-16",
+    "ticker": "AVID",
+    "trigger_date": "2005-09-22",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": -0.0582,
+    "actual_return": 0.0715,
+    "actual_upside": 0.0811,
+    "days_in_region": 228,
+    "end_date": "2019-12-17",
+    "end_reason": "reversal",
+    "similarity": 0.9459,
+    "start_date": "2019-05-03",
+    "ticker": "ADEA",
+    "trigger_date": "2019-10-09",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": -0.0543,
+    "actual_return": 0.1396,
+    "actual_upside": 0.1758,
+    "days_in_region": 42,
+    "end_date": "2018-11-14",
+    "end_reason": "reversal",
+    "similarity": 0.9457,
+    "start_date": "2018-10-03",
+    "ticker": "BHC",
+    "trigger_date": "2018-10-25",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": -0.042,
+    "actual_return": 0.1018,
+    "actual_upside": 0.3359,
+    "days_in_region": 232,
+    "end_date": "2017-03-22",
+    "end_reason": "reversal",
+    "similarity": 0.9453,
+    "start_date": "2016-08-02",
+    "ticker": "MEOH",
+    "trigger_date": "2016-09-06",
+    "trigger_type": "runup"
+   },
+   {
+    "actual_downside": -0.0284,
+    "actual_return": 0.5213,
+    "actual_upside": 0.5213,
+    "days_in_region": 305,
+    "end_date": "2017-04-28",
+    "end_reason": "reversal",
+    "similarity": 0.9452,
+    "start_date": "2016-06-27",
+    "ticker": "XYZ",
+    "trigger_date": "2016-08-10",
+    "trigger_type": "runup"
+   },
+   {
+    "actual_downside": -0.0041,
+    "actual_return": 0.5145,
+    "actual_upside": 0.5145,
+    "days_in_region": 194,
+    "end_date": "2020-01-22",
+    "end_reason": "reversal",
+    "similarity": 0.9449,
+    "start_date": "2019-07-12",
+    "ticker": "VCTR",
+    "trigger_date": "2019-08-06",
+    "trigger_type": "drawdown"
+   }
+  ],
+  "stats": {
+   "avg_max_drawdown": 0.0908,
+   "avg_similarity": 0.943,
+   "avg_trough": 0.0908,
+   "avg_upside": 0.2186,
+   "best_return": 0.9074,
+   "downside_range": [
+    -0.3937,
+    0.0
+   ],
+   "median_return": 0.1187,
+   "n_matches": 50,
+   "outcome_agreement": true,
+   "return_p25": -0.0248,
+   "return_p5": -0.2188,
+   "return_p75": 0.1988,
+   "return_p95": 0.5182,
+   "sim_weighted_win_rate": 0.72,
+   "top5_avg_trough": 0.0397,
+   "top5_avg_upside": 0.198,
+   "top_similarity": 0.951,
+   "upside_range": [
+    0.0,
+    1.244
+   ],
+   "win_rate": 0.72,
+   "worst_return": -0.3047,
+   "years_span": 15
+  },
+  "total_matches": 50
+ },
+ "peer_group": {
+  "buckets": [
+   "Advanced Materials, Composites & Performance Polymers",
+   "Commodity Chemicals & Fertilizers",
+   "Tobacco, Nicotine, Cannabis & Adult-Use Consumer Products"
+  ],
+  "groups": {
+   "Advanced Materials, Composites & Performance Polymers": [
+    {
+     "market_cap_m": 77802.4321,
+     "price_vs_sma200": 1.1276,
+     "return_30d": 0.2057,
+     "return_7d": 0.1202,
+     "revenue_driver": "specialty electronic materials",
+     "signal_rank": 1559,
+     "stock_vs_spy_20d": 0.2474,
+     "ticker": "DD"
+    },
+    {
+     "market_cap_m": 1864.352,
+     "price_vs_sma200": 1.1075,
+     "return_30d": 0.1562,
+     "return_7d": 0.0284,
+     "revenue_driver": "aerospace composite components",
+     "signal_rank": 126,
+     "stock_vs_spy_20d": 0.1657,
+     "ticker": "AIN"
+    },
+    {
+     "market_cap_m": 4382.253,
+     "price_vs_sma200": 1.1784,
+     "return_30d": 0.1213,
+     "return_7d": 0.0673,
+     "revenue_driver": "specialty polymer additives",
+     "signal_rank": 1237,
+     "stock_vs_spy_20d": 0.1928,
+     "ticker": "AVNT"
+    },
+    {
+     "market_cap_m": 426.4585,
+     "price_vs_sma200": 1.2066,
+     "return_30d": 0.0929,
+     "return_7d": 0.1297,
+     "revenue_driver": "aerogel insulation materials",
+     "signal_rank": 1776,
+     "stock_vs_spy_20d": 0.0794,
+     "ticker": "ASPN"
+    },
+    {
+     "market_cap_m": 5514.6718,
+     "price_vs_sma200": 0.9473,
+     "return_30d": 0.0912,
+     "return_7d": -0.0075,
+     "revenue_driver": "acetyl chain chemicals",
+     "signal_rank": 1089,
+     "stock_vs_spy_20d": 0.1303,
+     "ticker": "CE"
+    },
+    {
+     "market_cap_m": 7589.0771,
+     "price_vs_sma200": 0.9231,
+     "return_30d": -0.0046,
+     "return_7d": -0.0162,
+     "revenue_driver": "specialty chemicals",
+     "signal_rank": 6,
+     "stock_vs_spy_20d": 0.0753,
+     "ticker": "EMN"
+    },
+    {
+     "market_cap_m": 1911.123,
+     "price_vs_sma200": 0.7362,
+     "return_30d": -0.0295,
+     "return_7d": -0.0037,
+     "revenue_driver": "titanium technologies",
+     "signal_rank": 1444,
+     "stock_vs_spy_20d": 0.0576,
+     "ticker": "CC"
+    },
+    {
+     "market_cap_m": 48029.8261,
+     "price_vs_sma200": 1.0427,
+     "return_30d": -0.0329,
+     "return_7d": 0.1035,
+     "revenue_driver": "titanium aerospace materials",
+     "signal_rank": 1159,
+     "stock_vs_spy_20d": -0.0009,
+     "ticker": "ATI"
+    },
+    {
+     "market_cap_m": 14560.1009,
+     "price_vs_sma200": 0.6729,
+     "return_30d": -0.2409,
+     "return_7d": 0.0505,
+     "revenue_driver": "aerospace specialty alloys",
+     "signal_rank": 881,
+     "stock_vs_spy_20d": -0.1819,
+     "ticker": "CRS"
+    },
+    {
+     "market_cap_m": 339.8683,
+     "price_vs_sma200": 0.6594,
+     "return_30d": -0.4801,
+     "return_7d": -0.3417,
+     "revenue_driver": "3D printing hardware",
+     "signal_rank": 1781,
+     "stock_vs_spy_20d": -0.3899,
+     "ticker": "DDD"
+    }
+   ],
+   "Commodity Chemicals & Fertilizers": [
+    {
+     "market_cap_m": 2829.3416,
+     "price_vs_sma200": 1.0682,
+     "return_30d": 0.2128,
+     "return_7d": 0.0031,
+     "revenue_driver": "specialty chemical distribution",
+     "signal_rank": 1083,
+     "stock_vs_spy_20d": 0.1965,
+     "ticker": "HWKN"
+    },
+    {
+     "market_cap_m": 23178.1119,
+     "price_vs_sma200": 0.9603,
+     "return_30d": 0.1402,
+     "return_7d": -0.0928,
+     "revenue_driver": "polyethylene and polyurethane",
+     "signal_rank": 810,
+     "stock_vs_spy_20d": 0.1406,
+     "ticker": "DOW"
+    },
+    {
+     "market_cap_m": 3232.3791,
+     "price_vs_sma200": 0.791,
+     "return_30d": 0.1342,
+     "return_7d": -0.0057,
+     "revenue_driver": "chlor alkali chemicals",
+     "signal_rank": 1577,
+     "stock_vs_spy_20d": 0.2133,
+     "ticker": "OLN"
+    },
+    {
+     "market_cap_m": 5514.6718,
+     "price_vs_sma200": 0.9473,
+     "return_30d": 0.0912,
+     "return_7d": -0.0075,
+     "revenue_driver": "acetyl chain chemicals",
+     "signal_rank": 1089,
+     "stock_vs_spy_20d": 0.1303,
+     "ticker": "CE"
+    },
+    {
+     "market_cap_m": 18493.9558,
+     "price_vs_sma200": 1.0426,
+     "return_30d": 0.0575,
+     "return_7d": -0.0076,
+     "revenue_driver": "nitrogen fertilizers",
+     "signal_rank": 1334,
+     "stock_vs_spy_20d": 0.08,
+     "ticker": "CF"
+    },
+    {
+     "market_cap_m": 1073.0755,
+     "price_vs_sma200": 0.8874,
+     "return_30d": 0.0426,
+     "return_7d": -0.0137,
+     "revenue_driver": "road deicing salt",
+     "signal_rank": 727,
+     "stock_vs_spy_20d": 0.0265,
+     "ticker": "CMP"
+    },
+    {
+     "market_cap_m": 419.9966,
+     "price_vs_sma200": 0.9146,
+     "return_30d": 0.0325,
+     "return_7d": 0.0576,
+     "revenue_driver": "potash fertilizers",
+     "signal_rank": 1017,
+     "stock_vs_spy_20d": 0.047,
+     "ticker": "IPI"
+    },
+    {
+     "market_cap_m": 6912.3686,
+     "price_vs_sma200": 0.9072,
+     "return_30d": -0.0716,
+     "return_7d": -0.0301,
+     "revenue_driver": "carbon black",
+     "signal_rank": 224,
+     "stock_vs_spy_20d": -0.0071,
+     "ticker": "CBT"
+    },
+    {
+     "market_cap_m": 4885.8066,
+     "price_vs_sma200": 1.0639,
+     "return_30d": -0.2345,
+     "return_7d": -0.3368,
+     "revenue_driver": "petroleum refining",
+     "signal_rank": 1274,
+     "stock_vs_spy_20d": -0.3503,
+     "ticker": "CVI"
+    },
+    {
+     "market_cap_m": 3438.9286,
+     "price_vs_sma200": 0.8892,
+     "return_30d": -0.3442,
+     "return_7d": -0.2969,
+     "revenue_driver": "specialty chemicals",
+     "signal_rank": 1317,
+     "stock_vs_spy_20d": -0.3678,
+     "ticker": "CLMT"
+    }
+   ],
+   "Tobacco, Nicotine, Cannabis & Adult-Use Consumer Products": [
+    {
+     "market_cap_m": 422379.9139,
+     "price_vs_sma200": 1.0998,
+     "return_30d": 0.1109,
+     "return_7d": -0.0217,
+     "revenue_driver": "premium cigarettes",
+     "signal_rank": 1100,
+     "stock_vs_spy_20d": 0.1032,
+     "ticker": "MO"
+    },
+    {
+     "market_cap_m": 5514.6718,
+     "price_vs_sma200": 0.9473,
+     "return_30d": 0.0912,
+     "return_7d": -0.0075,
+     "revenue_driver": "acetyl chain chemicals",
+     "signal_rank": 1089,
+     "stock_vs_spy_20d": 0.1303,
+     "ticker": "CE"
+    },
+    {
+     "market_cap_m": 1206.4315,
+     "price_vs_sma200": 0.7403,
+     "return_30d": 0.0454,
+     "return_7d": -0.0669,
+     "revenue_driver": "modern oral nicotine products",
+     "signal_rank": 1596,
+     "stock_vs_spy_20d": 0.1732,
+     "ticker": "TPB"
+    },
+    {
+     "market_cap_m": 310502.7813,
+     "price_vs_sma200": 1.0618,
+     "return_30d": 0.0018,
+     "return_7d": -0.0696,
+     "revenue_driver": "combustible cigarette sales",
+     "signal_rank": 1189,
+     "stock_vs_spy_20d": 0.0111,
+     "ticker": "PM"
+    },
+    {
+     "market_cap_m": 990.6097,
+     "price_vs_sma200": 0.7746,
+     "return_30d": -0.0735,
+     "return_7d": -0.0688,
+     "revenue_driver": "leaf tobacco processing",
+     "signal_rank": 607,
+     "stock_vs_spy_20d": -0.0342,
+     "ticker": "UVV"
+    },
+    {
+     "market_cap_m": 403.1067,
+     "price_vs_sma200": 0.5047,
+     "return_30d": -0.3291,
+     "return_7d": 0.0474,
+     "revenue_driver": "cannabis cultivation and distribution",
+     "signal_rank": 276,
+     "stock_vs_spy_20d": -0.1532,
+     "ticker": "TLRY"
+    }
+   ]
+  }
+ },
+ "predictions": {
+  "badge_count": 0,
+  "confidence_score": 0.3245,
+  "conviction_label": "SPECULATIVE",
+  "data_quality_flags": [],
+  "ev_score": 0.102,
+  "is_diamond": false,
+  "passes_tradability_filter": true,
+  "quality_label": "HIGH",
+  "quantiles": {
+   "downside_q10": -0.2919,
+   "downside_q25": -0.1703,
+   "downside_q50": -0.0959,
+   "downside_q75": -0.0295,
+   "downside_q90": 0.0009,
+   "path_volatility": 0.0365,
+   "risk_reward": 1.9662,
+   "uncertainty": 0.4774,
+   "upside_q10": 0.0275,
+   "upside_q25": 0.082,
+   "upside_q50": 0.1886,
+   "upside_q75": 0.3216,
+   "upside_q90": 0.5048
+  },
+  "rank": 1089,
+  "rank_score": 0.0447,
+  "tradability_filter_reasons": []
+ },
+ "profile": {
+  "_local": {
+   "dividend_yield": 0.0002,
+   "eps_growth_yoy": 1.0846,
+   "pe_ratio": 21.2489,
+   "revenue_growth_yoy": 0.0143,
+   "roe": 0.0625
+  },
+  "beta": 0.715,
+  "betaTTM": null,
+  "ceo": "Scott A. Richardson",
+  "companyName": "Celanese Corporation",
+  "country": "US",
+  "debtToEquityTTM": null,
+  "description": "Celanese Corporation produces and sells engineered polymers worldwide. It operates through Engineered Materials and Acetyl Chain segments. The company offers ethylene acrylic elastomers, ethylene vinyl acetate pharmaceutical grade copolymers, liquid crystal polymers, long-fiber reinforced thermoplastics, nylon and polypropylene compounds and formulations, polyoxymethylene, ultra-high molecular weight polyethylene, and thermoplastic elastomers, polyesters, and vulcanizates for use in appliance, automotive, construction, consumer apparel, consumer electronics, electrical, energy storage, filtration equipment, industrial, medical, and telecommunication applications. It also provides acetic acid and anhydride, acetate flakes and tows, butyl acetates, emulsion polymers, ethyl acetates, ethylene vinyl acetate resins and compounds, formaldehydes, redispersible powders, and vinyl acetate monomers for use in adhesives, automotive parts, coatings, consumer goods, external thermal insulation composite systems, films, filtration, flexible packaging, food and beverage, food packaging, inks, lamination, lubricants, paints, paper finishing, pharmaceuticals, plasticizers, plasters and renders, solvents, textiles, and tiling applications. The company offers its products under the Amcel, AOPlus, Ateva, Avicor, Celanese, Celanex, Celanyl, Celcon, Celstran, Celvolit, Clarifoil, Crastin, Dur-O-Set, Dytron, ECOMID, EcoVAE, Elotex, Factor, Flexbond, Forprene, FRIANYL, Fortron, Geolast, GHR, GUR, Hostaform, Hytrel, Laprene, Melinex, MetaLX, Mowilith, MT, Mylar, NILAMID, Nylfor, OmniLon, Pibifor, Pibiter, Polifor, Resyn, Rynite, Santoprene, SlideX, Sofprene, Sofpur, Talcoprene, Tarnoform, Tecnoprene, TufCOR, Tynex, Vamac, VAntage, Vectra, Vinac, Vinamul, VitalDose, Zenite, and Zytel brands. It sells its products directly to customers and through distributors; and original equipment manufacturers and suppliers. Celanese Corporation was founded in 1912 and is headquartered in Irving, Texas.",
+  "dividendYielTTM": null,
+  "enterpriseValueOverEBITDATTM": null,
+  "exchangeShortName": "NYSE",
+  "fullTimeEmployees": "11434",
+  "industry": "Chemicals",
+  "ipoDate": "2005-01-21",
+  "latest_earnings_date": "2026-11-03",
+  "marketCapTTM": null,
+  "mktCap": 5557879260,
+  "peRatioTTM": null,
+  "price": 50.64,
+  "priceToSalesRatioTTM": null,
+  "returnOnEquityTTM": 0.0635,
+  "revenue_description": "Celanese produces specialty and acetyl chemicals used in industrial and consumer applications. Revenue is driven by industrial end-market demand for specialty chemicals, with feedstock cost management and premium product mix as margin drivers.",
+  "revenue_description_themes": [
+   "industrial production and specialty chemical demand cycle",
+   "raw material and feedstock cost pass-through",
+   "high-value specialty product mix shift"
+  ],
+  "revenue_taxonomy": [
+   {
+    "bucket": "Commodity Chemicals & Fertilizers",
+    "matched_tags": [
+     "acetyl chain chemicals"
+    ],
+    "path": "Materials & Chemicals › Chemicals & Advanced Materials › Commodity Chemicals & Fertilizers",
+    "sector": "Materials & Chemicals",
+    "segment": "Chemicals & Advanced Materials"
+   },
+   {
+    "bucket": "Advanced Materials, Composites & Performance Polymers",
+    "matched_tags": [
+     "engineered materials manufacturing"
+    ],
+    "path": "Materials & Chemicals › Chemicals & Advanced Materials › Advanced Materials, Composites & Performance Polymers",
+    "sector": "Materials & Chemicals",
+    "segment": "Chemicals & Advanced Materials"
+   },
+   {
+    "bucket": "Tobacco, Nicotine, Cannabis & Adult-Use Consumer Products",
+    "matched_tags": [
+     "acetate tow production"
+    ],
+    "path": "Consumer Goods & Retail › Food Beverage & Staples › Tobacco, Nicotine, Cannabis & Adult-Use Consumer Products",
+    "sector": "Consumer Goods & Retail",
+    "segment": "Food Beverage & Staples"
+   }
+  ],
+  "revenue_themes": [
+   "acetyl chain chemicals",
+   "engineered materials manufacturing",
+   "acetate tow production"
+  ],
+  "sector": "Basic Materials",
+  "website": "https://www.celanese.com"
+ },
+ "report": null,
+ "scorecard": {
+  "headline": {
+   "avg_universe_pct": 36,
+   "label": "below_average",
+   "metric_count": 8
+  },
+  "metrics": {
+   "debt_to_equity": {
+    "direction": "lower",
+    "label": "D/E Ratio",
+    "sector": "Materials",
+    "sector_n": 114,
+    "sector_pct": 4,
+    "universe_n": 1985,
+    "universe_pct": 7,
+    "value": 2.8164
+   },
+   "eps_growth_yoy": {
+    "direction": "higher",
+    "label": "EPS Growth",
+    "sector": "Materials",
+    "sector_n": 115,
+    "sector_pct": 81,
+    "universe_n": 1804,
+    "universe_pct": 83,
+    "value": 1.0846
+   },
+   "gross_margin": {
+    "direction": "higher",
+    "label": "Gross Margin",
+    "sector": "Materials",
+    "sector_n": 112,
+    "sector_pct": 36,
+    "universe_n": 1922,
+    "universe_pct": 15,
+    "value": 0.2013
+   },
+   "operating_margin": {
+    "direction": "higher",
+    "label": "Op. Margin",
+    "sector": "Materials",
+    "sector_n": 112,
+    "sector_pct": 45,
+    "universe_n": 1922,
+    "universe_pct": 41,
+    "value": 0.0803
+   },
+   "pe_ratio": {
+    "direction": "lower",
+    "label": "P/E",
+    "sector": "Materials",
+    "sector_n": 74,
+    "sector_pct": 61,
+    "universe_n": 1439,
+    "universe_pct": 46,
+    "value": 21.2489
+   },
+   "revenue_growth_yoy": {
+    "direction": "higher",
+    "label": "Rev Growth",
+    "sector": "Materials",
+    "sector_n": 113,
+    "sector_pct": 31,
+    "universe_n": 1754,
+    "universe_pct": 25,
+    "value": 0.0143
+   },
+   "roe": {
+    "direction": "higher",
+    "label": "ROE",
+    "sector": "Materials",
+    "sector_n": 115,
+    "sector_pct": 45,
+    "universe_n": 2000,
+    "universe_pct": 38,
+    "value": 0.0625
+   },
+   "roic": {
+    "direction": "higher",
+    "label": "ROIC",
+    "sector": "Materials",
+    "sector_n": 115,
+    "sector_pct": 33,
+    "universe_n": 1969,
+    "universe_pct": 31,
+    "value": 0.0045
+   }
+  }
+ },
+ "signal_rank": 1089,
+ "structural_analogs": {
+  "gp_core_pct": 46.6,
+  "gp_core_ratio": 1.2685,
+  "matches": [
+   {
+    "actual_downside": -0.1849,
+    "actual_return": 0.1913,
+    "actual_upside": 0.1913,
+    "days_in_region": 124,
+    "end_date": "2019-04-29",
+    "end_reason": "reversal",
+    "seq_len": 124,
+    "similarity": 0.5967,
+    "start_date": "2018-08-13",
+    "ticker": "EZPW",
+    "total_distance": 0.2581,
+    "trigger_date": "2018-09-10",
+    "trigger_type": "compression"
+   },
+   {
+    "actual_downside": -0.129,
+    "actual_return": -0.129,
+    "actual_upside": 0.0,
+    "days_in_region": 142,
+    "end_date": "2012-12-14",
+    "end_reason": "reversal",
+    "seq_len": 142,
+    "similarity": 0.5967,
+    "start_date": "2012-07-11",
+    "ticker": "EMBJ",
+    "total_distance": 0.2582,
+    "trigger_date": "2012-08-09",
+    "trigger_type": "shallow_runup"
+   },
+   {
+    "actual_downside": -0.0605,
+    "actual_return": 0.0301,
+    "actual_upside": 0.1732,
+    "days_in_region": 105,
+    "end_date": "2017-11-07",
+    "end_reason": "reversal",
+    "seq_len": 105,
+    "similarity": 0.5949,
+    "start_date": "2017-06-08",
+    "ticker": "KSS",
+    "total_distance": 0.2597,
+    "trigger_date": "2017-07-28",
+    "trigger_type": "runup"
+   },
+   {
+    "actual_downside": -0.0857,
+    "actual_return": -0.0857,
+    "actual_upside": 0.0924,
+    "days_in_region": 129,
+    "end_date": "2014-10-16",
+    "end_reason": "reversal",
+    "seq_len": 129,
+    "similarity": 0.5865,
+    "start_date": "2014-06-09",
+    "ticker": "AWAY",
+    "total_distance": 0.2668,
+    "trigger_date": "2014-06-19",
+    "trigger_type": "shallow_runup"
+   },
+   {
+    "actual_downside": -0.0767,
+    "actual_return": 0.0515,
+    "actual_upside": 0.2024,
+    "days_in_region": 128,
+    "end_date": "2018-02-09",
+    "end_reason": "reversal",
+    "seq_len": 128,
+    "similarity": 0.5804,
+    "start_date": "2017-06-21",
+    "ticker": "BRSL",
+    "total_distance": 0.272,
+    "trigger_date": "2017-08-02",
+    "trigger_type": "runup"
+   },
+   {
+    "actual_downside": -0.0893,
+    "actual_return": -0.0893,
+    "actual_upside": 0.0937,
+    "days_in_region": 106,
+    "end_date": "2004-02-06",
+    "end_reason": "reversal",
+    "seq_len": 106,
+    "similarity": 0.5795,
+    "start_date": "2003-10-15",
+    "ticker": "VRC",
+    "total_distance": 0.2728,
+    "trigger_date": "2003-11-14",
+    "trigger_type": "shallow_runup"
+   },
+   {
+    "actual_downside": -0.0598,
+    "actual_return": 0.3449,
+    "actual_upside": 0.4426,
+    "days_in_region": 115,
+    "end_date": "2013-06-05",
+    "end_reason": "reversal",
+    "seq_len": 115,
+    "similarity": 0.5788,
+    "start_date": "2012-07-26",
+    "ticker": "AET",
+    "total_distance": 0.2734,
+    "trigger_date": "2012-08-22",
+    "trigger_type": "shallow_runup"
+   },
+   {
+    "actual_downside": -0.2429,
+    "actual_return": -0.2429,
+    "actual_upside": 0.018,
+    "days_in_region": 119,
+    "end_date": "1999-11-29",
+    "end_reason": "reversal",
+    "seq_len": 119,
+    "similarity": 0.5753,
+    "start_date": "1999-02-26",
+    "ticker": "PNW",
+    "total_distance": 0.2764,
+    "trigger_date": "1999-05-20",
+    "trigger_type": "shallow_runup"
+   },
+   {
+    "actual_downside": -0.2341,
+    "actual_return": -0.2341,
+    "actual_upside": 0.3866,
+    "days_in_region": 127,
+    "end_date": "2022-07-14",
+    "end_reason": "reversal",
+    "seq_len": 127,
+    "similarity": 0.5721,
+    "start_date": "2021-09-10",
+    "ticker": "VIRT",
+    "total_distance": 0.2792,
+    "trigger_date": "2021-11-04",
+    "trigger_type": "runup"
+   },
+   {
+    "actual_downside": -0.1336,
+    "actual_return": 0.0725,
+    "actual_upside": 0.0725,
+    "days_in_region": 140,
+    "end_date": "2014-11-12",
+    "end_reason": "reversal",
+    "seq_len": 140,
+    "similarity": 0.5713,
+    "start_date": "2014-06-12",
+    "ticker": "ZNGA",
+    "total_distance": 0.28,
+    "trigger_date": "2014-07-10",
+    "trigger_type": "compression"
+   }
+  ],
+  "panel": {
+   "edge": -0.0638,
+   "hit_hi": 0.56,
+   "hit_lo": 0.383,
+   "hit_rate": 0.471,
+   "median_final": -0.0199,
+   "median_pain": 0.0855,
+   "n": 51,
+   "n_eff": 51.0,
+   "p25_final": -0.129,
+   "p_pain_gt5": 0.784,
+   "return_to_pain": -0.188
+  },
+  "stats": {
+   "avg_similarity": 0.541,
+   "avg_trough": 0.1092,
+   "avg_upside": 0.146,
+   "median_pain": 0.0842,
+   "median_return": 0.0089,
+   "n_matches": 200,
+   "p25_return": -0.1152,
+   "p_pain_gt5": 0.67,
+   "return_to_pain": 0.085,
+   "top5_avg_trough": 0.1074,
+   "top5_avg_upside": 0.1319,
+   "top_similarity": 0.597,
+   "win_rate": 0.515
+  },
+  "total_matches": 200
+ },
+ "ticker": "CE",
+ "trending": {
+  "acceleration": -0.0011,
+  "avg_vol_20d": 1948254.2967,
+  "base_high_120": 69.24,
+  "breakout_confirmed": 0,
+  "close": 68.71,
+  "momentum_score": 0.8323,
+  "momentum_start": "2026-03-11",
+  "range_20": 0.1662,
+  "range_50": 0.3428,
+  "rank": 74,
+  "rank_down": null,
+  "rank_up": 60,
+  "ret_120": 0.6637,
+  "ret_20": 0.0771,
+  "ret_60": 0.3198,
+  "rundown_score": 0.4823,
+  "score_date": "2026-05-04",
+  "slope_20": 0.0028,
+  "slope_60": 0.004,
+  "stage": "sustained",
+  "stage_label": "Trending",
+  "ticker": "CE",
+  "total_score": 0.6498,
+  "trend_ratio": 1.2497,
+  "vcp_detected": 1,
+  "vcp_score": 0.5282
+ }
+}

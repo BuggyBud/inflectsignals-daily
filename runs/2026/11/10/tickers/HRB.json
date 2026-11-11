@@ -1,0 +1,1118 @@
+{
+ "date": "2026-11-10",
+ "detected_regions": {
+  "primary": {
+   "days_in_region": 124,
+   "region_start": "2026-08-12",
+   "trigger_date": "2026-09-29",
+   "trigger_type": "severe_drawdown"
+  },
+  "secondary": [
+   {
+    "confidence_score": 0.4422,
+    "downside_q50": -0.0945,
+    "ev_score": 0.0939,
+    "region_start": "2026-05-06",
+    "seq_len": 191,
+    "trigger_date": "2026-10-09",
+    "trigger_type": "runup",
+    "upside_q25": 0.0744,
+    "upside_q50": 0.1737,
+    "upside_q75": 0.3176
+   }
+  ]
+ },
+ "feature_attribution": {
+  "macro_driver_count": 15,
+  "risk_flags": [
+   "high_volatility"
+  ],
+  "top_drivers": [
+   {
+    "direction": "negative",
+    "feature": "dollar_volume",
+    "feature_value": 97359800.0,
+    "importance": 0.0005,
+    "importance_pct": 0.3685,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "positive",
+    "feature": "capex_intensity",
+    "feature_value": 0.0283,
+    "importance": 0.0003,
+    "importance_pct": 0.2124,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "negative",
+    "feature": "correlation_spy_60d",
+    "feature_value": -0.0868,
+    "importance": 0.0002,
+    "importance_pct": 0.1495,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "positive",
+    "feature": "historical_recovery_rate",
+    "feature_value": 0.4496,
+    "importance": 0.0002,
+    "importance_pct": 0.1364,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "negative",
+    "feature": "altman_x3",
+    "feature_value": -0.07,
+    "importance": 0.0002,
+    "importance_pct": 0.1332,
+    "method": "integrated_gradients"
+   }
+  ]
+ },
+ "fundamentals": {
+  "accrual": 0.3338,
+  "adx_14": 33.6224,
+  "altman_z_score": 0.9448,
+  "amihud_illiquidity": 0.0003,
+  "avg_volume": 1823202.1445,
+  "beta_252d": -0.1577,
+  "book_value_per_share": -1.969,
+  "correlation_spy_60d": -0.0868,
+  "current_liabilities": 806.83,
+  "current_ratio": 0.7167,
+  "daily_earnings_yield": 0.0421,
+  "daily_fcf_yield": 0.0353,
+  "daily_pb": -26.6013,
+  "daily_pe": 23.7471,
+  "daily_ps": 4.1052,
+  "days_since_52w_high": 4.0,
+  "debt_ebitda": 4.7067,
+  "debt_to_equity": -8.6424,
+  "dividend_yield": 0.0167,
+  "dollar_volume_20d_avg": 92247063.0357,
+  "earnings_quality": 1.9018,
+  "ebitda_growth_yoy": -0.5395,
+  "enterprise_value": 8150.2507,
+  "eps_basic": -1.53,
+  "eps_cagr_3y": 0.1423,
+  "eps_cagr_5y": 0.229,
+  "eps_diluted": -1.53,
+  "eps_growth_accel": -0.051,
+  "eps_growth_qoq": -1.6623,
+  "eps_growth_yoy": 0.193,
+  "eps_growth_yoy_q2": 0.244,
+  "eps_growth_yoy_q3": 0.3437,
+  "eps_growth_yoy_q4": 0.184,
+  "eps_growth_yoy_q5": 0.0831,
+  "eps_growth_yoy_q6": 0.06,
+  "eps_growth_yoy_q7": -0.0626,
+  "eps_growth_yoy_q8": 0.0,
+  "eps_history_8q": [
+   -1.79,
+   5.32,
+   2.21,
+   -1.26,
+   -1.91,
+   6.57,
+   2.31,
+   -1.53
+  ],
+  "eps_ttm": 2.1472,
+  "ev_to_ebitda": 18.3166,
+  "ev_to_fcf": -21.4914,
+  "ev_to_sales": 36.3306,
+  "fcf_growth_yoy": -0.0249,
+  "fcf_margin": -1.6905,
+  "fcf_per_share": -3.0813,
+  "gross_margin": 0.5811,
+  "gross_margin_change_yoy": -0.179,
+  "gross_margin_history": [
+   0.4764,
+   0.4766,
+   0.5466,
+   0.4857,
+   0.6176,
+   0.5811
+  ],
+  "inc_roic": 1.2563,
+  "interest_coverage": 32.7303,
+  "is_pre_revenue": false,
+  "margin_vs_sector_median": null,
+  "market_cap_ratio": 6446.4108,
+  "net_income": -188.478,
+  "net_margin": 0.1729,
+  "operating_income": -188.127,
+  "operating_margin": 0.2813,
+  "operating_margin_change_yoy": 0.1785,
+  "pb_ratio": -25.8918,
+  "pe_percentile_1y": 0.0079,
+  "pe_ratio": 23.7471,
+  "peg_trailing": 0.4373,
+  "piotroski_f_score": 1.0,
+  "price_vs_high_52w": 0.9192,
+  "price_vs_sma200": 1.2889,
+  "ps_percentile_1y": 0.0913,
+  "ps_ratio": 4.1044,
+  "quarter_labels_8q": [
+   "Q2 '25",
+   "Q3 '25",
+   "Q4 '25",
+   "Q1 '26",
+   "Q2 '25",
+   "Q3 '26",
+   "Q4 '26",
+   "Q1 '26"
+  ],
+  "quarterly_eps_growth_yoy": -0.2143,
+  "quarterly_eps_growth_yoy_8q": [
+   -0.3459,
+   0.0924,
+   0.2143,
+   -0.0244,
+   -0.067,
+   0.235,
+   0.0452,
+   -0.2143
+  ],
+  "quarterly_revenue_growth_yoy": 0.1021,
+  "quarterly_revenue_growth_yoy_8q": [
+   -0.0001,
+   0.0422,
+   0.0455,
+   0.0503,
+   0.1105,
+   -0.999,
+   0.0305,
+   0.1021
+  ],
+  "revenue_cagr_3y": -0.2327,
+  "revenue_cagr_5y": -0.1218,
+  "revenue_growth_accel": 0.0044,
+  "revenue_growth_qoq": -0.8041,
+  "revenue_growth_yoy": -0.5836,
+  "revenue_growth_yoy_q2": -0.588,
+  "revenue_growth_yoy_q3": -0.5918,
+  "revenue_growth_yoy_q4": 0.047,
+  "revenue_growth_yoy_q5": 0.0415,
+  "revenue_growth_yoy_q6": 0.0417,
+  "revenue_growth_yoy_q7": 0.0371,
+  "revenue_growth_yoy_q8": 0.0377,
+  "revenue_history_8q": [
+   179.07,
+   2277.104,
+   1111.011,
+   203.551,
+   198.865,
+   2.2263,
+   1144.869,
+   224.336
+  ],
+  "revenue_per_share": 1.8227,
+  "roa": 0.0914,
+  "roce": 0.2133,
+  "roe": -4.3487,
+  "roic": 0.1445,
+  "rsi_14": 49.6031,
+  "sector_momentum": 0.0861,
+  "share_dilution_1y": -0.0308,
+  "stock_vs_sector_20d": 0.1035,
+  "stock_vs_spy_20d": 0.1998,
+  "total_assets": 2685.965,
+  "vol_regime": 1.2524,
+  "volatility_20d": 0.0301,
+  "volatility_60d": 0.024,
+  "w52_high": 58.67,
+  "w52_low": 28.16
+ },
+ "market_characters": [],
+ "model_analogs": {
+  "matches": [
+   {
+    "actual_downside": -0.096,
+    "actual_return": 0.2225,
+    "actual_upside": 0.2225,
+    "days_in_region": 168,
+    "end_date": "2019-03-01",
+    "end_reason": "reversal",
+    "similarity": 0.9546,
+    "start_date": "2018-09-14",
+    "ticker": "PSDO",
+    "trigger_date": "2018-10-25",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": 0.0,
+    "actual_return": 0.0713,
+    "actual_upside": 0.2888,
+    "days_in_region": 187,
+    "end_date": "2006-03-14",
+    "end_reason": "reversal",
+    "similarity": 0.9514,
+    "start_date": "2005-09-08",
+    "ticker": "BBW",
+    "trigger_date": "2005-09-16",
+    "trigger_type": "runup"
+   },
+   {
+    "actual_downside": -0.0952,
+    "actual_return": 0.1937,
+    "actual_upside": 0.1937,
+    "days_in_region": 156,
+    "end_date": "2004-07-01",
+    "end_reason": "reversal",
+    "similarity": 0.9507,
+    "start_date": "2004-01-27",
+    "ticker": "ESC",
+    "trigger_date": "2004-02-23",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": -0.3082,
+    "actual_return": 0.0821,
+    "actual_upside": 0.1424,
+    "days_in_region": 105,
+    "end_date": "2000-07-28",
+    "end_reason": "data_end",
+    "similarity": 0.9504,
+    "start_date": "2000-04-14",
+    "ticker": "LHSG",
+    "trigger_date": "2000-05-12",
+    "trigger_type": "compression"
+   },
+   {
+    "actual_downside": 0.0,
+    "actual_return": 0.063,
+    "actual_upside": 0.2165,
+    "days_in_region": 191,
+    "end_date": "1990-04-06",
+    "end_reason": "reversal",
+    "similarity": 0.9503,
+    "start_date": "1989-09-27",
+    "ticker": "BMC",
+    "trigger_date": "1990-03-02",
+    "trigger_type": "runup"
+   },
+   {
+    "actual_downside": -0.1672,
+    "actual_return": 0.1298,
+    "actual_upside": 0.1298,
+    "days_in_region": 140,
+    "end_date": "2019-02-20",
+    "end_reason": "reversal",
+    "similarity": 0.9503,
+    "start_date": "2018-10-03",
+    "ticker": "LBRT",
+    "trigger_date": "2018-11-13",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": -0.0286,
+    "actual_return": 0.3129,
+    "actual_upside": 0.3129,
+    "days_in_region": 142,
+    "end_date": "2014-07-24",
+    "end_reason": "reversal",
+    "similarity": 0.9503,
+    "start_date": "2014-03-04",
+    "ticker": "OWW",
+    "trigger_date": "2014-04-28",
+    "trigger_type": "severe_drawdown"
+   },
+   {
+    "actual_downside": -0.0459,
+    "actual_return": 0.164,
+    "actual_upside": 0.3049,
+    "days_in_region": 317,
+    "end_date": "2006-06-16",
+    "end_reason": "reversal",
+    "similarity": 0.9502,
+    "start_date": "2005-08-03",
+    "ticker": "BREW",
+    "trigger_date": "2005-09-27",
+    "trigger_type": "shallow_runup"
+   },
+   {
+    "actual_downside": -0.0403,
+    "actual_return": 0.4831,
+    "actual_upside": 0.4831,
+    "days_in_region": 97,
+    "end_date": "2016-12-08",
+    "end_reason": "reversal",
+    "similarity": 0.9496,
+    "start_date": "2016-09-02",
+    "ticker": "ENVA",
+    "trigger_date": "2016-09-13",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": -0.0023,
+    "actual_return": 0.4878,
+    "actual_upside": 0.4878,
+    "days_in_region": 96,
+    "end_date": "2021-06-16",
+    "end_reason": "reversal",
+    "similarity": 0.9494,
+    "start_date": "2021-03-12",
+    "ticker": "DCP",
+    "trigger_date": "2021-03-24",
+    "trigger_type": "drawdown"
+   }
+  ],
+  "stats": {
+   "avg_max_drawdown": 0.0865,
+   "avg_similarity": 0.948,
+   "avg_trough": 0.0865,
+   "avg_upside": 0.2923,
+   "best_return": 0.7291,
+   "downside_range": [
+    -0.4202,
+    0.0
+   ],
+   "median_return": 0.1559,
+   "n_matches": 50,
+   "outcome_agreement": true,
+   "return_p25": 0.0389,
+   "return_p5": -0.114,
+   "return_p75": 0.3317,
+   "return_p95": 0.5856,
+   "sim_weighted_win_rate": 0.8,
+   "top5_avg_trough": 0.0999,
+   "top5_avg_upside": 0.2128,
+   "top_similarity": 0.955,
+   "upside_range": [
+    0.0,
+    1.0353
+   ],
+   "win_rate": 0.8,
+   "worst_return": -0.2982,
+   "years_span": 15
+  },
+  "total_matches": 50
+ },
+ "peer_group": {
+  "buckets": [
+   "Finance, HR & Administrative Software",
+   "Local Consumer Services, Auto Retail & Personal Services",
+   "Small Business, Commercial & Specialty Finance"
+  ],
+  "groups": {
+   "Finance, HR & Administrative Software": [
+    {
+     "market_cap_m": 1360.9735,
+     "price_vs_sma200": 1.3518,
+     "return_30d": 0.6,
+     "return_7d": 0.1645,
+     "revenue_driver": "indirect tax software",
+     "signal_rank": 751,
+     "stock_vs_spy_20d": 0.4389,
+     "ticker": "VERX"
+    },
+    {
+     "market_cap_m": 5249.2284,
+     "price_vs_sma200": 1.2585,
+     "return_30d": 0.282,
+     "return_7d": 0.1124,
+     "revenue_driver": "SMB financial operations SaaS",
+     "signal_rank": 1445,
+     "stock_vs_spy_20d": 0.2583,
+     "ticker": "BILL"
+    },
+    {
+     "market_cap_m": 6445.1465,
+     "price_vs_sma200": 1.2889,
+     "return_30d": 0.2565,
+     "return_7d": -0.0062,
+     "revenue_driver": "assisted tax preparation",
+     "signal_rank": 653,
+     "stock_vs_spy_20d": 0.1998,
+     "ticker": "HRB"
+    },
+    {
+     "market_cap_m": 115417.6111,
+     "price_vs_sma200": 1.2626,
+     "return_30d": 0.1667,
+     "return_7d": 0.0395,
+     "revenue_driver": "payroll processing SaaS",
+     "signal_rank": 1966,
+     "stock_vs_spy_20d": 0.1435,
+     "ticker": "ADP"
+    },
+    {
+     "market_cap_m": 1390.2027,
+     "price_vs_sma200": 1.2926,
+     "return_30d": 0.0824,
+     "return_7d": -0.197,
+     "revenue_driver": "healthcare staffing",
+     "signal_rank": 1193,
+     "stock_vs_spy_20d": 0.0717,
+     "ticker": "AMN"
+    },
+    {
+     "market_cap_m": 215762.2234,
+     "price_vs_sma200": 0.9958,
+     "return_30d": 0.0591,
+     "return_7d": 0.0136,
+     "revenue_driver": "credit card issuing",
+     "signal_rank": 800,
+     "stock_vs_spy_20d": 0.0804,
+     "ticker": "AXP"
+    },
+    {
+     "market_cap_m": 1332.5008,
+     "price_vs_sma200": 0.8357,
+     "return_30d": 0.0591,
+     "return_7d": 0.1419,
+     "revenue_driver": "digital banking SaaS",
+     "signal_rank": null,
+     "stock_vs_spy_20d": 0.0414,
+     "ticker": "ALKT"
+    },
+    {
+     "market_cap_m": 1540.1184,
+     "price_vs_sma200": 0.8506,
+     "return_30d": 0.0364,
+     "return_7d": -0.1917,
+     "revenue_driver": "financial close automation software",
+     "signal_rank": 453,
+     "stock_vs_spy_20d": -0.0375,
+     "ticker": "BL"
+    },
+    {
+     "market_cap_m": 778.7437,
+     "price_vs_sma200": 0.9594,
+     "return_30d": 0.0265,
+     "return_7d": -0.035,
+     "revenue_driver": "professional employer organization",
+     "signal_rank": 439,
+     "stock_vs_spy_20d": 0.0204,
+     "ticker": "BBSI"
+    },
+    {
+     "market_cap_m": 2708.7007,
+     "price_vs_sma200": 1.0179,
+     "return_30d": -0.1497,
+     "return_7d": -0.1057,
+     "revenue_driver": "tax compliance software",
+     "signal_rank": 679,
+     "stock_vs_spy_20d": -0.0914,
+     "ticker": "DGII"
+    }
+   ],
+   "Local Consumer Services, Auto Retail & Personal Services": [
+    {
+     "market_cap_m": 7535.4273,
+     "price_vs_sma200": 1.3849,
+     "return_30d": 0.6116,
+     "return_7d": 0.0035,
+     "revenue_driver": "residential security monitoring",
+     "signal_rank": 1072,
+     "stock_vs_spy_20d": 0.5334,
+     "ticker": "ADT"
+    },
+    {
+     "market_cap_m": 1249.9615,
+     "price_vs_sma200": 1.5002,
+     "return_30d": 0.5672,
+     "return_7d": 0.0057,
+     "revenue_driver": "digital wholesale vehicle auctions",
+     "signal_rank": null,
+     "stock_vs_spy_20d": -0.0207,
+     "ticker": "ACVA"
+    },
+    {
+     "market_cap_m": 6445.1465,
+     "price_vs_sma200": 1.2889,
+     "return_30d": 0.2565,
+     "return_7d": -0.0062,
+     "revenue_driver": "assisted tax preparation",
+     "signal_rank": 653,
+     "stock_vs_spy_20d": 0.1998,
+     "ticker": "HRB"
+    },
+    {
+     "market_cap_m": 29766.5535,
+     "price_vs_sma200": 1.0078,
+     "return_30d": 0.1901,
+     "return_7d": 0.072,
+     "revenue_driver": "online vehicle auctions",
+     "signal_rank": 1213,
+     "stock_vs_spy_20d": 0.2613,
+     "ticker": "CPRT"
+    },
+    {
+     "market_cap_m": 3790.8006,
+     "price_vs_sma200": 1.0202,
+     "return_30d": 0.1878,
+     "return_7d": 0.0433,
+     "revenue_driver": "new vehicle sales",
+     "signal_rank": 989,
+     "stock_vs_spy_20d": 0.2921,
+     "ticker": "ABG"
+    },
+    {
+     "market_cap_m": 6467.04,
+     "price_vs_sma200": 0.9562,
+     "return_30d": 0.1743,
+     "return_7d": 0.025,
+     "revenue_driver": "auto dealerships",
+     "signal_rank": 1715,
+     "stock_vs_spy_20d": 0.2219,
+     "ticker": "AN"
+    },
+    {
+     "market_cap_m": 2364.715,
+     "price_vs_sma200": 1.1812,
+     "return_30d": 0.118,
+     "return_7d": 0.006,
+     "revenue_driver": "personal care services",
+     "signal_rank": 63,
+     "stock_vs_spy_20d": 0.1391,
+     "ticker": "ADUS"
+    },
+    {
+     "market_cap_m": 2936.7175,
+     "price_vs_sma200": 1.0519,
+     "return_30d": 0.1101,
+     "return_7d": 0.0749,
+     "revenue_driver": "dealer listing subscriptions",
+     "signal_rank": 508,
+     "stock_vs_spy_20d": 0.2161,
+     "ticker": "CARG"
+    },
+    {
+     "market_cap_m": 7210.7508,
+     "price_vs_sma200": 1.1688,
+     "return_30d": 0.0634,
+     "return_7d": 0.0183,
+     "revenue_driver": "hospice care delivery",
+     "signal_rank": 1010,
+     "stock_vs_spy_20d": 0.1237,
+     "ticker": "CHE"
+    },
+    {
+     "market_cap_m": 3787.9869,
+     "price_vs_sma200": 0.7119,
+     "return_30d": -0.1889,
+     "return_7d": -0.0589,
+     "revenue_driver": "center-based care",
+     "signal_rank": 1332,
+     "stock_vs_spy_20d": -0.2046,
+     "ticker": "BFAM"
+    }
+   ],
+   "Small Business, Commercial & Specialty Finance": [
+    {
+     "market_cap_m": 6445.1465,
+     "price_vs_sma200": 1.2889,
+     "return_30d": 0.2565,
+     "return_7d": -0.0062,
+     "revenue_driver": "assisted tax preparation",
+     "signal_rank": 653,
+     "stock_vs_spy_20d": 0.1998,
+     "ticker": "HRB"
+    },
+    {
+     "market_cap_m": 859.6885,
+     "price_vs_sma200": 1.1922,
+     "return_30d": 0.0947,
+     "return_7d": 0.0485,
+     "revenue_driver": "community banking",
+     "signal_rank": 5,
+     "stock_vs_spy_20d": 0.1587,
+     "ticker": "ALRS"
+    },
+    {
+     "market_cap_m": 5012.6547,
+     "price_vs_sma200": 1.073,
+     "return_30d": 0.0781,
+     "return_7d": 0.0205,
+     "revenue_driver": "regional bank",
+     "signal_rank": 323,
+     "stock_vs_spy_20d": 0.119,
+     "ticker": "ASB"
+    },
+    {
+     "market_cap_m": 1493.507,
+     "price_vs_sma200": 1.1313,
+     "return_30d": 0.0715,
+     "return_7d": 0.0026,
+     "revenue_driver": "commercial lending",
+     "signal_rank": 162,
+     "stock_vs_spy_20d": 0.107,
+     "ticker": "AMAL"
+    },
+    {
+     "market_cap_m": 5242.4022,
+     "price_vs_sma200": 0.9982,
+     "return_30d": 0.068,
+     "return_7d": 0.0196,
+     "revenue_driver": "community and regional banking",
+     "signal_rank": 784,
+     "stock_vs_spy_20d": 0.0792,
+     "ticker": "AX"
+    },
+    {
+     "market_cap_m": 5643.7128,
+     "price_vs_sma200": 1.0194,
+     "return_30d": 0.0489,
+     "return_7d": 0.015,
+     "revenue_driver": "community and regional banking",
+     "signal_rank": 229,
+     "stock_vs_spy_20d": 0.0993,
+     "ticker": "AUB"
+    },
+    {
+     "market_cap_m": 2711.8515,
+     "price_vs_sma200": 0.9545,
+     "return_30d": 0.0405,
+     "return_7d": -0.0126,
+     "revenue_driver": "community and regional banking",
+     "signal_rank": 568,
+     "stock_vs_spy_20d": 0.086,
+     "ticker": "BANC"
+    },
+    {
+     "market_cap_m": 211.4362,
+     "price_vs_sma200": 1.1873,
+     "return_30d": 0.0371,
+     "return_7d": 0.009,
+     "revenue_driver": "community and regional banking",
+     "signal_rank": 69,
+     "stock_vs_spy_20d": 0.0821,
+     "ticker": "AMTB"
+    },
+    {
+     "market_cap_m": 643.0466,
+     "price_vs_sma200": 1.0412,
+     "return_30d": 0.0367,
+     "return_7d": 0.0083,
+     "revenue_driver": "community banking",
+     "signal_rank": 184,
+     "stock_vs_spy_20d": 0.0938,
+     "ticker": "AROW"
+    },
+    {
+     "market_cap_m": 11893.9263,
+     "price_vs_sma200": 0.9019,
+     "return_30d": -0.0037,
+     "return_7d": -0.0131,
+     "revenue_driver": "consumer auto loans",
+     "signal_rank": 1172,
+     "stock_vs_spy_20d": 0.0383,
+     "ticker": "ALLY"
+    }
+   ]
+  }
+ },
+ "predictions": {
+  "badge_count": 0,
+  "confidence_score": 0.4722,
+  "conviction_label": "SPECULATIVE",
+  "data_quality_flags": [],
+  "ev_score": 0.1267,
+  "is_diamond": false,
+  "passes_tradability_filter": true,
+  "quality_label": "WEAK",
+  "quantiles": {
+   "downside_q10": -0.2629,
+   "downside_q25": -0.1481,
+   "downside_q50": -0.0792,
+   "downside_q75": -0.0236,
+   "downside_q90": -0.0024,
+   "path_volatility": 0.0302,
+   "risk_reward": 2.4497,
+   "uncertainty": 0.4975,
+   "upside_q10": 0.0304,
+   "upside_q25": 0.0886,
+   "upside_q50": 0.1941,
+   "upside_q75": 0.3404,
+   "upside_q90": 0.5279
+  },
+  "rank": 653,
+  "rank_score": 0.0726,
+  "tradability_filter_reasons": []
+ },
+ "profile": {
+  "_local": {
+   "dividend_yield": 0.0167,
+   "eps_growth_yoy": 0.193,
+   "pe_ratio": 9.3713,
+   "revenue_growth_yoy": -0.5836,
+   "roe": -4.3487
+  },
+  "beta": 0.413,
+  "betaTTM": null,
+  "ceo": "Curtis A. Campbell",
+  "companyName": "H&R Block, Inc.",
+  "country": "US",
+  "debtToEquityTTM": null,
+  "description": "H&R Block, Inc., through its subsidiaries, provides assisted and do-it-yourself (DIY) tax return preparation services in the United States, Canada, and Australia. The company also provides Refund Transfers, that enable clients to receive their tax refunds by their chosen method of disbursement; Peace of Mind extended service plans, that represents clients when audited and assumes the cost; H&R Block Emerald Prepaid Mastercard and Spruce, which are debit cards that can be used for everyday purchases and ATM withdrawals; H&R Block Emerald Advance term loans; Tax Identity Shield that provides clients assistance in helping protect their tax identity and access to services to help restore their tax identity; refund advance loans; and H&R Block Instant Refund. In addition, it offers small business financial solutions to manage finances, including payment processing, payroll, and bookkeeping services. The company its solutions through in-person; a system of retail offices operated directly by the company or its franchisees; and online and mobile applications, virtual, and desktop software. H&R Block, Inc. was incorporated in 1955 and is headquartered in Kansas City, Missouri.",
+  "dividendYielTTM": null,
+  "enterpriseValueOverEBITDATTM": null,
+  "exchangeShortName": "NYSE",
+  "fullTimeEmployees": "4600",
+  "industry": "Personal Products & Services",
+  "ipoDate": "1973-02-21",
+  "latest_earnings_date": "2026-11-09",
+  "marketCapTTM": null,
+  "mktCap": 6174875356,
+  "peRatioTTM": null,
+  "price": 50.41,
+  "priceToSalesRatioTTM": null,
+  "returnOnEquityTTM": -2.9248,
+  "revenue_description": "H&R Block provides tax preparation and related financial services. Revenue is driven by unit volume growth and pricing realization in its core end markets, with new product introductions and geographic expansion as incremental catalysts.",
+  "revenue_description_themes": [
+   "assisted tax preparation volume",
+   "digital tax filing market share",
+   "small business financial services"
+  ],
+  "revenue_taxonomy": [
+   {
+    "bucket": "Local Consumer Services, Auto Retail & Personal Services",
+    "matched_tags": [
+     "assisted tax preparation"
+    ],
+    "path": "Consumer Services & Leisure › Gaming Education & Local Services › Local Consumer Services, Auto Retail & Personal Services",
+    "sector": "Consumer Services & Leisure",
+    "segment": "Gaming Education & Local Services"
+   },
+   {
+    "bucket": "Finance, HR & Administrative Software",
+    "matched_tags": [
+     "consumer tax software"
+    ],
+    "path": "Technology › Software & Platforms › Finance, HR & Administrative Software",
+    "sector": "Technology",
+    "segment": "Software & Platforms"
+   },
+   {
+    "bucket": "Small Business, Commercial & Specialty Finance",
+    "matched_tags": [
+     "small business banking"
+    ],
+    "path": "Financials › Banking Lending & Payments › Small Business, Commercial & Specialty Finance",
+    "sector": "Financials",
+    "segment": "Banking Lending & Payments"
+   }
+  ],
+  "revenue_themes": [
+   "assisted tax preparation",
+   "consumer tax software",
+   "small business banking"
+  ],
+  "sector": "Consumer Cyclical",
+  "website": "https://www.hrblock.com"
+ },
+ "report": {
+  "display_rank": null,
+  "lane": "act_now",
+  "lane_rank": 49,
+  "setup_label": "early_trend",
+  "why_now": "Model analogs leads the readiness mix (+8.2); early-stage trend"
+ },
+ "scorecard": {
+  "headline": {
+   "avg_universe_pct": 50,
+   "label": "mixed",
+   "metric_count": 8
+  },
+  "metrics": {
+   "debt_to_equity": {
+    "direction": "lower",
+    "label": "D/E Ratio",
+    "sector": "Consumer Disc.",
+    "sector_n": 235,
+    "sector_pct": 99,
+    "universe_n": 1985,
+    "universe_pct": 99,
+    "value": -8.6424
+   },
+   "eps_growth_yoy": {
+    "direction": "higher",
+    "label": "EPS Growth",
+    "sector": "Consumer Disc.",
+    "sector_n": 240,
+    "sector_pct": 48,
+    "universe_n": 1804,
+    "universe_pct": 52,
+    "value": 0.193
+   },
+   "gross_margin": {
+    "direction": "higher",
+    "label": "Gross Margin",
+    "sector": "Consumer Disc.",
+    "sector_n": 240,
+    "sector_pct": 85,
+    "universe_n": 1922,
+    "universe_pct": 60,
+    "value": 0.5811
+   },
+   "operating_margin": {
+    "direction": "higher",
+    "label": "Op. Margin",
+    "sector": "Consumer Disc.",
+    "sector_n": 240,
+    "sector_pct": 96,
+    "universe_n": 1922,
+    "universe_pct": 86,
+    "value": 0.2813
+   },
+   "pe_ratio": {
+    "direction": "lower",
+    "label": "P/E",
+    "sector": "Consumer Disc.",
+    "sector_n": 204,
+    "sector_pct": 89,
+    "universe_n": 1439,
+    "universe_pct": 90,
+    "value": 9.3713
+   },
+   "revenue_growth_yoy": {
+    "direction": "higher",
+    "label": "Rev Growth",
+    "sector": "Consumer Disc.",
+    "sector_n": 240,
+    "sector_pct": 0,
+    "universe_n": 1754,
+    "universe_pct": 2,
+    "value": -0.5836
+   },
+   "roe": {
+    "direction": "higher",
+    "label": "ROE",
+    "sector": "Consumer Disc.",
+    "sector_n": 239,
+    "sector_pct": 0,
+    "universe_n": 2000,
+    "universe_pct": 1,
+    "value": -4.3487
+   },
+   "roic": {
+    "direction": "higher",
+    "label": "ROIC",
+    "sector": "Consumer Disc.",
+    "sector_n": 234,
+    "sector_pct": 1,
+    "universe_n": 1969,
+    "universe_pct": 6,
+    "value": -0.1003
+   }
+  }
+ },
+ "signal_rank": 653,
+ "structural_analogs": {
+  "gp_core_pct": 81.7,
+  "gp_core_ratio": 1.7842,
+  "matches": [
+   {
+    "actual_downside": -0.0258,
+    "actual_return": 0.1717,
+    "actual_upside": 0.1717,
+    "days_in_region": 130,
+    "end_date": "1999-07-14",
+    "end_reason": "reversal",
+    "seq_len": 130,
+    "similarity": 0.4659,
+    "start_date": "1999-02-22",
+    "ticker": "APPB",
+    "total_distance": 0.3819,
+    "trigger_date": "1999-03-05",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": -0.2355,
+    "actual_return": -0.2355,
+    "actual_upside": 0.0,
+    "days_in_region": 155,
+    "end_date": "1997-10-27",
+    "end_reason": "reversal",
+    "seq_len": 155,
+    "similarity": 0.4623,
+    "start_date": "1997-04-25",
+    "ticker": "OMX",
+    "total_distance": 0.3858,
+    "trigger_date": "1997-08-21",
+    "trigger_type": "runup"
+   },
+   {
+    "actual_downside": -0.7019,
+    "actual_return": -0.7019,
+    "actual_upside": 0.0511,
+    "days_in_region": 167,
+    "end_date": "2020-03-18",
+    "end_reason": "reversal",
+    "seq_len": 167,
+    "similarity": 0.4576,
+    "start_date": "2019-06-12",
+    "ticker": "CHUY",
+    "total_distance": 0.3909,
+    "trigger_date": "2019-11-11",
+    "trigger_type": "runup"
+   },
+   {
+    "actual_downside": -0.0616,
+    "actual_return": -0.0616,
+    "actual_upside": 0.2264,
+    "days_in_region": 155,
+    "end_date": "2016-02-10",
+    "end_reason": "reversal",
+    "seq_len": 155,
+    "similarity": 0.4576,
+    "start_date": "2015-06-24",
+    "ticker": "CHUY",
+    "total_distance": 0.3909,
+    "trigger_date": "2015-11-05",
+    "trigger_type": "shallow_runup"
+   },
+   {
+    "actual_downside": 0.0,
+    "actual_return": 0.1451,
+    "actual_upside": 0.1451,
+    "days_in_region": 136,
+    "end_date": "2018-05-17",
+    "end_reason": "reversal",
+    "seq_len": 136,
+    "similarity": 0.4567,
+    "start_date": "2017-12-04",
+    "ticker": "UNFI",
+    "total_distance": 0.3919,
+    "trigger_date": "2018-01-08",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": 0.0,
+    "actual_return": 0.163,
+    "actual_upside": 0.163,
+    "days_in_region": 119,
+    "end_date": "2016-11-29",
+    "end_reason": "reversal",
+    "seq_len": 119,
+    "similarity": 0.4549,
+    "start_date": "2016-08-15",
+    "ticker": "AEO",
+    "total_distance": 0.3938,
+    "trigger_date": "2016-11-04",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": 0.0,
+    "actual_return": 0.1149,
+    "actual_upside": 0.5561,
+    "days_in_region": 190,
+    "end_date": "2018-10-11",
+    "end_reason": "reversal",
+    "seq_len": 190,
+    "similarity": 0.453,
+    "start_date": "2017-08-31",
+    "ticker": "AEO",
+    "total_distance": 0.3959,
+    "trigger_date": "2018-02-23",
+    "trigger_type": "runup"
+   },
+   {
+    "actual_downside": -0.0364,
+    "actual_return": 0.2193,
+    "actual_upside": 0.2193,
+    "days_in_region": 109,
+    "end_date": "2018-07-09",
+    "end_reason": "reversal",
+    "seq_len": 109,
+    "similarity": 0.4527,
+    "start_date": "2017-11-24",
+    "ticker": "ANIP",
+    "total_distance": 0.3962,
+    "trigger_date": "2018-02-05",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": -0.0683,
+    "actual_return": 0.1301,
+    "actual_upside": 0.1301,
+    "days_in_region": 110,
+    "end_date": "2001-02-16",
+    "end_reason": "reversal",
+    "seq_len": 110,
+    "similarity": 0.4513,
+    "start_date": "2000-10-02",
+    "ticker": "NFB",
+    "total_distance": 0.3978,
+    "trigger_date": "2000-10-18",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": -0.1317,
+    "actual_return": -0.0273,
+    "actual_upside": 0.0,
+    "days_in_region": 127,
+    "end_date": "2004-06-23",
+    "end_reason": "reversal",
+    "seq_len": 127,
+    "similarity": 0.4497,
+    "start_date": "2004-01-22",
+    "ticker": "CTMI",
+    "total_distance": 0.3995,
+    "trigger_date": "2004-03-16",
+    "trigger_type": "drawdown"
+   }
+  ],
+  "panel": {
+   "edge": 0.042,
+   "hit_hi": 0.691,
+   "hit_lo": 0.518,
+   "hit_rate": 0.608,
+   "median_final": 0.1282,
+   "median_pain": 0.0595,
+   "n": 51,
+   "n_eff": 51.0,
+   "p25_final": -0.0838,
+   "p_pain_gt5": 0.549,
+   "return_to_pain": 1.613
+  },
+  "stats": {
+   "avg_similarity": 0.422,
+   "avg_trough": 0.1091,
+   "avg_upside": 0.1715,
+   "median_pain": 0.0722,
+   "median_return": 0.0231,
+   "n_matches": 200,
+   "p25_return": -0.1241,
+   "p_pain_gt5": 0.61,
+   "return_to_pain": 0.251,
+   "top5_avg_trough": 0.2049,
+   "top5_avg_upside": 0.1188,
+   "top_similarity": 0.466,
+   "win_rate": 0.545
+  },
+  "total_matches": 200
+ },
+ "ticker": "HRB",
+ "trending": {
+  "acceleration": -0.006,
+  "avg_vol_20d": 2444189.4557,
+  "base_high_120": 54.18,
+  "breakout_confirmed": 0,
+  "close": 49.06,
+  "momentum_score": 0.8769,
+  "momentum_start": "2026-07-10",
+  "range_20": 0.2731,
+  "range_50": 0.4635,
+  "rank": 400,
+  "rank_down": null,
+  "rank_up": 285,
+  "ret_120": 0.6022,
+  "ret_20": 0.0621,
+  "ret_60": 0.3185,
+  "rundown_score": 0.7522,
+  "score_date": "2026-09-04",
+  "slope_20": 0.001,
+  "slope_60": 0.007,
+  "stage": "sustained",
+  "stage_label": "Trending",
+  "ticker": "HRB",
+  "total_score": 0.6015,
+  "trend_ratio": 1.163,
+  "vcp_detected": 1,
+  "vcp_score": 0.4179
+ }
+}
