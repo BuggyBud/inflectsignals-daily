@@ -19,6 +19,7 @@ runs/YYYY/MM/DD/
   report.json                    Daily Action Report, complete structured data
   theme_radar.json               industry-theme momentum table (extracted from report.json)
   market_characters.json         market-character screens + their definitions (extracted)
+  market_character_lists.json    full result lists + formulas for screens G11, G2, G6, G9, G13
   signals.csv                    every primary signal, ranked 1..N
   tickers/<TICKER>.json          detail page for each report-referenced ticker
 ```

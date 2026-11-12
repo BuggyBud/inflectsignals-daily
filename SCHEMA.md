@@ -134,6 +134,32 @@ Same content, structured. Top-level keys:
   `ps_ratio`, `rs_rating`, `swing_*_30d`, growth metrics, …). Keys match Stage 2
   feature names and are named by what they measure.
 
+## `market_character_lists.json`
+
+`{date, as_of_date, groups[]}` — the complete list behind each exported screen tab of the
+Market Characters page, not just the top 10. Exported screens, in file order: `g11, g2, g6,
+g9, g13`. `as_of_date` is the latest Stage 2 session the screens were evaluated on.
+
+Each `groups[]` entry:
+
+| Field | Meaning |
+|---|---|
+| `id, label, name, description` | Screen identity, same as `market_characters.json.registry`. |
+| `formula` | Score formula in words. |
+| `filters[]` | Hard conditions a ticker must pass to be listed. |
+| `score_components[]` | `key, weight, direction, condition` behind `formula`. |
+| `result_columns[]` | The screen's own metric columns present on each row. |
+| `universe_size`, `filtered_size`, `row_count` | Tickers evaluated, tickers passing the filters, rows in this file (`row_count == filtered_size`). |
+| `filter_funnel[]` | `g11` only: per filter `key, label, individual_passed, cumulative_passed`. |
+| `rows[]` | Every passing ticker, best `score` first. |
+
+Row fields: `rank` (1 = best score in the screen), `ticker`, `exchange`, `score`,
+`signal_rank` (display rank among today's primary signals, null if none),
+`revenue_driver`, `description_tags[]`, `biopharma_downranked` (true = drug/biotech name,
+score already multiplied by 0.6), then the screen's `result_columns` (same keys and units
+as `market_characters.json`). Tickers listed here do not necessarily have a
+`tickers/<T>.json` detail file; check `signals.csv.has_detail_file`.
+
 ## `signals.csv`
 
 One row per primary signal, sorted by `rank`. Columns:
