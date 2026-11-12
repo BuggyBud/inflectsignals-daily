@@ -1,0 +1,1096 @@
+{
+ "date": "2026-11-11",
+ "detected_regions": {
+  "primary": {
+   "days_in_region": 170,
+   "region_start": "2026-06-08",
+   "trigger_date": "2026-07-07",
+   "trigger_type": "compression"
+  },
+  "secondary": [
+   {
+    "confidence_score": 0.0485,
+    "downside_q50": -0.1126,
+    "ev_score": 0.162,
+    "region_start": "2026-05-21",
+    "seq_len": 181,
+    "trigger_date": "2026-11-11",
+    "trigger_type": "severe_drawdown",
+    "upside_q25": 0.1067,
+    "upside_q50": 0.2539,
+    "upside_q75": 0.4587
+   }
+  ]
+ },
+ "feature_attribution": {
+  "macro_driver_count": 13,
+  "risk_flags": [
+   "high_volatility"
+  ],
+  "top_drivers": [
+   {
+    "direction": "positive",
+    "feature": "historical_recovery_rate",
+    "feature_value": 0.1948,
+    "importance": 0.0003,
+    "importance_pct": 0.1725,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "negative",
+    "feature": "daily_ps",
+    "feature_value": 100.0,
+    "importance": 0.0003,
+    "importance_pct": 0.1685,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "positive",
+    "feature": "price_vs_low_52w",
+    "feature_value": 1.1953,
+    "importance": 0.0002,
+    "importance_pct": 0.1633,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "positive",
+    "feature": "volatility_20d",
+    "feature_value": 0.0853,
+    "importance": 0.0002,
+    "importance_pct": 0.1593,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "negative",
+    "feature": "dollar_volume",
+    "feature_value": 34854592.0,
+    "importance": 0.0002,
+    "importance_pct": 0.1282,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "negative",
+    "feature": "altman_x4",
+    "feature_value": 206.7347,
+    "importance": 0.0002,
+    "importance_pct": 0.1058,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "negative",
+    "feature": "ma_200_slope",
+    "feature_value": 0.0045,
+    "importance": 0.0002,
+    "importance_pct": 0.1024,
+    "method": "integrated_gradients"
+   }
+  ]
+ },
+ "fundamentals": {
+  "accrual": -0.2164,
+  "adx_14": 22.3299,
+  "altman_z_score": 126.2408,
+  "amihud_illiquidity": 0.0042,
+  "avg_volume": 3221801.447,
+  "beta_252d": 1.701,
+  "book_value_per_share": 0.6791,
+  "correlation_spy_60d": 0.382,
+  "current_liabilities": 1.5608,
+  "current_ratio": 62.8375,
+  "daily_earnings_yield": -0.0482,
+  "daily_fcf_yield": -0.0069,
+  "daily_pb": 4.5518,
+  "daily_pe": -20.753,
+  "daily_ps": 100.0,
+  "days_since_52w_high": 126.0,
+  "debt_ebitda": -0.1104,
+  "debt_to_equity": 0.024,
+  "dividend_yield": 0.0,
+  "dollar_volume_20d_avg": 15871148.5244,
+  "earnings_quality": 0.8802,
+  "ebitda_growth_yoy": -0.1521,
+  "enterprise_value": 380.9935,
+  "eps_basic": -0.04,
+  "eps_cagr_3y": -1.9575,
+  "eps_cagr_5y": null,
+  "eps_diluted": -0.04,
+  "eps_growth_accel": 0.0556,
+  "eps_growth_qoq": 0.061,
+  "eps_growth_yoy": 0.1222,
+  "eps_growth_yoy_q2": 0.0667,
+  "eps_growth_yoy_q3": 0.1295,
+  "eps_growth_yoy_q4": 0.0,
+  "eps_growth_yoy_q5": 0.0,
+  "eps_growth_yoy_q6": 0.0,
+  "eps_growth_yoy_q7": -0.0556,
+  "eps_growth_yoy_q8": 0.0,
+  "eps_history_8q": [
+   -0.04,
+   -0.05,
+   -0.04,
+   -0.05,
+   -0.04,
+   -0.0354,
+   -0.0426,
+   -0.04
+  ],
+  "eps_ttm": -0.1711,
+  "ev_to_ebitda": -16.7962,
+  "ev_to_fcf": -56.7099,
+  "ev_to_sales": 11633.0349,
+  "fcf_growth_yoy": 0.1415,
+  "fcf_margin": -205.1322,
+  "fcf_per_share": -0.0438,
+  "gross_margin": null,
+  "gross_margin_change_yoy": null,
+  "gross_margin_history": null,
+  "inc_roic": -0.0137,
+  "interest_coverage": null,
+  "is_pre_revenue": false,
+  "margin_vs_sector_median": null,
+  "market_cap_ratio": 474.4007,
+  "net_income": -6.6138,
+  "net_margin": null,
+  "operating_income": -7.2691,
+  "operating_margin": null,
+  "operating_margin_change_yoy": null,
+  "pb_ratio": 5.2277,
+  "pe_percentile_1y": 0.0476,
+  "pe_ratio": -47.9114,
+  "peg_trailing": -3.92,
+  "piotroski_f_score": 2.0,
+  "price_vs_high_52w": 0.1948,
+  "price_vs_sma200": 0.4802,
+  "ps_percentile_1y": 1.0,
+  "ps_ratio": 100,
+  "quarter_labels_8q": [
+   "Q3 '24",
+   "Q4 '24",
+   "Q1 '25",
+   "Q2 '25",
+   "Q3 '25",
+   "Q4 '25",
+   "Q1 '26",
+   "Q2 '26"
+  ],
+  "quarterly_eps_growth_yoy": 0.2,
+  "quarterly_eps_growth_yoy_8q": [
+   0.0,
+   -0.25,
+   0.2,
+   0.0,
+   0.0,
+   0.292,
+   -0.065,
+   0.2
+  ],
+  "quarterly_revenue_growth_yoy": 0.2597,
+  "quarterly_revenue_growth_yoy_8q": [
+   null,
+   -0.439,
+   -0.2333,
+   0.3,
+   0.2609,
+   5.9203,
+   0.2681,
+   0.2597
+  ],
+  "revenue_cagr_3y": null,
+  "revenue_cagr_5y": null,
+  "revenue_growth_accel": -0.1016,
+  "revenue_growth_qoq": 0.1229,
+  "revenue_growth_yoy": 1.6325,
+  "revenue_growth_yoy_q2": 1.7341,
+  "revenue_growth_yoy_q3": 1.4705,
+  "revenue_growth_yoy_q4": -0.114,
+  "revenue_growth_yoy_q5": 0.044,
+  "revenue_growth_yoy_q6": 0.2535,
+  "revenue_growth_yoy_q7": 1.3415,
+  "revenue_growth_yoy_q8": 10.0,
+  "revenue_history_8q": [
+   0.023,
+   0.023,
+   0.023,
+   0.026,
+   0.029,
+   0.1592,
+   0.0292,
+   0.0328
+  ],
+  "revenue_per_share": 0.0002,
+  "roa": -0.2357,
+  "roce": -0.255,
+  "roe": -0.2464,
+  "roic": -0.2146,
+  "rsi_14": 35.1146,
+  "sector_momentum": 0.1074,
+  "share_dilution_1y": 0.0,
+  "stock_vs_sector_20d": -0.1949,
+  "stock_vs_spy_20d": -0.1127,
+  "total_assets": 108.0789,
+  "vol_regime": 1.416,
+  "volatility_20d": 0.0853,
+  "volatility_60d": 0.0603,
+  "w52_high": 18.71,
+  "w52_low": 2.84
+ },
+ "market_characters": [
+  {
+   "id": "g8",
+   "name": "Boom-Bust"
+  }
+ ],
+ "model_analogs": {
+  "matches": [
+   {
+    "actual_downside": -0.0333,
+    "actual_return": 0.1333,
+    "actual_upside": 0.1476,
+    "days_in_region": 90,
+    "end_date": "2022-12-12",
+    "end_reason": "reversal",
+    "similarity": 0.9745,
+    "start_date": "2022-09-13",
+    "ticker": "GERN",
+    "trigger_date": "2022-10-10",
+    "trigger_type": "severe_drawdown"
+   },
+   {
+    "actual_downside": -0.2272,
+    "actual_return": -0.2272,
+    "actual_upside": 0.1016,
+    "days_in_region": 215,
+    "end_date": "2021-04-19",
+    "end_reason": "reversal",
+    "similarity": 0.9744,
+    "start_date": "2020-09-16",
+    "ticker": "CRDF",
+    "trigger_date": "2021-03-10",
+    "trigger_type": "runup"
+   },
+   {
+    "actual_downside": -0.0643,
+    "actual_return": 0.0571,
+    "actual_upside": 0.2786,
+    "days_in_region": 231,
+    "end_date": "2006-09-25",
+    "end_reason": "reversal",
+    "similarity": 0.9743,
+    "start_date": "2006-02-06",
+    "ticker": "AFOP",
+    "trigger_date": "2006-07-27",
+    "trigger_type": "runup"
+   },
+   {
+    "actual_downside": 0.0,
+    "actual_return": 1.3689,
+    "actual_upside": 1.7573,
+    "days_in_region": 182,
+    "end_date": "1999-11-30",
+    "end_reason": "reversal",
+    "similarity": 0.9741,
+    "start_date": "1999-06-01",
+    "ticker": "DIOD",
+    "trigger_date": "1999-10-20",
+    "trigger_type": "runup"
+   },
+   {
+    "actual_downside": -0.2111,
+    "actual_return": 0.7667,
+    "actual_upside": 1.3,
+    "days_in_region": 166,
+    "end_date": "2001-02-28",
+    "end_reason": "reversal",
+    "similarity": 0.974,
+    "start_date": "2000-09-15",
+    "ticker": "HW",
+    "trigger_date": "2000-10-12",
+    "trigger_type": "compression"
+   },
+   {
+    "actual_downside": -0.371,
+    "actual_return": -0.371,
+    "actual_upside": 0.0672,
+    "days_in_region": 208,
+    "end_date": "1998-08-05",
+    "end_reason": "reversal",
+    "similarity": 0.974,
+    "start_date": "1998-01-09",
+    "ticker": "PRMS",
+    "trigger_date": "1998-07-01",
+    "trigger_type": "shallow_runup"
+   },
+   {
+    "actual_downside": -0.2359,
+    "actual_return": -0.0287,
+    "actual_upside": 0.1466,
+    "days_in_region": 78,
+    "end_date": "2021-04-27",
+    "end_reason": "reversal",
+    "similarity": 0.974,
+    "start_date": "2021-02-08",
+    "ticker": "SRNE",
+    "trigger_date": "2021-02-18",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": -0.0594,
+    "actual_return": 0.8108,
+    "actual_upside": 0.8108,
+    "days_in_region": 156,
+    "end_date": "2018-02-02",
+    "end_reason": "reversal",
+    "similarity": 0.9738,
+    "start_date": "2017-08-30",
+    "ticker": "IMGN",
+    "trigger_date": "2017-10-13",
+    "trigger_type": "severe_drawdown"
+   },
+   {
+    "actual_downside": -0.1994,
+    "actual_return": -0.1994,
+    "actual_upside": 0.2237,
+    "days_in_region": 197,
+    "end_date": "2005-04-29",
+    "end_reason": "reversal",
+    "similarity": 0.9737,
+    "start_date": "2004-10-14",
+    "ticker": "NGPS",
+    "trigger_date": "2005-03-29",
+    "trigger_type": "runup"
+   },
+   {
+    "actual_downside": -0.0827,
+    "actual_return": -0.0827,
+    "actual_upside": 0.3139,
+    "days_in_region": 203,
+    "end_date": "2004-05-18",
+    "end_reason": "reversal",
+    "similarity": 0.9736,
+    "start_date": "2003-10-28",
+    "ticker": "SMDI",
+    "trigger_date": "2004-03-22",
+    "trigger_type": "shallow_runup"
+   }
+  ],
+  "stats": {
+   "avg_max_drawdown": 0.114,
+   "avg_similarity": 0.973,
+   "avg_trough": 0.114,
+   "avg_upside": 0.4277,
+   "best_return": 1.3689,
+   "downside_range": [
+    -0.5397,
+    0.0
+   ],
+   "median_return": 0.1424,
+   "n_matches": 50,
+   "outcome_agreement": true,
+   "return_p25": -0.0816,
+   "return_p5": -0.2801,
+   "return_p75": 0.4802,
+   "return_p95": 0.9094,
+   "sim_weighted_win_rate": 0.68,
+   "top5_avg_trough": 0.1072,
+   "top5_avg_upside": 0.717,
+   "top_similarity": 0.975,
+   "upside_range": [
+    0.0,
+    1.7573
+   ],
+   "win_rate": 0.68,
+   "worst_return": -0.371,
+   "years_span": 22
+  },
+  "total_matches": 50
+ },
+ "peer_group": {
+  "buckets": [
+   "Advanced Materials, Composites & Performance Polymers",
+   "Networking, Connectivity & Communications Hardware",
+   "RF, Connectivity & Communications Semiconductors"
+  ],
+  "groups": {
+   "Advanced Materials, Composites & Performance Polymers": [
+    {
+     "market_cap_m": 77802.4321,
+     "price_vs_sma200": 1.1176,
+     "return_30d": 0.198,
+     "return_7d": 0.1013,
+     "revenue_driver": "specialty electronic materials",
+     "signal_rank": 1575,
+     "stock_vs_spy_20d": 0.2241,
+     "ticker": "DD"
+    },
+    {
+     "market_cap_m": 4298.2722,
+     "price_vs_sma200": 0.9971,
+     "return_30d": 0.1752,
+     "return_7d": 0.0078,
+     "revenue_driver": "OLED phosphorescent materials",
+     "signal_rank": 597,
+     "stock_vs_spy_20d": 0.2209,
+     "ticker": "OLED"
+    },
+    {
+     "market_cap_m": 426.4585,
+     "price_vs_sma200": 1.3516,
+     "return_30d": 0.1697,
+     "return_7d": 0.3299,
+     "revenue_driver": "aerogel insulation materials",
+     "signal_rank": 1754,
+     "stock_vs_spy_20d": 0.2551,
+     "ticker": "ASPN"
+    },
+    {
+     "market_cap_m": 446.068,
+     "price_vs_sma200": 1.1154,
+     "return_30d": 0.1667,
+     "return_7d": 0.108,
+     "revenue_driver": "nonwoven hygiene materials",
+     "signal_rank": 971,
+     "stock_vs_spy_20d": 0.2622,
+     "ticker": "MAGN"
+    },
+    {
+     "market_cap_m": 4382.253,
+     "price_vs_sma200": 1.19,
+     "return_30d": 0.1486,
+     "return_7d": 0.064,
+     "revenue_driver": "specialty polymer additives",
+     "signal_rank": 1210,
+     "stock_vs_spy_20d": 0.2029,
+     "ticker": "AVNT"
+    },
+    {
+     "market_cap_m": 1864.352,
+     "price_vs_sma200": 1.0994,
+     "return_30d": 0.1485,
+     "return_7d": -0.0682,
+     "revenue_driver": "aerospace composite components",
+     "signal_rank": 116,
+     "stock_vs_spy_20d": 0.1424,
+     "ticker": "AIN"
+    },
+    {
+     "market_cap_m": 48029.8261,
+     "price_vs_sma200": 1.0682,
+     "return_30d": -0.0099,
+     "return_7d": 0.0754,
+     "revenue_driver": "titanium aerospace materials",
+     "signal_rank": 1177,
+     "stock_vs_spy_20d": 0.0112,
+     "ticker": "ATI"
+    },
+    {
+     "market_cap_m": 7151.803,
+     "price_vs_sma200": 0.9002,
+     "return_30d": -0.0285,
+     "return_7d": 0.0038,
+     "revenue_driver": "aerospace composite materials",
+     "signal_rank": 337,
+     "stock_vs_spy_20d": -0.0579,
+     "ticker": "HXL"
+    },
+    {
+     "market_cap_m": 2531.9674,
+     "price_vs_sma200": 0.9989,
+     "return_30d": -0.1445,
+     "return_7d": 0.0197,
+     "revenue_driver": "high-frequency circuit materials",
+     "signal_rank": null,
+     "stock_vs_spy_20d": -0.0869,
+     "ticker": "ROG"
+    },
+    {
+     "market_cap_m": 1011.6094,
+     "price_vs_sma200": 0.4802,
+     "return_30d": -0.29,
+     "return_7d": -0.2299,
+     "revenue_driver": "electro-optic polymer materials",
+     "signal_rank": 1840,
+     "stock_vs_spy_20d": -0.1127,
+     "ticker": "LWLG"
+    }
+   ],
+   "Networking, Connectivity & Communications Hardware": [
+    {
+     "market_cap_m": 1775.9358,
+     "price_vs_sma200": 1.0122,
+     "return_30d": 0.0601,
+     "return_7d": 0.2219,
+     "revenue_driver": "application delivery controllers",
+     "signal_rank": null,
+     "stock_vs_spy_20d": -0.0256,
+     "ticker": "ATEN"
+    },
+    {
+     "market_cap_m": 224757.1868,
+     "price_vs_sma200": 1.179,
+     "return_30d": -0.0339,
+     "return_7d": 0.1982,
+     "revenue_driver": "data center Ethernet switches",
+     "signal_rank": 1424,
+     "stock_vs_spy_20d": 0.0193,
+     "ticker": "ANET"
+    },
+    {
+     "market_cap_m": 4223.964,
+     "price_vs_sma200": 0.8859,
+     "return_30d": -0.0348,
+     "return_7d": -0.0304,
+     "revenue_driver": "Industrial cable and connectivity",
+     "signal_rank": 1084,
+     "stock_vs_spy_20d": 0.0142,
+     "ticker": "BDC"
+    },
+    {
+     "market_cap_m": 2401.8346,
+     "price_vs_sma200": 0.9497,
+     "return_30d": -0.0542,
+     "return_7d": -0.0177,
+     "revenue_driver": "circuit protection components",
+     "signal_rank": null,
+     "stock_vs_spy_20d": -0.0635,
+     "ticker": "BELFB"
+    },
+    {
+     "market_cap_m": 284.7516,
+     "price_vs_sma200": 0.8688,
+     "return_30d": -0.0678,
+     "return_7d": 0.0186,
+     "revenue_driver": "land mobile radio equipment",
+     "signal_rank": 860,
+     "stock_vs_spy_20d": 0.0628,
+     "ticker": "BKTI"
+    },
+    {
+     "market_cap_m": 130.086,
+     "price_vs_sma200": 0.8726,
+     "return_30d": -0.0826,
+     "return_7d": -0.0429,
+     "revenue_driver": "circuit protection components",
+     "signal_rank": null,
+     "stock_vs_spy_20d": -0.0765,
+     "ticker": "BELFA"
+    },
+    {
+     "market_cap_m": 203.5948,
+     "price_vs_sma200": 0.7815,
+     "return_30d": -0.18,
+     "return_7d": -0.1693,
+     "revenue_driver": "microwave networking equipment",
+     "signal_rank": 889,
+     "stock_vs_spy_20d": -0.1414,
+     "ticker": "AVNW"
+    },
+    {
+     "market_cap_m": 1011.6094,
+     "price_vs_sma200": 0.4802,
+     "return_30d": -0.29,
+     "return_7d": -0.2299,
+     "revenue_driver": "electro-optic polymer materials",
+     "signal_rank": 1840,
+     "stock_vs_spy_20d": -0.1127,
+     "ticker": "LWLG"
+    },
+    {
+     "market_cap_m": 3201.5554,
+     "price_vs_sma200": 0.4862,
+     "return_30d": -0.4372,
+     "return_7d": -0.1062,
+     "revenue_driver": "fiber optic transceivers",
+     "signal_rank": 1934,
+     "stock_vs_spy_20d": -0.3392,
+     "ticker": "AAOI"
+    },
+    {
+     "market_cap_m": 51205.4878,
+     "price_vs_sma200": 0.7093,
+     "return_30d": -1.0,
+     "return_7d": -1.0,
+     "revenue_driver": "industrial laser systems",
+     "signal_rank": null,
+     "stock_vs_spy_20d": -0.355,
+     "ticker": "COHR"
+    }
+   ],
+   "RF, Connectivity & Communications Semiconductors": [
+    {
+     "market_cap_m": 1741084.84,
+     "price_vs_sma200": 0.9402,
+     "return_30d": -0.017,
+     "return_7d": 0.0713,
+     "revenue_driver": "data center semiconductors",
+     "signal_rank": 275,
+     "stock_vs_spy_20d": 0.0099,
+     "ticker": "AVGO"
+    },
+    {
+     "market_cap_m": 7783.1579,
+     "price_vs_sma200": 0.8314,
+     "return_30d": -0.097,
+     "return_7d": -0.0068,
+     "revenue_driver": "utility test equipment",
+     "signal_rank": 385,
+     "stock_vs_spy_20d": -0.0572,
+     "ticker": "ESE"
+    },
+    {
+     "market_cap_m": 123.6216,
+     "price_vs_sma200": 0.6752,
+     "return_30d": -0.1879,
+     "return_7d": 0.02,
+     "revenue_driver": "rf microwave components",
+     "signal_rank": 1891,
+     "stock_vs_spy_20d": -0.0101,
+     "ticker": "AMPG"
+    },
+    {
+     "market_cap_m": 836.019,
+     "price_vs_sma200": 0.9616,
+     "return_30d": -0.1928,
+     "return_7d": 0.0372,
+     "revenue_driver": "precision frequency electronics",
+     "signal_rank": null,
+     "stock_vs_spy_20d": -0.1427,
+     "ticker": "FEIM"
+    },
+    {
+     "market_cap_m": 35047.9879,
+     "price_vs_sma200": 0.7825,
+     "return_30d": -0.2011,
+     "return_7d": -0.1837,
+     "revenue_driver": "microcontrollers",
+     "signal_rank": 1229,
+     "stock_vs_spy_20d": -0.1151,
+     "ticker": "MCHP"
+    },
+    {
+     "market_cap_m": 682.3051,
+     "price_vs_sma200": 0.8765,
+     "return_30d": -0.2375,
+     "return_7d": -0.0413,
+     "revenue_driver": "semiconductor IP licensing",
+     "signal_rank": 1534,
+     "stock_vs_spy_20d": -0.0654,
+     "ticker": "CEVA"
+    },
+    {
+     "market_cap_m": 1011.6094,
+     "price_vs_sma200": 0.4802,
+     "return_30d": -0.29,
+     "return_7d": -0.2299,
+     "revenue_driver": "electro-optic polymer materials",
+     "signal_rank": 1840,
+     "stock_vs_spy_20d": -0.1127,
+     "ticker": "LWLG"
+    },
+    {
+     "market_cap_m": 48232.1861,
+     "price_vs_sma200": 0.7985,
+     "return_30d": -0.3328,
+     "return_7d": -0.0531,
+     "revenue_driver": "optical transceivers and switches",
+     "signal_rank": 1978,
+     "stock_vs_spy_20d": -0.2641,
+     "ticker": "LITE"
+    },
+    {
+     "market_cap_m": 37711.1961,
+     "price_vs_sma200": 0.899,
+     "return_30d": -0.3513,
+     "return_7d": 0.0054,
+     "revenue_driver": "data-center connectivity chips",
+     "signal_rank": 1898,
+     "stock_vs_spy_20d": -0.2181,
+     "ticker": "ALAB"
+    },
+    {
+     "market_cap_m": 51205.4878,
+     "price_vs_sma200": 0.7093,
+     "return_30d": -1.0,
+     "return_7d": -1.0,
+     "revenue_driver": "industrial laser systems",
+     "signal_rank": null,
+     "stock_vs_spy_20d": -0.355,
+     "ticker": "COHR"
+    }
+   ]
+  }
+ },
+ "predictions": {
+  "badge_count": 1,
+  "confidence_score": 0.042,
+  "conviction_label": "SPECULATIVE",
+  "data_quality_flags": [],
+  "ev_score": 0.1566,
+  "is_diamond": false,
+  "passes_tradability_filter": true,
+  "quality_label": "HIGH",
+  "quantiles": {
+   "downside_q10": -0.3644,
+   "downside_q25": -0.2164,
+   "downside_q50": -0.1169,
+   "downside_q75": -0.0344,
+   "downside_q90": -0.0035,
+   "path_volatility": 0.05,
+   "risk_reward": 2.1593,
+   "uncertainty": 0.71,
+   "upside_q10": 0.0305,
+   "upside_q25": 0.105,
+   "upside_q50": 0.2523,
+   "upside_q75": 0.4566,
+   "upside_q90": 0.7405
+  },
+  "rank": 1840,
+  "rank_score": 0.0081,
+  "tradability_filter_reasons": []
+ },
+ "profile": {
+  "_local": {
+   "dividend_yield": 0.0,
+   "eps_growth_yoy": 0.1222,
+   "pe_ratio": -47.9114,
+   "revenue_growth_yoy": 1.6325,
+   "roe": -0.2464
+  },
+  "beta": 2.434,
+  "betaTTM": null,
+  "ceo": "Yves LeMaitre",
+  "companyName": "Lightwave Logic, Inc.",
+  "country": "US",
+  "debtToEquityTTM": null,
+  "description": "Lightwave Logic, Inc. focuses on the development and commercialization of electro-optic polymer materials for data communications and other photonic application in the United States and internationally. The company sells electro-optic (EO) polymer materials for integration into silicon photonics and other photonic integrated circuit platforms under the Perkinamine name. It is also involved in intellectual property licensing; and royalty activities. The company serves semiconductor foundries, silicon photonics device designers, and optical module manufacturers, as well as system integrators serving artificial intelligence, cloud computing, data center, and telecommunications markets. The company was formerly known as Third-order Nanotechnologies, Inc. and changed its name to Lightwave Logic, Inc. in March 2008. Lightwave Logic, Inc. was founded in 1991 and is headquartered in Englewood, Colorado.",
+  "dividendYielTTM": null,
+  "enterpriseValueOverEBITDATTM": null,
+  "exchangeShortName": "NASDAQ",
+  "fullTimeEmployees": "34",
+  "industry": "Chemicals - Specialty",
+  "ipoDate": "2006-05-16",
+  "latest_earnings_date": "2026-08-14",
+  "marketCapTTM": null,
+  "mktCap": 595084620,
+  "peRatioTTM": null,
+  "price": 3.86,
+  "priceToSalesRatioTTM": null,
+  "returnOnEquityTTM": -0.3034,
+  "revenue_description": "Lightwave Logic develops electro-optic polymers for high-speed data communications. Revenue is driven by subscription ACV from enterprise license agreements and usage-based consumption, with module expansion and new product attach as growth levers.",
+  "revenue_description_themes": [
+   "AI data center networking demand",
+   "commercial manufacturing scale-up",
+   "strategic licensing partnerships"
+  ],
+  "revenue_taxonomy": [
+   {
+    "bucket": "Advanced Materials, Composites & Performance Polymers",
+    "matched_tags": [
+     "electro-optic polymer materials"
+    ],
+    "path": "Materials & Chemicals › Chemicals & Advanced Materials › Advanced Materials, Composites & Performance Polymers",
+    "sector": "Materials & Chemicals",
+    "segment": "Chemicals & Advanced Materials"
+   },
+   {
+    "bucket": "RF, Connectivity & Communications Semiconductors",
+    "matched_tags": [
+     "silicon photonics integration"
+    ],
+    "path": "Technology › Hardware & Semiconductors › RF, Connectivity & Communications Semiconductors",
+    "sector": "Technology",
+    "segment": "Hardware & Semiconductors"
+   },
+   {
+    "bucket": "Networking, Connectivity & Communications Hardware",
+    "matched_tags": [
+     "high-speed optical interconnects"
+    ],
+    "path": "Technology › Hardware & Semiconductors › Networking, Connectivity & Communications Hardware",
+    "sector": "Technology",
+    "segment": "Hardware & Semiconductors"
+   }
+  ],
+  "revenue_themes": [
+   "electro-optic polymer materials",
+   "silicon photonics integration",
+   "high-speed optical interconnects"
+  ],
+  "sector": "Basic Materials",
+  "website": "https://www.lightwavelogic.com"
+ },
+ "report": null,
+ "scorecard": {
+  "headline": {
+   "avg_universe_pct": 49,
+   "label": "mixed",
+   "metric_count": 5
+  },
+  "metrics": {
+   "debt_to_equity": {
+    "direction": "lower",
+    "label": "D/E Ratio",
+    "sector": "Info Tech",
+    "sector_n": 272,
+    "sector_pct": 79,
+    "universe_n": 1981,
+    "universe_pct": 81,
+    "value": 0.024
+   },
+   "eps_growth_yoy": {
+    "direction": "higher",
+    "label": "EPS Growth",
+    "sector": "Info Tech",
+    "sector_n": 269,
+    "sector_pct": 38,
+    "universe_n": 1799,
+    "universe_pct": 46,
+    "value": 0.1222
+   },
+   "revenue_growth_yoy": {
+    "direction": "higher",
+    "label": "Rev Growth",
+    "sector": "Info Tech",
+    "sector_n": 269,
+    "sector_pct": 97,
+    "universe_n": 1747,
+    "universe_pct": 97,
+    "value": 1.6325
+   },
+   "roe": {
+    "direction": "higher",
+    "label": "ROE",
+    "sector": "Info Tech",
+    "sector_n": 272,
+    "sector_pct": 11,
+    "universe_n": 1996,
+    "universe_pct": 14,
+    "value": -0.2464
+   },
+   "roic": {
+    "direction": "higher",
+    "label": "ROIC",
+    "sector": "Info Tech",
+    "sector_n": 269,
+    "sector_pct": 8,
+    "universe_n": 1965,
+    "universe_pct": 9,
+    "value": -0.0621
+   }
+  }
+ },
+ "signal_rank": 1840,
+ "structural_analogs": {
+  "gp_core_pct": 21.6,
+  "gp_core_ratio": 0.968,
+  "matches": [
+   {
+    "actual_downside": -0.0391,
+    "actual_return": -0.0391,
+    "actual_upside": 0.3859,
+    "days_in_region": 93,
+    "end_date": "2021-07-27",
+    "end_reason": "reversal",
+    "seq_len": 93,
+    "similarity": 0.4276,
+    "start_date": "2021-05-10",
+    "ticker": "EDIT",
+    "total_distance": 0.4247,
+    "trigger_date": "2021-06-09",
+    "trigger_type": "runup"
+   },
+   {
+    "actual_downside": -0.5513,
+    "actual_return": -0.5513,
+    "actual_upside": 0.0,
+    "days_in_region": 68,
+    "end_date": "2016-02-10",
+    "end_reason": "reversal",
+    "seq_len": 68,
+    "similarity": 0.4231,
+    "start_date": "2015-12-14",
+    "ticker": "SRNE",
+    "total_distance": 0.4301,
+    "trigger_date": "2015-12-23",
+    "trigger_type": "runup"
+   },
+   {
+    "actual_downside": -0.2157,
+    "actual_return": -0.2157,
+    "actual_upside": 0.0904,
+    "days_in_region": 87,
+    "end_date": "2021-08-03",
+    "end_reason": "reversal",
+    "seq_len": 87,
+    "similarity": 0.4078,
+    "start_date": "2021-05-13",
+    "ticker": "PSNL",
+    "total_distance": 0.4485,
+    "trigger_date": "2021-05-19",
+    "trigger_type": "runup"
+   },
+   {
+    "actual_downside": -0.2021,
+    "actual_return": -0.2021,
+    "actual_upside": 0.2234,
+    "days_in_region": 119,
+    "end_date": "2000-09-18",
+    "end_reason": "reversal",
+    "seq_len": 119,
+    "similarity": 0.4055,
+    "start_date": "2000-05-24",
+    "ticker": "ASTX",
+    "total_distance": 0.4513,
+    "trigger_date": "2000-08-15",
+    "trigger_type": "shallow_runup"
+   },
+   {
+    "actual_downside": 0.0,
+    "actual_return": 0.1558,
+    "actual_upside": 0.1558,
+    "days_in_region": 127,
+    "end_date": "2021-11-08",
+    "end_reason": "reversal",
+    "seq_len": 127,
+    "similarity": 0.4043,
+    "start_date": "2021-07-02",
+    "ticker": "OPTT",
+    "total_distance": 0.4528,
+    "trigger_date": "2021-10-06",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": 0.0,
+    "actual_return": 0.6604,
+    "actual_upside": 0.6604,
+    "days_in_region": 100,
+    "end_date": "1998-04-22",
+    "end_reason": "reversal",
+    "seq_len": 100,
+    "similarity": 0.4015,
+    "start_date": "1997-12-03",
+    "ticker": "CYMI",
+    "total_distance": 0.4562,
+    "trigger_date": "1997-12-31",
+    "trigger_type": "compression"
+   },
+   {
+    "actual_downside": -0.1196,
+    "actual_return": 0.2916,
+    "actual_upside": 0.2916,
+    "days_in_region": 126,
+    "end_date": "2015-11-18",
+    "end_reason": "reversal",
+    "seq_len": 126,
+    "similarity": 0.4007,
+    "start_date": "2015-07-20",
+    "ticker": "PTCT",
+    "total_distance": 0.4573,
+    "trigger_date": "2015-10-20",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": -0.2952,
+    "actual_return": -0.2952,
+    "actual_upside": 0.1589,
+    "days_in_region": 65,
+    "end_date": "2021-08-06",
+    "end_reason": "reversal",
+    "seq_len": 65,
+    "similarity": 0.4,
+    "start_date": "2021-05-13",
+    "ticker": "VLDR",
+    "total_distance": 0.4582,
+    "trigger_date": "2021-05-19",
+    "trigger_type": "shallow_runup"
+   },
+   {
+    "actual_downside": -0.2236,
+    "actual_return": -0.2236,
+    "actual_upside": 0.0008,
+    "days_in_region": 82,
+    "end_date": "2021-07-14",
+    "end_reason": "reversal",
+    "seq_len": 82,
+    "similarity": 0.3981,
+    "start_date": "2021-05-13",
+    "ticker": "ARCT",
+    "total_distance": 0.4606,
+    "trigger_date": "2021-06-02",
+    "trigger_type": "runup"
+   },
+   {
+    "actual_downside": -0.2093,
+    "actual_return": -0.2093,
+    "actual_upside": 0.0,
+    "days_in_region": 92,
+    "end_date": "2021-08-17",
+    "end_reason": "reversal",
+    "seq_len": 92,
+    "similarity": 0.3946,
+    "start_date": "2021-05-13",
+    "ticker": "BLDP",
+    "total_distance": 0.4649,
+    "trigger_date": "2021-05-21",
+    "trigger_type": "shallow_runup"
+   }
+  ],
+  "panel": {
+   "edge": -0.236,
+   "hit_hi": 0.407,
+   "hit_lo": 0.139,
+   "hit_rate": 0.25,
+   "median_final": -0.2093,
+   "median_pain": 0.2021,
+   "n": 16,
+   "n_eff": 16.0,
+   "p25_final": -0.2386,
+   "p_pain_gt5": 0.75,
+   "return_to_pain": -0.942
+  },
+  "stats": {
+   "avg_similarity": 0.341,
+   "avg_trough": 0.1881,
+   "avg_upside": 0.2265,
+   "median_pain": 0.1672,
+   "median_return": -0.1303,
+   "n_matches": 200,
+   "p25_return": -0.2401,
+   "p_pain_gt5": 0.815,
+   "return_to_pain": -0.696,
+   "top5_avg_trough": 0.2017,
+   "top5_avg_upside": 0.1711,
+   "top_similarity": 0.428,
+   "win_rate": 0.315
+  },
+  "total_matches": 200
+ },
+ "ticker": "LWLG",
+ "trending": {
+  "acceleration": -0.0034,
+  "avg_vol_20d": 3596915.7186,
+  "base_high_120": 18.22,
+  "breakout_confirmed": 0,
+  "close": 4.58,
+  "momentum_score": 0.0517,
+  "momentum_start": "2026-10-08",
+  "range_20": 0.4716,
+  "range_50": 0.559,
+  "rank": 1877,
+  "rank_down": 62,
+  "rank_up": null,
+  "ret_120": -0.7212,
+  "ret_20": -0.1581,
+  "ret_60": -0.37,
+  "rundown_score": 0.8933,
+  "score_date": "2026-10-29",
+  "slope_20": -0.0147,
+  "slope_60": -0.0113,
+  "stage": "rundown",
+  "stage_label": "rundown",
+  "ticker": "LWLG",
+  "total_score": 0.1798,
+  "trend_ratio": 0.7175,
+  "vcp_detected": 0,
+  "vcp_score": 0.2653
+ }
+}

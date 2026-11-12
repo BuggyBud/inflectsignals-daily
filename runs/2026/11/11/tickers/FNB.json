@@ -1,0 +1,1066 @@
+{
+ "date": "2026-11-11",
+ "detected_regions": {
+  "primary": {
+   "days_in_region": 144,
+   "region_start": "2026-07-16",
+   "trigger_date": "2026-09-30",
+   "trigger_type": "shallow_drawdown"
+  },
+  "secondary": [
+   {
+    "confidence_score": 0.928,
+    "downside_q50": -0.0603,
+    "ev_score": 0.0941,
+    "region_start": "2025-10-16",
+    "seq_len": 200,
+    "trigger_date": "2026-04-09",
+    "trigger_type": "runup",
+    "upside_q25": 0.0772,
+    "upside_q50": 0.1518,
+    "upside_q75": 0.2465
+   }
+  ]
+ },
+ "feature_attribution": {
+  "macro_driver_count": 16,
+  "risk_flags": [],
+  "top_drivers": [
+   {
+    "direction": "negative",
+    "feature": "dollar_volume",
+    "feature_value": 46444400.0,
+    "importance": 0.0003,
+    "importance_pct": 0.3803,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "negative",
+    "feature": "volatility_20d",
+    "feature_value": 0.016,
+    "importance": 0.0002,
+    "importance_pct": 0.2806,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "negative",
+    "feature": "historical_recovery_rate",
+    "feature_value": 0.8367,
+    "importance": 0.0001,
+    "importance_pct": 0.1941,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "positive",
+    "feature": "sector_rank_1d",
+    "feature_value": 0.7273,
+    "importance": 0.0001,
+    "importance_pct": 0.1449,
+    "method": "integrated_gradients"
+   }
+  ]
+ },
+ "fundamentals": {
+  "accrual": 0.0105,
+  "adx_14": 18.7788,
+  "altman_z_score": 0.3208,
+  "amihud_illiquidity": 0.0001,
+  "avg_volume": 4664969.7957,
+  "beta_252d": 0.2642,
+  "book_value_per_share": 19.1649,
+  "correlation_spy_60d": 0.393,
+  "current_liabilities": 3001.0,
+  "current_ratio": 0.1386,
+  "daily_earnings_yield": 0.0474,
+  "daily_fcf_yield": 0.0683,
+  "daily_pb": 1.8788,
+  "daily_pe": 21.0767,
+  "daily_ps": 4.7345,
+  "days_since_52w_high": 83.0,
+  "debt_ebitda": 6.4027,
+  "debt_to_equity": 0.7051,
+  "dividend_yield": 0.0033,
+  "dollar_volume_20d_avg": 98687738.545,
+  "earnings_quality": 1.9037,
+  "ebitda_growth_yoy": null,
+  "enterprise_value": 17188.3529,
+  "eps_basic": 0.43,
+  "eps_cagr_3y": null,
+  "eps_cagr_5y": null,
+  "eps_diluted": 0.43,
+  "eps_growth_accel": null,
+  "eps_growth_qoq": 0.0238,
+  "eps_growth_yoy": null,
+  "eps_growth_yoy_q2": null,
+  "eps_growth_yoy_q3": null,
+  "eps_growth_yoy_q4": null,
+  "eps_growth_yoy_q5": null,
+  "eps_growth_yoy_q6": null,
+  "eps_growth_yoy_q7": null,
+  "eps_growth_yoy_q8": null,
+  "eps_history_8q": [
+   0.47,
+   0.38,
+   0.42,
+   0.43
+  ],
+  "eps_ttm": 0.8626,
+  "ev_to_ebitda": 22.974,
+  "ev_to_fcf": 68.7534,
+  "ev_to_sales": 24.9621,
+  "fcf_growth_yoy": null,
+  "fcf_margin": 0.3631,
+  "fcf_per_share": 0.7032,
+  "gross_margin": 0.6515,
+  "gross_margin_change_yoy": null,
+  "gross_margin_history": [
+   0.6456,
+   0.6497,
+   0.6511,
+   0.6515
+  ],
+  "inc_roic": 0.0056,
+  "interest_coverage": 0.8686,
+  "is_pre_revenue": false,
+  "margin_vs_sector_median": null,
+  "market_cap_ratio": 12800.3529,
+  "net_income": 152.862,
+  "net_margin": 0.2246,
+  "operating_income": 222.566,
+  "operating_margin": 0.2775,
+  "operating_margin_change_yoy": null,
+  "pb_ratio": 0.9486,
+  "pe_percentile_1y": 0.7143,
+  "pe_ratio": 21.0767,
+  "peg_trailing": 0.4814,
+  "piotroski_f_score": 4.0,
+  "price_vs_high_52w": 0.9328,
+  "price_vs_sma200": 1.0146,
+  "ps_percentile_1y": 0.7143,
+  "ps_ratio": 4.7527,
+  "quarter_labels_8q": [
+   "Q4 '25",
+   "Q1 '26",
+   "Q2 '26",
+   "Q3 '26"
+  ],
+  "quarterly_eps_growth_yoy": null,
+  "quarterly_eps_growth_yoy_8q": [
+   null,
+   null,
+   null,
+   null
+  ],
+  "quarterly_revenue_growth_yoy": null,
+  "quarterly_revenue_growth_yoy_8q": [
+   null,
+   null,
+   null,
+   null
+  ],
+  "revenue_cagr_3y": null,
+  "revenue_cagr_5y": null,
+  "revenue_growth_accel": null,
+  "revenue_growth_qoq": 0.0202,
+  "revenue_growth_yoy": null,
+  "revenue_growth_yoy_q2": null,
+  "revenue_growth_yoy_q3": null,
+  "revenue_growth_yoy_q4": null,
+  "revenue_growth_yoy_q5": null,
+  "revenue_growth_yoy_q6": null,
+  "revenue_growth_yoy_q7": null,
+  "revenue_growth_yoy_q8": null,
+  "revenue_history_8q": [
+   679.831,
+   660.266,
+   674.964,
+   688.579
+  ],
+  "revenue_per_share": 1.937,
+  "roa": 0.0118,
+  "roce": 0.0154,
+  "roe": 0.089,
+  "roic": 0.0089,
+  "rsi_14": 53.8308,
+  "sector_momentum": 0.122,
+  "share_dilution_1y": 0.0,
+  "stock_vs_sector_20d": 0.0226,
+  "stock_vs_spy_20d": 0.0867,
+  "total_assets": 52053.0,
+  "vol_regime": 1.2091,
+  "volatility_20d": 0.016,
+  "volatility_60d": 0.0133,
+  "w52_high": 19.59,
+  "w52_low": 15.21
+ },
+ "market_characters": [],
+ "model_analogs": {
+  "matches": [
+   {
+    "actual_downside": -0.0741,
+    "actual_return": 0.0366,
+    "actual_upside": 0.0366,
+    "days_in_region": 244,
+    "end_date": "2006-02-21",
+    "end_reason": "reversal",
+    "similarity": 0.9426,
+    "start_date": "2005-06-22",
+    "ticker": "TRI",
+    "trigger_date": "2005-08-10",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": -0.0132,
+    "actual_return": 0.0175,
+    "actual_upside": 0.273,
+    "days_in_region": 299,
+    "end_date": "2006-06-13",
+    "end_reason": "reversal",
+    "similarity": 0.9411,
+    "start_date": "2005-08-18",
+    "ticker": "ESND",
+    "trigger_date": "2005-09-15",
+    "trigger_type": "compression"
+   },
+   {
+    "actual_downside": 0.0,
+    "actual_return": 0.2471,
+    "actual_upside": 0.2471,
+    "days_in_region": 189,
+    "end_date": "2005-11-23",
+    "end_reason": "reversal",
+    "similarity": 0.94,
+    "start_date": "2005-05-18",
+    "ticker": "PNR",
+    "trigger_date": "2005-10-07",
+    "trigger_type": "severe_drawdown"
+   },
+   {
+    "actual_downside": -0.0666,
+    "actual_return": 0.1257,
+    "actual_upside": 0.1974,
+    "days_in_region": 466,
+    "end_date": "2006-04-17",
+    "end_reason": "reversal",
+    "similarity": 0.9395,
+    "start_date": "2005-01-06",
+    "ticker": "CG",
+    "trigger_date": "2005-06-20",
+    "trigger_type": "runup"
+   },
+   {
+    "actual_downside": -0.03,
+    "actual_return": 0.1148,
+    "actual_upside": 0.1148,
+    "days_in_region": 197,
+    "end_date": "2006-02-16",
+    "end_reason": "reversal",
+    "similarity": 0.9389,
+    "start_date": "2005-08-03",
+    "ticker": "MLKN",
+    "trigger_date": "2005-10-21",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": -0.0248,
+    "actual_return": -0.0248,
+    "actual_upside": 0.1194,
+    "days_in_region": 368,
+    "end_date": "2006-02-13",
+    "end_reason": "reversal",
+    "similarity": 0.9387,
+    "start_date": "2005-02-10",
+    "ticker": "CYH",
+    "trigger_date": "2005-08-01",
+    "trigger_type": "runup"
+   },
+   {
+    "actual_downside": -0.0221,
+    "actual_return": 0.2643,
+    "actual_upside": 0.2643,
+    "days_in_region": 178,
+    "end_date": "2006-01-27",
+    "end_reason": "reversal",
+    "similarity": 0.9385,
+    "start_date": "2005-08-02",
+    "ticker": "HET",
+    "trigger_date": "2005-09-20",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": -0.0183,
+    "actual_return": 0.212,
+    "actual_upside": 0.212,
+    "days_in_region": 155,
+    "end_date": "2005-06-02",
+    "end_reason": "reversal",
+    "similarity": 0.9378,
+    "start_date": "2004-12-29",
+    "ticker": "SBUX",
+    "trigger_date": "2005-01-25",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": -0.0192,
+    "actual_return": 0.4494,
+    "actual_upside": 0.4494,
+    "days_in_region": 297,
+    "end_date": "2015-01-09",
+    "end_reason": "reversal",
+    "similarity": 0.9378,
+    "start_date": "2014-03-18",
+    "ticker": "PZZA",
+    "trigger_date": "2014-04-28",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": 0.0,
+    "actual_return": 0.1845,
+    "actual_upside": 0.1845,
+    "days_in_region": 159,
+    "end_date": "2006-01-09",
+    "end_reason": "reversal",
+    "similarity": 0.9377,
+    "start_date": "2005-08-03",
+    "ticker": "CHE",
+    "trigger_date": "2005-08-26",
+    "trigger_type": "shallow_drawdown"
+   }
+  ],
+  "stats": {
+   "avg_max_drawdown": 0.0257,
+   "avg_similarity": 0.936,
+   "avg_trough": 0.0257,
+   "avg_upside": 0.2413,
+   "best_return": 0.4557,
+   "downside_range": [
+    -0.1294,
+    0.0
+   ],
+   "median_return": 0.1893,
+   "n_matches": 50,
+   "outcome_agreement": true,
+   "return_p25": 0.0829,
+   "return_p5": -0.019,
+   "return_p75": 0.2629,
+   "return_p95": 0.4053,
+   "sim_weighted_win_rate": 0.88,
+   "top5_avg_trough": 0.0368,
+   "top5_avg_upside": 0.1738,
+   "top_similarity": 0.943,
+   "upside_range": [
+    0.0366,
+    0.8774
+   ],
+   "win_rate": 0.88,
+   "worst_return": -0.0697,
+   "years_span": 7
+  },
+  "total_matches": 50
+ },
+ "peer_group": {
+  "buckets": [
+   "Asset & Wealth Management Fees",
+   "Consumer Banking, Deposits & Cash Management",
+   "Small Business, Commercial & Specialty Finance"
+  ],
+  "groups": {
+   "Asset & Wealth Management Fees": [
+    {
+     "market_cap_m": 2895.0546,
+     "price_vs_sma200": 1.1186,
+     "return_30d": 0.152,
+     "return_7d": -0.0117,
+     "revenue_driver": "commercial lending",
+     "signal_rank": 123,
+     "stock_vs_spy_20d": 0.1745,
+     "ticker": "CUBI"
+    },
+    {
+     "market_cap_m": 3409.2731,
+     "price_vs_sma200": 1.0269,
+     "return_30d": 0.0862,
+     "return_7d": 0.0029,
+     "revenue_driver": "commercial and retail banking",
+     "signal_rank": 198,
+     "stock_vs_spy_20d": 0.1083,
+     "ticker": "CBU"
+    },
+    {
+     "market_cap_m": 12849.6392,
+     "price_vs_sma200": 1.0146,
+     "return_30d": 0.0564,
+     "return_7d": -0.0141,
+     "revenue_driver": "commercial banking",
+     "signal_rank": 268,
+     "stock_vs_spy_20d": 0.0867,
+     "ticker": "FNB"
+    },
+    {
+     "market_cap_m": 1493.507,
+     "price_vs_sma200": 1.1275,
+     "return_30d": 0.0532,
+     "return_7d": -0.0099,
+     "revenue_driver": "commercial lending",
+     "signal_rank": 125,
+     "stock_vs_spy_20d": 0.0899,
+     "ticker": "AMAL"
+    },
+    {
+     "market_cap_m": 92877.4315,
+     "price_vs_sma200": 1.042,
+     "return_30d": 0.0509,
+     "return_7d": 0.0035,
+     "revenue_driver": "consumer and commercial banking",
+     "signal_rank": 279,
+     "stock_vs_spy_20d": 0.0918,
+     "ticker": "USB"
+    },
+    {
+     "market_cap_m": 920070.1108,
+     "price_vs_sma200": 1.0584,
+     "return_30d": 0.038,
+     "return_7d": 0.0083,
+     "revenue_driver": "consumer and commercial banking",
+     "signal_rank": 1265,
+     "stock_vs_spy_20d": 0.0371,
+     "ticker": "JPM"
+    },
+    {
+     "market_cap_m": 1089.6984,
+     "price_vs_sma200": 1.0615,
+     "return_30d": 0.0376,
+     "return_7d": -0.007,
+     "revenue_driver": "commercial lending",
+     "signal_rank": 425,
+     "stock_vs_spy_20d": 0.0594,
+     "ticker": "CFFN"
+    },
+    {
+     "market_cap_m": 10342.0328,
+     "price_vs_sma200": 1.0216,
+     "return_30d": 0.0356,
+     "return_7d": -0.0205,
+     "revenue_driver": "commercial banking",
+     "signal_rank": 204,
+     "stock_vs_spy_20d": 0.0578,
+     "ticker": "UMBF"
+    },
+    {
+     "market_cap_m": 1877.5994,
+     "price_vs_sma200": 1.0846,
+     "return_30d": 0.0331,
+     "return_7d": -0.0054,
+     "revenue_driver": "commercial lending",
+     "signal_rank": 446,
+     "stock_vs_spy_20d": 0.0369,
+     "ticker": "GABC"
+    },
+    {
+     "market_cap_m": 28032.5512,
+     "price_vs_sma200": 0.9954,
+     "return_30d": 0.0254,
+     "return_7d": 0.0069,
+     "revenue_driver": "Commercial lending",
+     "signal_rank": 510,
+     "stock_vs_spy_20d": 0.0578,
+     "ticker": "CFG"
+    }
+   ],
+   "Consumer Banking, Deposits & Cash Management": [
+    {
+     "market_cap_m": 653.9832,
+     "price_vs_sma200": 0.6633,
+     "return_30d": 0.0881,
+     "return_7d": -0.005,
+     "revenue_driver": "community commercial banking",
+     "signal_rank": 543,
+     "stock_vs_spy_20d": 0.0703,
+     "ticker": "CCB"
+    },
+    {
+     "market_cap_m": 3409.2731,
+     "price_vs_sma200": 1.0269,
+     "return_30d": 0.0862,
+     "return_7d": 0.0029,
+     "revenue_driver": "commercial and retail banking",
+     "signal_rank": 198,
+     "stock_vs_spy_20d": 0.1083,
+     "ticker": "CBU"
+    },
+    {
+     "market_cap_m": 1698.2131,
+     "price_vs_sma200": 1.0894,
+     "return_30d": 0.0582,
+     "return_7d": 0.0014,
+     "revenue_driver": "commercial and regional banking",
+     "signal_rank": 282,
+     "stock_vs_spy_20d": 0.0784,
+     "ticker": "QCRH"
+    },
+    {
+     "market_cap_m": 12849.6392,
+     "price_vs_sma200": 1.0146,
+     "return_30d": 0.0564,
+     "return_7d": -0.0141,
+     "revenue_driver": "commercial banking",
+     "signal_rank": 268,
+     "stock_vs_spy_20d": 0.0867,
+     "ticker": "FNB"
+    },
+    {
+     "market_cap_m": 92877.4315,
+     "price_vs_sma200": 1.042,
+     "return_30d": 0.0509,
+     "return_7d": 0.0035,
+     "revenue_driver": "consumer and commercial banking",
+     "signal_rank": 279,
+     "stock_vs_spy_20d": 0.0918,
+     "ticker": "USB"
+    },
+    {
+     "market_cap_m": 972.1517,
+     "price_vs_sma200": 1.0971,
+     "return_30d": 0.0497,
+     "return_7d": 0.0003,
+     "revenue_driver": "commercial and regional banking",
+     "signal_rank": 749,
+     "stock_vs_spy_20d": 0.0741,
+     "ticker": "MBWM"
+    },
+    {
+     "market_cap_m": 920070.1108,
+     "price_vs_sma200": 1.0584,
+     "return_30d": 0.038,
+     "return_7d": 0.0083,
+     "revenue_driver": "consumer and commercial banking",
+     "signal_rank": 1265,
+     "stock_vs_spy_20d": 0.0371,
+     "ticker": "JPM"
+    },
+    {
+     "market_cap_m": 10519.9815,
+     "price_vs_sma200": 1.0352,
+     "return_30d": 0.0299,
+     "return_7d": 0.0072,
+     "revenue_driver": "Puerto Rico commercial banking",
+     "signal_rank": 157,
+     "stock_vs_spy_20d": 0.0395,
+     "ticker": "BPOP"
+    },
+    {
+     "market_cap_m": 2681.9213,
+     "price_vs_sma200": 1.0139,
+     "return_30d": 0.0163,
+     "return_7d": 0.0044,
+     "revenue_driver": "commercial banking",
+     "signal_rank": 499,
+     "stock_vs_spy_20d": 0.0453,
+     "ticker": "TRMK"
+    },
+    {
+     "market_cap_m": 1134.7554,
+     "price_vs_sma200": 1.0438,
+     "return_30d": -0.0149,
+     "return_7d": -0.0352,
+     "revenue_driver": "commercial banking",
+     "signal_rank": 563,
+     "stock_vs_spy_20d": 0.0245,
+     "ticker": "PFBC"
+    }
+   ],
+   "Small Business, Commercial & Specialty Finance": [
+    {
+     "market_cap_m": 859.6885,
+     "price_vs_sma200": 1.1798,
+     "return_30d": 0.0918,
+     "return_7d": -0.0043,
+     "revenue_driver": "community banking",
+     "signal_rank": 5,
+     "stock_vs_spy_20d": 0.1368,
+     "ticker": "ALRS"
+    },
+    {
+     "market_cap_m": 653.9832,
+     "price_vs_sma200": 0.6633,
+     "return_30d": 0.0881,
+     "return_7d": -0.005,
+     "revenue_driver": "community commercial banking",
+     "signal_rank": 543,
+     "stock_vs_spy_20d": 0.0703,
+     "ticker": "CCB"
+    },
+    {
+     "market_cap_m": 1698.2131,
+     "price_vs_sma200": 1.0894,
+     "return_30d": 0.0582,
+     "return_7d": 0.0014,
+     "revenue_driver": "commercial and regional banking",
+     "signal_rank": 282,
+     "stock_vs_spy_20d": 0.0784,
+     "ticker": "QCRH"
+    },
+    {
+     "market_cap_m": 12849.6392,
+     "price_vs_sma200": 1.0146,
+     "return_30d": 0.0564,
+     "return_7d": -0.0141,
+     "revenue_driver": "commercial banking",
+     "signal_rank": 268,
+     "stock_vs_spy_20d": 0.0867,
+     "ticker": "FNB"
+    },
+    {
+     "market_cap_m": 1493.507,
+     "price_vs_sma200": 1.1275,
+     "return_30d": 0.0532,
+     "return_7d": -0.0099,
+     "revenue_driver": "commercial lending",
+     "signal_rank": 125,
+     "stock_vs_spy_20d": 0.0899,
+     "ticker": "AMAL"
+    },
+    {
+     "market_cap_m": 972.1517,
+     "price_vs_sma200": 1.0971,
+     "return_30d": 0.0497,
+     "return_7d": 0.0003,
+     "revenue_driver": "commercial and regional banking",
+     "signal_rank": 749,
+     "stock_vs_spy_20d": 0.0741,
+     "ticker": "MBWM"
+    },
+    {
+     "market_cap_m": 10342.0328,
+     "price_vs_sma200": 1.0216,
+     "return_30d": 0.0356,
+     "return_7d": -0.0205,
+     "revenue_driver": "commercial banking",
+     "signal_rank": 204,
+     "stock_vs_spy_20d": 0.0578,
+     "ticker": "UMBF"
+    },
+    {
+     "market_cap_m": 10519.9815,
+     "price_vs_sma200": 1.0352,
+     "return_30d": 0.0299,
+     "return_7d": 0.0072,
+     "revenue_driver": "Puerto Rico commercial banking",
+     "signal_rank": 157,
+     "stock_vs_spy_20d": 0.0395,
+     "ticker": "BPOP"
+    },
+    {
+     "market_cap_m": 2681.9213,
+     "price_vs_sma200": 1.0139,
+     "return_30d": 0.0163,
+     "return_7d": 0.0044,
+     "revenue_driver": "commercial banking",
+     "signal_rank": 499,
+     "stock_vs_spy_20d": 0.0453,
+     "ticker": "TRMK"
+    },
+    {
+     "market_cap_m": 1134.7554,
+     "price_vs_sma200": 1.0438,
+     "return_30d": -0.0149,
+     "return_7d": -0.0352,
+     "revenue_driver": "commercial banking",
+     "signal_rank": 563,
+     "stock_vs_spy_20d": 0.0245,
+     "ticker": "PFBC"
+    }
+   ]
+  }
+ },
+ "predictions": {
+  "badge_count": 1,
+  "confidence_score": 0.9347,
+  "conviction_label": "SPECULATIVE",
+  "data_quality_flags": [],
+  "ev_score": 0.1092,
+  "is_diamond": false,
+  "passes_tradability_filter": true,
+  "quality_label": "AVOID",
+  "quantiles": {
+   "downside_q10": -0.1873,
+   "downside_q25": -0.1049,
+   "downside_q50": -0.0523,
+   "downside_q75": -0.0128,
+   "downside_q90": 0.0,
+   "path_volatility": 0.0181,
+   "risk_reward": 3.0701,
+   "uncertainty": 0.3411,
+   "upside_q10": 0.0303,
+   "upside_q25": 0.0815,
+   "upside_q50": 0.1604,
+   "upside_q75": 0.2587,
+   "upside_q90": 0.3713
+  },
+  "rank": 268,
+  "rank_score": 0.1256,
+  "tradability_filter_reasons": []
+ },
+ "profile": {
+  "_local": {
+   "dividend_yield": 0.0033,
+   "eps_growth_yoy": null,
+   "pe_ratio": 10.7353,
+   "revenue_growth_yoy": null,
+   "roe": 0.089
+  },
+  "beta": 0.907,
+  "betaTTM": null,
+  "ceo": "Vincent J. Delie Jr.",
+  "companyName": "F.N.B. Corporation",
+  "country": "US",
+  "debtToEquityTTM": null,
+  "description": "F.N.B. Corporation functions as a financial holding entity, delivering a broad spectrum of financial solutions. Its primary clientele includes individual consumers, corporate enterprises, governmental bodies, and small to mid-sized businesses. The organization's operations are divided into three main segments: Community Banking, Wealth Management, and Insurance. Through its commercial banking division, F.N.B. extends services such as corporate and small business accounts, financing for investment properties, commercial credit lines, capital markets access, and equipment leasing. For individual customers, the company offers a suite of banking products and services, encompassing deposit accounts, mortgage and personal lending, and digital banking platforms accessible via mobile and online channels. Its wealth management offerings include personal and corporate fiduciary services, such as the administration of estates and trusts, alongside securities brokerage, investment advisory services, and a variety of financial products like mutual funds and annuities. Additionally, F.N.B. provides both commercial and personal insurance, reinsurance products, and specialized mezzanine financing options tailored for small- to medium-sized businesses. F.N.B. Corporation was established in 1864 and its corporate headquarters are located in Pittsburgh, Pennsylvania.",
+  "dividendYielTTM": null,
+  "enterpriseValueOverEBITDATTM": null,
+  "exchangeShortName": "NYSE",
+  "fullTimeEmployees": "4205",
+  "industry": "Banks - Regional",
+  "ipoDate": "1986-09-02",
+  "latest_earnings_date": "2026-11-03",
+  "marketCapTTM": null,
+  "mktCap": 6358993995,
+  "peRatioTTM": null,
+  "price": 18.125,
+  "priceToSalesRatioTTM": null,
+  "returnOnEquityTTM": 0.0893,
+  "revenue_description": "F.N.B. Revenue is driven by unit volume growth and pricing realization in its core end markets, with new product introductions and geographic expansion as incremental catalysts.",
+  "revenue_description_themes": [
+   "commercial loan growth",
+   "net interest margin expansion",
+   "fee income growth"
+  ],
+  "revenue_taxonomy": [
+   {
+    "bucket": "Small Business, Commercial & Specialty Finance",
+    "matched_tags": [
+     "commercial banking"
+    ],
+    "path": "Financials › Banking Lending & Payments › Small Business, Commercial & Specialty Finance",
+    "sector": "Financials",
+    "segment": "Banking Lending & Payments"
+   },
+   {
+    "bucket": "Consumer Banking, Deposits & Cash Management",
+    "matched_tags": [
+     "consumer banking"
+    ],
+    "path": "Financials › Banking Lending & Payments › Consumer Banking, Deposits & Cash Management",
+    "sector": "Financials",
+    "segment": "Banking Lending & Payments"
+   },
+   {
+    "bucket": "Asset & Wealth Management Fees",
+    "matched_tags": [
+     "wealth management"
+    ],
+    "path": "Financials › Capital Markets Insurance & Investments › Asset & Wealth Management Fees",
+    "sector": "Financials",
+    "segment": "Capital Markets Insurance & Investments"
+   }
+  ],
+  "revenue_themes": [
+   "commercial banking",
+   "consumer banking",
+   "wealth management"
+  ],
+  "sector": "Financial Services",
+  "website": "https://www.fnb-online.com"
+ },
+ "report": {
+  "display_rank": null,
+  "lane": "wait",
+  "lane_rank": 35,
+  "setup_label": "early_trend",
+  "why_now": "Structural analogs leads the readiness mix (+12.3); early-stage trend"
+ },
+ "scorecard": {
+  "headline": {
+   "avg_universe_pct": 58,
+   "label": "mixed",
+   "metric_count": 6
+  },
+  "metrics": {
+   "debt_to_equity": {
+    "direction": "lower",
+    "label": "D/E Ratio",
+    "sector": "Financials",
+    "sector_n": 306,
+    "sector_pct": 28,
+    "universe_n": 1981,
+    "universe_pct": 36,
+    "value": 0.7051
+   },
+   "gross_margin": {
+    "direction": "higher",
+    "label": "Gross Margin",
+    "sector": "Financials",
+    "sector_n": 306,
+    "sector_pct": 42,
+    "universe_n": 1915,
+    "universe_pct": 69,
+    "value": 0.6515
+   },
+   "operating_margin": {
+    "direction": "higher",
+    "label": "Op. Margin",
+    "sector": "Financials",
+    "sector_n": 306,
+    "sector_pct": 67,
+    "universe_n": 1915,
+    "universe_pct": 86,
+    "value": 0.2775
+   },
+   "pe_ratio": {
+    "direction": "lower",
+    "label": "P/E",
+    "sector": "Financials",
+    "sector_n": 297,
+    "sector_pct": 75,
+    "universe_n": 1436,
+    "universe_pct": 85,
+    "value": 10.7353
+   },
+   "roe": {
+    "direction": "higher",
+    "label": "ROE",
+    "sector": "Financials",
+    "sector_n": 307,
+    "sector_pct": 22,
+    "universe_n": 1996,
+    "universe_pct": 46,
+    "value": 0.089
+   },
+   "roic": {
+    "direction": "higher",
+    "label": "ROIC",
+    "sector": "Financials",
+    "sector_n": 304,
+    "sector_pct": 15,
+    "universe_n": 1965,
+    "universe_pct": 28,
+    "value": 0.0031
+   }
+  }
+ },
+ "signal_rank": 268,
+ "structural_analogs": {
+  "gp_core_pct": 81.2,
+  "gp_core_ratio": 1.7897,
+  "matches": [
+   {
+    "actual_downside": -0.0784,
+    "actual_return": 0.0957,
+    "actual_upside": 0.0957,
+    "days_in_region": 127,
+    "end_date": "2017-05-04",
+    "end_reason": "reversal",
+    "seq_len": 127,
+    "similarity": 0.6248,
+    "start_date": "2016-07-05",
+    "ticker": "CHD",
+    "total_distance": 0.2352,
+    "trigger_date": "2016-10-06",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": -0.0304,
+    "actual_return": 0.1817,
+    "actual_upside": 0.1817,
+    "days_in_region": 112,
+    "end_date": "2018-07-06",
+    "end_reason": "reversal",
+    "seq_len": 112,
+    "similarity": 0.6239,
+    "start_date": "2017-11-21",
+    "ticker": "PSB",
+    "total_distance": 0.2359,
+    "trigger_date": "2018-02-06",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": -0.0875,
+    "actual_return": 0.1982,
+    "actual_upside": 0.1982,
+    "days_in_region": 133,
+    "end_date": "2006-11-10",
+    "end_reason": "reversal",
+    "seq_len": 133,
+    "similarity": 0.6116,
+    "start_date": "2006-04-05",
+    "ticker": "SEE",
+    "total_distance": 0.2458,
+    "trigger_date": "2006-05-16",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": -0.0358,
+    "actual_return": 0.154,
+    "actual_upside": 0.154,
+    "days_in_region": 110,
+    "end_date": "2004-07-16",
+    "end_reason": "reversal",
+    "seq_len": 110,
+    "similarity": 0.6109,
+    "start_date": "2004-01-13",
+    "ticker": "FHR",
+    "total_distance": 0.2464,
+    "trigger_date": "2004-02-23",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": -0.0506,
+    "actual_return": 0.1352,
+    "actual_upside": 0.1352,
+    "days_in_region": 136,
+    "end_date": "2006-12-08",
+    "end_reason": "reversal",
+    "seq_len": 136,
+    "similarity": 0.6098,
+    "start_date": "2006-03-03",
+    "ticker": "SLF",
+    "total_distance": 0.2473,
+    "trigger_date": "2006-06-20",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": -0.1101,
+    "actual_return": 0.2236,
+    "actual_upside": 0.2236,
+    "days_in_region": 136,
+    "end_date": "2019-03-13",
+    "end_reason": "reversal",
+    "seq_len": 136,
+    "similarity": 0.6078,
+    "start_date": "2018-08-29",
+    "ticker": "THR",
+    "total_distance": 0.249,
+    "trigger_date": "2018-10-09",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": 0.0,
+    "actual_return": 0.1803,
+    "actual_upside": 0.1803,
+    "days_in_region": 130,
+    "end_date": "1992-07-16",
+    "end_reason": "reversal",
+    "seq_len": 130,
+    "similarity": 0.6072,
+    "start_date": "1991-12-31",
+    "ticker": "PCG",
+    "total_distance": 0.2495,
+    "trigger_date": "1992-04-08",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": -0.1618,
+    "actual_return": -0.0429,
+    "actual_upside": 0.0,
+    "days_in_region": 117,
+    "end_date": "2005-07-08",
+    "end_reason": "reversal",
+    "seq_len": 117,
+    "similarity": 0.6063,
+    "start_date": "2004-12-28",
+    "ticker": "WERN",
+    "total_distance": 0.2502,
+    "trigger_date": "2005-02-11",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": -0.0173,
+    "actual_return": 0.338,
+    "actual_upside": 0.338,
+    "days_in_region": 116,
+    "end_date": "2006-12-05",
+    "end_reason": "reversal",
+    "seq_len": 116,
+    "similarity": 0.6062,
+    "start_date": "2006-05-10",
+    "ticker": "HET",
+    "total_distance": 0.2503,
+    "trigger_date": "2006-07-28",
+    "trigger_type": "severe_drawdown"
+   },
+   {
+    "actual_downside": -0.113,
+    "actual_return": -0.0214,
+    "actual_upside": 0.0695,
+    "days_in_region": 103,
+    "end_date": "2006-08-03",
+    "end_reason": "reversal",
+    "seq_len": 103,
+    "similarity": 0.6046,
+    "start_date": "2005-09-16",
+    "ticker": "TEG",
+    "total_distance": 0.2516,
+    "trigger_date": "2005-10-20",
+    "trigger_type": "shallow_drawdown"
+   }
+  ],
+  "panel": {
+   "edge": 0.0918,
+   "hit_hi": 0.881,
+   "hit_lo": 0.745,
+   "hit_rate": 0.824,
+   "median_final": 0.1619,
+   "median_pain": 0.0539,
+   "n": 51,
+   "n_eff": 51.0,
+   "p25_final": 0.0737,
+   "p_pain_gt5": 0.529,
+   "return_to_pain": 2.19
+  },
+  "stats": {
+   "avg_similarity": 0.578,
+   "avg_trough": 0.0854,
+   "avg_upside": 0.1456,
+   "median_pain": 0.0658,
+   "median_return": 0.1234,
+   "n_matches": 200,
+   "p25_return": 0.0232,
+   "p_pain_gt5": 0.585,
+   "return_to_pain": 1.438,
+   "top5_avg_trough": 0.0565,
+   "top5_avg_upside": 0.153,
+   "top_similarity": 0.625,
+   "win_rate": 0.795
+  },
+  "total_matches": 200
+ },
+ "ticker": "FNB",
+ "trending": {
+  "acceleration": -0.0006,
+  "avg_vol_20d": 5469328.098,
+  "base_high_120": 19.49,
+  "breakout_confirmed": 0,
+  "close": 19.48,
+  "momentum_score": 0.5,
+  "momentum_start": "2026-03-31",
+  "range_20": 0.0521,
+  "range_50": 0.1181,
+  "rank": 302,
+  "rank_down": null,
+  "rank_up": 235,
+  "ret_120": 0.117,
+  "ret_20": 0.0167,
+  "ret_60": 0.1375,
+  "rundown_score": 0.4916,
+  "score_date": "2026-08-14",
+  "slope_20": 0.0011,
+  "slope_60": 0.0017,
+  "stage": "sustained",
+  "stage_label": "Trending",
+  "ticker": "FNB",
+  "total_score": 0.564,
+  "trend_ratio": 1.1067,
+  "vcp_detected": 1,
+  "vcp_score": 0.6067
+ }
+}

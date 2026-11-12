@@ -1,0 +1,1109 @@
+{
+ "date": "2026-11-11",
+ "detected_regions": {
+  "primary": {
+   "days_in_region": 115,
+   "region_start": "2026-08-26",
+   "trigger_date": "2026-11-09",
+   "trigger_type": "drawdown"
+  },
+  "secondary": [
+   {
+    "confidence_score": 0.89,
+    "downside_q50": -0.0643,
+    "ev_score": 0.0785,
+    "region_start": "2026-03-20",
+    "seq_len": 200,
+    "trigger_date": "2026-04-09",
+    "trigger_type": "runup",
+    "upside_q25": 0.0686,
+    "upside_q50": 0.14,
+    "upside_q75": 0.2462
+   }
+  ]
+ },
+ "feature_attribution": {
+  "macro_driver_count": 16,
+  "risk_flags": [],
+  "top_drivers": [
+   {
+    "direction": "negative",
+    "feature": "book_value_per_share",
+    "feature_value": 155.5403,
+    "importance": 0.0004,
+    "importance_pct": 0.3981,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "negative",
+    "feature": "volatility_20d",
+    "feature_value": 0.0191,
+    "importance": 0.0002,
+    "importance_pct": 0.2455,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "negative",
+    "feature": "correlation_spy_60d",
+    "feature_value": 0.181,
+    "importance": 0.0002,
+    "importance_pct": 0.1953,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "positive",
+    "feature": "sector_rank_1d",
+    "feature_value": 1.0,
+    "importance": 0.0002,
+    "importance_pct": 0.1612,
+    "method": "integrated_gradients"
+   }
+  ]
+ },
+ "fundamentals": {
+  "accrual": 0.1136,
+  "adx_14": 32.7222,
+  "altman_z_score": 4.7066,
+  "amihud_illiquidity": 0.0014,
+  "avg_volume": 58807.5227,
+  "beta_252d": 0.0141,
+  "book_value_per_share": 155.5403,
+  "correlation_spy_60d": 0.181,
+  "current_liabilities": 4.563,
+  "current_ratio": 35.5906,
+  "daily_earnings_yield": 0.0757,
+  "daily_fcf_yield": 0.0463,
+  "daily_pb": 1.6929,
+  "daily_pe": 13.205,
+  "daily_ps": 1.6465,
+  "days_since_52w_high": 54.0,
+  "debt_ebitda": 0.0,
+  "debt_to_equity": 0.0,
+  "dividend_yield": 0.03,
+  "dollar_volume_20d_avg": 15050647.9983,
+  "earnings_quality": 1.5516,
+  "ebitda_growth_yoy": -0.1531,
+  "enterprise_value": 334.7293,
+  "eps_basic": 4.99,
+  "eps_cagr_3y": 0.1733,
+  "eps_cagr_5y": -0.1023,
+  "eps_diluted": 4.97,
+  "eps_growth_accel": -0.1751,
+  "eps_growth_qoq": -0.3561,
+  "eps_growth_yoy": 0.0435,
+  "eps_growth_yoy_q2": 0.2186,
+  "eps_growth_yoy_q3": 0.279,
+  "eps_growth_yoy_q4": 0.1304,
+  "eps_growth_yoy_q5": 0.2616,
+  "eps_growth_yoy_q6": 0.2595,
+  "eps_growth_yoy_q7": 0.1911,
+  "eps_growth_yoy_q8": 0.4389,
+  "eps_history_8q": [
+   4.41,
+   1.67,
+   6.48,
+   6.45,
+   3.97,
+   3.2,
+   7.73,
+   4.97
+  ],
+  "eps_ttm": 19.9401,
+  "ev_to_ebitda": 7.8773,
+  "ev_to_fcf": 28.5751,
+  "ev_to_sales": 4.0873,
+  "fcf_growth_yoy": -0.7064,
+  "fcf_margin": 0.143,
+  "fcf_per_share": 6.2044,
+  "gross_margin": 0.9859,
+  "gross_margin_change_yoy": 0.7795,
+  "gross_margin_history": [
+   0.1733,
+   0.1832,
+   0.3915,
+   0.589,
+   0.7913,
+   0.9859
+  ],
+  "inc_roic": -0.0546,
+  "interest_coverage": null,
+  "is_pre_revenue": false,
+  "margin_vs_sector_median": null,
+  "market_cap_ratio": 497.1293,
+  "net_income": 9.43,
+  "net_margin": 0.1247,
+  "operating_income": 0.0,
+  "operating_margin": 0.1218,
+  "operating_margin_change_yoy": -0.2067,
+  "pb_ratio": 1.6929,
+  "pe_percentile_1y": 0.5159,
+  "pe_ratio": 13.205,
+  "peg_trailing": 2.8906,
+  "piotroski_f_score": 4.0,
+  "price_vs_high_52w": 0.8605,
+  "price_vs_sma200": 1.006,
+  "ps_percentile_1y": 0.7302,
+  "ps_ratio": 1.6248,
+  "quarter_labels_8q": [
+   "Q4 '24",
+   "Q1 '25",
+   "Q2 '25",
+   "Q3 '25",
+   "Q4 '25",
+   "Q1 '26",
+   "Q2 '26",
+   "Q3 '26"
+  ],
+  "quarterly_eps_growth_yoy": -0.2295,
+  "quarterly_eps_growth_yoy_8q": [
+   0.4272,
+   -0.3042,
+   0.3787,
+   0.311,
+   -0.0998,
+   0.9162,
+   0.1929,
+   -0.2295
+  ],
+  "quarterly_revenue_growth_yoy": 0.1215,
+  "quarterly_revenue_growth_yoy_8q": [
+   0.3156,
+   0.0581,
+   0.1264,
+   0.0609,
+   -0.0157,
+   0.1317,
+   0.1745,
+   0.1215
+  ],
+  "revenue_cagr_3y": 0.0847,
+  "revenue_cagr_5y": -0.0088,
+  "revenue_growth_accel": 0.0158,
+  "revenue_growth_qoq": -0.0533,
+  "revenue_growth_yoy": 0.1025,
+  "revenue_growth_yoy_q2": 0.0867,
+  "revenue_growth_yoy_q3": 0.0719,
+  "revenue_growth_yoy_q4": 0.056,
+  "revenue_growth_yoy_q5": 0.1347,
+  "revenue_growth_yoy_q6": 0.1528,
+  "revenue_growth_yoy_q7": 0.1522,
+  "revenue_growth_yoy_q8": 0.1493,
+  "revenue_history_8q": [
+   70.628,
+   56.565,
+   73.649,
+   73.023,
+   69.518,
+   64.013,
+   86.503,
+   81.895
+  ],
+  "revenue_per_share": 43.3766,
+  "roa": 0.0973,
+  "roce": 0.1076,
+  "roe": 0.1298,
+  "roic": 0.0967,
+  "rsi_14": 41.5923,
+  "sector_momentum": 0.0881,
+  "share_dilution_1y": 0.0,
+  "stock_vs_sector_20d": -0.1407,
+  "stock_vs_spy_20d": -0.0606,
+  "total_assets": 393.943,
+  "vol_regime": 1.1795,
+  "volatility_20d": 0.0191,
+  "volatility_60d": 0.0162,
+  "w52_high": 309.55,
+  "w52_low": 209.75
+ },
+ "market_characters": [
+  {
+   "id": "g5",
+   "name": "Quality Compressed"
+  }
+ ],
+ "model_analogs": {
+  "matches": [
+   {
+    "actual_downside": 0.0,
+    "actual_return": 0.1629,
+    "actual_upside": 0.1629,
+    "days_in_region": 120,
+    "end_date": "2005-12-02",
+    "end_reason": "reversal",
+    "similarity": 0.9537,
+    "start_date": "2005-08-04",
+    "ticker": "OSG",
+    "trigger_date": "2005-08-18",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": -0.2279,
+    "actual_return": -0.082,
+    "actual_upside": 0.1069,
+    "days_in_region": 243,
+    "end_date": "2006-04-04",
+    "end_reason": "reversal",
+    "similarity": 0.9496,
+    "start_date": "2005-08-04",
+    "ticker": "FFH",
+    "trigger_date": "2005-09-12",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": -0.0132,
+    "actual_return": 0.0175,
+    "actual_upside": 0.273,
+    "days_in_region": 299,
+    "end_date": "2006-06-13",
+    "end_reason": "reversal",
+    "similarity": 0.9479,
+    "start_date": "2005-08-18",
+    "ticker": "ESND",
+    "trigger_date": "2005-09-15",
+    "trigger_type": "compression"
+   },
+   {
+    "actual_downside": -0.0646,
+    "actual_return": 0.2586,
+    "actual_upside": 0.2586,
+    "days_in_region": 228,
+    "end_date": "2017-03-27",
+    "end_reason": "reversal",
+    "similarity": 0.9464,
+    "start_date": "2016-08-11",
+    "ticker": "ASX",
+    "trigger_date": "2016-11-15",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": 0.0,
+    "actual_return": 0.3706,
+    "actual_upside": 0.3706,
+    "days_in_region": 167,
+    "end_date": "2017-01-04",
+    "end_reason": "reversal",
+    "similarity": 0.9458,
+    "start_date": "2016-07-21",
+    "ticker": "NX",
+    "trigger_date": "2016-11-04",
+    "trigger_type": "severe_drawdown"
+   },
+   {
+    "actual_downside": -0.0364,
+    "actual_return": -0.0166,
+    "actual_upside": 0.0799,
+    "days_in_region": 306,
+    "end_date": "2015-03-10",
+    "end_reason": "reversal",
+    "similarity": 0.9454,
+    "start_date": "2014-05-08",
+    "ticker": "ISRG",
+    "trigger_date": "2014-06-16",
+    "trigger_type": "shallow_runup"
+   },
+   {
+    "actual_downside": -0.0041,
+    "actual_return": 0.1628,
+    "actual_upside": 0.1628,
+    "days_in_region": 240,
+    "end_date": "2006-03-30",
+    "end_reason": "reversal",
+    "similarity": 0.9448,
+    "start_date": "2005-08-02",
+    "ticker": "MGA",
+    "trigger_date": "2005-10-21",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": -0.0423,
+    "actual_return": 0.346,
+    "actual_upside": 0.346,
+    "days_in_region": 202,
+    "end_date": "2006-03-01",
+    "end_reason": "reversal",
+    "similarity": 0.9445,
+    "start_date": "2005-08-11",
+    "ticker": "MGLN",
+    "trigger_date": "2005-10-12",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": 0.0,
+    "actual_return": 0.289,
+    "actual_upside": 0.289,
+    "days_in_region": 257,
+    "end_date": "2017-02-14",
+    "end_reason": "reversal",
+    "similarity": 0.9445,
+    "start_date": "2016-06-02",
+    "ticker": "AGRO",
+    "trigger_date": "2016-11-14",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": -0.0545,
+    "actual_return": 0.0586,
+    "actual_upside": 0.0586,
+    "days_in_region": 244,
+    "end_date": "2006-02-21",
+    "end_reason": "reversal",
+    "similarity": 0.9428,
+    "start_date": "2005-06-22",
+    "ticker": "TRI",
+    "trigger_date": "2005-10-27",
+    "trigger_type": "severe_drawdown"
+   }
+  ],
+  "stats": {
+   "avg_max_drawdown": 0.0362,
+   "avg_similarity": 0.941,
+   "avg_trough": 0.0362,
+   "avg_upside": 0.2421,
+   "best_return": 0.5434,
+   "downside_range": [
+    -0.2279,
+    0.0
+   ],
+   "median_return": 0.2253,
+   "n_matches": 50,
+   "outcome_agreement": true,
+   "return_p25": 0.0721,
+   "return_p5": -0.0556,
+   "return_p75": 0.3158,
+   "return_p95": 0.4626,
+   "sim_weighted_win_rate": 0.88,
+   "top5_avg_trough": 0.0611,
+   "top5_avg_upside": 0.2344,
+   "top_similarity": 0.954,
+   "upside_range": [
+    0.0425,
+    0.5434
+   ],
+   "win_rate": 0.88,
+   "worst_return": -0.1173,
+   "years_span": 7
+  },
+  "total_matches": 50
+ },
+ "peer_group": {
+  "buckets": [
+   "Holding Companies, Treasury Assets & Investment Income",
+   "Mortgage, Title & Real Estate Transaction Finance",
+   "Real Estate Brokerage, Leasing, Title & Closing Services"
+  ],
+  "groups": {
+   "Holding Companies, Treasury Assets & Investment Income": [
+    {
+     "market_cap_m": 4126.6264,
+     "price_vs_sma200": 1.2503,
+     "return_30d": 0.2909,
+     "return_7d": 0.0975,
+     "revenue_driver": "property insurance premiums",
+     "signal_rank": 529,
+     "stock_vs_spy_20d": 0.1767,
+     "ticker": "PLMR"
+    },
+    {
+     "market_cap_m": 9087.4583,
+     "price_vs_sma200": 1.1197,
+     "return_30d": 0.217,
+     "return_7d": 0.0347,
+     "revenue_driver": "property insurance premiums",
+     "signal_rank": 1075,
+     "stock_vs_spy_20d": 0.1381,
+     "ticker": "KNSL"
+    },
+    {
+     "market_cap_m": 2443.3905,
+     "price_vs_sma200": 1.2065,
+     "return_30d": 0.1938,
+     "return_7d": 0.0311,
+     "revenue_driver": "specialty insurance premiums",
+     "signal_rank": 491,
+     "stock_vs_spy_20d": 0.0749,
+     "ticker": "SKWD"
+    },
+    {
+     "market_cap_m": 941.4486,
+     "price_vs_sma200": 1.2354,
+     "return_30d": 0.1898,
+     "return_7d": 0.0255,
+     "revenue_driver": "homeowners insurance premiums",
+     "signal_rank": 780,
+     "stock_vs_spy_20d": 0.0775,
+     "ticker": "HIPO"
+    },
+    {
+     "market_cap_m": 8366.5101,
+     "price_vs_sma200": 1.2227,
+     "return_30d": 0.1607,
+     "return_7d": 0.0005,
+     "revenue_driver": "property insurance premiums",
+     "signal_rank": 1491,
+     "stock_vs_spy_20d": 0.1118,
+     "ticker": "THG"
+    },
+    {
+     "market_cap_m": 132266.2649,
+     "price_vs_sma200": 1.0741,
+     "return_30d": 0.1133,
+     "return_7d": 0.0055,
+     "revenue_driver": "commercial insurance premiums",
+     "signal_rank": 455,
+     "stock_vs_spy_20d": 0.0829,
+     "ticker": "AIG"
+    },
+    {
+     "market_cap_m": 588.9924,
+     "price_vs_sma200": 1.0454,
+     "return_30d": 0.0652,
+     "return_7d": 0.0107,
+     "revenue_driver": "property insurance premiums",
+     "signal_rank": 99,
+     "stock_vs_spy_20d": 0.0553,
+     "ticker": "DGICA"
+    },
+    {
+     "market_cap_m": 1026.8634,
+     "price_vs_sma200": 1.1609,
+     "return_30d": 0.0142,
+     "return_7d": -0.0646,
+     "revenue_driver": "homeowners insurance premiums",
+     "signal_rank": 796,
+     "stock_vs_spy_20d": -0.0607,
+     "ticker": "HRTG"
+    },
+    {
+     "market_cap_m": 12873.8823,
+     "price_vs_sma200": 1.0075,
+     "return_30d": -0.0232,
+     "return_7d": 0.0126,
+     "revenue_driver": "life insurance premiums",
+     "signal_rank": 326,
+     "stock_vs_spy_20d": -0.0206,
+     "ticker": "GL"
+    },
+    {
+     "market_cap_m": 490.5779,
+     "price_vs_sma200": 1.006,
+     "return_30d": -0.0692,
+     "return_7d": -0.0346,
+     "revenue_driver": "title insurance premiums",
+     "signal_rank": 164,
+     "stock_vs_spy_20d": -0.0606,
+     "ticker": "ITIC"
+    }
+   ],
+   "Mortgage, Title & Real Estate Transaction Finance": [
+    {
+     "market_cap_m": 4873.5393,
+     "price_vs_sma200": 1.0536,
+     "return_30d": 0.2166,
+     "return_7d": 0.0296,
+     "revenue_driver": "private mortgage insurance premiums",
+     "signal_rank": 383,
+     "stock_vs_spy_20d": 0.1275,
+     "ticker": "RDN"
+    },
+    {
+     "market_cap_m": 16335.8776,
+     "price_vs_sma200": 0.9281,
+     "return_30d": 0.1426,
+     "return_7d": 0.0469,
+     "revenue_driver": "title insurance premiums",
+     "signal_rank": 644,
+     "stock_vs_spy_20d": 0.1377,
+     "ticker": "FNF"
+    },
+    {
+     "market_cap_m": 6594.968,
+     "price_vs_sma200": 0.9909,
+     "return_30d": 0.1026,
+     "return_7d": 0.0122,
+     "revenue_driver": "title insurance premiums",
+     "signal_rank": 625,
+     "stock_vs_spy_20d": 0.0918,
+     "ticker": "FAF"
+    },
+    {
+     "market_cap_m": 19552.726,
+     "price_vs_sma200": 1.0013,
+     "return_30d": 0.0786,
+     "return_7d": -0.037,
+     "revenue_driver": "private mortgage insurance",
+     "signal_rank": 445,
+     "stock_vs_spy_20d": 0.0342,
+     "ticker": "MTG"
+    },
+    {
+     "market_cap_m": 9531.774,
+     "price_vs_sma200": 0.9895,
+     "return_30d": 0.071,
+     "return_7d": 0.0265,
+     "revenue_driver": "specialty insurance",
+     "signal_rank": 955,
+     "stock_vs_spy_20d": 0.0533,
+     "ticker": "ORI"
+    },
+    {
+     "market_cap_m": 6897.7969,
+     "price_vs_sma200": 1.0337,
+     "return_30d": 0.067,
+     "return_7d": -0.0413,
+     "revenue_driver": "private mortgage insurance",
+     "signal_rank": 6,
+     "stock_vs_spy_20d": 0.0339,
+     "ticker": "ACT"
+    },
+    {
+     "market_cap_m": 3000.158,
+     "price_vs_sma200": 0.9671,
+     "return_30d": 0.0464,
+     "return_7d": -0.1006,
+     "revenue_driver": "private mortgage insurance",
+     "signal_rank": null,
+     "stock_vs_spy_20d": 0.0308,
+     "ticker": "NMIH"
+    },
+    {
+     "market_cap_m": 650.951,
+     "price_vs_sma200": 1.0143,
+     "return_30d": 0.0377,
+     "return_7d": 0.0023,
+     "revenue_driver": "specialty property casualty insurance",
+     "signal_rank": 1018,
+     "stock_vs_spy_20d": 0.0561,
+     "ticker": "TIPT"
+    },
+    {
+     "market_cap_m": 490.5779,
+     "price_vs_sma200": 1.006,
+     "return_30d": -0.0692,
+     "return_7d": -0.0346,
+     "revenue_driver": "title insurance premiums",
+     "signal_rank": 164,
+     "stock_vs_spy_20d": -0.0606,
+     "ticker": "ITIC"
+    },
+    {
+     "market_cap_m": 1409.4204,
+     "price_vs_sma200": 0.6904,
+     "return_30d": -0.1125,
+     "return_7d": -0.0352,
+     "revenue_driver": "title insurance premiums",
+     "signal_rank": 647,
+     "stock_vs_spy_20d": -0.1193,
+     "ticker": "STC"
+    }
+   ],
+   "Real Estate Brokerage, Leasing, Title & Closing Services": [
+    {
+     "market_cap_m": 15731.9813,
+     "price_vs_sma200": 1.1442,
+     "return_30d": 0.2181,
+     "return_7d": -0.0189,
+     "revenue_driver": "commercial real estate leasing commissions",
+     "signal_rank": 1208,
+     "stock_vs_spy_20d": 0.2733,
+     "ticker": "JLL"
+    },
+    {
+     "market_cap_m": 5637.0737,
+     "price_vs_sma200": 1.0488,
+     "return_30d": 0.1554,
+     "return_7d": 0.0892,
+     "revenue_driver": "residential real estate brokerage",
+     "signal_rank": 1412,
+     "stock_vs_spy_20d": 0.1841,
+     "ticker": "COMP"
+    },
+    {
+     "market_cap_m": 16335.8776,
+     "price_vs_sma200": 0.9281,
+     "return_30d": 0.1426,
+     "return_7d": 0.0469,
+     "revenue_driver": "title insurance premiums",
+     "signal_rank": 644,
+     "stock_vs_spy_20d": 0.1377,
+     "ticker": "FNF"
+    },
+    {
+     "market_cap_m": 959.3755,
+     "price_vs_sma200": 0.6552,
+     "return_30d": 0.1295,
+     "return_7d": 0.1176,
+     "revenue_driver": "residential real estate brokerage",
+     "signal_rank": null,
+     "stock_vs_spy_20d": 0.1722,
+     "ticker": "EXPI"
+    },
+    {
+     "market_cap_m": 13566.5742,
+     "price_vs_sma200": 0.8227,
+     "return_30d": 0.1046,
+     "return_7d": -0.0489,
+     "revenue_driver": "real estate information services",
+     "signal_rank": null,
+     "stock_vs_spy_20d": 0.1229,
+     "ticker": "CSGP"
+    },
+    {
+     "market_cap_m": 6594.968,
+     "price_vs_sma200": 0.9909,
+     "return_30d": 0.1026,
+     "return_7d": 0.0122,
+     "revenue_driver": "title insurance premiums",
+     "signal_rank": 625,
+     "stock_vs_spy_20d": 0.0918,
+     "ticker": "FAF"
+    },
+    {
+     "market_cap_m": 39056.1053,
+     "price_vs_sma200": 0.9586,
+     "return_30d": 0.0476,
+     "return_7d": -0.0159,
+     "revenue_driver": "property management fees",
+     "signal_rank": 1140,
+     "stock_vs_spy_20d": 0.0572,
+     "ticker": "CBRE"
+    },
+    {
+     "market_cap_m": 490.5779,
+     "price_vs_sma200": 1.006,
+     "return_30d": -0.0692,
+     "return_7d": -0.0346,
+     "revenue_driver": "title insurance premiums",
+     "signal_rank": 164,
+     "stock_vs_spy_20d": -0.0606,
+     "ticker": "ITIC"
+    },
+    {
+     "market_cap_m": 1409.4204,
+     "price_vs_sma200": 0.6904,
+     "return_30d": -0.1125,
+     "return_7d": -0.0352,
+     "revenue_driver": "title insurance premiums",
+     "signal_rank": 647,
+     "stock_vs_spy_20d": -0.1193,
+     "ticker": "STC"
+    },
+    {
+     "market_cap_m": 1080.1133,
+     "price_vs_sma200": 0.8623,
+     "return_30d": -0.1279,
+     "return_7d": -0.1477,
+     "revenue_driver": "commercial real estate brokerage",
+     "signal_rank": 136,
+     "stock_vs_spy_20d": -0.081,
+     "ticker": "MMI"
+    }
+   ]
+  }
+ },
+ "predictions": {
+  "badge_count": 1,
+  "confidence_score": 0.8153,
+  "conviction_label": "HIGH CONVICTION",
+  "data_quality_flags": [],
+  "ev_score": 0.1316,
+  "is_diamond": false,
+  "passes_tradability_filter": false,
+  "quality_label": "HIGH",
+  "quantiles": {
+   "downside_q10": -0.1969,
+   "downside_q25": -0.1009,
+   "downside_q50": -0.0467,
+   "downside_q75": -0.008,
+   "downside_q90": 0.0061,
+   "path_volatility": 0.0226,
+   "risk_reward": 3.8371,
+   "uncertainty": 0.3743,
+   "upside_q10": 0.0333,
+   "upside_q25": 0.0893,
+   "upside_q50": 0.1791,
+   "upside_q75": 0.2878,
+   "upside_q90": 0.4077
+  },
+  "rank": 164,
+  "rank_score": 0.1543,
+  "tradability_filter_reasons": [
+   "market_cap_below_1b"
+  ]
+ },
+ "profile": {
+  "_local": {
+   "dividend_yield": 0.03,
+   "eps_growth_yoy": 0.0435,
+   "pe_ratio": 13.077,
+   "revenue_growth_yoy": 0.1025,
+   "roe": 0.1298
+  },
+  "beta": 0.607,
+  "betaTTM": null,
+  "ceo": "James Allen Fine",
+  "companyName": "Investors Title Company",
+  "country": "US",
+  "debtToEquityTTM": null,
+  "description": "Investors Title Company (ITIC), along with its various subsidiaries, primarily specializes in providing title insurance for a diverse range of properties, including residential homes, commercial buildings, institutional facilities, and industrial sites. The company operates in a dual capacity within the title insurance market: it acts as a direct insurer for property owners and mortgage lenders, and it also functions as a reinsurer, assuming title insurance risks from other providers. Beyond its core insurance offerings, ITIC delivers specialized services related to tax-deferred exchanges of like-kind property. In this area, it serves as a qualified intermediary, skillfully managing the complexities of these transactions. This involves preparing necessary exchange documents, securely holding exchange funds during the transition between property sales and new acquisitions, and facilitating the proper identification of replacement properties. Furthermore, ITIC takes on the role of an exchange accommodation titleholder, particularly for \"reverse exchanges\" where a replacement property is acquired before the relinquished property is sold. The company also extends its expertise to investment management and trust services, catering to a broad clientele that includes individuals, corporations, banks, and various trusts. Additionally, it offers consulting and management guidance to assist clients in the establishment and operation of their own title insurance agencies. ITIC's title insurance policies are distributed through a dual network comprising approved attorneys working from its underwriting offices, as well as independent issuing agents. This extensive network spans 24 states and the District of Columbia, with its primary geographical focus being the eastern half of the United States. Established in 1972, Investors Title Company maintains its corporate headquarters in Chapel Hill, North Carolina.",
+  "dividendYielTTM": null,
+  "enterpriseValueOverEBITDATTM": null,
+  "exchangeShortName": "NASDAQ",
+  "fullTimeEmployees": "561",
+  "industry": "Insurance - Specialty",
+  "ipoDate": "1986-12-03",
+  "latest_earnings_date": "2026-11-09",
+  "marketCapTTM": null,
+  "mktCap": 497127963,
+  "peRatioTTM": null,
+  "price": 263.31,
+  "priceToSalesRatioTTM": null,
+  "returnOnEquityTTM": 0.1343,
+  "revenue_description": "Investors Title sells title insurance and real-estate transaction services. Revenue is driven mainly by insurance premiums and investment income, while earnings depend on underwriting margins, claims severity, and catastrophe losses.",
+  "revenue_description_themes": [
+   "housing transaction volume",
+   "mortgage rate trends",
+   "investment yield"
+  ],
+  "revenue_taxonomy": [
+   {
+    "bucket": "Mortgage, Title & Real Estate Transaction Finance",
+    "matched_tags": [
+     "title insurance premiums"
+    ],
+    "path": "Financials › Banking Lending & Payments › Mortgage, Title & Real Estate Transaction Finance",
+    "sector": "Financials",
+    "segment": "Banking Lending & Payments"
+   },
+   {
+    "bucket": "Real Estate Brokerage, Leasing, Title & Closing Services",
+    "matched_tags": [
+     "title settlement services"
+    ],
+    "path": "Real Estate & Infrastructure › Property & Infrastructure Services › Real Estate Brokerage, Leasing, Title & Closing Services",
+    "sector": "Real Estate & Infrastructure",
+    "segment": "Property & Infrastructure Services"
+   },
+   {
+    "bucket": "Holding Companies, Treasury Assets & Investment Income",
+    "matched_tags": [
+     "investment income"
+    ],
+    "path": "Financials › Capital Markets Insurance & Investments › Holding Companies, Treasury Assets & Investment Income",
+    "sector": "Financials",
+    "segment": "Capital Markets Insurance & Investments"
+   }
+  ],
+  "revenue_themes": [
+   "title insurance premiums",
+   "title settlement services",
+   "investment income"
+  ],
+  "sector": "Financial Services",
+  "website": "https://www.invtitle.com"
+ },
+ "report": null,
+ "scorecard": {
+  "headline": {
+   "avg_universe_pct": 68,
+   "label": "above_average",
+   "metric_count": 8
+  },
+  "metrics": {
+   "debt_to_equity": {
+    "direction": "lower",
+    "label": "D/E Ratio",
+    "sector": "Financials",
+    "sector_n": 306,
+    "sector_pct": 99,
+    "universe_n": 1981,
+    "universe_pct": 94,
+    "value": 0.0
+   },
+   "eps_growth_yoy": {
+    "direction": "higher",
+    "label": "EPS Growth",
+    "sector": "Financials",
+    "sector_n": 145,
+    "sector_pct": 37,
+    "universe_n": 1799,
+    "universe_pct": 39,
+    "value": 0.0435
+   },
+   "gross_margin": {
+    "direction": "higher",
+    "label": "Gross Margin",
+    "sector": "Financials",
+    "sector_n": 306,
+    "sector_pct": 98,
+    "universe_n": 1915,
+    "universe_pct": 98,
+    "value": 0.9859
+   },
+   "operating_margin": {
+    "direction": "higher",
+    "label": "Op. Margin",
+    "sector": "Financials",
+    "sector_n": 306,
+    "sector_pct": 21,
+    "universe_n": 1915,
+    "universe_pct": 53,
+    "value": 0.1218
+   },
+   "pe_ratio": {
+    "direction": "lower",
+    "label": "P/E",
+    "sector": "Financials",
+    "sector_n": 297,
+    "sector_pct": 42,
+    "universe_n": 1436,
+    "universe_pct": 73,
+    "value": 13.077
+   },
+   "revenue_growth_yoy": {
+    "direction": "higher",
+    "label": "Rev Growth",
+    "sector": "Financials",
+    "sector_n": 144,
+    "sector_pct": 60,
+    "universe_n": 1747,
+    "universe_pct": 58,
+    "value": 0.1025
+   },
+   "roe": {
+    "direction": "higher",
+    "label": "ROE",
+    "sector": "Financials",
+    "sector_n": 307,
+    "sector_pct": 57,
+    "universe_n": 1996,
+    "universe_pct": 61,
+    "value": 0.1298
+   },
+   "roic": {
+    "direction": "higher",
+    "label": "ROIC",
+    "sector": "Financials",
+    "sector_n": 304,
+    "sector_pct": 71,
+    "universe_n": 1965,
+    "universe_pct": 66,
+    "value": 0.0242
+   }
+  }
+ },
+ "signal_rank": 164,
+ "structural_analogs": {
+  "gp_core_pct": 80.1,
+  "gp_core_ratio": 1.7693,
+  "matches": [
+   {
+    "actual_downside": -0.1646,
+    "actual_return": -0.1646,
+    "actual_upside": 0.0,
+    "days_in_region": 71,
+    "end_date": "2018-12-24",
+    "end_reason": "reversal",
+    "seq_len": 71,
+    "similarity": 0.5865,
+    "start_date": "2018-10-26",
+    "ticker": "XIFR",
+    "total_distance": 0.2668,
+    "trigger_date": "2018-11-09",
+    "trigger_type": "shallow_runup"
+   },
+   {
+    "actual_downside": -0.4543,
+    "actual_return": -0.2548,
+    "actual_upside": 0.0,
+    "days_in_region": 87,
+    "end_date": "1998-11-06",
+    "end_reason": "reversal",
+    "seq_len": 87,
+    "similarity": 0.5837,
+    "start_date": "1998-04-03",
+    "ticker": "BDG",
+    "total_distance": 0.2692,
+    "trigger_date": "1998-05-08",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": -0.0175,
+    "actual_return": 0.2851,
+    "actual_upside": 0.2851,
+    "days_in_region": 114,
+    "end_date": "1997-05-29",
+    "end_reason": "reversal",
+    "seq_len": 114,
+    "similarity": 0.5835,
+    "start_date": "1997-01-06",
+    "ticker": "UVV",
+    "total_distance": 0.2694,
+    "trigger_date": "1997-03-21",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": -0.0273,
+    "actual_return": 0.2224,
+    "actual_upside": 0.2224,
+    "days_in_region": 119,
+    "end_date": "2018-07-24",
+    "end_reason": "reversal",
+    "seq_len": 119,
+    "similarity": 0.58,
+    "start_date": "2017-11-28",
+    "ticker": "FELE",
+    "total_distance": 0.2723,
+    "trigger_date": "2018-02-22",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": -0.0505,
+    "actual_return": 0.1734,
+    "actual_upside": 0.1734,
+    "days_in_region": 105,
+    "end_date": "2002-04-17",
+    "end_reason": "reversal",
+    "seq_len": 105,
+    "similarity": 0.5789,
+    "start_date": "2001-08-22",
+    "ticker": "HCA",
+    "total_distance": 0.2733,
+    "trigger_date": "2001-10-30",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": -0.0093,
+    "actual_return": 0.3076,
+    "actual_upside": 0.3076,
+    "days_in_region": 122,
+    "end_date": "2018-08-27",
+    "end_reason": "reversal",
+    "seq_len": 122,
+    "similarity": 0.5778,
+    "start_date": "2018-01-08",
+    "ticker": "CSL",
+    "total_distance": 0.2743,
+    "trigger_date": "2018-02-14",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": -0.0921,
+    "actual_return": 0.144,
+    "actual_upside": 0.144,
+    "days_in_region": 151,
+    "end_date": "2019-03-01",
+    "end_reason": "reversal",
+    "seq_len": 151,
+    "similarity": 0.5759,
+    "start_date": "2018-07-31",
+    "ticker": "AIZ",
+    "total_distance": 0.2759,
+    "trigger_date": "2018-12-07",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": -0.0402,
+    "actual_return": 0.1393,
+    "actual_upside": 0.1393,
+    "days_in_region": 133,
+    "end_date": "2018-07-03",
+    "end_reason": "reversal",
+    "seq_len": 133,
+    "similarity": 0.5753,
+    "start_date": "2017-09-05",
+    "ticker": "RGLD",
+    "total_distance": 0.2764,
+    "trigger_date": "2017-12-01",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": -0.1028,
+    "actual_return": 0.1441,
+    "actual_upside": 0.1441,
+    "days_in_region": 138,
+    "end_date": "2019-05-06",
+    "end_reason": "reversal",
+    "seq_len": 138,
+    "similarity": 0.5743,
+    "start_date": "2018-08-17",
+    "ticker": "EE",
+    "total_distance": 0.2773,
+    "trigger_date": "2018-12-07",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": -0.1174,
+    "actual_return": 0.1979,
+    "actual_upside": 0.1979,
+    "days_in_region": 110,
+    "end_date": "2019-02-21",
+    "end_reason": "reversal",
+    "seq_len": 110,
+    "similarity": 0.574,
+    "start_date": "2018-08-16",
+    "ticker": "SP",
+    "total_distance": 0.2776,
+    "trigger_date": "2018-10-05",
+    "trigger_type": "drawdown"
+   }
+  ],
+  "panel": {
+   "edge": 0.0853,
+   "hit_hi": 0.881,
+   "hit_lo": 0.745,
+   "hit_rate": 0.824,
+   "median_final": 0.1393,
+   "median_pain": 0.0505,
+   "n": 51,
+   "n_eff": 51.0,
+   "p25_final": 0.0255,
+   "p_pain_gt5": 0.51,
+   "return_to_pain": 1.977
+  },
+  "stats": {
+   "avg_similarity": 0.537,
+   "avg_trough": 0.0769,
+   "avg_upside": 0.1421,
+   "median_pain": 0.0553,
+   "median_return": 0.0919,
+   "n_matches": 200,
+   "p25_return": -0.0103,
+   "p_pain_gt5": 0.54,
+   "return_to_pain": 1.22,
+   "top5_avg_trough": 0.1429,
+   "top5_avg_upside": 0.1362,
+   "top_similarity": 0.587,
+   "win_rate": 0.735
+  },
+  "total_matches": 200
+ },
+ "ticker": "ITIC",
+ "trending": {
+  "acceleration": -0.0011,
+  "avg_vol_20d": 50965.2128,
+  "base_high_120": 305.98,
+  "breakout_confirmed": 0,
+  "close": 296.95,
+  "momentum_score": 0.7176,
+  "momentum_start": "2026-06-05",
+  "range_20": 0.0809,
+  "range_50": 0.1114,
+  "rank": 973,
+  "rank_down": null,
+  "rank_up": 303,
+  "ret_120": 0.2391,
+  "ret_20": -0.0019,
+  "ret_60": 0.0457,
+  "rundown_score": 0.2554,
+  "score_date": "2026-10-09",
+  "slope_20": -0.0006,
+  "slope_60": 0.0004,
+  "stage": "sustained",
+  "stage_label": "Trending",
+  "ticker": "ITIC",
+  "total_score": 0.4608,
+  "trend_ratio": 1.1112,
+  "vcp_detected": 0,
+  "vcp_score": 0.2897
+ }
+}

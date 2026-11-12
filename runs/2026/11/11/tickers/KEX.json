@@ -1,0 +1,996 @@
+{
+ "date": "2026-11-11",
+ "detected_regions": {
+  "primary": {
+   "days_in_region": 94,
+   "region_start": "2026-09-25",
+   "trigger_date": "2026-10-29",
+   "trigger_type": "runup"
+  },
+  "secondary": [
+   {
+    "confidence_score": 0.6181,
+    "downside_q50": -0.0752,
+    "ev_score": 0.0954,
+    "region_start": "2026-07-22",
+    "seq_len": 140,
+    "trigger_date": "2026-11-06",
+    "trigger_type": "drawdown",
+    "upside_q25": 0.0803,
+    "upside_q50": 0.1697,
+    "upside_q75": 0.273
+   }
+  ]
+ },
+ "feature_attribution": {
+  "macro_driver_count": 16,
+  "risk_flags": [
+   "high_volatility"
+  ],
+  "top_drivers": [
+   {
+    "direction": "negative",
+    "feature": "dollar_volume",
+    "feature_value": 76954688.0,
+    "importance": 0.0005,
+    "importance_pct": 0.5069,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "positive",
+    "feature": "sector_rank_1d",
+    "feature_value": 0.1818,
+    "importance": 0.0002,
+    "importance_pct": 0.17,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "negative",
+    "feature": "volatility_20d",
+    "feature_value": 0.034,
+    "importance": 0.0002,
+    "importance_pct": 0.169,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "negative",
+    "feature": "vol_regime",
+    "feature_value": 1.5575,
+    "importance": 0.0001,
+    "importance_pct": 0.1542,
+    "method": "integrated_gradients"
+   }
+  ]
+ },
+ "fundamentals": {
+  "accrual": 0.2442,
+  "adx_14": 42.3781,
+  "altman_z_score": 140.1124,
+  "amihud_illiquidity": 0.0002,
+  "avg_volume": 540427.0331,
+  "beta_252d": 0.2842,
+  "book_value_per_share": 65.35,
+  "correlation_spy_60d": 0.3475,
+  "current_liabilities": 777.232,
+  "current_ratio": 0.0493,
+  "daily_earnings_yield": 0.0538,
+  "daily_fcf_yield": -0.0942,
+  "daily_pb": 2.0175,
+  "daily_pe": 18.5967,
+  "daily_ps": 1.9321,
+  "days_since_52w_high": 136.0,
+  "debt_ebitda": 0.2423,
+  "debt_to_equity": 0.0538,
+  "dividend_yield": 0.0,
+  "dollar_volume_20d_avg": 100736460.4576,
+  "earnings_quality": -3.6209,
+  "ebitda_growth_yoy": 0.0803,
+  "enterprise_value": 7093.669,
+  "eps_basic": 2.1,
+  "eps_cagr_3y": 0.2811,
+  "eps_cagr_5y": 0.1217,
+  "eps_diluted": 2.09,
+  "eps_growth_accel": 0.0585,
+  "eps_growth_qoq": 0.25,
+  "eps_growth_yoy": 0.2878,
+  "eps_growth_yoy_q2": 0.2293,
+  "eps_growth_yoy_q3": 0.2874,
+  "eps_growth_yoy_q4": 0.2848,
+  "eps_growth_yoy_q5": 0.0324,
+  "eps_growth_yoy_q6": 0.12,
+  "eps_growth_yoy_q7": 0.1897,
+  "eps_growth_yoy_q8": 0.32,
+  "eps_history_8q": [
+   1.33,
+   1.67,
+   1.65,
+   1.68,
+   1.5,
+   1.5,
+   1.67,
+   2.09
+  ],
+  "eps_ttm": 6.8921,
+  "ev_to_ebitda": 9.0306,
+  "ev_to_fcf": -15.0679,
+  "ev_to_sales": 7.2591,
+  "fcf_growth_yoy": -4.1167,
+  "fcf_margin": -0.4818,
+  "fcf_per_share": -8.9349,
+  "gross_margin": 0.2535,
+  "gross_margin_change_yoy": -0.0622,
+  "gross_margin_history": [
+   0.326,
+   0.3254,
+   0.3123,
+   0.2753,
+   0.2538,
+   0.2535
+  ],
+  "inc_roic": -0.0034,
+  "interest_coverage": 17.8784,
+  "is_pre_revenue": false,
+  "margin_vs_sector_median": null,
+  "market_cap_ratio": 6946.814,
+  "net_income": 110.815,
+  "net_margin": 0.1012,
+  "operating_income": 151.724,
+  "operating_margin": 0.1354,
+  "operating_margin_change_yoy": 0.0104,
+  "pb_ratio": 1.9613,
+  "pe_percentile_1y": 0.9841,
+  "pe_ratio": 18.5967,
+  "peg_trailing": 2.635,
+  "piotroski_f_score": 2.0,
+  "price_vs_high_52w": 0.8397,
+  "price_vs_sma200": 0.9368,
+  "ps_percentile_1y": 0.8333,
+  "ps_ratio": 1.8279,
+  "quarter_labels_8q": [
+   "Q1 '25",
+   "Q2 '25",
+   "Q3 '25",
+   "Q4 '25",
+   "Q1 '26",
+   "Q1 '26",
+   "Q2 '26",
+   "Q3 '26"
+  ],
+  "quarterly_eps_growth_yoy": 0.244,
+  "quarterly_eps_growth_yoy_8q": [
+   0.1176,
+   0.1678,
+   0.0645,
+   1.2703,
+   0.1278,
+   -0.1018,
+   0.0121,
+   0.244
+  ],
+  "quarterly_revenue_growth_yoy": 0.1473,
+  "quarterly_revenue_growth_yoy_8q": [
+   -0.0277,
+   0.0377,
+   0.0481,
+   0.0616,
+   0.0744,
+   -0.0133,
+   0.0588,
+   0.1473
+  ],
+  "revenue_cagr_3y": 0.0596,
+  "revenue_cagr_5y": 0.1088,
+  "revenue_growth_accel": 0.0191,
+  "revenue_growth_qoq": 0.0594,
+  "revenue_growth_yoy": 0.0847,
+  "revenue_growth_yoy_q2": 0.0656,
+  "revenue_growth_yoy_q3": 0.0552,
+  "revenue_growth_yoy_q4": 0.0301,
+  "revenue_growth_yoy_q5": 0.0159,
+  "revenue_growth_yoy_q6": 0.0245,
+  "revenue_growth_yoy_q7": 0.0299,
+  "revenue_growth_yoy_q8": 0.0564,
+  "revenue_history_8q": [
+   785.659,
+   855.455,
+   871.161,
+   851.775,
+   844.099,
+   844.099,
+   922.399,
+   977.207
+  ],
+  "revenue_per_share": 18.5463,
+  "roa": 0.116,
+  "roce": 0.2048,
+  "roe": 0.1054,
+  "roic": null,
+  "rsi_14": 44.0506,
+  "sector_momentum": 0.0113,
+  "share_dilution_1y": -0.0128,
+  "stock_vs_sector_20d": -0.0229,
+  "stock_vs_spy_20d": -0.0572,
+  "total_assets": 38.29,
+  "vol_regime": 1.5575,
+  "volatility_20d": 0.034,
+  "volatility_60d": 0.0219,
+  "w52_high": 157.69,
+  "w52_low": 105.1
+ },
+ "market_characters": [
+  {
+   "id": "g1",
+   "name": "Steady Climbers"
+  },
+  {
+   "id": "g2",
+   "name": "Recent Momentum"
+  },
+  {
+   "id": "g5",
+   "name": "Quality Compressed"
+  }
+ ],
+ "model_analogs": {
+  "matches": [
+   {
+    "actual_downside": -0.0646,
+    "actual_return": 0.2586,
+    "actual_upside": 0.2586,
+    "days_in_region": 228,
+    "end_date": "2017-03-27",
+    "end_reason": "reversal",
+    "similarity": 0.9594,
+    "start_date": "2016-08-11",
+    "ticker": "ASX",
+    "trigger_date": "2016-11-15",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": -0.0226,
+    "actual_return": 0.2592,
+    "actual_upside": 0.2592,
+    "days_in_region": 158,
+    "end_date": "2019-02-25",
+    "end_reason": "reversal",
+    "similarity": 0.9578,
+    "start_date": "2018-09-20",
+    "ticker": "ROCK",
+    "trigger_date": "2018-10-25",
+    "trigger_type": "severe_drawdown"
+   },
+   {
+    "actual_downside": -0.132,
+    "actual_return": 0.0699,
+    "actual_upside": 0.0699,
+    "days_in_region": 139,
+    "end_date": "2019-01-31",
+    "end_reason": "reversal",
+    "similarity": 0.9572,
+    "start_date": "2018-09-14",
+    "ticker": "SSD",
+    "trigger_date": "2018-10-25",
+    "trigger_type": "severe_drawdown"
+   },
+   {
+    "actual_downside": -0.0999,
+    "actual_return": 0.0605,
+    "actual_upside": 0.0605,
+    "days_in_region": 146,
+    "end_date": "2019-02-20",
+    "end_reason": "reversal",
+    "similarity": 0.9562,
+    "start_date": "2018-09-27",
+    "ticker": "RGR",
+    "trigger_date": "2018-11-02",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": -0.1288,
+    "actual_return": 0.0994,
+    "actual_upside": 0.1227,
+    "days_in_region": 159,
+    "end_date": "2019-02-25",
+    "end_reason": "reversal",
+    "similarity": 0.9547,
+    "start_date": "2018-09-19",
+    "ticker": "BC",
+    "trigger_date": "2018-10-11",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": -0.1065,
+    "actual_return": 0.1434,
+    "actual_upside": 0.1434,
+    "days_in_region": 237,
+    "end_date": "2019-04-29",
+    "end_reason": "reversal",
+    "similarity": 0.9542,
+    "start_date": "2018-09-04",
+    "ticker": "ICFI",
+    "trigger_date": "2018-11-06",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": -0.0869,
+    "actual_return": 0.0588,
+    "actual_upside": 0.0588,
+    "days_in_region": 91,
+    "end_date": "2018-12-12",
+    "end_reason": "reversal",
+    "similarity": 0.9542,
+    "start_date": "2018-09-12",
+    "ticker": "PANW",
+    "trigger_date": "2018-10-10",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": -0.1941,
+    "actual_return": 0.1007,
+    "actual_upside": 0.1007,
+    "days_in_region": 230,
+    "end_date": "2019-04-23",
+    "end_reason": "reversal",
+    "similarity": 0.9541,
+    "start_date": "2018-09-05",
+    "ticker": "CACI",
+    "trigger_date": "2018-10-26",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": -0.0478,
+    "actual_return": 0.0934,
+    "actual_upside": 0.0934,
+    "days_in_region": 83,
+    "end_date": "2018-12-03",
+    "end_reason": "reversal",
+    "similarity": 0.9536,
+    "start_date": "2018-09-11",
+    "ticker": "KEYS",
+    "trigger_date": "2018-10-26",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": 0.0,
+    "actual_return": 0.406,
+    "actual_upside": 0.406,
+    "days_in_region": 190,
+    "end_date": "2017-02-16",
+    "end_reason": "reversal",
+    "similarity": 0.9535,
+    "start_date": "2016-08-10",
+    "ticker": "TAST",
+    "trigger_date": "2016-11-09",
+    "trigger_type": "drawdown"
+   }
+  ],
+  "stats": {
+   "avg_max_drawdown": 0.1032,
+   "avg_similarity": 0.95,
+   "avg_trough": 0.1032,
+   "avg_upside": 0.1658,
+   "best_return": 0.4944,
+   "downside_range": [
+    -0.3381,
+    0.0
+   ],
+   "median_return": 0.1343,
+   "n_matches": 50,
+   "outcome_agreement": true,
+   "return_p25": 0.0629,
+   "return_p5": -0.0792,
+   "return_p75": 0.2329,
+   "return_p95": 0.4001,
+   "sim_weighted_win_rate": 0.84,
+   "top5_avg_trough": 0.0896,
+   "top5_avg_upside": 0.1542,
+   "top_similarity": 0.959,
+   "upside_range": [
+    0.0,
+    0.4944
+   ],
+   "win_rate": 0.84,
+   "worst_return": -0.2222,
+   "years_span": 6
+  },
+  "total_matches": 50
+ },
+ "peer_group": {
+  "buckets": [
+   "Machinery, Heavy Equipment & Tools",
+   "Rail, Marine & Aviation Services and Asset Support"
+  ],
+  "groups": {
+   "Machinery, Heavy Equipment & Tools": [
+    {
+     "market_cap_m": 594.095,
+     "price_vs_sma200": 0.9062,
+     "return_30d": 0.3691,
+     "return_7d": 0.3839,
+     "revenue_driver": "industrial hoists and cranes",
+     "signal_rank": null,
+     "stock_vs_spy_20d": -0.0845,
+     "ticker": "CMCO"
+    },
+    {
+     "market_cap_m": 3942.2569,
+     "price_vs_sma200": 0.949,
+     "return_30d": -0.0131,
+     "return_7d": -0.0309,
+     "revenue_driver": "industrial labeling products",
+     "signal_rank": 369,
+     "stock_vs_spy_20d": -0.002,
+     "ticker": "BRC"
+    },
+    {
+     "market_cap_m": 6558.2,
+     "price_vs_sma200": 0.9368,
+     "return_30d": -0.0235,
+     "return_7d": -0.0887,
+     "revenue_driver": "inland tank barges",
+     "signal_rank": 718,
+     "stock_vs_spy_20d": -0.0572,
+     "ticker": "KEX"
+    },
+    {
+     "market_cap_m": 808.8954,
+     "price_vs_sma200": 0.7445,
+     "return_30d": -0.0686,
+     "return_7d": -0.0651,
+     "revenue_driver": "asphalt and concrete production equipment",
+     "signal_rank": 28,
+     "stock_vs_spy_20d": -0.0449,
+     "ticker": "ASTE"
+    },
+    {
+     "market_cap_m": 7285.0182,
+     "price_vs_sma200": 0.7742,
+     "return_30d": -0.0777,
+     "return_7d": 0.1227,
+     "revenue_driver": "rooftop HVAC units",
+     "signal_rank": null,
+     "stock_vs_spy_20d": -0.1157,
+     "ticker": "AAON"
+    },
+    {
+     "market_cap_m": 1746.0138,
+     "price_vs_sma200": 0.8494,
+     "return_30d": -0.0844,
+     "return_7d": -0.0722,
+     "revenue_driver": "vegetation management equipment",
+     "signal_rank": 87,
+     "stock_vs_spy_20d": -0.0665,
+     "ticker": "ALG"
+    },
+    {
+     "market_cap_m": 58219.666,
+     "price_vs_sma200": 0.8225,
+     "return_30d": -0.1,
+     "return_7d": -0.0686,
+     "revenue_driver": "oilfield services",
+     "signal_rank": 547,
+     "stock_vs_spy_20d": -0.0947,
+     "ticker": "BKR"
+    },
+    {
+     "market_cap_m": 1684.276,
+     "price_vs_sma200": 0.429,
+     "return_30d": -0.1712,
+     "return_7d": 0.1892,
+     "revenue_driver": "industrial boiler systems",
+     "signal_rank": 1941,
+     "stock_vs_spy_20d": 0.0108,
+     "ticker": "BW"
+    },
+    {
+     "market_cap_m": 302965.5722,
+     "price_vs_sma200": 0.7446,
+     "return_30d": -0.258,
+     "return_7d": -0.0196,
+     "revenue_driver": "heavy construction and mining equipment",
+     "signal_rank": 781,
+     "stock_vs_spy_20d": -0.1839,
+     "ticker": "CAT"
+    },
+    {
+     "market_cap_m": 51205.4878,
+     "price_vs_sma200": 0.7093,
+     "return_30d": -1.0,
+     "return_7d": -1.0,
+     "revenue_driver": "industrial laser systems",
+     "signal_rank": null,
+     "stock_vs_spy_20d": -0.355,
+     "ticker": "COHR"
+    }
+   ],
+   "Rail, Marine & Aviation Services and Asset Support": [
+    {
+     "market_cap_m": 1684.3386,
+     "price_vs_sma200": 1.1001,
+     "return_30d": 0.27,
+     "return_7d": 0.2569,
+     "revenue_driver": "low cost leisure airline tickets",
+     "signal_rank": 1206,
+     "stock_vs_spy_20d": 0.4516,
+     "ticker": "ALGT"
+    },
+    {
+     "market_cap_m": 4553.1906,
+     "price_vs_sma200": 0.9619,
+     "return_30d": 0.1252,
+     "return_7d": 0.0808,
+     "revenue_driver": "aircraft parts distribution",
+     "signal_rank": 1181,
+     "stock_vs_spy_20d": 0.1892,
+     "ticker": "AIR"
+    },
+    {
+     "market_cap_m": 90127.4308,
+     "price_vs_sma200": 1.1238,
+     "return_30d": 0.1159,
+     "return_7d": 0.0054,
+     "revenue_driver": "freight rail transportation",
+     "signal_rank": 424,
+     "stock_vs_spy_20d": 0.0879,
+     "ticker": "CSX"
+    },
+    {
+     "market_cap_m": 53653.9697,
+     "price_vs_sma200": 1.1787,
+     "return_30d": 0.0942,
+     "return_7d": 0.0947,
+     "revenue_driver": "passenger air travel",
+     "signal_rank": 712,
+     "stock_vs_spy_20d": 0.2043,
+     "ticker": "DAL"
+    },
+    {
+     "market_cap_m": 3985.382,
+     "price_vs_sma200": 0.9407,
+     "return_30d": 0.0602,
+     "return_7d": 0.0716,
+     "revenue_driver": "passenger airlines",
+     "signal_rank": 778,
+     "stock_vs_spy_20d": 0.1612,
+     "ticker": "ALK"
+    },
+    {
+     "market_cap_m": 128426.4666,
+     "price_vs_sma200": 1.0465,
+     "return_30d": 0.0546,
+     "return_7d": 0.078,
+     "revenue_driver": "passenger ticket sales",
+     "signal_rank": 699,
+     "stock_vs_spy_20d": 0.2088,
+     "ticker": "AAL"
+    },
+    {
+     "market_cap_m": 278.3915,
+     "price_vs_sma200": 0.7695,
+     "return_30d": 0.0248,
+     "return_7d": 0.1049,
+     "revenue_driver": "used aircraft sales",
+     "signal_rank": null,
+     "stock_vs_spy_20d": -0.1094,
+     "ticker": "ASLE"
+    },
+    {
+     "market_cap_m": 6558.2,
+     "price_vs_sma200": 0.9368,
+     "return_30d": -0.0235,
+     "return_7d": -0.0887,
+     "revenue_driver": "inland tank barges",
+     "signal_rank": 718,
+     "stock_vs_spy_20d": -0.0572,
+     "ticker": "KEX"
+    },
+    {
+     "market_cap_m": 7127.2194,
+     "price_vs_sma200": 1.1488,
+     "return_30d": -1.0,
+     "return_7d": -1.0,
+     "revenue_driver": "construction aggregates",
+     "signal_rank": null,
+     "stock_vs_spy_20d": 0.0232,
+     "ticker": "ACA"
+    },
+    {
+     "market_cap_m": 7226.7249,
+     "price_vs_sma200": 1.0384,
+     "return_30d": -1.0,
+     "return_7d": -1.0,
+     "revenue_driver": "aircraft leasing",
+     "signal_rank": null,
+     "stock_vs_spy_20d": 0.0051,
+     "ticker": "AL"
+    }
+   ]
+  }
+ },
+ "predictions": {
+  "badge_count": 0,
+  "confidence_score": 0.5419,
+  "conviction_label": "SPECULATIVE",
+  "data_quality_flags": [],
+  "ev_score": 0.104,
+  "is_diamond": false,
+  "passes_tradability_filter": true,
+  "quality_label": "HIGH",
+  "quantiles": {
+   "downside_q10": -0.2453,
+   "downside_q25": -0.1355,
+   "downside_q50": -0.0765,
+   "downside_q75": -0.0194,
+   "downside_q90": 0.0049,
+   "path_volatility": 0.0324,
+   "risk_reward": 2.3582,
+   "uncertainty": 0.3805,
+   "upside_q10": 0.0322,
+   "upside_q25": 0.0854,
+   "upside_q50": 0.1805,
+   "upside_q75": 0.2792,
+   "upside_q90": 0.4127
+  },
+  "rank": 718,
+  "rank_score": 0.0661,
+  "tradability_filter_reasons": []
+ },
+ "profile": {
+  "_local": {
+   "dividend_yield": 0.0,
+   "eps_growth_yoy": 0.2878,
+   "pe_ratio": 17.8994,
+   "revenue_growth_yoy": 0.0847,
+   "roe": 0.1054
+  },
+  "beta": 0.813,
+  "betaTTM": null,
+  "ceo": "David W. Grzebinski",
+  "companyName": "Kirby Corporation",
+  "country": "US",
+  "debtToEquityTTM": null,
+  "description": "Kirby Corporation is a leading operator of domestic tank barges within the United States. Its Marine Transportation division specializes in moving bulk liquid products, providing comprehensive marine transport and towing services. These operations cover an extensive network, including the Mississippi River System, the Gulf Intracoastal Waterway, all three U.S. coastlines, and extend to Alaska and Hawaii. The company transports a wide array of materials, such as petrochemicals, various black and refined petroleum products, and agricultural chemicals, primarily via tank barge. This segment also manages offshore dry-bulk barges and their accompanying tugboat units, facilitating the coastal transport of dry-bulk commodities across the U.S. As of December 31, 2021, Kirby's substantial fleet consisted of 1,025 inland tank barges, approximately 255 inland towboats, 31 coastal tank barges, 29 coastal tugboats, 4 offshore dry-bulk cargo barges, 4 offshore tugboats, and a single docking tugboat. The Distribution and Services segment focuses on providing critical support and equipment solutions. This includes selling aftermarket services and authentic replacement parts for a diverse range of machinery, such as engines, transmissions, reduction gears, electric motors, drives, controls, electrical distribution and control systems, energy storage battery systems, and related oilfield service equipment. A key offering is the rebuilding of essential components like diesel engines, transmissions, and reduction gears, along with other related equipment used across various sectors including oilfield services, marine, power generation, on-highway transportation, and other industrial applications. Additionally, this division rents out vital equipment, including generators, industrial compressors, high-capacity lift trucks, and refrigeration trailers. Kirby further extends its capabilities by manufacturing and remanufacturing oilfield service equipment, notably pressure pumping units, as well as producing electric power generation equipment, specialized electrical distribution and control systems, and robust energy storage/battery systems tailored for oilfield clients. Kirby Corporation serves a broad clientele, encompassing both various private businesses and the United States government. Established in 1921, the company was initially known as Kirby Exploration Company, Inc., before its renaming to Kirby Corporation in 1990. Its corporate headquarters are located in Houston, Texas.",
+  "dividendYielTTM": null,
+  "enterpriseValueOverEBITDATTM": null,
+  "exchangeShortName": "NYSE",
+  "fullTimeEmployees": "5233",
+  "industry": "Marine Shipping",
+  "ipoDate": "1980-03-17",
+  "latest_earnings_date": "2026-11-06",
+  "marketCapTTM": null,
+  "mktCap": 6767376000,
+  "peRatioTTM": null,
+  "price": 128.17,
+  "priceToSalesRatioTTM": null,
+  "returnOnEquityTTM": 0.1092,
+  "revenue_description": "Kirby operates inland tank barges and marine transportation services. Revenue is driven by freight volume and yield per shipment, with fuel surcharges and network density as key margin levers.",
+  "revenue_description_themes": [
+   "tank barge utilization and rates",
+   "petrochemical shipment volumes",
+   "marine engine aftermarket demand"
+  ],
+  "revenue_taxonomy": [
+   {
+    "bucket": "Rail, Marine & Aviation Services and Asset Support",
+    "matched_tags": [
+     "inland tank barges",
+     "coastal tank barges"
+    ],
+    "path": "Industrials & Transportation › Mobility & Logistics › Rail, Marine & Aviation Services and Asset Support",
+    "sector": "Industrials & Transportation",
+    "segment": "Mobility & Logistics"
+   },
+   {
+    "bucket": "Machinery, Heavy Equipment & Tools",
+    "matched_tags": [
+     "marine diesel engines"
+    ],
+    "path": "Industrials & Transportation › Industrial Products & Services › Machinery, Heavy Equipment & Tools",
+    "sector": "Industrials & Transportation",
+    "segment": "Industrial Products & Services"
+   }
+  ],
+  "revenue_themes": [
+   "inland tank barges",
+   "coastal tank barges",
+   "marine diesel engines"
+  ],
+  "sector": "Industrials",
+  "website": "https://kirbycorp.com"
+ },
+ "report": null,
+ "scorecard": {
+  "headline": {
+   "avg_universe_pct": 53,
+   "label": "mixed",
+   "metric_count": 7
+  },
+  "metrics": {
+   "debt_to_equity": {
+    "direction": "lower",
+    "label": "D/E Ratio",
+    "sector": "Industrials",
+    "sector_n": 337,
+    "sector_pct": 80,
+    "universe_n": 1981,
+    "universe_pct": 76,
+    "value": 0.0538
+   },
+   "eps_growth_yoy": {
+    "direction": "higher",
+    "label": "EPS Growth",
+    "sector": "Industrials",
+    "sector_n": 336,
+    "sector_pct": 65,
+    "universe_n": 1799,
+    "universe_pct": 60,
+    "value": 0.2878
+   },
+   "gross_margin": {
+    "direction": "higher",
+    "label": "Gross Margin",
+    "sector": "Industrials",
+    "sector_n": 320,
+    "sector_pct": 31,
+    "universe_n": 1915,
+    "universe_pct": 20,
+    "value": 0.2535
+   },
+   "operating_margin": {
+    "direction": "higher",
+    "label": "Op. Margin",
+    "sector": "Industrials",
+    "sector_n": 320,
+    "sector_pct": 67,
+    "universe_n": 1915,
+    "universe_pct": 57,
+    "value": 0.1354
+   },
+   "pe_ratio": {
+    "direction": "lower",
+    "label": "P/E",
+    "sector": "Industrials",
+    "sector_n": 245,
+    "sector_pct": 71,
+    "universe_n": 1436,
+    "universe_pct": 57,
+    "value": 17.8994
+   },
+   "revenue_growth_yoy": {
+    "direction": "higher",
+    "label": "Rev Growth",
+    "sector": "Industrials",
+    "sector_n": 319,
+    "sector_pct": 51,
+    "universe_n": 1747,
+    "universe_pct": 52,
+    "value": 0.0847
+   },
+   "roe": {
+    "direction": "higher",
+    "label": "ROE",
+    "sector": "Industrials",
+    "sector_n": 339,
+    "sector_pct": 53,
+    "universe_n": 1996,
+    "universe_pct": 52,
+    "value": 0.1054
+   }
+  }
+ },
+ "signal_rank": 718,
+ "structural_analogs": {
+  "gp_core_pct": 89.4,
+  "gp_core_ratio": 2.0085,
+  "matches": [
+   {
+    "actual_downside": 0.0,
+    "actual_return": 0.0439,
+    "actual_upside": 0.5263,
+    "days_in_region": 93,
+    "end_date": "1992-06-10",
+    "end_reason": "reversal",
+    "seq_len": 93,
+    "similarity": 0.5776,
+    "start_date": "1991-09-20",
+    "ticker": "BOBE",
+    "total_distance": 0.2744,
+    "trigger_date": "1991-10-04",
+    "trigger_type": "shallow_runup"
+   },
+   {
+    "actual_downside": -0.3216,
+    "actual_return": -0.1095,
+    "actual_upside": 0.0051,
+    "days_in_region": 97,
+    "end_date": "2020-04-09",
+    "end_reason": "reversal",
+    "seq_len": 97,
+    "similarity": 0.5758,
+    "start_date": "2020-01-08",
+    "ticker": "UNF",
+    "total_distance": 0.276,
+    "trigger_date": "2020-03-02",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": -0.05,
+    "actual_return": 0.2368,
+    "actual_upside": 0.4526,
+    "days_in_region": 108,
+    "end_date": "2013-05-09",
+    "end_reason": "reversal",
+    "seq_len": 108,
+    "similarity": 0.5733,
+    "start_date": "2012-08-27",
+    "ticker": "SAM",
+    "total_distance": 0.2782,
+    "trigger_date": "2012-11-05",
+    "trigger_type": "runup"
+   },
+   {
+    "actual_downside": -0.0126,
+    "actual_return": 0.1943,
+    "actual_upside": 0.1943,
+    "days_in_region": 106,
+    "end_date": "2013-02-08",
+    "end_reason": "reversal",
+    "seq_len": 106,
+    "similarity": 0.5726,
+    "start_date": "2012-09-06",
+    "ticker": "CRI",
+    "total_distance": 0.2788,
+    "trigger_date": "2012-11-12",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": -0.165,
+    "actual_return": 0.2607,
+    "actual_upside": 0.2607,
+    "days_in_region": 83,
+    "end_date": "2006-10-16",
+    "end_reason": "reversal",
+    "seq_len": 83,
+    "similarity": 0.5685,
+    "start_date": "2006-04-24",
+    "ticker": "RL",
+    "total_distance": 0.2824,
+    "trigger_date": "2006-05-24",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": -0.0264,
+    "actual_return": 0.3126,
+    "actual_upside": 0.3126,
+    "days_in_region": 104,
+    "end_date": "2014-04-23",
+    "end_reason": "reversal",
+    "seq_len": 104,
+    "similarity": 0.5682,
+    "start_date": "2013-11-27",
+    "ticker": "ALGT",
+    "total_distance": 0.2826,
+    "trigger_date": "2014-01-31",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": -0.0206,
+    "actual_return": 0.2196,
+    "actual_upside": 0.2196,
+    "days_in_region": 109,
+    "end_date": "2018-06-05",
+    "end_reason": "reversal",
+    "seq_len": 109,
+    "similarity": 0.5676,
+    "start_date": "2017-11-29",
+    "ticker": "SAFT",
+    "total_distance": 0.2832,
+    "trigger_date": "2018-02-08",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": 0.0,
+    "actual_return": 0.2076,
+    "actual_upside": 0.2076,
+    "days_in_region": 104,
+    "end_date": "2018-10-16",
+    "end_reason": "reversal",
+    "seq_len": 104,
+    "similarity": 0.5664,
+    "start_date": "2018-04-23",
+    "ticker": "LHX",
+    "total_distance": 0.2843,
+    "trigger_date": "2018-05-03",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": -0.3543,
+    "actual_return": -0.2069,
+    "actual_upside": 0.0275,
+    "days_in_region": 94,
+    "end_date": "2020-03-26",
+    "end_reason": "reversal",
+    "seq_len": 94,
+    "similarity": 0.5655,
+    "start_date": "2020-01-13",
+    "ticker": "HURN",
+    "total_distance": 0.285,
+    "trigger_date": "2020-03-02",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": 0.0,
+    "actual_return": 0.2453,
+    "actual_upside": 0.2453,
+    "days_in_region": 85,
+    "end_date": "2006-09-05",
+    "end_reason": "reversal",
+    "seq_len": 85,
+    "similarity": 0.5652,
+    "start_date": "2006-05-09",
+    "ticker": "WNG",
+    "total_distance": 0.2853,
+    "trigger_date": "2006-06-12",
+    "trigger_type": "drawdown"
+   }
+  ],
+  "panel": {
+   "edge": 0.1078,
+   "hit_hi": 0.815,
+   "hit_lo": 0.66,
+   "hit_rate": 0.745,
+   "median_final": 0.155,
+   "median_pain": 0.0289,
+   "n": 51,
+   "n_eff": 51.0,
+   "p25_final": -0.0008,
+   "p_pain_gt5": 0.451,
+   "return_to_pain": 3.169
+  },
+  "stats": {
+   "avg_similarity": 0.541,
+   "avg_trough": 0.0854,
+   "avg_upside": 0.1551,
+   "median_pain": 0.0586,
+   "median_return": 0.1277,
+   "n_matches": 200,
+   "p25_return": 0.0338,
+   "p_pain_gt5": 0.54,
+   "return_to_pain": 1.625,
+   "top5_avg_trough": 0.1098,
+   "top5_avg_upside": 0.2878,
+   "top_similarity": 0.578,
+   "win_rate": 0.77
+  },
+  "total_matches": 200
+ },
+ "ticker": "KEX",
+ "trending": {
+  "acceleration": -0.0031,
+  "avg_vol_20d": 521205.9125,
+  "base_high_120": 152.63,
+  "breakout_confirmed": 0,
+  "close": 143.42,
+  "momentum_score": 0.4648,
+  "momentum_start": "2025-10-30",
+  "range_20": 0.0811,
+  "range_50": 0.1805,
+  "rank": 487,
+  "rank_down": null,
+  "rank_up": 359,
+  "ret_120": 0.2837,
+  "ret_20": -0.0268,
+  "ret_60": 0.1392,
+  "rundown_score": 0.6773,
+  "score_date": "2026-06-12",
+  "slope_20": -0.002,
+  "slope_60": 0.001,
+  "stage": "sustained",
+  "stage_label": "Trending",
+  "ticker": "KEX",
+  "total_score": 0.5164,
+  "trend_ratio": 1.1344,
+  "vcp_detected": 1,
+  "vcp_score": 0.5508
+ }
+}

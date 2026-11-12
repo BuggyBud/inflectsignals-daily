@@ -1,0 +1,932 @@
+{
+ "date": "2026-11-11",
+ "detected_regions": {
+  "primary": {
+   "days_in_region": 178,
+   "region_start": "2026-05-27",
+   "trigger_date": "2026-10-15",
+   "trigger_type": "severe_drawdown"
+  },
+  "secondary": [
+   {
+    "confidence_score": 0.884,
+    "downside_q50": -0.0653,
+    "ev_score": 0.0821,
+    "region_start": "2026-02-04",
+    "seq_len": 200,
+    "trigger_date": "2026-02-11",
+    "trigger_type": "shallow_drawdown",
+    "upside_q25": 0.0715,
+    "upside_q50": 0.1464,
+    "upside_q75": 0.2516
+   }
+  ]
+ },
+ "feature_attribution": {
+  "macro_driver_count": 14,
+  "risk_flags": [],
+  "top_drivers": [
+   {
+    "direction": "negative",
+    "feature": "correlation_spy_60d",
+    "feature_value": -0.4019,
+    "importance": 0.0001,
+    "importance_pct": 0.2045,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "negative",
+    "feature": "volatility_20d",
+    "feature_value": 0.0225,
+    "importance": 0.0001,
+    "importance_pct": 0.1989,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "positive",
+    "feature": "sector_rank_1d",
+    "feature_value": 0.6364,
+    "importance": 0.0001,
+    "importance_pct": 0.1594,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "negative",
+    "feature": "beta_252d",
+    "feature_value": -0.1381,
+    "importance": 0.0001,
+    "importance_pct": 0.1495,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "negative",
+    "feature": "price_vs_low_52w",
+    "feature_value": 1.0,
+    "importance": 0.0001,
+    "importance_pct": 0.1439,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "negative",
+    "feature": "rsi_overbought",
+    "feature_value": 0.0,
+    "importance": 0.0001,
+    "importance_pct": 0.1439,
+    "method": "integrated_gradients"
+   }
+  ]
+ },
+ "fundamentals": {
+  "accrual": -0.1252,
+  "adx_14": 24.6451,
+  "altman_z_score": 1.7781,
+  "amihud_illiquidity": 0.0011,
+  "avg_volume": 356214.9554,
+  "beta_252d": -0.1381,
+  "book_value_per_share": 55.444,
+  "correlation_spy_60d": -0.4019,
+  "current_liabilities": 869.201,
+  "current_ratio": 2.5439,
+  "daily_earnings_yield": -0.0026,
+  "daily_fcf_yield": 0.2704,
+  "daily_pb": 0.6807,
+  "daily_pe": -383.9837,
+  "daily_ps": 0.3474,
+  "days_since_52w_high": 365.0,
+  "debt_ebitda": 6.0396,
+  "debt_to_equity": 0.8866,
+  "dividend_yield": 0.0213,
+  "dollar_volume_20d_avg": 17057213.9619,
+  "earnings_quality": -7.6826,
+  "ebitda_growth_yoy": -0.3355,
+  "enterprise_value": 2130.6269,
+  "eps_basic": 0.5,
+  "eps_cagr_3y": -1.2781,
+  "eps_cagr_5y": -1.4911,
+  "eps_diluted": 0.5,
+  "eps_growth_accel": -0.2668,
+  "eps_growth_qoq": 3.5,
+  "eps_growth_yoy": -1.0224,
+  "eps_growth_yoy_q2": -0.7556,
+  "eps_growth_yoy_q3": -0.7039,
+  "eps_growth_yoy_q4": -0.4481,
+  "eps_growth_yoy_q5": -0.0898,
+  "eps_growth_yoy_q6": -0.3534,
+  "eps_growth_yoy_q7": -0.181,
+  "eps_growth_yoy_q8": 0.2571,
+  "eps_history_8q": [
+   2.37,
+   0.37,
+   0.34,
+   1.36,
+   1.32,
+   -1.72,
+   -0.2,
+   0.5
+  ],
+  "eps_ttm": -0.0988,
+  "ev_to_ebitda": 10.4458,
+  "ev_to_fcf": -18.3201,
+  "ev_to_sales": 3.4263,
+  "fcf_growth_yoy": -0.2934,
+  "fcf_margin": -0.187,
+  "fcf_per_share": -4.641,
+  "gross_margin": 0.1645,
+  "gross_margin_change_yoy": -0.0305,
+  "gross_margin_history": [
+   0.2125,
+   0.2079,
+   0.1961,
+   0.1841,
+   0.1729,
+   0.1645
+  ],
+  "inc_roic": -5.38,
+  "interest_coverage": 2.8383,
+  "is_pre_revenue": false,
+  "margin_vs_sector_median": null,
+  "market_cap_ratio": 945.752,
+  "net_income": 12.582,
+  "net_margin": -0.0009,
+  "operating_income": 42.645,
+  "operating_margin": 0.0558,
+  "operating_margin_change_yoy": -0.0211,
+  "pb_ratio": 0.6845,
+  "pe_percentile_1y": 0.9802,
+  "pe_ratio": -397.5,
+  "peg_trailing": 3.8874,
+  "piotroski_f_score": 2.0,
+  "price_vs_high_52w": 0.6457,
+  "price_vs_sma200": 0.7631,
+  "ps_percentile_1y": 0.9643,
+  "ps_ratio": 0.3639,
+  "quarter_labels_8q": [
+   "Q3 '24",
+   "Q4 '24",
+   "Q1 '25",
+   "Q2 '25",
+   "Q3 '25",
+   "Q4 '26",
+   "Q1 '26",
+   "Q2 '26"
+  ],
+  "quarterly_eps_growth_yoy": -0.6324,
+  "quarterly_eps_growth_yoy_8q": [
+   0.1179,
+   -0.7702,
+   10.0,
+   0.3204,
+   -0.443,
+   -5.6486,
+   -1.5882,
+   -0.6324
+  ],
+  "quarterly_revenue_growth_yoy": -0.1755,
+  "quarterly_revenue_growth_yoy_8q": [
+   0.1408,
+   -0.089,
+   -0.0055,
+   0.0611,
+   -0.081,
+   0.0185,
+   -0.1179,
+   -0.1755
+  ],
+  "revenue_cagr_3y": 0.008,
+  "revenue_cagr_5y": 0.0617,
+  "revenue_growth_accel": -0.0973,
+  "revenue_growth_qoq": 0.1872,
+  "revenue_growth_yoy": -0.0888,
+  "revenue_growth_yoy_q2": 0.0086,
+  "revenue_growth_yoy_q3": -0.0276,
+  "revenue_growth_yoy_q4": -0.0688,
+  "revenue_growth_yoy_q5": 0.0564,
+  "revenue_growth_yoy_q6": 0.0297,
+  "revenue_growth_yoy_q7": 0.1256,
+  "revenue_growth_yoy_q8": 0.182,
+  "revenue_history_8q": [
+   937.193,
+   702.279,
+   593.762,
+   754.177,
+   861.288,
+   715.243,
+   523.779,
+   621.845
+  ],
+  "revenue_per_share": 24.8148,
+  "roa": -0.0008,
+  "roce": 0.0703,
+  "roe": -0.0018,
+  "roic": -0.0011,
+  "rsi_14": 32.8181,
+  "sector_momentum": 0.0617,
+  "share_dilution_1y": 0.0,
+  "stock_vs_sector_20d": -0.1193,
+  "stock_vs_spy_20d": -0.0542,
+  "total_assets": 3030.461,
+  "vol_regime": 1.4611,
+  "volatility_20d": 0.0225,
+  "volatility_60d": 0.0154,
+  "w52_high": 59.38,
+  "w52_low": 37.38
+ },
+ "market_characters": [],
+ "model_analogs": {
+  "matches": [
+   {
+    "actual_downside": 0.0,
+    "actual_return": 0.1658,
+    "actual_upside": 0.1658,
+    "days_in_region": 245,
+    "end_date": "2018-12-06",
+    "end_reason": "reversal",
+    "similarity": 0.9312,
+    "start_date": "2018-04-05",
+    "ticker": "TWNK",
+    "trigger_date": "2018-08-09",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": -0.2075,
+    "actual_return": 0.1736,
+    "actual_upside": 0.1736,
+    "days_in_region": 222,
+    "end_date": "2019-02-20",
+    "end_reason": "reversal",
+    "similarity": 0.9224,
+    "start_date": "2018-07-13",
+    "ticker": "ACCO",
+    "trigger_date": "2018-10-10",
+    "trigger_type": "severe_drawdown"
+   },
+   {
+    "actual_downside": -0.0265,
+    "actual_return": 0.211,
+    "actual_upside": 0.211,
+    "days_in_region": 175,
+    "end_date": "2006-01-23",
+    "end_reason": "reversal",
+    "similarity": 0.9214,
+    "start_date": "2005-08-01",
+    "ticker": "CTB",
+    "trigger_date": "2005-09-29",
+    "trigger_type": "severe_drawdown"
+   },
+   {
+    "actual_downside": -0.0114,
+    "actual_return": 0.1591,
+    "actual_upside": 0.1591,
+    "days_in_region": 449,
+    "end_date": "1991-02-21",
+    "end_reason": "reversal",
+    "similarity": 0.9208,
+    "start_date": "1989-11-29",
+    "ticker": "UHT",
+    "trigger_date": "1990-05-10",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": 0.0,
+    "actual_return": 0.2299,
+    "actual_upside": 0.2299,
+    "days_in_region": 365,
+    "end_date": "1990-06-13",
+    "end_reason": "reversal",
+    "similarity": 0.9201,
+    "start_date": "1989-06-13",
+    "ticker": "CMI",
+    "trigger_date": "1989-10-13",
+    "trigger_type": "severe_drawdown"
+   },
+   {
+    "actual_downside": -0.0072,
+    "actual_return": 1.1167,
+    "actual_upside": 1.1167,
+    "days_in_region": 175,
+    "end_date": "2006-02-06",
+    "end_reason": "reversal",
+    "similarity": 0.9199,
+    "start_date": "2005-08-15",
+    "ticker": "CENX",
+    "trigger_date": "2005-10-27",
+    "trigger_type": "severe_drawdown"
+   },
+   {
+    "actual_downside": 0.0,
+    "actual_return": 0.3589,
+    "actual_upside": 0.3589,
+    "days_in_region": 302,
+    "end_date": "2006-10-20",
+    "end_reason": "reversal",
+    "similarity": 0.9195,
+    "start_date": "2005-12-22",
+    "ticker": "KOSP",
+    "trigger_date": "2006-06-13",
+    "trigger_type": "severe_drawdown"
+   },
+   {
+    "actual_downside": -0.0113,
+    "actual_return": 0.1634,
+    "actual_upside": 0.357,
+    "days_in_region": 333,
+    "end_date": "2006-04-11",
+    "end_reason": "reversal",
+    "similarity": 0.9193,
+    "start_date": "2005-05-13",
+    "ticker": "ARCB",
+    "trigger_date": "2005-07-21",
+    "trigger_type": "runup"
+   },
+   {
+    "actual_downside": -0.0091,
+    "actual_return": 0.1963,
+    "actual_upside": 0.1963,
+    "days_in_region": 273,
+    "end_date": "2005-12-02",
+    "end_reason": "reversal",
+    "similarity": 0.9188,
+    "start_date": "2005-03-04",
+    "ticker": "ACAT",
+    "trigger_date": "2005-08-23",
+    "trigger_type": "severe_drawdown"
+   },
+   {
+    "actual_downside": -0.0422,
+    "actual_return": 0.0923,
+    "actual_upside": 0.0923,
+    "days_in_region": 211,
+    "end_date": "2014-10-31",
+    "end_reason": "reversal",
+    "similarity": 0.9187,
+    "start_date": "2014-04-03",
+    "ticker": "DGII",
+    "trigger_date": "2014-09-22",
+    "trigger_type": "severe_drawdown"
+   }
+  ],
+  "stats": {
+   "avg_max_drawdown": 0.0961,
+   "avg_similarity": 0.916,
+   "avg_trough": 0.0961,
+   "avg_upside": 0.2138,
+   "best_return": 1.1167,
+   "downside_range": [
+    -0.4004,
+    0.0
+   ],
+   "median_return": 0.1822,
+   "n_matches": 50,
+   "outcome_agreement": true,
+   "return_p25": 0.0708,
+   "return_p5": -0.1699,
+   "return_p75": 0.2932,
+   "return_p95": 0.3941,
+   "sim_weighted_win_rate": 0.82,
+   "top5_avg_trough": 0.0491,
+   "top5_avg_upside": 0.1879,
+   "top_similarity": 0.931,
+   "upside_range": [
+    0.0,
+    1.1167
+   ],
+   "win_rate": 0.82,
+   "worst_return": -0.3164,
+   "years_span": 13
+  },
+  "total_matches": 50
+ },
+ "peer_group": {
+  "buckets": [
+   "Food Ingredients, Flavors & Specialty Ingredients",
+   "Tobacco, Nicotine, Cannabis & Adult-Use Consumer Products"
+  ],
+  "groups": {
+   "Food Ingredients, Flavors & Specialty Ingredients": [
+    {
+     "market_cap_m": 356.2486,
+     "price_vs_sma200": 1.0146,
+     "return_30d": 0.3711,
+     "return_7d": 0.0683,
+     "revenue_driver": "distilled spirits production",
+     "signal_rank": 1467,
+     "stock_vs_spy_20d": 0.2883,
+     "ticker": "MGPI"
+    },
+    {
+     "market_cap_m": 1004.0752,
+     "price_vs_sma200": 1.2129,
+     "return_30d": 0.0684,
+     "return_7d": -0.1144,
+     "revenue_driver": "packaged beverages and coffee",
+     "signal_rank": 338,
+     "stock_vs_spy_20d": 0.0773,
+     "ticker": "WEST"
+    },
+    {
+     "market_cap_m": 5732.322,
+     "price_vs_sma200": 1.0216,
+     "return_30d": 0.0506,
+     "return_7d": -0.0074,
+     "revenue_driver": "nutrition ingredients",
+     "signal_rank": 665,
+     "stock_vs_spy_20d": 0.0296,
+     "ticker": "BCPC"
+    },
+    {
+     "market_cap_m": 867.7772,
+     "price_vs_sma200": 0.8892,
+     "return_30d": 0.0407,
+     "return_7d": 0.0971,
+     "revenue_driver": "ethanol production",
+     "signal_rank": 1380,
+     "stock_vs_spy_20d": 0.0507,
+     "ticker": "ALTO"
+    },
+    {
+     "market_cap_m": 23606.9293,
+     "price_vs_sma200": 1.0446,
+     "return_30d": -0.0099,
+     "return_7d": -0.1266,
+     "revenue_driver": "flavor ingredients",
+     "signal_rank": 1016,
+     "stock_vs_spy_20d": -0.0647,
+     "ticker": "IFF"
+    },
+    {
+     "market_cap_m": 5826.9716,
+     "price_vs_sma200": 0.8856,
+     "return_30d": -0.0311,
+     "return_7d": -0.0617,
+     "revenue_driver": "food starch and sweeteners",
+     "signal_rank": 632,
+     "stock_vs_spy_20d": -0.0332,
+     "ticker": "INGR"
+    },
+    {
+     "market_cap_m": 4997.1577,
+     "price_vs_sma200": 1.0357,
+     "return_30d": -0.0911,
+     "return_7d": 0.005,
+     "revenue_driver": "natural and synthetic colors",
+     "signal_rank": 903,
+     "stock_vs_spy_20d": -0.0928,
+     "ticker": "SXT"
+    },
+    {
+     "market_cap_m": 990.6097,
+     "price_vs_sma200": 0.7631,
+     "return_30d": -0.0919,
+     "return_7d": -0.0664,
+     "revenue_driver": "leaf tobacco processing",
+     "signal_rank": 519,
+     "stock_vs_spy_20d": -0.0542,
+     "ticker": "UVV"
+    },
+    {
+     "market_cap_m": 33928.242,
+     "price_vs_sma200": 0.925,
+     "return_30d": -0.1066,
+     "return_7d": -0.064,
+     "revenue_driver": "ag origination and trading",
+     "signal_rank": 588,
+     "stock_vs_spy_20d": -0.1392,
+     "ticker": "ADM"
+    },
+    {
+     "market_cap_m": 26.04,
+     "price_vs_sma200": 0.9599,
+     "return_30d": -1.0,
+     "return_7d": -1.0,
+     "revenue_driver": "spices and seasonings",
+     "signal_rank": null,
+     "stock_vs_spy_20d": 0.0252,
+     "ticker": "MKC"
+    }
+   ],
+   "Tobacco, Nicotine, Cannabis & Adult-Use Consumer Products": [
+    {
+     "market_cap_m": 5514.6718,
+     "price_vs_sma200": 0.9957,
+     "return_30d": 0.1596,
+     "return_7d": 0.0732,
+     "revenue_driver": "acetyl chain chemicals",
+     "signal_rank": 1203,
+     "stock_vs_spy_20d": 0.1358,
+     "ticker": "CE"
+    },
+    {
+     "market_cap_m": 422379.9139,
+     "price_vs_sma200": 1.1138,
+     "return_30d": 0.1492,
+     "return_7d": 0.0029,
+     "revenue_driver": "premium cigarettes",
+     "signal_rank": 1132,
+     "stock_vs_spy_20d": 0.0712,
+     "ticker": "MO"
+    },
+    {
+     "market_cap_m": 310502.7813,
+     "price_vs_sma200": 1.0727,
+     "return_30d": 0.029,
+     "return_7d": -0.0573,
+     "revenue_driver": "combustible cigarette sales",
+     "signal_rank": 1120,
+     "stock_vs_spy_20d": -0.032,
+     "ticker": "PM"
+    },
+    {
+     "market_cap_m": 1206.4315,
+     "price_vs_sma200": 0.6958,
+     "return_30d": 0.0019,
+     "return_7d": -0.1154,
+     "revenue_driver": "modern oral nicotine products",
+     "signal_rank": 1468,
+     "stock_vs_spy_20d": 0.0321,
+     "ticker": "TPB"
+    },
+    {
+     "market_cap_m": 990.6097,
+     "price_vs_sma200": 0.7631,
+     "return_30d": -0.0919,
+     "return_7d": -0.0664,
+     "revenue_driver": "leaf tobacco processing",
+     "signal_rank": 519,
+     "stock_vs_spy_20d": -0.0542,
+     "ticker": "UVV"
+    },
+    {
+     "market_cap_m": 403.1067,
+     "price_vs_sma200": 0.4999,
+     "return_30d": -0.304,
+     "return_7d": 0.0235,
+     "revenue_driver": "cannabis cultivation and distribution",
+     "signal_rank": 232,
+     "stock_vs_spy_20d": -0.1559,
+     "ticker": "TLRY"
+    }
+   ]
+  }
+ },
+ "predictions": {
+  "badge_count": 1,
+  "confidence_score": 0.8227,
+  "conviction_label": "SPECULATIVE",
+  "data_quality_flags": [],
+  "ev_score": 0.0898,
+  "is_diamond": false,
+  "passes_tradability_filter": false,
+  "quality_label": "WEAK",
+  "quantiles": {
+   "downside_q10": -0.2208,
+   "downside_q25": -0.1357,
+   "downside_q50": -0.0658,
+   "downside_q75": -0.0208,
+   "downside_q90": -0.0047,
+   "path_volatility": 0.0215,
+   "risk_reward": 2.3283,
+   "uncertainty": 0.3583,
+   "upside_q10": 0.0247,
+   "upside_q25": 0.0737,
+   "upside_q50": 0.1532,
+   "upside_q75": 0.2655,
+   "upside_q90": 0.383
+  },
+  "rank": 519,
+  "rank_score": 0.0835,
+  "tradability_filter_reasons": [
+   "market_cap_below_1b"
+  ]
+ },
+ "profile": {
+  "_local": {
+   "dividend_yield": 0.0213,
+   "eps_growth_yoy": -1.0224,
+   "pe_ratio": -397.5,
+   "revenue_growth_yoy": -0.0888,
+   "roe": -0.0018
+  },
+  "beta": 0.597,
+  "betaTTM": null,
+  "ceo": "Preston Douglas Wigner",
+  "companyName": "Universal Corporation",
+  "country": "US",
+  "debtToEquityTTM": null,
+  "description": "Universal Corporation is a global agricultural enterprise specializing in the processing and supply of leaf tobacco and a diverse range of plant-based ingredients. Its activities are organized into two primary segments: Tobacco Operations and Ingredients Operations. Within its Tobacco Operations, the company manages the entire supply chain, encompassing the procurement, financing, processing, packing, storage, and distribution of leaf tobacco to global manufacturers of consumer tobacco products. This includes sourcing and selling flue-cured, burley, and oriental tobaccos predominantly for cigarette production, as well as dark air-cured tobaccos used in cigars, cigarillos, smokeless products, and pipe tobacco. Beyond raw material supply, Universal Corporation offers a suite of value-added services such as tobacco blending, comprehensive chemical and physical testing, custom cutting for manufacturers, the production of reconstituted leaf tobacco, and just-in-time inventory management. It also supports the electronic nicotine delivery systems market and provides smoke testing. Furthermore, its analytical capabilities extend to testing for crop protection agents and tobacco components in seeds, leaves, and final products like e-cigarette liquids and vapors, alongside detailed chemical compound analysis of finished tobacco products and their mainstream smoke. The Ingredients Operations segment leverages advanced manufacturing processes to create specialized vegetable and fruit-derived ingredients, botanical extracts, and flavorings, catering to both human and pet food industries. An additional aspect of its operations involves recycling waste generated from tobacco processing. Established in 1886, the company maintains its headquarters in Richmond, Virginia.",
+  "dividendYielTTM": null,
+  "enterpriseValueOverEBITDATTM": null,
+  "exchangeShortName": "NYSE",
+  "fullTimeEmployees": "11250",
+  "industry": "Tobacco",
+  "ipoDate": "1988-01-05",
+  "latest_earnings_date": "2026-11-04",
+  "marketCapTTM": null,
+  "mktCap": 945979650,
+  "peRatioTTM": null,
+  "price": 37.95,
+  "priceToSalesRatioTTM": null,
+  "returnOnEquityTTM": -0.0017,
+  "revenue_description": "Universal produces and processes leaf tobacco and related ingredients. Revenue is driven by unit volume growth and pricing realization in its core end markets, with new product introductions and geographic expansion as incremental catalysts.",
+  "revenue_description_themes": [
+   "leaf tobacco demand recovery",
+   "pricing above crop costs",
+   "ingredients business expansion"
+  ],
+  "revenue_taxonomy": [
+   {
+    "bucket": "Tobacco, Nicotine, Cannabis & Adult-Use Consumer Products",
+    "matched_tags": [
+     "leaf tobacco processing",
+     "tobacco supply to manufacturers"
+    ],
+    "path": "Consumer Goods & Retail › Food Beverage & Staples › Tobacco, Nicotine, Cannabis & Adult-Use Consumer Products",
+    "sector": "Consumer Goods & Retail",
+    "segment": "Food Beverage & Staples"
+   },
+   {
+    "bucket": "Food Ingredients, Flavors & Specialty Ingredients",
+    "matched_tags": [
+     "plant-based ingredients"
+    ],
+    "path": "Consumer Goods & Retail › Food Beverage & Staples › Food Ingredients, Flavors & Specialty Ingredients",
+    "sector": "Consumer Goods & Retail",
+    "segment": "Food Beverage & Staples"
+   }
+  ],
+  "revenue_themes": [
+   "leaf tobacco processing",
+   "tobacco supply to manufacturers",
+   "plant-based ingredients"
+  ],
+  "sector": "Consumer Defensive",
+  "website": "https://investor.universalcorp.com"
+ },
+ "report": null,
+ "scorecard": {
+  "headline": {
+   "avg_universe_pct": 22,
+   "label": "below_average",
+   "metric_count": 7
+  },
+  "metrics": {
+   "debt_to_equity": {
+    "direction": "lower",
+    "label": "D/E Ratio",
+    "sector": "Consumer Staples",
+    "sector_n": 62,
+    "sector_pct": 42,
+    "universe_n": 1981,
+    "universe_pct": 29,
+    "value": 0.8866
+   },
+   "eps_growth_yoy": {
+    "direction": "higher",
+    "label": "EPS Growth",
+    "sector": "Consumer Staples",
+    "sector_n": 64,
+    "sector_pct": 14,
+    "universe_n": 1799,
+    "universe_pct": 10,
+    "value": -1.0224
+   },
+   "gross_margin": {
+    "direction": "higher",
+    "label": "Gross Margin",
+    "sector": "Consumer Staples",
+    "sector_n": 64,
+    "sector_pct": 12,
+    "universe_n": 1915,
+    "universe_pct": 11,
+    "value": 0.1645
+   },
+   "operating_margin": {
+    "direction": "higher",
+    "label": "Op. Margin",
+    "sector": "Consumer Staples",
+    "sector_n": 64,
+    "sector_pct": 39,
+    "universe_n": 1915,
+    "universe_pct": 33,
+    "value": 0.0558
+   },
+   "revenue_growth_yoy": {
+    "direction": "higher",
+    "label": "Rev Growth",
+    "sector": "Consumer Staples",
+    "sector_n": 64,
+    "sector_pct": 3,
+    "universe_n": 1747,
+    "universe_pct": 9,
+    "value": -0.0888
+   },
+   "roe": {
+    "direction": "higher",
+    "label": "ROE",
+    "sector": "Consumer Staples",
+    "sector_n": 64,
+    "sector_pct": 27,
+    "universe_n": 1996,
+    "universe_pct": 26,
+    "value": -0.0018
+   },
+   "roic": {
+    "direction": "higher",
+    "label": "ROIC",
+    "sector": "Consumer Staples",
+    "sector_n": 61,
+    "sector_pct": 20,
+    "universe_n": 1965,
+    "universe_pct": 34,
+    "value": 0.0058
+   }
+  }
+ },
+ "signal_rank": 519,
+ "structural_analogs": {
+  "gp_core_pct": 74.8,
+  "gp_core_ratio": 1.6458,
+  "matches": [
+   {
+    "actual_downside": -0.0211,
+    "actual_return": 0.1895,
+    "actual_upside": 0.1895,
+    "days_in_region": 175,
+    "end_date": "1999-11-17",
+    "end_reason": "reversal",
+    "seq_len": 175,
+    "similarity": 0.5796,
+    "start_date": "1999-05-10",
+    "ticker": "ADM",
+    "total_distance": 0.2727,
+    "trigger_date": "1999-10-20",
+    "trigger_type": "severe_drawdown"
+   },
+   {
+    "actual_downside": -0.3036,
+    "actual_return": 0.1458,
+    "actual_upside": 0.1458,
+    "days_in_region": 176,
+    "end_date": "2019-02-06",
+    "end_reason": "reversal",
+    "seq_len": 176,
+    "similarity": 0.5777,
+    "start_date": "2018-06-12",
+    "ticker": "LABL",
+    "total_distance": 0.2743,
+    "trigger_date": "2018-08-29",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": -0.1824,
+    "actual_return": 0.1094,
+    "actual_upside": 0.1094,
+    "days_in_region": 181,
+    "end_date": "2000-04-26",
+    "end_reason": "reversal",
+    "seq_len": 181,
+    "similarity": 0.572,
+    "start_date": "1999-05-28",
+    "ticker": "WEC",
+    "total_distance": 0.2793,
+    "trigger_date": "1999-11-17",
+    "trigger_type": "severe_drawdown"
+   },
+   {
+    "actual_downside": -0.1534,
+    "actual_return": 0.0208,
+    "actual_upside": 0.0208,
+    "days_in_region": 167,
+    "end_date": "2018-04-27",
+    "end_reason": "reversal",
+    "seq_len": 167,
+    "similarity": 0.572,
+    "start_date": "2017-09-05",
+    "ticker": "B",
+    "total_distance": 0.2793,
+    "trigger_date": "2018-02-06",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": -0.0237,
+    "actual_return": 0.2221,
+    "actual_upside": 0.2221,
+    "days_in_region": 132,
+    "end_date": "2015-12-24",
+    "end_reason": "reversal",
+    "seq_len": 132,
+    "similarity": 0.5626,
+    "start_date": "2015-05-22",
+    "ticker": "SAFM",
+    "total_distance": 0.2876,
+    "trigger_date": "2015-09-02",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": -0.0752,
+    "actual_return": 0.2241,
+    "actual_upside": 0.2241,
+    "days_in_region": 169,
+    "end_date": "2019-02-20",
+    "end_reason": "reversal",
+    "seq_len": 169,
+    "similarity": 0.5605,
+    "start_date": "2018-07-06",
+    "ticker": "PLYA",
+    "total_distance": 0.2895,
+    "trigger_date": "2018-09-07",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": -0.1295,
+    "actual_return": 0.0129,
+    "actual_upside": 0.0393,
+    "days_in_region": 136,
+    "end_date": "2019-02-26",
+    "end_reason": "reversal",
+    "seq_len": 136,
+    "similarity": 0.5601,
+    "start_date": "2018-07-09",
+    "ticker": "ETD",
+    "total_distance": 0.2898,
+    "trigger_date": "2018-07-30",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": -0.1814,
+    "actual_return": -0.0425,
+    "actual_upside": 0.0489,
+    "days_in_region": 167,
+    "end_date": "2015-03-24",
+    "end_reason": "reversal",
+    "seq_len": 167,
+    "similarity": 0.5596,
+    "start_date": "2014-07-08",
+    "ticker": "GES",
+    "total_distance": 0.2903,
+    "trigger_date": "2014-12-05",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": 0.0,
+    "actual_return": 0.3761,
+    "actual_upside": 0.3761,
+    "days_in_region": 180,
+    "end_date": "1991-02-07",
+    "end_reason": "reversal",
+    "seq_len": 180,
+    "similarity": 0.5593,
+    "start_date": "1990-05-01",
+    "ticker": "ELME",
+    "total_distance": 0.2906,
+    "trigger_date": "1990-10-18",
+    "trigger_type": "severe_drawdown"
+   },
+   {
+    "actual_downside": -0.004,
+    "actual_return": 0.0924,
+    "actual_upside": 0.0924,
+    "days_in_region": 149,
+    "end_date": "1999-11-02",
+    "end_reason": "reversal",
+    "seq_len": 149,
+    "similarity": 0.558,
+    "start_date": "1999-05-12",
+    "ticker": "NHP",
+    "total_distance": 0.2917,
+    "trigger_date": "1999-08-23",
+    "trigger_type": "severe_drawdown"
+   }
+  ],
+  "panel": {
+   "edge": 0.0896,
+   "hit_hi": 0.881,
+   "hit_lo": 0.745,
+   "hit_rate": 0.824,
+   "median_final": 0.1199,
+   "median_pain": 0.0669,
+   "n": 51,
+   "n_eff": 51.0,
+   "p25_final": 0.0365,
+   "p_pain_gt5": 0.569,
+   "return_to_pain": 1.38
+  },
+  "stats": {
+   "avg_similarity": 0.529,
+   "avg_trough": 0.0939,
+   "avg_upside": 0.1412,
+   "median_pain": 0.0576,
+   "median_return": 0.0926,
+   "n_matches": 200,
+   "p25_return": -0.009,
+   "p_pain_gt5": 0.52,
+   "return_to_pain": 1.193,
+   "top5_avg_trough": 0.1368,
+   "top5_avg_upside": 0.1375,
+   "top_similarity": 0.58,
+   "win_rate": 0.735
+  },
+  "total_matches": 200
+ },
+ "ticker": "UVV",
+ "trending": null
+}

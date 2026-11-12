@@ -1,0 +1,1016 @@
+{
+ "date": "2026-11-11",
+ "detected_regions": {
+  "primary": {
+   "days_in_region": 120,
+   "region_start": "2026-08-19",
+   "trigger_date": "2026-10-07",
+   "trigger_type": "severe_drawdown"
+  },
+  "secondary": [
+   {
+    "confidence_score": 0.2895,
+    "downside_q50": -0.0849,
+    "ev_score": 0.1534,
+    "region_start": "2026-05-19",
+    "seq_len": 183,
+    "trigger_date": "2026-10-21",
+    "trigger_type": "runup",
+    "upside_q25": 0.094,
+    "upside_q50": 0.2171,
+    "upside_q75": 0.391
+   }
+  ]
+ },
+ "feature_attribution": {
+  "macro_driver_count": 13,
+  "risk_flags": [
+   "high_volatility"
+  ],
+  "top_drivers": [
+   {
+    "direction": "positive",
+    "feature": "price_vs_low_52w",
+    "feature_value": 4.7203,
+    "importance": 0.0007,
+    "importance_pct": 0.2805,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "negative",
+    "feature": "dollar_volume",
+    "feature_value": 95603728.0,
+    "importance": 0.0005,
+    "importance_pct": 0.1998,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "positive",
+    "feature": "price_vs_sma200",
+    "feature_value": 1.4062,
+    "importance": 0.0004,
+    "importance_pct": 0.1677,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "negative",
+    "feature": "ma_200_slope",
+    "feature_value": 0.0912,
+    "importance": 0.0003,
+    "importance_pct": 0.1108,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "positive",
+    "feature": "volatility_20d",
+    "feature_value": 0.0359,
+    "importance": 0.0002,
+    "importance_pct": 0.0965,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "negative",
+    "feature": "daily_ps",
+    "feature_value": 90.5359,
+    "importance": 0.0002,
+    "importance_pct": 0.0752,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "negative",
+    "feature": "working_capital_ratio",
+    "feature_value": 0.9245,
+    "importance": 0.0002,
+    "importance_pct": 0.0696,
+    "method": "integrated_gradients"
+   }
+  ]
+ },
+ "fundamentals": {
+  "accrual": -0.2345,
+  "adx_14": 28.4461,
+  "altman_z_score": 81.7818,
+  "amihud_illiquidity": 0.0003,
+  "avg_volume": 1280233.7966,
+  "beta_252d": 0.3118,
+  "book_value_per_share": 2.0669,
+  "correlation_spy_60d": 0.2881,
+  "current_liabilities": 58.685,
+  "current_ratio": 27.3953,
+  "daily_earnings_yield": -0.0382,
+  "daily_fcf_yield": -0.0054,
+  "daily_pb": 11.5883,
+  "daily_pe": -26.1583,
+  "daily_ps": 90.5359,
+  "days_since_52w_high": 2.0,
+  "debt_ebitda": 0.0,
+  "debt_to_equity": 0.0,
+  "dividend_yield": 0.0,
+  "dollar_volume_20d_avg": 98600796.2849,
+  "earnings_quality": 0.7129,
+  "ebitda_growth_yoy": -0.3238,
+  "enterprise_value": 7531.8444,
+  "eps_basic": -0.69,
+  "eps_cagr_3y": -2.7403,
+  "eps_cagr_5y": null,
+  "eps_diluted": -0.69,
+  "eps_growth_accel": -2.4382,
+  "eps_growth_qoq": -0.7143,
+  "eps_growth_yoy": -3.1842,
+  "eps_growth_yoy_q2": -0.746,
+  "eps_growth_yoy_q3": 0.211,
+  "eps_growth_yoy_q4": -0.0842,
+  "eps_growth_yoy_q5": -0.2881,
+  "eps_growth_yoy_q6": -0.6364,
+  "eps_growth_yoy_q7": -0.1978,
+  "eps_growth_yoy_q8": -0.0383,
+  "eps_history_8q": [
+   -0.81,
+   -0.6,
+   -0.49,
+   -0.15,
+   -0.69,
+   -0.74,
+   -0.36,
+   -0.94
+  ],
+  "eps_ttm": -4.0836,
+  "ev_to_ebitda": -67.3575,
+  "ev_to_fcf": -168.9588,
+  "ev_to_sales": 83.2303,
+  "fcf_growth_yoy": 0.2811,
+  "fcf_margin": -0.4926,
+  "fcf_per_share": -0.1288,
+  "gross_margin": 0.5,
+  "gross_margin_change_yoy": null,
+  "gross_margin_history": [
+   -14.5509,
+   -35.7295,
+   -66.6077,
+   -59.4471,
+   -83.388,
+   0.5
+  ],
+  "inc_roic": 0.2184,
+  "interest_coverage": null,
+  "is_pre_revenue": false,
+  "margin_vs_sector_median": null,
+  "market_cap_ratio": 8288.3774,
+  "net_income": -62.53,
+  "net_margin": -2.9157,
+  "operating_income": -57.172,
+  "operating_margin": -3.096,
+  "operating_margin_change_yoy": null,
+  "pb_ratio": 51.6816,
+  "pe_percentile_1y": 0.9802,
+  "pe_ratio": -36.3626,
+  "peg_trailing": 1.0962,
+  "piotroski_f_score": 2.0,
+  "price_vs_high_52w": 0.98,
+  "price_vs_sma200": 1.4062,
+  "ps_percentile_1y": 0.2897,
+  "ps_ratio": 85.1168,
+  "quarter_labels_8q": [
+   "Q4 '24",
+   "Q1 '25",
+   "Q2 '25",
+   "Q3 '25",
+   "Q4 '25",
+   "Q1 '26",
+   "Q2 '26",
+   "Q3 '26"
+  ],
+  "quarterly_eps_growth_yoy": -5.2667,
+  "quarterly_eps_growth_yoy_8q": [
+   0.6568,
+   0.1667,
+   0.1695,
+   0.8585,
+   0.1481,
+   -0.2333,
+   0.2653,
+   -5.2667
+  ],
+  "quarterly_revenue_growth_yoy": null,
+  "quarterly_revenue_growth_yoy_8q": [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  "revenue_cagr_3y": 1.6006,
+  "revenue_cagr_5y": null,
+  "revenue_growth_accel": 10.8253,
+  "revenue_growth_qoq": 130.532,
+  "revenue_growth_yoy": 10.0,
+  "revenue_growth_yoy_q2": -0.8253,
+  "revenue_growth_yoy_q3": -0.942,
+  "revenue_growth_yoy_q4": -0.8897,
+  "revenue_growth_yoy_q5": -0.6942,
+  "revenue_growth_yoy_q6": -0.6313,
+  "revenue_growth_yoy_q7": 2.0314,
+  "revenue_growth_yoy_q8": 2.6834,
+  "revenue_history_8q": [
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   90.494,
+   0.0,
+   0.0,
+   0.0
+  ],
+  "revenue_per_share": 0.2615,
+  "roa": -0.2322,
+  "roce": -0.2583,
+  "roe": -0.2451,
+  "roic": -0.4406,
+  "rsi_14": 66.9202,
+  "sector_momentum": 0.1074,
+  "share_dilution_1y": 0.0,
+  "stock_vs_sector_20d": 0.2892,
+  "stock_vs_spy_20d": 0.3714,
+  "total_assets": 777.781,
+  "vol_regime": 0.93,
+  "volatility_20d": 0.0359,
+  "volatility_60d": 0.0386,
+  "w52_high": 110.64,
+  "w52_low": 21.63
+ },
+ "market_characters": [
+  {
+   "id": "g3",
+   "name": "Explosive Gainers"
+  },
+  {
+   "id": "g9",
+   "name": "Narrative Premium"
+  }
+ ],
+ "model_analogs": {
+  "matches": [
+   {
+    "actual_downside": -0.1432,
+    "actual_return": -0.0103,
+    "actual_upside": 0.0195,
+    "days_in_region": 99,
+    "end_date": "2004-04-22",
+    "end_reason": "reversal",
+    "similarity": 0.9768,
+    "start_date": "2004-01-14",
+    "ticker": "ENMC",
+    "trigger_date": "2004-02-24",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": -0.2105,
+    "actual_return": 0.2581,
+    "actual_upside": 0.2581,
+    "days_in_region": 56,
+    "end_date": "2021-04-27",
+    "end_reason": "reversal",
+    "similarity": 0.9766,
+    "start_date": "2021-03-02",
+    "ticker": "CLDX",
+    "trigger_date": "2021-03-15",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": -0.4916,
+    "actual_return": -0.2484,
+    "actual_upside": 0.0,
+    "days_in_region": 176,
+    "end_date": "2004-06-15",
+    "end_reason": "reversal",
+    "similarity": 0.976,
+    "start_date": "2003-12-22",
+    "ticker": "CELL",
+    "trigger_date": "2004-01-21",
+    "trigger_type": "compression"
+   },
+   {
+    "actual_downside": -0.1225,
+    "actual_return": -0.1225,
+    "actual_upside": 0.0,
+    "days_in_region": 173,
+    "end_date": "2019-06-12",
+    "end_reason": "reversal",
+    "similarity": 0.9759,
+    "start_date": "2018-12-21",
+    "ticker": "NSTG",
+    "trigger_date": "2019-04-10",
+    "trigger_type": "runup"
+   },
+   {
+    "actual_downside": -0.1259,
+    "actual_return": 0.1308,
+    "actual_upside": 0.1308,
+    "days_in_region": 125,
+    "end_date": "2021-06-17",
+    "end_reason": "reversal",
+    "similarity": 0.9757,
+    "start_date": "2021-02-12",
+    "ticker": "KALV",
+    "trigger_date": "2021-02-24",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": -0.5245,
+    "actual_return": -0.4387,
+    "actual_upside": 0.0637,
+    "days_in_region": 121,
+    "end_date": "1998-08-19",
+    "end_reason": "reversal",
+    "similarity": 0.9756,
+    "start_date": "1998-04-20",
+    "ticker": "PRMS",
+    "trigger_date": "1998-05-27",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": -0.4573,
+    "actual_return": -0.2996,
+    "actual_upside": 0.0499,
+    "days_in_region": 44,
+    "end_date": "2021-04-28",
+    "end_reason": "reversal",
+    "similarity": 0.9751,
+    "start_date": "2021-03-15",
+    "ticker": "SRRK",
+    "trigger_date": "2021-03-24",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": -0.1509,
+    "actual_return": 0.0755,
+    "actual_upside": 0.0755,
+    "days_in_region": 48,
+    "end_date": "2019-10-29",
+    "end_reason": "reversal",
+    "similarity": 0.9745,
+    "start_date": "2019-09-11",
+    "ticker": "CPRX",
+    "trigger_date": "2019-09-24",
+    "trigger_type": "severe_drawdown"
+   },
+   {
+    "actual_downside": -0.4922,
+    "actual_return": -0.4922,
+    "actual_upside": 0.2336,
+    "days_in_region": 161,
+    "end_date": "2017-11-08",
+    "end_reason": "reversal",
+    "similarity": 0.9745,
+    "start_date": "2017-05-31",
+    "ticker": "ATRS",
+    "trigger_date": "2017-08-29",
+    "trigger_type": "runup"
+   },
+   {
+    "actual_downside": -0.1324,
+    "actual_return": -0.1324,
+    "actual_upside": 0.0676,
+    "days_in_region": 70,
+    "end_date": "2016-12-15",
+    "end_reason": "reversal",
+    "similarity": 0.9742,
+    "start_date": "2016-10-06",
+    "ticker": "IAG",
+    "trigger_date": "2016-11-17",
+    "trigger_type": "shallow_runup"
+   }
+  ],
+  "stats": {
+   "avg_max_drawdown": 0.1415,
+   "avg_similarity": 0.973,
+   "avg_trough": 0.1415,
+   "avg_upside": 0.1767,
+   "best_return": 1.1795,
+   "downside_range": [
+    -0.5245,
+    0.0
+   ],
+   "median_return": 0.0335,
+   "n_matches": 50,
+   "outcome_agreement": true,
+   "return_p25": -0.118,
+   "return_p5": -0.299,
+   "return_p75": 0.1719,
+   "return_p95": 0.5777,
+   "sim_weighted_win_rate": 0.56,
+   "top5_avg_trough": 0.2187,
+   "top5_avg_upside": 0.0817,
+   "top_similarity": 0.977,
+   "upside_range": [
+    0.0,
+    1.1795
+   ],
+   "win_rate": 0.56,
+   "worst_return": -0.4922,
+   "years_span": 17
+  },
+  "total_matches": 50
+ },
+ "peer_group": {
+  "buckets": [
+   "Biotech Platforms, Pipelines & Collaboration Revenue",
+   "Branded Biopharma"
+  ],
+  "groups": {
+   "Biotech Platforms, Pipelines & Collaboration Revenue": [
+    {
+     "market_cap_m": 17749.0144,
+     "price_vs_sma200": 1.3603,
+     "return_30d": 0.2104,
+     "return_7d": 0.0081,
+     "revenue_driver": "renal cell carcinoma drugs",
+     "signal_rank": 560,
+     "stock_vs_spy_20d": 0.1721,
+     "ticker": "EXEL"
+    },
+    {
+     "market_cap_m": 7702.5578,
+     "price_vs_sma200": 1.4062,
+     "return_30d": 0.1998,
+     "return_7d": 0.1184,
+     "revenue_driver": "pharmaceutical and biologic drugs",
+     "signal_rank": 1724,
+     "stock_vs_spy_20d": 0.3714,
+     "ticker": "SYRE"
+    },
+    {
+     "market_cap_m": 2658.1521,
+     "price_vs_sma200": 1.174,
+     "return_30d": 0.1167,
+     "return_7d": 0.147,
+     "revenue_driver": "cell and gene therapy",
+     "signal_rank": 1168,
+     "stock_vs_spy_20d": 0.3161,
+     "ticker": "ELVN"
+    },
+    {
+     "market_cap_m": 134663.8964,
+     "price_vs_sma200": 1.1333,
+     "return_30d": 0.0463,
+     "return_7d": -0.0111,
+     "revenue_driver": "cystic fibrosis drugs",
+     "signal_rank": 1678,
+     "stock_vs_spy_20d": 0.1103,
+     "ticker": "VRTX"
+    },
+    {
+     "market_cap_m": 1120.812,
+     "price_vs_sma200": 0.7102,
+     "return_30d": -0.0412,
+     "return_7d": -0.0169,
+     "revenue_driver": "licensing and partnership revenue",
+     "signal_rank": 1369,
+     "stock_vs_spy_20d": 0.1343,
+     "ticker": "TYRA"
+    },
+    {
+     "market_cap_m": 972.039,
+     "price_vs_sma200": 1.2419,
+     "return_30d": -0.0467,
+     "return_7d": 0.0179,
+     "revenue_driver": "ophthalmic surgical drugs",
+     "signal_rank": null,
+     "stock_vs_spy_20d": -0.0914,
+     "ticker": "OMER"
+    },
+    {
+     "market_cap_m": 1748.2896,
+     "price_vs_sma200": 0.6063,
+     "return_30d": -0.0694,
+     "return_7d": 0.1372,
+     "revenue_driver": "clinical-stage oncology drugs",
+     "signal_rank": 1490,
+     "stock_vs_spy_20d": 0.1953,
+     "ticker": "OLMA"
+    },
+    {
+     "market_cap_m": 1589.5889,
+     "price_vs_sma200": 0.8614,
+     "return_30d": -0.1108,
+     "return_7d": -0.1028,
+     "revenue_driver": "pharmaceutical royalty interests",
+     "signal_rank": 183,
+     "stock_vs_spy_20d": -0.0877,
+     "ticker": "INVA"
+    },
+    {
+     "market_cap_m": 667.4595,
+     "price_vs_sma200": 0.6114,
+     "return_30d": -0.1358,
+     "return_7d": -0.0301,
+     "revenue_driver": "pharmaceutical and biologic drugs",
+     "signal_rank": 1804,
+     "stock_vs_spy_20d": 0.0607,
+     "ticker": "GLUE"
+    },
+    {
+     "market_cap_m": 864.9589,
+     "price_vs_sma200": 0.7733,
+     "return_30d": -0.2782,
+     "return_7d": -0.2104,
+     "revenue_driver": "precision oncology drugs",
+     "signal_rank": null,
+     "stock_vs_spy_20d": -0.24,
+     "ticker": "KURA"
+    }
+   ],
+   "Branded Biopharma": [
+    {
+     "market_cap_m": 1264.4687,
+     "price_vs_sma200": 1.8298,
+     "return_30d": 0.3284,
+     "return_7d": 0.3462,
+     "revenue_driver": "specialty pharmaceutical sales",
+     "signal_rank": 1366,
+     "stock_vs_spy_20d": 0.3064,
+     "ticker": "ETON"
+    },
+    {
+     "market_cap_m": 7702.5578,
+     "price_vs_sma200": 1.4062,
+     "return_30d": 0.1998,
+     "return_7d": 0.1184,
+     "revenue_driver": "pharmaceutical and biologic drugs",
+     "signal_rank": 1724,
+     "stock_vs_spy_20d": 0.3714,
+     "ticker": "SYRE"
+    },
+    {
+     "market_cap_m": 257652.3889,
+     "price_vs_sma200": 1.2326,
+     "return_30d": 0.1106,
+     "return_7d": 0.0057,
+     "revenue_driver": "biologic drug sales",
+     "signal_rank": 1315,
+     "stock_vs_spy_20d": 0.1115,
+     "ticker": "AMGN"
+    },
+    {
+     "market_cap_m": 134663.8964,
+     "price_vs_sma200": 1.1333,
+     "return_30d": 0.0463,
+     "return_7d": -0.0111,
+     "revenue_driver": "cystic fibrosis drugs",
+     "signal_rank": 1678,
+     "stock_vs_spy_20d": 0.1103,
+     "ticker": "VRTX"
+    },
+    {
+     "market_cap_m": 10780.277,
+     "price_vs_sma200": 0.7797,
+     "return_30d": -0.0883,
+     "return_7d": -0.1026,
+     "revenue_driver": "CNS drugs",
+     "signal_rank": null,
+     "stock_vs_spy_20d": 0.0181,
+     "ticker": "ACAD"
+    },
+    {
+     "market_cap_m": 667.4595,
+     "price_vs_sma200": 0.6114,
+     "return_30d": -0.1358,
+     "return_7d": -0.0301,
+     "revenue_driver": "pharmaceutical and biologic drugs",
+     "signal_rank": 1804,
+     "stock_vs_spy_20d": 0.0607,
+     "ticker": "GLUE"
+    },
+    {
+     "market_cap_m": 6204.8106,
+     "price_vs_sma200": 0.723,
+     "return_30d": -0.1707,
+     "return_7d": 0.0978,
+     "revenue_driver": "hematology-oncology drugs",
+     "signal_rank": 1655,
+     "stock_vs_spy_20d": -0.13,
+     "ticker": "GERN"
+    },
+    {
+     "market_cap_m": 1354.9588,
+     "price_vs_sma200": 0.5149,
+     "return_30d": -0.3764,
+     "return_7d": -0.1901,
+     "revenue_driver": "CKD anemia drugs",
+     "signal_rank": 1681,
+     "stock_vs_spy_20d": -0.1699,
+     "ticker": "AKBA"
+    },
+    {
+     "market_cap_m": 744.3967,
+     "price_vs_sma200": 1.0398,
+     "return_30d": -1.0,
+     "return_7d": -1.0,
+     "revenue_driver": "cholesterol lowering drugs",
+     "signal_rank": null,
+     "stock_vs_spy_20d": -0.0107,
+     "ticker": "ESPR"
+    },
+    {
+     "market_cap_m": 135.726,
+     "price_vs_sma200": 0.437,
+     "return_30d": null,
+     "return_7d": null,
+     "revenue_driver": "hematology-oncology drugs",
+     "signal_rank": null,
+     "stock_vs_spy_20d": -0.5156,
+     "ticker": "KPTI"
+    }
+   ]
+  }
+ },
+ "predictions": {
+  "badge_count": 0,
+  "confidence_score": 0.1091,
+  "conviction_label": "SPECULATIVE",
+  "data_quality_flags": [],
+  "ev_score": 0.1159,
+  "is_diamond": false,
+  "passes_tradability_filter": true,
+  "quality_label": "WEAK",
+  "quantiles": {
+   "downside_q10": -0.3407,
+   "downside_q25": -0.2033,
+   "downside_q50": -0.1177,
+   "downside_q75": -0.0344,
+   "downside_q90": -0.0012,
+   "path_volatility": 0.0439,
+   "risk_reward": 1.8196,
+   "uncertainty": 0.6042,
+   "upside_q10": 0.0257,
+   "upside_q25": 0.086,
+   "upside_q50": 0.2141,
+   "upside_q75": 0.3815,
+   "upside_q90": 0.6299
+  },
+  "rank": 1724,
+  "rank_score": 0.0135,
+  "tradability_filter_reasons": []
+ },
+ "profile": {
+  "_local": {
+   "dividend_yield": 0.0,
+   "eps_growth_yoy": -3.1842,
+   "pe_ratio": -36.3626,
+   "revenue_growth_yoy": 10.0,
+   "roe": -0.2451
+  },
+  "beta": 3.227,
+  "betaTTM": null,
+  "ceo": "Cameron Turtle",
+  "companyName": "Spyre Therapeutics, Inc.",
+  "country": "US",
+  "debtToEquityTTM": null,
+  "description": "Spyre Therapeutics, Inc. is a biotechnology firm operating at the preclinical stage, dedicated to creating innovative treatments for individuals afflicted with inflammatory bowel disease (IBD). Among its pipeline candidates is SPY001, a human monoclonal immunoglobulin G1 antibody specifically engineered to target and bind with the a4ß7 integrin. This particular therapy is under development for addressing both ulcerative colitis and Crohn's disease, two forms of IBD. Furthermore, Spyre Therapeutics is advancing SPY002, another human monoclonal antibody that aims to interact with tumor necrosis factor-like ligand 1A (TL1A). A synergistic approach is also being explored with SPY120, a compound that merges the anti-a4ß7 action of SPY001 with the anti-TL1A activity of SPY002. All these programs are currently undergoing preclinical evaluation. Beyond these, the company's early-stage portfolio encompasses several additional promising candidates: SPY003, an anti-IL-23 monoclonal antibody; SPY004, a monoclonal antibody with a novel mechanism of action; SPY130, which combines anti-a4ß7 and anti-IL-23 antibodies; and SPY230, a dual antibody therapy featuring anti-TL1A and anti-IL-23 components. Originally incorporated in 2013, the organization was previously known as Aeglea BioTherapeutics, Inc., before rebranding to Spyre Therapeutics, Inc. in November 2023. Its headquarters are located in Waltham, Massachusetts.",
+  "dividendYielTTM": null,
+  "enterpriseValueOverEBITDATTM": null,
+  "exchangeShortName": "NASDAQ",
+  "fullTimeEmployees": "125",
+  "industry": "Biotechnology",
+  "ipoDate": "2016-04-07",
+  "latest_earnings_date": "2026-11-03",
+  "marketCapTTM": null,
+  "mktCap": 9980311021,
+  "peRatioTTM": null,
+  "price": 105.09,
+  "priceToSalesRatioTTM": null,
+  "returnOnEquityTTM": -0.2982,
+  "revenue_description": "Spyre Therapeutics develops treatments for inflammatory bowel disease and related immune disorders. Revenue is driven by prescription volume for marketed drugs and net price realization after rebates and discounts, with pipeline approvals as the primary growth catalyst.",
+  "revenue_description_themes": [
+   "branded drug volume growth and market share",
+   "net price realization and payer rebate dynamics",
+   "pipeline approval and label expansion catalysts"
+  ],
+  "revenue_taxonomy": [
+   {
+    "bucket": "Branded Biopharma",
+    "matched_tags": [
+     "pharmaceutical and biologic drugs",
+     "branded prescription medicine"
+    ],
+    "path": "Healthcare & Life Sciences › Therapeutics & Biopharma › Branded Biopharma",
+    "sector": "Healthcare & Life Sciences",
+    "segment": "Therapeutics & Biopharma"
+   },
+   {
+    "bucket": "Biotech Platforms, Pipelines & Collaboration Revenue",
+    "matched_tags": [
+     "drug pipeline"
+    ],
+    "path": "Healthcare & Life Sciences › Therapeutics & Biopharma › Biotech Platforms, Pipelines & Collaboration Revenue",
+    "sector": "Healthcare & Life Sciences",
+    "segment": "Therapeutics & Biopharma"
+   }
+  ],
+  "revenue_themes": [
+   "pharmaceutical and biologic drugs",
+   "branded prescription medicine",
+   "drug pipeline"
+  ],
+  "sector": "Healthcare",
+  "website": "https://www.spyre.com"
+ },
+ "report": null,
+ "scorecard": {
+  "headline": {
+   "avg_universe_pct": 39,
+   "label": "below_average",
+   "metric_count": 7
+  },
+  "metrics": {
+   "debt_to_equity": {
+    "direction": "lower",
+    "label": "D/E Ratio",
+    "sector": "Health Care",
+    "sector_n": 279,
+    "sector_pct": 91,
+    "universe_n": 1981,
+    "universe_pct": 94,
+    "value": 0.0
+   },
+   "eps_growth_yoy": {
+    "direction": "higher",
+    "label": "EPS Growth",
+    "sector": "Health Care",
+    "sector_n": 275,
+    "sector_pct": 8,
+    "universe_n": 1799,
+    "universe_pct": 5,
+    "value": -3.1842
+   },
+   "gross_margin": {
+    "direction": "higher",
+    "label": "Gross Margin",
+    "sector": "Health Care",
+    "sector_n": 233,
+    "sector_pct": 26,
+    "universe_n": 1915,
+    "universe_pct": 51,
+    "value": 0.5
+   },
+   "operating_margin": {
+    "direction": "higher",
+    "label": "Op. Margin",
+    "sector": "Health Care",
+    "sector_n": 233,
+    "sector_pct": 12,
+    "universe_n": 1915,
+    "universe_pct": 4,
+    "value": -3.096
+   },
+   "revenue_growth_yoy": {
+    "direction": "higher",
+    "label": "Rev Growth",
+    "sector": "Health Care",
+    "sector_n": 246,
+    "sector_pct": 98,
+    "universe_n": 1747,
+    "universe_pct": 99,
+    "value": 10.0
+   },
+   "roe": {
+    "direction": "higher",
+    "label": "ROE",
+    "sector": "Health Care",
+    "sector_n": 282,
+    "sector_pct": 38,
+    "universe_n": 1996,
+    "universe_pct": 14,
+    "value": -0.2451
+   },
+   "roic": {
+    "direction": "higher",
+    "label": "ROIC",
+    "sector": "Health Care",
+    "sector_n": 278,
+    "sector_pct": 24,
+    "universe_n": 1965,
+    "universe_pct": 7,
+    "value": -0.087
+   }
+  }
+ },
+ "signal_rank": 1724,
+ "structural_analogs": {
+  "gp_core_pct": 33.8,
+  "gp_core_ratio": 1.1241,
+  "matches": [
+   {
+    "actual_downside": -0.5442,
+    "actual_return": -0.3672,
+    "actual_upside": 0.1641,
+    "days_in_region": 101,
+    "end_date": "2015-12-29",
+    "end_reason": "reversal",
+    "seq_len": 101,
+    "similarity": 0.5139,
+    "start_date": "2015-02-18",
+    "ticker": "AGIO",
+    "total_distance": 0.3329,
+    "trigger_date": "2015-03-17",
+    "trigger_type": "compression"
+   },
+   {
+    "actual_downside": -0.1789,
+    "actual_return": -0.0578,
+    "actual_upside": 0.0456,
+    "days_in_region": 129,
+    "end_date": "2007-11-30",
+    "end_reason": "reversal",
+    "seq_len": 129,
+    "similarity": 0.4966,
+    "start_date": "2007-06-05",
+    "ticker": "HALO",
+    "total_distance": 0.35,
+    "trigger_date": "2007-09-11",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": -0.0417,
+    "actual_return": 0.2633,
+    "actual_upside": 0.2633,
+    "days_in_region": 114,
+    "end_date": "2018-03-02",
+    "end_reason": "reversal",
+    "seq_len": 114,
+    "similarity": 0.4809,
+    "start_date": "2017-11-10",
+    "ticker": "CBAY",
+    "total_distance": 0.366,
+    "trigger_date": "2017-12-13",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": -0.0446,
+    "actual_return": 0.3731,
+    "actual_upside": 0.3731,
+    "days_in_region": 118,
+    "end_date": "2018-09-25",
+    "end_reason": "reversal",
+    "seq_len": 118,
+    "similarity": 0.4745,
+    "start_date": "2018-03-02",
+    "ticker": "MYOK",
+    "total_distance": 0.3727,
+    "trigger_date": "2018-05-10",
+    "trigger_type": "severe_drawdown"
+   },
+   {
+    "actual_downside": -0.1763,
+    "actual_return": -0.0737,
+    "actual_upside": 0.1108,
+    "days_in_region": 133,
+    "end_date": "2004-02-17",
+    "end_reason": "reversal",
+    "seq_len": 133,
+    "similarity": 0.4745,
+    "start_date": "2003-09-24",
+    "ticker": "DIGE",
+    "total_distance": 0.3728,
+    "trigger_date": "2004-01-07",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": -0.0581,
+    "actual_return": 0.0868,
+    "actual_upside": 0.0868,
+    "days_in_region": 134,
+    "end_date": "2004-01-26",
+    "end_reason": "reversal",
+    "seq_len": 134,
+    "similarity": 0.4733,
+    "start_date": "2003-09-08",
+    "ticker": "IMCL",
+    "total_distance": 0.374,
+    "trigger_date": "2003-09-25",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": -0.1782,
+    "actual_return": -0.1782,
+    "actual_upside": 0.0,
+    "days_in_region": 188,
+    "end_date": "2021-10-15",
+    "end_reason": "reversal",
+    "seq_len": 188,
+    "similarity": 0.4728,
+    "start_date": "2021-03-08",
+    "ticker": "SWAV",
+    "total_distance": 0.3745,
+    "trigger_date": "2021-08-02",
+    "trigger_type": "runup"
+   },
+   {
+    "actual_downside": -0.0568,
+    "actual_return": 0.1937,
+    "actual_upside": 0.1937,
+    "days_in_region": 97,
+    "end_date": "2010-04-07",
+    "end_reason": "reversal",
+    "seq_len": 97,
+    "similarity": 0.4713,
+    "start_date": "2009-11-16",
+    "ticker": "SIG",
+    "total_distance": 0.3761,
+    "trigger_date": "2009-12-09",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": -0.0412,
+    "actual_return": 0.4779,
+    "actual_upside": 0.4779,
+    "days_in_region": 117,
+    "end_date": "2021-10-26",
+    "end_reason": "reversal",
+    "seq_len": 117,
+    "similarity": 0.4673,
+    "start_date": "2021-06-25",
+    "ticker": "MTDR",
+    "total_distance": 0.3804,
+    "trigger_date": "2021-07-20",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": -0.0309,
+    "actual_return": 0.1823,
+    "actual_upside": 0.1823,
+    "days_in_region": 135,
+    "end_date": "2021-11-09",
+    "end_reason": "reversal",
+    "seq_len": 135,
+    "similarity": 0.4658,
+    "start_date": "2021-06-25",
+    "ticker": "ERF",
+    "total_distance": 0.382,
+    "trigger_date": "2021-07-16",
+    "trigger_type": "shallow_drawdown"
+   }
+  ],
+  "panel": {
+   "edge": -0.0393,
+   "hit_hi": 0.633,
+   "hit_lo": 0.299,
+   "hit_rate": 0.462,
+   "median_final": -0.0578,
+   "median_pain": 0.1041,
+   "n": 13,
+   "n_eff": 13.0,
+   "p25_final": -0.1494,
+   "p_pain_gt5": 0.692,
+   "return_to_pain": -0.466
+  },
+  "stats": {
+   "avg_similarity": 0.438,
+   "avg_trough": 0.143,
+   "avg_upside": 0.1594,
+   "median_pain": 0.1051,
+   "median_return": -0.0431,
+   "n_matches": 200,
+   "p25_return": -0.2033,
+   "p_pain_gt5": 0.68,
+   "return_to_pain": -0.345,
+   "top5_avg_trough": 0.1971,
+   "top5_avg_upside": 0.1914,
+   "top_similarity": 0.514,
+   "win_rate": 0.455
+  },
+  "total_matches": 200
+ },
+ "ticker": "SYRE",
+ "trending": {
+  "acceleration": 0.0112,
+  "avg_vol_20d": 1067595.9799,
+  "base_high_120": 109.0,
+  "breakout_confirmed": 0,
+  "close": 106.82,
+  "momentum_score": 0.8775,
+  "momentum_start": "2025-04-10",
+  "range_20": 0.3161,
+  "range_50": 0.3161,
+  "rank": 956,
+  "rank_down": null,
+  "rank_up": 421,
+  "ret_120": 0.4373,
+  "ret_20": 0.3585,
+  "ret_60": -0.0093,
+  "rundown_score": 0.3524,
+  "score_date": "2026-11-11",
+  "slope_20": 0.0114,
+  "slope_60": 0.0002,
+  "stage": "sustained",
+  "stage_label": "Trending",
+  "ticker": "SYRE",
+  "total_score": 0.351,
+  "trend_ratio": 1.3876,
+  "vcp_detected": 0,
+  "vcp_score": 0.0
+ }
+}
