@@ -1,0 +1,1137 @@
+{
+ "date": "2026-11-12",
+ "detected_regions": {
+  "primary": {
+   "days_in_region": 115,
+   "region_start": "2026-08-27",
+   "trigger_date": "2026-09-24",
+   "trigger_type": "compression"
+  },
+  "secondary": [
+   {
+    "confidence_score": 0.2039,
+    "downside_q50": -0.0628,
+    "ev_score": 0.2152,
+    "region_start": "2026-05-21",
+    "seq_len": 182,
+    "trigger_date": "2026-11-10",
+    "trigger_type": "runup",
+    "upside_q25": 0.1195,
+    "upside_q50": 0.2629,
+    "upside_q75": 0.4482
+   }
+  ]
+ },
+ "feature_attribution": {
+  "macro_driver_count": 13,
+  "risk_flags": [
+   "high_volatility"
+  ],
+  "top_drivers": [
+   {
+    "direction": "positive",
+    "feature": "price_vs_low_52w",
+    "feature_value": 4.5063,
+    "importance": 0.0008,
+    "importance_pct": 0.2669,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "positive",
+    "feature": "price_vs_sma200",
+    "feature_value": 1.2208,
+    "importance": 0.0006,
+    "importance_pct": 0.2113,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "negative",
+    "feature": "ma_200_slope",
+    "feature_value": 0.0907,
+    "importance": 0.0004,
+    "importance_pct": 0.1408,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "negative",
+    "feature": "dollar_volume",
+    "feature_value": 40055944.0,
+    "importance": 0.0003,
+    "importance_pct": 0.1123,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "positive",
+    "feature": "volatility_20d",
+    "feature_value": 0.0614,
+    "importance": 0.0003,
+    "importance_pct": 0.1039,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "negative",
+    "feature": "daily_ps",
+    "feature_value": 100.0,
+    "importance": 0.0003,
+    "importance_pct": 0.1021,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "negative",
+    "feature": "stock_vs_industry_1d",
+    "feature_value": 0.0668,
+    "importance": 0.0002,
+    "importance_pct": 0.0627,
+    "method": "integrated_gradients"
+   }
+  ]
+ },
+ "fundamentals": {
+  "accrual": 0.0087,
+  "adx_14": 23.7981,
+  "altman_z_score": 5.4764,
+  "amihud_illiquidity": 0.0024,
+  "avg_volume": 292159.8285,
+  "beta_252d": 0.7656,
+  "book_value_per_share": 14.9742,
+  "correlation_spy_60d": 0.5372,
+  "current_liabilities": 31.546,
+  "current_ratio": 4.7173,
+  "daily_earnings_yield": 0.0424,
+  "daily_fcf_yield": 0.0049,
+  "daily_pb": 5.4155,
+  "daily_pe": 23.559,
+  "daily_ps": 100.0,
+  "days_since_52w_high": 94.0,
+  "debt_ebitda": 0.8899,
+  "debt_to_equity": 0.0162,
+  "dividend_yield": 0.0,
+  "dollar_volume_20d_avg": 22968760.2173,
+  "earnings_quality": 8.5208,
+  "ebitda_growth_yoy": 1.0294,
+  "enterprise_value": 1435.7867,
+  "eps_basic": 0.0126,
+  "eps_cagr_3y": 1.3519,
+  "eps_cagr_5y": 0.0369,
+  "eps_diluted": 0.0122,
+  "eps_growth_accel": -7.5853,
+  "eps_growth_qoq": -0.9873,
+  "eps_growth_yoy": 1.2373,
+  "eps_growth_yoy_q2": 8.8226,
+  "eps_growth_yoy_q3": 3.6748,
+  "eps_growth_yoy_q4": 3.5347,
+  "eps_growth_yoy_q5": 2.2869,
+  "eps_growth_yoy_q6": -0.2653,
+  "eps_growth_yoy_q7": -2.9405,
+  "eps_growth_yoy_q8": -6.05,
+  "eps_history_8q": [
+   0.41,
+   0.49,
+   1.35,
+   2.86,
+   -0.35,
+   0.98,
+   0.0122,
+   -0.25
+  ],
+  "eps_ttm": 3.5099,
+  "ev_to_ebitda": 1080.3512,
+  "ev_to_fcf": 714.6773,
+  "ev_to_sales": 733.2925,
+  "fcf_growth_yoy": 1.6398,
+  "fcf_margin": 1.026,
+  "fcf_per_share": 0.1053,
+  "gross_margin": 1.0,
+  "gross_margin_change_yoy": 0.0,
+  "gross_margin_history": [
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0
+  ],
+  "inc_roic": -0.4919,
+  "interest_coverage": null,
+  "is_pre_revenue": false,
+  "margin_vs_sector_median": null,
+  "market_cap_ratio": 1547.7087,
+  "net_income": 0.24,
+  "net_margin": 1.3055,
+  "operating_income": -0.246,
+  "operating_margin": 0.8778,
+  "operating_margin_change_yoy": 8.1734,
+  "pb_ratio": 5.5222,
+  "pe_percentile_1y": 0.1508,
+  "pe_ratio": 23.559,
+  "peg_trailing": -2.0842,
+  "piotroski_f_score": 4.0,
+  "price_vs_high_52w": 0.7642,
+  "price_vs_sma200": 1.2208,
+  "ps_percentile_1y": 0.75,
+  "ps_ratio": 100,
+  "quarter_labels_8q": [
+   "Q3 '24",
+   "Q4 '24",
+   "Q1 '25",
+   "Q2 '25",
+   "Q3 '25",
+   "Q4 '26",
+   "Q1 '26",
+   "Q2 '26"
+  ],
+  "quarterly_eps_growth_yoy": -1.0874,
+  "quarterly_eps_growth_yoy_8q": [
+   10.0,
+   1.9608,
+   2.6071,
+   5.1449,
+   -1.8537,
+   1.0,
+   -0.991,
+   -1.0874
+  ],
+  "quarterly_revenue_growth_yoy": -1.0,
+  "quarterly_revenue_growth_yoy_8q": [
+   0.2321,
+   0.1024,
+   -0.0702,
+   0.0006,
+   0.0045,
+   0.4096,
+   0.3808,
+   -1.0
+  ],
+  "revenue_cagr_3y": 0.4755,
+  "revenue_cagr_5y": 0.5274,
+  "revenue_growth_accel": 0.1106,
+  "revenue_growth_qoq": 0.0,
+  "revenue_growth_yoy": 0.1886,
+  "revenue_growth_yoy_q2": 0.0779,
+  "revenue_growth_yoy_q3": 0.0051,
+  "revenue_growth_yoy_q4": 0.0567,
+  "revenue_growth_yoy_q5": 0.1597,
+  "revenue_growth_yoy_q6": 0.439,
+  "revenue_growth_yoy_q7": 0.6677,
+  "revenue_growth_yoy_q8": 0.9701,
+  "revenue_history_8q": [
+   1.566,
+   1.389,
+   1.418,
+   1.552,
+   1.573,
+   1.958,
+   1.958,
+   0.0
+  ],
+  "revenue_per_share": 0.1026,
+  "roa": 0.0144,
+  "roce": 0.0103,
+  "roe": 0.025,
+  "roic": 0.1409,
+  "rsi_14": 55.4831,
+  "sector_momentum": 0.1074,
+  "share_dilution_1y": 0.0,
+  "stock_vs_sector_20d": -0.0905,
+  "stock_vs_spy_20d": -0.0016,
+  "total_assets": 497.925,
+  "vol_regime": 1.3588,
+  "volatility_20d": 0.0614,
+  "volatility_60d": 0.0452,
+  "w52_high": 113.0,
+  "w52_low": 17.9
+ },
+ "market_characters": [
+  {
+   "id": "g3",
+   "name": "Explosive Gainers"
+  },
+  {
+   "id": "g5",
+   "name": "Quality Compressed"
+  }
+ ],
+ "model_analogs": {
+  "matches": [
+   {
+    "actual_downside": -0.0829,
+    "actual_return": 0.1386,
+    "actual_upside": 0.2662,
+    "days_in_region": 49,
+    "end_date": "2021-04-06",
+    "end_reason": "reversal",
+    "similarity": 0.9813,
+    "start_date": "2021-02-16",
+    "ticker": "NIU",
+    "trigger_date": "2021-03-04",
+    "trigger_type": "severe_drawdown"
+   },
+   {
+    "actual_downside": 0.0,
+    "actual_return": 0.1645,
+    "actual_upside": 0.3141,
+    "days_in_region": 212,
+    "end_date": "2005-07-01",
+    "end_reason": "reversal",
+    "similarity": 0.9798,
+    "start_date": "2004-12-01",
+    "ticker": "PRFT",
+    "trigger_date": "2005-05-24",
+    "trigger_type": "runup"
+   },
+   {
+    "actual_downside": -0.0067,
+    "actual_return": -0.0067,
+    "actual_upside": 0.23,
+    "days_in_region": 168,
+    "end_date": "2012-11-01",
+    "end_reason": "reversal",
+    "similarity": 0.9796,
+    "start_date": "2012-05-17",
+    "ticker": "SWBI",
+    "trigger_date": "2012-09-06",
+    "trigger_type": "runup"
+   },
+   {
+    "actual_downside": -0.7188,
+    "actual_return": -0.5547,
+    "actual_upside": 0.0938,
+    "days_in_region": 78,
+    "end_date": "2000-12-15",
+    "end_reason": "reversal",
+    "similarity": 0.9791,
+    "start_date": "2000-09-28",
+    "ticker": "PSTI",
+    "trigger_date": "2000-10-13",
+    "trigger_type": "severe_drawdown"
+   },
+   {
+    "actual_downside": -0.1074,
+    "actual_return": 0.3714,
+    "actual_upside": 0.3714,
+    "days_in_region": 102,
+    "end_date": "2005-11-11",
+    "end_reason": "reversal",
+    "similarity": 0.9791,
+    "start_date": "2005-08-01",
+    "ticker": "OSPN",
+    "trigger_date": "2005-09-22",
+    "trigger_type": "severe_drawdown"
+   },
+   {
+    "actual_downside": -0.7317,
+    "actual_return": -0.5704,
+    "actual_upside": 0.0,
+    "days_in_region": 99,
+    "end_date": "2019-01-10",
+    "end_reason": "reversal",
+    "similarity": 0.9789,
+    "start_date": "2018-10-03",
+    "ticker": "DNR",
+    "trigger_date": "2018-10-18",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": -0.0388,
+    "actual_return": 0.0803,
+    "actual_upside": 0.0803,
+    "days_in_region": 161,
+    "end_date": "2004-04-19",
+    "end_reason": "reversal",
+    "similarity": 0.9788,
+    "start_date": "2003-11-10",
+    "ticker": "WLDA",
+    "trigger_date": "2004-03-23",
+    "trigger_type": "severe_drawdown"
+   },
+   {
+    "actual_downside": -0.0852,
+    "actual_return": 0.3994,
+    "actual_upside": 0.3994,
+    "days_in_region": 113,
+    "end_date": "2005-11-23",
+    "end_reason": "reversal",
+    "similarity": 0.9786,
+    "start_date": "2005-08-02",
+    "ticker": "RADS",
+    "trigger_date": "2005-10-07",
+    "trigger_type": "severe_drawdown"
+   },
+   {
+    "actual_downside": -0.0971,
+    "actual_return": 0.2431,
+    "actual_upside": 0.2431,
+    "days_in_region": 105,
+    "end_date": "2021-05-17",
+    "end_reason": "reversal",
+    "similarity": 0.9785,
+    "start_date": "2021-02-01",
+    "ticker": "AGQ",
+    "trigger_date": "2021-03-05",
+    "trigger_type": "severe_drawdown"
+   },
+   {
+    "actual_downside": -0.0469,
+    "actual_return": 0.375,
+    "actual_upside": 0.375,
+    "days_in_region": 60,
+    "end_date": "1987-11-27",
+    "end_reason": "reversal",
+    "similarity": 0.978,
+    "start_date": "1987-09-28",
+    "ticker": "IVX",
+    "trigger_date": "1987-10-14",
+    "trigger_type": "drawdown"
+   }
+  ],
+  "stats": {
+   "avg_max_drawdown": 0.1154,
+   "avg_similarity": 0.977,
+   "avg_trough": 0.1154,
+   "avg_upside": 0.2909,
+   "best_return": 1.1805,
+   "downside_range": [
+    -0.7317,
+    0.0
+   ],
+   "median_return": 0.1775,
+   "n_matches": 50,
+   "outcome_agreement": true,
+   "return_p25": 0.0301,
+   "return_p5": -0.273,
+   "return_p75": 0.3386,
+   "return_p95": 0.6959,
+   "sim_weighted_win_rate": 0.76,
+   "top5_avg_trough": 0.1832,
+   "top5_avg_upside": 0.2551,
+   "top_similarity": 0.981,
+   "upside_range": [
+    0.0,
+    1.589
+   ],
+   "win_rate": 0.76,
+   "worst_return": -0.5704,
+   "years_span": 17
+  },
+  "total_matches": 50
+ },
+ "peer_group": {
+  "buckets": [
+   "Electrical Equipment, Power Components & Grid Hardware",
+   "Enterprise Connectivity, Network Services & Communications Platforms",
+   "Telecom Equipment, Fiber, Optical & Access Infrastructure"
+  ],
+  "groups": {
+   "Electrical Equipment, Power Components & Grid Hardware": [
+    {
+     "market_cap_m": 9161.8586,
+     "price_vs_sma200": 1.0646,
+     "return_30d": 0.1036,
+     "return_7d": -0.003,
+     "revenue_driver": "LED lighting systems",
+     "signal_rank": 894,
+     "stock_vs_spy_20d": 0.1137,
+     "ticker": "AYI"
+    },
+    {
+     "market_cap_m": 3156.731,
+     "price_vs_sma200": 1.2435,
+     "return_30d": 0.014,
+     "return_7d": 0.0012,
+     "revenue_driver": "electrical conduit and fittings",
+     "signal_rank": null,
+     "stock_vs_spy_20d": -0.0159,
+     "ticker": "ATKR"
+    },
+    {
+     "market_cap_m": 1412.572,
+     "price_vs_sma200": 1.2208,
+     "return_30d": 0.0025,
+     "return_7d": 0.0058,
+     "revenue_driver": "private lte spectrum licensing to utilities",
+     "signal_rank": 1356,
+     "stock_vs_spy_20d": -0.0016,
+     "ticker": "ATEX"
+    },
+    {
+     "market_cap_m": 4109.0925,
+     "price_vs_sma200": 0.9686,
+     "return_30d": -0.0088,
+     "return_7d": -0.0289,
+     "revenue_driver": "metal coating and galvanizing",
+     "signal_rank": 98,
+     "stock_vs_spy_20d": 0.0474,
+     "ticker": "AZZ"
+    },
+    {
+     "market_cap_m": 4223.964,
+     "price_vs_sma200": 0.8699,
+     "return_30d": -0.0561,
+     "return_7d": -0.0476,
+     "revenue_driver": "Industrial cable and connectivity",
+     "signal_rank": 1097,
+     "stock_vs_spy_20d": 0.0003,
+     "ticker": "BDC"
+    },
+    {
+     "market_cap_m": 11224.1224,
+     "price_vs_sma200": 0.9659,
+     "return_30d": -0.1166,
+     "return_7d": -0.0175,
+     "revenue_driver": "power transmission distribution",
+     "signal_rank": 394,
+     "stock_vs_spy_20d": -0.0823,
+     "ticker": "AIT"
+    },
+    {
+     "market_cap_m": 1186.6106,
+     "price_vs_sma200": 0.7143,
+     "return_30d": -0.1512,
+     "return_7d": -0.0954,
+     "revenue_driver": "grid control systems",
+     "signal_rank": 1440,
+     "stock_vs_spy_20d": -0.0492,
+     "ticker": "AMSC"
+    },
+    {
+     "market_cap_m": 8197.8365,
+     "price_vs_sma200": 0.7459,
+     "return_30d": -0.2221,
+     "return_7d": -0.0391,
+     "revenue_driver": "power conversion systems",
+     "signal_rank": 1738,
+     "stock_vs_spy_20d": -0.0728,
+     "ticker": "AEIS"
+    },
+    {
+     "market_cap_m": 1347.9851,
+     "price_vs_sma200": 1.0109,
+     "return_30d": -0.2721,
+     "return_7d": -0.0411,
+     "revenue_driver": "precision motion controls",
+     "signal_rank": 1448,
+     "stock_vs_spy_20d": -0.1102,
+     "ticker": "ALNT"
+    },
+    {
+     "market_cap_m": 7127.2194,
+     "price_vs_sma200": 1.1488,
+     "return_30d": -1.0,
+     "return_7d": -1.0,
+     "revenue_driver": "construction aggregates",
+     "signal_rank": null,
+     "stock_vs_spy_20d": 0.0232,
+     "ticker": "ACA"
+    }
+   ],
+   "Enterprise Connectivity, Network Services & Communications Platforms": [
+    {
+     "market_cap_m": 820.1089,
+     "price_vs_sma200": 1.3211,
+     "return_30d": 0.2121,
+     "return_7d": 0.1997,
+     "revenue_driver": "digital fax subscriptions",
+     "signal_rank": 357,
+     "stock_vs_spy_20d": 0.1883,
+     "ticker": "CCSI"
+    },
+    {
+     "market_cap_m": 15279.3206,
+     "price_vs_sma200": 0.819,
+     "return_30d": 0.1912,
+     "return_7d": 0.1658,
+     "revenue_driver": "cable broadband operator",
+     "signal_rank": 1900,
+     "stock_vs_spy_20d": 0.2257,
+     "ticker": "CHTR"
+    },
+    {
+     "market_cap_m": 1412.572,
+     "price_vs_sma200": 1.2208,
+     "return_30d": 0.0025,
+     "return_7d": 0.0058,
+     "revenue_driver": "private lte spectrum licensing to utilities",
+     "signal_rank": 1356,
+     "stock_vs_spy_20d": -0.0016,
+     "ticker": "ATEX"
+    },
+    {
+     "market_cap_m": 417.7994,
+     "price_vs_sma200": 0.9637,
+     "return_30d": -0.028,
+     "return_7d": -0.0408,
+     "revenue_driver": "fiber optic connectivity",
+     "signal_rank": 1585,
+     "stock_vs_spy_20d": 0.0623,
+     "ticker": "CLFD"
+    },
+    {
+     "market_cap_m": 2203.677,
+     "price_vs_sma200": 0.7876,
+     "return_30d": -0.0636,
+     "return_7d": -0.0171,
+     "revenue_driver": "fiber broadband access systems",
+     "signal_rank": 916,
+     "stock_vs_spy_20d": -0.1016,
+     "ticker": "CALX"
+    },
+    {
+     "market_cap_m": 249.5962,
+     "price_vs_sma200": 0.8375,
+     "return_30d": -0.1083,
+     "return_7d": -0.0268,
+     "revenue_driver": "land mobile radio equipment",
+     "signal_rank": 794,
+     "stock_vs_spy_20d": 0.0226,
+     "ticker": "BKTI"
+    },
+    {
+     "market_cap_m": 203.5948,
+     "price_vs_sma200": 0.8042,
+     "return_30d": -0.1605,
+     "return_7d": -0.16,
+     "revenue_driver": "microwave networking equipment",
+     "signal_rank": 997,
+     "stock_vs_spy_20d": -0.111,
+     "ticker": "AVNW"
+    },
+    {
+     "market_cap_m": 1517.034,
+     "price_vs_sma200": 1.0924,
+     "return_30d": -0.2586,
+     "return_7d": 0.0668,
+     "revenue_driver": "voice API services",
+     "signal_rank": 1884,
+     "stock_vs_spy_20d": -0.0471,
+     "ticker": "BAND"
+    },
+    {
+     "market_cap_m": 230.3775,
+     "price_vs_sma200": 0.2634,
+     "return_30d": -0.5225,
+     "return_7d": -0.335,
+     "revenue_driver": "dedicated internet access",
+     "signal_rank": 1923,
+     "stock_vs_spy_20d": -0.5097,
+     "ticker": "CCOI"
+    },
+    {
+     "market_cap_m": 29.0766,
+     "price_vs_sma200": 0.0553,
+     "return_30d": -0.7143,
+     "return_7d": -0.3922,
+     "revenue_driver": "high-speed internet",
+     "signal_rank": 1983,
+     "stock_vs_spy_20d": -0.6309,
+     "ticker": "CABO"
+    }
+   ],
+   "Telecom Equipment, Fiber, Optical & Access Infrastructure": [
+    {
+     "market_cap_m": 1412.572,
+     "price_vs_sma200": 1.2208,
+     "return_30d": 0.0025,
+     "return_7d": 0.0058,
+     "revenue_driver": "private lte spectrum licensing to utilities",
+     "signal_rank": 1356,
+     "stock_vs_spy_20d": -0.0016,
+     "ticker": "ATEX"
+    },
+    {
+     "market_cap_m": 417.7994,
+     "price_vs_sma200": 0.9637,
+     "return_30d": -0.028,
+     "return_7d": -0.0408,
+     "revenue_driver": "fiber optic connectivity",
+     "signal_rank": 1585,
+     "stock_vs_spy_20d": 0.0623,
+     "ticker": "CLFD"
+    },
+    {
+     "market_cap_m": 2203.677,
+     "price_vs_sma200": 0.7876,
+     "return_30d": -0.0636,
+     "return_7d": -0.0171,
+     "revenue_driver": "fiber broadband access systems",
+     "signal_rank": 916,
+     "stock_vs_spy_20d": -0.1016,
+     "ticker": "CALX"
+    },
+    {
+     "market_cap_m": 203.5948,
+     "price_vs_sma200": 0.8042,
+     "return_30d": -0.1605,
+     "return_7d": -0.16,
+     "revenue_driver": "microwave networking equipment",
+     "signal_rank": 997,
+     "stock_vs_spy_20d": -0.111,
+     "ticker": "AVNW"
+    },
+    {
+     "market_cap_m": 44715.8283,
+     "price_vs_sma200": 0.8705,
+     "return_30d": -0.2246,
+     "return_7d": -0.0203,
+     "revenue_driver": "optical networking equipment",
+     "signal_rank": null,
+     "stock_vs_spy_20d": -0.0174,
+     "ticker": "CIEN"
+    },
+    {
+     "market_cap_m": 48.4993,
+     "price_vs_sma200": 0.623,
+     "return_30d": -0.2395,
+     "return_7d": -0.0675,
+     "revenue_driver": "rf microwave components",
+     "signal_rank": 1887,
+     "stock_vs_spy_20d": -0.0642,
+     "ticker": "AMPG"
+    },
+    {
+     "market_cap_m": 108284.568,
+     "price_vs_sma200": 0.7634,
+     "return_30d": -0.2551,
+     "return_7d": -0.0526,
+     "revenue_driver": "Optical communications",
+     "signal_rank": 1863,
+     "stock_vs_spy_20d": -0.1171,
+     "ticker": "GLW"
+    },
+    {
+     "market_cap_m": 701.8162,
+     "price_vs_sma200": 0.6165,
+     "return_30d": -0.3126,
+     "return_7d": -0.0395,
+     "revenue_driver": "broadband access equipment",
+     "signal_rank": null,
+     "stock_vs_spy_20d": -0.0053,
+     "ticker": "ADTN"
+    },
+    {
+     "market_cap_m": 19089.77,
+     "price_vs_sma200": 0.5287,
+     "return_30d": -0.3952,
+     "return_7d": -0.0713,
+     "revenue_driver": "space-based cellular broadband",
+     "signal_rank": null,
+     "stock_vs_spy_20d": -0.2781,
+     "ticker": "ASTS"
+    },
+    {
+     "market_cap_m": 3201.5554,
+     "price_vs_sma200": 0.4599,
+     "return_30d": -0.5075,
+     "return_7d": -0.1738,
+     "revenue_driver": "fiber optic transceivers",
+     "signal_rank": 1929,
+     "stock_vs_spy_20d": -0.3492,
+     "ticker": "AAOI"
+    }
+   ]
+  }
+ },
+ "predictions": {
+  "badge_count": 1,
+  "confidence_score": 0.0627,
+  "conviction_label": "SPECULATIVE",
+  "data_quality_flags": [],
+  "ev_score": 0.1856,
+  "is_diamond": false,
+  "passes_tradability_filter": true,
+  "quality_label": "HIGH",
+  "quantiles": {
+   "downside_q10": -0.3278,
+   "downside_q25": -0.1759,
+   "downside_q50": -0.0946,
+   "downside_q75": -0.0214,
+   "downside_q90": 0.0062,
+   "path_volatility": 0.0477,
+   "risk_reward": 2.8227,
+   "uncertainty": 0.6797,
+   "upside_q10": 0.0366,
+   "upside_q25": 0.1132,
+   "upside_q50": 0.2671,
+   "upside_q75": 0.4516,
+   "upside_q90": 0.7163
+  },
+  "rank": 1356,
+  "rank_score": 0.0313,
+  "tradability_filter_reasons": []
+ },
+ "profile": {
+  "_local": {
+   "dividend_yield": 0.0,
+   "eps_growth_yoy": 1.2373,
+   "pe_ratio": 192.4273,
+   "revenue_growth_yoy": 0.1886,
+   "roe": 0.025
+  },
+  "beta": 0.869,
+  "betaTTM": null,
+  "ceo": "Scott A. Lang",
+  "companyName": "Anterix Inc.",
+  "country": "US",
+  "debtToEquityTTM": null,
+  "description": "Anterix Inc. operates as a specialist in wireless communications, primarily focusing on monetizing its distinct radio spectrum holdings. The company's main objective is to empower essential utility and critical infrastructure clients by enabling them to deploy bespoke broadband networks, advanced technologies, and tailored solutions. Anterix holds exclusive licenses for 900 MHz spectrum, which provides extensive coverage throughout the continental United States, as well as Alaska, Hawaii, and Puerto Rico. Originally established in 1997, the firm was formerly recognized as pdvWireless, Inc. before officially rebranding to Anterix Inc. in August 2019. Its corporate headquarters are located in Woodland Park, New Jersey.",
+  "dividendYielTTM": null,
+  "enterpriseValueOverEBITDATTM": null,
+  "exchangeShortName": "NASDAQ",
+  "fullTimeEmployees": "64",
+  "industry": "Telecommunications Services",
+  "ipoDate": "2015-02-03",
+  "latest_earnings_date": "2026-11-10",
+  "marketCapTTM": null,
+  "mktCap": 1626652873,
+  "peRatioTTM": null,
+  "price": 82.69,
+  "priceToSalesRatioTTM": null,
+  "returnOnEquityTTM": 0.0268,
+  "revenue_description": "Anterix licenses spectrum assets that can be used by utilities for private broadband networks. Revenue is driven mainly by regulated electricity or gas delivery and allowed returns on rate base tied to grid and infrastructure investment.",
+  "revenue_description_themes": [
+   "grid investment",
+   "electricity demand growth",
+   "rate cases"
+  ],
+  "revenue_taxonomy": [
+   {
+    "bucket": "Enterprise Connectivity, Network Services & Communications Platforms",
+    "matched_tags": [
+     "private lte spectrum licensing to utilities"
+    ],
+    "path": "Communications › Telecom & Connectivity › Enterprise Connectivity, Network Services & Communications Platforms",
+    "sector": "Communications",
+    "segment": "Telecom & Connectivity"
+   },
+   {
+    "bucket": "Electrical Equipment, Power Components & Grid Hardware",
+    "matched_tags": [
+     "utility grid communications infrastructure"
+    ],
+    "path": "Industrials & Transportation › Industrial Products & Services › Electrical Equipment, Power Components & Grid Hardware",
+    "sector": "Industrials & Transportation",
+    "segment": "Industrial Products & Services"
+   },
+   {
+    "bucket": "Telecom Equipment, Fiber, Optical & Access Infrastructure",
+    "matched_tags": [
+     "cbrs band wireless access"
+    ],
+    "path": "Communications › Telecom & Connectivity › Telecom Equipment, Fiber, Optical & Access Infrastructure",
+    "sector": "Communications",
+    "segment": "Telecom & Connectivity"
+   }
+  ],
+  "revenue_themes": [
+   "private lte spectrum licensing to utilities",
+   "utility grid communications infrastructure",
+   "cbrs band wireless access"
+  ],
+  "sector": "Communication Services",
+  "website": "https://www.anterix.com"
+ },
+ "report": null,
+ "scorecard": {
+  "headline": {
+   "avg_universe_pct": 62,
+   "label": "above_average",
+   "metric_count": 8
+  },
+  "metrics": {
+   "debt_to_equity": {
+    "direction": "lower",
+    "label": "D/E Ratio",
+    "sector": "Comm. Services",
+    "sector_n": 42,
+    "sector_pct": 76,
+    "universe_n": 1972,
+    "universe_pct": 83,
+    "value": 0.0162
+   },
+   "eps_growth_yoy": {
+    "direction": "higher",
+    "label": "EPS Growth",
+    "sector": "Comm. Services",
+    "sector_n": 43,
+    "sector_pct": 70,
+    "universe_n": 1792,
+    "universe_pct": 86,
+    "value": 1.2373
+   },
+   "gross_margin": {
+    "direction": "higher",
+    "label": "Gross Margin",
+    "sector": "Comm. Services",
+    "sector_n": 42,
+    "sector_pct": 95,
+    "universe_n": 1910,
+    "universe_pct": 99,
+    "value": 1.0
+   },
+   "operating_margin": {
+    "direction": "higher",
+    "label": "Op. Margin",
+    "sector": "Comm. Services",
+    "sector_n": 42,
+    "sector_pct": 98,
+    "universe_n": 1910,
+    "universe_pct": 99,
+    "value": 0.8778
+   },
+   "pe_ratio": {
+    "direction": "lower",
+    "label": "P/E",
+    "sector": "Comm. Services",
+    "sector_n": 29,
+    "sector_pct": 3,
+    "universe_n": 1431,
+    "universe_pct": 0,
+    "value": 192.4273
+   },
+   "revenue_growth_yoy": {
+    "direction": "higher",
+    "label": "Rev Growth",
+    "sector": "Comm. Services",
+    "sector_n": 43,
+    "sector_pct": 67,
+    "universe_n": 1743,
+    "universe_pct": 74,
+    "value": 0.1886
+   },
+   "roe": {
+    "direction": "higher",
+    "label": "ROE",
+    "sector": "Comm. Services",
+    "sector_n": 43,
+    "sector_pct": 28,
+    "universe_n": 1987,
+    "universe_pct": 30,
+    "value": 0.025
+   },
+   "roic": {
+    "direction": "higher",
+    "label": "ROIC",
+    "sector": "Comm. Services",
+    "sector_n": 43,
+    "sector_pct": 35,
+    "universe_n": 1957,
+    "universe_pct": 24,
+    "value": 0.0005
+   }
+  }
+ },
+ "signal_rank": 1356,
+ "structural_analogs": {
+  "gp_core_pct": 92.9,
+  "gp_core_ratio": 2.1873,
+  "matches": [
+   {
+    "actual_downside": -0.0158,
+    "actual_return": 0.4112,
+    "actual_upside": 0.4112,
+    "days_in_region": 114,
+    "end_date": "2017-02-22",
+    "end_reason": "reversal",
+    "seq_len": 114,
+    "similarity": 0.5028,
+    "start_date": "2016-10-10",
+    "ticker": "WB",
+    "total_distance": 0.3438,
+    "trigger_date": "2016-12-23",
+    "trigger_type": "severe_drawdown"
+   },
+   {
+    "actual_downside": -0.5442,
+    "actual_return": -0.3672,
+    "actual_upside": 0.1641,
+    "days_in_region": 101,
+    "end_date": "2015-12-29",
+    "end_reason": "reversal",
+    "seq_len": 101,
+    "similarity": 0.4962,
+    "start_date": "2015-02-18",
+    "ticker": "AGIO",
+    "total_distance": 0.3504,
+    "trigger_date": "2015-03-17",
+    "trigger_type": "compression"
+   },
+   {
+    "actual_downside": -0.1629,
+    "actual_return": 0.1834,
+    "actual_upside": 0.1834,
+    "days_in_region": 67,
+    "end_date": "2021-08-05",
+    "end_reason": "reversal",
+    "seq_len": 67,
+    "similarity": 0.4929,
+    "start_date": "2021-04-26",
+    "ticker": "UMC",
+    "total_distance": 0.3537,
+    "trigger_date": "2021-05-04",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": -0.0169,
+    "actual_return": 0.0824,
+    "actual_upside": 0.2267,
+    "days_in_region": 168,
+    "end_date": "2021-09-21",
+    "end_reason": "reversal",
+    "seq_len": 168,
+    "similarity": 0.4851,
+    "start_date": "2021-03-23",
+    "ticker": "AA",
+    "total_distance": 0.3617,
+    "trigger_date": "2021-08-24",
+    "trigger_type": "runup"
+   },
+   {
+    "actual_downside": -0.0691,
+    "actual_return": 0.3114,
+    "actual_upside": 0.3114,
+    "days_in_region": 117,
+    "end_date": "2022-03-11",
+    "end_reason": "reversal",
+    "seq_len": 117,
+    "similarity": 0.4844,
+    "start_date": "2021-11-11",
+    "ticker": "SD",
+    "total_distance": 0.3624,
+    "trigger_date": "2022-02-02",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": -0.016,
+    "actual_return": 0.3898,
+    "actual_upside": 0.3898,
+    "days_in_region": 108,
+    "end_date": "2021-11-18",
+    "end_reason": "reversal",
+    "seq_len": 108,
+    "similarity": 0.4812,
+    "start_date": "2021-06-30",
+    "ticker": "ANF",
+    "total_distance": 0.3657,
+    "trigger_date": "2021-09-07",
+    "trigger_type": "severe_drawdown"
+   },
+   {
+    "actual_downside": -0.2367,
+    "actual_return": -0.0743,
+    "actual_upside": 0.0466,
+    "days_in_region": 148,
+    "end_date": "2021-11-23",
+    "end_reason": "reversal",
+    "seq_len": 148,
+    "similarity": 0.4757,
+    "start_date": "2021-04-23",
+    "ticker": "AEO",
+    "total_distance": 0.3715,
+    "trigger_date": "2021-08-17",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": -0.1369,
+    "actual_return": 0.4337,
+    "actual_upside": 1.2006,
+    "days_in_region": 116,
+    "end_date": "2022-01-27",
+    "end_reason": "reversal",
+    "seq_len": 116,
+    "similarity": 0.4746,
+    "start_date": "2021-04-06",
+    "ticker": "AOSL",
+    "total_distance": 0.3727,
+    "trigger_date": "2021-05-03",
+    "trigger_type": "compression"
+   },
+   {
+    "actual_downside": -0.109,
+    "actual_return": -0.0815,
+    "actual_upside": 0.5576,
+    "days_in_region": 140,
+    "end_date": "2022-01-27",
+    "end_reason": "reversal",
+    "seq_len": 140,
+    "similarity": 0.4738,
+    "start_date": "2021-03-18",
+    "ticker": "PERI",
+    "total_distance": 0.3735,
+    "trigger_date": "2021-04-15",
+    "trigger_type": "compression"
+   },
+   {
+    "actual_downside": 0.0,
+    "actual_return": 0.1963,
+    "actual_upside": 0.3358,
+    "days_in_region": 181,
+    "end_date": "2003-11-20",
+    "end_reason": "reversal",
+    "seq_len": 181,
+    "similarity": 0.4693,
+    "start_date": "2003-04-17",
+    "ticker": "FMT",
+    "total_distance": 0.3782,
+    "trigger_date": "2003-10-08",
+    "trigger_type": "runup"
+   }
+  ],
+  "panel": {
+   "edge": 0.0155,
+   "hit_hi": 0.669,
+   "hit_lo": 0.45,
+   "hit_rate": 0.562,
+   "median_final": 0.0508,
+   "median_pain": 0.0787,
+   "n": 32,
+   "n_eff": 32.0,
+   "p25_final": -0.0856,
+   "p_pain_gt5": 0.625,
+   "return_to_pain": 0.515
+  },
+  "stats": {
+   "avg_similarity": 0.435,
+   "avg_trough": 0.1263,
+   "avg_upside": 0.2405,
+   "median_pain": 0.0963,
+   "median_return": 0.0324,
+   "n_matches": 200,
+   "p25_return": -0.1201,
+   "p_pain_gt5": 0.685,
+   "return_to_pain": 0.279,
+   "top5_avg_trough": 0.1618,
+   "top5_avg_upside": 0.2593,
+   "top_similarity": 0.503,
+   "win_rate": 0.555
+  },
+  "total_matches": 200
+ },
+ "ticker": "ATEX",
+ "trending": {
+  "acceleration": -0.0078,
+  "avg_vol_20d": 341775.1591,
+  "base_high_120": 108.205,
+  "breakout_confirmed": 0,
+  "close": 90.89,
+  "momentum_score": 0.802,
+  "momentum_start": "2026-01-27",
+  "range_20": 0.3015,
+  "range_50": 0.4546,
+  "rank": 563,
+  "rank_down": null,
+  "rank_up": 365,
+  "ret_120": 1.3063,
+  "ret_20": -0.0498,
+  "ret_60": 0.3376,
+  "rundown_score": 0.8394,
+  "score_date": "2026-08-31",
+  "slope_20": -0.005,
+  "slope_60": 0.0028,
+  "stage": "sustained",
+  "stage_label": "Trending",
+  "ticker": "ATEX",
+  "total_score": 0.5314,
+  "trend_ratio": 1.4674,
+  "vcp_detected": 0,
+  "vcp_score": 0.351
+ }
+}

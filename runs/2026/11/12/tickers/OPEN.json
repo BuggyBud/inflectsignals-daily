@@ -1,0 +1,1028 @@
+{
+ "date": "2026-11-12",
+ "detected_regions": {
+  "primary": {
+   "days_in_region": 175,
+   "region_start": "2026-06-02",
+   "trigger_date": "2026-11-09",
+   "trigger_type": "severe_drawdown"
+  },
+  "secondary": [
+   {
+    "confidence_score": 0.0363,
+    "downside_q50": -0.0746,
+    "ev_score": 0.2843,
+    "region_start": "2025-12-05",
+    "seq_len": 200,
+    "trigger_date": "2026-01-05",
+    "trigger_type": "compression",
+    "upside_q25": 0.1554,
+    "upside_q50": 0.3404,
+    "upside_q75": 0.592
+   }
+  ]
+ },
+ "feature_attribution": {
+  "macro_driver_count": 11,
+  "risk_flags": [
+   "high_volatility"
+  ],
+  "top_drivers": [
+   {
+    "direction": "positive",
+    "feature": "price_vs_high_52w",
+    "feature_value": 0.1344,
+    "importance": 0.0005,
+    "importance_pct": 0.196,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "negative",
+    "feature": "dollar_volume",
+    "feature_value": 25519418.0,
+    "importance": 0.0004,
+    "importance_pct": 0.1623,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "positive",
+    "feature": "return_1d",
+    "feature_value": -0.0916,
+    "importance": 0.0003,
+    "importance_pct": 0.1166,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "positive",
+    "feature": "historical_recovery_rate",
+    "feature_value": 0.1344,
+    "importance": 0.0003,
+    "importance_pct": 0.1158,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "positive",
+    "feature": "volatility_20d",
+    "feature_value": 0.0699,
+    "importance": 0.0003,
+    "importance_pct": 0.0963,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "negative",
+    "feature": "price_vs_sma200",
+    "feature_value": 0.3101,
+    "importance": 0.0002,
+    "importance_pct": 0.0915,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "negative",
+    "feature": "stock_vs_sector_20d",
+    "feature_value": -0.5,
+    "importance": 0.0002,
+    "importance_pct": 0.0813,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "positive",
+    "feature": "price_vs_low_52w",
+    "feature_value": 1.0,
+    "importance": 0.0002,
+    "importance_pct": 0.0783,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "positive",
+    "feature": "shares_out",
+    "feature_value": 953426.0,
+    "importance": 0.0002,
+    "importance_pct": 0.0618,
+    "method": "integrated_gradients"
+   }
+  ]
+ },
+ "fundamentals": {
+  "accrual": 0.0275,
+  "adx_14": 34.8945,
+  "altman_z_score": 1.0256,
+  "amihud_illiquidity": 0.0008,
+  "avg_volume": 32882260.8549,
+  "beta_252d": 1.1139,
+  "book_value_per_share": 0.6235,
+  "correlation_spy_60d": 0.4137,
+  "current_liabilities": 2154.0,
+  "current_ratio": 1.6806,
+  "daily_earnings_yield": -0.5,
+  "daily_fcf_yield": -0.5,
+  "daily_pb": 1.997,
+  "daily_pe": -0.7169,
+  "daily_ps": 0.3518,
+  "days_since_52w_high": 295.0,
+  "debt_ebitda": -4.4117,
+  "debt_to_equity": 4.598,
+  "dividend_yield": 0.0,
+  "dollar_volume_20d_avg": 63764110.0278,
+  "earnings_quality": 3.8165,
+  "ebitda_growth_yoy": -2.8086,
+  "enterprise_value": 2994.2482,
+  "eps_basic": -0.23,
+  "eps_cagr_3y": -2.3002,
+  "eps_cagr_5y": -2.09,
+  "eps_diluted": -0.23,
+  "eps_growth_accel": -0.1501,
+  "eps_growth_qoq": -0.3529,
+  "eps_growth_yoy": -3.5455,
+  "eps_growth_yoy_q2": -3.3953,
+  "eps_growth_yoy_q3": -2.3846,
+  "eps_growth_yoy_q4": -2.0357,
+  "eps_growth_yoy_q5": 0.1852,
+  "eps_growth_yoy_q6": 0.2712,
+  "eps_growth_yoy_q7": -0.2381,
+  "eps_growth_yoy_q8": -0.3333,
+  "eps_history_8q": [
+   -0.16,
+   -0.12,
+   -0.04,
+   -0.12,
+   -1.42,
+   -0.18,
+   -0.17,
+   -0.23
+  ],
+  "eps_ttm": -1.7296,
+  "ev_to_ebitda": -4.8529,
+  "ev_to_fcf": -3.5816,
+  "ev_to_sales": 2.9298,
+  "fcf_growth_yoy": -0.7037,
+  "fcf_margin": -0.818,
+  "fcf_per_share": -0.8805,
+  "gross_margin": 0.072,
+  "gross_margin_change_yoy": -0.0437,
+  "gross_margin_history": [
+   0.0865,
+   0.0869,
+   0.083,
+   0.0833,
+   0.0854,
+   0.072
+  ],
+  "inc_roic": 0.1376,
+  "interest_coverage": -8.5694,
+  "is_pre_revenue": false,
+  "margin_vs_sector_median": null,
+  "market_cap_ratio": 1182.2482,
+  "net_income": -218.0,
+  "net_margin": -0.4906,
+  "operating_income": -187.0,
+  "operating_margin": -0.1907,
+  "operating_margin_change_yoy": -0.1119,
+  "pb_ratio": 1.9888,
+  "pe_percentile_1y": 0.004,
+  "pe_ratio": -0.895,
+  "peg_trailing": 0.0025,
+  "piotroski_f_score": 1.0,
+  "price_vs_high_52w": 0.1344,
+  "price_vs_sma200": 0.3101,
+  "ps_percentile_1y": 1.0,
+  "ps_ratio": 0.5078,
+  "quarter_labels_8q": [
+   "Q4 '24",
+   "Q1 '25",
+   "Q2 '25",
+   "Q3 '25",
+   "Q4 '25",
+   "Q1 '26",
+   "Q2 '26",
+   "Q3 '26"
+  ],
+  "quarterly_eps_growth_yoy": -0.9167,
+  "quarterly_eps_growth_yoy_8q": [
+   -0.1429,
+   0.25,
+   0.6923,
+   -0.0909,
+   -7.875,
+   -0.5,
+   -3.25,
+   -0.9167
+  ],
+  "quarterly_revenue_growth_yoy": 0.1169,
+  "quarterly_revenue_growth_yoy_8q": [
+   0.246,
+   -0.0237,
+   0.0371,
+   -0.3355,
+   -0.321,
+   -0.3755,
+   -0.4365,
+   0.1169
+  ],
+  "revenue_cagr_3y": -0.2781,
+  "revenue_cagr_5y": -0.0545,
+  "revenue_growth_accel": 0.0842,
+  "revenue_growth_qoq": 0.1574,
+  "revenue_growth_yoy": -0.2878,
+  "revenue_growth_yoy_q2": -0.3719,
+  "revenue_growth_yoy_q3": -0.2316,
+  "revenue_growth_yoy_q4": -0.1518,
+  "revenue_growth_yoy_q5": -0.0445,
+  "revenue_growth_yoy_q6": 0.1407,
+  "revenue_growth_yoy_q7": 0.0236,
+  "revenue_growth_yoy_q8": -0.2581,
+  "revenue_history_8q": [
+   1084.0,
+   1153.0,
+   1567.0,
+   915.0,
+   736.0,
+   720.0,
+   883.0,
+   1022.0
+  ],
+  "revenue_per_share": 1.0764,
+  "roa": -0.4922,
+  "roce": -0.3582,
+  "roe": -2.1899,
+  "roic": -1.0397,
+  "rsi_14": 22.8891,
+  "sector_momentum": 0.122,
+  "share_dilution_1y": 0.0,
+  "stock_vs_sector_20d": -0.5,
+  "stock_vs_spy_20d": -0.4459,
+  "total_assets": 3740.0,
+  "vol_regime": 1.3243,
+  "volatility_20d": 0.0699,
+  "volatility_60d": 0.0528,
+  "w52_high": 9.3086,
+  "w52_low": 1.21
+ },
+ "market_characters": [
+  {
+   "id": "g8",
+   "name": "Boom-Bust"
+  }
+ ],
+ "model_analogs": {
+  "matches": [
+   {
+    "actual_downside": -0.1673,
+    "actual_return": 1.0114,
+    "actual_upside": 1.0114,
+    "days_in_region": 246,
+    "end_date": "2013-01-03",
+    "end_reason": "reversal",
+    "similarity": 0.9826,
+    "start_date": "2012-05-02",
+    "ticker": "TSL",
+    "trigger_date": "2012-10-11",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": -0.2747,
+    "actual_return": -0.0385,
+    "actual_upside": 0.0,
+    "days_in_region": 201,
+    "end_date": "2022-11-07",
+    "end_reason": "reversal",
+    "similarity": 0.9819,
+    "start_date": "2022-04-20",
+    "ticker": "HRTG",
+    "trigger_date": "2022-10-10",
+    "trigger_type": "severe_drawdown"
+   },
+   {
+    "actual_downside": -0.1213,
+    "actual_return": 0.2253,
+    "actual_upside": 0.2253,
+    "days_in_region": 263,
+    "end_date": "2020-11-10",
+    "end_reason": "reversal",
+    "similarity": 0.9818,
+    "start_date": "2020-02-21",
+    "ticker": "BMA",
+    "trigger_date": "2020-08-03",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": 0.0,
+    "actual_return": 1.2663,
+    "actual_upside": 1.2663,
+    "days_in_region": 301,
+    "end_date": "2020-12-03",
+    "end_reason": "reversal",
+    "similarity": 0.9814,
+    "start_date": "2020-02-06",
+    "ticker": "SPR",
+    "trigger_date": "2020-07-21",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": -0.0382,
+    "actual_return": 0.1213,
+    "actual_upside": 0.1213,
+    "days_in_region": 289,
+    "end_date": "2020-10-23",
+    "end_reason": "reversal",
+    "similarity": 0.9809,
+    "start_date": "2020-01-08",
+    "ticker": "EMBJ",
+    "trigger_date": "2020-06-30",
+    "trigger_type": "severe_drawdown"
+   },
+   {
+    "actual_downside": -0.0269,
+    "actual_return": 1.1577,
+    "actual_upside": 1.1577,
+    "days_in_region": 282,
+    "end_date": "2020-12-04",
+    "end_reason": "reversal",
+    "similarity": 0.9806,
+    "start_date": "2020-02-26",
+    "ticker": "WLFC",
+    "trigger_date": "2020-08-17",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": -0.225,
+    "actual_return": -0.0958,
+    "actual_upside": 0.0,
+    "days_in_region": 219,
+    "end_date": "2020-10-08",
+    "end_reason": "reversal",
+    "similarity": 0.9803,
+    "start_date": "2020-03-03",
+    "ticker": "PBF",
+    "trigger_date": "2020-08-21",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": -0.0402,
+    "actual_return": 0.3494,
+    "actual_upside": 0.3494,
+    "days_in_region": 121,
+    "end_date": "2005-11-11",
+    "end_reason": "reversal",
+    "similarity": 0.9802,
+    "start_date": "2005-07-13",
+    "ticker": "INOD",
+    "trigger_date": "2005-10-14",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": -0.1706,
+    "actual_return": 0.0125,
+    "actual_upside": 0.0125,
+    "days_in_region": 122,
+    "end_date": "2020-10-08",
+    "end_reason": "reversal",
+    "similarity": 0.9799,
+    "start_date": "2020-06-08",
+    "ticker": "DK",
+    "trigger_date": "2020-09-02",
+    "trigger_type": "severe_drawdown"
+   },
+   {
+    "actual_downside": -0.0242,
+    "actual_return": 0.0436,
+    "actual_upside": 0.6659,
+    "days_in_region": 138,
+    "end_date": "2016-03-15",
+    "end_reason": "reversal",
+    "similarity": 0.9799,
+    "start_date": "2015-10-29",
+    "ticker": "CSTM",
+    "trigger_date": "2016-02-11",
+    "trigger_type": "shallow_runup"
+   }
+  ],
+  "stats": {
+   "avg_max_drawdown": 0.1204,
+   "avg_similarity": 0.978,
+   "avg_trough": 0.1204,
+   "avg_upside": 0.342,
+   "best_return": 1.4628,
+   "downside_range": [
+    -0.3514,
+    0.0
+   ],
+   "median_return": 0.1321,
+   "n_matches": 50,
+   "outcome_agreement": true,
+   "return_p25": -0.0215,
+   "return_p5": -0.1533,
+   "return_p75": 0.4469,
+   "return_p95": 1.0919,
+   "sim_weighted_win_rate": 0.74,
+   "top5_avg_trough": 0.1203,
+   "top5_avg_upside": 0.5249,
+   "top_similarity": 0.983,
+   "upside_range": [
+    0.0,
+    1.4628
+   ],
+   "win_rate": 0.74,
+   "worst_return": -0.3049,
+   "years_span": 12
+  },
+  "total_matches": 50
+ },
+ "peer_group": {
+  "buckets": [
+   "Real Estate Brokerage, Leasing, Title & Closing Services",
+   "Vertical Technology Platforms & Marketplaces"
+  ],
+  "groups": {
+   "Real Estate Brokerage, Leasing, Title & Closing Services": [
+    {
+     "market_cap_m": 15731.9813,
+     "price_vs_sma200": 1.1239,
+     "return_30d": 0.1866,
+     "return_7d": -0.0238,
+     "revenue_driver": "commercial real estate leasing commissions",
+     "signal_rank": 1142,
+     "stock_vs_spy_20d": 0.1959,
+     "ticker": "JLL"
+    },
+    {
+     "market_cap_m": 959.3755,
+     "price_vs_sma200": 0.6552,
+     "return_30d": 0.1295,
+     "return_7d": 0.1176,
+     "revenue_driver": "residential real estate brokerage",
+     "signal_rank": null,
+     "stock_vs_spy_20d": 0.1722,
+     "ticker": "EXPI"
+    },
+    {
+     "market_cap_m": 16335.8776,
+     "price_vs_sma200": 0.9069,
+     "return_30d": 0.102,
+     "return_7d": 0.0413,
+     "revenue_driver": "title insurance premiums",
+     "signal_rank": 563,
+     "stock_vs_spy_20d": 0.1058,
+     "ticker": "FNF"
+    },
+    {
+     "market_cap_m": 5637.0737,
+     "price_vs_sma200": 1.0279,
+     "return_30d": 0.1009,
+     "return_7d": 0.0773,
+     "revenue_driver": "residential real estate brokerage",
+     "signal_rank": 1380,
+     "stock_vs_spy_20d": 0.0633,
+     "ticker": "COMP"
+    },
+    {
+     "market_cap_m": 13566.5742,
+     "price_vs_sma200": 0.8227,
+     "return_30d": 0.0859,
+     "return_7d": -0.039,
+     "revenue_driver": "real estate information services",
+     "signal_rank": null,
+     "stock_vs_spy_20d": 0.1229,
+     "ticker": "CSGP"
+    },
+    {
+     "market_cap_m": 6594.968,
+     "price_vs_sma200": 0.9528,
+     "return_30d": 0.047,
+     "return_7d": -0.0088,
+     "revenue_driver": "title insurance premiums",
+     "signal_rank": 508,
+     "stock_vs_spy_20d": 0.0349,
+     "ticker": "FAF"
+    },
+    {
+     "market_cap_m": 39056.1053,
+     "price_vs_sma200": 0.9453,
+     "return_30d": 0.0154,
+     "return_7d": -0.022,
+     "revenue_driver": "property management fees",
+     "signal_rank": 1066,
+     "stock_vs_spy_20d": -0.0021,
+     "ticker": "CBRE"
+    },
+    {
+     "market_cap_m": 490.5779,
+     "price_vs_sma200": 0.9612,
+     "return_30d": -0.1195,
+     "return_7d": -0.058,
+     "revenue_driver": "title insurance premiums",
+     "signal_rank": 157,
+     "stock_vs_spy_20d": -0.1073,
+     "ticker": "ITIC"
+    },
+    {
+     "market_cap_m": 1080.1133,
+     "price_vs_sma200": 0.8432,
+     "return_30d": -0.1626,
+     "return_7d": -0.1461,
+     "revenue_driver": "commercial real estate brokerage",
+     "signal_rank": 147,
+     "stock_vs_spy_20d": -0.1226,
+     "ticker": "MMI"
+    },
+    {
+     "market_cap_m": 1706.6325,
+     "price_vs_sma200": 0.3101,
+     "return_30d": -0.4833,
+     "return_7d": -0.2874,
+     "revenue_driver": "iBuying home resales",
+     "signal_rank": 1641,
+     "stock_vs_spy_20d": -0.4459,
+     "ticker": "OPEN"
+    }
+   ],
+   "Vertical Technology Platforms & Marketplaces": [
+    {
+     "market_cap_m": 14232.2689,
+     "price_vs_sma200": 1.3232,
+     "return_30d": 0.3258,
+     "return_7d": 0.0029,
+     "revenue_driver": "grocery delivery marketplace",
+     "signal_rank": 864,
+     "stock_vs_spy_20d": 0.1634,
+     "ticker": "CART"
+    },
+    {
+     "market_cap_m": 811.0643,
+     "price_vs_sma200": 1.2108,
+     "return_30d": 0.285,
+     "return_7d": 0.1116,
+     "revenue_driver": "dealer advertising subscriptions",
+     "signal_rank": 1070,
+     "stock_vs_spy_20d": 0.2757,
+     "ticker": "CARS"
+    },
+    {
+     "market_cap_m": 6921.4057,
+     "price_vs_sma200": 1.344,
+     "return_30d": 0.2647,
+     "return_7d": 0.0769,
+     "revenue_driver": "home warranty plans",
+     "signal_rank": 586,
+     "stock_vs_spy_20d": 0.2389,
+     "ticker": "FTDR"
+    },
+    {
+     "market_cap_m": 2936.7175,
+     "price_vs_sma200": 1.0419,
+     "return_30d": 0.1527,
+     "return_7d": 0.0148,
+     "revenue_driver": "dealer listing subscriptions",
+     "signal_rank": 458,
+     "stock_vs_spy_20d": 0.1507,
+     "ticker": "CARG"
+    },
+    {
+     "market_cap_m": 5637.0737,
+     "price_vs_sma200": 1.0279,
+     "return_30d": 0.1009,
+     "return_7d": 0.0773,
+     "revenue_driver": "residential real estate brokerage",
+     "signal_rank": 1380,
+     "stock_vs_spy_20d": 0.0633,
+     "ticker": "COMP"
+    },
+    {
+     "market_cap_m": 5014.4551,
+     "price_vs_sma200": 1.2116,
+     "return_30d": 0.0909,
+     "return_7d": -0.0042,
+     "revenue_driver": "property management SaaS",
+     "signal_rank": 1028,
+     "stock_vs_spy_20d": 0.0388,
+     "ticker": "APPF"
+    },
+    {
+     "market_cap_m": 2606167.7586,
+     "price_vs_sma200": 1.0939,
+     "return_30d": 0.0774,
+     "return_7d": 0.0668,
+     "revenue_driver": "cloud infrastructure",
+     "signal_rank": 1708,
+     "stock_vs_spy_20d": 0.0694,
+     "ticker": "AMZN"
+    },
+    {
+     "market_cap_m": 4904271.5607,
+     "price_vs_sma200": 1.1799,
+     "return_30d": 0.0744,
+     "return_7d": 0.0692,
+     "revenue_driver": "iphone sales",
+     "signal_rank": 1670,
+     "stock_vs_spy_20d": 0.0573,
+     "ticker": "AAPL"
+    },
+    {
+     "market_cap_m": 1706.6325,
+     "price_vs_sma200": 0.3101,
+     "return_30d": -0.4833,
+     "return_7d": -0.2874,
+     "revenue_driver": "iBuying home resales",
+     "signal_rank": 1641,
+     "stock_vs_spy_20d": -0.4459,
+     "ticker": "OPEN"
+    },
+    {
+     "market_cap_m": 267.9677,
+     "price_vs_sma200": 0.8828,
+     "return_30d": -1.0,
+     "return_7d": -1.0,
+     "revenue_driver": "home services marketplace",
+     "signal_rank": null,
+     "stock_vs_spy_20d": 0.0111,
+     "ticker": "ANGI"
+    }
+   ]
+  }
+ },
+ "predictions": {
+  "badge_count": 1,
+  "confidence_score": 0.0436,
+  "conviction_label": "HIGH CONVICTION",
+  "data_quality_flags": [],
+  "ev_score": 0.2665,
+  "is_diamond": false,
+  "passes_tradability_filter": true,
+  "quality_label": "WEAK",
+  "quantiles": {
+   "downside_q10": -0.309,
+   "downside_q25": -0.1722,
+   "downside_q50": -0.0798,
+   "downside_q75": -0.0141,
+   "downside_q90": 0.0033,
+   "path_volatility": 0.048,
+   "risk_reward": 4.0848,
+   "uncertainty": 0.8258,
+   "upside_q10": 0.0478,
+   "upside_q25": 0.1479,
+   "upside_q50": 0.326,
+   "upside_q75": 0.5706,
+   "upside_q90": 0.8736
+  },
+  "rank": 1641,
+  "rank_score": 0.0179,
+  "tradability_filter_reasons": []
+ },
+ "profile": {
+  "_local": {
+   "dividend_yield": 0.0,
+   "eps_growth_yoy": -3.5455,
+   "pe_ratio": -0.895,
+   "revenue_growth_yoy": -0.2878,
+   "roe": -2.1899
+  },
+  "beta": 3.784,
+  "betaTTM": null,
+  "ceo": "Kasra Nejatian",
+  "companyName": "Opendoor Technologies Inc.",
+  "country": "US",
+  "debtToEquityTTM": null,
+  "description": "Founded in 2013, Opendoor Technologies Inc. provides a digital ecosystem for residential real estate transactions throughout the United States. This platform allows individuals to efficiently purchase and sell homes entirely online. Based in Tempe, Arizona, the company further offers supporting services like title insurance and escrow.",
+  "dividendYielTTM": null,
+  "enterpriseValueOverEBITDATTM": null,
+  "exchangeShortName": "NASDAQ",
+  "fullTimeEmployees": "1042",
+  "industry": "Real Estate - Services",
+  "ipoDate": "2020-06-18",
+  "latest_earnings_date": "2026-11-05",
+  "marketCapTTM": null,
+  "mktCap": 1148845165,
+  "peRatioTTM": null,
+  "price": 1.235,
+  "priceToSalesRatioTTM": null,
+  "returnOnEquityTTM": -1.9036,
+  "revenue_description": "Opendoor operates a digital platform for buying and selling homes. Revenue is driven mainly by payment volume and transaction counts processed across merchant or card networks.",
+  "revenue_description_themes": [
+   "housing market turnover",
+   "home price appreciation",
+   "geographic market expansion"
+  ],
+  "revenue_taxonomy": [
+   {
+    "bucket": "Real Estate Brokerage, Leasing, Title & Closing Services",
+    "matched_tags": [
+     "iBuying home resales",
+     "real estate service fees"
+    ],
+    "path": "Real Estate & Infrastructure › Property & Infrastructure Services › Real Estate Brokerage, Leasing, Title & Closing Services",
+    "sector": "Real Estate & Infrastructure",
+    "segment": "Property & Infrastructure Services"
+   },
+   {
+    "bucket": "Vertical Technology Platforms & Marketplaces",
+    "matched_tags": [
+     "digital real estate platform"
+    ],
+    "path": "Technology › Tech Enabled Services & Infrastructure › Vertical Technology Platforms & Marketplaces",
+    "sector": "Technology",
+    "segment": "Tech Enabled Services & Infrastructure"
+   }
+  ],
+  "revenue_themes": [
+   "iBuying home resales",
+   "real estate service fees",
+   "digital real estate platform"
+  ],
+  "sector": "Real Estate",
+  "website": "https://www.opendoor.com"
+ },
+ "report": null,
+ "scorecard": {
+  "headline": {
+   "avg_universe_pct": 4,
+   "label": "below_average",
+   "metric_count": 7
+  },
+  "metrics": {
+   "debt_to_equity": {
+    "direction": "lower",
+    "label": "D/E Ratio",
+    "sector": "Real Estate",
+    "sector_n": 13,
+    "sector_pct": 8,
+    "universe_n": 1972,
+    "universe_pct": 4,
+    "value": 4.598
+   },
+   "eps_growth_yoy": {
+    "direction": "higher",
+    "label": "EPS Growth",
+    "sector": "Real Estate",
+    "sector_n": 13,
+    "sector_pct": 0,
+    "universe_n": 1792,
+    "universe_pct": 4,
+    "value": -3.5455
+   },
+   "gross_margin": {
+    "direction": "higher",
+    "label": "Gross Margin",
+    "sector": "Real Estate",
+    "sector_n": 13,
+    "sector_pct": 0,
+    "universe_n": 1910,
+    "universe_pct": 4,
+    "value": 0.072
+   },
+   "operating_margin": {
+    "direction": "higher",
+    "label": "Op. Margin",
+    "sector": "Real Estate",
+    "sector_n": 13,
+    "sector_pct": 0,
+    "universe_n": 1910,
+    "universe_pct": 9,
+    "value": -0.1907
+   },
+   "revenue_growth_yoy": {
+    "direction": "higher",
+    "label": "Rev Growth",
+    "sector": "Real Estate",
+    "sector_n": 13,
+    "sector_pct": 0,
+    "universe_n": 1743,
+    "universe_pct": 3,
+    "value": -0.2878
+   },
+   "roe": {
+    "direction": "higher",
+    "label": "ROE",
+    "sector": "Real Estate",
+    "sector_n": 13,
+    "sector_pct": 0,
+    "universe_n": 1987,
+    "universe_pct": 2,
+    "value": -2.1899
+   },
+   "roic": {
+    "direction": "higher",
+    "label": "ROIC",
+    "sector": "Real Estate",
+    "sector_n": 13,
+    "sector_pct": 0,
+    "universe_n": 1957,
+    "universe_pct": 4,
+    "value": -0.1375
+   }
+  }
+ },
+ "signal_rank": 1641,
+ "structural_analogs": {
+  "gp_core_pct": 24.4,
+  "gp_core_ratio": 1.028,
+  "matches": [
+   {
+    "actual_downside": -0.1126,
+    "actual_return": -0.1072,
+    "actual_upside": 0.6092,
+    "days_in_region": 68,
+    "end_date": "2015-11-17",
+    "end_reason": "reversal",
+    "seq_len": 68,
+    "similarity": 0.496,
+    "start_date": "2015-08-20",
+    "ticker": "XONE",
+    "total_distance": 0.3506,
+    "trigger_date": "2015-08-31",
+    "trigger_type": "runup"
+   },
+   {
+    "actual_downside": -0.4362,
+    "actual_return": -0.4362,
+    "actual_upside": 0.0,
+    "days_in_region": 65,
+    "end_date": "2022-04-27",
+    "end_reason": "reversal",
+    "seq_len": 65,
+    "similarity": 0.4931,
+    "start_date": "2022-03-14",
+    "ticker": "KOPN",
+    "total_distance": 0.3536,
+    "trigger_date": "2022-03-18",
+    "trigger_type": "runup"
+   },
+   {
+    "actual_downside": -0.1547,
+    "actual_return": -0.1547,
+    "actual_upside": 0.0777,
+    "days_in_region": 68,
+    "end_date": "2013-05-01",
+    "end_reason": "reversal",
+    "seq_len": 68,
+    "similarity": 0.4904,
+    "start_date": "2013-01-15",
+    "ticker": "MAKO",
+    "total_distance": 0.3563,
+    "trigger_date": "2013-01-25",
+    "trigger_type": "shallow_runup"
+   },
+   {
+    "actual_downside": -0.0855,
+    "actual_return": -0.0855,
+    "actual_upside": 0.2788,
+    "days_in_region": 64,
+    "end_date": "2014-10-22",
+    "end_reason": "reversal",
+    "seq_len": 64,
+    "similarity": 0.486,
+    "start_date": "2014-08-12",
+    "ticker": "NPTN",
+    "total_distance": 0.3608,
+    "trigger_date": "2014-08-15",
+    "trigger_type": "shallow_runup"
+   },
+   {
+    "actual_downside": -0.2833,
+    "actual_return": -0.1433,
+    "actual_upside": 0.0,
+    "days_in_region": 66,
+    "end_date": "2008-08-27",
+    "end_reason": "new_pattern",
+    "seq_len": 66,
+    "similarity": 0.4839,
+    "start_date": "2008-07-16",
+    "ticker": "GTN",
+    "total_distance": 0.363,
+    "trigger_date": "2008-07-23",
+    "trigger_type": "runup"
+   },
+   {
+    "actual_downside": -0.1304,
+    "actual_return": 0.0332,
+    "actual_upside": 0.2685,
+    "days_in_region": 66,
+    "end_date": "2022-08-09",
+    "end_reason": "reversal",
+    "seq_len": 66,
+    "similarity": 0.4821,
+    "start_date": "2022-06-17",
+    "ticker": "PSNL",
+    "total_distance": 0.3648,
+    "trigger_date": "2022-06-27",
+    "trigger_type": "runup"
+   },
+   {
+    "actual_downside": -0.4314,
+    "actual_return": -0.4314,
+    "actual_upside": 0.0868,
+    "days_in_region": 64,
+    "end_date": "2022-04-29",
+    "end_reason": "reversal",
+    "seq_len": 64,
+    "similarity": 0.4814,
+    "start_date": "2022-03-14",
+    "ticker": "CURI",
+    "total_distance": 0.3655,
+    "trigger_date": "2022-03-17",
+    "trigger_type": "runup"
+   },
+   {
+    "actual_downside": -0.1177,
+    "actual_return": -0.0258,
+    "actual_upside": 0.4081,
+    "days_in_region": 65,
+    "end_date": "2008-09-02",
+    "end_reason": "new_pattern",
+    "seq_len": 65,
+    "similarity": 0.481,
+    "start_date": "2008-07-15",
+    "ticker": "ISSC",
+    "total_distance": 0.366,
+    "trigger_date": "2008-07-21",
+    "trigger_type": "shallow_runup"
+   },
+   {
+    "actual_downside": -0.0399,
+    "actual_return": 0.155,
+    "actual_upside": 0.4233,
+    "days_in_region": 69,
+    "end_date": "2020-01-27",
+    "end_reason": "reversal",
+    "seq_len": 69,
+    "similarity": 0.4809,
+    "start_date": "2019-11-18",
+    "ticker": "CTMX",
+    "total_distance": 0.3661,
+    "trigger_date": "2019-11-29",
+    "trigger_type": "runup"
+   },
+   {
+    "actual_downside": -0.5227,
+    "actual_return": -0.5227,
+    "actual_upside": 0.0025,
+    "days_in_region": 64,
+    "end_date": "2022-04-29",
+    "end_reason": "reversal",
+    "seq_len": 64,
+    "similarity": 0.478,
+    "start_date": "2022-03-14",
+    "ticker": "FUBO",
+    "total_distance": 0.3691,
+    "trigger_date": "2022-03-17",
+    "trigger_type": "runup"
+   }
+  ],
+  "panel": {
+   "edge": -0.3189,
+   "hit_hi": 0.319,
+   "hit_lo": 0.168,
+   "hit_rate": 0.235,
+   "median_final": -0.1547,
+   "median_pain": 0.192,
+   "n": 51,
+   "n_eff": 51.0,
+   "p25_final": -0.4314,
+   "p_pain_gt5": 0.902,
+   "return_to_pain": -0.73
+  },
+  "stats": {
+   "avg_similarity": 0.44,
+   "avg_trough": 0.2252,
+   "avg_upside": 0.3134,
+   "median_pain": 0.1922,
+   "median_return": -0.1221,
+   "n_matches": 200,
+   "p25_return": -0.2963,
+   "p_pain_gt5": 0.86,
+   "return_to_pain": -0.575,
+   "top5_avg_trough": 0.2144,
+   "top5_avg_upside": 0.1932,
+   "top_similarity": 0.496,
+   "win_rate": 0.32
+  },
+  "total_matches": 200
+ },
+ "ticker": "OPEN",
+ "trending": {
+  "acceleration": -0.0067,
+  "avg_vol_20d": 38352579.279,
+  "base_high_120": 5.41,
+  "breakout_confirmed": 0,
+  "close": 1.24,
+  "momentum_score": 0.0036,
+  "momentum_start": "2026-08-05",
+  "range_20": 0.9597,
+  "range_50": 1.6452,
+  "rank": 1500,
+  "rank_down": 37,
+  "rank_up": null,
+  "ret_120": -0.7263,
+  "ret_20": -0.4655,
+  "ret_60": -0.6536,
+  "rundown_score": 0.9587,
+  "score_date": "2026-11-12",
+  "slope_20": -0.034,
+  "slope_60": -0.0273,
+  "stage": "rundown",
+  "stage_label": "rundown",
+  "ticker": "OPEN",
+  "total_score": 0.2577,
+  "trend_ratio": 0.3444,
+  "vcp_detected": 0,
+  "vcp_score": 0.4271
+ }
+}

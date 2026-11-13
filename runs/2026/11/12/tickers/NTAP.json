@@ -1,0 +1,1012 @@
+{
+ "date": "2026-11-12",
+ "detected_regions": {
+  "primary": {
+   "days_in_region": 84,
+   "region_start": "2026-10-12",
+   "trigger_date": "2026-11-06",
+   "trigger_type": "severe_drawdown"
+  },
+  "secondary": [
+   {
+    "confidence_score": 0.4279,
+    "downside_q50": -0.0927,
+    "ev_score": 0.084,
+    "region_start": "2026-05-07",
+    "seq_len": 192,
+    "trigger_date": "2026-10-28",
+    "trigger_type": "runup",
+    "upside_q25": 0.0761,
+    "upside_q50": 0.1721,
+    "upside_q75": 0.2893
+   }
+  ]
+ },
+ "feature_attribution": {
+  "macro_driver_count": 15,
+  "risk_flags": [
+   "high_volatility"
+  ],
+  "top_drivers": [
+   {
+    "direction": "negative",
+    "feature": "dollar_volume",
+    "feature_value": 254717840.0,
+    "importance": 0.0009,
+    "importance_pct": 0.4417,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "positive",
+    "feature": "price_vs_sma200",
+    "feature_value": 1.2108,
+    "importance": 0.0006,
+    "importance_pct": 0.2704,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "positive",
+    "feature": "rsi_overbought",
+    "feature_value": 0.0,
+    "importance": 0.0002,
+    "importance_pct": 0.0982,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "positive",
+    "feature": "price_vs_low_52w",
+    "feature_value": 1.9773,
+    "importance": 0.0002,
+    "importance_pct": 0.0968,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "positive",
+    "feature": "williams_14",
+    "feature_value": -71.7916,
+    "importance": 0.0002,
+    "importance_pct": 0.0929,
+    "method": "integrated_gradients"
+   }
+  ]
+ },
+ "fundamentals": {
+  "accrual": -0.0149,
+  "adx_14": 43.0534,
+  "altman_z_score": 2.9802,
+  "amihud_illiquidity": 0.0001,
+  "avg_volume": 2330576.9722,
+  "beta_252d": 0.5637,
+  "book_value_per_share": 7.6276,
+  "correlation_spy_60d": 0.6376,
+  "current_liabilities": 4568.0,
+  "current_ratio": 1.2417,
+  "daily_earnings_yield": 0.0385,
+  "daily_fcf_yield": 0.0185,
+  "daily_pb": 24.6522,
+  "daily_pe": 25.9908,
+  "daily_ps": 4.9865,
+  "days_since_52w_high": 23.0,
+  "debt_ebitda": 1.2335,
+  "debt_to_equity": 1.6642,
+  "dividend_yield": 0.0058,
+  "dollar_volume_20d_avg": 375627385.1225,
+  "earnings_quality": 1.3413,
+  "ebitda_growth_yoy": 0.21,
+  "enterprise_value": 35767.0048,
+  "eps_basic": 1.91,
+  "eps_cagr_3y": 0.0857,
+  "eps_cagr_5y": 0.1327,
+  "eps_diluted": 1.88,
+  "eps_growth_accel": 0.1377,
+  "eps_growth_qoq": -0.0683,
+  "eps_growth_yoy": 0.2444,
+  "eps_growth_yoy_q2": 0.1067,
+  "eps_growth_yoy_q3": 0.0901,
+  "eps_growth_yoy_q4": 0.0411,
+  "eps_growth_yoy_q5": 0.099,
+  "eps_growth_yoy_q6": 0.2232,
+  "eps_growth_yoy_q7": 0.2361,
+  "eps_growth_yoy_q8": 0.7125,
+  "eps_history_8q": [
+   1.42,
+   1.44,
+   1.65,
+   1.15,
+   1.51,
+   1.67,
+   2.03,
+   1.88
+  ],
+  "eps_ttm": 7.1594,
+  "ev_to_ebitda": 17.7328,
+  "ev_to_fcf": 89.1945,
+  "ev_to_sales": 17.6627,
+  "fcf_growth_yoy": -0.3532,
+  "fcf_margin": 0.198,
+  "fcf_per_share": 2.0459,
+  "gross_margin": 0.7129,
+  "gross_margin_change_yoy": -0.0343,
+  "gross_margin_history": [
+   0.736,
+   0.7326,
+   0.7336,
+   0.7265,
+   0.7214,
+   0.7129
+  ],
+  "inc_roic": 0.0863,
+  "interest_coverage": 25.2125,
+  "is_pre_revenue": false,
+  "margin_vs_sector_median": null,
+  "market_cap_ratio": 36855.0048,
+  "net_income": 375.0,
+  "net_margin": 0.1919,
+  "operating_income": 484.0,
+  "operating_margin": 0.2527,
+  "operating_margin_change_yoy": 0.0395,
+  "pb_ratio": 24.3958,
+  "pe_percentile_1y": 0.3056,
+  "pe_ratio": 25.9908,
+  "peg_trailing": 1.0092,
+  "piotroski_f_score": 4.0,
+  "price_vs_high_52w": 0.778,
+  "price_vs_sma200": 1.2108,
+  "ps_percentile_1y": 0.2778,
+  "ps_ratio": 4.8442,
+  "quarter_labels_8q": [
+   "Q2 '24",
+   "Q3 '24",
+   "Q4 '24",
+   "Q1 '25",
+   "Q2 '25",
+   "Q3 '26",
+   "Q4 '26",
+   "Q1 '26"
+  ],
+  "quarterly_eps_growth_yoy": 0.6348,
+  "quarterly_eps_growth_yoy_8q": [
+   0.2909,
+   -0.027,
+   0.2044,
+   -0.0171,
+   0.0634,
+   0.1597,
+   0.2303,
+   0.6348
+  ],
+  "quarterly_revenue_growth_yoy": 0.2989,
+  "quarterly_revenue_growth_yoy_8q": [
+   0.0615,
+   0.0218,
+   0.0384,
+   0.0117,
+   0.0283,
+   0.0439,
+   0.1247,
+   0.2989
+  ],
+  "revenue_cagr_3y": 0.0602,
+  "revenue_cagr_5y": 0.0461,
+  "revenue_growth_accel": 0.0678,
+  "revenue_growth_qoq": 0.0395,
+  "revenue_growth_yoy": 0.1215,
+  "revenue_growth_yoy_q2": 0.0537,
+  "revenue_growth_yoy_q3": 0.0309,
+  "revenue_growth_yoy_q4": 0.0253,
+  "revenue_growth_yoy_q5": 0.0334,
+  "revenue_growth_yoy_q6": 0.0485,
+  "revenue_growth_yoy_q7": 0.0529,
+  "revenue_growth_yoy_q8": 0.061,
+  "revenue_history_8q": [
+   1658.0,
+   1641.0,
+   1732.0,
+   1559.0,
+   1705.0,
+   1713.0,
+   1948.0,
+   2025.0
+  ],
+  "revenue_per_share": 10.3316,
+  "roa": 0.1307,
+  "roce": 0.285,
+  "roe": 0.9965,
+  "roic": 0.222,
+  "rsi_14": 44.8037,
+  "sector_momentum": 0.0438,
+  "share_dilution_1y": 0.0,
+  "stock_vs_sector_20d": -0.1292,
+  "stock_vs_spy_20d": -0.1137,
+  "total_assets": 10955.0,
+  "vol_regime": 1.2672,
+  "volatility_20d": 0.0419,
+  "volatility_60d": 0.0331,
+  "w52_high": 240.87,
+  "w52_low": 93.69
+ },
+ "market_characters": [
+  {
+   "id": "g5",
+   "name": "Quality Compressed"
+  }
+ ],
+ "model_analogs": {
+  "matches": [
+   {
+    "actual_downside": -0.1585,
+    "actual_return": 0.0943,
+    "actual_upside": 0.0943,
+    "days_in_region": 234,
+    "end_date": "2006-05-11",
+    "end_reason": "reversal",
+    "similarity": 0.9724,
+    "start_date": "2005-09-19",
+    "ticker": "MEE",
+    "trigger_date": "2005-10-31",
+    "trigger_type": "severe_drawdown"
+   },
+   {
+    "actual_downside": 0.0,
+    "actual_return": 0.3161,
+    "actual_upside": 0.3161,
+    "days_in_region": 88,
+    "end_date": "2005-12-06",
+    "end_reason": "reversal",
+    "similarity": 0.971,
+    "start_date": "2005-09-09",
+    "ticker": "FDG",
+    "trigger_date": "2005-10-21",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": -0.0457,
+    "actual_return": 0.2063,
+    "actual_upside": 0.2063,
+    "days_in_region": 72,
+    "end_date": "2005-12-14",
+    "end_reason": "reversal",
+    "similarity": 0.9707,
+    "start_date": "2005-10-03",
+    "ticker": "CBI",
+    "trigger_date": "2005-10-28",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": -0.0629,
+    "actual_return": 0.0748,
+    "actual_upside": 0.0748,
+    "days_in_region": 80,
+    "end_date": "2018-12-03",
+    "end_reason": "reversal",
+    "similarity": 0.9704,
+    "start_date": "2018-09-14",
+    "ticker": "PCTY",
+    "trigger_date": "2018-10-29",
+    "trigger_type": "severe_drawdown"
+   },
+   {
+    "actual_downside": -0.0527,
+    "actual_return": 0.1442,
+    "actual_upside": 0.1442,
+    "days_in_region": 83,
+    "end_date": "2018-12-13",
+    "end_reason": "reversal",
+    "similarity": 0.9697,
+    "start_date": "2018-09-21",
+    "ticker": "MOH",
+    "trigger_date": "2018-10-29",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": -0.1551,
+    "actual_return": 0.1566,
+    "actual_upside": 0.1566,
+    "days_in_region": 192,
+    "end_date": "2019-04-11",
+    "end_reason": "reversal",
+    "similarity": 0.969,
+    "start_date": "2018-10-01",
+    "ticker": "FTNT",
+    "trigger_date": "2018-10-29",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": 0.0,
+    "actual_return": 0.4985,
+    "actual_upside": 0.4985,
+    "days_in_region": 202,
+    "end_date": "2019-04-03",
+    "end_reason": "reversal",
+    "similarity": 0.9681,
+    "start_date": "2018-09-13",
+    "ticker": "APPF",
+    "trigger_date": "2018-10-02",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": -0.0822,
+    "actual_return": 0.1206,
+    "actual_upside": 0.1327,
+    "days_in_region": 147,
+    "end_date": "2013-02-14",
+    "end_reason": "reversal",
+    "similarity": 0.9679,
+    "start_date": "2012-09-20",
+    "ticker": "DOLE",
+    "trigger_date": "2012-10-23",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": -0.0892,
+    "actual_return": 0.4092,
+    "actual_upside": 0.4092,
+    "days_in_region": 131,
+    "end_date": "2005-08-15",
+    "end_reason": "reversal",
+    "similarity": 0.9671,
+    "start_date": "2005-04-06",
+    "ticker": "VLO",
+    "trigger_date": "2005-05-04",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": 0.0,
+    "actual_return": 0.3354,
+    "actual_upside": 0.3354,
+    "days_in_region": 124,
+    "end_date": "2006-01-30",
+    "end_reason": "reversal",
+    "similarity": 0.9668,
+    "start_date": "2005-09-28",
+    "ticker": "VLO",
+    "trigger_date": "2005-10-21",
+    "trigger_type": "drawdown"
+   }
+  ],
+  "stats": {
+   "avg_max_drawdown": 0.0694,
+   "avg_similarity": 0.965,
+   "avg_trough": 0.0694,
+   "avg_upside": 0.2887,
+   "best_return": 1.1848,
+   "downside_range": [
+    -0.4036,
+    0.0
+   ],
+   "median_return": 0.2331,
+   "n_matches": 50,
+   "outcome_agreement": true,
+   "return_p25": 0.1265,
+   "return_p5": -0.0211,
+   "return_p75": 0.4063,
+   "return_p95": 0.529,
+   "sim_weighted_win_rate": 0.94,
+   "top5_avg_trough": 0.064,
+   "top5_avg_upside": 0.1671,
+   "top_similarity": 0.972,
+   "upside_range": [
+    0.0,
+    1.1848
+   ],
+   "win_rate": 0.94,
+   "worst_return": -0.1848,
+   "years_span": 6
+  },
+  "total_matches": 50
+ },
+ "peer_group": {
+  "buckets": [
+   "Cloud Infrastructure, Database & DevOps Software",
+   "Data, Analytics & AI Software"
+  ],
+  "groups": {
+   "Cloud Infrastructure, Database & DevOps Software": [
+    {
+     "market_cap_m": 235656.0409,
+     "price_vs_sma200": 0.9906,
+     "return_30d": 0.0844,
+     "return_7d": -0.0215,
+     "revenue_driver": "hybrid cloud software",
+     "signal_rank": 1469,
+     "stock_vs_spy_20d": 0.0647,
+     "ticker": "IBM"
+    },
+    {
+     "market_cap_m": 2606167.7586,
+     "price_vs_sma200": 1.0939,
+     "return_30d": 0.0774,
+     "return_7d": 0.0668,
+     "revenue_driver": "cloud infrastructure",
+     "signal_rank": 1708,
+     "stock_vs_spy_20d": 0.0694,
+     "ticker": "AMZN"
+    },
+    {
+     "market_cap_m": 3946667.0418,
+     "price_vs_sma200": 1.186,
+     "return_30d": 0.0199,
+     "return_7d": 0.0039,
+     "revenue_driver": "cloud infrastructure",
+     "signal_rank": 1995,
+     "stock_vs_spy_20d": -0.0108,
+     "ticker": "MSFT"
+    },
+    {
+     "market_cap_m": 35326.023,
+     "price_vs_sma200": 1.0158,
+     "return_30d": -0.034,
+     "return_7d": 0.0131,
+     "revenue_driver": "cloud database SaaS",
+     "signal_rank": 1208,
+     "stock_vs_spy_20d": -0.0533,
+     "ticker": "MDB"
+    },
+    {
+     "market_cap_m": 440077.3221,
+     "price_vs_sma200": 0.8236,
+     "return_30d": -0.0794,
+     "return_7d": 0.0073,
+     "revenue_driver": "cloud infrastructure",
+     "signal_rank": 1910,
+     "stock_vs_spy_20d": -0.0351,
+     "ticker": "ORCL"
+    },
+    {
+     "market_cap_m": 104658.448,
+     "price_vs_sma200": 1.2306,
+     "return_30d": -0.1266,
+     "return_7d": 0.0124,
+     "revenue_driver": "cloud data warehousing",
+     "signal_rank": 1045,
+     "stock_vs_spy_20d": -0.0889,
+     "ticker": "SNOW"
+    },
+    {
+     "market_cap_m": 35803.3062,
+     "price_vs_sma200": 1.2108,
+     "return_30d": -0.1347,
+     "return_7d": -0.0246,
+     "revenue_driver": "hybrid cloud storage",
+     "signal_rank": 844,
+     "stock_vs_spy_20d": -0.1137,
+     "ticker": "NTAP"
+    },
+    {
+     "market_cap_m": 14178.9806,
+     "price_vs_sma200": 1.0034,
+     "return_30d": -0.2423,
+     "return_7d": -0.0453,
+     "revenue_driver": "cloud observability platform",
+     "signal_rank": 948,
+     "stock_vs_spy_20d": -0.2758,
+     "ticker": "DT"
+    },
+    {
+     "market_cap_m": 61417.603,
+     "price_vs_sma200": 0.9173,
+     "return_30d": -0.3328,
+     "return_7d": -0.1635,
+     "revenue_driver": "cloud observability platform",
+     "signal_rank": 1603,
+     "stock_vs_spy_20d": -0.2876,
+     "ticker": "DDOG"
+    },
+    {
+     "market_cap_m": 11792.4039,
+     "price_vs_sma200": 0.9598,
+     "return_30d": -0.3557,
+     "return_7d": -0.0048,
+     "revenue_driver": "cloud infrastructure services",
+     "signal_rank": null,
+     "stock_vs_spy_20d": -0.2187,
+     "ticker": "DOCN"
+    }
+   ],
+   "Data, Analytics & AI Software": [
+    {
+     "market_cap_m": 2963.76,
+     "price_vs_sma200": 1.1369,
+     "return_30d": 0.1424,
+     "return_7d": 0.0167,
+     "revenue_driver": "cloud data analytics",
+     "signal_rank": 1344,
+     "stock_vs_spy_20d": 0.113,
+     "ticker": "TDC"
+    },
+    {
+     "market_cap_m": 1443.9016,
+     "price_vs_sma200": 1.2082,
+     "return_30d": 0.0864,
+     "return_7d": 0.0459,
+     "revenue_driver": "enterprise AI applications",
+     "signal_rank": 1809,
+     "stock_vs_spy_20d": 0.0122,
+     "ticker": "AI"
+    },
+    {
+     "market_cap_m": 3946667.0418,
+     "price_vs_sma200": 1.186,
+     "return_30d": 0.0199,
+     "return_7d": 0.0039,
+     "revenue_driver": "cloud infrastructure",
+     "signal_rank": 1995,
+     "stock_vs_spy_20d": -0.0108,
+     "ticker": "MSFT"
+    },
+    {
+     "market_cap_m": 1332.5008,
+     "price_vs_sma200": 0.8357,
+     "return_30d": -0.0071,
+     "return_7d": 0.0357,
+     "revenue_driver": "digital banking SaaS",
+     "signal_rank": null,
+     "stock_vs_spy_20d": 0.0414,
+     "ticker": "ALKT"
+    },
+    {
+     "market_cap_m": 35326.023,
+     "price_vs_sma200": 1.0158,
+     "return_30d": -0.034,
+     "return_7d": 0.0131,
+     "revenue_driver": "cloud database SaaS",
+     "signal_rank": 1208,
+     "stock_vs_spy_20d": -0.0533,
+     "ticker": "MDB"
+    },
+    {
+     "market_cap_m": 104658.448,
+     "price_vs_sma200": 1.2306,
+     "return_30d": -0.1266,
+     "return_7d": 0.0124,
+     "revenue_driver": "cloud data warehousing",
+     "signal_rank": 1045,
+     "stock_vs_spy_20d": -0.0889,
+     "ticker": "SNOW"
+    },
+    {
+     "market_cap_m": 35803.3062,
+     "price_vs_sma200": 1.2108,
+     "return_30d": -0.1347,
+     "return_7d": -0.0246,
+     "revenue_driver": "hybrid cloud storage",
+     "signal_rank": 844,
+     "stock_vs_spy_20d": -0.1137,
+     "ticker": "NTAP"
+    },
+    {
+     "market_cap_m": 146.0477,
+     "price_vs_sma200": 0.7773,
+     "return_30d": -0.201,
+     "return_7d": -0.0224,
+     "revenue_driver": "cloud data and analytics platform",
+     "signal_rank": null,
+     "stock_vs_spy_20d": -0.1663,
+     "ticker": "DOMO"
+    },
+    {
+     "market_cap_m": 86.6362,
+     "price_vs_sma200": 0.6631,
+     "return_30d": -0.2477,
+     "return_7d": -0.1854,
+     "revenue_driver": "AI video analytics",
+     "signal_rank": null,
+     "stock_vs_spy_20d": -0.2819,
+     "ticker": "AISP"
+    },
+    {
+     "market_cap_m": 77.7066,
+     "price_vs_sma200": 1.2325,
+     "return_30d": -0.4785,
+     "return_7d": -0.0589,
+     "revenue_driver": "scale-out storage",
+     "signal_rank": 1965,
+     "stock_vs_spy_20d": -0.2106,
+     "ticker": "QMCO"
+    }
+   ]
+  }
+ },
+ "predictions": {
+  "badge_count": 0,
+  "confidence_score": 0.28,
+  "conviction_label": "SPECULATIVE",
+  "data_quality_flags": [],
+  "ev_score": 0.1568,
+  "is_diamond": false,
+  "passes_tradability_filter": true,
+  "quality_label": "WEAK",
+  "quantiles": {
+   "downside_q10": -0.2611,
+   "downside_q25": -0.1309,
+   "downside_q50": -0.072,
+   "downside_q75": -0.0143,
+   "downside_q90": 0.0102,
+   "path_volatility": 0.0383,
+   "risk_reward": 3.1357,
+   "uncertainty": 0.4953,
+   "upside_q10": 0.0397,
+   "upside_q25": 0.1066,
+   "upside_q50": 0.2258,
+   "upside_q75": 0.3533,
+   "upside_q90": 0.5349
+  },
+  "rank": 844,
+  "rank_score": 0.0597,
+  "tradability_filter_reasons": []
+ },
+ "profile": {
+  "_local": {
+   "dividend_yield": 0.0058,
+   "eps_growth_yoy": 0.2444,
+   "pe_ratio": 25.4965,
+   "revenue_growth_yoy": 0.1215,
+   "roe": 0.9965
+  },
+  "beta": 1.514,
+  "betaTTM": null,
+  "ceo": "George Kurian",
+  "companyName": "NetApp, Inc.",
+  "country": "US",
+  "debtToEquityTTM": null,
+  "description": "NetApp, Inc. is a technology company focused on providing cloud-centric and data-driven services that enable businesses worldwide to efficiently manage and share their information across on-premises infrastructure, private cloud setups, and public cloud platforms. The company's operations are divided into two key segments: Hybrid Cloud and Public Cloud. NetApp offers an extensive suite of intelligent data management software, including its foundational NetApp ONTAP, NetApp Snapshot for data protection, NetApp SnapCenter for backup management, NetApp SnapMirror for data replication, NetApp SnapLock for data compliance, NetApp ElementOS software, and NetApp SANtricity software. Its storage infrastructure solutions comprise the NetApp All-Flash FAS series, NetApp Fabric Attached Storage, NetApp FlexPod integrated systems, NetApp E/EF series, NetApp StorageGRID object storage, and NetApp SolidFire solutions. For cloud environments, NetApp delivers a wide array of cloud storage and data services such as NetApp Cloud Volumes ONTAP, Azure NetApp Files, Amazon FSx for NetApp ONTAP, and NetApp Cloud Volumes Service for Google Cloud. These are augmented by services like NetApp Cloud Sync, NetApp Cloud Tiering, NetApp Cloud Backup, NetApp Cloud Data Sense for analytics, and NetApp Cloud Volumes Edge Cache. The company also provides cloud operations services, which include NetApp Cloud Insights, the Spot Ocean Kubernetes Suite, Spot Security, Spot Eco for cost optimization, and Spot CloudCheckr. Moreover, NetApp offers application-aware data management solutions under its NetApp Astra brand. Its service portfolio is rounded out by comprehensive professional and support services, encompassing strategic consulting, managed services, and dedicated support, in addition to assessment, design, implementation, and migration services. NetApp serves a broad spectrum of industries globally, including energy, financial services, government, technology, internet, life sciences, healthcare, manufacturing, media, entertainment, animation, video post-production, and telecommunications. The company reaches its clientele through a direct sales force and a robust network of partners. NetApp, Inc. was founded in 1992 and is headquartered in San Jose, California.",
+  "dividendYielTTM": null,
+  "enterpriseValueOverEBITDATTM": null,
+  "exchangeShortName": "NASDAQ",
+  "fullTimeEmployees": "11700",
+  "industry": "Computer Hardware",
+  "ipoDate": "1995-11-21",
+  "latest_earnings_date": "2026-09-02",
+  "marketCapTTM": null,
+  "mktCap": 36549647520,
+  "peRatioTTM": null,
+  "price": 186.08,
+  "priceToSalesRatioTTM": null,
+  "returnOnEquityTTM": 1.1367,
+  "revenue_description": "NetApp sells data storage, cloud data services, and infrastructure software. Revenue is driven by subscription ACV from enterprise license agreements and usage-based consumption, with module expansion and new product attach as growth levers.",
+  "revenue_description_themes": [
+   "cloud data services ARR expansion",
+   "ONTAP platform upsell within installed base",
+   "AI workload optimization capabilities"
+  ],
+  "revenue_taxonomy": [
+   {
+    "bucket": "Cloud Infrastructure, Database & DevOps Software",
+    "matched_tags": [
+     "hybrid cloud storage",
+     "cloud data services"
+    ],
+    "path": "Technology › Software & Platforms › Cloud Infrastructure, Database & DevOps Software",
+    "sector": "Technology",
+    "segment": "Software & Platforms"
+   },
+   {
+    "bucket": "Data, Analytics & AI Software",
+    "matched_tags": [
+     "data management software"
+    ],
+    "path": "Technology › Software & Platforms › Data, Analytics & AI Software",
+    "sector": "Technology",
+    "segment": "Software & Platforms"
+   }
+  ],
+  "revenue_themes": [
+   "hybrid cloud storage",
+   "data management software",
+   "cloud data services"
+  ],
+  "sector": "Technology",
+  "website": "https://www.netapp.com"
+ },
+ "report": {
+  "display_rank": null,
+  "lane": "act_now",
+  "lane_rank": 30,
+  "setup_label": "countertrend",
+  "why_now": "Structural analogs leads the readiness mix (+11.6); countertrend move"
+ },
+ "scorecard": {
+  "headline": {
+   "avg_universe_pct": 64,
+   "label": "above_average",
+   "metric_count": 8
+  },
+  "metrics": {
+   "debt_to_equity": {
+    "direction": "lower",
+    "label": "D/E Ratio",
+    "sector": "Info Tech",
+    "sector_n": 270,
+    "sector_pct": 12,
+    "universe_n": 1972,
+    "universe_pct": 14,
+    "value": 1.6642
+   },
+   "eps_growth_yoy": {
+    "direction": "higher",
+    "label": "EPS Growth",
+    "sector": "Info Tech",
+    "sector_n": 267,
+    "sector_pct": 48,
+    "universe_n": 1792,
+    "universe_pct": 56,
+    "value": 0.2444
+   },
+   "gross_margin": {
+    "direction": "higher",
+    "label": "Gross Margin",
+    "sector": "Info Tech",
+    "sector_n": 267,
+    "sector_pct": 69,
+    "universe_n": 1910,
+    "universe_pct": 76,
+    "value": 0.7129
+   },
+   "operating_margin": {
+    "direction": "higher",
+    "label": "Op. Margin",
+    "sector": "Info Tech",
+    "sector_n": 267,
+    "sector_pct": 82,
+    "universe_n": 1910,
+    "universe_pct": 82,
+    "value": 0.2527
+   },
+   "pe_ratio": {
+    "direction": "lower",
+    "label": "P/E",
+    "sector": "Info Tech",
+    "sector_n": 178,
+    "sector_pct": 60,
+    "universe_n": 1431,
+    "universe_pct": 35,
+    "value": 25.4965
+   },
+   "revenue_growth_yoy": {
+    "direction": "higher",
+    "label": "Rev Growth",
+    "sector": "Info Tech",
+    "sector_n": 267,
+    "sector_pct": 46,
+    "universe_n": 1743,
+    "universe_pct": 62,
+    "value": 0.1215
+   },
+   "roe": {
+    "direction": "higher",
+    "label": "ROE",
+    "sector": "Info Tech",
+    "sector_n": 270,
+    "sector_pct": 96,
+    "universe_n": 1987,
+    "universe_pct": 97,
+    "value": 0.9965
+   },
+   "roic": {
+    "direction": "higher",
+    "label": "ROIC",
+    "sector": "Info Tech",
+    "sector_n": 267,
+    "sector_pct": 83,
+    "universe_n": 1957,
+    "universe_pct": 90,
+    "value": 0.0587
+   }
+  }
+ },
+ "signal_rank": 844,
+ "structural_analogs": {
+  "gp_core_pct": 60.9,
+  "gp_core_ratio": 1.4264,
+  "matches": [
+   {
+    "actual_downside": -0.0966,
+    "actual_return": 0.0339,
+    "actual_upside": 0.0339,
+    "days_in_region": 85,
+    "end_date": "2007-10-05",
+    "end_reason": "reversal",
+    "seq_len": 85,
+    "similarity": 0.5845,
+    "start_date": "2007-06-21",
+    "ticker": "MLM",
+    "total_distance": 0.2685,
+    "trigger_date": "2007-07-26",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": -0.2721,
+    "actual_return": -0.1737,
+    "actual_upside": 0.0243,
+    "days_in_region": 85,
+    "end_date": "2019-01-11",
+    "end_reason": "reversal",
+    "seq_len": 85,
+    "similarity": 0.5831,
+    "start_date": "2018-08-31",
+    "ticker": "BJRI",
+    "total_distance": 0.2697,
+    "trigger_date": "2018-10-05",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": -0.0288,
+    "actual_return": 0.1947,
+    "actual_upside": 0.1947,
+    "days_in_region": 76,
+    "end_date": "2018-11-07",
+    "end_reason": "reversal",
+    "seq_len": 76,
+    "similarity": 0.5808,
+    "start_date": "2018-09-21",
+    "ticker": "ITGR",
+    "total_distance": 0.2717,
+    "trigger_date": "2018-10-12",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": -0.0366,
+    "actual_return": 0.1179,
+    "actual_upside": 0.1179,
+    "days_in_region": 81,
+    "end_date": "2006-07-05",
+    "end_reason": "reversal",
+    "seq_len": 81,
+    "similarity": 0.58,
+    "start_date": "2006-04-21",
+    "ticker": "CME",
+    "total_distance": 0.2723,
+    "trigger_date": "2006-05-19",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": -0.3224,
+    "actual_return": -0.0998,
+    "actual_upside": 0.103,
+    "days_in_region": 83,
+    "end_date": "2022-02-16",
+    "end_reason": "reversal",
+    "seq_len": 83,
+    "similarity": 0.5792,
+    "start_date": "2021-11-16",
+    "ticker": "LSCC",
+    "total_distance": 0.273,
+    "trigger_date": "2021-12-17",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": -0.6712,
+    "actual_return": -0.4196,
+    "actual_upside": 0.0,
+    "days_in_region": 85,
+    "end_date": "1998-11-06",
+    "end_reason": "reversal",
+    "seq_len": 85,
+    "similarity": 0.5756,
+    "start_date": "1998-04-20",
+    "ticker": "TXI",
+    "total_distance": 0.2761,
+    "trigger_date": "1998-05-22",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": -0.0879,
+    "actual_return": 0.0767,
+    "actual_upside": 0.0767,
+    "days_in_region": 87,
+    "end_date": "1999-07-19",
+    "end_reason": "reversal",
+    "seq_len": 87,
+    "similarity": 0.5745,
+    "start_date": "1999-03-11",
+    "ticker": "LOW",
+    "total_distance": 0.2772,
+    "trigger_date": "1999-04-19",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": -0.1395,
+    "actual_return": 0.0427,
+    "actual_upside": 0.0427,
+    "days_in_region": 90,
+    "end_date": "2006-07-03",
+    "end_reason": "reversal",
+    "seq_len": 90,
+    "similarity": 0.5702,
+    "start_date": "2006-04-19",
+    "ticker": "JEF",
+    "total_distance": 0.2809,
+    "trigger_date": "2006-05-31",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": 0.0,
+    "actual_return": 0.2826,
+    "actual_upside": 0.2826,
+    "days_in_region": 80,
+    "end_date": "2014-06-06",
+    "end_reason": "reversal",
+    "seq_len": 80,
+    "similarity": 0.5701,
+    "start_date": "2014-03-18",
+    "ticker": "HA",
+    "total_distance": 0.281,
+    "trigger_date": "2014-04-14",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": -0.1518,
+    "actual_return": 0.067,
+    "actual_upside": 0.067,
+    "days_in_region": 87,
+    "end_date": "2014-10-28",
+    "end_reason": "reversal",
+    "seq_len": 87,
+    "similarity": 0.5698,
+    "start_date": "2014-08-26",
+    "ticker": "ARII",
+    "total_distance": 0.2813,
+    "trigger_date": "2014-10-02",
+    "trigger_type": "drawdown"
+   }
+  ],
+  "panel": {
+   "edge": 0.087,
+   "hit_hi": 0.832,
+   "hit_lo": 0.681,
+   "hit_rate": 0.765,
+   "median_final": 0.1438,
+   "median_pain": 0.0614,
+   "n": 51,
+   "n_eff": 51.0,
+   "p25_final": 0.0339,
+   "p_pain_gt5": 0.51,
+   "return_to_pain": 1.766
+  },
+  "stats": {
+   "avg_similarity": 0.535,
+   "avg_trough": 0.1166,
+   "avg_upside": 0.1907,
+   "median_pain": 0.0784,
+   "median_return": 0.1567,
+   "n_matches": 200,
+   "p25_return": 0.0317,
+   "p_pain_gt5": 0.61,
+   "return_to_pain": 1.592,
+   "top5_avg_trough": 0.1513,
+   "top5_avg_upside": 0.0948,
+   "top_similarity": 0.584,
+   "win_rate": 0.8
+  },
+  "total_matches": 200
+ },
+ "ticker": "NTAP",
+ "trending": {
+  "acceleration": -0.0066,
+  "avg_vol_20d": 2352637.7654,
+  "base_high_120": 239.18,
+  "breakout_confirmed": 0,
+  "close": 218.42,
+  "momentum_score": 0.7768,
+  "momentum_start": "2026-04-17",
+  "range_20": 0.1754,
+  "range_50": 0.3657,
+  "rank": 87,
+  "rank_down": null,
+  "rank_up": 48,
+  "ret_120": 0.8507,
+  "ret_20": 0.0157,
+  "ret_60": 0.1705,
+  "rundown_score": 0.8129,
+  "score_date": "2026-10-29",
+  "slope_20": -0.0038,
+  "slope_60": 0.0029,
+  "stage": "sustained",
+  "stage_label": "Trending",
+  "ticker": "NTAP",
+  "total_score": 0.6229,
+  "trend_ratio": 1.3295,
+  "vcp_detected": 1,
+  "vcp_score": 0.5203
+ }
+}

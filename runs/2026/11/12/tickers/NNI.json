@@ -1,0 +1,1121 @@
+{
+ "date": "2026-11-12",
+ "detected_regions": {
+  "primary": {
+   "days_in_region": 189,
+   "region_start": "2026-05-12",
+   "trigger_date": "2026-07-02",
+   "trigger_type": "runup"
+  },
+  "secondary": [
+   {
+    "confidence_score": 0.9941,
+    "downside_q50": -0.0377,
+    "ev_score": 0.1098,
+    "region_start": "2026-04-28",
+    "seq_len": 199,
+    "trigger_date": "2026-09-28",
+    "trigger_type": "shallow_drawdown",
+    "upside_q25": 0.0771,
+    "upside_q50": 0.1463,
+    "upside_q75": 0.2485
+   }
+  ]
+ },
+ "feature_attribution": {
+  "macro_driver_count": 15,
+  "risk_flags": [],
+  "top_drivers": [
+   {
+    "direction": "negative",
+    "feature": "volatility_20d",
+    "feature_value": 0.0177,
+    "importance": 0.0002,
+    "importance_pct": 0.2769,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "negative",
+    "feature": "book_value_per_share",
+    "feature_value": 105.6575,
+    "importance": 0.0001,
+    "importance_pct": 0.2152,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "negative",
+    "feature": "historical_recovery_rate",
+    "feature_value": 0.845,
+    "importance": 0.0001,
+    "importance_pct": 0.1962,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "positive",
+    "feature": "sector_rank_1d",
+    "feature_value": 0.7273,
+    "importance": 0.0001,
+    "importance_pct": 0.1582,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "negative",
+    "feature": "dollar_volume",
+    "feature_value": 11202993.0,
+    "importance": 0.0001,
+    "importance_pct": 0.1535,
+    "method": "integrated_gradients"
+   }
+  ]
+ },
+ "fundamentals": {
+  "accrual": 0.0161,
+  "adx_14": 36.7401,
+  "altman_z_score": 0.6163,
+  "amihud_illiquidity": 0.0009,
+  "avg_volume": 134433.7878,
+  "beta_252d": -0.0487,
+  "book_value_per_share": 105.6575,
+  "correlation_spy_60d": 0.2632,
+  "current_liabilities": 3087.037,
+  "current_ratio": 0.9311,
+  "daily_earnings_yield": 0.086,
+  "daily_fcf_yield": 0.0793,
+  "daily_pb": 0.8344,
+  "daily_pe": 11.629,
+  "daily_ps": 1.7882,
+  "days_since_52w_high": 138.0,
+  "debt_ebitda": 10.9512,
+  "debt_to_equity": 1.7873,
+  "dividend_yield": 0.0024,
+  "dollar_volume_20d_avg": 16610637.0563,
+  "earnings_quality": 2.4956,
+  "ebitda_growth_yoy": -0.3623,
+  "enterprise_value": 7665.5473,
+  "eps_basic": 2.13,
+  "eps_cagr_3y": 0.2978,
+  "eps_cagr_5y": -0.1015,
+  "eps_diluted": 2.13,
+  "eps_growth_accel": -0.2905,
+  "eps_growth_qoq": 0.1514,
+  "eps_growth_yoy": -0.3681,
+  "eps_growth_yoy_q2": -0.0775,
+  "eps_growth_yoy_q3": 1.1645,
+  "eps_growth_yoy_q4": 1.3433,
+  "eps_growth_yoy_q5": 2.8762,
+  "eps_growth_yoy_q6": 1.1603,
+  "eps_growth_yoy_q7": 0.4375,
+  "eps_growth_yoy_q8": 1.0875,
+  "eps_history_8q": [
+   1.73,
+   2.26,
+   4.97,
+   2.94,
+   1.57,
+   1.97,
+   1.85,
+   2.13
+  ],
+  "eps_ttm": 10.7344,
+  "ev_to_ebitda": 12.4017,
+  "ev_to_fcf": 40.7874,
+  "ev_to_sales": 14.384,
+  "fcf_growth_yoy": -0.6335,
+  "fcf_margin": 0.3527,
+  "fcf_per_share": 5.243,
+  "gross_margin": 0.8475,
+  "gross_margin_change_yoy": 0.2545,
+  "gross_margin_history": [
+   0.4391,
+   0.4583,
+   0.5632,
+   0.6635,
+   0.7672,
+   0.8475
+  ],
+  "inc_roic": -0.003,
+  "interest_coverage": 1.3909,
+  "is_pre_revenue": false,
+  "margin_vs_sector_median": null,
+  "market_cap_ratio": 3160.1963,
+  "net_income": 76.193,
+  "net_margin": 0.1538,
+  "operating_income": 177.333,
+  "operating_margin": 0.3277,
+  "operating_margin_change_yoy": -0.1605,
+  "pb_ratio": 1.1815,
+  "pe_percentile_1y": 0.0238,
+  "pe_ratio": 11.629,
+  "peg_trailing": -0.4589,
+  "piotroski_f_score": 4.0,
+  "price_vs_high_52w": 0.8655,
+  "price_vs_sma200": 0.96,
+  "ps_percentile_1y": 0.119,
+  "ps_ratio": 1.8194,
+  "quarter_labels_8q": [
+   "Q4 '24",
+   "Q1 '25",
+   "Q2 '25",
+   "Q3 '25",
+   "Q4 '25",
+   "Q1 '26",
+   "Q2 '26",
+   "Q3 '26"
+  ],
+  "quarterly_eps_growth_yoy": -0.2755,
+  "quarterly_eps_growth_yoy_8q": [
+   9.2381,
+   0.1414,
+   3.0407,
+   10.0,
+   -0.0925,
+   -0.1283,
+   -0.6278,
+   -0.2755
+  ],
+  "quarterly_revenue_growth_yoy": -0.0429,
+  "quarterly_revenue_growth_yoy_8q": [
+   0.0681,
+   -0.0716,
+   -0.0096,
+   0.0741,
+   -0.0454,
+   -0.0069,
+   -0.5911,
+   -0.0429
+  ],
+  "revenue_cagr_3y": -0.0514,
+  "revenue_cagr_5y": 0.0522,
+  "revenue_growth_accel": -0.027,
+  "revenue_growth_qoq": 1.6007,
+  "revenue_growth_yoy": -0.1644,
+  "revenue_growth_yoy_q2": -0.1374,
+  "revenue_growth_yoy_q3": 0.0029,
+  "revenue_growth_yoy_q4": -0.0147,
+  "revenue_growth_yoy_q5": 0.0126,
+  "revenue_growth_yoy_q6": -0.0102,
+  "revenue_growth_yoy_q7": -0.0079,
+  "revenue_growth_yoy_q8": 0.0352,
+  "revenue_history_8q": [
+   527.902,
+   529.184,
+   501.106,
+   556.798,
+   503.947,
+   525.508,
+   204.913,
+   532.92
+  ],
+  "revenue_per_share": 14.8671,
+  "roa": 0.0191,
+  "roce": 0.0457,
+  "roe": 0.0719,
+  "roic": 0.0246,
+  "rsi_14": 44.1708,
+  "sector_momentum": 0.122,
+  "share_dilution_1y": 0.0,
+  "stock_vs_sector_20d": -0.0761,
+  "stock_vs_spy_20d": -0.0053,
+  "total_assets": 14137.11,
+  "vol_regime": 1.5184,
+  "volatility_20d": 0.0177,
+  "volatility_60d": 0.0117,
+  "w52_high": 144.38,
+  "w52_low": 116.62
+ },
+ "market_characters": [
+  {
+   "id": "g2",
+   "name": "Recent Momentum"
+  }
+ ],
+ "model_analogs": {
+  "matches": [
+   {
+    "actual_downside": -0.0697,
+    "actual_return": -0.0697,
+    "actual_upside": 0.0741,
+    "days_in_region": 291,
+    "end_date": "2006-02-13",
+    "end_reason": "reversal",
+    "similarity": 0.9321,
+    "start_date": "2005-04-28",
+    "ticker": "BWA",
+    "trigger_date": "2005-05-06",
+    "trigger_type": "shallow_runup"
+   },
+   {
+    "actual_downside": -0.0047,
+    "actual_return": 0.3767,
+    "actual_upside": 0.4853,
+    "days_in_region": 434,
+    "end_date": "1991-06-13",
+    "end_reason": "reversal",
+    "similarity": 0.9319,
+    "start_date": "1990-04-05",
+    "ticker": "PFE",
+    "trigger_date": "1990-09-13",
+    "trigger_type": "runup"
+   },
+   {
+    "actual_downside": -0.0048,
+    "actual_return": 0.1327,
+    "actual_upside": 0.2589,
+    "days_in_region": 253,
+    "end_date": "2006-01-20",
+    "end_reason": "reversal",
+    "similarity": 0.9291,
+    "start_date": "2005-05-12",
+    "ticker": "SFG",
+    "trigger_date": "2005-07-29",
+    "trigger_type": "runup"
+   },
+   {
+    "actual_downside": 0.0,
+    "actual_return": 0.2208,
+    "actual_upside": 0.3653,
+    "days_in_region": 406,
+    "end_date": "2006-06-22",
+    "end_reason": "reversal",
+    "similarity": 0.9284,
+    "start_date": "2005-05-12",
+    "ticker": "AIZ",
+    "trigger_date": "2005-10-21",
+    "trigger_type": "shallow_runup"
+   },
+   {
+    "actual_downside": -0.0164,
+    "actual_return": -0.0164,
+    "actual_upside": 0.0982,
+    "days_in_region": 273,
+    "end_date": "2005-12-30",
+    "end_reason": "reversal",
+    "similarity": 0.9279,
+    "start_date": "2005-04-01",
+    "ticker": "RLI",
+    "trigger_date": "2005-08-03",
+    "trigger_type": "runup"
+   },
+   {
+    "actual_downside": 0.0,
+    "actual_return": 0.3974,
+    "actual_upside": 0.3974,
+    "days_in_region": 344,
+    "end_date": "2015-01-16",
+    "end_reason": "reversal",
+    "similarity": 0.9278,
+    "start_date": "2014-02-06",
+    "ticker": "MMS",
+    "trigger_date": "2014-04-24",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": -0.0133,
+    "actual_return": -0.0133,
+    "actual_upside": 0.1282,
+    "days_in_region": 270,
+    "end_date": "2006-01-23",
+    "end_reason": "reversal",
+    "similarity": 0.927,
+    "start_date": "2005-04-28",
+    "ticker": "CVG",
+    "trigger_date": "2005-07-21",
+    "trigger_type": "runup"
+   },
+   {
+    "actual_downside": -0.059,
+    "actual_return": 0.0535,
+    "actual_upside": 0.0535,
+    "days_in_region": 244,
+    "end_date": "2006-02-21",
+    "end_reason": "reversal",
+    "similarity": 0.9266,
+    "start_date": "2005-06-22",
+    "ticker": "TRI",
+    "trigger_date": "2005-08-10",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": -0.0075,
+    "actual_return": 0.4783,
+    "actual_upside": 0.4783,
+    "days_in_region": 249,
+    "end_date": "2005-08-05",
+    "end_reason": "reversal",
+    "similarity": 0.9266,
+    "start_date": "2004-11-29",
+    "ticker": "OXM",
+    "trigger_date": "2005-05-18",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": -0.0526,
+    "actual_return": 0.094,
+    "actual_upside": 0.094,
+    "days_in_region": 218,
+    "end_date": "2005-12-01",
+    "end_reason": "reversal",
+    "similarity": 0.9263,
+    "start_date": "2005-04-27",
+    "ticker": "RAH",
+    "trigger_date": "2005-10-14",
+    "trigger_type": "shallow_drawdown"
+   }
+  ],
+  "stats": {
+   "avg_max_drawdown": 0.0296,
+   "avg_similarity": 0.923,
+   "avg_trough": 0.0296,
+   "avg_upside": 0.1969,
+   "best_return": 0.5126,
+   "downside_range": [
+    -0.1964,
+    0.0
+   ],
+   "median_return": 0.1379,
+   "n_matches": 50,
+   "outcome_agreement": true,
+   "return_p25": 0.0282,
+   "return_p5": -0.0646,
+   "return_p75": 0.2375,
+   "return_p95": 0.399,
+   "sim_weighted_win_rate": 0.82,
+   "top5_avg_trough": 0.0191,
+   "top5_avg_upside": 0.2564,
+   "top_similarity": 0.932,
+   "upside_range": [
+    0.0126,
+    0.5407
+   ],
+   "win_rate": 0.82,
+   "worst_return": -0.1901,
+   "years_span": 6
+  },
+  "total_matches": 50
+ },
+ "peer_group": {
+  "buckets": [
+   "Lending, Cards & Consumer Finance",
+   "Payments Processing, Merchant Acquiring & Money Movement",
+   "Vertical Market Software"
+  ],
+  "groups": {
+   "Lending, Cards & Consumer Finance": [
+    {
+     "market_cap_m": 505.9637,
+     "price_vs_sma200": 0.9599,
+     "return_30d": 0.4383,
+     "return_7d": 0.2231,
+     "revenue_driver": "digital loan marketplace",
+     "signal_rank": 1139,
+     "stock_vs_spy_20d": 0.3874,
+     "ticker": "TREE"
+    },
+    {
+     "market_cap_m": 1968.1881,
+     "price_vs_sma200": 1.1586,
+     "return_30d": 0.2345,
+     "return_7d": -0.0249,
+     "revenue_driver": "online personal loan marketplace",
+     "signal_rank": null,
+     "stock_vs_spy_20d": 0.1097,
+     "ticker": "LC"
+    },
+    {
+     "market_cap_m": 1016.5129,
+     "price_vs_sma200": 1.0861,
+     "return_30d": 0.076,
+     "return_7d": 0.0088,
+     "revenue_driver": "loan interest income",
+     "signal_rank": 160,
+     "stock_vs_spy_20d": 0.0947,
+     "ticker": "CPF"
+    },
+    {
+     "market_cap_m": 483.214,
+     "price_vs_sma200": 1.1637,
+     "return_30d": 0.0641,
+     "return_7d": 0.0113,
+     "revenue_driver": "community banking",
+     "signal_rank": 1483,
+     "stock_vs_spy_20d": 0.0788,
+     "ticker": "ACNB"
+    },
+    {
+     "market_cap_m": 3215.3852,
+     "price_vs_sma200": 0.96,
+     "return_30d": 0.0102,
+     "return_7d": 0.0187,
+     "revenue_driver": "student loan servicing",
+     "signal_rank": 162,
+     "stock_vs_spy_20d": -0.0053,
+     "ticker": "NNI"
+    },
+    {
+     "market_cap_m": 11893.9263,
+     "price_vs_sma200": 0.9107,
+     "return_30d": 0.0093,
+     "return_7d": 0.0021,
+     "revenue_driver": "consumer auto loans",
+     "signal_rank": 1131,
+     "stock_vs_spy_20d": 0.0268,
+     "ticker": "ALLY"
+    },
+    {
+     "market_cap_m": 1574.061,
+     "price_vs_sma200": 0.9134,
+     "return_30d": -0.0484,
+     "return_7d": 0.0061,
+     "revenue_driver": "SBA loan interest income",
+     "signal_rank": 43,
+     "stock_vs_spy_20d": 0.0048,
+     "ticker": "LOB"
+    },
+    {
+     "market_cap_m": 20157.0266,
+     "price_vs_sma200": 0.9905,
+     "return_30d": -0.0652,
+     "return_7d": -0.0852,
+     "revenue_driver": "buy now pay later financing",
+     "signal_rank": 107,
+     "stock_vs_spy_20d": -0.1131,
+     "ticker": "AFRM"
+    },
+    {
+     "market_cap_m": 12744.9801,
+     "price_vs_sma200": 0.7177,
+     "return_30d": -0.2663,
+     "return_7d": -0.0747,
+     "revenue_driver": "private student lending",
+     "signal_rank": 489,
+     "stock_vs_spy_20d": -0.2337,
+     "ticker": "SLM"
+    },
+    {
+     "market_cap_m": 884.3885,
+     "price_vs_sma200": 0.7024,
+     "return_30d": -0.326,
+     "return_7d": -0.2567,
+     "revenue_driver": "student loan servicing",
+     "signal_rank": 361,
+     "stock_vs_spy_20d": -0.3381,
+     "ticker": "NAVI"
+    }
+   ],
+   "Payments Processing, Merchant Acquiring & Money Movement": [
+    {
+     "market_cap_m": 6135.7978,
+     "price_vs_sma200": 1.2772,
+     "return_30d": 0.2328,
+     "return_7d": 0.0484,
+     "revenue_driver": "real-time payments software",
+     "signal_rank": 1363,
+     "stock_vs_spy_20d": 0.1854,
+     "ticker": "ACIW"
+    },
+    {
+     "market_cap_m": 31271.226,
+     "price_vs_sma200": 1.2635,
+     "return_30d": 0.1701,
+     "return_7d": 0.1216,
+     "revenue_driver": "accounts payable automation",
+     "signal_rank": 1488,
+     "stock_vs_spy_20d": 0.1423,
+     "ticker": "CPAY"
+    },
+    {
+     "market_cap_m": 11281.1189,
+     "price_vs_sma200": 1.0652,
+     "return_30d": 0.1701,
+     "return_7d": 0.0831,
+     "revenue_driver": "cash logistics",
+     "signal_rank": 1807,
+     "stock_vs_spy_20d": 0.1398,
+     "ticker": "BCO"
+    },
+    {
+     "market_cap_m": 215762.2234,
+     "price_vs_sma200": 0.9803,
+     "return_30d": 0.0529,
+     "return_7d": -0.0229,
+     "revenue_driver": "credit card issuing",
+     "signal_rank": 733,
+     "stock_vs_spy_20d": 0.033,
+     "ticker": "AXP"
+    },
+    {
+     "market_cap_m": 720.0125,
+     "price_vs_sma200": 1.0976,
+     "return_30d": 0.0304,
+     "return_7d": 0.0286,
+     "revenue_driver": "freight payment processing",
+     "signal_rank": 116,
+     "stock_vs_spy_20d": 0.0388,
+     "ticker": "CASS"
+    },
+    {
+     "market_cap_m": 1657.5538,
+     "price_vs_sma200": 0.8841,
+     "return_30d": 0.0176,
+     "return_7d": -0.0289,
+     "revenue_driver": "payment processing platform",
+     "signal_rank": 113,
+     "stock_vs_spy_20d": 0.0598,
+     "ticker": "CASH"
+    },
+    {
+     "market_cap_m": 11109.8853,
+     "price_vs_sma200": 1.0573,
+     "return_30d": 0.0153,
+     "return_7d": 0.0134,
+     "revenue_driver": "payment processing platform",
+     "signal_rank": 767,
+     "stock_vs_spy_20d": 0.0379,
+     "ticker": "CR"
+    },
+    {
+     "market_cap_m": 3215.3852,
+     "price_vs_sma200": 0.96,
+     "return_30d": 0.0102,
+     "return_7d": 0.0187,
+     "revenue_driver": "student loan servicing",
+     "signal_rank": 162,
+     "stock_vs_spy_20d": -0.0053,
+     "ticker": "NNI"
+    },
+    {
+     "market_cap_m": 20157.0266,
+     "price_vs_sma200": 0.9905,
+     "return_30d": -0.0652,
+     "return_7d": -0.0852,
+     "revenue_driver": "buy now pay later financing",
+     "signal_rank": 107,
+     "stock_vs_spy_20d": -0.1131,
+     "ticker": "AFRM"
+    },
+    {
+     "market_cap_m": 259.9113,
+     "price_vs_sma200": 1.0536,
+     "return_30d": -0.2439,
+     "return_7d": -0.1678,
+     "revenue_driver": "government payment processing",
+     "signal_rank": null,
+     "stock_vs_spy_20d": 0.1027,
+     "ticker": "CNDT"
+    }
+   ],
+   "Vertical Market Software": [
+    {
+     "market_cap_m": 13123.3339,
+     "price_vs_sma200": 1.2773,
+     "return_30d": 0.3493,
+     "return_7d": 0.0489,
+     "revenue_driver": "infrastructure engineering SaaS",
+     "signal_rank": 973,
+     "stock_vs_spy_20d": 0.2393,
+     "ticker": "BSY"
+    },
+    {
+     "market_cap_m": 2511.7633,
+     "price_vs_sma200": 1.2995,
+     "return_30d": 0.2588,
+     "return_7d": -0.012,
+     "revenue_driver": "nonprofit fundraising software",
+     "signal_rank": 1242,
+     "stock_vs_spy_20d": 0.0619,
+     "ticker": "BLKB"
+    },
+    {
+     "market_cap_m": 3461.9084,
+     "price_vs_sma200": 1.3137,
+     "return_30d": 0.2121,
+     "return_7d": 0.0143,
+     "revenue_driver": "hospitality PMS SaaS",
+     "signal_rank": 976,
+     "stock_vs_spy_20d": 0.0917,
+     "ticker": "AGYS"
+    },
+    {
+     "market_cap_m": 868.8945,
+     "price_vs_sma200": 1.1921,
+     "return_30d": 0.1016,
+     "return_7d": -0.0351,
+     "revenue_driver": "OTT streaming platform SaaS",
+     "signal_rank": 520,
+     "stock_vs_spy_20d": 0.0689,
+     "ticker": "CNNE"
+    },
+    {
+     "market_cap_m": 5014.4551,
+     "price_vs_sma200": 1.2116,
+     "return_30d": 0.0909,
+     "return_7d": -0.0042,
+     "revenue_driver": "property management SaaS",
+     "signal_rank": 1028,
+     "stock_vs_spy_20d": 0.0388,
+     "ticker": "APPF"
+    },
+    {
+     "market_cap_m": 18724.0881,
+     "price_vs_sma200": 1.0354,
+     "return_30d": 0.0867,
+     "return_7d": -0.0623,
+     "revenue_driver": "mortgage servicing software",
+     "signal_rank": 1144,
+     "stock_vs_spy_20d": 0.0977,
+     "ticker": "APG"
+    },
+    {
+     "market_cap_m": 1741084.84,
+     "price_vs_sma200": 0.9919,
+     "return_30d": 0.0603,
+     "return_7d": 0.097,
+     "revenue_driver": "data center semiconductors",
+     "signal_rank": 412,
+     "stock_vs_spy_20d": 0.0778,
+     "ticker": "AVGO"
+    },
+    {
+     "market_cap_m": 499.434,
+     "price_vs_sma200": 0.6921,
+     "return_30d": 0.019,
+     "return_7d": -0.0776,
+     "revenue_driver": "mortgage origination software",
+     "signal_rank": null,
+     "stock_vs_spy_20d": 0.1084,
+     "ticker": "BLND"
+    },
+    {
+     "market_cap_m": 3215.3852,
+     "price_vs_sma200": 0.96,
+     "return_30d": 0.0102,
+     "return_7d": 0.0187,
+     "revenue_driver": "student loan servicing",
+     "signal_rank": 162,
+     "stock_vs_spy_20d": -0.0053,
+     "ticker": "NNI"
+    },
+    {
+     "market_cap_m": 24698.83,
+     "price_vs_sma200": 0.6572,
+     "return_30d": -0.2726,
+     "return_7d": -0.2628,
+     "revenue_driver": "body camera ecosystem",
+     "signal_rank": 1035,
+     "stock_vs_spy_20d": -0.2442,
+     "ticker": "AXON"
+    }
+   ]
+  }
+ },
+ "predictions": {
+  "badge_count": 1,
+  "confidence_score": 0.9914,
+  "conviction_label": "HIGH CONVICTION",
+  "data_quality_flags": [],
+  "ev_score": 0.1143,
+  "is_diamond": false,
+  "passes_tradability_filter": true,
+  "quality_label": "MEDIUM",
+  "quantiles": {
+   "downside_q10": -0.1548,
+   "downside_q25": -0.0876,
+   "downside_q50": -0.0372,
+   "downside_q75": -0.0084,
+   "downside_q90": -0.0015,
+   "path_volatility": 0.0131,
+   "risk_reward": 4.0382,
+   "uncertainty": 0.3178,
+   "upside_q10": 0.0284,
+   "upside_q25": 0.079,
+   "upside_q50": 0.1501,
+   "upside_q75": 0.2536,
+   "upside_q90": 0.3462
+  },
+  "rank": 162,
+  "rank_score": 0.1625,
+  "tradability_filter_reasons": []
+ },
+ "profile": {
+  "_local": {
+   "dividend_yield": 0.0024,
+   "eps_growth_yoy": -0.3681,
+   "pe_ratio": 16.8896,
+   "revenue_growth_yoy": -0.1644,
+   "roe": 0.0719
+  },
+  "beta": 0.786,
+  "betaTTM": null,
+  "ceo": "Jeffrey R. Noordhoek",
+  "companyName": "Nelnet, Inc.",
+  "country": "US",
+  "debtToEquityTTM": null,
+  "description": "Nelnet, Inc. operates globally, encompassing a variety of businesses including loan management, telecommunications, educational technology, related services, and payment processing solutions. Its Loan Servicing and Systems division offers comprehensive support for loan operations. This includes converting and processing loan applications, managing borrower data, providing customer service, handling payments, executing due diligence, reconciling funds, and processing claims. The segment also develops specialized software for student loan servicing and delivers business process outsourcing, with a focus on contact center management through inbound calls, outreach campaigns, sales, and multi-channel customer engagement. The Education Technology, Services, and Payment Processing segment provides an extensive array of solutions. These span financial management services, school information system software, website design, and cost-effective admissions software. It also operates FACTS Giving, a dedicated donation platform, alongside tailored professional development, coaching, and educational instruction services, as well as technological tools for teacher and student assessments. This segment facilitates tuition payment plans and offers end-to-end technology and services for student billing, payments, and refunds. Furthermore, it supports on-campus payment options (in-person, online, mobile) and general payment processing via credit card and electronic transfers. Additional offerings include services and technologies for faith community engagement, giving management, and learning management. A core offering is an integrated commerce payment platform, combined with financial management and tuition payment plan services, alongside a robust K-12 school management platform that handles administrative, informational, financial, and communication functions. The Communications unit supplies fiber optic services for internet, television, and telephone to both residential and business clients. Through its Asset Generation and Management segment, Nelnet is engaged in the acquisition, oversight, and ownership of various loan assets. Finally, the Nelnet Bank segment manages and operates internet-based industrial banks. Nelnet, Inc. was established in 1978 and is headquartered in Lincoln, Nebraska.",
+  "dividendYielTTM": null,
+  "enterpriseValueOverEBITDATTM": null,
+  "exchangeShortName": "NYSE",
+  "fullTimeEmployees": "5744",
+  "industry": "Financial - Credit Services",
+  "ipoDate": "2003-12-12",
+  "latest_earnings_date": "2026-11-05",
+  "marketCapTTM": null,
+  "mktCap": 4524667729,
+  "peRatioTTM": null,
+  "price": 126.46,
+  "priceToSalesRatioTTM": null,
+  "returnOnEquityTTM": 0.0726,
+  "revenue_description": "Nelnet provides student-loan servicing, education technology, and payments-related services. Revenue is driven mainly by payment volume and transaction counts processed across merchant or card networks.",
+  "revenue_description_themes": [
+   "student loan refinancing",
+   "education software adoption",
+   "renewable energy investment"
+  ],
+  "revenue_taxonomy": [
+   {
+    "bucket": "Lending, Cards & Consumer Finance",
+    "matched_tags": [
+     "student loan servicing"
+    ],
+    "path": "Financials › Banking Lending & Payments › Lending, Cards & Consumer Finance",
+    "sector": "Financials",
+    "segment": "Banking Lending & Payments"
+   },
+   {
+    "bucket": "Vertical Market Software",
+    "matched_tags": [
+     "education technology"
+    ],
+    "path": "Technology › Software & Platforms › Vertical Market Software",
+    "sector": "Technology",
+    "segment": "Software & Platforms"
+   },
+   {
+    "bucket": "Payments Processing, Merchant Acquiring & Money Movement",
+    "matched_tags": [
+     "payment processing software"
+    ],
+    "path": "Financials › Banking Lending & Payments › Payments Processing, Merchant Acquiring & Money Movement",
+    "sector": "Financials",
+    "segment": "Banking Lending & Payments"
+   }
+  ],
+  "revenue_themes": [
+   "student loan servicing",
+   "education technology",
+   "payment processing software"
+  ],
+  "sector": "Financial Services",
+  "website": "https://www.nelnet.com"
+ },
+ "report": {
+  "display_rank": null,
+  "lane": "risk_avoid",
+  "lane_rank": 43,
+  "setup_label": "broken_trend",
+  "why_now": "Risk/avoid because price is below a non-rising 200-day trend."
+ },
+ "scorecard": {
+  "headline": {
+   "avg_universe_pct": 44,
+   "label": "mixed",
+   "metric_count": 8
+  },
+  "metrics": {
+   "debt_to_equity": {
+    "direction": "lower",
+    "label": "D/E Ratio",
+    "sector": "Financials",
+    "sector_n": 306,
+    "sector_pct": 9,
+    "universe_n": 1972,
+    "universe_pct": 13,
+    "value": 1.7873
+   },
+   "eps_growth_yoy": {
+    "direction": "higher",
+    "label": "EPS Growth",
+    "sector": "Financials",
+    "sector_n": 145,
+    "sector_pct": 10,
+    "universe_n": 1792,
+    "universe_pct": 20,
+    "value": -0.3681
+   },
+   "gross_margin": {
+    "direction": "higher",
+    "label": "Gross Margin",
+    "sector": "Financials",
+    "sector_n": 306,
+    "sector_pct": 88,
+    "universe_n": 1910,
+    "universe_pct": 90,
+    "value": 0.8475
+   },
+   "operating_margin": {
+    "direction": "higher",
+    "label": "Op. Margin",
+    "sector": "Financials",
+    "sector_n": 306,
+    "sector_pct": 81,
+    "universe_n": 1910,
+    "universe_pct": 91,
+    "value": 0.3277
+   },
+   "pe_ratio": {
+    "direction": "lower",
+    "label": "P/E",
+    "sector": "Financials",
+    "sector_n": 297,
+    "sector_pct": 24,
+    "universe_n": 1431,
+    "universe_pct": 59,
+    "value": 16.8896
+   },
+   "revenue_growth_yoy": {
+    "direction": "higher",
+    "label": "Rev Growth",
+    "sector": "Financials",
+    "sector_n": 144,
+    "sector_pct": 6,
+    "universe_n": 1743,
+    "universe_pct": 6,
+    "value": -0.1644
+   },
+   "roe": {
+    "direction": "higher",
+    "label": "ROE",
+    "sector": "Financials",
+    "sector_n": 307,
+    "sector_pct": 14,
+    "universe_n": 1987,
+    "universe_pct": 40,
+    "value": 0.0719
+   },
+   "roic": {
+    "direction": "higher",
+    "label": "ROIC",
+    "sector": "Financials",
+    "sector_n": 304,
+    "sector_pct": 32,
+    "universe_n": 1957,
+    "universe_pct": 36,
+    "value": 0.0069
+   }
+  }
+ },
+ "signal_rank": 162,
+ "structural_analogs": {
+  "gp_core_pct": 38.1,
+  "gp_core_ratio": 1.1616,
+  "matches": [
+   {
+    "actual_downside": -0.159,
+    "actual_return": -0.159,
+    "actual_upside": 0.0387,
+    "days_in_region": 89,
+    "end_date": "2017-11-15",
+    "end_reason": "reversal",
+    "seq_len": 89,
+    "similarity": 0.5657,
+    "start_date": "2017-08-24",
+    "ticker": "GHM",
+    "total_distance": 0.2849,
+    "trigger_date": "2017-10-04",
+    "trigger_type": "shallow_runup"
+   },
+   {
+    "actual_downside": -0.0256,
+    "actual_return": 0.1308,
+    "actual_upside": 0.1308,
+    "days_in_region": 136,
+    "end_date": "2017-03-01",
+    "end_reason": "reversal",
+    "seq_len": 136,
+    "similarity": 0.5629,
+    "start_date": "2016-07-13",
+    "ticker": "EXR",
+    "total_distance": 0.2874,
+    "trigger_date": "2016-08-05",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": -0.0054,
+    "actual_return": 0.1993,
+    "actual_upside": 0.1993,
+    "days_in_region": 125,
+    "end_date": "2017-01-26",
+    "end_reason": "reversal",
+    "seq_len": 125,
+    "similarity": 0.5587,
+    "start_date": "2016-07-21",
+    "ticker": "UTL",
+    "total_distance": 0.291,
+    "trigger_date": "2016-10-05",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": -0.1403,
+    "actual_return": -0.1403,
+    "actual_upside": 0.089,
+    "days_in_region": 127,
+    "end_date": "2006-12-20",
+    "end_reason": "reversal",
+    "seq_len": 127,
+    "similarity": 0.5563,
+    "start_date": "2006-05-01",
+    "ticker": "JDAS",
+    "total_distance": 0.2932,
+    "trigger_date": "2006-08-03",
+    "trigger_type": "runup"
+   },
+   {
+    "actual_downside": -0.06,
+    "actual_return": 0.1826,
+    "actual_upside": 0.1826,
+    "days_in_region": 135,
+    "end_date": "2018-07-06",
+    "end_reason": "reversal",
+    "seq_len": 135,
+    "similarity": 0.5531,
+    "start_date": "2017-10-19",
+    "ticker": "MGEE",
+    "total_distance": 0.2961,
+    "trigger_date": "2018-02-06",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": 0.0,
+    "actual_return": 0.1964,
+    "actual_upside": 0.1964,
+    "days_in_region": 137,
+    "end_date": "2018-09-17",
+    "end_reason": "reversal",
+    "seq_len": 137,
+    "similarity": 0.5531,
+    "start_date": "2018-01-25",
+    "ticker": "NP",
+    "total_distance": 0.2961,
+    "trigger_date": "2018-02-16",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": -0.0923,
+    "actual_return": -0.0923,
+    "actual_upside": 0.1043,
+    "days_in_region": 80,
+    "end_date": "2018-12-24",
+    "end_reason": "reversal",
+    "seq_len": 80,
+    "similarity": 0.5514,
+    "start_date": "2018-07-02",
+    "ticker": "UHS",
+    "total_distance": 0.2976,
+    "trigger_date": "2018-07-30",
+    "trigger_type": "shallow_runup"
+   },
+   {
+    "actual_downside": -0.0661,
+    "actual_return": 0.0689,
+    "actual_upside": 0.0689,
+    "days_in_region": 125,
+    "end_date": "2021-10-28",
+    "end_reason": "reversal",
+    "seq_len": 125,
+    "similarity": 0.5511,
+    "start_date": "2021-04-29",
+    "ticker": "KMPR",
+    "total_distance": 0.298,
+    "trigger_date": "2021-05-27",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": -0.0121,
+    "actual_return": 0.109,
+    "actual_upside": 0.109,
+    "days_in_region": 131,
+    "end_date": "2018-12-10",
+    "end_reason": "reversal",
+    "seq_len": 131,
+    "similarity": 0.5502,
+    "start_date": "2018-07-18",
+    "ticker": "EG",
+    "total_distance": 0.2987,
+    "trigger_date": "2018-10-25",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": -0.1124,
+    "actual_return": 0.0662,
+    "actual_upside": 0.0662,
+    "days_in_region": 136,
+    "end_date": "2018-06-04",
+    "end_reason": "reversal",
+    "seq_len": 136,
+    "similarity": 0.5494,
+    "start_date": "2017-10-19",
+    "ticker": "INN",
+    "total_distance": 0.2995,
+    "trigger_date": "2018-02-07",
+    "trigger_type": "shallow_drawdown"
+   }
+  ],
+  "panel": {
+   "edge": -0.0387,
+   "hit_hi": 0.598,
+   "hit_lo": 0.421,
+   "hit_rate": 0.51,
+   "median_final": 0.0273,
+   "median_pain": 0.0695,
+   "n": 51,
+   "n_eff": 51.0,
+   "p25_final": -0.1395,
+   "p_pain_gt5": 0.627,
+   "return_to_pain": 0.305
+  },
+  "stats": {
+   "avg_similarity": 0.517,
+   "avg_trough": 0.1065,
+   "avg_upside": 0.1049,
+   "median_pain": 0.0848,
+   "median_return": -0.01,
+   "n_matches": 200,
+   "p25_return": -0.1386,
+   "p_pain_gt5": 0.685,
+   "return_to_pain": -0.095,
+   "top5_avg_trough": 0.0781,
+   "top5_avg_upside": 0.1281,
+   "top_similarity": 0.566,
+   "win_rate": 0.465
+  },
+  "total_matches": 200
+ },
+ "ticker": "NNI",
+ "trending": {
+  "acceleration": 0.0032,
+  "avg_vol_20d": 124244.0749,
+  "base_high_120": 144.23,
+  "breakout_confirmed": 0,
+  "close": 140.99,
+  "momentum_score": 0.6424,
+  "momentum_start": "2026-03-30",
+  "range_20": 0.0983,
+  "range_50": 0.1562,
+  "rank": 969,
+  "rank_down": null,
+  "rank_up": 497,
+  "ret_120": 0.0626,
+  "ret_20": 0.0727,
+  "ret_60": 0.0662,
+  "rundown_score": 0.17,
+  "score_date": "2026-05-04",
+  "slope_20": 0.0045,
+  "slope_60": 0.0013,
+  "stage": "sustained",
+  "stage_label": "Trending",
+  "ticker": "NNI",
+  "total_score": 0.4169,
+  "trend_ratio": 1.089,
+  "vcp_detected": 0,
+  "vcp_score": 0.2666
+ }
+}
