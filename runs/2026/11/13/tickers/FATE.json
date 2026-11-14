@@ -1,0 +1,1035 @@
+{
+ "date": "2026-11-13",
+ "detected_regions": {
+  "primary": {
+   "days_in_region": 121,
+   "region_start": "2026-08-20",
+   "trigger_date": "2026-09-17",
+   "trigger_type": "compression"
+  },
+  "secondary": [
+   {
+    "confidence_score": 0.0767,
+    "downside_q50": -0.0667,
+    "ev_score": 0.2471,
+    "region_start": "2026-04-30",
+    "seq_len": 198,
+    "trigger_date": "2026-10-21",
+    "trigger_type": "runup",
+    "upside_q25": 0.1346,
+    "upside_q50": 0.2964,
+    "upside_q75": 0.5087
+   }
+  ]
+ },
+ "feature_attribution": {
+  "macro_driver_count": 11,
+  "risk_flags": [
+   "high_volatility"
+  ],
+  "top_drivers": [
+   {
+    "direction": "positive",
+    "feature": "price_vs_sma200",
+    "feature_value": 0.6444,
+    "importance": 0.0005,
+    "importance_pct": 0.169,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "negative",
+    "feature": "daily_ps",
+    "feature_value": 68.2409,
+    "importance": 0.0004,
+    "importance_pct": 0.1358,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "positive",
+    "feature": "volatility_20d",
+    "feature_value": 0.064,
+    "importance": 0.0003,
+    "importance_pct": 0.1161,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "positive",
+    "feature": "return_1d",
+    "feature_value": -0.0448,
+    "importance": 0.0003,
+    "importance_pct": 0.1131,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "positive",
+    "feature": "price_vs_low_52w",
+    "feature_value": 1.3278,
+    "importance": 0.0003,
+    "importance_pct": 0.112,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "negative",
+    "feature": "ma_200_slope",
+    "feature_value": 0.0425,
+    "importance": 0.0003,
+    "importance_pct": 0.1035,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "positive",
+    "feature": "historical_recovery_rate",
+    "feature_value": 0.3041,
+    "importance": 0.0003,
+    "importance_pct": 0.093,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "negative",
+    "feature": "altman_x3",
+    "feature_value": -0.1197,
+    "importance": 0.0002,
+    "importance_pct": 0.0912,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "negative",
+    "feature": "price_vs_low_change_5d",
+    "feature_value": -0.5757,
+    "importance": 0.0002,
+    "importance_pct": 0.0662,
+    "method": "integrated_gradients"
+   }
+  ]
+ },
+ "fundamentals": {
+  "accrual": -0.626,
+  "adx_14": 40.767,
+  "altman_z_score": 3.5089,
+  "amihud_illiquidity": 0.0141,
+  "avg_volume": 1455817.9597,
+  "beta_252d": 0.8404,
+  "book_value_per_share": 1.2744,
+  "correlation_spy_60d": 0.3908,
+  "current_liabilities": 32.592,
+  "current_ratio": 4.4128,
+  "daily_earnings_yield": -0.2844,
+  "daily_fcf_yield": 0.0234,
+  "daily_pb": 2.8868,
+  "daily_pe": -3.5156,
+  "daily_ps": 68.2409,
+  "days_since_52w_high": 90.0,
+  "debt_ebitda": -0.5397,
+  "debt_to_equity": 0.56,
+  "dividend_yield": 0.0,
+  "dollar_volume_20d_avg": 2901175.3076,
+  "earnings_quality": 0.777,
+  "ebitda_growth_yoy": 0.1505,
+  "enterprise_value": 364.8567,
+  "eps_basic": -0.25,
+  "eps_cagr_3y": -1.7851,
+  "eps_cagr_5y": -1.8512,
+  "eps_diluted": -0.25,
+  "eps_growth_accel": 0.0074,
+  "eps_growth_qoq": 0.0385,
+  "eps_growth_yoy": 0.2759,
+  "eps_growth_yoy_q2": 0.2685,
+  "eps_growth_yoy_q3": 0.2988,
+  "eps_growth_yoy_q4": 0.2,
+  "eps_growth_yoy_q5": 0.152,
+  "eps_growth_yoy_q6": 0.224,
+  "eps_growth_yoy_q7": 0.0,
+  "eps_growth_yoy_q8": 0.0678,
+  "eps_history_8q": [
+   -0.44,
+   -0.32,
+   -0.29,
+   -0.27,
+   -0.27,
+   -0.26,
+   -0.25,
+   -0.25
+  ],
+  "eps_ttm": -0.3641,
+  "ev_to_ebitda": -2.6577,
+  "ev_to_fcf": -15.5166,
+  "ev_to_sales": 175.2434,
+  "fcf_growth_yoy": 1.1223,
+  "fcf_margin": -11.2939,
+  "fcf_per_share": -0.1953,
+  "gross_margin": -0.2592,
+  "gross_margin_change_yoy": 18.6665,
+  "gross_margin_history": [
+   -19.0797,
+   -20.3647,
+   -15.7748,
+   -10.8472,
+   -5.0438,
+   -0.2592
+  ],
+  "inc_roic": -0.0395,
+  "interest_coverage": null,
+  "is_pre_revenue": false,
+  "margin_vs_sector_median": null,
+  "market_cap_ratio": 442.9517,
+  "net_income": -30.159,
+  "net_margin": -26.1964,
+  "operating_income": -31.134,
+  "operating_margin": -27.6004,
+  "operating_margin_change_yoy": 4.4315,
+  "pb_ratio": 1.0044,
+  "pe_percentile_1y": 0.4325,
+  "pe_ratio": -1.7961,
+  "peg_trailing": -0.0818,
+  "piotroski_f_score": 2.0,
+  "price_vs_high_52w": 0.4116,
+  "price_vs_sma200": 0.6444,
+  "ps_percentile_1y": 0.627,
+  "ps_ratio": 100,
+  "quarter_labels_8q": [
+   "Q4 '24",
+   "Q1 '25",
+   "Q2 '25",
+   "Q3 '25",
+   "Q4 '25",
+   "Q1 '26",
+   "Q2 '26",
+   "Q3 '26"
+  ],
+  "quarterly_eps_growth_yoy": 0.0741,
+  "quarterly_eps_growth_yoy_8q": [
+   0.0222,
+   0.3191,
+   0.1212,
+   0.325,
+   0.3864,
+   0.1875,
+   0.1379,
+   0.0741
+  ],
+  "quarterly_revenue_growth_yoy": -1.0,
+  "quarterly_revenue_growth_yoy_8q": [
+   0.1098,
+   -0.1538,
+   -0.7184,
+   -0.4336,
+   -0.264,
+   -0.2026,
+   0.0918,
+   -1.0
+  ],
+  "revenue_cagr_3y": -0.621,
+  "revenue_cagr_5y": -0.3298,
+  "revenue_growth_accel": 0.2927,
+  "revenue_growth_qoq": 0.6028,
+  "revenue_growth_yoy": -0.2336,
+  "revenue_growth_yoy_q2": -0.5264,
+  "revenue_growth_yoy_q3": -0.5124,
+  "revenue_growth_yoy_q4": -0.4692,
+  "revenue_growth_yoy_q5": -0.3123,
+  "revenue_growth_yoy_q6": 1.0585,
+  "revenue_growth_yoy_q7": -0.7855,
+  "revenue_growth_yoy_q8": -0.8734,
+  "revenue_history_8q": [
+   1.86,
+   1.629,
+   1.907,
+   1.741,
+   1.369,
+   1.299,
+   2.082,
+   0.0
+  ],
+  "revenue_per_share": 0.0173,
+  "roa": -0.4994,
+  "roce": -0.6054,
+  "roe": -0.8687,
+  "roic": -0.5538,
+  "rsi_14": 16.1828,
+  "sector_momentum": 0.112,
+  "share_dilution_1y": 0.0,
+  "stock_vs_sector_20d": -0.329,
+  "stock_vs_spy_20d": -0.2721,
+  "total_assets": 260.103,
+  "vol_regime": 1.4265,
+  "volatility_20d": 0.064,
+  "volatility_60d": 0.0449,
+  "w52_high": 3.23,
+  "w52_low": 0.95
+ },
+ "market_characters": [
+  {
+   "id": "g8",
+   "name": "Boom-Bust"
+  },
+  {
+   "id": "g9",
+   "name": "Narrative Premium"
+  }
+ ],
+ "model_analogs": {
+  "matches": [
+   {
+    "actual_downside": -0.2676,
+    "actual_return": 0.2817,
+    "actual_upside": 0.2817,
+    "days_in_region": 112,
+    "end_date": "1996-05-29",
+    "end_reason": "reversal",
+    "similarity": 0.9857,
+    "start_date": "1996-02-07",
+    "ticker": "EZCH",
+    "trigger_date": "1996-03-06",
+    "trigger_type": "compression"
+   },
+   {
+    "actual_downside": 0.0,
+    "actual_return": 0.3862,
+    "actual_upside": 0.3862,
+    "days_in_region": 71,
+    "end_date": "2004-04-23",
+    "end_reason": "reversal",
+    "similarity": 0.985,
+    "start_date": "2004-02-12",
+    "ticker": "CAMT",
+    "trigger_date": "2004-02-20",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": -0.1556,
+    "actual_return": 0.361,
+    "actual_upside": 0.361,
+    "days_in_region": 172,
+    "end_date": "2006-03-03",
+    "end_reason": "reversal",
+    "similarity": 0.9846,
+    "start_date": "2005-09-12",
+    "ticker": "BLDP",
+    "trigger_date": "2005-10-21",
+    "trigger_type": "severe_drawdown"
+   },
+   {
+    "actual_downside": 0.0,
+    "actual_return": 0.7303,
+    "actual_upside": 0.7303,
+    "days_in_region": 126,
+    "end_date": "2005-11-25",
+    "end_reason": "reversal",
+    "similarity": 0.9835,
+    "start_date": "2005-07-22",
+    "ticker": "PAR",
+    "trigger_date": "2005-07-29",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": 0.0,
+    "actual_return": 0.1104,
+    "actual_upside": 0.2577,
+    "days_in_region": 50,
+    "end_date": "2016-12-13",
+    "end_reason": "new_pattern",
+    "similarity": 0.9829,
+    "start_date": "2016-10-24",
+    "ticker": "LNTH",
+    "trigger_date": "2016-10-28",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": 0.0,
+    "actual_return": 0.1875,
+    "actual_upside": 0.1875,
+    "days_in_region": 173,
+    "end_date": "1995-12-11",
+    "end_reason": "reversal",
+    "similarity": 0.9827,
+    "start_date": "1995-06-21",
+    "ticker": "ASCA",
+    "trigger_date": "1995-06-28",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": -0.0076,
+    "actual_return": 0.3628,
+    "actual_upside": 0.3628,
+    "days_in_region": 78,
+    "end_date": "2005-12-15",
+    "end_reason": "reversal",
+    "similarity": 0.9825,
+    "start_date": "2005-09-28",
+    "ticker": "MNTA",
+    "trigger_date": "2005-10-07",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": 0.0,
+    "actual_return": 1.4163,
+    "actual_upside": 1.4163,
+    "days_in_region": 78,
+    "end_date": "1999-12-07",
+    "end_reason": "reversal",
+    "similarity": 0.9825,
+    "start_date": "1999-09-20",
+    "ticker": "ELNT",
+    "trigger_date": "1999-09-29",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": 0.0,
+    "actual_return": 0.427,
+    "actual_upside": 0.427,
+    "days_in_region": 124,
+    "end_date": "2006-03-29",
+    "end_reason": "reversal",
+    "similarity": 0.9825,
+    "start_date": "2005-11-25",
+    "ticker": "QDEL",
+    "trigger_date": "2005-12-08",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": -0.0375,
+    "actual_return": 0.6281,
+    "actual_upside": 0.6281,
+    "days_in_region": 65,
+    "end_date": "1999-05-20",
+    "end_reason": "reversal",
+    "similarity": 0.9825,
+    "start_date": "1999-03-16",
+    "ticker": "SNDK",
+    "trigger_date": "1999-03-24",
+    "trigger_type": "severe_drawdown"
+   }
+  ],
+  "stats": {
+   "avg_max_drawdown": 0.0924,
+   "avg_similarity": 0.981,
+   "avg_trough": 0.0924,
+   "avg_upside": 0.4289,
+   "best_return": 1.4163,
+   "downside_range": [
+    -0.4239,
+    0.0
+   ],
+   "median_return": 0.3619,
+   "n_matches": 50,
+   "outcome_agreement": true,
+   "return_p25": 0.13,
+   "return_p5": -0.138,
+   "return_p75": 0.6452,
+   "return_p95": 0.992,
+   "sim_weighted_win_rate": 0.92,
+   "top5_avg_trough": 0.0846,
+   "top5_avg_upside": 0.4034,
+   "top_similarity": 0.986,
+   "upside_range": [
+    0.0132,
+    1.4163
+   ],
+   "win_rate": 0.92,
+   "worst_return": -0.2527,
+   "years_span": 18
+  },
+  "total_matches": 50
+ },
+ "peer_group": {
+  "buckets": [
+   "Biotech Platforms, Pipelines & Collaboration Revenue",
+   "Oncology Therapies"
+  ],
+  "groups": {
+   "Biotech Platforms, Pipelines & Collaboration Revenue": [
+    {
+     "market_cap_m": 10062.1454,
+     "price_vs_sma200": 1.4216,
+     "return_30d": 0.1882,
+     "return_7d": 0.0467,
+     "revenue_driver": "B-cell therapy product sales",
+     "signal_rank": 256,
+     "stock_vs_spy_20d": 0.2081,
+     "ticker": "TGTX"
+    },
+    {
+     "market_cap_m": 3545.206,
+     "price_vs_sma200": 1.1304,
+     "return_30d": 0.0972,
+     "return_7d": 0.1001,
+     "revenue_driver": "oncology therapeutics",
+     "signal_rank": null,
+     "stock_vs_spy_20d": -0.0396,
+     "ticker": "TNGX"
+    },
+    {
+     "market_cap_m": 23799.1341,
+     "price_vs_sma200": 0.9836,
+     "return_30d": 0.0902,
+     "return_7d": 0.1013,
+     "revenue_driver": "PAH therapy",
+     "signal_rank": 1788,
+     "stock_vs_spy_20d": 0.2712,
+     "ticker": "INSM"
+    },
+    {
+     "market_cap_m": 2658.1521,
+     "price_vs_sma200": 1.1133,
+     "return_30d": 0.039,
+     "return_7d": 0.0328,
+     "revenue_driver": "cell and gene therapy",
+     "signal_rank": 1038,
+     "stock_vs_spy_20d": 0.3205,
+     "ticker": "ELVN"
+    },
+    {
+     "market_cap_m": 207.7655,
+     "price_vs_sma200": 0.6173,
+     "return_30d": -0.301,
+     "return_7d": -0.2109,
+     "revenue_driver": "allogeneic cell and gene therapy",
+     "signal_rank": 1810,
+     "stock_vs_spy_20d": -0.0973,
+     "ticker": "SANA"
+    },
+    {
+     "market_cap_m": 492.8768,
+     "price_vs_sma200": 0.4583,
+     "return_30d": -0.36,
+     "return_7d": -0.0986,
+     "revenue_driver": "autoimmune cell therapy pipeline",
+     "signal_rank": 1308,
+     "stock_vs_spy_20d": -0.0793,
+     "ticker": "CABA"
+    },
+    {
+     "market_cap_m": 233.7192,
+     "price_vs_sma200": 0.43,
+     "return_30d": -0.4409,
+     "return_7d": -0.2952,
+     "revenue_driver": "allogeneic cell and gene therapy",
+     "signal_rank": 1554,
+     "stock_vs_spy_20d": -0.3469,
+     "ticker": "ALLO"
+    },
+    {
+     "market_cap_m": 640.2036,
+     "price_vs_sma200": 0.6444,
+     "return_30d": -0.4483,
+     "return_7d": -0.3876,
+     "revenue_driver": "cell therapy oncology",
+     "signal_rank": 1742,
+     "stock_vs_spy_20d": -0.2721,
+     "ticker": "FATE"
+    },
+    {
+     "market_cap_m": 3072.5323,
+     "price_vs_sma200": 1.2698,
+     "return_30d": -0.4541,
+     "return_7d": -0.108,
+     "revenue_driver": "oncology cell therapy",
+     "signal_rank": 1707,
+     "stock_vs_spy_20d": -0.4174,
+     "ticker": "IOVA"
+    },
+    {
+     "market_cap_m": 1788.5803,
+     "price_vs_sma200": 0.8601,
+     "return_30d": -0.4684,
+     "return_7d": -0.1019,
+     "revenue_driver": "cell therapy pipeline",
+     "signal_rank": 1685,
+     "stock_vs_spy_20d": -0.2761,
+     "ticker": "PGEN"
+    }
+   ],
+   "Oncology Therapies": [
+    {
+     "market_cap_m": 10062.1454,
+     "price_vs_sma200": 1.4216,
+     "return_30d": 0.1882,
+     "return_7d": 0.0467,
+     "revenue_driver": "B-cell therapy product sales",
+     "signal_rank": 256,
+     "stock_vs_spy_20d": 0.2081,
+     "ticker": "TGTX"
+    },
+    {
+     "market_cap_m": 6129.8093,
+     "price_vs_sma200": 1.1159,
+     "return_30d": 0.1042,
+     "return_7d": 0.0988,
+     "revenue_driver": "oncology pipeline assets",
+     "signal_rank": 1600,
+     "stock_vs_spy_20d": 0.256,
+     "ticker": "CGON"
+    },
+    {
+     "market_cap_m": 3545.206,
+     "price_vs_sma200": 1.1304,
+     "return_30d": 0.0972,
+     "return_7d": 0.1001,
+     "revenue_driver": "oncology therapeutics",
+     "signal_rank": null,
+     "stock_vs_spy_20d": -0.0396,
+     "ticker": "TNGX"
+    },
+    {
+     "market_cap_m": 4211.5117,
+     "price_vs_sma200": 0.809,
+     "return_30d": -0.0793,
+     "return_7d": -0.093,
+     "revenue_driver": "precision oncology therapeutics",
+     "signal_rank": 1732,
+     "stock_vs_spy_20d": -0.0197,
+     "ticker": "COGT"
+    },
+    {
+     "market_cap_m": 469.6095,
+     "price_vs_sma200": 0.8779,
+     "return_30d": -0.0891,
+     "return_7d": -0.0368,
+     "revenue_driver": "partnered oncology programs",
+     "signal_rank": 1933,
+     "stock_vs_spy_20d": 0.0601,
+     "ticker": "CLDX"
+    },
+    {
+     "market_cap_m": 101.9852,
+     "price_vs_sma200": 0.8561,
+     "return_30d": -0.2222,
+     "return_7d": -0.2263,
+     "revenue_driver": "precision oncology",
+     "signal_rank": null,
+     "stock_vs_spy_20d": -0.0921,
+     "ticker": "BDTX"
+    },
+    {
+     "market_cap_m": 827.7995,
+     "price_vs_sma200": 0.4054,
+     "return_30d": -0.447,
+     "return_7d": -0.0504,
+     "revenue_driver": "oncology drug candidates",
+     "signal_rank": 1794,
+     "stock_vs_spy_20d": -0.2371,
+     "ticker": "CRBP"
+    },
+    {
+     "market_cap_m": 640.2036,
+     "price_vs_sma200": 0.6444,
+     "return_30d": -0.4483,
+     "return_7d": -0.3876,
+     "revenue_driver": "cell therapy oncology",
+     "signal_rank": 1742,
+     "stock_vs_spy_20d": -0.2721,
+     "ticker": "FATE"
+    },
+    {
+     "market_cap_m": 3072.5323,
+     "price_vs_sma200": 1.2698,
+     "return_30d": -0.4541,
+     "return_7d": -0.108,
+     "revenue_driver": "oncology cell therapy",
+     "signal_rank": 1707,
+     "stock_vs_spy_20d": -0.4174,
+     "ticker": "IOVA"
+    },
+    {
+     "market_cap_m": 1298.7003,
+     "price_vs_sma200": 0.5105,
+     "return_30d": null,
+     "return_7d": -0.0356,
+     "revenue_driver": "oncology pipeline assets",
+     "signal_rank": null,
+     "stock_vs_spy_20d": -0.1294,
+     "ticker": "AVBP"
+    }
+   ]
+  }
+ },
+ "predictions": {
+  "badge_count": 1,
+  "confidence_score": 0.0189,
+  "conviction_label": "HIGH CONVICTION",
+  "data_quality_flags": [],
+  "ev_score": 0.2255,
+  "is_diamond": false,
+  "passes_tradability_filter": false,
+  "quality_label": "HIGH",
+  "quantiles": {
+   "downside_q10": -0.3503,
+   "downside_q25": -0.1857,
+   "downside_q50": -0.0941,
+   "downside_q75": -0.0164,
+   "downside_q90": 0.0107,
+   "path_volatility": 0.0542,
+   "risk_reward": 3.2183,
+   "uncertainty": 0.7778,
+   "upside_q10": 0.0437,
+   "upside_q25": 0.1319,
+   "upside_q50": 0.3027,
+   "upside_q75": 0.5177,
+   "upside_q90": 0.8214
+  },
+  "rank": 1742,
+  "rank_score": 0.0132,
+  "tradability_filter_reasons": [
+   "market_cap_below_1b",
+   "dollar_volume_below_5m"
+  ]
+ },
+ "profile": {
+  "_local": {
+   "dividend_yield": 0.0,
+   "eps_growth_yoy": 0.2759,
+   "pe_ratio": -1.7961,
+   "revenue_growth_yoy": -0.2336,
+   "roe": -0.8687
+  },
+  "beta": 2.666,
+  "betaTTM": null,
+  "ceo": "Bahram Valamehr",
+  "companyName": "Fate Therapeutics, Inc.",
+  "country": "US",
+  "debtToEquityTTM": null,
+  "description": "Fate Therapeutics, Inc. is a clinical-stage biopharmaceutical firm dedicated to creating advanced, programmed cellular immunotherapies. These innovative treatments are designed to combat cancer and various immune disorders across the globe. A significant portion of its development pipeline concentrates on NK- and T-cell immuno-oncology programs. Key candidates include FT516, which targets acute myeloid leukemia (AML), B-cell lymphoma, and advanced solid tumors; FT596 for B-cell lymphoma and chronic lymphocytic leukemia; FT538, addressing AML and multiple myeloma; FT576, also focused on multiple myeloma; FT819, aimed at both hematologic malignancies and solid tumors; FT536, another program for solid tumors; and FT500, intended for advanced solid tumors. The company also actively engages in strategic collaborations to advance its research and development. It holds an agreement with Ono Pharmaceutical Co. Ltd. for the joint development and commercialization of two novel, \"off-the-shelf\" iPSC-derived CAR T-cell therapies. Furthermore, Fate Therapeutics maintains a research collaboration and licensing deal with Juno Therapeutics, Inc., focusing on identifying small molecule modulators that can enhance the therapeutic efficacy of genetically engineered T-cell immunotherapies. A separate collaboration and option agreement exists with Janssen Biotech, Inc. Established in 2007, Fate Therapeutics, Inc. is based in San Diego, California.",
+  "dividendYielTTM": null,
+  "enterpriseValueOverEBITDATTM": null,
+  "exchangeShortName": "NASDAQ",
+  "fullTimeEmployees": "161",
+  "industry": "Biotechnology",
+  "ipoDate": "2013-10-01",
+  "latest_earnings_date": "2026-11-05",
+  "marketCapTTM": null,
+  "mktCap": 149195758,
+  "peRatioTTM": null,
+  "price": 1.28,
+  "priceToSalesRatioTTM": null,
+  "returnOnEquityTTM": -0.7392,
+  "revenue_description": "Fate Therapeutics is a clinical-stage biotech developing off-the-shelf iPSC-derived NK and T-cell therapies for cancer and autoimmune disease. Revenue is limited to collaboration payments while its programs are in trials.",
+  "revenue_description_themes": [
+   "autoimmune CAR-T data",
+   "collaboration milestones",
+   "cash runway"
+  ],
+  "revenue_taxonomy": [
+   {
+    "bucket": "Oncology Therapies",
+    "matched_tags": [
+     "cell therapy oncology"
+    ],
+    "path": "Healthcare & Life Sciences › Therapeutics & Biopharma › Oncology Therapies",
+    "sector": "Healthcare & Life Sciences",
+    "segment": "Therapeutics & Biopharma"
+   },
+   {
+    "bucket": "Biotech Platforms, Pipelines & Collaboration Revenue",
+    "matched_tags": [
+     "autoimmune cell therapy pipeline",
+     "iPSC cell therapy platform"
+    ],
+    "path": "Healthcare & Life Sciences › Therapeutics & Biopharma › Biotech Platforms, Pipelines & Collaboration Revenue",
+    "sector": "Healthcare & Life Sciences",
+    "segment": "Therapeutics & Biopharma"
+   }
+  ],
+  "revenue_themes": [
+   "cell therapy oncology",
+   "autoimmune cell therapy pipeline",
+   "iPSC cell therapy platform"
+  ],
+  "sector": "Healthcare",
+  "website": "https://www.fatetherapeutics.com"
+ },
+ "report": null,
+ "scorecard": {
+  "headline": {
+   "avg_universe_pct": 17,
+   "label": "below_average",
+   "metric_count": 7
+  },
+  "metrics": {
+   "debt_to_equity": {
+    "direction": "lower",
+    "label": "D/E Ratio",
+    "sector": "Health Care",
+    "sector_n": 280,
+    "sector_pct": 32,
+    "universe_n": 1962,
+    "universe_pct": 42,
+    "value": 0.56
+   },
+   "eps_growth_yoy": {
+    "direction": "higher",
+    "label": "EPS Growth",
+    "sector": "Health Care",
+    "sector_n": 276,
+    "sector_pct": 63,
+    "universe_n": 1779,
+    "universe_pct": 59,
+    "value": 0.2759
+   },
+   "gross_margin": {
+    "direction": "higher",
+    "label": "Gross Margin",
+    "sector": "Health Care",
+    "sector_n": 234,
+    "sector_pct": 2,
+    "universe_n": 1899,
+    "universe_pct": 1,
+    "value": -0.2592
+   },
+   "operating_margin": {
+    "direction": "higher",
+    "label": "Op. Margin",
+    "sector": "Health Care",
+    "sector_n": 234,
+    "sector_pct": 4,
+    "universe_n": 1899,
+    "universe_pct": 1,
+    "value": -27.6004
+   },
+   "revenue_growth_yoy": {
+    "direction": "higher",
+    "label": "Rev Growth",
+    "sector": "Health Care",
+    "sector_n": 248,
+    "sector_pct": 11,
+    "universe_n": 1729,
+    "universe_pct": 4,
+    "value": -0.2336
+   },
+   "roe": {
+    "direction": "higher",
+    "label": "ROE",
+    "sector": "Health Care",
+    "sector_n": 283,
+    "sector_pct": 13,
+    "universe_n": 1976,
+    "universe_pct": 5,
+    "value": -0.8687
+   },
+   "roic": {
+    "direction": "higher",
+    "label": "ROIC",
+    "sector": "Health Care",
+    "sector_n": 279,
+    "sector_pct": 15,
+    "universe_n": 1946,
+    "universe_pct": 4,
+    "value": -0.1326
+   }
+  }
+ },
+ "signal_rank": 1742,
+ "structural_analogs": {
+  "gp_core_pct": 98.2,
+  "gp_core_ratio": 2.8094,
+  "matches": [
+   {
+    "actual_downside": -0.176,
+    "actual_return": 0.0683,
+    "actual_upside": 0.0683,
+    "days_in_region": 90,
+    "end_date": "2006-06-29",
+    "end_reason": "reversal",
+    "seq_len": 90,
+    "similarity": 0.4836,
+    "start_date": "2006-04-19",
+    "ticker": "TFSM",
+    "total_distance": 0.3632,
+    "trigger_date": "2006-05-31",
+    "trigger_type": "severe_drawdown"
+   },
+   {
+    "actual_downside": -0.1131,
+    "actual_return": 0.16,
+    "actual_upside": 0.2166,
+    "days_in_region": 103,
+    "end_date": "2019-09-11",
+    "end_reason": "reversal",
+    "seq_len": 103,
+    "similarity": 0.4721,
+    "start_date": "2019-04-05",
+    "ticker": "AMSC",
+    "total_distance": 0.3753,
+    "trigger_date": "2019-05-03",
+    "trigger_type": "compression"
+   },
+   {
+    "actual_downside": -0.3388,
+    "actual_return": -0.0909,
+    "actual_upside": 0.0455,
+    "days_in_region": 91,
+    "end_date": "2006-08-22",
+    "end_reason": "reversal",
+    "seq_len": 91,
+    "similarity": 0.4719,
+    "start_date": "2006-04-27",
+    "ticker": "CNXT",
+    "total_distance": 0.3755,
+    "trigger_date": "2006-05-16",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": -0.2846,
+    "actual_return": -0.0548,
+    "actual_upside": 0.1358,
+    "days_in_region": 92,
+    "end_date": "2011-08-17",
+    "end_reason": "reversal",
+    "seq_len": 92,
+    "similarity": 0.4656,
+    "start_date": "2011-05-31",
+    "ticker": "PLAB",
+    "total_distance": 0.3822,
+    "trigger_date": "2011-06-13",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": -0.0109,
+    "actual_return": 0.5211,
+    "actual_upside": 0.5211,
+    "days_in_region": 82,
+    "end_date": "2013-04-23",
+    "end_reason": "reversal",
+    "seq_len": 82,
+    "similarity": 0.4589,
+    "start_date": "2012-10-16",
+    "ticker": "MGAM",
+    "total_distance": 0.3895,
+    "trigger_date": "2012-11-16",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": -0.3684,
+    "actual_return": 0.1453,
+    "actual_upside": 0.1453,
+    "days_in_region": 186,
+    "end_date": "2004-09-24",
+    "end_reason": "reversal",
+    "seq_len": 186,
+    "similarity": 0.4578,
+    "start_date": "2004-01-15",
+    "ticker": "SGMO",
+    "total_distance": 0.3906,
+    "trigger_date": "2004-07-09",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": -0.2417,
+    "actual_return": -0.2417,
+    "actual_upside": 0.0,
+    "days_in_region": 172,
+    "end_date": "1992-04-28",
+    "end_reason": "reversal",
+    "seq_len": 172,
+    "similarity": 0.4577,
+    "start_date": "1991-10-11",
+    "ticker": "ABMD",
+    "total_distance": 0.3908,
+    "trigger_date": "1992-03-20",
+    "trigger_type": "runup"
+   },
+   {
+    "actual_downside": -0.0346,
+    "actual_return": 0.1089,
+    "actual_upside": 0.1089,
+    "days_in_region": 108,
+    "end_date": "2021-07-26",
+    "end_reason": "reversal",
+    "seq_len": 108,
+    "similarity": 0.4561,
+    "start_date": "2021-04-27",
+    "ticker": "BLBD",
+    "total_distance": 0.3925,
+    "trigger_date": "2021-07-02",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": -0.1081,
+    "actual_return": 0.1892,
+    "actual_upside": 0.1892,
+    "days_in_region": 95,
+    "end_date": "1995-11-29",
+    "end_reason": "reversal",
+    "seq_len": 95,
+    "similarity": 0.4546,
+    "start_date": "1995-09-12",
+    "ticker": "CHPS",
+    "total_distance": 0.3942,
+    "trigger_date": "1995-10-05",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": 0.0,
+    "actual_return": 0.2549,
+    "actual_upside": 0.4804,
+    "days_in_region": 112,
+    "end_date": "1996-02-09",
+    "end_reason": "reversal",
+    "seq_len": 112,
+    "similarity": 0.45,
+    "start_date": "1995-10-11",
+    "ticker": "SEQU",
+    "total_distance": 0.3992,
+    "trigger_date": "1995-12-22",
+    "trigger_type": "runup"
+   }
+  ],
+  "panel": {
+   "edge": 0.2483,
+   "hit_hi": 0.921,
+   "hit_lo": 0.709,
+   "hit_rate": 0.842,
+   "median_final": 0.1892,
+   "median_pain": 0.0426,
+   "n": 19,
+   "n_eff": 19.0,
+   "p25_final": 0.1089,
+   "p_pain_gt5": 0.474,
+   "return_to_pain": 3.023
+  },
+  "stats": {
+   "avg_similarity": 0.407,
+   "avg_trough": 0.1218,
+   "avg_upside": 0.2961,
+   "median_pain": 0.0818,
+   "median_return": 0.1363,
+   "n_matches": 200,
+   "p25_return": -0.0522,
+   "p_pain_gt5": 0.62,
+   "return_to_pain": 1.339,
+   "top5_avg_trough": 0.1847,
+   "top5_avg_upside": 0.1974,
+   "top_similarity": 0.484,
+   "win_rate": 0.69
+  },
+  "total_matches": 200
+ },
+ "ticker": "FATE",
+ "trending": {
+  "acceleration": -0.0048,
+  "avg_vol_20d": 2135100.4112,
+  "base_high_120": 3.11,
+  "breakout_confirmed": 0,
+  "close": 2.57,
+  "momentum_score": 0.3785,
+  "momentum_start": "2026-04-09",
+  "range_20": 0.2529,
+  "range_50": 0.5516,
+  "rank": 681,
+  "rank_down": null,
+  "rank_up": 467,
+  "ret_120": 0.8623,
+  "ret_20": 0.089,
+  "ret_60": -0.062,
+  "rundown_score": 0.8061,
+  "score_date": "2026-08-26",
+  "slope_20": -0.0013,
+  "slope_60": 0.0035,
+  "stage": "sustained",
+  "stage_label": "Trending",
+  "ticker": "FATE",
+  "total_score": 0.4763,
+  "trend_ratio": 1.3537,
+  "vcp_detected": 0,
+  "vcp_score": 0.5414
+ }
+}

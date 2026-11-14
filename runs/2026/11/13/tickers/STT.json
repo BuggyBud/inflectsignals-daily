@@ -1,0 +1,1089 @@
+{
+ "date": "2026-11-13",
+ "detected_regions": {
+  "primary": {
+   "days_in_region": 110,
+   "region_start": "2026-09-04",
+   "trigger_date": "2026-10-15",
+   "trigger_type": "shallow_drawdown"
+  },
+  "secondary": [
+   {
+    "confidence_score": 0.9752,
+    "downside_q50": -0.0546,
+    "ev_score": 0.0824,
+    "region_start": "2025-10-17",
+    "seq_len": 200,
+    "trigger_date": "2026-04-09",
+    "trigger_type": "runup",
+    "upside_q25": 0.0697,
+    "upside_q50": 0.1357,
+    "upside_q75": 0.2242
+   }
+  ]
+ },
+ "feature_attribution": {
+  "macro_driver_count": 13,
+  "risk_flags": [],
+  "top_drivers": [
+   {
+    "direction": "negative",
+    "feature": "dollar_volume",
+    "feature_value": 219364816.0,
+    "importance": 0.0006,
+    "importance_pct": 0.2686,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "negative",
+    "feature": "total_assets",
+    "feature_value": 403341.0,
+    "importance": 0.0005,
+    "importance_pct": 0.2198,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "positive",
+    "feature": "price_vs_sma200",
+    "feature_value": 1.0772,
+    "importance": 0.0003,
+    "importance_pct": 0.1194,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "negative",
+    "feature": "volatility_20d",
+    "feature_value": 0.0164,
+    "importance": 0.0002,
+    "importance_pct": 0.1134,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "negative",
+    "feature": "historical_recovery_rate",
+    "feature_value": 0.8506,
+    "importance": 0.0002,
+    "importance_pct": 0.1078,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "negative",
+    "feature": "book_value_per_share",
+    "feature_value": 104.7115,
+    "importance": 0.0002,
+    "importance_pct": 0.1008,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "positive",
+    "feature": "sector_rank_1d",
+    "feature_value": 0.2727,
+    "importance": 0.0002,
+    "importance_pct": 0.0702,
+    "method": "integrated_gradients"
+   }
+  ]
+ },
+ "fundamentals": {
+  "accrual": 0.0045,
+  "adx_14": 20.1057,
+  "altman_z_score": 0.4499,
+  "amihud_illiquidity": 0.0,
+  "avg_volume": 1877327.0211,
+  "beta_252d": 0.3866,
+  "book_value_per_share": 104.7115,
+  "correlation_spy_60d": 0.7658,
+  "current_liabilities": 903.0,
+  "current_ratio": 92.691,
+  "daily_earnings_yield": 0.0761,
+  "daily_fcf_yield": -0.2388,
+  "daily_pb": 1.6874,
+  "daily_pe": 13.147,
+  "daily_ps": 2.2675,
+  "days_since_52w_high": 49.0,
+  "debt_ebitda": 5.3493,
+  "debt_to_equity": 0.9068,
+  "dividend_yield": 0.0121,
+  "dollar_volume_20d_avg": 275459425.0285,
+  "earnings_quality": 2.0642,
+  "ebitda_growth_yoy": null,
+  "enterprise_value": -4322.3336,
+  "eps_basic": 3.76,
+  "eps_cagr_3y": null,
+  "eps_cagr_5y": null,
+  "eps_diluted": 3.69,
+  "eps_growth_accel": null,
+  "eps_growth_qoq": 0.0108,
+  "eps_growth_yoy": null,
+  "eps_growth_yoy_q2": null,
+  "eps_growth_yoy_q3": null,
+  "eps_growth_yoy_q4": null,
+  "eps_growth_yoy_q5": null,
+  "eps_growth_yoy_q6": null,
+  "eps_growth_yoy_q7": null,
+  "eps_growth_yoy_q8": null,
+  "eps_history_8q": [
+   2.42,
+   2.49,
+   3.65,
+   3.69
+  ],
+  "eps_ttm": 13.1931,
+  "ev_to_ebitda": -0.8829,
+  "ev_to_fcf": -1.921,
+  "ev_to_sales": -0.7137,
+  "fcf_growth_yoy": null,
+  "fcf_margin": 0.3715,
+  "fcf_per_share": 8.2062,
+  "gross_margin": 0.7256,
+  "gross_margin_change_yoy": null,
+  "gross_margin_history": [
+   1.0,
+   0.8026,
+   0.7508,
+   0.7256
+  ],
+  "inc_roic": -0.0005,
+  "interest_coverage": 0.6241,
+  "is_pre_revenue": false,
+  "margin_vs_sector_median": null,
+  "market_cap_ratio": 48446.6664,
+  "net_income": 1090.0,
+  "net_margin": 0.1725,
+  "operating_income": 1388.0,
+  "operating_margin": 0.2183,
+  "operating_margin_change_yoy": null,
+  "pb_ratio": 1.6565,
+  "pe_percentile_1y": 0.7103,
+  "pe_ratio": 13.147,
+  "peg_trailing": 0.4781,
+  "piotroski_f_score": 4.0,
+  "price_vs_high_52w": 0.8929,
+  "price_vs_sma200": 1.0772,
+  "ps_percentile_1y": 0.7103,
+  "ps_ratio": 2.2686,
+  "quarter_labels_8q": [
+   "Q4 '25",
+   "Q1 '26",
+   "Q2 '26",
+   "Q3 '26"
+  ],
+  "quarterly_eps_growth_yoy": null,
+  "quarterly_eps_growth_yoy_8q": [
+   null,
+   null,
+   null,
+   null
+  ],
+  "quarterly_revenue_growth_yoy": null,
+  "quarterly_revenue_growth_yoy_8q": [
+   null,
+   null,
+   null,
+   null
+  ],
+  "revenue_cagr_3y": null,
+  "revenue_cagr_5y": null,
+  "revenue_growth_accel": null,
+  "revenue_growth_qoq": 0.0041,
+  "revenue_growth_yoy": null,
+  "revenue_growth_yoy_q2": null,
+  "revenue_growth_yoy_q3": null,
+  "revenue_growth_yoy_q4": null,
+  "revenue_growth_yoy_q5": null,
+  "revenue_growth_yoy_q6": null,
+  "revenue_growth_yoy_q7": null,
+  "revenue_growth_yoy_q8": null,
+  "revenue_history_8q": [
+   3667.0,
+   5612.0,
+   6031.0,
+   6056.0
+  ],
+  "revenue_per_share": 22.0875,
+  "roa": 0.009,
+  "roce": 0.0114,
+  "roe": 0.1293,
+  "roic": 0.0073,
+  "rsi_14": 58.5665,
+  "sector_momentum": 0.1201,
+  "share_dilution_1y": 0.0,
+  "stock_vs_sector_20d": 0.0191,
+  "stock_vs_spy_20d": 0.0595,
+  "total_assets": 403341.0,
+  "vol_regime": 1.1582,
+  "volatility_20d": 0.0164,
+  "volatility_60d": 0.0142,
+  "w52_high": 195.93,
+  "w52_low": 111.63
+ },
+ "market_characters": [
+  {
+   "id": "g1",
+   "name": "Steady Climbers"
+  }
+ ],
+ "model_analogs": {
+  "matches": [
+   {
+    "actual_downside": -0.0044,
+    "actual_return": 0.0345,
+    "actual_upside": 0.1765,
+    "days_in_region": 405,
+    "end_date": "2017-03-22",
+    "end_reason": "reversal",
+    "similarity": 0.9269,
+    "start_date": "2016-02-11",
+    "ticker": "GWB",
+    "trigger_date": "2016-07-18",
+    "trigger_type": "runup"
+   },
+   {
+    "actual_downside": -0.1233,
+    "actual_return": -0.1233,
+    "actual_upside": 0.0604,
+    "days_in_region": 325,
+    "end_date": "2017-05-18",
+    "end_reason": "reversal",
+    "similarity": 0.926,
+    "start_date": "2016-06-27",
+    "ticker": "J",
+    "trigger_date": "2016-11-10",
+    "trigger_type": "runup"
+   },
+   {
+    "actual_downside": -0.0342,
+    "actual_return": -0.009,
+    "actual_upside": 0.1629,
+    "days_in_region": 430,
+    "end_date": "2017-04-13",
+    "end_reason": "reversal",
+    "similarity": 0.9257,
+    "start_date": "2016-02-08",
+    "ticker": "EGBN",
+    "trigger_date": "2016-07-29",
+    "trigger_type": "runup"
+   },
+   {
+    "actual_downside": -0.0974,
+    "actual_return": 0.1489,
+    "actual_upside": 0.1489,
+    "days_in_region": 157,
+    "end_date": "2021-07-23",
+    "end_reason": "reversal",
+    "similarity": 0.9241,
+    "start_date": "2021-02-16",
+    "ticker": "IBN",
+    "trigger_date": "2021-03-22",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": -0.0587,
+    "actual_return": -0.0587,
+    "actual_upside": 0.1197,
+    "days_in_region": 268,
+    "end_date": "2017-03-22",
+    "end_reason": "reversal",
+    "similarity": 0.9232,
+    "start_date": "2016-06-27",
+    "ticker": "BPOP",
+    "trigger_date": "2016-11-11",
+    "trigger_type": "runup"
+   },
+   {
+    "actual_downside": -0.0238,
+    "actual_return": 0.3421,
+    "actual_upside": 0.3421,
+    "days_in_region": 350,
+    "end_date": "2017-06-22",
+    "end_reason": "data_end",
+    "similarity": 0.9232,
+    "start_date": "2016-07-07",
+    "ticker": "PVTB",
+    "trigger_date": "2016-08-03",
+    "trigger_type": "compression"
+   },
+   {
+    "actual_downside": -0.1044,
+    "actual_return": -0.1044,
+    "actual_upside": 0.1231,
+    "days_in_region": 517,
+    "end_date": "2015-03-11",
+    "end_reason": "reversal",
+    "similarity": 0.9228,
+    "start_date": "2013-10-10",
+    "ticker": "ANAT",
+    "trigger_date": "2014-04-03",
+    "trigger_type": "runup"
+   },
+   {
+    "actual_downside": 0.0,
+    "actual_return": 0.1131,
+    "actual_upside": 0.2671,
+    "days_in_region": 480,
+    "end_date": "2017-06-06",
+    "end_reason": "reversal",
+    "similarity": 0.9217,
+    "start_date": "2016-02-12",
+    "ticker": "UNM",
+    "trigger_date": "2016-08-04",
+    "trigger_type": "runup"
+   },
+   {
+    "actual_downside": -0.0455,
+    "actual_return": 0.1231,
+    "actual_upside": 0.1231,
+    "days_in_region": 105,
+    "end_date": "2021-05-17",
+    "end_reason": "reversal",
+    "similarity": 0.9209,
+    "start_date": "2021-02-01",
+    "ticker": "SLV",
+    "trigger_date": "2021-03-08",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": -0.0152,
+    "actual_return": -0.0152,
+    "actual_upside": 0.1377,
+    "days_in_region": 513,
+    "end_date": "2021-08-19",
+    "end_reason": "reversal",
+    "similarity": 0.9208,
+    "start_date": "2020-03-24",
+    "ticker": "XAR",
+    "trigger_date": "2020-09-14",
+    "trigger_type": "runup"
+   }
+  ],
+  "stats": {
+   "avg_max_drawdown": 0.052,
+   "avg_similarity": 0.918,
+   "avg_trough": 0.052,
+   "avg_upside": 0.1585,
+   "best_return": 0.3421,
+   "downside_range": [
+    -0.2227,
+    0.0
+   ],
+   "median_return": 0.0936,
+   "n_matches": 50,
+   "outcome_agreement": true,
+   "return_p25": -0.0592,
+   "return_p5": -0.1497,
+   "return_p75": 0.1361,
+   "return_p95": 0.2506,
+   "sim_weighted_win_rate": 0.64,
+   "top5_avg_trough": 0.0636,
+   "top5_avg_upside": 0.1337,
+   "top_similarity": 0.927,
+   "upside_range": [
+    0.0085,
+    0.5896
+   ],
+   "win_rate": 0.64,
+   "worst_return": -0.2227,
+   "years_span": 8
+  },
+  "total_matches": 50
+ },
+ "peer_group": {
+  "buckets": [
+   "Brokerage, Trading, Exchanges & Market Infrastructure",
+   "Business Process Outsourcing & Managed Services",
+   "Finance, HR & Administrative Software"
+  ],
+  "groups": {
+   "Brokerage, Trading, Exchanges & Market Infrastructure": [
+    {
+     "market_cap_m": 21449.9373,
+     "price_vs_sma200": 1.1663,
+     "return_30d": 0.2263,
+     "return_7d": 0.0167,
+     "revenue_driver": "proxy voting and communications",
+     "signal_rank": 1394,
+     "stock_vs_spy_20d": 0.1119,
+     "ticker": "BR"
+    },
+    {
+     "market_cap_m": 110238.1089,
+     "price_vs_sma200": 1.1293,
+     "return_30d": 0.2084,
+     "return_7d": 0.0315,
+     "revenue_driver": "derivatives exchange",
+     "signal_rank": 1735,
+     "stock_vs_spy_20d": 0.0949,
+     "ticker": "CME"
+    },
+    {
+     "market_cap_m": 87432.8158,
+     "price_vs_sma200": 1.004,
+     "return_30d": 0.0859,
+     "return_7d": -0.0325,
+     "revenue_driver": "asset management fees",
+     "signal_rank": 614,
+     "stock_vs_spy_20d": 0.1502,
+     "ticker": "KKR"
+    },
+    {
+     "market_cap_m": 94030.5392,
+     "price_vs_sma200": 1.1895,
+     "return_30d": 0.0575,
+     "return_7d": -0.0155,
+     "revenue_driver": "custody and asset servicing",
+     "signal_rank": null,
+     "stock_vs_spy_20d": 0.0498,
+     "ticker": "BK"
+    },
+    {
+     "market_cap_m": 39056.1053,
+     "price_vs_sma200": 0.9507,
+     "return_30d": 0.0273,
+     "return_7d": -0.0566,
+     "revenue_driver": "property management fees",
+     "signal_rank": 996,
+     "stock_vs_spy_20d": 0.0132,
+     "ticker": "CBRE"
+    },
+    {
+     "market_cap_m": 48471.8045,
+     "price_vs_sma200": 1.0772,
+     "return_30d": -0.0143,
+     "return_7d": 0.0002,
+     "revenue_driver": "institutional asset custody",
+     "signal_rank": 366,
+     "stock_vs_spy_20d": 0.0595,
+     "ticker": "STT"
+    },
+    {
+     "market_cap_m": 211938.5577,
+     "price_vs_sma200": 0.9769,
+     "return_30d": -0.0349,
+     "return_7d": -0.0059,
+     "revenue_driver": "institutional banking and markets",
+     "signal_rank": 661,
+     "stock_vs_spy_20d": 0.0108,
+     "ticker": "C"
+    },
+    {
+     "market_cap_m": 365197.825,
+     "price_vs_sma200": 0.9301,
+     "return_30d": -0.0508,
+     "return_7d": -0.0118,
+     "revenue_driver": "consumer banking and credit cards",
+     "signal_rank": 238,
+     "stock_vs_spy_20d": 0.0088,
+     "ticker": "BAC"
+    },
+    {
+     "market_cap_m": 6388.7461,
+     "price_vs_sma200": 1.0133,
+     "return_30d": -0.0577,
+     "return_7d": -0.0151,
+     "revenue_driver": "brokerage commissions",
+     "signal_rank": 709,
+     "stock_vs_spy_20d": -0.0294,
+     "ticker": "BGC"
+    },
+    {
+     "market_cap_m": 371.6653,
+     "price_vs_sma200": 0.8441,
+     "return_30d": -0.193,
+     "return_7d": -0.0171,
+     "revenue_driver": "wealth management fees",
+     "signal_rank": 1937,
+     "stock_vs_spy_20d": -0.0387,
+     "ticker": "DXYZ"
+    }
+   ],
+   "Business Process Outsourcing & Managed Services": [
+    {
+     "market_cap_m": 455.8633,
+     "price_vs_sma200": 0.3546,
+     "return_30d": 0.4904,
+     "return_7d": 0.0345,
+     "revenue_driver": "benefits administration BPaaS",
+     "signal_rank": null,
+     "stock_vs_spy_20d": -0.3615,
+     "ticker": "ALIT"
+    },
+    {
+     "market_cap_m": 1628.6431,
+     "price_vs_sma200": 1.0826,
+     "return_30d": 0.3135,
+     "return_7d": 0.0579,
+     "revenue_driver": "customer experience outsourcing",
+     "signal_rank": null,
+     "stock_vs_spy_20d": 0.24,
+     "ticker": "CNXC"
+    },
+    {
+     "market_cap_m": 115417.6111,
+     "price_vs_sma200": 1.2766,
+     "return_30d": 0.2028,
+     "return_7d": 0.0211,
+     "revenue_driver": "payroll processing SaaS",
+     "signal_rank": 1981,
+     "stock_vs_spy_20d": 0.0856,
+     "ticker": "ADP"
+    },
+    {
+     "market_cap_m": 11281.1189,
+     "price_vs_sma200": 1.0646,
+     "return_30d": 0.1478,
+     "return_7d": 0.0339,
+     "revenue_driver": "cash logistics",
+     "signal_rank": 1793,
+     "stock_vs_spy_20d": 0.1284,
+     "ticker": "BCO"
+    },
+    {
+     "market_cap_m": 30175.0279,
+     "price_vs_sma200": 1.0868,
+     "return_30d": 0.0769,
+     "return_7d": -0.0421,
+     "revenue_driver": "IT outsourcing services",
+     "signal_rank": 1597,
+     "stock_vs_spy_20d": -0.0329,
+     "ticker": "CTSH"
+    },
+    {
+     "market_cap_m": 3409.2731,
+     "price_vs_sma200": 1.0277,
+     "return_30d": 0.0669,
+     "return_7d": -0.0149,
+     "revenue_driver": "commercial and retail banking",
+     "signal_rank": 160,
+     "stock_vs_spy_20d": 0.0877,
+     "ticker": "CBU"
+    },
+    {
+     "market_cap_m": 2980.0868,
+     "price_vs_sma200": 1.3702,
+     "return_30d": 0.0064,
+     "return_7d": 0.0024,
+     "revenue_driver": "accounting and tax services",
+     "signal_rank": null,
+     "stock_vs_spy_20d": 0.0263,
+     "ticker": "CBZ"
+    },
+    {
+     "market_cap_m": 48471.8045,
+     "price_vs_sma200": 1.0772,
+     "return_30d": -0.0143,
+     "return_7d": 0.0002,
+     "revenue_driver": "institutional asset custody",
+     "signal_rank": 366,
+     "stock_vs_spy_20d": 0.0595,
+     "ticker": "STT"
+    },
+    {
+     "market_cap_m": 2082.7967,
+     "price_vs_sma200": 0.7406,
+     "return_30d": -0.1367,
+     "return_7d": -0.0505,
+     "revenue_driver": "atm hardware",
+     "signal_rank": 776,
+     "stock_vs_spy_20d": -0.1634,
+     "ticker": "DBD"
+    },
+    {
+     "market_cap_m": 259.9113,
+     "price_vs_sma200": 1.0536,
+     "return_30d": -0.2424,
+     "return_7d": -0.2424,
+     "revenue_driver": "government payment processing",
+     "signal_rank": null,
+     "stock_vs_spy_20d": 0.1027,
+     "ticker": "CNDT"
+    }
+   ],
+   "Finance, HR & Administrative Software": [
+    {
+     "market_cap_m": 5249.2284,
+     "price_vs_sma200": 1.272,
+     "return_30d": 0.249,
+     "return_7d": 0.0503,
+     "revenue_driver": "SMB financial operations SaaS",
+     "signal_rank": 1457,
+     "stock_vs_spy_20d": 0.2076,
+     "ticker": "BILL"
+    },
+    {
+     "market_cap_m": 115417.6111,
+     "price_vs_sma200": 1.2766,
+     "return_30d": 0.2028,
+     "return_7d": 0.0211,
+     "revenue_driver": "payroll processing SaaS",
+     "signal_rank": 1981,
+     "stock_vs_spy_20d": 0.0856,
+     "ticker": "ADP"
+    },
+    {
+     "market_cap_m": 189962.2299,
+     "price_vs_sma200": 1.1459,
+     "return_30d": 0.1541,
+     "return_7d": -0.0012,
+     "revenue_driver": "asset management and ETFs",
+     "signal_rank": 1052,
+     "stock_vs_spy_20d": 0.0909,
+     "ticker": "BLK"
+    },
+    {
+     "market_cap_m": 1540.1184,
+     "price_vs_sma200": 0.8568,
+     "return_30d": 0.0773,
+     "return_7d": -0.1413,
+     "revenue_driver": "financial close automation software",
+     "signal_rank": null,
+     "stock_vs_spy_20d": -0.0519,
+     "ticker": "BL"
+    },
+    {
+     "market_cap_m": 215762.2234,
+     "price_vs_sma200": 0.9887,
+     "return_30d": 0.0589,
+     "return_7d": -0.0361,
+     "revenue_driver": "credit card issuing",
+     "signal_rank": 701,
+     "stock_vs_spy_20d": 0.0352,
+     "ticker": "AXP"
+    },
+    {
+     "market_cap_m": 499.434,
+     "price_vs_sma200": 0.6921,
+     "return_30d": 0.0388,
+     "return_7d": -0.1641,
+     "revenue_driver": "mortgage origination software",
+     "signal_rank": null,
+     "stock_vs_spy_20d": 0.1084,
+     "ticker": "BLND"
+    },
+    {
+     "market_cap_m": 1390.2027,
+     "price_vs_sma200": 1.2877,
+     "return_30d": 0.0379,
+     "return_7d": -0.2036,
+     "revenue_driver": "healthcare staffing",
+     "signal_rank": 1314,
+     "stock_vs_spy_20d": -0.0481,
+     "ticker": "AMN"
+    },
+    {
+     "market_cap_m": 778.7437,
+     "price_vs_sma200": 0.9431,
+     "return_30d": 0.0085,
+     "return_7d": -0.0704,
+     "revenue_driver": "professional employer organization",
+     "signal_rank": 392,
+     "stock_vs_spy_20d": -0.0418,
+     "ticker": "BBSI"
+    },
+    {
+     "market_cap_m": 1332.5008,
+     "price_vs_sma200": 0.8357,
+     "return_30d": 0.0065,
+     "return_7d": 0.0543,
+     "revenue_driver": "digital banking SaaS",
+     "signal_rank": null,
+     "stock_vs_spy_20d": 0.0414,
+     "ticker": "ALKT"
+    },
+    {
+     "market_cap_m": 48471.8045,
+     "price_vs_sma200": 1.0772,
+     "return_30d": -0.0143,
+     "return_7d": 0.0002,
+     "revenue_driver": "institutional asset custody",
+     "signal_rank": 366,
+     "stock_vs_spy_20d": 0.0595,
+     "ticker": "STT"
+    }
+   ]
+  }
+ },
+ "predictions": {
+  "badge_count": 1,
+  "confidence_score": 0.9699,
+  "conviction_label": "SPECULATIVE",
+  "data_quality_flags": [],
+  "ev_score": 0.0971,
+  "is_diamond": false,
+  "passes_tradability_filter": true,
+  "quality_label": "AVOID",
+  "quantiles": {
+   "downside_q10": -0.1722,
+   "downside_q25": -0.1026,
+   "downside_q50": -0.0487,
+   "downside_q75": -0.0171,
+   "downside_q90": -0.0035,
+   "path_volatility": 0.0151,
+   "risk_reward": 3.0337,
+   "uncertainty": 0.3114,
+   "upside_q10": 0.0277,
+   "upside_q25": 0.0759,
+   "upside_q50": 0.1478,
+   "upside_q75": 0.2354,
+   "upside_q90": 0.339
+  },
+  "rank": 366,
+  "rank_score": 0.1127,
+  "tradability_filter_reasons": []
+ },
+ "profile": {
+  "_local": {
+   "dividend_yield": 0.0121,
+   "eps_growth_yoy": null,
+   "pe_ratio": 14.1665,
+   "revenue_growth_yoy": null,
+   "roe": 0.1293
+  },
+  "beta": 1.374,
+  "betaTTM": null,
+  "ceo": "Ronald Philip O'Hanley",
+  "companyName": "State Street Corporation",
+  "country": "US",
+  "debtToEquityTTM": null,
+  "description": "State Street Corporation (STT) is a well-established global financial services firm that delivers a wide array of financial products and specialized services to institutional investors worldwide. The company's extensive offerings include core investment servicing functionalities such as secure asset custody, detailed product accounting, daily valuation, comprehensive administration, master trust and master custody arrangements, and specific depotbank services. It also manages record-keeping, cash, foreign exchange, brokerage, and various trading activities. Further services in this area encompass securities finance, advanced custody solutions, deposit and short-term investment facilities, as well as loan and lease financing. State Street additionally provides operational outsourcing for both traditional and alternative investment managers, complemented by sophisticated analytics for performance, risk, and compliance, along with financial data management. Beyond servicing, the firm offers capabilities in portfolio management and risk analysis, supporting trading and post-trade settlement processes with built-in compliance features and managed data solutions. Its investment management division provides a diverse range of strategies and products. These span core and enhanced indexing, multi-asset class approaches, active quantitative and fundamental management, and various alternative investment strategies. State Street is also a proponent of environmental, social, and governance (ESG) investing, offers solutions for defined benefit and defined contribution plans, and provides global fiduciary expertise, including its prominent SPDR brand of exchange-traded funds (ETFs). State Street's client roster is broad, serving mutual funds, collective investment vehicles, other investment pools, corporate and public retirement plans, insurance companies, foundations, endowments, and other investment managers. With roots dating back to its founding in 1792, State Street Corporation is headquartered in Boston, Massachusetts.",
+  "dividendYielTTM": null,
+  "enterpriseValueOverEBITDATTM": null,
+  "exchangeShortName": "NYSE",
+  "fullTimeEmployees": "51119",
+  "industry": "Asset Management",
+  "ipoDate": "1980-03-17",
+  "latest_earnings_date": "2026-10-28",
+  "marketCapTTM": null,
+  "mktCap": 47191936558,
+  "peRatioTTM": null,
+  "price": 173.45,
+  "priceToSalesRatioTTM": null,
+  "returnOnEquityTTM": 0.131,
+  "revenue_description": "State Street provides custody, asset servicing, and wealth or asset-management services. Revenue is driven by unit volume growth and pricing realization in its core end markets, with new product introductions and geographic expansion as incremental catalysts.",
+  "revenue_description_themes": [
+   "asset servicing mandate growth",
+   "net interest income optimization",
+   "investment management software adoption"
+  ],
+  "revenue_taxonomy": [
+   {
+    "bucket": "Brokerage, Trading, Exchanges & Market Infrastructure",
+    "matched_tags": [
+     "institutional asset custody"
+    ],
+    "path": "Financials › Capital Markets Insurance & Investments › Brokerage, Trading, Exchanges & Market Infrastructure",
+    "sector": "Financials",
+    "segment": "Capital Markets Insurance & Investments"
+   },
+   {
+    "bucket": "Business Process Outsourcing & Managed Services",
+    "matched_tags": [
+     "investment fund administration"
+    ],
+    "path": "Technology › Tech Enabled Services & Infrastructure › Business Process Outsourcing & Managed Services",
+    "sector": "Technology",
+    "segment": "Tech Enabled Services & Infrastructure"
+   },
+   {
+    "bucket": "Finance, HR & Administrative Software",
+    "matched_tags": [
+     "investment management software"
+    ],
+    "path": "Technology › Software & Platforms › Finance, HR & Administrative Software",
+    "sector": "Technology",
+    "segment": "Software & Platforms"
+   }
+  ],
+  "revenue_themes": [
+   "institutional asset custody",
+   "investment fund administration",
+   "investment management software"
+  ],
+  "sector": "Financial Services",
+  "website": "https://www.statestreet.com"
+ },
+ "report": null,
+ "scorecard": {
+  "headline": {
+   "avg_universe_pct": 56,
+   "label": "mixed",
+   "metric_count": 6
+  },
+  "metrics": {
+   "debt_to_equity": {
+    "direction": "lower",
+    "label": "D/E Ratio",
+    "sector": "Financials",
+    "sector_n": 303,
+    "sector_pct": 20,
+    "universe_n": 1962,
+    "universe_pct": 28,
+    "value": 0.9068
+   },
+   "gross_margin": {
+    "direction": "higher",
+    "label": "Gross Margin",
+    "sector": "Financials",
+    "sector_n": 303,
+    "sector_pct": 63,
+    "universe_n": 1899,
+    "universe_pct": 78,
+    "value": 0.7256
+   },
+   "operating_margin": {
+    "direction": "higher",
+    "label": "Op. Margin",
+    "sector": "Financials",
+    "sector_n": 303,
+    "sector_pct": 47,
+    "universe_n": 1899,
+    "universe_pct": 76,
+    "value": 0.2183
+   },
+   "pe_ratio": {
+    "direction": "lower",
+    "label": "P/E",
+    "sector": "Financials",
+    "sector_n": 294,
+    "sector_pct": 34,
+    "universe_n": 1425,
+    "universe_pct": 68,
+    "value": 14.1665
+   },
+   "roe": {
+    "direction": "higher",
+    "label": "ROE",
+    "sector": "Financials",
+    "sector_n": 304,
+    "sector_pct": 56,
+    "universe_n": 1976,
+    "universe_pct": 60,
+    "value": 0.1293
+   },
+   "roic": {
+    "direction": "higher",
+    "label": "ROIC",
+    "sector": "Financials",
+    "sector_n": 301,
+    "sector_pct": 12,
+    "universe_n": 1946,
+    "universe_pct": 27,
+    "value": 0.0027
+   }
+  }
+ },
+ "signal_rank": 366,
+ "structural_analogs": {
+  "gp_core_pct": 58.3,
+  "gp_core_ratio": 1.3886,
+  "matches": [
+   {
+    "actual_downside": -0.1947,
+    "actual_return": 0.0599,
+    "actual_upside": 0.0599,
+    "days_in_region": 125,
+    "end_date": "2014-11-21",
+    "end_reason": "reversal",
+    "seq_len": 125,
+    "similarity": 0.5816,
+    "start_date": "2014-07-02",
+    "ticker": "BKR",
+    "total_distance": 0.271,
+    "trigger_date": "2014-10-02",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": -0.0338,
+    "actual_return": 0.1392,
+    "actual_upside": 0.1392,
+    "days_in_region": 117,
+    "end_date": "2014-07-03",
+    "end_reason": "reversal",
+    "seq_len": 117,
+    "similarity": 0.5797,
+    "start_date": "2013-11-13",
+    "ticker": "EG",
+    "total_distance": 0.2726,
+    "trigger_date": "2014-02-05",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": -0.1926,
+    "actual_return": 0.0053,
+    "actual_upside": 0.0053,
+    "days_in_region": 118,
+    "end_date": "2014-11-21",
+    "end_reason": "reversal",
+    "seq_len": 118,
+    "similarity": 0.5793,
+    "start_date": "2014-07-14",
+    "ticker": "CXO",
+    "total_distance": 0.2729,
+    "trigger_date": "2014-08-14",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": 0.0,
+    "actual_return": 0.1412,
+    "actual_upside": 0.1412,
+    "days_in_region": 115,
+    "end_date": "2015-12-01",
+    "end_reason": "reversal",
+    "seq_len": 115,
+    "similarity": 0.5739,
+    "start_date": "2015-08-05",
+    "ticker": "LAD",
+    "total_distance": 0.2776,
+    "trigger_date": "2015-08-25",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": -0.0317,
+    "actual_return": 0.3005,
+    "actual_upside": 0.3005,
+    "days_in_region": 105,
+    "end_date": "2014-05-07",
+    "end_reason": "reversal",
+    "seq_len": 105,
+    "similarity": 0.5739,
+    "start_date": "2013-11-14",
+    "ticker": "HAL",
+    "total_distance": 0.2777,
+    "trigger_date": "2013-12-06",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": -0.0723,
+    "actual_return": -0.0723,
+    "actual_upside": 0.1659,
+    "days_in_region": 86,
+    "end_date": "2022-06-16",
+    "end_reason": "reversal",
+    "seq_len": 86,
+    "similarity": 0.5713,
+    "start_date": "2021-09-21",
+    "ticker": "AFL",
+    "total_distance": 0.28,
+    "trigger_date": "2021-10-26",
+    "trigger_type": "shallow_runup"
+   },
+   {
+    "actual_downside": -0.1941,
+    "actual_return": 0.1007,
+    "actual_upside": 0.1007,
+    "days_in_region": 102,
+    "end_date": "2019-04-23",
+    "end_reason": "reversal",
+    "seq_len": 102,
+    "similarity": 0.571,
+    "start_date": "2018-09-05",
+    "ticker": "CACI",
+    "total_distance": 0.2801,
+    "trigger_date": "2018-10-26",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": -0.13,
+    "actual_return": 0.1733,
+    "actual_upside": 0.1733,
+    "days_in_region": 105,
+    "end_date": "2019-04-16",
+    "end_reason": "reversal",
+    "seq_len": 105,
+    "similarity": 0.5704,
+    "start_date": "2018-09-13",
+    "ticker": "TRU",
+    "total_distance": 0.2807,
+    "trigger_date": "2018-10-25",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": -0.0155,
+    "actual_return": 0.2156,
+    "actual_upside": 0.2156,
+    "days_in_region": 117,
+    "end_date": "2006-11-08",
+    "end_reason": "reversal",
+    "seq_len": 117,
+    "similarity": 0.5662,
+    "start_date": "2006-04-05",
+    "ticker": "AMG",
+    "total_distance": 0.2844,
+    "trigger_date": "2006-05-16",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": -0.0685,
+    "actual_return": 0.1592,
+    "actual_upside": 0.1592,
+    "days_in_region": 110,
+    "end_date": "2021-12-31",
+    "end_reason": "reversal",
+    "seq_len": 110,
+    "similarity": 0.5651,
+    "start_date": "2021-05-10",
+    "ticker": "NSC",
+    "total_distance": 0.2854,
+    "trigger_date": "2021-07-20",
+    "trigger_type": "shallow_drawdown"
+   }
+  ],
+  "panel": {
+   "edge": 0.0483,
+   "hit_hi": 0.798,
+   "hit_lo": 0.639,
+   "hit_rate": 0.725,
+   "median_final": 0.1007,
+   "median_pain": 0.0695,
+   "n": 51,
+   "n_eff": 51.0,
+   "p25_final": -0.0222,
+   "p_pain_gt5": 0.569,
+   "return_to_pain": 1.125
+  },
+  "stats": {
+   "avg_similarity": 0.549,
+   "avg_trough": 0.1081,
+   "avg_upside": 0.136,
+   "median_pain": 0.0754,
+   "median_return": 0.0631,
+   "n_matches": 200,
+   "p25_return": -0.0662,
+   "p_pain_gt5": 0.62,
+   "return_to_pain": 0.661,
+   "top5_avg_trough": 0.0906,
+   "top5_avg_upside": 0.1292,
+   "top_similarity": 0.582,
+   "win_rate": 0.65
+  },
+  "total_matches": 200
+ },
+ "ticker": "STT",
+ "trending": {
+  "acceleration": -0.0015,
+  "avg_vol_20d": 1373276.4063,
+  "base_high_120": 194.26,
+  "breakout_confirmed": 0,
+  "close": 185.13,
+  "momentum_score": 0.6553,
+  "momentum_start": "2025-05-12",
+  "range_20": 0.0779,
+  "range_50": 0.1174,
+  "rank": 627,
+  "rank_down": null,
+  "rank_up": 352,
+  "ret_120": 0.466,
+  "ret_20": -0.041,
+  "ret_60": 0.0999,
+  "rundown_score": 0.252,
+  "score_date": "2026-09-15",
+  "slope_20": 0.0005,
+  "slope_60": 0.002,
+  "stage": "sustained",
+  "stage_label": "Trending",
+  "ticker": "STT",
+  "total_score": 0.5457,
+  "trend_ratio": 1.1804,
+  "vcp_detected": 1,
+  "vcp_score": 0.4725
+ }
+}

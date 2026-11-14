@@ -1,0 +1,1119 @@
+{
+ "date": "2026-11-13",
+ "detected_regions": {
+  "primary": {
+   "days_in_region": 81,
+   "region_start": "2026-10-16",
+   "trigger_date": "2026-11-10",
+   "trigger_type": "runup"
+  },
+  "secondary": [
+   {
+    "confidence_score": 0.0981,
+    "downside_q50": -0.0898,
+    "ev_score": 0.1742,
+    "region_start": "2026-08-13",
+    "seq_len": 126,
+    "trigger_date": "2026-09-10",
+    "trigger_type": "compression",
+    "upside_q25": 0.1067,
+    "upside_q50": 0.2478,
+    "upside_q75": 0.4352
+   },
+   {
+    "confidence_score": 0.1857,
+    "downside_q50": -0.067,
+    "ev_score": 0.2026,
+    "region_start": "2026-07-01",
+    "seq_len": 156,
+    "trigger_date": "2026-10-27",
+    "trigger_type": "severe_drawdown",
+    "upside_q25": 0.1144,
+    "upside_q50": 0.2528,
+    "upside_q75": 0.4437
+   }
+  ]
+ },
+ "feature_attribution": {
+  "macro_driver_count": 16,
+  "risk_flags": [
+   "high_volatility"
+  ],
+  "top_drivers": [
+   {
+    "direction": "positive",
+    "feature": "price_vs_low_52w",
+    "feature_value": 1.8866,
+    "importance": 0.0012,
+    "importance_pct": 0.4906,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "negative",
+    "feature": "ma_200_slope",
+    "feature_value": 0.024,
+    "importance": 0.0005,
+    "importance_pct": 0.2071,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "negative",
+    "feature": "beta_252d",
+    "feature_value": -0.2871,
+    "importance": 0.0004,
+    "importance_pct": 0.1837,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "negative",
+    "feature": "price_vs_low_change_5d",
+    "feature_value": -0.8235,
+    "importance": 0.0003,
+    "importance_pct": 0.1186,
+    "method": "integrated_gradients"
+   }
+  ]
+ },
+ "fundamentals": {
+  "accrual": 0.0795,
+  "adx_14": 29.2737,
+  "altman_z_score": 5.9562,
+  "amihud_illiquidity": 0.0041,
+  "avg_volume": 1154545.0345,
+  "beta_252d": -0.2871,
+  "book_value_per_share": 3.6097,
+  "correlation_spy_60d": -0.0394,
+  "current_liabilities": 50.096,
+  "current_ratio": 3.3876,
+  "daily_earnings_yield": 0.0594,
+  "daily_fcf_yield": 0.0177,
+  "daily_pb": 3.1055,
+  "daily_pe": 16.8211,
+  "daily_ps": 0.8844,
+  "days_since_52w_high": 134.0,
+  "debt_ebitda": 1.4827,
+  "debt_to_equity": 0.2765,
+  "dividend_yield": 0.0011,
+  "dollar_volume_20d_avg": 3778121.0536,
+  "earnings_quality": 0.988,
+  "ebitda_growth_yoy": 2.1669,
+  "enterprise_value": 895.8982,
+  "eps_basic": 0.17,
+  "eps_cagr_3y": 0.0396,
+  "eps_cagr_5y": 0.2979,
+  "eps_diluted": 0.16,
+  "eps_growth_accel": 0.2184,
+  "eps_growth_qoq": 0.1333,
+  "eps_growth_yoy": 1.9607,
+  "eps_growth_yoy_q2": 1.7423,
+  "eps_growth_yoy_q3": 1.467,
+  "eps_growth_yoy_q4": 1.2048,
+  "eps_growth_yoy_q5": -0.3269,
+  "eps_growth_yoy_q6": -0.7358,
+  "eps_growth_yoy_q7": -1.1579,
+  "eps_growth_yoy_q8": -1.1282,
+  "eps_history_8q": [
+   -0.57,
+   -0.16,
+   -0.15,
+   0.19,
+   0.28,
+   0.0517,
+   0.15,
+   0.16
+  ],
+  "eps_ttm": 0.2176,
+  "ev_to_ebitda": 17.5687,
+  "ev_to_fcf": 105.8231,
+  "ev_to_sales": 3.474,
+  "fcf_growth_yoy": -0.5997,
+  "fcf_margin": 0.0328,
+  "fcf_per_share": 0.1118,
+  "gross_margin": 0.0669,
+  "gross_margin_change_yoy": -0.0661,
+  "gross_margin_history": [
+   0.0279,
+   0.0475,
+   0.0586,
+   0.0731,
+   0.0839,
+   0.0669
+  ],
+  "inc_roic": 0.288,
+  "interest_coverage": 6.2932,
+  "is_pre_revenue": false,
+  "margin_vs_sector_median": null,
+  "market_cap_ratio": 849.2152,
+  "net_income": 13.022,
+  "net_margin": 0.0526,
+  "operating_income": 7.015,
+  "operating_margin": 0.0399,
+  "operating_margin_change_yoy": -0.0433,
+  "pb_ratio": 1.0139,
+  "pe_percentile_1y": 0.5675,
+  "pe_ratio": 16.8211,
+  "peg_trailing": 0.0302,
+  "piotroski_f_score": 3.0,
+  "price_vs_high_52w": 0.611,
+  "price_vs_sma200": 0.8453,
+  "ps_percentile_1y": 0.6706,
+  "ps_ratio": 0.9037,
+  "quarter_labels_8q": [
+   "Q4 '24",
+   "Q1 '25",
+   "Q2 '25",
+   "Q3 '25",
+   "Q4 '25",
+   "Q1 '26",
+   "Q2 '26",
+   "Q3 '26"
+  ],
+  "quarterly_eps_growth_yoy": -0.1579,
+  "quarterly_eps_growth_yoy_8q": [
+   -1.1923,
+   0.0588,
+   -2.0,
+   5.75,
+   1.4912,
+   1.3231,
+   2.0,
+   -0.1579
+  ],
+  "quarterly_revenue_growth_yoy": 0.0701,
+  "quarterly_revenue_growth_yoy_8q": [
+   -0.1362,
+   -0.0586,
+   -0.0763,
+   -0.043,
+   -0.0185,
+   -0.0082,
+   0.1248,
+   0.0701
+  ],
+  "revenue_cagr_3y": -0.0908,
+  "revenue_cagr_5y": -0.0063,
+  "revenue_growth_accel": 0.0302,
+  "revenue_growth_qoq": 0.0496,
+  "revenue_growth_yoy": 0.0411,
+  "revenue_growth_yoy_q2": 0.0109,
+  "revenue_growth_yoy_q3": -0.0369,
+  "revenue_growth_yoy_q4": -0.049,
+  "revenue_growth_yoy_q5": -0.08,
+  "revenue_growth_yoy_q6": -0.127,
+  "revenue_growth_yoy_q7": -0.1727,
+  "revenue_growth_yoy_q8": -0.2107,
+  "revenue_history_8q": [
+   236.347,
+   226.54,
+   218.436,
+   240.986,
+   231.965,
+   224.68,
+   245.698,
+   257.885
+  ],
+  "revenue_per_share": 3.4042,
+  "roa": 0.1263,
+  "roce": 0.1096,
+  "roe": 0.1893,
+  "roic": 0.1433,
+  "rsi_14": 45.6114,
+  "sector_momentum": 0.112,
+  "share_dilution_1y": 0.0,
+  "stock_vs_sector_20d": 0.0167,
+  "stock_vs_spy_20d": 0.0737,
+  "total_assets": 402.45,
+  "vol_regime": 0.919,
+  "volatility_20d": 0.0203,
+  "volatility_60d": 0.022,
+  "w52_high": 6.105,
+  "w52_low": 1.8501
+ },
+ "market_characters": [],
+ "model_analogs": {
+  "matches": [
+   {
+    "actual_downside": 0.0,
+    "actual_return": 0.0571,
+    "actual_upside": 0.3353,
+    "days_in_region": 142,
+    "end_date": "2006-03-23",
+    "end_reason": "reversal",
+    "similarity": 0.9643,
+    "start_date": "2005-11-01",
+    "ticker": "SBL",
+    "trigger_date": "2005-11-04",
+    "trigger_type": "runup"
+   },
+   {
+    "actual_downside": -0.0934,
+    "actual_return": -0.0934,
+    "actual_upside": 0.0815,
+    "days_in_region": 78,
+    "end_date": "2006-01-17",
+    "end_reason": "reversal",
+    "similarity": 0.9612,
+    "start_date": "2005-10-31",
+    "ticker": "MOH",
+    "trigger_date": "2005-11-07",
+    "trigger_type": "runup"
+   },
+   {
+    "actual_downside": -0.0617,
+    "actual_return": 0.3543,
+    "actual_upside": 0.7298,
+    "days_in_region": 264,
+    "end_date": "2006-06-13",
+    "end_reason": "reversal",
+    "similarity": 0.9602,
+    "start_date": "2005-09-22",
+    "ticker": "MCRI",
+    "trigger_date": "2005-10-04",
+    "trigger_type": "shallow_runup"
+   },
+   {
+    "actual_downside": -0.0682,
+    "actual_return": -0.0682,
+    "actual_upside": 0.2169,
+    "days_in_region": 69,
+    "end_date": "2005-12-20",
+    "end_reason": "reversal",
+    "similarity": 0.96,
+    "start_date": "2005-10-12",
+    "ticker": "PAR",
+    "trigger_date": "2005-11-01",
+    "trigger_type": "runup"
+   },
+   {
+    "actual_downside": -0.1264,
+    "actual_return": -0.0192,
+    "actual_upside": 0.2107,
+    "days_in_region": 187,
+    "end_date": "1996-07-15",
+    "end_reason": "reversal",
+    "similarity": 0.959,
+    "start_date": "1996-01-10",
+    "ticker": "SKYW",
+    "trigger_date": "1996-01-24",
+    "trigger_type": "shallow_runup"
+   },
+   {
+    "actual_downside": -0.0205,
+    "actual_return": 0.8791,
+    "actual_upside": 1.4057,
+    "days_in_region": 156,
+    "end_date": "2006-05-11",
+    "end_reason": "reversal",
+    "similarity": 0.9586,
+    "start_date": "2005-12-06",
+    "ticker": "ININ",
+    "trigger_date": "2005-12-15",
+    "trigger_type": "shallow_runup"
+   },
+   {
+    "actual_downside": -0.184,
+    "actual_return": -0.184,
+    "actual_upside": 0.0276,
+    "days_in_region": 152,
+    "end_date": "2004-08-23",
+    "end_reason": "reversal",
+    "similarity": 0.9583,
+    "start_date": "2004-03-24",
+    "ticker": "GIC",
+    "trigger_date": "2004-04-23",
+    "trigger_type": "runup"
+   },
+   {
+    "actual_downside": -0.2746,
+    "actual_return": 0.0,
+    "actual_upside": 0.0211,
+    "days_in_region": 189,
+    "end_date": "1990-05-17",
+    "end_reason": "reversal",
+    "similarity": 0.9582,
+    "start_date": "1989-11-09",
+    "ticker": "CVBF",
+    "trigger_date": "1989-12-15",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": -0.0199,
+    "actual_return": 0.4911,
+    "actual_upside": 0.7535,
+    "days_in_region": 202,
+    "end_date": "2006-07-18",
+    "end_reason": "reversal",
+    "similarity": 0.9582,
+    "start_date": "2005-12-28",
+    "ticker": "SWBI",
+    "trigger_date": "2006-01-17",
+    "trigger_type": "runup"
+   },
+   {
+    "actual_downside": -0.1194,
+    "actual_return": -0.0106,
+    "actual_upside": 0.1468,
+    "days_in_region": 123,
+    "end_date": "2006-02-13",
+    "end_reason": "reversal",
+    "similarity": 0.958,
+    "start_date": "2005-10-13",
+    "ticker": "SGI",
+    "trigger_date": "2005-11-02",
+    "trigger_type": "runup"
+   }
+  ],
+  "stats": {
+   "avg_max_drawdown": 0.1137,
+   "avg_similarity": 0.956,
+   "avg_trough": 0.1137,
+   "avg_upside": 0.3261,
+   "best_return": 0.8791,
+   "downside_range": [
+    -0.3329,
+    0.0
+   ],
+   "median_return": 0.0411,
+   "n_matches": 50,
+   "outcome_agreement": true,
+   "return_p25": -0.0796,
+   "return_p5": -0.2313,
+   "return_p75": 0.1771,
+   "return_p95": 0.5313,
+   "sim_weighted_win_rate": 0.52,
+   "top5_avg_trough": 0.0699,
+   "top5_avg_upside": 0.3148,
+   "top_similarity": 0.964,
+   "upside_range": [
+    0.0,
+    1.4057
+   ],
+   "win_rate": 0.52,
+   "worst_return": -0.3329,
+   "years_span": 15
+  },
+  "total_matches": 50
+ },
+ "peer_group": {
+  "buckets": [
+   "Food Ingredients, Flavors & Specialty Ingredients",
+   "Refining, Fuel Marketing & Wholesale Energy Products",
+   "Specialty Chemicals, Additives, Catalysts & Coatings"
+  ],
+  "groups": {
+   "Food Ingredients, Flavors & Specialty Ingredients": [
+    {
+     "market_cap_m": 356.2486,
+     "price_vs_sma200": 1.0146,
+     "return_30d": 0.3711,
+     "return_7d": 0.0683,
+     "revenue_driver": "distilled spirits production",
+     "signal_rank": 1591,
+     "stock_vs_spy_20d": 0.2883,
+     "ticker": "MGPI"
+    },
+    {
+     "market_cap_m": 5732.322,
+     "price_vs_sma200": 1.0205,
+     "return_30d": 0.0395,
+     "return_7d": -0.0517,
+     "revenue_driver": "nutrition ingredients",
+     "signal_rank": 630,
+     "stock_vs_spy_20d": 0.027,
+     "ticker": "BCPC"
+    },
+    {
+     "market_cap_m": 1004.0752,
+     "price_vs_sma200": 1.1715,
+     "return_30d": 0.0246,
+     "return_7d": -0.195,
+     "revenue_driver": "packaged beverages and coffee",
+     "signal_rank": 384,
+     "stock_vs_spy_20d": 0.001,
+     "ticker": "WEST"
+    },
+    {
+     "market_cap_m": 5826.9716,
+     "price_vs_sma200": 0.9001,
+     "return_30d": -0.0125,
+     "return_7d": -0.0331,
+     "revenue_driver": "food starch and sweeteners",
+     "signal_rank": 699,
+     "stock_vs_spy_20d": -0.0258,
+     "ticker": "INGR"
+    },
+    {
+     "market_cap_m": 23606.9293,
+     "price_vs_sma200": 1.0245,
+     "return_30d": -0.0153,
+     "return_7d": -0.0743,
+     "revenue_driver": "flavor ingredients",
+     "signal_rank": 992,
+     "stock_vs_spy_20d": -0.0921,
+     "ticker": "IFF"
+    },
+    {
+     "market_cap_m": 867.7772,
+     "price_vs_sma200": 0.8453,
+     "return_30d": -0.0292,
+     "return_7d": 0.0457,
+     "revenue_driver": "ethanol production",
+     "signal_rank": 1590,
+     "stock_vs_spy_20d": 0.0737,
+     "ticker": "ALTO"
+    },
+    {
+     "market_cap_m": 4997.1577,
+     "price_vs_sma200": 1.0155,
+     "return_30d": -0.0925,
+     "return_7d": -0.0725,
+     "revenue_driver": "natural and synthetic colors",
+     "signal_rank": 724,
+     "stock_vs_spy_20d": -0.1146,
+     "ticker": "SXT"
+    },
+    {
+     "market_cap_m": 33928.242,
+     "price_vs_sma200": 0.9503,
+     "return_30d": -0.0938,
+     "return_7d": 0.0291,
+     "revenue_driver": "ag origination and trading",
+     "signal_rank": 767,
+     "stock_vs_spy_20d": -0.1047,
+     "ticker": "ADM"
+    },
+    {
+     "market_cap_m": 990.6097,
+     "price_vs_sma200": 0.7622,
+     "return_30d": -0.105,
+     "return_7d": -0.0498,
+     "revenue_driver": "leaf tobacco processing",
+     "signal_rank": 437,
+     "stock_vs_spy_20d": -0.0584,
+     "ticker": "UVV"
+    },
+    {
+     "market_cap_m": 26.04,
+     "price_vs_sma200": 0.9599,
+     "return_30d": -1.0,
+     "return_7d": -1.0,
+     "revenue_driver": "spices and seasonings",
+     "signal_rank": null,
+     "stock_vs_spy_20d": 0.0252,
+     "ticker": "MKC"
+    }
+   ],
+   "Refining, Fuel Marketing & Wholesale Energy Products": [
+    {
+     "market_cap_m": 331.1445,
+     "price_vs_sma200": 0.9231,
+     "return_30d": 0.1795,
+     "return_7d": 0.172,
+     "revenue_driver": "renewable natural gas",
+     "signal_rank": 1683,
+     "stock_vs_spy_20d": 0.2395,
+     "ticker": "CLNE"
+    },
+    {
+     "market_cap_m": 12348.1258,
+     "price_vs_sma200": 1.1578,
+     "return_30d": 0.162,
+     "return_7d": -0.005,
+     "revenue_driver": "membership fees",
+     "signal_rank": 1362,
+     "stock_vs_spy_20d": 0.0846,
+     "ticker": "BJ"
+    },
+    {
+     "market_cap_m": 27230.8162,
+     "price_vs_sma200": 0.9553,
+     "return_30d": 0.1527,
+     "return_7d": 0.0552,
+     "revenue_driver": "convenience stores",
+     "signal_rank": 1512,
+     "stock_vs_spy_20d": 0.046,
+     "ticker": "CASY"
+    },
+    {
+     "market_cap_m": 474224.7014,
+     "price_vs_sma200": 1.1231,
+     "return_30d": 0.0639,
+     "return_7d": 0.0135,
+     "revenue_driver": "integrated oil major",
+     "signal_rank": 1484,
+     "stock_vs_spy_20d": -0.0098,
+     "ticker": "CVX"
+    },
+    {
+     "market_cap_m": 867.7772,
+     "price_vs_sma200": 0.8453,
+     "return_30d": -0.0292,
+     "return_7d": 0.0457,
+     "revenue_driver": "ethanol production",
+     "signal_rank": 1590,
+     "stock_vs_spy_20d": 0.0737,
+     "ticker": "ALTO"
+    },
+    {
+     "market_cap_m": 430.1237,
+     "price_vs_sma200": 0.6736,
+     "return_30d": -0.0408,
+     "return_7d": -0.0099,
+     "revenue_driver": "retail fuel sales",
+     "signal_rank": 512,
+     "stock_vs_spy_20d": -0.0115,
+     "ticker": "ARKO"
+    },
+    {
+     "market_cap_m": 16738.6426,
+     "price_vs_sma200": 0.9806,
+     "return_30d": -0.0775,
+     "return_7d": 0.0193,
+     "revenue_driver": "hazardous waste disposal",
+     "signal_rank": 1113,
+     "stock_vs_spy_20d": -0.0692,
+     "ticker": "CLH"
+    },
+    {
+     "market_cap_m": 1409.7464,
+     "price_vs_sma200": 0.8942,
+     "return_30d": -0.1178,
+     "return_7d": -0.0338,
+     "revenue_driver": "ethanol production",
+     "signal_rank": 94,
+     "stock_vs_spy_20d": -0.0701,
+     "ticker": "REX"
+    },
+    {
+     "market_cap_m": 1872.9887,
+     "price_vs_sma200": 0.8021,
+     "return_30d": -0.1819,
+     "return_7d": 0.0009,
+     "revenue_driver": "grain merchandising",
+     "signal_rank": 921,
+     "stock_vs_spy_20d": -0.1339,
+     "ticker": "ANDE"
+    },
+    {
+     "market_cap_m": 4885.8066,
+     "price_vs_sma200": 1.1163,
+     "return_30d": -0.2535,
+     "return_7d": -0.0484,
+     "revenue_driver": "petroleum refining",
+     "signal_rank": 1279,
+     "stock_vs_spy_20d": -0.3207,
+     "ticker": "CVI"
+    }
+   ],
+   "Specialty Chemicals, Additives, Catalysts & Coatings": [
+    {
+     "market_cap_m": 6688.5492,
+     "price_vs_sma200": 1.1873,
+     "return_30d": 0.1,
+     "return_7d": 0.0004,
+     "revenue_driver": "personal care specialty chemicals",
+     "signal_rank": 692,
+     "stock_vs_spy_20d": 0.0876,
+     "ticker": "ASH"
+    },
+    {
+     "market_cap_m": 4382.253,
+     "price_vs_sma200": 1.147,
+     "return_30d": 0.0848,
+     "return_7d": -0.0669,
+     "revenue_driver": "specialty polymer additives",
+     "signal_rank": 1089,
+     "stock_vs_spy_20d": 0.1586,
+     "ticker": "AVNT"
+    },
+    {
+     "market_cap_m": 5732.322,
+     "price_vs_sma200": 1.0205,
+     "return_30d": 0.0395,
+     "return_7d": -0.0517,
+     "revenue_driver": "nutrition ingredients",
+     "signal_rank": 630,
+     "stock_vs_spy_20d": 0.027,
+     "ticker": "BCPC"
+    },
+    {
+     "market_cap_m": 867.7772,
+     "price_vs_sma200": 0.8453,
+     "return_30d": -0.0292,
+     "return_7d": 0.0457,
+     "revenue_driver": "ethanol production",
+     "signal_rank": 1590,
+     "stock_vs_spy_20d": 0.0737,
+     "ticker": "ALTO"
+    },
+    {
+     "market_cap_m": 1911.123,
+     "price_vs_sma200": 0.7269,
+     "return_30d": -0.0306,
+     "return_7d": -0.0363,
+     "revenue_driver": "titanium technologies",
+     "signal_rank": 1348,
+     "stock_vs_spy_20d": 0.056,
+     "ticker": "CC"
+    },
+    {
+     "market_cap_m": 4109.0925,
+     "price_vs_sma200": 0.9639,
+     "return_30d": -0.0415,
+     "return_7d": 0.0104,
+     "revenue_driver": "metal coating and galvanizing",
+     "signal_rank": 99,
+     "stock_vs_spy_20d": 0.044,
+     "ticker": "AZZ"
+    },
+    {
+     "market_cap_m": 6912.3686,
+     "price_vs_sma200": 0.9038,
+     "return_30d": -0.0654,
+     "return_7d": -0.0423,
+     "revenue_driver": "carbon black",
+     "signal_rank": 255,
+     "stock_vs_spy_20d": -0.019,
+     "ticker": "CBT"
+    },
+    {
+     "market_cap_m": 11177.7791,
+     "price_vs_sma200": 0.6421,
+     "return_30d": -0.1057,
+     "return_7d": -0.0152,
+     "revenue_driver": "lithium chemical production",
+     "signal_rank": 916,
+     "stock_vs_spy_20d": -0.0076,
+     "ticker": "ALB"
+    },
+    {
+     "market_cap_m": 2977.0068,
+     "price_vs_sma200": 0.7743,
+     "return_30d": -0.1428,
+     "return_7d": 0.0076,
+     "revenue_driver": "axles and driveshafts",
+     "signal_rank": 789,
+     "stock_vs_spy_20d": -0.1622,
+     "ticker": "DAN"
+    },
+    {
+     "market_cap_m": 3438.9286,
+     "price_vs_sma200": 0.8692,
+     "return_30d": -0.3795,
+     "return_7d": -0.2133,
+     "revenue_driver": "specialty chemicals",
+     "signal_rank": 1297,
+     "stock_vs_spy_20d": -0.3932,
+     "ticker": "CLMT"
+    }
+   ]
+  }
+ },
+ "predictions": {
+  "badge_count": 0,
+  "confidence_score": 0.0684,
+  "conviction_label": "SPECULATIVE",
+  "data_quality_flags": [],
+  "ev_score": 0.1469,
+  "is_diamond": false,
+  "passes_tradability_filter": false,
+  "quality_label": "HIGH",
+  "quantiles": {
+   "downside_q10": -0.3324,
+   "downside_q25": -0.1865,
+   "downside_q50": -0.1086,
+   "downside_q75": -0.0323,
+   "downside_q90": 0.0018,
+   "path_volatility": 0.0483,
+   "risk_reward": 2.19,
+   "uncertainty": 0.6403,
+   "upside_q10": 0.03,
+   "upside_q25": 0.0972,
+   "upside_q50": 0.2379,
+   "upside_q75": 0.4127,
+   "upside_q90": 0.6703
+  },
+  "rank": 1590,
+  "rank_score": 0.0217,
+  "tradability_filter_reasons": [
+   "market_cap_below_1b",
+   "dollar_volume_below_5m"
+  ]
+ },
+ "profile": {
+  "_local": {
+   "dividend_yield": 0.0011,
+   "eps_growth_yoy": 1.9607,
+   "pe_ratio": 5.8283,
+   "revenue_growth_yoy": 0.0411,
+   "roe": 0.1893
+  },
+  "beta": 0.188,
+  "betaTTM": null,
+  "ceo": "Bryon T. McGregor",
+  "companyName": "Alto Ingredients, Inc.",
+  "country": "US",
+  "debtToEquityTTM": null,
+  "description": "Alto Ingredients, Inc., operating within the United States, specializes in the production and commercialization of both specialty alcohols and various essential ingredients. Its operations are structured into three distinct segments: Marketing and Distribution, Pekin Production, and Other Production. The company's diverse product portfolio includes a range of specialty alcohols, which find applications across the health, home, and beauty sectors. These alcohols are key components in products such as mouthwash, cosmetics, pharmaceuticals, hand sanitizers, disinfectants, and various cleaning solutions. Additionally, Alto Ingredients supplies grain neutral spirits, vital for alcoholic beverages, flavor extracts, and vinegar production. It also provides corn germ for corn oil manufacturing and carbon dioxide, primarily serving the food and beverage industries. Its essential ingredients segment encompasses a variety of products critical for commercial animal feed and pet food formulations, including dried yeast, corn gluten meal, corn gluten feed, distillers grains, and liquid feed. Furthermore, the company is a supplier of fuel-grade ethanol, primarily utilized as a transportation fuel, and distillers corn oil, which serves as a feedstock for biodiesel production. Notably, some of the fuel-grade ethanol it offers is sourced from third-party producers. Beyond manufacturing, Alto Ingredients facilitates transportation, storage, and delivery services for its products, leveraging a network of third-party service providers. Its diverse customer base includes integrated oil companies and gasoline marketers for its ethanol products; dairies and feedlots for essential ingredient feedstuffs; and poultry and biodiesel manufacturers for its corn oil. The company boasts five alcohol production facilities: three strategically located in the Midwestern state of Illinois, and two further west in Oregon and Idaho. Headquartered in Pekin, Illinois, Alto Ingredients, Inc. was established in 2003. The company underwent a significant rebranding in January 2021, changing its name from its former identity, Pacific Ethanol, Inc.",
+  "dividendYielTTM": null,
+  "enterpriseValueOverEBITDATTM": null,
+  "exchangeShortName": "NASDAQ",
+  "fullTimeEmployees": "390",
+  "industry": "Chemicals - Specialty",
+  "ipoDate": "2005-03-24",
+  "latest_earnings_date": "2026-11-06",
+  "marketCapTTM": null,
+  "mktCap": 287787297,
+  "peRatioTTM": null,
+  "price": 3.71,
+  "priceToSalesRatioTTM": null,
+  "returnOnEquityTTM": 0.1964,
+  "revenue_description": "Alto Ingredients produces specialty alcohols, essential ingredients (corn protein, oils, distillers grains) and renewable fuel-grade ethanol at U.S. plants. Revenue is driven by ethanol and specialty alcohol volumes and prices, corn crush margins and co-product sales.",
+  "revenue_description_themes": [
+   "ethanol crush margins",
+   "specialty alcohol demand",
+   "corn prices"
+  ],
+  "revenue_taxonomy": [
+   {
+    "bucket": "Refining, Fuel Marketing & Wholesale Energy Products",
+    "matched_tags": [
+     "ethanol production"
+    ],
+    "path": "Energy & Utilities › Energy Value Chain › Refining, Fuel Marketing & Wholesale Energy Products",
+    "sector": "Energy & Utilities",
+    "segment": "Energy Value Chain"
+   },
+   {
+    "bucket": "Specialty Chemicals, Additives, Catalysts & Coatings",
+    "matched_tags": [
+     "specialty alcohol production"
+    ],
+    "path": "Materials & Chemicals › Chemicals & Advanced Materials › Specialty Chemicals, Additives, Catalysts & Coatings",
+    "sector": "Materials & Chemicals",
+    "segment": "Chemicals & Advanced Materials"
+   },
+   {
+    "bucket": "Food Ingredients, Flavors & Specialty Ingredients",
+    "matched_tags": [
+     "corn co-products"
+    ],
+    "path": "Consumer Goods & Retail › Food Beverage & Staples › Food Ingredients, Flavors & Specialty Ingredients",
+    "sector": "Consumer Goods & Retail",
+    "segment": "Food Beverage & Staples"
+   }
+  ],
+  "revenue_themes": [
+   "ethanol production",
+   "specialty alcohol production",
+   "corn co-products"
+  ],
+  "sector": "Basic Materials",
+  "website": "https://www.altoingredients.com"
+ },
+ "report": null,
+ "scorecard": {
+  "headline": {
+   "avg_universe_pct": 58,
+   "label": "mixed",
+   "metric_count": 8
+  },
+  "metrics": {
+   "debt_to_equity": {
+    "direction": "lower",
+    "label": "D/E Ratio",
+    "sector": "Materials",
+    "sector_n": 108,
+    "sector_pct": 69,
+    "universe_n": 1962,
+    "universe_pct": 57,
+    "value": 0.2765
+   },
+   "eps_growth_yoy": {
+    "direction": "higher",
+    "label": "EPS Growth",
+    "sector": "Materials",
+    "sector_n": 109,
+    "sector_pct": 88,
+    "universe_n": 1779,
+    "universe_pct": 90,
+    "value": 1.9607
+   },
+   "gross_margin": {
+    "direction": "higher",
+    "label": "Gross Margin",
+    "sector": "Materials",
+    "sector_n": 107,
+    "sector_pct": 11,
+    "universe_n": 1899,
+    "universe_pct": 3,
+    "value": 0.0669
+   },
+   "operating_margin": {
+    "direction": "higher",
+    "label": "Op. Margin",
+    "sector": "Materials",
+    "sector_n": 107,
+    "sector_pct": 36,
+    "universe_n": 1899,
+    "universe_pct": 28,
+    "value": 0.0399
+   },
+   "pe_ratio": {
+    "direction": "lower",
+    "label": "P/E",
+    "sector": "Materials",
+    "sector_n": 72,
+    "sector_pct": 97,
+    "universe_n": 1425,
+    "universe_pct": 97,
+    "value": 5.8283
+   },
+   "revenue_growth_yoy": {
+    "direction": "higher",
+    "label": "Rev Growth",
+    "sector": "Materials",
+    "sector_n": 108,
+    "sector_pct": 45,
+    "universe_n": 1729,
+    "universe_pct": 34,
+    "value": 0.0411
+   },
+   "roe": {
+    "direction": "higher",
+    "label": "ROE",
+    "sector": "Materials",
+    "sector_n": 109,
+    "sector_pct": 78,
+    "universe_n": 1976,
+    "universe_pct": 74,
+    "value": 0.1893
+   },
+   "roic": {
+    "direction": "higher",
+    "label": "ROIC",
+    "sector": "Materials",
+    "sector_n": 109,
+    "sector_pct": 78,
+    "universe_n": 1946,
+    "universe_pct": 80,
+    "value": 0.037
+   }
+  }
+ },
+ "signal_rank": 1590,
+ "structural_analogs": {
+  "gp_core_pct": 2.4,
+  "gp_core_ratio": 0.6493,
+  "matches": [
+   {
+    "actual_downside": -0.0983,
+    "actual_return": -0.0689,
+    "actual_upside": 0.4697,
+    "days_in_region": 74,
+    "end_date": "2022-02-03",
+    "end_reason": "reversal",
+    "seq_len": 74,
+    "similarity": 0.5615,
+    "start_date": "2021-10-15",
+    "ticker": "HIMX",
+    "total_distance": 0.2886,
+    "trigger_date": "2021-11-03",
+    "trigger_type": "shallow_runup"
+   },
+   {
+    "actual_downside": -0.1412,
+    "actual_return": -0.1412,
+    "actual_upside": 0.0678,
+    "days_in_region": 70,
+    "end_date": "2017-07-12",
+    "end_reason": "reversal",
+    "seq_len": 70,
+    "similarity": 0.5479,
+    "start_date": "2017-04-06",
+    "ticker": "EZPW",
+    "total_distance": 0.3009,
+    "trigger_date": "2017-04-20",
+    "trigger_type": "shallow_runup"
+   },
+   {
+    "actual_downside": -0.4346,
+    "actual_return": -0.4346,
+    "actual_upside": 0.0561,
+    "days_in_region": 75,
+    "end_date": "2022-01-28",
+    "end_reason": "reversal",
+    "seq_len": 75,
+    "similarity": 0.546,
+    "start_date": "2021-10-04",
+    "ticker": "FINV",
+    "total_distance": 0.3026,
+    "trigger_date": "2021-10-22",
+    "trigger_type": "runup"
+   },
+   {
+    "actual_downside": -0.136,
+    "actual_return": -0.136,
+    "actual_upside": 0.03,
+    "days_in_region": 86,
+    "end_date": "2021-11-02",
+    "end_reason": "reversal",
+    "seq_len": 86,
+    "similarity": 0.5354,
+    "start_date": "2021-08-19",
+    "ticker": "RUTH",
+    "total_distance": 0.3124,
+    "trigger_date": "2021-09-24",
+    "trigger_type": "runup"
+   },
+   {
+    "actual_downside": -0.262,
+    "actual_return": -0.262,
+    "actual_upside": 0.0169,
+    "days_in_region": 74,
+    "end_date": "2004-02-05",
+    "end_reason": "reversal",
+    "seq_len": 74,
+    "similarity": 0.5346,
+    "start_date": "2003-12-17",
+    "ticker": "EXLT",
+    "total_distance": 0.3131,
+    "trigger_date": "2004-01-07",
+    "trigger_type": "shallow_runup"
+   },
+   {
+    "actual_downside": -0.0946,
+    "actual_return": 0.0892,
+    "actual_upside": 0.1086,
+    "days_in_region": 69,
+    "end_date": "2021-10-08",
+    "end_reason": "data_end",
+    "seq_len": 69,
+    "similarity": 0.5248,
+    "start_date": "2021-08-19",
+    "ticker": "TSE",
+    "total_distance": 0.3224,
+    "trigger_date": "2021-08-31",
+    "trigger_type": "runup"
+   },
+   {
+    "actual_downside": -0.1106,
+    "actual_return": 0.0124,
+    "actual_upside": 0.3221,
+    "days_in_region": 68,
+    "end_date": "2021-12-01",
+    "end_reason": "reversal",
+    "seq_len": 68,
+    "similarity": 0.5209,
+    "start_date": "2021-10-13",
+    "ticker": "CYH",
+    "total_distance": 0.3261,
+    "trigger_date": "2021-10-22",
+    "trigger_type": "runup"
+   },
+   {
+    "actual_downside": -0.1526,
+    "actual_return": -0.0518,
+    "actual_upside": 0.0,
+    "days_in_region": 75,
+    "end_date": "2021-09-23",
+    "end_reason": "new_pattern",
+    "seq_len": 75,
+    "similarity": 0.5207,
+    "start_date": "2021-08-09",
+    "ticker": "BJRI",
+    "total_distance": 0.3263,
+    "trigger_date": "2021-08-27",
+    "trigger_type": "shallow_runup"
+   },
+   {
+    "actual_downside": -0.4364,
+    "actual_return": -0.4364,
+    "actual_upside": 0.0358,
+    "days_in_region": 81,
+    "end_date": "2017-06-02",
+    "end_reason": "reversal",
+    "seq_len": 81,
+    "similarity": 0.5179,
+    "start_date": "2017-03-21",
+    "ticker": "BOOT",
+    "total_distance": 0.329,
+    "trigger_date": "2017-04-19",
+    "trigger_type": "runup"
+   },
+   {
+    "actual_downside": -0.3008,
+    "actual_return": -0.3008,
+    "actual_upside": 0.0124,
+    "days_in_region": 81,
+    "end_date": "2004-07-26",
+    "end_reason": "reversal",
+    "seq_len": 81,
+    "similarity": 0.5162,
+    "start_date": "2004-05-17",
+    "ticker": "TTMI",
+    "total_distance": 0.3306,
+    "trigger_date": "2004-06-16",
+    "trigger_type": "runup"
+   }
+  ],
+  "panel": {
+   "edge": -0.3124,
+   "hit_hi": 0.358,
+   "hit_lo": 0.101,
+   "hit_rate": 0.2,
+   "median_final": -0.1412,
+   "median_pain": 0.1526,
+   "n": 15,
+   "n_eff": 15.0,
+   "p25_final": -0.3008,
+   "p_pain_gt5": 0.933,
+   "return_to_pain": -0.818
+  },
+  "stats": {
+   "avg_similarity": 0.462,
+   "avg_trough": 0.1819,
+   "avg_upside": 0.1608,
+   "median_pain": 0.1543,
+   "median_return": -0.1281,
+   "n_matches": 200,
+   "p25_return": -0.2371,
+   "p_pain_gt5": 0.83,
+   "return_to_pain": -0.735,
+   "top5_avg_trough": 0.2144,
+   "top5_avg_upside": 0.1281,
+   "top_similarity": 0.562,
+   "win_rate": 0.255
+  },
+  "total_matches": 200
+ },
+ "ticker": "ALTO",
+ "trending": {
+  "acceleration": -0.0128,
+  "avg_vol_20d": 2247693.6845,
+  "base_high_120": 5.99,
+  "breakout_confirmed": 0,
+  "close": 5.29,
+  "momentum_score": 0.4748,
+  "momentum_start": "2025-11-06",
+  "range_20": 0.3531,
+  "range_50": 0.3582,
+  "rank": 1795,
+  "rank_down": null,
+  "rank_up": 723,
+  "ret_120": 0.9236,
+  "ret_20": -0.0637,
+  "ret_60": 0.1652,
+  "rundown_score": 0.9353,
+  "score_date": "2026-08-04",
+  "slope_20": -0.0122,
+  "slope_60": 0.0006,
+  "stage": "sustained",
+  "stage_label": "Trending",
+  "ticker": "ALTO",
+  "total_score": 0.1985,
+  "trend_ratio": 1.3285,
+  "vcp_detected": 0,
+  "vcp_score": 0.0142
+ }
+}

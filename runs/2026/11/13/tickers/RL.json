@@ -1,0 +1,1105 @@
+{
+ "date": "2026-11-13",
+ "detected_regions": {
+  "primary": {
+   "days_in_region": 161,
+   "region_start": "2026-06-24",
+   "trigger_date": "2026-09-01",
+   "trigger_type": "drawdown"
+  },
+  "secondary": [
+   {
+    "confidence_score": 0.8834,
+    "downside_q50": -0.0422,
+    "ev_score": 0.1414,
+    "region_start": "2026-05-20",
+    "seq_len": 184,
+    "trigger_date": "2026-11-10",
+    "trigger_type": "runup",
+    "upside_q25": 0.0913,
+    "upside_q50": 0.1793,
+    "upside_q75": 0.2866
+   }
+  ]
+ },
+ "feature_attribution": {
+  "macro_driver_count": 17,
+  "risk_flags": [],
+  "top_drivers": [
+   {
+    "direction": "negative",
+    "feature": "dollar_volume",
+    "feature_value": 184744112.0,
+    "importance": 0.0004,
+    "importance_pct": 0.5967,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "negative",
+    "feature": "historical_recovery_rate",
+    "feature_value": 0.8041,
+    "importance": 0.0001,
+    "importance_pct": 0.2331,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "positive",
+    "feature": "sector_return_60d",
+    "feature_value": -0.0679,
+    "importance": 0.0001,
+    "importance_pct": 0.1702,
+    "method": "integrated_gradients"
+   }
+  ]
+ },
+ "fundamentals": {
+  "accrual": 0.0127,
+  "adx_14": 24.5825,
+  "altman_z_score": 3.0345,
+  "amihud_illiquidity": 0.0001,
+  "avg_volume": 616047.7385,
+  "beta_252d": 0.5726,
+  "book_value_per_share": 45.4967,
+  "correlation_spy_60d": 0.5703,
+  "current_liabilities": 1960.8,
+  "current_ratio": 1.9687,
+  "daily_earnings_yield": 0.0716,
+  "daily_fcf_yield": 0.0017,
+  "daily_pb": 5.4849,
+  "daily_pe": 13.967,
+  "daily_ps": 1.7537,
+  "days_since_52w_high": 100.0,
+  "debt_ebitda": 2.1723,
+  "debt_to_equity": 1.0924,
+  "dividend_yield": 0.0006,
+  "dollar_volume_20d_avg": 235569665.5702,
+  "earnings_quality": 0.9403,
+  "ebitda_growth_yoy": -0.0006,
+  "enterprise_value": 16132.9017,
+  "eps_basic": 4.94,
+  "eps_cagr_3y": 0.3033,
+  "eps_cagr_5y": 0.2653,
+  "eps_diluted": 4.87,
+  "eps_growth_accel": 0.0181,
+  "eps_growth_qoq": 0.133,
+  "eps_growth_yoy": 0.2796,
+  "eps_growth_yoy_q2": 0.2615,
+  "eps_growth_yoy_q3": 0.3002,
+  "eps_growth_yoy_q4": 0.3393,
+  "eps_growth_yoy_q5": 0.2947,
+  "eps_growth_yoy_q6": 0.2119,
+  "eps_growth_yoy_q7": 0.1968,
+  "eps_growth_yoy_q8": 0.2458,
+  "eps_history_8q": [
+   4.66,
+   2.03,
+   3.52,
+   3.32,
+   5.81,
+   2.45,
+   4.28,
+   4.87
+  ],
+  "eps_ttm": 27.6581,
+  "ev_to_ebitda": 11.7518,
+  "ev_to_fcf": 73.9702,
+  "ev_to_sales": 7.3555,
+  "fcf_growth_yoy": 7.6872,
+  "fcf_margin": 0.0994,
+  "fcf_per_share": 3.635,
+  "gross_margin": 0.7183,
+  "gross_margin_change_yoy": 0.0627,
+  "gross_margin_history": [
+   0.6903,
+   0.6922,
+   0.6965,
+   0.6987,
+   0.7027,
+   0.7183
+  ],
+  "inc_roic": -1.0617,
+  "interest_coverage": 26.0989,
+  "is_pre_revenue": false,
+  "margin_vs_sector_median": null,
+  "market_cap_ratio": 14972.6017,
+  "net_income": 296.6,
+  "net_margin": 0.1256,
+  "operating_income": 363.7,
+  "operating_margin": 0.16,
+  "operating_margin_change_yoy": 0.0251,
+  "pb_ratio": 8.4907,
+  "pe_percentile_1y": 0.881,
+  "pe_ratio": 13.967,
+  "peg_trailing": 0.7647,
+  "piotroski_f_score": 3.0,
+  "price_vs_high_52w": 0.9325,
+  "price_vs_sma200": 1.0484,
+  "ps_percentile_1y": 0.6349,
+  "ps_ratio": 1.7332,
+  "quarter_labels_8q": [
+   "Q3 '24",
+   "Q4 '24",
+   "Q1 '25",
+   "Q2 '25",
+   "Q3 '25",
+   "Q4 '26",
+   "Q1 '26",
+   "Q2 '26"
+  ],
+  "quarterly_eps_growth_yoy": 0.4669,
+  "quarterly_eps_growth_yoy_8q": [
+   0.1122,
+   0.471,
+   0.3487,
+   0.4372,
+   0.2468,
+   0.2069,
+   0.2159,
+   0.4669
+  ],
+  "quarterly_revenue_growth_yoy": 0.0908,
+  "quarterly_revenue_growth_yoy_8q": [
+   0.1083,
+   0.0825,
+   0.1368,
+   0.1649,
+   0.1225,
+   0.1658,
+   0.14,
+   0.0908
+  ],
+  "revenue_cagr_3y": 0.095,
+  "revenue_cagr_5y": 0.088,
+  "revenue_growth_accel": -0.019,
+  "revenue_growth_qoq": 0.1191,
+  "revenue_growth_yoy": 0.1278,
+  "revenue_growth_yoy_q2": 0.1468,
+  "revenue_growth_yoy_q3": 0.1463,
+  "revenue_growth_yoy_q4": 0.1271,
+  "revenue_growth_yoy_q5": 0.1232,
+  "revenue_growth_yoy_q6": 0.0961,
+  "revenue_growth_yoy_q7": 0.0675,
+  "revenue_growth_yoy_q8": 0.0523,
+  "revenue_history_8q": [
+   2143.5,
+   1697.3,
+   1719.1,
+   2010.7,
+   2406.0,
+   1978.7,
+   1959.8,
+   2193.3
+  ],
+  "revenue_per_share": 36.555,
+  "roa": 0.1395,
+  "roce": 0.2369,
+  "roe": 0.3933,
+  "roic": 0.1864,
+  "rsi_14": 46.0484,
+  "sector_momentum": 0.112,
+  "share_dilution_1y": 0.0,
+  "stock_vs_sector_20d": -0.0421,
+  "stock_vs_spy_20d": 0.0149,
+  "total_assets": 7711.6,
+  "vol_regime": 1.2948,
+  "volatility_20d": 0.027,
+  "volatility_60d": 0.0209,
+  "w52_high": 421.6,
+  "w52_low": 317.23
+ },
+ "market_characters": [
+  {
+   "id": "g5",
+   "name": "Quality Compressed"
+  }
+ ],
+ "model_analogs": {
+  "matches": [
+   {
+    "actual_downside": 0.0,
+    "actual_return": 0.1137,
+    "actual_upside": 0.1137,
+    "days_in_region": 196,
+    "end_date": "2006-02-01",
+    "end_reason": "reversal",
+    "similarity": 0.9579,
+    "start_date": "2005-07-20",
+    "ticker": "CEC",
+    "trigger_date": "2005-08-08",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": 0.0,
+    "actual_return": 0.1629,
+    "actual_upside": 0.1629,
+    "days_in_region": 120,
+    "end_date": "2005-12-02",
+    "end_reason": "reversal",
+    "similarity": 0.9569,
+    "start_date": "2005-08-04",
+    "ticker": "OSG",
+    "trigger_date": "2005-08-18",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": -0.0221,
+    "actual_return": 0.2643,
+    "actual_upside": 0.2643,
+    "days_in_region": 178,
+    "end_date": "2006-01-27",
+    "end_reason": "reversal",
+    "similarity": 0.9548,
+    "start_date": "2005-08-02",
+    "ticker": "HET",
+    "trigger_date": "2005-09-20",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": -0.0646,
+    "actual_return": 0.2586,
+    "actual_upside": 0.2586,
+    "days_in_region": 228,
+    "end_date": "2017-03-27",
+    "end_reason": "reversal",
+    "similarity": 0.9547,
+    "start_date": "2016-08-11",
+    "ticker": "ASX",
+    "trigger_date": "2016-11-15",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": -0.0055,
+    "actual_return": 0.3929,
+    "actual_upside": 0.3929,
+    "days_in_region": 151,
+    "end_date": "2006-01-30",
+    "end_reason": "reversal",
+    "similarity": 0.9544,
+    "start_date": "2005-09-01",
+    "ticker": "UCO",
+    "trigger_date": "2005-10-21",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": 0.0,
+    "actual_return": 0.2958,
+    "actual_upside": 0.2958,
+    "days_in_region": 197,
+    "end_date": "2006-03-17",
+    "end_reason": "reversal",
+    "similarity": 0.9532,
+    "start_date": "2005-09-01",
+    "ticker": "CVD",
+    "trigger_date": "2005-11-04",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": -0.0132,
+    "actual_return": 0.0175,
+    "actual_upside": 0.273,
+    "days_in_region": 299,
+    "end_date": "2006-06-13",
+    "end_reason": "reversal",
+    "similarity": 0.9529,
+    "start_date": "2005-08-18",
+    "ticker": "ESND",
+    "trigger_date": "2005-09-15",
+    "trigger_type": "compression"
+   },
+   {
+    "actual_downside": 0.0,
+    "actual_return": 0.1845,
+    "actual_upside": 0.1845,
+    "days_in_region": 159,
+    "end_date": "2006-01-09",
+    "end_reason": "reversal",
+    "similarity": 0.9529,
+    "start_date": "2005-08-03",
+    "ticker": "CHE",
+    "trigger_date": "2005-08-26",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": -0.0064,
+    "actual_return": 0.3224,
+    "actual_upside": 0.3224,
+    "days_in_region": 170,
+    "end_date": "2006-02-08",
+    "end_reason": "reversal",
+    "similarity": 0.9522,
+    "start_date": "2005-08-22",
+    "ticker": "BOBE",
+    "trigger_date": "2005-10-28",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": -0.0203,
+    "actual_return": 0.2338,
+    "actual_upside": 0.4661,
+    "days_in_region": 327,
+    "end_date": "2013-06-24",
+    "end_reason": "reversal",
+    "similarity": 0.9519,
+    "start_date": "2012-08-01",
+    "ticker": "IGT",
+    "trigger_date": "2012-08-28",
+    "trigger_type": "compression"
+   }
+  ],
+  "stats": {
+   "avg_max_drawdown": 0.0283,
+   "avg_similarity": 0.95,
+   "avg_trough": 0.0283,
+   "avg_upside": 0.2709,
+   "best_return": 0.4854,
+   "downside_range": [
+    -0.3374,
+    0.0
+   ],
+   "median_return": 0.2016,
+   "n_matches": 50,
+   "outcome_agreement": true,
+   "return_p25": 0.1251,
+   "return_p5": -0.0154,
+   "return_p75": 0.2921,
+   "return_p95": 0.4502,
+   "sim_weighted_win_rate": 0.92,
+   "top5_avg_trough": 0.0184,
+   "top5_avg_upside": 0.2385,
+   "top_similarity": 0.958,
+   "upside_range": [
+    0.0366,
+    0.8774
+   ],
+   "win_rate": 0.92,
+   "worst_return": -0.3374,
+   "years_span": 3
+  },
+  "total_matches": 50
+ },
+ "peer_group": {
+  "buckets": [
+   "Apparel, Activewear & Accessories",
+   "E-commerce Retail & Direct-to-Consumer Commerce",
+   "Specialty Retail"
+  ],
+  "groups": {
+   "Apparel, Activewear & Accessories": [
+    {
+     "market_cap_m": 3157.1051,
+     "price_vs_sma200": 1.5805,
+     "return_30d": 0.6309,
+     "return_7d": 0.005,
+     "revenue_driver": "medical scrubs and apparel",
+     "signal_rank": 1538,
+     "stock_vs_spy_20d": 0.1661,
+     "ticker": "FIGS"
+    },
+    {
+     "market_cap_m": 6732.1917,
+     "price_vs_sma200": 1.2169,
+     "return_30d": 0.4431,
+     "return_7d": -0.0119,
+     "revenue_driver": "branded apparel and footwear",
+     "signal_rank": 1434,
+     "stock_vs_spy_20d": 0.2402,
+     "ticker": "VFC"
+    },
+    {
+     "market_cap_m": 3432.1904,
+     "price_vs_sma200": 1.2104,
+     "return_30d": 0.2829,
+     "return_7d": 0.0358,
+     "revenue_driver": "outdoor apparel and footwear",
+     "signal_rank": 1211,
+     "stock_vs_spy_20d": 0.2341,
+     "ticker": "COLM"
+    },
+    {
+     "market_cap_m": 1165.2602,
+     "price_vs_sma200": 1.026,
+     "return_30d": 0.1619,
+     "return_7d": -0.0404,
+     "revenue_driver": "licensed apparel",
+     "signal_rank": 447,
+     "stock_vs_spy_20d": 0.1334,
+     "ticker": "GIII"
+    },
+    {
+     "market_cap_m": 40355.9695,
+     "price_vs_sma200": 0.8482,
+     "return_30d": 0.1216,
+     "return_7d": -0.0617,
+     "revenue_driver": "Athletic footwear and apparel",
+     "signal_rank": 426,
+     "stock_vs_spy_20d": 0.036,
+     "ticker": "NKE"
+    },
+    {
+     "market_cap_m": 13734.3165,
+     "price_vs_sma200": 0.8144,
+     "return_30d": 0.1185,
+     "return_7d": -0.0572,
+     "revenue_driver": "premium athletic apparel",
+     "signal_rank": 573,
+     "stock_vs_spy_20d": 0.1009,
+     "ticker": "LULU"
+    },
+    {
+     "market_cap_m": 7065.8084,
+     "price_vs_sma200": 1.1674,
+     "return_30d": 0.0686,
+     "return_7d": -0.0593,
+     "revenue_driver": "apparel and fashion",
+     "signal_rank": 975,
+     "stock_vs_spy_20d": 0.0102,
+     "ticker": "URBN"
+    },
+    {
+     "market_cap_m": 14797.411,
+     "price_vs_sma200": 1.0484,
+     "return_30d": 0.0631,
+     "return_7d": -0.0625,
+     "revenue_driver": "premium apparel and accessories",
+     "signal_rank": 211,
+     "stock_vs_spy_20d": 0.0149,
+     "ticker": "RL"
+    },
+    {
+     "market_cap_m": 8732.7286,
+     "price_vs_sma200": 0.9211,
+     "return_30d": -0.064,
+     "return_7d": -0.1128,
+     "revenue_driver": "apparel and fashion",
+     "signal_rank": 445,
+     "stock_vs_spy_20d": -0.0758,
+     "ticker": "GAP"
+    },
+    {
+     "market_cap_m": 18248.83,
+     "price_vs_sma200": 0.771,
+     "return_30d": -0.118,
+     "return_7d": -0.0601,
+     "revenue_driver": "apparel",
+     "signal_rank": null,
+     "stock_vs_spy_20d": -0.1179,
+     "ticker": "BURL"
+    }
+   ],
+   "E-commerce Retail & Direct-to-Consumer Commerce": [
+    {
+     "market_cap_m": 6732.1917,
+     "price_vs_sma200": 1.2169,
+     "return_30d": 0.4431,
+     "return_7d": -0.0119,
+     "revenue_driver": "branded apparel and footwear",
+     "signal_rank": 1434,
+     "stock_vs_spy_20d": 0.2402,
+     "ticker": "VFC"
+    },
+    {
+     "market_cap_m": 7800.8982,
+     "price_vs_sma200": 1.4414,
+     "return_30d": 0.3864,
+     "return_7d": 0.0243,
+     "revenue_driver": "casual footwear",
+     "signal_rank": 855,
+     "stock_vs_spy_20d": 0.3424,
+     "ticker": "CROX"
+    },
+    {
+     "market_cap_m": 4401.9329,
+     "price_vs_sma200": 1.1082,
+     "return_30d": 0.2604,
+     "return_7d": -0.0049,
+     "revenue_driver": "denim apparel",
+     "signal_rank": 427,
+     "stock_vs_spy_20d": 0.1258,
+     "ticker": "KTB"
+    },
+    {
+     "market_cap_m": 4670.0365,
+     "price_vs_sma200": 0.9872,
+     "return_30d": 0.2394,
+     "return_7d": -0.0376,
+     "revenue_driver": "pet food and supplies retail",
+     "signal_rank": 1323,
+     "stock_vs_spy_20d": 0.0868,
+     "ticker": "CHWY"
+    },
+    {
+     "market_cap_m": 3311.0989,
+     "price_vs_sma200": 1.1794,
+     "return_30d": 0.2357,
+     "return_7d": -0.0408,
+     "revenue_driver": "branded apparel",
+     "signal_rank": 165,
+     "stock_vs_spy_20d": 0.115,
+     "ticker": "PVH"
+    },
+    {
+     "market_cap_m": 40355.9695,
+     "price_vs_sma200": 0.8482,
+     "return_30d": 0.1216,
+     "return_7d": -0.0617,
+     "revenue_driver": "Athletic footwear and apparel",
+     "signal_rank": 426,
+     "stock_vs_spy_20d": 0.036,
+     "ticker": "NKE"
+    },
+    {
+     "market_cap_m": 13734.3165,
+     "price_vs_sma200": 0.8144,
+     "return_30d": 0.1185,
+     "return_7d": -0.0572,
+     "revenue_driver": "premium athletic apparel",
+     "signal_rank": 573,
+     "stock_vs_spy_20d": 0.1009,
+     "ticker": "LULU"
+    },
+    {
+     "market_cap_m": 7399.1788,
+     "price_vs_sma200": 0.887,
+     "return_30d": 0.114,
+     "return_7d": -0.0473,
+     "revenue_driver": "grocery retail sales",
+     "signal_rank": 1123,
+     "stock_vs_spy_20d": 0.0129,
+     "ticker": "ACI"
+    },
+    {
+     "market_cap_m": 25416.5094,
+     "price_vs_sma200": 0.8912,
+     "return_30d": 0.1023,
+     "return_7d": -0.1091,
+     "revenue_driver": "South Korea ecommerce marketplace",
+     "signal_rank": 964,
+     "stock_vs_spy_20d": 0.0773,
+     "ticker": "CPNG"
+    },
+    {
+     "market_cap_m": 14797.411,
+     "price_vs_sma200": 1.0484,
+     "return_30d": 0.0631,
+     "return_7d": -0.0625,
+     "revenue_driver": "premium apparel and accessories",
+     "signal_rank": 211,
+     "stock_vs_spy_20d": 0.0149,
+     "ticker": "RL"
+    }
+   ],
+   "Specialty Retail": [
+    {
+     "market_cap_m": 1198.6542,
+     "price_vs_sma200": 1.3125,
+     "return_30d": 0.577,
+     "return_7d": 0.0394,
+     "revenue_driver": "urban apparel retail",
+     "signal_rank": 1303,
+     "stock_vs_spy_20d": 0.5455,
+     "ticker": "UPBD"
+    },
+    {
+     "market_cap_m": 698.0871,
+     "price_vs_sma200": 1.6209,
+     "return_30d": 0.3428,
+     "return_7d": 0.0456,
+     "revenue_driver": "premium furniture retail",
+     "signal_rank": 1443,
+     "stock_vs_spy_20d": 0.3975,
+     "ticker": "ARHS"
+    },
+    {
+     "market_cap_m": 2464.7045,
+     "price_vs_sma200": 1.1937,
+     "return_30d": 0.2261,
+     "return_7d": 0.0166,
+     "revenue_driver": "teen apparel retail",
+     "signal_rank": 1431,
+     "stock_vs_spy_20d": 0.2206,
+     "ticker": "AEO"
+    },
+    {
+     "market_cap_m": 459.253,
+     "price_vs_sma200": 0.7711,
+     "return_30d": 0.1252,
+     "return_7d": -0.0797,
+     "revenue_driver": "branded apparel retail",
+     "signal_rank": 390,
+     "stock_vs_spy_20d": 0.0746,
+     "ticker": "OXM"
+    },
+    {
+     "market_cap_m": 6775.5195,
+     "price_vs_sma200": 1.3845,
+     "return_30d": 0.0954,
+     "return_7d": -0.1298,
+     "revenue_driver": "specialty apparel retail",
+     "signal_rank": 1143,
+     "stock_vs_spy_20d": -0.0157,
+     "ticker": "ANF"
+    },
+    {
+     "market_cap_m": 14797.411,
+     "price_vs_sma200": 1.0484,
+     "return_30d": 0.0631,
+     "return_7d": -0.0625,
+     "revenue_driver": "premium apparel and accessories",
+     "signal_rank": 211,
+     "stock_vs_spy_20d": 0.0149,
+     "ticker": "RL"
+    },
+    {
+     "market_cap_m": 74213.0114,
+     "price_vs_sma200": 1.0308,
+     "return_30d": 0.0137,
+     "return_7d": -0.0572,
+     "revenue_driver": "off-price apparel",
+     "signal_rank": 497,
+     "stock_vs_spy_20d": -0.0091,
+     "ticker": "ROST"
+    },
+    {
+     "market_cap_m": 5988.0674,
+     "price_vs_sma200": 1.3772,
+     "return_30d": -0.0229,
+     "return_7d": -0.016,
+     "revenue_driver": "intimate apparel retail",
+     "signal_rank": null,
+     "stock_vs_spy_20d": -0.0528,
+     "ticker": "VSCO"
+    },
+    {
+     "market_cap_m": 8732.7286,
+     "price_vs_sma200": 0.9211,
+     "return_30d": -0.064,
+     "return_7d": -0.1128,
+     "revenue_driver": "apparel and fashion",
+     "signal_rank": 445,
+     "stock_vs_spy_20d": -0.0758,
+     "ticker": "GAP"
+    },
+    {
+     "market_cap_m": 552.5224,
+     "price_vs_sma200": 0.8545,
+     "return_30d": -0.0879,
+     "return_7d": -0.2437,
+     "revenue_driver": "value apparel retail",
+     "signal_rank": null,
+     "stock_vs_spy_20d": -0.0715,
+     "ticker": "CTRN"
+    }
+   ]
+  }
+ },
+ "predictions": {
+  "badge_count": 0,
+  "confidence_score": 0.7843,
+  "conviction_label": "HIGH CONVICTION",
+  "data_quality_flags": [],
+  "ev_score": 0.1255,
+  "is_diamond": false,
+  "passes_tradability_filter": true,
+  "quality_label": "HIGH",
+  "quantiles": {
+   "downside_q10": -0.1886,
+   "downside_q25": -0.0989,
+   "downside_q50": -0.0548,
+   "downside_q75": -0.012,
+   "downside_q90": 0.0028,
+   "path_volatility": 0.0224,
+   "risk_reward": 3.2313,
+   "uncertainty": 0.3766,
+   "upside_q10": 0.032,
+   "upside_q25": 0.0872,
+   "upside_q50": 0.1771,
+   "upside_q75": 0.2793,
+   "upside_q90": 0.4086
+  },
+  "rank": 211,
+  "rank_score": 0.1454,
+  "tradability_filter_reasons": []
+ },
+ "profile": {
+  "_local": {
+   "dividend_yield": 0.0006,
+   "eps_growth_yoy": 0.2796,
+   "pe_ratio": 21.9288,
+   "revenue_growth_yoy": 0.1278,
+   "roe": 0.3933
+  },
+  "beta": 1.316,
+  "betaTTM": null,
+  "ceo": "Patrice Jean Louis Louvet",
+  "companyName": "Ralph Lauren Corporation",
+  "country": "US",
+  "debtToEquityTTM": null,
+  "description": "Ralph Lauren Corporation is a prominent international entity primarily involved in the creation, marketing, and distribution of premium lifestyle goods across North America, Europe, Asia, and other global regions. The company's diverse product range includes: Apparel: A comprehensive selection of clothing for men, women, and children. Footwear & Accessories: Various shoe styles (casual, dress, boots, sneakers, sandals), eyewear, timepieces, both fashion and fine jewelry, scarves, hats, gloves, umbrellas, and an assortment of leather items like handbags, luggage, small leather goods, and belts. Home Goods: Linens for bed and bath, furniture, fabric and wall coverings, lighting solutions, tabletop items, kitchen textiles, floor coverings, and giftware. Fragrances: A variety of scents developed for both men and women. Key apparel and accessory lines are sold under brand names such as Ralph Lauren Collection, Ralph Lauren Purple Label, Polo Ralph Lauren, Double RL, Lauren Ralph Lauren, Polo Golf Ralph Lauren, Ralph Lauren Golf, RLX Ralph Lauren, Polo Ralph Lauren Children, and Chaps. Its women's fragrances include the Ralph Lauren Collection, Woman by Ralph Lauren, Romance Collection, and Ralph Collection, while men's offerings feature Polo Blue, Ralph's Club, Safari, Purple Label, Polo Red, Polo Green, Polo Black, Polo Sport, and Big Pony Men's. Beyond merchandise, Ralph Lauren also extends its brand into hospitality with a collection of dining venues, including The Polo Bar in New York City, RL Restaurant in Chicago, Ralph's in Paris, The Bar at Ralph Lauren in Milan, and the Ralph's Coffee concept. Products reach consumers through various channels: wholesale distribution to department stores, specialty retailers, and golf and professional shops, as well as direct-to-consumer sales via its own retail establishments, concession-based shop-in-shops, and digital commerce platforms. The corporation directly operates 504 retail stores (comprising 175 Ralph Lauren stores and 329 factory stores) and 684 concession-based shop-within-shops. Additionally, 148 stores and shops are operated through licensing partnerships. Founded in 1967, Ralph Lauren Corporation maintains its headquarters in New York, New York.",
+  "dividendYielTTM": null,
+  "enterpriseValueOverEBITDATTM": null,
+  "exchangeShortName": "NYSE",
+  "fullTimeEmployees": "23600",
+  "industry": "Apparel - Manufacturers",
+  "ipoDate": "1997-06-12",
+  "latest_earnings_date": "2026-11-05",
+  "marketCapTTM": null,
+  "mktCap": 22998396768,
+  "peRatioTTM": null,
+  "price": 386.3,
+  "priceToSalesRatioTTM": null,
+  "returnOnEquityTTM": 0.3835,
+  "revenue_description": "Ralph Lauren sells luxury apparel and accessories. Revenue is driven by comparable store sales and e-commerce channel growth, with inventory management and private label mix as margin levers.",
+  "revenue_description_themes": [
+   "comparable store sales and traffic recovery",
+   "direct-to-consumer and digital channel growth",
+   "brand elevation and gross margin expansion"
+  ],
+  "revenue_taxonomy": [
+   {
+    "bucket": "Apparel, Activewear & Accessories",
+    "matched_tags": [
+     "premium apparel and accessories"
+    ],
+    "path": "Consumer Goods & Retail › Branded Consumer Goods › Apparel, Activewear & Accessories",
+    "sector": "Consumer Goods & Retail",
+    "segment": "Branded Consumer Goods"
+   },
+   {
+    "bucket": "E-commerce Retail & Direct-to-Consumer Commerce",
+    "matched_tags": [
+     "direct-to-consumer retail"
+    ],
+    "path": "Consumer Goods & Retail › Retail & Commerce › E-commerce Retail & Direct-to-Consumer Commerce",
+    "sector": "Consumer Goods & Retail",
+    "segment": "Retail & Commerce"
+   },
+   {
+    "bucket": "Specialty Retail",
+    "matched_tags": [
+     "specialty retail"
+    ],
+    "path": "Consumer Goods & Retail › Retail & Commerce › Specialty Retail",
+    "sector": "Consumer Goods & Retail",
+    "segment": "Retail & Commerce"
+   }
+  ],
+  "revenue_themes": [
+   "premium apparel and accessories",
+   "direct-to-consumer retail",
+   "specialty retail"
+  ],
+  "sector": "Consumer Cyclical",
+  "website": "http://corporate.ralphlauren.com"
+ },
+ "report": {
+  "display_rank": null,
+  "lane": "risk_avoid",
+  "lane_rank": 9,
+  "setup_label": "early_trend",
+  "why_now": "Risk/avoid because model and structural analog panels materially disagree."
+ },
+ "scorecard": {
+  "headline": {
+   "avg_universe_pct": 64,
+   "label": "above_average",
+   "metric_count": 8
+  },
+  "metrics": {
+   "debt_to_equity": {
+    "direction": "lower",
+    "label": "D/E Ratio",
+    "sector": "Industrials",
+    "sector_n": 334,
+    "sector_pct": 22,
+    "universe_n": 1962,
+    "universe_pct": 23,
+    "value": 1.0924
+   },
+   "eps_growth_yoy": {
+    "direction": "higher",
+    "label": "EPS Growth",
+    "sector": "Industrials",
+    "sector_n": 331,
+    "sector_pct": 63,
+    "universe_n": 1779,
+    "universe_pct": 59,
+    "value": 0.2796
+   },
+   "gross_margin": {
+    "direction": "higher",
+    "label": "Gross Margin",
+    "sector": "Industrials",
+    "sector_n": 316,
+    "sector_pct": 88,
+    "universe_n": 1899,
+    "universe_pct": 77,
+    "value": 0.7183
+   },
+   "operating_margin": {
+    "direction": "higher",
+    "label": "Op. Margin",
+    "sector": "Industrials",
+    "sector_n": 316,
+    "sector_pct": 76,
+    "universe_n": 1899,
+    "universe_pct": 64,
+    "value": 0.16
+   },
+   "pe_ratio": {
+    "direction": "lower",
+    "label": "P/E",
+    "sector": "Industrials",
+    "sector_n": 240,
+    "sector_pct": 57,
+    "universe_n": 1425,
+    "universe_pct": 44,
+    "value": 21.9288
+   },
+   "revenue_growth_yoy": {
+    "direction": "higher",
+    "label": "Rev Growth",
+    "sector": "Industrials",
+    "sector_n": 313,
+    "sector_pct": 65,
+    "universe_n": 1729,
+    "universe_pct": 64,
+    "value": 0.1278
+   },
+   "roe": {
+    "direction": "higher",
+    "label": "ROE",
+    "sector": "Industrials",
+    "sector_n": 336,
+    "sector_pct": 90,
+    "universe_n": 1976,
+    "universe_pct": 90,
+    "value": 0.3933
+   },
+   "roic": {
+    "direction": "higher",
+    "label": "ROIC",
+    "sector": "Industrials",
+    "sector_n": 330,
+    "sector_pct": 88,
+    "universe_n": 1946,
+    "universe_pct": 88,
+    "value": 0.0516
+   }
+  }
+ },
+ "signal_rank": 211,
+ "structural_analogs": {
+  "gp_core_pct": 18.2,
+  "gp_core_ratio": 0.9348,
+  "matches": [
+   {
+    "actual_downside": -0.189,
+    "actual_return": -0.189,
+    "actual_upside": 0.1337,
+    "days_in_region": 91,
+    "end_date": "2022-01-27",
+    "end_reason": "reversal",
+    "seq_len": 91,
+    "similarity": 0.5886,
+    "start_date": "2021-09-21",
+    "ticker": "LCII",
+    "total_distance": 0.265,
+    "trigger_date": "2021-11-02",
+    "trigger_type": "runup"
+   },
+   {
+    "actual_downside": -0.1591,
+    "actual_return": -0.1591,
+    "actual_upside": 0.1413,
+    "days_in_region": 96,
+    "end_date": "2022-02-10",
+    "end_reason": "reversal",
+    "seq_len": 96,
+    "similarity": 0.587,
+    "start_date": "2021-09-14",
+    "ticker": "DORM",
+    "total_distance": 0.2664,
+    "trigger_date": "2021-11-02",
+    "trigger_type": "runup"
+   },
+   {
+    "actual_downside": -0.5543,
+    "actual_return": -0.5543,
+    "actual_upside": 0.0229,
+    "days_in_region": 100,
+    "end_date": "2020-03-18",
+    "end_reason": "reversal",
+    "seq_len": 100,
+    "similarity": 0.5865,
+    "start_date": "2019-05-31",
+    "ticker": "UHS",
+    "total_distance": 0.2668,
+    "trigger_date": "2019-07-16",
+    "trigger_type": "shallow_runup"
+   },
+   {
+    "actual_downside": -0.0343,
+    "actual_return": -0.0343,
+    "actual_upside": 0.0937,
+    "days_in_region": 104,
+    "end_date": "2019-10-08",
+    "end_reason": "reversal",
+    "seq_len": 104,
+    "similarity": 0.5761,
+    "start_date": "2019-04-22",
+    "ticker": "NHC",
+    "total_distance": 0.2758,
+    "trigger_date": "2019-05-21",
+    "trigger_type": "shallow_runup"
+   },
+   {
+    "actual_downside": -0.0626,
+    "actual_return": -0.0626,
+    "actual_upside": 0.0761,
+    "days_in_region": 92,
+    "end_date": "2022-05-11",
+    "end_reason": "reversal",
+    "seq_len": 92,
+    "similarity": 0.5722,
+    "start_date": "2021-09-30",
+    "ticker": "GWW",
+    "total_distance": 0.2791,
+    "trigger_date": "2021-10-21",
+    "trigger_type": "shallow_runup"
+   },
+   {
+    "actual_downside": -0.2998,
+    "actual_return": -0.2998,
+    "actual_upside": 0.0896,
+    "days_in_region": 104,
+    "end_date": "2022-04-18",
+    "end_reason": "reversal",
+    "seq_len": 104,
+    "similarity": 0.5718,
+    "start_date": "2021-09-30",
+    "ticker": "FBIN",
+    "total_distance": 0.2794,
+    "trigger_date": "2021-11-10",
+    "trigger_type": "runup"
+   },
+   {
+    "actual_downside": -0.271,
+    "actual_return": -0.271,
+    "actual_upside": 0.0395,
+    "days_in_region": 107,
+    "end_date": "2022-04-06",
+    "end_reason": "reversal",
+    "seq_len": 107,
+    "similarity": 0.5694,
+    "start_date": "2021-10-13",
+    "ticker": "WHR",
+    "total_distance": 0.2816,
+    "trigger_date": "2021-11-15",
+    "trigger_type": "runup"
+   },
+   {
+    "actual_downside": -0.132,
+    "actual_return": -0.0095,
+    "actual_upside": 0.0067,
+    "days_in_region": 128,
+    "end_date": "2015-01-09",
+    "end_reason": "reversal",
+    "seq_len": 128,
+    "similarity": 0.5692,
+    "start_date": "2014-08-26",
+    "ticker": "GCO",
+    "total_distance": 0.2817,
+    "trigger_date": "2014-09-05",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": -0.0867,
+    "actual_return": -0.0867,
+    "actual_upside": 0.1072,
+    "days_in_region": 99,
+    "end_date": "2014-10-13",
+    "end_reason": "reversal",
+    "seq_len": 99,
+    "similarity": 0.5673,
+    "start_date": "2014-02-05",
+    "ticker": "ALGT",
+    "total_distance": 0.2835,
+    "trigger_date": "2014-02-27",
+    "trigger_type": "shallow_runup"
+   },
+   {
+    "actual_downside": -0.149,
+    "actual_return": -0.149,
+    "actual_upside": 0.0181,
+    "days_in_region": 95,
+    "end_date": "1997-01-06",
+    "end_reason": "reversal",
+    "seq_len": 95,
+    "similarity": 0.5662,
+    "start_date": "1996-07-26",
+    "ticker": "MST",
+    "total_distance": 0.2844,
+    "trigger_date": "1996-09-13",
+    "trigger_type": "runup"
+   }
+  ],
+  "panel": {
+   "edge": -0.158,
+   "hit_hi": 0.361,
+   "hit_lo": 0.202,
+   "hit_rate": 0.275,
+   "median_final": -0.0745,
+   "median_pain": 0.1149,
+   "n": 51,
+   "n_eff": 51.0,
+   "p25_final": -0.1655,
+   "p_pain_gt5": 0.686,
+   "return_to_pain": -0.552
+  },
+  "stats": {
+   "avg_similarity": 0.528,
+   "avg_trough": 0.1188,
+   "avg_upside": 0.1314,
+   "median_pain": 0.0973,
+   "median_return": -0.0646,
+   "n_matches": 200,
+   "p25_return": -0.166,
+   "p_pain_gt5": 0.645,
+   "return_to_pain": -0.551,
+   "top5_avg_trough": 0.1999,
+   "top5_avg_upside": 0.0935,
+   "top_similarity": 0.589,
+   "win_rate": 0.37
+  },
+  "total_matches": 200
+ },
+ "ticker": "RL",
+ "trending": {
+  "acceleration": -0.0004,
+  "avg_vol_20d": 621937.4188,
+  "base_high_120": 414.25,
+  "breakout_confirmed": 0,
+  "close": 394.05,
+  "momentum_score": 0.598,
+  "momentum_start": "2026-10-01",
+  "range_20": 0.1089,
+  "range_50": 0.2098,
+  "rank": 183,
+  "rank_down": null,
+  "rank_up": 121,
+  "ret_120": 0.0511,
+  "ret_20": 0.05,
+  "ret_60": 0.0418,
+  "rundown_score": 0.3767,
+  "score_date": "2026-11-11",
+  "slope_20": 0.0019,
+  "slope_60": 0.0023,
+  "stage": "sustained",
+  "stage_label": "Trending",
+  "ticker": "RL",
+  "total_score": 0.5278,
+  "trend_ratio": 1.0857,
+  "vcp_detected": 1,
+  "vcp_score": 0.4809
+ }
+}

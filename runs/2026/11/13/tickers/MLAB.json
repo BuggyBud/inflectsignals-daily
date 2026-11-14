@@ -1,0 +1,1000 @@
+{
+ "date": "2026-11-13",
+ "detected_regions": {
+  "primary": {
+   "days_in_region": 90,
+   "region_start": "2026-10-05",
+   "trigger_date": "2026-10-15",
+   "trigger_type": "shallow_drawdown"
+  },
+  "secondary": [
+   {
+    "confidence_score": 0.6898,
+    "downside_q50": -0.048,
+    "ev_score": 0.1623,
+    "region_start": "2026-05-27",
+    "seq_len": 180,
+    "trigger_date": "2026-11-11",
+    "trigger_type": "runup",
+    "upside_q25": 0.095,
+    "upside_q50": 0.1971,
+    "upside_q75": 0.344
+   }
+  ]
+ },
+ "feature_attribution": {
+  "macro_driver_count": 16,
+  "risk_flags": [
+   "high_volatility"
+  ],
+  "top_drivers": [
+   {
+    "direction": "positive",
+    "feature": "price_vs_sma200",
+    "feature_value": 1.3053,
+    "importance": 0.0002,
+    "importance_pct": 0.295,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "negative",
+    "feature": "dollar_volume",
+    "feature_value": 12097762.0,
+    "importance": 0.0002,
+    "importance_pct": 0.263,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "positive",
+    "feature": "sector_rank_1d",
+    "feature_value": 0.9091,
+    "importance": 0.0002,
+    "importance_pct": 0.2227,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "negative",
+    "feature": "return_1d",
+    "feature_value": 0.0282,
+    "importance": 0.0002,
+    "importance_pct": 0.2192,
+    "method": "integrated_gradients"
+   }
+  ]
+ },
+ "fundamentals": {
+  "accrual": -0.0484,
+  "adx_14": 18.7395,
+  "altman_z_score": 3.1872,
+  "amihud_illiquidity": 0.0018,
+  "avg_volume": 117575.9274,
+  "beta_252d": 0.4856,
+  "book_value_per_share": 34.4784,
+  "correlation_spy_60d": 0.427,
+  "current_liabilities": 51.58,
+  "current_ratio": 1.9047,
+  "daily_earnings_yield": 0.0087,
+  "daily_fcf_yield": 0.0089,
+  "daily_pb": 3.9447,
+  "daily_pe": 115.1708,
+  "daily_ps": 3.0543,
+  "days_since_52w_high": 29.0,
+  "debt_ebitda": 2.0565,
+  "debt_to_equity": 0.4555,
+  "dividend_yield": 0.0,
+  "dollar_volume_20d_avg": 13876630.6648,
+  "earnings_quality": 0.9436,
+  "ebitda_growth_yoy": 0.0484,
+  "enterprise_value": 833.9302,
+  "eps_basic": 0.77,
+  "eps_cagr_3y": 1.0351,
+  "eps_cagr_5y": 0.04,
+  "eps_diluted": 0.75,
+  "eps_growth_accel": -3.2333,
+  "eps_growth_qoq": 0.54,
+  "eps_growth_yoy": 4.9333,
+  "eps_growth_yoy_q2": 8.1667,
+  "eps_growth_yoy_q3": 4.4167,
+  "eps_growth_yoy_q4": 1.0145,
+  "eps_growth_yoy_q5": 0.9934,
+  "eps_growth_yoy_q6": 0.9974,
+  "eps_growth_yoy_q7": 0.9924,
+  "eps_growth_yoy_q8": -10.0,
+  "eps_history_8q": [
+   -0.31,
+   -1.31,
+   0.85,
+   0.45,
+   0.65,
+   -0.75,
+   0.49,
+   0.75
+  ],
+  "eps_ttm": 1.207,
+  "ev_to_ebitda": 19.3496,
+  "ev_to_fcf": 224.8396,
+  "ev_to_sales": 13.378,
+  "fcf_growth_yoy": -0.4798,
+  "fcf_margin": 0.0595,
+  "fcf_per_share": 0.6572,
+  "gross_margin": 0.6658,
+  "gross_margin_change_yoy": 0.0004,
+  "gross_margin_history": [
+   0.6471,
+   0.6449,
+   0.642,
+   0.6652,
+   0.6659,
+   0.6658
+  ],
+  "inc_roic": -0.1126,
+  "interest_coverage": 5.7189,
+  "is_pre_revenue": false,
+  "margin_vs_sector_median": null,
+  "market_cap_ratio": 767.6132,
+  "net_income": 4.341,
+  "net_margin": 0.0265,
+  "operating_income": 8.388,
+  "operating_margin": 0.104,
+  "operating_margin_change_yoy": 0.0428,
+  "pb_ratio": 4.0318,
+  "pe_percentile_1y": 0.5833,
+  "pe_ratio": 115.1708,
+  "peg_trailing": 0.2457,
+  "piotroski_f_score": 3.0,
+  "price_vs_high_52w": 0.9774,
+  "price_vs_sma200": 1.3053,
+  "ps_percentile_1y": 0.0119,
+  "ps_ratio": 2.8084,
+  "quarter_labels_8q": [
+   "Q3 '24",
+   "Q4 '24",
+   "Q1 '25",
+   "Q2 '25",
+   "Q3 '25",
+   "Q4 '26",
+   "Q1 '26",
+   "Q2 '26"
+  ],
+  "quarterly_eps_growth_yoy": 0.6667,
+  "quarterly_eps_growth_yoy_8q": [
+   -1.7949,
+   0.9722,
+   0.371,
+   -0.2857,
+   3.0968,
+   0.4275,
+   -0.4235,
+   0.6667
+  ],
+  "quarterly_revenue_growth_yoy": 0.0263,
+  "quarterly_revenue_growth_yoy_8q": [
+   0.1752,
+   0.0549,
+   0.0236,
+   0.0502,
+   0.0364,
+   0.0256,
+   0.01,
+   0.0263
+  ],
+  "revenue_cagr_3y": 0.0556,
+  "revenue_cagr_5y": 0.1195,
+  "revenue_growth_accel": -0.0057,
+  "revenue_growth_qoq": 0.0365,
+  "revenue_growth_yoy": 0.0247,
+  "revenue_growth_yoy_q2": 0.0304,
+  "revenue_growth_yoy_q3": 0.0338,
+  "revenue_growth_yoy_q4": 0.0412,
+  "revenue_growth_yoy_q5": 0.0739,
+  "revenue_growth_yoy_q6": 0.0833,
+  "revenue_growth_yoy_q7": 0.1147,
+  "revenue_growth_yoy_q8": 0.1168,
+  "revenue_history_8q": [
+   62.84,
+   62.135,
+   59.543,
+   60.737,
+   65.126,
+   63.724,
+   60.138,
+   62.336
+  ],
+  "revenue_per_share": 11.0446,
+  "roa": 0.0161,
+  "roce": 0.072,
+  "roe": 0.0348,
+  "roic": 0.0187,
+  "rsi_14": 64.5655,
+  "sector_momentum": 0.112,
+  "share_dilution_1y": 0.0,
+  "stock_vs_sector_20d": 0.0908,
+  "stock_vs_spy_20d": 0.1478,
+  "total_assets": 407.735,
+  "vol_regime": 1.1596,
+  "volatility_20d": 0.0332,
+  "volatility_60d": 0.0287,
+  "w52_high": 144.35,
+  "w52_low": 69.51
+ },
+ "market_characters": [
+  {
+   "id": "g9",
+   "name": "Narrative Premium"
+  }
+ ],
+ "model_analogs": {
+  "matches": [
+   {
+    "actual_downside": 0.0,
+    "actual_return": 0.1269,
+    "actual_upside": 0.1269,
+    "days_in_region": 161,
+    "end_date": "2017-03-01",
+    "end_reason": "reversal",
+    "similarity": 0.9586,
+    "start_date": "2016-09-21",
+    "ticker": "ISLE",
+    "trigger_date": "2016-11-04",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": -0.0203,
+    "actual_return": 0.0883,
+    "actual_upside": 0.0883,
+    "days_in_region": 181,
+    "end_date": "2006-01-12",
+    "end_reason": "reversal",
+    "similarity": 0.9577,
+    "start_date": "2005-07-15",
+    "ticker": "WRLD",
+    "trigger_date": "2005-07-26",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": -0.2641,
+    "actual_return": -0.125,
+    "actual_upside": 0.0568,
+    "days_in_region": 222,
+    "end_date": "2006-05-09",
+    "end_reason": "reversal",
+    "similarity": 0.9576,
+    "start_date": "2005-09-29",
+    "ticker": "PLPC",
+    "trigger_date": "2005-10-12",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": 0.0,
+    "actual_return": 0.5142,
+    "actual_upside": 0.5142,
+    "days_in_region": 141,
+    "end_date": "2006-01-31",
+    "end_reason": "reversal",
+    "similarity": 0.9569,
+    "start_date": "2005-09-12",
+    "ticker": "BGC",
+    "trigger_date": "2005-10-12",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": -0.0003,
+    "actual_return": 0.0166,
+    "actual_upside": 0.0166,
+    "days_in_region": 52,
+    "end_date": "2005-11-17",
+    "end_reason": "data_end",
+    "similarity": 0.9566,
+    "start_date": "2005-09-26",
+    "ticker": "TBCC",
+    "trigger_date": "2005-10-21",
+    "trigger_type": "compression"
+   },
+   {
+    "actual_downside": -0.0162,
+    "actual_return": 0.1192,
+    "actual_upside": 0.1192,
+    "days_in_region": 126,
+    "end_date": "2005-12-07",
+    "end_reason": "reversal",
+    "similarity": 0.9561,
+    "start_date": "2005-08-03",
+    "ticker": "ALK",
+    "trigger_date": "2005-09-22",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": 0.0,
+    "actual_return": 0.1137,
+    "actual_upside": 0.3162,
+    "days_in_region": 311,
+    "end_date": "2017-05-04",
+    "end_reason": "reversal",
+    "similarity": 0.956,
+    "start_date": "2016-06-27",
+    "ticker": "TSE",
+    "trigger_date": "2016-11-16",
+    "trigger_type": "runup"
+   },
+   {
+    "actual_downside": -0.1559,
+    "actual_return": 0.0781,
+    "actual_upside": 0.0781,
+    "days_in_region": 113,
+    "end_date": "2006-01-04",
+    "end_reason": "reversal",
+    "similarity": 0.9557,
+    "start_date": "2005-09-13",
+    "ticker": "SINT",
+    "trigger_date": "2005-10-07",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": -0.0267,
+    "actual_return": -0.0267,
+    "actual_upside": 0.3816,
+    "days_in_region": 303,
+    "end_date": "2017-04-13",
+    "end_reason": "reversal",
+    "similarity": 0.9554,
+    "start_date": "2016-06-14",
+    "ticker": "PATK",
+    "trigger_date": "2016-11-14",
+    "trigger_type": "runup"
+   },
+   {
+    "actual_downside": 0.0,
+    "actual_return": 0.3436,
+    "actual_upside": 0.3436,
+    "days_in_region": 88,
+    "end_date": "2021-05-07",
+    "end_reason": "reversal",
+    "similarity": 0.9553,
+    "start_date": "2021-02-08",
+    "ticker": "LEN",
+    "trigger_date": "2021-03-04",
+    "trigger_type": "drawdown"
+   }
+  ],
+  "stats": {
+   "avg_max_drawdown": 0.0685,
+   "avg_similarity": 0.954,
+   "avg_trough": 0.0685,
+   "avg_upside": 0.216,
+   "best_return": 0.6346,
+   "downside_range": [
+    -0.2739,
+    0.0
+   ],
+   "median_return": 0.1414,
+   "n_matches": 50,
+   "outcome_agreement": true,
+   "return_p25": -0.0138,
+   "return_p5": -0.1618,
+   "return_p75": 0.2484,
+   "return_p95": 0.4793,
+   "sim_weighted_win_rate": 0.74,
+   "top5_avg_trough": 0.0569,
+   "top5_avg_upside": 0.1606,
+   "top_similarity": 0.959,
+   "upside_range": [
+    0.0,
+    0.6346
+   ],
+   "win_rate": 0.74,
+   "worst_return": -0.201,
+   "years_span": 8
+  },
+  "total_matches": 50
+ },
+ "peer_group": {
+  "buckets": [
+   "Patient Monitoring, Hospital Consumables & Care Equipment",
+   "Testing, Measurement & Analytical Instruments"
+  ],
+  "groups": {
+   "Patient Monitoring, Hospital Consumables & Care Equipment": [
+    {
+     "market_cap_m": 850.4627,
+     "price_vs_sma200": 0.8472,
+     "return_30d": 0.3679,
+     "return_7d": 0.0479,
+     "revenue_driver": "sleep therapy devices",
+     "signal_rank": 1359,
+     "stock_vs_spy_20d": 0.2853,
+     "ticker": "AHCO"
+    },
+    {
+     "market_cap_m": 88847.5293,
+     "price_vs_sma200": 1.2487,
+     "return_30d": 0.2313,
+     "return_7d": 0.0732,
+     "revenue_driver": "pharmaceutical distribution",
+     "signal_rank": 1543,
+     "stock_vs_spy_20d": 0.1193,
+     "ticker": "CAH"
+    },
+    {
+     "market_cap_m": 1048.7039,
+     "price_vs_sma200": 1.2424,
+     "return_30d": 0.1034,
+     "return_7d": -0.0456,
+     "revenue_driver": "eeg monitoring systems",
+     "signal_rank": 1342,
+     "stock_vs_spy_20d": 0.0568,
+     "ticker": "CBLL"
+    },
+    {
+     "market_cap_m": 705.822,
+     "price_vs_sma200": 1.3053,
+     "return_30d": 0.0487,
+     "return_7d": 0.1016,
+     "revenue_driver": "sterilization monitoring consumables",
+     "signal_rank": 428,
+     "stock_vs_spy_20d": 0.1478,
+     "ticker": "MLAB"
+    },
+    {
+     "market_cap_m": 9592.2461,
+     "price_vs_sma200": 1.1543,
+     "return_30d": 0.0085,
+     "return_7d": 0.0065,
+     "revenue_driver": "patient monitoring",
+     "signal_rank": null,
+     "stock_vs_spy_20d": 0.0117,
+     "ticker": "MASI"
+    },
+    {
+     "market_cap_m": 1146.5493,
+     "price_vs_sma200": 1.4772,
+     "return_30d": 0.0004,
+     "return_7d": 0.0008,
+     "revenue_driver": "nerve monitoring systems",
+     "signal_rank": null,
+     "stock_vs_spy_20d": -0.0039,
+     "ticker": "AVNS"
+    },
+    {
+     "market_cap_m": 31173.9789,
+     "price_vs_sma200": 1.1099,
+     "return_30d": -0.0238,
+     "return_7d": -0.0582,
+     "revenue_driver": "continuous glucose monitors",
+     "signal_rank": 928,
+     "stock_vs_spy_20d": -0.0186,
+     "ticker": "DXCM"
+    },
+    {
+     "market_cap_m": 4127.8983,
+     "price_vs_sma200": 1.0081,
+     "return_30d": -0.1673,
+     "return_7d": -0.3141,
+     "revenue_driver": "wearable cardiac monitoring devices",
+     "signal_rank": null,
+     "stock_vs_spy_20d": 0.1388,
+     "ticker": "IRTC"
+    },
+    {
+     "market_cap_m": 300.1469,
+     "price_vs_sma200": 0.6674,
+     "return_30d": -0.2217,
+     "return_7d": -0.1654,
+     "revenue_driver": "neurosurgical robotic systems",
+     "signal_rank": 1869,
+     "stock_vs_spy_20d": -0.0522,
+     "ticker": "CLPT"
+    },
+    {
+     "market_cap_m": 381.3388,
+     "price_vs_sma200": 0.6159,
+     "return_30d": -0.3519,
+     "return_7d": -0.1767,
+     "revenue_driver": "catheter lock solutions",
+     "signal_rank": 76,
+     "stock_vs_spy_20d": -0.3453,
+     "ticker": "CRMD"
+    }
+   ],
+   "Testing, Measurement & Analytical Instruments": [
+    {
+     "market_cap_m": 4457.0428,
+     "price_vs_sma200": 1.1195,
+     "return_30d": 0.2109,
+     "return_7d": -0.0551,
+     "revenue_driver": "water flow metering",
+     "signal_rank": 209,
+     "stock_vs_spy_20d": 0.2361,
+     "ticker": "BMI"
+    },
+    {
+     "market_cap_m": 27386.1252,
+     "price_vs_sma200": 1.2333,
+     "return_30d": 0.0824,
+     "return_7d": -0.0157,
+     "revenue_driver": "laboratory consumables",
+     "signal_rank": 610,
+     "stock_vs_spy_20d": 0.0662,
+     "ticker": "WAT"
+    },
+    {
+     "market_cap_m": 705.822,
+     "price_vs_sma200": 1.3053,
+     "return_30d": 0.0487,
+     "return_7d": 0.1016,
+     "revenue_driver": "sterilization monitoring consumables",
+     "signal_rank": 428,
+     "stock_vs_spy_20d": 0.1478,
+     "ticker": "MLAB"
+    },
+    {
+     "market_cap_m": 60731.7906,
+     "price_vs_sma200": 1.2611,
+     "return_30d": 0.037,
+     "return_7d": -0.018,
+     "revenue_driver": "analytical instruments",
+     "signal_rank": 1260,
+     "stock_vs_spy_20d": 0.0187,
+     "ticker": "A"
+    },
+    {
+     "market_cap_m": 95753.192,
+     "price_vs_sma200": 1.1247,
+     "return_30d": 0.0295,
+     "return_7d": -0.0238,
+     "revenue_driver": "process automation and control",
+     "signal_rank": 1287,
+     "stock_vs_spy_20d": 0.0433,
+     "ticker": "EMR"
+    },
+    {
+     "market_cap_m": 1617.0554,
+     "price_vs_sma200": 1.1449,
+     "return_30d": 0.0006,
+     "return_7d": -0.0006,
+     "revenue_driver": "industrial MRO supplies",
+     "signal_rank": 229,
+     "stock_vs_spy_20d": 0.0111,
+     "ticker": "DSGR"
+    },
+    {
+     "market_cap_m": 8821.6945,
+     "price_vs_sma200": 1.212,
+     "return_30d": -0.0261,
+     "return_7d": -0.0345,
+     "revenue_driver": "mass spectrometry systems",
+     "signal_rank": 686,
+     "stock_vs_spy_20d": 0.1368,
+     "ticker": "BRKR"
+    },
+    {
+     "market_cap_m": 57224.1103,
+     "price_vs_sma200": 1.0297,
+     "return_30d": -0.039,
+     "return_7d": 0.0212,
+     "revenue_driver": "electronic instruments",
+     "signal_rank": 780,
+     "stock_vs_spy_20d": -0.0116,
+     "ticker": "AME"
+    },
+    {
+     "market_cap_m": 473.2868,
+     "price_vs_sma200": 0.4403,
+     "return_30d": -0.4021,
+     "return_7d": -0.089,
+     "revenue_driver": "specialty label printers",
+     "signal_rank": null,
+     "stock_vs_spy_20d": -0.1617,
+     "ticker": "ASPI"
+    },
+    {
+     "market_cap_m": 2493.4062,
+     "price_vs_sma200": 0.8108,
+     "return_30d": -0.4068,
+     "return_7d": -0.0089,
+     "revenue_driver": "semiconductor test",
+     "signal_rank": null,
+     "stock_vs_spy_20d": -0.3802,
+     "ticker": "COHU"
+    }
+   ]
+  }
+ },
+ "predictions": {
+  "badge_count": 0,
+  "confidence_score": 0.3796,
+  "conviction_label": "SPECULATIVE",
+  "data_quality_flags": [],
+  "ev_score": 0.141,
+  "is_diamond": false,
+  "passes_tradability_filter": false,
+  "quality_label": "AVOID",
+  "quantiles": {
+   "downside_q10": -0.2429,
+   "downside_q25": -0.1332,
+   "downside_q50": -0.072,
+   "downside_q75": -0.017,
+   "downside_q90": 0.0048,
+   "path_volatility": 0.0326,
+   "risk_reward": 2.8608,
+   "uncertainty": 0.4844,
+   "upside_q10": 0.0327,
+   "upside_q25": 0.0936,
+   "upside_q50": 0.206,
+   "upside_q75": 0.3377,
+   "upside_q90": 0.5172
+  },
+  "rank": 428,
+  "rank_score": 0.1013,
+  "tradability_filter_reasons": [
+   "market_cap_below_1b"
+  ]
+ },
+ "profile": {
+  "_local": {
+   "dividend_yield": 0.0,
+   "eps_growth_yoy": 4.9333,
+   "pe_ratio": 112.1228,
+   "revenue_growth_yoy": 0.0247,
+   "roe": 0.0348
+  },
+  "beta": 1.075,
+  "betaTTM": null,
+  "ceo": "Siddhartha C. Kadia",
+  "companyName": "Mesa Laboratories, Inc.",
+  "country": "US",
+  "debtToEquityTTM": null,
+  "description": "Mesa Laboratories, Inc. develops, designs, manufactures, sells, and services life sciences tools and quality control products and services in North America, Europe, the Asia Pacific, and internationally. The Sterilization and Disinfection Control segment offers biological, chemical, and cleaning indicators, used to assess the effectiveness of sterilization decontamination, disinfection, and cleaning processes in the pharmaceutical, medical device, and healthcare industries. This segment also provides testing and laboratory services to the dental and pharmaceutical industries. Its Clinical Genomics segment offers MassARRAY, a genetic analysis tool system, and related consumables, including chips, panels, and chemical reagent solutions used by clinical labs to analyze DNA samples for inherited genetic disease testing, pharmacogenetics, oncology testing, infectious disease testing, doping and toxicology testing, and other differentiated applications for use in research. The Biopharmaceutical Development segment provides automated systems, such as Gyrolab xPand and Gyrolab xPlore hardware and software, Gyrolab Bioaffy consumable microfluidic disks, Gyrolab kits and Rexxip buffers for protein analysis; PurePep Chorus and Symphony instruments for peptide synthesis; and PurePep EasyClean products for purifying peptides. Its Calibration Solutions segment offers quality control products to measure and calibrate critical parameters in applications, such as environmental and process monitoring, dialysis, gas flow, air quality, and torque testing in medical device and pharmaceutical manufacturing, laboratory, and hospital environments. This segment’s products include continuous monitoring systems, dialysate meters and consumables, data loggers, gas flow calibration and air sampling equipment, and torque testing systems under DialyGuard, ViewPoint, DataTrace, DryCal, and BGI brands. Mesa Laboratories, Inc. was incorporated in 1982 and is headquartered in Lakewood, Colorado.",
+  "dividendYielTTM": null,
+  "enterpriseValueOverEBITDATTM": null,
+  "exchangeShortName": "NASDAQ",
+  "fullTimeEmployees": "717",
+  "industry": "Medical - Specialties",
+  "ipoDate": "1984-02-29",
+  "latest_earnings_date": "2026-11-09",
+  "marketCapTTM": null,
+  "mktCap": 781308485,
+  "peRatioTTM": null,
+  "price": 139.01,
+  "priceToSalesRatioTTM": null,
+  "returnOnEquityTTM": 0.0353,
+  "revenue_description": "Mesa Laboratories sells instruments and consumables for quality control and sterilization monitoring. Revenue is driven by unit volume growth and pricing realization in its core end markets, with new product introductions and geographic expansion as incremental catalysts.",
+  "revenue_description_themes": [
+   "sterilization compliance growth",
+   "pricing realization improvement",
+   "new product commercialization"
+  ],
+  "revenue_taxonomy": [
+   {
+    "bucket": "Patient Monitoring, Hospital Consumables & Care Equipment",
+    "matched_tags": [
+     "sterilization monitoring consumables"
+    ],
+    "path": "Healthcare & Life Sciences › Devices Diagnostics & Tools › Patient Monitoring, Hospital Consumables & Care Equipment",
+    "sector": "Healthcare & Life Sciences",
+    "segment": "Devices Diagnostics & Tools"
+   },
+   {
+    "bucket": "Testing, Measurement & Analytical Instruments",
+    "matched_tags": [
+     "flow measurement instruments",
+     "data logging devices"
+    ],
+    "path": "Industrials & Transportation › Aerospace Defense & Automation › Testing, Measurement & Analytical Instruments",
+    "sector": "Industrials & Transportation",
+    "segment": "Aerospace Defense & Automation"
+   }
+  ],
+  "revenue_themes": [
+   "sterilization monitoring consumables",
+   "flow measurement instruments",
+   "data logging devices"
+  ],
+  "sector": "Healthcare",
+  "website": "https://www.mesalabs.com"
+ },
+ "report": null,
+ "scorecard": {
+  "headline": {
+   "avg_universe_pct": 46,
+   "label": "mixed",
+   "metric_count": 8
+  },
+  "metrics": {
+   "debt_to_equity": {
+    "direction": "lower",
+    "label": "D/E Ratio",
+    "sector": "Health Care",
+    "sector_n": 280,
+    "sector_pct": 38,
+    "universe_n": 1962,
+    "universe_pct": 48,
+    "value": 0.4555
+   },
+   "eps_growth_yoy": {
+    "direction": "higher",
+    "label": "EPS Growth",
+    "sector": "Health Care",
+    "sector_n": 276,
+    "sector_pct": 95,
+    "universe_n": 1779,
+    "universe_pct": 95,
+    "value": 4.9333
+   },
+   "gross_margin": {
+    "direction": "higher",
+    "label": "Gross Margin",
+    "sector": "Health Care",
+    "sector_n": 234,
+    "sector_pct": 47,
+    "universe_n": 1899,
+    "universe_pct": 71,
+    "value": 0.6658
+   },
+   "operating_margin": {
+    "direction": "higher",
+    "label": "Op. Margin",
+    "sector": "Health Care",
+    "sector_n": 234,
+    "sector_pct": 63,
+    "universe_n": 1899,
+    "universe_pct": 47,
+    "value": 0.104
+   },
+   "pe_ratio": {
+    "direction": "lower",
+    "label": "P/E",
+    "sector": "Health Care",
+    "sector_n": 113,
+    "sector_pct": 4,
+    "universe_n": 1425,
+    "universe_pct": 2,
+    "value": 112.1228
+   },
+   "revenue_growth_yoy": {
+    "direction": "higher",
+    "label": "Rev Growth",
+    "sector": "Health Care",
+    "sector_n": 248,
+    "sector_pct": 33,
+    "universe_n": 1729,
+    "universe_pct": 29,
+    "value": 0.0247
+   },
+   "roe": {
+    "direction": "higher",
+    "label": "ROE",
+    "sector": "Health Care",
+    "sector_n": 283,
+    "sector_pct": 59,
+    "universe_n": 1976,
+    "universe_pct": 32,
+    "value": 0.0348
+   },
+   "roic": {
+    "direction": "higher",
+    "label": "ROIC",
+    "sector": "Health Care",
+    "sector_n": 279,
+    "sector_pct": 65,
+    "universe_n": 1946,
+    "universe_pct": 46,
+    "value": 0.0122
+   }
+  }
+ },
+ "signal_rank": 428,
+ "structural_analogs": {
+  "gp_core_pct": 87.3,
+  "gp_core_ratio": 1.9562,
+  "matches": [
+   {
+    "actual_downside": -0.0712,
+    "actual_return": 0.095,
+    "actual_upside": 0.095,
+    "days_in_region": 94,
+    "end_date": "2015-03-20",
+    "end_reason": "reversal",
+    "seq_len": 94,
+    "similarity": 0.6036,
+    "start_date": "2014-11-12",
+    "ticker": "TTGT",
+    "total_distance": 0.2524,
+    "trigger_date": "2014-12-16",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": 0.0,
+    "actual_return": 0.2219,
+    "actual_upside": 0.2219,
+    "days_in_region": 92,
+    "end_date": "2016-11-25",
+    "end_reason": "reversal",
+    "seq_len": 92,
+    "similarity": 0.602,
+    "start_date": "2016-09-22",
+    "ticker": "AORT",
+    "total_distance": 0.2537,
+    "trigger_date": "2016-11-04",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": -0.0101,
+    "actual_return": 0.1432,
+    "actual_upside": 0.1432,
+    "days_in_region": 101,
+    "end_date": "2000-12-08",
+    "end_reason": "reversal",
+    "seq_len": 101,
+    "similarity": 0.5994,
+    "start_date": "2000-09-11",
+    "ticker": "TRV",
+    "total_distance": 0.2559,
+    "trigger_date": "2000-10-12",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": -0.1254,
+    "actual_return": 0.2807,
+    "actual_upside": 0.2807,
+    "days_in_region": 90,
+    "end_date": "2011-03-03",
+    "end_reason": "reversal",
+    "seq_len": 90,
+    "similarity": 0.5965,
+    "start_date": "2010-12-10",
+    "ticker": "OVTI",
+    "total_distance": 0.2583,
+    "trigger_date": "2010-12-16",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": -0.1118,
+    "actual_return": -0.003,
+    "actual_upside": 0.0672,
+    "days_in_region": 99,
+    "end_date": "2014-06-09",
+    "end_reason": "reversal",
+    "seq_len": 99,
+    "similarity": 0.5945,
+    "start_date": "2013-12-23",
+    "ticker": "LZB",
+    "total_distance": 0.26,
+    "trigger_date": "2014-01-28",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": -0.0122,
+    "actual_return": 0.2574,
+    "actual_upside": 0.2574,
+    "days_in_region": 95,
+    "end_date": "2018-06-18",
+    "end_reason": "reversal",
+    "seq_len": 95,
+    "similarity": 0.5898,
+    "start_date": "2018-03-21",
+    "ticker": "NEWR",
+    "total_distance": 0.264,
+    "trigger_date": "2018-05-01",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": -0.0694,
+    "actual_return": 0.1571,
+    "actual_upside": 0.1571,
+    "days_in_region": 93,
+    "end_date": "2011-07-21",
+    "end_reason": "reversal",
+    "seq_len": 93,
+    "similarity": 0.5891,
+    "start_date": "2011-03-31",
+    "ticker": "ATW",
+    "total_distance": 0.2645,
+    "trigger_date": "2011-05-06",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": -0.0292,
+    "actual_return": 0.1587,
+    "actual_upside": 0.1587,
+    "days_in_region": 95,
+    "end_date": "2014-07-01",
+    "end_reason": "reversal",
+    "seq_len": 95,
+    "similarity": 0.5886,
+    "start_date": "2014-03-06",
+    "ticker": "NTCT",
+    "total_distance": 0.265,
+    "trigger_date": "2014-04-14",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": -0.0838,
+    "actual_return": 0.0223,
+    "actual_upside": 0.0223,
+    "days_in_region": 97,
+    "end_date": "1991-08-29",
+    "end_reason": "reversal",
+    "seq_len": 97,
+    "similarity": 0.5869,
+    "start_date": "1991-05-24",
+    "ticker": "SMS",
+    "total_distance": 0.2664,
+    "trigger_date": "1991-06-14",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": 0.0,
+    "actual_return": 0.2448,
+    "actual_upside": 0.2448,
+    "days_in_region": 95,
+    "end_date": "1996-03-05",
+    "end_reason": "reversal",
+    "seq_len": 95,
+    "similarity": 0.5865,
+    "start_date": "1995-11-28",
+    "ticker": "BOST",
+    "total_distance": 0.2668,
+    "trigger_date": "1996-01-03",
+    "trigger_type": "shallow_drawdown"
+   }
+  ],
+  "panel": {
+   "edge": 0.1045,
+   "hit_hi": 0.913,
+   "hit_lo": 0.79,
+   "hit_rate": 0.863,
+   "median_final": 0.1587,
+   "median_pain": 0.0647,
+   "n": 51,
+   "n_eff": 51.0,
+   "p25_final": 0.0665,
+   "p_pain_gt5": 0.529,
+   "return_to_pain": 1.873
+  },
+  "stats": {
+   "avg_similarity": 0.55,
+   "avg_trough": 0.104,
+   "avg_upside": 0.1883,
+   "median_pain": 0.0679,
+   "median_return": 0.1556,
+   "n_matches": 200,
+   "p25_return": 0.0296,
+   "p_pain_gt5": 0.585,
+   "return_to_pain": 1.77,
+   "top5_avg_trough": 0.0637,
+   "top5_avg_upside": 0.1616,
+   "top_similarity": 0.604,
+   "win_rate": 0.8
+  },
+  "total_matches": 200
+ },
+ "ticker": "MLAB",
+ "trending": {
+  "acceleration": 0.0026,
+  "avg_vol_20d": 106095.0989,
+  "base_high_120": 142.23,
+  "breakout_confirmed": 0,
+  "close": 139.01,
+  "momentum_score": 0.8769,
+  "momentum_start": "2026-07-09",
+  "range_20": 0.1796,
+  "range_50": 0.1895,
+  "rank": 858,
+  "rank_down": null,
+  "rank_up": 403,
+  "ret_120": 0.3093,
+  "ret_20": 0.135,
+  "ret_60": 0.1667,
+  "rundown_score": 0.1585,
+  "score_date": "2026-11-13",
+  "slope_20": 0.0031,
+  "slope_60": 0.0005,
+  "stage": "sustained",
+  "stage_label": "Trending",
+  "ticker": "MLAB",
+  "total_score": 0.382,
+  "trend_ratio": 1.2564,
+  "vcp_detected": 0,
+  "vcp_score": 0.052
+ }
+}

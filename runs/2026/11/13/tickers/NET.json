@@ -1,0 +1,1110 @@
+{
+ "date": "2026-11-13",
+ "detected_regions": {
+  "primary": {
+   "days_in_region": 86,
+   "region_start": "2026-10-09",
+   "trigger_date": "2026-11-05",
+   "trigger_type": "severe_drawdown"
+  },
+  "secondary": [
+   {
+    "confidence_score": 0.2412,
+    "downside_q50": -0.1158,
+    "ev_score": 0.0558,
+    "region_start": "2026-05-27",
+    "seq_len": 180,
+    "trigger_date": "2026-11-10",
+    "trigger_type": "runup",
+    "upside_q25": 0.064,
+    "upside_q50": 0.1597,
+    "upside_q75": 0.299
+   }
+  ]
+ },
+ "feature_attribution": {
+  "macro_driver_count": 14,
+  "risk_flags": [
+   "high_volatility"
+  ],
+  "top_drivers": [
+   {
+    "direction": "negative",
+    "feature": "dollar_volume",
+    "feature_value": 1264579712.0,
+    "importance": 0.001,
+    "importance_pct": 0.4346,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "positive",
+    "feature": "price_vs_sma200",
+    "feature_value": 1.2075,
+    "importance": 0.0004,
+    "importance_pct": 0.1705,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "negative",
+    "feature": "daily_pe",
+    "feature_value": -403.2905,
+    "importance": 0.0003,
+    "importance_pct": 0.1422,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "positive",
+    "feature": "volatility_20d",
+    "feature_value": 0.0533,
+    "importance": 0.0003,
+    "importance_pct": 0.1143,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "negative",
+    "feature": "daily_ps",
+    "feature_value": 35.2771,
+    "importance": 0.0002,
+    "importance_pct": 0.0696,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "negative",
+    "feature": "stock_vs_industry_20d",
+    "feature_value": -0.0013,
+    "importance": 0.0002,
+    "importance_pct": 0.0688,
+    "method": "integrated_gradients"
+   }
+  ]
+ },
+ "fundamentals": {
+  "accrual": -0.0418,
+  "adx_14": 24.1331,
+  "altman_z_score": 10.2918,
+  "amihud_illiquidity": 0.0,
+  "avg_volume": 3435235.3052,
+  "beta_252d": 0.6301,
+  "book_value_per_share": 4.1016,
+  "correlation_spy_60d": 0.4988,
+  "current_liabilities": 1539.062,
+  "current_ratio": 3.7967,
+  "daily_earnings_yield": -0.0025,
+  "daily_fcf_yield": 0.0004,
+  "daily_pb": 65.8154,
+  "daily_pe": -403.2905,
+  "daily_ps": 35.2771,
+  "days_since_52w_high": 25.0,
+  "debt_ebitda": -961.4906,
+  "debt_to_equity": 3.2137,
+  "dividend_yield": 0.0,
+  "dollar_volume_20d_avg": 1253228719.6436,
+  "earnings_quality": -6.3222,
+  "ebitda_growth_yoy": 0.7775,
+  "enterprise_value": 95985.3675,
+  "eps_basic": -0.1,
+  "eps_cagr_3y": -2.0366,
+  "eps_cagr_5y": -1.994,
+  "eps_diluted": -0.1,
+  "eps_growth_accel": -0.5605,
+  "eps_growth_qoq": 0.7917,
+  "eps_growth_yoy": -1.2647,
+  "eps_growth_yoy_q2": -0.7041,
+  "eps_growth_yoy_q3": -0.0843,
+  "eps_growth_yoy_q4": -0.3382,
+  "eps_growth_yoy_q5": -0.1538,
+  "eps_growth_yoy_q6": -0.1724,
+  "eps_growth_yoy_q7": 0.566,
+  "eps_growth_yoy_q8": 0.6,
+  "eps_history_8q": [
+   -0.04,
+   -0.11,
+   -0.15,
+   0.0,
+   -0.0344,
+   -0.065,
+   -0.48,
+   -0.1
+  ],
+  "eps_ttm": -0.7583,
+  "ev_to_ebitda": -19604.8545,
+  "ev_to_fcf": 1169.4124,
+  "ev_to_sales": 122.663,
+  "fcf_growth_yoy": 0.0948,
+  "fcf_margin": 0.1049,
+  "fcf_per_share": 0.2298,
+  "gross_margin": 0.7203,
+  "gross_margin_change_yoy": -0.1112,
+  "gross_margin_history": [
+   0.8399,
+   0.8339,
+   0.807,
+   0.7737,
+   0.7459,
+   0.7203
+  ],
+  "inc_roic": 0.0588,
+  "interest_coverage": -0.4052,
+  "is_pre_revenue": false,
+  "margin_vs_sector_median": null,
+  "market_cap_ratio": 96406.6025,
+  "net_income": -34.065,
+  "net_margin": -0.0875,
+  "operating_income": -67.926,
+  "operating_margin": -0.1393,
+  "operating_margin_change_yoy": -0.0202,
+  "pb_ratio": 74.558,
+  "pe_percentile_1y": 0.0198,
+  "pe_ratio": -359.8911,
+  "peg_trailing": 2.8457,
+  "piotroski_f_score": 3.0,
+  "price_vs_high_52w": 0.8473,
+  "price_vs_sma200": 1.2075,
+  "ps_percentile_1y": 0.3452,
+  "ps_ratio": 28.2058,
+  "quarter_labels_8q": [
+   "Q4 '24",
+   "Q1 '25",
+   "Q2 '25",
+   "Q3 '25",
+   "Q4 '25",
+   "Q1 '26",
+   "Q2 '26",
+   "Q3 '26"
+  ],
+  "quarterly_eps_growth_yoy": -2.2,
+  "quarterly_eps_growth_yoy_8q": [
+   0.5,
+   -0.1,
+   -2.75,
+   1.0,
+   0.14,
+   0.4091,
+   -2.2,
+   null
+  ],
+  "quarterly_revenue_growth_yoy": 0.3923,
+  "quarterly_revenue_growth_yoy_8q": [
+   0.2689,
+   0.2654,
+   0.2776,
+   0.3068,
+   0.336,
+   0.3354,
+   0.3587,
+   0.3923
+  ],
+  "revenue_cagr_3y": 0.3124,
+  "revenue_cagr_5y": 0.3594,
+  "revenue_growth_accel": 0.022,
+  "revenue_growth_qoq": 0.1242,
+  "revenue_growth_yoy": 0.3573,
+  "revenue_growth_yoy_q2": 0.3353,
+  "revenue_growth_yoy_q3": 0.3155,
+  "revenue_growth_yoy_q4": 0.2985,
+  "revenue_growth_yoy_q5": 0.2806,
+  "revenue_growth_yoy_q6": 0.2732,
+  "revenue_growth_yoy_q7": 0.2779,
+  "revenue_growth_yoy_q8": 0.2876,
+  "revenue_history_8q": [
+   459.946,
+   479.087,
+   512.316,
+   562.027,
+   614.507,
+   639.755,
+   696.061,
+   782.513
+  ],
+  "revenue_per_share": 2.1911,
+  "roa": -0.0337,
+  "roce": -0.0761,
+  "roe": -0.155,
+  "roic": -0.0388,
+  "rsi_14": 54.1057,
+  "sector_momentum": 0.1201,
+  "share_dilution_1y": 0.0,
+  "stock_vs_sector_20d": 0.0045,
+  "stock_vs_spy_20d": 0.045,
+  "total_assets": 7696.8,
+  "vol_regime": 1.1847,
+  "volatility_20d": 0.0533,
+  "volatility_60d": 0.045,
+  "w52_high": 370.35,
+  "w52_low": 158.83
+ },
+ "market_characters": [],
+ "model_analogs": {
+  "matches": [
+   {
+    "actual_downside": -0.0323,
+    "actual_return": 0.1644,
+    "actual_upside": 0.1644,
+    "days_in_region": 94,
+    "end_date": "2013-12-27",
+    "end_reason": "reversal",
+    "similarity": 0.9692,
+    "start_date": "2013-09-24",
+    "ticker": "HY",
+    "trigger_date": "2013-11-04",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": -0.1018,
+    "actual_return": 0.2587,
+    "actual_upside": 0.5036,
+    "days_in_region": 184,
+    "end_date": "2019-05-01",
+    "end_reason": "reversal",
+    "similarity": 0.9686,
+    "start_date": "2018-10-29",
+    "ticker": "CHGG",
+    "trigger_date": "2018-11-01",
+    "trigger_type": "runup"
+   },
+   {
+    "actual_downside": -0.2424,
+    "actual_return": -0.2424,
+    "actual_upside": 0.0886,
+    "days_in_region": 59,
+    "end_date": "2018-12-24",
+    "end_reason": "reversal",
+    "similarity": 0.9667,
+    "start_date": "2018-10-26",
+    "ticker": "UAA",
+    "trigger_date": "2018-10-31",
+    "trigger_type": "runup"
+   },
+   {
+    "actual_downside": -0.2034,
+    "actual_return": 0.6632,
+    "actual_upside": 0.6632,
+    "days_in_region": 158,
+    "end_date": "2019-04-08",
+    "end_reason": "reversal",
+    "similarity": 0.9666,
+    "start_date": "2018-11-01",
+    "ticker": "OLED",
+    "trigger_date": "2018-11-05",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": 0.0,
+    "actual_return": 0.0812,
+    "actual_upside": 0.0812,
+    "days_in_region": 70,
+    "end_date": "2016-10-10",
+    "end_reason": "reversal",
+    "similarity": 0.9666,
+    "start_date": "2016-08-01",
+    "ticker": "LXRX",
+    "trigger_date": "2016-08-29",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": -0.3052,
+    "actual_return": -0.3052,
+    "actual_upside": 0.0669,
+    "days_in_region": 56,
+    "end_date": "2018-12-24",
+    "end_reason": "reversal",
+    "similarity": 0.9652,
+    "start_date": "2018-10-29",
+    "ticker": "DNOW",
+    "trigger_date": "2018-11-02",
+    "trigger_type": "runup"
+   },
+   {
+    "actual_downside": -0.1871,
+    "actual_return": -0.1871,
+    "actual_upside": 0.0088,
+    "days_in_region": 65,
+    "end_date": "2021-05-12",
+    "end_reason": "reversal",
+    "similarity": 0.9651,
+    "start_date": "2021-03-08",
+    "ticker": "RAMP",
+    "trigger_date": "2021-03-12",
+    "trigger_type": "shallow_runup"
+   },
+   {
+    "actual_downside": -0.0875,
+    "actual_return": 0.1581,
+    "actual_upside": 0.1581,
+    "days_in_region": 80,
+    "end_date": "2018-12-03",
+    "end_reason": "reversal",
+    "similarity": 0.9644,
+    "start_date": "2018-09-14",
+    "ticker": "ZEN",
+    "trigger_date": "2018-11-06",
+    "trigger_type": "severe_drawdown"
+   },
+   {
+    "actual_downside": -0.0088,
+    "actual_return": 0.4513,
+    "actual_upside": 0.4513,
+    "days_in_region": 186,
+    "end_date": "2017-04-28",
+    "end_reason": "reversal",
+    "similarity": 0.9642,
+    "start_date": "2016-10-24",
+    "ticker": "ARCO",
+    "trigger_date": "2016-11-11",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": -0.0213,
+    "actual_return": 1.2429,
+    "actual_upside": 1.2429,
+    "days_in_region": 152,
+    "end_date": "2019-03-04",
+    "end_reason": "reversal",
+    "similarity": 0.9634,
+    "start_date": "2018-10-03",
+    "ticker": "LSCC",
+    "trigger_date": "2018-10-25",
+    "trigger_type": "drawdown"
+   }
+  ],
+  "stats": {
+   "avg_max_drawdown": 0.1561,
+   "avg_similarity": 0.962,
+   "avg_trough": 0.1561,
+   "avg_upside": 0.2098,
+   "best_return": 1.2429,
+   "downside_range": [
+    -0.5835,
+    0.0
+   ],
+   "median_return": 0.0646,
+   "n_matches": 50,
+   "outcome_agreement": true,
+   "return_p25": -0.1766,
+   "return_p5": -0.3661,
+   "return_p75": 0.2416,
+   "return_p95": 0.638,
+   "sim_weighted_win_rate": 0.54,
+   "top5_avg_trough": 0.116,
+   "top5_avg_upside": 0.3002,
+   "top_similarity": 0.969,
+   "upside_range": [
+    0.0,
+    1.2429
+   ],
+   "win_rate": 0.54,
+   "worst_return": -0.5312,
+   "years_span": 13
+  },
+  "total_matches": 50
+ },
+ "peer_group": {
+  "buckets": [
+   "Cloud Infrastructure, Database & DevOps Software",
+   "Digital Infrastructure & Internet Services",
+   "Security, Identity & Compliance Software"
+  ],
+  "groups": {
+   "Cloud Infrastructure, Database & DevOps Software": [
+    {
+     "market_cap_m": 21970.2375,
+     "price_vs_sma200": 1.272,
+     "return_30d": 0.2878,
+     "return_7d": 0.0172,
+     "revenue_driver": "IT hardware reseller",
+     "signal_rank": 953,
+     "stock_vs_spy_20d": 0.1535,
+     "ticker": "CDW"
+    },
+    {
+     "market_cap_m": 2606167.7586,
+     "price_vs_sma200": 1.0901,
+     "return_30d": 0.0601,
+     "return_7d": 0.0023,
+     "revenue_driver": "cloud infrastructure",
+     "signal_rank": 1722,
+     "stock_vs_spy_20d": 0.0794,
+     "ticker": "AMZN"
+    },
+    {
+     "market_cap_m": 1775.9358,
+     "price_vs_sma200": 1.0122,
+     "return_30d": 0.0373,
+     "return_7d": 0.2037,
+     "revenue_driver": "application delivery controllers",
+     "signal_rank": null,
+     "stock_vs_spy_20d": -0.0256,
+     "ticker": "ATEN"
+    },
+    {
+     "market_cap_m": 224757.1868,
+     "price_vs_sma200": 1.1789,
+     "return_30d": -0.0485,
+     "return_7d": 0.1054,
+     "revenue_driver": "data center Ethernet switches",
+     "signal_rank": 1529,
+     "stock_vs_spy_20d": 0.1276,
+     "ticker": "ANET"
+    },
+    {
+     "market_cap_m": 1572.9213,
+     "price_vs_sma200": 0.8873,
+     "return_30d": -0.072,
+     "return_7d": -0.2208,
+     "revenue_driver": "consumer security hardware",
+     "signal_rank": 995,
+     "stock_vs_spy_20d": -0.0118,
+     "ticker": "ARLO"
+    },
+    {
+     "market_cap_m": 77081.7775,
+     "price_vs_sma200": 1.2075,
+     "return_30d": -0.1239,
+     "return_7d": 0.1472,
+     "revenue_driver": "network security and CDN",
+     "signal_rank": 1581,
+     "stock_vs_spy_20d": 0.045,
+     "ticker": "NET"
+    },
+    {
+     "market_cap_m": 2297.935,
+     "price_vs_sma200": 0.876,
+     "return_30d": -0.2156,
+     "return_7d": -0.1567,
+     "revenue_driver": "network performance monitoring",
+     "signal_rank": 655,
+     "stock_vs_spy_20d": -0.1432,
+     "ticker": "NTCT"
+    },
+    {
+     "market_cap_m": 9849.4093,
+     "price_vs_sma200": 0.7826,
+     "return_30d": -0.3478,
+     "return_7d": 0.0456,
+     "revenue_driver": "network test equipment",
+     "signal_rank": 1770,
+     "stock_vs_spy_20d": -0.0668,
+     "ticker": "VIAV"
+    },
+    {
+     "market_cap_m": 3142.629,
+     "price_vs_sma200": 0.7596,
+     "return_30d": -0.3561,
+     "return_7d": -0.2099,
+     "revenue_driver": "content delivery network",
+     "signal_rank": 1966,
+     "stock_vs_spy_20d": -0.2475,
+     "ticker": "FSLY"
+    },
+    {
+     "market_cap_m": 6659.3237,
+     "price_vs_sma200": 0.5626,
+     "return_30d": -0.3708,
+     "return_7d": -0.0385,
+     "revenue_driver": "AI data center hosting",
+     "signal_rank": null,
+     "stock_vs_spy_20d": -0.2723,
+     "ticker": "APLD"
+    }
+   ],
+   "Digital Infrastructure & Internet Services": [
+    {
+     "market_cap_m": 11181.6491,
+     "price_vs_sma200": 0.9673,
+     "return_30d": 0.174,
+     "return_7d": -0.0355,
+     "revenue_driver": "domain name registration",
+     "signal_rank": null,
+     "stock_vs_spy_20d": 0.0254,
+     "ticker": "GDDY"
+    },
+    {
+     "market_cap_m": 1346.796,
+     "price_vs_sma200": 0.9076,
+     "return_30d": -0.0743,
+     "return_7d": 0.0127,
+     "revenue_driver": "video processing solutions",
+     "signal_rank": null,
+     "stock_vs_spy_20d": -0.093,
+     "ticker": "HLIT"
+    },
+    {
+     "market_cap_m": 77081.7775,
+     "price_vs_sma200": 1.2075,
+     "return_30d": -0.1239,
+     "return_7d": 0.1472,
+     "revenue_driver": "network security and CDN",
+     "signal_rank": 1581,
+     "stock_vs_spy_20d": 0.045,
+     "ticker": "NET"
+    },
+    {
+     "market_cap_m": 11953.7428,
+     "price_vs_sma200": 0.7628,
+     "return_30d": -0.2159,
+     "return_7d": -0.0062,
+     "revenue_driver": "content delivery network",
+     "signal_rank": 1381,
+     "stock_vs_spy_20d": -0.0146,
+     "ticker": "AKAM"
+    },
+    {
+     "market_cap_m": 4584.6287,
+     "price_vs_sma200": 0.5809,
+     "return_30d": -0.2887,
+     "return_7d": -0.085,
+     "revenue_driver": "fiber network infrastructure",
+     "signal_rank": 1537,
+     "stock_vs_spy_20d": -0.1076,
+     "ticker": "LUMN"
+    },
+    {
+     "market_cap_m": 3142.629,
+     "price_vs_sma200": 0.7596,
+     "return_30d": -0.3561,
+     "return_7d": -0.2099,
+     "revenue_driver": "content delivery network",
+     "signal_rank": 1966,
+     "stock_vs_spy_20d": -0.2475,
+     "ticker": "FSLY"
+    },
+    {
+     "market_cap_m": 6659.3237,
+     "price_vs_sma200": 0.5626,
+     "return_30d": -0.3708,
+     "return_7d": -0.0385,
+     "revenue_driver": "AI data center hosting",
+     "signal_rank": null,
+     "stock_vs_spy_20d": -0.2723,
+     "ticker": "APLD"
+    },
+    {
+     "market_cap_m": 249.063,
+     "price_vs_sma200": 0.5741,
+     "return_30d": -0.4484,
+     "return_7d": -0.1075,
+     "revenue_driver": "machine vision systems",
+     "signal_rank": 1902,
+     "stock_vs_spy_20d": -0.0566,
+     "ticker": "DUOT"
+    },
+    {
+     "market_cap_m": 8051.975,
+     "price_vs_sma200": 0.4108,
+     "return_30d": -0.5633,
+     "return_7d": 0.0554,
+     "revenue_driver": "bitcoin mining operations",
+     "signal_rank": null,
+     "stock_vs_spy_20d": -0.515,
+     "ticker": "CIFR"
+    },
+    {
+     "market_cap_m": 6432.2154,
+     "price_vs_sma200": 0.6742,
+     "return_30d": null,
+     "return_7d": 0.4314,
+     "revenue_driver": "Bitcoin self-mining",
+     "signal_rank": null,
+     "stock_vs_spy_20d": -0.1735,
+     "ticker": "CORZ"
+    }
+   ],
+   "Security, Identity & Compliance Software": [
+    {
+     "market_cap_m": 7415.1936,
+     "price_vs_sma200": 1.1916,
+     "return_30d": 0.3629,
+     "return_7d": 0.0005,
+     "revenue_driver": "security and compliance software",
+     "signal_rank": null,
+     "stock_vs_spy_20d": 0.0119,
+     "ticker": "NUVL"
+    },
+    {
+     "market_cap_m": 5753.3736,
+     "price_vs_sma200": 1.3501,
+     "return_30d": 0.0288,
+     "return_7d": 0.0029,
+     "revenue_driver": "data security and analytics SaaS",
+     "signal_rank": 603,
+     "stock_vs_spy_20d": 0.0174,
+     "ticker": "VRNS"
+    },
+    {
+     "market_cap_m": 1572.9213,
+     "price_vs_sma200": 0.8873,
+     "return_30d": -0.072,
+     "return_7d": -0.2208,
+     "revenue_driver": "consumer security hardware",
+     "signal_rank": 995,
+     "stock_vs_spy_20d": -0.0118,
+     "ticker": "ARLO"
+    },
+    {
+     "market_cap_m": 7259.8107,
+     "price_vs_sma200": 1.2565,
+     "return_30d": -0.1046,
+     "return_7d": -0.1806,
+     "revenue_driver": "cloud security platform",
+     "signal_rank": 383,
+     "stock_vs_spy_20d": -0.0327,
+     "ticker": "QLYS"
+    },
+    {
+     "market_cap_m": 77081.7775,
+     "price_vs_sma200": 1.2075,
+     "return_30d": -0.1239,
+     "return_7d": 0.1472,
+     "revenue_driver": "network security and CDN",
+     "signal_rank": 1581,
+     "stock_vs_spy_20d": 0.045,
+     "ticker": "NET"
+    },
+    {
+     "market_cap_m": 235927.53,
+     "price_vs_sma200": 1.1623,
+     "return_30d": -0.2009,
+     "return_7d": -0.0741,
+     "revenue_driver": "network security",
+     "signal_rank": 1245,
+     "stock_vs_spy_20d": -0.0449,
+     "ticker": "PANW"
+    },
+    {
+     "market_cap_m": 2297.935,
+     "price_vs_sma200": 0.876,
+     "return_30d": -0.2156,
+     "return_7d": -0.1567,
+     "revenue_driver": "network performance monitoring",
+     "signal_rank": 655,
+     "stock_vs_spy_20d": -0.1432,
+     "ticker": "NTCT"
+    },
+    {
+     "market_cap_m": 11953.7428,
+     "price_vs_sma200": 0.7628,
+     "return_30d": -0.2159,
+     "return_7d": -0.0062,
+     "revenue_driver": "content delivery network",
+     "signal_rank": 1381,
+     "stock_vs_spy_20d": -0.0146,
+     "ticker": "AKAM"
+    },
+    {
+     "market_cap_m": 129454.2438,
+     "price_vs_sma200": 0.9733,
+     "return_30d": -0.2969,
+     "return_7d": -0.0168,
+     "revenue_driver": "network security hardware",
+     "signal_rank": 907,
+     "stock_vs_spy_20d": -0.2349,
+     "ticker": "FTNT"
+    },
+    {
+     "market_cap_m": 3142.629,
+     "price_vs_sma200": 0.7596,
+     "return_30d": -0.3561,
+     "return_7d": -0.2099,
+     "revenue_driver": "content delivery network",
+     "signal_rank": 1966,
+     "stock_vs_spy_20d": -0.2475,
+     "ticker": "FSLY"
+    }
+   ]
+  }
+ },
+ "predictions": {
+  "badge_count": 0,
+  "confidence_score": 0.2143,
+  "conviction_label": "SPECULATIVE",
+  "data_quality_flags": [],
+  "ev_score": 0.0978,
+  "is_diamond": false,
+  "passes_tradability_filter": true,
+  "quality_label": "WEAK",
+  "quantiles": {
+   "downside_q10": -0.3095,
+   "downside_q25": -0.175,
+   "downside_q50": -0.1013,
+   "downside_q75": -0.0324,
+   "downside_q90": 0.0007,
+   "path_volatility": 0.0384,
+   "risk_reward": 1.8797,
+   "uncertainty": 0.4831,
+   "upside_q10": 0.028,
+   "upside_q25": 0.0808,
+   "upside_q50": 0.1905,
+   "upside_q75": 0.3222,
+   "upside_q90": 0.5112
+  },
+  "rank": 1581,
+  "rank_score": 0.0221,
+  "tradability_filter_reasons": []
+ },
+ "profile": {
+  "_local": {
+   "dividend_yield": 0.0,
+   "eps_growth_yoy": -1.2647,
+   "pe_ratio": -359.8911,
+   "revenue_growth_yoy": 0.3573,
+   "roe": -0.155
+  },
+  "beta": 1.645,
+  "betaTTM": null,
+  "ceo": "Matthew Prince",
+  "companyName": "Cloudflare, Inc.",
+  "country": "US",
+  "debtToEquityTTM": null,
+  "description": "Cloudflare, Inc. functions as a global provider of cloud-based services. The company delivers a comprehensive, integrated cloud security platform designed to safeguard a diverse array of digital environments, encompassing public and private clouds, on-premises infrastructure, Software-as-a-Service (SaaS) applications, and Internet of Things (IoT) devices. Its security portfolio features tools such as cloud firewalls, bot mitigation, distributed denial-of-service (DDoS) protection, IoT security, SSL/TLS encryption, secure origin connections, and rate limiting capabilities. Beyond security, Cloudflare also boosts online performance through services like content delivery networks (CDNs), intelligent routing, and various content, mobile, and image optimization tools. For enhanced reliability and availability, it provides solutions such as load balancing, its proprietary Anycast network, a virtual backbone, DNS services, DNS resolvers, and virtual waiting rooms. Furthermore, the company offers internal infrastructure tools, including \"on-ramps\" that facilitate seamless connections for users, devices, or locations to its expansive network, alongside \"filters\" engineered for data protection, inspection, and access management. Developer-centric solutions encompass serverless computing, programmable networks, website creation, domain registration, a suite of Cloudflare applications, advanced analytics, and data localization management. For individual consumers, Cloudflare provides a DNS Resolver application to improve internet browsing and a Consumer VPN to secure and speed up mobile device traffic. Its clientele spans a broad spectrum of industries, including technology, healthcare, financial services, consumer and retail, non-profit organizations, and government agencies. Established in 2009, Cloudflare, Inc. is headquartered in San Francisco, California.",
+  "dividendYielTTM": null,
+  "enterpriseValueOverEBITDATTM": null,
+  "exchangeShortName": "NYSE",
+  "fullTimeEmployees": "5156",
+  "industry": "Software - Infrastructure",
+  "ipoDate": "2019-09-13",
+  "latest_earnings_date": "2026-11-05",
+  "marketCapTTM": null,
+  "mktCap": 113361272103,
+  "peRatioTTM": null,
+  "price": 318.505,
+  "priceToSalesRatioTTM": null,
+  "returnOnEquityTTM": -0.1575,
+  "revenue_description": "Cloudflare provides content delivery, cybersecurity, and edge-compute services. Revenue is driven by enterprise adoption of its Zero Trust network security platform (SASE), developer platform (Workers/R2), and DDoS/CDN services as organizations modernize network and application security.",
+  "revenue_description_themes": [
+   "Zero Trust SASE enterprise seat expansion",
+   "Cloudflare Workers developer platform monetization",
+   "AI inference and edge computing platform adoption"
+  ],
+  "revenue_taxonomy": [
+   {
+    "bucket": "Digital Infrastructure & Internet Services",
+    "matched_tags": [
+     "network security and CDN"
+    ],
+    "path": "Technology › Tech Enabled Services & Infrastructure › Digital Infrastructure & Internet Services",
+    "sector": "Technology",
+    "segment": "Tech Enabled Services & Infrastructure"
+   },
+   {
+    "bucket": "Security, Identity & Compliance Software",
+    "matched_tags": [
+     "SASE platform"
+    ],
+    "path": "Technology › Software & Platforms › Security, Identity & Compliance Software",
+    "sector": "Technology",
+    "segment": "Software & Platforms"
+   },
+   {
+    "bucket": "Cloud Infrastructure, Database & DevOps Software",
+    "matched_tags": [
+     "edge developer platform"
+    ],
+    "path": "Technology › Software & Platforms › Cloud Infrastructure, Database & DevOps Software",
+    "sector": "Technology",
+    "segment": "Software & Platforms"
+   }
+  ],
+  "revenue_themes": [
+   "network security and CDN",
+   "SASE platform",
+   "edge developer platform"
+  ],
+  "sector": "Technology",
+  "website": "https://www.cloudflare.com"
+ },
+ "report": null,
+ "scorecard": {
+  "headline": {
+   "avg_universe_pct": 33,
+   "label": "below_average",
+   "metric_count": 7
+  },
+  "metrics": {
+   "debt_to_equity": {
+    "direction": "lower",
+    "label": "D/E Ratio",
+    "sector": "Info Tech",
+    "sector_n": 268,
+    "sector_pct": 5,
+    "universe_n": 1962,
+    "universe_pct": 6,
+    "value": 3.2137
+   },
+   "eps_growth_yoy": {
+    "direction": "higher",
+    "label": "EPS Growth",
+    "sector": "Info Tech",
+    "sector_n": 264,
+    "sector_pct": 7,
+    "universe_n": 1779,
+    "universe_pct": 9,
+    "value": -1.2647
+   },
+   "gross_margin": {
+    "direction": "higher",
+    "label": "Gross Margin",
+    "sector": "Info Tech",
+    "sector_n": 266,
+    "sector_pct": 70,
+    "universe_n": 1899,
+    "universe_pct": 77,
+    "value": 0.7203
+   },
+   "operating_margin": {
+    "direction": "higher",
+    "label": "Op. Margin",
+    "sector": "Info Tech",
+    "sector_n": 266,
+    "sector_pct": 12,
+    "universe_n": 1899,
+    "universe_pct": 11,
+    "value": -0.1393
+   },
+   "revenue_growth_yoy": {
+    "direction": "higher",
+    "label": "Rev Growth",
+    "sector": "Info Tech",
+    "sector_n": 265,
+    "sector_pct": 83,
+    "universe_n": 1729,
+    "universe_pct": 89,
+    "value": 0.3573
+   },
+   "roe": {
+    "direction": "higher",
+    "label": "ROE",
+    "sector": "Info Tech",
+    "sector_n": 268,
+    "sector_pct": 15,
+    "universe_n": 1976,
+    "universe_pct": 17,
+    "value": -0.155
+   },
+   "roic": {
+    "direction": "higher",
+    "label": "ROIC",
+    "sector": "Info Tech",
+    "sector_n": 265,
+    "sector_pct": 20,
+    "universe_n": 1946,
+    "universe_pct": 20,
+    "value": -0.0055
+   }
+  }
+ },
+ "signal_rank": 1581,
+ "structural_analogs": {
+  "gp_core_pct": 44.9,
+  "gp_core_ratio": 1.2311,
+  "matches": [
+   {
+    "actual_downside": -0.084,
+    "actual_return": 0.2213,
+    "actual_upside": 0.2213,
+    "days_in_region": 91,
+    "end_date": "2021-01-22",
+    "end_reason": "reversal",
+    "seq_len": 91,
+    "similarity": 0.4723,
+    "start_date": "2020-10-16",
+    "ticker": "TXG",
+    "total_distance": 0.3751,
+    "trigger_date": "2020-11-02",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": -0.0383,
+    "actual_return": 0.121,
+    "actual_upside": 0.121,
+    "days_in_region": 84,
+    "end_date": "2001-03-08",
+    "end_reason": "reversal",
+    "seq_len": 84,
+    "similarity": 0.4682,
+    "start_date": "2000-12-08",
+    "ticker": "HIG",
+    "total_distance": 0.3795,
+    "trigger_date": "2000-12-20",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": -0.0728,
+    "actual_return": 0.1863,
+    "actual_upside": 0.1863,
+    "days_in_region": 86,
+    "end_date": "2018-01-26",
+    "end_reason": "reversal",
+    "seq_len": 86,
+    "similarity": 0.4654,
+    "start_date": "2017-10-03",
+    "ticker": "SINA",
+    "total_distance": 0.3825,
+    "trigger_date": "2017-10-30",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": -0.0618,
+    "actual_return": 0.3836,
+    "actual_upside": 0.3836,
+    "days_in_region": 93,
+    "end_date": "2020-02-04",
+    "end_reason": "reversal",
+    "seq_len": 93,
+    "similarity": 0.4644,
+    "start_date": "2019-07-25",
+    "ticker": "CYBR",
+    "total_distance": 0.3835,
+    "trigger_date": "2019-09-10",
+    "trigger_type": "severe_drawdown"
+   },
+   {
+    "actual_downside": -0.303,
+    "actual_return": -0.303,
+    "actual_upside": 0.0,
+    "days_in_region": 65,
+    "end_date": "2015-10-06",
+    "end_reason": "reversal",
+    "seq_len": 65,
+    "similarity": 0.4638,
+    "start_date": "2015-08-24",
+    "ticker": "ALNY",
+    "total_distance": 0.3841,
+    "trigger_date": "2015-08-28",
+    "trigger_type": "shallow_runup"
+   },
+   {
+    "actual_downside": -0.0714,
+    "actual_return": 0.0486,
+    "actual_upside": 0.299,
+    "days_in_region": 67,
+    "end_date": "2022-09-06",
+    "end_reason": "reversal",
+    "seq_len": 67,
+    "similarity": 0.4623,
+    "start_date": "2022-05-09",
+    "ticker": "INSP",
+    "total_distance": 0.3858,
+    "trigger_date": "2022-05-17",
+    "trigger_type": "shallow_runup"
+   },
+   {
+    "actual_downside": -0.141,
+    "actual_return": 0.1677,
+    "actual_upside": 0.1677,
+    "days_in_region": 95,
+    "end_date": "2018-12-03",
+    "end_reason": "reversal",
+    "seq_len": 95,
+    "similarity": 0.4596,
+    "start_date": "2018-09-14",
+    "ticker": "W",
+    "total_distance": 0.3887,
+    "trigger_date": "2018-10-08",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": -0.1964,
+    "actual_return": -0.1964,
+    "actual_upside": 0.1815,
+    "days_in_region": 66,
+    "end_date": "2022-03-14",
+    "end_reason": "reversal",
+    "seq_len": 66,
+    "similarity": 0.4593,
+    "start_date": "2022-01-25",
+    "ticker": "DDOG",
+    "total_distance": 0.389,
+    "trigger_date": "2022-02-01",
+    "trigger_type": "runup"
+   },
+   {
+    "actual_downside": -0.4523,
+    "actual_return": -0.1993,
+    "actual_upside": 0.0302,
+    "days_in_region": 95,
+    "end_date": "2019-02-15",
+    "end_reason": "reversal",
+    "seq_len": 95,
+    "similarity": 0.4568,
+    "start_date": "2018-10-09",
+    "ticker": "VAL",
+    "total_distance": 0.3918,
+    "trigger_date": "2018-10-24",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": 0.0,
+    "actual_return": 0.1581,
+    "actual_upside": 0.1581,
+    "days_in_region": 89,
+    "end_date": "2018-05-07",
+    "end_reason": "reversal",
+    "seq_len": 89,
+    "similarity": 0.4548,
+    "start_date": "2018-01-26",
+    "ticker": "WUBA",
+    "total_distance": 0.394,
+    "trigger_date": "2018-02-05",
+    "trigger_type": "shallow_drawdown"
+   }
+  ],
+  "panel": {
+   "edge": 0.0297,
+   "hit_hi": 0.849,
+   "hit_lo": 0.702,
+   "hit_rate": 0.784,
+   "median_final": 0.1632,
+   "median_pain": 0.1018,
+   "n": 51,
+   "n_eff": 51.0,
+   "p25_final": 0.0435,
+   "p_pain_gt5": 0.765,
+   "return_to_pain": 1.34
+  },
+  "stats": {
+   "avg_similarity": 0.425,
+   "avg_trough": 0.1258,
+   "avg_upside": 0.2129,
+   "median_pain": 0.0819,
+   "median_return": 0.1458,
+   "n_matches": 200,
+   "p25_return": -0.0537,
+   "p_pain_gt5": 0.66,
+   "return_to_pain": 1.431,
+   "top5_avg_trough": 0.112,
+   "top5_avg_upside": 0.1825,
+   "top_similarity": 0.472,
+   "win_rate": 0.7
+  },
+  "total_matches": 200
+ },
+ "ticker": "NET",
+ "trending": {
+  "acceleration": -0.0051,
+  "avg_vol_20d": 4303836.5923,
+  "base_high_120": 360.93,
+  "breakout_confirmed": 0,
+  "close": 315.0,
+  "momentum_score": 0.4648,
+  "momentum_start": "2026-11-06",
+  "range_20": 0.3282,
+  "range_50": 0.4341,
+  "rank": 1274,
+  "rank_down": null,
+  "rank_up": 481,
+  "ret_120": 0.4813,
+  "ret_20": -0.0288,
+  "ret_60": 0.0453,
+  "rundown_score": 0.7291,
+  "score_date": "2026-11-11",
+  "slope_20": -0.005,
+  "slope_60": 0.0001,
+  "stage": "sustained",
+  "stage_label": "Trending",
+  "ticker": "NET",
+  "total_score": 0.2893,
+  "trend_ratio": 1.1851,
+  "vcp_detected": 0,
+  "vcp_score": 0.1723
+ }
+}

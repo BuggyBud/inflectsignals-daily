@@ -1,0 +1,1113 @@
+{
+ "date": "2026-11-13",
+ "detected_regions": {
+  "primary": {
+   "days_in_region": 125,
+   "region_start": "2026-08-14",
+   "trigger_date": "2026-10-23",
+   "trigger_type": "drawdown"
+  },
+  "secondary": [
+   {
+    "confidence_score": 0.7687,
+    "downside_q50": -0.0889,
+    "ev_score": 0.0373,
+    "region_start": "2025-11-17",
+    "seq_len": 200,
+    "trigger_date": "2026-02-11",
+    "trigger_type": "runup",
+    "upside_q25": 0.0547,
+    "upside_q50": 0.1214,
+    "upside_q75": 0.2117
+   }
+  ]
+ },
+ "feature_attribution": {
+  "macro_driver_count": 16,
+  "risk_flags": [],
+  "top_drivers": [
+   {
+    "direction": "negative",
+    "feature": "dollar_volume",
+    "feature_value": 206023184.0,
+    "importance": 0.0004,
+    "importance_pct": 0.4216,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "positive",
+    "feature": "price_vs_sma200",
+    "feature_value": 1.0615,
+    "importance": 0.0003,
+    "importance_pct": 0.261,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "negative",
+    "feature": "historical_recovery_rate",
+    "feature_value": 0.8062,
+    "importance": 0.0002,
+    "importance_pct": 0.1606,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "negative",
+    "feature": "volatility_20d",
+    "feature_value": 0.0269,
+    "importance": 0.0002,
+    "importance_pct": 0.1568,
+    "method": "integrated_gradients"
+   }
+  ]
+ },
+ "fundamentals": {
+  "accrual": -0.0654,
+  "adx_14": 19.7376,
+  "altman_z_score": 1.6306,
+  "amihud_illiquidity": 0.0001,
+  "avg_volume": 2625830.9865,
+  "beta_252d": 0.2459,
+  "book_value_per_share": 12.8769,
+  "correlation_spy_60d": 0.4631,
+  "current_liabilities": 3001.228,
+  "current_ratio": 1.2848,
+  "daily_earnings_yield": 0.027,
+  "daily_fcf_yield": 0.0741,
+  "daily_pb": 4.1781,
+  "daily_pe": 37.036,
+  "daily_ps": 0.7146,
+  "days_since_52w_high": 64.0,
+  "debt_ebitda": 4.5776,
+  "debt_to_equity": 1.9056,
+  "dividend_yield": 0.0037,
+  "dollar_volume_20d_avg": 178876471.8749,
+  "earnings_quality": 1.2,
+  "ebitda_growth_yoy": 0.1101,
+  "enterprise_value": 20149.8173,
+  "eps_basic": 0.37,
+  "eps_cagr_3y": -0.028,
+  "eps_cagr_5y": 0.0621,
+  "eps_diluted": 0.36,
+  "eps_growth_accel": 0.0354,
+  "eps_growth_qoq": -0.0513,
+  "eps_growth_yoy": 0.0735,
+  "eps_growth_yoy_q2": 0.0382,
+  "eps_growth_yoy_q3": -0.0625,
+  "eps_growth_yoy_q4": 0.2424,
+  "eps_growth_yoy_q5": 0.4316,
+  "eps_growth_yoy_q6": -0.2842,
+  "eps_growth_yoy_q7": -0.2381,
+  "eps_growth_yoy_q8": -0.4244,
+  "eps_history_8q": [
+   0.46,
+   0.39,
+   0.23,
+   0.27,
+   0.33,
+   0.36,
+   0.38,
+   0.36
+  ],
+  "eps_ttm": 1.4563,
+  "ev_to_ebitda": 14.2608,
+  "ev_to_fcf": 1168.8507,
+  "ev_to_sales": 3.9838,
+  "fcf_growth_yoy": 1.4968,
+  "fcf_margin": 0.0034,
+  "fcf_per_share": 0.0654,
+  "gross_margin": 0.0733,
+  "gross_margin_change_yoy": 0.0023,
+  "gross_margin_history": [
+   0.0848,
+   0.0863,
+   0.0861,
+   0.0784,
+   0.0725,
+   0.0733
+  ],
+  "inc_roic": -0.0194,
+  "interest_coverage": 4.1433,
+  "is_pre_revenue": false,
+  "margin_vs_sector_median": null,
+  "market_cap_ratio": 14181.3453,
+  "net_income": 97.658,
+  "net_margin": 0.0193,
+  "operating_income": 215.586,
+  "operating_margin": 0.0451,
+  "operating_margin_change_yoy": 0.0004,
+  "pb_ratio": 4.1885,
+  "pe_percentile_1y": 0.5437,
+  "pe_ratio": 37.036,
+  "peg_trailing": 7.1359,
+  "piotroski_f_score": 4.0,
+  "price_vs_high_52w": 0.8645,
+  "price_vs_sma200": 1.0615,
+  "ps_percentile_1y": 0.4524,
+  "ps_ratio": 0.8012,
+  "quarter_labels_8q": [
+   "Q4 '24",
+   "Q1 '25",
+   "Q2 '25",
+   "Q3 '25",
+   "Q4 '25",
+   "Q1 '26",
+   "Q2 '26",
+   "Q3 '26"
+  ],
+  "quarterly_eps_growth_yoy": 0.3333,
+  "quarterly_eps_growth_yoy_8q": [
+   0.122,
+   2.5455,
+   0.15,
+   0.2273,
+   -0.2826,
+   -0.0769,
+   0.6522,
+   0.3333
+  ],
+  "quarterly_revenue_growth_yoy": 0.0933,
+  "quarterly_revenue_growth_yoy_8q": [
+   0.0516,
+   0.0327,
+   0.0189,
+   0.0572,
+   0.143,
+   0.0614,
+   0.1468,
+   0.0933
+  ],
+  "revenue_cagr_3y": 0.0684,
+  "revenue_cagr_5y": 0.1205,
+  "revenue_growth_accel": 0.0087,
+  "revenue_growth_qoq": 0.0307,
+  "revenue_growth_yoy": 0.1102,
+  "revenue_growth_yoy_q2": 0.1015,
+  "revenue_growth_yoy_q3": 0.0707,
+  "revenue_growth_yoy_q4": 0.0635,
+  "revenue_growth_yoy_q5": 0.0402,
+  "revenue_growth_yoy_q6": 0.0453,
+  "revenue_growth_yoy_q7": 0.0584,
+  "revenue_growth_yoy_q8": 0.0819,
+  "revenue_history_8q": [
+   4416.947,
+   4552.086,
+   4279.298,
+   4626.451,
+   5048.464,
+   4831.549,
+   4907.342,
+   5057.909
+  ],
+  "revenue_per_share": 19.1887,
+  "roa": 0.0275,
+  "roce": 0.0823,
+  "roe": 0.1147,
+  "roic": 0.0349,
+  "rsi_14": 50.3703,
+  "sector_momentum": 0.0485,
+  "share_dilution_1y": 0.0,
+  "stock_vs_sector_20d": -0.0604,
+  "stock_vs_spy_20d": -0.0115,
+  "total_assets": 13973.937,
+  "vol_regime": 1.4838,
+  "volatility_20d": 0.0269,
+  "volatility_60d": 0.0181,
+  "w52_high": 62.65,
+  "w52_low": 35.07
+ },
+ "market_characters": [
+  {
+   "id": "g1",
+   "name": "Steady Climbers"
+  }
+ ],
+ "model_analogs": {
+  "matches": [
+   {
+    "actual_downside": -0.0162,
+    "actual_return": 0.1192,
+    "actual_upside": 0.1192,
+    "days_in_region": 126,
+    "end_date": "2005-12-07",
+    "end_reason": "reversal",
+    "similarity": 0.9405,
+    "start_date": "2005-08-03",
+    "ticker": "ALK",
+    "trigger_date": "2005-09-22",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": -0.0075,
+    "actual_return": 0.1558,
+    "actual_upside": 0.1558,
+    "days_in_region": 123,
+    "end_date": "2005-12-02",
+    "end_reason": "reversal",
+    "similarity": 0.9381,
+    "start_date": "2005-08-01",
+    "ticker": "TCBI",
+    "trigger_date": "2005-10-06",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": -0.1417,
+    "actual_return": -0.1417,
+    "actual_upside": 0.1311,
+    "days_in_region": 398,
+    "end_date": "2006-03-14",
+    "end_reason": "reversal",
+    "similarity": 0.9379,
+    "start_date": "2005-02-09",
+    "ticker": "WFM",
+    "trigger_date": "2005-08-01",
+    "trigger_type": "runup"
+   },
+   {
+    "actual_downside": -0.0177,
+    "actual_return": 0.1694,
+    "actual_upside": 0.1694,
+    "days_in_region": 203,
+    "end_date": "2005-09-30",
+    "end_reason": "reversal",
+    "similarity": 0.9361,
+    "start_date": "2005-03-11",
+    "ticker": "NBG",
+    "trigger_date": "2005-04-27",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": -0.0615,
+    "actual_return": 0.209,
+    "actual_upside": 0.209,
+    "days_in_region": 285,
+    "end_date": "2006-05-09",
+    "end_reason": "reversal",
+    "similarity": 0.9353,
+    "start_date": "2005-07-28",
+    "ticker": "MGM",
+    "trigger_date": "2005-10-12",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": -0.0121,
+    "actual_return": 0.2303,
+    "actual_upside": 0.2303,
+    "days_in_region": 227,
+    "end_date": "2006-03-17",
+    "end_reason": "reversal",
+    "similarity": 0.9343,
+    "start_date": "2005-08-02",
+    "ticker": "HTSI",
+    "trigger_date": "2005-08-29",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": -0.0192,
+    "actual_return": 0.4494,
+    "actual_upside": 0.4494,
+    "days_in_region": 297,
+    "end_date": "2015-01-09",
+    "end_reason": "reversal",
+    "similarity": 0.9333,
+    "start_date": "2014-03-18",
+    "ticker": "PZZA",
+    "trigger_date": "2014-04-28",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": -0.0646,
+    "actual_return": 0.2586,
+    "actual_upside": 0.2586,
+    "days_in_region": 228,
+    "end_date": "2017-03-27",
+    "end_reason": "reversal",
+    "similarity": 0.9331,
+    "start_date": "2016-08-11",
+    "ticker": "ASX",
+    "trigger_date": "2016-11-15",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": -0.0999,
+    "actual_return": 0.0605,
+    "actual_upside": 0.0605,
+    "days_in_region": 146,
+    "end_date": "2019-02-20",
+    "end_reason": "reversal",
+    "similarity": 0.9327,
+    "start_date": "2018-09-27",
+    "ticker": "RGR",
+    "trigger_date": "2018-11-02",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": -0.0257,
+    "actual_return": 0.0663,
+    "actual_upside": 0.2571,
+    "days_in_region": 180,
+    "end_date": "2006-02-14",
+    "end_reason": "reversal",
+    "similarity": 0.9321,
+    "start_date": "2005-08-18",
+    "ticker": "LNCE",
+    "trigger_date": "2005-10-03",
+    "trigger_type": "shallow_runup"
+   }
+  ],
+  "stats": {
+   "avg_max_drawdown": 0.0699,
+   "avg_similarity": 0.931,
+   "avg_trough": 0.0699,
+   "avg_upside": 0.1739,
+   "best_return": 0.4494,
+   "downside_range": [
+    -0.2712,
+    0.0
+   ],
+   "median_return": 0.119,
+   "n_matches": 50,
+   "outcome_agreement": true,
+   "return_p25": 0.0395,
+   "return_p5": -0.1381,
+   "return_p75": 0.211,
+   "return_p95": 0.3099,
+   "sim_weighted_win_rate": 0.8,
+   "top5_avg_trough": 0.0489,
+   "top5_avg_upside": 0.1569,
+   "top_similarity": 0.941,
+   "upside_range": [
+    0.0065,
+    0.4494
+   ],
+   "win_rate": 0.8,
+   "worst_return": -0.2326,
+   "years_span": 10
+  },
+  "total_matches": 50
+ },
+ "peer_group": {
+  "buckets": [
+   "Environmental, Safety, Waste & Facility Services",
+   "Property Management & Facility Operations",
+   "Restaurants, QSR & Foodservice"
+  ],
+  "groups": {
+   "Environmental, Safety, Waste & Facility Services": [
+    {
+     "market_cap_m": 5466.4602,
+     "price_vs_sma200": 0.9211,
+     "return_30d": 0.21,
+     "return_7d": -0.0126,
+     "revenue_driver": "federal engineering services",
+     "signal_rank": 1364,
+     "stock_vs_spy_20d": 0.1373,
+     "ticker": "AMTM"
+    },
+    {
+     "market_cap_m": 9663.3589,
+     "price_vs_sma200": 0.9443,
+     "return_30d": 0.1822,
+     "return_7d": 0.0342,
+     "revenue_driver": "engineering design",
+     "signal_rank": 474,
+     "stock_vs_spy_20d": 0.2095,
+     "ticker": "ACM"
+    },
+    {
+     "market_cap_m": 3045.0068,
+     "price_vs_sma200": 1.2074,
+     "return_30d": 0.1163,
+     "return_7d": -0.0012,
+     "revenue_driver": "janitorial services",
+     "signal_rank": 858,
+     "stock_vs_spy_20d": 0.0816,
+     "ticker": "ABM"
+    },
+    {
+     "market_cap_m": 3942.2569,
+     "price_vs_sma200": 0.9528,
+     "return_30d": -0.0244,
+     "return_7d": -0.0016,
+     "revenue_driver": "industrial labeling products",
+     "signal_rank": 465,
+     "stock_vs_spy_20d": 0.0224,
+     "ticker": "BRC"
+    },
+    {
+     "market_cap_m": 15899.619,
+     "price_vs_sma200": 1.0615,
+     "return_30d": -0.0291,
+     "return_7d": 0.0307,
+     "revenue_driver": "institutional food service",
+     "signal_rank": 557,
+     "stock_vs_spy_20d": -0.0115,
+     "ticker": "ARMK"
+    },
+    {
+     "market_cap_m": 1082.421,
+     "price_vs_sma200": 0.8064,
+     "return_30d": -0.0418,
+     "return_7d": -0.1778,
+     "revenue_driver": "commercial landscape maintenance",
+     "signal_rank": 540,
+     "stock_vs_spy_20d": -0.0526,
+     "ticker": "BV"
+    },
+    {
+     "market_cap_m": 1684.276,
+     "price_vs_sma200": 0.4062,
+     "return_30d": -0.2,
+     "return_7d": 0.2358,
+     "revenue_driver": "industrial boiler systems",
+     "signal_rank": 1935,
+     "stock_vs_spy_20d": -0.0001,
+     "ticker": "BW"
+    },
+    {
+     "market_cap_m": 2508.4136,
+     "price_vs_sma200": 0.7606,
+     "return_30d": -0.2318,
+     "return_7d": 0.1008,
+     "revenue_driver": "industrial air pollution control",
+     "signal_rank": null,
+     "stock_vs_spy_20d": -0.2328,
+     "ticker": "CECO"
+    },
+    {
+     "market_cap_m": 216.981,
+     "price_vs_sma200": 0.4667,
+     "return_30d": -0.4246,
+     "return_7d": 0.0338,
+     "revenue_driver": "metallurgical coal mining",
+     "signal_rank": 1790,
+     "stock_vs_spy_20d": -0.0836,
+     "ticker": "AREC"
+    },
+    {
+     "market_cap_m": 161.1628,
+     "price_vs_sma200": 0.4094,
+     "return_30d": -0.484,
+     "return_7d": -0.124,
+     "revenue_driver": "lithium ion battery recycling",
+     "signal_rank": 1566,
+     "stock_vs_spy_20d": -0.2236,
+     "ticker": "ABAT"
+    }
+   ],
+   "Property Management & Facility Operations": [
+    {
+     "market_cap_m": 15731.9813,
+     "price_vs_sma200": 1.1276,
+     "return_30d": 0.1956,
+     "return_7d": -0.0602,
+     "revenue_driver": "commercial real estate leasing commissions",
+     "signal_rank": 1095,
+     "stock_vs_spy_20d": 0.2136,
+     "ticker": "JLL"
+    },
+    {
+     "market_cap_m": 29053.831,
+     "price_vs_sma200": 1.0892,
+     "return_30d": 0.1451,
+     "return_7d": -0.0164,
+     "revenue_driver": "Credit asset management",
+     "signal_rank": 1043,
+     "stock_vs_spy_20d": 0.2118,
+     "ticker": "ARES"
+    },
+    {
+     "market_cap_m": 3045.0068,
+     "price_vs_sma200": 1.2074,
+     "return_30d": 0.1163,
+     "return_7d": -0.0012,
+     "revenue_driver": "janitorial services",
+     "signal_rank": 858,
+     "stock_vs_spy_20d": 0.0816,
+     "ticker": "ABM"
+    },
+    {
+     "market_cap_m": 18724.0881,
+     "price_vs_sma200": 1.035,
+     "return_30d": 0.0739,
+     "return_7d": -0.0127,
+     "revenue_driver": "mortgage servicing software",
+     "signal_rank": 1131,
+     "stock_vs_spy_20d": 0.0955,
+     "ticker": "APG"
+    },
+    {
+     "market_cap_m": 39056.1053,
+     "price_vs_sma200": 0.9507,
+     "return_30d": 0.0273,
+     "return_7d": -0.0566,
+     "revenue_driver": "property management fees",
+     "signal_rank": 996,
+     "stock_vs_spy_20d": 0.0132,
+     "ticker": "CBRE"
+    },
+    {
+     "market_cap_m": 5888.5158,
+     "price_vs_sma200": 1.0488,
+     "return_30d": -0.0108,
+     "return_7d": -0.001,
+     "revenue_driver": "casino gaming operations",
+     "signal_rank": 28,
+     "stock_vs_spy_20d": 0.0313,
+     "ticker": "CZR"
+    },
+    {
+     "market_cap_m": 15899.619,
+     "price_vs_sma200": 1.0615,
+     "return_30d": -0.0291,
+     "return_7d": 0.0307,
+     "revenue_driver": "institutional food service",
+     "signal_rank": 557,
+     "stock_vs_spy_20d": -0.0115,
+     "ticker": "ARMK"
+    },
+    {
+     "market_cap_m": 252.3183,
+     "price_vs_sma200": 0.9143,
+     "return_30d": -0.0553,
+     "return_7d": 0.003,
+     "revenue_driver": "property management fees",
+     "signal_rank": 4,
+     "stock_vs_spy_20d": -0.0728,
+     "ticker": "RMR"
+    },
+    {
+     "market_cap_m": 1810.8653,
+     "price_vs_sma200": 0.7291,
+     "return_30d": -0.1605,
+     "return_7d": -0.1408,
+     "revenue_driver": "commercial real estate brokerage",
+     "signal_rank": 6,
+     "stock_vs_spy_20d": -0.0917,
+     "ticker": "NMRK"
+    },
+    {
+     "market_cap_m": 30858.0991,
+     "price_vs_sma200": 0.8461,
+     "return_30d": -0.1618,
+     "return_7d": 0.0315,
+     "revenue_driver": "electrical construction services",
+     "signal_rank": 949,
+     "stock_vs_spy_20d": -0.0735,
+     "ticker": "EME"
+    }
+   ],
+   "Restaurants, QSR & Foodservice": [
+    {
+     "market_cap_m": 830.8658,
+     "price_vs_sma200": 1.2902,
+     "return_30d": 0.2229,
+     "return_7d": -0.0547,
+     "revenue_driver": "casual dining",
+     "signal_rank": 599,
+     "stock_vs_spy_20d": 0.0551,
+     "ticker": "BLMN"
+    },
+    {
+     "market_cap_m": 1156.8137,
+     "price_vs_sma200": 1.5044,
+     "return_30d": 0.2007,
+     "return_7d": -0.0472,
+     "revenue_driver": "restaurant meals",
+     "signal_rank": 1277,
+     "stock_vs_spy_20d": -0.0164,
+     "ticker": "CBRL"
+    },
+    {
+     "market_cap_m": 196924.8241,
+     "price_vs_sma200": 0.9663,
+     "return_30d": 0.1728,
+     "return_7d": -0.0294,
+     "revenue_driver": "quick service restaurant sales",
+     "signal_rank": 1230,
+     "stock_vs_spy_20d": 0.1322,
+     "ticker": "MCD"
+    },
+    {
+     "market_cap_m": 119975.421,
+     "price_vs_sma200": 1.0595,
+     "return_30d": 0.1239,
+     "return_7d": -0.0297,
+     "revenue_driver": "premium quick service coffee",
+     "signal_rank": 665,
+     "stock_vs_spy_20d": 0.1043,
+     "ticker": "SBUX"
+    },
+    {
+     "market_cap_m": 41360.8558,
+     "price_vs_sma200": 1.0435,
+     "return_30d": 0.0902,
+     "return_7d": 0.0023,
+     "revenue_driver": "fast-casual restaurant sales",
+     "signal_rank": 1227,
+     "stock_vs_spy_20d": 0.1932,
+     "ticker": "CMG"
+    },
+    {
+     "market_cap_m": 6960.3199,
+     "price_vs_sma200": 0.8175,
+     "return_30d": 0.0702,
+     "return_7d": -0.0605,
+     "revenue_driver": "fast-casual restaurant sales",
+     "signal_rank": 1456,
+     "stock_vs_spy_20d": 0.03,
+     "ticker": "CAVA"
+    },
+    {
+     "market_cap_m": 5629.9031,
+     "price_vs_sma200": 1.3266,
+     "return_30d": -0.0049,
+     "return_7d": -0.0544,
+     "revenue_driver": "full service restaurant dining",
+     "signal_rank": 491,
+     "stock_vs_spy_20d": -0.0377,
+     "ticker": "CAKE"
+    },
+    {
+     "market_cap_m": 15899.619,
+     "price_vs_sma200": 1.0615,
+     "return_30d": -0.0291,
+     "return_7d": 0.0307,
+     "revenue_driver": "institutional food service",
+     "signal_rank": 557,
+     "stock_vs_spy_20d": -0.0115,
+     "ticker": "ARMK"
+    },
+    {
+     "market_cap_m": 4391.4617,
+     "price_vs_sma200": 0.6871,
+     "return_30d": -0.0716,
+     "return_7d": -0.1839,
+     "revenue_driver": "drive-thru coffee beverages",
+     "signal_rank": 1459,
+     "stock_vs_spy_20d": -0.1149,
+     "ticker": "BROS"
+    },
+    {
+     "market_cap_m": 1176.5855,
+     "price_vs_sma200": 1.0814,
+     "return_30d": -0.0995,
+     "return_7d": -0.0968,
+     "revenue_driver": "casual dining restaurants",
+     "signal_rank": 501,
+     "stock_vs_spy_20d": -0.0479,
+     "ticker": "BJRI"
+    }
+   ]
+  }
+ },
+ "predictions": {
+  "badge_count": 0,
+  "confidence_score": 0.7337,
+  "conviction_label": "SPECULATIVE",
+  "data_quality_flags": [],
+  "ev_score": 0.0973,
+  "is_diamond": false,
+  "passes_tradability_filter": true,
+  "quality_label": "MEDIUM",
+  "quantiles": {
+   "downside_q10": -0.2202,
+   "downside_q25": -0.1222,
+   "downside_q50": -0.0675,
+   "downside_q75": -0.0194,
+   "downside_q90": 0.0013,
+   "path_volatility": 0.0223,
+   "risk_reward": 2.3761,
+   "uncertainty": 0.3663,
+   "upside_q10": 0.0276,
+   "upside_q25": 0.0773,
+   "upside_q50": 0.1605,
+   "upside_q75": 0.2635,
+   "upside_q90": 0.3939
+  },
+  "rank": 557,
+  "rank_score": 0.0844,
+  "tradability_filter_reasons": []
+ },
+ "profile": {
+  "_local": {
+   "dividend_yield": 0.0037,
+   "eps_growth_yoy": 0.0735,
+   "pe_ratio": 42.2867,
+   "revenue_growth_yoy": 0.1102,
+   "roe": 0.1147
+  },
+  "beta": 1.166,
+  "betaTTM": null,
+  "ceo": "John J. Zillmer",
+  "companyName": "Aramark",
+  "country": "US",
+  "debtToEquityTTM": null,
+  "description": "Based in Philadelphia, Pennsylvania, Aramark, established in 1959, provides a comprehensive array of services encompassing food management, facility solutions, and uniform provision. The company serves a diverse global clientele, including educational institutions, healthcare providers, various businesses and industrial clients, sports and entertainment venues, leisure operators, and correctional facilities, both within the United States and internationally. Aramark organizes its operations into three primary divisions: U.S. Food and Support Services, International Food and Support Services, and Uniform and Career Apparel. Its extensive food-related offerings feature managed dining programs, catering solutions, food service management, and convenience retail options. This includes operating on-site restaurants, providing executive dining experiences, managing convenience stores, and offering beverage and vending services. For the sports, entertainment, and leisure sectors, it handles concessions, banquets, and event catering, in addition to retail sales, recreational, and lodging services. Furthermore, the company supplies specialized food services to correctional facilities. Beyond culinary services, Aramark delivers robust facility management and support services. In healthcare settings, this involves non-clinical assistance such as patient nutrition planning, retail food services, and procurement management. For various sites, it provides crucial operational support, including plant operations and maintenance, custodial and housekeeping services, energy management, groundskeeping, and capital project supervision. The company also handles broader facility management tasks like landscaping, transportation logistics, payment systems, and advisory services related to building operations. Specific to correctional environments, it oversees commissaries, laundry operations, and property rooms. Across multiple client types, it offers managed restroom services. Aramark is also a significant player in the uniform and apparel sector. Its services span the entire lifecycle of uniforms, from design, sourcing, and manufacturing to delivery, cleaning, maintenance, and marketing. Clients can rent a wide range of items, including various uniforms, specialized work attire, outerwear, particulate-free garments, and non-garment essentials such as floor mats, shop towels, and first aid supplies. The company was formerly known as ARAMARK Holdings Corporation before officially changing its name to Aramark in May 2014.",
+  "dividendYielTTM": null,
+  "enterpriseValueOverEBITDATTM": null,
+  "exchangeShortName": "NYSE",
+  "fullTimeEmployees": "278390",
+  "industry": "Specialty Business Services",
+  "ipoDate": "2013-12-12",
+  "latest_earnings_date": "2026-08-11",
+  "marketCapTTM": null,
+  "mktCap": 14218614375,
+  "peRatioTTM": null,
+  "price": 53.935,
+  "priceToSalesRatioTTM": null,
+  "returnOnEquityTTM": 0.1175,
+  "revenue_description": "Aramark provides food service, facilities, and uniform-related services to schools, healthcare, sports, and business clients. Revenue is driven by vehicle production volumes and content-per-vehicle, with EV transition and ADAS adoption creating new product opportunities.",
+  "revenue_description_themes": [
+   "workplace dining outsourcing",
+   "facility maintenance efficiency",
+   "uniform rental penetration"
+  ],
+  "revenue_taxonomy": [
+   {
+    "bucket": "Restaurants, QSR & Foodservice",
+    "matched_tags": [
+     "institutional food service"
+    ],
+    "path": "Consumer Services & Leisure › Hospitality & Experiences › Restaurants, QSR & Foodservice",
+    "sector": "Consumer Services & Leisure",
+    "segment": "Hospitality & Experiences"
+   },
+   {
+    "bucket": "Property Management & Facility Operations",
+    "matched_tags": [
+     "facilities management"
+    ],
+    "path": "Real Estate & Infrastructure › Property & Infrastructure Services › Property Management & Facility Operations",
+    "sector": "Real Estate & Infrastructure",
+    "segment": "Property & Infrastructure Services"
+   },
+   {
+    "bucket": "Environmental, Safety, Waste & Facility Services",
+    "matched_tags": [
+     "uniform rental services"
+    ],
+    "path": "Industrials & Transportation › Industrial Products & Services › Environmental, Safety, Waste & Facility Services",
+    "sector": "Industrials & Transportation",
+    "segment": "Industrial Products & Services"
+   }
+  ],
+  "revenue_themes": [
+   "institutional food service",
+   "facilities management",
+   "uniform rental services"
+  ],
+  "sector": "Industrials",
+  "website": "https://www.aramark.com"
+ },
+ "report": {
+  "display_rank": null,
+  "lane": "act_now",
+  "lane_rank": 36,
+  "setup_label": "downtrend",
+  "why_now": "Structural analogs leads the readiness mix (+12.2); 30/90-session downtrend"
+ },
+ "scorecard": {
+  "headline": {
+   "avg_universe_pct": 32,
+   "label": "below_average",
+   "metric_count": 8
+  },
+  "metrics": {
+   "debt_to_equity": {
+    "direction": "lower",
+    "label": "D/E Ratio",
+    "sector": "Consumer Disc.",
+    "sector_n": 233,
+    "sector_pct": 17,
+    "universe_n": 1962,
+    "universe_pct": 12,
+    "value": 1.9056
+   },
+   "eps_growth_yoy": {
+    "direction": "higher",
+    "label": "EPS Growth",
+    "sector": "Consumer Disc.",
+    "sector_n": 238,
+    "sector_pct": 37,
+    "universe_n": 1779,
+    "universe_pct": 41,
+    "value": 0.0735
+   },
+   "gross_margin": {
+    "direction": "higher",
+    "label": "Gross Margin",
+    "sector": "Consumer Disc.",
+    "sector_n": 238,
+    "sector_pct": 5,
+    "universe_n": 1899,
+    "universe_pct": 4,
+    "value": 0.0733
+   },
+   "operating_margin": {
+    "direction": "higher",
+    "label": "Op. Margin",
+    "sector": "Consumer Disc.",
+    "sector_n": 238,
+    "sector_pct": 31,
+    "universe_n": 1899,
+    "universe_pct": 30,
+    "value": 0.0451
+   },
+   "pe_ratio": {
+    "direction": "lower",
+    "label": "P/E",
+    "sector": "Consumer Disc.",
+    "sector_n": 204,
+    "sector_pct": 9,
+    "universe_n": 1425,
+    "universe_pct": 14,
+    "value": 42.2867
+   },
+   "revenue_growth_yoy": {
+    "direction": "higher",
+    "label": "Rev Growth",
+    "sector": "Consumer Disc.",
+    "sector_n": 238,
+    "sector_pct": 73,
+    "universe_n": 1729,
+    "universe_pct": 60,
+    "value": 0.1102
+   },
+   "roe": {
+    "direction": "higher",
+    "label": "ROE",
+    "sector": "Consumer Disc.",
+    "sector_n": 237,
+    "sector_pct": 45,
+    "universe_n": 1976,
+    "universe_pct": 55,
+    "value": 0.1147
+   },
+   "roic": {
+    "direction": "higher",
+    "label": "ROIC",
+    "sector": "Consumer Disc.",
+    "sector_n": 232,
+    "sector_pct": 29,
+    "universe_n": 1946,
+    "universe_pct": 40,
+    "value": 0.0089
+   }
+  }
+ },
+ "signal_rank": 557,
+ "structural_analogs": {
+  "gp_core_pct": 87.8,
+  "gp_core_ratio": 1.9824,
+  "matches": [
+   {
+    "actual_downside": -0.0701,
+    "actual_return": 0.1698,
+    "actual_upside": 0.1698,
+    "days_in_region": 129,
+    "end_date": "2006-12-07",
+    "end_reason": "reversal",
+    "seq_len": 129,
+    "similarity": 0.6383,
+    "start_date": "2006-04-26",
+    "ticker": "ARG",
+    "total_distance": 0.2245,
+    "trigger_date": "2006-05-08",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": -0.037,
+    "actual_return": 0.1048,
+    "actual_upside": 0.1048,
+    "days_in_region": 125,
+    "end_date": "2015-12-04",
+    "end_reason": "reversal",
+    "seq_len": 125,
+    "similarity": 0.6255,
+    "start_date": "2015-07-22",
+    "ticker": "VASC",
+    "total_distance": 0.2346,
+    "trigger_date": "2015-09-29",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": -0.0503,
+    "actual_return": 0.1658,
+    "actual_upside": 0.1658,
+    "days_in_region": 125,
+    "end_date": "2018-01-05",
+    "end_reason": "reversal",
+    "seq_len": 125,
+    "similarity": 0.6239,
+    "start_date": "2017-05-05",
+    "ticker": "CTXS",
+    "total_distance": 0.2359,
+    "trigger_date": "2017-08-07",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": -0.1957,
+    "actual_return": 0.163,
+    "actual_upside": 0.163,
+    "days_in_region": 113,
+    "end_date": "1998-04-23",
+    "end_reason": "reversal",
+    "seq_len": 113,
+    "similarity": 0.617,
+    "start_date": "1997-07-25",
+    "ticker": "SNS",
+    "total_distance": 0.2415,
+    "trigger_date": "1997-10-07",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": -0.0034,
+    "actual_return": 0.1685,
+    "actual_upside": 0.1685,
+    "days_in_region": 124,
+    "end_date": "2018-03-12",
+    "end_reason": "reversal",
+    "seq_len": 124,
+    "similarity": 0.6137,
+    "start_date": "2017-11-03",
+    "ticker": "ICLR",
+    "total_distance": 0.2441,
+    "trigger_date": "2018-02-06",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": -0.0524,
+    "actual_return": -0.0125,
+    "actual_upside": 0.2525,
+    "days_in_region": 152,
+    "end_date": "2007-05-01",
+    "end_reason": "reversal",
+    "seq_len": 152,
+    "similarity": 0.6122,
+    "start_date": "2006-03-23",
+    "ticker": "IGT",
+    "total_distance": 0.2453,
+    "trigger_date": "2006-08-02",
+    "trigger_type": "shallow_runup"
+   },
+   {
+    "actual_downside": -0.0171,
+    "actual_return": 0.1777,
+    "actual_upside": 0.1777,
+    "days_in_region": 130,
+    "end_date": "2013-11-25",
+    "end_reason": "reversal",
+    "seq_len": 130,
+    "similarity": 0.6107,
+    "start_date": "2013-07-11",
+    "ticker": "BLMN",
+    "total_distance": 0.2466,
+    "trigger_date": "2013-07-24",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": -0.1889,
+    "actual_return": 0.0313,
+    "actual_upside": 0.0313,
+    "days_in_region": 126,
+    "end_date": "2014-01-15",
+    "end_reason": "reversal",
+    "seq_len": 126,
+    "similarity": 0.6105,
+    "start_date": "2013-08-05",
+    "ticker": "DIOD",
+    "total_distance": 0.2468,
+    "trigger_date": "2013-08-12",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": 0.0,
+    "actual_return": 0.3127,
+    "actual_upside": 0.3127,
+    "days_in_region": 126,
+    "end_date": "2016-12-08",
+    "end_reason": "reversal",
+    "seq_len": 126,
+    "similarity": 0.6087,
+    "start_date": "2016-07-27",
+    "ticker": "ASTE",
+    "total_distance": 0.2482,
+    "trigger_date": "2016-10-27",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": 0.0,
+    "actual_return": 0.1774,
+    "actual_upside": 0.1774,
+    "days_in_region": 121,
+    "end_date": "2006-12-05",
+    "end_reason": "reversal",
+    "seq_len": 121,
+    "similarity": 0.6042,
+    "start_date": "2006-04-05",
+    "ticker": "LI",
+    "total_distance": 0.2519,
+    "trigger_date": "2006-06-14",
+    "trigger_type": "drawdown"
+   }
+  ],
+  "panel": {
+   "edge": 0.0963,
+   "hit_hi": 0.913,
+   "hit_lo": 0.79,
+   "hit_rate": 0.863,
+   "median_final": 0.1425,
+   "median_pain": 0.0496,
+   "n": 51,
+   "n_eff": 51.0,
+   "p25_final": 0.0366,
+   "p_pain_gt5": 0.49,
+   "return_to_pain": 2.047
+  },
+  "stats": {
+   "avg_similarity": 0.582,
+   "avg_trough": 0.0904,
+   "avg_upside": 0.1425,
+   "median_pain": 0.0677,
+   "median_return": 0.0838,
+   "n_matches": 200,
+   "p25_return": -0.0226,
+   "p_pain_gt5": 0.585,
+   "return_to_pain": 0.956,
+   "top5_avg_trough": 0.0713,
+   "top5_avg_upside": 0.1544,
+   "top_similarity": 0.638,
+   "win_rate": 0.705
+  },
+  "total_matches": 200
+ },
+ "ticker": "ARMK",
+ "trending": {
+  "acceleration": -0.0028,
+  "avg_vol_20d": 2236886.1212,
+  "base_high_120": 62.39,
+  "breakout_confirmed": 0,
+  "close": 57.61,
+  "momentum_score": 0.6363,
+  "momentum_start": "2026-03-23",
+  "range_20": 0.0913,
+  "range_50": 0.13,
+  "rank": 1375,
+  "rank_down": null,
+  "rank_up": 439,
+  "ret_120": 0.3892,
+  "ret_20": -0.0478,
+  "ret_60": 0.0758,
+  "rundown_score": 0.3493,
+  "score_date": "2026-09-16",
+  "slope_20": -0.002,
+  "slope_60": 0.0008,
+  "stage": "sustained",
+  "stage_label": "Trending",
+  "ticker": "ARMK",
+  "total_score": 0.3599,
+  "trend_ratio": 1.1552,
+  "vcp_detected": 0,
+  "vcp_score": 0.1756
+ }
+}

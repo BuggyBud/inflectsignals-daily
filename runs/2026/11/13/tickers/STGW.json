@@ -1,0 +1,1109 @@
+{
+ "date": "2026-11-13",
+ "detected_regions": {
+  "primary": {
+   "days_in_region": 127,
+   "region_start": "2026-08-12",
+   "trigger_date": "2026-09-18",
+   "trigger_type": "shallow_drawdown"
+  },
+  "secondary": [
+   {
+    "confidence_score": 0.4834,
+    "downside_q50": -0.0877,
+    "ev_score": 0.0952,
+    "region_start": "2026-02-24",
+    "seq_len": 200,
+    "trigger_date": "2026-08-17",
+    "trigger_type": "runup",
+    "upside_q25": 0.0763,
+    "upside_q50": 0.1696,
+    "upside_q75": 0.3118
+   }
+  ]
+ },
+ "feature_attribution": {
+  "macro_driver_count": 16,
+  "risk_flags": [
+   "high_volatility"
+  ],
+  "top_drivers": [
+   {
+    "direction": "positive",
+    "feature": "price_vs_sma200",
+    "feature_value": 1.5203,
+    "importance": 0.0002,
+    "importance_pct": 0.3261,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "negative",
+    "feature": "dollar_volume",
+    "feature_value": 27238452.0,
+    "importance": 0.0002,
+    "importance_pct": 0.2387,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "negative",
+    "feature": "return_1d",
+    "feature_value": 0.0108,
+    "importance": 0.0001,
+    "importance_pct": 0.2184,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "negative",
+    "feature": "williams_14",
+    "feature_value": -24.6883,
+    "importance": 0.0001,
+    "importance_pct": 0.2168,
+    "method": "integrated_gradients"
+   }
+  ]
+ },
+ "fundamentals": {
+  "accrual": -0.0735,
+  "adx_14": 57.9128,
+  "altman_z_score": 0.8701,
+  "amihud_illiquidity": 0.0009,
+  "avg_volume": 1663486.9427,
+  "beta_252d": 0.1708,
+  "book_value_per_share": 2.8368,
+  "correlation_spy_60d": 0.1028,
+  "current_liabilities": 1511.603,
+  "current_ratio": 0.8097,
+  "daily_earnings_yield": 0.0032,
+  "daily_fcf_yield": 0.1085,
+  "daily_pb": 4.0938,
+  "daily_pe": 314.4848,
+  "daily_ps": 0.9125,
+  "days_since_52w_high": 5.0,
+  "debt_ebitda": 5.4402,
+  "debt_to_equity": 2.3991,
+  "dividend_yield": 0.0,
+  "dollar_volume_20d_avg": 23959979.0494,
+  "earnings_quality": 4.8878,
+  "ebitda_growth_yoy": -0.0372,
+  "enterprise_value": 4374.3019,
+  "eps_basic": 0.07,
+  "eps_cagr_3y": -0.1113,
+  "eps_cagr_5y": -0.5261,
+  "eps_diluted": 0.07,
+  "eps_growth_accel": -10.5175,
+  "eps_growth_qoq": 3.3333,
+  "eps_growth_yoy": -0.5175,
+  "eps_growth_yoy_q2": 10.0,
+  "eps_growth_yoy_q3": 10.0,
+  "eps_growth_yoy_q4": 10.0,
+  "eps_growth_yoy_q5": 10.0,
+  "eps_growth_yoy_q6": 0.0,
+  "eps_growth_yoy_q7": 1.0,
+  "eps_growth_yoy_q8": 1.0,
+  "eps_history_8q": [
+   0.03,
+   -0.04,
+   -0.02,
+   0.09,
+   0.0489,
+   -0.0517,
+   -0.03,
+   0.07
+  ],
+  "eps_ttm": 0.0358,
+  "ev_to_ebitda": 14.2915,
+  "ev_to_fcf": 63.0566,
+  "ev_to_sales": 5.3605,
+  "fcf_growth_yoy": 4.03,
+  "fcf_margin": 0.085,
+  "fcf_per_share": 0.2835,
+  "gross_margin": 0.2638,
+  "gross_margin_change_yoy": -0.3073,
+  "gross_margin_history": [
+   0.3595,
+   0.3617,
+   0.3654,
+   0.3457,
+   0.3438,
+   0.2638
+  ],
+  "inc_roic": -1.2755,
+  "interest_coverage": 108.1548,
+  "is_pre_revenue": false,
+  "margin_vs_sector_median": null,
+  "market_cap_ratio": 2841.3699,
+  "net_income": 18.119,
+  "net_margin": 0.0029,
+  "operating_income": 48.059,
+  "operating_margin": 0.0404,
+  "operating_margin_change_yoy": -0.0058,
+  "pb_ratio": 3.9728,
+  "pe_percentile_1y": 0.0198,
+  "pe_ratio": 314.4848,
+  "peg_trailing": -7.0388,
+  "piotroski_f_score": 4.0,
+  "price_vs_high_52w": 0.9682,
+  "price_vs_sma200": 1.5203,
+  "ps_percentile_1y": 0.0198,
+  "ps_ratio": 0.8056,
+  "quarter_labels_8q": [
+   "Q4 '24",
+   "Q1 '25",
+   "Q2 '25",
+   "Q3 '25",
+   "Q4 '25",
+   "Q1 '26",
+   "Q2 '26",
+   "Q3 '26"
+  ],
+  "quarterly_eps_growth_yoy": -0.2222,
+  "quarterly_eps_growth_yoy_8q": [
+   null,
+   -3.0,
+   0.3333,
+   2.0,
+   0.63,
+   -0.2925,
+   -0.5,
+   -0.2222
+  ],
+  "quarterly_revenue_growth_yoy": 0.0983,
+  "quarterly_revenue_growth_yoy_8q": [
+   0.2043,
+   -0.0273,
+   0.0531,
+   0.0446,
+   0.0238,
+   0.0804,
+   0.1125,
+   0.0983
+  ],
+  "revenue_cagr_3y": 0.0646,
+  "revenue_cagr_5y": 0.1655,
+  "revenue_growth_accel": 0.0136,
+  "revenue_growth_qoq": 0.0378,
+  "revenue_growth_yoy": 0.0774,
+  "revenue_growth_yoy_q2": 0.0638,
+  "revenue_growth_yoy_q3": 0.0491,
+  "revenue_growth_yoy_q4": 0.0239,
+  "revenue_growth_yoy_q5": 0.0675,
+  "revenue_growth_yoy_q6": 0.0937,
+  "revenue_growth_yoy_q7": 0.0964,
+  "revenue_growth_yoy_q8": 0.1243,
+  "revenue_history_8q": [
+   788.708,
+   651.74,
+   706.818,
+   742.998,
+   807.444,
+   704.143,
+   786.307,
+   816.027
+  ],
+  "revenue_per_share": 3.3353,
+  "roa": 0.0021,
+  "roce": 0.0464,
+  "roe": 0.0133,
+  "roic": 0.0033,
+  "rsi_14": 67.6155,
+  "sector_momentum": 0.1201,
+  "share_dilution_1y": 0.0,
+  "stock_vs_sector_20d": 0.2274,
+  "stock_vs_spy_20d": 0.2679,
+  "total_assets": 4211.442,
+  "vol_regime": 1.3523,
+  "volatility_20d": 0.0368,
+  "volatility_60d": 0.0272,
+  "w52_high": 12.26,
+  "w52_low": 4.29
+ },
+ "market_characters": [
+  {
+   "id": "g1",
+   "name": "Steady Climbers"
+  },
+  {
+   "id": "g9",
+   "name": "Narrative Premium"
+  }
+ ],
+ "model_analogs": {
+  "matches": [
+   {
+    "actual_downside": -0.1067,
+    "actual_return": -0.1067,
+    "actual_upside": 0.2431,
+    "days_in_region": 168,
+    "end_date": "2017-02-24",
+    "end_reason": "reversal",
+    "similarity": 0.9596,
+    "start_date": "2016-09-09",
+    "ticker": "RYAM",
+    "trigger_date": "2016-11-14",
+    "trigger_type": "runup"
+   },
+   {
+    "actual_downside": -0.079,
+    "actual_return": -0.0086,
+    "actual_upside": 0.1289,
+    "days_in_region": 217,
+    "end_date": "2008-03-20",
+    "end_reason": "reversal",
+    "similarity": 0.9593,
+    "start_date": "2007-08-16",
+    "ticker": "EBIX",
+    "trigger_date": "2008-02-05",
+    "trigger_type": "runup"
+   },
+   {
+    "actual_downside": -0.0182,
+    "actual_return": 0.1421,
+    "actual_upside": 0.1457,
+    "days_in_region": 73,
+    "end_date": "2021-05-24",
+    "end_reason": "reversal",
+    "similarity": 0.9592,
+    "start_date": "2021-03-12",
+    "ticker": "ORN",
+    "trigger_date": "2021-03-23",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": -0.0844,
+    "actual_return": 0.8355,
+    "actual_upside": 1.316,
+    "days_in_region": 409,
+    "end_date": "2017-08-10",
+    "end_reason": "reversal",
+    "similarity": 0.9559,
+    "start_date": "2016-06-27",
+    "ticker": "EXTR",
+    "trigger_date": "2016-11-14",
+    "trigger_type": "runup"
+   },
+   {
+    "actual_downside": -0.0459,
+    "actual_return": 0.164,
+    "actual_upside": 0.3049,
+    "days_in_region": 317,
+    "end_date": "2006-06-16",
+    "end_reason": "reversal",
+    "similarity": 0.9558,
+    "start_date": "2005-08-03",
+    "ticker": "BREW",
+    "trigger_date": "2005-09-27",
+    "trigger_type": "shallow_runup"
+   },
+   {
+    "actual_downside": -0.0109,
+    "actual_return": 0.3435,
+    "actual_upside": 0.3435,
+    "days_in_region": 125,
+    "end_date": "2005-12-13",
+    "end_reason": "reversal",
+    "similarity": 0.9556,
+    "start_date": "2005-08-10",
+    "ticker": "CRM",
+    "trigger_date": "2005-10-13",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": -0.2632,
+    "actual_return": 0.1579,
+    "actual_upside": 0.1579,
+    "days_in_region": 113,
+    "end_date": "2001-01-11",
+    "end_reason": "reversal",
+    "similarity": 0.9551,
+    "start_date": "2000-09-20",
+    "ticker": "CACC",
+    "trigger_date": "2000-10-19",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": 0.0,
+    "actual_return": 0.2627,
+    "actual_upside": 0.2627,
+    "days_in_region": 141,
+    "end_date": "2014-03-18",
+    "end_reason": "reversal",
+    "similarity": 0.9548,
+    "start_date": "2013-10-28",
+    "ticker": "PATK",
+    "trigger_date": "2013-11-11",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": -0.0724,
+    "actual_return": 0.4539,
+    "actual_upside": 0.4539,
+    "days_in_region": 244,
+    "end_date": "1990-06-04",
+    "end_reason": "reversal",
+    "similarity": 0.9548,
+    "start_date": "1989-10-03",
+    "ticker": "HOG",
+    "trigger_date": "1990-01-31",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": 0.0,
+    "actual_return": 0.1115,
+    "actual_upside": 0.2727,
+    "days_in_region": 174,
+    "end_date": "1998-11-17",
+    "end_reason": "reversal",
+    "similarity": 0.9536,
+    "start_date": "1998-05-27",
+    "ticker": "ALFA",
+    "trigger_date": "1998-09-08",
+    "trigger_type": "runup"
+   }
+  ],
+  "stats": {
+   "avg_max_drawdown": 0.0736,
+   "avg_similarity": 0.952,
+   "avg_trough": 0.0736,
+   "avg_upside": 0.3215,
+   "best_return": 1.2374,
+   "downside_range": [
+    -0.4161,
+    0.0
+   ],
+   "median_return": 0.1315,
+   "n_matches": 50,
+   "outcome_agreement": true,
+   "return_p25": 0.0135,
+   "return_p5": -0.1491,
+   "return_p75": 0.2593,
+   "return_p95": 0.6986,
+   "sim_weighted_win_rate": 0.76,
+   "top5_avg_trough": 0.0668,
+   "top5_avg_upside": 0.4277,
+   "top_similarity": 0.96,
+   "upside_range": [
+    0.0,
+    1.316
+   ],
+   "win_rate": 0.76,
+   "worst_return": -0.2963,
+   "years_span": 15
+  },
+  "total_matches": 50
+ },
+ "peer_group": {
+  "buckets": [
+   "Broadcast, Cable & Streaming Media",
+   "Entertainment Content, Events & Live Experiences",
+   "Publishing, News, Information Services & Data Media"
+  ],
+  "groups": {
+   "Broadcast, Cable & Streaming Media": [
+    {
+     "market_cap_m": 2508.5741,
+     "price_vs_sma200": 1.5203,
+     "return_30d": 0.3481,
+     "return_7d": 0.0245,
+     "revenue_driver": "digital media platform",
+     "signal_rank": 830,
+     "stock_vs_spy_20d": 0.2679,
+     "ticker": "STGW"
+    },
+    {
+     "market_cap_m": 83010.838,
+     "price_vs_sma200": 0.9726,
+     "return_30d": 0.1664,
+     "return_7d": 0.0125,
+     "revenue_driver": "cable broadband services",
+     "signal_rank": 1263,
+     "stock_vs_spy_20d": 0.1617,
+     "ticker": "CMCSA"
+    },
+    {
+     "market_cap_m": 181671.0086,
+     "price_vs_sma200": 1.1466,
+     "return_30d": 0.1642,
+     "return_7d": 0.0002,
+     "revenue_driver": "theme park admissions",
+     "signal_rank": 1980,
+     "stock_vs_spy_20d": 0.0886,
+     "ticker": "DIS"
+    },
+    {
+     "market_cap_m": 868.8945,
+     "price_vs_sma200": 1.2091,
+     "return_30d": 0.1126,
+     "return_7d": -0.0536,
+     "revenue_driver": "OTT streaming platform SaaS",
+     "signal_rank": 602,
+     "stock_vs_spy_20d": 0.1023,
+     "ticker": "CNNE"
+    },
+    {
+     "market_cap_m": 182.4759,
+     "price_vs_sma200": 0.7222,
+     "return_30d": 0.0756,
+     "return_7d": 0.1767,
+     "revenue_driver": "consumer streaming subscriptions",
+     "signal_rank": null,
+     "stock_vs_spy_20d": -0.121,
+     "ticker": "CURI"
+    },
+    {
+     "market_cap_m": 20341.705,
+     "price_vs_sma200": 1.2407,
+     "return_30d": 0.0514,
+     "return_7d": 0.0268,
+     "revenue_driver": "connected TV advertising platform",
+     "signal_rank": 109,
+     "stock_vs_spy_20d": 0.0826,
+     "ticker": "ROKU"
+    },
+    {
+     "market_cap_m": 285.1738,
+     "price_vs_sma200": 0.9978,
+     "return_30d": -0.1487,
+     "return_7d": 0.1229,
+     "revenue_driver": "cable TV networks",
+     "signal_rank": 827,
+     "stock_vs_spy_20d": -0.0512,
+     "ticker": "AMCX"
+    },
+    {
+     "market_cap_m": 56859.456,
+     "price_vs_sma200": 1.53,
+     "return_30d": -0.1958,
+     "return_7d": -0.0726,
+     "revenue_driver": "digital media platform",
+     "signal_rank": 1931,
+     "stock_vs_spy_20d": -0.0042,
+     "ticker": "GDC"
+    },
+    {
+     "market_cap_m": 29.0766,
+     "price_vs_sma200": 0.0564,
+     "return_30d": -0.7543,
+     "return_7d": -0.4297,
+     "revenue_driver": "high-speed internet",
+     "signal_rank": 1974,
+     "stock_vs_spy_20d": -0.5722,
+     "ticker": "CABO"
+    },
+    {
+     "market_cap_m": 65418.54,
+     "price_vs_sma200": 1.1178,
+     "return_30d": -1.0,
+     "return_7d": -1.0,
+     "revenue_driver": "streaming and linear TV media",
+     "signal_rank": null,
+     "stock_vs_spy_20d": 0.0884,
+     "ticker": "WBD"
+    }
+   ],
+   "Entertainment Content, Events & Live Experiences": [
+    {
+     "market_cap_m": 2508.5741,
+     "price_vs_sma200": 1.5203,
+     "return_30d": 0.3481,
+     "return_7d": 0.0245,
+     "revenue_driver": "digital media platform",
+     "signal_rank": 830,
+     "stock_vs_spy_20d": 0.2679,
+     "ticker": "STGW"
+    },
+    {
+     "market_cap_m": 6206.5022,
+     "price_vs_sma200": 1.2241,
+     "return_30d": 0.2511,
+     "return_7d": 0.1461,
+     "revenue_driver": "media rights",
+     "signal_rank": 1238,
+     "stock_vs_spy_20d": 0.2671,
+     "ticker": "FWONA"
+    },
+    {
+     "market_cap_m": 986.8469,
+     "price_vs_sma200": 1.1464,
+     "return_30d": 0.2491,
+     "return_7d": 0.0089,
+     "revenue_driver": "gaming terminals",
+     "signal_rank": 764,
+     "stock_vs_spy_20d": 0.2573,
+     "ticker": "ACEL"
+    },
+    {
+     "market_cap_m": 65186.6222,
+     "price_vs_sma200": 1.1763,
+     "return_30d": 0.1956,
+     "return_7d": 0.1022,
+     "revenue_driver": "media rights",
+     "signal_rank": 1467,
+     "stock_vs_spy_20d": 0.2136,
+     "ticker": "FWONK"
+    },
+    {
+     "market_cap_m": 710.3148,
+     "price_vs_sma200": 1.5743,
+     "return_30d": 0.1733,
+     "return_7d": -0.0767,
+     "revenue_driver": "cinema admissions",
+     "signal_rank": 1652,
+     "stock_vs_spy_20d": 0.1297,
+     "ticker": "AMC"
+    },
+    {
+     "market_cap_m": 4524.0008,
+     "price_vs_sma200": 1.27,
+     "return_30d": 0.1318,
+     "return_7d": 0.0104,
+     "revenue_driver": "box office admissions",
+     "signal_rank": 696,
+     "stock_vs_spy_20d": 0.0731,
+     "ticker": "CNK"
+    },
+    {
+     "market_cap_m": 1298.5064,
+     "price_vs_sma200": 0.9296,
+     "return_30d": -0.0619,
+     "return_7d": 0.0155,
+     "revenue_driver": "digital comics platform",
+     "signal_rank": 403,
+     "stock_vs_spy_20d": 0.1424,
+     "ticker": "WBTN"
+    },
+    {
+     "market_cap_m": 285.1738,
+     "price_vs_sma200": 0.9978,
+     "return_30d": -0.1487,
+     "return_7d": 0.1229,
+     "revenue_driver": "cable TV networks",
+     "signal_rank": 827,
+     "stock_vs_spy_20d": -0.0512,
+     "ticker": "AMCX"
+    },
+    {
+     "market_cap_m": 56859.456,
+     "price_vs_sma200": 1.53,
+     "return_30d": -0.1958,
+     "return_7d": -0.0726,
+     "revenue_driver": "digital media platform",
+     "signal_rank": 1931,
+     "stock_vs_spy_20d": -0.0042,
+     "ticker": "GDC"
+    },
+    {
+     "market_cap_m": 662.2687,
+     "price_vs_sma200": 0.7057,
+     "return_30d": -0.3573,
+     "return_7d": -0.2831,
+     "revenue_driver": "local deals marketplace",
+     "signal_rank": 1517,
+     "stock_vs_spy_20d": -0.2382,
+     "ticker": "GRPN"
+    }
+   ],
+   "Publishing, News, Information Services & Data Media": [
+    {
+     "market_cap_m": 2508.5741,
+     "price_vs_sma200": 1.5203,
+     "return_30d": 0.3481,
+     "return_7d": 0.0245,
+     "revenue_driver": "digital media platform",
+     "signal_rank": 830,
+     "stock_vs_spy_20d": 0.2679,
+     "ticker": "STGW"
+    },
+    {
+     "market_cap_m": 10744.272,
+     "price_vs_sma200": 0.9932,
+     "return_30d": 0.1612,
+     "return_7d": 0.0949,
+     "revenue_driver": "digital news subscription",
+     "signal_rank": 1542,
+     "stock_vs_spy_20d": 0.0871,
+     "ticker": "NYT"
+    },
+    {
+     "market_cap_m": 13391.1858,
+     "price_vs_sma200": 1.3516,
+     "return_30d": 0.0398,
+     "return_7d": -0.0726,
+     "revenue_driver": "IT research and advisory",
+     "signal_rank": null,
+     "stock_vs_spy_20d": 0.259,
+     "ticker": "IT"
+    },
+    {
+     "market_cap_m": 796.2629,
+     "price_vs_sma200": 0.9411,
+     "return_30d": 0.0174,
+     "return_7d": -0.0406,
+     "revenue_driver": "children's book publishing",
+     "signal_rank": 708,
+     "stock_vs_spy_20d": -0.0094,
+     "ticker": "SCHL"
+    },
+    {
+     "market_cap_m": 767.0028,
+     "price_vs_sma200": 1.1672,
+     "return_30d": 0.0074,
+     "return_7d": -0.0025,
+     "revenue_driver": "court case management software",
+     "signal_rank": 1286,
+     "stock_vs_spy_20d": 0.1095,
+     "ticker": "DJCO"
+    },
+    {
+     "market_cap_m": 8.4167,
+     "price_vs_sma200": 0.9823,
+     "return_30d": -0.0558,
+     "return_7d": -0.105,
+     "revenue_driver": "news and information services",
+     "signal_rank": 974,
+     "stock_vs_spy_20d": -0.0782,
+     "ticker": "NWS"
+    },
+    {
+     "market_cap_m": 9916.2304,
+     "price_vs_sma200": 1.0007,
+     "return_30d": -0.06,
+     "return_7d": -0.1175,
+     "revenue_driver": "news and information publishing",
+     "signal_rank": 380,
+     "stock_vs_spy_20d": -0.089,
+     "ticker": "NWSA"
+    },
+    {
+     "market_cap_m": 15028.2781,
+     "price_vs_sma200": 0.9533,
+     "return_30d": -0.144,
+     "return_7d": 0.0175,
+     "revenue_driver": "digital publishing portfolio",
+     "signal_rank": null,
+     "stock_vs_spy_20d": -0.1011,
+     "ticker": "IAC"
+    },
+    {
+     "market_cap_m": 311.001,
+     "price_vs_sma200": 0.8318,
+     "return_30d": -0.2129,
+     "return_7d": -0.1948,
+     "revenue_driver": "B2B intent data",
+     "signal_rank": null,
+     "stock_vs_spy_20d": 0.0883,
+     "ticker": "TTGT"
+    },
+    {
+     "market_cap_m": 1136.7919,
+     "price_vs_sma200": 0.5247,
+     "return_30d": -0.4792,
+     "return_7d": 0.0334,
+     "revenue_driver": "advertising sales",
+     "signal_rank": 1820,
+     "stock_vs_spy_20d": -0.3233,
+     "ticker": "DJT"
+    }
+   ]
+  }
+ },
+ "predictions": {
+  "badge_count": 0,
+  "confidence_score": 0.4013,
+  "conviction_label": "SPECULATIVE",
+  "data_quality_flags": [],
+  "ev_score": 0.1347,
+  "is_diamond": false,
+  "passes_tradability_filter": true,
+  "quality_label": "AVOID",
+  "quantiles": {
+   "downside_q10": -0.2512,
+   "downside_q25": -0.1451,
+   "downside_q50": -0.0765,
+   "downside_q75": -0.0207,
+   "downside_q90": 0.0006,
+   "path_volatility": 0.0301,
+   "risk_reward": 2.6147,
+   "uncertainty": 0.5013,
+   "upside_q10": 0.0316,
+   "upside_q25": 0.0927,
+   "upside_q50": 0.2001,
+   "upside_q75": 0.3428,
+   "upside_q90": 0.5328
+  },
+  "rank": 830,
+  "rank_score": 0.0624,
+  "tradability_filter_reasons": []
+ },
+ "profile": {
+  "_local": {
+   "dividend_yield": 0.0,
+   "eps_growth_yoy": -0.5175,
+   "pe_ratio": 267.4731,
+   "revenue_growth_yoy": 0.0774,
+   "roe": 0.0133
+  },
+  "beta": 1.216,
+  "betaTTM": null,
+  "ceo": "Mark Jeffrey Penn",
+  "companyName": "Stagwell Inc.",
+  "country": "US",
+  "debtToEquityTTM": null,
+  "description": "Stagwell Inc. offers a wide array of specialized services, including digital transformation, data-driven performance media, consumer insights and strategic planning, and creative communications solutions. The company operates through three distinct segments: the Integrated Agencies Network, the Media Network, and the Communications Network. A key part of its business involves designing and building advanced digital platforms and engaging experiences. These solutions are crafted to facilitate the distribution of content, support e-commerce activities, enhance service delivery, and boost sales. This includes developing custom websites, mobile applications, robust back-end infrastructures, and sophisticated content and data management systems. Stagwell also formulates and implements cutting-edge technology and data strategies. Furthermore, the company develops proprietary software, such as cookie-less data platforms for targeted audience engagement, e-commerce tools, and text messaging applications designed to interact with consumers. Beyond digital infrastructure, Stagwell provides comprehensive media buying and planning services. It also furnishes clients with strategic insights and expert guidance to optimize their business content, product strategies, overall communications, and media approaches. The firm's creative and communications offerings encompass strategy development, advertising creation, the execution of live events, cross-platform engagement initiatives, and compelling social media content. Additionally, they provide services in leadership development, social media management, executive visibility, strategic communication, public relations, and public affairs. Stagwell Inc. extends its expertise to include influencer marketing, in-depth brand insights, communications technology, and augmented reality services, particularly assisting in-house marketing teams with innovative, technology-driven solutions. The company's corporate headquarters are located in New York, New York.",
+  "dividendYielTTM": null,
+  "enterpriseValueOverEBITDATTM": null,
+  "exchangeShortName": "NASDAQ",
+  "fullTimeEmployees": "10951",
+  "industry": "Advertising Agencies",
+  "ipoDate": "1995-04-17",
+  "latest_earnings_date": "2026-10-29",
+  "marketCapTTM": null,
+  "mktCap": 2794655710,
+  "peRatioTTM": null,
+  "price": 11.27,
+  "priceToSalesRatioTTM": null,
+  "returnOnEquityTTM": 0.0128,
+  "revenue_description": "Stagwell is a marketing and digital media services company. Revenue is driven by content monetization through subscriptions, advertising, and licensing, with engagement and audience size as the core value drivers.",
+  "revenue_description_themes": [
+   "advertising CPM and inventory monetization",
+   "subscriber or audience growth and engagement depth",
+   "content library licensing and franchise extension"
+  ],
+  "revenue_taxonomy": [
+   {
+    "bucket": "Broadcast, Cable & Streaming Media",
+    "matched_tags": [
+     "digital media platform"
+    ],
+    "path": "Media, Advertising & Information › Advertising & Media › Broadcast, Cable & Streaming Media",
+    "sector": "Media, Advertising & Information",
+    "segment": "Advertising & Media"
+   },
+   {
+    "bucket": "Entertainment Content, Events & Live Experiences",
+    "matched_tags": [
+     "content production and distribution"
+    ],
+    "path": "Media, Advertising & Information › Entertainment & Ip › Entertainment Content, Events & Live Experiences",
+    "sector": "Media, Advertising & Information",
+    "segment": "Entertainment & Ip"
+   },
+   {
+    "bucket": "Publishing, News, Information Services & Data Media",
+    "matched_tags": [
+     "online publishing"
+    ],
+    "path": "Media, Advertising & Information › Advertising & Media › Publishing, News, Information Services & Data Media",
+    "sector": "Media, Advertising & Information",
+    "segment": "Advertising & Media"
+   }
+  ],
+  "revenue_themes": [
+   "digital media platform",
+   "content production and distribution",
+   "online publishing"
+  ],
+  "sector": "Communication Services",
+  "website": "https://www.stagwellglobal.com"
+ },
+ "report": {
+  "display_rank": null,
+  "lane": "risk_avoid",
+  "lane_rank": 8,
+  "setup_label": "smooth_continuation",
+  "why_now": "Risk/avoid because model and structural analog panels materially disagree."
+ },
+ "scorecard": {
+  "headline": {
+   "avg_universe_pct": 26,
+   "label": "below_average",
+   "metric_count": 7
+  },
+  "metrics": {
+   "debt_to_equity": {
+    "direction": "lower",
+    "label": "D/E Ratio",
+    "sector": null,
+    "sector_n": 0,
+    "sector_pct": null,
+    "universe_n": 1962,
+    "universe_pct": 8,
+    "value": 2.3991
+   },
+   "eps_growth_yoy": {
+    "direction": "higher",
+    "label": "EPS Growth",
+    "sector": null,
+    "sector_n": 0,
+    "sector_pct": null,
+    "universe_n": 1779,
+    "universe_pct": 16,
+    "value": -0.5175
+   },
+   "gross_margin": {
+    "direction": "higher",
+    "label": "Gross Margin",
+    "sector": null,
+    "sector_n": 0,
+    "sector_pct": null,
+    "universe_n": 1899,
+    "universe_pct": 21,
+    "value": 0.2638
+   },
+   "operating_margin": {
+    "direction": "higher",
+    "label": "Op. Margin",
+    "sector": null,
+    "sector_n": 0,
+    "sector_pct": null,
+    "universe_n": 1899,
+    "universe_pct": 28,
+    "value": 0.0404
+   },
+   "revenue_growth_yoy": {
+    "direction": "higher",
+    "label": "Rev Growth",
+    "sector": null,
+    "sector_n": 0,
+    "sector_pct": null,
+    "universe_n": 1729,
+    "universe_pct": 49,
+    "value": 0.0774
+   },
+   "roe": {
+    "direction": "higher",
+    "label": "ROE",
+    "sector": null,
+    "sector_n": 0,
+    "sector_pct": null,
+    "universe_n": 1976,
+    "universe_pct": 28,
+    "value": 0.0133
+   },
+   "roic": {
+    "direction": "higher",
+    "label": "ROIC",
+    "sector": null,
+    "sector_n": 0,
+    "sector_pct": null,
+    "universe_n": 1946,
+    "universe_pct": 35,
+    "value": 0.0067
+   }
+  }
+ },
+ "signal_rank": 830,
+ "structural_analogs": {
+  "gp_core_pct": 85.4,
+  "gp_core_ratio": 1.9091,
+  "matches": [
+   {
+    "actual_downside": -0.1852,
+    "actual_return": -0.1852,
+    "actual_upside": 0.0,
+    "days_in_region": 159,
+    "end_date": "2018-02-08",
+    "end_reason": "reversal",
+    "seq_len": 159,
+    "similarity": 0.5777,
+    "start_date": "2017-08-03",
+    "ticker": "ETSY",
+    "total_distance": 0.2743,
+    "trigger_date": "2017-12-05",
+    "trigger_type": "runup"
+   },
+   {
+    "actual_downside": -0.0528,
+    "actual_return": 0.3144,
+    "actual_upside": 0.6126,
+    "days_in_region": 167,
+    "end_date": "2017-05-03",
+    "end_reason": "reversal",
+    "seq_len": 167,
+    "similarity": 0.5745,
+    "start_date": "2016-06-21",
+    "ticker": "HSKA",
+    "total_distance": 0.2771,
+    "trigger_date": "2016-11-02",
+    "trigger_type": "runup"
+   },
+   {
+    "actual_downside": -0.0342,
+    "actual_return": -0.0102,
+    "actual_upside": 0.1842,
+    "days_in_region": 189,
+    "end_date": "2014-01-27",
+    "end_reason": "reversal",
+    "seq_len": 189,
+    "similarity": 0.5699,
+    "start_date": "2013-04-18",
+    "ticker": "RAMP",
+    "total_distance": 0.2811,
+    "trigger_date": "2013-09-26",
+    "trigger_type": "runup"
+   },
+   {
+    "actual_downside": -0.235,
+    "actual_return": -0.235,
+    "actual_upside": 0.0,
+    "days_in_region": 200,
+    "end_date": "2012-12-18",
+    "end_reason": "reversal",
+    "seq_len": 200,
+    "similarity": 0.5693,
+    "start_date": "2012-01-11",
+    "ticker": "HAIN",
+    "total_distance": 0.2817,
+    "trigger_date": "2012-07-03",
+    "trigger_type": "runup"
+   },
+   {
+    "actual_downside": -0.1679,
+    "actual_return": -0.1679,
+    "actual_upside": 0.0749,
+    "days_in_region": 186,
+    "end_date": "2011-08-19",
+    "end_reason": "reversal",
+    "seq_len": 186,
+    "similarity": 0.5634,
+    "start_date": "2011-01-06",
+    "ticker": "ENOV",
+    "total_distance": 0.2869,
+    "trigger_date": "2011-06-10",
+    "trigger_type": "runup"
+   },
+   {
+    "actual_downside": -0.0219,
+    "actual_return": 0.336,
+    "actual_upside": 0.336,
+    "days_in_region": 121,
+    "end_date": "1998-03-19",
+    "end_reason": "reversal",
+    "seq_len": 121,
+    "similarity": 0.5611,
+    "start_date": "1997-10-14",
+    "ticker": "AGN",
+    "total_distance": 0.2889,
+    "trigger_date": "1997-11-13",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": -0.2814,
+    "actual_return": -0.2814,
+    "actual_upside": 0.0038,
+    "days_in_region": 200,
+    "end_date": "1994-02-17",
+    "end_reason": "reversal",
+    "seq_len": 200,
+    "similarity": 0.5579,
+    "start_date": "1993-02-23",
+    "ticker": "BV",
+    "total_distance": 0.2917,
+    "trigger_date": "1993-06-17",
+    "trigger_type": "runup"
+   },
+   {
+    "actual_downside": -0.1687,
+    "actual_return": -0.1687,
+    "actual_upside": 0.0242,
+    "days_in_region": 200,
+    "end_date": "2015-06-09",
+    "end_reason": "reversal",
+    "seq_len": 200,
+    "similarity": 0.5562,
+    "start_date": "2014-07-29",
+    "ticker": "LABL",
+    "total_distance": 0.2933,
+    "trigger_date": "2015-01-15",
+    "trigger_type": "runup"
+   },
+   {
+    "actual_downside": -0.0026,
+    "actual_return": 0.2608,
+    "actual_upside": 0.2608,
+    "days_in_region": 124,
+    "end_date": "2018-07-26",
+    "end_reason": "reversal",
+    "seq_len": 124,
+    "similarity": 0.5562,
+    "start_date": "2017-11-30",
+    "ticker": "RICK",
+    "total_distance": 0.2933,
+    "trigger_date": "2018-02-06",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": -0.0172,
+    "actual_return": 0.0967,
+    "actual_upside": 0.0967,
+    "days_in_region": 121,
+    "end_date": "2005-06-22",
+    "end_reason": "reversal",
+    "seq_len": 121,
+    "similarity": 0.5542,
+    "start_date": "2005-02-17",
+    "ticker": "PTRY",
+    "total_distance": 0.2951,
+    "trigger_date": "2005-04-07",
+    "trigger_type": "drawdown"
+   }
+  ],
+  "panel": {
+   "edge": -0.0297,
+   "hit_hi": 0.54,
+   "hit_lo": 0.365,
+   "hit_rate": 0.451,
+   "median_final": -0.0309,
+   "median_pain": 0.0489,
+   "n": 51,
+   "n_eff": 51.0,
+   "p25_final": -0.1344,
+   "p_pain_gt5": 0.49,
+   "return_to_pain": -0.449
+  },
+  "stats": {
+   "avg_similarity": 0.532,
+   "avg_trough": 0.1171,
+   "avg_upside": 0.1438,
+   "median_pain": 0.0897,
+   "median_return": -0.0885,
+   "n_matches": 200,
+   "p25_return": -0.1759,
+   "p_pain_gt5": 0.65,
+   "return_to_pain": -0.807,
+   "top5_avg_trough": 0.135,
+   "top5_avg_upside": 0.1744,
+   "top_similarity": 0.578,
+   "win_rate": 0.335
+  },
+  "total_matches": 200
+ },
+ "ticker": "STGW",
+ "trending": {
+  "acceleration": 0.0117,
+  "avg_vol_20d": 2249374.591,
+  "base_high_120": 11.64,
+  "breakout_confirmed": 0,
+  "close": 11.27,
+  "momentum_score": 0.9631,
+  "momentum_start": "2026-03-10",
+  "range_20": 0.3558,
+  "range_50": 0.3736,
+  "rank": 676,
+  "rank_down": null,
+  "rank_up": 348,
+  "ret_120": 0.705,
+  "ret_20": 0.255,
+  "ret_60": 0.3243,
+  "rundown_score": 0.1585,
+  "score_date": "2026-11-13",
+  "slope_20": 0.0153,
+  "slope_60": 0.0036,
+  "stage": "sustained",
+  "stage_label": "Trending",
+  "ticker": "STGW",
+  "total_score": 0.4137,
+  "trend_ratio": 1.4395,
+  "vcp_detected": 0,
+  "vcp_score": 0.0475
+ }
+}
