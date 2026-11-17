@@ -1,0 +1,1151 @@
+{
+ "date": "2026-11-16",
+ "detected_regions": {
+  "primary": {
+   "days_in_region": 85,
+   "region_start": "2026-10-13",
+   "trigger_date": "2026-11-05",
+   "trigger_type": "severe_drawdown"
+  },
+  "secondary": [
+   {
+    "confidence_score": 0.1333,
+    "downside_q50": -0.0965,
+    "ev_score": 0.1272,
+    "region_start": "2026-02-23",
+    "seq_len": 200,
+    "trigger_date": "2026-08-14",
+    "trigger_type": "runup",
+    "upside_q25": 0.094,
+    "upside_q50": 0.2132,
+    "upside_q75": 0.3686
+   }
+  ]
+ },
+ "feature_attribution": {
+  "macro_driver_count": 12,
+  "risk_flags": [
+   "high_volatility"
+  ],
+  "top_drivers": [
+   {
+    "direction": "negative",
+    "feature": "dollar_volume",
+    "feature_value": 68716000.0,
+    "importance": 0.0005,
+    "importance_pct": 0.1982,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "positive",
+    "feature": "price_vs_sma200",
+    "feature_value": 1.0646,
+    "importance": 0.0004,
+    "importance_pct": 0.1613,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "negative",
+    "feature": "beta_252d",
+    "feature_value": -0.1011,
+    "importance": 0.0003,
+    "importance_pct": 0.1269,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "positive",
+    "feature": "volatility_20d",
+    "feature_value": 0.0514,
+    "importance": 0.0003,
+    "importance_pct": 0.1138,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "positive",
+    "feature": "rsi_overbought",
+    "feature_value": 0.0,
+    "importance": 0.0003,
+    "importance_pct": 0.1101,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "negative",
+    "feature": "stock_vs_spy_change_5d",
+    "feature_value": -0.007,
+    "importance": 0.0003,
+    "importance_pct": 0.103,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "positive",
+    "feature": "price_vs_low_52w",
+    "feature_value": 1.888,
+    "importance": 0.0003,
+    "importance_pct": 0.0978,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "positive",
+    "feature": "rally_from_low_20d",
+    "feature_value": 0.026,
+    "importance": 0.0002,
+    "importance_pct": 0.0888,
+    "method": "integrated_gradients"
+   }
+  ]
+ },
+ "fundamentals": {
+  "accrual": -0.0555,
+  "adx_14": 52.1736,
+  "altman_z_score": 2.4321,
+  "amihud_illiquidity": 0.0005,
+  "avg_volume": 1431361.6617,
+  "beta_252d": -0.1011,
+  "book_value_per_share": 10.796,
+  "correlation_spy_60d": 0.1163,
+  "current_liabilities": 1405.0,
+  "current_ratio": 1.7324,
+  "daily_earnings_yield": 0.0674,
+  "daily_fcf_yield": 0.1266,
+  "daily_pb": 3.6247,
+  "daily_pe": 14.8407,
+  "daily_ps": 0.4009,
+  "days_since_52w_high": 24.0,
+  "debt_ebitda": 2.4532,
+  "debt_to_equity": 1.6415,
+  "dividend_yield": 0.002,
+  "dollar_volume_20d_avg": 99217655.6263,
+  "earnings_quality": 1.1491,
+  "ebitda_growth_yoy": 0.1469,
+  "enterprise_value": 4435.7727,
+  "eps_basic": 5.67,
+  "eps_cagr_3y": -0.3046,
+  "eps_cagr_5y": 0.5554,
+  "eps_diluted": 5.67,
+  "eps_growth_accel": -0.5981,
+  "eps_growth_qoq": 190.0,
+  "eps_growth_yoy": 0.6098,
+  "eps_growth_yoy_q2": 1.2078,
+  "eps_growth_yoy_q3": 0.7868,
+  "eps_growth_yoy_q4": 3.5,
+  "eps_growth_yoy_q5": 1.3768,
+  "eps_growth_yoy_q6": -1.6103,
+  "eps_growth_yoy_q7": -1.3021,
+  "eps_growth_yoy_q8": -0.9922,
+  "eps_history_8q": [
+   0.28,
+   -1.22,
+   -1.14,
+   3.72,
+   -1.1,
+   -1.91,
+   -0.03,
+   5.67
+  ],
+  "eps_ttm": 2.636,
+  "ev_to_ebitda": 6.1099,
+  "ev_to_fcf": 7.4802,
+  "ev_to_sales": 1.352,
+  "fcf_growth_yoy": 1.632,
+  "fcf_margin": 0.1807,
+  "fcf_per_share": 5.9005,
+  "gross_margin": 0.0523,
+  "gross_margin_change_yoy": -0.1058,
+  "gross_margin_history": [
+   0.0163,
+   0.1074,
+   0.0774,
+   0.039,
+   0.0472,
+   0.0523
+  ],
+  "inc_roic": 1.1302,
+  "interest_coverage": 7.4845,
+  "is_pre_revenue": false,
+  "margin_vs_sector_median": null,
+  "market_cap_ratio": 3932.7727,
+  "net_income": 570.0,
+  "net_margin": 0.027,
+  "operating_income": 724.0,
+  "operating_margin": 0.035,
+  "operating_margin_change_yoy": -0.0446,
+  "pb_ratio": 3.6236,
+  "pe_percentile_1y": 0.6508,
+  "pe_ratio": 14.8407,
+  "peg_trailing": 0.3061,
+  "piotroski_f_score": 4.0,
+  "price_vs_high_52w": 0.6198,
+  "price_vs_sma200": 1.0646,
+  "ps_percentile_1y": 0.6786,
+  "ps_ratio": 0.4981,
+  "quarter_labels_8q": [
+   "Q4 '24",
+   "Q1 '25",
+   "Q2 '25",
+   "Q3 '25",
+   "Q4 '25",
+   "Q1 '26",
+   "Q2 '26",
+   "Q3 '26"
+  ],
+  "quarterly_eps_growth_yoy": 0.5242,
+  "quarterly_eps_growth_yoy_8q": [
+   -0.6923,
+   -2.5062,
+   -6.4286,
+   4.0,
+   -4.9286,
+   -0.5656,
+   0.9737,
+   0.5242
+  ],
+  "quarterly_revenue_growth_yoy": 0.6869,
+  "quarterly_revenue_growth_yoy_8q": [
+   -0.1158,
+   -0.1165,
+   -0.1043,
+   0.0605,
+   -0.0704,
+   0.2029,
+   0.5548,
+   0.6869
+  ],
+  "revenue_cagr_3y": 0.0029,
+  "revenue_cagr_5y": 0.0944,
+  "revenue_growth_accel": 0.1651,
+  "revenue_growth_qoq": 0.1983,
+  "revenue_growth_yoy": 0.3439,
+  "revenue_growth_yoy_q2": 0.1788,
+  "revenue_growth_yoy_q3": 0.0139,
+  "revenue_growth_yoy_q4": -0.0589,
+  "revenue_growth_yoy_q5": -0.072,
+  "revenue_growth_yoy_q6": -0.1596,
+  "revenue_growth_yoy_q7": -0.1622,
+  "revenue_growth_yoy_q8": -0.177,
+  "revenue_history_8q": [
+   1947.0,
+   1646.0,
+   1761.0,
+   1945.0,
+   1810.0,
+   1980.0,
+   2738.0,
+   3281.0
+  ],
+  "revenue_per_share": 32.6468,
+  "roa": 0.0598,
+  "roce": 0.1099,
+  "roe": 0.3292,
+  "roic": 0.0785,
+  "rsi_14": 25.2218,
+  "sector_momentum": 0.0115,
+  "share_dilution_1y": 0.0,
+  "stock_vs_sector_20d": -0.2796,
+  "stock_vs_spy_20d": -0.3111,
+  "total_assets": 4780.0,
+  "vol_regime": 1.3044,
+  "volatility_20d": 0.0514,
+  "volatility_60d": 0.0394,
+  "w52_high": 63.51,
+  "w52_low": 19.62
+ },
+ "market_characters": [
+  {
+   "id": "g4",
+   "name": "Volatile Uptrend"
+  },
+  {
+   "id": "g5",
+   "name": "Quality Compressed"
+  }
+ ],
+ "model_analogs": {
+  "matches": [
+   {
+    "actual_downside": 0.0,
+    "actual_return": 0.7848,
+    "actual_upside": 0.7848,
+    "days_in_region": 181,
+    "end_date": "2006-01-24",
+    "end_reason": "reversal",
+    "similarity": 0.976,
+    "start_date": "2005-07-27",
+    "ticker": "PTRY",
+    "trigger_date": "2005-10-18",
+    "trigger_type": "severe_drawdown"
+   },
+   {
+    "actual_downside": -0.1457,
+    "actual_return": 0.6777,
+    "actual_upside": 0.6777,
+    "days_in_region": 140,
+    "end_date": "2019-03-21",
+    "end_reason": "reversal",
+    "similarity": 0.9745,
+    "start_date": "2018-11-01",
+    "ticker": "BAND",
+    "trigger_date": "2018-11-20",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": 0.0,
+    "actual_return": 0.4837,
+    "actual_upside": 0.4837,
+    "days_in_region": 123,
+    "end_date": "2017-02-10",
+    "end_reason": "reversal",
+    "similarity": 0.9742,
+    "start_date": "2016-10-10",
+    "ticker": "MTOR",
+    "trigger_date": "2016-11-01",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": 0.0,
+    "actual_return": 0.7064,
+    "actual_upside": 0.7064,
+    "days_in_region": 126,
+    "end_date": "2006-02-01",
+    "end_reason": "reversal",
+    "similarity": 0.9735,
+    "start_date": "2005-09-28",
+    "ticker": "SID",
+    "trigger_date": "2005-10-07",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": -0.0055,
+    "actual_return": 0.9127,
+    "actual_upside": 0.9127,
+    "days_in_region": 148,
+    "end_date": "2013-02-15",
+    "end_reason": "reversal",
+    "similarity": 0.9732,
+    "start_date": "2012-09-20",
+    "ticker": "ZG",
+    "trigger_date": "2012-11-06",
+    "trigger_type": "severe_drawdown"
+   },
+   {
+    "actual_downside": 0.0,
+    "actual_return": 0.8029,
+    "actual_upside": 0.8029,
+    "days_in_region": 126,
+    "end_date": "2006-02-06",
+    "end_reason": "reversal",
+    "similarity": 0.9726,
+    "start_date": "2005-10-03",
+    "ticker": "SUNE",
+    "trigger_date": "2005-10-28",
+    "trigger_type": "severe_drawdown"
+   },
+   {
+    "actual_downside": -0.1314,
+    "actual_return": -0.0095,
+    "actual_upside": 0.0613,
+    "days_in_region": 81,
+    "end_date": "2005-06-17",
+    "end_reason": "reversal",
+    "similarity": 0.9724,
+    "start_date": "2005-03-28",
+    "ticker": "HUBG",
+    "trigger_date": "2005-04-25",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": 0.0,
+    "actual_return": 0.1992,
+    "actual_upside": 0.1992,
+    "days_in_region": 50,
+    "end_date": "2005-11-22",
+    "end_reason": "reversal",
+    "similarity": 0.9722,
+    "start_date": "2005-10-03",
+    "ticker": "GI",
+    "trigger_date": "2005-10-20",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": -0.0034,
+    "actual_return": 0.6897,
+    "actual_upside": 0.6897,
+    "days_in_region": 178,
+    "end_date": "2013-03-08",
+    "end_reason": "reversal",
+    "similarity": 0.9721,
+    "start_date": "2012-09-11",
+    "ticker": "FLWS",
+    "trigger_date": "2012-10-23",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": -0.0594,
+    "actual_return": 0.2078,
+    "actual_upside": 0.2078,
+    "days_in_region": 71,
+    "end_date": "2013-01-02",
+    "end_reason": "reversal",
+    "similarity": 0.9716,
+    "start_date": "2012-10-23",
+    "ticker": "RVBD",
+    "trigger_date": "2012-11-09",
+    "trigger_type": "severe_drawdown"
+   }
+  ],
+  "stats": {
+   "avg_max_drawdown": 0.0481,
+   "avg_similarity": 0.97,
+   "avg_trough": 0.0481,
+   "avg_upside": 0.4234,
+   "best_return": 0.9127,
+   "downside_range": [
+    -0.3178,
+    0.0
+   ],
+   "median_return": 0.4137,
+   "n_matches": 50,
+   "outcome_agreement": true,
+   "return_p25": 0.2163,
+   "return_p5": 0.0318,
+   "return_p75": 0.6512,
+   "return_p95": 0.8049,
+   "sim_weighted_win_rate": 0.94,
+   "top5_avg_trough": 0.0302,
+   "top5_avg_upside": 0.7131,
+   "top_similarity": 0.976,
+   "upside_range": [
+    0.0068,
+    0.9127
+   ],
+   "win_rate": 0.94,
+   "worst_return": -0.0654,
+   "years_span": 8
+  },
+  "total_matches": 50
+ },
+ "peer_group": {
+  "buckets": [
+   "Commodity Chemicals & Fertilizers",
+   "Energy Technology, Nuclear, LNG, Hydrogen & Emerging Energy Infrastructure",
+   "Refining, Fuel Marketing & Wholesale Energy Products"
+  ],
+  "groups": {
+   "Commodity Chemicals & Fertilizers": [
+    {
+     "market_cap_m": 2829.3416,
+     "price_vs_sma200": 1.0371,
+     "return_30d": 0.1257,
+     "return_7d": -0.022,
+     "revenue_driver": "specialty chemical distribution",
+     "signal_rank": 782,
+     "stock_vs_spy_20d": 0.1668,
+     "ticker": "HWKN"
+    },
+    {
+     "market_cap_m": 23178.1119,
+     "price_vs_sma200": 0.972,
+     "return_30d": 0.121,
+     "return_7d": -0.0006,
+     "revenue_driver": "polyethylene and polyurethane",
+     "signal_rank": 944,
+     "stock_vs_spy_20d": 0.0982,
+     "ticker": "DOW"
+    },
+    {
+     "market_cap_m": 5514.6718,
+     "price_vs_sma200": 0.946,
+     "return_30d": 0.0753,
+     "return_7d": 0.0234,
+     "revenue_driver": "acetyl chain chemicals",
+     "signal_rank": 1213,
+     "stock_vs_spy_20d": 0.0582,
+     "ticker": "CE"
+    },
+    {
+     "market_cap_m": 18493.9558,
+     "price_vs_sma200": 1.016,
+     "return_30d": 0.033,
+     "return_7d": 0.0108,
+     "revenue_driver": "nitrogen fertilizers",
+     "signal_rank": 1448,
+     "stock_vs_spy_20d": 0.047,
+     "ticker": "CF"
+    },
+    {
+     "market_cap_m": 110303.653,
+     "price_vs_sma200": 1.2688,
+     "return_30d": -0.0337,
+     "return_7d": 0.055,
+     "revenue_driver": "refining operations",
+     "signal_rank": 331,
+     "stock_vs_spy_20d": -0.0673,
+     "ticker": "PSX"
+    },
+    {
+     "market_cap_m": 1073.0755,
+     "price_vs_sma200": 0.8399,
+     "return_30d": -0.0419,
+     "return_7d": -0.044,
+     "revenue_driver": "road deicing salt",
+     "signal_rank": 644,
+     "stock_vs_spy_20d": 0.0302,
+     "ticker": "CMP"
+    },
+    {
+     "market_cap_m": 419.9966,
+     "price_vs_sma200": 0.867,
+     "return_30d": -0.0518,
+     "return_7d": 0.0089,
+     "revenue_driver": "potash fertilizers",
+     "signal_rank": 1030,
+     "stock_vs_spy_20d": 0.018,
+     "ticker": "IPI"
+    },
+    {
+     "market_cap_m": 6912.3686,
+     "price_vs_sma200": 0.8913,
+     "return_30d": -0.0835,
+     "return_7d": -0.0281,
+     "revenue_driver": "carbon black",
+     "signal_rank": 244,
+     "stock_vs_spy_20d": 0.0011,
+     "ticker": "CBT"
+    },
+    {
+     "market_cap_m": 4885.8066,
+     "price_vs_sma200": 1.0646,
+     "return_30d": -0.313,
+     "return_7d": -0.0181,
+     "revenue_driver": "petroleum refining",
+     "signal_rank": 1302,
+     "stock_vs_spy_20d": -0.3111,
+     "ticker": "CVI"
+    },
+    {
+     "market_cap_m": 3438.9286,
+     "price_vs_sma200": 0.8089,
+     "return_30d": -0.4296,
+     "return_7d": -0.2627,
+     "revenue_driver": "specialty chemicals",
+     "signal_rank": 1306,
+     "stock_vs_spy_20d": -0.3889,
+     "ticker": "CLMT"
+    }
+   ],
+   "Energy Technology, Nuclear, LNG, Hydrogen & Emerging Energy Infrastructure": [
+    {
+     "market_cap_m": 68889.9981,
+     "price_vs_sma200": 1.0718,
+     "return_30d": 0.1233,
+     "return_7d": 0.0142,
+     "revenue_driver": "industrial gas supply",
+     "signal_rank": 934,
+     "stock_vs_spy_20d": 0.0867,
+     "ticker": "APD"
+    },
+    {
+     "market_cap_m": 86220.1461,
+     "price_vs_sma200": 0.998,
+     "return_30d": 0.0381,
+     "return_7d": 0.1593,
+     "revenue_driver": "nuclear power generation",
+     "signal_rank": 666,
+     "stock_vs_spy_20d": 0.0913,
+     "ticker": "CEG"
+    },
+    {
+     "market_cap_m": 118490.2848,
+     "price_vs_sma200": 1.2503,
+     "return_30d": -0.1183,
+     "return_7d": 0.0527,
+     "revenue_driver": "petroleum refining",
+     "signal_rank": 493,
+     "stock_vs_spy_20d": -0.1111,
+     "ticker": "VLO"
+    },
+    {
+     "market_cap_m": 16782.8117,
+     "price_vs_sma200": 0.6501,
+     "return_30d": -0.1349,
+     "return_7d": 0.0185,
+     "revenue_driver": "naval nuclear reactors",
+     "signal_rank": 73,
+     "stock_vs_spy_20d": -0.1023,
+     "ticker": "BWXT"
+    },
+    {
+     "market_cap_m": 20594.8181,
+     "price_vs_sma200": 1.2183,
+     "return_30d": -0.1403,
+     "return_7d": 0.0131,
+     "revenue_driver": "petroleum refining",
+     "signal_rank": 267,
+     "stock_vs_spy_20d": -0.1682,
+     "ticker": "DINO"
+    },
+    {
+     "market_cap_m": 8751.0824,
+     "price_vs_sma200": 1.2312,
+     "return_30d": -0.1845,
+     "return_7d": 0.0038,
+     "revenue_driver": "petroleum refining",
+     "signal_rank": 926,
+     "stock_vs_spy_20d": -0.1198,
+     "ticker": "PBF"
+    },
+    {
+     "market_cap_m": 1460.116,
+     "price_vs_sma200": 0.6408,
+     "return_30d": -0.2466,
+     "return_7d": -0.0532,
+     "revenue_driver": "silicon anode battery cells",
+     "signal_rank": null,
+     "stock_vs_spy_20d": -0.0907,
+     "ticker": "AMPX"
+    },
+    {
+     "market_cap_m": 4885.8066,
+     "price_vs_sma200": 1.0646,
+     "return_30d": -0.313,
+     "return_7d": -0.0181,
+     "revenue_driver": "petroleum refining",
+     "signal_rank": 1302,
+     "stock_vs_spy_20d": -0.3111,
+     "ticker": "CVI"
+    },
+    {
+     "market_cap_m": 51505.0005,
+     "price_vs_sma200": 0.7926,
+     "return_30d": -0.3815,
+     "return_7d": 0.0583,
+     "revenue_driver": "solid oxide fuel cells",
+     "signal_rank": 1926,
+     "stock_vs_spy_20d": -0.1807,
+     "ticker": "BE"
+    },
+    {
+     "market_cap_m": 8051.975,
+     "price_vs_sma200": 0.4108,
+     "return_30d": -0.5775,
+     "return_7d": 0.1784,
+     "revenue_driver": "bitcoin mining operations",
+     "signal_rank": null,
+     "stock_vs_spy_20d": -0.515,
+     "ticker": "CIFR"
+    }
+   ],
+   "Refining, Fuel Marketing & Wholesale Energy Products": [
+    {
+     "market_cap_m": 867.7772,
+     "price_vs_sma200": 0.8488,
+     "return_30d": -0.029,
+     "return_7d": 0.0027,
+     "revenue_driver": "ethanol production",
+     "signal_rank": 1605,
+     "stock_vs_spy_20d": 0.0901,
+     "ticker": "ALTO"
+    },
+    {
+     "market_cap_m": 110303.653,
+     "price_vs_sma200": 1.2688,
+     "return_30d": -0.0337,
+     "return_7d": 0.055,
+     "revenue_driver": "refining operations",
+     "signal_rank": 331,
+     "stock_vs_spy_20d": -0.0673,
+     "ticker": "PSX"
+    },
+    {
+     "market_cap_m": 128459.2587,
+     "price_vs_sma200": 1.3277,
+     "return_30d": -0.0722,
+     "return_7d": 0.0659,
+     "revenue_driver": "petroleum refining",
+     "signal_rank": 435,
+     "stock_vs_spy_20d": -0.1153,
+     "ticker": "MPC"
+    },
+    {
+     "market_cap_m": 3840.3254,
+     "price_vs_sma200": 1.2307,
+     "return_30d": -0.1005,
+     "return_7d": 0.0853,
+     "revenue_driver": "petroleum refining",
+     "signal_rank": 1099,
+     "stock_vs_spy_20d": -0.061,
+     "ticker": "DK"
+    },
+    {
+     "market_cap_m": 118490.2848,
+     "price_vs_sma200": 1.2503,
+     "return_30d": -0.1183,
+     "return_7d": 0.0527,
+     "revenue_driver": "petroleum refining",
+     "signal_rank": 493,
+     "stock_vs_spy_20d": -0.1111,
+     "ticker": "VLO"
+    },
+    {
+     "market_cap_m": 20594.8181,
+     "price_vs_sma200": 1.2183,
+     "return_30d": -0.1403,
+     "return_7d": 0.0131,
+     "revenue_driver": "petroleum refining",
+     "signal_rank": 267,
+     "stock_vs_spy_20d": -0.1682,
+     "ticker": "DINO"
+    },
+    {
+     "market_cap_m": 3503.2711,
+     "price_vs_sma200": 1.0907,
+     "return_30d": -0.1768,
+     "return_7d": 0.0489,
+     "revenue_driver": "petroleum refining",
+     "signal_rank": 1010,
+     "stock_vs_spy_20d": -0.0965,
+     "ticker": "PARR"
+    },
+    {
+     "market_cap_m": 1872.9887,
+     "price_vs_sma200": 0.7921,
+     "return_30d": -0.1827,
+     "return_7d": -0.0087,
+     "revenue_driver": "grain merchandising",
+     "signal_rank": 961,
+     "stock_vs_spy_20d": -0.1132,
+     "ticker": "ANDE"
+    },
+    {
+     "market_cap_m": 8751.0824,
+     "price_vs_sma200": 1.2312,
+     "return_30d": -0.1845,
+     "return_7d": 0.0038,
+     "revenue_driver": "petroleum refining",
+     "signal_rank": 926,
+     "stock_vs_spy_20d": -0.1198,
+     "ticker": "PBF"
+    },
+    {
+     "market_cap_m": 4885.8066,
+     "price_vs_sma200": 1.0646,
+     "return_30d": -0.313,
+     "return_7d": -0.0181,
+     "revenue_driver": "petroleum refining",
+     "signal_rank": 1302,
+     "stock_vs_spy_20d": -0.3111,
+     "ticker": "CVI"
+    }
+   ]
+  }
+ },
+ "predictions": {
+  "badge_count": 1,
+  "confidence_score": 0.1066,
+  "conviction_label": "HIGH CONVICTION",
+  "data_quality_flags": [],
+  "ev_score": 0.2284,
+  "is_diamond": false,
+  "passes_tradability_filter": true,
+  "quality_label": "WEAK",
+  "quantiles": {
+   "downside_q10": -0.271,
+   "downside_q25": -0.1239,
+   "downside_q50": -0.0577,
+   "downside_q75": -0.0029,
+   "downside_q90": 0.018,
+   "path_volatility": 0.0446,
+   "risk_reward": 4.8572,
+   "uncertainty": 0.6311,
+   "upside_q10": 0.0491,
+   "upside_q25": 0.1344,
+   "upside_q50": 0.2801,
+   "upside_q75": 0.4517,
+   "upside_q90": 0.6802
+  },
+  "rank": 1302,
+  "rank_score": 0.0397,
+  "tradability_filter_reasons": []
+ },
+ "profile": {
+  "_local": {
+   "dividend_yield": 0.002,
+   "eps_growth_yoy": 0.6098,
+   "pe_ratio": 18.4791,
+   "revenue_growth_yoy": 0.3439,
+   "roe": 0.3292
+  },
+  "beta": 0.811,
+  "betaTTM": null,
+  "ceo": "Dane J. Neumann",
+  "companyName": "CVR Energy, Inc.",
+  "country": "US",
+  "debtToEquityTTM": null,
+  "description": "CVR Energy, Inc., a diversified company, operates through its subsidiaries primarily focusing on petroleum refining and the production of nitrogen fertilizers within the United States. Its business is organized into two distinct divisions: Petroleum and Nitrogen Fertilizer. The Petroleum segment is responsible for processing crude oil into marketable products such as gasoline, diesel fuel, and various other refined fuels, which it then distributes. This division manages and operates a sophisticated coking refinery in southeast Kansas, designed to handle medium-sour crude, alongside another crude oil processing facility located in Wynnewood, Oklahoma. Crucial logistical infrastructure also supports these operations. The primary clientele for this segment includes retail outlets, railway companies, agricultural cooperatives, and other refiners or marketers. The Nitrogen Fertilizer division encompasses a North American production facility that utilizes a pet coke gasification process to convert pet coke into nitrogen-based fertilizers. Furthermore, it operates a facility in East Dubuque, Illinois, which specializes in manufacturing nitrogen fertilizers in the form of both ammonia and urea ammonium nitrate (UAN). UAN products are predominantly supplied to the agricultural sector, while ammonia finds application in both farming and diverse industrial settings. Established in 1906, the firm's corporate headquarters are situated in Sugar Land, Texas. CVR Energy, Inc. ultimately functions as a subsidiary of Icahn Enterprises L.P.",
+  "dividendYielTTM": null,
+  "enterpriseValueOverEBITDATTM": null,
+  "exchangeShortName": "NYSE",
+  "fullTimeEmployees": "1532",
+  "industry": "Oil & Gas Refining & Marketing",
+  "ipoDate": "2007-10-23",
+  "latest_earnings_date": "2026-11-03",
+  "marketCapTTM": null,
+  "mktCap": 3932772720,
+  "peRatioTTM": null,
+  "price": 39.12,
+  "priceToSalesRatioTTM": null,
+  "returnOnEquityTTM": 0.3683,
+  "revenue_description": "CVR Energy operates refining and nitrogen-fertilizer businesses. Revenue is driven by farmer income tied to commodity prices, which drives equipment purchase decisions and agrochemical/seed purchasing volumes.",
+  "revenue_description_themes": [
+   "refining margin and crack spread cycles",
+   "nitrogen fertilizer pricing recovery",
+   "renewable fuel production growth"
+  ],
+  "revenue_taxonomy": [
+   {
+    "bucket": "Refining, Fuel Marketing & Wholesale Energy Products",
+    "matched_tags": [
+     "petroleum refining"
+    ],
+    "path": "Energy & Utilities › Energy Value Chain › Refining, Fuel Marketing & Wholesale Energy Products",
+    "sector": "Energy & Utilities",
+    "segment": "Energy Value Chain"
+   },
+   {
+    "bucket": "Commodity Chemicals & Fertilizers",
+    "matched_tags": [
+     "nitrogen fertilizer production"
+    ],
+    "path": "Materials & Chemicals › Chemicals & Advanced Materials › Commodity Chemicals & Fertilizers",
+    "sector": "Materials & Chemicals",
+    "segment": "Chemicals & Advanced Materials"
+   },
+   {
+    "bucket": "Energy Technology, Nuclear, LNG, Hydrogen & Emerging Energy Infrastructure",
+    "matched_tags": [
+     "renewable diesel"
+    ],
+    "path": "Energy & Utilities › Energy Value Chain › Energy Technology, Nuclear, LNG, Hydrogen & Emerging Energy Infrastructure",
+    "sector": "Energy & Utilities",
+    "segment": "Energy Value Chain"
+   }
+  ],
+  "revenue_themes": [
+   "petroleum refining",
+   "nitrogen fertilizer production",
+   "renewable diesel"
+  ],
+  "sector": "Energy",
+  "website": "https://www.cvrenergy.com"
+ },
+ "report": {
+  "display_rank": null,
+  "lane": "wait",
+  "lane_rank": 27,
+  "setup_label": "countertrend",
+  "why_now": "Structural analogs leads the readiness mix (+11.4); countertrend move"
+ },
+ "scorecard": {
+  "headline": {
+   "avg_universe_pct": 56,
+   "label": "mixed",
+   "metric_count": 8
+  },
+  "metrics": {
+   "debt_to_equity": {
+    "direction": "lower",
+    "label": "D/E Ratio",
+    "sector": "Energy",
+    "sector_n": 76,
+    "sector_pct": 17,
+    "universe_n": 1946,
+    "universe_pct": 14,
+    "value": 1.6415
+   },
+   "eps_growth_yoy": {
+    "direction": "higher",
+    "label": "EPS Growth",
+    "sector": "Energy",
+    "sector_n": 78,
+    "sector_pct": 67,
+    "universe_n": 1767,
+    "universe_pct": 75,
+    "value": 0.6098
+   },
+   "gross_margin": {
+    "direction": "higher",
+    "label": "Gross Margin",
+    "sector": "Energy",
+    "sector_n": 77,
+    "sector_pct": 1,
+    "universe_n": 1887,
+    "universe_pct": 3,
+    "value": 0.0523
+   },
+   "operating_margin": {
+    "direction": "higher",
+    "label": "Op. Margin",
+    "sector": "Energy",
+    "sector_n": 77,
+    "sector_pct": 6,
+    "universe_n": 1887,
+    "universe_pct": 26,
+    "value": 0.035
+   },
+   "pe_ratio": {
+    "direction": "lower",
+    "label": "P/E",
+    "sector": "Energy",
+    "sector_n": 63,
+    "sector_pct": 41,
+    "universe_n": 1423,
+    "universe_pct": 55,
+    "value": 18.4791
+   },
+   "revenue_growth_yoy": {
+    "direction": "higher",
+    "label": "Rev Growth",
+    "sector": "Energy",
+    "sector_n": 77,
+    "sector_pct": 88,
+    "universe_n": 1717,
+    "universe_pct": 88,
+    "value": 0.3439
+   },
+   "roe": {
+    "direction": "higher",
+    "label": "ROE",
+    "sector": "Energy",
+    "sector_n": 76,
+    "sector_pct": 87,
+    "universe_n": 1962,
+    "universe_pct": 87,
+    "value": 0.3292
+   },
+   "roic": {
+    "direction": "higher",
+    "label": "ROIC",
+    "sector": "Energy",
+    "sector_n": 77,
+    "sector_pct": 96,
+    "universe_n": 1930,
+    "universe_pct": 98,
+    "value": 0.1689
+   }
+  }
+ },
+ "signal_rank": 1302,
+ "structural_analogs": {
+  "gp_core_pct": 85.8,
+  "gp_core_ratio": 1.9299,
+  "matches": [
+   {
+    "actual_downside": -0.1652,
+    "actual_return": -0.0494,
+    "actual_upside": 0.0504,
+    "days_in_region": 86,
+    "end_date": "2021-10-19",
+    "end_reason": "reversal",
+    "seq_len": 86,
+    "similarity": 0.5235,
+    "start_date": "2021-02-10",
+    "ticker": "ORA",
+    "total_distance": 0.3236,
+    "trigger_date": "2021-02-23",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": 0.0,
+    "actual_return": 1.061,
+    "actual_upside": 1.061,
+    "days_in_region": 88,
+    "end_date": "2018-06-04",
+    "end_reason": "reversal",
+    "seq_len": 88,
+    "similarity": 0.5158,
+    "start_date": "2018-01-22",
+    "ticker": "CVRR",
+    "total_distance": 0.331,
+    "trigger_date": "2018-02-14",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": 0.0,
+    "actual_return": 0.2446,
+    "actual_upside": 0.2446,
+    "days_in_region": 80,
+    "end_date": "2007-09-19",
+    "end_reason": "reversal",
+    "seq_len": 80,
+    "similarity": 0.5082,
+    "start_date": "2007-07-19",
+    "ticker": "SWIR",
+    "total_distance": 0.3384,
+    "trigger_date": "2007-07-30",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": -0.2151,
+    "actual_return": -0.0307,
+    "actual_upside": 0.104,
+    "days_in_region": 82,
+    "end_date": "1997-11-05",
+    "end_reason": "reversal",
+    "seq_len": 82,
+    "similarity": 0.5074,
+    "start_date": "1997-09-02",
+    "ticker": "ETEC",
+    "total_distance": 0.3393,
+    "trigger_date": "1997-09-11",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": -0.1745,
+    "actual_return": 0.047,
+    "actual_upside": 0.1074,
+    "days_in_region": 88,
+    "end_date": "1997-04-09",
+    "end_reason": "reversal",
+    "seq_len": 88,
+    "similarity": 0.5045,
+    "start_date": "1997-01-23",
+    "ticker": "NTAP",
+    "total_distance": 0.3421,
+    "trigger_date": "1997-02-11",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": 0.0,
+    "actual_return": 0.4415,
+    "actual_upside": 0.4415,
+    "days_in_region": 81,
+    "end_date": "2018-01-26",
+    "end_reason": "reversal",
+    "seq_len": 81,
+    "similarity": 0.497,
+    "start_date": "2017-10-06",
+    "ticker": "MYGN",
+    "total_distance": 0.3496,
+    "trigger_date": "2017-11-03",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": 0.0,
+    "actual_return": 0.3305,
+    "actual_upside": 0.3305,
+    "days_in_region": 89,
+    "end_date": "2004-08-02",
+    "end_reason": "reversal",
+    "seq_len": 89,
+    "similarity": 0.4954,
+    "start_date": "2004-04-19",
+    "ticker": "VTS",
+    "total_distance": 0.3512,
+    "trigger_date": "2004-05-07",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": 0.0,
+    "actual_return": 0.3082,
+    "actual_upside": 0.3082,
+    "days_in_region": 93,
+    "end_date": "2013-05-20",
+    "end_reason": "reversal",
+    "seq_len": 93,
+    "similarity": 0.4939,
+    "start_date": "2013-03-04",
+    "ticker": "ANDV",
+    "total_distance": 0.3527,
+    "trigger_date": "2013-04-18",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": -0.0575,
+    "actual_return": 0.0958,
+    "actual_upside": 0.0958,
+    "days_in_region": 85,
+    "end_date": "1997-12-08",
+    "end_reason": "reversal",
+    "seq_len": 85,
+    "similarity": 0.4936,
+    "start_date": "1997-10-10",
+    "ticker": "FLC",
+    "total_distance": 0.353,
+    "trigger_date": "1997-11-13",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": -0.0625,
+    "actual_return": 0.3002,
+    "actual_upside": 0.3002,
+    "days_in_region": 82,
+    "end_date": "2006-08-16",
+    "end_reason": "reversal",
+    "seq_len": 82,
+    "similarity": 0.4914,
+    "start_date": "2006-05-08",
+    "ticker": "BID",
+    "total_distance": 0.3553,
+    "trigger_date": "2006-06-07",
+    "trigger_type": "severe_drawdown"
+   }
+  ],
+  "panel": {
+   "edge": 0.1399,
+   "hit_hi": 0.839,
+   "hit_lo": 0.676,
+   "hit_rate": 0.767,
+   "median_final": 0.1463,
+   "median_pain": 0.0609,
+   "n": 43,
+   "n_eff": 43.0,
+   "p25_final": 0.0075,
+   "p_pain_gt5": 0.535,
+   "return_to_pain": 1.809
+  },
+  "stats": {
+   "avg_similarity": 0.459,
+   "avg_trough": 0.112,
+   "avg_upside": 0.2278,
+   "median_pain": 0.0649,
+   "median_return": 0.1594,
+   "n_matches": 200,
+   "p25_return": 0.0329,
+   "p_pain_gt5": 0.57,
+   "return_to_pain": 1.878,
+   "top5_avg_trough": 0.111,
+   "top5_avg_upside": 0.3135,
+   "top_similarity": 0.524,
+   "win_rate": 0.81
+  },
+  "total_matches": 200
+ },
+ "ticker": "CVI",
+ "trending": {
+  "acceleration": -0.009,
+  "avg_vol_20d": 747408.8041,
+  "base_high_120": 63.12,
+  "breakout_confirmed": 0,
+  "close": 58.37,
+  "momentum_score": 0.9917,
+  "momentum_start": "2026-07-08",
+  "range_20": 0.1616,
+  "range_50": 0.4689,
+  "rank": 7,
+  "rank_down": null,
+  "rank_up": 4,
+  "ret_120": 0.6735,
+  "ret_20": 0.0646,
+  "ret_60": 0.8607,
+  "rundown_score": 0.8606,
+  "score_date": "2026-10-30",
+  "slope_20": -0.0002,
+  "slope_60": 0.0088,
+  "stage": "sustained",
+  "stage_label": "Trending",
+  "ticker": "CVI",
+  "total_score": 0.7657,
+  "trend_ratio": 1.4734,
+  "vcp_detected": 1,
+  "vcp_score": 0.6151
+ }
+}

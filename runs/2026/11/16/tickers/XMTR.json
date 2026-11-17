@@ -1,0 +1,1018 @@
+{
+ "date": "2026-11-16",
+ "detected_regions": {
+  "primary": {
+   "days_in_region": 87,
+   "region_start": "2026-10-09",
+   "trigger_date": "2026-10-19",
+   "trigger_type": "drawdown"
+  },
+  "secondary": [
+   {
+    "confidence_score": 0.4015,
+    "downside_q50": -0.064,
+    "ev_score": 0.1752,
+    "region_start": "2026-05-08",
+    "seq_len": 193,
+    "trigger_date": "2026-10-29",
+    "trigger_type": "runup",
+    "upside_q25": 0.1008,
+    "upside_q50": 0.2194,
+    "upside_q75": 0.3961
+   }
+  ]
+ },
+ "feature_attribution": {
+  "macro_driver_count": 13,
+  "risk_flags": [
+   "high_volatility"
+  ],
+  "top_drivers": [
+   {
+    "direction": "negative",
+    "feature": "dollar_volume",
+    "feature_value": 94359472.0,
+    "importance": 0.0006,
+    "importance_pct": 0.2406,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "positive",
+    "feature": "price_vs_low_52w",
+    "feature_value": 3.3831,
+    "importance": 0.0005,
+    "importance_pct": 0.1874,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "positive",
+    "feature": "volatility_20d",
+    "feature_value": 0.0498,
+    "importance": 0.0004,
+    "importance_pct": 0.1551,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "positive",
+    "feature": "price_vs_sma200",
+    "feature_value": 1.5481,
+    "importance": 0.0004,
+    "importance_pct": 0.1441,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "negative",
+    "feature": "return_1d",
+    "feature_value": 0.0211,
+    "importance": 0.0002,
+    "importance_pct": 0.0943,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "negative",
+    "feature": "stock_vs_industry_1d",
+    "feature_value": 0.0457,
+    "importance": 0.0002,
+    "importance_pct": 0.0935,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "negative",
+    "feature": "daily_pe",
+    "feature_value": -351.6112,
+    "importance": 0.0002,
+    "importance_pct": 0.0851,
+    "method": "integrated_gradients"
+   }
+  ]
+ },
+ "fundamentals": {
+  "accrual": -0.026,
+  "adx_14": 32.9127,
+  "altman_z_score": 9.2512,
+  "amihud_illiquidity": 0.0004,
+  "avg_volume": 813451.7023,
+  "beta_252d": 1.0441,
+  "book_value_per_share": 10.7053,
+  "correlation_spy_60d": 0.451,
+  "current_liabilities": 216.42,
+  "current_ratio": 3.1492,
+  "daily_earnings_yield": -0.0028,
+  "daily_fcf_yield": 0.0009,
+  "daily_pb": 9.9037,
+  "daily_pe": -351.6112,
+  "daily_ps": 6.9134,
+  "days_since_52w_high": 3.0,
+  "debt_ebitda": -96.4077,
+  "debt_to_equity": 0.5582,
+  "dividend_yield": 0.0,
+  "dollar_volume_20d_avg": 96917967.6909,
+  "earnings_quality": 4.0661,
+  "ebitda_growth_yoy": 0.8812,
+  "enterprise_value": 5916.3054,
+  "eps_basic": 0.03,
+  "eps_cagr_3y": -1.586,
+  "eps_cagr_5y": null,
+  "eps_diluted": 0.03,
+  "eps_growth_accel": 0.2158,
+  "eps_growth_qoq": 1.3,
+  "eps_growth_yoy": 0.728,
+  "eps_growth_yoy_q2": 0.5122,
+  "eps_growth_yoy_q3": -0.0303,
+  "eps_growth_yoy_q4": -0.1845,
+  "eps_growth_yoy_q5": -0.1905,
+  "eps_growth_yoy_q6": -0.1284,
+  "eps_growth_yoy_q7": 0.2721,
+  "eps_growth_yoy_q8": 0.2643,
+  "eps_history_8q": [
+   -0.2,
+   -0.3,
+   -0.52,
+   -0.23,
+   -0.17,
+   -0.1,
+   -0.1,
+   0.03
+  ],
+  "eps_ttm": -0.3473,
+  "ev_to_ebitda": -1664.6892,
+  "ev_to_fcf": -835.9906,
+  "ev_to_sales": 23.4366,
+  "fcf_growth_yoy": -3.271,
+  "fcf_margin": -0.028,
+  "fcf_per_share": -0.1234,
+  "gross_margin": 0.3862,
+  "gross_margin_change_yoy": -0.0087,
+  "gross_margin_history": [
+   0.3927,
+   0.3941,
+   0.3922,
+   0.3932,
+   0.3877,
+   0.3862
+  ],
+  "inc_roic": 0.3203,
+  "interest_coverage": -0.7266,
+  "is_pre_revenue": false,
+  "margin_vs_sector_median": null,
+  "market_cap_ratio": 6078.6544,
+  "net_income": 1.935,
+  "net_margin": -0.0197,
+  "operating_income": 0.057,
+  "operating_margin": -0.0221,
+  "operating_margin_change_yoy": 0.0616,
+  "pb_ratio": 11.4084,
+  "pe_percentile_1y": 0.996,
+  "pe_ratio": -327.3235,
+  "peg_trailing": -4.4962,
+  "piotroski_f_score": 4.0,
+  "price_vs_high_52w": 0.9972,
+  "price_vs_sma200": 1.5481,
+  "ps_percentile_1y": 0.0119,
+  "ps_ratio": 6.2998,
+  "quarter_labels_8q": [
+   "Q4 '24",
+   "Q1 '25",
+   "Q2 '25",
+   "Q3 '25",
+   "Q4 '25",
+   "Q1 '26",
+   "Q2 '26",
+   "Q3 '26"
+  ],
+  "quarterly_eps_growth_yoy": 1.1304,
+  "quarterly_eps_growth_yoy_8q": [
+   0.0909,
+   0.1176,
+   -0.8571,
+   -0.0952,
+   0.15,
+   0.6667,
+   0.8077,
+   1.1304
+  ],
+  "quarterly_revenue_growth_yoy": 0.3969,
+  "quarterly_revenue_growth_yoy_8q": [
+   0.1592,
+   0.2305,
+   0.2259,
+   0.2754,
+   0.2952,
+   0.3588,
+   0.4105,
+   0.3969
+  ],
+  "revenue_cagr_3y": 0.2659,
+  "revenue_cagr_5y": null,
+  "revenue_growth_accel": 0.0304,
+  "revenue_growth_qoq": 0.101,
+  "revenue_growth_yoy": 0.3679,
+  "revenue_growth_yoy_q2": 0.3375,
+  "revenue_growth_yoy_q3": 0.291,
+  "revenue_growth_yoy_q4": 0.2587,
+  "revenue_growth_yoy_q5": 0.224,
+  "revenue_growth_yoy_q6": 0.2019,
+  "revenue_growth_yoy_q7": 0.1935,
+  "revenue_growth_yoy_q8": 0.1772,
+  "revenue_history_8q": [
+   148.546,
+   150.971,
+   162.547,
+   180.716,
+   192.398,
+   205.138,
+   229.28,
+   252.439
+  ],
+  "revenue_per_share": 4.403,
+  "roa": -0.0161,
+  "roce": -0.0226,
+  "roe": -0.0286,
+  "roic": -0.0198,
+  "rsi_14": 69.8141,
+  "sector_momentum": 0.1126,
+  "share_dilution_1y": 0.0,
+  "stock_vs_sector_20d": 0.3213,
+  "stock_vs_spy_20d": 0.371,
+  "total_assets": 1087.616,
+  "vol_regime": 1.1327,
+  "volatility_20d": 0.0498,
+  "volatility_60d": 0.044,
+  "w52_high": 127.49,
+  "w52_low": 35.86
+ },
+ "market_characters": [
+  {
+   "id": "g3",
+   "name": "Explosive Gainers"
+  }
+ ],
+ "model_analogs": {
+  "matches": [
+   {
+    "actual_downside": -0.1378,
+    "actual_return": 0.1294,
+    "actual_upside": 0.1294,
+    "days_in_region": 89,
+    "end_date": "2017-02-06",
+    "end_reason": "reversal",
+    "similarity": 0.971,
+    "start_date": "2016-11-09",
+    "ticker": "HL",
+    "trigger_date": "2016-11-14",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": -0.3929,
+    "actual_return": -0.3929,
+    "actual_upside": 0.3155,
+    "days_in_region": 181,
+    "end_date": "2021-08-19",
+    "end_reason": "reversal",
+    "similarity": 0.9696,
+    "start_date": "2021-02-19",
+    "ticker": "NGD",
+    "trigger_date": "2021-03-11",
+    "trigger_type": "shallow_runup"
+   },
+   {
+    "actual_downside": -0.1097,
+    "actual_return": 0.0236,
+    "actual_upside": 0.1033,
+    "days_in_region": 95,
+    "end_date": "2021-06-25",
+    "end_reason": "reversal",
+    "similarity": 0.9695,
+    "start_date": "2021-03-22",
+    "ticker": "RDUS",
+    "trigger_date": "2021-03-29",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": -0.0035,
+    "actual_return": -0.0035,
+    "actual_upside": 0.1877,
+    "days_in_region": 70,
+    "end_date": "2006-02-14",
+    "end_reason": "reversal",
+    "similarity": 0.9688,
+    "start_date": "2005-12-06",
+    "ticker": "FTO",
+    "trigger_date": "2006-01-04",
+    "trigger_type": "compression"
+   },
+   {
+    "actual_downside": -0.0814,
+    "actual_return": 0.3379,
+    "actual_upside": 0.3379,
+    "days_in_region": 196,
+    "end_date": "2006-02-09",
+    "end_reason": "reversal",
+    "similarity": 0.9687,
+    "start_date": "2005-07-28",
+    "ticker": "PRFT",
+    "trigger_date": "2005-10-10",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": -0.1028,
+    "actual_return": 0.063,
+    "actual_upside": 0.063,
+    "days_in_region": 104,
+    "end_date": "2019-02-27",
+    "end_reason": "reversal",
+    "similarity": 0.9683,
+    "start_date": "2018-11-15",
+    "ticker": "VNET",
+    "trigger_date": "2018-11-26",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": -0.1767,
+    "actual_return": -0.1767,
+    "actual_upside": 0.0496,
+    "days_in_region": 184,
+    "end_date": "1994-05-25",
+    "end_reason": "reversal",
+    "similarity": 0.9678,
+    "start_date": "1993-11-22",
+    "ticker": "OHP",
+    "trigger_date": "1994-04-29",
+    "trigger_type": "runup"
+   },
+   {
+    "actual_downside": -0.1129,
+    "actual_return": 0.0446,
+    "actual_upside": 0.0971,
+    "days_in_region": 69,
+    "end_date": "1997-02-18",
+    "end_reason": "reversal",
+    "similarity": 0.9677,
+    "start_date": "1996-12-11",
+    "ticker": "WIND",
+    "trigger_date": "1996-12-23",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": -0.0617,
+    "actual_return": 0.3543,
+    "actual_upside": 0.7298,
+    "days_in_region": 264,
+    "end_date": "2006-06-13",
+    "end_reason": "reversal",
+    "similarity": 0.9677,
+    "start_date": "2005-09-22",
+    "ticker": "MCRI",
+    "trigger_date": "2005-10-04",
+    "trigger_type": "shallow_runup"
+   },
+   {
+    "actual_downside": -0.0274,
+    "actual_return": 0.3097,
+    "actual_upside": 0.3097,
+    "days_in_region": 56,
+    "end_date": "2021-11-22",
+    "end_reason": "reversal",
+    "similarity": 0.9671,
+    "start_date": "2021-09-27",
+    "ticker": "ATKR",
+    "trigger_date": "2021-10-04",
+    "trigger_type": "shallow_drawdown"
+   }
+  ],
+  "stats": {
+   "avg_max_drawdown": 0.0946,
+   "avg_similarity": 0.966,
+   "avg_trough": 0.0946,
+   "avg_upside": 0.2663,
+   "best_return": 0.8571,
+   "downside_range": [
+    -0.3929,
+    0.0
+   ],
+   "median_return": 0.162,
+   "n_matches": 50,
+   "outcome_agreement": true,
+   "return_p25": 0.0415,
+   "return_p5": -0.1851,
+   "return_p75": 0.311,
+   "return_p95": 0.5811,
+   "sim_weighted_win_rate": 0.82,
+   "top5_avg_trough": 0.1451,
+   "top5_avg_upside": 0.2148,
+   "top_similarity": 0.971,
+   "upside_range": [
+    0.0063,
+    1.5149
+   ],
+   "win_rate": 0.82,
+   "worst_return": -0.3929,
+   "years_span": 13
+  },
+  "total_matches": 50
+ },
+ "peer_group": {
+  "buckets": [
+   "Finance, HR & Administrative Software",
+   "Vertical Technology Platforms & Marketplaces"
+  ],
+  "groups": {
+   "Finance, HR & Administrative Software": [
+    {
+     "market_cap_m": 311.1537,
+     "price_vs_sma200": 1.7573,
+     "return_30d": 0.6925,
+     "return_7d": 0.6425,
+     "revenue_driver": "Online job marketplace",
+     "signal_rank": 1463,
+     "stock_vs_spy_20d": 0.4056,
+     "ticker": "ZIP"
+    },
+    {
+     "market_cap_m": 5249.2284,
+     "price_vs_sma200": 1.3433,
+     "return_30d": 0.2953,
+     "return_7d": 0.1324,
+     "revenue_driver": "SMB financial operations SaaS",
+     "signal_rank": 1537,
+     "stock_vs_spy_20d": 0.297,
+     "ticker": "BILL"
+    },
+    {
+     "market_cap_m": 115417.6111,
+     "price_vs_sma200": 1.2892,
+     "return_30d": 0.2043,
+     "return_7d": 0.0205,
+     "revenue_driver": "payroll processing SaaS",
+     "signal_rank": 1967,
+     "stock_vs_spy_20d": 0.1276,
+     "ticker": "ADP"
+    },
+    {
+     "market_cap_m": 5539.1259,
+     "price_vs_sma200": 1.5481,
+     "return_30d": 0.134,
+     "return_7d": 0.1204,
+     "revenue_driver": "industrial manufacturing marketplace",
+     "signal_rank": 1461,
+     "stock_vs_spy_20d": 0.371,
+     "ticker": "XMTR"
+    },
+    {
+     "market_cap_m": 1390.2027,
+     "price_vs_sma200": 1.3384,
+     "return_30d": 0.076,
+     "return_7d": -0.1641,
+     "revenue_driver": "healthcare staffing",
+     "signal_rank": 1426,
+     "stock_vs_spy_20d": 0.0144,
+     "ticker": "AMN"
+    },
+    {
+     "market_cap_m": 215762.2234,
+     "price_vs_sma200": 0.9844,
+     "return_30d": 0.0494,
+     "return_7d": -0.0182,
+     "revenue_driver": "credit card issuing",
+     "signal_rank": 674,
+     "stock_vs_spy_20d": 0.044,
+     "ticker": "AXP"
+    },
+    {
+     "market_cap_m": 1540.1184,
+     "price_vs_sma200": 0.8568,
+     "return_30d": 0.0103,
+     "return_7d": -0.1559,
+     "revenue_driver": "financial close automation software",
+     "signal_rank": null,
+     "stock_vs_spy_20d": -0.0519,
+     "ticker": "BL"
+    },
+    {
+     "market_cap_m": 778.7437,
+     "price_vs_sma200": 0.9591,
+     "return_30d": 0.001,
+     "return_7d": 0.0286,
+     "revenue_driver": "professional employer organization",
+     "signal_rank": 460,
+     "stock_vs_spy_20d": 0.0199,
+     "ticker": "BBSI"
+    },
+    {
+     "market_cap_m": 1332.5008,
+     "price_vs_sma200": 0.8357,
+     "return_30d": 0.0007,
+     "return_7d": 0.0607,
+     "revenue_driver": "digital banking SaaS",
+     "signal_rank": null,
+     "stock_vs_spy_20d": 0.0414,
+     "ticker": "ALKT"
+    },
+    {
+     "market_cap_m": 89.8739,
+     "price_vs_sma200": 0.53,
+     "return_30d": -0.4038,
+     "return_7d": -0.3261,
+     "revenue_driver": "recruitment marketplace subscriptions",
+     "signal_rank": null,
+     "stock_vs_spy_20d": -0.2018,
+     "ticker": "REKR"
+    }
+   ],
+   "Vertical Technology Platforms & Marketplaces": [
+    {
+     "market_cap_m": 14232.2689,
+     "price_vs_sma200": 1.309,
+     "return_30d": 0.2728,
+     "return_7d": 0.0059,
+     "revenue_driver": "grocery delivery marketplace",
+     "signal_rank": 875,
+     "stock_vs_spy_20d": 0.2004,
+     "ticker": "CART"
+    },
+    {
+     "market_cap_m": 9115.4991,
+     "price_vs_sma200": 1.2158,
+     "return_30d": 0.199,
+     "return_7d": -0.0713,
+     "revenue_driver": "marketplace transaction fees",
+     "signal_rank": 103,
+     "stock_vs_spy_20d": 0.0326,
+     "ticker": "ETSY"
+    },
+    {
+     "market_cap_m": 5539.1259,
+     "price_vs_sma200": 1.5481,
+     "return_30d": 0.134,
+     "return_7d": 0.1204,
+     "revenue_driver": "industrial manufacturing marketplace",
+     "signal_rank": 1461,
+     "stock_vs_spy_20d": 0.371,
+     "ticker": "XMTR"
+    },
+    {
+     "market_cap_m": 132371.8974,
+     "price_vs_sma200": 1.1456,
+     "return_30d": 0.1283,
+     "return_7d": -0.0199,
+     "revenue_driver": "online marketplace fees",
+     "signal_rank": 857,
+     "stock_vs_spy_20d": 0.0392,
+     "ticker": "EBAY"
+    },
+    {
+     "market_cap_m": 72733.965,
+     "price_vs_sma200": 0.9369,
+     "return_30d": -0.1147,
+     "return_7d": -0.0564,
+     "revenue_driver": "delivery marketplace fees",
+     "signal_rank": 1363,
+     "stock_vs_spy_20d": -0.0871,
+     "ticker": "DASH"
+    },
+    {
+     "market_cap_m": 468.95,
+     "price_vs_sma200": 0.7588,
+     "return_30d": -0.1721,
+     "return_7d": -0.3605,
+     "revenue_driver": "personal finance marketplace",
+     "signal_rank": 167,
+     "stock_vs_spy_20d": -0.2384,
+     "ticker": "NRDS"
+    },
+    {
+     "market_cap_m": 685.0736,
+     "price_vs_sma200": 0.4053,
+     "return_30d": -0.2627,
+     "return_7d": 0.1034,
+     "revenue_driver": "marketplace transaction commissions",
+     "signal_rank": 1868,
+     "stock_vs_spy_20d": -0.2202,
+     "ticker": "TDUP"
+    },
+    {
+     "market_cap_m": 662.2687,
+     "price_vs_sma200": 0.6709,
+     "return_30d": -0.4018,
+     "return_7d": -0.2433,
+     "revenue_driver": "local deals marketplace",
+     "signal_rank": 1551,
+     "stock_vs_spy_20d": -0.2642,
+     "ticker": "GRPN"
+    },
+    {
+     "market_cap_m": 89.8739,
+     "price_vs_sma200": 0.53,
+     "return_30d": -0.4038,
+     "return_7d": -0.3261,
+     "revenue_driver": "recruitment marketplace subscriptions",
+     "signal_rank": null,
+     "stock_vs_spy_20d": -0.2018,
+     "ticker": "REKR"
+    },
+    {
+     "market_cap_m": 267.9677,
+     "price_vs_sma200": 0.8828,
+     "return_30d": -1.0,
+     "return_7d": -1.0,
+     "revenue_driver": "home services marketplace",
+     "signal_rank": null,
+     "stock_vs_spy_20d": 0.0111,
+     "ticker": "ANGI"
+    }
+   ]
+  }
+ },
+ "predictions": {
+  "badge_count": 0,
+  "confidence_score": 0.1881,
+  "conviction_label": "SPECULATIVE",
+  "data_quality_flags": [],
+  "ev_score": 0.1405,
+  "is_diamond": false,
+  "passes_tradability_filter": true,
+  "quality_label": "HIGH",
+  "quantiles": {
+   "downside_q10": -0.2832,
+   "downside_q25": -0.1641,
+   "downside_q50": -0.093,
+   "downside_q75": -0.0279,
+   "downside_q90": -0.0007,
+   "path_volatility": 0.0385,
+   "risk_reward": 2.3421,
+   "uncertainty": 0.5649,
+   "upside_q10": 0.0317,
+   "upside_q25": 0.0944,
+   "upside_q50": 0.2179,
+   "upside_q75": 0.378,
+   "upside_q90": 0.5966
+  },
+  "rank": 1461,
+  "rank_score": 0.0319,
+  "tradability_filter_reasons": []
+ },
+ "profile": {
+  "_local": {
+   "dividend_yield": 0.0,
+   "eps_growth_yoy": 0.728,
+   "pe_ratio": -327.3235,
+   "revenue_growth_yoy": 0.3679,
+   "roe": -0.0286
+  },
+  "beta": 1.319,
+  "betaTTM": null,
+  "ceo": "Sanjeev Singh Sahni",
+  "companyName": "Xometry, Inc.",
+  "country": "US",
+  "debtToEquityTTM": null,
+  "description": "Xometry, Inc. manages a global digital marketplace designed to streamline the sourcing of custom manufactured components and assemblies. The company's extensive service portfolio encompasses both traditional and cutting-edge manufacturing processes. These include precision CNC machining, covering milling and turning operations; various sheet metal fabrication techniques such as laser, waterjet, and plasma cutting, in addition to sheet metal forming. Their advanced 3D printing capabilities span a wide array of additive manufacturing methods, including carbon digital light synthesis, fused deposition modeling, HP Multi Jet Fusion, PolyJet, selective laser sintering, stereolithography, and specialized metal 3D printing services like direct metal laser sintering and metal binder jetting. Furthermore, Xometry offers comprehensive injection molding solutions, including plastic, over, insert, and prototype molding, alongside tooling for both bridge production and high-volume manufacturing. Beyond these core services, the company provides urethane and die casting, vapor smoothing, finishing, rapid prototyping, high-volume production, and assembly services. Xometry also distributes products and components from recognized industry brands such as Allied Machine & Engineering, Brubaker, HTC, OSG, Kyocera, Mitsubishi Materials, SOWA, Viking Drill & Tool, Dauphin, and Sandvik. Its diverse clientele spans numerous industries, including aerospace and defense, automotive, consumer products, education, electronics and semiconductors, energy, industrial, medical and dental, robotics, and serves product designers, hardware startups, and supply chain/purchasing departments. Originally incorporated in 2013 as NextLine Manufacturing Corp., the company rebranded to Xometry, Inc. in June 2015 and maintains its headquarters in Derwood, Maryland.",
+  "dividendYielTTM": null,
+  "enterpriseValueOverEBITDATTM": null,
+  "exchangeShortName": "NASDAQ",
+  "fullTimeEmployees": "1174",
+  "industry": "Industrial - Distribution",
+  "ipoDate": "2021-06-30",
+  "latest_earnings_date": "2026-11-03",
+  "marketCapTTM": null,
+  "mktCap": 6859138216,
+  "peRatioTTM": null,
+  "price": 122.13,
+  "priceToSalesRatioTTM": null,
+  "returnOnEquityTTM": -0.0391,
+  "revenue_description": "Xometry operates an AI-powered online marketplace connecting manufacturers with a network of job shops for custom parts fabrication. Revenue is driven by marketplace transaction volume (GMV) and supplier services subscriptions.",
+  "revenue_description_themes": [
+   "manufacturing marketplace GMV growth and buyer adoption",
+   "AI-powered instant quoting and supplier matching efficiency",
+   "enterprise procurement digitization for custom parts"
+  ],
+  "revenue_taxonomy": [
+   {
+    "bucket": "Vertical Technology Platforms & Marketplaces",
+    "matched_tags": [
+     "industrial manufacturing marketplace",
+     "custom parts fabrication platform"
+    ],
+    "path": "Technology › Tech Enabled Services & Infrastructure › Vertical Technology Platforms & Marketplaces",
+    "sector": "Technology",
+    "segment": "Tech Enabled Services & Infrastructure"
+   },
+   {
+    "bucket": "Finance, HR & Administrative Software",
+    "matched_tags": [
+     "AI-powered procurement"
+    ],
+    "path": "Technology › Software & Platforms › Finance, HR & Administrative Software",
+    "sector": "Technology",
+    "segment": "Software & Platforms"
+   }
+  ],
+  "revenue_themes": [
+   "industrial manufacturing marketplace",
+   "custom parts fabrication platform",
+   "AI-powered procurement"
+  ],
+  "sector": "Industrials",
+  "website": "https://www.xometry.com"
+ },
+ "report": {
+  "display_rank": null,
+  "lane": "wait",
+  "lane_rank": 28,
+  "setup_label": "extended",
+  "why_now": "Structural analogs leads the readiness mix (+9.7); extended move"
+ },
+ "scorecard": {
+  "headline": {
+   "avg_universe_pct": 44,
+   "label": "mixed",
+   "metric_count": 7
+  },
+  "metrics": {
+   "debt_to_equity": {
+    "direction": "lower",
+    "label": "D/E Ratio",
+    "sector": "Industrials",
+    "sector_n": 331,
+    "sector_pct": 43,
+    "universe_n": 1946,
+    "universe_pct": 43,
+    "value": 0.5582
+   },
+   "eps_growth_yoy": {
+    "direction": "higher",
+    "label": "EPS Growth",
+    "sector": "Industrials",
+    "sector_n": 329,
+    "sector_pct": 81,
+    "universe_n": 1767,
+    "universe_pct": 77,
+    "value": 0.728
+   },
+   "gross_margin": {
+    "direction": "higher",
+    "label": "Gross Margin",
+    "sector": "Industrials",
+    "sector_n": 315,
+    "sector_pct": 55,
+    "universe_n": 1887,
+    "universe_pct": 37,
+    "value": 0.3862
+   },
+   "operating_margin": {
+    "direction": "higher",
+    "label": "Op. Margin",
+    "sector": "Industrials",
+    "sector_n": 315,
+    "sector_pct": 17,
+    "universe_n": 1887,
+    "universe_pct": 16,
+    "value": -0.0221
+   },
+   "revenue_growth_yoy": {
+    "direction": "higher",
+    "label": "Rev Growth",
+    "sector": "Industrials",
+    "sector_n": 312,
+    "sector_pct": 91,
+    "universe_n": 1717,
+    "universe_pct": 89,
+    "value": 0.3679
+   },
+   "roe": {
+    "direction": "higher",
+    "label": "ROE",
+    "sector": "Industrials",
+    "sector_n": 333,
+    "sector_pct": 26,
+    "universe_n": 1962,
+    "universe_pct": 24,
+    "value": -0.0286
+   },
+   "roic": {
+    "direction": "higher",
+    "label": "ROIC",
+    "sector": "Industrials",
+    "sector_n": 327,
+    "sector_pct": 25,
+    "universe_n": 1930,
+    "universe_pct": 25,
+    "value": 0.0022
+   }
+  }
+ },
+ "signal_rank": 1461,
+ "structural_analogs": {
+  "gp_core_pct": 91.9,
+  "gp_core_ratio": 2.177,
+  "matches": [
+   {
+    "actual_downside": -0.0204,
+    "actual_return": 0.2832,
+    "actual_upside": 0.2832,
+    "days_in_region": 89,
+    "end_date": "1999-12-06",
+    "end_reason": "reversal",
+    "seq_len": 89,
+    "similarity": 0.522,
+    "start_date": "1999-09-21",
+    "ticker": "VSH",
+    "total_distance": 0.325,
+    "trigger_date": "1999-10-15",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": -0.0626,
+    "actual_return": 0.1465,
+    "actual_upside": 0.1465,
+    "days_in_region": 85,
+    "end_date": "2022-04-18",
+    "end_reason": "reversal",
+    "seq_len": 85,
+    "similarity": 0.5182,
+    "start_date": "2022-02-03",
+    "ticker": "MGY",
+    "total_distance": 0.3287,
+    "trigger_date": "2022-02-23",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": 0.0,
+    "actual_return": 0.1581,
+    "actual_upside": 0.1581,
+    "days_in_region": 89,
+    "end_date": "2018-05-07",
+    "end_reason": "reversal",
+    "seq_len": 89,
+    "similarity": 0.5179,
+    "start_date": "2018-01-26",
+    "ticker": "WUBA",
+    "total_distance": 0.329,
+    "trigger_date": "2018-02-05",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": -0.0147,
+    "actual_return": 0.6852,
+    "actual_upside": 0.6852,
+    "days_in_region": 87,
+    "end_date": "2006-02-06",
+    "end_reason": "reversal",
+    "seq_len": 87,
+    "similarity": 0.5154,
+    "start_date": "2005-09-27",
+    "ticker": "HOLX",
+    "total_distance": 0.3314,
+    "trigger_date": "2005-10-13",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": -0.0776,
+    "actual_return": 0.0553,
+    "actual_upside": 0.0553,
+    "days_in_region": 96,
+    "end_date": "2021-09-27",
+    "end_reason": "reversal",
+    "seq_len": 96,
+    "similarity": 0.5089,
+    "start_date": "2021-07-01",
+    "ticker": "BKE",
+    "total_distance": 0.3378,
+    "trigger_date": "2021-07-19",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": 0.0,
+    "actual_return": 0.1371,
+    "actual_upside": 0.1371,
+    "days_in_region": 85,
+    "end_date": "2012-09-14",
+    "end_reason": "reversal",
+    "seq_len": 85,
+    "similarity": 0.5079,
+    "start_date": "2012-06-19",
+    "ticker": "UAA",
+    "total_distance": 0.3388,
+    "trigger_date": "2012-06-29",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": -0.0847,
+    "actual_return": 0.0791,
+    "actual_upside": 0.1299,
+    "days_in_region": 86,
+    "end_date": "1996-01-11",
+    "end_reason": "reversal",
+    "seq_len": 86,
+    "similarity": 0.5037,
+    "start_date": "1995-11-10",
+    "ticker": "IRF",
+    "total_distance": 0.3429,
+    "trigger_date": "1995-12-18",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": -0.025,
+    "actual_return": 0.3005,
+    "actual_upside": 0.3005,
+    "days_in_region": 64,
+    "end_date": "2020-12-22",
+    "end_reason": "reversal",
+    "seq_len": 64,
+    "similarity": 0.5028,
+    "start_date": "2020-11-06",
+    "ticker": "FIVN",
+    "total_distance": 0.3438,
+    "trigger_date": "2020-11-11",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": -0.0059,
+    "actual_return": 0.1746,
+    "actual_upside": 0.1746,
+    "days_in_region": 95,
+    "end_date": "2010-09-29",
+    "end_reason": "reversal",
+    "seq_len": 95,
+    "similarity": 0.5002,
+    "start_date": "2010-06-17",
+    "ticker": "MELI",
+    "total_distance": 0.3463,
+    "trigger_date": "2010-07-01",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": 0.0,
+    "actual_return": 0.2923,
+    "actual_upside": 0.2923,
+    "days_in_region": 87,
+    "end_date": "1999-12-31",
+    "end_reason": "reversal",
+    "seq_len": 87,
+    "similarity": 0.4994,
+    "start_date": "1999-10-11",
+    "ticker": "TIF",
+    "total_distance": 0.3472,
+    "trigger_date": "1999-10-19",
+    "trigger_type": "drawdown"
+   }
+  ],
+  "panel": {
+   "edge": 0.0794,
+   "hit_hi": 0.78,
+   "hit_lo": 0.619,
+   "hit_rate": 0.706,
+   "median_final": 0.1426,
+   "median_pain": 0.0632,
+   "n": 51,
+   "n_eff": 51.0,
+   "p25_final": -0.0275,
+   "p_pain_gt5": 0.608,
+   "return_to_pain": 1.714
+  },
+  "stats": {
+   "avg_similarity": 0.47,
+   "avg_trough": 0.1078,
+   "avg_upside": 0.213,
+   "median_pain": 0.0772,
+   "median_return": 0.102,
+   "n_matches": 200,
+   "p25_return": -0.0721,
+   "p_pain_gt5": 0.65,
+   "return_to_pain": 1.049,
+   "top5_avg_trough": 0.0351,
+   "top5_avg_upside": 0.2657,
+   "top_similarity": 0.522,
+   "win_rate": 0.665
+  },
+  "total_matches": 200
+ },
+ "ticker": "XMTR",
+ "trending": {
+  "acceleration": 0.0135,
+  "avg_vol_20d": 892007.2618,
+  "base_high_120": 122.47,
+  "breakout_confirmed": 0,
+  "close": 122.13,
+  "momentum_score": 0.9876,
+  "momentum_start": "2026-04-30",
+  "range_20": 0.341,
+  "range_50": 0.3643,
+  "rank": 584,
+  "rank_down": null,
+  "rank_up": 314,
+  "ret_120": 0.2916,
+  "ret_20": 0.3353,
+  "ret_60": 0.4611,
+  "rundown_score": 0.1365,
+  "score_date": "2026-11-16",
+  "slope_20": 0.0168,
+  "slope_60": 0.0033,
+  "stage": "sustained",
+  "stage_label": "Trending",
+  "ticker": "XMTR",
+  "total_score": 0.4333,
+  "trend_ratio": 1.4547,
+  "vcp_detected": 0,
+  "vcp_score": 0.0638
+ }
+}

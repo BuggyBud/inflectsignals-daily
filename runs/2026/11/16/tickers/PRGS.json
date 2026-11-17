@@ -1,0 +1,1115 @@
+{
+ "date": "2026-11-16",
+ "detected_regions": {
+  "primary": {
+   "days_in_region": 115,
+   "region_start": "2026-08-31",
+   "trigger_date": "2026-10-02",
+   "trigger_type": "drawdown"
+  },
+  "secondary": [
+   {
+    "confidence_score": 0.3643,
+    "downside_q50": -0.101,
+    "ev_score": 0.0711,
+    "region_start": "2026-04-02",
+    "seq_len": 200,
+    "trigger_date": "2026-09-24",
+    "trigger_type": "runup",
+    "upside_q25": 0.0662,
+    "upside_q50": 0.1599,
+    "upside_q75": 0.2949
+   }
+  ]
+ },
+ "feature_attribution": {
+  "macro_driver_count": 16,
+  "risk_flags": [
+   "high_volatility"
+  ],
+  "top_drivers": [
+   {
+    "direction": "negative",
+    "feature": "dollar_volume",
+    "feature_value": 11650499.0,
+    "importance": 0.0003,
+    "importance_pct": 0.2946,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "negative",
+    "feature": "price_vs_high_52w",
+    "feature_value": 0.9367,
+    "importance": 0.0002,
+    "importance_pct": 0.2817,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "positive",
+    "feature": "historical_recovery_rate",
+    "feature_value": 0.388,
+    "importance": 0.0002,
+    "importance_pct": 0.2418,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "negative",
+    "feature": "beta_252d",
+    "feature_value": -0.0478,
+    "importance": 0.0002,
+    "importance_pct": 0.1819,
+    "method": "integrated_gradients"
+   }
+  ]
+ },
+ "fundamentals": {
+  "accrual": 0.049,
+  "adx_14": 13.0075,
+  "altman_z_score": 1.0836,
+  "amihud_illiquidity": 0.0009,
+  "avg_volume": 530756.6819,
+  "beta_252d": -0.0478,
+  "book_value_per_share": 12.9071,
+  "correlation_spy_60d": 0.0712,
+  "current_liabilities": 414.628,
+  "current_ratio": 0.7959,
+  "daily_earnings_yield": 0.0495,
+  "daily_fcf_yield": -0.0125,
+  "daily_pb": 3.5227,
+  "daily_pe": 20.2033,
+  "daily_ps": 1.867,
+  "days_since_52w_high": 16.0,
+  "debt_ebitda": 10.2474,
+  "debt_to_equity": 2.387,
+  "dividend_yield": 0.0003,
+  "dollar_volume_20d_avg": 17693176.2117,
+  "earnings_quality": 3.8642,
+  "ebitda_growth_yoy": -0.6096,
+  "enterprise_value": 3018.3071,
+  "eps_basic": 0.55,
+  "eps_cagr_3y": 0.0636,
+  "eps_cagr_5y": 0.0354,
+  "eps_diluted": 0.55,
+  "eps_growth_accel": 0.3784,
+  "eps_growth_qoq": 0.1,
+  "eps_growth_yoy": 0.9381,
+  "eps_growth_yoy_q2": 0.5597,
+  "eps_growth_yoy_q3": 0.5191,
+  "eps_growth_yoy_q4": 0.0759,
+  "eps_growth_yoy_q5": -0.4053,
+  "eps_growth_yoy_q6": -0.2024,
+  "eps_growth_yoy_q7": -0.1761,
+  "eps_growth_yoy_q8": -0.0247,
+  "eps_history_8q": [
+   0.03,
+   0.24,
+   0.39,
+   0.44,
+   0.59,
+   0.53,
+   0.5,
+   0.55
+  ],
+  "eps_ttm": 2.1536,
+  "ev_to_ebitda": 24.4498,
+  "ev_to_fcf": 34.9681,
+  "ev_to_sales": 12.2693,
+  "fcf_growth_yoy": -0.8967,
+  "fcf_margin": 0.3509,
+  "fcf_per_share": 2.1021,
+  "gross_margin": 0.7966,
+  "gross_margin_change_yoy": -0.0316,
+  "gross_margin_history": [
+   0.8645,
+   0.8598,
+   0.8455,
+   0.8113,
+   0.8046,
+   0.7966
+  ],
+  "inc_roic": -0.0409,
+  "interest_coverage": 2.5879,
+  "is_pre_revenue": false,
+  "margin_vs_sector_median": null,
+  "market_cap_ratio": 1866.9271,
+  "net_income": 22.776,
+  "net_margin": 0.0924,
+  "operating_income": 46.55,
+  "operating_margin": 0.1813,
+  "operating_margin_change_yoy": 0.0041,
+  "pb_ratio": 3.371,
+  "pe_percentile_1y": 0.4881,
+  "pe_ratio": 20.2033,
+  "peg_trailing": 0.1894,
+  "piotroski_f_score": 4.0,
+  "price_vs_high_52w": 0.9367,
+  "price_vs_sma200": 1.1805,
+  "ps_percentile_1y": 0.2698,
+  "ps_ratio": 1.7151,
+  "quarter_labels_8q": [
+   "Q4 '24",
+   "Q1 '25",
+   "Q2 '25",
+   "Q3 '25",
+   "Q4 '25",
+   "Q1 '26",
+   "Q2 '26",
+   "Q3 '26"
+  ],
+  "quarterly_eps_growth_yoy": 0.25,
+  "quarterly_eps_growth_yoy_8q": [
+   -0.9118,
+   -0.5294,
+   0.0541,
+   -0.3231,
+   10.0,
+   1.2083,
+   0.2821,
+   0.25
+  ],
+  "quarterly_revenue_growth_yoy": -0.0152,
+  "quarterly_revenue_growth_yoy_8q": [
+   0.2147,
+   0.2888,
+   0.3557,
+   0.398,
+   0.1754,
+   0.0411,
+   0.0679,
+   -0.0152
+  ],
+  "revenue_cagr_3y": 0.1402,
+  "revenue_cagr_5y": 0.1425,
+  "revenue_growth_accel": -0.0914,
+  "revenue_growth_qoq": -0.0294,
+  "revenue_growth_yoy": 0.0636,
+  "revenue_growth_yoy_q2": 0.155,
+  "revenue_growth_yoy_q3": 0.2242,
+  "revenue_growth_yoy_q4": 0.2979,
+  "revenue_growth_yoy_q5": 0.3141,
+  "revenue_growth_yoy_q6": 0.221,
+  "revenue_growth_yoy_q7": 0.1285,
+  "revenue_growth_yoy_q8": 0.0849,
+  "revenue_history_8q": [
+   214.961,
+   238.015,
+   237.355,
+   249.795,
+   252.666,
+   247.799,
+   253.465,
+   246.005
+  ],
+  "revenue_per_share": 5.9912,
+  "roa": 0.0398,
+  "roce": 0.095,
+  "roe": 0.1784,
+  "roic": 0.0489,
+  "rsi_14": 45.1665,
+  "sector_momentum": 0.044,
+  "share_dilution_1y": 0.0,
+  "stock_vs_sector_20d": 0.0796,
+  "stock_vs_spy_20d": 0.0655,
+  "total_assets": 2302.593,
+  "vol_regime": 0.7199,
+  "volatility_20d": 0.019,
+  "volatility_60d": 0.0264,
+  "w52_high": 47.25,
+  "w52_low": 23.82
+ },
+ "market_characters": [
+  {
+   "id": "g5",
+   "name": "Quality Compressed"
+  }
+ ],
+ "model_analogs": {
+  "matches": [
+   {
+    "actual_downside": -0.0459,
+    "actual_return": 0.164,
+    "actual_upside": 0.3049,
+    "days_in_region": 317,
+    "end_date": "2006-06-16",
+    "end_reason": "reversal",
+    "similarity": 0.9622,
+    "start_date": "2005-08-03",
+    "ticker": "BREW",
+    "trigger_date": "2005-09-27",
+    "trigger_type": "shallow_runup"
+   },
+   {
+    "actual_downside": -0.1067,
+    "actual_return": -0.1067,
+    "actual_upside": 0.2431,
+    "days_in_region": 168,
+    "end_date": "2017-02-24",
+    "end_reason": "reversal",
+    "similarity": 0.9619,
+    "start_date": "2016-09-09",
+    "ticker": "RYAM",
+    "trigger_date": "2016-11-14",
+    "trigger_type": "runup"
+   },
+   {
+    "actual_downside": -0.0653,
+    "actual_return": 0.2883,
+    "actual_upside": 0.2883,
+    "days_in_region": 181,
+    "end_date": "2006-01-25",
+    "end_reason": "reversal",
+    "similarity": 0.9609,
+    "start_date": "2005-07-28",
+    "ticker": "DYN",
+    "trigger_date": "2005-08-05",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": -0.1036,
+    "actual_return": -0.1036,
+    "actual_upside": 0.0,
+    "days_in_region": 138,
+    "end_date": "2005-11-15",
+    "end_reason": "reversal",
+    "similarity": 0.9592,
+    "start_date": "2005-06-30",
+    "ticker": "USAP",
+    "trigger_date": "2005-07-21",
+    "trigger_type": "runup"
+   },
+   {
+    "actual_downside": -0.06,
+    "actual_return": 0.4733,
+    "actual_upside": 0.4733,
+    "days_in_region": 244,
+    "end_date": "1990-06-04",
+    "end_reason": "reversal",
+    "similarity": 0.959,
+    "start_date": "1989-10-03",
+    "ticker": "HOG",
+    "trigger_date": "1990-01-31",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": 0.0,
+    "actual_return": 0.0713,
+    "actual_upside": 0.2888,
+    "days_in_region": 187,
+    "end_date": "2006-03-14",
+    "end_reason": "reversal",
+    "similarity": 0.9585,
+    "start_date": "2005-09-08",
+    "ticker": "BBW",
+    "trigger_date": "2005-09-16",
+    "trigger_type": "runup"
+   },
+   {
+    "actual_downside": 0.0,
+    "actual_return": 0.0493,
+    "actual_upside": 0.764,
+    "days_in_region": 300,
+    "end_date": "2006-06-12",
+    "end_reason": "reversal",
+    "similarity": 0.9578,
+    "start_date": "2005-08-16",
+    "ticker": "FFIV",
+    "trigger_date": "2005-09-01",
+    "trigger_type": "runup"
+   },
+   {
+    "actual_downside": -0.042,
+    "actual_return": -0.0126,
+    "actual_upside": 0.1944,
+    "days_in_region": 193,
+    "end_date": "2005-12-20",
+    "end_reason": "reversal",
+    "similarity": 0.9573,
+    "start_date": "2005-06-10",
+    "ticker": "HUBG",
+    "trigger_date": "2005-07-22",
+    "trigger_type": "runup"
+   },
+   {
+    "actual_downside": -0.096,
+    "actual_return": 0.2225,
+    "actual_upside": 0.2225,
+    "days_in_region": 168,
+    "end_date": "2019-03-01",
+    "end_reason": "reversal",
+    "similarity": 0.9572,
+    "start_date": "2018-09-14",
+    "ticker": "PSDO",
+    "trigger_date": "2018-10-25",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": -0.0986,
+    "actual_return": -0.0986,
+    "actual_upside": 0.0123,
+    "days_in_region": 238,
+    "end_date": "2005-12-22",
+    "end_reason": "reversal",
+    "similarity": 0.9571,
+    "start_date": "2005-04-28",
+    "ticker": "CRESY",
+    "trigger_date": "2005-10-14",
+    "trigger_type": "shallow_runup"
+   }
+  ],
+  "stats": {
+   "avg_max_drawdown": 0.0928,
+   "avg_similarity": 0.955,
+   "avg_trough": 0.0928,
+   "avg_upside": 0.2793,
+   "best_return": 1.2374,
+   "downside_range": [
+    -0.4088,
+    0.0
+   ],
+   "median_return": 0.1477,
+   "n_matches": 50,
+   "outcome_agreement": true,
+   "return_p25": 0.0263,
+   "return_p5": -0.1494,
+   "return_p75": 0.3161,
+   "return_p95": 0.6916,
+   "sim_weighted_win_rate": 0.78,
+   "top5_avg_trough": 0.0763,
+   "top5_avg_upside": 0.2619,
+   "top_similarity": 0.962,
+   "upside_range": [
+    0.0,
+    1.2374
+   ],
+   "win_rate": 0.78,
+   "worst_return": -0.2955,
+   "years_span": 15
+  },
+  "total_matches": 50
+ },
+ "peer_group": {
+  "buckets": [
+   "CRM, CX & Contact Center Software",
+   "Cloud Infrastructure, Database & DevOps Software",
+   "Developer, Design & Engineering Software"
+  ],
+  "groups": {
+   "CRM, CX & Contact Center Software": [
+    {
+     "market_cap_m": 3099.7128,
+     "price_vs_sma200": 1.8035,
+     "return_30d": 0.7501,
+     "return_7d": 0.0166,
+     "revenue_driver": "customer engagement platform",
+     "signal_rank": 1852,
+     "stock_vs_spy_20d": 0.5859,
+     "ticker": "BRZE"
+    },
+    {
+     "market_cap_m": 1010.7802,
+     "price_vs_sma200": 1.1631,
+     "return_30d": 0.2983,
+     "return_7d": -0.0073,
+     "revenue_driver": "customer experience management SaaS",
+     "signal_rank": 1179,
+     "stock_vs_spy_20d": 0.1451,
+     "ticker": "CXM"
+    },
+    {
+     "market_cap_m": 1715.0328,
+     "price_vs_sma200": 1.1805,
+     "return_30d": 0.1692,
+     "return_7d": -0.0242,
+     "revenue_driver": "application development platform",
+     "signal_rank": 1061,
+     "stock_vs_spy_20d": 0.0655,
+     "ticker": "PRGS"
+    },
+    {
+     "market_cap_m": 7207.1281,
+     "price_vs_sma200": 1.5442,
+     "return_30d": 0.0903,
+     "return_7d": 0.2165,
+     "revenue_driver": "enterprise marketing technology platform",
+     "signal_rank": 1709,
+     "stock_vs_spy_20d": 0.1387,
+     "ticker": "ZETA"
+    },
+    {
+     "market_cap_m": 104160.238,
+     "price_vs_sma200": 0.9604,
+     "return_30d": 0.0302,
+     "return_7d": -0.0018,
+     "revenue_driver": "creative software SaaS",
+     "signal_rank": null,
+     "stock_vs_spy_20d": 0.0431,
+     "ticker": "ADBE"
+    },
+    {
+     "market_cap_m": 2292.7228,
+     "price_vs_sma200": 1.0831,
+     "return_30d": 0.008,
+     "return_7d": 0.0044,
+     "revenue_driver": "customer engagement software",
+     "signal_rank": null,
+     "stock_vs_spy_20d": -0.0344,
+     "ticker": "CSGS"
+    },
+    {
+     "market_cap_m": 236170.85,
+     "price_vs_sma200": 1.085,
+     "return_30d": -0.0651,
+     "return_7d": -0.0341,
+     "revenue_driver": "CRM SaaS",
+     "signal_rank": 1458,
+     "stock_vs_spy_20d": -0.0783,
+     "ticker": "CRM"
+    },
+    {
+     "market_cap_m": 2670.2942,
+     "price_vs_sma200": 1.0849,
+     "return_30d": -0.2165,
+     "return_7d": -0.2112,
+     "revenue_driver": "cloud contact center platform",
+     "signal_rank": 1464,
+     "stock_vs_spy_20d": -0.1566,
+     "ticker": "FIVN"
+    },
+    {
+     "market_cap_m": 18.5871,
+     "price_vs_sma200": 0.1977,
+     "return_30d": -0.3476,
+     "return_7d": -0.1119,
+     "revenue_driver": "enterprise AI platform",
+     "signal_rank": 1695,
+     "stock_vs_spy_20d": -0.2803,
+     "ticker": "BNAI"
+    },
+    {
+     "market_cap_m": 426.8172,
+     "price_vs_sma200": 0.7573,
+     "return_30d": -0.4885,
+     "return_7d": -0.0646,
+     "revenue_driver": "customer engagement software",
+     "signal_rank": 1780,
+     "stock_vs_spy_20d": -0.2001,
+     "ticker": "BLZE"
+    }
+   ],
+   "Cloud Infrastructure, Database & DevOps Software": [
+    {
+     "market_cap_m": 1715.0328,
+     "price_vs_sma200": 1.1805,
+     "return_30d": 0.1692,
+     "return_7d": -0.0242,
+     "revenue_driver": "application development platform",
+     "signal_rank": 1061,
+     "stock_vs_spy_20d": 0.0655,
+     "ticker": "PRGS"
+    },
+    {
+     "market_cap_m": 6585.056,
+     "price_vs_sma200": 1.148,
+     "return_30d": 0.1451,
+     "return_7d": 0.0051,
+     "revenue_driver": "modular SaaS platform",
+     "signal_rank": 1639,
+     "stock_vs_spy_20d": 0.0915,
+     "ticker": "TTAN"
+    },
+    {
+     "market_cap_m": 1775.9358,
+     "price_vs_sma200": 1.0122,
+     "return_30d": 0.0316,
+     "return_7d": 0.2867,
+     "revenue_driver": "application delivery controllers",
+     "signal_rank": null,
+     "stock_vs_spy_20d": -0.0256,
+     "ticker": "ATEN"
+    },
+    {
+     "market_cap_m": 1159.1435,
+     "price_vs_sma200": 1.5383,
+     "return_30d": 0.0276,
+     "return_7d": -0.0129,
+     "revenue_driver": "incident management platform",
+     "signal_rank": 1702,
+     "stock_vs_spy_20d": -0.0045,
+     "ticker": "PD"
+    },
+    {
+     "market_cap_m": 6218.004,
+     "price_vs_sma200": 1.164,
+     "return_30d": -0.0026,
+     "return_7d": -0.0414,
+     "revenue_driver": "content collaboration platform",
+     "signal_rank": 110,
+     "stock_vs_spy_20d": -0.0105,
+     "ticker": "DBX"
+    },
+    {
+     "market_cap_m": 14178.9806,
+     "price_vs_sma200": 0.9757,
+     "return_30d": -0.2739,
+     "return_7d": 0.0005,
+     "revenue_driver": "cloud observability platform",
+     "signal_rank": 889,
+     "stock_vs_spy_20d": -0.2539,
+     "ticker": "DT"
+    },
+    {
+     "market_cap_m": 26684.2224,
+     "price_vs_sma200": 0.8328,
+     "return_30d": -0.3355,
+     "return_7d": -0.0226,
+     "revenue_driver": "application delivery controllers",
+     "signal_rank": 800,
+     "stock_vs_spy_20d": -0.2885,
+     "ticker": "FFIV"
+    },
+    {
+     "market_cap_m": 61417.603,
+     "price_vs_sma200": 0.8575,
+     "return_30d": -0.3746,
+     "return_7d": -0.01,
+     "revenue_driver": "cloud observability platform",
+     "signal_rank": 1690,
+     "stock_vs_spy_20d": -0.3004,
+     "ticker": "DDOG"
+    },
+    {
+     "market_cap_m": 1060.4142,
+     "price_vs_sma200": 0.9508,
+     "return_30d": -0.4077,
+     "return_7d": -0.1204,
+     "revenue_driver": "enterprise SaaS platform",
+     "signal_rank": null,
+     "stock_vs_spy_20d": -0.01,
+     "ticker": "CGEM"
+    },
+    {
+     "market_cap_m": 237.3348,
+     "price_vs_sma200": 0.9666,
+     "return_30d": -0.432,
+     "return_7d": -0.19,
+     "revenue_driver": "edge computing platform",
+     "signal_rank": null,
+     "stock_vs_spy_20d": -0.0224,
+     "ticker": "LTRX"
+    }
+   ],
+   "Developer, Design & Engineering Software": [
+    {
+     "market_cap_m": 2308.9721,
+     "price_vs_sma200": 1.8401,
+     "return_30d": 0.4546,
+     "return_7d": 0.0287,
+     "revenue_driver": "low-code development SaaS",
+     "signal_rank": 1360,
+     "stock_vs_spy_20d": 0.3502,
+     "ticker": "APPN"
+    },
+    {
+     "market_cap_m": 472.9044,
+     "price_vs_sma200": 1.7081,
+     "return_30d": 0.3369,
+     "return_7d": -0.0649,
+     "revenue_driver": "connected crafting machines",
+     "signal_rank": 66,
+     "stock_vs_spy_20d": 0.3583,
+     "ticker": "CRCT"
+    },
+    {
+     "market_cap_m": 55259.92,
+     "price_vs_sma200": 1.1353,
+     "return_30d": 0.1985,
+     "return_7d": -0.0135,
+     "revenue_driver": "AEC design software",
+     "signal_rank": 1587,
+     "stock_vs_spy_20d": 0.1388,
+     "ticker": "ADSK"
+    },
+    {
+     "market_cap_m": 1715.0328,
+     "price_vs_sma200": 1.1805,
+     "return_30d": 0.1692,
+     "return_7d": -0.0242,
+     "revenue_driver": "application development platform",
+     "signal_rank": 1061,
+     "stock_vs_spy_20d": 0.0655,
+     "ticker": "PRGS"
+    },
+    {
+     "market_cap_m": 104160.238,
+     "price_vs_sma200": 0.9604,
+     "return_30d": 0.0302,
+     "return_7d": -0.0018,
+     "revenue_driver": "creative software SaaS",
+     "signal_rank": null,
+     "stock_vs_spy_20d": 0.0431,
+     "ticker": "ADBE"
+    },
+    {
+     "market_cap_m": 233.5752,
+     "price_vs_sma200": 1.0329,
+     "return_30d": -0.0454,
+     "return_7d": 0.0405,
+     "revenue_driver": "haptic licensing",
+     "signal_rank": 705,
+     "stock_vs_spy_20d": 0.0159,
+     "ticker": "IMMR"
+    },
+    {
+     "market_cap_m": 6751.0101,
+     "price_vs_sma200": 1.3608,
+     "return_30d": -0.081,
+     "return_7d": -0.0339,
+     "revenue_driver": "DevSecOps SaaS",
+     "signal_rank": 636,
+     "stock_vs_spy_20d": -0.0762,
+     "ticker": "GTLB"
+    },
+    {
+     "market_cap_m": 87694.9962,
+     "price_vs_sma200": 0.9429,
+     "return_30d": -0.1246,
+     "return_7d": -0.0064,
+     "revenue_driver": "chip design software",
+     "signal_rank": 1095,
+     "stock_vs_spy_20d": -0.0148,
+     "ticker": "CDNS"
+    },
+    {
+     "market_cap_m": 55252.9109,
+     "price_vs_sma200": 0.8903,
+     "return_30d": -0.2565,
+     "return_7d": 0.096,
+     "revenue_driver": "electronic test and measurement",
+     "signal_rank": 1397,
+     "stock_vs_spy_20d": -0.1139,
+     "ticker": "KEYS"
+    },
+    {
+     "market_cap_m": 81.6703,
+     "price_vs_sma200": 0.6387,
+     "return_30d": -0.5501,
+     "return_7d": -0.2885,
+     "revenue_driver": "action cameras",
+     "signal_rank": 1943,
+     "stock_vs_spy_20d": -0.376,
+     "ticker": "GPRO"
+    }
+   ]
+  }
+ },
+ "predictions": {
+  "badge_count": 0,
+  "confidence_score": 0.328,
+  "conviction_label": "SPECULATIVE",
+  "data_quality_flags": [],
+  "ev_score": 0.1431,
+  "is_diamond": false,
+  "passes_tradability_filter": true,
+  "quality_label": "HIGH",
+  "quantiles": {
+   "downside_q10": -0.2542,
+   "downside_q25": -0.14,
+   "downside_q50": -0.0722,
+   "downside_q75": -0.0169,
+   "downside_q90": 0.0026,
+   "path_volatility": 0.0327,
+   "risk_reward": 2.8673,
+   "uncertainty": 0.5042,
+   "upside_q10": 0.0325,
+   "upside_q25": 0.0932,
+   "upside_q50": 0.2071,
+   "upside_q75": 0.3509,
+   "upside_q90": 0.5367
+  },
+  "rank": 1061,
+  "rank_score": 0.0557,
+  "tradability_filter_reasons": []
+ },
+ "profile": {
+  "_local": {
+   "dividend_yield": 0.0003,
+   "eps_growth_yoy": 0.9381,
+   "pe_ratio": 18.4194,
+   "revenue_growth_yoy": 0.0636,
+   "roe": 0.1784
+  },
+  "beta": 0.859,
+  "betaTTM": null,
+  "ceo": "Yogesh K. Gupta",
+  "companyName": "Progress Software Corporation",
+  "country": "US",
+  "debtToEquityTTM": null,
+  "description": "Progress Software Corporation (PRGS) specializes in providing technology solutions that enable businesses to create, launch, and oversee their software applications. The company's extensive product suite includes: OpenEdge, a powerful development platform used to construct secure, multi-language applications that can be deployed across diverse platforms, devices, and cloud infrastructures. A comprehensive set of developer tools offering user interface (UI) components for building web, mobile, desktop, chat, and augmented/virtual reality (AR/VR) applications, alongside automated testing and reporting utilities. Sitefinity, which serves as a unified platform for managing web content and performing in-depth customer analytics. Corticon, a business rules management system designed to infuse applications with decision automation, efficient change processes, and valuable insights. DataDirect Connect, ensuring seamless data connectivity between applications running on various platforms through industry-standard interfaces. MOVEit, a solution facilitating secure collaboration and the automated transfer of vital business information. Chef, an infrastructure automation platform that aids in the building, deployment, management, and security of applications across multi-cloud, hybrid, and on-premises environments. WhatsUp Gold, a dedicated tool for network monitoring. Kemp LoadMaster, offering crucial load balancing solutions. Kemp Flowmon, providing network performance monitoring and diagnostic capabilities by gathering and analyzing network telemetry data from multiple sources. Beyond its software offerings, Progress also delivers a range of services such as project management, implementation support, custom development, programming, web application enablement, and specialized training. The company markets its products to a broad customer base, including direct end-users, independent software vendors (ISVs), original equipment manufacturers (OEMs), and system integrators. Progress Software operates globally, with a presence across the United States, Canada, Latin America, Europe, the Middle East, Africa, and the Asia Pacific region. Founded in 1981, its corporate headquarters are located in Burlington, Massachusetts.",
+  "dividendYielTTM": null,
+  "enterpriseValueOverEBITDATTM": null,
+  "exchangeShortName": "NASDAQ",
+  "fullTimeEmployees": "2801",
+  "industry": "Software - Infrastructure",
+  "ipoDate": "1991-07-30",
+  "latest_earnings_date": "2026-09-30",
+  "marketCapTTM": null,
+  "mktCap": 1778436442,
+  "peRatioTTM": null,
+  "price": 43.51,
+  "priceToSalesRatioTTM": null,
+  "returnOnEquityTTM": 0.1836,
+  "revenue_description": "Progress sells application development, automation, and data software. Revenue is driven by subscription ACV from enterprise license agreements and usage-based consumption, with module expansion and new product attach as growth levers.",
+  "revenue_description_themes": [
+   "net new ARR bookings and logo acquisition",
+   "platform module and feature upsell within installed base",
+   "AI product capability driving competitive differentiation"
+  ],
+  "revenue_taxonomy": [
+   {
+    "bucket": "Developer, Design & Engineering Software",
+    "matched_tags": [
+     "application development platform"
+    ],
+    "path": "Technology › Software & Platforms › Developer, Design & Engineering Software",
+    "sector": "Technology",
+    "segment": "Software & Platforms"
+   },
+   {
+    "bucket": "CRM, CX & Contact Center Software",
+    "matched_tags": [
+     "digital experience software"
+    ],
+    "path": "Technology › Software & Platforms › CRM, CX & Contact Center Software",
+    "sector": "Technology",
+    "segment": "Software & Platforms"
+   },
+   {
+    "bucket": "Cloud Infrastructure, Database & DevOps Software",
+    "matched_tags": [
+     "infrastructure automation software"
+    ],
+    "path": "Technology › Software & Platforms › Cloud Infrastructure, Database & DevOps Software",
+    "sector": "Technology",
+    "segment": "Software & Platforms"
+   }
+  ],
+  "revenue_themes": [
+   "application development platform",
+   "digital experience software",
+   "infrastructure automation software"
+  ],
+  "sector": "Technology",
+  "website": "https://www.progress.com"
+ },
+ "report": {
+  "display_rank": null,
+  "lane": "wait",
+  "lane_rank": 26,
+  "setup_label": "early_trend",
+  "why_now": "Model analogs leads the readiness mix (+8.0); early-stage trend"
+ },
+ "scorecard": {
+  "headline": {
+   "avg_universe_pct": 57,
+   "label": "mixed",
+   "metric_count": 8
+  },
+  "metrics": {
+   "debt_to_equity": {
+    "direction": "lower",
+    "label": "D/E Ratio",
+    "sector": "Info Tech",
+    "sector_n": 267,
+    "sector_pct": 7,
+    "universe_n": 1946,
+    "universe_pct": 8,
+    "value": 2.387
+   },
+   "eps_growth_yoy": {
+    "direction": "higher",
+    "label": "EPS Growth",
+    "sector": "Info Tech",
+    "sector_n": 263,
+    "sector_pct": 76,
+    "universe_n": 1767,
+    "universe_pct": 82,
+    "value": 0.9381
+   },
+   "gross_margin": {
+    "direction": "higher",
+    "label": "Gross Margin",
+    "sector": "Info Tech",
+    "sector_n": 264,
+    "sector_pct": 83,
+    "universe_n": 1887,
+    "universe_pct": 86,
+    "value": 0.7966
+   },
+   "operating_margin": {
+    "direction": "higher",
+    "label": "Op. Margin",
+    "sector": "Info Tech",
+    "sector_n": 264,
+    "sector_pct": 69,
+    "universe_n": 1887,
+    "universe_pct": 67,
+    "value": 0.1813
+   },
+   "pe_ratio": {
+    "direction": "lower",
+    "label": "P/E",
+    "sector": "Info Tech",
+    "sector_n": 180,
+    "sector_pct": 78,
+    "universe_n": 1423,
+    "universe_pct": 55,
+    "value": 18.4194
+   },
+   "revenue_growth_yoy": {
+    "direction": "higher",
+    "label": "Rev Growth",
+    "sector": "Info Tech",
+    "sector_n": 263,
+    "sector_pct": 27,
+    "universe_n": 1717,
+    "universe_pct": 43,
+    "value": 0.0636
+   },
+   "roe": {
+    "direction": "higher",
+    "label": "ROE",
+    "sector": "Info Tech",
+    "sector_n": 267,
+    "sector_pct": 61,
+    "universe_n": 1962,
+    "universe_pct": 71,
+    "value": 0.1784
+   },
+   "roic": {
+    "direction": "higher",
+    "label": "ROIC",
+    "sector": "Info Tech",
+    "sector_n": 264,
+    "sector_pct": 37,
+    "universe_n": 1930,
+    "universe_pct": 45,
+    "value": 0.0121
+   }
+  }
+ },
+ "signal_rank": 1061,
+ "structural_analogs": {
+  "gp_core_pct": 43.7,
+  "gp_core_ratio": 1.2422,
+  "matches": [
+   {
+    "actual_downside": -0.043,
+    "actual_return": 0.0976,
+    "actual_upside": 0.0976,
+    "days_in_region": 105,
+    "end_date": "2016-09-01",
+    "end_reason": "reversal",
+    "seq_len": 105,
+    "similarity": 0.5791,
+    "start_date": "2016-04-22",
+    "ticker": "GNRC",
+    "total_distance": 0.2732,
+    "trigger_date": "2016-05-06",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": -0.0671,
+    "actual_return": 0.3994,
+    "actual_upside": 0.3994,
+    "days_in_region": 120,
+    "end_date": "2018-05-17",
+    "end_reason": "reversal",
+    "seq_len": 120,
+    "similarity": 0.5532,
+    "start_date": "2018-01-04",
+    "ticker": "TTI",
+    "total_distance": 0.296,
+    "trigger_date": "2018-03-06",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": -0.0621,
+    "actual_return": 0.0603,
+    "actual_upside": 0.0603,
+    "days_in_region": 132,
+    "end_date": "2000-10-12",
+    "end_reason": "reversal",
+    "seq_len": 132,
+    "similarity": 0.5527,
+    "start_date": "2000-05-31",
+    "ticker": "UCL",
+    "total_distance": 0.2965,
+    "trigger_date": "2000-07-06",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": -0.2929,
+    "actual_return": -0.1846,
+    "actual_upside": 0.0,
+    "days_in_region": 123,
+    "end_date": "2020-01-17",
+    "end_reason": "reversal",
+    "seq_len": 123,
+    "similarity": 0.552,
+    "start_date": "2019-07-08",
+    "ticker": "TACO",
+    "total_distance": 0.2971,
+    "trigger_date": "2019-10-03",
+    "trigger_type": "severe_drawdown"
+   },
+   {
+    "actual_downside": -0.0657,
+    "actual_return": 0.2356,
+    "actual_upside": 0.2356,
+    "days_in_region": 127,
+    "end_date": "2018-10-19",
+    "end_reason": "reversal",
+    "seq_len": 127,
+    "similarity": 0.5512,
+    "start_date": "2018-05-11",
+    "ticker": "SSRM",
+    "total_distance": 0.2978,
+    "trigger_date": "2018-08-15",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": -0.108,
+    "actual_return": -0.108,
+    "actual_upside": 0.0166,
+    "days_in_region": 181,
+    "end_date": "1999-10-05",
+    "end_reason": "reversal",
+    "seq_len": 181,
+    "similarity": 0.5481,
+    "start_date": "1999-03-24",
+    "ticker": "RRX",
+    "total_distance": 0.3007,
+    "trigger_date": "1999-09-14",
+    "trigger_type": "runup"
+   },
+   {
+    "actual_downside": -0.1681,
+    "actual_return": -0.1681,
+    "actual_upside": 0.0191,
+    "days_in_region": 199,
+    "end_date": "2018-10-15",
+    "end_reason": "reversal",
+    "seq_len": 199,
+    "similarity": 0.5451,
+    "start_date": "2018-02-23",
+    "ticker": "ZIXI",
+    "total_distance": 0.3034,
+    "trigger_date": "2018-03-22",
+    "trigger_type": "runup"
+   },
+   {
+    "actual_downside": -0.1754,
+    "actual_return": -0.1754,
+    "actual_upside": 0.0219,
+    "days_in_region": 187,
+    "end_date": "1992-08-25",
+    "end_reason": "reversal",
+    "seq_len": 187,
+    "similarity": 0.5445,
+    "start_date": "1991-12-05",
+    "ticker": "MMED",
+    "total_distance": 0.3039,
+    "trigger_date": "1991-12-13",
+    "trigger_type": "shallow_runup"
+   },
+   {
+    "actual_downside": -0.1102,
+    "actual_return": -0.1102,
+    "actual_upside": 0.0,
+    "days_in_region": 200,
+    "end_date": "2017-01-19",
+    "end_reason": "reversal",
+    "seq_len": 200,
+    "similarity": 0.5443,
+    "start_date": "2016-05-12",
+    "ticker": "STX",
+    "total_distance": 0.3042,
+    "trigger_date": "2016-11-01",
+    "trigger_type": "runup"
+   },
+   {
+    "actual_downside": -0.0517,
+    "actual_return": 0.2026,
+    "actual_upside": 0.2026,
+    "days_in_region": 101,
+    "end_date": "2018-08-09",
+    "end_reason": "reversal",
+    "seq_len": 101,
+    "similarity": 0.5433,
+    "start_date": "2018-04-19",
+    "ticker": "WAIR",
+    "total_distance": 0.305,
+    "trigger_date": "2018-05-03",
+    "trigger_type": "shallow_drawdown"
+   }
+  ],
+  "panel": {
+   "edge": -0.0116,
+   "hit_hi": 0.723,
+   "hit_lo": 0.54,
+   "hit_rate": 0.636,
+   "median_final": 0.0884,
+   "median_pain": 0.0984,
+   "n": 44,
+   "n_eff": 44.0,
+   "p25_final": -0.1102,
+   "p_pain_gt5": 0.659,
+   "return_to_pain": 0.746
+  },
+  "stats": {
+   "avg_similarity": 0.505,
+   "avg_trough": 0.1163,
+   "avg_upside": 0.1556,
+   "median_pain": 0.0895,
+   "median_return": 0.0125,
+   "n_matches": 200,
+   "p25_return": -0.1455,
+   "p_pain_gt5": 0.645,
+   "return_to_pain": 0.114,
+   "top5_avg_trough": 0.1061,
+   "top5_avg_upside": 0.1586,
+   "top_similarity": 0.579,
+   "win_rate": 0.52
+  },
+  "total_matches": 200
+ },
+ "ticker": "PRGS",
+ "trending": {
+  "acceleration": -0.0025,
+  "avg_vol_20d": 411001.6409,
+  "base_high_120": 46.45,
+  "breakout_confirmed": 0,
+  "close": 43.51,
+  "momentum_score": 0.5412,
+  "momentum_start": "2026-10-15",
+  "range_20": 0.1103,
+  "range_50": 0.2526,
+  "rank": 505,
+  "rank_down": null,
+  "rank_up": 294,
+  "ret_120": 0.463,
+  "ret_20": 0.0298,
+  "ret_60": -0.0192,
+  "rundown_score": 0.5489,
+  "score_date": "2026-11-16",
+  "slope_20": -0.0019,
+  "slope_60": 0.0006,
+  "stage": "sustained",
+  "stage_label": "Trending",
+  "ticker": "PRGS",
+  "total_score": 0.451,
+  "trend_ratio": 1.0852,
+  "vcp_detected": 0,
+  "vcp_score": 0.3908
+ }
+}

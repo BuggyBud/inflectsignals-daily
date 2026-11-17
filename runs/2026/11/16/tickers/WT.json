@@ -1,0 +1,1008 @@
+{
+ "date": "2026-11-16",
+ "detected_regions": {
+  "primary": {
+   "days_in_region": 117,
+   "region_start": "2026-08-27",
+   "trigger_date": "2026-10-23",
+   "trigger_type": "drawdown"
+  },
+  "secondary": [
+   {
+    "confidence_score": 0.4251,
+    "downside_q50": -0.0738,
+    "ev_score": 0.126,
+    "region_start": "2026-06-10",
+    "seq_len": 171,
+    "trigger_date": "2026-11-12",
+    "trigger_type": "runup",
+    "upside_q25": 0.0911,
+    "upside_q50": 0.1946,
+    "upside_q75": 0.3232
+   }
+  ]
+ },
+ "feature_attribution": {
+  "macro_driver_count": 16,
+  "risk_flags": [
+   "high_volatility"
+  ],
+  "top_drivers": [
+   {
+    "direction": "negative",
+    "feature": "dollar_volume",
+    "feature_value": 66078052.0,
+    "importance": 0.0004,
+    "importance_pct": 0.3596,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "positive",
+    "feature": "price_vs_sma200",
+    "feature_value": 1.0783,
+    "importance": 0.0004,
+    "importance_pct": 0.3526,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "positive",
+    "feature": "price_vs_low_52w",
+    "feature_value": 1.9413,
+    "importance": 0.0002,
+    "importance_pct": 0.1524,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "positive",
+    "feature": "sector_rank_1d",
+    "feature_value": 0.4545,
+    "importance": 0.0001,
+    "importance_pct": 0.1355,
+    "method": "integrated_gradients"
+   }
+  ]
+ },
+ "fundamentals": {
+  "accrual": 0.0533,
+  "adx_14": 27.2099,
+  "altman_z_score": 2.3235,
+  "amihud_illiquidity": 0.0004,
+  "avg_volume": 2725734.5724,
+  "beta_252d": 0.7446,
+  "book_value_per_share": 3.0206,
+  "correlation_spy_60d": 0.64,
+  "current_liabilities": 120.572,
+  "current_ratio": 3.5421,
+  "daily_earnings_yield": 0.0377,
+  "daily_fcf_yield": 0.0075,
+  "daily_pb": 6.5757,
+  "daily_pe": 26.551,
+  "daily_ps": 4.418,
+  "days_since_52w_high": 56.0,
+  "debt_ebitda": 3.7807,
+  "debt_to_equity": 2.3804,
+  "dividend_yield": 0.0016,
+  "dollar_volume_20d_avg": 54312557.8799,
+  "earnings_quality": 1.2127,
+  "ebitda_growth_yoy": 0.8001,
+  "enterprise_value": 3651.3894,
+  "eps_basic": 0.33,
+  "eps_cagr_3y": 0.3726,
+  "eps_cagr_5y": 0.3989,
+  "eps_diluted": 0.32,
+  "eps_growth_accel": -0.2806,
+  "eps_growth_qoq": 0.1,
+  "eps_growth_yoy": 0.1194,
+  "eps_growth_yoy_q2": 0.4,
+  "eps_growth_yoy_q3": 0.1944,
+  "eps_growth_yoy_q4": 1.3333,
+  "eps_growth_yoy_q5": 1.2333,
+  "eps_growth_yoy_q6": -0.2,
+  "eps_growth_yoy_q7": -0.4783,
+  "eps_growth_yoy_q8": -0.4923,
+  "eps_history_8q": [
+   0.18,
+   0.17,
+   0.17,
+   0.13,
+   0.28,
+   -0.17,
+   0.28,
+   0.32
+  ],
+  "eps_ttm": 0.7845,
+  "ev_to_ebitda": 13.0105,
+  "ev_to_fcf": 61.992,
+  "ev_to_sales": 20.3562,
+  "fcf_growth_yoy": 0.226,
+  "fcf_margin": 0.3284,
+  "fcf_per_share": 0.3991,
+  "gross_margin": 0.7718,
+  "gross_margin_change_yoy": 0.4125,
+  "gross_margin_history": [
+   0.3286,
+   0.3413,
+   0.4673,
+   0.5865,
+   0.6843,
+   0.7718
+  ],
+  "inc_roic": 0.2173,
+  "interest_coverage": 5.5665,
+  "is_pre_revenue": false,
+  "margin_vs_sector_median": null,
+  "market_cap_ratio": 2931.0934,
+  "net_income": 49.216,
+  "net_margin": 0.1664,
+  "operating_income": 74.122,
+  "operating_margin": 0.4041,
+  "operating_margin_change_yoy": 0.0306,
+  "pb_ratio": 6.8961,
+  "pe_percentile_1y": 0.6508,
+  "pe_ratio": 26.551,
+  "peg_trailing": 3.16,
+  "piotroski_f_score": 4.0,
+  "price_vs_high_52w": 0.8319,
+  "price_vs_sma200": 1.0783,
+  "ps_percentile_1y": 0.6667,
+  "ps_ratio": 4.3926,
+  "quarter_labels_8q": [
+   "Q4 '24",
+   "Q1 '25",
+   "Q2 '25",
+   "Q3 '25",
+   "Q4 '25",
+   "Q1 '26",
+   "Q2 '26",
+   "Q3 '26"
+  ],
+  "quarterly_eps_growth_yoy": 1.4615,
+  "quarterly_eps_growth_yoy_8q": [
+   0.125,
+   0.3077,
+   0.3077,
+   2.0,
+   0.5556,
+   -2.0,
+   0.6471,
+   1.4615
+  ],
+  "quarterly_revenue_growth_yoy": 0.428,
+  "quarterly_revenue_growth_yoy_8q": [
+   0.2164,
+   0.1214,
+   0.0522,
+   0.1471,
+   0.3342,
+   0.4755,
+   0.5731,
+   0.428
+  ],
+  "revenue_cagr_3y": 0.2602,
+  "revenue_cagr_5y": 0.1794,
+  "revenue_growth_accel": 0.0689,
+  "revenue_growth_qoq": 0.0125,
+  "revenue_growth_yoy": 0.4523,
+  "revenue_growth_yoy_q2": 0.3834,
+  "revenue_growth_yoy_q3": 0.2528,
+  "revenue_growth_yoy_q4": 0.1661,
+  "revenue_growth_yoy_q5": 0.1314,
+  "revenue_growth_yoy_q6": 0.1456,
+  "revenue_growth_yoy_q7": 0.1975,
+  "revenue_growth_yoy_q8": 0.2131,
+  "revenue_history_8q": [
+   110.505,
+   108.082,
+   112.621,
+   125.616,
+   147.434,
+   159.47,
+   177.16,
+   179.375
+  ],
+  "revenue_per_share": 1.2155,
+  "roa": 0.0671,
+  "roce": 0.1769,
+  "roe": 0.2555,
+  "roic": 0.0723,
+  "rsi_14": 48.0932,
+  "sector_momentum": 0.0844,
+  "share_dilution_1y": 0.0,
+  "stock_vs_sector_20d": 0.0016,
+  "stock_vs_spy_20d": 0.0122,
+  "total_assets": 1647.086,
+  "vol_regime": 1.2053,
+  "volatility_20d": 0.0283,
+  "volatility_60d": 0.0235,
+  "w52_high": 25.91,
+  "w52_low": 10.69
+ },
+ "market_characters": [
+  {
+   "id": "g1",
+   "name": "Steady Climbers"
+  },
+  {
+   "id": "g3",
+   "name": "Explosive Gainers"
+  }
+ ],
+ "model_analogs": {
+  "matches": [
+   {
+    "actual_downside": 0.0,
+    "actual_return": 0.1845,
+    "actual_upside": 0.1845,
+    "days_in_region": 159,
+    "end_date": "2006-01-09",
+    "end_reason": "reversal",
+    "similarity": 0.9582,
+    "start_date": "2005-08-03",
+    "ticker": "CHE",
+    "trigger_date": "2005-08-26",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": -0.0118,
+    "actual_return": 0.3741,
+    "actual_upside": 0.3741,
+    "days_in_region": 137,
+    "end_date": "2006-01-31",
+    "end_reason": "reversal",
+    "similarity": 0.9575,
+    "start_date": "2005-09-16",
+    "ticker": "TKC",
+    "trigger_date": "2005-10-20",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": -0.0203,
+    "actual_return": 0.0883,
+    "actual_upside": 0.0883,
+    "days_in_region": 181,
+    "end_date": "2006-01-12",
+    "end_reason": "reversal",
+    "similarity": 0.9574,
+    "start_date": "2005-07-15",
+    "ticker": "WRLD",
+    "trigger_date": "2005-07-26",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": -0.051,
+    "actual_return": 0.0678,
+    "actual_upside": 0.0678,
+    "days_in_region": 147,
+    "end_date": "2005-06-06",
+    "end_reason": "reversal",
+    "similarity": 0.957,
+    "start_date": "2005-01-10",
+    "ticker": "AMWD",
+    "trigger_date": "2005-01-26",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": -0.1268,
+    "actual_return": 0.004,
+    "actual_upside": 0.0307,
+    "days_in_region": 165,
+    "end_date": "2006-02-28",
+    "end_reason": "reversal",
+    "similarity": 0.9564,
+    "start_date": "2005-09-16",
+    "ticker": "USNA",
+    "trigger_date": "2005-10-04",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": -0.0728,
+    "actual_return": 0.4576,
+    "actual_upside": 0.4576,
+    "days_in_region": 184,
+    "end_date": "2006-02-17",
+    "end_reason": "reversal",
+    "similarity": 0.9563,
+    "start_date": "2005-08-17",
+    "ticker": "HXL",
+    "trigger_date": "2005-10-07",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": -0.0448,
+    "actual_return": 0.1584,
+    "actual_upside": 0.1584,
+    "days_in_region": 160,
+    "end_date": "2006-01-11",
+    "end_reason": "reversal",
+    "similarity": 0.9556,
+    "start_date": "2005-08-04",
+    "ticker": "HW",
+    "trigger_date": "2005-08-19",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": -0.0626,
+    "actual_return": 0.2625,
+    "actual_upside": 0.2625,
+    "days_in_region": 196,
+    "end_date": "2006-02-08",
+    "end_reason": "reversal",
+    "similarity": 0.9556,
+    "start_date": "2005-07-27",
+    "ticker": "EQIX",
+    "trigger_date": "2005-10-10",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": -0.1347,
+    "actual_return": 0.1105,
+    "actual_upside": 0.1105,
+    "days_in_region": 247,
+    "end_date": "2006-04-05",
+    "end_reason": "reversal",
+    "similarity": 0.9553,
+    "start_date": "2005-08-01",
+    "ticker": "TDY",
+    "trigger_date": "2005-11-16",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": -0.0224,
+    "actual_return": 0.1323,
+    "actual_upside": 0.1323,
+    "days_in_region": 113,
+    "end_date": "2005-12-09",
+    "end_reason": "reversal",
+    "similarity": 0.9547,
+    "start_date": "2005-08-18",
+    "ticker": "EDMC",
+    "trigger_date": "2005-10-14",
+    "trigger_type": "drawdown"
+   }
+  ],
+  "stats": {
+   "avg_max_drawdown": 0.0546,
+   "avg_similarity": 0.953,
+   "avg_trough": 0.0546,
+   "avg_upside": 0.2369,
+   "best_return": 0.535,
+   "downside_range": [
+    -0.2894,
+    0.0
+   ],
+   "median_return": 0.1714,
+   "n_matches": 50,
+   "outcome_agreement": true,
+   "return_p25": 0.1058,
+   "return_p5": -0.072,
+   "return_p75": 0.2803,
+   "return_p95": 0.4793,
+   "sim_weighted_win_rate": 0.92,
+   "top5_avg_trough": 0.042,
+   "top5_avg_upside": 0.1491,
+   "top_similarity": 0.958,
+   "upside_range": [
+    0.0,
+    0.8213
+   ],
+   "win_rate": 0.92,
+   "worst_return": -0.1732,
+   "years_span": 6
+  },
+  "total_matches": 50
+ },
+ "peer_group": {
+  "buckets": [
+   "Asset & Wealth Management Fees",
+   "Digital Asset, Crypto & Blockchain Infrastructure"
+  ],
+  "groups": {
+   "Asset & Wealth Management Fees": [
+    {
+     "market_cap_m": 29053.831,
+     "price_vs_sma200": 1.0543,
+     "return_30d": 0.1115,
+     "return_7d": -0.0264,
+     "revenue_driver": "Credit asset management",
+     "signal_rank": 980,
+     "stock_vs_spy_20d": 0.1878,
+     "ticker": "ARES"
+    },
+    {
+     "market_cap_m": 2564.1122,
+     "price_vs_sma200": 0.9736,
+     "return_30d": 0.0762,
+     "return_7d": -0.0694,
+     "revenue_driver": "active equity strategies",
+     "signal_rank": 381,
+     "stock_vs_spy_20d": 0.1915,
+     "ticker": "APAM"
+    },
+    {
+     "market_cap_m": 18687.2298,
+     "price_vs_sma200": 1.1395,
+     "return_30d": 0.0648,
+     "return_7d": 0.0869,
+     "revenue_driver": "active asset management",
+     "signal_rank": 637,
+     "stock_vs_spy_20d": 0.1757,
+     "ticker": "BEN"
+    },
+    {
+     "market_cap_m": 94030.5392,
+     "price_vs_sma200": 1.1895,
+     "return_30d": 0.0575,
+     "return_7d": -0.0155,
+     "revenue_driver": "custody and asset servicing",
+     "signal_rank": null,
+     "stock_vs_spy_20d": 0.0498,
+     "ticker": "BK"
+    },
+    {
+     "market_cap_m": 1493.507,
+     "price_vs_sma200": 1.1256,
+     "return_30d": 0.052,
+     "return_7d": 0.0172,
+     "revenue_driver": "commercial lending",
+     "signal_rank": 175,
+     "stock_vs_spy_20d": 0.1081,
+     "ticker": "AMAL"
+    },
+    {
+     "market_cap_m": 68066.2052,
+     "price_vs_sma200": 0.9796,
+     "return_30d": 0.0401,
+     "return_7d": 0.0231,
+     "revenue_driver": "management fees",
+     "signal_rank": 600,
+     "stock_vs_spy_20d": 0.1171,
+     "ticker": "APO"
+    },
+    {
+     "market_cap_m": 45601.052,
+     "price_vs_sma200": 1.0424,
+     "return_30d": 0.0386,
+     "return_7d": 0.0093,
+     "revenue_driver": "wealth management",
+     "signal_rank": 752,
+     "stock_vs_spy_20d": 0.1057,
+     "ticker": "AMP"
+    },
+    {
+     "market_cap_m": 10777.6264,
+     "price_vs_sma200": 1.1539,
+     "return_30d": 0.0181,
+     "return_7d": 0.1057,
+     "revenue_driver": "AUM-linked fees",
+     "signal_rank": 681,
+     "stock_vs_spy_20d": 0.0422,
+     "ticker": "AMG"
+    },
+    {
+     "market_cap_m": 365197.825,
+     "price_vs_sma200": 0.9132,
+     "return_30d": -0.0726,
+     "return_7d": 0.0064,
+     "revenue_driver": "consumer banking and credit cards",
+     "signal_rank": 210,
+     "stock_vs_spy_20d": 0.0295,
+     "ticker": "BAC"
+    },
+    {
+     "market_cap_m": 2914.2076,
+     "price_vs_sma200": 1.0783,
+     "return_30d": -0.1481,
+     "return_7d": 0.0957,
+     "revenue_driver": "ETF product lineup",
+     "signal_rank": 643,
+     "stock_vs_spy_20d": 0.0122,
+     "ticker": "WT"
+    }
+   ],
+   "Digital Asset, Crypto & Blockchain Infrastructure": [
+    {
+     "market_cap_m": 2914.2076,
+     "price_vs_sma200": 1.0783,
+     "return_30d": -0.1481,
+     "return_7d": 0.0957,
+     "revenue_driver": "ETF product lineup",
+     "signal_rank": 643,
+     "stock_vs_spy_20d": 0.0122,
+     "ticker": "WT"
+    },
+    {
+     "market_cap_m": 134.8699,
+     "price_vs_sma200": 0.3415,
+     "return_30d": -0.3025,
+     "return_7d": -0.0017,
+     "revenue_driver": "digital asset payment infrastructure",
+     "signal_rank": null,
+     "stock_vs_spy_20d": -0.2634,
+     "ticker": "ALTS"
+    },
+    {
+     "market_cap_m": 36642.7838,
+     "price_vs_sma200": 0.69,
+     "return_30d": -0.3633,
+     "return_7d": -0.1241,
+     "revenue_driver": "cryptocurrency exchange",
+     "signal_rank": 656,
+     "stock_vs_spy_20d": -0.2529,
+     "ticker": "COIN"
+    },
+    {
+     "market_cap_m": 99.2987,
+     "price_vs_sma200": 0.5372,
+     "return_30d": -0.4381,
+     "return_7d": -0.0248,
+     "revenue_driver": "Ethereum staking",
+     "signal_rank": null,
+     "stock_vs_spy_20d": 0.0334,
+     "ticker": "BTCS"
+    },
+    {
+     "market_cap_m": 108.3799,
+     "price_vs_sma200": 0.4366,
+     "return_30d": -0.4394,
+     "return_7d": -0.0204,
+     "revenue_driver": "crypto swap fees",
+     "signal_rank": null,
+     "stock_vs_spy_20d": -0.1542,
+     "ticker": "EXOD"
+    },
+    {
+     "market_cap_m": 3258.6833,
+     "price_vs_sma200": 0.6599,
+     "return_30d": -0.4952,
+     "return_7d": 0.1092,
+     "revenue_driver": "Bitcoin mining operations",
+     "signal_rank": null,
+     "stock_vs_spy_20d": -0.3914,
+     "ticker": "CLSK"
+    },
+    {
+     "market_cap_m": 8051.975,
+     "price_vs_sma200": 0.4108,
+     "return_30d": -0.5775,
+     "return_7d": 0.1784,
+     "revenue_driver": "bitcoin mining operations",
+     "signal_rank": null,
+     "stock_vs_spy_20d": -0.515,
+     "ticker": "CIFR"
+    },
+    {
+     "market_cap_m": 111.7767,
+     "price_vs_sma200": 0.3715,
+     "return_30d": -0.5971,
+     "return_7d": -0.2686,
+     "revenue_driver": "digital asset platform services",
+     "signal_rank": 1830,
+     "stock_vs_spy_20d": -0.4098,
+     "ticker": "BKKT"
+    },
+    {
+     "market_cap_m": 17.8068,
+     "price_vs_sma200": 0.092,
+     "return_30d": null,
+     "return_7d": -0.5,
+     "revenue_driver": "bitcoin ATM kiosks",
+     "signal_rank": null,
+     "stock_vs_spy_20d": -0.8779,
+     "ticker": "BTM"
+    },
+    {
+     "market_cap_m": 6432.2154,
+     "price_vs_sma200": 0.6742,
+     "return_30d": null,
+     "return_7d": 0.4314,
+     "revenue_driver": "Bitcoin self-mining",
+     "signal_rank": null,
+     "stock_vs_spy_20d": -0.1735,
+     "ticker": "CORZ"
+    }
+   ]
+  }
+ },
+ "predictions": {
+  "badge_count": 0,
+  "confidence_score": 0.4528,
+  "conviction_label": "SPECULATIVE",
+  "data_quality_flags": [],
+  "ev_score": 0.1424,
+  "is_diamond": false,
+  "passes_tradability_filter": true,
+  "quality_label": "HIGH",
+  "quantiles": {
+   "downside_q10": -0.232,
+   "downside_q25": -0.1253,
+   "downside_q50": -0.0667,
+   "downside_q75": -0.0146,
+   "downside_q90": 0.0049,
+   "path_volatility": 0.03,
+   "risk_reward": 3.0807,
+   "uncertainty": 0.4552,
+   "upside_q10": 0.0351,
+   "upside_q25": 0.0975,
+   "upside_q50": 0.2055,
+   "upside_q75": 0.3275,
+   "upside_q90": 0.4903
+  },
+  "rank": 643,
+  "rank_score": 0.0867,
+  "tradability_filter_reasons": []
+ },
+ "profile": {
+  "_local": {
+   "dividend_yield": 0.0016,
+   "eps_growth_yoy": 0.1194,
+   "pe_ratio": 29.169,
+   "revenue_growth_yoy": 0.4523,
+   "roe": 0.2555
+  },
+  "beta": 1.176,
+  "betaTTM": null,
+  "ceo": "Jonathan Laurence Steinberg",
+  "companyName": "WisdomTree, Inc.",
+  "country": "US",
+  "debtToEquityTTM": null,
+  "description": "WisdomTree, Inc., an investment firm operating through its subsidiaries, primarily functions as a sponsor and manager of exchange-traded funds (ETFs). These ETFs span a diverse range of asset classes, including equities, currencies, fixed income, and alternative investments. Beyond fund management, the company extends its reach by licensing its unique, fundamentally weighted indexes to external entities for use in their own bespoke financial products. It also facilitates the integration of WisdomTree ETFs into 401(k) retirement plans through a dedicated platform. Additionally, WisdomTree provides specialized investment advisory services. Established in 1985, the company maintains its headquarters in New York, New York.",
+  "dividendYielTTM": null,
+  "enterpriseValueOverEBITDATTM": null,
+  "exchangeShortName": "NYSE",
+  "fullTimeEmployees": "438",
+  "industry": "Asset Management",
+  "ipoDate": "1993-03-04",
+  "latest_earnings_date": "2026-10-30",
+  "marketCapTTM": null,
+  "mktCap": 3142913720,
+  "peRatioTTM": null,
+  "price": 20.83,
+  "priceToSalesRatioTTM": null,
+  "returnOnEquityTTM": 0.2519,
+  "revenue_description": "WisdomTree is an asset manager focused on ETFs and digital-asset-related products. Revenue is driven by unit volume growth and pricing realization in its core end markets, with new product introductions and geographic expansion as incremental catalysts.",
+  "revenue_description_themes": [
+   "ETF asset inflows",
+   "new ETF product launches",
+   "expense ratio management"
+  ],
+  "revenue_taxonomy": [
+   {
+    "bucket": "Asset & Wealth Management Fees",
+    "matched_tags": [
+     "ETF product lineup",
+     "thematic and factor ETFs"
+    ],
+    "path": "Financials › Capital Markets Insurance & Investments › Asset & Wealth Management Fees",
+    "sector": "Financials",
+    "segment": "Capital Markets Insurance & Investments"
+   },
+   {
+    "bucket": "Digital Asset, Crypto & Blockchain Infrastructure",
+    "matched_tags": [
+     "digital asset ETFs"
+    ],
+    "path": "Technology › Tech Enabled Services & Infrastructure › Digital Asset, Crypto & Blockchain Infrastructure",
+    "sector": "Technology",
+    "segment": "Tech Enabled Services & Infrastructure"
+   }
+  ],
+  "revenue_themes": [
+   "ETF product lineup",
+   "thematic and factor ETFs",
+   "digital asset ETFs"
+  ],
+  "sector": "Financial Services",
+  "website": "https://www.wisdomtree.com"
+ },
+ "report": {
+  "display_rank": 4,
+  "lane": "wait",
+  "lane_rank": 4,
+  "setup_label": "countertrend",
+  "why_now": "Structural analogs leads the readiness mix (+10.0); countertrend move"
+ },
+ "scorecard": {
+  "headline": {
+   "avg_universe_pct": 64,
+   "label": "above_average",
+   "metric_count": 8
+  },
+  "metrics": {
+   "debt_to_equity": {
+    "direction": "lower",
+    "label": "D/E Ratio",
+    "sector": "Financials",
+    "sector_n": 303,
+    "sector_pct": 6,
+    "universe_n": 1946,
+    "universe_pct": 8,
+    "value": 2.3804
+   },
+   "eps_growth_yoy": {
+    "direction": "higher",
+    "label": "EPS Growth",
+    "sector": "Financials",
+    "sector_n": 144,
+    "sector_pct": 48,
+    "universe_n": 1767,
+    "universe_pct": 46,
+    "value": 0.1194
+   },
+   "gross_margin": {
+    "direction": "higher",
+    "label": "Gross Margin",
+    "sector": "Financials",
+    "sector_n": 303,
+    "sector_pct": 75,
+    "universe_n": 1887,
+    "universe_pct": 83,
+    "value": 0.7718
+   },
+   "operating_margin": {
+    "direction": "higher",
+    "label": "Op. Margin",
+    "sector": "Financials",
+    "sector_n": 303,
+    "sector_pct": 91,
+    "universe_n": 1887,
+    "universe_pct": 95,
+    "value": 0.4041
+   },
+   "pe_ratio": {
+    "direction": "lower",
+    "label": "P/E",
+    "sector": "Financials",
+    "sector_n": 294,
+    "sector_pct": 9,
+    "universe_n": 1423,
+    "universe_pct": 28,
+    "value": 29.169
+   },
+   "revenue_growth_yoy": {
+    "direction": "higher",
+    "label": "Rev Growth",
+    "sector": "Financials",
+    "sector_n": 143,
+    "sector_pct": 94,
+    "universe_n": 1717,
+    "universe_pct": 92,
+    "value": 0.4523
+   },
+   "roe": {
+    "direction": "higher",
+    "label": "ROE",
+    "sector": "Financials",
+    "sector_n": 304,
+    "sector_pct": 88,
+    "universe_n": 1962,
+    "universe_pct": 81,
+    "value": 0.2555
+   },
+   "roic": {
+    "direction": "higher",
+    "label": "ROIC",
+    "sector": "Financials",
+    "sector_n": 301,
+    "sector_pct": 87,
+    "universe_n": 1930,
+    "universe_pct": 77,
+    "value": 0.0322
+   }
+  }
+ },
+ "signal_rank": 643,
+ "structural_analogs": {
+  "gp_core_pct": 66.3,
+  "gp_core_ratio": 1.5303,
+  "matches": [
+   {
+    "actual_downside": -0.4721,
+    "actual_return": -0.3939,
+    "actual_upside": 0.0268,
+    "days_in_region": 109,
+    "end_date": "2011-08-30",
+    "end_reason": "reversal",
+    "seq_len": 109,
+    "similarity": 0.6428,
+    "start_date": "2011-03-08",
+    "ticker": "NTCT",
+    "total_distance": 0.221,
+    "trigger_date": "2011-05-16",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": 0.0,
+    "actual_return": 0.1496,
+    "actual_upside": 0.1496,
+    "days_in_region": 102,
+    "end_date": "2014-09-11",
+    "end_reason": "reversal",
+    "seq_len": 102,
+    "similarity": 0.6312,
+    "start_date": "2014-03-18",
+    "ticker": "JACK",
+    "total_distance": 0.2301,
+    "trigger_date": "2014-04-25",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": -0.0212,
+    "actual_return": 0.1061,
+    "actual_upside": 0.1061,
+    "days_in_region": 97,
+    "end_date": "2015-08-05",
+    "end_reason": "reversal",
+    "seq_len": 97,
+    "similarity": 0.6278,
+    "start_date": "2015-03-24",
+    "ticker": "JACK",
+    "total_distance": 0.2328,
+    "trigger_date": "2015-05-01",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": -0.0968,
+    "actual_return": 0.1108,
+    "actual_upside": 0.1108,
+    "days_in_region": 110,
+    "end_date": "2014-03-21",
+    "end_reason": "reversal",
+    "seq_len": 110,
+    "similarity": 0.6257,
+    "start_date": "2013-11-21",
+    "ticker": "BWLD",
+    "total_distance": 0.2344,
+    "trigger_date": "2014-01-24",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": -0.1097,
+    "actual_return": 0.0748,
+    "actual_upside": 0.0748,
+    "days_in_region": 109,
+    "end_date": "2018-11-08",
+    "end_reason": "reversal",
+    "seq_len": 109,
+    "similarity": 0.623,
+    "start_date": "2018-08-02",
+    "ticker": "ASGN",
+    "total_distance": 0.2366,
+    "trigger_date": "2018-09-13",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": -0.2692,
+    "actual_return": -0.0073,
+    "actual_upside": 0.0405,
+    "days_in_region": 109,
+    "end_date": "2015-12-28",
+    "end_reason": "reversal",
+    "seq_len": 109,
+    "similarity": 0.622,
+    "start_date": "2015-06-23",
+    "ticker": "BLOX",
+    "total_distance": 0.2374,
+    "trigger_date": "2015-07-28",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": -0.1118,
+    "actual_return": -0.003,
+    "actual_upside": 0.0672,
+    "days_in_region": 99,
+    "end_date": "2014-06-09",
+    "end_reason": "reversal",
+    "seq_len": 99,
+    "similarity": 0.6219,
+    "start_date": "2013-12-23",
+    "ticker": "LZB",
+    "total_distance": 0.2375,
+    "trigger_date": "2014-02-04",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": -0.0515,
+    "actual_return": 0.205,
+    "actual_upside": 0.205,
+    "days_in_region": 123,
+    "end_date": "2021-11-04",
+    "end_reason": "reversal",
+    "seq_len": 123,
+    "similarity": 0.6183,
+    "start_date": "2021-06-11",
+    "ticker": "ESI",
+    "total_distance": 0.2404,
+    "trigger_date": "2021-09-09",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": 0.0,
+    "actual_return": 0.1444,
+    "actual_upside": 0.1444,
+    "days_in_region": 100,
+    "end_date": "2007-10-05",
+    "end_reason": "reversal",
+    "seq_len": 100,
+    "similarity": 0.6169,
+    "start_date": "2007-06-21",
+    "ticker": "MLM",
+    "total_distance": 0.2416,
+    "trigger_date": "2007-08-16",
+    "trigger_type": "severe_drawdown"
+   },
+   {
+    "actual_downside": -0.0373,
+    "actual_return": 0.2003,
+    "actual_upside": 0.2003,
+    "days_in_region": 91,
+    "end_date": "2021-11-22",
+    "end_reason": "reversal",
+    "seq_len": 91,
+    "similarity": 0.6136,
+    "start_date": "2021-05-07",
+    "ticker": "ACM",
+    "total_distance": 0.2442,
+    "trigger_date": "2021-06-21",
+    "trigger_type": "shallow_drawdown"
+   }
+  ],
+  "panel": {
+   "edge": 0.0438,
+   "hit_hi": 0.815,
+   "hit_lo": 0.66,
+   "hit_rate": 0.745,
+   "median_final": 0.11,
+   "median_pain": 0.0742,
+   "n": 51,
+   "n_eff": 51.0,
+   "p25_final": -0.003,
+   "p_pain_gt5": 0.588,
+   "return_to_pain": 1.168
+  },
+  "stats": {
+   "avg_similarity": 0.584,
+   "avg_trough": 0.1014,
+   "avg_upside": 0.1627,
+   "median_pain": 0.0678,
+   "median_return": 0.1099,
+   "n_matches": 200,
+   "p25_return": -0.0792,
+   "p_pain_gt5": 0.59,
+   "return_to_pain": 1.252,
+   "top5_avg_trough": 0.14,
+   "top5_avg_upside": 0.0936,
+   "top_similarity": 0.643,
+   "win_rate": 0.67
+  },
+  "total_matches": 200
+ },
+ "ticker": "WT",
+ "trending": {
+  "acceleration": -0.0016,
+  "avg_vol_20d": 2974600.8131,
+  "base_high_120": 25.04,
+  "breakout_confirmed": 0,
+  "close": 24.45,
+  "momentum_score": 0.8822,
+  "momentum_start": "2026-03-23",
+  "range_20": 0.1761,
+  "range_50": 0.319,
+  "rank": 282,
+  "rank_down": null,
+  "rank_up": 186,
+  "ret_120": 0.4157,
+  "ret_20": -0.0177,
+  "ret_60": 0.2721,
+  "rundown_score": 0.2575,
+  "score_date": "2026-10-05",
+  "slope_20": 0.0021,
+  "slope_60": 0.0037,
+  "stage": "sustained",
+  "stage_label": "Trending",
+  "ticker": "WT",
+  "total_score": 0.6217,
+  "trend_ratio": 1.2985,
+  "vcp_detected": 1,
+  "vcp_score": 0.4481
+ }
+}

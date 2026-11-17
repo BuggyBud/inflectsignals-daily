@@ -1,0 +1,992 @@
+{
+ "date": "2026-11-16",
+ "detected_regions": {
+  "primary": {
+   "days_in_region": 177,
+   "region_start": "2026-06-02",
+   "trigger_date": "2026-11-12",
+   "trigger_type": "severe_drawdown"
+  },
+  "secondary": [
+   {
+    "confidence_score": 0.0305,
+    "downside_q50": -0.099,
+    "ev_score": 0.2267,
+    "region_start": "2025-11-05",
+    "seq_len": 200,
+    "trigger_date": "2025-12-03",
+    "trigger_type": "compression",
+    "upside_q25": 0.1358,
+    "upside_q50": 0.3058,
+    "upside_q75": 0.5518
+   }
+  ]
+ },
+ "feature_attribution": {
+  "macro_driver_count": 12,
+  "risk_flags": [
+   "high_volatility"
+  ],
+  "top_drivers": [
+   {
+    "direction": "positive",
+    "feature": "historical_recovery_rate",
+    "feature_value": 0.1597,
+    "importance": 0.0003,
+    "importance_pct": 0.1755,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "positive",
+    "feature": "volatility_20d",
+    "feature_value": 0.0904,
+    "importance": 0.0003,
+    "importance_pct": 0.1665,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "positive",
+    "feature": "price_vs_high_52w",
+    "feature_value": 0.2117,
+    "importance": 0.0003,
+    "importance_pct": 0.1559,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "negative",
+    "feature": "dollar_volume",
+    "feature_value": 16054352.0,
+    "importance": 0.0003,
+    "importance_pct": 0.1362,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "positive",
+    "feature": "beta_252d",
+    "feature_value": 2.2045,
+    "importance": 0.0002,
+    "importance_pct": 0.1144,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "negative",
+    "feature": "stock_vs_sector_20d",
+    "feature_value": -0.095,
+    "importance": 0.0002,
+    "importance_pct": 0.0883,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "positive",
+    "feature": "price_vs_low_52w",
+    "feature_value": 1.0309,
+    "importance": 0.0002,
+    "importance_pct": 0.0878,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "negative",
+    "feature": "industry_return_20d",
+    "feature_value": -0.1708,
+    "importance": 0.0001,
+    "importance_pct": 0.0755,
+    "method": "integrated_gradients"
+   }
+  ]
+ },
+ "fundamentals": {
+  "accrual": -0.1037,
+  "adx_14": 19.4876,
+  "altman_z_score": 13.8025,
+  "amihud_illiquidity": 0.0037,
+  "avg_volume": 5924684.0786,
+  "beta_252d": 2.2045,
+  "book_value_per_share": 1.1499,
+  "correlation_spy_60d": 0.6023,
+  "current_liabilities": 15.3657,
+  "current_ratio": 4.6596,
+  "daily_earnings_yield": -0.0562,
+  "daily_fcf_yield": -0.0066,
+  "daily_pb": 2.1745,
+  "daily_pe": -17.807,
+  "daily_ps": 9.8722,
+  "days_since_52w_high": 274.0,
+  "debt_ebitda": -0.0136,
+  "debt_to_equity": 0.0018,
+  "dividend_yield": 0.0,
+  "dollar_volume_20d_avg": 17236398.9153,
+  "earnings_quality": 0.42,
+  "ebitda_growth_yoy": -3.9558,
+  "enterprise_value": 339.4431,
+  "eps_basic": -0.06,
+  "eps_cagr_3y": -3.4413,
+  "eps_cagr_5y": -2.4872,
+  "eps_diluted": -0.06,
+  "eps_growth_accel": 3.365,
+  "eps_growth_qoq": -76.0,
+  "eps_growth_yoy": -1.91,
+  "eps_growth_yoy_q2": -5.275,
+  "eps_growth_yoy_q3": -5.315,
+  "eps_growth_yoy_q4": -1.315,
+  "eps_growth_yoy_q5": 0.2857,
+  "eps_growth_yoy_q6": 0.6667,
+  "eps_growth_yoy_q7": 0.6667,
+  "eps_growth_yoy_q8": 0.6667,
+  "eps_history_8q": [
+   -0.01,
+   0.0,
+   0.0,
+   -0.04,
+   -0.0059,
+   -0.08,
+   0.0007,
+   -0.06
+  ],
+  "eps_ttm": -0.1499,
+  "ev_to_ebitda": -14.8578,
+  "ev_to_fcf": -35.5714,
+  "ev_to_sales": 33.4973,
+  "fcf_growth_yoy": 0.9408,
+  "fcf_margin": -0.9417,
+  "fcf_per_share": -0.0638,
+  "gross_margin": 0.0728,
+  "gross_margin_change_yoy": 0.1581,
+  "gross_margin_history": [
+   0.313,
+   0.308,
+   0.2743,
+   0.0852,
+   0.0213,
+   0.0728
+  ],
+  "inc_roic": 1.0638,
+  "interest_coverage": null,
+  "is_pre_revenue": false,
+  "margin_vs_sector_median": null,
+  "market_cap_ratio": 373.8961,
+  "net_income": -9.5261,
+  "net_margin": -0.5544,
+  "operating_income": -5.9833,
+  "operating_margin": -0.6443,
+  "operating_margin_change_yoy": 0.0295,
+  "pb_ratio": 2.3219,
+  "pe_percentile_1y": 0.004,
+  "pe_ratio": -20.0413,
+  "peg_trailing": 0.1053,
+  "piotroski_f_score": 2.0,
+  "price_vs_high_52w": 0.2117,
+  "price_vs_sma200": 0.387,
+  "ps_percentile_1y": 1.0,
+  "ps_ratio": 10.7596,
+  "quarter_labels_8q": [
+   "Q4 '24",
+   "Q1 '25",
+   "Q2 '25",
+   "Q3 '25",
+   "Q4 '25",
+   "Q1 '26",
+   "Q2 '26",
+   "Q3 '26"
+  ],
+  "quarterly_eps_growth_yoy": -0.5,
+  "quarterly_eps_growth_yoy_8q": [
+   0.8333,
+   null,
+   null,
+   -3.0,
+   0.41,
+   null,
+   null,
+   -0.5
+  ],
+  "quarterly_revenue_growth_yoy": 0.1645,
+  "quarterly_revenue_growth_yoy_8q": [
+   2.1903,
+   1.2786,
+   1.8733,
+   2.3834,
+   0.8962,
+   -0.0308,
+   -0.247,
+   0.1645
+  ],
+  "revenue_cagr_3y": 0.682,
+  "revenue_cagr_5y": 0.4234,
+  "revenue_growth_accel": -0.207,
+  "revenue_growth_qoq": 0.2786,
+  "revenue_growth_yoy": 0.1443,
+  "revenue_growth_yoy_q2": 0.3513,
+  "revenue_growth_yoy_q3": 0.9417,
+  "revenue_growth_yoy_q4": 1.4265,
+  "revenue_growth_yoy_q5": 1.888,
+  "revenue_growth_yoy_q6": 1.4625,
+  "revenue_growth_yoy_q7": 1.1046,
+  "revenue_growth_yoy_q8": 0.8612,
+  "revenue_history_8q": [
+   6.872,
+   7.0,
+   10.525,
+   8.702,
+   13.0306,
+   6.7841,
+   7.9256,
+   10.1334
+  ],
+  "revenue_per_share": 0.0678,
+  "roa": -0.1103,
+  "roce": -0.136,
+  "roe": -0.119,
+  "roic": -0.12,
+  "rsi_14": 38.877,
+  "sector_momentum": 0.1072,
+  "share_dilution_1y": 0.0199,
+  "stock_vs_sector_20d": -0.095,
+  "stock_vs_spy_20d": -0.103,
+  "total_assets": 190.2835,
+  "vol_regime": 1.4334,
+  "volatility_20d": 0.0904,
+  "volatility_60d": 0.0631,
+  "w52_high": 12.64,
+  "w52_low": 2.53
+ },
+ "market_characters": [
+  {
+   "id": "g8",
+   "name": "Boom-Bust"
+  }
+ ],
+ "model_analogs": {
+  "matches": [
+   {
+    "actual_downside": -0.4281,
+    "actual_return": -0.015,
+    "actual_upside": 0.012,
+    "days_in_region": 213,
+    "end_date": "2019-01-18",
+    "end_reason": "reversal",
+    "similarity": 0.9781,
+    "start_date": "2018-06-19",
+    "ticker": "WIN",
+    "trigger_date": "2018-11-13",
+    "trigger_type": "severe_drawdown"
+   },
+   {
+    "actual_downside": 0.0,
+    "actual_return": 1.2,
+    "actual_upside": 1.2,
+    "days_in_region": 182,
+    "end_date": "1991-02-13",
+    "end_reason": "reversal",
+    "similarity": 0.9778,
+    "start_date": "1990-08-15",
+    "ticker": "ACF",
+    "trigger_date": "1991-01-23",
+    "trigger_type": "severe_drawdown"
+   },
+   {
+    "actual_downside": 0.0,
+    "actual_return": 0.1748,
+    "actual_upside": 0.1748,
+    "days_in_region": 160,
+    "end_date": "2022-11-15",
+    "end_reason": "reversal",
+    "similarity": 0.9758,
+    "start_date": "2022-06-08",
+    "ticker": "HPK",
+    "trigger_date": "2022-10-14",
+    "trigger_type": "severe_drawdown"
+   },
+   {
+    "actual_downside": -0.0195,
+    "actual_return": 0.4739,
+    "actual_upside": 0.4739,
+    "days_in_region": 240,
+    "end_date": "2006-01-11",
+    "end_reason": "reversal",
+    "similarity": 0.9758,
+    "start_date": "2005-05-16",
+    "ticker": "AXON",
+    "trigger_date": "2005-10-28",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": 0.0,
+    "actual_return": 0.321,
+    "actual_upside": 0.321,
+    "days_in_region": 223,
+    "end_date": "2000-11-07",
+    "end_reason": "reversal",
+    "similarity": 0.9754,
+    "start_date": "2000-03-29",
+    "ticker": "CTSH",
+    "trigger_date": "2000-09-19",
+    "trigger_type": "severe_drawdown"
+   },
+   {
+    "actual_downside": -0.1063,
+    "actual_return": 0.247,
+    "actual_upside": 0.247,
+    "days_in_region": 237,
+    "end_date": "2019-07-01",
+    "end_reason": "reversal",
+    "similarity": 0.9749,
+    "start_date": "2018-11-06",
+    "ticker": "TBCH",
+    "trigger_date": "2019-04-23",
+    "trigger_type": "severe_drawdown"
+   },
+   {
+    "actual_downside": -0.0135,
+    "actual_return": 0.5157,
+    "actual_upside": 0.5157,
+    "days_in_region": 279,
+    "end_date": "2022-08-10",
+    "end_reason": "reversal",
+    "similarity": 0.9749,
+    "start_date": "2021-11-04",
+    "ticker": "SLS",
+    "trigger_date": "2022-04-04",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": -0.1313,
+    "actual_return": 0.332,
+    "actual_upside": 0.332,
+    "days_in_region": 147,
+    "end_date": "2016-03-03",
+    "end_reason": "reversal",
+    "similarity": 0.9745,
+    "start_date": "2015-10-08",
+    "ticker": "CLNE",
+    "trigger_date": "2016-01-26",
+    "trigger_type": "severe_drawdown"
+   },
+   {
+    "actual_downside": -0.0465,
+    "actual_return": 0.4233,
+    "actual_upside": 0.4233,
+    "days_in_region": 61,
+    "end_date": "2022-08-15",
+    "end_reason": "reversal",
+    "similarity": 0.9742,
+    "start_date": "2022-06-15",
+    "ticker": "MVST",
+    "trigger_date": "2022-07-14",
+    "trigger_type": "compression"
+   },
+   {
+    "actual_downside": 0.0,
+    "actual_return": 0.0969,
+    "actual_upside": 0.394,
+    "days_in_region": 121,
+    "end_date": "2016-03-30",
+    "end_reason": "reversal",
+    "similarity": 0.9741,
+    "start_date": "2015-11-30",
+    "ticker": "TERP",
+    "trigger_date": "2016-02-11",
+    "trigger_type": "shallow_runup"
+   }
+  ],
+  "stats": {
+   "avg_max_drawdown": 0.1161,
+   "avg_similarity": 0.973,
+   "avg_trough": 0.1161,
+   "avg_upside": 0.5049,
+   "best_return": 1.9385,
+   "downside_range": [
+    -0.4694,
+    0.0
+   ],
+   "median_return": 0.3771,
+   "n_matches": 50,
+   "outcome_agreement": true,
+   "return_p25": 0.1117,
+   "return_p5": -0.0503,
+   "return_p75": 0.6,
+   "return_p95": 1.2042,
+   "sim_weighted_win_rate": 0.9,
+   "top5_avg_trough": 0.0895,
+   "top5_avg_upside": 0.4363,
+   "top_similarity": 0.978,
+   "upside_range": [
+    0.0,
+    1.9385
+   ],
+   "win_rate": 0.9,
+   "worst_return": -0.1773,
+   "years_span": 17
+  },
+  "total_matches": 50
+ },
+ "peer_group": {
+  "buckets": [
+   "Metals, Mining, Minerals & Smelting",
+   "Rare Earths, Uranium & Strategic Materials"
+  ],
+  "groups": {
+   "Metals, Mining, Minerals & Smelting": [
+    {
+     "market_cap_m": 7776.5005,
+     "price_vs_sma200": 1.1366,
+     "return_30d": -0.009,
+     "return_7d": 0.0728,
+     "revenue_driver": "flat rolled steel products",
+     "signal_rank": null,
+     "stock_vs_spy_20d": 0.0364,
+     "ticker": "CLF"
+    },
+    {
+     "market_cap_m": 3196.3988,
+     "price_vs_sma200": 0.9373,
+     "return_30d": -0.0312,
+     "return_7d": -0.1012,
+     "revenue_driver": "lime and limestone products",
+     "signal_rank": 143,
+     "stock_vs_spy_20d": 0.0418,
+     "ticker": "USLM"
+    },
+    {
+     "market_cap_m": 10467.3249,
+     "price_vs_sma200": 0.6996,
+     "return_30d": -0.1113,
+     "return_7d": 0.0062,
+     "revenue_driver": "primary aluminum production",
+     "signal_rank": 1113,
+     "stock_vs_spy_20d": -0.0366,
+     "ticker": "AA"
+    },
+    {
+     "market_cap_m": 6387.7456,
+     "price_vs_sma200": 0.5793,
+     "return_30d": -0.1429,
+     "return_7d": 0.0292,
+     "revenue_driver": "copper and brass products",
+     "signal_rank": 523,
+     "stock_vs_spy_20d": -0.077,
+     "ticker": "MLI"
+    },
+    {
+     "market_cap_m": 941.78,
+     "price_vs_sma200": 0.8407,
+     "return_30d": -0.18,
+     "return_7d": 0.0454,
+     "revenue_driver": "engineered steel pipe products",
+     "signal_rank": 301,
+     "stock_vs_spy_20d": -0.0774,
+     "ticker": "NWPX"
+    },
+    {
+     "market_cap_m": 1902.0839,
+     "price_vs_sma200": 0.7822,
+     "return_30d": -0.1851,
+     "return_7d": -0.0126,
+     "revenue_driver": "metallurgical coal mining",
+     "signal_rank": 1567,
+     "stock_vs_spy_20d": -0.0807,
+     "ticker": "AMR"
+    },
+    {
+     "market_cap_m": 407.5048,
+     "price_vs_sma200": 0.387,
+     "return_30d": -0.3241,
+     "return_7d": 0.0309,
+     "revenue_driver": "antimony products",
+     "signal_rank": 1876,
+     "stock_vs_spy_20d": -0.103,
+     "ticker": "UAMY"
+    },
+    {
+     "market_cap_m": 1863.5279,
+     "price_vs_sma200": 0.7584,
+     "return_30d": -0.3346,
+     "return_7d": 0.001,
+     "revenue_driver": "rolled aluminum products",
+     "signal_rank": null,
+     "stock_vs_spy_20d": -0.2141,
+     "ticker": "KALU"
+    },
+    {
+     "market_cap_m": 216.981,
+     "price_vs_sma200": 0.4099,
+     "return_30d": -0.4828,
+     "return_7d": -0.051,
+     "revenue_driver": "metallurgical coal mining",
+     "signal_rank": 1759,
+     "stock_vs_spy_20d": -0.1679,
+     "ticker": "AREC"
+    },
+    {
+     "market_cap_m": 161.1628,
+     "price_vs_sma200": 0.4094,
+     "return_30d": null,
+     "return_7d": null,
+     "revenue_driver": "lithium ion battery recycling",
+     "signal_rank": null,
+     "stock_vs_spy_20d": -0.2236,
+     "ticker": "ABAT"
+    }
+   ],
+   "Rare Earths, Uranium & Strategic Materials": [
+    {
+     "market_cap_m": 11177.7791,
+     "price_vs_sma200": 0.607,
+     "return_30d": -0.1553,
+     "return_7d": -0.1038,
+     "revenue_driver": "lithium chemical production",
+     "signal_rank": 778,
+     "stock_vs_spy_20d": -0.0328,
+     "ticker": "ALB"
+    },
+    {
+     "market_cap_m": 233.4519,
+     "price_vs_sma200": 0.6818,
+     "return_30d": -0.181,
+     "return_7d": -0.0404,
+     "revenue_driver": "smallpox antivirals",
+     "signal_rank": 1826,
+     "stock_vs_spy_20d": -0.0567,
+     "ticker": "SIGA"
+    },
+    {
+     "market_cap_m": 6275.7143,
+     "price_vs_sma200": 0.6732,
+     "return_30d": -0.2295,
+     "return_7d": 0.0697,
+     "revenue_driver": "rare earth mining",
+     "signal_rank": 1751,
+     "stock_vs_spy_20d": -0.0378,
+     "ticker": "MP"
+    },
+    {
+     "market_cap_m": 5492.1717,
+     "price_vs_sma200": 0.5598,
+     "return_30d": -0.3104,
+     "return_7d": 0.0955,
+     "revenue_driver": "uranium enrichment",
+     "signal_rank": 1784,
+     "stock_vs_spy_20d": -0.0787,
+     "ticker": "LEU"
+    },
+    {
+     "market_cap_m": 407.5048,
+     "price_vs_sma200": 0.387,
+     "return_30d": -0.3241,
+     "return_7d": 0.0309,
+     "revenue_driver": "antimony products",
+     "signal_rank": 1876,
+     "stock_vs_spy_20d": -0.103,
+     "ticker": "UAMY"
+    },
+    {
+     "market_cap_m": 4490.5723,
+     "price_vs_sma200": 0.5665,
+     "return_30d": -0.3444,
+     "return_7d": -0.054,
+     "revenue_driver": "uranium mining",
+     "signal_rank": null,
+     "stock_vs_spy_20d": -0.1481,
+     "ticker": "UEC"
+    },
+    {
+     "market_cap_m": 75.6597,
+     "price_vs_sma200": 0.5566,
+     "return_30d": -0.4319,
+     "return_7d": -0.131,
+     "revenue_driver": "lithium mining development",
+     "signal_rank": null,
+     "stock_vs_spy_20d": -0.2645,
+     "ticker": "ATLX"
+    }
+   ]
+  }
+ },
+ "predictions": {
+  "badge_count": 1,
+  "confidence_score": 0.027,
+  "conviction_label": "SPECULATIVE",
+  "data_quality_flags": [],
+  "ev_score": 0.2027,
+  "is_diamond": false,
+  "passes_tradability_filter": false,
+  "quality_label": "WEAK",
+  "quantiles": {
+   "downside_q10": -0.3667,
+   "downside_q25": -0.2231,
+   "downside_q50": -0.1105,
+   "downside_q75": -0.0344,
+   "downside_q90": -0.0065,
+   "path_volatility": 0.0492,
+   "risk_reward": 2.6308,
+   "uncertainty": 0.8008,
+   "upside_q10": 0.0375,
+   "upside_q25": 0.126,
+   "upside_q50": 0.2908,
+   "upside_q75": 0.5334,
+   "upside_q90": 0.8382
+  },
+  "rank": 1876,
+  "rank_score": 0.0072,
+  "tradability_filter_reasons": [
+   "market_cap_below_1b"
+  ]
+ },
+ "profile": {
+  "_local": {
+   "dividend_yield": 0.0,
+   "eps_growth_yoy": -1.91,
+   "pe_ratio": -20.0413,
+   "revenue_growth_yoy": 0.1443,
+   "roe": -0.119
+  },
+  "beta": 0.381,
+  "betaTTM": null,
+  "ceo": "Gary C. Evans",
+  "companyName": "United States Antimony Corporation",
+  "country": "US",
+  "debtToEquityTTM": null,
+  "description": "United States Antimony Corporation produces and sells antimony, zeolite, and precious metals in the United States and Canada. It operates in two segments: Antimony and Zeolite. The company offers antimony trioxide that is primarily used in conjunction with a halogen to form a synergistic flame retardant system for plastics, rubber, fiberglass, textile goods, paints, coatings, and paper, as well as color fastener in paints and as a phosphorescent agent in fluorescent light bulbs; antimony metal for use in bearings, storage batteries, and ordnance; and antimony trisulfide used as a primer in ammunition. The company also offers coarse and fine zeolite for soil amendment and fertilizer, water filtration, mine underground ventilation, sewage treatment, nuclear waste and other environmental cleanup, odor control, gas separation, and animal nutrition applications, as well as catalysts, petroleum refining, concrete, solar energy and heat exchange, desiccants, pellet binding, horse and kitty litter, floor cleaner, traction control, ammonia removal from mining waste, and carriers for insecticides, pesticides and herbicides. In addition, it recovers unrefined and refined gold and silver. United States Antimony Corporation was founded in 1968 and is headquartered in Dallas, Texas.",
+  "dividendYielTTM": null,
+  "enterpriseValueOverEBITDATTM": null,
+  "exchangeShortName": "NYSE",
+  "fullTimeEmployees": "101",
+  "industry": "Industrial Materials",
+  "ipoDate": "2000-02-24",
+  "latest_earnings_date": "2026-11-12",
+  "marketCapTTM": null,
+  "mktCap": 398709602,
+  "peRatioTTM": null,
+  "price": 2.67,
+  "priceToSalesRatioTTM": null,
+  "returnOnEquityTTM": -0.1342,
+  "revenue_description": "United States Antimony processes antimony and related metals. Revenue is driven by commodity production volume and realized metals prices, with cost efficiency and grade improvements as margin levers.",
+  "revenue_description_themes": [
+   "antimony price cycle and defense demand",
+   "zeolite and perlite volume growth",
+   "cost reduction and operational efficiency programs"
+  ],
+  "revenue_taxonomy": [
+   {
+    "bucket": "Rare Earths, Uranium & Strategic Materials",
+    "matched_tags": [
+     "antimony products"
+    ],
+    "path": "Materials & Chemicals › Packaging Metals & Resource Processing › Rare Earths, Uranium & Strategic Materials",
+    "sector": "Materials & Chemicals",
+    "segment": "Packaging Metals & Resource Processing"
+   },
+   {
+    "bucket": "Metals, Mining, Minerals & Smelting",
+    "matched_tags": [
+     "zeolite and perlite minerals",
+     "critical minerals"
+    ],
+    "path": "Materials & Chemicals › Packaging Metals & Resource Processing › Metals, Mining, Minerals & Smelting",
+    "sector": "Materials & Chemicals",
+    "segment": "Packaging Metals & Resource Processing"
+   }
+  ],
+  "revenue_themes": [
+   "antimony products",
+   "zeolite and perlite minerals",
+   "critical minerals"
+  ],
+  "sector": "Basic Materials",
+  "website": "https://www.usantimony.com"
+ },
+ "report": null,
+ "scorecard": {
+  "headline": {
+   "avg_universe_pct": 29,
+   "label": "below_average",
+   "metric_count": 7
+  },
+  "metrics": {
+   "debt_to_equity": {
+    "direction": "lower",
+    "label": "D/E Ratio",
+    "sector": "Materials",
+    "sector_n": 107,
+    "sector_pct": 93,
+    "universe_n": 1946,
+    "universe_pct": 88,
+    "value": 0.0018
+   },
+   "eps_growth_yoy": {
+    "direction": "higher",
+    "label": "EPS Growth",
+    "sector": "Materials",
+    "sector_n": 108,
+    "sector_pct": 13,
+    "universe_n": 1767,
+    "universe_pct": 7,
+    "value": -1.91
+   },
+   "gross_margin": {
+    "direction": "higher",
+    "label": "Gross Margin",
+    "sector": "Materials",
+    "sector_n": 106,
+    "sector_pct": 12,
+    "universe_n": 1887,
+    "universe_pct": 4,
+    "value": 0.0728
+   },
+   "operating_margin": {
+    "direction": "higher",
+    "label": "Op. Margin",
+    "sector": "Materials",
+    "sector_n": 106,
+    "sector_pct": 2,
+    "universe_n": 1887,
+    "universe_pct": 6,
+    "value": -0.6443
+   },
+   "revenue_growth_yoy": {
+    "direction": "higher",
+    "label": "Rev Growth",
+    "sector": "Materials",
+    "sector_n": 107,
+    "sector_pct": 77,
+    "universe_n": 1717,
+    "universe_pct": 68,
+    "value": 0.1443
+   },
+   "roe": {
+    "direction": "higher",
+    "label": "ROE",
+    "sector": "Materials",
+    "sector_n": 108,
+    "sector_pct": 16,
+    "universe_n": 1962,
+    "universe_pct": 19,
+    "value": -0.119
+   },
+   "roic": {
+    "direction": "higher",
+    "label": "ROIC",
+    "sector": "Materials",
+    "sector_n": 108,
+    "sector_pct": 6,
+    "universe_n": 1930,
+    "universe_pct": 10,
+    "value": -0.0545
+   }
+  }
+ },
+ "signal_rank": 1876,
+ "structural_analogs": {
+  "gp_core_pct": 75.0,
+  "gp_core_ratio": 1.6835,
+  "matches": [
+   {
+    "actual_downside": -0.4147,
+    "actual_return": -0.2219,
+    "actual_upside": 0.0,
+    "days_in_region": 80,
+    "end_date": "2002-10-17",
+    "end_reason": "reversal",
+    "seq_len": 80,
+    "similarity": 0.4693,
+    "start_date": "2002-07-31",
+    "ticker": "SEBL",
+    "total_distance": 0.3782,
+    "trigger_date": "2002-08-27",
+    "trigger_type": "compression"
+   },
+   {
+    "actual_downside": -0.0772,
+    "actual_return": 0.5196,
+    "actual_upside": 0.9,
+    "days_in_region": 64,
+    "end_date": "2022-08-23",
+    "end_reason": "reversal",
+    "seq_len": 64,
+    "similarity": 0.464,
+    "start_date": "2022-05-11",
+    "ticker": "CYRX",
+    "total_distance": 0.384,
+    "trigger_date": "2022-05-16",
+    "trigger_type": "runup"
+   },
+   {
+    "actual_downside": -0.1177,
+    "actual_return": -0.0258,
+    "actual_upside": 0.4081,
+    "days_in_region": 65,
+    "end_date": "2008-09-02",
+    "end_reason": "new_pattern",
+    "seq_len": 65,
+    "similarity": 0.4615,
+    "start_date": "2008-07-15",
+    "ticker": "ISSC",
+    "total_distance": 0.3867,
+    "trigger_date": "2008-07-21",
+    "trigger_type": "shallow_runup"
+   },
+   {
+    "actual_downside": -0.0292,
+    "actual_return": 1.1374,
+    "actual_upside": 1.5175,
+    "days_in_region": 76,
+    "end_date": "2011-01-21",
+    "end_reason": "reversal",
+    "seq_len": 76,
+    "similarity": 0.4589,
+    "start_date": "2010-08-30",
+    "ticker": "SGMO",
+    "total_distance": 0.3895,
+    "trigger_date": "2010-09-21",
+    "trigger_type": "runup"
+   },
+   {
+    "actual_downside": -0.0813,
+    "actual_return": 0.7681,
+    "actual_upside": 0.7681,
+    "days_in_region": 80,
+    "end_date": "2002-09-09",
+    "end_reason": "reversal",
+    "seq_len": 80,
+    "similarity": 0.4581,
+    "start_date": "2002-07-08",
+    "ticker": "BRKR",
+    "total_distance": 0.3903,
+    "trigger_date": "2002-08-02",
+    "trigger_type": "compression"
+   },
+   {
+    "actual_downside": -0.2826,
+    "actual_return": -0.2552,
+    "actual_upside": 0.0523,
+    "days_in_region": 67,
+    "end_date": "2002-06-25",
+    "end_reason": "reversal",
+    "seq_len": 67,
+    "similarity": 0.4553,
+    "start_date": "2002-05-07",
+    "ticker": "MYGN",
+    "total_distance": 0.3934,
+    "trigger_date": "2002-05-15",
+    "trigger_type": "runup"
+   },
+   {
+    "actual_downside": -0.2373,
+    "actual_return": -0.2373,
+    "actual_upside": 0.1216,
+    "days_in_region": 65,
+    "end_date": "2022-06-30",
+    "end_reason": "reversal",
+    "seq_len": 65,
+    "similarity": 0.4552,
+    "start_date": "2022-05-10",
+    "ticker": "SOFI",
+    "total_distance": 0.3935,
+    "trigger_date": "2022-05-16",
+    "trigger_type": "runup"
+   },
+   {
+    "actual_downside": -0.3952,
+    "actual_return": -0.3952,
+    "actual_upside": 0.0,
+    "days_in_region": 67,
+    "end_date": "2022-07-11",
+    "end_reason": "reversal",
+    "seq_len": 67,
+    "similarity": 0.4501,
+    "start_date": "2022-05-11",
+    "ticker": "AAOI",
+    "total_distance": 0.3991,
+    "trigger_date": "2022-05-19",
+    "trigger_type": "shallow_runup"
+   },
+   {
+    "actual_downside": -0.1398,
+    "actual_return": -0.1398,
+    "actual_upside": 0.553,
+    "days_in_region": 73,
+    "end_date": "2022-10-14",
+    "end_reason": "reversal",
+    "seq_len": 73,
+    "similarity": 0.4493,
+    "start_date": "2022-05-11",
+    "ticker": "ASTH",
+    "total_distance": 0.4001,
+    "trigger_date": "2022-05-27",
+    "trigger_type": "runup"
+   },
+   {
+    "actual_downside": -0.1923,
+    "actual_return": -0.1587,
+    "actual_upside": 0.1154,
+    "days_in_region": 70,
+    "end_date": "2008-08-21",
+    "end_reason": "reversal",
+    "seq_len": 70,
+    "similarity": 0.4488,
+    "start_date": "2008-07-10",
+    "ticker": "TVL",
+    "total_distance": 0.4006,
+    "trigger_date": "2008-07-21",
+    "trigger_type": "shallow_runup"
+   }
+  ],
+  "panel": {
+   "edge": -0.1254,
+   "hit_hi": 0.521,
+   "hit_lo": 0.346,
+   "hit_rate": 0.431,
+   "median_final": -0.0641,
+   "median_pain": 0.1761,
+   "n": 51,
+   "n_eff": 51.0,
+   "p25_final": -0.2219,
+   "p_pain_gt5": 0.863,
+   "return_to_pain": -0.327
+  },
+  "stats": {
+   "avg_similarity": 0.413,
+   "avg_trough": 0.1989,
+   "avg_upside": 0.2907,
+   "median_pain": 0.1681,
+   "median_return": -0.0676,
+   "n_matches": 200,
+   "p25_return": -0.2363,
+   "p_pain_gt5": 0.805,
+   "return_to_pain": -0.359,
+   "top5_avg_trough": 0.1441,
+   "top5_avg_upside": 0.7187,
+   "top_similarity": 0.469,
+   "win_rate": 0.42
+  },
+  "total_matches": 200
+ },
+ "ticker": "UAMY",
+ "trending": {
+  "acceleration": -0.003,
+  "avg_vol_20d": 6174252.1763,
+  "base_high_120": 12.61,
+  "breakout_confirmed": 0,
+  "close": 3.31,
+  "momentum_score": 0.0339,
+  "momentum_start": "2026-08-12",
+  "range_20": 0.5347,
+  "range_50": 0.9471,
+  "rank": 1726,
+  "rank_down": 61,
+  "rank_up": null,
+  "ret_120": -0.7375,
+  "ret_20": -0.2081,
+  "ret_60": -0.4152,
+  "rundown_score": 0.8863,
+  "score_date": "2026-10-27",
+  "slope_20": -0.02,
+  "slope_60": -0.017,
+  "stage": "rundown",
+  "stage_label": "rundown",
+  "ticker": "UAMY",
+  "total_score": 0.2748,
+  "trend_ratio": 0.5445,
+  "vcp_detected": 0,
+  "vcp_score": 0.4354
+ }
+}

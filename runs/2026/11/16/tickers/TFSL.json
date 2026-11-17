@@ -1,0 +1,1071 @@
+{
+ "date": "2026-11-16",
+ "detected_regions": {
+  "primary": {
+   "days_in_region": 134,
+   "region_start": "2026-08-04",
+   "trigger_date": "2026-09-24",
+   "trigger_type": "shallow_drawdown"
+  },
+  "secondary": [
+   {
+    "confidence_score": 0.9047,
+    "downside_q50": -0.0513,
+    "ev_score": 0.1057,
+    "region_start": "2025-10-16",
+    "seq_len": 200,
+    "trigger_date": "2026-04-10",
+    "trigger_type": "runup",
+    "upside_q25": 0.0787,
+    "upside_q50": 0.1539,
+    "upside_q75": 0.2557
+   }
+  ]
+ },
+ "feature_attribution": {
+  "macro_driver_count": 16,
+  "risk_flags": [],
+  "top_drivers": [
+   {
+    "direction": "negative",
+    "feature": "volatility_20d",
+    "feature_value": 0.0102,
+    "importance": 0.0003,
+    "importance_pct": 0.3949,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "negative",
+    "feature": "historical_recovery_rate",
+    "feature_value": 0.8635,
+    "importance": 0.0002,
+    "importance_pct": 0.2817,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "positive",
+    "feature": "price_vs_sma200",
+    "feature_value": 1.0116,
+    "importance": 0.0001,
+    "importance_pct": 0.1644,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "negative",
+    "feature": "dollar_volume",
+    "feature_value": 9717740.0,
+    "importance": 0.0001,
+    "importance_pct": 0.159,
+    "method": "integrated_gradients"
+   }
+  ]
+ },
+ "fundamentals": {
+  "accrual": -0.0037,
+  "adx_14": 14.3181,
+  "altman_z_score": 0.3735,
+  "amihud_illiquidity": 0.0006,
+  "avg_volume": 742309.8736,
+  "beta_252d": 0.2347,
+  "book_value_per_share": 7.1924,
+  "correlation_spy_60d": 0.3607,
+  "current_liabilities": 0.0,
+  "current_ratio": null,
+  "daily_earnings_yield": 0.0221,
+  "daily_fcf_yield": 0.0378,
+  "daily_pb": 2.2733,
+  "daily_pe": 45.2872,
+  "daily_ps": 5.6363,
+  "days_since_52w_high": 73.0,
+  "debt_ebitda": 0.0,
+  "debt_to_equity": 0.0,
+  "dividend_yield": 0.0128,
+  "dollar_volume_20d_avg": 12028346.853,
+  "earnings_quality": null,
+  "ebitda_growth_yoy": null,
+  "enterprise_value": 4034.6454,
+  "eps_basic": 0.09,
+  "eps_cagr_3y": null,
+  "eps_cagr_5y": null,
+  "eps_diluted": 0.09,
+  "eps_growth_accel": null,
+  "eps_growth_qoq": -0.1818,
+  "eps_growth_yoy": null,
+  "eps_growth_yoy_q2": null,
+  "eps_growth_yoy_q3": null,
+  "eps_growth_yoy_q4": null,
+  "eps_growth_yoy_q5": null,
+  "eps_growth_yoy_q6": null,
+  "eps_growth_yoy_q7": null,
+  "eps_growth_yoy_q8": null,
+  "eps_history_8q": [
+   0.0786,
+   0.083,
+   0.11,
+   0.09
+  ],
+  "eps_ttm": 0.359,
+  "ev_to_ebitda": 45.4401,
+  "ev_to_fcf": null,
+  "ev_to_sales": 20.3359,
+  "fcf_growth_yoy": null,
+  "fcf_margin": null,
+  "fcf_per_share": null,
+  "gross_margin": 0.5558,
+  "gross_margin_change_yoy": null,
+  "gross_margin_history": [
+   0.4117,
+   0.4159,
+   0.4115,
+   0.5558
+  ],
+  "inc_roic": -0.0475,
+  "interest_coverage": 0.1885,
+  "is_pre_revenue": false,
+  "margin_vs_sector_median": null,
+  "market_cap_ratio": 4561.1414,
+  "net_income": 24.655,
+  "net_margin": 0.1245,
+  "operating_income": 0.0,
+  "operating_margin": 0.1101,
+  "operating_margin_change_yoy": null,
+  "pb_ratio": 2.2607,
+  "pe_percentile_1y": 0.7817,
+  "pe_ratio": 45.2872,
+  "peg_trailing": 3.5654,
+  "piotroski_f_score": 2.0,
+  "price_vs_high_52w": 0.8737,
+  "price_vs_sma200": 1.0116,
+  "ps_percentile_1y": 0.7817,
+  "ps_ratio": 5.8097,
+  "quarter_labels_8q": [
+   "Q1 '25",
+   "Q2 '26",
+   "Q3 '26",
+   "Q4 '26"
+  ],
+  "quarterly_eps_growth_yoy": null,
+  "quarterly_eps_growth_yoy_8q": [
+   null,
+   null,
+   null,
+   null
+  ],
+  "quarterly_revenue_growth_yoy": null,
+  "quarterly_revenue_growth_yoy_8q": [
+   null,
+   null,
+   null,
+   null
+  ],
+  "revenue_cagr_3y": null,
+  "revenue_cagr_5y": null,
+  "revenue_growth_accel": null,
+  "revenue_growth_qoq": -0.0184,
+  "revenue_growth_yoy": null,
+  "revenue_growth_yoy_q2": null,
+  "revenue_growth_yoy_q3": null,
+  "revenue_growth_yoy_q4": null,
+  "revenue_growth_yoy_q5": null,
+  "revenue_growth_yoy_q6": null,
+  "revenue_growth_yoy_q7": null,
+  "revenue_growth_yoy_q8": null,
+  "revenue_history_8q": [
+   205.82,
+   202.906,
+   202.112,
+   198.4
+  ],
+  "revenue_per_share": 0.7112,
+  "roa": 0.0056,
+  "roce": 0.0049,
+  "roe": 0.0508,
+  "roic": 0.0043,
+  "rsi_14": 35.8439,
+  "sector_momentum": 0.1489,
+  "share_dilution_1y": 0.0,
+  "stock_vs_sector_20d": -0.0271,
+  "stock_vs_spy_20d": 0.0475,
+  "total_assets": 18191.385,
+  "vol_regime": 0.9849,
+  "volatility_20d": 0.0102,
+  "volatility_60d": 0.0103,
+  "w52_high": 19.49,
+  "w52_low": 13.21
+ },
+ "market_characters": [
+  {
+   "id": "g1",
+   "name": "Steady Climbers"
+  }
+ ],
+ "model_analogs": {
+  "matches": [
+   {
+    "actual_downside": -0.1351,
+    "actual_return": -0.0276,
+    "actual_upside": 0.0,
+    "days_in_region": 139,
+    "end_date": "2005-12-20",
+    "end_reason": "reversal",
+    "similarity": 0.9533,
+    "start_date": "2005-08-03",
+    "ticker": "WW",
+    "trigger_date": "2005-09-30",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": 0.0,
+    "actual_return": 0.4042,
+    "actual_upside": 0.4042,
+    "days_in_region": 232,
+    "end_date": "2005-07-22",
+    "end_reason": "reversal",
+    "similarity": 0.9524,
+    "start_date": "2004-12-02",
+    "ticker": "TLK",
+    "trigger_date": "2004-12-13",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": -0.0132,
+    "actual_return": 0.1493,
+    "actual_upside": 0.1493,
+    "days_in_region": 177,
+    "end_date": "2006-01-26",
+    "end_reason": "reversal",
+    "similarity": 0.9518,
+    "start_date": "2005-08-02",
+    "ticker": "ESND",
+    "trigger_date": "2005-08-12",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": -0.0052,
+    "actual_return": 0.0498,
+    "actual_upside": 0.0498,
+    "days_in_region": 280,
+    "end_date": "2005-12-16",
+    "end_reason": "reversal",
+    "similarity": 0.9511,
+    "start_date": "2005-03-11",
+    "ticker": "SONC",
+    "trigger_date": "2005-05-12",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": -0.0082,
+    "actual_return": 0.2063,
+    "actual_upside": 0.2063,
+    "days_in_region": 152,
+    "end_date": "2005-07-12",
+    "end_reason": "reversal",
+    "similarity": 0.9496,
+    "start_date": "2005-02-10",
+    "ticker": "YCC",
+    "trigger_date": "2005-04-28",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": -0.0073,
+    "actual_return": 0.2717,
+    "actual_upside": 0.2717,
+    "days_in_region": 217,
+    "end_date": "2006-03-16",
+    "end_reason": "reversal",
+    "similarity": 0.9496,
+    "start_date": "2005-08-11",
+    "ticker": "AHO",
+    "trigger_date": "2005-09-09",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": -0.0073,
+    "actual_return": -0.0073,
+    "actual_upside": 0.2572,
+    "days_in_region": 410,
+    "end_date": "2006-06-12",
+    "end_reason": "reversal",
+    "similarity": 0.9484,
+    "start_date": "2005-04-28",
+    "ticker": "DVA",
+    "trigger_date": "2005-08-03",
+    "trigger_type": "runup"
+   },
+   {
+    "actual_downside": -0.0389,
+    "actual_return": 0.1041,
+    "actual_upside": 0.1041,
+    "days_in_region": 222,
+    "end_date": "2005-07-11",
+    "end_reason": "reversal",
+    "similarity": 0.9482,
+    "start_date": "2004-12-01",
+    "ticker": "SBSI",
+    "trigger_date": "2005-01-28",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": -0.0425,
+    "actual_return": 0.1747,
+    "actual_upside": 0.1747,
+    "days_in_region": 150,
+    "end_date": "2006-01-09",
+    "end_reason": "reversal",
+    "similarity": 0.948,
+    "start_date": "2005-08-12",
+    "ticker": "NTR",
+    "trigger_date": "2005-10-13",
+    "trigger_type": "severe_drawdown"
+   },
+   {
+    "actual_downside": -0.0276,
+    "actual_return": -0.0276,
+    "actual_upside": 0.1041,
+    "days_in_region": 328,
+    "end_date": "2006-01-10",
+    "end_reason": "reversal",
+    "similarity": 0.9476,
+    "start_date": "2005-02-16",
+    "ticker": "CP",
+    "trigger_date": "2005-08-01",
+    "trigger_type": "runup"
+   }
+  ],
+  "stats": {
+   "avg_max_drawdown": 0.0322,
+   "avg_similarity": 0.945,
+   "avg_trough": 0.0322,
+   "avg_upside": 0.219,
+   "best_return": 0.5818,
+   "downside_range": [
+    -0.2214,
+    0.0
+   ],
+   "median_return": 0.1666,
+   "n_matches": 50,
+   "outcome_agreement": true,
+   "return_p25": 0.1055,
+   "return_p5": -0.0508,
+   "return_p75": 0.2681,
+   "return_p95": 0.3985,
+   "sim_weighted_win_rate": 0.88,
+   "top5_avg_trough": 0.0323,
+   "top5_avg_upside": 0.1619,
+   "top_similarity": 0.953,
+   "upside_range": [
+    0.0,
+    0.5818
+   ],
+   "win_rate": 0.88,
+   "worst_return": -0.1285,
+   "years_span": 3
+  },
+  "total_matches": 50
+ },
+ "peer_group": {
+  "buckets": [
+   "Consumer Banking, Deposits & Cash Management",
+   "Lending, Cards & Consumer Finance",
+   "Mortgage, Title & Real Estate Transaction Finance"
+  ],
+  "groups": {
+   "Consumer Banking, Deposits & Cash Management": [
+    {
+     "market_cap_m": 4227.9266,
+     "price_vs_sma200": 1.0378,
+     "return_30d": 0.0542,
+     "return_7d": -0.0044,
+     "revenue_driver": "commercial lending",
+     "signal_rank": 217,
+     "stock_vs_spy_20d": 0.0932,
+     "ticker": "INDB"
+    },
+    {
+     "market_cap_m": 1493.507,
+     "price_vs_sma200": 1.1256,
+     "return_30d": 0.052,
+     "return_7d": 0.0172,
+     "revenue_driver": "commercial lending",
+     "signal_rank": 175,
+     "stock_vs_spy_20d": 0.1081,
+     "ticker": "AMAL"
+    },
+    {
+     "market_cap_m": 8092.624,
+     "price_vs_sma200": 1.0444,
+     "return_30d": 0.0458,
+     "return_7d": -0.0105,
+     "revenue_driver": "commercial lending",
+     "signal_rank": 353,
+     "stock_vs_spy_20d": 0.1051,
+     "ticker": "PNFP"
+    },
+    {
+     "market_cap_m": 89964.9668,
+     "price_vs_sma200": 1.0008,
+     "return_30d": 0.0424,
+     "return_7d": 0.0126,
+     "revenue_driver": "commercial lending",
+     "signal_rank": 113,
+     "stock_vs_spy_20d": 0.0976,
+     "ticker": "PNC"
+    },
+    {
+     "market_cap_m": 2701.0301,
+     "price_vs_sma200": 1.0496,
+     "return_30d": 0.0356,
+     "return_7d": -0.012,
+     "revenue_driver": "commercial lending",
+     "signal_rank": 60,
+     "stock_vs_spy_20d": 0.0995,
+     "ticker": "FBNC"
+    },
+    {
+     "market_cap_m": 903.6236,
+     "price_vs_sma200": 1.1022,
+     "return_30d": 0.0154,
+     "return_7d": -0.0005,
+     "revenue_driver": "retail lending",
+     "signal_rank": 463,
+     "stock_vs_spy_20d": 0.0767,
+     "ticker": "GSBC"
+    },
+    {
+     "market_cap_m": 1877.5994,
+     "price_vs_sma200": 1.0698,
+     "return_30d": 0.0026,
+     "return_7d": -0.0227,
+     "revenue_driver": "commercial lending",
+     "signal_rank": 411,
+     "stock_vs_spy_20d": 0.0316,
+     "ticker": "GABC"
+    },
+    {
+     "market_cap_m": 28032.5512,
+     "price_vs_sma200": 0.9807,
+     "return_30d": 0.002,
+     "return_7d": 0.0096,
+     "revenue_driver": "Commercial lending",
+     "signal_rank": 426,
+     "stock_vs_spy_20d": 0.0624,
+     "ticker": "CFG"
+    },
+    {
+     "market_cap_m": 1089.6984,
+     "price_vs_sma200": 1.032,
+     "return_30d": -0.0246,
+     "return_7d": -0.0177,
+     "revenue_driver": "commercial lending",
+     "signal_rank": 326,
+     "stock_vs_spy_20d": 0.0666,
+     "ticker": "CFFN"
+    },
+    {
+     "market_cap_m": 4701.3979,
+     "price_vs_sma200": 1.0116,
+     "return_30d": -0.0304,
+     "return_7d": -0.0103,
+     "revenue_driver": "residential mortgage lending",
+     "signal_rank": 172,
+     "stock_vs_spy_20d": 0.0475,
+     "ticker": "TFSL"
+    }
+   ],
+   "Lending, Cards & Consumer Finance": [
+    {
+     "market_cap_m": 1356.7691,
+     "price_vs_sma200": 0.8348,
+     "return_30d": 0.1742,
+     "return_7d": -0.0254,
+     "revenue_driver": "commercial mortgage origination",
+     "signal_rank": 1402,
+     "stock_vs_spy_20d": 0.2614,
+     "ticker": "WD"
+    },
+    {
+     "market_cap_m": 560.245,
+     "price_vs_sma200": 1.1493,
+     "return_30d": 0.1116,
+     "return_7d": -0.0008,
+     "revenue_driver": "community bank lending",
+     "signal_rank": 169,
+     "stock_vs_spy_20d": 0.1544,
+     "ticker": "COFS"
+    },
+    {
+     "market_cap_m": 903.6236,
+     "price_vs_sma200": 1.1022,
+     "return_30d": 0.0154,
+     "return_7d": -0.0005,
+     "revenue_driver": "retail lending",
+     "signal_rank": 463,
+     "stock_vs_spy_20d": 0.0767,
+     "ticker": "GSBC"
+    },
+    {
+     "market_cap_m": 4701.3979,
+     "price_vs_sma200": 1.0116,
+     "return_30d": -0.0304,
+     "return_7d": -0.0103,
+     "revenue_driver": "residential mortgage lending",
+     "signal_rank": 172,
+     "stock_vs_spy_20d": 0.0475,
+     "ticker": "TFSL"
+    },
+    {
+     "market_cap_m": 173.4533,
+     "price_vs_sma200": 0.7188,
+     "return_30d": -0.0464,
+     "return_7d": -0.0813,
+     "revenue_driver": "digital subprime consumer lending",
+     "signal_rank": 439,
+     "stock_vs_spy_20d": 0.0716,
+     "ticker": "OPFI"
+    },
+    {
+     "market_cap_m": 4380.0781,
+     "price_vs_sma200": 0.8996,
+     "return_30d": -0.0678,
+     "return_7d": -0.0479,
+     "revenue_driver": "online consumer lending",
+     "signal_rank": 248,
+     "stock_vs_spy_20d": -0.0226,
+     "ticker": "ENVA"
+    },
+    {
+     "market_cap_m": 6352.005,
+     "price_vs_sma200": 0.9064,
+     "return_30d": -0.0776,
+     "return_7d": -0.0622,
+     "revenue_driver": "indirect auto lending",
+     "signal_rank": 931,
+     "stock_vs_spy_20d": -0.0469,
+     "ticker": "CACC"
+    },
+    {
+     "market_cap_m": 1566.7631,
+     "price_vs_sma200": 0.9004,
+     "return_30d": -0.1144,
+     "return_7d": -0.0595,
+     "revenue_driver": "pawn lending",
+     "signal_rank": 676,
+     "stock_vs_spy_20d": -0.1396,
+     "ticker": "EZPW"
+    },
+    {
+     "market_cap_m": 2079.0018,
+     "price_vs_sma200": 0.6683,
+     "return_30d": -0.216,
+     "return_7d": -0.1378,
+     "revenue_driver": "ai consumer lending",
+     "signal_rank": 219,
+     "stock_vs_spy_20d": -0.1433,
+     "ticker": "UPST"
+    },
+    {
+     "market_cap_m": 12744.9801,
+     "price_vs_sma200": 0.7087,
+     "return_30d": -0.2828,
+     "return_7d": -0.0693,
+     "revenue_driver": "private student lending",
+     "signal_rank": 499,
+     "stock_vs_spy_20d": -0.2082,
+     "ticker": "SLM"
+    }
+   ],
+   "Mortgage, Title & Real Estate Transaction Finance": [
+    {
+     "market_cap_m": 2895.0546,
+     "price_vs_sma200": 1.1112,
+     "return_30d": 0.1302,
+     "return_7d": 0.0057,
+     "revenue_driver": "commercial lending",
+     "signal_rank": 106,
+     "stock_vs_spy_20d": 0.1742,
+     "ticker": "CUBI"
+    },
+    {
+     "market_cap_m": 2375.2146,
+     "price_vs_sma200": 1.0768,
+     "return_30d": 0.0507,
+     "return_7d": 0.0019,
+     "revenue_driver": "mortgage banking",
+     "signal_rank": 104,
+     "stock_vs_spy_20d": 0.1329,
+     "ticker": "MBIN"
+    },
+    {
+     "market_cap_m": 2701.0301,
+     "price_vs_sma200": 1.0496,
+     "return_30d": 0.0356,
+     "return_7d": -0.012,
+     "revenue_driver": "commercial lending",
+     "signal_rank": 60,
+     "stock_vs_spy_20d": 0.0995,
+     "ticker": "FBNC"
+    },
+    {
+     "market_cap_m": 363.9014,
+     "price_vs_sma200": 0.7602,
+     "return_30d": 0.0171,
+     "return_7d": -0.1319,
+     "revenue_driver": "mortgage servicing",
+     "signal_rank": 647,
+     "stock_vs_spy_20d": 0.1291,
+     "ticker": "ONIT"
+    },
+    {
+     "market_cap_m": 4701.3979,
+     "price_vs_sma200": 1.0116,
+     "return_30d": -0.0304,
+     "return_7d": -0.0103,
+     "revenue_driver": "residential mortgage lending",
+     "signal_rank": 172,
+     "stock_vs_spy_20d": 0.0475,
+     "ticker": "TFSL"
+    },
+    {
+     "market_cap_m": 3320.5635,
+     "price_vs_sma200": 0.7634,
+     "return_30d": -0.031,
+     "return_7d": -0.0908,
+     "revenue_driver": "residential mortgages",
+     "signal_rank": 720,
+     "stock_vs_spy_20d": 0.0661,
+     "ticker": "PFSI"
+    },
+    {
+     "market_cap_m": 2229.9224,
+     "price_vs_sma200": 0.948,
+     "return_30d": -0.0621,
+     "return_7d": -0.028,
+     "revenue_driver": "mortgage banking",
+     "signal_rank": 147,
+     "stock_vs_spy_20d": 0.0224,
+     "ticker": "HTH"
+    },
+    {
+     "market_cap_m": 407.9908,
+     "price_vs_sma200": 0.4652,
+     "return_30d": -0.0775,
+     "return_7d": -0.2699,
+     "revenue_driver": "wholesale mortgage lending",
+     "signal_rank": 1750,
+     "stock_vs_spy_20d": 0.1583,
+     "ticker": "UWMC"
+    },
+    {
+     "market_cap_m": 4373.7531,
+     "price_vs_sma200": 0.7818,
+     "return_30d": -0.1011,
+     "return_7d": -0.0189,
+     "revenue_driver": "residential mortgage origination",
+     "signal_rank": 541,
+     "stock_vs_spy_20d": -0.0154,
+     "ticker": "FLG"
+    },
+    {
+     "market_cap_m": 67.0647,
+     "price_vs_sma200": 0.3602,
+     "return_30d": -0.2984,
+     "return_7d": -0.3205,
+     "revenue_driver": "residential mortgage origination",
+     "signal_rank": 1899,
+     "stock_vs_spy_20d": -0.1405,
+     "ticker": "LDI"
+    }
+   ]
+  }
+ },
+ "predictions": {
+  "badge_count": 1,
+  "confidence_score": 0.852,
+  "conviction_label": "HIGH CONVICTION",
+  "data_quality_flags": [],
+  "ev_score": 0.1472,
+  "is_diamond": false,
+  "passes_tradability_filter": true,
+  "quality_label": "AVOID",
+  "quantiles": {
+   "downside_q10": -0.1727,
+   "downside_q25": -0.0819,
+   "downside_q50": -0.0362,
+   "downside_q75": -0.004,
+   "downside_q90": 0.0053,
+   "path_volatility": 0.0182,
+   "risk_reward": 5.0021,
+   "uncertainty": 0.3818,
+   "upside_q10": 0.0362,
+   "upside_q25": 0.095,
+   "upside_q50": 0.1813,
+   "upside_q75": 0.2933,
+   "upside_q90": 0.418
+  },
+  "rank": 172,
+  "rank_score": 0.1794,
+  "tradability_filter_reasons": []
+ },
+ "profile": {
+  "_local": {
+   "dividend_yield": 0.0128,
+   "eps_growth_yoy": null,
+   "pe_ratio": 46.3496,
+   "revenue_growth_yoy": null,
+   "roe": 0.0508
+  },
+  "beta": 0.728,
+  "betaTTM": null,
+  "ceo": "Marc A. Stefanski",
+  "companyName": "TFS Financial Corporation",
+  "country": "US",
+  "debtToEquityTTM": null,
+  "description": "TFS Financial Corporation delivers a comprehensive array of retail banking solutions to individual consumers across the United States. The company's deposit offerings encompass savings, money market, and checking accounts, in addition to individual retirement accounts, various qualified retirement plans, and certificates of deposit. It also extends a range of lending products, such as residential real estate mortgages, construction financing, home equity loans and lines of credit, alongside options for home purchase mortgages and first mortgage refinancing. Furthermore, TFS Financial provides escrow and settlement services. Established in 1938, the corporation is headquartered in Cleveland, Ohio, where its main office is located. Its operations are further supported by 37 full-service branches and 7 loan production offices distributed throughout Ohio and Florida. TFS Financial Corporation functions as a subsidiary of Third Federal Savings and Loan Association of Cleveland, MHC.",
+  "dividendYielTTM": null,
+  "enterpriseValueOverEBITDATTM": null,
+  "exchangeShortName": "NASDAQ",
+  "fullTimeEmployees": "958",
+  "industry": "Banks - Regional",
+  "ipoDate": "2007-04-23",
+  "latest_earnings_date": "2026-10-29",
+  "marketCapTTM": null,
+  "mktCap": 4560003180,
+  "peRatioTTM": null,
+  "price": 16.26,
+  "priceToSalesRatioTTM": null,
+  "returnOnEquityTTM": 0.0517,
+  "revenue_description": "TFS Financial is a bank focused on consumer deposits and mortgage lending. Revenue is driven by mortgage origination volume tied to housing transaction activity and refinancing demand, and net interest income on the held-for-investment portfolio.",
+  "revenue_description_themes": [
+   "mortgage origination volume",
+   "net interest margin expansion",
+   "deposit cost management"
+  ],
+  "revenue_taxonomy": [
+   {
+    "bucket": "Mortgage, Title & Real Estate Transaction Finance",
+    "matched_tags": [
+     "residential mortgage lending"
+    ],
+    "path": "Financials › Banking Lending & Payments › Mortgage, Title & Real Estate Transaction Finance",
+    "sector": "Financials",
+    "segment": "Banking Lending & Payments"
+   },
+   {
+    "bucket": "Consumer Banking, Deposits & Cash Management",
+    "matched_tags": [
+     "retail deposit funding"
+    ],
+    "path": "Financials › Banking Lending & Payments › Consumer Banking, Deposits & Cash Management",
+    "sector": "Financials",
+    "segment": "Banking Lending & Payments"
+   },
+   {
+    "bucket": "Lending, Cards & Consumer Finance",
+    "matched_tags": [
+     "consumer lending"
+    ],
+    "path": "Financials › Banking Lending & Payments › Lending, Cards & Consumer Finance",
+    "sector": "Financials",
+    "segment": "Banking Lending & Payments"
+   }
+  ],
+  "revenue_themes": [
+   "residential mortgage lending",
+   "retail deposit funding",
+   "consumer lending"
+  ],
+  "sector": "Financial Services",
+  "website": "https://www.thirdfederal.com"
+ },
+ "report": {
+  "display_rank": null,
+  "lane": "wait",
+  "lane_rank": 89,
+  "setup_label": "downtrend",
+  "why_now": "Structural analogs leads the readiness mix (+11.7); 30/90-session downtrend"
+ },
+ "scorecard": {
+  "headline": {
+   "avg_universe_pct": 45,
+   "label": "mixed",
+   "metric_count": 6
+  },
+  "metrics": {
+   "debt_to_equity": {
+    "direction": "lower",
+    "label": "D/E Ratio",
+    "sector": "Financials",
+    "sector_n": 303,
+    "sector_pct": 99,
+    "universe_n": 1946,
+    "universe_pct": 94,
+    "value": 0.0
+   },
+   "gross_margin": {
+    "direction": "higher",
+    "label": "Gross Margin",
+    "sector": "Financials",
+    "sector_n": 303,
+    "sector_pct": 20,
+    "universe_n": 1887,
+    "universe_pct": 56,
+    "value": 0.5558
+   },
+   "operating_margin": {
+    "direction": "higher",
+    "label": "Op. Margin",
+    "sector": "Financials",
+    "sector_n": 303,
+    "sector_pct": 16,
+    "universe_n": 1887,
+    "universe_pct": 49,
+    "value": 0.1101
+   },
+   "pe_ratio": {
+    "direction": "lower",
+    "label": "P/E",
+    "sector": "Financials",
+    "sector_n": 294,
+    "sector_pct": 4,
+    "universe_n": 1423,
+    "universe_pct": 11,
+    "value": 46.3496
+   },
+   "roe": {
+    "direction": "higher",
+    "label": "ROE",
+    "sector": "Financials",
+    "sector_n": 304,
+    "sector_pct": 9,
+    "universe_n": 1962,
+    "universe_pct": 35,
+    "value": 0.0508
+   },
+   "roic": {
+    "direction": "higher",
+    "label": "ROIC",
+    "sector": "Financials",
+    "sector_n": 301,
+    "sector_pct": 7,
+    "universe_n": 1930,
+    "universe_pct": 25,
+    "value": 0.0014
+   }
+  }
+ },
+ "signal_rank": 172,
+ "structural_analogs": {
+  "gp_core_pct": 87.4,
+  "gp_core_ratio": 1.9826,
+  "matches": [
+   {
+    "actual_downside": -0.041,
+    "actual_return": 0.1423,
+    "actual_upside": 0.1423,
+    "days_in_region": 102,
+    "end_date": "2017-07-03",
+    "end_reason": "reversal",
+    "seq_len": 102,
+    "similarity": 0.6502,
+    "start_date": "2016-09-07",
+    "ticker": "LTC",
+    "total_distance": 0.2152,
+    "trigger_date": "2016-11-03",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": -0.1972,
+    "actual_return": 0.1119,
+    "actual_upside": 0.1119,
+    "days_in_region": 137,
+    "end_date": "2019-04-01",
+    "end_reason": "reversal",
+    "seq_len": 137,
+    "similarity": 0.6475,
+    "start_date": "2018-07-13",
+    "ticker": "OKE",
+    "total_distance": 0.2173,
+    "trigger_date": "2018-10-30",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": -0.0246,
+    "actual_return": 0.1166,
+    "actual_upside": 0.1166,
+    "days_in_region": 109,
+    "end_date": "2015-10-22",
+    "end_reason": "reversal",
+    "seq_len": 109,
+    "similarity": 0.6398,
+    "start_date": "2015-03-20",
+    "ticker": "SUI",
+    "total_distance": 0.2233,
+    "trigger_date": "2015-04-13",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": -0.0551,
+    "actual_return": 0.0635,
+    "actual_upside": 0.0862,
+    "days_in_region": 134,
+    "end_date": "2017-04-18",
+    "end_reason": "reversal",
+    "seq_len": 134,
+    "similarity": 0.6378,
+    "start_date": "2016-07-29",
+    "ticker": "STOR",
+    "total_distance": 0.2249,
+    "trigger_date": "2016-11-03",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": -0.0431,
+    "actual_return": 0.1523,
+    "actual_upside": 0.1523,
+    "days_in_region": 106,
+    "end_date": "2018-11-09",
+    "end_reason": "reversal",
+    "seq_len": 106,
+    "similarity": 0.6368,
+    "start_date": "2018-08-09",
+    "ticker": "NGHC",
+    "total_distance": 0.2257,
+    "trigger_date": "2018-10-12",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": -0.0504,
+    "actual_return": 0.0721,
+    "actual_upside": 0.0721,
+    "days_in_region": 103,
+    "end_date": "2017-05-19",
+    "end_reason": "reversal",
+    "seq_len": 103,
+    "similarity": 0.636,
+    "start_date": "2016-09-06",
+    "ticker": "NHI",
+    "total_distance": 0.2263,
+    "trigger_date": "2016-11-03",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": -0.0155,
+    "actual_return": 0.1244,
+    "actual_upside": 0.1244,
+    "days_in_region": 137,
+    "end_date": "2017-02-24",
+    "end_reason": "reversal",
+    "seq_len": 137,
+    "similarity": 0.6344,
+    "start_date": "2016-08-01",
+    "ticker": "ACC",
+    "total_distance": 0.2276,
+    "trigger_date": "2016-11-16",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": -0.0149,
+    "actual_return": 0.1647,
+    "actual_upside": 0.1647,
+    "days_in_region": 121,
+    "end_date": "2021-11-23",
+    "end_reason": "reversal",
+    "seq_len": 121,
+    "similarity": 0.6281,
+    "start_date": "2021-05-07",
+    "ticker": "WRB",
+    "total_distance": 0.2325,
+    "trigger_date": "2021-08-03",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": -0.1567,
+    "actual_return": -0.0277,
+    "actual_upside": 0.0292,
+    "days_in_region": 150,
+    "end_date": "2015-12-28",
+    "end_reason": "reversal",
+    "seq_len": 150,
+    "similarity": 0.6267,
+    "start_date": "2015-01-29",
+    "ticker": "NHI",
+    "total_distance": 0.2337,
+    "trigger_date": "2015-06-08",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": 0.0,
+    "actual_return": 0.1674,
+    "actual_upside": 0.1674,
+    "days_in_region": 133,
+    "end_date": "2013-05-28",
+    "end_reason": "reversal",
+    "seq_len": 133,
+    "similarity": 0.6248,
+    "start_date": "2012-10-22",
+    "ticker": "SNI",
+    "total_distance": 0.2352,
+    "trigger_date": "2012-12-28",
+    "trigger_type": "shallow_drawdown"
+   }
+  ],
+  "panel": {
+   "edge": 0.0935,
+   "hit_hi": 0.958,
+   "hit_lo": 0.859,
+   "hit_rate": 0.922,
+   "median_final": 0.1197,
+   "median_pain": 0.0431,
+   "n": 51,
+   "n_eff": 51.0,
+   "p25_final": 0.0635,
+   "p_pain_gt5": 0.471,
+   "return_to_pain": 1.897
+  },
+  "stats": {
+   "avg_similarity": 0.6,
+   "avg_trough": 0.0767,
+   "avg_upside": 0.1365,
+   "median_pain": 0.0473,
+   "median_return": 0.091,
+   "n_matches": 200,
+   "p25_return": -0.0273,
+   "p_pain_gt5": 0.5,
+   "return_to_pain": 1.352,
+   "top5_avg_trough": 0.0722,
+   "top5_avg_upside": 0.1219,
+   "top_similarity": 0.65,
+   "win_rate": 0.73
+  },
+  "total_matches": 200
+ },
+ "ticker": "TFSL",
+ "trending": {
+  "acceleration": 0.0,
+  "avg_vol_20d": 806956.6935,
+  "base_high_120": 18.61,
+  "breakout_confirmed": 0,
+  "close": 17.57,
+  "momentum_score": 0.5183,
+  "momentum_start": "2026-03-31",
+  "range_20": 0.0595,
+  "range_50": 0.134,
+  "rank": 574,
+  "rank_down": null,
+  "rank_up": 375,
+  "ret_120": 0.3024,
+  "ret_20": -0.0011,
+  "ret_60": 0.0527,
+  "rundown_score": 0.1864,
+  "score_date": "2026-09-04",
+  "slope_20": 0.0006,
+  "slope_60": 0.0006,
+  "stage": "sustained",
+  "stage_label": "Trending",
+  "ticker": "TFSL",
+  "total_score": 0.5514,
+  "trend_ratio": 1.1085,
+  "vcp_detected": 1,
+  "vcp_score": 0.5735
+ }
+}

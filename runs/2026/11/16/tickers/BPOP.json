@@ -1,0 +1,963 @@
+{
+ "date": "2026-11-16",
+ "detected_regions": {
+  "primary": {
+   "days_in_region": 126,
+   "region_start": "2026-08-14",
+   "trigger_date": "2026-09-30",
+   "trigger_type": "shallow_drawdown"
+  },
+  "secondary": [
+   {
+    "confidence_score": 0.9816,
+    "downside_q50": -0.0427,
+    "ev_score": 0.1079,
+    "region_start": "2025-10-29",
+    "seq_len": 200,
+    "trigger_date": "2026-04-09",
+    "trigger_type": "runup",
+    "upside_q25": 0.0794,
+    "upside_q50": 0.1487,
+    "upside_q75": 0.2436
+   }
+  ]
+ },
+ "feature_attribution": {
+  "macro_driver_count": 15,
+  "risk_flags": [],
+  "top_drivers": [
+   {
+    "direction": "negative",
+    "feature": "dollar_volume",
+    "feature_value": 64054064.0,
+    "importance": 0.0003,
+    "importance_pct": 0.2883,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "negative",
+    "feature": "volatility_20d",
+    "feature_value": 0.012,
+    "importance": 0.0003,
+    "importance_pct": 0.259,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "negative",
+    "feature": "historical_recovery_rate",
+    "feature_value": 0.8602,
+    "importance": 0.0002,
+    "importance_pct": 0.1738,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "negative",
+    "feature": "book_value_per_share",
+    "feature_value": 98.8573,
+    "importance": 0.0002,
+    "importance_pct": 0.1437,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "positive",
+    "feature": "price_vs_sma200",
+    "feature_value": 1.0115,
+    "importance": 0.0002,
+    "importance_pct": 0.1351,
+    "method": "integrated_gradients"
+   }
+  ]
+ },
+ "fundamentals": {
+  "accrual": 0.0174,
+  "adx_14": 12.6441,
+  "altman_z_score": 0.2244,
+  "amihud_illiquidity": 0.0001,
+  "avg_volume": 489775.0427,
+  "beta_252d": 0.2594,
+  "book_value_per_share": 98.8573,
+  "correlation_spy_60d": 0.4532,
+  "current_liabilities": 639.018,
+  "current_ratio": 0.5842,
+  "daily_earnings_yield": 0.098,
+  "daily_fcf_yield": 0.0633,
+  "daily_pb": 1.6758,
+  "daily_pe": 10.209,
+  "daily_ps": 2.2785,
+  "days_since_52w_high": 65.0,
+  "debt_ebitda": 1.0989,
+  "debt_to_equity": 0.2124,
+  "dividend_yield": 0.0091,
+  "dollar_volume_20d_avg": 82340164.2279,
+  "earnings_quality": 0.0,
+  "ebitda_growth_yoy": null,
+  "enterprise_value": 11407.2237,
+  "eps_basic": 4.21,
+  "eps_cagr_3y": null,
+  "eps_cagr_5y": null,
+  "eps_diluted": 4.21,
+  "eps_growth_accel": null,
+  "eps_growth_qoq": -0.0322,
+  "eps_growth_yoy": null,
+  "eps_growth_yoy_q2": null,
+  "eps_growth_yoy_q3": null,
+  "eps_growth_yoy_q4": null,
+  "eps_growth_yoy_q5": null,
+  "eps_growth_yoy_q6": null,
+  "eps_growth_yoy_q7": null,
+  "eps_growth_yoy_q8": null,
+  "eps_history_8q": [
+   3.53,
+   3.78,
+   4.35,
+   4.21
+  ],
+  "eps_ttm": 15.3599,
+  "ev_to_ebitda": 9.5125,
+  "ev_to_fcf": null,
+  "ev_to_sales": 9.6169,
+  "fcf_growth_yoy": null,
+  "fcf_margin": 0.0,
+  "fcf_per_share": 0.0,
+  "gross_margin": 0.702,
+  "gross_margin_change_yoy": null,
+  "gross_margin_history": [
+   0.6709,
+   0.7108,
+   0.7058,
+   0.702
+  ],
+  "inc_roic": 0.0108,
+  "interest_coverage": 1.0298,
+  "is_pre_revenue": false,
+  "margin_vs_sector_median": null,
+  "market_cap_ratio": 10455.3067,
+  "net_income": 266.334,
+  "net_margin": 0.2232,
+  "operating_income": 310.405,
+  "operating_margin": 0.2627,
+  "operating_margin_change_yoy": null,
+  "pb_ratio": 1.5862,
+  "pe_percentile_1y": 0.7183,
+  "pe_ratio": 10.209,
+  "peg_trailing": 0.2458,
+  "piotroski_f_score": 2.0,
+  "price_vs_high_52w": 0.8816,
+  "price_vs_sma200": 1.0115,
+  "ps_percentile_1y": 0.7183,
+  "ps_ratio": 2.2926,
+  "quarter_labels_8q": [
+   "Q4 '25",
+   "Q1 '26",
+   "Q2 '26",
+   "Q3 '26"
+  ],
+  "quarterly_eps_growth_yoy": null,
+  "quarterly_eps_growth_yoy_8q": [
+   null,
+   null,
+   null,
+   null
+  ],
+  "quarterly_revenue_growth_yoy": null,
+  "quarterly_revenue_growth_yoy_8q": [
+   null,
+   null,
+   null,
+   null
+  ],
+  "revenue_cagr_3y": null,
+  "revenue_cagr_5y": null,
+  "revenue_growth_accel": null,
+  "revenue_growth_qoq": 0.0178,
+  "revenue_growth_yoy": null,
+  "revenue_growth_yoy_q2": null,
+  "revenue_growth_yoy_q3": null,
+  "revenue_growth_yoy_q4": null,
+  "revenue_growth_yoy_q5": null,
+  "revenue_growth_yoy_q6": null,
+  "revenue_growth_yoy_q7": null,
+  "revenue_growth_yoy_q8": null,
+  "revenue_history_8q": [
+   1124.307,
+   1112.842,
+   1165.422,
+   1186.164
+  ],
+  "revenue_per_share": 18.7953,
+  "roa": 0.0131,
+  "roce": 0.0155,
+  "roe": 0.1616,
+  "roic": 0.0102,
+  "rsi_14": 42.7411,
+  "sector_momentum": 0.1489,
+  "share_dilution_1y": 0.0,
+  "stock_vs_sector_20d": -0.0491,
+  "stock_vs_spy_20d": 0.0255,
+  "total_assets": 77758.872,
+  "vol_regime": 1.1672,
+  "volatility_20d": 0.012,
+  "volatility_60d": 0.0103,
+  "w52_high": 179.235,
+  "w52_low": 109.01
+ },
+ "market_characters": [],
+ "model_analogs": {
+  "matches": [
+   {
+    "actual_downside": -0.0697,
+    "actual_return": -0.0697,
+    "actual_upside": 0.0741,
+    "days_in_region": 291,
+    "end_date": "2006-02-13",
+    "end_reason": "reversal",
+    "similarity": 0.9407,
+    "start_date": "2005-04-28",
+    "ticker": "BWA",
+    "trigger_date": "2005-05-06",
+    "trigger_type": "shallow_runup"
+   },
+   {
+    "actual_downside": 0.0,
+    "actual_return": 0.2208,
+    "actual_upside": 0.3653,
+    "days_in_region": 406,
+    "end_date": "2006-06-22",
+    "end_reason": "reversal",
+    "similarity": 0.9376,
+    "start_date": "2005-05-12",
+    "ticker": "AIZ",
+    "trigger_date": "2005-10-21",
+    "trigger_type": "shallow_runup"
+   },
+   {
+    "actual_downside": -0.0053,
+    "actual_return": 0.0226,
+    "actual_upside": 0.1591,
+    "days_in_region": 172,
+    "end_date": "2005-12-19",
+    "end_reason": "reversal",
+    "similarity": 0.9363,
+    "start_date": "2005-06-30",
+    "ticker": "HCC",
+    "trigger_date": "2005-10-26",
+    "trigger_type": "shallow_runup"
+   },
+   {
+    "actual_downside": 0.0,
+    "actual_return": 0.2045,
+    "actual_upside": 0.2045,
+    "days_in_region": 184,
+    "end_date": "2006-01-11",
+    "end_reason": "reversal",
+    "similarity": 0.9358,
+    "start_date": "2005-07-11",
+    "ticker": "MAR",
+    "trigger_date": "2005-10-27",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": -0.002,
+    "actual_return": 0.435,
+    "actual_upside": 0.435,
+    "days_in_region": 217,
+    "end_date": "2005-08-02",
+    "end_reason": "reversal",
+    "similarity": 0.9352,
+    "start_date": "2004-12-28",
+    "ticker": "EXP",
+    "trigger_date": "2005-04-28",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": -0.059,
+    "actual_return": 0.0535,
+    "actual_upside": 0.0535,
+    "days_in_region": 244,
+    "end_date": "2006-02-21",
+    "end_reason": "reversal",
+    "similarity": 0.9347,
+    "start_date": "2005-06-22",
+    "ticker": "TRI",
+    "trigger_date": "2005-08-10",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": -0.0419,
+    "actual_return": 0.2183,
+    "actual_upside": 0.2183,
+    "days_in_region": 210,
+    "end_date": "2006-02-17",
+    "end_reason": "reversal",
+    "similarity": 0.9339,
+    "start_date": "2005-07-22",
+    "ticker": "FMC",
+    "trigger_date": "2005-09-22",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": -0.0221,
+    "actual_return": 0.2643,
+    "actual_upside": 0.2643,
+    "days_in_region": 178,
+    "end_date": "2006-01-27",
+    "end_reason": "reversal",
+    "similarity": 0.9324,
+    "start_date": "2005-08-02",
+    "ticker": "HET",
+    "trigger_date": "2005-09-20",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": -0.1233,
+    "actual_return": -0.1233,
+    "actual_upside": 0.0604,
+    "days_in_region": 325,
+    "end_date": "2017-05-18",
+    "end_reason": "reversal",
+    "similarity": 0.9323,
+    "start_date": "2016-06-27",
+    "ticker": "J",
+    "trigger_date": "2016-11-10",
+    "trigger_type": "runup"
+   },
+   {
+    "actual_downside": -0.0132,
+    "actual_return": 0.0175,
+    "actual_upside": 0.273,
+    "days_in_region": 299,
+    "end_date": "2006-06-13",
+    "end_reason": "reversal",
+    "similarity": 0.9322,
+    "start_date": "2005-08-18",
+    "ticker": "ESND",
+    "trigger_date": "2005-09-15",
+    "trigger_type": "compression"
+   }
+  ],
+  "stats": {
+   "avg_max_drawdown": 0.0382,
+   "avg_similarity": 0.931,
+   "avg_trough": 0.0382,
+   "avg_upside": 0.1894,
+   "best_return": 0.435,
+   "downside_range": [
+    -0.3118,
+    0.0
+   ],
+   "median_return": 0.1345,
+   "n_matches": 50,
+   "outcome_agreement": true,
+   "return_p25": 0.0188,
+   "return_p5": -0.0992,
+   "return_p75": 0.2001,
+   "return_p95": 0.3608,
+   "sim_weighted_win_rate": 0.76,
+   "top5_avg_trough": 0.0154,
+   "top5_avg_upside": 0.2476,
+   "top_similarity": 0.941,
+   "upside_range": [
+    0.0,
+    0.435
+   ],
+   "win_rate": 0.76,
+   "worst_return": -0.2317,
+   "years_span": 4
+  },
+  "total_matches": 50
+ },
+ "peer_group": {
+  "buckets": [
+   "Consumer Banking, Deposits & Cash Management",
+   "Small Business, Commercial & Specialty Finance"
+  ],
+  "groups": {
+   "Consumer Banking, Deposits & Cash Management": [
+    {
+     "market_cap_m": 3409.2731,
+     "price_vs_sma200": 1.0198,
+     "return_30d": 0.0687,
+     "return_7d": -0.0059,
+     "revenue_driver": "commercial and retail banking",
+     "signal_rank": 155,
+     "stock_vs_spy_20d": 0.1093,
+     "ticker": "CBU"
+    },
+    {
+     "market_cap_m": 92877.4315,
+     "price_vs_sma200": 1.0362,
+     "return_30d": 0.0552,
+     "return_7d": 0.0114,
+     "revenue_driver": "consumer and commercial banking",
+     "signal_rank": 246,
+     "stock_vs_spy_20d": 0.0803,
+     "ticker": "USB"
+    },
+    {
+     "market_cap_m": 653.9832,
+     "price_vs_sma200": 0.6644,
+     "return_30d": 0.0493,
+     "return_7d": -0.0065,
+     "revenue_driver": "community commercial banking",
+     "signal_rank": 563,
+     "stock_vs_spy_20d": 0.0583,
+     "ticker": "CCB"
+    },
+    {
+     "market_cap_m": 2681.9213,
+     "price_vs_sma200": 1.0581,
+     "return_30d": 0.0459,
+     "return_7d": 0.0648,
+     "revenue_driver": "commercial banking",
+     "signal_rank": 1079,
+     "stock_vs_spy_20d": 0.1058,
+     "ticker": "TRMK"
+    },
+    {
+     "market_cap_m": 12849.6392,
+     "price_vs_sma200": 1.0062,
+     "return_30d": 0.0368,
+     "return_7d": 0.0101,
+     "revenue_driver": "commercial banking",
+     "signal_rank": 206,
+     "stock_vs_spy_20d": 0.0993,
+     "ticker": "FNB"
+    },
+    {
+     "market_cap_m": 1698.2131,
+     "price_vs_sma200": 1.0794,
+     "return_30d": 0.0281,
+     "return_7d": 0.017,
+     "revenue_driver": "commercial and regional banking",
+     "signal_rank": 319,
+     "stock_vs_spy_20d": 0.0906,
+     "ticker": "QCRH"
+    },
+    {
+     "market_cap_m": 972.1517,
+     "price_vs_sma200": 1.082,
+     "return_30d": 0.0245,
+     "return_7d": 0.0046,
+     "revenue_driver": "commercial and regional banking",
+     "signal_rank": 671,
+     "stock_vs_spy_20d": 0.072,
+     "ticker": "MBWM"
+    },
+    {
+     "market_cap_m": 920070.1108,
+     "price_vs_sma200": 1.0406,
+     "return_30d": 0.0175,
+     "return_7d": 0.0026,
+     "revenue_driver": "consumer and commercial banking",
+     "signal_rank": 1123,
+     "stock_vs_spy_20d": 0.0497,
+     "ticker": "JPM"
+    },
+    {
+     "market_cap_m": 10519.9815,
+     "price_vs_sma200": 1.0115,
+     "return_30d": -0.0127,
+     "return_7d": 0.0047,
+     "revenue_driver": "Puerto Rico commercial banking",
+     "signal_rank": 171,
+     "stock_vs_spy_20d": 0.0255,
+     "ticker": "BPOP"
+    },
+    {
+     "market_cap_m": 1134.7554,
+     "price_vs_sma200": 1.0447,
+     "return_30d": -0.0158,
+     "return_7d": 0.0008,
+     "revenue_driver": "commercial banking",
+     "signal_rank": 550,
+     "stock_vs_spy_20d": 0.0355,
+     "ticker": "PFBC"
+    }
+   ],
+   "Small Business, Commercial & Specialty Finance": [
+    {
+     "market_cap_m": 859.6885,
+     "price_vs_sma200": 1.1676,
+     "return_30d": 0.0588,
+     "return_7d": 0.0133,
+     "revenue_driver": "community banking",
+     "signal_rank": 7,
+     "stock_vs_spy_20d": 0.1364,
+     "ticker": "ALRS"
+    },
+    {
+     "market_cap_m": 1493.507,
+     "price_vs_sma200": 1.1256,
+     "return_30d": 0.052,
+     "return_7d": 0.0172,
+     "revenue_driver": "commercial lending",
+     "signal_rank": 175,
+     "stock_vs_spy_20d": 0.1081,
+     "ticker": "AMAL"
+    },
+    {
+     "market_cap_m": 653.9832,
+     "price_vs_sma200": 0.6644,
+     "return_30d": 0.0493,
+     "return_7d": -0.0065,
+     "revenue_driver": "community commercial banking",
+     "signal_rank": 563,
+     "stock_vs_spy_20d": 0.0583,
+     "ticker": "CCB"
+    },
+    {
+     "market_cap_m": 2681.9213,
+     "price_vs_sma200": 1.0581,
+     "return_30d": 0.0459,
+     "return_7d": 0.0648,
+     "revenue_driver": "commercial banking",
+     "signal_rank": 1079,
+     "stock_vs_spy_20d": 0.1058,
+     "ticker": "TRMK"
+    },
+    {
+     "market_cap_m": 12849.6392,
+     "price_vs_sma200": 1.0062,
+     "return_30d": 0.0368,
+     "return_7d": 0.0101,
+     "revenue_driver": "commercial banking",
+     "signal_rank": 206,
+     "stock_vs_spy_20d": 0.0993,
+     "ticker": "FNB"
+    },
+    {
+     "market_cap_m": 10342.0328,
+     "price_vs_sma200": 1.0189,
+     "return_30d": 0.0354,
+     "return_7d": -0.0022,
+     "revenue_driver": "commercial banking",
+     "signal_rank": 197,
+     "stock_vs_spy_20d": 0.0723,
+     "ticker": "UMBF"
+    },
+    {
+     "market_cap_m": 1698.2131,
+     "price_vs_sma200": 1.0794,
+     "return_30d": 0.0281,
+     "return_7d": 0.017,
+     "revenue_driver": "commercial and regional banking",
+     "signal_rank": 319,
+     "stock_vs_spy_20d": 0.0906,
+     "ticker": "QCRH"
+    },
+    {
+     "market_cap_m": 972.1517,
+     "price_vs_sma200": 1.082,
+     "return_30d": 0.0245,
+     "return_7d": 0.0046,
+     "revenue_driver": "commercial and regional banking",
+     "signal_rank": 671,
+     "stock_vs_spy_20d": 0.072,
+     "ticker": "MBWM"
+    },
+    {
+     "market_cap_m": 10519.9815,
+     "price_vs_sma200": 1.0115,
+     "return_30d": -0.0127,
+     "return_7d": 0.0047,
+     "revenue_driver": "Puerto Rico commercial banking",
+     "signal_rank": 171,
+     "stock_vs_spy_20d": 0.0255,
+     "ticker": "BPOP"
+    },
+    {
+     "market_cap_m": 1134.7554,
+     "price_vs_sma200": 1.0447,
+     "return_30d": -0.0158,
+     "return_7d": 0.0008,
+     "revenue_driver": "commercial banking",
+     "signal_rank": 550,
+     "stock_vs_spy_20d": 0.0355,
+     "ticker": "PFBC"
+    }
+   ]
+  }
+ },
+ "predictions": {
+  "badge_count": 1,
+  "confidence_score": 0.9635,
+  "conviction_label": "HIGH CONVICTION",
+  "data_quality_flags": [],
+  "ev_score": 0.128,
+  "is_diamond": false,
+  "passes_tradability_filter": true,
+  "quality_label": "AVOID",
+  "quantiles": {
+   "downside_q10": -0.1529,
+   "downside_q25": -0.0771,
+   "downside_q50": -0.0354,
+   "downside_q75": -0.0062,
+   "downside_q90": 0.003,
+   "path_volatility": 0.0154,
+   "risk_reward": 4.5941,
+   "uncertainty": 0.325,
+   "upside_q10": 0.0338,
+   "upside_q25": 0.0868,
+   "upside_q50": 0.1627,
+   "upside_q75": 0.2606,
+   "upside_q90": 0.3588
+  },
+  "rank": 171,
+  "rank_score": 0.1795,
+  "tradability_filter_reasons": []
+ },
+ "profile": {
+  "_local": {
+   "dividend_yield": 0.0091,
+   "eps_growth_yoy": null,
+   "pe_ratio": 9.942,
+   "revenue_growth_yoy": null,
+   "roe": 0.1616
+  },
+  "beta": 0.646,
+  "betaTTM": null,
+  "ceo": "Jorge J. García",
+  "companyName": "Popular, Inc.",
+  "country": "PR",
+  "debtToEquityTTM": null,
+  "description": "Popular, Inc., along with its subsidiaries, offers a broad spectrum of financial products and services encompassing retail, mortgage, and commercial banking. These operations extend across Puerto Rico, the United States, and the British Virgin Islands. The company provides various deposit options, including interest-bearing accounts such as savings, NOW, and money market accounts, alongside non-interest-bearing demand deposits and certificates of deposit. Its diverse lending activities include commercial and industrial financing, loans for multi-family and commercial real estate, and residential mortgage products. For individual consumers, Popular provides personal loans, credit cards, automobile financing, and home equity lines of credit. Construction project funding and lease financing, especially for vehicles, are also part of its offerings. Further expanding its services, Popular, Inc. engages in investment banking, equipment and auto leasing and financing, broker-dealer operations, and insurance. It also supports convenient banking through debit cards and online platforms. Established in 1893 and headquartered in Hato Rey, Puerto Rico, Popular, Inc. maintained a significant operational footprint as of December 31, 2021. This included 169 branches and 616 ATMs throughout Puerto Rico, 23 ATMs in the Virgin Islands, and 91 ATMs situated in the continental United States.",
+  "dividendYielTTM": null,
+  "enterpriseValueOverEBITDATTM": null,
+  "exchangeShortName": "NASDAQ",
+  "fullTimeEmployees": "9112",
+  "industry": "Banks - Regional",
+  "ipoDate": "1980-03-17",
+  "latest_earnings_date": "2026-11-09",
+  "marketCapTTM": null,
+  "mktCap": 9784825452,
+  "peRatioTTM": null,
+  "price": 156.81,
+  "priceToSalesRatioTTM": null,
+  "returnOnEquityTTM": 0.1625,
+  "revenue_description": "Popular is a financial services company with banking operations centered in Puerto Rico and the mainland U.S. Revenue is driven by unit volume growth and pricing realization in its core end markets, with new product introductions and geographic expansion as incremental catalysts.",
+  "revenue_description_themes": [
+   "commercial loan growth",
+   "net interest margin expansion",
+   "Puerto Rico market share gains"
+  ],
+  "revenue_taxonomy": [
+   {
+    "bucket": "Small Business, Commercial & Specialty Finance",
+    "matched_tags": [
+     "Puerto Rico commercial banking"
+    ],
+    "path": "Financials › Banking Lending & Payments › Small Business, Commercial & Specialty Finance",
+    "sector": "Financials",
+    "segment": "Banking Lending & Payments"
+   },
+   {
+    "bucket": "Consumer Banking, Deposits & Cash Management",
+    "matched_tags": [
+     "consumer banking",
+     "retail deposits and lending"
+    ],
+    "path": "Financials › Banking Lending & Payments › Consumer Banking, Deposits & Cash Management",
+    "sector": "Financials",
+    "segment": "Banking Lending & Payments"
+   }
+  ],
+  "revenue_themes": [
+   "Puerto Rico commercial banking",
+   "consumer banking",
+   "retail deposits and lending"
+  ],
+  "sector": "Financial Services",
+  "website": "https://www.popular.com"
+ },
+ "report": {
+  "display_rank": null,
+  "lane": "wait",
+  "lane_rank": 87,
+  "setup_label": "downtrend",
+  "why_now": "Structural analogs leads the readiness mix (+11.2); 30/90-session downtrend"
+ },
+ "scorecard": {
+  "headline": {
+   "avg_universe_pct": 68,
+   "label": "above_average",
+   "metric_count": 6
+  },
+  "metrics": {
+   "debt_to_equity": {
+    "direction": "lower",
+    "label": "D/E Ratio",
+    "sector": "Financials",
+    "sector_n": 303,
+    "sector_pct": 66,
+    "universe_n": 1946,
+    "universe_pct": 62,
+    "value": 0.2124
+   },
+   "gross_margin": {
+    "direction": "higher",
+    "label": "Gross Margin",
+    "sector": "Financials",
+    "sector_n": 303,
+    "sector_pct": 55,
+    "universe_n": 1887,
+    "universe_pct": 75,
+    "value": 0.702
+   },
+   "operating_margin": {
+    "direction": "higher",
+    "label": "Op. Margin",
+    "sector": "Financials",
+    "sector_n": 303,
+    "sector_pct": 63,
+    "universe_n": 1887,
+    "universe_pct": 84,
+    "value": 0.2627
+   },
+   "pe_ratio": {
+    "direction": "lower",
+    "label": "P/E",
+    "sector": "Financials",
+    "sector_n": 294,
+    "sector_pct": 83,
+    "universe_n": 1423,
+    "universe_pct": 88,
+    "value": 9.942
+   },
+   "roe": {
+    "direction": "higher",
+    "label": "ROE",
+    "sector": "Financials",
+    "sector_n": 304,
+    "sector_pct": 69,
+    "universe_n": 1962,
+    "universe_pct": 68,
+    "value": 0.1616
+   },
+   "roic": {
+    "direction": "higher",
+    "label": "ROIC",
+    "sector": "Financials",
+    "sector_n": 301,
+    "sector_pct": 18,
+    "universe_n": 1930,
+    "universe_pct": 29,
+    "value": 0.0035
+   }
+  }
+ },
+ "signal_rank": 171,
+ "structural_analogs": {
+  "gp_core_pct": 70.1,
+  "gp_core_ratio": 1.5984,
+  "matches": [
+   {
+    "actual_downside": -0.0149,
+    "actual_return": 0.1647,
+    "actual_upside": 0.1647,
+    "days_in_region": 121,
+    "end_date": "2021-11-23",
+    "end_reason": "reversal",
+    "seq_len": 121,
+    "similarity": 0.6298,
+    "start_date": "2021-05-07",
+    "ticker": "WRB",
+    "total_distance": 0.2312,
+    "trigger_date": "2021-08-03",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": 0.0,
+    "actual_return": 0.1642,
+    "actual_upside": 0.1642,
+    "days_in_region": 135,
+    "end_date": "2017-01-04",
+    "end_reason": "reversal",
+    "seq_len": 135,
+    "similarity": 0.6239,
+    "start_date": "2016-07-29",
+    "ticker": "DRE",
+    "total_distance": 0.2359,
+    "trigger_date": "2016-11-11",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": -0.1154,
+    "actual_return": 0.0671,
+    "actual_upside": 0.0671,
+    "days_in_region": 109,
+    "end_date": "2022-01-04",
+    "end_reason": "reversal",
+    "seq_len": 109,
+    "similarity": 0.6212,
+    "start_date": "2021-09-08",
+    "ticker": "GMED",
+    "total_distance": 0.2381,
+    "trigger_date": "2021-11-11",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": -0.0403,
+    "actual_return": 0.2391,
+    "actual_upside": 0.2391,
+    "days_in_region": 130,
+    "end_date": "2016-12-07",
+    "end_reason": "reversal",
+    "seq_len": 130,
+    "similarity": 0.6169,
+    "start_date": "2016-07-14",
+    "ticker": "RS",
+    "total_distance": 0.2416,
+    "trigger_date": "2016-08-11",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": -0.0476,
+    "actual_return": -0.0476,
+    "actual_upside": 0.1014,
+    "days_in_region": 91,
+    "end_date": "2016-01-13",
+    "end_reason": "reversal",
+    "seq_len": 91,
+    "similarity": 0.6168,
+    "start_date": "2015-08-24",
+    "ticker": "CVG",
+    "total_distance": 0.2416,
+    "trigger_date": "2015-10-06",
+    "trigger_type": "shallow_runup"
+   },
+   {
+    "actual_downside": -0.0878,
+    "actual_return": 0.0929,
+    "actual_upside": 0.0929,
+    "days_in_region": 128,
+    "end_date": "2005-12-14",
+    "end_reason": "reversal",
+    "seq_len": 128,
+    "similarity": 0.6146,
+    "start_date": "2005-07-05",
+    "ticker": "NST",
+    "total_distance": 0.2434,
+    "trigger_date": "2005-10-07",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": -0.0155,
+    "actual_return": 0.1244,
+    "actual_upside": 0.1244,
+    "days_in_region": 137,
+    "end_date": "2017-02-24",
+    "end_reason": "reversal",
+    "seq_len": 137,
+    "similarity": 0.6121,
+    "start_date": "2016-08-01",
+    "ticker": "ACC",
+    "total_distance": 0.2454,
+    "trigger_date": "2016-11-16",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": 0.0,
+    "actual_return": 0.1636,
+    "actual_upside": 0.1636,
+    "days_in_region": 119,
+    "end_date": "2021-12-31",
+    "end_reason": "reversal",
+    "seq_len": 119,
+    "similarity": 0.6111,
+    "start_date": "2021-09-08",
+    "ticker": "DGX",
+    "total_distance": 0.2463,
+    "trigger_date": "2021-10-12",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": -0.0634,
+    "actual_return": 0.0145,
+    "actual_upside": 0.1965,
+    "days_in_region": 92,
+    "end_date": "2021-12-20",
+    "end_reason": "reversal",
+    "seq_len": 92,
+    "similarity": 0.6105,
+    "start_date": "2021-07-19",
+    "ticker": "WLK",
+    "total_distance": 0.2468,
+    "trigger_date": "2021-08-31",
+    "trigger_type": "shallow_runup"
+   },
+   {
+    "actual_downside": -0.0372,
+    "actual_return": -0.0372,
+    "actual_upside": 0.0673,
+    "days_in_region": 200,
+    "end_date": "2021-12-01",
+    "end_reason": "reversal",
+    "seq_len": 200,
+    "similarity": 0.6104,
+    "start_date": "2020-11-20",
+    "ticker": "AAP",
+    "total_distance": 0.2469,
+    "trigger_date": "2021-02-19",
+    "trigger_type": "runup"
+   }
+  ],
+  "panel": {
+   "edge": 0.0599,
+   "hit_hi": 0.832,
+   "hit_lo": 0.681,
+   "hit_rate": 0.765,
+   "median_final": 0.1216,
+   "median_pain": 0.0476,
+   "n": 51,
+   "n_eff": 51.0,
+   "p25_final": 0.0104,
+   "p_pain_gt5": 0.49,
+   "return_to_pain": 1.8
+  },
+  "stats": {
+   "avg_similarity": 0.591,
+   "avg_trough": 0.0749,
+   "avg_upside": 0.1396,
+   "median_pain": 0.0528,
+   "median_return": 0.0927,
+   "n_matches": 200,
+   "p25_return": -0.0213,
+   "p_pain_gt5": 0.515,
+   "return_to_pain": 1.273,
+   "top5_avg_trough": 0.0436,
+   "top5_avg_upside": 0.1473,
+   "top_similarity": 0.63,
+   "win_rate": 0.725
+  },
+  "total_matches": 200
+ },
+ "ticker": "BPOP",
+ "trending": {
+  "acceleration": -0.0034,
+  "avg_vol_20d": 388287.2232,
+  "base_high_120": 177.87,
+  "breakout_confirmed": 0,
+  "close": 171.32,
+  "momentum_score": 0.5653,
+  "momentum_start": "2025-11-21",
+  "range_20": 0.0714,
+  "range_50": 0.091,
+  "rank": 1444,
+  "rank_down": null,
+  "rank_up": 631,
+  "ret_120": 0.3051,
+  "ret_20": -0.0156,
+  "ret_60": 0.0972,
+  "rundown_score": 0.5455,
+  "score_date": "2026-09-04",
+  "slope_20": -0.0023,
+  "slope_60": 0.001,
+  "stage": "sustained",
+  "stage_label": "Trending",
+  "ticker": "BPOP",
+  "total_score": 0.3551,
+  "trend_ratio": 1.1445,
+  "vcp_detected": 0,
+  "vcp_score": 0.215
+ }
+}
