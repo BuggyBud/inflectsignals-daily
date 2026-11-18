@@ -1,0 +1,1032 @@
+{
+ "date": "2026-11-17",
+ "detected_regions": {
+  "primary": {
+   "days_in_region": 86,
+   "region_start": "2026-10-13",
+   "trigger_date": "2026-11-06",
+   "trigger_type": "severe_drawdown"
+  },
+  "secondary": [
+   {
+    "confidence_score": 0.1961,
+    "downside_q50": -0.0628,
+    "ev_score": 0.1882,
+    "region_start": "2026-04-17",
+    "seq_len": 200,
+    "trigger_date": "2026-09-02",
+    "trigger_type": "runup",
+    "upside_q25": 0.1149,
+    "upside_q50": 0.2406,
+    "upside_q75": 0.4206
+   }
+  ]
+ },
+ "feature_attribution": {
+  "macro_driver_count": 13,
+  "risk_flags": [
+   "high_volatility"
+  ],
+  "top_drivers": [
+   {
+    "direction": "negative",
+    "feature": "dollar_volume",
+    "feature_value": 117467840.0,
+    "importance": 0.0009,
+    "importance_pct": 0.2407,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "positive",
+    "feature": "price_vs_sma200",
+    "feature_value": 1.2013,
+    "importance": 0.0008,
+    "importance_pct": 0.2356,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "positive",
+    "feature": "price_vs_low_52w",
+    "feature_value": 2.5815,
+    "importance": 0.0006,
+    "importance_pct": 0.1587,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "positive",
+    "feature": "volatility_20d",
+    "feature_value": 0.0421,
+    "importance": 0.0004,
+    "importance_pct": 0.114,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "negative",
+    "feature": "ma_200_slope",
+    "feature_value": 0.0798,
+    "importance": 0.0004,
+    "importance_pct": 0.1069,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "negative",
+    "feature": "beta_252d",
+    "feature_value": 0.0199,
+    "importance": 0.0003,
+    "importance_pct": 0.0767,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "negative",
+    "feature": "stock_vs_spy_change_5d",
+    "feature_value": 0.0982,
+    "importance": 0.0002,
+    "importance_pct": 0.0673,
+    "method": "integrated_gradients"
+   }
+  ]
+ },
+ "fundamentals": {
+  "accrual": 0.0015,
+  "adx_14": 23.1331,
+  "altman_z_score": 2.4722,
+  "amihud_illiquidity": 0.0002,
+  "avg_volume": 3062183.284,
+  "beta_252d": 0.0199,
+  "book_value_per_share": 66.2272,
+  "correlation_spy_60d": 0.1105,
+  "current_liabilities": 5040.6,
+  "current_ratio": 1.5933,
+  "daily_earnings_yield": 0.3486,
+  "daily_fcf_yield": 0.338,
+  "daily_pb": 0.9781,
+  "daily_pe": 2.8688,
+  "daily_ps": 0.2003,
+  "days_since_52w_high": 25.0,
+  "debt_ebitda": 0.5968,
+  "debt_to_equity": 0.3407,
+  "dividend_yield": 0.0034,
+  "dollar_volume_20d_avg": 183427100.1763,
+  "earnings_quality": 1.2278,
+  "ebitda_growth_yoy": 10.0,
+  "enterprise_value": 7948.143,
+  "eps_basic": 12.73,
+  "eps_cagr_3y": 0.0037,
+  "eps_cagr_5y": 0.6362,
+  "eps_diluted": 12.54,
+  "eps_growth_accel": 3.5564,
+  "eps_growth_qoq": 0.6619,
+  "eps_growth_yoy": 5.8925,
+  "eps_growth_yoy_q2": 2.336,
+  "eps_growth_yoy_q3": 1.4149,
+  "eps_growth_yoy_q4": 0.693,
+  "eps_growth_yoy_q5": -0.8235,
+  "eps_growth_yoy_q6": -2.3694,
+  "eps_growth_yoy_q7": -1.6081,
+  "eps_growth_yoy_q8": -1.2749,
+  "eps_history_8q": [
+   -2.54,
+   -3.53,
+   -0.05,
+   1.45,
+   0.66,
+   1.65,
+   7.54,
+   12.54
+  ],
+  "eps_ttm": 23.4136,
+  "ev_to_ebitda": 1.7498,
+  "ev_to_fcf": 4.6953,
+  "ev_to_sales": 0.6551,
+  "fcf_growth_yoy": 5.0375,
+  "fcf_margin": 0.1395,
+  "fcf_per_share": 14.0912,
+  "gross_margin": 0.0944,
+  "gross_margin_change_yoy": 0.1511,
+  "gross_margin_history": [
+   -0.0106,
+   0.0007,
+   0.0013,
+   0.023,
+   0.0498,
+   0.0944
+  ],
+  "inc_roic": 0.3351,
+  "interest_coverage": 25.7348,
+  "is_pre_revenue": false,
+  "margin_vs_sector_median": null,
+  "market_cap_ratio": 7781.443,
+  "net_income": 1529.3,
+  "net_margin": 0.0698,
+  "operating_income": 2100.9,
+  "operating_margin": 0.1002,
+  "operating_margin_change_yoy": 0.1752,
+  "pb_ratio": 1.0142,
+  "pe_percentile_1y": 0.5516,
+  "pe_ratio": 2.8688,
+  "peg_trailing": 0.0058,
+  "piotroski_f_score": 4.0,
+  "price_vs_high_52w": 0.7368,
+  "price_vs_sma200": 1.2013,
+  "ps_percentile_1y": 0.373,
+  "ps_ratio": 0.2252,
+  "quarter_labels_8q": [
+   "Q4 '24",
+   "Q1 '25",
+   "Q2 '25",
+   "Q3 '25",
+   "Q4 '25",
+   "Q1 '26",
+   "Q2 '26",
+   "Q3 '26"
+  ],
+  "quarterly_eps_growth_yoy": 7.6483,
+  "quarterly_eps_growth_yoy_8q": [
+   -5.35,
+   -5.1047,
+   0.9107,
+   1.5823,
+   1.2598,
+   1.4674,
+   10.0,
+   7.6483
+  ],
+  "quarterly_revenue_growth_yoy": 0.5858,
+  "quarterly_revenue_growth_yoy_8q": [
+   -0.1956,
+   -0.1827,
+   -0.1443,
+   -0.0872,
+   -0.0288,
+   0.1186,
+   0.5623,
+   0.5858
+  ],
+  "revenue_cagr_3y": -0.0099,
+  "revenue_cagr_5y": 0.1138,
+  "revenue_growth_accel": 0.1798,
+  "revenue_growth_qoq": 0.0389,
+  "revenue_growth_yoy": 0.3151,
+  "revenue_growth_yoy_q2": 0.1354,
+  "revenue_growth_yoy_q3": -0.0433,
+  "revenue_growth_yoy_q4": -0.1142,
+  "revenue_growth_yoy_q5": -0.1535,
+  "revenue_growth_yoy_q6": -0.1873,
+  "revenue_growth_yoy_q7": -0.163,
+  "revenue_growth_yoy_q8": -0.1359,
+  "revenue_history_8q": [
+   7351.3,
+   7066.4,
+   7475.3,
+   7651.1,
+   7139.5,
+   7904.3,
+   11678.3,
+   12132.8
+  ],
+  "revenue_per_share": 100.9957,
+  "roa": 0.1698,
+  "roce": 0.3458,
+  "roe": 0.3777,
+  "roic": 0.2224,
+  "rsi_14": 36.8524,
+  "sector_momentum": 0.0115,
+  "share_dilution_1y": 0.0,
+  "stock_vs_sector_20d": -0.1235,
+  "stock_vs_spy_20d": -0.1425,
+  "total_assets": 17234.0,
+  "vol_regime": 1.0835,
+  "volatility_20d": 0.0421,
+  "volatility_60d": 0.0389,
+  "w52_high": 92.46,
+  "w52_low": 25.62
+ },
+ "market_characters": [
+  {
+   "id": "g3",
+   "name": "Explosive Gainers"
+  },
+  {
+   "id": "g5",
+   "name": "Quality Compressed"
+  }
+ ],
+ "model_analogs": {
+  "matches": [
+   {
+    "actual_downside": 0.0,
+    "actual_return": 0.7848,
+    "actual_upside": 0.7848,
+    "days_in_region": 181,
+    "end_date": "2006-01-24",
+    "end_reason": "reversal",
+    "similarity": 0.9693,
+    "start_date": "2005-07-27",
+    "ticker": "PTRY",
+    "trigger_date": "2005-10-18",
+    "trigger_type": "severe_drawdown"
+   },
+   {
+    "actual_downside": -0.1313,
+    "actual_return": 0.2129,
+    "actual_upside": 0.2129,
+    "days_in_region": 176,
+    "end_date": "2017-02-08",
+    "end_reason": "reversal",
+    "similarity": 0.9685,
+    "start_date": "2016-08-16",
+    "ticker": "SLVP",
+    "trigger_date": "2016-08-31",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": -0.0027,
+    "actual_return": 0.8533,
+    "actual_upside": 0.8533,
+    "days_in_region": 266,
+    "end_date": "2013-02-19",
+    "end_reason": "reversal",
+    "similarity": 0.9666,
+    "start_date": "2012-05-29",
+    "ticker": "HZO",
+    "trigger_date": "2012-11-19",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": -0.1272,
+    "actual_return": 0.3529,
+    "actual_upside": 0.3529,
+    "days_in_region": 235,
+    "end_date": "2006-03-13",
+    "end_reason": "reversal",
+    "similarity": 0.9665,
+    "start_date": "2005-07-21",
+    "ticker": "IMAX",
+    "trigger_date": "2005-10-24",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": 0.0,
+    "actual_return": 0.4828,
+    "actual_upside": 0.4828,
+    "days_in_region": 120,
+    "end_date": "2006-01-31",
+    "end_reason": "reversal",
+    "similarity": 0.9659,
+    "start_date": "2005-10-03",
+    "ticker": "FTO",
+    "trigger_date": "2005-10-13",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": 0.0,
+    "actual_return": 0.2856,
+    "actual_upside": 1.2029,
+    "days_in_region": 285,
+    "end_date": "2021-09-14",
+    "end_reason": "reversal",
+    "similarity": 0.9654,
+    "start_date": "2020-12-03",
+    "ticker": "SWBI",
+    "trigger_date": "2021-02-25",
+    "trigger_type": "shallow_runup"
+   },
+   {
+    "actual_downside": 0.0,
+    "actual_return": 0.4386,
+    "actual_upside": 0.4386,
+    "days_in_region": 182,
+    "end_date": "2006-01-31",
+    "end_reason": "reversal",
+    "similarity": 0.9653,
+    "start_date": "2005-08-02",
+    "ticker": "NSS",
+    "trigger_date": "2005-08-15",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": -0.0259,
+    "actual_return": 0.6406,
+    "actual_upside": 0.6406,
+    "days_in_region": 126,
+    "end_date": "2005-11-25",
+    "end_reason": "reversal",
+    "similarity": 0.9651,
+    "start_date": "2005-07-22",
+    "ticker": "PAR",
+    "trigger_date": "2005-07-29",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": -0.0206,
+    "actual_return": 0.1981,
+    "actual_upside": 0.1981,
+    "days_in_region": 134,
+    "end_date": "2005-12-13",
+    "end_reason": "reversal",
+    "similarity": 0.965,
+    "start_date": "2005-08-01",
+    "ticker": "MTH",
+    "trigger_date": "2005-08-10",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": 0.0,
+    "actual_return": 0.2422,
+    "actual_upside": 0.2422,
+    "days_in_region": 85,
+    "end_date": "2005-12-01",
+    "end_reason": "reversal",
+    "similarity": 0.9648,
+    "start_date": "2005-09-07",
+    "ticker": "GNSS",
+    "trigger_date": "2005-09-16",
+    "trigger_type": "shallow_drawdown"
+   }
+  ],
+  "stats": {
+   "avg_max_drawdown": 0.0486,
+   "avg_similarity": 0.963,
+   "avg_trough": 0.0486,
+   "avg_upside": 0.403,
+   "best_return": 0.8533,
+   "downside_range": [
+    -0.3131,
+    0.0
+   ],
+   "median_return": 0.3194,
+   "n_matches": 50,
+   "outcome_agreement": true,
+   "return_p25": 0.2013,
+   "return_p5": 0.0291,
+   "return_p75": 0.5025,
+   "return_p95": 0.7797,
+   "sim_weighted_win_rate": 0.96,
+   "top5_avg_trough": 0.0522,
+   "top5_avg_upside": 0.5373,
+   "top_similarity": 0.969,
+   "upside_range": [
+    0.0425,
+    1.2029
+   ],
+   "win_rate": 0.96,
+   "worst_return": -0.1577,
+   "years_span": 13
+  },
+  "total_matches": 50
+ },
+ "peer_group": {
+  "buckets": [
+   "Energy Technology, Nuclear, LNG, Hydrogen & Emerging Energy Infrastructure",
+   "Refining, Fuel Marketing & Wholesale Energy Products"
+  ],
+  "groups": {
+   "Energy Technology, Nuclear, LNG, Hydrogen & Emerging Energy Infrastructure": [
+    {
+     "market_cap_m": 68889.9981,
+     "price_vs_sma200": 1.0473,
+     "return_30d": 0.0922,
+     "return_7d": 0.0068,
+     "revenue_driver": "industrial gas supply",
+     "signal_rank": 826,
+     "stock_vs_spy_20d": 0.0626,
+     "ticker": "APD"
+    },
+    {
+     "market_cap_m": 86220.1461,
+     "price_vs_sma200": 0.963,
+     "return_30d": -0.1076,
+     "return_7d": 0.0725,
+     "revenue_driver": "nuclear power generation",
+     "signal_rank": 563,
+     "stock_vs_spy_20d": 0.0839,
+     "ticker": "CEG"
+    },
+    {
+     "market_cap_m": 118490.2848,
+     "price_vs_sma200": 1.2264,
+     "return_30d": -0.1323,
+     "return_7d": 0.05,
+     "revenue_driver": "petroleum refining",
+     "signal_rank": 508,
+     "stock_vs_spy_20d": -0.1125,
+     "ticker": "VLO"
+    },
+    {
+     "market_cap_m": 20594.8181,
+     "price_vs_sma200": 1.1985,
+     "return_30d": -0.1474,
+     "return_7d": 0.0055,
+     "revenue_driver": "petroleum refining",
+     "signal_rank": 310,
+     "stock_vs_spy_20d": -0.172,
+     "ticker": "DINO"
+    },
+    {
+     "market_cap_m": 16782.8117,
+     "price_vs_sma200": 0.6613,
+     "return_30d": -0.1845,
+     "return_7d": -0.0059,
+     "revenue_driver": "naval nuclear reactors",
+     "signal_rank": 88,
+     "stock_vs_spy_20d": -0.0666,
+     "ticker": "BWXT"
+    },
+    {
+     "market_cap_m": 8751.0824,
+     "price_vs_sma200": 1.2013,
+     "return_30d": -0.1896,
+     "return_7d": -0.0015,
+     "revenue_driver": "petroleum refining",
+     "signal_rank": 984,
+     "stock_vs_spy_20d": -0.1425,
+     "ticker": "PBF"
+    },
+    {
+     "market_cap_m": 1195.8859,
+     "price_vs_sma200": 0.5129,
+     "return_30d": -0.2851,
+     "return_7d": -0.2236,
+     "revenue_driver": "silicon anode battery cells",
+     "signal_rank": 1865,
+     "stock_vs_spy_20d": -0.0586,
+     "ticker": "AMPX"
+    },
+    {
+     "market_cap_m": 4885.8066,
+     "price_vs_sma200": 1.0322,
+     "return_30d": -0.338,
+     "return_7d": -0.0031,
+     "revenue_driver": "petroleum refining",
+     "signal_rank": 1387,
+     "stock_vs_spy_20d": -0.3374,
+     "ticker": "CVI"
+    },
+    {
+     "market_cap_m": 51505.0005,
+     "price_vs_sma200": 0.7753,
+     "return_30d": -0.4136,
+     "return_7d": 0.0013,
+     "revenue_driver": "solid oxide fuel cells",
+     "signal_rank": 1929,
+     "stock_vs_spy_20d": -0.1727,
+     "ticker": "BE"
+    },
+    {
+     "market_cap_m": 8051.975,
+     "price_vs_sma200": 0.4108,
+     "return_30d": -0.5858,
+     "return_7d": -0.0191,
+     "revenue_driver": "bitcoin mining operations",
+     "signal_rank": null,
+     "stock_vs_spy_20d": -0.515,
+     "ticker": "CIFR"
+    }
+   ],
+   "Refining, Fuel Marketing & Wholesale Energy Products": [
+    {
+     "market_cap_m": 867.7772,
+     "price_vs_sma200": 0.8294,
+     "return_30d": -0.04,
+     "return_7d": -0.0374,
+     "revenue_driver": "ethanol production",
+     "signal_rank": 1618,
+     "stock_vs_spy_20d": 0.0595,
+     "ticker": "ALTO"
+    },
+    {
+     "market_cap_m": 110303.653,
+     "price_vs_sma200": 1.2474,
+     "return_30d": -0.0477,
+     "return_7d": 0.0456,
+     "revenue_driver": "refining operations",
+     "signal_rank": 342,
+     "stock_vs_spy_20d": -0.0689,
+     "ticker": "PSX"
+    },
+    {
+     "market_cap_m": 128459.2587,
+     "price_vs_sma200": 1.3013,
+     "return_30d": -0.085,
+     "return_7d": 0.0614,
+     "revenue_driver": "petroleum refining",
+     "signal_rank": 456,
+     "stock_vs_spy_20d": -0.119,
+     "ticker": "MPC"
+    },
+    {
+     "market_cap_m": 3840.3254,
+     "price_vs_sma200": 1.1935,
+     "return_30d": -0.1279,
+     "return_7d": 0.0319,
+     "revenue_driver": "petroleum refining",
+     "signal_rank": 1131,
+     "stock_vs_spy_20d": -0.1017,
+     "ticker": "DK"
+    },
+    {
+     "market_cap_m": 118490.2848,
+     "price_vs_sma200": 1.2264,
+     "return_30d": -0.1323,
+     "return_7d": 0.05,
+     "revenue_driver": "petroleum refining",
+     "signal_rank": 508,
+     "stock_vs_spy_20d": -0.1125,
+     "ticker": "VLO"
+    },
+    {
+     "market_cap_m": 20594.8181,
+     "price_vs_sma200": 1.1985,
+     "return_30d": -0.1474,
+     "return_7d": 0.0055,
+     "revenue_driver": "petroleum refining",
+     "signal_rank": 310,
+     "stock_vs_spy_20d": -0.172,
+     "ticker": "DINO"
+    },
+    {
+     "market_cap_m": 8751.0824,
+     "price_vs_sma200": 1.2013,
+     "return_30d": -0.1896,
+     "return_7d": -0.0015,
+     "revenue_driver": "petroleum refining",
+     "signal_rank": 984,
+     "stock_vs_spy_20d": -0.1425,
+     "ticker": "PBF"
+    },
+    {
+     "market_cap_m": 3503.2711,
+     "price_vs_sma200": 1.0625,
+     "return_30d": -0.1904,
+     "return_7d": 0.0338,
+     "revenue_driver": "petroleum refining",
+     "signal_rank": 1045,
+     "stock_vs_spy_20d": -0.1251,
+     "ticker": "PARR"
+    },
+    {
+     "market_cap_m": 1872.9887,
+     "price_vs_sma200": 0.7542,
+     "return_30d": -0.219,
+     "return_7d": -0.0562,
+     "revenue_driver": "grain merchandising",
+     "signal_rank": 931,
+     "stock_vs_spy_20d": -0.1568,
+     "ticker": "ANDE"
+    },
+    {
+     "market_cap_m": 4885.8066,
+     "price_vs_sma200": 1.0322,
+     "return_30d": -0.338,
+     "return_7d": -0.0031,
+     "revenue_driver": "petroleum refining",
+     "signal_rank": 1387,
+     "stock_vs_spy_20d": -0.3374,
+     "ticker": "CVI"
+    }
+   ]
+  }
+ },
+ "predictions": {
+  "badge_count": 1,
+  "confidence_score": 0.1887,
+  "conviction_label": "HIGH CONVICTION",
+  "data_quality_flags": [],
+  "ev_score": 0.2297,
+  "is_diamond": false,
+  "passes_tradability_filter": true,
+  "quality_label": "WEAK",
+  "quantiles": {
+   "downside_q10": -0.2396,
+   "downside_q25": -0.1152,
+   "downside_q50": -0.0478,
+   "downside_q75": -0.0039,
+   "downside_q90": 0.0138,
+   "path_volatility": 0.0376,
+   "risk_reward": 5.6331,
+   "uncertainty": 0.6191,
+   "upside_q10": 0.0462,
+   "upside_q25": 0.1325,
+   "upside_q50": 0.2695,
+   "upside_q75": 0.4489,
+   "upside_q90": 0.6654
+  },
+  "rank": 984,
+  "rank_score": 0.0719,
+  "tradability_filter_reasons": []
+ },
+ "profile": {
+  "_local": {
+   "dividend_yield": 0.0034,
+   "eps_growth_yoy": 5.8925,
+   "pe_ratio": 3.3738,
+   "revenue_growth_yoy": 0.3151,
+   "roe": 0.3777
+  },
+  "beta": 0.1,
+  "betaTTM": null,
+  "ceo": "Matthew C. Lucey",
+  "companyName": "PBF Energy Inc.",
+  "country": "US",
+  "debtToEquityTTM": null,
+  "description": "PBF Energy Inc., operating through its subsidiaries, primarily focuses on the refinement and distribution of various petroleum products. Its business is structured into two core segments: Refining and Logistics. The company's extensive product portfolio encompasses gasoline, ultra-low-sulfur diesel, heating oil, standard diesel fuel, jet fuel, lubricants, petrochemicals, and asphalt. Additionally, it provides unbranded transportation fuels, essential petrochemical feedstocks, blending components, and other petroleum derivatives. PBF Energy distributes these products across the United States, specifically targeting the Northeast, Midwest, Gulf Coast, and West Coast regions, with further market penetration into other domestic areas, Canada, and Mexico. Beyond its refining activities, the company offers a comprehensive suite of logistics services, including rail, truck, and marine terminaling, alongside pipeline transportation and storage solutions. As of December 31, 2021, PBF Energy Inc. owned and operated six oil refineries and associated infrastructure. The company was established in 2008 and is headquartered in Parsippany, New Jersey.",
+  "dividendYielTTM": null,
+  "enterpriseValueOverEBITDATTM": null,
+  "exchangeShortName": "NYSE",
+  "fullTimeEmployees": "3678",
+  "industry": "Oil & Gas Refining & Marketing",
+  "ipoDate": "2012-12-13",
+  "latest_earnings_date": "2026-10-29",
+  "marketCapTTM": null,
+  "mktCap": 8149400250,
+  "peRatioTTM": null,
+  "price": 67.17,
+  "priceToSalesRatioTTM": null,
+  "returnOnEquityTTM": 0.4305,
+  "revenue_description": "PBF Energy operates refining and related fuel businesses. Revenue is driven by unit volume growth and pricing realization in its core end markets, with new product introductions and geographic expansion as incremental catalysts.",
+  "revenue_description_themes": [
+   "refining margin expansion",
+   "renewable diesel growth",
+   "throughput and utilization improvement"
+  ],
+  "revenue_taxonomy": [
+   {
+    "bucket": "Refining, Fuel Marketing & Wholesale Energy Products",
+    "matched_tags": [
+     "petroleum refining",
+     "gasoline and distillate fuel"
+    ],
+    "path": "Energy & Utilities › Energy Value Chain › Refining, Fuel Marketing & Wholesale Energy Products",
+    "sector": "Energy & Utilities",
+    "segment": "Energy Value Chain"
+   },
+   {
+    "bucket": "Energy Technology, Nuclear, LNG, Hydrogen & Emerging Energy Infrastructure",
+    "matched_tags": [
+     "renewable diesel"
+    ],
+    "path": "Energy & Utilities › Energy Value Chain › Energy Technology, Nuclear, LNG, Hydrogen & Emerging Energy Infrastructure",
+    "sector": "Energy & Utilities",
+    "segment": "Energy Value Chain"
+   }
+  ],
+  "revenue_themes": [
+   "petroleum refining",
+   "gasoline and distillate fuel",
+   "renewable diesel"
+  ],
+  "sector": "Energy",
+  "website": "https://www.pbfenergy.com"
+ },
+ "report": {
+  "display_rank": null,
+  "lane": "act_now",
+  "lane_rank": 25,
+  "setup_label": "countertrend",
+  "why_now": "Structural analogs leads the readiness mix (+12.8); countertrend move"
+ },
+ "scorecard": {
+  "headline": {
+   "avg_universe_pct": 72,
+   "label": "above_average",
+   "metric_count": 8
+  },
+  "metrics": {
+   "debt_to_equity": {
+    "direction": "lower",
+    "label": "D/E Ratio",
+    "sector": "Energy",
+    "sector_n": 75,
+    "sector_pct": 68,
+    "universe_n": 1943,
+    "universe_pct": 54,
+    "value": 0.3407
+   },
+   "eps_growth_yoy": {
+    "direction": "higher",
+    "label": "EPS Growth",
+    "sector": "Energy",
+    "sector_n": 77,
+    "sector_pct": 88,
+    "universe_n": 1766,
+    "universe_pct": 95,
+    "value": 5.8925
+   },
+   "gross_margin": {
+    "direction": "higher",
+    "label": "Gross Margin",
+    "sector": "Energy",
+    "sector_n": 76,
+    "sector_pct": 5,
+    "universe_n": 1887,
+    "universe_pct": 5,
+    "value": 0.0944
+   },
+   "operating_margin": {
+    "direction": "higher",
+    "label": "Op. Margin",
+    "sector": "Energy",
+    "sector_n": 76,
+    "sector_pct": 22,
+    "universe_n": 1887,
+    "universe_pct": 47,
+    "value": 0.1002
+   },
+   "pe_ratio": {
+    "direction": "lower",
+    "label": "P/E",
+    "sector": "Energy",
+    "sector_n": 62,
+    "sector_pct": 98,
+    "universe_n": 1414,
+    "universe_pct": 99,
+    "value": 3.3738
+   },
+   "revenue_growth_yoy": {
+    "direction": "higher",
+    "label": "Rev Growth",
+    "sector": "Energy",
+    "sector_n": 76,
+    "sector_pct": 86,
+    "universe_n": 1716,
+    "universe_pct": 87,
+    "value": 0.3151
+   },
+   "roe": {
+    "direction": "higher",
+    "label": "ROE",
+    "sector": "Energy",
+    "sector_n": 75,
+    "sector_pct": 88,
+    "universe_n": 1961,
+    "universe_pct": 90,
+    "value": 0.3777
+   },
+   "roic": {
+    "direction": "higher",
+    "label": "ROIC",
+    "sector": "Energy",
+    "sector_n": 76,
+    "sector_pct": 93,
+    "universe_n": 1927,
+    "universe_pct": 97,
+    "value": 0.1254
+   }
+  }
+ },
+ "signal_rank": 984,
+ "structural_analogs": {
+  "gp_core_pct": 96.9,
+  "gp_core_ratio": 2.613,
+  "matches": [
+   {
+    "actual_downside": 0.0,
+    "actual_return": 0.921,
+    "actual_upside": 0.921,
+    "days_in_region": 92,
+    "end_date": "1999-07-07",
+    "end_reason": "reversal",
+    "seq_len": 92,
+    "similarity": 0.5001,
+    "start_date": "1999-04-12",
+    "ticker": "BBY",
+    "total_distance": 0.3465,
+    "trigger_date": "1999-05-06",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": 0.0,
+    "actual_return": 0.6061,
+    "actual_upside": 0.6061,
+    "days_in_region": 87,
+    "end_date": "2018-01-22",
+    "end_reason": "reversal",
+    "seq_len": 87,
+    "similarity": 0.4965,
+    "start_date": "2017-10-23",
+    "ticker": "HTHT",
+    "total_distance": 0.3501,
+    "trigger_date": "2017-11-28",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": 0.0,
+    "actual_return": 0.6408,
+    "actual_upside": 0.6408,
+    "days_in_region": 82,
+    "end_date": "2012-08-17",
+    "end_reason": "reversal",
+    "seq_len": 82,
+    "similarity": 0.4931,
+    "start_date": "2012-05-02",
+    "ticker": "STX",
+    "total_distance": 0.3535,
+    "trigger_date": "2012-06-01",
+    "trigger_type": "severe_drawdown"
+   },
+   {
+    "actual_downside": -0.4715,
+    "actual_return": -0.2168,
+    "actual_upside": 0.0515,
+    "days_in_region": 79,
+    "end_date": "1996-02-06",
+    "end_reason": "reversal",
+    "seq_len": 79,
+    "similarity": 0.4912,
+    "start_date": "1995-09-28",
+    "ticker": "LSI",
+    "total_distance": 0.3554,
+    "trigger_date": "1995-10-05",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": -0.135,
+    "actual_return": -0.007,
+    "actual_upside": 0.1054,
+    "days_in_region": 81,
+    "end_date": "2007-12-26",
+    "end_reason": "reversal",
+    "seq_len": 81,
+    "similarity": 0.4896,
+    "start_date": "2007-10-09",
+    "ticker": "NILE",
+    "total_distance": 0.3571,
+    "trigger_date": "2007-11-02",
+    "trigger_type": "severe_drawdown"
+   },
+   {
+    "actual_downside": -0.0125,
+    "actual_return": 0.5892,
+    "actual_upside": 0.5892,
+    "days_in_region": 90,
+    "end_date": "2021-09-29",
+    "end_reason": "reversal",
+    "seq_len": 90,
+    "similarity": 0.4885,
+    "start_date": "2021-06-02",
+    "ticker": "UNFI",
+    "total_distance": 0.3582,
+    "trigger_date": "2021-06-10",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": 0.0,
+    "actual_return": 0.5455,
+    "actual_upside": 0.5455,
+    "days_in_region": 88,
+    "end_date": "1996-10-23",
+    "end_reason": "reversal",
+    "seq_len": 88,
+    "similarity": 0.4877,
+    "start_date": "1996-07-10",
+    "ticker": "RDC",
+    "total_distance": 0.359,
+    "trigger_date": "1996-07-31",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": -0.1302,
+    "actual_return": 0.066,
+    "actual_upside": 0.066,
+    "days_in_region": 85,
+    "end_date": "2014-11-06",
+    "end_reason": "reversal",
+    "seq_len": 85,
+    "similarity": 0.4861,
+    "start_date": "2014-08-28",
+    "ticker": "REX",
+    "total_distance": 0.3607,
+    "trigger_date": "2014-09-23",
+    "trigger_type": "severe_drawdown"
+   },
+   {
+    "actual_downside": -0.0065,
+    "actual_return": 0.4393,
+    "actual_upside": 0.4393,
+    "days_in_region": 90,
+    "end_date": "2021-08-11",
+    "end_reason": "reversal",
+    "seq_len": 90,
+    "similarity": 0.4855,
+    "start_date": "2021-05-07",
+    "ticker": "ATKR",
+    "total_distance": 0.3613,
+    "trigger_date": "2021-05-20",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": -0.0678,
+    "actual_return": 0.1168,
+    "actual_upside": 0.1168,
+    "days_in_region": 91,
+    "end_date": "2011-07-08",
+    "end_reason": "reversal",
+    "seq_len": 91,
+    "similarity": 0.4841,
+    "start_date": "2011-04-26",
+    "ticker": "VG",
+    "total_distance": 0.3627,
+    "trigger_date": "2011-06-08",
+    "trigger_type": "drawdown"
+   }
+  ],
+  "panel": {
+   "edge": 0.2078,
+   "hit_hi": 0.898,
+   "hit_lo": 0.767,
+   "hit_rate": 0.843,
+   "median_final": 0.1826,
+   "median_pain": 0.0678,
+   "n": 51,
+   "n_eff": 51.0,
+   "p25_final": 0.0585,
+   "p_pain_gt5": 0.529,
+   "return_to_pain": 2.081
+  },
+  "stats": {
+   "avg_similarity": 0.454,
+   "avg_trough": 0.0981,
+   "avg_upside": 0.2464,
+   "median_pain": 0.0741,
+   "median_return": 0.2008,
+   "n_matches": 200,
+   "p25_return": 0.067,
+   "p_pain_gt5": 0.58,
+   "return_to_pain": 2.134,
+   "top5_avg_trough": 0.1213,
+   "top5_avg_upside": 0.4649,
+   "top_similarity": 0.5,
+   "win_rate": 0.85
+  },
+  "total_matches": 200
+ },
+ "ticker": "PBF",
+ "trending": {
+  "acceleration": -0.0113,
+  "avg_vol_20d": 2832223.7477,
+  "base_high_120": 91.17,
+  "breakout_confirmed": 0,
+  "close": 78.0,
+  "momentum_score": 0.8304,
+  "momentum_start": "2025-12-31",
+  "range_20": 0.2636,
+  "range_50": 0.3655,
+  "rank": 396,
+  "rank_down": null,
+  "rank_up": 133,
+  "ret_120": 0.8344,
+  "ret_20": -0.0344,
+  "ret_60": 0.2737,
+  "rundown_score": 0.8996,
+  "score_date": "2026-10-30",
+  "slope_20": -0.0083,
+  "slope_60": 0.003,
+  "stage": "sustained",
+  "stage_label": "Trending",
+  "ticker": "PBF",
+  "total_score": 0.4995,
+  "trend_ratio": 1.3496,
+  "vcp_detected": 0,
+  "vcp_score": 0.2788
+ }
+}

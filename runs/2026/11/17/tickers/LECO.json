@@ -1,0 +1,1105 @@
+{
+ "date": "2026-11-17",
+ "detected_regions": {
+  "primary": {
+   "days_in_region": 119,
+   "region_start": "2026-08-26",
+   "trigger_date": "2026-09-14",
+   "trigger_type": "shallow_drawdown"
+  },
+  "secondary": [
+   {
+    "confidence_score": 0.6968,
+    "downside_q50": -0.0574,
+    "ev_score": 0.1239,
+    "region_start": "2026-07-20",
+    "seq_len": 146,
+    "trigger_date": "2026-10-28",
+    "trigger_type": "runup",
+    "upside_q25": 0.0885,
+    "upside_q50": 0.1785,
+    "upside_q75": 0.2818
+   }
+  ]
+ },
+ "feature_attribution": {
+  "macro_driver_count": 17,
+  "risk_flags": [],
+  "top_drivers": [
+   {
+    "direction": "negative",
+    "feature": "dollar_volume",
+    "feature_value": 78997440.0,
+    "importance": 0.0004,
+    "importance_pct": 0.5441,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "negative",
+    "feature": "historical_recovery_rate",
+    "feature_value": 0.7965,
+    "importance": 0.0002,
+    "importance_pct": 0.2592,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "positive",
+    "feature": "sector_rank_1d",
+    "feature_value": 0.7273,
+    "importance": 0.0001,
+    "importance_pct": 0.1967,
+    "method": "integrated_gradients"
+   }
+  ]
+ },
+ "fundamentals": {
+  "accrual": 0.2156,
+  "adx_14": 22.7677,
+  "altman_z_score": 5.1428,
+  "amihud_illiquidity": 0.0002,
+  "avg_volume": 375515.4498,
+  "beta_252d": 0.4738,
+  "book_value_per_share": 28.5752,
+  "correlation_spy_60d": 0.4355,
+  "current_liabilities": 955.713,
+  "current_ratio": 1.9108,
+  "daily_earnings_yield": 0.0386,
+  "daily_fcf_yield": -0.0172,
+  "daily_pb": 9.5847,
+  "daily_pe": 25.9037,
+  "daily_ps": 3.2108,
+  "days_since_52w_high": 196.0,
+  "debt_ebitda": 1.2448,
+  "debt_to_equity": 0.7397,
+  "dividend_yield": 0.0027,
+  "dollar_volume_20d_avg": 98818653.8011,
+  "earnings_quality": 1.4947,
+  "ebitda_growth_yoy": 0.1119,
+  "enterprise_value": 15768.3231,
+  "eps_basic": 2.65,
+  "eps_cagr_3y": 0.067,
+  "eps_cagr_5y": 0.1856,
+  "eps_diluted": 2.63,
+  "eps_growth_accel": -0.0093,
+  "eps_growth_qoq": -0.0862,
+  "eps_growth_yoy": 0.118,
+  "eps_growth_yoy_q2": 0.1272,
+  "eps_growth_yoy_q3": 0.1971,
+  "eps_growth_yoy_q4": 0.1422,
+  "eps_growth_yoy_q5": 0.1084,
+  "eps_growth_yoy_q6": -0.0011,
+  "eps_growth_yoy_q7": -0.1463,
+  "eps_growth_yoy_q8": -0.1355,
+  "eps_history_8q": [
+   2.47,
+   2.1,
+   2.56,
+   2.21,
+   2.45,
+   2.47,
+   2.88,
+   2.63
+  ],
+  "eps_ttm": 10.4545,
+  "ev_to_ebitda": 17.0684,
+  "ev_to_fcf": 90.3432,
+  "ev_to_sales": 12.9113,
+  "fcf_growth_yoy": 0.0045,
+  "fcf_margin": 0.1429,
+  "fcf_per_share": 3.2079,
+  "gross_margin": 0.3554,
+  "gross_margin_change_yoy": -0.0437,
+  "gross_margin_history": [
+   0.388,
+   0.3898,
+   0.3806,
+   0.3727,
+   0.366,
+   0.3554
+  ],
+  "inc_roic": -1.1169,
+  "interest_coverage": 18.327,
+  "is_pre_revenue": false,
+  "margin_vs_sector_median": null,
+  "market_cap_ratio": 14901.5911,
+  "net_income": 144.346,
+  "net_margin": 0.124,
+  "operating_income": 211.376,
+  "operating_margin": 0.1766,
+  "operating_margin_change_yoy": -0.0008,
+  "pb_ratio": 9.4771,
+  "pe_percentile_1y": 0.7302,
+  "pe_ratio": 25.9037,
+  "peg_trailing": 2.3198,
+  "piotroski_f_score": 4.0,
+  "price_vs_high_52w": 0.9061,
+  "price_vs_sma200": 1.0134,
+  "ps_percentile_1y": 0.7659,
+  "ps_ratio": 3.3479,
+  "quarter_labels_8q": [
+   "Q4 '24",
+   "Q1 '25",
+   "Q2 '25",
+   "Q3 '25",
+   "Q4 '25",
+   "Q1 '26",
+   "Q2 '26",
+   "Q3 '26"
+  ],
+  "quarterly_eps_growth_yoy": 0.19,
+  "quarterly_eps_growth_yoy_8q": [
+   -0.0852,
+   -0.0187,
+   0.4463,
+   0.2486,
+   -0.0081,
+   0.1762,
+   0.125,
+   0.19
+  ],
+  "quarterly_revenue_growth_yoy": 0.1508,
+  "quarterly_revenue_growth_yoy_8q": [
+   -0.0345,
+   0.0236,
+   0.0656,
+   0.0787,
+   0.0555,
+   0.1165,
+   0.1203,
+   0.1508
+  ],
+  "revenue_cagr_3y": 0.0453,
+  "revenue_cagr_5y": 0.0852,
+  "revenue_growth_accel": 0.018,
+  "revenue_growth_qoq": 0.0013,
+  "revenue_growth_yoy": 0.1113,
+  "revenue_growth_yoy_q2": 0.0932,
+  "revenue_growth_yoy_q3": 0.0789,
+  "revenue_growth_yoy_q4": 0.056,
+  "revenue_growth_yoy_q5": 0.0324,
+  "revenue_growth_yoy_q6": 0.001,
+  "revenue_growth_yoy_q7": -0.0246,
+  "revenue_growth_yoy_q8": -0.0437,
+  "revenue_history_8q": [
+   1022.031,
+   1004.388,
+   1088.673,
+   1061.227,
+   1078.715,
+   1121.434,
+   1219.663,
+   1221.281
+  ],
+  "revenue_per_share": 22.4467,
+  "roa": 0.1493,
+  "roce": 0.2797,
+  "roe": 0.3701,
+  "roic": 0.1958,
+  "rsi_14": 38.1181,
+  "sector_momentum": 0.1126,
+  "share_dilution_1y": 0.0,
+  "stock_vs_sector_20d": 0.0272,
+  "stock_vs_spy_20d": 0.0895,
+  "total_assets": 3893.63,
+  "vol_regime": 1.2203,
+  "volatility_20d": 0.0276,
+  "volatility_60d": 0.0226,
+  "w52_high": 310.0,
+  "w52_low": 216.22
+ },
+ "market_characters": [
+  {
+   "id": "g5",
+   "name": "Quality Compressed"
+  }
+ ],
+ "model_analogs": {
+  "matches": [
+   {
+    "actual_downside": -0.0646,
+    "actual_return": 0.2586,
+    "actual_upside": 0.2586,
+    "days_in_region": 228,
+    "end_date": "2017-03-27",
+    "end_reason": "reversal",
+    "similarity": 0.9506,
+    "start_date": "2016-08-11",
+    "ticker": "ASX",
+    "trigger_date": "2016-11-15",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": 0.0,
+    "actual_return": 0.2958,
+    "actual_upside": 0.2958,
+    "days_in_region": 197,
+    "end_date": "2006-03-17",
+    "end_reason": "reversal",
+    "similarity": 0.9503,
+    "start_date": "2005-09-01",
+    "ticker": "CVD",
+    "trigger_date": "2005-11-04",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": -0.0881,
+    "actual_return": 0.2032,
+    "actual_upside": 0.2032,
+    "days_in_region": 175,
+    "end_date": "2017-01-31",
+    "end_reason": "reversal",
+    "similarity": 0.9475,
+    "start_date": "2016-08-09",
+    "ticker": "AN",
+    "trigger_date": "2016-09-06",
+    "trigger_type": "compression"
+   },
+   {
+    "actual_downside": -0.0999,
+    "actual_return": 0.0605,
+    "actual_upside": 0.0605,
+    "days_in_region": 146,
+    "end_date": "2019-02-20",
+    "end_reason": "reversal",
+    "similarity": 0.947,
+    "start_date": "2018-09-27",
+    "ticker": "RGR",
+    "trigger_date": "2018-11-02",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": -0.0729,
+    "actual_return": 0.1604,
+    "actual_upside": 0.1604,
+    "days_in_region": 239,
+    "end_date": "2006-03-24",
+    "end_reason": "reversal",
+    "similarity": 0.9469,
+    "start_date": "2005-07-28",
+    "ticker": "SPH",
+    "trigger_date": "2005-10-14",
+    "trigger_type": "severe_drawdown"
+   },
+   {
+    "actual_downside": -0.0055,
+    "actual_return": 0.3929,
+    "actual_upside": 0.3929,
+    "days_in_region": 151,
+    "end_date": "2006-01-30",
+    "end_reason": "reversal",
+    "similarity": 0.9468,
+    "start_date": "2005-09-01",
+    "ticker": "UCO",
+    "trigger_date": "2005-10-21",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": -0.1308,
+    "actual_return": 0.1475,
+    "actual_upside": 0.1475,
+    "days_in_region": 143,
+    "end_date": "2019-02-21",
+    "end_reason": "reversal",
+    "similarity": 0.9467,
+    "start_date": "2018-10-01",
+    "ticker": "FWRD",
+    "trigger_date": "2018-10-26",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": -0.03,
+    "actual_return": 0.1148,
+    "actual_upside": 0.1148,
+    "days_in_region": 197,
+    "end_date": "2006-02-16",
+    "end_reason": "reversal",
+    "similarity": 0.946,
+    "start_date": "2005-08-03",
+    "ticker": "MLKN",
+    "trigger_date": "2005-10-21",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": 0.0,
+    "actual_return": 0.2662,
+    "actual_upside": 0.2662,
+    "days_in_region": 188,
+    "end_date": "2006-02-22",
+    "end_reason": "reversal",
+    "similarity": 0.9459,
+    "start_date": "2005-08-18",
+    "ticker": "EL",
+    "trigger_date": "2005-10-27",
+    "trigger_type": "severe_drawdown"
+   },
+   {
+    "actual_downside": -0.0394,
+    "actual_return": 0.0369,
+    "actual_upside": 0.2389,
+    "days_in_region": 329,
+    "end_date": "2017-05-31",
+    "end_reason": "reversal",
+    "similarity": 0.9458,
+    "start_date": "2016-07-06",
+    "ticker": "MSGN",
+    "trigger_date": "2016-08-17",
+    "trigger_type": "shallow_runup"
+   }
+  ],
+  "stats": {
+   "avg_max_drawdown": 0.0461,
+   "avg_similarity": 0.944,
+   "avg_trough": 0.0461,
+   "avg_upside": 0.222,
+   "best_return": 0.4944,
+   "downside_range": [
+    -0.2292,
+    0.0
+   ],
+   "median_return": 0.1656,
+   "n_matches": 50,
+   "outcome_agreement": true,
+   "return_p25": 0.0659,
+   "return_p5": -0.0461,
+   "return_p75": 0.2688,
+   "return_p95": 0.4001,
+   "sim_weighted_win_rate": 0.88,
+   "top5_avg_trough": 0.0651,
+   "top5_avg_upside": 0.1957,
+   "top_similarity": 0.951,
+   "upside_range": [
+    0.0041,
+    0.4944
+   ],
+   "win_rate": 0.88,
+   "worst_return": -0.1233,
+   "years_span": 7
+  },
+  "total_matches": 50
+ },
+ "peer_group": {
+  "buckets": [
+   "Industrial Automation, Robotics & Control Systems",
+   "Industrial Components, Motion, Filtration & Engineered Products",
+   "Machinery, Heavy Equipment & Tools"
+  ],
+  "groups": {
+   "Industrial Automation, Robotics & Control Systems": [
+    {
+     "market_cap_m": 9002.9268,
+     "price_vs_sma200": 1.0959,
+     "return_30d": 0.167,
+     "return_7d": -0.0152,
+     "revenue_driver": "dispensing and sealing packaging",
+     "signal_rank": 922,
+     "stock_vs_spy_20d": 0.164,
+     "ticker": "ATR"
+    },
+    {
+     "market_cap_m": 15537.6916,
+     "price_vs_sma200": 1.0134,
+     "return_30d": -0.0172,
+     "return_7d": -0.0165,
+     "revenue_driver": "welding equipment",
+     "signal_rank": 695,
+     "stock_vs_spy_20d": 0.0895,
+     "ticker": "LECO"
+    },
+    {
+     "market_cap_m": 111798.779,
+     "price_vs_sma200": 0.9219,
+     "return_30d": -0.132,
+     "return_7d": 0.041,
+     "revenue_driver": "industrial automation equipment",
+     "signal_rank": 87,
+     "stock_vs_spy_20d": -0.0371,
+     "ticker": "ROK"
+    },
+    {
+     "market_cap_m": 11224.1224,
+     "price_vs_sma200": 0.9382,
+     "return_30d": -0.1546,
+     "return_7d": 0.0291,
+     "revenue_driver": "power transmission distribution",
+     "signal_rank": 410,
+     "stock_vs_spy_20d": -0.0702,
+     "ticker": "AIT"
+    },
+    {
+     "market_cap_m": 19567.0014,
+     "price_vs_sma200": 0.7264,
+     "return_30d": -0.2664,
+     "return_7d": 0.0737,
+     "revenue_driver": "semiconductor equipment subsystems",
+     "signal_rank": null,
+     "stock_vs_spy_20d": -0.2552,
+     "ticker": "MKSI"
+    },
+    {
+     "market_cap_m": 8197.8365,
+     "price_vs_sma200": 0.6889,
+     "return_30d": -0.3038,
+     "return_7d": 0.07,
+     "revenue_driver": "power conversion systems",
+     "signal_rank": 1711,
+     "stock_vs_spy_20d": -0.0722,
+     "ticker": "AEIS"
+    },
+    {
+     "market_cap_m": 1347.9851,
+     "price_vs_sma200": 0.9047,
+     "return_30d": -0.354,
+     "return_7d": -0.0686,
+     "revenue_driver": "precision motion controls",
+     "signal_rank": 403,
+     "stock_vs_spy_20d": -0.1369,
+     "ticker": "ALNT"
+    },
+    {
+     "market_cap_m": 2336.5228,
+     "price_vs_sma200": 0.6665,
+     "return_30d": -0.411,
+     "return_7d": 0.0489,
+     "revenue_driver": "semiconductor equipment subsystems",
+     "signal_rank": null,
+     "stock_vs_spy_20d": -0.2952,
+     "ticker": "UCTT"
+    },
+    {
+     "market_cap_m": 49055.8899,
+     "price_vs_sma200": 0.6689,
+     "return_30d": -0.4558,
+     "return_7d": 0.0731,
+     "revenue_driver": "semiconductor test equipment",
+     "signal_rank": 1784,
+     "stock_vs_spy_20d": -0.256,
+     "ticker": "TER"
+    },
+    {
+     "market_cap_m": null,
+     "price_vs_sma200": null,
+     "return_30d": null,
+     "return_7d": null,
+     "revenue_driver": "aerospace engineered components",
+     "signal_rank": null,
+     "stock_vs_spy_20d": null,
+     "ticker": "B"
+    }
+   ],
+   "Industrial Components, Motion, Filtration & Engineered Products": [
+    {
+     "market_cap_m": 1864.352,
+     "price_vs_sma200": 1.0516,
+     "return_30d": 0.1081,
+     "return_7d": -0.0232,
+     "revenue_driver": "aerospace composite components",
+     "signal_rank": 137,
+     "stock_vs_spy_20d": 0.0682,
+     "ticker": "AIN"
+    },
+    {
+     "market_cap_m": 4757.314,
+     "price_vs_sma200": 0.8674,
+     "return_30d": 0.0993,
+     "return_7d": -0.0467,
+     "revenue_driver": "welding equipment",
+     "signal_rank": 1586,
+     "stock_vs_spy_20d": 0.2595,
+     "ticker": "ESAB"
+    },
+    {
+     "market_cap_m": 3758.8944,
+     "price_vs_sma200": 0.9269,
+     "return_30d": 0.0852,
+     "return_7d": -0.0091,
+     "revenue_driver": "water distribution equipment",
+     "signal_rank": 424,
+     "stock_vs_spy_20d": 0.1319,
+     "ticker": "MWA"
+    },
+    {
+     "market_cap_m": 15537.6916,
+     "price_vs_sma200": 1.0134,
+     "return_30d": -0.0172,
+     "return_7d": -0.0165,
+     "revenue_driver": "welding equipment",
+     "signal_rank": 695,
+     "stock_vs_spy_20d": 0.0895,
+     "ticker": "LECO"
+    },
+    {
+     "market_cap_m": 6814.7971,
+     "price_vs_sma200": 0.9731,
+     "return_30d": -0.0527,
+     "return_7d": 0.0159,
+     "revenue_driver": "personal protective equipment",
+     "signal_rank": 952,
+     "stock_vs_spy_20d": -0.0032,
+     "ticker": "MSA"
+    },
+    {
+     "market_cap_m": 22608.5313,
+     "price_vs_sma200": 0.8255,
+     "return_30d": -0.0949,
+     "return_7d": -0.0325,
+     "revenue_driver": "water infrastructure equipment",
+     "signal_rank": 1107,
+     "stock_vs_spy_20d": -0.0505,
+     "ticker": "XYL"
+    },
+    {
+     "market_cap_m": 2547.2826,
+     "price_vs_sma200": 0.9773,
+     "return_30d": -0.1348,
+     "return_7d": 0.0354,
+     "revenue_driver": "energy equipment distribution",
+     "signal_rank": 690,
+     "stock_vs_spy_20d": -0.0805,
+     "ticker": "DNOW"
+    },
+    {
+     "market_cap_m": 1009.9113,
+     "price_vs_sma200": 1.1808,
+     "return_30d": -0.1613,
+     "return_7d": 0.0161,
+     "revenue_driver": "oilfield equipment",
+     "signal_rank": null,
+     "stock_vs_spy_20d": -0.0654,
+     "ticker": "FET"
+    },
+    {
+     "market_cap_m": 2951.0954,
+     "price_vs_sma200": 0.8289,
+     "return_30d": -0.2262,
+     "return_7d": 0.0068,
+     "revenue_driver": "commercial foodservice equipment",
+     "signal_rank": 30,
+     "stock_vs_spy_20d": -0.0696,
+     "ticker": "SXI"
+    },
+    {
+     "market_cap_m": 2336.5228,
+     "price_vs_sma200": 0.6665,
+     "return_30d": -0.411,
+     "return_7d": 0.0489,
+     "revenue_driver": "semiconductor equipment subsystems",
+     "signal_rank": null,
+     "stock_vs_spy_20d": -0.2952,
+     "ticker": "UCTT"
+    }
+   ],
+   "Machinery, Heavy Equipment & Tools": [
+    {
+     "market_cap_m": 6822.2482,
+     "price_vs_sma200": 0.9859,
+     "return_30d": 0.2715,
+     "return_7d": -0.0133,
+     "revenue_driver": "commercial foodservice equipment",
+     "signal_rank": 1504,
+     "stock_vs_spy_20d": 0.2667,
+     "ticker": "MIDD"
+    },
+    {
+     "market_cap_m": 1724.5251,
+     "price_vs_sma200": 1.1274,
+     "return_30d": 0.1667,
+     "return_7d": 0.0346,
+     "revenue_driver": "construction equipment rental",
+     "signal_rank": 1552,
+     "stock_vs_spy_20d": 0.3019,
+     "ticker": "HRI"
+    },
+    {
+     "market_cap_m": 4757.314,
+     "price_vs_sma200": 0.8674,
+     "return_30d": 0.0993,
+     "return_7d": -0.0467,
+     "revenue_driver": "welding equipment",
+     "signal_rank": 1586,
+     "stock_vs_spy_20d": 0.2595,
+     "ticker": "ESAB"
+    },
+    {
+     "market_cap_m": 15537.6916,
+     "price_vs_sma200": 1.0134,
+     "return_30d": -0.0172,
+     "return_7d": -0.0165,
+     "revenue_driver": "welding equipment",
+     "signal_rank": 695,
+     "stock_vs_spy_20d": 0.0895,
+     "ticker": "LECO"
+    },
+    {
+     "market_cap_m": 2041.3056,
+     "price_vs_sma200": 1.0648,
+     "return_30d": -0.0281,
+     "return_7d": 0.0375,
+     "revenue_driver": "specialty equipment rentals",
+     "signal_rank": 1400,
+     "stock_vs_spy_20d": 0.112,
+     "ticker": "CTOS"
+    },
+    {
+     "market_cap_m": 168395.2837,
+     "price_vs_sma200": 1.0575,
+     "return_30d": -0.0492,
+     "return_7d": -0.0334,
+     "revenue_driver": "ag equipment",
+     "signal_rank": 683,
+     "stock_vs_spy_20d": 0.0752,
+     "ticker": "DE"
+    },
+    {
+     "market_cap_m": 7028.7903,
+     "price_vs_sma200": 0.8619,
+     "return_30d": -0.1095,
+     "return_7d": -0.0364,
+     "revenue_driver": "equipment sales",
+     "signal_rank": 465,
+     "stock_vs_spy_20d": -0.0594,
+     "ticker": "NOV"
+    },
+    {
+     "market_cap_m": 208.947,
+     "price_vs_sma200": 0.8714,
+     "return_30d": -0.1753,
+     "return_7d": 0.0162,
+     "revenue_driver": "commercial printing equipment",
+     "signal_rank": 175,
+     "stock_vs_spy_20d": -0.0463,
+     "ticker": "KODK"
+    },
+    {
+     "market_cap_m": 1746.0138,
+     "price_vs_sma200": 0.7925,
+     "return_30d": -0.1899,
+     "return_7d": -0.0178,
+     "revenue_driver": "vegetation management equipment",
+     "signal_rank": 48,
+     "stock_vs_spy_20d": -0.0701,
+     "ticker": "ALG"
+    },
+    {
+     "market_cap_m": 19567.0014,
+     "price_vs_sma200": 0.7264,
+     "return_30d": -0.2664,
+     "return_7d": 0.0737,
+     "revenue_driver": "semiconductor equipment subsystems",
+     "signal_rank": null,
+     "stock_vs_spy_20d": -0.2552,
+     "ticker": "MKSI"
+    }
+   ]
+  }
+ },
+ "predictions": {
+  "badge_count": 0,
+  "confidence_score": 0.645,
+  "conviction_label": "SPECULATIVE",
+  "data_quality_flags": [],
+  "ev_score": 0.1099,
+  "is_diamond": false,
+  "passes_tradability_filter": true,
+  "quality_label": "AVOID",
+  "quantiles": {
+   "downside_q10": -0.2153,
+   "downside_q25": -0.1171,
+   "downside_q50": -0.0652,
+   "downside_q75": -0.017,
+   "downside_q90": 0.0019,
+   "path_volatility": 0.0259,
+   "risk_reward": 2.6817,
+   "uncertainty": 0.3624,
+   "upside_q10": 0.0329,
+   "upside_q25": 0.085,
+   "upside_q50": 0.1748,
+   "upside_q75": 0.2717,
+   "upside_q90": 0.3952
+  },
+  "rank": 695,
+  "rank_score": 0.097,
+  "tradability_filter_reasons": []
+ },
+ "profile": {
+  "_local": {
+   "dividend_yield": 0.0027,
+   "eps_growth_yoy": 0.118,
+   "pe_ratio": 27.0729,
+   "revenue_growth_yoy": 0.1113,
+   "roe": 0.3701
+  },
+  "beta": 1.198,
+  "betaTTM": null,
+  "ceo": "Steven Hedlund",
+  "companyName": "Lincoln Electric Holdings, Inc.",
+  "country": "US",
+  "debtToEquityTTM": null,
+  "description": "Lincoln Electric Holdings, Inc., an enterprise established in Cleveland, Ohio, in 1895, operates globally, focusing on the innovation, production, and sale of equipment and materials for welding, cutting, and brazing applications. The company is organized into three distinct divisions: Americas Welding, International Welding, and The Harris Products Group. Its extensive product portfolio encompasses a broad spectrum of welding machinery, including arc welding power sources, plasma cutters, wire feeding systems, automated robotic welding setups, comprehensive automation solutions, and fume extraction devices. Additionally, Lincoln Electric provides a variety of consumables such as electrodes, fluxes, various welding accessories, and specialized welding and fabrication materials. Beyond welding, the firm manufactures computer-controlled plasma and oxy-fuel cutting systems, along with regulators and torches essential for oxy-fuel welding, cutting, and brazing. It also supplies consumable alloys for the brazing and soldering markets. The company maintains a retail presence within the United States. Furthermore, it fabricates copper and aluminum headers, distributor assemblies, and manifolds specifically for the heating, ventilation, and air conditioning (HVAC) sector in both the U.S. and Mexico. Lincoln Electric serves a wide array of sectors, including general fabrication, energy and process, automotive and transportation, construction and infrastructure, heavy fabrication, shipbuilding, and maintenance and repair. Its offerings are distributed to end-users via direct sales, industrial distributors, retail channels, and independent agents.",
+  "dividendYielTTM": null,
+  "enterpriseValueOverEBITDATTM": null,
+  "exchangeShortName": "NASDAQ",
+  "fullTimeEmployees": "12000",
+  "industry": "Manufacturing - Tools & Accessories",
+  "ipoDate": "1994-04-07",
+  "latest_earnings_date": "2026-10-27",
+  "marketCapTTM": null,
+  "mktCap": 14666257170,
+  "peRatioTTM": null,
+  "price": 270.81,
+  "priceToSalesRatioTTM": null,
+  "returnOnEquityTTM": 0.3778,
+  "revenue_description": "Lincoln Electric sells welding equipment and related consumables. Revenue is driven mainly by chip shipments and average selling prices across data center, AI, gaming, or other compute markets, with mix shifts heavily affecting margins.",
+  "revenue_description_themes": [
+   "manufacturing reshoring",
+   "industrial automation adoption",
+   "infrastructure spending"
+  ],
+  "revenue_taxonomy": [
+   {
+    "bucket": "Machinery, Heavy Equipment & Tools",
+    "matched_tags": [
+     "welding equipment"
+    ],
+    "path": "Industrials & Transportation › Industrial Products & Services › Machinery, Heavy Equipment & Tools",
+    "sector": "Industrials & Transportation",
+    "segment": "Industrial Products & Services"
+   },
+   {
+    "bucket": "Industrial Components, Motion, Filtration & Engineered Products",
+    "matched_tags": [
+     "welding consumables"
+    ],
+    "path": "Industrials & Transportation › Industrial Products & Services › Industrial Components, Motion, Filtration & Engineered Products",
+    "sector": "Industrials & Transportation",
+    "segment": "Industrial Products & Services"
+   },
+   {
+    "bucket": "Industrial Automation, Robotics & Control Systems",
+    "matched_tags": [
+     "automation & robotics"
+    ],
+    "path": "Industrials & Transportation › Aerospace Defense & Automation › Industrial Automation, Robotics & Control Systems",
+    "sector": "Industrials & Transportation",
+    "segment": "Aerospace Defense & Automation"
+   }
+  ],
+  "revenue_themes": [
+   "welding equipment",
+   "welding consumables",
+   "automation & robotics"
+  ],
+  "sector": "Industrials",
+  "website": "https://www.lincolnelectric.com"
+ },
+ "report": {
+  "display_rank": null,
+  "lane": "act_now",
+  "lane_rank": 61,
+  "setup_label": "countertrend",
+  "why_now": "Model analogs leads the readiness mix (+8.7); countertrend move"
+ },
+ "scorecard": {
+  "headline": {
+   "avg_universe_pct": 56,
+   "label": "mixed",
+   "metric_count": 8
+  },
+  "metrics": {
+   "debt_to_equity": {
+    "direction": "lower",
+    "label": "D/E Ratio",
+    "sector": "Industrials",
+    "sector_n": 330,
+    "sector_pct": 33,
+    "universe_n": 1943,
+    "universe_pct": 34,
+    "value": 0.7397
+   },
+   "eps_growth_yoy": {
+    "direction": "higher",
+    "label": "EPS Growth",
+    "sector": "Industrials",
+    "sector_n": 328,
+    "sector_pct": 49,
+    "universe_n": 1766,
+    "universe_pct": 46,
+    "value": 0.118
+   },
+   "gross_margin": {
+    "direction": "higher",
+    "label": "Gross Margin",
+    "sector": "Industrials",
+    "sector_n": 315,
+    "sector_pct": 48,
+    "universe_n": 1887,
+    "universe_pct": 32,
+    "value": 0.3554
+   },
+   "operating_margin": {
+    "direction": "higher",
+    "label": "Op. Margin",
+    "sector": "Industrials",
+    "sector_n": 315,
+    "sector_pct": 78,
+    "universe_n": 1887,
+    "universe_pct": 67,
+    "value": 0.1766
+   },
+   "pe_ratio": {
+    "direction": "lower",
+    "label": "P/E",
+    "sector": "Industrials",
+    "sector_n": 240,
+    "sector_pct": 44,
+    "universe_n": 1414,
+    "universe_pct": 32,
+    "value": 27.0729
+   },
+   "revenue_growth_yoy": {
+    "direction": "higher",
+    "label": "Rev Growth",
+    "sector": "Industrials",
+    "sector_n": 312,
+    "sector_pct": 62,
+    "universe_n": 1716,
+    "universe_pct": 61,
+    "value": 0.1113
+   },
+   "roe": {
+    "direction": "higher",
+    "label": "ROE",
+    "sector": "Industrials",
+    "sector_n": 332,
+    "sector_pct": 89,
+    "universe_n": 1961,
+    "universe_pct": 89,
+    "value": 0.3701
+   },
+   "roic": {
+    "direction": "higher",
+    "label": "ROIC",
+    "sector": "Industrials",
+    "sector_n": 326,
+    "sector_pct": 87,
+    "universe_n": 1927,
+    "universe_pct": 87,
+    "value": 0.0491
+   }
+  }
+ },
+ "signal_rank": 695,
+ "structural_analogs": {
+  "gp_core_pct": 90.4,
+  "gp_core_ratio": 2.1227,
+  "matches": [
+   {
+    "actual_downside": -0.0119,
+    "actual_return": 0.146,
+    "actual_upside": 0.146,
+    "days_in_region": 118,
+    "end_date": "2015-03-02",
+    "end_reason": "reversal",
+    "seq_len": 118,
+    "similarity": 0.6267,
+    "start_date": "2014-07-24",
+    "ticker": "CCE",
+    "total_distance": 0.2336,
+    "trigger_date": "2014-10-14",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": -0.1339,
+    "actual_return": -0.1339,
+    "actual_upside": 0.2525,
+    "days_in_region": 108,
+    "end_date": "2016-02-10",
+    "end_reason": "reversal",
+    "seq_len": 108,
+    "similarity": 0.6213,
+    "start_date": "2015-04-30",
+    "ticker": "AAP",
+    "total_distance": 0.238,
+    "trigger_date": "2015-05-26",
+    "trigger_type": "shallow_runup"
+   },
+   {
+    "actual_downside": -0.0308,
+    "actual_return": 0.0696,
+    "actual_upside": 0.0696,
+    "days_in_region": 115,
+    "end_date": "2017-06-12",
+    "end_reason": "reversal",
+    "seq_len": 115,
+    "similarity": 0.6182,
+    "start_date": "2016-12-08",
+    "ticker": "SHOO",
+    "total_distance": 0.2405,
+    "trigger_date": "2017-01-30",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": -0.165,
+    "actual_return": -0.165,
+    "actual_upside": 0.0295,
+    "days_in_region": 99,
+    "end_date": "2022-02-23",
+    "end_reason": "reversal",
+    "seq_len": 99,
+    "similarity": 0.6172,
+    "start_date": "2021-09-30",
+    "ticker": "WSO",
+    "total_distance": 0.2413,
+    "trigger_date": "2021-11-23",
+    "trigger_type": "runup"
+   },
+   {
+    "actual_downside": -0.0326,
+    "actual_return": 0.1245,
+    "actual_upside": 0.1245,
+    "days_in_region": 93,
+    "end_date": "2018-11-28",
+    "end_reason": "reversal",
+    "seq_len": 93,
+    "similarity": 0.6163,
+    "start_date": "2018-09-11",
+    "ticker": "GNRC",
+    "total_distance": 0.242,
+    "trigger_date": "2018-10-25",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": -0.2047,
+    "actual_return": -0.0847,
+    "actual_upside": 0.0,
+    "days_in_region": 122,
+    "end_date": "2007-10-05",
+    "end_reason": "reversal",
+    "seq_len": 122,
+    "similarity": 0.6155,
+    "start_date": "2007-04-20",
+    "ticker": "KSS",
+    "total_distance": 0.2426,
+    "trigger_date": "2007-07-18",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": -0.0339,
+    "actual_return": 0.1612,
+    "actual_upside": 0.1612,
+    "days_in_region": 120,
+    "end_date": "2015-11-25",
+    "end_reason": "reversal",
+    "seq_len": 120,
+    "similarity": 0.6152,
+    "start_date": "2015-04-15",
+    "ticker": "CATM",
+    "total_distance": 0.2429,
+    "trigger_date": "2015-07-09",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": -0.0268,
+    "actual_return": 0.0688,
+    "actual_upside": 0.2357,
+    "days_in_region": 157,
+    "end_date": "2018-09-11",
+    "end_reason": "reversal",
+    "seq_len": 157,
+    "similarity": 0.615,
+    "start_date": "2017-05-18",
+    "ticker": "EMN",
+    "total_distance": 0.243,
+    "trigger_date": "2017-10-04",
+    "trigger_type": "runup"
+   },
+   {
+    "actual_downside": -0.0083,
+    "actual_return": 0.1505,
+    "actual_upside": 0.1505,
+    "days_in_region": 96,
+    "end_date": "2014-10-28",
+    "end_reason": "reversal",
+    "seq_len": 96,
+    "similarity": 0.6132,
+    "start_date": "2014-06-09",
+    "ticker": "MOG",
+    "total_distance": 0.2445,
+    "trigger_date": "2014-07-29",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": 0.0,
+    "actual_return": 0.1538,
+    "actual_upside": 0.1538,
+    "days_in_region": 135,
+    "end_date": "2014-11-06",
+    "end_reason": "reversal",
+    "seq_len": 135,
+    "similarity": 0.6129,
+    "start_date": "2014-06-27",
+    "ticker": "TNC",
+    "total_distance": 0.2448,
+    "trigger_date": "2014-10-13",
+    "trigger_type": "drawdown"
+   }
+  ],
+  "panel": {
+   "edge": 0.0574,
+   "hit_hi": 0.745,
+   "hit_lo": 0.578,
+   "hit_rate": 0.667,
+   "median_final": 0.0914,
+   "median_pain": 0.0389,
+   "n": 51,
+   "n_eff": 51.0,
+   "p25_final": -0.0627,
+   "p_pain_gt5": 0.412,
+   "return_to_pain": 1.553
+  },
+  "stats": {
+   "avg_similarity": 0.585,
+   "avg_trough": 0.0933,
+   "avg_upside": 0.1262,
+   "median_pain": 0.0636,
+   "median_return": 0.0288,
+   "n_matches": 200,
+   "p25_return": -0.104,
+   "p_pain_gt5": 0.555,
+   "return_to_pain": 0.344,
+   "top5_avg_trough": 0.0748,
+   "top5_avg_upside": 0.1244,
+   "top_similarity": 0.627,
+   "win_rate": 0.55
+  },
+  "total_matches": 200
+ },
+ "ticker": "LECO",
+ "trending": {
+  "acceleration": 0.0042,
+  "avg_vol_20d": 355661.4287,
+  "base_high_120": 290.12,
+  "breakout_confirmed": 0,
+  "close": 276.14,
+  "momentum_score": 0.6106,
+  "momentum_start": "2026-10-27",
+  "range_20": 0.1467,
+  "range_50": 0.172,
+  "rank": 1165,
+  "rank_down": null,
+  "rank_up": 471,
+  "ret_120": 0.0506,
+  "ret_20": 0.0654,
+  "ret_60": -0.0202,
+  "rundown_score": 0.3288,
+  "score_date": "2026-11-16",
+  "slope_20": 0.0046,
+  "slope_60": 0.0004,
+  "stage": "sustained",
+  "stage_label": "Trending",
+  "ticker": "LECO",
+  "total_score": 0.3326,
+  "trend_ratio": 1.0507,
+  "vcp_detected": 0,
+  "vcp_score": 0.1474
+ }
+}
