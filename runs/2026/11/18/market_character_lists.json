@@ -1,0 +1,4080 @@
+{
+ "as_of_date": "2026-11-18",
+ "date": "2026-11-18",
+ "groups": [
+  {
+   "description": "Latest-session US small/mid-cap momentum with persistent closing demand.",
+   "filter_funnel": [
+    {
+     "cumulative_passed": 1965,
+     "individual_passed": 1965,
+     "key": "latest_session",
+     "label": "Latest completed session"
+    },
+    {
+     "cumulative_passed": 368,
+     "individual_passed": 370,
+     "key": "return_1d",
+     "label": "1d return 2-8%"
+    },
+    {
+     "cumulative_passed": 253,
+     "individual_passed": 1003,
+     "key": "attention",
+     "label": "20d gain shock >=6%"
+    },
+    {
+     "cumulative_passed": 207,
+     "individual_passed": 1437,
+     "key": "market_cap",
+     "label": "Market cap $0.3B-$20B"
+    },
+    {
+     "cumulative_passed": 177,
+     "individual_passed": 1603,
+     "key": "dollar_volume",
+     "label": "20d ADV >=$10M"
+    },
+    {
+     "cumulative_passed": 76,
+     "individual_passed": 615,
+     "key": "volume_ratio",
+     "label": "1d volume ratio >=1.0x"
+    },
+    {
+     "cumulative_passed": 76,
+     "individual_passed": 1683,
+     "key": "turnover",
+     "label": "Turnover 0.5-20%"
+    },
+    {
+     "cumulative_passed": 0,
+     "individual_passed": 0,
+     "key": "hot_sector",
+     "label": "Sector 5d return >0"
+    },
+    {
+     "cumulative_passed": 0,
+     "individual_passed": 952,
+     "key": "above_200d",
+     "label": "Above 200d MA"
+    }
+   ],
+   "filtered_size": 0,
+   "filters": [
+    "latest completed session",
+    "2% <= return_1d <= 8%",
+    "max daily gain in 20d >= 6%",
+    "$0.3B <= market cap <= $20B",
+    "20d ADV >= $10M",
+    "volume ratio 1d >= 1.0x",
+    "0.5% <= turnover <= 20%",
+    "sector return 5d > 0",
+    "above_200d_ma = 1"
+   ],
+   "formula": "S11 = 0.15 R1 + 0.10 R5 + 0.15 VolumeRatio1 + 0.10 TurnoverFit + 0.15 ClosePosition + 0.10 LowUpperWick + 0.15 SpikeRecency + 0.10 SectorRank",
+   "id": "g11",
+   "label": "G11",
+   "name": "Overnight Momentum",
+   "result_columns": [
+    "return_1d",
+    "return_5d",
+    "max_return_20d",
+    "days_since_attention_gain_20d",
+    "volume_ratio_1d",
+    "turnover_ratio",
+    "dollar_volume_20d_avg",
+    "close_position",
+    "upper_shadow_pct",
+    "sector_return_5d",
+    "sector_rank_20d",
+    "stock_vs_sector_1d",
+    "above_200d_ma",
+    "market_cap_m"
+   ],
+   "row_count": 0,
+   "rows": [],
+   "score_components": [
+    {
+     "condition": null,
+     "direction": 1,
+     "key": "return_1d",
+     "weight": 0.15
+    },
+    {
+     "condition": null,
+     "direction": 1,
+     "key": "return_5d",
+     "weight": 0.1
+    },
+    {
+     "condition": null,
+     "direction": 1,
+     "key": "volume_ratio_1d",
+     "weight": 0.15
+    },
+    {
+     "condition": null,
+     "direction": 1,
+     "key": "_turnover_fit",
+     "weight": 0.1
+    },
+    {
+     "condition": null,
+     "direction": 1,
+     "key": "close_position",
+     "weight": 0.15
+    },
+    {
+     "condition": null,
+     "direction": -1,
+     "key": "upper_shadow_pct",
+     "weight": 0.1
+    },
+    {
+     "condition": null,
+     "direction": -1,
+     "key": "days_since_attention_gain_20d",
+     "weight": 0.15
+    },
+    {
+     "condition": null,
+     "direction": -1,
+     "key": "sector_rank_20d",
+     "weight": 0.1
+    }
+   ],
+   "universe_size": 1975
+  },
+  {
+   "description": "Breaking out near 52-week highs with trend confirmation; smoother trends rank higher.",
+   "filtered_size": 50,
+   "filters": [
+    "return_20d > 8%",
+    "return_60d (126d fallback) > 15%",
+    "above_200d_ma = 1",
+    "price_vs_high_52w >= 0.95"
+   ],
+   "formula": "S2 = 0.35 R20 + 0.25 R60 + 0.15 Near52WHigh + 0.10 VolumeRatio5 + 0.15 Smooth60",
+   "id": "g2",
+   "label": "G2",
+   "name": "Recent Momentum",
+   "result_columns": [
+    "return_20d",
+    "return_60d",
+    "return_126d",
+    "price_vs_high_52w",
+    "volume_ratio_5d",
+    "trend_smoothness_60",
+    "market_cap_m"
+   ],
+   "row_count": 50,
+   "rows": [
+    {
+     "biopharma_downranked": false,
+     "description_tags": [
+      "ambulatory surgery center operations",
+      "surgical hospital services",
+      "physician partnership management"
+     ],
+     "exchange": "NASDAQ",
+     "market_cap_m": 3487.0603,
+     "price_vs_high_52w": 1.0,
+     "rank": 1,
+     "return_126d": 0.9985,
+     "return_20d": 0.7506,
+     "return_60d": 0.9189,
+     "revenue_driver": "ambulatory surgery center operations",
+     "score": 0.84,
+     "signal_rank": 878,
+     "ticker": "SGRY",
+     "trend_smoothness_60": 4.1693,
+     "volume_ratio_5d": 0.3546
+    },
+    {
+     "biopharma_downranked": false,
+     "description_tags": [
+      "SMB financial operations SaaS",
+      "B2B payments automation",
+      "accounts payable platform"
+     ],
+     "exchange": "NYSE",
+     "market_cap_m": 6611.3636,
+     "price_vs_high_52w": 1.0,
+     "rank": 2,
+     "return_126d": 0.723,
+     "return_20d": 0.3469,
+     "return_60d": 0.3836,
+     "revenue_driver": "SMB financial operations SaaS",
+     "score": 0.807,
+     "signal_rank": 1676,
+     "ticker": "BILL",
+     "trend_smoothness_60": 3.5533,
+     "volume_ratio_5d": 1.7877
+    },
+    {
+     "biopharma_downranked": false,
+     "description_tags": [
+      "prestige and mass fragrances",
+      "color cosmetics",
+      "skin and body care"
+     ],
+     "exchange": "NYSE",
+     "market_cap_m": 3682.1418,
+     "price_vs_high_52w": 0.9723,
+     "rank": 3,
+     "return_126d": 1.1701,
+     "return_20d": 0.3803,
+     "return_60d": 0.5768,
+     "revenue_driver": "prestige and mass fragrances",
+     "score": 0.783,
+     "signal_rank": 1652,
+     "ticker": "COTY",
+     "trend_smoothness_60": 6.2327,
+     "volume_ratio_5d": 1.0158
+    },
+    {
+     "biopharma_downranked": false,
+     "description_tags": [
+      "sporting goods retail",
+      "outdoor and sports apparel",
+      "Sun Belt retail expansion"
+     ],
+     "exchange": "NASDAQ",
+     "market_cap_m": 4870.7549,
+     "price_vs_high_52w": 1.0,
+     "rank": 4,
+     "return_126d": 0.4428,
+     "return_20d": 0.2261,
+     "return_60d": 0.6801,
+     "revenue_driver": "sporting goods retail",
+     "score": 0.771,
+     "signal_rank": 1288,
+     "ticker": "ASO",
+     "trend_smoothness_60": 6.3697,
+     "volume_ratio_5d": 1.0525
+    },
+    {
+     "biopharma_downranked": false,
+     "description_tags": [
+      "corporate restructuring advisory",
+      "forensic accounting and litigation consulting",
+      "strategic communications"
+     ],
+     "exchange": "NYSE",
+     "market_cap_m": 6380.8342,
+     "price_vs_high_52w": 1.0,
+     "rank": 5,
+     "return_126d": 0.3393,
+     "return_20d": 0.3835,
+     "return_60d": 0.3625,
+     "revenue_driver": "corporate restructuring advisory",
+     "score": 0.738,
+     "signal_rank": 1471,
+     "ticker": "FCN",
+     "trend_smoothness_60": 3.3538,
+     "volume_ratio_5d": 0.7952
+    },
+    {
+     "biopharma_downranked": false,
+     "description_tags": [
+      "company operated restaurant sales",
+      "digital ordering revenue",
+      "catering sales"
+     ],
+     "exchange": "NYSE",
+     "market_cap_m": 1390.6288,
+     "price_vs_high_52w": 0.9775,
+     "rank": 6,
+     "return_126d": 0.4495,
+     "return_20d": 0.2854,
+     "return_60d": 0.8928,
+     "revenue_driver": "company operated restaurant sales",
+     "score": 0.728,
+     "signal_rank": 1766,
+     "ticker": "SG",
+     "trend_smoothness_60": 8.5202,
+     "volume_ratio_5d": 0.7975
+    },
+    {
+     "biopharma_downranked": false,
+     "description_tags": [
+      "fuel dispenser technology",
+      "fleet telematics systems",
+      "vehicle service equipment"
+     ],
+     "exchange": "NYSE",
+     "market_cap_m": 6378.596,
+     "price_vs_high_52w": 1.0,
+     "rank": 7,
+     "return_126d": 0.5468,
+     "return_20d": 0.2873,
+     "return_60d": 0.3166,
+     "revenue_driver": "fuel dispenser technology",
+     "score": 0.722,
+     "signal_rank": 720,
+     "ticker": "VNT",
+     "trend_smoothness_60": 4.3499,
+     "volume_ratio_5d": 0.8381
+    },
+    {
+     "biopharma_downranked": false,
+     "description_tags": [
+      "urban apparel retail",
+      "lifestyle fashion brand",
+      "omnichannel retail"
+     ],
+     "exchange": "NASDAQ",
+     "market_cap_m": 1527.5603,
+     "price_vs_high_52w": 1.0,
+     "rank": 8,
+     "return_126d": 0.5066,
+     "return_20d": 0.6314,
+     "return_60d": 0.3626,
+     "revenue_driver": "urban apparel retail",
+     "score": 0.72,
+     "signal_rank": 1498,
+     "ticker": "UPBD",
+     "trend_smoothness_60": 2.136,
+     "volume_ratio_5d": 0.8476
+    },
+    {
+     "biopharma_downranked": false,
+     "description_tags": [
+      "outdoor apparel and footwear",
+      "sportswear manufacturing",
+      "wholesale and retail distribution"
+     ],
+     "exchange": "NASDAQ",
+     "market_cap_m": 4114.964,
+     "price_vs_high_52w": 1.0,
+     "rank": 9,
+     "return_126d": 0.2634,
+     "return_20d": 0.2831,
+     "return_60d": 0.2956,
+     "revenue_driver": "outdoor apparel and footwear",
+     "score": 0.666,
+     "signal_rank": 1429,
+     "ticker": "COLM",
+     "trend_smoothness_60": 4.1426,
+     "volume_ratio_5d": 0.8261
+    },
+    {
+     "biopharma_downranked": false,
+     "description_tags": [
+      "passenger ticket sales",
+      "ancillary fee revenue",
+      "cargo and mail revenue"
+     ],
+     "exchange": "NASDAQ",
+     "market_cap_m": 1862.3568,
+     "price_vs_high_52w": 0.9772,
+     "rank": 10,
+     "return_126d": 0.7399,
+     "return_20d": 0.619,
+     "return_60d": 0.3668,
+     "revenue_driver": "passenger ticket sales",
+     "score": 0.665,
+     "signal_rank": 1454,
+     "ticker": "ULCC",
+     "trend_smoothness_60": 2.2853,
+     "volume_ratio_5d": 0.8337
+    },
+    {
+     "biopharma_downranked": false,
+     "description_tags": [
+      "fertility benefits management",
+      "employer-sponsored IVF coverage",
+      "family-building benefits"
+     ],
+     "exchange": "NASDAQ",
+     "market_cap_m": 3117.4259,
+     "price_vs_high_52w": 0.9734,
+     "rank": 11,
+     "return_126d": 0.4103,
+     "return_20d": 0.2714,
+     "return_60d": 0.4005,
+     "revenue_driver": "fertility benefits management",
+     "score": 0.644,
+     "signal_rank": 549,
+     "ticker": "PGNY",
+     "trend_smoothness_60": 4.0562,
+     "volume_ratio_5d": 0.8526
+    },
+    {
+     "biopharma_downranked": false,
+     "description_tags": [
+      "industrial manufacturing marketplace",
+      "custom parts fabrication platform",
+      "AI-powered procurement"
+     ],
+     "exchange": "NASDAQ",
+     "market_cap_m": 5996.5306,
+     "price_vs_high_52w": 0.9838,
+     "rank": 12,
+     "return_126d": 0.3126,
+     "return_20d": 0.3546,
+     "return_60d": 0.3725,
+     "revenue_driver": "industrial manufacturing marketplace",
+     "score": 0.638,
+     "signal_rank": 1312,
+     "ticker": "XMTR",
+     "trend_smoothness_60": 2.8674,
+     "volume_ratio_5d": 0.7515
+    },
+    {
+     "biopharma_downranked": false,
+     "description_tags": [
+      "branded apparel and footwear",
+      "outdoor and active lifestyle brands",
+      "direct-to-consumer retail"
+     ],
+     "exchange": "NYSE",
+     "market_cap_m": 8189.596,
+     "price_vs_high_52w": 0.9726,
+     "rank": 13,
+     "return_126d": 0.293,
+     "return_20d": 0.2222,
+     "return_60d": 0.5134,
+     "revenue_driver": "branded apparel and footwear",
+     "score": 0.636,
+     "signal_rank": 1438,
+     "ticker": "VFC",
+     "trend_smoothness_60": 5.2082,
+     "volume_ratio_5d": 0.8688
+    },
+    {
+     "biopharma_downranked": false,
+     "description_tags": [
+      "consumer batteries",
+      "auto care brands",
+      "portable lighting"
+     ],
+     "exchange": "NYSE",
+     "market_cap_m": 1939.8736,
+     "price_vs_high_52w": 1.0,
+     "rank": 14,
+     "return_126d": 0.7073,
+     "return_20d": 0.243,
+     "return_60d": 0.2894,
+     "revenue_driver": "consumer batteries",
+     "score": 0.628,
+     "signal_rank": 1591,
+     "ticker": "ENR",
+     "trend_smoothness_60": 3.0542,
+     "volume_ratio_5d": 1.4309
+    },
+    {
+     "biopharma_downranked": false,
+     "description_tags": [
+      "footwear retail",
+      "work and outdoor footwear",
+      "omnichannel retail"
+     ],
+     "exchange": "NYSE",
+     "market_cap_m": 2120.5122,
+     "price_vs_high_52w": 1.0,
+     "rank": 15,
+     "return_126d": 0.6931,
+     "return_20d": 0.2864,
+     "return_60d": 0.2638,
+     "revenue_driver": "footwear retail",
+     "score": 0.618,
+     "signal_rank": 1619,
+     "ticker": "WWW",
+     "trend_smoothness_60": 2.2776,
+     "volume_ratio_5d": 1.7663
+    },
+    {
+     "biopharma_downranked": false,
+     "description_tags": [
+      "casual footwear",
+      "direct to consumer sales",
+      "wholesale footwear distribution"
+     ],
+     "exchange": "NASDAQ",
+     "market_cap_m": 8449.8482,
+     "price_vs_high_52w": 0.9941,
+     "rank": 16,
+     "return_126d": 0.5816,
+     "return_20d": 0.3736,
+     "return_60d": 0.3244,
+     "revenue_driver": "casual footwear",
+     "score": 0.606,
+     "signal_rank": 1105,
+     "ticker": "CROX",
+     "trend_smoothness_60": 2.2297,
+     "volume_ratio_5d": 0.8163
+    },
+    {
+     "biopharma_downranked": false,
+     "description_tags": [
+      "residential security monitoring",
+      "smart home integration",
+      "commercial alarm systems"
+     ],
+     "exchange": "NYSE",
+     "market_cap_m": 7558.3778,
+     "price_vs_high_52w": 0.995,
+     "rank": 17,
+     "return_126d": 0.4165,
+     "return_20d": 0.4529,
+     "return_60d": 0.3297,
+     "revenue_driver": "residential security monitoring",
+     "score": 0.595,
+     "signal_rank": 1270,
+     "ticker": "ADT",
+     "trend_smoothness_60": 2.1303,
+     "volume_ratio_5d": 0.5352
+    },
+    {
+     "biopharma_downranked": false,
+     "description_tags": [
+      "surgical instruments",
+      "anesthesia consumables",
+      "vascular catheters"
+     ],
+     "exchange": "NYSE",
+     "market_cap_m": 7329.5749,
+     "price_vs_high_52w": 1.0,
+     "rank": 18,
+     "return_126d": 0.2269,
+     "return_20d": 0.2719,
+     "return_60d": 0.1831,
+     "revenue_driver": "surgical instruments",
+     "score": 0.544,
+     "signal_rank": 1357,
+     "ticker": "TFX",
+     "trend_smoothness_60": 2.8101,
+     "volume_ratio_5d": 1.0884
+    },
+    {
+     "biopharma_downranked": false,
+     "description_tags": [
+      "financial reporting platform",
+      "regulatory compliance solutions",
+      "data management analytics"
+     ],
+     "exchange": "NYSE",
+     "market_cap_m": 1767.6296,
+     "price_vs_high_52w": 0.9508,
+     "rank": 19,
+     "return_126d": 0.7018,
+     "return_20d": 0.2618,
+     "return_60d": 0.395,
+     "revenue_driver": "financial reporting platform",
+     "score": 0.539,
+     "signal_rank": 413,
+     "ticker": "DFIN",
+     "trend_smoothness_60": 3.2271,
+     "volume_ratio_5d": 0.7665
+    },
+    {
+     "biopharma_downranked": false,
+     "description_tags": [
+      "engineering consulting",
+      "failure analysis",
+      "litigation support services"
+     ],
+     "exchange": "NASDAQ",
+     "market_cap_m": 4447.9249,
+     "price_vs_high_52w": 1.0,
+     "rank": 20,
+     "return_126d": 0.5312,
+     "return_20d": 0.2189,
+     "return_60d": 0.2715,
+     "revenue_driver": "engineering consulting",
+     "score": 0.534,
+     "signal_rank": 1699,
+     "ticker": "EXPO",
+     "trend_smoothness_60": 4.0592,
+     "volume_ratio_5d": 0.6961
+    },
+    {
+     "biopharma_downranked": false,
+     "description_tags": [
+      "branded apparel",
+      "Calvin Klein and Tommy Hilfiger",
+      "direct-to-consumer retail"
+     ],
+     "exchange": "NYSE",
+     "market_cap_m": 4481.8236,
+     "price_vs_high_52w": 0.9903,
+     "rank": 21,
+     "return_126d": 0.1558,
+     "return_20d": 0.1706,
+     "return_60d": 0.3131,
+     "revenue_driver": "branded apparel",
+     "score": 0.52,
+     "signal_rank": 259,
+     "ticker": "PVH",
+     "trend_smoothness_60": 3.8467,
+     "volume_ratio_5d": 0.8982
+    },
+    {
+     "biopharma_downranked": true,
+     "description_tags": [
+      "hypoglycemia therapeutics",
+      "endocrine disorder therapeutics",
+      "rare disease therapeutics"
+     ],
+     "exchange": "NASDAQ",
+     "market_cap_m": 2819.0488,
+     "price_vs_high_52w": 1.0,
+     "rank": 22,
+     "return_126d": 1.7271,
+     "return_20d": 0.5753,
+     "return_60d": 0.9439,
+     "revenue_driver": "hypoglycemia therapeutics",
+     "score": 0.5178,
+     "signal_rank": 1136,
+     "ticker": "XERS",
+     "trend_smoothness_60": 4.2361,
+     "volume_ratio_5d": 0.8038
+    },
+    {
+     "biopharma_downranked": false,
+     "description_tags": [
+      "workers compensation claims management",
+      "medical bill review software",
+      "third party administration"
+     ],
+     "exchange": "NASDAQ",
+     "market_cap_m": 4554.3209,
+     "price_vs_high_52w": 1.0,
+     "rank": 23,
+     "return_126d": 0.383,
+     "return_20d": 0.1011,
+     "return_60d": 0.267,
+     "revenue_driver": "workers compensation claims management",
+     "score": 0.514,
+     "signal_rank": 978,
+     "ticker": "CRVL",
+     "trend_smoothness_60": 4.8751,
+     "volume_ratio_5d": 1.1833
+    },
+    {
+     "biopharma_downranked": false,
+     "description_tags": [
+      "regulated electric delivery",
+      "regulated gas delivery",
+      "rate base investment returns"
+     ],
+     "exchange": "NASDAQ",
+     "market_cap_m": 5214.0684,
+     "price_vs_high_52w": 0.9919,
+     "rank": 24,
+     "return_126d": 0.1879,
+     "return_20d": 0.1407,
+     "return_60d": 0.2226,
+     "revenue_driver": "regulated electric delivery",
+     "score": 0.497,
+     "signal_rank": 1882,
+     "ticker": "NWE",
+     "trend_smoothness_60": 4.8896,
+     "volume_ratio_5d": 1.023
+    },
+    {
+     "biopharma_downranked": false,
+     "description_tags": [
+      "long term care pharmacy",
+      "institutional pharmacy dispensing",
+      "medication management services"
+     ],
+     "exchange": "NYSE",
+     "market_cap_m": 1770.6454,
+     "price_vs_high_52w": 0.9704,
+     "rank": 25,
+     "return_126d": 0.2972,
+     "return_20d": 0.253,
+     "return_60d": 0.3094,
+     "revenue_driver": "long term care pharmacy",
+     "score": 0.477,
+     "signal_rank": 1405,
+     "ticker": "GRDN",
+     "trend_smoothness_60": 2.9644,
+     "volume_ratio_5d": 0.7652
+    },
+    {
+     "biopharma_downranked": true,
+     "description_tags": [
+      "biopharma sample management",
+      "lab automation systems",
+      "genomics sequencing"
+     ],
+     "exchange": "NASDAQ",
+     "market_cap_m": 2239.2531,
+     "price_vs_high_52w": 0.9957,
+     "rank": 26,
+     "return_126d": 1.622,
+     "return_20d": 0.3245,
+     "return_60d": 0.4661,
+     "revenue_driver": "biopharma sample management",
+     "score": 0.462,
+     "signal_rank": 771,
+     "ticker": "AZTA",
+     "trend_smoothness_60": 3.4982,
+     "volume_ratio_5d": 1.0911
+    },
+    {
+     "biopharma_downranked": false,
+     "description_tags": [
+      "economic litigation consulting",
+      "expert witness services",
+      "management consulting"
+     ],
+     "exchange": "NASDAQ",
+     "market_cap_m": 1413.7173,
+     "price_vs_high_52w": 0.9647,
+     "rank": 27,
+     "return_126d": 0.4556,
+     "return_20d": 0.175,
+     "return_60d": 0.2534,
+     "revenue_driver": "economic litigation consulting",
+     "score": 0.458,
+     "signal_rank": 1191,
+     "ticker": "CRAI",
+     "trend_smoothness_60": 4.5213,
+     "volume_ratio_5d": 1.0506
+    },
+    {
+     "biopharma_downranked": false,
+     "description_tags": [
+      "restaurant meals",
+      "gift shop merchandise",
+      "highway location advantage"
+     ],
+     "exchange": "NASDAQ",
+     "market_cap_m": 1659.8635,
+     "price_vs_high_52w": 1.0,
+     "rank": 28,
+     "return_126d": 1.4805,
+     "return_20d": 0.1306,
+     "return_60d": 0.2758,
+     "revenue_driver": "restaurant meals",
+     "score": 0.415,
+     "signal_rank": 1170,
+     "ticker": "CBRL",
+     "trend_smoothness_60": 2.1962,
+     "volume_ratio_5d": 0.9744
+    },
+    {
+     "biopharma_downranked": false,
+     "description_tags": [
+      "construction project management SaaS",
+      "general contractor platform",
+      "construction operations software"
+     ],
+     "exchange": "NYSE",
+     "market_cap_m": 11846.814,
+     "price_vs_high_52w": 0.9817,
+     "rank": 29,
+     "return_126d": 0.6029,
+     "return_20d": 0.251,
+     "return_60d": 0.2572,
+     "revenue_driver": "construction project management SaaS",
+     "score": 0.408,
+     "signal_rank": 1818,
+     "ticker": "PCOR",
+     "trend_smoothness_60": 2.2549,
+     "volume_ratio_5d": 0.6132
+    },
+    {
+     "biopharma_downranked": false,
+     "description_tags": [
+      "low-code development SaaS",
+      "business process automation",
+      "enterprise application platform"
+     ],
+     "exchange": "NASDAQ",
+     "market_cap_m": 2310.2541,
+     "price_vs_high_52w": 0.9727,
+     "rank": 30,
+     "return_126d": 1.5321,
+     "return_20d": 0.1094,
+     "return_60d": 0.3658,
+     "revenue_driver": "low-code development SaaS",
+     "score": 0.399,
+     "signal_rank": 1409,
+     "ticker": "APPN",
+     "trend_smoothness_60": 2.5171,
+     "volume_ratio_5d": 0.9177
+    },
+    {
+     "biopharma_downranked": true,
+     "description_tags": [
+      "autologous cell therapies",
+      "knee cartilage repair",
+      "severe burn treatments"
+     ],
+     "exchange": "NASDAQ",
+     "market_cap_m": 2966.1651,
+     "price_vs_high_52w": 0.9865,
+     "rank": 31,
+     "return_126d": 0.6568,
+     "return_20d": 0.4326,
+     "return_60d": 0.357,
+     "revenue_driver": "autologous cell therapies",
+     "score": 0.3936,
+     "signal_rank": 1716,
+     "ticker": "VCEL",
+     "trend_smoothness_60": 2.7511,
+     "volume_ratio_5d": 0.8046
+    },
+    {
+     "biopharma_downranked": false,
+     "description_tags": [
+      "water quality analytics",
+      "product marking and coding",
+      "water treatment solutions"
+     ],
+     "exchange": "NYSE",
+     "market_cap_m": 29266.7674,
+     "price_vs_high_52w": 0.9797,
+     "rank": 32,
+     "return_126d": 0.3676,
+     "return_20d": 0.1635,
+     "return_60d": 0.1934,
+     "revenue_driver": "water quality analytics",
+     "score": 0.375,
+     "signal_rank": 1464,
+     "ticker": "VLTO",
+     "trend_smoothness_60": 3.3465,
+     "volume_ratio_5d": 0.8512
+    },
+    {
+     "biopharma_downranked": true,
+     "description_tags": [
+      "generic injectables",
+      "specialty injectable",
+      "inhalation drugs"
+     ],
+     "exchange": "NASDAQ",
+     "market_cap_m": 1365.2339,
+     "price_vs_high_52w": 1.0,
+     "rank": 33,
+     "return_126d": 0.6451,
+     "return_20d": 0.134,
+     "return_60d": 0.3517,
+     "revenue_driver": "generic injectables",
+     "score": 0.3624,
+     "signal_rank": 137,
+     "ticker": "AMPH",
+     "trend_smoothness_60": 8.3865,
+     "volume_ratio_5d": 0.9163
+    },
+    {
+     "biopharma_downranked": false,
+     "description_tags": [
+      "inpatient psychiatric hospitals",
+      "addiction treatment centers",
+      "behavioral health outpatient clinics"
+     ],
+     "exchange": "NASDAQ",
+     "market_cap_m": 3399.79,
+     "price_vs_high_52w": 0.9688,
+     "rank": 34,
+     "return_126d": 0.5623,
+     "return_20d": 0.196,
+     "return_60d": 0.2585,
+     "revenue_driver": "inpatient psychiatric hospitals",
+     "score": 0.351,
+     "signal_rank": 450,
+     "ticker": "ACHC",
+     "trend_smoothness_60": 2.4635,
+     "volume_ratio_5d": 0.7641
+    },
+    {
+     "biopharma_downranked": false,
+     "description_tags": [
+      "outpatient physical therapy",
+      "industrial injury prevention",
+      "occupational therapy"
+     ],
+     "exchange": "NYSE",
+     "market_cap_m": 1450.9177,
+     "price_vs_high_52w": 0.9533,
+     "rank": 35,
+     "return_126d": 0.5333,
+     "return_20d": 0.1061,
+     "return_60d": 0.2342,
+     "revenue_driver": "outpatient physical therapy",
+     "score": 0.342,
+     "signal_rank": 1547,
+     "ticker": "USPH",
+     "trend_smoothness_60": 3.5975,
+     "volume_ratio_5d": 1.0968
+    },
+    {
+     "biopharma_downranked": false,
+     "description_tags": [
+      "Harley-Davidson motorcycles",
+      "motorcycle parts and accessories",
+      "dealer financing"
+     ],
+     "exchange": "NYSE",
+     "market_cap_m": 3938.8543,
+     "price_vs_high_52w": 0.9639,
+     "rank": 36,
+     "return_126d": 0.3979,
+     "return_20d": 0.2195,
+     "return_60d": 0.2128,
+     "revenue_driver": "Harley-Davidson motorcycles",
+     "score": 0.34,
+     "signal_rank": 551,
+     "ticker": "HOG",
+     "trend_smoothness_60": 2.3411,
+     "volume_ratio_5d": 0.8195
+    },
+    {
+     "biopharma_downranked": false,
+     "description_tags": [
+      "transcatheter heart valves",
+      "surgical valve systems",
+      "critical care monitoring"
+     ],
+     "exchange": "NYSE",
+     "market_cap_m": 61064.969,
+     "price_vs_high_52w": 0.9821,
+     "rank": 37,
+     "return_126d": 0.2683,
+     "return_20d": 0.1904,
+     "return_60d": 0.158,
+     "revenue_driver": "transcatheter heart valves",
+     "score": 0.338,
+     "signal_rank": 1761,
+     "ticker": "EW",
+     "trend_smoothness_60": 2.9434,
+     "volume_ratio_5d": 0.807
+    },
+    {
+     "biopharma_downranked": false,
+     "description_tags": [
+      "fabric and home care brands",
+      "beauty and grooming brands",
+      "baby feminine and family care brands"
+     ],
+     "exchange": "NYSE",
+     "market_cap_m": 397922.4329,
+     "price_vs_high_52w": 0.9842,
+     "rank": 38,
+     "return_126d": 0.1953,
+     "return_20d": 0.0858,
+     "return_60d": 0.1712,
+     "revenue_driver": "fabric and home care brands",
+     "score": 0.328,
+     "signal_rank": 1802,
+     "ticker": "PG",
+     "trend_smoothness_60": 4.4165,
+     "volume_ratio_5d": 0.8697
+    },
+    {
+     "biopharma_downranked": false,
+     "description_tags": [
+      "commercial truck leasing",
+      "dedicated contract carriage",
+      "contract logistics"
+     ],
+     "exchange": "NYSE",
+     "market_cap_m": 11498.9658,
+     "price_vs_high_52w": 0.9972,
+     "rank": 39,
+     "return_126d": 0.213,
+     "return_20d": 0.1851,
+     "return_60d": 0.1568,
+     "revenue_driver": "commercial truck leasing",
+     "score": 0.32,
+     "signal_rank": 596,
+     "ticker": "R",
+     "trend_smoothness_60": 2.3601,
+     "volume_ratio_5d": 0.779
+    },
+    {
+     "biopharma_downranked": false,
+     "description_tags": [
+      "community and regional banking",
+      "commercial lending",
+      "net interest spread"
+     ],
+     "exchange": "NASDAQ",
+     "market_cap_m": 1019.2508,
+     "price_vs_high_52w": 0.9744,
+     "rank": 40,
+     "return_126d": 0.3008,
+     "return_20d": 0.1763,
+     "return_60d": 0.2124,
+     "revenue_driver": "community and regional banking",
+     "score": 0.318,
+     "signal_rank": 726,
+     "ticker": "EGBN",
+     "trend_smoothness_60": 2.8524,
+     "volume_ratio_5d": 0.6988
+    },
+    {
+     "biopharma_downranked": false,
+     "description_tags": [
+      "membership fees",
+      "grocery merchandise sales",
+      "fuel station sales"
+     ],
+     "exchange": "NYSE",
+     "market_cap_m": 14508.4262,
+     "price_vs_high_52w": 0.9911,
+     "rank": 41,
+     "return_126d": 0.1631,
+     "return_20d": 0.0827,
+     "return_60d": 0.1749,
+     "revenue_driver": "membership fees",
+     "score": 0.308,
+     "signal_rank": 1401,
+     "ticker": "BJ",
+     "trend_smoothness_60": 3.0869,
+     "volume_ratio_5d": 1.101
+    },
+    {
+     "biopharma_downranked": false,
+     "description_tags": [
+      "pet health insurance",
+      "subscription insurance model",
+      "veterinary partner network"
+     ],
+     "exchange": "NASDAQ",
+     "market_cap_m": 1584.5026,
+     "price_vs_high_52w": 0.9532,
+     "rank": 42,
+     "return_126d": 0.6764,
+     "return_20d": 0.287,
+     "return_60d": 0.152,
+     "revenue_driver": "pet health insurance",
+     "score": 0.305,
+     "signal_rank": 1758,
+     "ticker": "TRUP",
+     "trend_smoothness_60": 1.3299,
+     "volume_ratio_5d": 0.7845
+    },
+    {
+     "biopharma_downranked": false,
+     "description_tags": [
+      "smart home security SaaS",
+      "dealer-distributed security IoT platform",
+      "commercial security SaaS"
+     ],
+     "exchange": "NASDAQ",
+     "market_cap_m": 3312.5308,
+     "price_vs_high_52w": 0.9772,
+     "rank": 43,
+     "return_126d": 0.5079,
+     "return_20d": 0.1154,
+     "return_60d": 0.17,
+     "revenue_driver": "smart home security SaaS",
+     "score": 0.294,
+     "signal_rank": 176,
+     "ticker": "ALRM",
+     "trend_smoothness_60": 3.2584,
+     "volume_ratio_5d": 0.8744
+    },
+    {
+     "biopharma_downranked": true,
+     "description_tags": [
+      "B-cell therapy product sales",
+      "Immunology drug royalties",
+      "Collaboration and licensing revenue"
+     ],
+     "exchange": "NASDAQ",
+     "market_cap_m": 10497.1451,
+     "price_vs_high_52w": 1.0,
+     "rank": 44,
+     "return_126d": 0.663,
+     "return_20d": 0.2429,
+     "return_60d": 0.1931,
+     "revenue_driver": "B-cell therapy product sales",
+     "score": 0.2718,
+     "signal_rank": 324,
+     "ticker": "TGTX",
+     "trend_smoothness_60": 2.9442,
+     "volume_ratio_5d": 0.7386
+    },
+    {
+     "biopharma_downranked": false,
+     "description_tags": [
+      "property insurance premiums",
+      "casualty insurance premiums",
+      "investment income"
+     ],
+     "exchange": "NASDAQ",
+     "market_cap_m": 4172.4749,
+     "price_vs_high_52w": 0.9766,
+     "rank": 45,
+     "return_126d": 0.3595,
+     "return_20d": 0.1313,
+     "return_60d": 0.1949,
+     "revenue_driver": "property insurance premiums",
+     "score": 0.254,
+     "signal_rank": 699,
+     "ticker": "PLMR",
+     "trend_smoothness_60": 2.6135,
+     "volume_ratio_5d": 0.6372
+    },
+    {
+     "biopharma_downranked": false,
+     "description_tags": [
+      "pharmaceutical distribution",
+      "medical supply distribution",
+      "specialty pharmacy services"
+     ],
+     "exchange": "NYSE",
+     "market_cap_m": 92330.8354,
+     "price_vs_high_52w": 0.9805,
+     "rank": 46,
+     "return_126d": 0.3973,
+     "return_20d": 0.081,
+     "return_60d": 0.1698,
+     "revenue_driver": "pharmaceutical distribution",
+     "score": 0.221,
+     "signal_rank": 1491,
+     "ticker": "CAH",
+     "trend_smoothness_60": 2.9591,
+     "volume_ratio_5d": 0.8633
+    },
+    {
+     "biopharma_downranked": true,
+     "description_tags": [
+      "generic pharmaceuticals",
+      "established branded drugs",
+      "biosimilar medicines"
+     ],
+     "exchange": "NASDAQ",
+     "market_cap_m": 23357.8956,
+     "price_vs_high_52w": 0.963,
+     "rank": 47,
+     "return_126d": 0.2224,
+     "return_20d": 0.0992,
+     "return_60d": 0.2129,
+     "revenue_driver": "generic pharmaceuticals",
+     "score": 0.1902,
+     "signal_rank": 215,
+     "ticker": "VTRS",
+     "trend_smoothness_60": 4.0656,
+     "volume_ratio_5d": 0.9883
+    },
+    {
+     "biopharma_downranked": true,
+     "description_tags": [
+      "generic drug sales",
+      "specialty pharmaceutical sales",
+      "biosimilar sales"
+     ],
+     "exchange": "NASDAQ",
+     "market_cap_m": 6878.2624,
+     "price_vs_high_52w": 1.0,
+     "rank": 48,
+     "return_126d": 0.789,
+     "return_20d": 0.0832,
+     "return_60d": 0.221,
+     "revenue_driver": "generic drug sales",
+     "score": 0.1848,
+     "signal_rank": 1259,
+     "ticker": "AMRX",
+     "trend_smoothness_60": 3.0066,
+     "volume_ratio_5d": 0.5054
+    },
+    {
+     "biopharma_downranked": false,
+     "description_tags": [
+      "infrastructure engineering SaaS",
+      "digital twin platform",
+      "civil infrastructure software"
+     ],
+     "exchange": "NASDAQ",
+     "market_cap_m": 12737.8688,
+     "price_vs_high_52w": 0.9608,
+     "rank": 49,
+     "return_126d": 0.3083,
+     "return_20d": 0.1371,
+     "return_60d": 0.1821,
+     "revenue_driver": "infrastructure engineering SaaS",
+     "score": 0.169,
+     "signal_rank": 1014,
+     "ticker": "BSY",
+     "trend_smoothness_60": 2.1025,
+     "volume_ratio_5d": 0.5963
+    },
+    {
+     "biopharma_downranked": false,
+     "description_tags": [
+      "faucets and plumbing products",
+      "decorative architectural products",
+      "paints and coatings"
+     ],
+     "exchange": "NYSE",
+     "market_cap_m": 17515.0037,
+     "price_vs_high_52w": 0.9713,
+     "rank": 50,
+     "return_126d": 0.2647,
+     "return_20d": 0.131,
+     "return_60d": 0.1565,
+     "revenue_driver": "faucets and plumbing products",
+     "score": 0.156,
+     "signal_rank": 399,
+     "ticker": "MAS",
+     "trend_smoothness_60": 2.2403,
+     "volume_ratio_5d": 0.7379
+    }
+   ],
+   "score_components": [
+    {
+     "condition": null,
+     "direction": 1,
+     "key": "return_20d",
+     "weight": 0.35
+    },
+    {
+     "condition": null,
+     "direction": 1,
+     "key": "_ret60",
+     "weight": 0.25
+    },
+    {
+     "condition": null,
+     "direction": 1,
+     "key": "price_vs_high_52w",
+     "weight": 0.15
+    },
+    {
+     "condition": null,
+     "direction": 1,
+     "key": "volume_ratio_5d",
+     "weight": 0.1
+    },
+    {
+     "condition": null,
+     "direction": 1,
+     "key": "trend_smoothness_60",
+     "weight": 0.15
+    }
+   ],
+   "universe_size": 1484
+  },
+  {
+   "description": "Deeply off the 3-year peak and turning up over both 20d and 60d.",
+   "filtered_size": 46,
+   "filters": [
+    "vs_peak_3y < -40%",
+    "return_20d > 3%",
+    "return_60d (126d fallback) > 0"
+   ],
+   "formula": "S6 = 0.35 PeakDistance + 0.40 Bounce + 0.25 Stability",
+   "id": "g6",
+   "label": "G6",
+   "name": "Turnaround",
+   "result_columns": [
+    "vs_peak_3y",
+    "return_20d",
+    "return_60d",
+    "return_126d",
+    "return_252d",
+    "volatility_20d",
+    "market_cap_m"
+   ],
+   "row_count": 46,
+   "rows": [
+    {
+     "biopharma_downranked": false,
+     "description_tags": [
+      "prestige and mass fragrances",
+      "color cosmetics",
+      "skin and body care"
+     ],
+     "exchange": "NYSE",
+     "market_cap_m": 3682.1418,
+     "rank": 1,
+     "return_126d": 1.1701,
+     "return_20d": 0.3803,
+     "return_252d": 0.2567,
+     "return_60d": 0.5768,
+     "revenue_driver": "prestige and mass fragrances",
+     "score": 0.8065,
+     "signal_rank": 1652,
+     "ticker": "COTY",
+     "volatility_20d": 0.0403,
+     "vs_peak_3y": -0.6825
+    },
+    {
+     "biopharma_downranked": false,
+     "description_tags": [
+      "company operated restaurant sales",
+      "digital ordering revenue",
+      "catering sales"
+     ],
+     "exchange": "NYSE",
+     "market_cap_m": 1390.6288,
+     "rank": 2,
+     "return_126d": 0.4495,
+     "return_20d": 0.2854,
+     "return_252d": 1.2832,
+     "return_60d": 0.8928,
+     "revenue_driver": "company operated restaurant sales",
+     "score": 0.8011,
+     "signal_rank": 1766,
+     "ticker": "SG",
+     "volatility_20d": 0.0424,
+     "vs_peak_3y": -0.703
+    },
+    {
+     "biopharma_downranked": false,
+     "description_tags": [
+      "ready-to-drink protein shakes",
+      "protein powder nutrition",
+      "sports nutrition products"
+     ],
+     "exchange": "NYSE",
+     "market_cap_m": 1617.6855,
+     "rank": 3,
+     "return_126d": 0.5246,
+     "return_20d": 0.4945,
+     "return_252d": -0.4668,
+     "return_60d": 0.2695,
+     "revenue_driver": "ready-to-drink protein shakes",
+     "score": 0.7543,
+     "signal_rank": 1307,
+     "ticker": "BRBR",
+     "volatility_20d": 0.0643,
+     "vs_peak_3y": -0.8279
+    },
+    {
+     "biopharma_downranked": false,
+     "description_tags": [
+      "indirect tax software",
+      "sales tax automation",
+      "tax determination engine"
+     ],
+     "exchange": "NASDAQ",
+     "market_cap_m": 1338.5356,
+     "rank": 4,
+     "return_126d": 0.2805,
+     "return_20d": 0.1793,
+     "return_252d": -0.1328,
+     "return_60d": 0.2796,
+     "revenue_driver": "indirect tax software",
+     "score": 0.7467,
+     "signal_rank": 970,
+     "ticker": "VERX",
+     "volatility_20d": 0.035,
+     "vs_peak_3y": -0.7065
+    },
+    {
+     "biopharma_downranked": false,
+     "description_tags": [
+      "chicken wing restaurants",
+      "franchise royalties",
+      "company-operated restaurant sales"
+     ],
+     "exchange": "NASDAQ",
+     "market_cap_m": 4328.9367,
+     "rank": 5,
+     "return_126d": 0.2159,
+     "return_20d": 0.2988,
+     "return_252d": -0.3146,
+     "return_60d": 0.3684,
+     "revenue_driver": "chicken wing restaurants",
+     "score": 0.7272,
+     "signal_rank": 1730,
+     "ticker": "WING",
+     "volatility_20d": 0.0451,
+     "vs_peak_3y": -0.6367
+    },
+    {
+     "biopharma_downranked": false,
+     "description_tags": [
+      "programmatic advertising DSP",
+      "CTV and digital advertising",
+      "identity-driven ad targeting"
+     ],
+     "exchange": "NASDAQ",
+     "market_cap_m": 6833.7509,
+     "rank": 6,
+     "return_126d": -0.2617,
+     "return_20d": 0.2327,
+     "return_252d": -0.614,
+     "return_60d": 0.1713,
+     "revenue_driver": "programmatic advertising DSP",
+     "score": 0.6783,
+     "signal_rank": 1177,
+     "ticker": "TTD",
+     "volatility_20d": 0.0453,
+     "vs_peak_3y": -0.8888
+    },
+    {
+     "biopharma_downranked": false,
+     "description_tags": [
+      "inpatient psychiatric hospitals",
+      "addiction treatment centers",
+      "behavioral health outpatient clinics"
+     ],
+     "exchange": "NASDAQ",
+     "market_cap_m": 3399.79,
+     "rank": 7,
+     "return_126d": 0.5623,
+     "return_20d": 0.196,
+     "return_252d": 1.4019,
+     "return_60d": 0.2585,
+     "revenue_driver": "inpatient psychiatric hospitals",
+     "score": 0.6772,
+     "signal_rank": 450,
+     "ticker": "ACHC",
+     "volatility_20d": 0.0348,
+     "vs_peak_3y": -0.5698
+    },
+    {
+     "biopharma_downranked": false,
+     "description_tags": [
+      "virtual primary care",
+      "telehealth chronic disease management",
+      "mental health digital platform"
+     ],
+     "exchange": "NYSE",
+     "market_cap_m": 1430.4324,
+     "rank": 8,
+     "return_126d": 0.2438,
+     "return_20d": 0.2794,
+     "return_252d": 0.1941,
+     "return_60d": 0.3021,
+     "revenue_driver": "virtual primary care",
+     "score": 0.6337,
+     "signal_rank": 1612,
+     "ticker": "TDOC",
+     "volatility_20d": 0.0705,
+     "vs_peak_3y": -0.6353
+    },
+    {
+     "biopharma_downranked": false,
+     "description_tags": [
+      "CRM and sales automation SaaS",
+      "enterprise marketing platform",
+      "customer engagement platform"
+     ],
+     "exchange": "NYSE",
+     "market_cap_m": 3046.6176,
+     "rank": 9,
+     "return_126d": 0.4645,
+     "return_20d": 0.0946,
+     "return_252d": -0.186,
+     "return_60d": 0.2557,
+     "revenue_driver": "CRM and sales automation SaaS",
+     "score": 0.6228,
+     "signal_rank": 1867,
+     "ticker": "KVYO",
+     "volatility_20d": 0.0288,
+     "vs_peak_3y": -0.5507
+    },
+    {
+     "biopharma_downranked": false,
+     "description_tags": [
+      "packaged foods",
+      "snack foods",
+      "canned soups"
+     ],
+     "exchange": "NASDAQ",
+     "market_cap_m": 7265.5256,
+     "rank": 10,
+     "return_126d": 0.2185,
+     "return_20d": 0.2459,
+     "return_252d": -0.207,
+     "return_60d": 0.0383,
+     "revenue_driver": "packaged foods",
+     "score": 0.6043,
+     "signal_rank": 1489,
+     "ticker": "CPB",
+     "volatility_20d": 0.028,
+     "vs_peak_3y": -0.5304
+    },
+    {
+     "biopharma_downranked": false,
+     "description_tags": [
+      "government consulting",
+      "cyber programs",
+      "analytics and engineering"
+     ],
+     "exchange": "NYSE",
+     "market_cap_m": 10195.349,
+     "rank": 11,
+     "return_126d": 0.0852,
+     "return_20d": 0.1201,
+     "return_252d": 0.0293,
+     "return_60d": 0.1384,
+     "revenue_driver": "government consulting",
+     "score": 0.587,
+     "signal_rank": 385,
+     "ticker": "BAH",
+     "volatility_20d": 0.0247,
+     "vs_peak_3y": -0.5481
+    },
+    {
+     "biopharma_downranked": false,
+     "description_tags": [
+      "low-cost gym memberships",
+      "fitness club franchising",
+      "franchise royalties and fees"
+     ],
+     "exchange": "NYSE",
+     "market_cap_m": 5191.4165,
+     "rank": 12,
+     "return_126d": 0.2452,
+     "return_20d": 0.2103,
+     "return_252d": -0.388,
+     "return_60d": 0.1907,
+     "revenue_driver": "low-cost gym memberships",
+     "score": 0.562,
+     "signal_rank": 1720,
+     "ticker": "PLNT",
+     "volatility_20d": 0.0188,
+     "vs_peak_3y": -0.4491
+    },
+    {
+     "biopharma_downranked": false,
+     "description_tags": [
+      "federal solutions",
+      "critical infrastructure",
+      "cybersecurity"
+     ],
+     "exchange": "NYSE",
+     "market_cap_m": 5542.7524,
+     "rank": 13,
+     "return_126d": 0.0077,
+     "return_20d": 0.1465,
+     "return_252d": -0.3616,
+     "return_60d": 0.0835,
+     "revenue_driver": "federal solutions",
+     "score": 0.5467,
+     "signal_rank": 1392,
+     "ticker": "PSN",
+     "volatility_20d": 0.0269,
+     "vs_peak_3y": -0.5406
+    },
+    {
+     "biopharma_downranked": false,
+     "description_tags": [
+      "digital engineering services",
+      "IT consulting",
+      "custom software development"
+     ],
+     "exchange": "NYSE",
+     "market_cap_m": 8516.2609,
+     "rank": 14,
+     "return_126d": 0.4786,
+     "return_20d": 0.1504,
+     "return_252d": -0.1329,
+     "return_60d": 0.3783,
+     "revenue_driver": "digital engineering services",
+     "score": 0.5359,
+     "signal_rank": 1775,
+     "ticker": "EPAM",
+     "volatility_20d": 0.0536,
+     "vs_peak_3y": -0.51
+    },
+    {
+     "biopharma_downranked": false,
+     "description_tags": [
+      "employee benefits administration software",
+      "HR compliance SaaS",
+      "health insurance enrollment platform"
+     ],
+     "exchange": "NYSE",
+     "market_cap_m": 1301.9008,
+     "rank": 15,
+     "return_126d": 0.6711,
+     "return_20d": 0.1337,
+     "return_252d": 1.2937,
+     "return_60d": 0.4334,
+     "revenue_driver": "employee benefits administration software",
+     "score": 0.5272,
+     "signal_rank": 1641,
+     "ticker": "IBTA",
+     "volatility_20d": 0.0534,
+     "vs_peak_3y": -0.4947
+    },
+    {
+     "biopharma_downranked": false,
+     "description_tags": [
+      "property & casualty premiums",
+      "life & health premiums",
+      "investment spread income"
+     ],
+     "exchange": "NYSE",
+     "market_cap_m": 1913.316,
+     "rank": 16,
+     "return_126d": 0.1074,
+     "return_20d": 0.1304,
+     "return_252d": -0.1039,
+     "return_60d": 0.1764,
+     "revenue_driver": "property & casualty premiums",
+     "score": 0.5217,
+     "signal_rank": 1565,
+     "ticker": "KMPR",
+     "volatility_20d": 0.0376,
+     "vs_peak_3y": -0.5467
+    },
+    {
+     "biopharma_downranked": false,
+     "description_tags": [
+      "language learning app",
+      "subscription education platform",
+      "gamified learning"
+     ],
+     "exchange": "NASDAQ",
+     "market_cap_m": 6413.8441,
+     "rank": 17,
+     "return_126d": 0.5006,
+     "return_20d": 0.1673,
+     "return_252d": -0.1009,
+     "return_60d": 0.0976,
+     "revenue_driver": "language learning app",
+     "score": 0.5,
+     "signal_rank": 1262,
+     "ticker": "DUOL",
+     "volatility_20d": 0.0678,
+     "vs_peak_3y": -0.7035
+    },
+    {
+     "biopharma_downranked": false,
+     "description_tags": [
+      "children's apparel wholesale",
+      "OshKosh and Carter's brands",
+      "direct retail stores"
+     ],
+     "exchange": "NYSE",
+     "market_cap_m": 1344.2022,
+     "rank": 18,
+     "return_126d": -0.0065,
+     "return_20d": 0.1355,
+     "return_252d": 0.2076,
+     "return_60d": 0.0876,
+     "revenue_driver": "children's apparel wholesale",
+     "score": 0.4935,
+     "signal_rank": 616,
+     "ticker": "CRI",
+     "volatility_20d": 0.0406,
+     "vs_peak_3y": -0.5805
+    },
+    {
+     "biopharma_downranked": false,
+     "description_tags": [
+      "IT consulting",
+      "digital transformation services",
+      "AI/ML engineering services"
+     ],
+     "exchange": "NASDAQ",
+     "market_cap_m": 1103.313,
+     "rank": 19,
+     "return_126d": 0.8272,
+     "return_20d": 0.5581,
+     "return_252d": 0.6062,
+     "return_60d": 0.6531,
+     "revenue_driver": "IT consulting",
+     "score": 0.4891,
+     "signal_rank": 1271,
+     "ticker": "GDYN",
+     "volatility_20d": 0.0953,
+     "vs_peak_3y": -0.459
+    },
+    {
+     "biopharma_downranked": false,
+     "description_tags": [
+      "pool equipment",
+      "pool chemicals",
+      "pool building materials"
+     ],
+     "exchange": "NASDAQ",
+     "market_cap_m": 7949.3091,
+     "rank": 20,
+     "return_126d": 0.1737,
+     "return_20d": 0.2376,
+     "return_252d": -0.1027,
+     "return_60d": 0.1451,
+     "revenue_driver": "pool equipment",
+     "score": 0.488,
+     "signal_rank": 1204,
+     "ticker": "POOL",
+     "volatility_20d": 0.0408,
+     "vs_peak_3y": -0.4906
+    },
+    {
+     "biopharma_downranked": true,
+     "description_tags": [
+      "gene therapy programs",
+      "cell therapy platforms",
+      "licensing revenue"
+     ],
+     "exchange": "NASDAQ",
+     "market_cap_m": 1407.0332,
+     "rank": 21,
+     "return_126d": -0.1042,
+     "return_20d": 0.3782,
+     "return_252d": -0.1341,
+     "return_60d": 0.1657,
+     "revenue_driver": "gene therapy programs",
+     "score": 0.4826,
+     "signal_rank": 1552,
+     "ticker": "PRCT",
+     "volatility_20d": 0.0401,
+     "vs_peak_3y": -0.7468
+    },
+    {
+     "biopharma_downranked": false,
+     "description_tags": [
+      "policy issuance fees",
+      "investment management fees",
+      "investment income"
+     ],
+     "exchange": "NASDAQ",
+     "market_cap_m": 12756.478,
+     "rank": 22,
+     "return_126d": 0.2437,
+     "return_20d": 0.1313,
+     "return_252d": -0.0386,
+     "return_60d": 0.0705,
+     "revenue_driver": "policy issuance fees",
+     "score": 0.4815,
+     "signal_rank": 1376,
+     "ticker": "ERIE",
+     "volatility_20d": 0.0247,
+     "vs_peak_3y": -0.4931
+    },
+    {
+     "biopharma_downranked": false,
+     "description_tags": [
+      "mobile advertising technology",
+      "AI ad targeting platform",
+      "app monetization platform"
+     ],
+     "exchange": "NASDAQ",
+     "market_cap_m": 120242.7433,
+     "rank": 23,
+     "return_126d": -0.1897,
+     "return_20d": 0.4592,
+     "return_252d": -0.2751,
+     "return_60d": 0.2588,
+     "revenue_driver": "mobile advertising technology",
+     "score": 0.475,
+     "signal_rank": 1292,
+     "ticker": "APP",
+     "volatility_20d": 0.0838,
+     "vs_peak_3y": -0.4671
+    },
+    {
+     "biopharma_downranked": false,
+     "description_tags": [
+      "freelance talent marketplace",
+      "enterprise staffing platform",
+      "remote work marketplace"
+     ],
+     "exchange": "NASDAQ",
+     "market_cap_m": 1212.4784,
+     "rank": 24,
+     "return_126d": 0.0716,
+     "return_20d": 0.0606,
+     "return_252d": -0.4268,
+     "return_60d": 0.0618,
+     "revenue_driver": "freelance talent marketplace",
+     "score": 0.4728,
+     "signal_rank": 231,
+     "ticker": "UPWK",
+     "volatility_20d": 0.0303,
+     "vs_peak_3y": -0.5803
+    },
+    {
+     "biopharma_downranked": false,
+     "description_tags": [
+      "satellite radio subscriptions",
+      "automotive OEM partnerships",
+      "advertising revenue"
+     ],
+     "exchange": "NASDAQ",
+     "market_cap_m": 10844.0276,
+     "rank": 25,
+     "return_126d": 0.1911,
+     "return_20d": 0.1951,
+     "return_252d": 0.527,
+     "return_60d": 0.1215,
+     "revenue_driver": "satellite radio subscriptions",
+     "score": 0.4717,
+     "signal_rank": 1085,
+     "ticker": "SIRI",
+     "volatility_20d": 0.0253,
+     "vs_peak_3y": -0.4337
+    },
+    {
+     "biopharma_downranked": false,
+     "description_tags": [
+      "frozen beverages and slushies",
+      "soft pretzels and churros",
+      "frozen novelties"
+     ],
+     "exchange": "NASDAQ",
+     "market_cap_m": 1919.4059,
+     "rank": 26,
+     "return_126d": 0.3504,
+     "return_20d": 0.2138,
+     "return_252d": 0.1809,
+     "return_60d": 0.1106,
+     "revenue_driver": "frozen beverages and slushies",
+     "score": 0.4717,
+     "signal_rank": 1432,
+     "ticker": "JJSF",
+     "volatility_20d": 0.0282,
+     "vs_peak_3y": -0.4457
+    },
+    {
+     "biopharma_downranked": false,
+     "description_tags": [
+      "implantable lenses",
+      "collamer lenses",
+      "refractive implants"
+     ],
+     "exchange": "NASDAQ",
+     "market_cap_m": 1251.4281,
+     "rank": 27,
+     "return_126d": -0.233,
+     "return_20d": 0.1731,
+     "return_252d": -0.0434,
+     "return_60d": 0.0936,
+     "revenue_driver": "implantable lenses",
+     "score": 0.4717,
+     "signal_rank": 938,
+     "ticker": "STAA",
+     "volatility_20d": 0.0401,
+     "vs_peak_3y": -0.5148
+    },
+    {
+     "biopharma_downranked": false,
+     "description_tags": [
+      "HVAC controls & thermostats",
+      "residential security systems",
+      "HVAC & security distribution"
+     ],
+     "exchange": "NYSE",
+     "market_cap_m": 3302.7129,
+     "rank": 28,
+     "return_126d": -0.2375,
+     "return_20d": 0.262,
+     "return_252d": -0.2676,
+     "return_60d": 0.1069,
+     "revenue_driver": "HVAC controls & thermostats",
+     "score": 0.4663,
+     "signal_rank": 1787,
+     "ticker": "REZI",
+     "volatility_20d": 0.0497,
+     "vs_peak_3y": -0.5043
+    },
+    {
+     "biopharma_downranked": false,
+     "description_tags": [
+      "enterprise software SaaS",
+      "subscription platform",
+      "cloud application"
+     ],
+     "exchange": "NASDAQ",
+     "market_cap_m": 1780.6721,
+     "rank": 29,
+     "return_126d": 1.3966,
+     "return_20d": 0.0982,
+     "return_252d": 0.3684,
+     "return_60d": 0.3735,
+     "revenue_driver": "enterprise software SaaS",
+     "score": 0.4543,
+     "signal_rank": 590,
+     "ticker": "CERT",
+     "volatility_20d": 0.0323,
+     "vs_peak_3y": -0.4252
+    },
+    {
+     "biopharma_downranked": false,
+     "description_tags": [
+      "civil infrastructure construction",
+      "residential construction",
+      "government-funded construction"
+     ],
+     "exchange": "NYSE",
+     "market_cap_m": 3572.4553,
+     "rank": 30,
+     "return_126d": 0.2891,
+     "return_20d": 0.0892,
+     "return_252d": -0.352,
+     "return_60d": 0.2005,
+     "revenue_driver": "civil infrastructure construction",
+     "score": 0.4522,
+     "signal_rank": 1757,
+     "ticker": "KD",
+     "volatility_20d": 0.0741,
+     "vs_peak_3y": -0.6403
+    },
+    {
+     "biopharma_downranked": false,
+     "description_tags": [
+      "uncoated freesheet paper",
+      "printing and writing paper",
+      "office paper manufacturing"
+     ],
+     "exchange": "NYSE",
+     "market_cap_m": 1459.6004,
+     "rank": 31,
+     "return_126d": -0.0091,
+     "return_20d": 0.1821,
+     "return_252d": -0.1894,
+     "return_60d": 0.0033,
+     "revenue_driver": "uncoated freesheet paper",
+     "score": 0.4489,
+     "signal_rank": 1135,
+     "ticker": "SLVM",
+     "volatility_20d": 0.0491,
+     "vs_peak_3y": -0.6132
+    },
+    {
+     "biopharma_downranked": true,
+     "description_tags": [
+      "generic injectables",
+      "specialty injectable",
+      "inhalation drugs"
+     ],
+     "exchange": "NASDAQ",
+     "market_cap_m": 1365.2339,
+     "rank": 32,
+     "return_126d": 0.6451,
+     "return_20d": 0.134,
+     "return_252d": 0.1418,
+     "return_60d": 0.3517,
+     "revenue_driver": "generic injectables",
+     "score": 0.4474,
+     "signal_rank": 137,
+     "ticker": "AMPH",
+     "volatility_20d": 0.0203,
+     "vs_peak_3y": -0.5318
+    },
+    {
+     "biopharma_downranked": false,
+     "description_tags": [
+      "landscaping supplies",
+      "irrigation products",
+      "nursery products"
+     ],
+     "exchange": "NYSE",
+     "market_cap_m": 4949.8422,
+     "rank": 33,
+     "return_126d": -0.0249,
+     "return_20d": 0.1405,
+     "return_252d": -0.1364,
+     "return_60d": 0.1685,
+     "revenue_driver": "landscaping supplies",
+     "score": 0.3793,
+     "signal_rank": 1127,
+     "ticker": "SITE",
+     "volatility_20d": 0.0293,
+     "vs_peak_3y": -0.4019
+    },
+    {
+     "biopharma_downranked": false,
+     "description_tags": [
+      "Invisalign clear aligners",
+      "iTero oral scanners",
+      "orthodontic digital workflows"
+     ],
+     "exchange": "NASDAQ",
+     "market_cap_m": 11764.13,
+     "rank": 34,
+     "return_126d": 0.0033,
+     "return_20d": 0.0832,
+     "return_252d": 0.2364,
+     "return_60d": 0.0273,
+     "revenue_driver": "Invisalign clear aligners",
+     "score": 0.3783,
+     "signal_rank": 953,
+     "ticker": "ALGN",
+     "volatility_20d": 0.0299,
+     "vs_peak_3y": -0.5035
+    },
+    {
+     "biopharma_downranked": false,
+     "description_tags": [
+      "residential entry doors",
+      "security locks and hardware",
+      "composite outdoor decking"
+     ],
+     "exchange": "NYSE",
+     "market_cap_m": 5671.715,
+     "rank": 35,
+     "return_126d": 0.3485,
+     "return_20d": 0.1529,
+     "return_252d": 0.0188,
+     "return_60d": 0.0337,
+     "revenue_driver": "residential entry doors",
+     "score": 0.375,
+     "signal_rank": 430,
+     "ticker": "FBIN",
+     "volatility_20d": 0.0316,
+     "vs_peak_3y": -0.4755
+    },
+    {
+     "biopharma_downranked": false,
+     "description_tags": [
+      "premium imported beer",
+      "Corona and Modelo distribution",
+      "premium wine and spirits"
+     ],
+     "exchange": "NYSE",
+     "market_cap_m": 24995.6248,
+     "rank": 36,
+     "return_126d": -0.05,
+     "return_20d": 0.0879,
+     "return_252d": 0.0967,
+     "return_60d": 0.0638,
+     "revenue_driver": "premium imported beer",
+     "score": 0.3728,
+     "signal_rank": 955,
+     "ticker": "STZ",
+     "volatility_20d": 0.0251,
+     "vs_peak_3y": -0.4721
+    },
+    {
+     "biopharma_downranked": false,
+     "description_tags": [
+      "organ preservation",
+      "transplant consumables",
+      "organ transport systems"
+     ],
+     "exchange": "NASDAQ",
+     "market_cap_m": 3295.3988,
+     "rank": 37,
+     "return_126d": 0.42,
+     "return_20d": 0.3319,
+     "return_252d": -0.1496,
+     "return_60d": 0.0302,
+     "revenue_driver": "organ preservation",
+     "score": 0.3728,
+     "signal_rank": 1858,
+     "ticker": "TMDX",
+     "volatility_20d": 0.0691,
+     "vs_peak_3y": -0.4524
+    },
+    {
+     "biopharma_downranked": false,
+     "description_tags": [
+      "residential pest control",
+      "commercial extermination services",
+      "termite protection"
+     ],
+     "exchange": "NYSE",
+     "market_cap_m": 18270.5133,
+     "rank": 38,
+     "return_126d": -0.2923,
+     "return_20d": 0.1271,
+     "return_252d": -0.3496,
+     "return_60d": 0.0369,
+     "revenue_driver": "residential pest control",
+     "score": 0.3554,
+     "signal_rank": 1361,
+     "ticker": "ROL",
+     "volatility_20d": 0.0237,
+     "vs_peak_3y": -0.4253
+    },
+    {
+     "biopharma_downranked": false,
+     "description_tags": [
+      "composite deck boards",
+      "outdoor railing systems",
+      "deck lighting and accessories"
+     ],
+     "exchange": "NYSE",
+     "market_cap_m": 5605.1463,
+     "rank": 39,
+     "return_126d": 0.3663,
+     "return_20d": 0.0702,
+     "return_252d": 0.6691,
+     "return_60d": 0.1157,
+     "revenue_driver": "composite deck boards",
+     "score": 0.2913,
+     "signal_rank": 281,
+     "ticker": "TREX",
+     "volatility_20d": 0.0445,
+     "vs_peak_3y": -0.4779
+    },
+    {
+     "biopharma_downranked": false,
+     "description_tags": [
+      "company operated restaurant sales",
+      "franchise and licensing revenue",
+      "packaged goods sales"
+     ],
+     "exchange": "NYSE",
+     "market_cap_m": 2996.9103,
+     "rank": 40,
+     "return_126d": 0.173,
+     "return_20d": 0.0974,
+     "return_252d": -0.1453,
+     "return_60d": 0.0051,
+     "revenue_driver": "company operated restaurant sales",
+     "score": 0.2913,
+     "signal_rank": 1634,
+     "ticker": "SHAK",
+     "volatility_20d": 0.0324,
+     "vs_peak_3y": -0.4758
+    },
+    {
+     "biopharma_downranked": true,
+     "description_tags": [
+      "veterinary medicine",
+      "animal health diagnostics",
+      "livestock vaccines"
+     ],
+     "exchange": "NYSE",
+     "market_cap_m": 37710.1,
+     "rank": 41,
+     "return_126d": 0.0735,
+     "return_20d": 0.0747,
+     "return_252d": -0.2797,
+     "return_60d": 0.1071,
+     "revenue_driver": "veterinary medicine",
+     "score": 0.2883,
+     "signal_rank": 1269,
+     "ticker": "ZTS",
+     "volatility_20d": 0.0319,
+     "vs_peak_3y": -0.5723
+    },
+    {
+     "biopharma_downranked": false,
+     "description_tags": [
+      "utility transmission construction",
+      "substation construction",
+      "renewable energy project construction"
+     ],
+     "exchange": "NYSE",
+     "market_cap_m": 2167.8348,
+     "rank": 42,
+     "return_126d": -0.2625,
+     "return_20d": 0.1001,
+     "return_252d": 0.0635,
+     "return_60d": 0.0471,
+     "revenue_driver": "utility transmission construction",
+     "score": 0.2761,
+     "signal_rank": 1107,
+     "ticker": "CTRI",
+     "volatility_20d": 0.0451,
+     "vs_peak_3y": -0.4792
+    },
+    {
+     "biopharma_downranked": true,
+     "description_tags": [
+      "plasma-derived immunoglobulin therapies",
+      "intravenous immunoglobulin products",
+      "hepatitis B immune globulin"
+     ],
+     "exchange": "NASDAQ",
+     "market_cap_m": 3227.2529,
+     "rank": 43,
+     "return_126d": 0.586,
+     "return_20d": 0.2316,
+     "return_252d": -0.1206,
+     "return_60d": 0.3951,
+     "revenue_driver": "plasma-derived immunoglobulin therapies",
+     "score": 0.2713,
+     "signal_rank": 432,
+     "ticker": "ADMA",
+     "volatility_20d": 0.0642,
+     "vs_peak_3y": -0.4468
+    },
+    {
+     "biopharma_downranked": false,
+     "description_tags": [
+      "radiation detection instruments",
+      "nuclear safety monitoring",
+      "dosimetry products"
+     ],
+     "exchange": "NYSE",
+     "market_cap_m": 4319.5375,
+     "rank": 44,
+     "return_126d": -0.0335,
+     "return_20d": 0.134,
+     "return_252d": -0.2854,
+     "return_60d": 0.1849,
+     "revenue_driver": "radiation detection instruments",
+     "score": 0.2652,
+     "signal_rank": 1450,
+     "ticker": "MIR",
+     "volatility_20d": 0.0506,
+     "vs_peak_3y": -0.4141
+    },
+    {
+     "biopharma_downranked": true,
+     "description_tags": [
+      "immuno-oncology therapeutics",
+      "cell therapy development",
+      "clinical-stage pipeline"
+     ],
+     "exchange": "NYSE",
+     "market_cap_m": 5120.2138,
+     "rank": 45,
+     "return_126d": 0.5873,
+     "return_20d": 0.2601,
+     "return_252d": -0.0048,
+     "return_60d": 0.2632,
+     "revenue_driver": "immuno-oncology therapeutics",
+     "score": 0.2596,
+     "signal_rank": 1778,
+     "ticker": "VYX",
+     "volatility_20d": 0.0409,
+     "vs_peak_3y": -0.4008
+    },
+    {
+     "biopharma_downranked": false,
+     "description_tags": [
+      "aftermarket auto parts",
+      "automotive batteries",
+      "commercial service parts"
+     ],
+     "exchange": "NYSE",
+     "market_cap_m": 2774.2168,
+     "rank": 46,
+     "return_126d": -0.0971,
+     "return_20d": 0.0382,
+     "return_252d": -0.0554,
+     "return_60d": 0.0591,
+     "revenue_driver": "aftermarket auto parts",
+     "score": 0.2576,
+     "signal_rank": 1475,
+     "ticker": "AAP",
+     "volatility_20d": 0.0323,
+     "vs_peak_3y": -0.4654
+    }
+   ],
+   "score_components": [
+    {
+     "condition": null,
+     "direction": -1,
+     "key": "vs_peak_3y",
+     "weight": 0.35
+    },
+    {
+     "condition": null,
+     "direction": 1,
+     "key": "_bounce",
+     "weight": 0.4
+    },
+    {
+     "condition": null,
+     "direction": -1,
+     "key": "volatility_20d",
+     "weight": 0.25
+    }
+   ],
+   "universe_size": 1484
+  },
+  {
+   "description": "Expensive on earnings or sales, in an uptrend with sustained strength.",
+   "filtered_size": 61,
+   "filters": [
+    "80 < PE < 500; or PE < 0 and PS > 10",
+    "return_252d (126d fallback) > 10%",
+    "above_200d_ma = 1"
+   ],
+   "formula": "S9 = 0.25 PE + 0.25 PS + 0.30 R252 + 0.20 R20",
+   "id": "g9",
+   "label": "G9",
+   "name": "Narrative Premium",
+   "result_columns": [
+    "pe_ratio",
+    "ps_ratio",
+    "return_252d",
+    "return_126d",
+    "return_20d",
+    "market_cap_m"
+   ],
+   "row_count": 61,
+   "rows": [
+    {
+     "biopharma_downranked": false,
+     "description_tags": [
+      "pulsed electric field devices",
+      "aesthetic skin treatment systems",
+      "non-thermal medical tech"
+     ],
+     "exchange": "NASDAQ",
+     "market_cap_m": 3105.8074,
+     "pe_ratio": -44.225,
+     "ps_ratio": 100.0,
+     "rank": 1,
+     "return_126d": 0.7566,
+     "return_20d": -0.1068,
+     "return_252d": 2.3331,
+     "revenue_driver": "pulsed electric field devices",
+     "score": 0.7464,
+     "signal_rank": 1046,
+     "ticker": "PLSE"
+    },
+    {
+     "biopharma_downranked": false,
+     "description_tags": [
+      "enterprise cybersecurity SaaS",
+      "vulnerability management platform",
+      "exposure management"
+     ],
+     "exchange": "NASDAQ",
+     "market_cap_m": 5332.2899,
+     "pe_ratio": 337.893,
+     "ps_ratio": 5.4469,
+     "rank": 2,
+     "return_126d": 0.7522,
+     "return_20d": 0.0986,
+     "return_252d": 0.7145,
+     "revenue_driver": "enterprise cybersecurity SaaS",
+     "score": 0.6468,
+     "signal_rank": 905,
+     "ticker": "TENB"
+    },
+    {
+     "biopharma_downranked": false,
+     "description_tags": [
+      "digital media platform",
+      "content production and distribution",
+      "online publishing"
+     ],
+     "exchange": "NASDAQ",
+     "market_cap_m": 2760.6921,
+     "pe_ratio": 305.5553,
+     "ps_ratio": 0.8056,
+     "rank": 3,
+     "return_126d": 0.7605,
+     "return_20d": 0.2276,
+     "return_252d": 1.1769,
+     "revenue_driver": "digital media platform",
+     "score": 0.646,
+     "signal_rank": 949,
+     "ticker": "STGW"
+    },
+    {
+     "biopharma_downranked": false,
+     "description_tags": [
+      "home services SaaS",
+      "contractor lead gen",
+      "home insurance platform"
+     ],
+     "exchange": "NASDAQ",
+     "market_cap_m": 2173.2814,
+     "pe_ratio": 211.6883,
+     "ps_ratio": 3.2186,
+     "rank": 4,
+     "return_126d": 1.1314,
+     "return_20d": 0.1167,
+     "return_252d": 1.2015,
+     "revenue_driver": "home services SaaS",
+     "score": 0.6429,
+     "signal_rank": 364,
+     "ticker": "PRCH"
+    },
+    {
+     "biopharma_downranked": false,
+     "description_tags": [
+      "expedition cruise travel",
+      "adventure tourism experiences",
+      "eco-tourism voyages"
+     ],
+     "exchange": "NASDAQ",
+     "market_cap_m": 1851.7784,
+     "pe_ratio": 320.4323,
+     "ps_ratio": 2.1114,
+     "rank": 5,
+     "return_126d": 0.7418,
+     "return_20d": -0.0764,
+     "return_252d": 1.9192,
+     "revenue_driver": "expedition cruise travel",
+     "score": 0.612,
+     "signal_rank": 74,
+     "ticker": "LIND"
+    },
+    {
+     "biopharma_downranked": false,
+     "description_tags": [
+      "low earth orbit communications",
+      "satellite IoT connectivity",
+      "licensed terrestrial spectrum"
+     ],
+     "exchange": "AMEX",
+     "market_cap_m": 11004.4649,
+     "pe_ratio": -130.5156,
+     "ps_ratio": 38.1519,
+     "rank": 6,
+     "return_126d": 0.0523,
+     "return_20d": 0.04,
+     "return_252d": 0.4658,
+     "revenue_driver": "low earth orbit communications",
+     "score": 0.5978,
+     "signal_rank": 1070,
+     "ticker": "GSAT"
+    },
+    {
+     "biopharma_downranked": false,
+     "description_tags": [
+      "satellite broadband services",
+      "in-flight connectivity",
+      "satellite communication systems"
+     ],
+     "exchange": "NASDAQ",
+     "market_cap_m": 8884.1395,
+     "pe_ratio": 304.5238,
+     "ps_ratio": 1.8543,
+     "rank": 7,
+     "return_126d": -0.1274,
+     "return_20d": 0.0494,
+     "return_252d": 0.9688,
+     "revenue_driver": "satellite broadband services",
+     "score": 0.589,
+     "signal_rank": 1623,
+     "ticker": "VSAT"
+    },
+    {
+     "biopharma_downranked": false,
+     "description_tags": [
+      "IT consulting",
+      "digital transformation services",
+      "AI/ML engineering services"
+     ],
+     "exchange": "NASDAQ",
+     "market_cap_m": 1103.313,
+     "pe_ratio": 140.5673,
+     "ps_ratio": 2.6184,
+     "rank": 8,
+     "return_126d": 0.8272,
+     "return_20d": 0.5581,
+     "return_252d": 0.6062,
+     "revenue_driver": "IT consulting",
+     "score": 0.5639,
+     "signal_rank": 1271,
+     "ticker": "GDYN"
+    },
+    {
+     "biopharma_downranked": false,
+     "description_tags": [
+      "network security and CDN",
+      "SASE platform",
+      "edge developer platform"
+     ],
+     "exchange": "NYSE",
+     "market_cap_m": 94861.8775,
+     "pe_ratio": -359.8911,
+     "ps_ratio": 28.2058,
+     "rank": 9,
+     "return_126d": 0.4329,
+     "return_20d": -0.0205,
+     "return_252d": 0.4878,
+     "revenue_driver": "network security and CDN",
+     "score": 0.5628,
+     "signal_rank": 1799,
+     "ticker": "NET"
+    },
+    {
+     "biopharma_downranked": false,
+     "description_tags": [
+      "specialty electronic materials",
+      "water filtration membranes",
+      "protective materials"
+     ],
+     "exchange": "NYSE",
+     "market_cap_m": 76164.8597,
+     "pe_ratio": 253.0394,
+     "ps_ratio": 11.0186,
+     "rank": 10,
+     "return_126d": 0.0596,
+     "return_20d": 0.1199,
+     "return_252d": 0.2956,
+     "revenue_driver": "specialty electronic materials",
+     "score": 0.5576,
+     "signal_rank": 1195,
+     "ticker": "DD"
+    },
+    {
+     "biopharma_downranked": true,
+     "description_tags": [],
+     "exchange": "NASDAQ",
+     "market_cap_m": 1873.9644,
+     "pe_ratio": -0.0942,
+     "ps_ratio": 31.1532,
+     "rank": 11,
+     "return_126d": 0.165,
+     "return_20d": 0.2559,
+     "return_252d": 40.4634,
+     "revenue_driver": null,
+     "score": 0.5521,
+     "signal_rank": 1968,
+     "ticker": "CUE"
+    },
+    {
+     "biopharma_downranked": false,
+     "description_tags": [
+      "enterprise marketing technology platform",
+      "identity-based customer acquisition",
+      "omnichannel marketing automation"
+     ],
+     "exchange": "NYSE",
+     "market_cap_m": 7549.4778,
+     "pe_ratio": 189.9813,
+     "ps_ratio": 4.1747,
+     "rank": 12,
+     "return_126d": 0.8517,
+     "return_20d": -0.0044,
+     "return_252d": 0.963,
+     "revenue_driver": "enterprise marketing technology platform",
+     "score": 0.549,
+     "signal_rank": 1664,
+     "ticker": "ZETA"
+    },
+    {
+     "biopharma_downranked": true,
+     "description_tags": [
+      "pharmaceutical and biologic drugs",
+      "branded prescription medicine",
+      "drug pipeline"
+     ],
+     "exchange": "NASDAQ",
+     "market_cap_m": 7872.4843,
+     "pe_ratio": -36.3626,
+     "ps_ratio": 85.1168,
+     "rank": 13,
+     "return_126d": 0.4121,
+     "return_20d": 0.0916,
+     "return_252d": 3.165,
+     "revenue_driver": "pharmaceutical and biologic drugs",
+     "score": 0.5193,
+     "signal_rank": 1084,
+     "ticker": "SYRE"
+    },
+    {
+     "biopharma_downranked": false,
+     "description_tags": [
+      "identity and access management SaaS",
+      "CIAM platform",
+      "zero trust identity"
+     ],
+     "exchange": "NASDAQ",
+     "market_cap_m": 33147.4838,
+     "pe_ratio": 111.9847,
+     "ps_ratio": 9.5349,
+     "rank": 14,
+     "return_126d": 1.1969,
+     "return_20d": -0.0625,
+     "return_252d": 1.4129,
+     "revenue_driver": "identity and access management SaaS",
+     "score": 0.5112,
+     "signal_rank": 1537,
+     "ticker": "OKTA"
+    },
+    {
+     "biopharma_downranked": false,
+     "description_tags": [
+      "specialty surfactants",
+      "polyurethane polyols",
+      "specialty chemical ingredients"
+     ],
+     "exchange": "NYSE",
+     "market_cap_m": 1493.985,
+     "pe_ratio": 345.6698,
+     "ps_ratio": 0.6305,
+     "rank": 15,
+     "return_126d": 0.302,
+     "return_20d": 0.0336,
+     "return_252d": 0.5476,
+     "revenue_driver": "specialty surfactants",
+     "score": 0.5045,
+     "signal_rank": 884,
+     "ticker": "SCL"
+    },
+    {
+     "biopharma_downranked": true,
+     "description_tags": [
+      "glaucoma surgical devices",
+      "corneal cross-linking",
+      "ophthalmic drug delivery"
+     ],
+     "exchange": "NYSE",
+     "market_cap_m": 13386.9498,
+     "pe_ratio": -61.7109,
+     "ps_ratio": 15.0948,
+     "rank": 16,
+     "return_126d": 0.6213,
+     "return_20d": 0.318,
+     "return_252d": 1.6367,
+     "revenue_driver": "glaucoma surgical devices",
+     "score": 0.4931,
+     "signal_rank": 635,
+     "ticker": "GKOS"
+    },
+    {
+     "biopharma_downranked": true,
+     "description_tags": [
+      "oncology pipeline assets",
+      "targeted cancer therapies",
+      "clinical stage drug candidates"
+     ],
+     "exchange": "NASDAQ",
+     "market_cap_m": 6453.28,
+     "pe_ratio": -27.4332,
+     "ps_ratio": 100.0,
+     "rank": 17,
+     "return_126d": 0.2351,
+     "return_20d": 0.2853,
+     "return_252d": 0.9394,
+     "revenue_driver": "oncology pipeline assets",
+     "score": 0.4911,
+     "signal_rank": 1709,
+     "ticker": "CGON"
+    },
+    {
+     "biopharma_downranked": true,
+     "description_tags": [
+      "engineered antibody therapeutics",
+      "clinical-stage biopharma",
+      "collaboration and licensing revenue"
+     ],
+     "exchange": "NASDAQ",
+     "market_cap_m": 2455.7899,
+     "pe_ratio": -22.0314,
+     "ps_ratio": 12.4766,
+     "rank": 18,
+     "return_126d": 2.038,
+     "return_20d": 0.3669,
+     "return_252d": 1.2017,
+     "revenue_driver": "engineered antibody therapeutics",
+     "score": 0.4728,
+     "signal_rank": 733,
+     "ticker": "XNCR"
+    },
+    {
+     "biopharma_downranked": false,
+     "description_tags": [
+      "outpatient physical therapy",
+      "industrial injury prevention",
+      "occupational therapy"
+     ],
+     "exchange": "NYSE",
+     "market_cap_m": 1450.9177,
+     "pe_ratio": 239.228,
+     "ps_ratio": 1.9373,
+     "rank": 19,
+     "return_126d": 0.5333,
+     "return_20d": 0.1061,
+     "return_252d": 0.3631,
+     "revenue_driver": "outpatient physical therapy",
+     "score": 0.4703,
+     "signal_rank": 1547,
+     "ticker": "USPH"
+    },
+    {
+     "biopharma_downranked": false,
+     "description_tags": [
+      "SMB financial operations SaaS",
+      "B2B payments automation",
+      "accounts payable platform"
+     ],
+     "exchange": "NYSE",
+     "market_cap_m": 6611.3636,
+     "pe_ratio": 127.2052,
+     "ps_ratio": 3.258,
+     "rank": 20,
+     "return_126d": 0.723,
+     "return_20d": 0.3469,
+     "return_252d": 0.33,
+     "revenue_driver": "SMB financial operations SaaS",
+     "score": 0.4697,
+     "signal_rank": 1676,
+     "ticker": "BILL"
+    },
+    {
+     "biopharma_downranked": false,
+     "description_tags": [
+      "mobile and crawler cranes",
+      "tower cranes",
+      "crane aftermarket parts"
+     ],
+     "exchange": "NYSE",
+     "market_cap_m": 3478.8485,
+     "pe_ratio": 132.7805,
+     "ps_ratio": 1.5266,
+     "rank": 21,
+     "return_126d": 0.9035,
+     "return_20d": -0.0237,
+     "return_252d": 1.1233,
+     "revenue_driver": "mobile and crawler cranes",
+     "score": 0.468,
+     "signal_rank": 172,
+     "ticker": "MTW"
+    },
+    {
+     "biopharma_downranked": false,
+     "description_tags": [
+      "concert promotion",
+      "ticketing platform",
+      "venue operations"
+     ],
+     "exchange": "NYSE",
+     "market_cap_m": 42159.866,
+     "pe_ratio": 279.0621,
+     "ps_ratio": 1.5097,
+     "rank": 22,
+     "return_126d": 0.1037,
+     "return_20d": 0.0414,
+     "return_252d": 0.3711,
+     "revenue_driver": "concert promotion",
+     "score": 0.4547,
+     "signal_rank": 643,
+     "ticker": "LYV"
+    },
+    {
+     "biopharma_downranked": false,
+     "description_tags": [
+      "liquid biopsy tests",
+      "oncology genomic profiling",
+      "cancer screening tests"
+     ],
+     "exchange": "NASDAQ",
+     "market_cap_m": 18293.5907,
+     "pe_ratio": -41.6929,
+     "ps_ratio": 15.1214,
+     "rank": 23,
+     "return_126d": 0.2624,
+     "return_20d": -0.1291,
+     "return_252d": 0.5044,
+     "revenue_driver": "liquid biopsy tests",
+     "score": 0.4514,
+     "signal_rank": 1350,
+     "ticker": "GH"
+    },
+    {
+     "biopharma_downranked": false,
+     "description_tags": [
+      "titanium aerospace materials",
+      "nickel alloys for defense",
+      "specialty metals for medical"
+     ],
+     "exchange": "NYSE",
+     "market_cap_m": 49640.8837,
+     "pe_ratio": 89.3464,
+     "ps_ratio": 9.5803,
+     "rank": 24,
+     "return_126d": 0.1765,
+     "return_20d": 0.001,
+     "return_252d": 0.8316,
+     "revenue_driver": "titanium aerospace materials",
+     "score": 0.4458,
+     "signal_rank": 1222,
+     "ticker": "ATI"
+    },
+    {
+     "biopharma_downranked": false,
+     "description_tags": [
+      "commercial foodservice equipment",
+      "residential kitchen products",
+      "food processing equipment"
+     ],
+     "exchange": "NASDAQ",
+     "market_cap_m": 6926.0125,
+     "pe_ratio": 172.878,
+     "ps_ratio": 2.1092,
+     "rank": 25,
+     "return_126d": -0.0411,
+     "return_20d": 0.238,
+     "return_252d": 0.2021,
+     "revenue_driver": "commercial foodservice equipment",
+     "score": 0.4355,
+     "signal_rank": 1567,
+     "ticker": "MIDD"
+    },
+    {
+     "biopharma_downranked": true,
+     "description_tags": [
+      "computational drug discovery",
+      "targeted oncology pipeline",
+      "clinical-stage small molecules"
+     ],
+     "exchange": "NASDAQ",
+     "market_cap_m": 2861.5462,
+     "pe_ratio": -11.9404,
+     "ps_ratio": 100.0,
+     "rank": 26,
+     "return_126d": 0.268,
+     "return_20d": -0.1032,
+     "return_252d": 1.494,
+     "revenue_driver": "computational drug discovery",
+     "score": 0.4348,
+     "signal_rank": 862,
+     "ticker": "RLAY"
+    },
+    {
+     "biopharma_downranked": false,
+     "description_tags": [
+      "skilled nursing care facilities",
+      "long-term care services",
+      "senior rehabilitation"
+     ],
+     "exchange": "AMEX",
+     "market_cap_m": 15297.2992,
+     "pe_ratio": 133.4121,
+     "ps_ratio": 9.9658,
+     "rank": 27,
+     "return_126d": 0.0105,
+     "return_20d": -0.1443,
+     "return_252d": 0.6017,
+     "revenue_driver": "skilled nursing care facilities",
+     "score": 0.4323,
+     "signal_rank": 811,
+     "ticker": "NHC"
+    },
+    {
+     "biopharma_downranked": true,
+     "description_tags": [
+      "genomic testing",
+      "diagnostic products and testing",
+      "biomarker-driven clinical trials"
+     ],
+     "exchange": "NASDAQ",
+     "market_cap_m": 4344.8459,
+     "pe_ratio": -59.3556,
+     "ps_ratio": 13.683,
+     "rank": 28,
+     "return_126d": 1.0401,
+     "return_20d": 0.1236,
+     "return_252d": 1.0759,
+     "revenue_driver": "genomic testing",
+     "score": 0.4269,
+     "signal_rank": 1047,
+     "ticker": "ADPT"
+    },
+    {
+     "biopharma_downranked": true,
+     "description_tags": [
+      "mRNA vaccine platform",
+      "respiratory vaccine portfolio",
+      "personalized oncology therapeutics"
+     ],
+     "exchange": "NASDAQ",
+     "market_cap_m": 76881.9172,
+     "pe_ratio": -35.8519,
+     "ps_ratio": 39.3295,
+     "rank": 29,
+     "return_126d": 3.0896,
+     "return_20d": -0.1994,
+     "return_252d": 6.9479,
+     "revenue_driver": "mRNA vaccine platform",
+     "score": 0.4262,
+     "signal_rank": 1505,
+     "ticker": "MRNA"
+    },
+    {
+     "biopharma_downranked": true,
+     "description_tags": [
+      "AI drug creation platform",
+      "biologic drug design",
+      "pharma research collaborations"
+     ],
+     "exchange": "NASDAQ",
+     "market_cap_m": 1230.043,
+     "pe_ratio": -11.5696,
+     "ps_ratio": 100.0,
+     "rank": 30,
+     "return_126d": 0.6542,
+     "return_20d": -0.1853,
+     "return_252d": 1.8601,
+     "revenue_driver": "AI drug creation platform",
+     "score": 0.4216,
+     "signal_rank": 1682,
+     "ticker": "ABSI"
+    },
+    {
+     "biopharma_downranked": true,
+     "description_tags": [
+      "autoimmune disease therapies",
+      "FcRn targeted biologics",
+      "immunology drug development"
+     ],
+     "exchange": "NASDAQ",
+     "market_cap_m": 6722.8293,
+     "pe_ratio": -13.7305,
+     "ps_ratio": 100.0,
+     "rank": 31,
+     "return_126d": -0.0654,
+     "return_20d": 0.1688,
+     "return_252d": 0.365,
+     "revenue_driver": "autoimmune disease therapies",
+     "score": 0.4033,
+     "signal_rank": 756,
+     "ticker": "IMVT"
+    },
+    {
+     "biopharma_downranked": false,
+     "description_tags": [
+      "less-than-truckload shipping",
+      "asset-light logistics",
+      "managed transportation services"
+     ],
+     "exchange": "NASDAQ",
+     "market_cap_m": 3021.8766,
+     "pe_ratio": 105.3579,
+     "ps_ratio": 0.7181,
+     "rank": 32,
+     "return_126d": 0.076,
+     "return_20d": 0.0262,
+     "return_252d": 1.1468,
+     "revenue_driver": "less-than-truckload shipping",
+     "score": 0.3982,
+     "signal_rank": 57,
+     "ticker": "ARCB"
+    },
+    {
+     "biopharma_downranked": false,
+     "description_tags": [
+      "oncology residual disease testing",
+      "prenatal cell-free dna tests",
+      "hereditary cancer screening"
+     ],
+     "exchange": "NASDAQ",
+     "market_cap_m": 39955.053,
+     "pe_ratio": -319.0877,
+     "ps_ratio": 17.2589,
+     "rank": 33,
+     "return_126d": 0.4129,
+     "return_20d": -0.2997,
+     "return_252d": 0.4051,
+     "revenue_driver": "oncology residual disease testing",
+     "score": 0.3891,
+     "signal_rank": 707,
+     "ticker": "NTRA"
+    },
+    {
+     "biopharma_downranked": false,
+     "description_tags": [
+      "employment background screening",
+      "identity verification services",
+      "criminal background checks"
+     ],
+     "exchange": "NASDAQ",
+     "market_cap_m": 3748.6959,
+     "pe_ratio": 87.098,
+     "ps_ratio": 2.3418,
+     "rank": 34,
+     "return_126d": 0.409,
+     "return_20d": 0.0951,
+     "return_252d": 0.7224,
+     "revenue_driver": "employment background screening",
+     "score": 0.388,
+     "signal_rank": 211,
+     "ticker": "FA"
+    },
+    {
+     "biopharma_downranked": false,
+     "description_tags": [
+      "industrial fasteners",
+      "mro supplies",
+      "onsite vending and inventory services"
+     ],
+     "exchange": "NASDAQ",
+     "market_cap_m": 123896.0451,
+     "pe_ratio": 87.3553,
+     "ps_ratio": 12.9025,
+     "rank": 35,
+     "return_126d": 0.2353,
+     "return_20d": 0.028,
+     "return_252d": 0.3592,
+     "revenue_driver": "industrial fasteners",
+     "score": 0.3835,
+     "signal_rank": 843,
+     "ticker": "FAST"
+    },
+    {
+     "biopharma_downranked": true,
+     "description_tags": [
+      "B-cell therapy product sales",
+      "Immunology drug royalties",
+      "Collaboration and licensing revenue"
+     ],
+     "exchange": "NASDAQ",
+     "market_cap_m": 10497.1451,
+     "pe_ratio": 115.6048,
+     "ps_ratio": 10.6419,
+     "rank": 36,
+     "return_126d": 0.663,
+     "return_20d": 0.2429,
+     "return_252d": 1.1544,
+     "revenue_driver": "B-cell therapy product sales",
+     "score": 0.3817,
+     "signal_rank": 324,
+     "ticker": "TGTX"
+    },
+    {
+     "biopharma_downranked": false,
+     "description_tags": [
+      "industrial gas supply",
+      "hydrogen infrastructure",
+      "process gas equipment"
+     ],
+     "exchange": "NYSE",
+     "market_cap_m": 68582.8211,
+     "pe_ratio": 128.8908,
+     "ps_ratio": 5.3029,
+     "rank": 37,
+     "return_126d": 0.0662,
+     "return_20d": 0.018,
+     "return_252d": 0.2174,
+     "revenue_driver": "industrial gas supply",
+     "score": 0.3791,
+     "signal_rank": 778,
+     "ticker": "APD"
+    },
+    {
+     "biopharma_downranked": false,
+     "description_tags": [
+      "branded coffee products",
+      "peanut butter and spreads",
+      "pet food brands"
+     ],
+     "exchange": "NYSE",
+     "market_cap_m": 28658.8524,
+     "pe_ratio": 124.8752,
+     "ps_ratio": 3.0638,
+     "rank": 38,
+     "return_126d": 0.3308,
+     "return_20d": 0.0462,
+     "return_252d": 0.2551,
+     "revenue_driver": "branded coffee products",
+     "score": 0.3775,
+     "signal_rank": 1010,
+     "ticker": "SJM"
+    },
+    {
+     "biopharma_downranked": true,
+     "description_tags": [
+      "synthetic dna products",
+      "NGS library preparation",
+      "antibody discovery"
+     ],
+     "exchange": "NASDAQ",
+     "market_cap_m": 7114.5698,
+     "pe_ratio": -50.5,
+     "ps_ratio": 13.9802,
+     "rank": 39,
+     "return_126d": 1.1683,
+     "return_20d": -0.2198,
+     "return_252d": 3.3972,
+     "revenue_driver": "synthetic dna products",
+     "score": 0.377,
+     "signal_rank": 1928,
+     "ticker": "TWST"
+    },
+    {
+     "biopharma_downranked": true,
+     "description_tags": [
+      "genomic testing",
+      "molecular data services",
+      "immunotherapy biomarker testing"
+     ],
+     "exchange": "NASDAQ",
+     "market_cap_m": 1330.2839,
+     "pe_ratio": -13.4957,
+     "ps_ratio": 24.0052,
+     "rank": 40,
+     "return_126d": 0.8843,
+     "return_20d": -0.0579,
+     "return_252d": 1.0027,
+     "revenue_driver": "genomic testing",
+     "score": 0.3751,
+     "signal_rank": 849,
+     "ticker": "PSNL"
+    },
+    {
+     "biopharma_downranked": false,
+     "description_tags": [
+      "Medicare Advantage plans",
+      "provider enablement platform",
+      "care management services"
+     ],
+     "exchange": "NASDAQ",
+     "market_cap_m": 1769.3518,
+     "pe_ratio": 142.1166,
+     "ps_ratio": 0.7466,
+     "rank": 41,
+     "return_126d": 0.1583,
+     "return_20d": -0.1276,
+     "return_252d": 0.7745,
+     "revenue_driver": "Medicare Advantage plans",
+     "score": 0.3749,
+     "signal_rank": 721,
+     "ticker": "CLOV"
+    },
+    {
+     "biopharma_downranked": true,
+     "description_tags": [
+      "contract research operations",
+      "laboratory animal models",
+      "preclinical safety testing"
+     ],
+     "exchange": "NYSE",
+     "market_cap_m": 16400.8988,
+     "pe_ratio": 408.1145,
+     "ps_ratio": 4.0379,
+     "rank": 42,
+     "return_126d": 1.1344,
+     "return_20d": -0.0337,
+     "return_252d": 1.0477,
+     "revenue_driver": "contract research operations",
+     "score": 0.3738,
+     "signal_rank": 832,
+     "ticker": "CRL"
+    },
+    {
+     "biopharma_downranked": false,
+     "description_tags": [
+      "defense systems and platforms",
+      "aerospace defense components",
+      "international defense sales"
+     ],
+     "exchange": "NYSE",
+     "market_cap_m": 6596.6061,
+     "pe_ratio": 109.9801,
+     "ps_ratio": 10.7514,
+     "rank": 43,
+     "return_126d": 0.1596,
+     "return_20d": 0.1198,
+     "return_252d": 0.1037,
+     "revenue_driver": "defense systems and platforms",
+     "score": 0.3633,
+     "signal_rank": 920,
+     "ticker": "LOAR"
+    },
+    {
+     "biopharma_downranked": true,
+     "description_tags": [
+      "gpcr targeted therapies",
+      "licensing revenue",
+      "milestone payments"
+     ],
+     "exchange": "NASDAQ",
+     "market_cap_m": 1766.3343,
+     "pe_ratio": -39.6406,
+     "ps_ratio": 23.599,
+     "rank": 44,
+     "return_126d": 0.4084,
+     "return_20d": -0.0321,
+     "return_252d": 0.823,
+     "revenue_driver": "gpcr targeted therapies",
+     "score": 0.3626,
+     "signal_rank": 1042,
+     "ticker": "SEPN"
+    },
+    {
+     "biopharma_downranked": false,
+     "description_tags": [
+      "natural gas production",
+      "oil production",
+      "NGL sales"
+     ],
+     "exchange": "NYSE",
+     "market_cap_m": 114888.2757,
+     "pe_ratio": 86.9707,
+     "ps_ratio": 12.0947,
+     "rank": 45,
+     "return_126d": 0.0373,
+     "return_20d": -0.1161,
+     "return_252d": 0.6165,
+     "revenue_driver": "natural gas production",
+     "score": 0.3541,
+     "signal_rank": 932,
+     "ticker": "OVV"
+    },
+    {
+     "biopharma_downranked": false,
+     "description_tags": [
+      "industrial MRO supplies",
+      "mro distribution",
+      "test and measurement distribution"
+     ],
+     "exchange": "NASDAQ",
+     "market_cap_m": 1620.2914,
+     "pe_ratio": 142.1682,
+     "ps_ratio": 0.7668,
+     "rank": 46,
+     "return_126d": 0.2896,
+     "return_20d": 0.0,
+     "return_252d": 0.3256,
+     "revenue_driver": "industrial MRO supplies",
+     "score": 0.3499,
+     "signal_rank": 228,
+     "ticker": "DSGR"
+    },
+    {
+     "biopharma_downranked": true,
+     "description_tags": [
+      "single-cell analysis consumables",
+      "spatial genomics instruments",
+      "single-cell analysis instruments"
+     ],
+     "exchange": "NASDAQ",
+     "market_cap_m": 6647.1712,
+     "pe_ratio": -114.0,
+     "ps_ratio": 11.1621,
+     "rank": 47,
+     "return_126d": 1.3819,
+     "return_20d": -0.245,
+     "return_252d": 2.635,
+     "revenue_driver": "single-cell analysis consumables",
+     "score": 0.341,
+     "signal_rank": 1806,
+     "ticker": "TXG"
+    },
+    {
+     "biopharma_downranked": true,
+     "description_tags": [
+      "precision genetic medicines",
+      "orphan drug development",
+      "small molecule therapeutics"
+     ],
+     "exchange": "NASDAQ",
+     "market_cap_m": 60132.9164,
+     "pe_ratio": -23.2664,
+     "ps_ratio": 66.1279,
+     "rank": 48,
+     "return_126d": 0.1437,
+     "return_20d": 0.1516,
+     "return_252d": 0.1661,
+     "revenue_driver": "precision genetic medicines",
+     "score": 0.3325,
+     "signal_rank": 1391,
+     "ticker": "BBIO"
+    },
+    {
+     "biopharma_downranked": true,
+     "description_tags": [
+      "rare disease therapeutics",
+      "obesity pharmacotherapy",
+      "peptide drug development"
+     ],
+     "exchange": "NASDAQ",
+     "market_cap_m": 7944.2534,
+     "pe_ratio": -29.8069,
+     "ps_ratio": 20.5475,
+     "rank": 49,
+     "return_126d": 0.3133,
+     "return_20d": 0.3433,
+     "return_252d": 0.1822,
+     "revenue_driver": "rare disease therapeutics",
+     "score": 0.3279,
+     "signal_rank": 1163,
+     "ticker": "RYTM"
+    },
+    {
+     "biopharma_downranked": false,
+     "description_tags": [
+      "RAIN RFID semiconductors",
+      "item-level tracking chips",
+      "RFID reader integrated circuits"
+     ],
+     "exchange": "NASDAQ",
+     "market_cap_m": 4907.4659,
+     "pe_ratio": -538.3771,
+     "ps_ratio": 13.7107,
+     "rank": 50,
+     "return_126d": 0.1881,
+     "return_20d": -0.0885,
+     "return_252d": 0.128,
+     "revenue_driver": "RAIN RFID semiconductors",
+     "score": 0.3082,
+     "signal_rank": 1238,
+     "ticker": "PI"
+    },
+    {
+     "biopharma_downranked": false,
+     "description_tags": [
+      "medicare advantage premiums",
+      "pharmacy benefit revenue",
+      "primary care clinics"
+     ],
+     "exchange": "NYSE",
+     "market_cap_m": 132447.7992,
+     "pe_ratio": 106.3838,
+     "ps_ratio": 0.9658,
+     "rank": 51,
+     "return_126d": 0.2687,
+     "return_20d": -0.0932,
+     "return_252d": 0.6479,
+     "revenue_driver": "medicare advantage premiums",
+     "score": 0.3055,
+     "signal_rank": 1102,
+     "ticker": "HUM"
+    },
+    {
+     "biopharma_downranked": false,
+     "description_tags": [
+      "cloud data warehousing",
+      "consumption-based analytics platform",
+      "AI data cloud"
+     ],
+     "exchange": "NYSE",
+     "market_cap_m": 95685.964,
+     "pe_ratio": -96.1761,
+     "ps_ratio": 19.2576,
+     "rank": 52,
+     "return_126d": 0.6747,
+     "return_20d": -0.1336,
+     "return_252d": 0.1061,
+     "revenue_driver": "cloud data warehousing",
+     "score": 0.294,
+     "signal_rank": 1110,
+     "ticker": "SNOW"
+    },
+    {
+     "biopharma_downranked": true,
+     "description_tags": [
+      "earns royalties on partnered products",
+      "milestone payments",
+      "Captisol sales"
+     ],
+     "exchange": "NASDAQ",
+     "market_cap_m": 5879.2102,
+     "pe_ratio": 114.2437,
+     "ps_ratio": 25.0264,
+     "rank": 53,
+     "return_126d": 0.3718,
+     "return_20d": -0.0511,
+     "return_252d": 0.4835,
+     "revenue_driver": "earns royalties on partnered products",
+     "score": 0.291,
+     "signal_rank": 1179,
+     "ticker": "LGND"
+    },
+    {
+     "biopharma_downranked": true,
+     "description_tags": [
+      "laboratory consumables",
+      "liquid chromatography systems",
+      "mass spectrometry systems"
+     ],
+     "exchange": "NYSE",
+     "market_cap_m": 27755.3228,
+     "pe_ratio": 282.6005,
+     "ps_ratio": 4.8805,
+     "rank": 54,
+     "return_126d": 0.3656,
+     "return_20d": 0.0189,
+     "return_252d": 0.2331,
+     "revenue_driver": "laboratory consumables",
+     "score": 0.2829,
+     "signal_rank": 641,
+     "ticker": "WAT"
+    },
+    {
+     "biopharma_downranked": true,
+     "description_tags": [
+      "autologous cell therapies",
+      "knee cartilage repair",
+      "severe burn treatments"
+     ],
+     "exchange": "NASDAQ",
+     "market_cap_m": 2966.1651,
+     "pe_ratio": 89.0526,
+     "ps_ratio": 8.0782,
+     "rank": 55,
+     "return_126d": 0.6568,
+     "return_20d": 0.4326,
+     "return_252d": 0.4874,
+     "revenue_driver": "autologous cell therapies",
+     "score": 0.279,
+     "signal_rank": 1716,
+     "ticker": "VCEL"
+    },
+    {
+     "biopharma_downranked": false,
+     "description_tags": [
+      "flavor ingredients",
+      "fragrance ingredients",
+      "food ingredients"
+     ],
+     "exchange": "NYSE",
+     "market_cap_m": 20508.1677,
+     "pe_ratio": 112.6822,
+     "ps_ratio": 2.5587,
+     "rank": 56,
+     "return_126d": 0.0758,
+     "return_20d": -0.1203,
+     "return_252d": 0.2295,
+     "revenue_driver": "flavor ingredients",
+     "score": 0.2468,
+     "signal_rank": 1060,
+     "ticker": "IFF"
+    },
+    {
+     "biopharma_downranked": true,
+     "description_tags": [
+      "neurology therapeutics",
+      "Alzheimer's disease drugs",
+      "multiple sclerosis treatments"
+     ],
+     "exchange": "NASDAQ",
+     "market_cap_m": 36882.3498,
+     "pe_ratio": 105.9871,
+     "ps_ratio": 3.4769,
+     "rank": 57,
+     "return_126d": 0.3381,
+     "return_20d": 0.0433,
+     "return_252d": 0.5267,
+     "revenue_driver": "neurology therapeutics",
+     "score": 0.2441,
+     "signal_rank": 1280,
+     "ticker": "BIIB"
+    },
+    {
+     "biopharma_downranked": false,
+     "description_tags": [
+      "data protection software",
+      "cyber resilience platform",
+      "cloud backup and recovery"
+     ],
+     "exchange": "NASDAQ",
+     "market_cap_m": 6655.9893,
+     "pe_ratio": 80.502,
+     "ps_ratio": 6.0768,
+     "rank": 58,
+     "return_126d": 0.4439,
+     "return_20d": -0.077,
+     "return_252d": 0.1994,
+     "revenue_driver": "data protection software",
+     "score": 0.2086,
+     "signal_rank": 1563,
+     "ticker": "CVLT"
+    },
+    {
+     "biopharma_downranked": true,
+     "description_tags": [
+      "multi-cancer early detection",
+      "liquid biopsy screening",
+      "methylation-based cancer detection"
+     ],
+     "exchange": "NASDAQ",
+     "market_cap_m": 3980.0622,
+     "pe_ratio": -12.54,
+     "ps_ratio": 27.874,
+     "rank": 59,
+     "return_126d": 0.5463,
+     "return_20d": -0.23,
+     "return_252d": 0.202,
+     "revenue_driver": "multi-cancer early detection",
+     "score": 0.2072,
+     "signal_rank": 1541,
+     "ticker": "GRAL"
+    },
+    {
+     "biopharma_downranked": false,
+     "description_tags": [
+      "orthodontic aligners",
+      "dental imaging software",
+      "practice management platforms"
+     ],
+     "exchange": "NYSE",
+     "market_cap_m": 14999.783,
+     "pe_ratio": 96.1525,
+     "ps_ratio": 1.8524,
+     "rank": 60,
+     "return_126d": 0.136,
+     "return_20d": -0.0022,
+     "return_252d": 0.1351,
+     "revenue_driver": "orthodontic aligners",
+     "score": 0.197,
+     "signal_rank": 1192,
+     "ticker": "SOLV"
+    },
+    {
+     "biopharma_downranked": true,
+     "description_tags": [
+      "chromatography resins",
+      "hollow fiber filtration",
+      "bioprocessing consumables"
+     ],
+     "exchange": "NASDAQ",
+     "market_cap_m": 9719.767,
+     "pe_ratio": -837.1429,
+     "ps_ratio": 12.2838,
+     "rank": 61,
+     "return_126d": 0.5453,
+     "return_20d": -0.0408,
+     "return_252d": 0.1589,
+     "revenue_driver": "chromatography resins",
+     "score": 0.1954,
+     "signal_rank": 1205,
+     "ticker": "RGEN"
+    }
+   ],
+   "score_components": [
+    {
+     "condition": null,
+     "direction": 1,
+     "key": "_pe_score",
+     "weight": 0.25
+    },
+    {
+     "condition": null,
+     "direction": 1,
+     "key": "ps_ratio",
+     "weight": 0.25
+    },
+    {
+     "condition": null,
+     "direction": 1,
+     "key": "_long_return",
+     "weight": 0.3
+    },
+    {
+     "condition": null,
+     "direction": 1,
+     "key": "return_20d",
+     "weight": 0.2
+    }
+   ],
+   "universe_size": 1484
+  },
+  {
+   "description": "High-range relative-strength leaders in a stacked EMA uptrend with accelerating quarterly growth.",
+   "filtered_size": 19,
+   "filters": [
+    "close > $10",
+    "20d average daily range >= 4%",
+    "RS rating > 90 (IBD-weighted 12-month return, cross-sectional percentile)",
+    "close > EMA50 and EMA10 > EMA20",
+    "close >= 1.7x 52-week low",
+    "close >= 80% of 52-week high",
+    "latest-quarter EPS YoY >= 25%",
+    "latest-quarter revenue YoY >= 20%"
+   ],
+   "formula": "S13 = 0.35 RS + 0.20 ADR20 + 0.15 EPSq + 0.15 RevQ + 0.15 NearHigh",
+   "id": "g13",
+   "label": "G13",
+   "name": "Growth Leaders",
+   "result_columns": [
+    "rs_rating",
+    "adr_pct_20d",
+    "price_vs_high_52w",
+    "price_vs_low_52w",
+    "ema_10",
+    "ema_20",
+    "ema_50",
+    "eps_growth_yoy_sq",
+    "revenue_growth_yoy_sq",
+    "return_20d",
+    "market_cap_m"
+   ],
+   "row_count": 19,
+   "rows": [
+    {
+     "adr_pct_20d": 0.0624,
+     "biopharma_downranked": false,
+     "description_tags": [
+      "Heart transplant gene expression testing",
+      "Kidney transplant dd-cfDNA testing",
+      "Histocompatibility and HLA testing"
+     ],
+     "ema_10": 77.2142,
+     "ema_20": 76.0858,
+     "ema_50": 68.3897,
+     "eps_growth_yoy_sq": 10.0,
+     "exchange": "NASDAQ",
+     "market_cap_m": 3828.6725,
+     "price_vs_high_52w": 0.8414,
+     "price_vs_low_52w": 4.7234,
+     "rank": 1,
+     "return_20d": 0.0523,
+     "revenue_driver": "Heart transplant gene expression testing",
+     "revenue_growth_yoy_sq": 0.3929,
+     "rs_rating": 99.0,
+     "score": 0.6934,
+     "signal_rank": 1615,
+     "ticker": "CDNA"
+    },
+    {
+     "adr_pct_20d": 0.0828,
+     "biopharma_downranked": false,
+     "description_tags": [
+      "industrial manufacturing marketplace",
+      "custom parts fabrication platform",
+      "AI-powered procurement"
+     ],
+     "ema_10": 116.7386,
+     "ema_20": 111.7508,
+     "ema_50": 104.2599,
+     "eps_growth_yoy_sq": 1.1304,
+     "exchange": "NASDAQ",
+     "market_cap_m": 5996.5306,
+     "price_vs_high_52w": 0.9838,
+     "price_vs_low_52w": 3.3374,
+     "rank": 2,
+     "return_20d": 0.3546,
+     "revenue_driver": "industrial manufacturing marketplace",
+     "revenue_growth_yoy_sq": 0.3969,
+     "rs_rating": 97.0,
+     "score": 0.625,
+     "signal_rank": 1312,
+     "ticker": "XMTR"
+    },
+    {
+     "adr_pct_20d": 0.0754,
+     "biopharma_downranked": false,
+     "description_tags": [
+      "buy now pay later platform fees",
+      "merchant network revenue",
+      "consumer financing revenue"
+     ],
+     "ema_10": 152.1563,
+     "ema_20": 145.0516,
+     "ema_50": 135.6482,
+     "eps_growth_yoy_sq": 0.84,
+     "exchange": "NASDAQ",
+     "market_cap_m": 5415.9827,
+     "price_vs_high_52w": 0.8411,
+     "price_vs_low_52w": 3.0691,
+     "rank": 3,
+     "return_20d": 0.1641,
+     "revenue_driver": "buy now pay later platform fees",
+     "revenue_growth_yoy_sq": 0.4256,
+     "rs_rating": 98.0,
+     "score": 0.5447,
+     "signal_rank": 845,
+     "ticker": "SEZL"
+    },
+    {
+     "adr_pct_20d": 0.0616,
+     "biopharma_downranked": false,
+     "description_tags": [
+      "low-code development SaaS",
+      "business process automation",
+      "enterprise application platform"
+     ],
+     "ema_10": 53.2455,
+     "ema_20": 51.0997,
+     "ema_50": 45.5702,
+     "eps_growth_yoy_sq": 0.7,
+     "exchange": "NASDAQ",
+     "market_cap_m": 2310.2541,
+     "price_vs_high_52w": 0.9727,
+     "price_vs_low_52w": 2.8878,
+     "rank": 4,
+     "return_20d": 0.1094,
+     "revenue_driver": "low-code development SaaS",
+     "revenue_growth_yoy_sq": 0.2547,
+     "rs_rating": 98.0,
+     "score": 0.5342,
+     "signal_rank": 1409,
+     "ticker": "APPN"
+    },
+    {
+     "adr_pct_20d": 0.0576,
+     "biopharma_downranked": false,
+     "description_tags": [
+      "home services SaaS",
+      "contractor lead gen",
+      "home insurance platform"
+     ],
+     "ema_10": 20.7756,
+     "ema_20": 20.1552,
+     "ema_50": 18.645,
+     "eps_growth_yoy_sq": 2.0,
+     "exchange": "NASDAQ",
+     "market_cap_m": 2173.2814,
+     "price_vs_high_52w": 0.9377,
+     "price_vs_low_52w": 3.2437,
+     "rank": 5,
+     "return_20d": 0.1167,
+     "revenue_driver": "home services SaaS",
+     "revenue_growth_yoy_sq": 0.2183,
+     "rs_rating": 98.0,
+     "score": 0.5289,
+     "signal_rank": 364,
+     "ticker": "PRCH"
+    },
+    {
+     "adr_pct_20d": 0.0655,
+     "biopharma_downranked": true,
+     "description_tags": [
+      "specialty pharmaceutical sales",
+      "hospital injectable drugs",
+      "rare disease treatments"
+     ],
+     "ema_10": 61.3687,
+     "ema_20": 58.6544,
+     "ema_50": 55.6082,
+     "eps_growth_yoy_sq": 10.0,
+     "exchange": "NASDAQ",
+     "market_cap_m": 1662.4478,
+     "price_vs_high_52w": 0.9063,
+     "price_vs_low_52w": 4.3199,
+     "rank": 6,
+     "return_20d": 0.2574,
+     "revenue_driver": "specialty pharmaceutical sales",
+     "revenue_growth_yoy_sq": 1.5791,
+     "rs_rating": 99.0,
+     "score": 0.4745,
+     "signal_rank": 392,
+     "ticker": "ETON"
+    },
+    {
+     "adr_pct_20d": 0.0661,
+     "biopharma_downranked": true,
+     "description_tags": [
+      "engineered antibody therapeutics",
+      "clinical-stage biopharma",
+      "collaboration and licensing revenue"
+     ],
+     "ema_10": 35.3542,
+     "ema_20": 33.3745,
+     "ema_50": 29.3151,
+     "eps_growth_yoy_sq": 7.25,
+     "exchange": "NASDAQ",
+     "market_cap_m": 2455.7899,
+     "price_vs_high_52w": 0.8604,
+     "price_vs_low_52w": 3.3036,
+     "rank": 7,
+     "return_20d": 0.3669,
+     "revenue_driver": "engineered antibody therapeutics",
+     "revenue_growth_yoy_sq": 4.5488,
+     "rs_rating": 99.0,
+     "score": 0.4595,
+     "signal_rank": 733,
+     "ticker": "XNCR"
+    },
+    {
+     "adr_pct_20d": 0.0572,
+     "biopharma_downranked": false,
+     "description_tags": [
+      "peripheral nerve repair products",
+      "nerve allografts",
+      "nerve conduits"
+     ],
+     "ema_10": 53.8419,
+     "ema_20": 50.3723,
+     "ema_50": 46.341,
+     "eps_growth_yoy_sq": 3.0,
+     "exchange": "NASDAQ",
+     "market_cap_m": 2626.6479,
+     "price_vs_high_52w": 0.9713,
+     "price_vs_low_52w": 2.3719,
+     "rank": 8,
+     "return_20d": 0.5611,
+     "revenue_driver": "peripheral nerve repair products",
+     "revenue_growth_yoy_sq": 0.2622,
+     "rs_rating": 95.0,
+     "score": 0.4513,
+     "signal_rank": 1794,
+     "ticker": "AXGN"
+    },
+    {
+     "adr_pct_20d": 0.0486,
+     "biopharma_downranked": true,
+     "description_tags": [
+      "hypoglycemia therapeutics",
+      "endocrine disorder therapeutics",
+      "rare disease therapeutics"
+     ],
+     "ema_10": 15.6605,
+     "ema_20": 14.0788,
+     "ema_50": 11.7871,
+     "eps_growth_yoy_sq": 10.0,
+     "exchange": "NASDAQ",
+     "market_cap_m": 2819.0488,
+     "price_vs_high_52w": 1.0,
+     "price_vs_low_52w": 3.2117,
+     "rank": 9,
+     "return_20d": 0.5753,
+     "revenue_driver": "hypoglycemia therapeutics",
+     "revenue_growth_yoy_sq": 0.4416,
+     "rs_rating": 99.0,
+     "score": 0.4389,
+     "signal_rank": 1136,
+     "ticker": "XERS"
+    },
+    {
+     "adr_pct_20d": 0.0497,
+     "biopharma_downranked": false,
+     "description_tags": [
+      "affordable color cosmetics",
+      "mass beauty retail",
+      "value skincare products"
+     ],
+     "ema_10": 114.6756,
+     "ema_20": 113.765,
+     "ema_50": 108.5245,
+     "eps_growth_yoy_sq": 9.0,
+     "exchange": "NYSE",
+     "market_cap_m": 6784.9015,
+     "price_vs_high_52w": 0.9532,
+     "price_vs_low_52w": 2.2951,
+     "rank": 10,
+     "return_20d": -0.0001,
+     "revenue_driver": "affordable color cosmetics",
+     "revenue_growth_yoy_sq": 0.5143,
+     "rs_rating": 94.0,
+     "score": 0.4382,
+     "signal_rank": 702,
+     "ticker": "ELF"
+    },
+    {
+     "adr_pct_20d": 0.0581,
+     "biopharma_downranked": false,
+     "description_tags": [
+      "game engine software",
+      "mobile app monetization",
+      "real-time 3D tools"
+     ],
+     "ema_10": 49.1781,
+     "ema_20": 47.0762,
+     "ema_50": 44.1985,
+     "eps_growth_yoy_sq": 1.8333,
+     "exchange": "NYSE",
+     "market_cap_m": 20950.6205,
+     "price_vs_high_52w": 0.9271,
+     "price_vs_low_52w": 2.8581,
+     "rank": 11,
+     "return_20d": 0.1881,
+     "revenue_driver": "game engine software",
+     "revenue_growth_yoy_sq": 0.3219,
+     "rs_rating": 95.0,
+     "score": 0.4329,
+     "signal_rank": 1812,
+     "ticker": "U"
+    },
+    {
+     "adr_pct_20d": 0.0546,
+     "biopharma_downranked": false,
+     "description_tags": [
+      "enterprise marketing technology platform",
+      "identity-based customer acquisition",
+      "omnichannel marketing automation"
+     ],
+     "ema_10": 34.4187,
+     "ema_20": 33.764,
+     "ema_50": 32.14,
+     "eps_growth_yoy_sq": 1.0,
+     "exchange": "NYSE",
+     "market_cap_m": 7549.4778,
+     "price_vs_high_52w": 0.8998,
+     "price_vs_low_52w": 2.334,
+     "rank": 12,
+     "return_20d": -0.0044,
+     "revenue_driver": "enterprise marketing technology platform",
+     "revenue_growth_yoy_sq": 0.4612,
+     "rs_rating": 97.0,
+     "score": 0.4303,
+     "signal_rank": 1664,
+     "ticker": "ZETA"
+    },
+    {
+     "adr_pct_20d": 0.0506,
+     "biopharma_downranked": false,
+     "description_tags": [
+      "outpatient mental health clinics",
+      "psychiatry and therapy services",
+      "telehealth mental health services"
+     ],
+     "ema_10": 14.0253,
+     "ema_20": 13.7076,
+     "ema_50": 13.0018,
+     "eps_growth_yoy_sq": 10.0,
+     "exchange": "NASDAQ",
+     "market_cap_m": 5356.53,
+     "price_vs_high_52w": 0.9432,
+     "price_vs_low_52w": 2.2282,
+     "rank": 13,
+     "return_20d": 0.1168,
+     "revenue_driver": "outpatient mental health clinics",
+     "revenue_growth_yoy_sq": 0.253,
+     "rs_rating": 96.0,
+     "score": 0.4303,
+     "signal_rank": 396,
+     "ticker": "LFST"
+    },
+    {
+     "adr_pct_20d": 0.0861,
+     "biopharma_downranked": true,
+     "description_tags": [
+      "bioprocessing consumables",
+      "chromatography resins",
+      "filtration systems"
+     ],
+     "ema_10": 20.507,
+     "ema_20": 19.0517,
+     "ema_50": 16.3088,
+     "eps_growth_yoy_sq": 0.4,
+     "exchange": "NASDAQ",
+     "market_cap_m": 18647.47,
+     "price_vs_high_52w": 0.8509,
+     "price_vs_low_52w": 12.4853,
+     "rank": 14,
+     "return_20d": 0.6903,
+     "revenue_driver": "bioprocessing consumables",
+     "revenue_growth_yoy_sq": 10.0,
+     "rs_rating": 99.0,
+     "score": 0.4168,
+     "signal_rank": 1517,
+     "ticker": "REPL"
+    },
+    {
+     "adr_pct_20d": 0.0562,
+     "biopharma_downranked": true,
+     "description_tags": [
+      "B-cell therapy product sales",
+      "Immunology drug royalties",
+      "Collaboration and licensing revenue"
+     ],
+     "ema_10": 63.1801,
+     "ema_20": 61.1859,
+     "ema_50": 57.9961,
+     "eps_growth_yoy_sq": 1.5,
+     "exchange": "NASDAQ",
+     "market_cap_m": 10497.1451,
+     "price_vs_high_52w": 1.0,
+     "price_vs_low_52w": 2.4543,
+     "rank": 15,
+     "return_20d": 0.2429,
+     "revenue_driver": "B-cell therapy product sales",
+     "revenue_growth_yoy_sq": 0.3498,
+     "rs_rating": 97.0,
+     "score": 0.3237,
+     "signal_rank": 324,
+     "ticker": "TGTX"
+    },
+    {
+     "adr_pct_20d": 0.0566,
+     "biopharma_downranked": true,
+     "description_tags": [
+      "glaucoma surgical devices",
+      "corneal cross-linking",
+      "ophthalmic drug delivery"
+     ],
+     "ema_10": 236.7556,
+     "ema_20": 224.3409,
+     "ema_50": 200.2785,
+     "eps_growth_yoy_sq": 1.1071,
+     "exchange": "NYSE",
+     "market_cap_m": 13386.9498,
+     "price_vs_high_52w": 0.943,
+     "price_vs_low_52w": 2.5434,
+     "rank": 16,
+     "return_20d": 0.318,
+     "revenue_driver": "glaucoma surgical devices",
+     "revenue_growth_yoy_sq": 0.5803,
+     "rs_rating": 97.0,
+     "score": 0.3087,
+     "signal_rank": 635,
+     "ticker": "GKOS"
+    },
+    {
+     "adr_pct_20d": 0.0427,
+     "biopharma_downranked": false,
+     "description_tags": [
+      "cross-border receivables SaaS",
+      "education payment processing",
+      "healthcare revenue cycle software"
+     ],
+     "ema_10": 21.5429,
+     "ema_20": 20.8517,
+     "ema_50": 19.5916,
+     "eps_growth_yoy_sq": 1.4783,
+     "exchange": "NASDAQ",
+     "market_cap_m": 2616.727,
+     "price_vs_high_52w": 0.9736,
+     "price_vs_low_52w": 2.0451,
+     "rank": 17,
+     "return_20d": 0.168,
+     "revenue_driver": "cross-border receivables SaaS",
+     "revenue_growth_yoy_sq": 0.2506,
+     "rs_rating": 93.0,
+     "score": 0.2382,
+     "signal_rank": 835,
+     "ticker": "FLYW"
+    },
+    {
+     "adr_pct_20d": 0.0511,
+     "biopharma_downranked": true,
+     "description_tags": [
+      "autologous cell therapies",
+      "knee cartilage repair",
+      "severe burn treatments"
+     ],
+     "ema_10": 55.6122,
+     "ema_20": 51.6461,
+     "ema_50": 46.5823,
+     "eps_growth_yoy_sq": 1.7,
+     "exchange": "NASDAQ",
+     "market_cap_m": 2966.1651,
+     "price_vs_high_52w": 0.9865,
+     "price_vs_low_52w": 1.999,
+     "rank": 18,
+     "return_20d": 0.4326,
+     "revenue_driver": "autologous cell therapies",
+     "revenue_growth_yoy_sq": 0.2647,
+     "rs_rating": 94.0,
+     "score": 0.2376,
+     "signal_rank": 1716,
+     "ticker": "VCEL"
+    },
+    {
+     "adr_pct_20d": 0.0421,
+     "biopharma_downranked": false,
+     "description_tags": [
+      "specialty pharmacy",
+      "home healthcare",
+      "community-based care"
+     ],
+     "ema_10": 69.4285,
+     "ema_20": 67.5366,
+     "ema_50": 64.4844,
+     "eps_growth_yoy_sq": 1.6471,
+     "exchange": "NASDAQ",
+     "market_cap_m": 12325.2557,
+     "price_vs_high_52w": 0.9373,
+     "price_vs_low_52w": 2.1661,
+     "rank": 19,
+     "return_20d": 0.0959,
+     "revenue_driver": "specialty pharmacy",
+     "revenue_growth_yoy_sq": 0.2637,
+     "rs_rating": 93.0,
+     "score": 0.2197,
+     "signal_rank": 516,
+     "ticker": "BTSG"
+    }
+   ],
+   "score_components": [
+    {
+     "condition": null,
+     "direction": 1,
+     "key": "rs_rating",
+     "weight": 0.35
+    },
+    {
+     "condition": null,
+     "direction": 1,
+     "key": "adr_pct_20d",
+     "weight": 0.2
+    },
+    {
+     "condition": null,
+     "direction": 1,
+     "key": "eps_growth_yoy_sq",
+     "weight": 0.15
+    },
+    {
+     "condition": null,
+     "direction": 1,
+     "key": "revenue_growth_yoy_sq",
+     "weight": 0.15
+    },
+    {
+     "condition": null,
+     "direction": 1,
+     "key": "price_vs_high_52w",
+     "weight": 0.15
+    }
+   ],
+   "universe_size": 1484
+  }
+ ]
+}

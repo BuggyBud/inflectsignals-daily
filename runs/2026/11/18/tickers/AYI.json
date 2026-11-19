@@ -1,0 +1,1105 @@
+{
+ "date": "2026-11-18",
+ "detected_regions": {
+  "primary": {
+   "days_in_region": 160,
+   "region_start": "2026-06-30",
+   "trigger_date": "2026-09-11",
+   "trigger_type": "drawdown"
+  },
+  "secondary": [
+   {
+    "confidence_score": 0.7233,
+    "downside_q50": -0.0636,
+    "ev_score": 0.1021,
+    "region_start": "2026-05-19",
+    "seq_len": 188,
+    "trigger_date": "2026-10-30",
+    "trigger_type": "runup",
+    "upside_q25": 0.0796,
+    "upside_q50": 0.1632,
+    "upside_q75": 0.271
+   }
+  ]
+ },
+ "feature_attribution": {
+  "macro_driver_count": 17,
+  "risk_flags": [],
+  "top_drivers": [
+   {
+    "direction": "negative",
+    "feature": "dollar_volume",
+    "feature_value": 53044488.0,
+    "importance": 0.0003,
+    "importance_pct": 0.569,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "positive",
+    "feature": "sector_rank_1d",
+    "feature_value": 0.2727,
+    "importance": 0.0001,
+    "importance_pct": 0.2174,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "negative",
+    "feature": "book_value_per_share",
+    "feature_value": 99.2757,
+    "importance": 0.0001,
+    "importance_pct": 0.2136,
+    "method": "integrated_gradients"
+   }
+  ]
+ },
+ "fundamentals": {
+  "accrual": 0.0475,
+  "adx_14": 23.0662,
+  "altman_z_score": 4.609,
+  "amihud_illiquidity": 0.0002,
+  "avg_volume": 311897.8516,
+  "beta_252d": 0.6268,
+  "book_value_per_share": 99.2757,
+  "correlation_spy_60d": 0.543,
+  "current_liabilities": 1096.9,
+  "current_ratio": 1.695,
+  "daily_earnings_yield": 0.0532,
+  "daily_fcf_yield": 0.0286,
+  "daily_pb": 3.3606,
+  "daily_pe": 18.8132,
+  "daily_ps": 2.1534,
+  "days_since_52w_high": 220.0,
+  "debt_ebitda": 0.9274,
+  "debt_to_equity": 0.2345,
+  "dividend_yield": 0.0,
+  "dollar_volume_20d_avg": 87065342.8599,
+  "earnings_quality": 1.7653,
+  "ebitda_growth_yoy": 0.002,
+  "enterprise_value": 10056.5506,
+  "eps_basic": 5.77,
+  "eps_cagr_3y": 0.1715,
+  "eps_cagr_5y": 0.1558,
+  "eps_diluted": 5.63,
+  "eps_growth_accel": 0.1742,
+  "eps_growth_qoq": 0.2382,
+  "eps_growth_yoy": 0.3626,
+  "eps_growth_yoy_q2": 0.1885,
+  "eps_growth_yoy_q3": 0.0348,
+  "eps_growth_yoy_q4": -0.0417,
+  "eps_growth_yoy_q5": -0.062,
+  "eps_growth_yoy_q6": 0.04,
+  "eps_growth_yoy_q7": 0.1156,
+  "eps_growth_yoy_q8": 0.176,
+  "eps_history_8q": [
+   3.35,
+   2.45,
+   3.12,
+   3.61,
+   3.82,
+   3.09,
+   4.56,
+   5.63
+  ],
+  "eps_ttm": 17.3554,
+  "ev_to_ebitda": 13.3731,
+  "ev_to_fcf": 35.1382,
+  "ev_to_sales": 8.0814,
+  "fcf_growth_yoy": -0.9291,
+  "fcf_margin": 0.23,
+  "fcf_per_share": 9.5527,
+  "gross_margin": 0.5096,
+  "gross_margin_change_yoy": 0.037,
+  "gross_margin_history": [
+   0.487,
+   0.4913,
+   0.494,
+   0.4971,
+   0.4997,
+   0.5096
+  ],
+  "inc_roic": -0.4539,
+  "interest_coverage": 27.148,
+  "is_pre_revenue": false,
+  "margin_vs_sector_median": null,
+  "market_cap_ratio": 9995.4506,
+  "net_income": 173.0,
+  "net_margin": 0.1145,
+  "operating_income": 227.0,
+  "operating_margin": 0.1538,
+  "operating_margin_change_yoy": 0.0309,
+  "pb_ratio": 3.2889,
+  "pe_percentile_1y": 0.9048,
+  "pe_ratio": 18.8132,
+  "peg_trailing": 0.4799,
+  "piotroski_f_score": 4.0,
+  "price_vs_high_52w": 0.8668,
+  "price_vs_sma200": 1.0515,
+  "ps_percentile_1y": 0.4246,
+  "ps_ratio": 1.9738,
+  "quarter_labels_8q": [
+   "Q1 '25",
+   "Q2 '25",
+   "Q3 '25",
+   "Q4 '25",
+   "Q1 '26",
+   "Q2 '26",
+   "Q3 '26",
+   "Q4 '26"
+  ],
+  "quarterly_eps_growth_yoy": 0.5596,
+  "quarterly_eps_growth_yoy_8q": [
+   0.0436,
+   -0.1373,
+   -0.1381,
+   -0.0424,
+   0.1403,
+   0.2612,
+   0.4615,
+   0.5596
+  ],
+  "quarterly_revenue_growth_yoy": 0.0292,
+  "quarterly_revenue_growth_yoy_8q": [
+   0.0181,
+   0.1108,
+   0.2174,
+   0.1713,
+   0.2019,
+   0.0491,
+   0.0165,
+   0.0292
+  ],
+  "revenue_cagr_3y": 0.0551,
+  "revenue_cagr_5y": 0.0605,
+  "revenue_growth_accel": -0.0368,
+  "revenue_growth_qoq": 0.0387,
+  "revenue_growth_yoy": 0.0682,
+  "revenue_growth_yoy_q2": 0.105,
+  "revenue_growth_yoy_q3": 0.1589,
+  "revenue_growth_yoy_q4": 0.1762,
+  "revenue_growth_yoy_q5": 0.1314,
+  "revenue_growth_yoy_q6": 0.0916,
+  "revenue_growth_yoy_q7": 0.0278,
+  "revenue_growth_yoy_q8": -0.008,
+  "revenue_history_8q": [
+   951.6,
+   1006.3,
+   1178.6,
+   1209.1,
+   1143.7,
+   1055.7,
+   1198.0,
+   1244.4
+  ],
+  "revenue_per_share": 41.5354,
+  "roa": 0.1117,
+  "roce": 0.1872,
+  "roe": 0.1824,
+  "roic": 0.1407,
+  "rsi_14": 48.8556,
+  "sector_momentum": 0.1396,
+  "share_dilution_1y": 0.0,
+  "stock_vs_sector_20d": 0.0184,
+  "stock_vs_spy_20d": 0.0868,
+  "total_assets": 4873.5,
+  "vol_regime": 1.0853,
+  "volatility_20d": 0.0199,
+  "volatility_60d": 0.0183,
+  "w52_high": 380.17,
+  "w52_low": 257.04
+ },
+ "market_characters": [
+  {
+   "id": "g5",
+   "name": "Quality Compressed"
+  }
+ ],
+ "model_analogs": {
+  "matches": [
+   {
+    "actual_downside": -0.0113,
+    "actual_return": 0.1634,
+    "actual_upside": 0.357,
+    "days_in_region": 333,
+    "end_date": "2006-04-11",
+    "end_reason": "reversal",
+    "similarity": 0.947,
+    "start_date": "2005-05-13",
+    "ticker": "ARCB",
+    "trigger_date": "2005-07-21",
+    "trigger_type": "runup"
+   },
+   {
+    "actual_downside": 0.0,
+    "actual_return": 0.2662,
+    "actual_upside": 0.2662,
+    "days_in_region": 188,
+    "end_date": "2006-02-22",
+    "end_reason": "reversal",
+    "similarity": 0.9415,
+    "start_date": "2005-08-18",
+    "ticker": "EL",
+    "trigger_date": "2005-10-27",
+    "trigger_type": "severe_drawdown"
+   },
+   {
+    "actual_downside": -0.0454,
+    "actual_return": 0.0081,
+    "actual_upside": 0.1319,
+    "days_in_region": 230,
+    "end_date": "2017-02-13",
+    "end_reason": "reversal",
+    "similarity": 0.9415,
+    "start_date": "2016-06-28",
+    "ticker": "HCKT",
+    "trigger_date": "2016-08-11",
+    "trigger_type": "runup"
+   },
+   {
+    "actual_downside": -0.2075,
+    "actual_return": 0.1736,
+    "actual_upside": 0.1736,
+    "days_in_region": 222,
+    "end_date": "2019-02-20",
+    "end_reason": "reversal",
+    "similarity": 0.9411,
+    "start_date": "2018-07-13",
+    "ticker": "ACCO",
+    "trigger_date": "2018-08-15",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": -0.0121,
+    "actual_return": 0.0343,
+    "actual_upside": 0.1057,
+    "days_in_region": 447,
+    "end_date": "2019-01-28",
+    "end_reason": "reversal",
+    "similarity": 0.9402,
+    "start_date": "2017-11-07",
+    "ticker": "ORLY",
+    "trigger_date": "2018-04-27",
+    "trigger_type": "runup"
+   },
+   {
+    "actual_downside": -0.4004,
+    "actual_return": -0.237,
+    "actual_upside": 0.0383,
+    "days_in_region": 333,
+    "end_date": "2006-07-10",
+    "end_reason": "reversal",
+    "similarity": 0.9396,
+    "start_date": "2005-08-11",
+    "ticker": "RSH",
+    "trigger_date": "2005-09-22",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": -0.048,
+    "actual_return": 0.273,
+    "actual_upside": 0.273,
+    "days_in_region": 139,
+    "end_date": "2005-12-14",
+    "end_reason": "reversal",
+    "similarity": 0.9384,
+    "start_date": "2005-07-28",
+    "ticker": "WGO",
+    "trigger_date": "2005-09-21",
+    "trigger_type": "severe_drawdown"
+   },
+   {
+    "actual_downside": -0.1955,
+    "actual_return": -0.0394,
+    "actual_upside": 0.0364,
+    "days_in_region": 237,
+    "end_date": "2000-08-08",
+    "end_reason": "reversal",
+    "similarity": 0.9378,
+    "start_date": "1999-12-15",
+    "ticker": "NUE",
+    "trigger_date": "2000-05-10",
+    "trigger_type": "severe_drawdown"
+   },
+   {
+    "actual_downside": -0.0164,
+    "actual_return": -0.0106,
+    "actual_upside": 0.1015,
+    "days_in_region": 204,
+    "end_date": "2017-01-17",
+    "end_reason": "reversal",
+    "similarity": 0.9373,
+    "start_date": "2016-06-27",
+    "ticker": "ESL",
+    "trigger_date": "2016-11-11",
+    "trigger_type": "runup"
+   },
+   {
+    "actual_downside": 0.0,
+    "actual_return": 0.2195,
+    "actual_upside": 0.2195,
+    "days_in_region": 204,
+    "end_date": "2006-02-22",
+    "end_reason": "reversal",
+    "similarity": 0.9373,
+    "start_date": "2005-08-02",
+    "ticker": "TECD",
+    "trigger_date": "2005-10-19",
+    "trigger_type": "shallow_drawdown"
+   }
+  ],
+  "stats": {
+   "avg_max_drawdown": 0.0555,
+   "avg_similarity": 0.935,
+   "avg_trough": 0.0555,
+   "avg_upside": 0.2396,
+   "best_return": 1.1167,
+   "downside_range": [
+    -0.4004,
+    0.0
+   ],
+   "median_return": 0.1662,
+   "n_matches": 50,
+   "outcome_agreement": true,
+   "return_p25": 0.0143,
+   "return_p5": -0.1488,
+   "return_p75": 0.2643,
+   "return_p95": 0.5211,
+   "sim_weighted_win_rate": 0.78,
+   "top5_avg_trough": 0.0553,
+   "top5_avg_upside": 0.2069,
+   "top_similarity": 0.947,
+   "upside_range": [
+    0.0055,
+    1.1167
+   ],
+   "win_rate": 0.78,
+   "worst_return": -0.237,
+   "years_span": 15
+  },
+  "total_matches": 50
+ },
+ "peer_group": {
+  "buckets": [
+   "Building Products, Fixtures & Architectural Materials",
+   "Electrical Equipment, Power Components & Grid Hardware",
+   "Enterprise Applications & Workflow Software"
+  ],
+  "groups": {
+   "Building Products, Fixtures & Architectural Materials": [
+    {
+     "market_cap_m": 7197.9883,
+     "price_vs_sma200": 1.0258,
+     "return_30d": 0.1664,
+     "return_7d": -0.01,
+     "revenue_driver": "residential water heaters",
+     "signal_rank": 640,
+     "stock_vs_spy_20d": 0.1381,
+     "ticker": "AOS"
+    },
+    {
+     "market_cap_m": 749.2837,
+     "price_vs_sma200": 0.8788,
+     "return_30d": 0.1644,
+     "return_7d": 0.355,
+     "revenue_driver": "kitchen and bath cabinetry",
+     "signal_rank": null,
+     "stock_vs_spy_20d": -0.0056,
+     "ticker": "AMWD"
+    },
+    {
+     "market_cap_m": 860.44,
+     "price_vs_sma200": 1.1638,
+     "return_30d": 0.1087,
+     "return_7d": -0.0514,
+     "revenue_driver": "architectural glass fabrication",
+     "signal_rank": 241,
+     "stock_vs_spy_20d": 0.0995,
+     "ticker": "APOG"
+    },
+    {
+     "market_cap_m": 9161.8586,
+     "price_vs_sma200": 1.0515,
+     "return_30d": 0.0868,
+     "return_7d": -0.0239,
+     "revenue_driver": "LED lighting systems",
+     "signal_rank": 851,
+     "stock_vs_spy_20d": 0.0868,
+     "ticker": "AYI"
+    },
+    {
+     "market_cap_m": 6700.3661,
+     "price_vs_sma200": 1.0338,
+     "return_30d": 0.0736,
+     "return_7d": -0.0271,
+     "revenue_driver": "ceiling systems",
+     "signal_rank": 876,
+     "stock_vs_spy_20d": 0.0887,
+     "ticker": "AWI"
+    },
+    {
+     "market_cap_m": 13148.5037,
+     "price_vs_sma200": 1.0864,
+     "return_30d": 0.0444,
+     "return_7d": 0.0114,
+     "revenue_driver": "water quality systems",
+     "signal_rank": 365,
+     "stock_vs_spy_20d": 0.0569,
+     "ticker": "WTS"
+    },
+    {
+     "market_cap_m": 7383.3981,
+     "price_vs_sma200": 1.4686,
+     "return_30d": 0.0074,
+     "return_7d": 0.0021,
+     "revenue_driver": "architectural glass fabrication",
+     "signal_rank": null,
+     "stock_vs_spy_20d": 0.0135,
+     "ticker": "APGE"
+    },
+    {
+     "market_cap_m": 7285.0182,
+     "price_vs_sma200": 0.7742,
+     "return_30d": -0.0841,
+     "return_7d": 0.2693,
+     "revenue_driver": "rooftop HVAC units",
+     "signal_rank": null,
+     "stock_vs_spy_20d": -0.1157,
+     "ticker": "AAON"
+    },
+    {
+     "market_cap_m": 239.1777,
+     "price_vs_sma200": 0.9418,
+     "return_30d": -0.1261,
+     "return_7d": -0.0654,
+     "revenue_driver": "insulated piping systems",
+     "signal_rank": 273,
+     "stock_vs_spy_20d": -0.0101,
+     "ticker": "PPIH"
+    },
+    {
+     "market_cap_m": 534.7996,
+     "price_vs_sma200": 0.6921,
+     "return_30d": -0.2796,
+     "return_7d": -0.1047,
+     "revenue_driver": "commercial LED lighting",
+     "signal_rank": 307,
+     "stock_vs_spy_20d": -0.1793,
+     "ticker": "LYTS"
+    }
+   ],
+   "Electrical Equipment, Power Components & Grid Hardware": [
+    {
+     "market_cap_m": 9161.8586,
+     "price_vs_sma200": 1.0515,
+     "return_30d": 0.0868,
+     "return_7d": -0.0239,
+     "revenue_driver": "LED lighting systems",
+     "signal_rank": 851,
+     "stock_vs_spy_20d": 0.0868,
+     "ticker": "AYI"
+    },
+    {
+     "market_cap_m": 7127.2194,
+     "price_vs_sma200": 1.1488,
+     "return_30d": 0.0269,
+     "return_7d": 0.0129,
+     "revenue_driver": "construction aggregates",
+     "signal_rank": null,
+     "stock_vs_spy_20d": 0.0232,
+     "ticker": "ACA"
+    },
+    {
+     "market_cap_m": 3156.731,
+     "price_vs_sma200": 1.2435,
+     "return_30d": 0.014,
+     "return_7d": 0.0012,
+     "revenue_driver": "electrical conduit and fittings",
+     "signal_rank": null,
+     "stock_vs_spy_20d": -0.0159,
+     "ticker": "ATKR"
+    },
+    {
+     "market_cap_m": 1412.572,
+     "price_vs_sma200": 1.1614,
+     "return_30d": -0.016,
+     "return_7d": -0.0111,
+     "revenue_driver": "private lte spectrum licensing to utilities",
+     "signal_rank": 1528,
+     "stock_vs_spy_20d": 0.0965,
+     "ticker": "ATEX"
+    },
+    {
+     "market_cap_m": 4109.0925,
+     "price_vs_sma200": 0.9213,
+     "return_30d": -0.0778,
+     "return_7d": -0.0383,
+     "revenue_driver": "metal coating and galvanizing",
+     "signal_rank": 59,
+     "stock_vs_spy_20d": -0.0223,
+     "ticker": "AZZ"
+    },
+    {
+     "market_cap_m": 11224.1224,
+     "price_vs_sma200": 0.9327,
+     "return_30d": -0.1332,
+     "return_7d": -0.0246,
+     "revenue_driver": "power transmission distribution",
+     "signal_rank": 387,
+     "stock_vs_spy_20d": -0.0883,
+     "ticker": "AIT"
+    },
+    {
+     "market_cap_m": 92885.1937,
+     "price_vs_sma200": 0.716,
+     "return_30d": -0.211,
+     "return_7d": -0.0299,
+     "revenue_driver": "data center cooling systems",
+     "signal_rank": 1544,
+     "stock_vs_spy_20d": -0.0273,
+     "ticker": "VRT"
+    },
+    {
+     "market_cap_m": 8197.8365,
+     "price_vs_sma200": 0.7045,
+     "return_30d": -0.263,
+     "return_7d": -0.0178,
+     "revenue_driver": "power conversion systems",
+     "signal_rank": 1712,
+     "stock_vs_spy_20d": -0.0739,
+     "ticker": "AEIS"
+    },
+    {
+     "market_cap_m": 1186.6106,
+     "price_vs_sma200": 0.6458,
+     "return_30d": -0.2897,
+     "return_7d": -0.1099,
+     "revenue_driver": "grid control systems",
+     "signal_rank": 1228,
+     "stock_vs_spy_20d": -0.0977,
+     "ticker": "AMSC"
+    },
+    {
+     "market_cap_m": 1347.9851,
+     "price_vs_sma200": 0.9277,
+     "return_30d": -0.3141,
+     "return_7d": -0.1049,
+     "revenue_driver": "precision motion controls",
+     "signal_rank": 409,
+     "stock_vs_spy_20d": -0.1465,
+     "ticker": "ALNT"
+    }
+   ],
+   "Enterprise Applications & Workflow Software": [
+    {
+     "market_cap_m": 2308.9721,
+     "price_vs_sma200": 1.7736,
+     "return_30d": 0.4317,
+     "return_7d": 0.0569,
+     "revenue_driver": "low-code development SaaS",
+     "signal_rank": 1409,
+     "stock_vs_spy_20d": 0.1654,
+     "ticker": "APPN"
+    },
+    {
+     "market_cap_m": 14099.1668,
+     "price_vs_sma200": 1.4518,
+     "return_30d": 0.2376,
+     "return_7d": -0.0063,
+     "revenue_driver": "warehouse management systems",
+     "signal_rank": 1767,
+     "stock_vs_spy_20d": 0.1167,
+     "ticker": "MANH"
+    },
+    {
+     "market_cap_m": 9161.8586,
+     "price_vs_sma200": 1.0515,
+     "return_30d": 0.0868,
+     "return_7d": -0.0239,
+     "revenue_driver": "LED lighting systems",
+     "signal_rank": 851,
+     "stock_vs_spy_20d": 0.0868,
+     "ticker": "AYI"
+    },
+    {
+     "market_cap_m": 1589.5584,
+     "price_vs_sma200": 1.1397,
+     "return_30d": -0.0139,
+     "return_7d": -0.0818,
+     "revenue_driver": "work management SaaS",
+     "signal_rank": 1865,
+     "stock_vs_spy_20d": -0.113,
+     "ticker": "ASAN"
+    },
+    {
+     "market_cap_m": 104160.238,
+     "price_vs_sma200": 0.9604,
+     "return_30d": -0.0282,
+     "return_7d": -0.0469,
+     "revenue_driver": "creative software SaaS",
+     "signal_rank": null,
+     "stock_vs_spy_20d": 0.0431,
+     "ticker": "ADBE"
+    },
+    {
+     "market_cap_m": 17246.9543,
+     "price_vs_sma200": 1.1338,
+     "return_30d": -0.1472,
+     "return_7d": -0.1305,
+     "revenue_driver": "P&C insurance core systems",
+     "signal_rank": null,
+     "stock_vs_spy_20d": 0.1801,
+     "ticker": "GWRE"
+    },
+    {
+     "market_cap_m": 373.3718,
+     "price_vs_sma200": 0.6256,
+     "return_30d": -0.2053,
+     "return_7d": -0.2509,
+     "revenue_driver": "fleet management telematics",
+     "signal_rank": 1510,
+     "stock_vs_spy_20d": -0.1371,
+     "ticker": "AIOT"
+    },
+    {
+     "market_cap_m": 2617.4114,
+     "price_vs_sma200": 0.8441,
+     "return_30d": -0.2547,
+     "return_7d": -0.0204,
+     "revenue_driver": "contract electronics manufacturing",
+     "signal_rank": 1094,
+     "stock_vs_spy_20d": -0.0734,
+     "ticker": "BHE"
+    },
+    {
+     "market_cap_m": 298.985,
+     "price_vs_sma200": 0.3593,
+     "return_30d": null,
+     "return_7d": -0.154,
+     "revenue_driver": "office printing systems",
+     "signal_rank": 1926,
+     "stock_vs_spy_20d": -0.6229,
+     "ticker": "XRX"
+    },
+    {
+     "market_cap_m": 546.7244,
+     "price_vs_sma200": 0.4526,
+     "return_30d": null,
+     "return_7d": -0.0601,
+     "revenue_driver": "enterprise SaaS platform",
+     "signal_rank": 1711,
+     "stock_vs_spy_20d": -0.4203,
+     "ticker": "BCAX"
+    }
+   ]
+  }
+ },
+ "predictions": {
+  "badge_count": 0,
+  "confidence_score": 0.6846,
+  "conviction_label": "SPECULATIVE",
+  "data_quality_flags": [],
+  "ev_score": 0.1076,
+  "is_diamond": false,
+  "passes_tradability_filter": true,
+  "quality_label": "HIGH",
+  "quantiles": {
+   "downside_q10": -0.2118,
+   "downside_q25": -0.125,
+   "downside_q50": -0.0639,
+   "downside_q75": -0.0183,
+   "downside_q90": -0.0014,
+   "path_volatility": 0.0234,
+   "risk_reward": 2.6661,
+   "uncertainty": 0.3714,
+   "upside_q10": 0.03,
+   "upside_q25": 0.0831,
+   "upside_q50": 0.1703,
+   "upside_q75": 0.2762,
+   "upside_q90": 0.4014
+  },
+  "rank": 851,
+  "rank_score": 0.0907,
+  "tradability_filter_reasons": []
+ },
+ "profile": {
+  "_local": {
+   "dividend_yield": 0.0,
+   "eps_growth_yoy": 0.3626,
+   "pe_ratio": 17.5018,
+   "revenue_growth_yoy": 0.0682,
+   "roe": 0.1824
+  },
+  "beta": 1.244,
+  "betaTTM": null,
+  "ceo": "Neil Ashe",
+  "companyName": "Acuity Brands, Inc.",
+  "country": "US",
+  "debtToEquityTTM": null,
+  "description": "Acuity Brands, Inc. operates as a global provider of advanced lighting and building management solutions, serving markets both within North America and internationally. The company's operations are divided into two principal segments: Acuity Brands Lighting and Lighting Controls (ABL), and the Intelligent Spaces Group (ISG). The ABL division offers a comprehensive portfolio of commercial, architectural, and specialized lighting products, alongside control systems and related components, designed for a variety of indoor and outdoor applications. This segment markets its offerings under numerous well-known brands, including Lithonia Lighting, Holophane, Peerless, Gotham, Mark Architectural Lighting, Winona Lighting, Juno, Indy, Aculux, Healthcare Lighting, Hydrel, American Electric Lighting, Sunoptics, eldoLED, nLight, Sensor Switch, IOTA, A-Light, Cyclone, Eureka, Lumniaire LED, Luminis, Dark to Light, and RELOC Wiring Solutions. Its diverse customer base for lighting products spans electrical distributors, major retail home improvement chains, utility providers, national account clients, online retailers, dedicated lighting showrooms, and energy service firms. In contrast, the ISG segment focuses on sophisticated building management systems and location-aware applications, delivered through its Distech Controls, Atrius, and Rockpile Ventures brands. This includes serving system integrators, as well as end-users such as retail establishments, airports, and large corporate campuses. Established in 2001, Acuity Brands, Inc. maintains its corporate headquarters in Atlanta, Georgia.",
+  "dividendYielTTM": null,
+  "enterpriseValueOverEBITDATTM": null,
+  "exchangeShortName": "NYSE",
+  "fullTimeEmployees": "13900",
+  "industry": "Electrical Equipment & Parts",
+  "ipoDate": "2001-12-03",
+  "latest_earnings_date": "2026-10-01",
+  "marketCapTTM": null,
+  "mktCap": 9656983754,
+  "peRatioTTM": null,
+  "price": 325.2,
+  "priceToSalesRatioTTM": null,
+  "returnOnEquityTTM": 0.1854,
+  "revenue_description": "Acuity Brands sells lighting, controls, and building-management solutions. Revenue is driven by unit volume growth and pricing realization in its core end markets, with new product introductions and geographic expansion as incremental catalysts.",
+  "revenue_description_themes": [
+   "end-market demand recovery and volume growth",
+   "pricing realization above input cost inflation",
+   "smart lighting and IoT expansion"
+  ],
+  "revenue_taxonomy": [
+   {
+    "bucket": "Electrical Equipment, Power Components & Grid Hardware",
+    "matched_tags": [
+     "LED lighting systems"
+    ],
+    "path": "Industrials & Transportation › Industrial Products & Services › Electrical Equipment, Power Components & Grid Hardware",
+    "sector": "Industrials & Transportation",
+    "segment": "Industrial Products & Services"
+   },
+   {
+    "bucket": "Enterprise Applications & Workflow Software",
+    "matched_tags": [
+     "building controls software"
+    ],
+    "path": "Technology › Software & Platforms › Enterprise Applications & Workflow Software",
+    "sector": "Technology",
+    "segment": "Software & Platforms"
+   },
+   {
+    "bucket": "Building Products, Fixtures & Architectural Materials",
+    "matched_tags": [
+     "commercial lighting"
+    ],
+    "path": "Real Estate & Infrastructure › Property & Infrastructure Services › Building Products, Fixtures & Architectural Materials",
+    "sector": "Real Estate & Infrastructure",
+    "segment": "Property & Infrastructure Services"
+   }
+  ],
+  "revenue_themes": [
+   "LED lighting systems",
+   "building controls software",
+   "commercial lighting"
+  ],
+  "sector": "Industrials",
+  "website": "https://www.acuityinc.com"
+ },
+ "report": {
+  "display_rank": null,
+  "lane": "act_now",
+  "lane_rank": 113,
+  "setup_label": "early_trend",
+  "why_now": "Model analogs leads the readiness mix (+8.5); early-stage trend"
+ },
+ "scorecard": {
+  "headline": {
+   "avg_universe_pct": 62,
+   "label": "above_average",
+   "metric_count": 8
+  },
+  "metrics": {
+   "debt_to_equity": {
+    "direction": "lower",
+    "label": "D/E Ratio",
+    "sector": "Consumer Disc.",
+    "sector_n": 238,
+    "sector_pct": 68,
+    "universe_n": 1948,
+    "universe_pct": 61,
+    "value": 0.2345
+   },
+   "eps_growth_yoy": {
+    "direction": "higher",
+    "label": "EPS Growth",
+    "sector": "Consumer Disc.",
+    "sector_n": 244,
+    "sector_pct": 62,
+    "universe_n": 1771,
+    "universe_pct": 65,
+    "value": 0.3626
+   },
+   "gross_margin": {
+    "direction": "higher",
+    "label": "Gross Margin",
+    "sector": "Consumer Disc.",
+    "sector_n": 244,
+    "sector_pct": 80,
+    "universe_n": 1893,
+    "universe_pct": 51,
+    "value": 0.5096
+   },
+   "operating_margin": {
+    "direction": "higher",
+    "label": "Op. Margin",
+    "sector": "Consumer Disc.",
+    "sector_n": 244,
+    "sector_pct": 78,
+    "universe_n": 1893,
+    "universe_pct": 63,
+    "value": 0.1538
+   },
+   "pe_ratio": {
+    "direction": "lower",
+    "label": "P/E",
+    "sector": "Consumer Disc.",
+    "sector_n": 204,
+    "sector_pct": 60,
+    "universe_n": 1414,
+    "universe_pct": 57,
+    "value": 17.5018
+   },
+   "revenue_growth_yoy": {
+    "direction": "higher",
+    "label": "Rev Growth",
+    "sector": "Consumer Disc.",
+    "sector_n": 244,
+    "sector_pct": 53,
+    "universe_n": 1723,
+    "universe_pct": 45,
+    "value": 0.0682
+   },
+   "roe": {
+    "direction": "higher",
+    "label": "ROE",
+    "sector": "Consumer Disc.",
+    "sector_n": 243,
+    "sector_pct": 65,
+    "universe_n": 1966,
+    "universe_pct": 72,
+    "value": 0.1824
+   },
+   "roic": {
+    "direction": "higher",
+    "label": "ROIC",
+    "sector": "Consumer Disc.",
+    "sector_n": 237,
+    "sector_pct": 81,
+    "universe_n": 1931,
+    "universe_pct": 86,
+    "value": 0.0458
+   }
+  }
+ },
+ "signal_rank": 851,
+ "structural_analogs": {
+  "gp_core_pct": 79.0,
+  "gp_core_ratio": 1.7803,
+  "matches": [
+   {
+    "actual_downside": -0.0087,
+    "actual_return": 0.0826,
+    "actual_upside": 0.0826,
+    "days_in_region": 163,
+    "end_date": "2012-10-05",
+    "end_reason": "reversal",
+    "seq_len": 163,
+    "similarity": 0.5749,
+    "start_date": "2012-04-03",
+    "ticker": "BIO",
+    "total_distance": 0.2768,
+    "trigger_date": "2012-06-04",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": -0.5228,
+    "actual_return": -0.5228,
+    "actual_upside": 0.0417,
+    "days_in_region": 200,
+    "end_date": "2020-03-18",
+    "end_reason": "reversal",
+    "seq_len": 200,
+    "similarity": 0.5729,
+    "start_date": "2019-05-31",
+    "ticker": "UHS",
+    "total_distance": 0.2786,
+    "trigger_date": "2019-07-16",
+    "trigger_type": "shallow_runup"
+   },
+   {
+    "actual_downside": -0.1579,
+    "actual_return": 0.3289,
+    "actual_upside": 0.3289,
+    "days_in_region": 132,
+    "end_date": "2017-01-13",
+    "end_reason": "reversal",
+    "seq_len": 132,
+    "similarity": 0.5698,
+    "start_date": "2016-04-26",
+    "ticker": "MGLN",
+    "total_distance": 0.2813,
+    "trigger_date": "2016-08-05",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": -0.0426,
+    "actual_return": 0.1915,
+    "actual_upside": 0.1915,
+    "days_in_region": 158,
+    "end_date": "2022-06-07",
+    "end_reason": "reversal",
+    "seq_len": 158,
+    "similarity": 0.5677,
+    "start_date": "2021-11-17",
+    "ticker": "LFUS",
+    "total_distance": 0.2831,
+    "trigger_date": "2022-01-21",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": -0.0183,
+    "actual_return": 0.2517,
+    "actual_upside": 0.2517,
+    "days_in_region": 162,
+    "end_date": "2006-04-05",
+    "end_reason": "reversal",
+    "seq_len": 162,
+    "similarity": 0.5676,
+    "start_date": "2005-07-28",
+    "ticker": "MAN",
+    "total_distance": 0.2832,
+    "trigger_date": "2005-09-26",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": -0.0551,
+    "actual_return": 0.15,
+    "actual_upside": 0.15,
+    "days_in_region": 162,
+    "end_date": "2019-01-22",
+    "end_reason": "reversal",
+    "seq_len": 162,
+    "similarity": 0.5663,
+    "start_date": "2018-07-25",
+    "ticker": "BIIB",
+    "total_distance": 0.2843,
+    "trigger_date": "2018-10-22",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": -0.1693,
+    "actual_return": 0.5142,
+    "actual_upside": 0.5142,
+    "days_in_region": 113,
+    "end_date": "2019-04-05",
+    "end_reason": "reversal",
+    "seq_len": 113,
+    "similarity": 0.5607,
+    "start_date": "2018-09-25",
+    "ticker": "ROG",
+    "total_distance": 0.2893,
+    "trigger_date": "2018-12-10",
+    "trigger_type": "severe_drawdown"
+   },
+   {
+    "actual_downside": -0.0437,
+    "actual_return": 0.0848,
+    "actual_upside": 0.0848,
+    "days_in_region": 152,
+    "end_date": "2016-11-16",
+    "end_reason": "reversal",
+    "seq_len": 152,
+    "similarity": 0.5595,
+    "start_date": "2016-06-09",
+    "ticker": "PDCO",
+    "total_distance": 0.2903,
+    "trigger_date": "2016-10-18",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": -0.1358,
+    "actual_return": -0.1358,
+    "actual_upside": 0.0558,
+    "days_in_region": 177,
+    "end_date": "2016-11-03",
+    "end_reason": "reversal",
+    "seq_len": 177,
+    "similarity": 0.5594,
+    "start_date": "2016-02-08",
+    "ticker": "MHK",
+    "total_distance": 0.2904,
+    "trigger_date": "2016-02-26",
+    "trigger_type": "shallow_runup"
+   },
+   {
+    "actual_downside": -0.0309,
+    "actual_return": -0.0309,
+    "actual_upside": 0.147,
+    "days_in_region": 173,
+    "end_date": "2007-08-03",
+    "end_reason": "reversal",
+    "seq_len": 173,
+    "similarity": 0.5593,
+    "start_date": "2006-11-10",
+    "ticker": "ADSK",
+    "total_distance": 0.2905,
+    "trigger_date": "2007-04-26",
+    "trigger_type": "runup"
+   }
+  ],
+  "panel": {
+   "edge": 0.0306,
+   "hit_hi": 0.617,
+   "hit_lo": 0.44,
+   "hit_rate": 0.529,
+   "median_final": 0.0104,
+   "median_pain": 0.0473,
+   "n": 51,
+   "n_eff": 51.0,
+   "p25_final": -0.0707,
+   "p_pain_gt5": 0.49,
+   "return_to_pain": 0.155
+  },
+  "stats": {
+   "avg_similarity": 0.537,
+   "avg_trough": 0.0857,
+   "avg_upside": 0.1485,
+   "median_pain": 0.0475,
+   "median_return": 0.041,
+   "n_matches": 200,
+   "p25_return": -0.0954,
+   "p_pain_gt5": 0.485,
+   "return_to_pain": 0.607,
+   "top5_avg_trough": 0.1501,
+   "top5_avg_upside": 0.1793,
+   "top_similarity": 0.575,
+   "win_rate": 0.605
+  },
+  "total_matches": 200
+ },
+ "ticker": "AYI",
+ "trending": {
+  "acceleration": -0.0026,
+  "avg_vol_20d": 253515.9009,
+  "base_high_120": 376.66,
+  "breakout_confirmed": 0,
+  "close": 341.35,
+  "momentum_score": 0.5853,
+  "momentum_start": "2026-06-25",
+  "range_20": 0.1186,
+  "range_50": 0.2389,
+  "rank": 452,
+  "rank_down": null,
+  "rank_up": 351,
+  "ret_120": 0.212,
+  "ret_20": 0.0228,
+  "ret_60": 0.1119,
+  "rundown_score": 0.5263,
+  "score_date": "2026-08-26",
+  "slope_20": -0.0002,
+  "slope_60": 0.0023,
+  "stage": "sustained",
+  "stage_label": "Trending",
+  "ticker": "AYI",
+  "total_score": 0.5362,
+  "trend_ratio": 1.0656,
+  "vcp_detected": 1,
+  "vcp_score": 0.5034
+ }
+}

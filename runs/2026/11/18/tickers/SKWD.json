@@ -1,0 +1,1105 @@
+{
+ "date": "2026-11-18",
+ "detected_regions": {
+  "primary": {
+   "days_in_region": 134,
+   "region_start": "2026-08-06",
+   "trigger_date": "2026-09-24",
+   "trigger_type": "drawdown"
+  },
+  "secondary": [
+   {
+    "confidence_score": 0.8705,
+    "downside_q50": -0.0324,
+    "ev_score": 0.1611,
+    "region_start": "2026-06-03",
+    "seq_len": 178,
+    "trigger_date": "2026-10-09",
+    "trigger_type": "runup",
+    "upside_q25": 0.0931,
+    "upside_q50": 0.1808,
+    "upside_q75": 0.3169
+   }
+  ]
+ },
+ "feature_attribution": {
+  "macro_driver_count": 17,
+  "risk_flags": [],
+  "top_drivers": [
+   {
+    "direction": "negative",
+    "feature": "dollar_volume",
+    "feature_value": 26042218.0,
+    "importance": 0.0002,
+    "importance_pct": 0.3727,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "positive",
+    "feature": "sector_return_60d",
+    "feature_value": -0.1095,
+    "importance": 0.0002,
+    "importance_pct": 0.3202,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "negative",
+    "feature": "correlation_spy_60d",
+    "feature_value": -0.1693,
+    "importance": 0.0002,
+    "importance_pct": 0.3071,
+    "method": "integrated_gradients"
+   }
+  ]
+ },
+ "fundamentals": {
+  "accrual": 0.0418,
+  "adx_14": 22.3755,
+  "altman_z_score": 1.1594,
+  "amihud_illiquidity": 0.0007,
+  "avg_volume": 371171.3232,
+  "beta_252d": -0.2527,
+  "book_value_per_share": 31.5553,
+  "correlation_spy_60d": -0.1693,
+  "current_liabilities": 0.0,
+  "current_ratio": null,
+  "daily_earnings_yield": 0.0746,
+  "daily_fcf_yield": 0.1049,
+  "daily_pb": 2.0154,
+  "daily_pe": 13.4109,
+  "daily_ps": 1.4901,
+  "days_since_52w_high": 73.0,
+  "debt_ebitda": 9.493,
+  "debt_to_equity": 0.3268,
+  "dividend_yield": 0.0,
+  "dollar_volume_20d_avg": 23411425.8123,
+  "earnings_quality": 4.1195,
+  "ebitda_growth_yoy": null,
+  "enterprise_value": 609.9851,
+  "eps_basic": 0.0,
+  "eps_cagr_3y": null,
+  "eps_cagr_5y": null,
+  "eps_diluted": 0.0,
+  "eps_growth_accel": -0.365,
+  "eps_growth_qoq": 1.0,
+  "eps_growth_yoy": -0.6943,
+  "eps_growth_yoy_q2": -0.3293,
+  "eps_growth_yoy_q3": 0.4116,
+  "eps_growth_yoy_q4": 0.4033,
+  "eps_growth_yoy_q5": 0.0234,
+  "eps_growth_yoy_q6": 0.0581,
+  "eps_growth_yoy_q7": 0.0951,
+  "eps_growth_yoy_q8": 0.3158,
+  "eps_history_8q": [
+   0.35,
+   1.01,
+   0.93,
+   1.1,
+   1.03,
+   1.19,
+   -1.19,
+   0.0
+  ],
+  "eps_ttm": 4.7372,
+  "ev_to_ebitda": 13.8851,
+  "ev_to_fcf": 3.0141,
+  "ev_to_sales": 1.3396,
+  "fcf_growth_yoy": -0.1867,
+  "fcf_margin": 0.4444,
+  "fcf_per_share": 5.0037,
+  "gross_margin": 0.5695,
+  "gross_margin_change_yoy": 0.8375,
+  "gross_margin_history": [
+   0.1421,
+   0.1425,
+   0.2416,
+   0.2817,
+   0.3568,
+   0.5695
+  ],
+  "inc_roic": 0.0021,
+  "interest_coverage": 1.7016,
+  "is_pre_revenue": false,
+  "margin_vs_sector_median": null,
+  "market_cap_ratio": 2572.1391,
+  "net_income": 49.796,
+  "net_margin": 0.1111,
+  "operating_income": 0.0,
+  "operating_margin": 0.0317,
+  "operating_margin_change_yoy": -0.1625,
+  "pb_ratio": 2.0133,
+  "pe_percentile_1y": 0.2341,
+  "pe_ratio": 13.4109,
+  "peg_trailing": -0.8416,
+  "piotroski_f_score": 4.0,
+  "price_vs_high_52w": 0.968,
+  "price_vs_sma200": 1.2053,
+  "ps_percentile_1y": 0.2302,
+  "ps_ratio": 1.4155,
+  "quarter_labels_8q": [
+   "Q4 '24",
+   "Q1 '25",
+   "Q2 '25",
+   "Q3 '25",
+   "Q4 '25",
+   "Q1 '26",
+   "Q2 '26",
+   "Q3 '26"
+  ],
+  "quarterly_eps_growth_yoy": -1.0,
+  "quarterly_eps_growth_yoy_8q": [
+   -0.527,
+   0.1222,
+   0.24,
+   0.236,
+   1.9429,
+   0.1782,
+   -2.2796,
+   -1.0
+  ],
+  "quarterly_revenue_growth_yoy": 0.1914,
+  "quarterly_revenue_growth_yoy_8q": [
+   0.223,
+   0.2526,
+   0.1569,
+   0.2654,
+   0.2664,
+   0.1973,
+   0.526,
+   0.1914
+  ],
+  "revenue_cagr_3y": null,
+  "revenue_cagr_5y": null,
+  "revenue_growth_accel": -0.024,
+  "revenue_growth_qoq": -0.0698,
+  "revenue_growth_yoy": 0.2901,
+  "revenue_growth_yoy_q2": 0.3142,
+  "revenue_growth_yoy_q3": 0.2223,
+  "revenue_growth_yoy_q4": 0.2365,
+  "revenue_growth_yoy_q5": 0.2251,
+  "revenue_growth_yoy_q6": 0.222,
+  "revenue_growth_yoy_q7": 0.2588,
+  "revenue_growth_yoy_q8": 0.2817,
+  "revenue_history_8q": [
+   304.474,
+   330.515,
+   320.801,
+   382.181,
+   385.585,
+   395.71,
+   489.533,
+   455.341
+  ],
+  "revenue_per_share": 11.2582,
+  "roa": 0.0275,
+  "roce": 0.0078,
+  "roe": 0.1508,
+  "roic": 0.0268,
+  "rsi_14": 60.4061,
+  "sector_momentum": 0.0883,
+  "share_dilution_1y": 0.0,
+  "stock_vs_sector_20d": 0.0559,
+  "stock_vs_spy_20d": 0.0907,
+  "total_assets": 7146.446,
+  "vol_regime": 1.2934,
+  "volatility_20d": 0.0244,
+  "volatility_60d": 0.0188,
+  "w52_high": 65.69,
+  "w52_low": 40.6
+ },
+ "market_characters": [
+  {
+   "id": "g5",
+   "name": "Quality Compressed"
+  }
+ ],
+ "model_analogs": {
+  "matches": [
+   {
+    "actual_downside": -0.0224,
+    "actual_return": 0.1323,
+    "actual_upside": 0.1323,
+    "days_in_region": 113,
+    "end_date": "2005-12-09",
+    "end_reason": "reversal",
+    "similarity": 0.9488,
+    "start_date": "2005-08-18",
+    "ticker": "EDMC",
+    "trigger_date": "2005-09-21",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": -0.0203,
+    "actual_return": 0.0883,
+    "actual_upside": 0.0883,
+    "days_in_region": 181,
+    "end_date": "2006-01-12",
+    "end_reason": "reversal",
+    "similarity": 0.9486,
+    "start_date": "2005-07-15",
+    "ticker": "WRLD",
+    "trigger_date": "2005-07-26",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": -0.0171,
+    "actual_return": 0.0504,
+    "actual_upside": 0.0504,
+    "days_in_region": 337,
+    "end_date": "2006-01-27",
+    "end_reason": "reversal",
+    "similarity": 0.9484,
+    "start_date": "2005-02-24",
+    "ticker": "IPMT",
+    "trigger_date": "2005-08-11",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": -0.0151,
+    "actual_return": 0.3201,
+    "actual_upside": 0.3201,
+    "days_in_region": 246,
+    "end_date": "2017-03-31",
+    "end_reason": "reversal",
+    "similarity": 0.9468,
+    "start_date": "2016-07-28",
+    "ticker": "FTNT",
+    "trigger_date": "2016-08-10",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": -0.0337,
+    "actual_return": 0.1056,
+    "actual_upside": 0.1056,
+    "days_in_region": 125,
+    "end_date": "2005-12-06",
+    "end_reason": "reversal",
+    "similarity": 0.9467,
+    "start_date": "2005-08-03",
+    "ticker": "DGICA",
+    "trigger_date": "2005-10-10",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": 0.0,
+    "actual_return": 0.0992,
+    "actual_upside": 0.2798,
+    "days_in_region": 210,
+    "end_date": "2017-01-23",
+    "end_reason": "reversal",
+    "similarity": 0.9462,
+    "start_date": "2016-06-27",
+    "ticker": "MBUU",
+    "trigger_date": "2016-07-13",
+    "trigger_type": "runup"
+   },
+   {
+    "actual_downside": 0.0,
+    "actual_return": 0.062,
+    "actual_upside": 0.2732,
+    "days_in_region": 386,
+    "end_date": "2006-05-09",
+    "end_reason": "reversal",
+    "similarity": 0.9461,
+    "start_date": "2005-04-18",
+    "ticker": "SIE",
+    "trigger_date": "2005-09-27",
+    "trigger_type": "runup"
+   },
+   {
+    "actual_downside": -0.0998,
+    "actual_return": -0.0998,
+    "actual_upside": 0.1192,
+    "days_in_region": 252,
+    "end_date": "2006-01-20",
+    "end_reason": "reversal",
+    "similarity": 0.9448,
+    "start_date": "2005-05-13",
+    "ticker": "ALK",
+    "trigger_date": "2005-11-01",
+    "trigger_type": "runup"
+   },
+   {
+    "actual_downside": 0.0,
+    "actual_return": 0.1845,
+    "actual_upside": 0.1845,
+    "days_in_region": 159,
+    "end_date": "2006-01-09",
+    "end_reason": "reversal",
+    "similarity": 0.9448,
+    "start_date": "2005-08-03",
+    "ticker": "CHE",
+    "trigger_date": "2005-08-26",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": -0.3309,
+    "actual_return": -0.3309,
+    "actual_upside": 0.145,
+    "days_in_region": 507,
+    "end_date": "2006-11-20",
+    "end_reason": "reversal",
+    "similarity": 0.9447,
+    "start_date": "2005-07-01",
+    "ticker": "NNI",
+    "trigger_date": "2005-07-29",
+    "trigger_type": "compression"
+   }
+  ],
+  "stats": {
+   "avg_max_drawdown": 0.0468,
+   "avg_similarity": 0.943,
+   "avg_trough": 0.0468,
+   "avg_upside": 0.2048,
+   "best_return": 0.5446,
+   "downside_range": [
+    -0.3309,
+    0.0
+   ],
+   "median_return": 0.1125,
+   "n_matches": 50,
+   "outcome_agreement": true,
+   "return_p25": 0.0119,
+   "return_p5": -0.1583,
+   "return_p75": 0.219,
+   "return_p95": 0.361,
+   "sim_weighted_win_rate": 0.76,
+   "top5_avg_trough": 0.0217,
+   "top5_avg_upside": 0.1393,
+   "top_similarity": 0.949,
+   "upside_range": [
+    0.0,
+    0.6319
+   ],
+   "win_rate": 0.76,
+   "worst_return": -0.3309,
+   "years_span": 5
+  },
+  "total_matches": 50
+ },
+ "peer_group": {
+  "buckets": [
+   "Holding Companies, Treasury Assets & Investment Income",
+   "Insurance Brokerage, Distribution & Claims Services",
+   "Property & Casualty Insurance Premiums"
+  ],
+  "groups": {
+   "Holding Companies, Treasury Assets & Investment Income": [
+    {
+     "market_cap_m": 4126.6264,
+     "price_vs_sma200": 1.2281,
+     "return_30d": 0.2414,
+     "return_7d": 0.0042,
+     "revenue_driver": "property insurance premiums",
+     "signal_rank": 699,
+     "stock_vs_spy_20d": 0.1873,
+     "ticker": "PLMR"
+    },
+    {
+     "market_cap_m": 9087.4583,
+     "price_vs_sma200": 1.1357,
+     "return_30d": 0.2049,
+     "return_7d": 0.0321,
+     "revenue_driver": "property insurance premiums",
+     "signal_rank": 1188,
+     "stock_vs_spy_20d": 0.1138,
+     "ticker": "KNSL"
+    },
+    {
+     "market_cap_m": 941.4486,
+     "price_vs_sma200": 1.2354,
+     "return_30d": 0.1364,
+     "return_7d": 0.0211,
+     "revenue_driver": "homeowners insurance premiums",
+     "signal_rank": 943,
+     "stock_vs_spy_20d": 0.0153,
+     "ticker": "HIPO"
+    },
+    {
+     "market_cap_m": 23262.4236,
+     "price_vs_sma200": 1.0263,
+     "return_30d": 0.1227,
+     "return_7d": -0.0057,
+     "revenue_driver": "specialty insurance underwriting",
+     "signal_rank": 1182,
+     "stock_vs_spy_20d": 0.0924,
+     "ticker": "MKL"
+    },
+    {
+     "market_cap_m": 2443.3905,
+     "price_vs_sma200": 1.2053,
+     "return_30d": 0.1054,
+     "return_7d": 0.0624,
+     "revenue_driver": "specialty insurance premiums",
+     "signal_rank": 545,
+     "stock_vs_spy_20d": 0.0907,
+     "ticker": "SKWD"
+    },
+    {
+     "market_cap_m": 132266.2649,
+     "price_vs_sma200": 1.0425,
+     "return_30d": 0.0656,
+     "return_7d": 0.0124,
+     "revenue_driver": "commercial insurance premiums",
+     "signal_rank": 510,
+     "stock_vs_spy_20d": 0.0422,
+     "ticker": "AIG"
+    },
+    {
+     "market_cap_m": 588.9924,
+     "price_vs_sma200": 1.0443,
+     "return_30d": 0.0395,
+     "return_7d": 0.0112,
+     "revenue_driver": "property insurance premiums",
+     "signal_rank": 141,
+     "stock_vs_spy_20d": 0.0715,
+     "ticker": "DGICA"
+    },
+    {
+     "market_cap_m": 12873.8823,
+     "price_vs_sma200": 0.9635,
+     "return_30d": -0.0505,
+     "return_7d": -0.0413,
+     "revenue_driver": "life insurance premiums",
+     "signal_rank": 254,
+     "stock_vs_spy_20d": -0.0293,
+     "ticker": "GL"
+    },
+    {
+     "market_cap_m": 1026.8634,
+     "price_vs_sma200": 1.1232,
+     "return_30d": -0.0524,
+     "return_7d": -0.007,
+     "revenue_driver": "homeowners insurance premiums",
+     "signal_rank": 897,
+     "stock_vs_spy_20d": -0.0613,
+     "ticker": "HRTG"
+    },
+    {
+     "market_cap_m": 490.5779,
+     "price_vs_sma200": 0.9808,
+     "return_30d": -0.1336,
+     "return_7d": -0.0126,
+     "revenue_driver": "title insurance premiums",
+     "signal_rank": 286,
+     "stock_vs_spy_20d": -0.0603,
+     "ticker": "ITIC"
+    }
+   ],
+   "Insurance Brokerage, Distribution & Claims Services": [
+    {
+     "market_cap_m": 666.5047,
+     "price_vs_sma200": 1.3006,
+     "return_30d": 0.4643,
+     "return_7d": 0.0,
+     "revenue_driver": "online insurance marketplace",
+     "signal_rank": 1453,
+     "stock_vs_spy_20d": 0.2851,
+     "ticker": "MAX"
+    },
+    {
+     "market_cap_m": 73986.648,
+     "price_vs_sma200": 1.2054,
+     "return_30d": 0.2427,
+     "return_7d": 0.0058,
+     "revenue_driver": "commercial insurance brokerage",
+     "signal_rank": 1393,
+     "stock_vs_spy_20d": 0.1483,
+     "ticker": "AJG"
+    },
+    {
+     "market_cap_m": 24268.2047,
+     "price_vs_sma200": 1.0983,
+     "return_30d": 0.1811,
+     "return_7d": 0.0268,
+     "revenue_driver": "insurance brokerage commissions",
+     "signal_rank": 1559,
+     "stock_vs_spy_20d": 0.0896,
+     "ticker": "BRO"
+    },
+    {
+     "market_cap_m": 2443.3905,
+     "price_vs_sma200": 1.2053,
+     "return_30d": 0.1054,
+     "return_7d": 0.0624,
+     "revenue_driver": "specialty insurance premiums",
+     "signal_rank": 545,
+     "stock_vs_spy_20d": 0.0907,
+     "ticker": "SKWD"
+    },
+    {
+     "market_cap_m": 1342.5951,
+     "price_vs_sma200": 0.9196,
+     "return_30d": 0.0679,
+     "return_7d": -0.1463,
+     "revenue_driver": "insurance commissions",
+     "signal_rank": null,
+     "stock_vs_spy_20d": 0.0744,
+     "ticker": "GSHD"
+    },
+    {
+     "market_cap_m": 435.2398,
+     "price_vs_sma200": 1.14,
+     "return_30d": 0.0579,
+     "return_7d": -0.0116,
+     "revenue_driver": "insurance brokerage commissions",
+     "signal_rank": 90,
+     "stock_vs_spy_20d": 0.0594,
+     "ticker": "TWFG"
+    },
+    {
+     "market_cap_m": 483.214,
+     "price_vs_sma200": 1.1484,
+     "return_30d": 0.052,
+     "return_7d": -0.004,
+     "revenue_driver": "community banking",
+     "signal_rank": 1428,
+     "stock_vs_spy_20d": 0.0993,
+     "ticker": "ACNB"
+    },
+    {
+     "market_cap_m": 650.951,
+     "price_vs_sma200": 1.0252,
+     "return_30d": 0.0348,
+     "return_7d": 0.0091,
+     "revenue_driver": "specialty property casualty insurance",
+     "signal_rank": 1089,
+     "stock_vs_spy_20d": 0.1399,
+     "ticker": "TIPT"
+    },
+    {
+     "market_cap_m": 2301.6185,
+     "price_vs_sma200": 1.2559,
+     "return_30d": 0.0107,
+     "return_7d": 0.0,
+     "revenue_driver": "insurance brokerage commissions",
+     "signal_rank": 529,
+     "stock_vs_spy_20d": 0.0632,
+     "ticker": "BWIN"
+    },
+    {
+     "market_cap_m": 2980.0868,
+     "price_vs_sma200": 1.3702,
+     "return_30d": 0.0064,
+     "return_7d": 0.0024,
+     "revenue_driver": "accounting and tax services",
+     "signal_rank": null,
+     "stock_vs_spy_20d": 0.0263,
+     "ticker": "CBZ"
+    }
+   ],
+   "Property & Casualty Insurance Premiums": [
+    {
+     "market_cap_m": 9087.4583,
+     "price_vs_sma200": 1.1357,
+     "return_30d": 0.2049,
+     "return_7d": 0.0321,
+     "revenue_driver": "property insurance premiums",
+     "signal_rank": 1188,
+     "stock_vs_spy_20d": 0.1138,
+     "ticker": "KNSL"
+    },
+    {
+     "market_cap_m": 941.4486,
+     "price_vs_sma200": 1.2354,
+     "return_30d": 0.1364,
+     "return_7d": 0.0211,
+     "revenue_driver": "homeowners insurance premiums",
+     "signal_rank": 943,
+     "stock_vs_spy_20d": 0.0153,
+     "ticker": "HIPO"
+    },
+    {
+     "market_cap_m": 13040.2154,
+     "price_vs_sma200": 1.1425,
+     "return_30d": 0.1362,
+     "return_7d": 0.0004,
+     "revenue_driver": "specialty casualty insurance",
+     "signal_rank": 591,
+     "stock_vs_spy_20d": 0.1112,
+     "ticker": "AFG"
+    },
+    {
+     "market_cap_m": 23262.4236,
+     "price_vs_sma200": 1.0263,
+     "return_30d": 0.1227,
+     "return_7d": -0.0057,
+     "revenue_driver": "specialty insurance underwriting",
+     "signal_rank": 1182,
+     "stock_vs_spy_20d": 0.0924,
+     "ticker": "MKL"
+    },
+    {
+     "market_cap_m": 2443.3905,
+     "price_vs_sma200": 1.2053,
+     "return_30d": 0.1054,
+     "return_7d": 0.0624,
+     "revenue_driver": "specialty insurance premiums",
+     "signal_rank": 545,
+     "stock_vs_spy_20d": 0.0907,
+     "ticker": "SKWD"
+    },
+    {
+     "market_cap_m": 137169.9862,
+     "price_vs_sma200": 1.0827,
+     "return_30d": 0.067,
+     "return_7d": 0.0042,
+     "revenue_driver": "auto insurance premiums",
+     "signal_rank": 1138,
+     "stock_vs_spy_20d": 0.0881,
+     "ticker": "PGR"
+    },
+    {
+     "market_cap_m": 132266.2649,
+     "price_vs_sma200": 1.0425,
+     "return_30d": 0.0656,
+     "return_7d": 0.0124,
+     "revenue_driver": "commercial insurance premiums",
+     "signal_rank": 510,
+     "stock_vs_spy_20d": 0.0422,
+     "ticker": "AIG"
+    },
+    {
+     "market_cap_m": 9531.774,
+     "price_vs_sma200": 0.9923,
+     "return_30d": 0.0631,
+     "return_7d": 0.0116,
+     "revenue_driver": "specialty insurance",
+     "signal_rank": 871,
+     "stock_vs_spy_20d": 0.055,
+     "ticker": "ORI"
+    },
+    {
+     "market_cap_m": 588.9924,
+     "price_vs_sma200": 1.0443,
+     "return_30d": 0.0395,
+     "return_7d": 0.0112,
+     "revenue_driver": "property insurance premiums",
+     "signal_rank": 141,
+     "stock_vs_spy_20d": 0.0715,
+     "ticker": "DGICA"
+    },
+    {
+     "market_cap_m": 1026.8634,
+     "price_vs_sma200": 1.1232,
+     "return_30d": -0.0524,
+     "return_7d": -0.007,
+     "revenue_driver": "homeowners insurance premiums",
+     "signal_rank": 897,
+     "stock_vs_spy_20d": -0.0613,
+     "ticker": "HRTG"
+    }
+   ]
+  }
+ },
+ "predictions": {
+  "badge_count": 0,
+  "confidence_score": 0.6191,
+  "conviction_label": "SPECULATIVE",
+  "data_quality_flags": [],
+  "ev_score": 0.1296,
+  "is_diamond": false,
+  "passes_tradability_filter": true,
+  "quality_label": "HIGH",
+  "quantiles": {
+   "downside_q10": -0.206,
+   "downside_q25": -0.1141,
+   "downside_q50": -0.0576,
+   "downside_q75": -0.0127,
+   "downside_q90": 0.002,
+   "path_volatility": 0.0243,
+   "risk_reward": 3.1002,
+   "uncertainty": 0.4227,
+   "upside_q10": 0.0306,
+   "upside_q25": 0.0859,
+   "upside_q50": 0.1787,
+   "upside_q75": 0.3067,
+   "upside_q90": 0.4533
+  },
+  "rank": 545,
+  "rank_score": 0.1295,
+  "tradability_filter_reasons": []
+ },
+ "profile": {
+  "_local": {
+   "dividend_yield": 0.0,
+   "eps_growth_yoy": -0.6943,
+   "pe_ratio": 58.5922,
+   "revenue_growth_yoy": 0.2901,
+   "roe": 0.1508
+  },
+  "beta": 0.312,
+  "betaTTM": null,
+  "ceo": "Andrew Scott Robinson",
+  "companyName": "Skyward Specialty Insurance Group, Inc.",
+  "country": "US",
+  "debtToEquityTTM": null,
+  "description": "Incorporated in 2006 and headquartered in Houston, Texas, Skyward Specialty Insurance Group, Inc. functions as an insurance holding company. The firm specializes in writing commercial property and casualty insurance policies for clients across the United States. Its extensive range of coverages includes general liability, excess liability, professional liability, commercial auto, group accident and health, property, surety, and workers' compensation.",
+  "dividendYielTTM": null,
+  "enterpriseValueOverEBITDATTM": null,
+  "exchangeShortName": "NASDAQ",
+  "fullTimeEmployees": "611",
+  "industry": "Insurance - Property & Casualty",
+  "ipoDate": "2023-01-13",
+  "latest_earnings_date": "2026-11-06",
+  "marketCapTTM": null,
+  "mktCap": 2823807024,
+  "peRatioTTM": null,
+  "price": 63.58,
+  "priceToSalesRatioTTM": null,
+  "returnOnEquityTTM": 0.1606,
+  "revenue_description": "Skyward Specialty writes specialty insurance lines. Revenue is driven mainly by insurance premiums and investment income, while earnings depend on underwriting margins, claims severity, and catastrophe losses.",
+  "revenue_description_themes": [
+   "pricing cycle",
+   "cat losses",
+   "investment income"
+  ],
+  "revenue_taxonomy": [
+   {
+    "bucket": "Property & Casualty Insurance Premiums",
+    "matched_tags": [
+     "specialty insurance premiums"
+    ],
+    "path": "Financials › Capital Markets Insurance & Investments › Property & Casualty Insurance Premiums",
+    "sector": "Financials",
+    "segment": "Capital Markets Insurance & Investments"
+   },
+   {
+    "bucket": "Insurance Brokerage, Distribution & Claims Services",
+    "matched_tags": [
+     "wholesale brokerage fees"
+    ],
+    "path": "Financials › Capital Markets Insurance & Investments › Insurance Brokerage, Distribution & Claims Services",
+    "sector": "Financials",
+    "segment": "Capital Markets Insurance & Investments"
+   },
+   {
+    "bucket": "Holding Companies, Treasury Assets & Investment Income",
+    "matched_tags": [
+     "investment income"
+    ],
+    "path": "Financials › Capital Markets Insurance & Investments › Holding Companies, Treasury Assets & Investment Income",
+    "sector": "Financials",
+    "segment": "Capital Markets Insurance & Investments"
+   }
+  ],
+  "revenue_themes": [
+   "specialty insurance premiums",
+   "wholesale brokerage fees",
+   "investment income"
+  ],
+  "sector": "Financial Services",
+  "website": "https://www.skywardinsurance.com"
+ },
+ "report": {
+  "display_rank": null,
+  "lane": "wait",
+  "lane_rank": 34,
+  "setup_label": "smooth_continuation",
+  "why_now": "Model analogs leads the readiness mix (+7.5); smooth uptrend continuation"
+ },
+ "scorecard": {
+  "headline": {
+   "avg_universe_pct": 43,
+   "label": "mixed",
+   "metric_count": 8
+  },
+  "metrics": {
+   "debt_to_equity": {
+    "direction": "lower",
+    "label": "D/E Ratio",
+    "sector": "Financials",
+    "sector_n": 304,
+    "sector_pct": 55,
+    "universe_n": 1948,
+    "universe_pct": 55,
+    "value": 0.3268
+   },
+   "eps_growth_yoy": {
+    "direction": "higher",
+    "label": "EPS Growth",
+    "sector": "Financials",
+    "sector_n": 144,
+    "sector_pct": 4,
+    "universe_n": 1771,
+    "universe_pct": 13,
+    "value": -0.6943
+   },
+   "gross_margin": {
+    "direction": "higher",
+    "label": "Gross Margin",
+    "sector": "Financials",
+    "sector_n": 304,
+    "sector_pct": 22,
+    "universe_n": 1893,
+    "universe_pct": 58,
+    "value": 0.5695
+   },
+   "operating_margin": {
+    "direction": "higher",
+    "label": "Op. Margin",
+    "sector": "Financials",
+    "sector_n": 304,
+    "sector_pct": 5,
+    "universe_n": 1893,
+    "universe_pct": 26,
+    "value": 0.0317
+   },
+   "pe_ratio": {
+    "direction": "lower",
+    "label": "P/E",
+    "sector": "Financials",
+    "sector_n": 295,
+    "sector_pct": 3,
+    "universe_n": 1414,
+    "universe_pct": 7,
+    "value": 58.5922
+   },
+   "revenue_growth_yoy": {
+    "direction": "higher",
+    "label": "Rev Growth",
+    "sector": "Financials",
+    "sector_n": 143,
+    "sector_pct": 89,
+    "universe_n": 1723,
+    "universe_pct": 85,
+    "value": 0.2901
+   },
+   "roe": {
+    "direction": "higher",
+    "label": "ROE",
+    "sector": "Financials",
+    "sector_n": 305,
+    "sector_pct": 66,
+    "universe_n": 1966,
+    "universe_pct": 66,
+    "value": 0.1508
+   },
+   "roic": {
+    "direction": "higher",
+    "label": "ROIC",
+    "sector": "Financials",
+    "sector_n": 302,
+    "sector_pct": 32,
+    "universe_n": 1931,
+    "universe_pct": 36,
+    "value": 0.007
+   }
+  }
+ },
+ "signal_rank": 545,
+ "structural_analogs": {
+  "gp_core_pct": 71.8,
+  "gp_core_ratio": 1.6409,
+  "matches": [
+   {
+    "actual_downside": -0.139,
+    "actual_return": 0.0049,
+    "actual_upside": 0.0175,
+    "days_in_region": 139,
+    "end_date": "2006-10-16",
+    "end_reason": "reversal",
+    "seq_len": 139,
+    "similarity": 0.5898,
+    "start_date": "2006-01-26",
+    "ticker": "NATI",
+    "total_distance": 0.264,
+    "trigger_date": "2006-02-03",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": -0.063,
+    "actual_return": -0.0254,
+    "actual_upside": 0.1701,
+    "days_in_region": 181,
+    "end_date": "2007-01-04",
+    "end_reason": "reversal",
+    "seq_len": 181,
+    "similarity": 0.5688,
+    "start_date": "2006-02-07",
+    "ticker": "WEBX",
+    "total_distance": 0.2821,
+    "trigger_date": "2006-07-31",
+    "trigger_type": "runup"
+   },
+   {
+    "actual_downside": -0.1459,
+    "actual_return": 0.2679,
+    "actual_upside": 0.2679,
+    "days_in_region": 122,
+    "end_date": "2017-12-06",
+    "end_reason": "reversal",
+    "seq_len": 122,
+    "similarity": 0.5686,
+    "start_date": "2017-05-12",
+    "ticker": "TSG",
+    "total_distance": 0.2823,
+    "trigger_date": "2017-07-06",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": -0.061,
+    "actual_return": 0.0363,
+    "actual_upside": 0.0363,
+    "days_in_region": 138,
+    "end_date": "2017-06-12",
+    "end_reason": "reversal",
+    "seq_len": 138,
+    "similarity": 0.5628,
+    "start_date": "2016-12-08",
+    "ticker": "SHOO",
+    "total_distance": 0.2874,
+    "trigger_date": "2017-01-04",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": -0.0846,
+    "actual_return": 0.2292,
+    "actual_upside": 0.2292,
+    "days_in_region": 120,
+    "end_date": "2006-08-30",
+    "end_reason": "reversal",
+    "seq_len": 120,
+    "similarity": 0.5626,
+    "start_date": "2006-03-14",
+    "ticker": "SHPG",
+    "total_distance": 0.2876,
+    "trigger_date": "2006-06-07",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": -0.1578,
+    "actual_return": 0.1637,
+    "actual_upside": 0.1637,
+    "days_in_region": 134,
+    "end_date": "2006-12-08",
+    "end_reason": "reversal",
+    "seq_len": 134,
+    "similarity": 0.5605,
+    "start_date": "2006-03-31",
+    "ticker": "SCRX",
+    "total_distance": 0.2894,
+    "trigger_date": "2006-04-12",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": -0.1329,
+    "actual_return": -0.0289,
+    "actual_upside": 0.0015,
+    "days_in_region": 130,
+    "end_date": "2002-01-18",
+    "end_reason": "reversal",
+    "seq_len": 130,
+    "similarity": 0.559,
+    "start_date": "2001-07-23",
+    "ticker": "HMA",
+    "total_distance": 0.2908,
+    "trigger_date": "2001-07-27",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": -0.0138,
+    "actual_return": 0.0932,
+    "actual_upside": 0.0932,
+    "days_in_region": 151,
+    "end_date": "2017-11-28",
+    "end_reason": "reversal",
+    "seq_len": 151,
+    "similarity": 0.5573,
+    "start_date": "2017-05-22",
+    "ticker": "BF",
+    "total_distance": 0.2923,
+    "trigger_date": "2017-07-05",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": -0.242,
+    "actual_return": 0.0174,
+    "actual_upside": 0.0174,
+    "days_in_region": 151,
+    "end_date": "2019-04-08",
+    "end_reason": "reversal",
+    "seq_len": 151,
+    "similarity": 0.5572,
+    "start_date": "2018-06-06",
+    "ticker": "XHR",
+    "total_distance": 0.2924,
+    "trigger_date": "2018-10-12",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": -0.0153,
+    "actual_return": 0.0636,
+    "actual_upside": 0.0636,
+    "days_in_region": 130,
+    "end_date": "2021-06-14",
+    "end_reason": "reversal",
+    "seq_len": 130,
+    "similarity": 0.5546,
+    "start_date": "2021-02-02",
+    "ticker": "EA",
+    "total_distance": 0.2948,
+    "trigger_date": "2021-03-05",
+    "trigger_type": "shallow_drawdown"
+   }
+  ],
+  "panel": {
+   "edge": 0.0228,
+   "hit_hi": 0.739,
+   "hit_lo": 0.57,
+   "hit_rate": 0.66,
+   "median_final": 0.081,
+   "median_pain": 0.0679,
+   "n": 50,
+   "n_eff": 50.0,
+   "p25_final": -0.0434,
+   "p_pain_gt5": 0.64,
+   "return_to_pain": 0.922
+  },
+  "stats": {
+   "avg_similarity": 0.523,
+   "avg_trough": 0.1004,
+   "avg_upside": 0.1399,
+   "median_pain": 0.0766,
+   "median_return": 0.0343,
+   "n_matches": 200,
+   "p25_return": -0.1103,
+   "p_pain_gt5": 0.63,
+   "return_to_pain": 0.355,
+   "top5_avg_trough": 0.0987,
+   "top5_avg_upside": 0.1442,
+   "top_similarity": 0.59,
+   "win_rate": 0.56
+  },
+  "total_matches": 200
+ },
+ "ticker": "SKWD",
+ "trending": {
+  "acceleration": 0.0018,
+  "avg_vol_20d": 382081.5496,
+  "base_high_120": 65.63,
+  "breakout_confirmed": 0,
+  "close": 63.53,
+  "momentum_score": 0.7949,
+  "momentum_start": "2026-10-01",
+  "range_20": 0.1143,
+  "range_50": 0.1931,
+  "rank": 194,
+  "rank_down": null,
+  "rank_up": 139,
+  "ret_120": 0.4399,
+  "ret_20": 0.0347,
+  "ret_60": 0.1068,
+  "rundown_score": 0.1072,
+  "score_date": "2026-11-18",
+  "slope_20": 0.0037,
+  "slope_60": 0.0019,
+  "stage": "sustained",
+  "stage_label": "Trending",
+  "ticker": "SKWD",
+  "total_score": 0.563,
+  "trend_ratio": 1.1533,
+  "vcp_detected": 1,
+  "vcp_score": 0.4083
+ }
+}
