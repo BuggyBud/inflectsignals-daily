@@ -1,0 +1,1123 @@
+{
+ "date": "2026-11-20",
+ "detected_regions": {
+  "primary": {
+   "days_in_region": 133,
+   "region_start": "2026-08-11",
+   "trigger_date": "2026-10-14",
+   "trigger_type": "runup"
+  },
+  "secondary": [
+   {
+    "confidence_score": 0.391,
+    "downside_q50": -0.0295,
+    "ev_score": 0.2359,
+    "region_start": "2026-07-02",
+    "seq_len": 160,
+    "trigger_date": "2026-11-19",
+    "trigger_type": "severe_drawdown",
+    "upside_q25": 0.1368,
+    "upside_q50": 0.2651,
+    "upside_q75": 0.4177
+   }
+  ]
+ },
+ "feature_attribution": {
+  "macro_driver_count": 16,
+  "risk_flags": [
+   "high_volatility"
+  ],
+  "top_drivers": [
+   {
+    "direction": "positive",
+    "feature": "price_vs_sma200",
+    "feature_value": 0.823,
+    "importance": 0.0003,
+    "importance_pct": 0.3532,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "negative",
+    "feature": "dollar_volume",
+    "feature_value": 50943740.0,
+    "importance": 0.0002,
+    "importance_pct": 0.278,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "positive",
+    "feature": "price_vs_low_52w",
+    "feature_value": 1.4055,
+    "importance": 0.0002,
+    "importance_pct": 0.1897,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "negative",
+    "feature": "ma_200_slope",
+    "feature_value": 0.0222,
+    "importance": 0.0001,
+    "importance_pct": 0.179,
+    "method": "integrated_gradients"
+   }
+  ]
+ },
+ "fundamentals": {
+  "accrual": 0.0323,
+  "adx_14": 56.3672,
+  "altman_z_score": 2.3424,
+  "amihud_illiquidity": 0.001,
+  "avg_volume": 786054.3399,
+  "beta_252d": 0.6203,
+  "book_value_per_share": 19.4133,
+  "correlation_spy_60d": 0.5034,
+  "current_liabilities": 254.954,
+  "current_ratio": 4.542,
+  "daily_earnings_yield": 0.1157,
+  "daily_fcf_yield": 0.0266,
+  "daily_pb": 1.2022,
+  "daily_pe": 8.6405,
+  "daily_ps": 0.8459,
+  "days_since_52w_high": 99.0,
+  "debt_ebitda": 2.9686,
+  "debt_to_equity": 0.6919,
+  "dividend_yield": 0.0,
+  "dollar_volume_20d_avg": 23913053.2827,
+  "earnings_quality": 1.626,
+  "ebitda_growth_yoy": 0.5292,
+  "enterprise_value": 1963.5228,
+  "eps_basic": 0.56,
+  "eps_cagr_3y": 0.5683,
+  "eps_cagr_5y": 0.7597,
+  "eps_diluted": 0.43,
+  "eps_growth_accel": -0.0597,
+  "eps_growth_qoq": -0.0968,
+  "eps_growth_yoy": 0.4062,
+  "eps_growth_yoy_q2": 0.4659,
+  "eps_growth_yoy_q3": 0.4695,
+  "eps_growth_yoy_q4": 0.3185,
+  "eps_growth_yoy_q5": 0.2632,
+  "eps_growth_yoy_q6": 0.2308,
+  "eps_growth_yoy_q7": 0.1469,
+  "eps_growth_yoy_q8": 0.7065,
+  "eps_history_8q": [
+   0.4,
+   0.33,
+   0.34,
+   0.34,
+   0.55,
+   0.61,
+   0.48,
+   0.43
+  ],
+  "eps_ttm": 2.8644,
+  "ev_to_ebitda": 7.0646,
+  "ev_to_fcf": 51.428,
+  "ev_to_sales": 4.3921,
+  "fcf_growth_yoy": 0.0681,
+  "fcf_margin": 0.0854,
+  "fcf_per_share": 0.6216,
+  "gross_margin": 0.5812,
+  "gross_margin_change_yoy": -0.0174,
+  "gross_margin_history": [
+   0.5867,
+   0.5855,
+   0.5865,
+   0.5859,
+   0.5855,
+   0.5812
+  ],
+  "inc_roic": -0.0871,
+  "interest_coverage": 8.224,
+  "is_pre_revenue": false,
+  "margin_vs_sector_median": null,
+  "market_cap_ratio": 1433.5448,
+  "net_income": 34.303,
+  "net_margin": 0.0979,
+  "operating_income": 56.376,
+  "operating_margin": 0.1414,
+  "operating_margin_change_yoy": 0.0134,
+  "pb_ratio": 1.2749,
+  "pe_percentile_1y": 1.0,
+  "pe_ratio": 8.6405,
+  "peg_trailing": 0.2792,
+  "piotroski_f_score": 4.0,
+  "price_vs_high_52w": 0.6954,
+  "price_vs_sma200": 0.823,
+  "ps_percentile_1y": 0.9841,
+  "ps_ratio": 0.9245,
+  "quarter_labels_8q": [
+   "Q1 '25",
+   "Q2 '25",
+   "Q3 '25",
+   "Q4 '25",
+   "Q1 '25",
+   "Q2 '26",
+   "Q3 '26",
+   "Q4 '26"
+  ],
+  "quarterly_eps_growth_yoy": 0.2647,
+  "quarterly_eps_growth_yoy_8q": [
+   0.1111,
+   0.1379,
+   0.36,
+   0.619,
+   0.375,
+   0.8485,
+   0.4118,
+   0.2647
+  ],
+  "quarterly_revenue_growth_yoy": 0.3273,
+  "quarterly_revenue_growth_yoy_8q": [
+   0.0673,
+   0.0724,
+   0.105,
+   0.1435,
+   0.1932,
+   0.4589,
+   0.3465,
+   0.3273
+  ],
+  "revenue_cagr_3y": 0.1734,
+  "revenue_cagr_5y": 0.1836,
+  "revenue_growth_accel": 0.0439,
+  "revenue_growth_qoq": 0.0676,
+  "revenue_growth_yoy": 0.3299,
+  "revenue_growth_yoy_q2": 0.2861,
+  "revenue_growth_yoy_q3": 0.2281,
+  "revenue_growth_yoy_q4": 0.1306,
+  "revenue_growth_yoy_q5": 0.097,
+  "revenue_growth_yoy_q6": 0.0831,
+  "revenue_growth_yoy_q7": 0.0814,
+  "revenue_growth_yoy_q8": 0.0895,
+  "revenue_history_8q": [
+   320.17,
+   306.316,
+   310.981,
+   336.813,
+   382.019,
+   446.881,
+   418.748,
+   447.062
+  ],
+  "revenue_per_share": 7.2783,
+  "roa": 0.0754,
+  "roce": 0.1225,
+  "roe": 0.1408,
+  "roic": 0.0838,
+  "rsi_14": 18.911,
+  "sector_momentum": 0.0496,
+  "share_dilution_1y": 0.0,
+  "stock_vs_sector_20d": -0.1147,
+  "stock_vs_spy_20d": -0.0429,
+  "total_assets": 2233.838,
+  "vol_regime": 0.9353,
+  "volatility_20d": 0.0242,
+  "volatility_60d": 0.0259,
+  "w52_high": 37.13,
+  "w52_low": 17.31
+ },
+ "market_characters": [
+  {
+   "id": "g1",
+   "name": "Steady Climbers"
+  },
+  {
+   "id": "g3",
+   "name": "Explosive Gainers"
+  },
+  {
+   "id": "g5",
+   "name": "Quality Compressed"
+  }
+ ],
+ "model_analogs": {
+  "matches": [
+   {
+    "actual_downside": -0.0161,
+    "actual_return": 0.198,
+    "actual_upside": 0.198,
+    "days_in_region": 127,
+    "end_date": "2005-12-02",
+    "end_reason": "reversal",
+    "similarity": 0.9718,
+    "start_date": "2005-07-28",
+    "ticker": "GEO",
+    "trigger_date": "2005-09-26",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": -0.1111,
+    "actual_return": 0.3386,
+    "actual_upside": 0.3386,
+    "days_in_region": 228,
+    "end_date": "2006-02-27",
+    "end_reason": "reversal",
+    "similarity": 0.9692,
+    "start_date": "2005-07-14",
+    "ticker": "NCOG",
+    "trigger_date": "2005-08-01",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": 0.0,
+    "actual_return": 0.2692,
+    "actual_upside": 0.2692,
+    "days_in_region": 176,
+    "end_date": "2006-01-12",
+    "end_reason": "reversal",
+    "similarity": 0.9689,
+    "start_date": "2005-07-20",
+    "ticker": "SSYS",
+    "trigger_date": "2005-09-15",
+    "trigger_type": "severe_drawdown"
+   },
+   {
+    "actual_downside": 0.0,
+    "actual_return": 0.239,
+    "actual_upside": 0.239,
+    "days_in_region": 167,
+    "end_date": "2006-01-04",
+    "end_reason": "reversal",
+    "similarity": 0.9686,
+    "start_date": "2005-07-21",
+    "ticker": "EPIC",
+    "trigger_date": "2005-10-28",
+    "trigger_type": "severe_drawdown"
+   },
+   {
+    "actual_downside": 0.0,
+    "actual_return": 0.4699,
+    "actual_upside": 0.4699,
+    "days_in_region": 189,
+    "end_date": "2006-01-25",
+    "end_reason": "reversal",
+    "similarity": 0.9682,
+    "start_date": "2005-07-20",
+    "ticker": "TRMB",
+    "trigger_date": "2005-08-05",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": 0.0,
+    "actual_return": 0.2444,
+    "actual_upside": 0.2444,
+    "days_in_region": 187,
+    "end_date": "2005-12-20",
+    "end_reason": "reversal",
+    "similarity": 0.9682,
+    "start_date": "2005-06-16",
+    "ticker": "STST",
+    "trigger_date": "2005-08-11",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": -0.1151,
+    "actual_return": 0.0479,
+    "actual_upside": 0.0479,
+    "days_in_region": 211,
+    "end_date": "2006-01-11",
+    "end_reason": "reversal",
+    "similarity": 0.9678,
+    "start_date": "2005-06-14",
+    "ticker": "KND",
+    "trigger_date": "2005-08-04",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": 0.0,
+    "actual_return": 0.4266,
+    "actual_upside": 0.4266,
+    "days_in_region": 320,
+    "end_date": "2006-01-31",
+    "end_reason": "reversal",
+    "similarity": 0.9677,
+    "start_date": "2005-03-17",
+    "ticker": "AGYS",
+    "trigger_date": "2005-08-18",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": -0.067,
+    "actual_return": 0.0484,
+    "actual_upside": 0.0484,
+    "days_in_region": 141,
+    "end_date": "2005-11-30",
+    "end_reason": "reversal",
+    "similarity": 0.9675,
+    "start_date": "2005-07-12",
+    "ticker": "SAFM",
+    "trigger_date": "2005-08-05",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": 0.0,
+    "actual_return": 0.5048,
+    "actual_upside": 0.5048,
+    "days_in_region": 199,
+    "end_date": "2006-01-27",
+    "end_reason": "reversal",
+    "similarity": 0.9674,
+    "start_date": "2005-07-12",
+    "ticker": "TLRD",
+    "trigger_date": "2005-08-04",
+    "trigger_type": "shallow_drawdown"
+   }
+  ],
+  "stats": {
+   "avg_max_drawdown": 0.033,
+   "avg_similarity": 0.964,
+   "avg_trough": 0.033,
+   "avg_upside": 0.307,
+   "best_return": 0.7879,
+   "downside_range": [
+    -0.2171,
+    0.0
+   ],
+   "median_return": 0.2755,
+   "n_matches": 50,
+   "outcome_agreement": true,
+   "return_p25": 0.1982,
+   "return_p5": 0.0518,
+   "return_p75": 0.3961,
+   "return_p95": 0.5636,
+   "sim_weighted_win_rate": 1.0,
+   "top5_avg_trough": 0.0254,
+   "top5_avg_upside": 0.3029,
+   "top_similarity": 0.972,
+   "upside_range": [
+    0.0479,
+    0.7879
+   ],
+   "win_rate": 1.0,
+   "worst_return": 0.0351,
+   "years_span": 5
+  },
+  "total_matches": 50
+ },
+ "peer_group": {
+  "buckets": [
+   "Lending, Cards & Consumer Finance",
+   "Licensing, Royalties, Franchise Fees & Intellectual Property Monetization",
+   "Payments Processing, Merchant Acquiring & Money Movement"
+  ],
+  "groups": {
+   "Lending, Cards & Consumer Finance": [
+    {
+     "market_cap_m": 560.245,
+     "price_vs_sma200": 1.082,
+     "return_30d": 0.0685,
+     "return_7d": -0.0536,
+     "revenue_driver": "community bank lending",
+     "signal_rank": 143,
+     "stock_vs_spy_20d": 0.1077,
+     "ticker": "COFS"
+    },
+    {
+     "market_cap_m": 903.6236,
+     "price_vs_sma200": 1.0513,
+     "return_30d": 0.0071,
+     "return_7d": -0.0528,
+     "revenue_driver": "retail lending",
+     "signal_rank": 326,
+     "stock_vs_spy_20d": 0.0497,
+     "ticker": "GSBC"
+    },
+    {
+     "market_cap_m": 4701.3979,
+     "price_vs_sma200": 0.9528,
+     "return_30d": -0.0454,
+     "return_7d": -0.068,
+     "revenue_driver": "residential mortgage lending",
+     "signal_rank": 80,
+     "stock_vs_spy_20d": 0.0188,
+     "ticker": "TFSL"
+    },
+    {
+     "market_cap_m": 173.4533,
+     "price_vs_sma200": 0.6962,
+     "return_30d": -0.0675,
+     "return_7d": -0.0753,
+     "revenue_driver": "digital subprime consumer lending",
+     "signal_rank": 733,
+     "stock_vs_spy_20d": 0.115,
+     "ticker": "OPFI"
+    },
+    {
+     "market_cap_m": 4380.0781,
+     "price_vs_sma200": 0.8884,
+     "return_30d": -0.0791,
+     "return_7d": -0.0419,
+     "revenue_driver": "online consumer lending",
+     "signal_rank": 309,
+     "stock_vs_spy_20d": 0.0881,
+     "ticker": "ENVA"
+    },
+    {
+     "market_cap_m": 6352.005,
+     "price_vs_sma200": 0.8603,
+     "return_30d": -0.1513,
+     "return_7d": -0.0954,
+     "revenue_driver": "indirect auto lending",
+     "signal_rank": 925,
+     "stock_vs_spy_20d": -0.0526,
+     "ticker": "CACC"
+    },
+    {
+     "market_cap_m": 7735.3662,
+     "price_vs_sma200": 0.7993,
+     "return_30d": -0.2246,
+     "return_7d": -0.0995,
+     "revenue_driver": "pawn loans",
+     "signal_rank": 1172,
+     "stock_vs_spy_20d": 0.0539,
+     "ticker": "FCFS"
+    },
+    {
+     "market_cap_m": 1566.7631,
+     "price_vs_sma200": 0.823,
+     "return_30d": -0.2256,
+     "return_7d": -0.1254,
+     "revenue_driver": "pawn lending",
+     "signal_rank": 766,
+     "stock_vs_spy_20d": -0.0429,
+     "ticker": "EZPW"
+    },
+    {
+     "market_cap_m": 12744.9801,
+     "price_vs_sma200": 0.6963,
+     "return_30d": -0.2955,
+     "return_7d": -0.0618,
+     "revenue_driver": "private student lending",
+     "signal_rank": 616,
+     "stock_vs_spy_20d": -0.0884,
+     "ticker": "SLM"
+    },
+    {
+     "market_cap_m": 2079.0018,
+     "price_vs_sma200": 0.5562,
+     "return_30d": -0.3502,
+     "return_7d": -0.2383,
+     "revenue_driver": "ai consumer lending",
+     "signal_rank": 276,
+     "stock_vs_spy_20d": -0.2468,
+     "ticker": "UPST"
+    }
+   ],
+   "Licensing, Royalties, Franchise Fees & Intellectual Property Monetization": [
+    {
+     "market_cap_m": 22162.4467,
+     "price_vs_sma200": 1.6797,
+     "return_30d": 1.0397,
+     "return_7d": 0.4736,
+     "revenue_driver": "cpu architecture licenses",
+     "signal_rank": null,
+     "stock_vs_spy_20d": 0.4108,
+     "ticker": "ARM"
+    },
+    {
+     "market_cap_m": 5290.623,
+     "price_vs_sma200": 0.8264,
+     "return_30d": 0.015,
+     "return_7d": -0.0437,
+     "revenue_driver": "antibody therapeutics",
+     "signal_rank": 317,
+     "stock_vs_spy_20d": 0.0518,
+     "ticker": "ANAB"
+    },
+    {
+     "market_cap_m": 15166.142,
+     "price_vs_sma200": 1.232,
+     "return_30d": -0.0755,
+     "return_7d": -0.1819,
+     "revenue_driver": "ALS drug sales",
+     "signal_rank": 1496,
+     "stock_vs_spy_20d": 0.0511,
+     "ticker": "AMLX"
+    },
+    {
+     "market_cap_m": 2737.8782,
+     "price_vs_sma200": 0.7588,
+     "return_30d": -0.1005,
+     "return_7d": -0.2062,
+     "revenue_driver": "dermatology product sales",
+     "signal_rank": 1897,
+     "stock_vs_spy_20d": 0.0133,
+     "ticker": "ACRS"
+    },
+    {
+     "market_cap_m": 4391.4617,
+     "price_vs_sma200": 0.6333,
+     "return_30d": -0.1385,
+     "return_7d": -0.0637,
+     "revenue_driver": "drive-thru coffee beverages",
+     "signal_rank": 1488,
+     "stock_vs_spy_20d": -0.1152,
+     "ticker": "BROS"
+    },
+    {
+     "market_cap_m": 87694.9962,
+     "price_vs_sma200": 0.8568,
+     "return_30d": -0.202,
+     "return_7d": -0.1448,
+     "revenue_driver": "chip design software",
+     "signal_rank": 996,
+     "stock_vs_spy_20d": -0.0156,
+     "ticker": "CDNS"
+    },
+    {
+     "market_cap_m": 1566.7631,
+     "price_vs_sma200": 0.823,
+     "return_30d": -0.2256,
+     "return_7d": -0.1254,
+     "revenue_driver": "pawn lending",
+     "signal_rank": 766,
+     "stock_vs_spy_20d": -0.0429,
+     "ticker": "EZPW"
+    },
+    {
+     "market_cap_m": 695.8861,
+     "price_vs_sma200": 0.6538,
+     "return_30d": -0.2643,
+     "return_7d": -0.1875,
+     "revenue_driver": "network-on-chip IP",
+     "signal_rank": 1830,
+     "stock_vs_spy_20d": -0.0391,
+     "ticker": "AIP"
+    },
+    {
+     "market_cap_m": 3397.0582,
+     "price_vs_sma200": 0.5057,
+     "return_30d": -0.4621,
+     "return_7d": -0.2496,
+     "revenue_driver": "media IP licensing",
+     "signal_rank": 1463,
+     "stock_vs_spy_20d": -0.2995,
+     "ticker": "ADEA"
+    },
+    {
+     "market_cap_m": 106.1314,
+     "price_vs_sma200": 0.3707,
+     "return_30d": -0.5096,
+     "return_7d": -0.3177,
+     "revenue_driver": "semiconductor IP licensing",
+     "signal_rank": 1761,
+     "stock_vs_spy_20d": -0.2114,
+     "ticker": "ATOM"
+    }
+   ],
+   "Payments Processing, Merchant Acquiring & Money Movement": [
+    {
+     "market_cap_m": 11281.1189,
+     "price_vs_sma200": 1.0316,
+     "return_30d": 0.0919,
+     "return_7d": -0.0334,
+     "revenue_driver": "cash logistics",
+     "signal_rank": 1583,
+     "stock_vs_spy_20d": 0.1093,
+     "ticker": "BCO"
+    },
+    {
+     "market_cap_m": 31271.226,
+     "price_vs_sma200": 1.1775,
+     "return_30d": 0.0802,
+     "return_7d": -0.0695,
+     "revenue_driver": "accounts payable automation",
+     "signal_rank": 1176,
+     "stock_vs_spy_20d": 0.147,
+     "ticker": "CPAY"
+    },
+    {
+     "market_cap_m": 6135.7978,
+     "price_vs_sma200": 1.0424,
+     "return_30d": -0.0086,
+     "return_7d": -0.1846,
+     "revenue_driver": "real-time payments software",
+     "signal_rank": 1236,
+     "stock_vs_spy_20d": -0.0028,
+     "ticker": "ACIW"
+    },
+    {
+     "market_cap_m": 720.0125,
+     "price_vs_sma200": 1.0321,
+     "return_30d": -0.0206,
+     "return_7d": -0.056,
+     "revenue_driver": "freight payment processing",
+     "signal_rank": 83,
+     "stock_vs_spy_20d": 0.0485,
+     "ticker": "CASS"
+    },
+    {
+     "market_cap_m": 215762.2234,
+     "price_vs_sma200": 0.9333,
+     "return_30d": -0.021,
+     "return_7d": -0.0663,
+     "revenue_driver": "credit card issuing",
+     "signal_rank": 538,
+     "stock_vs_spy_20d": 0.0579,
+     "ticker": "AXP"
+    },
+    {
+     "market_cap_m": 17726.5802,
+     "price_vs_sma200": 0.979,
+     "return_30d": -0.0318,
+     "return_7d": -0.0699,
+     "revenue_driver": "commercial real estate lending",
+     "signal_rank": 332,
+     "stock_vs_spy_20d": 0.0211,
+     "ticker": "EWBC"
+    },
+    {
+     "market_cap_m": 1657.5538,
+     "price_vs_sma200": 0.8164,
+     "return_30d": -0.0423,
+     "return_7d": -0.0841,
+     "revenue_driver": "payment processing platform",
+     "signal_rank": 226,
+     "stock_vs_spy_20d": -0.0172,
+     "ticker": "CASH"
+    },
+    {
+     "market_cap_m": 1566.7631,
+     "price_vs_sma200": 0.823,
+     "return_30d": -0.2256,
+     "return_7d": -0.1254,
+     "revenue_driver": "pawn lending",
+     "signal_rank": 766,
+     "stock_vs_spy_20d": -0.0429,
+     "ticker": "EZPW"
+    },
+    {
+     "market_cap_m": 20157.0266,
+     "price_vs_sma200": 0.8135,
+     "return_30d": -0.3305,
+     "return_7d": -0.2036,
+     "revenue_driver": "buy now pay later financing",
+     "signal_rank": 247,
+     "stock_vs_spy_20d": -0.1343,
+     "ticker": "AFRM"
+    },
+    {
+     "market_cap_m": 259.9113,
+     "price_vs_sma200": 1.0536,
+     "return_30d": -0.4523,
+     "return_7d": -0.346,
+     "revenue_driver": "government payment processing",
+     "signal_rank": null,
+     "stock_vs_spy_20d": 0.1027,
+     "ticker": "CNDT"
+    }
+   ]
+  }
+ },
+ "predictions": {
+  "badge_count": 0,
+  "confidence_score": 0.3156,
+  "conviction_label": "HIGH CONVICTION",
+  "data_quality_flags": [],
+  "ev_score": 0.2279,
+  "is_diamond": false,
+  "passes_tradability_filter": true,
+  "quality_label": "HIGH",
+  "quantiles": {
+   "downside_q10": -0.2047,
+   "downside_q25": -0.0913,
+   "downside_q50": -0.0407,
+   "downside_q75": 0.0029,
+   "downside_q90": 0.0158,
+   "path_volatility": 0.035,
+   "risk_reward": 6.5326,
+   "uncertainty": 0.5404,
+   "upside_q10": 0.0495,
+   "upside_q25": 0.1339,
+   "upside_q50": 0.2661,
+   "upside_q75": 0.4178,
+   "upside_q90": 0.5899
+  },
+  "rank": 766,
+  "rank_score": 0.148,
+  "tradability_filter_reasons": []
+ },
+ "profile": {
+  "_local": {
+   "dividend_yield": 0.0,
+   "eps_growth_yoy": 0.4062,
+   "pe_ratio": 13.0676,
+   "revenue_growth_yoy": 0.3299,
+   "roe": 0.1408
+  },
+  "beta": 0.757,
+  "betaTTM": null,
+  "ceo": "Lachlan Given",
+  "companyName": "EZCORP, Inc.",
+  "country": "US",
+  "debtToEquityTTM": null,
+  "description": "EZCORP, Inc. operates primarily by offering collateralized loans, commonly known as pawn loans, to individuals in both the United States and various Latin American countries. These loans are secured by a wide array of personal items, including but not limited to jewelry, consumer electronics, tools, sporting equipment, and musical instruments. Beyond its lending activities, the company also engages in the retail sale of merchandise. This inventory largely comprises items that were once collateral for unredeemed pawn loans, as well as pre-owned goods directly acquired from customers. To further support its clientele, EZCORP provides online platforms, Lana and EZ+, designed to facilitate the management of pawn loans. As of September 30, 2021, EZCORP, Inc. maintained a substantial physical presence, with 516 company-owned and operated pawn shops in the U.S., 508 in Mexico, and an additional 124 locations spread across Guatemala, El Salvador, and Honduras. The company was founded in 1989 and has its corporate headquarters situated in Austin, Texas.",
+  "dividendYielTTM": null,
+  "enterpriseValueOverEBITDATTM": null,
+  "exchangeShortName": "NASDAQ",
+  "fullTimeEmployees": "8500",
+  "industry": "Financial - Credit Services",
+  "ipoDate": "1991-08-27",
+  "latest_earnings_date": "2026-11-12",
+  "marketCapTTM": null,
+  "mktCap": 1447211700,
+  "peRatioTTM": null,
+  "price": 24.75,
+  "priceToSalesRatioTTM": null,
+  "returnOnEquityTTM": 0.1459,
+  "revenue_description": "EZCORP operates pawn lending and secondhand retail businesses. Revenue is driven by comparable store sales and e-commerce channel growth, with inventory management and private label mix as margin levers.",
+  "revenue_description_themes": [
+   "pawn loan portfolio growth",
+   "digital pawn channel expansion",
+   "merchandise margin optimization"
+  ],
+  "revenue_taxonomy": [
+   {
+    "bucket": "Lending, Cards & Consumer Finance",
+    "matched_tags": [
+     "pawn lending"
+    ],
+    "path": "Financials › Banking Lending & Payments › Lending, Cards & Consumer Finance",
+    "sector": "Financials",
+    "segment": "Banking Lending & Payments"
+   },
+   {
+    "bucket": "Licensing, Royalties, Franchise Fees & Intellectual Property Monetization",
+    "matched_tags": [
+     "collateral merchandise sales"
+    ],
+    "path": "Media, Advertising & Information › Entertainment & Ip › Licensing, Royalties, Franchise Fees & Intellectual Property Monetization",
+    "sector": "Media, Advertising & Information",
+    "segment": "Entertainment & Ip"
+   },
+   {
+    "bucket": "Payments Processing, Merchant Acquiring & Money Movement",
+    "matched_tags": [
+     "check cashing services"
+    ],
+    "path": "Financials › Banking Lending & Payments › Payments Processing, Merchant Acquiring & Money Movement",
+    "sector": "Financials",
+    "segment": "Banking Lending & Payments"
+   }
+  ],
+  "revenue_themes": [
+   "pawn lending",
+   "collateral merchandise sales",
+   "check cashing services"
+  ],
+  "sector": "Financial Services",
+  "website": "https://www.ezcorp.com"
+ },
+ "report": {
+  "display_rank": null,
+  "lane": "wait",
+  "lane_rank": 19,
+  "setup_label": "countertrend",
+  "why_now": "Structural analogs leads the readiness mix (+13.0); countertrend move"
+ },
+ "scorecard": {
+  "headline": {
+   "avg_universe_pct": 63,
+   "label": "above_average",
+   "metric_count": 8
+  },
+  "metrics": {
+   "debt_to_equity": {
+    "direction": "lower",
+    "label": "D/E Ratio",
+    "sector": "Consumer Disc.",
+    "sector_n": 241,
+    "sector_pct": 49,
+    "universe_n": 1963,
+    "universe_pct": 37,
+    "value": 0.6919
+   },
+   "eps_growth_yoy": {
+    "direction": "higher",
+    "label": "EPS Growth",
+    "sector": "Consumer Disc.",
+    "sector_n": 245,
+    "sector_pct": 65,
+    "universe_n": 1782,
+    "universe_pct": 66,
+    "value": 0.4062
+   },
+   "gross_margin": {
+    "direction": "higher",
+    "label": "Gross Margin",
+    "sector": "Consumer Disc.",
+    "sector_n": 246,
+    "sector_pct": 87,
+    "universe_n": 1907,
+    "universe_pct": 60,
+    "value": 0.5812
+   },
+   "operating_margin": {
+    "direction": "higher",
+    "label": "Op. Margin",
+    "sector": "Consumer Disc.",
+    "sector_n": 246,
+    "sector_pct": 74,
+    "universe_n": 1907,
+    "universe_pct": 60,
+    "value": 0.1414
+   },
+   "pe_ratio": {
+    "direction": "lower",
+    "label": "P/E",
+    "sector": "Consumer Disc.",
+    "sector_n": 204,
+    "sector_pct": 76,
+    "universe_n": 1415,
+    "universe_pct": 73,
+    "value": 13.0676
+   },
+   "revenue_growth_yoy": {
+    "direction": "higher",
+    "label": "Rev Growth",
+    "sector": "Consumer Disc.",
+    "sector_n": 245,
+    "sector_pct": 95,
+    "universe_n": 1734,
+    "universe_pct": 87,
+    "value": 0.3299
+   },
+   "roe": {
+    "direction": "higher",
+    "label": "ROE",
+    "sector": "Consumer Disc.",
+    "sector_n": 246,
+    "sector_pct": 55,
+    "universe_n": 1981,
+    "universe_pct": 64,
+    "value": 0.1408
+   },
+   "roic": {
+    "direction": "higher",
+    "label": "ROIC",
+    "sector": "Consumer Disc.",
+    "sector_n": 240,
+    "sector_pct": 42,
+    "universe_n": 1946,
+    "universe_pct": 55,
+    "value": 0.0173
+   }
+  }
+ },
+ "signal_rank": 766,
+ "structural_analogs": {
+  "gp_core_pct": 99.8,
+  "gp_core_ratio": 4.1158,
+  "matches": [
+   {
+    "actual_downside": -0.0788,
+    "actual_return": 0.1563,
+    "actual_upside": 0.1563,
+    "days_in_region": 120,
+    "end_date": "2011-09-15",
+    "end_reason": "reversal",
+    "seq_len": 120,
+    "similarity": 0.6052,
+    "start_date": "2011-05-12",
+    "ticker": "ON",
+    "total_distance": 0.2511,
+    "trigger_date": "2011-06-17",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": -0.0185,
+    "actual_return": 0.3233,
+    "actual_upside": 0.3233,
+    "days_in_region": 153,
+    "end_date": "2007-12-24",
+    "end_reason": "reversal",
+    "seq_len": 153,
+    "similarity": 0.5991,
+    "start_date": "2007-07-12",
+    "ticker": "CTV",
+    "total_distance": 0.2561,
+    "trigger_date": "2007-11-01",
+    "trigger_type": "severe_drawdown"
+   },
+   {
+    "actual_downside": -0.0083,
+    "actual_return": -0.006,
+    "actual_upside": 0.1943,
+    "days_in_region": 133,
+    "end_date": "2004-07-26",
+    "end_reason": "reversal",
+    "seq_len": 133,
+    "similarity": 0.5921,
+    "start_date": "2004-02-09",
+    "ticker": "BJRI",
+    "total_distance": 0.2621,
+    "trigger_date": "2004-04-06",
+    "trigger_type": "runup"
+   },
+   {
+    "actual_downside": -0.0774,
+    "actual_return": 0.0585,
+    "actual_upside": 0.0585,
+    "days_in_region": 110,
+    "end_date": "2022-03-22",
+    "end_reason": "reversal",
+    "seq_len": 110,
+    "similarity": 0.59,
+    "start_date": "2021-11-18",
+    "ticker": "HLIO",
+    "total_distance": 0.2638,
+    "trigger_date": "2022-01-19",
+    "trigger_type": "severe_drawdown"
+   },
+   {
+    "actual_downside": -0.1135,
+    "actual_return": 0.3088,
+    "actual_upside": 0.3088,
+    "days_in_region": 140,
+    "end_date": "2014-07-24",
+    "end_reason": "reversal",
+    "seq_len": 140,
+    "similarity": 0.5887,
+    "start_date": "2013-12-02",
+    "ticker": "PRLB",
+    "total_distance": 0.2649,
+    "trigger_date": "2013-12-30",
+    "trigger_type": "compression"
+   },
+   {
+    "actual_downside": -0.0294,
+    "actual_return": 0.1504,
+    "actual_upside": 0.1504,
+    "days_in_region": 170,
+    "end_date": "2011-09-15",
+    "end_reason": "reversal",
+    "seq_len": 170,
+    "similarity": 0.5887,
+    "start_date": "2011-03-03",
+    "ticker": "ADTN",
+    "total_distance": 0.2649,
+    "trigger_date": "2011-07-15",
+    "trigger_type": "severe_drawdown"
+   },
+   {
+    "actual_downside": -0.0066,
+    "actual_return": 0.2606,
+    "actual_upside": 0.2606,
+    "days_in_region": 156,
+    "end_date": "2021-11-18",
+    "end_reason": "reversal",
+    "seq_len": 156,
+    "similarity": 0.5806,
+    "start_date": "2021-05-17",
+    "ticker": "FL",
+    "total_distance": 0.2719,
+    "trigger_date": "2021-08-03",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": -0.0095,
+    "actual_return": 0.1177,
+    "actual_upside": 0.1177,
+    "days_in_region": 161,
+    "end_date": "2018-12-12",
+    "end_reason": "reversal",
+    "seq_len": 161,
+    "similarity": 0.5805,
+    "start_date": "2018-06-04",
+    "ticker": "DK",
+    "total_distance": 0.272,
+    "trigger_date": "2018-09-20",
+    "trigger_type": "severe_drawdown"
+   },
+   {
+    "actual_downside": -0.0132,
+    "actual_return": 0.1506,
+    "actual_upside": 0.1506,
+    "days_in_region": 149,
+    "end_date": "2021-11-12",
+    "end_reason": "reversal",
+    "seq_len": 149,
+    "similarity": 0.5773,
+    "start_date": "2021-03-12",
+    "ticker": "LZB",
+    "total_distance": 0.2747,
+    "trigger_date": "2021-07-19",
+    "trigger_type": "severe_drawdown"
+   },
+   {
+    "actual_downside": -0.0056,
+    "actual_return": 0.1982,
+    "actual_upside": 0.1982,
+    "days_in_region": 154,
+    "end_date": "2006-09-05",
+    "end_reason": "reversal",
+    "seq_len": 154,
+    "similarity": 0.5771,
+    "start_date": "2006-01-30",
+    "ticker": "NOV",
+    "total_distance": 0.2749,
+    "trigger_date": "2006-05-26",
+    "trigger_type": "shallow_drawdown"
+   }
+  ],
+  "panel": {
+   "edge": 0.2026,
+   "hit_hi": 0.943,
+   "hit_lo": 0.836,
+   "hit_rate": 0.902,
+   "median_final": 0.1915,
+   "median_pain": 0.0322,
+   "n": 51,
+   "n_eff": 51.0,
+   "p25_final": 0.1177,
+   "p_pain_gt5": 0.392,
+   "return_to_pain": 3.673
+  },
+  "stats": {
+   "avg_similarity": 0.54,
+   "avg_trough": 0.0844,
+   "avg_upside": 0.2045,
+   "median_pain": 0.0554,
+   "median_return": 0.1466,
+   "n_matches": 200,
+   "p25_return": -0.0066,
+   "p_pain_gt5": 0.51,
+   "return_to_pain": 1.944,
+   "top5_avg_trough": 0.0593,
+   "top5_avg_upside": 0.2082,
+   "top_similarity": 0.605,
+   "win_rate": 0.745
+  },
+  "total_matches": 200
+ },
+ "ticker": "EZPW",
+ "trending": {
+  "acceleration": 0.0006,
+  "avg_vol_20d": 707803.7865,
+  "base_high_120": 35.59,
+  "breakout_confirmed": 0,
+  "close": 32.64,
+  "momentum_score": 0.6879,
+  "momentum_start": "2026-08-12",
+  "range_20": 0.1244,
+  "range_50": 0.2843,
+  "rank": 178,
+  "rank_down": null,
+  "rank_up": 117,
+  "ret_120": 0.0667,
+  "ret_20": 0.0105,
+  "ret_60": 0.0171,
+  "rundown_score": 0.0877,
+  "score_date": "2026-10-12",
+  "slope_20": 0.0013,
+  "slope_60": 0.0007,
+  "stage": "sustained",
+  "stage_label": "Trending",
+  "ticker": "EZPW",
+  "total_score": 0.6486,
+  "trend_ratio": 1.1453,
+  "vcp_detected": 1,
+  "vcp_score": 0.6223
+ }
+}

@@ -1,0 +1,1127 @@
+{
+ "date": "2026-11-20",
+ "detected_regions": {
+  "primary": {
+   "days_in_region": 178,
+   "region_start": "2026-06-05",
+   "trigger_date": "2026-11-10",
+   "trigger_type": "runup"
+  },
+  "secondary": [
+   {
+    "confidence_score": 0.8525,
+    "downside_q50": -0.0534,
+    "ev_score": 0.1187,
+    "region_start": "2026-04-14",
+    "seq_len": 200,
+    "trigger_date": "2026-09-17",
+    "trigger_type": "drawdown",
+    "upside_q25": 0.0817,
+    "upside_q50": 0.1633,
+    "upside_q75": 0.2735
+   },
+   {
+    "confidence_score": 0.7411,
+    "downside_q50": -0.0615,
+    "ev_score": 0.1134,
+    "region_start": "2025-12-01",
+    "seq_len": 200,
+    "trigger_date": "2025-12-29",
+    "trigger_type": "compression",
+    "upside_q25": 0.0818,
+    "upside_q50": 0.1672,
+    "upside_q75": 0.2772
+   }
+  ]
+ },
+ "feature_attribution": {
+  "macro_driver_count": 15,
+  "risk_flags": [],
+  "top_drivers": [
+   {
+    "direction": "negative",
+    "feature": "dollar_volume",
+    "feature_value": 77587512.0,
+    "importance": 0.0002,
+    "importance_pct": 0.2743,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "negative",
+    "feature": "price_vs_sma200",
+    "feature_value": 1.2587,
+    "importance": 0.0002,
+    "importance_pct": 0.2383,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "negative",
+    "feature": "williams_14",
+    "feature_value": -23.236,
+    "importance": 0.0001,
+    "importance_pct": 0.1824,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "negative",
+    "feature": "price_vs_high_52w",
+    "feature_value": 0.9748,
+    "importance": 0.0001,
+    "importance_pct": 0.1704,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "positive",
+    "feature": "sector_return_60d",
+    "feature_value": -0.1597,
+    "importance": 0.0001,
+    "importance_pct": 0.1345,
+    "method": "integrated_gradients"
+   }
+  ]
+ },
+ "fundamentals": {
+  "accrual": 0.0819,
+  "adx_14": 78.438,
+  "altman_z_score": 2.0957,
+  "amihud_illiquidity": 0.0002,
+  "avg_volume": 1455373.2687,
+  "beta_252d": 0.3216,
+  "book_value_per_share": 8.9593,
+  "correlation_spy_60d": 0.1874,
+  "current_liabilities": 1040.0,
+  "current_ratio": 1.2283,
+  "daily_earnings_yield": 0.0554,
+  "daily_fcf_yield": -0.001,
+  "daily_pb": 5.1368,
+  "daily_pe": 18.0637,
+  "daily_ps": 2.0367,
+  "days_since_52w_high": 2.0,
+  "debt_ebitda": 2.9218,
+  "debt_to_equity": 1.5966,
+  "dividend_yield": 0.0007,
+  "dollar_volume_20d_avg": 74887441.6718,
+  "earnings_quality": 1.4424,
+  "ebitda_growth_yoy": -0.0385,
+  "enterprise_value": 7891.635,
+  "eps_basic": 0.73,
+  "eps_cagr_3y": 0.0411,
+  "eps_cagr_5y": -0.0102,
+  "eps_diluted": 0.73,
+  "eps_growth_accel": -0.0229,
+  "eps_growth_qoq": 2.65,
+  "eps_growth_yoy": -0.0989,
+  "eps_growth_yoy_q2": -0.076,
+  "eps_growth_yoy_q3": 0.1585,
+  "eps_growth_yoy_q4": 0.0036,
+  "eps_growth_yoy_q5": 0.038,
+  "eps_growth_yoy_q6": 0.0038,
+  "eps_growth_yoy_q7": -0.1214,
+  "eps_growth_yoy_q8": 0.1311,
+  "eps_history_8q": [
+   0.82,
+   0.59,
+   0.62,
+   0.7,
+   0.85,
+   0.66,
+   0.2,
+   0.73
+  ],
+  "eps_ttm": 2.3722,
+  "ev_to_ebitda": 11.9317,
+  "ev_to_fcf": 64.6855,
+  "ev_to_sales": 10.7092,
+  "fcf_growth_yoy": -0.3588,
+  "fcf_margin": 0.1656,
+  "fcf_per_share": 0.903,
+  "gross_margin": 0.6029,
+  "gross_margin_change_yoy": -0.0142,
+  "gross_margin_history": [
+   0.4892,
+   0.4897,
+   0.4842,
+   0.6083,
+   0.6057,
+   0.6029
+  ],
+  "inc_roic": 2.2445,
+  "interest_coverage": 20.3508,
+  "is_pre_revenue": false,
+  "margin_vs_sector_median": null,
+  "market_cap_ratio": 6217.535,
+  "net_income": 99.0,
+  "net_margin": 0.1128,
+  "operating_income": 158.4,
+  "operating_margin": 0.1941,
+  "operating_margin_change_yoy": 0.0248,
+  "pb_ratio": 4.7827,
+  "pe_percentile_1y": 0.0397,
+  "pe_ratio": 18.0637,
+  "peg_trailing": -1.5394,
+  "piotroski_f_score": 4.0,
+  "price_vs_high_52w": 0.9747,
+  "price_vs_sma200": 1.2587,
+  "ps_percentile_1y": 0.0397,
+  "ps_ratio": 1.8965,
+  "quarter_labels_8q": [
+   "Q4 '24",
+   "Q1 '25",
+   "Q2 '25",
+   "Q3 '25",
+   "Q4 '25",
+   "Q1 '26",
+   "Q2 '26",
+   "Q3 '26"
+  ],
+  "quarterly_eps_growth_yoy": 0.0429,
+  "quarterly_eps_growth_yoy_8q": [
+   0.2059,
+   -0.3295,
+   0.3778,
+   0.1667,
+   0.0366,
+   0.1186,
+   -0.6774,
+   0.0429
+  ],
+  "quarterly_revenue_growth_yoy": -0.0207,
+  "quarterly_revenue_growth_yoy_8q": [
+   -0.0155,
+   -0.0194,
+   0.1107,
+   0.0033,
+   0.0408,
+   0.0128,
+   -0.0217,
+   -0.0207
+  ],
+  "revenue_cagr_3y": -0.0133,
+  "revenue_cagr_5y": 0.0025,
+  "revenue_growth_accel": -0.006,
+  "revenue_growth_qoq": -0.0262,
+  "revenue_growth_yoy": 0.0029,
+  "revenue_growth_yoy_q2": 0.0088,
+  "revenue_growth_yoy_q3": 0.0408,
+  "revenue_growth_yoy_q4": 0.0324,
+  "revenue_growth_yoy_q5": 0.0176,
+  "revenue_growth_yoy_q6": 0.0116,
+  "revenue_growth_yoy_q7": -0.0359,
+  "revenue_growth_yoy_q8": -0.0375,
+  "revenue_history_8q": [
+   776.8,
+   741.1,
+   773.5,
+   752.5,
+   808.5,
+   750.6,
+   756.7,
+   736.9
+  ],
+  "revenue_per_share": 5.4545,
+  "roa": 0.0849,
+  "roce": 0.1959,
+  "roe": 0.2865,
+  "roic": 0.1132,
+  "rsi_14": 61.5356,
+  "sector_momentum": 0.0921,
+  "share_dilution_1y": 0.0,
+  "stock_vs_sector_20d": 0.3147,
+  "stock_vs_spy_20d": 0.3418,
+  "total_assets": 4081.1,
+  "vol_regime": 1.2578,
+  "volatility_20d": 0.0236,
+  "volatility_60d": 0.0188,
+  "w52_high": 48.2,
+  "w52_low": 27.2525
+ },
+ "market_characters": [
+  {
+   "id": "g2",
+   "name": "Recent Momentum"
+  }
+ ],
+ "model_analogs": {
+  "matches": [
+   {
+    "actual_downside": -0.0284,
+    "actual_return": 0.4154,
+    "actual_upside": 0.8774,
+    "days_in_region": 386,
+    "end_date": "2006-05-24",
+    "end_reason": "reversal",
+    "similarity": 0.945,
+    "start_date": "2005-05-03",
+    "ticker": "TLK",
+    "trigger_date": "2005-10-21",
+    "trigger_type": "shallow_runup"
+   },
+   {
+    "actual_downside": 0.0,
+    "actual_return": 0.1207,
+    "actual_upside": 0.3073,
+    "days_in_region": 141,
+    "end_date": "2006-02-23",
+    "end_reason": "reversal",
+    "similarity": 0.9425,
+    "start_date": "2005-10-05",
+    "ticker": "ARJ",
+    "trigger_date": "2005-11-02",
+    "trigger_type": "shallow_runup"
+   },
+   {
+    "actual_downside": 0.0,
+    "actual_return": 0.1207,
+    "actual_upside": 0.3922,
+    "days_in_region": 400,
+    "end_date": "2006-08-11",
+    "end_reason": "reversal",
+    "similarity": 0.9382,
+    "start_date": "2005-07-07",
+    "ticker": "COLB",
+    "trigger_date": "2005-10-27",
+    "trigger_type": "runup"
+   },
+   {
+    "actual_downside": -0.0099,
+    "actual_return": -0.0099,
+    "actual_upside": 0.1558,
+    "days_in_region": 231,
+    "end_date": "2006-02-13",
+    "end_reason": "reversal",
+    "similarity": 0.9379,
+    "start_date": "2005-06-27",
+    "ticker": "TCBI",
+    "trigger_date": "2005-10-21",
+    "trigger_type": "shallow_runup"
+   },
+   {
+    "actual_downside": 0.0,
+    "actual_return": 0.1137,
+    "actual_upside": 0.1137,
+    "days_in_region": 196,
+    "end_date": "2006-02-01",
+    "end_reason": "reversal",
+    "similarity": 0.937,
+    "start_date": "2005-07-20",
+    "ticker": "CEC",
+    "trigger_date": "2005-08-08",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": 0.0,
+    "actual_return": 0.0964,
+    "actual_upside": 0.0964,
+    "days_in_region": 206,
+    "end_date": "2006-03-10",
+    "end_reason": "data_end",
+    "similarity": 0.9366,
+    "start_date": "2005-08-16",
+    "ticker": "SRNA",
+    "trigger_date": "2005-09-21",
+    "trigger_type": "shallow_runup"
+   },
+   {
+    "actual_downside": -0.0264,
+    "actual_return": 0.0529,
+    "actual_upside": 0.0585,
+    "days_in_region": 124,
+    "end_date": "2006-01-31",
+    "end_reason": "data_end",
+    "similarity": 0.9355,
+    "start_date": "2005-09-29",
+    "ticker": "EASI",
+    "trigger_date": "2005-10-26",
+    "trigger_type": "compression"
+   },
+   {
+    "actual_downside": -0.005,
+    "actual_return": 0.263,
+    "actual_upside": 0.263,
+    "days_in_region": 202,
+    "end_date": "2006-02-16",
+    "end_reason": "reversal",
+    "similarity": 0.9354,
+    "start_date": "2005-07-29",
+    "ticker": "GGG",
+    "trigger_date": "2005-10-25",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": -0.0088,
+    "actual_return": 0.3814,
+    "actual_upside": 0.5459,
+    "days_in_region": 451,
+    "end_date": "2013-08-30",
+    "end_reason": "reversal",
+    "similarity": 0.9351,
+    "start_date": "2012-06-05",
+    "ticker": "LABL",
+    "trigger_date": "2012-11-26",
+    "trigger_type": "runup"
+   },
+   {
+    "actual_downside": 0.0,
+    "actual_return": 0.4854,
+    "actual_upside": 0.4854,
+    "days_in_region": 184,
+    "end_date": "2006-02-01",
+    "end_reason": "reversal",
+    "similarity": 0.9344,
+    "start_date": "2005-08-01",
+    "ticker": "IVZ",
+    "trigger_date": "2005-08-08",
+    "trigger_type": "shallow_drawdown"
+   }
+  ],
+  "stats": {
+   "avg_max_drawdown": 0.0485,
+   "avg_similarity": 0.932,
+   "avg_trough": 0.0485,
+   "avg_upside": 0.2474,
+   "best_return": 0.7391,
+   "downside_range": [
+    -0.3374,
+    0.0
+   ],
+   "median_return": 0.1018,
+   "n_matches": 50,
+   "outcome_agreement": true,
+   "return_p25": -0.0085,
+   "return_p5": -0.1754,
+   "return_p75": 0.26,
+   "return_p95": 0.4661,
+   "sim_weighted_win_rate": 0.72,
+   "top5_avg_trough": 0.0077,
+   "top5_avg_upside": 0.3693,
+   "top_similarity": 0.945,
+   "upside_range": [
+    0.004,
+    0.9509
+   ],
+   "win_rate": 0.72,
+   "worst_return": -0.3374,
+   "years_span": 5
+  },
+  "total_matches": 50
+ },
+ "peer_group": {
+  "buckets": [
+   "Machinery, Heavy Equipment & Tools",
+   "Mobility Platforms, Fleet Services & Ride-Hailing",
+   "Refining, Fuel Marketing & Wholesale Energy Products"
+  ],
+  "groups": {
+   "Machinery, Heavy Equipment & Tools": [
+    {
+     "market_cap_m": 5789.49,
+     "price_vs_sma200": 1.2587,
+     "return_30d": 0.3291,
+     "return_7d": -0.0212,
+     "revenue_driver": "fuel dispenser technology",
+     "signal_rank": 799,
+     "stock_vs_spy_20d": 0.3418,
+     "ticker": "VNT"
+    },
+    {
+     "market_cap_m": 594.095,
+     "price_vs_sma200": 0.9062,
+     "return_30d": 0.0913,
+     "return_7d": -0.1999,
+     "revenue_driver": "industrial hoists and cranes",
+     "signal_rank": null,
+     "stock_vs_spy_20d": -0.0845,
+     "ticker": "CMCO"
+    },
+    {
+     "market_cap_m": 808.8954,
+     "price_vs_sma200": 0.6936,
+     "return_30d": -0.1069,
+     "return_7d": -0.0776,
+     "revenue_driver": "asphalt and concrete production equipment",
+     "signal_rank": 39,
+     "stock_vs_spy_20d": -0.0062,
+     "ticker": "ASTE"
+    },
+    {
+     "market_cap_m": 7285.0182,
+     "price_vs_sma200": 0.7742,
+     "return_30d": -0.1276,
+     "return_7d": -0.0152,
+     "revenue_driver": "rooftop HVAC units",
+     "signal_rank": null,
+     "stock_vs_spy_20d": -0.1157,
+     "ticker": "AAON"
+    },
+    {
+     "market_cap_m": 3942.2569,
+     "price_vs_sma200": 0.8584,
+     "return_30d": -0.1299,
+     "return_7d": -0.0988,
+     "revenue_driver": "industrial labeling products",
+     "signal_rank": 301,
+     "stock_vs_spy_20d": 0.0048,
+     "ticker": "BRC"
+    },
+    {
+     "market_cap_m": 1746.0138,
+     "price_vs_sma200": 0.7639,
+     "return_30d": -0.175,
+     "return_7d": -0.1126,
+     "revenue_driver": "vegetation management equipment",
+     "signal_rank": 167,
+     "stock_vs_spy_20d": -0.0451,
+     "ticker": "ALG"
+    },
+    {
+     "market_cap_m": 58219.666,
+     "price_vs_sma200": 0.7508,
+     "return_30d": -0.209,
+     "return_7d": -0.0923,
+     "revenue_driver": "oilfield services",
+     "signal_rank": 438,
+     "stock_vs_spy_20d": -0.1024,
+     "ticker": "BKR"
+    },
+    {
+     "market_cap_m": 1684.276,
+     "price_vs_sma200": 0.3202,
+     "return_30d": -0.3498,
+     "return_7d": -0.2665,
+     "revenue_driver": "industrial boiler systems",
+     "signal_rank": 1849,
+     "stock_vs_spy_20d": -0.0499,
+     "ticker": "BW"
+    },
+    {
+     "market_cap_m": 302965.5722,
+     "price_vs_sma200": 0.635,
+     "return_30d": -0.3622,
+     "return_7d": -0.1514,
+     "revenue_driver": "heavy construction and mining equipment",
+     "signal_rank": 732,
+     "stock_vs_spy_20d": -0.1622,
+     "ticker": "CAT"
+    },
+    {
+     "market_cap_m": 51205.4878,
+     "price_vs_sma200": 0.7093,
+     "return_30d": -1.0,
+     "return_7d": -1.0,
+     "revenue_driver": "industrial laser systems",
+     "signal_rank": null,
+     "stock_vs_spy_20d": -0.355,
+     "ticker": "COHR"
+    }
+   ],
+   "Mobility Platforms, Fleet Services & Ride-Hailing": [
+    {
+     "market_cap_m": 1249.9615,
+     "price_vs_sma200": 1.5002,
+     "return_30d": 0.5672,
+     "return_7d": 0.0057,
+     "revenue_driver": "digital wholesale vehicle auctions",
+     "signal_rank": null,
+     "stock_vs_spy_20d": -0.0207,
+     "ticker": "ACVA"
+    },
+    {
+     "market_cap_m": 5789.49,
+     "price_vs_sma200": 1.2587,
+     "return_30d": 0.3291,
+     "return_7d": -0.0212,
+     "revenue_driver": "fuel dispenser technology",
+     "signal_rank": 799,
+     "stock_vs_spy_20d": 0.3418,
+     "ticker": "VNT"
+    },
+    {
+     "market_cap_m": 26502.8553,
+     "price_vs_sma200": 0.8089,
+     "return_30d": 0.1738,
+     "return_7d": -0.023,
+     "revenue_driver": "airport vehicle rental",
+     "signal_rank": 1880,
+     "stock_vs_spy_20d": 0.3222,
+     "ticker": "CAR"
+    },
+    {
+     "market_cap_m": 13879.94,
+     "price_vs_sma200": 1.0687,
+     "return_30d": -0.0976,
+     "return_7d": -0.1123,
+     "revenue_driver": "fleet telematics software",
+     "signal_rank": 1497,
+     "stock_vs_spy_20d": -0.0706,
+     "ticker": "IOT"
+    },
+    {
+     "market_cap_m": 430.1237,
+     "price_vs_sma200": 0.6311,
+     "return_30d": -0.219,
+     "return_7d": -0.2429,
+     "revenue_driver": "retail fuel sales",
+     "signal_rank": null,
+     "stock_vs_spy_20d": -0.0092,
+     "ticker": "ARKO"
+    },
+    {
+     "market_cap_m": 373.3718,
+     "price_vs_sma200": 0.5658,
+     "return_30d": -0.3056,
+     "return_7d": -0.3004,
+     "revenue_driver": "fleet management telematics",
+     "signal_rank": 1539,
+     "stock_vs_spy_20d": -0.2004,
+     "ticker": "AIOT"
+    },
+    {
+     "market_cap_m": 546.8388,
+     "price_vs_sma200": 0.4644,
+     "return_30d": -0.3084,
+     "return_7d": -0.4016,
+     "revenue_driver": "eVTOL aircraft development",
+     "signal_rank": 1654,
+     "stock_vs_spy_20d": -0.2011,
+     "ticker": "EVEX"
+    },
+    {
+     "market_cap_m": 8126.6176,
+     "price_vs_sma200": 0.6244,
+     "return_30d": -0.3988,
+     "return_7d": -0.238,
+     "revenue_driver": "autonomous trucking software",
+     "signal_rank": 1227,
+     "stock_vs_spy_20d": -0.1766,
+     "ticker": "AUR"
+    },
+    {
+     "market_cap_m": 3523.7675,
+     "price_vs_sma200": 0.5256,
+     "return_30d": -0.4153,
+     "return_7d": -0.4033,
+     "revenue_driver": "eVTOL aircraft",
+     "signal_rank": 1912,
+     "stock_vs_spy_20d": -0.1636,
+     "ticker": "ACHR"
+    },
+    {
+     "market_cap_m": 2788.7574,
+     "price_vs_sma200": 0.3181,
+     "return_30d": -0.4219,
+     "return_7d": -0.3232,
+     "revenue_driver": "vehicle rentals",
+     "signal_rank": 1919,
+     "stock_vs_spy_20d": -0.3612,
+     "ticker": "HTZ"
+    }
+   ],
+   "Refining, Fuel Marketing & Wholesale Energy Products": [
+    {
+     "market_cap_m": 5789.49,
+     "price_vs_sma200": 1.2587,
+     "return_30d": 0.3291,
+     "return_7d": -0.0212,
+     "revenue_driver": "fuel dispenser technology",
+     "signal_rank": 799,
+     "stock_vs_spy_20d": 0.3418,
+     "ticker": "VNT"
+    },
+    {
+     "market_cap_m": 336.8095,
+     "price_vs_sma200": 0.9555,
+     "return_30d": 0.2197,
+     "return_7d": -0.1154,
+     "revenue_driver": "sustainable aviation fuel",
+     "signal_rank": 1622,
+     "stock_vs_spy_20d": 0.4826,
+     "ticker": "GEVO"
+    },
+    {
+     "market_cap_m": 2347.3296,
+     "price_vs_sma200": 0.9587,
+     "return_30d": 0.1852,
+     "return_7d": -0.0491,
+     "revenue_driver": "fuel delivery systems",
+     "signal_rank": 1301,
+     "stock_vs_spy_20d": 0.2904,
+     "ticker": "PHIN"
+    },
+    {
+     "market_cap_m": 27230.8162,
+     "price_vs_sma200": 0.9252,
+     "return_30d": 0.0694,
+     "return_7d": -0.0322,
+     "revenue_driver": "convenience stores",
+     "signal_rank": 1581,
+     "stock_vs_spy_20d": 0.0831,
+     "ticker": "CASY"
+    },
+    {
+     "market_cap_m": 13691.9347,
+     "price_vs_sma200": 1.0939,
+     "return_30d": 0.0615,
+     "return_7d": -0.0548,
+     "revenue_driver": "membership fees",
+     "signal_rank": 1295,
+     "stock_vs_spy_20d": 0.0833,
+     "ticker": "BJ"
+    },
+    {
+     "market_cap_m": 2067.3504,
+     "price_vs_sma200": 1.158,
+     "return_30d": 0.0011,
+     "return_7d": 0.0376,
+     "revenue_driver": "aviation fuel distribution",
+     "signal_rank": 412,
+     "stock_vs_spy_20d": 0.0922,
+     "ticker": "WKC"
+    },
+    {
+     "market_cap_m": 9653.2555,
+     "price_vs_sma200": 0.9697,
+     "return_30d": -0.041,
+     "return_7d": -0.0386,
+     "revenue_driver": "motor fuel retailing",
+     "signal_rank": 1334,
+     "stock_vs_spy_20d": 0.0438,
+     "ticker": "MUSA"
+    },
+    {
+     "market_cap_m": 867.7772,
+     "price_vs_sma200": 0.6831,
+     "return_30d": -0.2027,
+     "return_7d": -0.2266,
+     "revenue_driver": "ethanol production",
+     "signal_rank": 1494,
+     "stock_vs_spy_20d": -0.0826,
+     "ticker": "ALTO"
+    },
+    {
+     "market_cap_m": 430.1237,
+     "price_vs_sma200": 0.6311,
+     "return_30d": -0.219,
+     "return_7d": -0.2429,
+     "revenue_driver": "retail fuel sales",
+     "signal_rank": null,
+     "stock_vs_spy_20d": -0.0092,
+     "ticker": "ARKO"
+    },
+    {
+     "market_cap_m": 1872.9887,
+     "price_vs_sma200": 0.6549,
+     "return_30d": -0.2958,
+     "return_7d": -0.1775,
+     "revenue_driver": "grain merchandising",
+     "signal_rank": 966,
+     "stock_vs_spy_20d": -0.2124,
+     "ticker": "ANDE"
+    }
+   ]
+  }
+ },
+ "predictions": {
+  "badge_count": 1,
+  "confidence_score": 0.8238,
+  "conviction_label": "HIGH CONVICTION",
+  "data_quality_flags": [],
+  "ev_score": 0.1261,
+  "is_diamond": false,
+  "passes_tradability_filter": true,
+  "quality_label": "HIGH",
+  "quantiles": {
+   "downside_q10": -0.1713,
+   "downside_q25": -0.0934,
+   "downside_q50": -0.0533,
+   "downside_q75": -0.0146,
+   "downside_q90": -0.0016,
+   "path_volatility": 0.0176,
+   "risk_reward": 3.1726,
+   "uncertainty": 0.3886,
+   "upside_q10": 0.0294,
+   "upside_q25": 0.0849,
+   "upside_q50": 0.1692,
+   "upside_q75": 0.2844,
+   "upside_q90": 0.418
+  },
+  "rank": 799,
+  "rank_score": 0.1411,
+  "tradability_filter_reasons": []
+ },
+ "profile": {
+  "_local": {
+   "dividend_yield": 0.0007,
+   "eps_growth_yoy": -0.0989,
+   "pe_ratio": 16.3525,
+   "revenue_growth_yoy": 0.0029,
+   "roe": 0.2865
+  },
+  "beta": 1.127,
+  "betaTTM": null,
+  "ceo": "Mark D. Morelli",
+  "companyName": "Vontier Corporation",
+  "country": "US",
+  "debtToEquityTTM": null,
+  "description": "Vontier Corporation is a global technology company specializing in the design, production, marketing, and distribution of advanced equipment, software, components, and services. Its core focus is on enhancing the global mobility infrastructure sector. The company's extensive product portfolio is divided into two primary segments: 1. Mobility Technologies: This segment provides comprehensive solutions for various aspects of transportation infrastructure. Offerings include precise fuel dispensing and remote management systems, integrated point-of-sale and payment solutions, environmental monitoring sensors for compliance, robust vehicle tracking and fleet management tools, and intelligent software for traffic light control and broader traffic management. 2. Diagnostics and Repair Technologies: Catering to automotive service professionals, this division supplies a broad range of specialized vehicle repair tools, toolboxes, advanced automotive diagnostic equipment with accompanying software, and professional wheel-service machinery. This latter category, including brake lathes, tire changers, wheel balancers, and wheel weights, is particularly known under the Ammco and Coats brands, vital for tire installation and repair facilities. Vontier serves a diverse international clientele, spanning retail and commercial fueling station operators, convenience stores, various car wash enterprises (in-bay and tunnel), commercial vehicle repair outlets, municipal governments, public safety entities, and fleet owners. The company leverages a strategic distribution network comprising franchised mobile distributors, its dedicated direct sales force, and independent partners to reach customers across North America, the Asia Pacific region, Europe, and Latin America. Established in 2019, Vontier Corporation's corporate headquarters are located in Raleigh, North Carolina.",
+  "dividendYielTTM": null,
+  "enterpriseValueOverEBITDATTM": null,
+  "exchangeShortName": "NYSE",
+  "fullTimeEmployees": "7800",
+  "industry": "Hardware, Equipment & Parts",
+  "ipoDate": "2020-09-24",
+  "latest_earnings_date": "2026-11-05",
+  "marketCapTTM": null,
+  "mktCap": 5690480000,
+  "peRatioTTM": null,
+  "price": 42.85,
+  "priceToSalesRatioTTM": null,
+  "returnOnEquityTTM": 0.2806,
+  "revenue_description": "Vontier sells mobility and industrial technology products, including fueling and telematics solutions. Revenue is driven by unit volume growth and pricing realization in its core end markets, with new product introductions and geographic expansion as incremental catalysts.",
+  "revenue_description_themes": [
+   "fueling infrastructure demand recovery",
+   "fleet telematics adoption growth",
+   "vehicle service equipment demand"
+  ],
+  "revenue_taxonomy": [
+   {
+    "bucket": "Refining, Fuel Marketing & Wholesale Energy Products",
+    "matched_tags": [
+     "fuel dispenser technology"
+    ],
+    "path": "Energy & Utilities › Energy Value Chain › Refining, Fuel Marketing & Wholesale Energy Products",
+    "sector": "Energy & Utilities",
+    "segment": "Energy Value Chain"
+   },
+   {
+    "bucket": "Mobility Platforms, Fleet Services & Ride-Hailing",
+    "matched_tags": [
+     "fleet telematics systems"
+    ],
+    "path": "Industrials & Transportation › Mobility & Logistics › Mobility Platforms, Fleet Services & Ride-Hailing",
+    "sector": "Industrials & Transportation",
+    "segment": "Mobility & Logistics"
+   },
+   {
+    "bucket": "Machinery, Heavy Equipment & Tools",
+    "matched_tags": [
+     "vehicle service equipment"
+    ],
+    "path": "Industrials & Transportation › Industrial Products & Services › Machinery, Heavy Equipment & Tools",
+    "sector": "Industrials & Transportation",
+    "segment": "Industrial Products & Services"
+   }
+  ],
+  "revenue_themes": [
+   "fuel dispenser technology",
+   "fleet telematics systems",
+   "vehicle service equipment"
+  ],
+  "sector": "Technology",
+  "website": "https://www.vontier.com"
+ },
+ "report": null,
+ "scorecard": {
+  "headline": {
+   "avg_universe_pct": 53,
+   "label": "mixed",
+   "metric_count": 8
+  },
+  "metrics": {
+   "debt_to_equity": {
+    "direction": "lower",
+    "label": "D/E Ratio",
+    "sector": "Industrials",
+    "sector_n": 330,
+    "sector_pct": 13,
+    "universe_n": 1963,
+    "universe_pct": 15,
+    "value": 1.5966
+   },
+   "eps_growth_yoy": {
+    "direction": "higher",
+    "label": "EPS Growth",
+    "sector": "Industrials",
+    "sector_n": 328,
+    "sector_pct": 30,
+    "universe_n": 1782,
+    "universe_pct": 28,
+    "value": -0.0989
+   },
+   "gross_margin": {
+    "direction": "higher",
+    "label": "Gross Margin",
+    "sector": "Industrials",
+    "sector_n": 315,
+    "sector_pct": 83,
+    "universe_n": 1907,
+    "universe_pct": 63,
+    "value": 0.6029
+   },
+   "operating_margin": {
+    "direction": "higher",
+    "label": "Op. Margin",
+    "sector": "Industrials",
+    "sector_n": 315,
+    "sector_pct": 84,
+    "universe_n": 1907,
+    "universe_pct": 71,
+    "value": 0.1941
+   },
+   "pe_ratio": {
+    "direction": "lower",
+    "label": "P/E",
+    "sector": "Industrials",
+    "sector_n": 237,
+    "sector_pct": 74,
+    "universe_n": 1415,
+    "universe_pct": 61,
+    "value": 16.3525
+   },
+   "revenue_growth_yoy": {
+    "direction": "higher",
+    "label": "Rev Growth",
+    "sector": "Industrials",
+    "sector_n": 312,
+    "sector_pct": 23,
+    "universe_n": 1734,
+    "universe_pct": 22,
+    "value": 0.0029
+   },
+   "roe": {
+    "direction": "higher",
+    "label": "ROE",
+    "sector": "Industrials",
+    "sector_n": 332,
+    "sector_pct": 84,
+    "universe_n": 1981,
+    "universe_pct": 84,
+    "value": 0.2865
+   },
+   "roic": {
+    "direction": "higher",
+    "label": "ROIC",
+    "sector": "Industrials",
+    "sector_n": 326,
+    "sector_pct": 76,
+    "universe_n": 1946,
+    "universe_pct": 77,
+    "value": 0.0326
+   }
+  }
+ },
+ "signal_rank": 799,
+ "structural_analogs": {
+  "gp_core_pct": 8.8,
+  "gp_core_ratio": 0.8601,
+  "matches": [
+   {
+    "actual_downside": -0.317,
+    "actual_return": -0.317,
+    "actual_upside": 0.0068,
+    "days_in_region": 87,
+    "end_date": "2008-03-19",
+    "end_reason": "reversal",
+    "seq_len": 87,
+    "similarity": 0.5902,
+    "start_date": "2007-12-17",
+    "ticker": "MATR",
+    "total_distance": 0.2637,
+    "trigger_date": "2008-01-02",
+    "trigger_type": "runup"
+   },
+   {
+    "actual_downside": -0.0321,
+    "actual_return": -0.0321,
+    "actual_upside": 0.1059,
+    "days_in_region": 135,
+    "end_date": "2007-03-05",
+    "end_reason": "reversal",
+    "seq_len": 135,
+    "similarity": 0.5871,
+    "start_date": "2006-08-09",
+    "ticker": "WRC",
+    "total_distance": 0.2662,
+    "trigger_date": "2006-08-29",
+    "trigger_type": "runup"
+   },
+   {
+    "actual_downside": -0.2519,
+    "actual_return": -0.2519,
+    "actual_upside": 0.1663,
+    "days_in_region": 126,
+    "end_date": "2007-08-09",
+    "end_reason": "reversal",
+    "seq_len": 126,
+    "similarity": 0.577,
+    "start_date": "2006-11-08",
+    "ticker": "KG",
+    "total_distance": 0.275,
+    "trigger_date": "2007-02-14",
+    "trigger_type": "runup"
+   },
+   {
+    "actual_downside": -0.0281,
+    "actual_return": 0.2666,
+    "actual_upside": 0.4709,
+    "days_in_region": 86,
+    "end_date": "2018-10-29",
+    "end_reason": "reversal",
+    "seq_len": 86,
+    "similarity": 0.576,
+    "start_date": "2018-02-08",
+    "ticker": "MCS",
+    "total_distance": 0.2759,
+    "trigger_date": "2018-02-27",
+    "trigger_type": "shallow_runup"
+   },
+   {
+    "actual_downside": -0.2799,
+    "actual_return": -0.2799,
+    "actual_upside": 0.067,
+    "days_in_region": 94,
+    "end_date": "1999-10-05",
+    "end_reason": "reversal",
+    "seq_len": 94,
+    "similarity": 0.5652,
+    "start_date": "1999-03-23",
+    "ticker": "LEG",
+    "total_distance": 0.2853,
+    "trigger_date": "1999-04-20",
+    "trigger_type": "runup"
+   },
+   {
+    "actual_downside": -0.4166,
+    "actual_return": -0.4166,
+    "actual_upside": 0.2249,
+    "days_in_region": 132,
+    "end_date": "2020-03-18",
+    "end_reason": "reversal",
+    "seq_len": 132,
+    "similarity": 0.5634,
+    "start_date": "2019-08-27",
+    "ticker": "DAR",
+    "total_distance": 0.2869,
+    "trigger_date": "2019-09-16",
+    "trigger_type": "shallow_runup"
+   },
+   {
+    "actual_downside": -0.1348,
+    "actual_return": -0.1348,
+    "actual_upside": 0.0674,
+    "days_in_region": 86,
+    "end_date": "1992-07-08",
+    "end_reason": "reversal",
+    "seq_len": 86,
+    "similarity": 0.5603,
+    "start_date": "1992-04-02",
+    "ticker": "BKR",
+    "total_distance": 0.2897,
+    "trigger_date": "1992-04-15",
+    "trigger_type": "shallow_runup"
+   },
+   {
+    "actual_downside": -0.1747,
+    "actual_return": -0.1747,
+    "actual_upside": 0.0044,
+    "days_in_region": 99,
+    "end_date": "2017-12-08",
+    "end_reason": "reversal",
+    "seq_len": 99,
+    "similarity": 0.5573,
+    "start_date": "2017-08-18",
+    "ticker": "DGII",
+    "total_distance": 0.2924,
+    "trigger_date": "2017-09-25",
+    "trigger_type": "runup"
+   },
+   {
+    "actual_downside": -0.1542,
+    "actual_return": -0.1542,
+    "actual_upside": 0.0,
+    "days_in_region": 104,
+    "end_date": "2006-06-14",
+    "end_reason": "reversal",
+    "seq_len": 104,
+    "similarity": 0.5572,
+    "start_date": "2005-10-07",
+    "ticker": "PKG",
+    "total_distance": 0.2924,
+    "trigger_date": "2005-11-01",
+    "trigger_type": "shallow_runup"
+   },
+   {
+    "actual_downside": -0.0404,
+    "actual_return": 0.213,
+    "actual_upside": 0.213,
+    "days_in_region": 130,
+    "end_date": "2012-04-27",
+    "end_reason": "reversal",
+    "seq_len": 130,
+    "similarity": 0.5564,
+    "start_date": "2011-11-11",
+    "ticker": "GAP",
+    "total_distance": 0.2931,
+    "trigger_date": "2011-11-25",
+    "trigger_type": "shallow_drawdown"
+   }
+  ],
+  "panel": {
+   "edge": -0.1872,
+   "hit_hi": 0.422,
+   "hit_lo": 0.255,
+   "hit_rate": 0.333,
+   "median_final": -0.1217,
+   "median_pain": 0.128,
+   "n": 51,
+   "n_eff": 51.0,
+   "p25_final": -0.218,
+   "p_pain_gt5": 0.745,
+   "return_to_pain": -0.822
+  },
+  "stats": {
+   "avg_similarity": 0.516,
+   "avg_trough": 0.1432,
+   "avg_upside": 0.1355,
+   "median_pain": 0.1268,
+   "median_return": -0.1121,
+   "n_matches": 200,
+   "p25_return": -0.1941,
+   "p_pain_gt5": 0.77,
+   "return_to_pain": -0.764,
+   "top5_avg_trough": 0.1818,
+   "top5_avg_upside": 0.1634,
+   "top_similarity": 0.59,
+   "win_rate": 0.29
+  },
+  "total_matches": 200
+ },
+ "ticker": "VNT",
+ "trending": {
+  "acceleration": 0.0087,
+  "avg_vol_20d": 1805182.7712,
+  "base_high_120": 43.96,
+  "breakout_confirmed": 0,
+  "close": 42.85,
+  "momentum_score": 0.983,
+  "momentum_start": "2026-10-20",
+  "range_20": 0.246,
+  "range_50": 0.3344,
+  "rank": 301,
+  "rank_down": null,
+  "rank_up": 183,
+  "ret_120": 0.5093,
+  "ret_20": 0.2471,
+  "ret_60": 0.2938,
+  "rundown_score": 0.0713,
+  "score_date": "2026-11-20",
+  "slope_20": 0.0136,
+  "slope_60": 0.0048,
+  "stage": "sustained",
+  "stage_label": "Trending",
+  "ticker": "VNT",
+  "total_score": 0.5402,
+  "trend_ratio": 1.2381,
+  "vcp_detected": 0,
+  "vcp_score": 0.2449
+ }
+}

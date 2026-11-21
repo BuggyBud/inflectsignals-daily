@@ -1,0 +1,961 @@
+{
+ "date": "2026-11-20",
+ "detected_regions": {
+  "primary": {
+   "days_in_region": 120,
+   "region_start": "2026-08-28",
+   "trigger_date": "2026-09-25",
+   "trigger_type": "compression"
+  },
+  "secondary": [
+   {
+    "confidence_score": 0.1628,
+    "downside_q50": -0.0506,
+    "ev_score": 0.2629,
+    "region_start": "2026-05-05",
+    "seq_len": 200,
+    "trigger_date": "2026-10-23",
+    "trigger_type": "runup",
+    "upside_q25": 0.1378,
+    "upside_q50": 0.2904,
+    "upside_q75": 0.515
+   }
+  ]
+ },
+ "feature_attribution": {
+  "macro_driver_count": 13,
+  "risk_flags": [
+   "high_volatility"
+  ],
+  "top_drivers": [
+   {
+    "direction": "positive",
+    "feature": "price_vs_low_52w",
+    "feature_value": 12.0189,
+    "importance": 0.0008,
+    "importance_pct": 0.2643,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "positive",
+    "feature": "price_vs_sma200",
+    "feature_value": 2.071,
+    "importance": 0.0005,
+    "importance_pct": 0.1748,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "positive",
+    "feature": "volatility_20d",
+    "feature_value": 0.0696,
+    "importance": 0.0005,
+    "importance_pct": 0.1439,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "negative",
+    "feature": "ma_200_slope",
+    "feature_value": 0.2261,
+    "importance": 0.0004,
+    "importance_pct": 0.136,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "negative",
+    "feature": "dollar_volume",
+    "feature_value": 37420336.0,
+    "importance": 0.0004,
+    "importance_pct": 0.114,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "negative",
+    "feature": "altman_x3",
+    "feature_value": -0.1505,
+    "importance": 0.0003,
+    "importance_pct": 0.1092,
+    "method": "integrated_gradients"
+   },
+   {
+    "direction": "negative",
+    "feature": "beta_252d",
+    "feature_value": 0.2408,
+    "importance": 0.0002,
+    "importance_pct": 0.0576,
+    "method": "integrated_gradients"
+   }
+  ]
+ },
+ "fundamentals": {
+  "accrual": -0.8284,
+  "adx_14": 32.9754,
+  "altman_z_score": 64.8336,
+  "amihud_illiquidity": 0.0008,
+  "avg_volume": 2485856.8405,
+  "beta_252d": 0.2408,
+  "book_value_per_share": 1.947,
+  "correlation_spy_60d": 0.2053,
+  "current_liabilities": 45.553,
+  "current_ratio": 7.1134,
+  "daily_earnings_yield": -0.0151,
+  "daily_fcf_yield": 0.0028,
+  "daily_pb": 87.6603,
+  "daily_pe": -66.2312,
+  "daily_ps": null,
+  "days_since_52w_high": 8.0,
+  "debt_ebitda": -0.4709,
+  "debt_to_equity": 0.6211,
+  "dividend_yield": 0.0,
+  "dollar_volume_20d_avg": 66684653.6266,
+  "earnings_quality": 0.8351,
+  "ebitda_growth_yoy": 0.1401,
+  "enterprise_value": 17770.2551,
+  "eps_basic": -0.54,
+  "eps_cagr_3y": -1.9676,
+  "eps_cagr_5y": -2.0743,
+  "eps_diluted": -0.54,
+  "eps_growth_accel": 0.1659,
+  "eps_growth_qoq": 0.25,
+  "eps_growth_yoy": 0.1936,
+  "eps_growth_yoy_q2": 0.0278,
+  "eps_growth_yoy_q3": -0.101,
+  "eps_growth_yoy_q4": -0.1169,
+  "eps_growth_yoy_q5": -0.1307,
+  "eps_growth_yoy_q6": 0.0122,
+  "eps_growth_yoy_q7": 0.0554,
+  "eps_growth_yoy_q8": 0.0253,
+  "eps_history_8q": [
+   -0.79,
+   -0.82,
+   -0.95,
+   -0.9,
+   -0.77,
+   -0.76,
+   -0.72,
+   -0.54
+  ],
+  "eps_ttm": -0.2879,
+  "ev_to_ebitda": -65.7972,
+  "ev_to_fcf": -371.9261,
+  "ev_to_sales": null,
+  "fcf_growth_yoy": 1.1752,
+  "fcf_margin": null,
+  "fcf_per_share": -0.4543,
+  "gross_margin": null,
+  "gross_margin_change_yoy": null,
+  "gross_margin_history": null,
+  "inc_roic": 0.1106,
+  "interest_coverage": -30.4689,
+  "is_pre_revenue": true,
+  "margin_vs_sector_median": null,
+  "market_cap_ratio": 17950.8961,
+  "net_income": -57.121,
+  "net_margin": null,
+  "operating_income": -56.281,
+  "operating_margin": null,
+  "operating_margin_change_yoy": null,
+  "pb_ratio": 9.7945,
+  "pe_percentile_1y": 0.9444,
+  "pe_ratio": -5.7563,
+  "peg_trailing": -0.2973,
+  "piotroski_f_score": 2.0,
+  "price_vs_high_52w": 0.8192,
+  "price_vs_sma200": 2.071,
+  "ps_percentile_1y": null,
+  "ps_ratio": null,
+  "quarter_labels_8q": [
+   "Q3 '24",
+   "Q4 '24",
+   "Q1 '25",
+   "Q2 '25",
+   "Q3 '25",
+   "Q4 '26",
+   "Q1 '26",
+   "Q2 '26"
+  ],
+  "quarterly_eps_growth_yoy": 0.4,
+  "quarterly_eps_growth_yoy_8q": [
+   -0.026,
+   0.012,
+   -0.2179,
+   -0.3235,
+   0.0253,
+   0.0732,
+   0.2421,
+   0.4
+  ],
+  "quarterly_revenue_growth_yoy": null,
+  "quarterly_revenue_growth_yoy_8q": null,
+  "revenue_cagr_3y": null,
+  "revenue_cagr_5y": null,
+  "revenue_growth_accel": null,
+  "revenue_growth_qoq": null,
+  "revenue_growth_yoy": null,
+  "revenue_growth_yoy_q2": null,
+  "revenue_growth_yoy_q3": null,
+  "revenue_growth_yoy_q4": null,
+  "revenue_growth_yoy_q5": null,
+  "revenue_growth_yoy_q6": null,
+  "revenue_growth_yoy_q7": null,
+  "revenue_growth_yoy_q8": null,
+  "revenue_history_8q": null,
+  "revenue_per_share": 0.0,
+  "roa": -0.8654,
+  "roce": -0.9946,
+  "roe": -1.7462,
+  "roic": -0.8253,
+  "rsi_14": 42.1286,
+  "sector_momentum": 0.0921,
+  "share_dilution_1y": 0.0,
+  "stock_vs_sector_20d": 0.5,
+  "stock_vs_spy_20d": 0.7587,
+  "total_assets": 373.94,
+  "vol_regime": 1.3868,
+  "volatility_20d": 0.0696,
+  "volatility_60d": 0.0502,
+  "w52_high": 23.54,
+  "w52_low": 1.5
+ },
+ "market_characters": [
+  {
+   "id": "g3",
+   "name": "Explosive Gainers"
+  },
+  {
+   "id": "g4",
+   "name": "Volatile Uptrend"
+  }
+ ],
+ "model_analogs": {
+  "matches": [
+   {
+    "actual_downside": 0.0,
+    "actual_return": 0.0714,
+    "actual_upside": 0.3312,
+    "days_in_region": 109,
+    "end_date": "2017-01-06",
+    "end_reason": "reversal",
+    "similarity": 0.9841,
+    "start_date": "2016-09-19",
+    "ticker": "LNTH",
+    "trigger_date": "2016-10-14",
+    "trigger_type": "compression"
+   },
+   {
+    "actual_downside": -0.3069,
+    "actual_return": -0.3069,
+    "actual_upside": 0.0019,
+    "days_in_region": 226,
+    "end_date": "2005-12-28",
+    "end_reason": "reversal",
+    "similarity": 0.9832,
+    "start_date": "2005-05-16",
+    "ticker": "SWBI",
+    "trigger_date": "2005-10-26",
+    "trigger_type": "runup"
+   },
+   {
+    "actual_downside": -0.0317,
+    "actual_return": 0.2495,
+    "actual_upside": 0.4117,
+    "days_in_region": 170,
+    "end_date": "2016-12-14",
+    "end_reason": "reversal",
+    "similarity": 0.9814,
+    "start_date": "2016-06-27",
+    "ticker": "SKY",
+    "trigger_date": "2016-11-10",
+    "trigger_type": "runup"
+   },
+   {
+    "actual_downside": -0.1114,
+    "actual_return": 0.3681,
+    "actual_upside": 0.3681,
+    "days_in_region": 278,
+    "end_date": "2006-04-10",
+    "end_reason": "reversal",
+    "similarity": 0.9812,
+    "start_date": "2005-07-06",
+    "ticker": "FC",
+    "trigger_date": "2005-07-14",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": -0.0665,
+    "actual_return": -0.0545,
+    "actual_upside": 0.1942,
+    "days_in_region": 237,
+    "end_date": "2021-05-18",
+    "end_reason": "reversal",
+    "similarity": 0.9805,
+    "start_date": "2020-09-23",
+    "ticker": "OMI",
+    "trigger_date": "2021-02-25",
+    "trigger_type": "runup"
+   },
+   {
+    "actual_downside": -0.032,
+    "actual_return": -0.032,
+    "actual_upside": 0.1424,
+    "days_in_region": 196,
+    "end_date": "2020-05-28",
+    "end_reason": "reversal",
+    "similarity": 0.9803,
+    "start_date": "2019-11-14",
+    "ticker": "NGNE",
+    "trigger_date": "2020-05-06",
+    "trigger_type": "runup"
+   },
+   {
+    "actual_downside": 0.0,
+    "actual_return": 0.3429,
+    "actual_upside": 0.4286,
+    "days_in_region": 273,
+    "end_date": "2004-06-07",
+    "end_reason": "reversal",
+    "similarity": 0.9799,
+    "start_date": "2003-09-08",
+    "ticker": "HSTM",
+    "trigger_date": "2004-01-23",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": -0.1836,
+    "actual_return": -0.1836,
+    "actual_upside": 0.2838,
+    "days_in_region": 250,
+    "end_date": "2021-05-12",
+    "end_reason": "reversal",
+    "similarity": 0.9796,
+    "start_date": "2020-09-04",
+    "ticker": "VIVO",
+    "trigger_date": "2021-03-01",
+    "trigger_type": "runup"
+   },
+   {
+    "actual_downside": -0.0733,
+    "actual_return": -0.0095,
+    "actual_upside": 0.4161,
+    "days_in_region": 183,
+    "end_date": "2021-03-04",
+    "end_reason": "reversal",
+    "similarity": 0.9795,
+    "start_date": "2020-09-02",
+    "ticker": "OPK",
+    "trigger_date": "2020-09-30",
+    "trigger_type": "compression"
+   },
+   {
+    "actual_downside": -0.031,
+    "actual_return": 0.8621,
+    "actual_upside": 1.1655,
+    "days_in_region": 169,
+    "end_date": "2004-01-29",
+    "end_reason": "reversal",
+    "similarity": 0.9792,
+    "start_date": "2003-08-13",
+    "ticker": "CAMT",
+    "trigger_date": "2003-12-29",
+    "trigger_type": "runup"
+   }
+  ],
+  "stats": {
+   "avg_max_drawdown": 0.0822,
+   "avg_similarity": 0.978,
+   "avg_trough": 0.0822,
+   "avg_upside": 0.3777,
+   "best_return": 0.9102,
+   "downside_range": [
+    -0.4145,
+    0.0
+   ],
+   "median_return": 0.1161,
+   "n_matches": 50,
+   "outcome_agreement": true,
+   "return_p25": -0.0264,
+   "return_p5": -0.1837,
+   "return_p75": 0.3623,
+   "return_p95": 0.8521,
+   "sim_weighted_win_rate": 0.68,
+   "top5_avg_trough": 0.1033,
+   "top5_avg_upside": 0.2614,
+   "top_similarity": 0.984,
+   "upside_range": [
+    0.0019,
+    2.2526
+   ],
+   "win_rate": 0.68,
+   "worst_return": -0.3069,
+   "years_span": 16
+  },
+  "total_matches": 50
+ },
+ "peer_group": {
+  "buckets": [
+   "Industrial Components, Motion, Filtration & Engineered Products",
+   "Life Science Tools, Bioprocessing & Research Instruments"
+  ],
+  "groups": {
+   "Industrial Components, Motion, Filtration & Engineered Products": [
+    {
+     "market_cap_m": 15117.535,
+     "price_vs_sma200": 2.071,
+     "return_30d": 0.421,
+     "return_7d": -0.1244,
+     "revenue_driver": "bioprocessing consumables",
+     "signal_rank": 1648,
+     "stock_vs_spy_20d": 0.7587,
+     "ticker": "REPL"
+    },
+    {
+     "market_cap_m": 4124.3048,
+     "price_vs_sma200": 0.9837,
+     "return_30d": 0.2089,
+     "return_7d": -0.0837,
+     "revenue_driver": "commercial vehicle filtration",
+     "signal_rank": 969,
+     "stock_vs_spy_20d": 0.2548,
+     "ticker": "ATMU"
+    },
+    {
+     "market_cap_m": 7197.9883,
+     "price_vs_sma200": 1.0083,
+     "return_30d": 0.1227,
+     "return_7d": -0.0203,
+     "revenue_driver": "residential water heaters",
+     "signal_rank": 618,
+     "stock_vs_spy_20d": 0.1214,
+     "ticker": "AOS"
+    },
+    {
+     "market_cap_m": 68889.9981,
+     "price_vs_sma200": 1.0129,
+     "return_30d": 0.0565,
+     "return_7d": -0.0572,
+     "revenue_driver": "industrial gas supply",
+     "signal_rank": 663,
+     "stock_vs_spy_20d": 0.0622,
+     "ticker": "APD"
+    },
+    {
+     "market_cap_m": 3156.731,
+     "price_vs_sma200": 1.2435,
+     "return_30d": 0.014,
+     "return_7d": 0.0012,
+     "revenue_driver": "electrical conduit and fittings",
+     "signal_rank": null,
+     "stock_vs_spy_20d": -0.0159,
+     "ticker": "ATKR"
+    },
+    {
+     "market_cap_m": 1864.352,
+     "price_vs_sma200": 0.9951,
+     "return_30d": 0.0081,
+     "return_7d": -0.09,
+     "revenue_driver": "aerospace composite components",
+     "signal_rank": 183,
+     "stock_vs_spy_20d": 0.0897,
+     "ticker": "AIN"
+    },
+    {
+     "market_cap_m": 9882.7062,
+     "price_vs_sma200": 0.9097,
+     "return_30d": -0.0642,
+     "return_7d": -0.0142,
+     "revenue_driver": "natural gas gathering",
+     "signal_rank": 523,
+     "stock_vs_spy_20d": 0.0412,
+     "ticker": "AM"
+    },
+    {
+     "market_cap_m": 57224.1103,
+     "price_vs_sma200": 0.9474,
+     "return_30d": -0.1035,
+     "return_7d": -0.0702,
+     "revenue_driver": "electronic instruments",
+     "signal_rank": 653,
+     "stock_vs_spy_20d": 0.0231,
+     "ticker": "AME"
+    },
+    {
+     "market_cap_m": 11224.1224,
+     "price_vs_sma200": 0.8846,
+     "return_30d": -0.1801,
+     "return_7d": -0.0879,
+     "revenue_driver": "power transmission distribution",
+     "signal_rank": 347,
+     "stock_vs_spy_20d": -0.0379,
+     "ticker": "AIT"
+    },
+    {
+     "market_cap_m": 99099.5738,
+     "price_vs_sma200": 0.5418,
+     "return_30d": -0.2005,
+     "return_7d": -0.1205,
+     "revenue_driver": "electronic connectors",
+     "signal_rank": 1068,
+     "stock_vs_spy_20d": 0.0361,
+     "ticker": "APH"
+    }
+   ],
+   "Life Science Tools, Bioprocessing & Research Instruments": [
+    {
+     "market_cap_m": 15117.535,
+     "price_vs_sma200": 2.071,
+     "return_30d": 0.421,
+     "return_7d": -0.1244,
+     "revenue_driver": "bioprocessing consumables",
+     "signal_rank": 1648,
+     "stock_vs_spy_20d": 0.7587,
+     "ticker": "REPL"
+    },
+    {
+     "market_cap_m": 1861.6752,
+     "price_vs_sma200": 1.5591,
+     "return_30d": 0.1877,
+     "return_7d": -0.0838,
+     "revenue_driver": "biopharma sample management",
+     "signal_rank": 872,
+     "stock_vs_spy_20d": 0.3221,
+     "ticker": "AZTA"
+    },
+    {
+     "market_cap_m": 60864.5262,
+     "price_vs_sma200": 1.253,
+     "return_30d": 0.158,
+     "return_7d": -0.0081,
+     "revenue_driver": "medication delivery devices",
+     "signal_rank": 1693,
+     "stock_vs_spy_20d": 0.1644,
+     "ticker": "BDX"
+    },
+    {
+     "market_cap_m": 3543.2554,
+     "price_vs_sma200": 1.3491,
+     "return_30d": 0.1271,
+     "return_7d": -0.0036,
+     "revenue_driver": "biologics contract manufacturing",
+     "signal_rank": 458,
+     "stock_vs_spy_20d": 0.0935,
+     "ticker": "AVPT"
+    },
+    {
+     "market_cap_m": 1633.6616,
+     "price_vs_sma200": 1.4466,
+     "return_30d": 0.0382,
+     "return_7d": 0.0031,
+     "revenue_driver": "biopreservation media",
+     "signal_rank": null,
+     "stock_vs_spy_20d": 0.0747,
+     "ticker": "BLFS"
+    },
+    {
+     "market_cap_m": 27386.1252,
+     "price_vs_sma200": 1.1743,
+     "return_30d": 0.0154,
+     "return_7d": -0.0647,
+     "revenue_driver": "laboratory consumables",
+     "signal_rank": 554,
+     "stock_vs_spy_20d": 0.0655,
+     "ticker": "WAT"
+    },
+    {
+     "market_cap_m": 58714.9688,
+     "price_vs_sma200": 1.2262,
+     "return_30d": -0.0007,
+     "return_7d": -0.0369,
+     "revenue_driver": "analytical instruments",
+     "signal_rank": 1231,
+     "stock_vs_spy_20d": 0.0793,
+     "ticker": "A"
+    },
+    {
+     "market_cap_m": 11379.4924,
+     "price_vs_sma200": 1.2923,
+     "return_30d": -0.0523,
+     "return_7d": -0.0559,
+     "revenue_driver": "lab reagents",
+     "signal_rank": 313,
+     "stock_vs_spy_20d": -0.0464,
+     "ticker": "AVTR"
+    },
+    {
+     "market_cap_m": 2963.1948,
+     "price_vs_sma200": 0.5492,
+     "return_30d": -0.2147,
+     "return_7d": -0.1706,
+     "revenue_driver": "cancer diagnostic testing services",
+     "signal_rank": 1526,
+     "stock_vs_spy_20d": -0.0877,
+     "ticker": "CELC"
+    },
+    {
+     "market_cap_m": 6904.5787,
+     "price_vs_sma200": 1.1912,
+     "return_30d": -0.3577,
+     "return_7d": -0.1652,
+     "revenue_driver": "single-cell analysis consumables",
+     "signal_rank": 1837,
+     "stock_vs_spy_20d": -0.1813,
+     "ticker": "TXG"
+    }
+   ]
+  }
+ },
+ "predictions": {
+  "badge_count": 1,
+  "confidence_score": 0.084,
+  "conviction_label": "HIGH CONVICTION",
+  "data_quality_flags": [],
+  "ev_score": 0.2438,
+  "is_diamond": false,
+  "passes_tradability_filter": true,
+  "quality_label": "HIGH",
+  "quantiles": {
+   "downside_q10": -0.2901,
+   "downside_q25": -0.1508,
+   "downside_q50": -0.0714,
+   "downside_q75": -0.0119,
+   "downside_q90": 0.0089,
+   "path_volatility": 0.0437,
+   "risk_reward": 4.132,
+   "uncertainty": 0.7559,
+   "upside_q10": 0.0444,
+   "upside_q25": 0.1347,
+   "upside_q50": 0.2951,
+   "upside_q75": 0.5179,
+   "upside_q90": 0.8003
+  },
+  "rank": 1648,
+  "rank_score": 0.0451,
+  "tradability_filter_reasons": []
+ },
+ "profile": {
+  "_local": {
+   "dividend_yield": 0.0,
+   "eps_growth_yoy": 0.1936,
+   "pe_ratio": -5.7563,
+   "revenue_growth_yoy": null,
+   "roe": -1.7462
+  },
+  "beta": 0.927,
+  "betaTTM": null,
+  "ceo": "Sushil Patel",
+  "companyName": "Replimune Group, Inc.",
+  "country": "US",
+  "debtToEquityTTM": null,
+  "description": "Replimune Group, Inc. is a biotechnology enterprise dedicated to pioneering oncolytic immuno-gene therapies aimed at treating various cancers. The company leverages its proprietary Immunotherapy platform to engineer and advance novel therapeutic candidates designed to activate the body's immune system against malignant cells. Its leading experimental drug, RP1, is a selectively replicating variant of the herpes simplex virus 1. This candidate is presently in Phase I/II clinical trials for a range of solid tumors and has also progressed to Phase II trials specifically for patients with cutaneous squamous cell carcinoma. Replimune is additionally developing RP2, an anti-CTLA-4 antibody-like protein, which is undergoing Phase I clinical assessment. Its purpose is to counteract the immune system's suppression often mediated by CTLA-4. Furthermore, RP3, also in Phase I clinical trials, is engineered to express immune-activating proteins that stimulate T cells. Established in 2015, Replimune Group, Inc. maintains its corporate headquarters in Woburn, Massachusetts.",
+  "dividendYielTTM": null,
+  "enterpriseValueOverEBITDATTM": null,
+  "exchangeShortName": "NASDAQ",
+  "fullTimeEmployees": "465",
+  "industry": "Biotechnology",
+  "ipoDate": "2018-07-20",
+  "latest_earnings_date": "2026-10-28",
+  "marketCapTTM": null,
+  "mktCap": 1807843628,
+  "peRatioTTM": null,
+  "price": 19.07,
+  "priceToSalesRatioTTM": null,
+  "returnOnEquityTTM": -1.5778,
+  "revenue_description": "Replimune develops oncolytic immunotherapies for cancer. Revenue is driven by subscription ACV from enterprise license agreements and usage-based consumption, with module expansion and new product attach as growth levers.",
+  "revenue_description_themes": [
+   "biologics manufacturing demand growth",
+   "bioprocessing consumables recurring revenue",
+   "chromatography and filtration expansion"
+  ],
+  "revenue_taxonomy": [
+   {
+    "bucket": "Life Science Tools, Bioprocessing & Research Instruments",
+    "matched_tags": [
+     "bioprocessing consumables",
+     "chromatography resins"
+    ],
+    "path": "Healthcare & Life Sciences › Devices Diagnostics & Tools › Life Science Tools, Bioprocessing & Research Instruments",
+    "sector": "Healthcare & Life Sciences",
+    "segment": "Devices Diagnostics & Tools"
+   },
+   {
+    "bucket": "Industrial Components, Motion, Filtration & Engineered Products",
+    "matched_tags": [
+     "filtration systems"
+    ],
+    "path": "Industrials & Transportation › Industrial Products & Services › Industrial Components, Motion, Filtration & Engineered Products",
+    "sector": "Industrials & Transportation",
+    "segment": "Industrial Products & Services"
+   }
+  ],
+  "revenue_themes": [
+   "bioprocessing consumables",
+   "chromatography resins",
+   "filtration systems"
+  ],
+  "sector": "Healthcare",
+  "website": "https://www.replimune.com"
+ },
+ "report": null,
+ "scorecard": {
+  "headline": {
+   "avg_universe_pct": 24,
+   "label": "below_average",
+   "metric_count": 4
+  },
+  "metrics": {
+   "debt_to_equity": {
+    "direction": "lower",
+    "label": "D/E Ratio",
+    "sector": "Health Care",
+    "sector_n": 269,
+    "sector_pct": 27,
+    "universe_n": 1963,
+    "universe_pct": 39,
+    "value": 0.6211
+   },
+   "eps_growth_yoy": {
+    "direction": "higher",
+    "label": "EPS Growth",
+    "sector": "Health Care",
+    "sector_n": 268,
+    "sector_pct": 56,
+    "universe_n": 1782,
+    "universe_pct": 53,
+    "value": 0.1936
+   },
+   "roe": {
+    "direction": "higher",
+    "label": "ROE",
+    "sector": "Health Care",
+    "sector_n": 274,
+    "sector_pct": 5,
+    "universe_n": 1981,
+    "universe_pct": 2,
+    "value": -1.7462
+   },
+   "roic": {
+    "direction": "higher",
+    "label": "ROIC",
+    "sector": "Health Care",
+    "sector_n": 268,
+    "sector_pct": 8,
+    "universe_n": 1946,
+    "universe_pct": 3,
+    "value": -0.1739
+   }
+  }
+ },
+ "signal_rank": 1648,
+ "structural_analogs": {
+  "gp_core_pct": 81.0,
+  "gp_core_ratio": 1.8933,
+  "matches": [
+   {
+    "actual_downside": 0.0,
+    "actual_return": 0.372,
+    "actual_upside": 0.5838,
+    "days_in_region": 68,
+    "end_date": "2004-03-11",
+    "end_reason": "new_pattern",
+    "seq_len": 68,
+    "similarity": 0.4283,
+    "start_date": "2004-01-27",
+    "ticker": "KERX",
+    "total_distance": 0.4239,
+    "trigger_date": "2004-02-05",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": -0.4213,
+    "actual_return": -0.1754,
+    "actual_upside": 0.1166,
+    "days_in_region": 67,
+    "end_date": "2015-11-03",
+    "end_reason": "reversal",
+    "seq_len": 67,
+    "similarity": 0.4126,
+    "start_date": "2015-09-08",
+    "ticker": "HRTX",
+    "total_distance": 0.4426,
+    "trigger_date": "2015-09-16",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": -0.091,
+    "actual_return": 0.2423,
+    "actual_upside": 0.7192,
+    "days_in_region": 66,
+    "end_date": "2018-10-15",
+    "end_reason": "new_pattern",
+    "seq_len": 66,
+    "similarity": 0.4115,
+    "start_date": "2018-08-31",
+    "ticker": "VKTX",
+    "total_distance": 0.444,
+    "trigger_date": "2018-09-10",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": -0.5123,
+    "actual_return": -0.4045,
+    "actual_upside": 0.0768,
+    "days_in_region": 70,
+    "end_date": "2022-03-02",
+    "end_reason": "reversal",
+    "seq_len": 70,
+    "similarity": 0.407,
+    "start_date": "2021-11-18",
+    "ticker": "ASPN",
+    "total_distance": 0.4494,
+    "trigger_date": "2021-12-02",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": -0.2055,
+    "actual_return": -0.086,
+    "actual_upside": 0.0,
+    "days_in_region": 73,
+    "end_date": "2022-01-04",
+    "end_reason": "reversal",
+    "seq_len": 73,
+    "similarity": 0.4031,
+    "start_date": "2021-11-05",
+    "ticker": "VRTV",
+    "total_distance": 0.4543,
+    "trigger_date": "2021-11-23",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": -0.1014,
+    "actual_return": 0.2397,
+    "actual_upside": 0.2397,
+    "days_in_region": 68,
+    "end_date": "2021-11-22",
+    "end_reason": "reversal",
+    "seq_len": 68,
+    "similarity": 0.3977,
+    "start_date": "2021-08-11",
+    "ticker": "MTUS",
+    "total_distance": 0.461,
+    "trigger_date": "2021-08-20",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": -0.0439,
+    "actual_return": 0.1637,
+    "actual_upside": 0.3313,
+    "days_in_region": 70,
+    "end_date": "2004-01-15",
+    "end_reason": "new_pattern",
+    "seq_len": 70,
+    "similarity": 0.3957,
+    "start_date": "2003-12-01",
+    "ticker": "CDE",
+    "total_distance": 0.4635,
+    "trigger_date": "2003-12-12",
+    "trigger_type": "shallow_drawdown"
+   },
+   {
+    "actual_downside": -0.2585,
+    "actual_return": 0.0938,
+    "actual_upside": 0.0938,
+    "days_in_region": 68,
+    "end_date": "1992-02-11",
+    "end_reason": "reversal",
+    "seq_len": 68,
+    "similarity": 0.3926,
+    "start_date": "1991-11-07",
+    "ticker": "OIL",
+    "total_distance": 0.4675,
+    "trigger_date": "1991-11-18",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": 0.0,
+    "actual_return": 1.0964,
+    "actual_upside": 1.0964,
+    "days_in_region": 69,
+    "end_date": "1998-11-23",
+    "end_reason": "reversal",
+    "seq_len": 69,
+    "similarity": 0.3919,
+    "start_date": "1998-09-29",
+    "ticker": "YHOO",
+    "total_distance": 0.4684,
+    "trigger_date": "1998-10-09",
+    "trigger_type": "drawdown"
+   },
+   {
+    "actual_downside": -0.1399,
+    "actual_return": 0.0678,
+    "actual_upside": 0.0678,
+    "days_in_region": 72,
+    "end_date": "2011-07-07",
+    "end_reason": "reversal",
+    "seq_len": 72,
+    "similarity": 0.3891,
+    "start_date": "2011-05-23",
+    "ticker": "LNG",
+    "total_distance": 0.4719,
+    "trigger_date": "2011-06-08",
+    "trigger_type": "shallow_drawdown"
+   }
+  ],
+  "panel": {
+   "edge": 0.0807,
+   "hit_hi": 0.861,
+   "hit_lo": 0.535,
+   "hit_rate": 0.727,
+   "median_final": 0.0938,
+   "median_pain": 0.1014,
+   "n": 11,
+   "n_eff": 11.0,
+   "p25_final": -0.086,
+   "p_pain_gt5": 0.636,
+   "return_to_pain": 0.772
+  },
+  "stats": {
+   "avg_similarity": 0.351,
+   "avg_trough": 0.14,
+   "avg_upside": 0.2797,
+   "median_pain": 0.1001,
+   "median_return": 0.0897,
+   "n_matches": 200,
+   "p25_return": -0.0965,
+   "p_pain_gt5": 0.665,
+   "return_to_pain": 0.747,
+   "top5_avg_trough": 0.246,
+   "top5_avg_upside": 0.2993,
+   "top_similarity": 0.428,
+   "win_rate": 0.62
+  },
+  "total_matches": 200
+ },
+ "ticker": "REPL",
+ "trending": {
+  "acceleration": 0.0094,
+  "avg_vol_20d": 3480593.461,
+  "base_high_120": 23.28,
+  "breakout_confirmed": 0,
+  "close": 19.07,
+  "momentum_score": 0.9969,
+  "momentum_start": "2026-04-22",
+  "range_20": 0.6387,
+  "range_50": 0.6749,
+  "rank": 622,
+  "rank_down": null,
+  "rank_up": 266,
+  "ret_120": 1.1499,
+  "ret_20": 0.664,
+  "ret_60": 0.2224,
+  "rundown_score": 0.0713,
+  "score_date": "2026-11-20",
+  "slope_20": 0.016,
+  "slope_60": 0.0065,
+  "stage": "sustained",
+  "stage_label": "Trending",
+  "ticker": "REPL",
+  "total_score": 0.4309,
+  "trend_ratio": 1.7717,
+  "vcp_detected": 0,
+  "vcp_score": 0.0536
+ }
+}
